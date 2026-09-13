@@ -138,6 +138,60 @@ All notable changes to this project are documented here. The format is based on
     posing as the rule itself.
 
 ### Fixed
+- **The three surfaces disagreed about the permit's evidence.** `evidence` was
+  attached to the view's top level while both renderers read
+  `permit["evidence"]`, so for two days 66 of 88 published pages told a machine
+  the permit was "Not independently verified" and told a person nothing. Moved
+  inside the permit block, rendered on HTML and Markdown, and backfilled: all
+  15 permit rows now cite the log entries that already existed, 14 settled and
+  1 correctly contested. A new test walks the real generated site rather than
+  one synthetic view.
+- **An approach override asserted the opposite of its own point.** The entry
+  borrowed the *trailhead's* wilderness, so Mount Russell via the Mountaineers
+  Route rendered as "Mount Whitney Zone (John Muir Wilderness)" — being outside
+  the Whitney Zone is the entire reason the override exists. It now shows the
+  override permit's own wilderness, or says "not recorded" rather than
+  something plausible and wrong.
+- **A false "only" on shared overrides.** Two peaks needing the same override
+  produced one entry labelled "for X only" and silently dropped the second.
+  Both are now named.
+- **Peak names were the source list's typography.** Fifteen ALLCAPS, nine
+  misspelled — including "Mount Carillion", which `merge_gnis.py` has mapped to
+  the correct GNIS spelling all along. `plan.py "Mount Carillon"` answered "not
+  found" for a peak at line 29, and R0001, the project's only community report,
+  was filed claiming it was missing. Names corrected, list spellings kept as
+  aliases, lookup now matches on alias and formatting markers, and R0001 marked
+  rejected with the reason rather than deleted.
+  - Ambiguous names offer their candidates instead of picking: Mount Stanford
+    (N) and (S) are forty miles apart.
+  - **Florence Peak was deliberately not renamed.** `merge_gnis.py` maps it to
+    GNIS "Mount Florence", but a different Mount Florence already exists ~90
+    miles north in another SPS section. Following that mapping merged two
+    mountains; the rename attempt caught it, and a test now pins it.
+- **`plan.py` answered permit questions with straight-line geometry and said
+  nothing.** It resolves entry through `Peak.meta["nearest_trailhead"]`, which
+  `scripts/assign_trailheads.py` computes as great-circle distance from the
+  summit. `views.py` labels that same field *"UNVERIFIED: assigned by
+  straight-line proximity... Do not state these as this trailhead's approach
+  list"* — and `plan.py` stated it, under a line reading "we last checked this
+  against the source on &lt;date&gt;".
+  - Picket Guard Peak returned **Mineral King and a SEKI permit**. The
+    project's own sourced route for it is Shepherd Pass Trail — Inyo NF, the
+    opposite side of the crest, a different agency. The same output then quoted
+    "23.2 mi round trip from its standard trailhead", a figure measured from
+    Shepherd Pass. Two mutually inconsistent facts in one answer.
+  - The existing mismatch warning only fired when *several* objectives
+    disagreed with each other. A single objective contradicting its own sourced
+    route was silent.
+  - `plan.py` now compares the sourced route against the chosen trailhead per
+    objective. Where they disagree it leads with "ENTRY POINT UNRESOLVED", names
+    both candidates, labels the permit "CANDIDATE ONLY", states that the
+    verification dates belong to the permit rule rather than to the claim that
+    it governs your route, and warns that the mileage is probably measured from
+    the other trailhead. 153 of 247 SPS peaks are now flagged; 94 still answer
+    cleanly.
+  - `to_dict()` carries `entry_point_resolved` and the conflict detail, so an
+    agent reading the JSON sees what a human reading the warnings sees.
 - **A group size limit was still duplicated in Desolation's `fee_notes`** after
   the split. Found by the new overlap check on its first run, which is the
   point of it.
