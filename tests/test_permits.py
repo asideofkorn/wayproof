@@ -722,7 +722,8 @@ def test_conflicts_stay_separate_across_permit_groups():
         # Logged under "none" because it is about EBRPD land, which issues no
         # permit. The group is a bucket for permit-free agencies, so a conflict
         # here says nothing about the other fifteen trailheads sharing it.
-        "none": {"ebrpd-camping-park-count"},
+        "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
+                 "ebrpd-group-camp-minimum", "chabot-rv-length"},
     }
 
 
@@ -754,6 +755,11 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # Two EBRPD pages, not one contradicting itself: the reservations page
         # says camping at 15 parks, the park finder returns 18.
         "ebrpd-camping-park-count": "cross_source",
+        # One page giving two different quiet-hour ranges is the document
+        # discrediting itself; the other two are separate pages disagreeing.
+        "chabot-quiet-hours": "internal",
+        "ebrpd-group-camp-minimum": "cross_source",
+        "chabot-rv-length": "cross_source",
     }
 
 

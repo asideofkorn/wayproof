@@ -193,18 +193,23 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 
 # --- campground access mode (drive-in vs hike-in) ----------------------------
 
-def test_the_ohlone_corridor_camps_are_hike_in_and_the_family_ones_are_not():
-    # The six Ohlone Wilderness Trail backpack camps are reached on foot; the
-    # family campgrounds are reached by car. Getting this backwards means
-    # booking a site up to 16.7 trail miles from where you parked.
-    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
-    on_foot = {"Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp",
-               "Sunol Backpack Camp", "Eagle Springs"}
-    by_car = {"Del Valle Family Campground", "Anthony Chabot Campground",
-              "Dumbarton Quarry Campground on the Bay", "Bort Meadow Group Camp"}
-    assert on_foot | by_car == set(by_name), "a campground is unclassified above"
-    assert {by_name[n].access_mode for n in on_foot} == {HIKE_IN}
-    assert {by_name[n].access_mode for n in by_car} == {DRIVE_IN}
+def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():
+    # Stated as a rule rather than a list of names, so it keeps holding as the
+    # District's parks land. Getting it backwards means booking a site up to
+    # 16.7 trail miles from where you parked.
+    expected = {"backpack": HIKE_IN, "family": DRIVE_IN, "group": DRIVE_IN}
+    for c in load_campgrounds(CAMPGROUNDS):
+        assert c.campsite_type in expected, f"{c.name}: unclassified campsite_type"
+        assert c.access_mode == expected[c.campsite_type], (
+            f"{c.name} is {c.campsite_type} but tagged {c.access_mode!r}")
+
+
+def test_anthony_chabots_hike_in_sites_are_not_mistaken_for_backpack_sites():
+    # #13-22 sit inside the family campground with no adjacent parking. Selling
+    # them as backpack sites would put them in the phone-only booking queue.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Anthony Chabot Campground"]
+    assert cg.campsite_type == "family"
+    assert "not backpack sites" in cg.notes.lower()
 
 
 def test_an_unverified_campground_says_so_rather_than_reading_as_checked():
@@ -226,7 +231,9 @@ def test_anthony_chabot_was_promoted_from_guesswork_to_a_read_source():
     # and brochure. A verified row must carry the facts that read earned.
     cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Anthony Chabot Campground"]
     assert cg.verified_date == "2026-09-15"
-    assert "$35/night" in cg.fee_notes and "$25/night" in cg.fee_notes
+    assert "$35" in cg.fee_notes and "$45" in cg.fee_notes and "$25" in cg.fee_notes
+    # The reservation fee is charged on top and is easy to leave out of a total.
+    assert "$8" in cg.fee_notes
     # The three separate camping rates are why access_mode is mixed here.
     assert "35 feet" in cg.notes.lower(), "the RV length limit is a trip-blocking fact"
     assert "10:00 PM" in cg.nightly_entry_cutoff
