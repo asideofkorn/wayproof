@@ -138,6 +138,35 @@ All notable changes to this project are documented here. The format is based on
     posing as the rule itself.
 
 ### Fixed
+- **`plan` states how it resolved the entry point, and warns when its own data
+  disagrees.** The permit answer rests on objective -> entry point, and that
+  link is `nearest_trailhead` -- straight-line geometry, which `wayproof.views`
+  itself labels UNVERIFIED. Printing a permit off it beneath a "we last checked
+  this against the source on ..." line implied the whole chain was verified.
+  There is a second, sourced signal already in the dataset: the collection's own
+  route name. Comparing the two cannot establish the right answer, but it tells
+  the cases apart -- `sourced` (1 objective), `route_consistent` (59),
+  `contradicted` (31), `corridor` (13), `inferred` (143). A contradiction warns,
+  and says whether the permit product changes (7 of 31) or only the trailhead
+  shown. Mount LeConte is the sharpest: geometry sends a reader into the Whitney
+  Zone lottery, a Feb 1 - Mar 1 window, for a peak whose sourced route needs an
+  ordinary Inyo NF rolling reservation. A test pins the dataset-wide mix, so the
+  187 objectives with no sourced entry can only go down. This is a stopgap: the
+  fix is a table keyed on the agency's own quota unit.
+- **The override permit entry asserted the trailhead's wilderness.** The
+  override exists because it admits you somewhere the trailhead default does
+  not, so Mount Russell's ordinary Inyo NF permit was reading "Wilderness: Mount
+  Whitney Zone (John Muir Wilderness)" -- the one place `whitney_zone`'s own
+  `excludes` says it does not cover. Each entry now states its own rule's
+  wilderness. The fix exposed a second bug: the agency was printed only
+  alongside a wilderness, hiding it on every rule with a blank `wilderness_area`
+  (11 of 15 rows). They are independent facts and now render independently.
+- **A second peak sharing one approach was silently dropped**, while the first
+  still read "for <peak> **only**" -- asserting the override does not apply to a
+  peak it does. Deduping was keyed on `permit_group` alone. Overrides are now
+  collected before rendering and keyed on `(permit_group, approach_name)`, so
+  one permit reached by one named route is one entry naming every peak on it,
+  and two different routes onto the same permit stay two entries.
 - **11 of 15 permit rows cited no evidence, so 66 of 88 published pages read
   "Not independently verified"** for permits that had in fact been checked.
   `log_entry_ids` was populated only for the rows edited the day the column was

@@ -115,6 +115,41 @@ resolves its best guess and reports the mismatch as an explicit warning rather
 than silently trusting it. A loop or point-to-point traverse with a genuinely
 different entry and exit is a natural next step, not something this models yet.
 
+### How the entry point itself was resolved
+
+The permit above is only as good as the objective -> entry-point link behind
+it, and today that link is usually `nearest_trailhead`: straight-line geometry
+computed by `scripts/assign_trailheads.py`, the same field the website labels
+"UNVERIFIED: assigned by straight-line proximity, not by a confirmed approach
+relationship". Reporting a permit off it under a verification date implies the
+whole chain was checked. So `plan` states the link's own basis, per objective:
+
+| Basis | Meaning | SPS peaks |
+|---|---|---:|
+| `sourced` | `data/approaches.csv` confirms the route and its permit | 1 |
+| `route_consistent` | the objective's own sourced route name starts at this trailhead | 59 |
+| `contradicted` | its sourced route starts somewhere **else** -- raises a warning | 31 |
+| `corridor` | its sourced route is the PCT/JMT, which has no single entry point | 13 |
+| `inferred` | straight-line proximity only | 143 |
+
+A `contradicted` objective warns, and says whether the disagreement changes the
+permit product (7 of the 31 do) or only the trailhead shown. The sharpest case
+is Mount LeConte: geometry picks Whitney Portal, so the plan would send you into
+the Whitney Zone lottery -- a Feb 1 - Mar 1 window -- for a peak whose sourced
+route needs an ordinary Inyo NF rolling reservation.
+
+```text
+Access
+  Trailhead: Mineral King  (west side)
+  Entry basis (Picket Guard Peak): contradicted -- DISAGREES with the
+  objective's own sourced route (Shepherd Pass Trail), which starts at
+  Shepherd Pass -- see Warnings.
+```
+
+187 of 247 SPS objectives currently have no sourced entry relationship
+(`contradicted` + `corridor` + `inferred`). That number is the size of the
+remaining work, and there is a test asserting it so it can only go down.
+
 ```bash
 python plan.py --help
 ```

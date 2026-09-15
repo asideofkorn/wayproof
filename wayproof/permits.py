@@ -110,7 +110,7 @@ from typing import Dict, List, Optional, Sequence
 
 import pandas as pd
 
-from .access import ApproachRoute
+from .access import CONFIRMED, ApproachRoute
 from .model import Cluster, Trailhead
 from .release_policy import (
     ReleasePhase,
@@ -481,6 +481,13 @@ class ClusterPermitInfo:
     approach_status: str = ""  # "confirmed" / "unconfirmed" / "" (trailhead default)
 
 
+def _join_names(names: Sequence[str]) -> str:
+    """``["A"] -> "A"``; ``["A", "B"] -> "A and B"``; ``["A","B","C"] -> "A, B and C"``."""
+    if len(names) == 1:
+        return names[0]
+    return f"{', '.join(names[:-1])} and {names[-1]}"
+
+
 def _permit_entry(
     cluster_id: int, trailhead: str, wilderness_area: str, rule: PermitRule,
     trip_date: date, today: Optional[date], peak_note: str = "",
@@ -550,6 +557,12 @@ def clusters_permit_info(
                                    rule, trip_date, today))
 
         seen = set()
+        # (permit_group, approach_name) -> the peaks that override onto it.
+        # Collected rather than emitted inline: two peaks can share one named
+        # approach, and the entry has to name both. Keyed on the approach as
+        # well as the permit, since two different routes reaching the same
+        # permit are two different facts about two different peaks.
+        overrides: Dict[tuple, List[str]] = {}
         for peak in c.peaks:
             for route in by_peak.get(peak.name, []):
                 if route.trailhead and route.trailhead != c.trailhead:
@@ -570,7 +583,10 @@ def clusters_permit_info(
                     if route.notes:
                         caution += f" {route.notes}"
                     rows.append(_permit_entry(
-                        c.cluster_id, c.trailhead, th.wilderness_area, rule,
+                        c.cluster_id, c.trailhead,
+                        # The caution restates the trailhead default, so the
+                        # trailhead's wilderness is the right one here.
+                        th.wilderness_area, rule,
                         trip_date, today, peak_note=caution,
                         approach_name=route.approach_name,
                         approach_status=route.status,
@@ -579,20 +595,29 @@ def clusters_permit_info(
 
                 if not route.permit_group or route.permit_group == th.permit_group:
                     continue
-                if route.permit_group in seen:
-                    continue  # avoid duplicate entries when >1 peak shares an approach
-                override_rule = permits.get(route.permit_group)
-                if override_rule is None:
+                if route.permit_group not in permits:
                     continue
-                seen.add(route.permit_group)
-                note = f"for {peak.name} only"
-                if route.approach_name:
-                    note += f" -- via {route.approach_name}"
-                rows.append(_permit_entry(
-                    c.cluster_id, c.trailhead, th.wilderness_area, override_rule,
-                    trip_date, today, peak_note=note,
-                    approach_name=route.approach_name, approach_status=route.status,
-                ))
+                peaks_on_route = overrides.setdefault(
+                    (route.permit_group, route.approach_name), [])
+                if peak.name not in peaks_on_route:
+                    peaks_on_route.append(peak.name)
+
+        for (group, approach_name), peak_names in overrides.items():
+            override_rule = permits[group]
+            note = f"for {_join_names(peak_names)} only"
+            if approach_name:
+                note += f" -- via {approach_name}"
+            rows.append(_permit_entry(
+                c.cluster_id, c.trailhead,
+                # The override rule admits you somewhere the trailhead default
+                # does not -- that is why it exists -- so stamping the
+                # trailhead's wilderness on it asserts the opposite. Mount
+                # Russell's ordinary Inyo NF permit was reading "Wilderness:
+                # Mount Whitney Zone", the one place it explicitly excludes.
+                override_rule.wilderness_area, override_rule,
+                trip_date, today, peak_note=note,
+                approach_name=approach_name, approach_status=CONFIRMED,
+            ))
     return rows
 
 
@@ -600,8 +625,16 @@ def format_permit_entry_body(r: ClusterPermitInfo) -> List[str]:
     """Render one permit entry's detail lines (no header) -- shared by
     :func:`format_permit_report` and :mod:`wayproof.plan`."""
     lines = []
-    if r.wilderness_area:
+    # Independent facts: a permit always has an issuing agency, but its
+    # wilderness is only known for the rows that carry one. Printing the agency
+    # only when a wilderness is known hid the agency on every entry built from a
+    # rule with a blank `wilderness_area` -- 11 of 15 rows today.
+    if r.wilderness_area and r.agency:
         lines.append(f"  Wilderness: {r.wilderness_area}  |  Agency: {r.agency}")
+    elif r.wilderness_area:
+        lines.append(f"  Wilderness: {r.wilderness_area}")
+    elif r.agency:
+        lines.append(f"  Agency: {r.agency}")
     lines.append(f"  Permit: {r.permit_type}")
     lines.append(f"  Status: {r.status}")
     if r.fee_notes:
