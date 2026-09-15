@@ -424,7 +424,8 @@ The repository currently includes:
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it, and `source_url`/`verified_date`) and their individually-bookable sites
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it, `campsite_type`: which queue you book it in, and `source_url`/`verified_date`) and their individually-bookable sites
+- `data/booking_channels.csv` - how to book a campsite, scoped by agency and by class of site — the channel, what is *not* a channel, lead time, release-day mechanics and booking horizon
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
 - `data/park_access.csv` - park-level vehicle entrance fees, gate hours, and fee exemptions (distinct from a wilderness permit or a campsite reservation)
 - `data/passes.csv` - Sierra pass data used for optional coarse cross-crest
@@ -778,6 +779,45 @@ every group in the dataset is currently Californian: *"all our groups are in
 California"* is true today by coincidence of coverage, and inheriting statewide
 law off that coincidence would break silently the first time a Nevada or Oregon
 group is added. There's a test for exactly that.
+
+### Booking mechanics belong to the agency, not the campsite
+
+`data/campgrounds.csv` answers *what is this place like*.
+`data/booking_channels.csv` answers *how do I book it*, and it is a separate
+table for the same reason `regulations.csv` is: the answer belongs to the
+agency.
+
+EBRPD's reservations line, its walk-in counter at District HQ, and the fact
+that its published reservations email accepts no reservations are true of
+every campground the District runs. Stored per campground, that text sat in
+nine rows and would have sat in twenty-one once the rest of the District's
+parks landed — the same shape as the California Campfire Permit copied into
+seven `permits.csv` rows, which drifted five ways before anyone noticed.
+
+Two axes select a channel:
+
+| Axis | What it is | Why both |
+|---|---|---|
+| `scope_type`/`scope_value` | `agency`/`ebrpd`, resolved by the same `scope_applies()` regulations use | Booking mechanics are the second scoped table — what that function was split out for |
+| `applies_to` | the class of site sold: `family`, `group`, `backpack`, or `all` | EBRPD's split *is* the answer: family sites book online, group and backpack sites are phone-only and cannot be booked online at all |
+
+A channel scoped `all` is returned *alongside* the class-specific one rather
+than instead of it, the same specific-plus-general layering `regulations_for`
+does. That stores the District-wide contact once while per-class method, lead
+time and horizon stay separate — family sites need 2 business days, group
+sites 3.
+
+Two fields earn their place by being the kind of wrong you discover too late.
+`not_accepted` holds what *looks* like a channel and is not: someone who
+emails EBRPD's published reservations address and waits has not booked
+anything, and finds out when the site is gone. `horizon_as_of` dates the
+booking window, because a rolling horizon is a fact that expires and reads as
+current forever if stored undated.
+
+A blank `campsite_type` on a campground resolves only agency-wide channels.
+Guessing `family` there would tell a backpacker to book online, which EBRPD
+does not allow.
+
 
 ### Rules do not stop where permits do
 

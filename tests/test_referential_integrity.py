@@ -71,7 +71,6 @@ def scoped(scope_type: str) -> set:
 # Listing them by name keeps the guard working: a MISSPELLED park still fails.
 UNKEYED_PARKS = {
     "Sunol Regional Wilderness",
-    "Anthony Chabot Regional Park",
     "Dumbarton Quarry Campground on the Bay",
 }
 
@@ -125,6 +124,14 @@ JOINS = [
      lambda: ids("permits.csv", "agency_id") | ids("trailheads.csv", "agency_id")),
     ("regulations[scope=jurisdiction] -> permits.jurisdiction",
      lambda: scoped("jurisdiction"), lambda: values("permits.csv", "jurisdiction")),
+    ("booking_channels[scope=agency] -> permits.agency_id | trailheads.agency_id",
+     lambda: {r["scope_value"].strip() for r in rows("booking_channels.csv")
+              if r["scope_type"].strip() == "agency" and r["scope_value"].strip()},
+     lambda: ids("permits.csv", "agency_id") | ids("trailheads.agency_id".split(".")[0] + ".csv",
+                                                   "agency_id")),
+    ("booking_channels.log_entry_ids -> permit_source_log.entry_id",
+     lambda: ids("booking_channels.csv", "log_entry_ids"),
+     lambda: values("permit_source_log.csv", "entry_id")),
     ("campgrounds.park -> trailheads.park | park_access.park",
      lambda: values("campgrounds.csv", "park") - UNKEYED_PARKS,
      lambda: values("trailheads.csv", "park") | values("park_access.csv", "park")),

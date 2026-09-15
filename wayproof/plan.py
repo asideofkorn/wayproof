@@ -34,6 +34,7 @@ from datetime import date
 from typing import Dict, List, Optional, Sequence
 
 from .access import ApproachRoute
+from .booking import BookingChannel, channels_for
 from .camping import Campground, Campsite, access_label
 from .model import Cluster, Peak, Trailhead
 from .approach import EntryConflict, choose_trailhead, entry_conflicts
@@ -68,6 +69,7 @@ class FacilitiesInfo:
     water_sources: List[WaterSource] = field(default_factory=list)
     water_status: Dict[str, WaterSourceLogEntry] = field(default_factory=dict)
     campgrounds: List[Campground] = field(default_factory=list)
+    booking_channels: List[BookingChannel] = field(default_factory=list)
     campsites: List[Campsite] = field(default_factory=list)
     park_access: Optional[ParkAccess] = None
 
@@ -273,6 +275,7 @@ class PlanResult:
                     {
                         "name": c.name,
                         "access_mode": c.access_mode or None,
+                        "campsite_type": c.campsite_type or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
                         "fee_notes": c.fee_notes,
@@ -337,6 +340,7 @@ def resolve_plan(
     water_source_log: Optional[Sequence[WaterSourceLogEntry]] = None,
     campgrounds: Optional[Sequence[Campground]] = None,
     campsites: Optional[Sequence[Campsite]] = None,
+    booking_channels: Optional[Sequence[BookingChannel]] = None,
     park_access: Optional[Sequence[ParkAccess]] = None,
     regulations: Optional[Sequence[Regulation]] = None,
     exit_trailhead: Optional[str] = None,
@@ -465,10 +469,22 @@ def resolve_plan(
         sites = [s for s in (campsites or []) if s.campground in cg_names]
         pa = next((p for p in (park_access or []) if trailhead.park and p.park == trailhead.park),
                   None)
-        if ws or cgs or sites or pa:
+        # One channel set per class of site present, so a trailhead serving both
+        # a backpack camp and a family campground shows both queues.
+        types = {c.campsite_type for c in cgs if c.campsite_type}
+        seen, chans = set(), []
+        for t in sorted(types) or [""]:
+            for ch in channels_for(booking_channels or [], t,
+                                   permit_group=trailhead.permit_group,
+                                   agency=trailhead.agency_id.split(";")):
+                if ch.channel_id not in seen:
+                    seen.add(ch.channel_id)
+                    chans.append(ch)
+        if ws or cgs or sites or pa or chans:
             facilities = FacilitiesInfo(
                 water_sources=ws, water_status=water_status,
                 campgrounds=cgs, campsites=sites, park_access=pa,
+                booking_channels=chans,
             )
 
     # The other end. Resolved from existing tables only: the exit's permit group
@@ -630,6 +646,17 @@ def format_plan_summary(result: PlanResult) -> str:
                                  f"(checked {status.checked_date})")
                 else:
                     lines.append(f"    - {w.name}: no availability check on file")
+        for ch in fac.booking_channels:
+            lines.append(f"  Booking -- {ch.applies_label} ({ch.scope_label}):")
+            for label, text in (("How", ch.method), ("Contact", ch.contact),
+                                ("NOT a channel", ch.not_accepted),
+                                ("Lead time", ch.lead_time),
+                                ("On release day", ch.release_mechanics)):
+                if text:
+                    lines.append(f"    {label}: {text}")
+            if ch.horizon:
+                asof = f" (as of {ch.horizon_as_of})" if ch.horizon_as_of else ""
+                lines.append(f"    Booking horizon{asof}: {ch.horizon}")
         for c in fac.campgrounds:
             lines.append(f"  Campground: {c.name} ({access_label(c)})")
             if c.reservation_method:

@@ -82,6 +82,17 @@ class Campground:
 
     See :data:`UNKNOWN_ACCESS_LABEL` -- blank is a stated gap, not a default.
     """
+    campsite_type: str = ""
+    """Which class of site the agency sells this as: ``family``, ``group`` or
+    ``backpack``. Keys into ``data/booking_channels.csv``.
+
+    A different axis from :attr:`access_mode`, not a restatement of it. Access
+    mode is how you physically reach the site; this is which queue you book it
+    in, and EBRPD's two differ -- a group camp can be drive-in, and Anthony
+    Chabot's family campground contains hike-in sites. Blank means unknown, and
+    :func:`wayproof.booking.channels_for` then returns only agency-wide
+    channels rather than guessing a class.
+    """
     has_restroom: bool = False
     restroom_type: str = ""
     reservation_method: str = ""
@@ -138,6 +149,7 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             park=_str_field(row, "park"),
             land_agency=_str_field(row, "land_agency"),
             access_mode=access_mode,
+            campsite_type=_str_field(row, "campsite_type"),
             has_restroom=_bool_field(row, "has_restroom"),
             restroom_type=_str_field(row, "restroom_type"),
             reservation_method=_str_field(row, "reservation_method"),

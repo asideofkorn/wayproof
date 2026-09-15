@@ -52,28 +52,28 @@ def test_load_campgrounds_reads_committed_data():
     sunol = by_name["Sunol Backpack Camp"]
     assert sunol.has_restroom is True
     assert sunol.restroom_type == "pit toilet"
-    # Phone only. This row used to name ReserveAmerica; EBRPD's reservations
-    # page states that backpack and group campsites are not bookable online at
-    # all, and sending someone to a website that cannot sell them the site is
-    # the "implies online booking where the channel is phone-only" failure.
-    assert "Phone only" in sunol.reservation_method
-    assert "ReserveAmerica" not in sunol.reservation_method
+    assert sunol.campsite_type == "backpack"
 
 
-def test_family_campgrounds_book_online_and_backpack_ones_do_not():
-    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
-    for name in ("Del Valle Family Campground", "Anthony Chabot Campground",
-                 "Dumbarton Quarry Campground on the Bay"):
-        assert "reserveamerica.com" in by_name[name].reservation_method.lower(), name
-    for name in ("Boyd Camp", "Sunol Backpack Camp", "Eagle Springs"):
-        assert "Phone only" in by_name[name].reservation_method, name
-
-
-def test_every_campground_warns_that_email_books_nothing():
-    # EBRPD publishes a reservations email address that accepts no
-    # reservations. Someone who emails it and waits has not booked a site.
+def test_the_district_wide_contact_is_not_copied_into_every_campground():
+    # It was, in nine rows, and would have been in twenty-one. That is the shape
+    # of the campfire permit copied into seven permits.csv rows, which drifted
+    # five ways. It lives in booking_channels.csv now, once.
     for c in load_campgrounds(CAMPGROUNDS):
-        assert "no reservation is accepted by email" in c.reservation_contact.lower(), c.name
+        assert c.reservation_contact == "", (
+            f"{c.name} carries a contact of its own; agency-wide booking "
+            "mechanics belong in data/booking_channels.csv")
+        # "option 2" is the reservations line. Anthony Chabot's row keeps its
+        # PARK office number, which shares the toll-free root but is a different
+        # option and extension -- that is campground-specific, not duplicated.
+        assert "option 2" not in c.reservation_method, c.name
+
+
+def test_campsite_type_is_set_for_every_campground():
+    # Blank means booking resolves only agency-wide channels, so a backpacker
+    # would never be told their sites are phone-only.
+    blank = [c.name for c in load_campgrounds(CAMPGROUNDS) if not c.campsite_type]
+    assert blank == [], f"campgrounds with no campsite_type: {blank}"
 
 
 def test_load_campgrounds_missing_file_returns_empty(tmp_path):
@@ -208,18 +208,28 @@ def test_the_ohlone_corridor_camps_are_hike_in_and_the_family_ones_are_not():
 
 
 def test_an_unverified_campground_says_so_rather_than_reading_as_checked():
-    # Anthony Chabot and Dumbarton Quarry were built from web-search summaries
-    # of pages nobody here could open. They carry a source to check against and
-    # a blank verified_date, which is the difference between "not yet confirmed"
-    # and "confirmed" -- and their notes must say which facts are in doubt.
-    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
-    for name in ("Anthony Chabot Campground", "Dumbarton Quarry Campground on the Bay"):
-        cg = by_name[name]
-        assert cg.source_url.startswith("https://www.ebparks.org/"), name
-        assert cg.verified_date == "", f"{name} must not claim a verification"
-        assert "unconfirmed" in cg.notes.lower(), name
-        # Absent is not free: no fee was invented for a row nobody has checked.
-        assert cg.fee_notes == "", name
+    # Dumbarton Quarry was built from web-search summaries of a page nobody here
+    # could open. It carries a source to check against and a blank
+    # verified_date, which is the difference between "not yet confirmed" and
+    # "confirmed", and its notes must say which facts are in doubt.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}[
+        "Dumbarton Quarry Campground on the Bay"]
+    assert cg.source_url.startswith("https://www.ebparks.org/")
+    assert cg.verified_date == "", "must not claim a verification"
+    assert "unconfirmed" in cg.notes.lower()
+    # Absent is not free: no fee was invented for a row nobody has checked.
+    assert cg.fee_notes == ""
+
+
+def test_anthony_chabot_was_promoted_from_guesswork_to_a_read_source():
+    # Added from web-search summaries, then replaced by EBRPD's own park page
+    # and brochure. A verified row must carry the facts that read earned.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Anthony Chabot Campground"]
+    assert cg.verified_date == "2026-09-15"
+    assert "$35/night" in cg.fee_notes and "$25/night" in cg.fee_notes
+    # The three separate camping rates are why access_mode is mixed here.
+    assert "35 feet" in cg.notes.lower(), "the RV length limit is a trip-blocking fact"
+    assert "10:00 PM" in cg.nightly_entry_cutoff
 
 
 def test_every_committed_campground_states_its_access_mode():
