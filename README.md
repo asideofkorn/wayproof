@@ -675,6 +675,37 @@ because an agent matching "Ralston Peak" to zone "45 Ralston" is exactly the
 inference the data doesn't support. Resolving it needs the official zone map's
 geometry, and until that's read it stays an open question.
 
+## Two Ends: A Shape You Are Not Asked To Store
+
+A trip has one end or two, and which is a **choice the caller makes** — the same
+peak from the same trailhead is an out-and-back for one party and a one-way for
+the next. So route shape is not a column. It is not on `trailheads.csv`, for the
+reason destination zones are not either: a trailhead is a *place*, and "loop" is
+a property of a *trip through places*.
+
+It arrives as one optional input, `--exit`, and the shape is **derived**:
+
+| `--exit` | shape | what `plan` does |
+|---|---|---|
+| omitted | `unknown` | States that it models one end only, and names `--exit` as the remedy. Never assumes you return. |
+| same as entry | `returns_to_start` | Says there is no other end to arrange. |
+| a different trailhead | `one_way` | Resolves that end's permit group and entrance fee, and flags it when the two ends sit under different permit groups. |
+
+`returns_to_start` deliberately does **not** distinguish a loop from an
+out-and-back. The question it serves — *what do I need at the other end?* — only
+asks whether there **is** another end, and `wayproof/approach.py` already
+computes the loop/out-and-back difference for the distance it affects. Storing it
+again would be one fact in two places, which is what
+`tests/test_notes_split.py` exists to prevent.
+
+**What two ends still do not give you is the middle.** Two endpoints do not
+determine the path between them: an out-and-back from Onion Valley over Kearsarge
+Pass into Sequoia & Kings Canyon and back finishes where it started and still
+crosses an agency boundary. So both modelled shapes say plainly that a boundary
+crossed in between is unresolved, and the JSON carries
+`route_between_ends_modelled: false`. Closing *that* needs a route entity, which
+this project does not have — the atom of the data model is a peak.
+
 ## Regulations: Stored Once, Inherited
 
 `data/permits.csv` answers *how do I get and keep a permit* — quota, release
@@ -968,6 +999,7 @@ python cli.py --open-questions
 |------|---------|-------------|
 | `objectives` | required | One or more objective (peak) names, positional |
 | `--date` | required | Planned trip date (`YYYY-MM-DD`) |
+| `--exit` | none | Trailhead you finish at, when the trip does not end where it started. Pass the same name as the entry for an explicit out-and-back or loop. **Omitted means unknown, not returns-to-start** — absence is never read as a route shape. Resolves the exit's permit group (and compares it against the entry's) and its park entrance fee, which lands in the cost roll-up. |
 | `--peaks-file` | `data/peaks.csv` | Core peak dataset: name, coordinates, elevation |
 | `--collections-file` | `data/collections/sps.csv` | Collection metadata (list, section, mileage, etc.) joined by name; pass `''` for core geography alone |
 | `--list` | `all` | Keep only this `list` value; pass `SPS` to restrict to the 247-peak list |

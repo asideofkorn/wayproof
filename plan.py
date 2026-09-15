@@ -89,6 +89,11 @@ def _parse_args(argv=None) -> argparse.Namespace:
     p.add_argument("--regulations-file", default="data/regulations.csv",
                    help="Rules in force once you hold the permit "
                         "(default data/regulations.csv)")
+    p.add_argument("--exit", dest="exit_trailhead", metavar="TRAILHEAD",
+                   help="Trailhead you finish at, if the trip does not end where it "
+                        "started. Give the same name as the entry for an explicit "
+                        "out-and-back or loop. Omitted means UNKNOWN, not "
+                        "returns-to-start -- absence is never read as a route shape.")
     p.add_argument("--output", "-o", help="Write the resolved plan to this JSON file")
     return p.parse_args(argv)
 
@@ -114,7 +119,8 @@ def main(argv=None) -> int:
                            approaches=approaches, water_sources=water_sources,
                            water_source_log=water_source_log, campgrounds=campgrounds,
                            campsites=campsites, park_access=park_access,
-                           regulations=regulations)
+                           regulations=regulations,
+                           exit_trailhead=args.exit_trailhead)
 
     print(format_plan_summary(result))
 

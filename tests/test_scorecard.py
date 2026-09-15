@@ -27,6 +27,7 @@ from scorecard import (
     ANSWERED,
     OMITTED,
     PARTIAL,
+    NO_MODEL,
     NOT_SCORED,
     QUESTIONS,
     VERDICT_MEANING,
@@ -256,15 +257,45 @@ def test_each_tier_is_represented():
     assert {1, 2, 3} <= tiers, f"tiers covered: {tiers}"
 
 
-def test_no_model_is_not_reported_as_zero():
-    # Every no-model cell belongs to a structural question, and those are counted
-    # once rather than per objective. Printing the cell count gave "no-model 0"
-    # directly beneath a list of five questions the schema cannot express --
-    # a number that reads as "no schema gaps" when there are five.
-    report = format_report(_built())
+def test_no_model_reports_whole_questions_and_only_the_real_gaps():
+    # Two ways this line has been wrong. First it printed the CELL count, which
+    # was 0 because structural rows are counted once -- "no-model 0" directly
+    # beneath a list of five questions the schema cannot express. The fix counted
+    # structural questions instead, which was right only while every structural
+    # row happened to score no-model.
+    #
+    # Q5 broke that: it is still constant for every objective, but it now scores
+    # `declined` because `--exit` gave the other end somewhere to live. Counting
+    # structural rows would overstate the schema gap by one, so the line counts
+    # rows whose single constant verdict IS no-model.
+    built = _built()
+    report = format_report(built)
     tail = report.split("what each verdict asks of you:")[1]
     line = next(l for l in tail.splitlines() if l.strip().startswith("no-model"))
+
     structural = [q for q in QUESTIONS if q.structural]
-    assert structural, "this test assumes at least one structural question"
-    assert f"{len(structural):5d}" in line, f"no-model line understates the gap: {line!r}"
+    gaps = [q for q in structural
+            if [v for v in VERDICTS if built["scores"][q.qid][v]] == [NO_MODEL]]
+    assert gaps, "this test assumes at least one genuine schema gap"
+    assert len(gaps) < len(structural), (
+        "vacuous unless the two counts differ -- if every structural row is a "
+        "schema gap again, this test no longer distinguishes them"
+    )
+    assert f"{len(gaps):5d}" in line, f"no-model line misstates the gap: {line!r}"
+    assert f"{len(structural):5d}" not in line, (
+        f"no-model line counts constant rows, not schema gaps: {line!r}"
+    )
     assert "whole questions" in line
+
+
+def test_the_structural_block_labels_each_rows_verdict():
+    # A constant `declined` and a constant `no-model` ask for different work, so
+    # listing them together unlabelled reads as five schema gaps.
+    built = _built()
+    report = format_report(built)
+    block = report.split("same verdict for every objective")[1]
+    for q in (q for q in QUESTIONS if q.structural):
+        seen = [v for v in VERDICTS if built["scores"][q.qid][v]]
+        assert f"{q.qid} tier {q.tier}  [{seen[0]}]" in block, (
+            f"{q.qid} is listed without its verdict"
+        )

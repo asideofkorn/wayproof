@@ -37,6 +37,33 @@ no way to express an entry and an exit. `Cluster.trailhead` is a single field.
 **Exposes.** The schema assumes out-and-back. A point-to-point traverse is a
 normal objective, not an edge case.
 
+**Fixed 2026-09-15 — the two ends, not the middle.** `plan.py "Mission Peak"
+--exit "Del Valle"` now resolves both ends:
+
+```
+Access
+  Entry: Stanford Ave Staging Area  (west side)
+  Exit: Del Valle (Lichen Bark)  (east side)
+  ENDS ONLY, NOT THE ROUTE BETWEEN THEM: ...
+
+Cost
+  Park entrance (Del Valle Regional Park (at the exit)): $10 (weekends & holidays,
+    April through Labor Day)
+```
+
+That `$10` was in `park_access.csv` from the start and reachable from nothing,
+which is the same held-and-hidden shape as S2's campsite fee. Route shape is
+derived from whether a plan names one end or two rather than stored: which end
+you finish at is a choice, not a fact about the terrain. Scorecard Q5 moved
+`no-model` → `declined` — declining is not answering, and a default plan still
+names no exit.
+
+**What is still open**, and why this story is not deleted: the route *between* the
+ends. Two endpoints do not determine the path, so an agency boundary crossed in
+the middle is unresolved, and the `29 miles apart` part of the true answer is not
+computed. That needs the route entity S8 describes. The party's own $46 backpack
+camp and $43 Del Valle campground were already handled by S2.
+
 ---
 
 ### S2 — The fee answer is wrong, not merely incomplete

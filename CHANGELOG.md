@@ -6,6 +6,74 @@ All notable changes to this project are documented here. The format is based on
 ## [Unreleased]
 
 ### Fixed
+- **`plan` can now be told where the trip ends, and Ohlone S1 is answered.**
+  That story is a completed trip whose entry was Del Valle and exit Stanford Ave,
+  ~29 miles apart in two different park units — and Del Valle's `$10` entrance fee
+  had been sitting in `park_access.csv` reachable from nothing. `--exit` names the
+  other end; the exit's entrance fee now lands in the cost roll-up labelled
+  `(at the exit)`, and its permit group is compared against the entry's, which is
+  the one computable part of the reciprocity question `interagency_note` argues in
+  prose. Route shape is **derived, not stored**: omitted `--exit` is `unknown`,
+  the same name is `returns_to_start`, a different one is `one_way`. It is not a
+  column on `trailheads.csv` for the reason destination zones are not either — a
+  trailhead is a place, "loop" is a property of a trip through places — and
+  `returns_to_start` does not distinguish a loop from an out-and-back, because the
+  question only asks whether there *is* another end and `approach.py` already
+  computes that difference for the distance it affects. **Omitting `--exit` is
+  never read as returning to start**, which is the commonest case and so the
+  tempting default. An unmatched or ambiguous name fails loudly in the `Access`
+  block rather than silently reverting to one end.
+- **Scorecard Q5 moves `no-model` → `declined`, and `no-model` drops 5 → 4.**
+  "The schema has no place to put this yet" stopped being true once `--exit`
+  existed; what remains is uncertainty only the caller can settle. Declining is
+  not answering, and a test pins Q5 at zero `answered` for a default plan. Q5's
+  `limit` states where naming an exit still comes up empty: `park_access.csv` has
+  **one row**, and no Sierra trailhead carries a `park` at all, so the parking half
+  — the half the question is named for — is answerable for the Ohlone trip and
+  empty across the Sierra.
+- **The scorecard report conflated "constant" with "schema gap".** `structural`
+  means a row scores the same for every objective; `no-model` means the schema
+  cannot express it. Those coincided until Q5 became a constant `declined`, at
+  which point counting structural rows as schema gaps overstated the gap by one.
+  The report now counts rows whose single constant verdict *is* `no-model`, and
+  labels each constant row with its verdict, since a constant `declined` and a
+  constant `no-model` ask for different work.
+- **Still not modelled, and now said out loud:** the route *between* two ends. Two
+  endpoints do not determine the path, so an out-and-back from Onion Valley over
+  Kearsarge Pass into SEKI finishes where it started and still crosses an agency
+  line. Both modelled shapes print that caveat and the JSON carries
+  `route_between_ends_modelled: false`.
+- **Eleven permit groups never said which document is valid.** `carry` shipped
+  with four groups populated; Scorecard Q6 read `no-data` for **385 of 462**
+  objectives, because the equipment half resolved from `regulations.csv` and
+  nothing said which piece of paper is the permit. All eleven are filled: Q6
+  `no-data` **385 → 0**, `answered` **35 → 49**. The ceiling is 49 because
+  `answered` needs both halves and only four groups have a `food_storage` rule on
+  file — so `food_storage`, not `carry`, is what now binds this row. The answers
+  contradict each other, which is why one per group was necessary: Inyo NF
+  requires a printed, signed permit and explicitly rejects a reservation letter;
+  **Yosemite forbids printing at home entirely** and issues in person only;
+  **Sequoia NF issues Golden Trout permits by email**, so there an emailed
+  document *is* the permit; Humboldt-Toiyabe has nothing to book at all, so
+  finding no reservation online is not evidence no permit is needed. Evidence
+  grade is stated, not dressed up: recreation.gov and fs.usda.gov were both
+  unreachable, so these are `websearch` entries citing the official page each
+  came from, each saying the page text was not captured verbatim, and
+  `verified_date` is deliberately not advanced — one field was checked, not the
+  row. `none` gets a value too: "no permit required" is not "nothing to carry".
+- **`plan` assumed a single-ended trip and never said so.** Ohlone S1 is a
+  completed trip whose two ends were ~29 miles apart in different park units, and
+  `permits.py` rests its reciprocity conclusion on "the single-trailhead loop
+  trips this tool plans". The scorecard has always known — Q5 "What do I need at
+  the other end?" scores `no-model` for every objective — and the tool told the
+  reader nothing, the same held-and-hidden shape as the rules above. `plan` now
+  states the assumption in its `Access` block, before `Cost` (which is exactly
+  what a one-way trip's other end is missing from), and the JSON carries
+  `route_shape: "unknown"` and `exit_modelled: false`. **Deliberately not a
+  coverage fix:** route shape is still not in the dataset, the disclosure states
+  an assumption rather than claiming a shape, and Q5 stays `no-model` with a test
+  pinning it there — admitting a gap is not a place to put an exit. `"unknown"`
+  rather than `"out_and_back"` for the same reason a blank fee is not `free`.
 - **`plan` omitted every rule the project holds.** Scorecard Q6 "What must I
   carry?" read `answered 0 / omitted 49 / no-data 413`: `regulations_for()`
   resolved 18 rules for Desolation — including a hard-sided bear canister
