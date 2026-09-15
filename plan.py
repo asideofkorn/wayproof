@@ -39,6 +39,7 @@ from wayproof.access import load_approaches
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
+from wayproof.regulations import load_regulations
 from wayproof.permits import load_permits
 from wayproof.plan import resolve_plan, format_plan_summary
 from wayproof.water import load_water_sources, load_water_source_log
@@ -85,6 +86,9 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    help="Individually-bookable campsites (default data/campsites.csv)")
     p.add_argument("--park-access-file", default="data/park_access.csv",
                    help="Park-level entrance fee/hours dataset (default data/park_access.csv)")
+    p.add_argument("--regulations-file", default="data/regulations.csv",
+                   help="Rules in force once you hold the permit "
+                        "(default data/regulations.csv)")
     p.add_argument("--output", "-o", help="Write the resolved plan to this JSON file")
     return p.parse_args(argv)
 
@@ -104,11 +108,13 @@ def main(argv=None) -> int:
     campgrounds = load_campgrounds(args.campgrounds_file)
     campsites = load_campsites(args.campsites_file)
     park_access = list(load_park_access(args.park_access_file).values())
+    regulations = load_regulations(args.regulations_file)
 
     result = resolve_plan(args.objectives, trip_date, peaks, trailheads, permits,
                            approaches=approaches, water_sources=water_sources,
                            water_source_log=water_source_log, campgrounds=campgrounds,
-                           campsites=campsites, park_access=park_access)
+                           campsites=campsites, park_access=park_access,
+                           regulations=regulations)
 
     print(format_plan_summary(result))
 

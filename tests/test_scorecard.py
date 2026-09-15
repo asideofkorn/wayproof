@@ -25,6 +25,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(
 import scorecard
 from scorecard import (
     ANSWERED,
+    OMITTED,
+    PARTIAL,
     NOT_SCORED,
     QUESTIONS,
     VERDICT_MEANING,
@@ -164,15 +166,58 @@ def test_by_question_rejects_an_unknown_id():
     assert scorecard.main(["--by-question", "Q999"]) == 2
 
 
-# -- the finding this exists to make visible --------------------------------
+# -- how the report presents a bad row --------------------------------------
 
-def test_the_worst_tier_one_row_is_reported_not_averaged():
-    # Q6 "What must I carry?" answers 0 of 462: the rules exist for 49 and
-    # plan.py surfaces none of them. An average would hide that behind Q2's 309.
+def test_tier_one_rows_are_listed_worst_first_and_never_averaged():
+    # A mean would hide the binding row. When Q6 answered 0 of 462, Q2's 309 and
+    # Q3's 286 would have averaged it into looking like two thirds coverage.
+    built = _built()
+    report = format_report(built)
+    tier1 = [q for q in QUESTIONS if q.tier == 1 and not q.structural]
+    block = report.split("tier 1 -- ")[1]
+    listed = [q.qid for q in tier1 if f"{q.qid} answered" in block]
+    assert set(listed) == {q.qid for q in tier1}, "every tier-1 row must be listed"
+    order = [block.index(f"{q.qid} answered") for q in
+             sorted(tier1, key=lambda q: built["scores"][q.qid][ANSWERED])]
+    assert order == sorted(order), "tier-1 rows must read worst first"
+    worst = min(built["scores"][q.qid][ANSWERED] for q in tier1)
+    assert f"At most {worst} objectives can have all" in report
+
+
+def test_the_bound_is_the_weakest_row_not_the_mean():
+    built = _built()
+    tier1 = [q for q in QUESTIONS if q.tier == 1 and not q.structural]
+    counts = [built["scores"][q.qid][ANSWERED] for q in tier1]
+    worst = min(counts)
+    assert worst < sum(counts) / len(counts), (
+        "this test is vacuous unless the rows differ -- pick a different assertion"
+    )
+    assert f"At most {worst} objectives" in format_report(built)
+
+
+# -- Q6 needs both halves ----------------------------------------------------
+
+def test_q6_is_only_answered_when_both_halves_reach_the_reader():
+    # The README's falsification criterion is about the DOCUMENT -- "wrong if it
+    # says 'required' without saying that a digital reservation confirmation is
+    # not a permit" -- not about equipment. A proxy that scored only the
+    # food-storage rule would have gone green on half the question.
     built = _built()
     q6 = built["scores"]["Q6"]
-    assert q6[ANSWERED] == 0
-    assert "At most 0 objectives can have all" in format_report(built)
+    assert q6[ANSWERED], "some objectives should have both halves"
+    assert q6[PARTIAL], "some should have exactly one, and must not read as answered"
+    q = next(x for x in QUESTIONS if x.qid == "Q6")
+    assert "both halves" in q.limit
+
+
+def test_nothing_is_held_and_hidden_any_more():
+    # OMITTED means the project holds a fact and no surface shows it. The
+    # regulations subsystem was the only instance: 193 cells across Q6, Q12, Q13
+    # and Q14, resolved for the website and absent from plan.py.
+    built = _built()
+    still_hidden = {q.qid: built["scores"][q.qid][OMITTED]
+                    for q in QUESTIONS if built["scores"][q.qid][OMITTED]}
+    assert still_hidden == {}, f"data held but not surfaced: {still_hidden}"
 
 
 def test_question_ids_follow_readme_order():

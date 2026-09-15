@@ -138,11 +138,21 @@ def _q5_other_end(c: Ctx) -> str:
 
 
 def _q6_carry(c: Ctx) -> str:
-    if not c.category("food_storage"):
-        return NO_DATA
-    # The rule exists. Does plan.py show it? resolve_plan takes no `regulations`
-    # argument at all, so it cannot -- for any objective, ever.
-    return OMITTED
+    """Both halves, because the README's 'wrong if' names the second one.
+
+    Equipment (a bear canister) comes from the food-storage rule. The *document*
+    -- "a digital reservation confirmation is not a permit" -- comes from
+    `permits.carry`. Scoring only the first would have let this row go green
+    while the thing the question says makes an answer wrong was still prose in
+    `notes`.
+    """
+    equipment = c.category("food_storage")
+    document = bool(c.rule and c.rule.carry.strip())
+    if equipment and document:
+        return ANSWERED
+    if equipment or document:
+        return PARTIAL
+    return NO_DATA
 
 
 def _q7_cost(c: Ctx) -> str:
@@ -184,18 +194,18 @@ def _q12_fire(c: Ctx) -> str:
     local = any(r.category == "fire" and r.scope_type in ("permit_group", "wilderness")
                 for r in c.regs)
     if local:
-        return OMITTED  # held, and plan.py shows no regulations
+        return ANSWERED
     # Only the statewide campfire permit applies, which the README itself says
     # reads as permission when nothing local sits on top of it.
     return PARTIAL if c.category("fire") else NO_DATA
 
 
 def _q13_dog(c: Ctx) -> str:
-    return OMITTED if c.category("pets") else NO_DATA
+    return ANSWERED if c.category("pets") else NO_DATA
 
 
 def _q14_camp(c: Ctx) -> str:
-    return OMITTED if c.category("camping") else NO_DATA
+    return ANSWERED if c.category("camping") else NO_DATA
 
 
 def _q15_reciprocity(c: Ctx) -> str:
@@ -245,8 +255,12 @@ QUESTIONS: List[Question] = [
     Question("Q5", 1, "What do I need at the other end?",
              "Wrong if it treats exit parking as unrelated.", _q5_other_end, structural=True),
     Question("Q6", 1, "What must I carry?",
-             "Wrong if it says 'required' without saying a confirmation is not a permit.",
-             _q6_carry),
+             "Wrong if it says 'required' without saying that a digital reservation "
+             "confirmation is not a permit.", _q6_carry,
+             limit="ANSWERED needs both halves: the equipment rule AND a stated "
+                   "`carry` requirement. 11 of 15 permit groups have no `carry` "
+                   "value, so most objectives are PARTIAL -- the food-storage rule "
+                   "reaches them and nothing says which document is valid."),
     Question("Q7", 2, "What will it cost, all in?",
              "Wrong if entrance, parking and reservation fees are reported away "
              "from the headline figure.", _q7_cost,

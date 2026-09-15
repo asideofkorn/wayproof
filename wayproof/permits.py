@@ -164,6 +164,17 @@ class PermitRule:
     Fork of Lone Pine Creek approaches, which need an ordinary Inyo NF permit,
     and that fact was previously buried in seven sentences of prose.
     """
+    carry: str = ""
+    """What you must physically have on you, and what does not count as it.
+
+    A sibling of :attr:`excludes`, and a field for the same reason: being wrong
+    about it is discovered at the trailhead and cannot be fixed there. A
+    Desolation group holding a recreation.gov confirmation on a phone does not
+    hold a permit, and the README's own falsification criterion for "What must I
+    carry?" is *wrong if it says "required" without saying that a digital
+    reservation confirmation is not a permit*. That fact was prose in ``notes``,
+    where it read as one clause among cancellation policy and fire-scar hazards.
+    """
     # Structured release phases from data/release_policies.csv, if migrated
     # (see wayproof.release_policy). Empty for groups still on the
     # generic reservation_window_days fallback below (currently Yosemite).
@@ -276,6 +287,7 @@ def load_permits(
             notes=_str_field(row, "notes"),
             interagency_note=_str_field(row, "interagency_note"),
             excludes=_str_field(row, "excludes"),
+            carry=_str_field(row, "carry"),
             release_phases=phases_by_group.get(group, []),
             source_last_updated=_str_field(row, "source_last_updated"),
             verified_date=_str_field(row, "verified_date"),
@@ -477,6 +489,7 @@ class ClusterPermitInfo:
     peak_note: str = ""  # e.g. "for Mount Russell only" when this overrides the default
     source_last_updated: str = ""
     verified_date: str = ""
+    carry: str = ""            # what you must physically have on you
     approach_name: str = ""    # named route this entry is specific to, if any
     approach_status: str = ""  # "confirmed" / "unconfirmed" / "" (trailhead default)
 
@@ -498,6 +511,7 @@ def _permit_entry(
         status=permit_status(rule, trip_date, today),
         notes=rule.notes,
         interagency_note=rule.interagency_note,
+        carry=rule.carry,
         peak_note=peak_note,
         source_last_updated=rule.source_last_updated,
         verified_date=rule.verified_date,
@@ -640,6 +654,10 @@ def format_permit_entry_body(r: ClusterPermitInfo) -> List[str]:
         lines.append(f"  Permit fee: {r.fee_notes}")
     if r.apply_url:
         lines.append(f"  Apply: {r.apply_url}")
+    if r.carry:
+        # Above the notes and flagged: a party that reads this one line late is
+        # a party turned back at the trailhead.
+        lines.append(f"  MUST CARRY: {r.carry}")
     if r.notes:
         lines.append(f"  Note: {r.notes}")
     if r.interagency_note:

@@ -45,6 +45,7 @@ from .permits import (
     clusters_permit_info,
     format_permit_entry_body,
 )
+from .regulations import Regulation, group_by_category, regulations_for
 from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
@@ -88,6 +89,15 @@ class PlanResult:
     warnings: List[str] = field(default_factory=list)
     open_questions: List[OpenQuestion] = field(default_factory=list)
     facilities: Optional[FacilitiesInfo] = None
+    regulations: List[Regulation] = field(default_factory=list)
+    """What applies once you hold the permit, resolved across all four scopes.
+
+    The project has held these since the regulations refactor and the website
+    has rendered them since; `plan` did not, so the flagship command omitted the
+    Desolation bear-canister requirement -- a $5,000 fine under 36 CFR
+    261.58(cc) -- for every objective. Held data the surface hides is worse than
+    data nobody entered: nothing signals the gap.
+    """
     costs: List["CostComponent"] = field(default_factory=list)
     """Every component of this trip that may charge, permit and otherwise.
 
@@ -133,6 +143,15 @@ class PlanResult:
                 "totalled": False,
                 "components": [c.to_dict() for c in self.costs],
             }
+        if self.regulations:
+            d["regulations"] = [
+                {"label": label,
+                 "rules": [{"id": r.regulation_id, "category": r.category,
+                            "summary": r.summary, "citation": r.citation,
+                            "scope": r.scope_label, "inherited": r.inherited,
+                            "source_url": r.source_url} for r in items]}
+                for label, items in group_by_category(self.regulations)
+            ]
         d["permits"] = [
             {
                 "agency": e.agency,
@@ -222,6 +241,7 @@ def resolve_plan(
     campgrounds: Optional[Sequence[Campground]] = None,
     campsites: Optional[Sequence[Campsite]] = None,
     park_access: Optional[Sequence[ParkAccess]] = None,
+    regulations: Optional[Sequence[Regulation]] = None,
     today: Optional[date] = None,
 ) -> PlanResult:
     """Resolve access and permit logistics for a specific, named set of objectives.
@@ -353,6 +373,13 @@ def resolve_plan(
                 campgrounds=cgs, campsites=sites, park_access=pa,
             )
 
+    applicable: List[Regulation] = []
+    if trailhead is not None and regulations:
+        rule = permits.get(trailhead.permit_group)
+        if rule is not None:
+            applicable = regulations_for(regulations, rule.permit_group, rule.agency_ids,
+                                         rule.jurisdiction, rule.wilderness_area)
+
     costs = trip_costs(permit_entries, facilities, entry_unresolved=bool(conflicts))
 
     return PlanResult(
@@ -367,6 +394,7 @@ def resolve_plan(
         warnings=warnings,
         open_questions=questions,
         facilities=facilities,
+        regulations=applicable,
         costs=costs,
     )
 
@@ -463,6 +491,26 @@ def format_plan_summary(result: PlanResult) -> str:
             lines.append("")
     else:
         lines.append("  No permit data resolved for this trailhead.")
+        lines.append("")
+
+    if result.regulations:
+        lines.append("Rules in force")
+        lines.append("  What applies once you hold the permit. A rule scoped to anything "
+                     "other than")
+        lines.append("  this permit is inherited -- state law, a wilderness rulebook or an "
+                     "agency")
+        lines.append("  policy -- and applies to other permits in the same scope too.")
+        for label, items in group_by_category(result.regulations):
+            lines.append(f"  {label}")
+            for rule in items:
+                bits = [rule.summary]
+                if rule.citation:
+                    bits.append(f"({rule.citation})")
+                if rule.inherited:
+                    bits.append(f"[{rule.scope_label}]")
+                lines.append(f"    - {' '.join(bits)}")
+        lines.append("  Summaries only. Each rule's full text, source and last check are "
+                     "published per trailhead.")
         lines.append("")
 
     lines.append("Known per-objective mileage (official round trip, from source data)")
