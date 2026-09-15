@@ -5,6 +5,28 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Removed
+- **The experimental geographic clustering feature.** DBSCAN grouping, TSP
+  sequencing, itinerary building, the JSON/chart exporters and their diagnostics
+  — `clustering.py`, `tsp.py`, `pipeline.py`, `export.py`, `visualize.py`,
+  `diagnostics.py`, `manual.py`, three plotting scripts, and 6.7 MB of generated
+  charts and examples dated before the repositioning commit.
+  - It was never wired into `plan.py` or the published site, and it was the
+    single longest section of the README — 238 lines explaining the part that
+    isn't the product, against 62 for `plan`.
+  - Kept because `plan.py` and the site depend on them: `distances.py`
+    (haversine, Naismith), `approach.py` (trailhead choice, entry conflicts),
+    `passes.py` and `scripts/assign_trailheads.py` (data preparation), and
+    `Cluster` in `model.py`.
+  - `cli.py` drops from 347 lines and 38 flags to two read-only modes,
+    `--permit-sources` and `--open-questions`. Trip planning is `plan.py`.
+  - `tests/test_pipeline.py` keeps the 20 geometry, loading and approach tests
+    and drops the 18 that covered the removed feature.
+  - Dependencies drop to `pandas` and `numpy`; scikit-learn, scipy, networkx,
+    geopy and matplotlib are no longer needed.
+  - README falls from 1,696 lines to 1,275. All of it is recoverable from git
+    history.
+
 ### Added
 - **A general duplication check**, as a derived question rather than a test.
   The pinned tests only protect facts already moved; a new one duplicated

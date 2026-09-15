@@ -1,23 +1,21 @@
-"""Sierra trip-logistics toolkit.
+"""Source-backed trip logistics: what access applies, what permit governs it,
+when you must act, and what evidence stands behind the answer.
 
-Resolve source-backed Sierra trip logistics and generate experimental SPS
-candidate groupings. Geographic grouping and TSP ordering are discovery aids,
-not verified mountain routes.
+The experimental geographic clustering and TSP ordering that used to live here
+were removed. They grouped SPS peaks by proximity and sequenced them, were
+never wired into ``plan`` or the published site, and drew more documentation
+than the product. Recoverable from git history if wanted.
 """
 
-from .model import Peak, Cluster, Trailhead
-from .data_loader import load_peaks, load_trailheads
+from .approach import approach_leg, approach_metrics, choose_trailhead, entry_conflicts
+from .data_loader import load_peaks, load_trailheads, resolve_peak_name
 from .distances import (
-    haversine_miles,
-    naismith_effective_miles,
-    leg_metrics,
     build_distance_matrix,
+    haversine_miles,
+    leg_metrics,
+    naismith_effective_miles,
 )
-from .clustering import cluster_peaks, ClusterConfig
-from .tsp import solve_tsp, solve_tsp_cycle, route_metrics
-from .approach import choose_trailhead, approach_leg, approach_metrics
-from .diagnostics import approach_amortization, format_approach_report
-from .pipeline import build_itineraries, rank_clusters, plan_trips
+from .model import Cluster, Peak, Trailhead
 
 __all__ = [
     "Peak",
@@ -25,23 +23,15 @@ __all__ = [
     "Trailhead",
     "load_peaks",
     "load_trailheads",
+    "resolve_peak_name",
     "haversine_miles",
     "naismith_effective_miles",
     "leg_metrics",
     "build_distance_matrix",
-    "cluster_peaks",
-    "ClusterConfig",
-    "solve_tsp",
-    "solve_tsp_cycle",
-    "route_metrics",
     "choose_trailhead",
+    "entry_conflicts",
     "approach_leg",
     "approach_metrics",
-    "approach_amortization",
-    "format_approach_report",
-    "build_itineraries",
-    "rank_clusters",
-    "plan_trips",
 ]
 
 __version__ = "0.1.0"
