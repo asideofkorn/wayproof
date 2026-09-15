@@ -103,6 +103,16 @@ data the project holds. `resolve_plan()` takes no `regulations` argument, so the
 subsystem is wired to the website and not to the tool. The same is true of
 `permit_zones` — see S3.
 
+**Fixed 2026-09-15.** `resolve_plan()` now takes `regulations` and `plan` prints
+a `Rules in force` section: all 18 Desolation rules with their citations and
+scope labels. The question has a second half the first fix missed — its own
+"wrong if" is about the *document*, not the equipment — so `permits.csv` gained a
+`carry` column, a sibling of `excludes` for the same reason, and the plan now
+leads the permit block with `MUST CARRY: ... a digital or paper reservation
+CONFIRMATION is NOT a valid permit`. Scorecard Q6 moved 0 → 35 answered, 42
+partial; `omitted` across the whole board went to 0. `permit_zones` is still
+unwired, so S3 stands.
+
 ---
 
 ### S3 — A Desolation permit is booked by destination, not by trailhead

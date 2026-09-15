@@ -173,6 +173,7 @@ def _permit_block(rule: Optional[PermitRule], today: date) -> dict:
         # page, because holding the wrong permit is discovered at the
         # trailhead and cannot be fixed there.
         "excludes": rule.excludes,
+        "carry": rule.carry,
         "source_last_updated": rule.source_last_updated,
         "verified_date": rule.verified_date,
         "release_events": events,

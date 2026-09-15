@@ -5,6 +5,32 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Fixed
+- **`plan` omitted every rule the project holds.** Scorecard Q6 "What must I
+  carry?" read `answered 0 / omitted 49 / no-data 413`: `regulations_for()`
+  resolved 18 rules for Desolation — including a hard-sided bear canister
+  required on pain of a **$5,000 fine** under 36 CFR 261.58(cc) — the website
+  rendered all 18, and `resolve_plan()` took no `regulations` argument at all, so
+  the flagship command printed none of them for any objective. Held data that no
+  surface shows is worse than data nobody entered: nothing signals the gap.
+  `plan` now prints `Rules in force`, grouped by consequence and labelled with
+  each rule's scope so state law is not mistaken for one wilderness's quirk.
+- **And the half of Q6 that the first fix would have missed.** The question's own
+  falsification criterion is about the *document* — *wrong if it says "required"
+  without saying that a digital reservation confirmation is not a permit* — not
+  about equipment. That fact was prose in `notes`, one clause among cancellation
+  policy and fire-scar hazards. `permits.csv` gains **`carry`**, a sibling of
+  `excludes` for the same reason: being wrong about it is discovered at the
+  trailhead and cannot be fixed there. It renders above the notes on the CLI and
+  on both website surfaces, and the four rows that had it in prose no longer
+  state it twice — which also brought Desolation's `notes` from 1,353 to 1,209
+  characters.
+- **Scorecard:** Q6 requires both halves to read `answered`, so the metric could
+  not go green on a half-fix. Q6 0 → 35 answered, 42 partial; Q12 0 → 60, Q13
+  0 → 35, Q14 0 → 49; `omitted` across the whole board **193 → 0**. The test
+  that pinned Q6 at 0 was rewritten to assert the *behaviour* it was there for —
+  that the weakest tier-1 row is reported rather than averaged away.
+
 ### Added
 - **A scorecard for the README's questions** (`scripts/scorecard.py`). The README
   lists 21 questions this project exists to answer, each with what makes an
