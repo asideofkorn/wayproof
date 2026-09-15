@@ -52,7 +52,28 @@ def test_load_campgrounds_reads_committed_data():
     sunol = by_name["Sunol Backpack Camp"]
     assert sunol.has_restroom is True
     assert sunol.restroom_type == "pit toilet"
-    assert "ReserveAmerica" in sunol.reservation_method
+    # Phone only. This row used to name ReserveAmerica; EBRPD's reservations
+    # page states that backpack and group campsites are not bookable online at
+    # all, and sending someone to a website that cannot sell them the site is
+    # the "implies online booking where the channel is phone-only" failure.
+    assert "Phone only" in sunol.reservation_method
+    assert "ReserveAmerica" not in sunol.reservation_method
+
+
+def test_family_campgrounds_book_online_and_backpack_ones_do_not():
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in ("Del Valle Family Campground", "Anthony Chabot Campground",
+                 "Dumbarton Quarry Campground on the Bay"):
+        assert "reserveamerica.com" in by_name[name].reservation_method.lower(), name
+    for name in ("Boyd Camp", "Sunol Backpack Camp", "Eagle Springs"):
+        assert "Phone only" in by_name[name].reservation_method, name
+
+
+def test_every_campground_warns_that_email_books_nothing():
+    # EBRPD publishes a reservations email address that accepts no
+    # reservations. Someone who emails it and waits has not booked a site.
+    for c in load_campgrounds(CAMPGROUNDS):
+        assert "no reservation is accepted by email" in c.reservation_contact.lower(), c.name
 
 
 def test_load_campgrounds_missing_file_returns_empty(tmp_path):

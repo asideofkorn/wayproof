@@ -719,6 +719,10 @@ def test_conflicts_stay_separate_across_permit_groups():
     assert by_group == {
         "desolation": {"desolation-sma-distance"},
         "cpma": {"cpma-designated-site-count", "mokelumne-carson-pass-season-pass"},
+        # Logged under "none" because it is about EBRPD land, which issues no
+        # permit. The group is a bucket for permit-free agencies, so a conflict
+        # here says nothing about the other fifteen trailheads sharing it.
+        "none": {"ebrpd-camping-park-count"},
     }
 
 
@@ -747,6 +751,9 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         "desolation-sma-distance": "cross_source",
         "cpma-designated-site-count": "internal",
         "mokelumne-carson-pass-season-pass": "cross_source",
+        # Two EBRPD pages, not one contradicting itself: the reservations page
+        # says camping at 15 parks, the park finder returns 18.
+        "ebrpd-camping-park-count": "cross_source",
     }
 
 
