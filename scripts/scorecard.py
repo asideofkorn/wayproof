@@ -398,6 +398,15 @@ def format_report(built: dict) -> str:
     out.append("")
     out.append("what each verdict asks of you:")
     for v in VERDICTS:
+        if v == NO_MODEL:
+            # Every no-model cell belongs to a structural question, and those are
+            # counted once rather than per objective -- so the cell count here is
+            # 0 and reads as "no schema gaps", which is the opposite of true.
+            out.append(f"  {v:9s} {len(structural):5d}  {VERDICT_MEANING[v]} "
+                       f"({len(structural)} whole questions, listed above)")
+            continue
+        if not agg[v]:
+            continue
         out.append(f"  {v:9s} {agg[v]:5d}  {VERDICT_MEANING[v]}")
 
     limits = [q for q in QUESTIONS if q.limit]

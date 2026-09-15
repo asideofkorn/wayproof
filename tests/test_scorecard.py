@@ -209,3 +209,17 @@ def test_each_tier_is_represented():
     # about whether a trip can happen.
     tiers = {q.tier for q in QUESTIONS}
     assert {1, 2, 3} <= tiers, f"tiers covered: {tiers}"
+
+
+def test_no_model_is_not_reported_as_zero():
+    # Every no-model cell belongs to a structural question, and those are counted
+    # once rather than per objective. Printing the cell count gave "no-model 0"
+    # directly beneath a list of five questions the schema cannot express --
+    # a number that reads as "no schema gaps" when there are five.
+    report = format_report(_built())
+    tail = report.split("what each verdict asks of you:")[1]
+    line = next(l for l in tail.splitlines() if l.strip().startswith("no-model"))
+    structural = [q for q in QUESTIONS if q.structural]
+    assert structural, "this test assumes at least one structural question"
+    assert f"{len(structural):5d}" in line, f"no-model line understates the gap: {line!r}"
+    assert "whole questions" in line
