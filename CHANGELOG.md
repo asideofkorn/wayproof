@@ -138,6 +138,32 @@ All notable changes to this project are documented here. The format is based on
     posing as the rule itself.
 
 ### Fixed
+- **11 of 15 permit rows cited no evidence, so 66 of 88 published pages read
+  "Not independently verified"** for permits that had in fact been checked.
+  `log_entry_ids` was populated only for the rows edited the day the column was
+  added; every blank row already had a `verified_date` and entries in the
+  ledger. Backfilled from the ledger, leaving `toiyabe_free` blank on purpose --
+  it has no `verified_date` and unverified is the honest rendering for it. 85 of
+  88 pages now read verified, 2 contested (`cpma`, which has two genuinely open
+  conflicts), 1 unverified. A test now fails any row that claims a
+  `verified_date` without citing a log entry: a half-filled provenance column
+  under-reports the project's own work, which is worse than not having one.
+- **A conflict thread was named once per citing entry rather than once.** A
+  thread normally spans several entries (opened, restated, closed), so
+  `resolved_conflicts` read as several separate arguments about the same thing
+  once rows began citing full chains. De-duplicated in the view model, which
+  fixes all three surfaces at once.
+- **Every cross-file join in `data/` is now asserted**
+  (`tests/test_referential_integrity.py`). Twenty-one CSVs are related by a
+  dozen joins keyed on hand-typed free text, none of them declared, and the
+  loaders fail silently: `load_peaks` merges the collection file with
+  `how="left"`, so one casing difference in a name drops that peak's collection
+  metadata -- and since `--list SPS` then filters on a blank `list`, the peak
+  leaves the dataset entirely, with no error. 19 joins plus key-shape checks
+  (`agency_id` must stay snake_case, no key may carry surrounding whitespace, no
+  two peak names may differ only by case). Verified by mutation: eight
+  deliberate breaks, eight failures.
+
 - **A group size limit was still duplicated in Desolation's `fee_notes`** after
   the split. Found by the new overlap check on its first run, which is the
   point of it.
