@@ -59,7 +59,7 @@ def test_resolve_plan_single_objective_matches_case_insensitively():
     result = resolve_plan(["mount whitney"], date(2027, 7, 15), peaks, trailheads,
                            permits, approaches=approaches)
     assert not result.not_found
-    assert [p.name for p in result.objectives] == ["MOUNT WHITNEY"]
+    assert [p.name for p in result.objectives] == ["Mount Whitney"]
     assert result.trailhead is not None
     assert result.trailhead.name == "Whitney Portal"
     assert len(result.permit_entries) == 1
@@ -90,7 +90,7 @@ def test_resolve_plan_reports_not_found_objectives():
     assert result.not_found == ["Not A Real Peak"]
     assert any("Not A Real Peak" in w for w in result.warnings)
     # The one real objective still resolves.
-    assert [p.name for p in result.objectives] == ["MOUNT WHITNEY"]
+    assert [p.name for p in result.objectives] == ["Mount Whitney"]
     assert result.trailhead is not None
 
 
@@ -121,7 +121,7 @@ def test_format_plan_summary_includes_official_mileage():
     result = resolve_plan(["Mount Whitney"], date(2027, 7, 15), peaks, trailheads,
                            permits, approaches=approaches)
     summary = format_plan_summary(result)
-    assert "MOUNT WHITNEY" in summary
+    assert "MOUNT WHITNEY" in summary   # the title line is upper-cased by the renderer
     assert "mi round trip" in summary
     assert "not a computed combined route" in summary.lower()
 
@@ -145,7 +145,7 @@ def test_plan_result_to_dict_is_json_serializable():
                            peaks, trailheads, permits, approaches=approaches)
     payload = result.to_dict()
     serialized = json.dumps(payload)  # must not raise
-    assert "MOUNT WHITNEY" in serialized
+    assert "Mount Whitney" in serialized
     assert payload["trailhead"]["name"] == "Whitney Portal"
     assert len(payload["permits"]) == 2
 

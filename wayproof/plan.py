@@ -45,7 +45,8 @@ from .access import (
 )
 from .camping import Campground, Campsite
 from .model import Cluster, Peak, Trailhead
-from .approach import choose_trailhead
+from .approach import EntryConflict, choose_trailhead, entry_conflicts
+from .data_loader import resolve_peak_name
 from .park_access import ParkAccess
 from .permits import (
     ClusterPermitInfo,
@@ -86,11 +87,12 @@ class PlanResult:
     trip_date: date
     trailhead: Optional[Trailhead]
     trailhead_ambiguous: bool
-    entry_resolutions: List[EntryResolution] = field(default_factory=list)
-    """How each objective's entry point was arrived at -- sourced, consistent
-    with its own sourced route, contradicted by it, a corridor with no single
-    entry, or inferred from straight-line proximity alone. The permit below is
-    only as good as this."""
+    entry_conflicts: List[EntryConflict] = field(default_factory=list)
+    """Objectives whose sourced route contradicts the trailhead geometry chose.
+
+    Non-empty means this project cannot say which entry point governs, so the
+    permit below is a candidate rather than an answer.
+    """
     permit_entries: List[ClusterPermitInfo] = field(default_factory=list)
     warnings: List[str] = field(default_factory=list)
     open_questions: List[OpenQuestion] = field(default_factory=list)
@@ -112,8 +114,17 @@ class PlanResult:
                 "land_agency": self.trailhead.land_agency,
             }
             d["trailhead_ambiguous"] = self.trailhead_ambiguous
-        if self.entry_resolutions:
-            d["entry_resolutions"] = [e.to_dict() for e in self.entry_resolutions]
+            # The JSON must carry this too. The site already had a bug where
+            # the machine surface said "unverified" and the human surfaces
+            # said nothing; the reverse would be worse, since an agent acting
+            # on this cannot see the warning text.
+            d["entry_point_resolved"] = not self.entry_conflicts
+            if self.entry_conflicts:
+                d["entry_conflicts"] = [
+                    {"peak": c.peak_name, "sourced_route": c.sourced_route,
+                     "computed_trailhead": c.computed_trailhead}
+                    for c in self.entry_conflicts
+                ]
         d["permits"] = [
             {
                 "agency": e.agency,
@@ -223,23 +234,35 @@ def resolve_plan(
     status, a nearby campground's reservation method, the park's entrance
     fee), linked to the resolved trailhead the same conservative way.
     """
-    by_lower = {p.name.strip().lower(): p for p in peaks}
     objectives: List[Peak] = []
     not_found: List[str] = []
+    ambiguous: Dict[str, List[str]] = {}
     for name in objective_names:
-        peak = by_lower.get(name.strip().lower())
-        if peak is None:
-            not_found.append(name)
-        else:
+        # Not a plain lowercase lookup: peaks.csv keys on the source list's own
+        # formatting, so "Mount Carillon" (the GNIS spelling), "Duane Bliss
+        # Peak" (stored with a trailing emblem marker) and "Mount Whitney"
+        # (stored ALLCAPS) all used to return nothing.
+        peak, candidates = resolve_peak_name(name, peaks)
+        if peak is not None:
             objectives.append(peak)
+        elif candidates:
+            ambiguous[name] = candidates
+        else:
+            not_found.append(name)
 
     warnings: List[str] = [
         f"Objective not found in peak data: {name!r}" for name in not_found
     ]
+    for name, candidates in ambiguous.items():
+        warnings.append(
+            f"{name!r} matches more than one peak: {', '.join(candidates)}. "
+            "Name the one you mean -- these are different summits, and picking "
+            "for you is how you end up planning the wrong trip."
+        )
 
     trailhead: Optional[Trailhead] = None
     trailhead_ambiguous = False
-    entry_resolutions: List[EntryResolution] = []
+    conflicts: List[EntryConflict] = []
     permit_entries: List[ClusterPermitInfo] = []
 
     if objectives:
@@ -250,6 +273,19 @@ def resolve_plan(
             for p in objectives
             if p.meta.get("nearest_trailhead") and str(p.meta["nearest_trailhead"]).strip()
         }
+        # A single objective whose OWN sourced route contradicts the geometry
+        # used to be silent: `trailhead_ambiguous` only fires when objectives
+        # disagree with each other. That silence is what let this tool answer
+        # "Mineral King, SEKI permit" for a peak its own data routes over
+        # Shepherd Pass on the far side of the crest.
+        conflicts = entry_conflicts(objectives, trailhead)
+        for conflict in conflicts:
+            warnings.append(
+                f"UNRESOLVED ENTRY POINT -- {conflict} This project has no sourced row "
+                "linking this objective to an entry point, so the permit below follows "
+                "geometry and is NOT verified. Confirm the approach before booking."
+            )
+
         trailhead_ambiguous = len(nearest_names) > 1
         if trailhead_ambiguous:
             warnings.append(
@@ -326,7 +362,7 @@ def resolve_plan(
         trip_date=trip_date,
         trailhead=trailhead,
         trailhead_ambiguous=trailhead_ambiguous,
-        entry_resolutions=entry_resolutions,
+        entry_conflicts=conflicts,
         permit_entries=permit_entries,
         warnings=warnings,
         open_questions=questions,
@@ -409,18 +445,19 @@ def format_plan_summary(result: PlanResult) -> str:
     lines.append("Access")
     if result.trailhead:
         side = f"  ({result.trailhead.side} side)" if result.trailhead.side else ""
-        lines.append(f"  Trailhead: {result.trailhead.name}{side}")
-        # The permit below is only as good as this link, and until
-        # data/entry_trails.csv exists it is usually geometry. Say so here
-        # rather than let the provenance line under the permit imply the whole
-        # chain was verified.
-        bases = {e.basis for e in result.entry_resolutions}
-        if len(bases) == 1 and len(result.entry_resolutions) > 1:
-            lines.append(f"  Entry basis: {_entry_basis_line(result.entry_resolutions[0])}")
+        if result.entry_conflicts:
+            # Lead with the doubt. Printing the trailhead first and the caveat
+            # afterwards is how a reader ends up acting on the headline and
+            # skimming the qualifier.
+            lines.append("  ENTRY POINT UNRESOLVED -- sources disagree, see below.")
+            lines.append(f"  Geometry suggests: {result.trailhead.name}{side}")
+            for conflict in result.entry_conflicts:
+                lines.append(f"  Sourced route for {conflict.peak_name}: "
+                             f"{conflict.sourced_route}")
+            lines.append("  These may be different entry points under different agencies, "
+                         "which would mean a different permit entirely.")
         else:
-            for entry in result.entry_resolutions:
-                lines.append(f"  Entry basis ({entry.peak_name}): "
-                             f"{_entry_basis_line(entry)}")
+            lines.append(f"  Trailhead: {result.trailhead.name}{side}")
     else:
         lines.append("  No trailhead data available.")
     lines.append("")
@@ -461,7 +498,13 @@ def format_plan_summary(result: PlanResult) -> str:
                 lines.append(f"    Fee exemptions: {pa.fee_exemptions}")
         lines.append("")
 
-    lines.append("Permit")
+    if result.entry_conflicts:
+        lines.append("Permit (CANDIDATE ONLY -- follows the unresolved entry point above)")
+        lines.append("  The verification dates below belong to the permit rule, not to the "
+                     "claim that this permit governs your route. Do not read them as "
+                     "confirming the entry point.")
+    else:
+        lines.append("Permit")
     if result.permit_entries:
         for e in result.permit_entries:
             if e.peak_note:
@@ -490,6 +533,16 @@ def format_plan_summary(result: PlanResult) -> str:
             "reasonably be linked into one continuous trip is not modeled here; "
             "treat as reference points, not a verified itinerary."
         )
+        if result.entry_conflicts:
+            # Picket Guard Peak reported 23.2 mi beside a Mineral King trailhead;
+            # that figure is measured from Shepherd Pass. Two inconsistent facts
+            # in one output, and the mileage looked like it corroborated the
+            # trailhead above it.
+            lines.append(
+                "  NOTE: that standard trailhead is the one in each objective's source "
+                "data, which is exactly what the entry point above is unresolved about. "
+                "These distances are probably NOT measured from the trailhead named above."
+            )
     lines.append("")
 
     if result.warnings:

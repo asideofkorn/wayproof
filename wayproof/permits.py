@@ -513,6 +513,25 @@ def _permit_entry(
     )
 
 
+
+def _override_wilderness(rule: PermitRule) -> str:
+    """The wilderness to show on an approach-override entry.
+
+    Never the trailhead's. An override exists because this peak is NOT governed
+    by the trailhead's default permit, so borrowing the trailhead's wilderness
+    label states the opposite of the row's own point -- Mount Russell via the
+    Mountaineers Route rendered as "Mount Whitney Zone (John Muir Wilderness)"
+    when being outside the Whitney Zone is the entire reason the override
+    exists.
+
+    Falls back to an explicit "not recorded" rather than a plausible-looking
+    wrong one. ``permits.csv`` populates ``wilderness_area`` on 4 of 15 rows
+    today, so most overrides have nothing true to show, and saying so is the
+    honest answer.
+    """
+    return rule.wilderness_area or "not recorded for this permit"
+
+
 def clusters_permit_info(
     clusters: Sequence[Cluster],
     trailheads: Sequence[Trailhead],
@@ -557,12 +576,7 @@ def clusters_permit_info(
                                    rule, trip_date, today))
 
         seen = set()
-        # (permit_group, approach_name) -> the peaks that override onto it.
-        # Collected rather than emitted inline: two peaks can share one named
-        # approach, and the entry has to name both. Keyed on the approach as
-        # well as the permit, since two different routes reaching the same
-        # permit are two different facts about two different peaks.
-        overrides: Dict[tuple, List[str]] = {}
+        overrides: Dict[str, tuple] = {}
         for peak in c.peaks:
             for route in by_peak.get(peak.name, []):
                 if route.trailhead and route.trailhead != c.trailhead:
@@ -595,28 +609,28 @@ def clusters_permit_info(
 
                 if not route.permit_group or route.permit_group == th.permit_group:
                     continue
-                if route.permit_group not in permits:
+                override_rule = permits.get(route.permit_group)
+                if override_rule is None:
                     continue
-                peaks_on_route = overrides.setdefault(
-                    (route.permit_group, route.approach_name), [])
-                if peak.name not in peaks_on_route:
-                    peaks_on_route.append(peak.name)
+                key = route.permit_group
+                if key in overrides:
+                    # A second peak needs the same override. Name it rather
+                    # than dropping it: the first entry said "only", which was
+                    # false the moment another peak shared the permit.
+                    overrides[key][1].append(peak.name)
+                else:
+                    overrides[key] = (route, [peak.name])
 
-        for (group, approach_name), peak_names in overrides.items():
+        for group, (route, peak_names) in overrides.items():
             override_rule = permits[group]
-            note = f"for {_join_names(peak_names)} only"
-            if approach_name:
-                note += f" -- via {approach_name}"
+            only = " only" if len(peak_names) == 1 else ""
+            note = f"for {', '.join(peak_names)}{only}"
+            if route.approach_name:
+                note += f" -- via {route.approach_name}"
             rows.append(_permit_entry(
-                c.cluster_id, c.trailhead,
-                # The override rule admits you somewhere the trailhead default
-                # does not -- that is why it exists -- so stamping the
-                # trailhead's wilderness on it asserts the opposite. Mount
-                # Russell's ordinary Inyo NF permit was reading "Wilderness:
-                # Mount Whitney Zone", the one place it explicitly excludes.
-                override_rule.wilderness_area, override_rule,
-                trip_date, today, peak_note=note,
-                approach_name=approach_name, approach_status=CONFIRMED,
+                c.cluster_id, c.trailhead, _override_wilderness(override_rule),
+                override_rule, trip_date, today, peak_note=note,
+                approach_name=route.approach_name, approach_status=route.status,
             ))
     return rows
 
