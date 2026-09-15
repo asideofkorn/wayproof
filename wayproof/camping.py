@@ -91,6 +91,15 @@ class Campground:
     nightly_entry_cutoff: str = ""
     fee_notes: str = ""
     notes: str = ""
+    source_url: str = ""
+    verified_date: str = ""
+    """When this row was last checked against :attr:`source_url`.
+
+    Blank means never. The table carried no provenance at all until EBRPD
+    campgrounds outside the Ohlone corridor were added, so most rows are blank
+    and honestly so -- a citation invented for them now would be worse than the
+    visible gap.
+    """
 
 
 @dataclass
@@ -138,6 +147,8 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             nightly_entry_cutoff=_str_field(row, "nightly_entry_cutoff"),
             fee_notes=_str_field(row, "fee_notes"),
             notes=_str_field(row, "notes"),
+            source_url=_str_field(row, "source_url"),
+            verified_date=_str_field(row, "verified_date"),
         ))
     return campgrounds
 

@@ -172,13 +172,33 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 
 # --- campground access mode (drive-in vs hike-in) ----------------------------
 
-def test_del_valle_family_is_the_only_drive_in_campground():
-    # Six of the seven are Ohlone Wilderness Trail backpack camps. Getting this
-    # backwards means booking a site up to 16.7 trail miles from the car.
-    campgrounds = load_campgrounds(CAMPGROUNDS)
-    assert [c.name for c in drive_in(campgrounds)] == ["Del Valle Family Campground"]
-    assert {c.access_mode for c in campgrounds if c.name != "Del Valle Family Campground"} \
-        == {HIKE_IN}
+def test_the_ohlone_corridor_camps_are_hike_in_and_the_family_ones_are_not():
+    # The six Ohlone Wilderness Trail backpack camps are reached on foot; the
+    # family campgrounds are reached by car. Getting this backwards means
+    # booking a site up to 16.7 trail miles from where you parked.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    on_foot = {"Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp",
+               "Sunol Backpack Camp", "Eagle Springs"}
+    by_car = {"Del Valle Family Campground", "Anthony Chabot Campground",
+              "Dumbarton Quarry Campground on the Bay"}
+    assert on_foot | by_car == set(by_name), "a campground is unclassified above"
+    assert {by_name[n].access_mode for n in on_foot} == {HIKE_IN}
+    assert {by_name[n].access_mode for n in by_car} == {DRIVE_IN}
+
+
+def test_an_unverified_campground_says_so_rather_than_reading_as_checked():
+    # Anthony Chabot and Dumbarton Quarry were built from web-search summaries
+    # of pages nobody here could open. They carry a source to check against and
+    # a blank verified_date, which is the difference between "not yet confirmed"
+    # and "confirmed" -- and their notes must say which facts are in doubt.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in ("Anthony Chabot Campground", "Dumbarton Quarry Campground on the Bay"):
+        cg = by_name[name]
+        assert cg.source_url.startswith("https://www.ebparks.org/"), name
+        assert cg.verified_date == "", f"{name} must not claim a verification"
+        assert "unconfirmed" in cg.notes.lower(), name
+        # Absent is not free: no fee was invented for a row nobody has checked.
+        assert cg.fee_notes == "", name
 
 
 def test_every_committed_campground_states_its_access_mode():

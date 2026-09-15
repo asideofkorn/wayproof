@@ -63,7 +63,17 @@ def scoped(scope_type: str) -> set:
 # of its own, so a park with a campground but no trailhead (Sunol) is neither a
 # broken reference nor a satisfied one. PR B2's `land_units.csv` gives it a key
 # and this allowlist goes away. Until then a NEW orphan still fails.
-UNKEYED_PARKS = {"Sunol Regional Wilderness"}
+# Each of these has a campground and no trailhead, which is a real shape and
+# not a typo. Anthony Chabot and Dumbarton Quarry are drive-in campgrounds with
+# no peak objective in this dataset, so nothing gives them a trailhead row, and
+# neither has park_access data yet -- their entrance fee and gate hours are
+# unknown rather than absent, so no row was invented to satisfy this join.
+# Listing them by name keeps the guard working: a MISSPELLED park still fails.
+UNKEYED_PARKS = {
+    "Sunol Regional Wilderness",
+    "Anthony Chabot Regional Park",
+    "Dumbarton Quarry Campground on the Bay",
+}
 
 
 #: ``(label, child values, parent values)`` -- every declared join in data/.

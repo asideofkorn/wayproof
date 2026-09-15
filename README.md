@@ -424,7 +424,7 @@ The repository currently includes:
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it) and their individually-bookable sites
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it, and `source_url`/`verified_date`) and their individually-bookable sites
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
 - `data/park_access.csv` - park-level vehicle entrance fees, gate hours, and fee exemptions (distinct from a wilderness permit or a campsite reservation)
 - `data/passes.csv` - Sierra pass data used for optional coarse cross-crest
@@ -493,6 +493,15 @@ exemptions.
   blank `access_mode` reads as "not recorded", never as either mode: guessing
   drive-in strands someone at a trailhead, guessing hike-in hides a site they
   could have used.
+  `source_url` and `verified_date` were added later, when EBRPD campgrounds
+  outside the Ohlone corridor were. The table had carried no provenance at
+  all, which in a project whose rule is that every claim cites its evidence
+  was a gap rather than a style choice. The seven original rows stay blank:
+  nobody recorded where their facts came from, and a citation invented for
+  them now would read as a check that never happened. A blank `verified_date`
+  on a row that *does* carry a `source_url` — Anthony Chabot, Dumbarton
+  Quarry — means the opposite of confirmed: there is a page to check it
+  against and nobody has.
 - **`data/water_sources.csv`** / **`data/water_source_log.csv`** -- unlike a
   coordinate, "is this spigot running" isn't a fact that stays true once
   recorded. `water_sources.csv` holds the static facts (name, type,
