@@ -5,6 +5,30 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Fixed
+- **A $97 trip reported as free.** `docs/user_stories/ohlone-traverse-2026-09.md`
+  S2, the only finding in that document that harms someone today: the permit
+  block printed `Fee: Free`, several lines above the campground fee that
+  actually applied. Every figure was already in the dataset, on three rows
+  nobody was adding up. `plan` now leads with a `Cost` section naming every
+  component -- permit, campground, park entrance -- and the permit's own line
+  reads `Permit fee:`, since one component of a cost is not the cost.
+  - A fee field is **three-valued**, for the same reason `evidence.py`'s status
+    is: charges, free, or *unknown*. Del Valle Family Campground carries no
+    `fee_notes` and took $43 of the $97; it now reads "NO FEE ON FILE -- absent
+    is not free" rather than being silently omitted. On the JSON surface
+    `free` is true only when every component is priced *and* free, so an agent
+    cannot read a blank cell as "this trip costs nothing".
+  - A currency amount outranks the word "free", because a row can say both:
+    `cpma` reads "No fee for the wilderness permit itself. PARKING ... $5.00
+    per day". A free permit is not a free trip.
+  - **No total is computed.** The figures are prose written by three operators
+    in three shapes; a number derived from them would be false precision of the
+    kind this project refuses elsewhere. Naming what charges is the answer.
+  - A permit that is only a candidate yields a price that is only a candidate:
+    where the entry point is unresolved -- 153 of 247 SPS objectives -- the
+    permit's fee is marked `[CANDIDATE]` rather than stated flatly.
+
 ### Removed
 - **The experimental geographic clustering feature.** DBSCAN grouping, TSP
   sequencing, itinerary building, the JSON/chart exporters and their diagnostics

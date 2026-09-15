@@ -55,6 +55,14 @@ but under Facilities, several lines below a headline saying the trip is free.
 **Exposes.** Fees live on the permit. When the permit is free and the cost is
 elsewhere, the headline is false. This trip cost $97 and the tool says free.
 
+**Fixed 2026-09-15.** `plan` now leads with a `Cost` section naming every
+component that charges, and the permit's own line reads `Permit fee:` rather
+than `Fee:`. A fee field is three-valued -- charges, free, or *unknown* -- so
+Del Valle Family Campground's blank fee, which took $43 of the $97, renders as
+"NO FEE ON FILE -- absent is not free" instead of vanishing. No total is
+computed: the figures are prose from three operators in three shapes. The
+entry-end charges are still missing, because S1 is still open.
+
 ---
 
 ### S3 — What gates the trip is not a permit

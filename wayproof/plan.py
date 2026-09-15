@@ -28,6 +28,7 @@ something this module models yet.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Sequence
@@ -87,6 +88,11 @@ class PlanResult:
     warnings: List[str] = field(default_factory=list)
     open_questions: List[OpenQuestion] = field(default_factory=list)
     facilities: Optional[FacilitiesInfo] = None
+    costs: List["CostComponent"] = field(default_factory=list)
+    """Every component of this trip that may charge, permit and otherwise.
+
+    The permit's own fee is one of these, not the trip's cost. Reporting it as
+    the cost is what made a $97 trip read as free."""
 
     def to_dict(self) -> dict:
         d: dict = {
@@ -115,6 +121,18 @@ class PlanResult:
                      "computed_trailhead": c.computed_trailhead}
                     for c in self.entry_conflicts
                 ]
+        if self.costs:
+            charging = [c for c in self.costs if c.status == CHARGES]
+            unknown = [c for c in self.costs if c.status == UNKNOWN]
+            # An agent reading this must be able to answer "is this free" without
+            # parsing prose, and must not get "yes" from a missing fee.
+            d["cost"] = {
+                "free": not charging and not unknown,
+                "charges": bool(charging),
+                "has_unpriced_component": bool(unknown),
+                "totalled": False,
+                "components": [c.to_dict() for c in self.costs],
+            }
         d["permits"] = [
             {
                 "agency": e.agency,
@@ -335,6 +353,8 @@ def resolve_plan(
                 campgrounds=cgs, campsites=sites, park_access=pa,
             )
 
+    costs = trip_costs(permit_entries, facilities, entry_unresolved=bool(conflicts))
+
     return PlanResult(
         requested_names=list(objective_names),
         objectives=objectives,
@@ -347,6 +367,7 @@ def resolve_plan(
         warnings=warnings,
         open_questions=questions,
         facilities=facilities,
+        costs=costs,
     )
 
 
@@ -385,6 +406,11 @@ def format_plan_summary(result: PlanResult) -> str:
     else:
         lines.append("  No trailhead data available.")
     lines.append("")
+
+    cost_lines = format_costs(result.costs)
+    if cost_lines:
+        lines.extend(cost_lines)
+        lines.append("")
 
     if result.facilities:
         fac = result.facilities
@@ -486,3 +512,158 @@ def format_plan_summary(result: PlanResult) -> str:
         "official source before acting on any date above."
     )
     return "\n".join(lines)
+
+
+# -- what the trip actually costs -------------------------------------------
+#
+# The permit block carried a line reading "Fee: <permit fee>", and for a trip
+# whose permit is free that rendered as "Fee: Free" -- above a campground fee,
+# in a plan for a trip that charged $97. See
+# docs/user_stories/ohlone-traverse-2026-09.md, S2: "This trip cost $97 and the
+# tool says free." It is the only finding in that document that harms someone
+# today, and it is a presentation defect: every figure below is already in the
+# dataset, on three different rows nobody was adding up.
+
+CHARGES = "charges"
+FREE = "free"
+UNKNOWN = "unknown"
+
+_CURRENCY = re.compile(r"\$\s?\d")
+_FREE_PHRASES = ("free", "no fee", "no charge", "no cost")
+
+
+def fee_status(text: str) -> str:
+    """Whether a fee field charges, is free, or says nothing at all.
+
+    Three-valued for the same reason :mod:`wayproof.evidence`'s status is: a
+    blank fee is **unknown**, and rendering unknown as free is exactly how a
+    paid trip reports as costing nothing. Del Valle Family Campground carries
+    no ``fee_notes`` and charged $43.
+
+    A currency amount outranks the word "free", because a row can say both.
+    ``cpma``'s fee reads "No fee for the wilderness permit itself. PARKING,
+    June 1 - October 31 ... $5.00 per day" -- a free permit is not a free trip.
+    """
+    body = str(text or "").strip()
+    if not body:
+        return UNKNOWN
+    if _CURRENCY.search(body):
+        return CHARGES
+    if any(phrase in body.lower() for phrase in _FREE_PHRASES):
+        return FREE
+    return UNKNOWN
+
+
+@dataclass
+class CostComponent:
+    """One thing that may charge for this trip, and what the source says."""
+
+    kind: str          # "permit" | "campground" | "park_entrance"
+    label: str
+    status: str        # CHARGES | FREE | UNKNOWN
+    detail: str = ""   # the source's own wording, verbatim -- never parsed into a number
+    conditions: str = ""
+    provisional: bool = False
+    """True when this component hangs off an unresolved entry point.
+
+    A permit that is only a candidate has a fee that is only a candidate. The
+    entry-point doubt has to propagate into the cost, or the cost reads as
+    settled while the thing it prices does not."""
+
+    def to_dict(self) -> dict:
+        d = {"kind": self.kind, "label": self.label, "status": self.status,
+             "provisional": self.provisional}
+        if self.detail:
+            d["detail"] = self.detail
+        if self.conditions:
+            d["conditions"] = self.conditions
+        return d
+
+
+def trip_costs(
+    permit_entries: Sequence[ClusterPermitInfo],
+    facilities: Optional[FacilitiesInfo],
+    entry_unresolved: bool = False,
+) -> List[CostComponent]:
+    """Every chargeable component of this trip, from data already resolved.
+
+    Deliberately does NOT total them. The figures are prose written by three
+    different operators in three different shapes ("$15/night per site + $8
+    non-refundable reservation service fee", "$6/permit + $5/person", "$10"),
+    and a number computed from those would be false precision of exactly the
+    kind this project refuses elsewhere. Naming every component that charges is
+    the answer; adding them up is not.
+    """
+    out: List[CostComponent] = []
+    seen = set()
+
+    for entry in permit_entries:
+        key = (entry.permit_type, entry.fee_notes)
+        if key in seen:
+            continue  # the same rule can appear twice (default + an approach caution)
+        seen.add(key)
+        out.append(CostComponent("permit", entry.permit_type,
+                                 fee_status(entry.fee_notes), entry.fee_notes,
+                                 provisional=entry_unresolved))
+
+    if facilities:
+        for campground in facilities.campgrounds:
+            out.append(CostComponent("campground", campground.name,
+                                     fee_status(campground.fee_notes),
+                                     campground.fee_notes))
+        park = facilities.park_access
+        if park:
+            out.append(CostComponent("park_entrance", park.park,
+                                     fee_status(park.entrance_fee),
+                                     park.entrance_fee, park.fee_conditions))
+    return out
+
+
+_COST_KIND_LABELS = {"permit": "Permit", "campground": "Campground",
+                     "park_entrance": "Park entrance"}
+
+
+def format_costs(costs: Sequence[CostComponent]) -> List[str]:
+    """Render the cost section, leading with whether the trip is free.
+
+    Follows the entry-conflict precedent above: state the doubt first. A reader
+    who sees a component charge and then reads the detail has the right answer;
+    one who sees "Free" and skims the rest does not.
+    """
+    if not costs:
+        return []
+    charging = [c for c in costs if c.status == CHARGES]
+    unknown = [c for c in costs if c.status == UNKNOWN]
+
+    lines = ["Cost"]
+    if charging:
+        if len(costs) == 1:
+            lines.append("  THIS TRIP IS NOT FREE -- the one component on file "
+                         "carries a fee.")
+        else:
+            lines.append(f"  THIS TRIP IS NOT FREE -- {len(charging)} of "
+                         f"{len(costs)} components carry a fee.")
+    elif unknown:
+        lines.append("  COST UNKNOWN -- nothing on file charges, but "
+                     f"{len(unknown)} of {len(costs)} components have no fee "
+                     "recorded at all.")
+    else:
+        lines.append("  No component on file charges a fee.")
+
+    for c in costs:
+        head = f"  {_COST_KIND_LABELS.get(c.kind, c.kind)} ({c.label}): "
+        if c.status == UNKNOWN:
+            lines.append(f"{head}NO FEE ON FILE -- absent is not free, and must "
+                         "be confirmed with the operator.")
+            continue
+        detail = c.detail
+        if c.conditions:
+            detail += f" ({c.conditions})"
+        if c.provisional:
+            detail += "  [CANDIDATE -- priced from the unresolved entry point above]"
+        lines.append(f"{head}{detail}")
+
+    if charging:
+        lines.append("  Not totalled: these are separate charges, in prose, from "
+                     "different operators. Add them yourself against each source.")
+    return lines
