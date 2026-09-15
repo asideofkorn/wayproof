@@ -6,6 +6,37 @@ All notable changes to this project are documented here. The format is based on
 ## [Unreleased]
 
 ### Fixed
+- **Eleven permit groups never said which document is valid.** `carry` shipped
+  with four groups populated; Scorecard Q6 read `no-data` for **385 of 462**
+  objectives, because the equipment half resolved from `regulations.csv` and
+  nothing said which piece of paper is the permit. All eleven are filled: Q6
+  `no-data` **385 → 0**, `answered` **35 → 49**. The ceiling is 49 because
+  `answered` needs both halves and only four groups have a `food_storage` rule on
+  file — so `food_storage`, not `carry`, is what now binds this row. The answers
+  contradict each other, which is why one per group was necessary: Inyo NF
+  requires a printed, signed permit and explicitly rejects a reservation letter;
+  **Yosemite forbids printing at home entirely** and issues in person only;
+  **Sequoia NF issues Golden Trout permits by email**, so there an emailed
+  document *is* the permit; Humboldt-Toiyabe has nothing to book at all, so
+  finding no reservation online is not evidence no permit is needed. Evidence
+  grade is stated, not dressed up: recreation.gov and fs.usda.gov were both
+  unreachable, so these are `websearch` entries citing the official page each
+  came from, each saying the page text was not captured verbatim, and
+  `verified_date` is deliberately not advanced — one field was checked, not the
+  row. `none` gets a value too: "no permit required" is not "nothing to carry".
+- **`plan` assumed a single-ended trip and never said so.** Ohlone S1 is a
+  completed trip whose two ends were ~29 miles apart in different park units, and
+  `permits.py` rests its reciprocity conclusion on "the single-trailhead loop
+  trips this tool plans". The scorecard has always known — Q5 "What do I need at
+  the other end?" scores `no-model` for every objective — and the tool told the
+  reader nothing, the same held-and-hidden shape as the rules above. `plan` now
+  states the assumption in its `Access` block, before `Cost` (which is exactly
+  what a one-way trip's other end is missing from), and the JSON carries
+  `route_shape: "unknown"` and `exit_modelled: false`. **Deliberately not a
+  coverage fix:** route shape is still not in the dataset, the disclosure states
+  an assumption rather than claiming a shape, and Q5 stays `no-model` with a test
+  pinning it there — admitting a gap is not a place to put an exit. `"unknown"`
+  rather than `"out_and_back"` for the same reason a blank fee is not `free`.
 - **`plan` omitted every rule the project holds.** Scorecard Q6 "What must I
   carry?" read `answered 0 / omitted 49 / no-data 413`: `regulations_for()`
   resolved 18 rules for Desolation — including a hard-sided bear canister

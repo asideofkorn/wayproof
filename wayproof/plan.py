@@ -125,6 +125,13 @@ class PlanResult:
             # said nothing; the reverse would be worse, since an agent acting
             # on this cannot see the warning text.
             d["entry_point_resolved"] = not self.entry_conflicts
+            # An agent must be able to see that the other end is MISSING, rather
+            # than infer from its absence that there isn't one. "unknown" is the
+            # honest value: not "out_and_back", which is the common shape and so
+            # the tempting default -- the same mistake as a blank fee reading as
+            # free. When route shape is modelled these two become derived.
+            d["route_shape"] = "unknown"
+            d["exit_modelled"] = False
             if self.entry_conflicts:
                 d["entry_conflicts"] = [
                     {"peak": c.peak_name, "sourced_route": c.sourced_route,
@@ -431,6 +438,18 @@ def format_plan_summary(result: PlanResult) -> str:
                          "which would mean a different permit entirely.")
         else:
             lines.append(f"  Trailhead: {result.trailhead.name}{side}")
+        # Said out loud because the assumption is invisible otherwise, and it is
+        # load-bearing: docs/user_stories/ohlone-traverse-2026-09.md S1 is a real
+        # trip whose two ends were 29 miles apart in different park units, and
+        # permits.py rests its reciprocity conclusion on "the single-trailhead
+        # loop trips this tool plans". Stating the assumption is NOT a claim
+        # about the shape of the caller's route -- that is not in the dataset.
+        lines.append("  MODELS ONE END ONLY: this plan assumes you start and finish here. "
+                     "Route shape (out-and-back, loop, one-way) is not in this dataset, so "
+                     "that is an assumption, not a finding about your route. If yours is "
+                     "one-way, the other end is absent from everything below -- its parking, "
+                     "entrance fee and access hours are not in Cost, and the permit reasoning "
+                     "assumes continuous travel from this one trailhead.")
     else:
         lines.append("  No trailhead data available.")
     lines.append("")

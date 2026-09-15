@@ -37,6 +37,15 @@ no way to express an entry and an exit. `Cluster.trailhead` is a single field.
 **Exposes.** The schema assumes out-and-back. A point-to-point traverse is a
 normal objective, not an edge case.
 
+**NOT fixed 2026-09-15, but no longer silent.** The schema still cannot express
+two ends, so this story stands. What changed is that `plan` now says so: its
+`Access` block states that it models one end only and that the other end's
+parking, entrance fee and access hours are absent from the `Cost` block, and the
+JSON carries `route_shape: "unknown"` / `exit_modelled: false`. Scorecard Q5 is
+unchanged at `no-model` for all 462 objectives, by design — a disclosure is not
+an answer. Closing this needs a route entity: route shape is a property of a
+route, and as S8 says, the atom of this data model is a peak.
+
 ---
 
 ### S2 — The fee answer is wrong, not merely incomplete
