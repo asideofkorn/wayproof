@@ -272,3 +272,27 @@ def test_access_mode_may_be_blank_in_a_file(tmp_path):
     path = tmp_path / "campgrounds.csv"
     path.write_text("name,park,land_agency,access_mode\nX Camp,P,A,\n")
     assert load_campgrounds(path)[0].access_mode == ""
+
+
+def test_the_online_listing_is_not_treated_as_the_full_site_inventory():
+    # 69 of Anthony Chabot's 75 individual sites appear on the booking system.
+    # A party that concludes the campground is full has checked 69 of 75, so
+    # the row must name the six and must not present them as explained.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Anthony Chabot Campground"]
+    for site in ("010", "031", "033", "039", "053", "075"):
+        assert site in cg.notes, f"unlisted site {site} is not named"
+    assert "hypothesis" in cg.notes.lower(), (
+        "why those sites are absent is not stated by any source; presenting the "
+        "ADA reading as fact is the confident-wrong-answer failure")
+
+
+def test_group_camp_capacities_are_per_site_not_a_range():
+    # "Maximum capacity varies from 35 to 300" is not an answer for any one
+    # camp. Booking the wrong one is discovered when the party does not fit.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    expected = {"El Venado": "35", "Lookout Ridge": "35", "Puma Point": "50",
+                "Two Rocks": "50", "Lost Ridge": "100", "Hawk Ridge": "100",
+                "Bort Meadow": "300"}
+    for camp, capacity in expected.items():
+        notes = by_name[f"{camp} Group Camp"].notes
+        assert f"CAPACITY {capacity}," in notes, f"{camp} lacks its own capacity"
