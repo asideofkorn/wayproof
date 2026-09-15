@@ -634,7 +634,10 @@ def format_permit_entry_body(r: ClusterPermitInfo) -> List[str]:
     lines.append(f"  Permit: {r.permit_type}")
     lines.append(f"  Status: {r.status}")
     if r.fee_notes:
-        lines.append(f"  Fee: {r.fee_notes}")
+        # "Permit fee", not "Fee". This is one component of a trip's cost, and
+        # labelling it as the cost is how a plan headlined "Fee: Free" for a trip
+        # that charged $97 -- see docs/user_stories/ohlone-traverse-2026-09.md S2.
+        lines.append(f"  Permit fee: {r.fee_notes}")
     if r.apply_url:
         lines.append(f"  Apply: {r.apply_url}")
     if r.notes:
