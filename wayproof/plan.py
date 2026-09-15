@@ -34,7 +34,7 @@ from datetime import date
 from typing import Dict, List, Optional, Sequence
 
 from .access import ApproachRoute
-from .camping import Campground, Campsite
+from .camping import Campground, Campsite, access_label
 from .model import Cluster, Peak, Trailhead
 from .approach import EntryConflict, choose_trailhead, entry_conflicts
 from .data_loader import resolve_peak_name
@@ -45,7 +45,7 @@ from .permits import (
     clusters_permit_info,
     format_permit_entry_body,
 )
-from .regulations import Regulation, group_by_category, regulations_for
+from .regulations import Regulation, group_by_category, regulations_in_force
 from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
@@ -269,6 +269,7 @@ class PlanResult:
                 facilities_d["campgrounds"] = [
                     {
                         "name": c.name,
+                        "access_mode": c.access_mode or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
                         "fee_notes": c.fee_notes,
@@ -494,10 +495,10 @@ def resolve_plan(
 
     applicable: List[Regulation] = []
     if trailhead is not None and regulations:
-        rule = permits.get(trailhead.permit_group)
-        if rule is not None:
-            applicable = regulations_for(regulations, rule.permit_group, rule.agency_ids,
-                                         rule.jurisdiction, rule.wilderness_area)
+        # Resolved even when the trailhead has no permit row: agency- and
+        # wilderness-scoped rules still apply to permit-free land.
+        applicable = regulations_in_force(
+            regulations, permits.get(trailhead.permit_group), trailhead)
 
     return PlanResult(
         requested_names=list(objective_names),
@@ -627,7 +628,7 @@ def format_plan_summary(result: PlanResult) -> str:
                 else:
                     lines.append(f"    - {w.name}: no availability check on file")
         for c in fac.campgrounds:
-            lines.append(f"  Campground: {c.name}")
+            lines.append(f"  Campground: {c.name} ({access_label(c)})")
             if c.reservation_method:
                 lines.append(f"    Reservation: {c.reservation_method}")
             if c.fee_notes:

@@ -465,6 +465,10 @@ def open_questions(
         # rules, so category vocabulary there is expected rather than
         # suspicious. Even so this is a prompt to look, not a verdict -- prose
         # can mention camping without restating the camping rule.
+        # regulations_for, not regulations_in_force: this asks whether ONE
+        # permit's prose restates a rule that permit already carries. There is no
+        # trip and no trailhead here, so trailhead-derived scope would widen the
+        # comparison to rules the permit's own text was never asked to avoid.
         for rule in permits:
             applicable = regulations_for(regulations, rule.permit_group, rule.agency_ids,
                                          rule.jurisdiction, rule.wilderness_area)

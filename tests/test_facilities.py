@@ -10,12 +10,20 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+import pytest
+
 from wayproof.camping import (
+    DRIVE_IN,
+    HIKE_IN,
+    UNKNOWN_ACCESS_LABEL,
     Campground,
     Campsite,
+    access_label,
+    drive_in,
     load_campgrounds,
     load_campsites,
     campsites_by_campground,
+    unknown_access,
 )
 from wayproof.water import (
     WaterSource,
@@ -160,3 +168,49 @@ def test_park_access_fee_exemption_confidence_is_documented_separately():
 
 def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
     assert load_park_access(tmp_path / "nope.csv") == {}
+
+
+# --- campground access mode (drive-in vs hike-in) ----------------------------
+
+def test_del_valle_family_is_the_only_drive_in_campground():
+    # Six of the seven are Ohlone Wilderness Trail backpack camps. Getting this
+    # backwards means booking a site up to 16.7 trail miles from the car.
+    campgrounds = load_campgrounds(CAMPGROUNDS)
+    assert [c.name for c in drive_in(campgrounds)] == ["Del Valle Family Campground"]
+    assert {c.access_mode for c in campgrounds if c.name != "Del Valle Family Campground"} \
+        == {HIKE_IN}
+
+
+def test_every_committed_campground_states_its_access_mode():
+    # Not a style rule: a blank here reads as "nobody checked", and shipping a
+    # dataset that is silently all-unknown would make the column decorative.
+    assert unknown_access(load_campgrounds(CAMPGROUNDS)) == []
+
+
+def test_blank_access_mode_reads_as_unrecorded_not_as_a_mode():
+    unknown = Campground(name="Somewhere", park="P")
+    assert unknown.access_mode == ""
+    assert access_label(unknown) == UNKNOWN_ACCESS_LABEL
+    # Absent is not a value: it must not be counted as drivable.
+    assert drive_in([unknown]) == []
+    assert unknown_access([unknown]) == [unknown]
+
+
+def test_access_label_renders_both_known_modes():
+    assert access_label(Campground("A", "P", access_mode=DRIVE_IN)) == "drive-in"
+    assert access_label(Campground("B", "P", access_mode=HIKE_IN)) == "hike-in"
+
+
+def test_unknown_access_mode_value_is_rejected_loudly(tmp_path):
+    # A typo must fail the load rather than silently becoming "not recorded",
+    # which would be indistinguishable from an honest gap.
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,land_agency,access_mode\nX Camp,P,A,driveable\n")
+    with pytest.raises(ValueError, match="access_mode"):
+        load_campgrounds(path)
+
+
+def test_access_mode_may_be_blank_in_a_file(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,land_agency,access_mode\nX Camp,P,A,\n")
+    assert load_campgrounds(path)[0].access_mode == ""

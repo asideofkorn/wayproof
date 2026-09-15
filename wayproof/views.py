@@ -35,7 +35,7 @@ from .access import ApproachRoute
 from .model import Peak, Trailhead
 from .permit_zones import PermitZone
 from .provenance import Source
-from .regulations import Regulation, group_by_category, regulations_for
+from .regulations import Regulation, group_by_category, regulations_in_force
 from .evidence import evidence_for
 from .permits import PermitRule, SourceLogEntry
 from .release_policy import CONTACT_REQUIRED, LOTTERY_ANNUAL, WALKUP, ReleasePhase
@@ -216,13 +216,7 @@ def trailhead_view(
     log = [entry for entry in source_log
            if rule is not None and entry.permit_group == rule.permit_group]
     zone_list = (zones or {}).get(rule.permit_group, []) if rule is not None else []
-    applicable = regulations_for(
-        regulations,
-        permit_group=rule.permit_group if rule else "",
-        agency=rule.agency_ids if rule else (),
-        jurisdiction=rule.jurisdiction if rule else "",
-        wilderness=rule.wilderness_area if rule else "",
-    )
+    applicable = regulations_in_force(regulations, rule, trailhead)
 
     return {
         "type": "trailhead",

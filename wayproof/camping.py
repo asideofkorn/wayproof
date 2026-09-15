@@ -15,6 +15,15 @@ physical facts -- location, restroom, water source, how to reserve) and
 A campground with no differentiated sub-sites simply has no rows in
 ``campsites.csv`` -- don't invent a placeholder row that just repeats the
 campground's own name.
+
+``access_mode`` is the separate question of whether you can *drive* to the
+site. It is a column rather than prose because it is the first thing a car
+camper filters on, and six of this dataset's seven campgrounds are backpack
+camps reached only on foot -- listing them beside a drive-in campground with
+no distinction invites someone to book a site 10.72 trail miles from their
+car. It was previously recoverable only by reading ``notes`` ("~mile 6.58 on
+the Ohlone Wilderness Trail", "General car-camping area"), which is exactly
+the filing-cabinet use of ``notes`` this project warns against.
 """
 
 from __future__ import annotations
@@ -24,6 +33,25 @@ from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
+
+DRIVE_IN = "drive_in"
+"""You can park at or beside the site; the car is part of the trip."""
+
+HIKE_IN = "hike_in"
+"""Reached on foot (or horseback). Distance from the road belongs in ``notes``."""
+
+_VALID_ACCESS_MODES = {DRIVE_IN, HIKE_IN}
+
+ACCESS_MODE_LABELS = {DRIVE_IN: "drive-in", HIKE_IN: "hike-in"}
+
+UNKNOWN_ACCESS_LABEL = "access mode not recorded"
+"""What a blank ``access_mode`` reads as.
+
+Blank means nobody has checked, and it renders as that rather than defaulting
+to either mode. Guessing "drive-in" strands someone at a trailhead; guessing
+"hike-in" hides a site they could have used. Same rule as a missing fee:
+absent is not a value.
+"""
 
 
 def _str_field(row, col: str) -> str:
@@ -49,6 +77,11 @@ class Campground:
     name: str
     park: str
     land_agency: str = ""
+    access_mode: str = ""
+    """``drive_in``, ``hike_in``, or ``""`` when nobody has recorded it.
+
+    See :data:`UNKNOWN_ACCESS_LABEL` -- blank is a stated gap, not a default.
+    """
     has_restroom: bool = False
     restroom_type: str = ""
     reservation_method: str = ""
@@ -85,10 +118,17 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
         name = _str_field(row, "name")
         if not name:
             continue
+        access_mode = _str_field(row, "access_mode")
+        if access_mode and access_mode not in _VALID_ACCESS_MODES:
+            raise ValueError(
+                f"Invalid access_mode {access_mode!r} for campground {name!r}; "
+                f"expected one of {sorted(_VALID_ACCESS_MODES)} or blank"
+            )
         campgrounds.append(Campground(
             name=name,
             park=_str_field(row, "park"),
             land_agency=_str_field(row, "land_agency"),
+            access_mode=access_mode,
             has_restroom=_bool_field(row, "has_restroom"),
             restroom_type=_str_field(row, "restroom_type"),
             reservation_method=_str_field(row, "reservation_method"),
@@ -132,3 +172,25 @@ def campsites_by_campground(sites: List[Campsite]) -> Dict[str, List[Campsite]]:
     for s in sites:
         by_campground.setdefault(s.campground, []).append(s)
     return by_campground
+
+
+def access_label(campground: Campground) -> str:
+    """How to describe a campground's access to a reader.
+
+    Blank reads as :data:`UNKNOWN_ACCESS_LABEL`, never as a mode.
+    """
+    return ACCESS_MODE_LABELS.get(campground.access_mode, UNKNOWN_ACCESS_LABEL)
+
+
+def drive_in(campgrounds: List[Campground]) -> List[Campground]:
+    """Only the campgrounds you can drive to.
+
+    Excludes unrecorded ones: a blank ``access_mode`` is not evidence of a road.
+    Pair it with :func:`unknown_access` so the gap is shown rather than dropped.
+    """
+    return [c for c in campgrounds if c.access_mode == DRIVE_IN]
+
+
+def unknown_access(campgrounds: List[Campground]) -> List[Campground]:
+    """Campgrounds whose access mode nobody has recorded yet."""
+    return [c for c in campgrounds if not c.access_mode]

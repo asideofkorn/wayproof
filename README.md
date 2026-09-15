@@ -96,8 +96,12 @@ worth making.** Worked examples with verified answers live in
 
 - **Can I have a fire?** Wrong if it reports the statewide permit requirement
   without the local ban sitting on top of it.
-- **Can I bring a dog?** Wrong if it says "under control" where the forest
-  requires a leash under six feet.
+- **Can I bring a pet?** Wrong if it says "under control" where the forest
+  requires a leash under six feet. Also wrong if it answers for a dog when the
+  animal is not one: every pets rule in this dataset is written about dogs,
+  because that is how the agencies write them, and a leash rule is not an
+  answer to whether a cat, a rabbit or a bird may come. Say which animal the
+  rule governs, or say there is no rule on file.
 - **Where can and cannot I camp?** Setbacks, designated sites, restoration
   closures.
 - **Does my permit still cover me in the next wilderness?** Reciprocity, and
@@ -415,12 +419,12 @@ The repository currently includes:
 
 - `data/peaks.csv` - collection-agnostic summit identity: name, coordinates, elevation, region, nearest-trailhead access signal
 - `data/collections/sps.csv` - the SPS collection layer: list membership, section, class, official mileage/gain, benchmark rating
-- `data/trailheads.csv` - curated trailheads and access metadata (Sierra Nevada plus, as of Rose Peak/Mission Peak, the East Bay's Diablo Range)
+- `data/trailheads.csv` - curated trailheads and access metadata, including the `agency_id` key that scopes agency-wide regulations to permit-free land (Sierra Nevada plus, as of Rose Peak/Mission Peak, the East Bay's Diablo Range)
 - `data/permits.csv` - structured wilderness-entry permit rules
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - backpack campgrounds and their individually-bookable sites
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it) and their individually-bookable sites
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
 - `data/park_access.csv` - park-level vehicle entrance fees, gate hours, and fee exemptions (distinct from a wilderness permit or a campsite reservation)
 - `data/passes.csv` - Sierra pass data used for optional coarse cross-crest
@@ -478,6 +482,17 @@ exemptions.
   the restroom than Sunol Backpack Camp's other six sites. A campground
   with no differentiated sub-sites has no rows in `campsites.csv` at all,
   rather than a placeholder row repeating the campground's own name.
+  `access_mode` is the separate question of whether you can *drive* there.
+  It is a column because it is the first thing a car camper filters on, and
+  because six of this dataset's seven campgrounds are Ohlone Wilderness Trail
+  backpack camps — listing them beside a drive-in campground with no
+  distinction invites someone to book a site 10.72 trail miles from their car.
+  It was previously recoverable only by reading `notes` ("~mile 6.58 on the
+  Ohlone Wilderness Trail", "General car-camping area"), which is the
+  filing-cabinet use of `notes` this README warns against two sections down. A
+  blank `access_mode` reads as "not recorded", never as either mode: guessing
+  drive-in strands someone at a trailhead, guessing hike-in hides a site they
+  could have used.
 - **`data/water_sources.csv`** / **`data/water_source_log.csv`** -- unlike a
   coordinate, "is this spigot running" isn't a fact that stays true once
   recorded. `water_sources.csv` holds the static facts (name, type,
@@ -740,13 +755,13 @@ So a regulation is now stored once and *inherited*, by `scope_type`:
 | Scope | Matches | Example |
 |---|---|---|
 | `jurisdiction` | `PermitRule.jurisdiction` | California Campfire Permit |
-| `agency` | `PermitRule.agency_ids` | Eldorado NF's 10-day dispersed-camping limit |
-| `wilderness` | `PermitRule.wilderness_area` | Mokelumne's campfire ban, shared by both its permits |
+| `agency` | `PermitRule.agency_ids`, or `Trailhead.agency_id` | Eldorado NF's 10-day dispersed-camping limit |
+| `wilderness` | `PermitRule.wilderness_area`, falling back to `Trailhead.wilderness_area` | Mokelumne's campfire ban, shared by both its permits |
 | `permit_group` | the permit product itself | Desolation's bear canister requirement |
 
-`regulations_for()` resolves all three layers, sorting the specific before the
-general so a wilderness's own fire ban reads above the statewide permit rule it
-sits on top of. Both the human and agent surfaces label an inherited rule with
+`regulations_in_force()` resolves all three layers, sorting the specific before
+the general so a wilderness's own fire ban reads above the statewide permit rule
+it sits on top of. Both the human and agent surfaces label an inherited rule with
 its scope, so nobody mistakes state law for one wilderness's local quirk.
 
 This is why `permits.csv` carries an explicit `jurisdiction` column even though
@@ -754,6 +769,32 @@ every group in the dataset is currently Californian: *"all our groups are in
 California"* is true today by coincidence of coverage, and inheriting statewide
 law off that coincidence would break silently the first time a Nevada or Oregon
 group is added. There's a test for exactly that.
+
+### Rules do not stop where permits do
+
+Reading scope off the permit alone left a hole big enough to lose a whole
+agency in. A trailhead that needs no permit resolves to `permits.csv`'s shared
+`none` row, which carries no agency and no wilderness — and *cannot*, because
+sixteen trailheads across six different agencies share that one row. So every
+agency-scoped rule was silently unreachable from every permit-free trailhead in
+the dataset: East Bay Regional Park District's Diablo Range land, but also
+Plumas NF, Tahoe NF and the LTBMU. The failure was invisible in the worst way —
+no error, no empty section, just rules that never appeared.
+
+`Trailhead.agency_id` closes it, and it is a key beside the `land_agency`
+display string for the same reason `PermitRule.agency_ids` sits beside
+`agency`: matching on a display string matches nothing. The two sets are
+**unioned**, not swapped, because a permit's issuer and the ground you start on
+are both real — an Inyo NF trailhead walking into Sequoia-Kings is under Inyo's
+forest rules for the Inyo part of the walk.
+
+Wilderness resolves permit-first and *falls back* to the trailhead's rather
+than unioning. Two named wildernesses on one trip is a route question this
+project has no data to answer, and asserting a second rulebook applies would
+broaden the rules on a trip without evidence. The fallback alone paid for
+itself: Horseshoe Meadows (Cottonwood) sits in the Golden Trout Wilderness
+while its `inyo_gtw` permit row leaves `wilderness_area` blank, so that
+wilderness's campfire restriction had been reaching nobody who started there.
 
 The `wilderness` layer earned itself immediately. Mokelumne Wilderness is
 entered on two different permits — the free general self-issue one and the
@@ -1143,7 +1184,11 @@ including `scripts/assign_trailheads.py`.
 
 `data/trailheads.csv` is a curated list of major east-, west-, and crest-side
 Sierra trailheads with lat/long coordinates, side of range, wilderness area,
-land agency, and `permit_group`. Coordinates are to roughly 0.001 degrees and
+land agency, `agency_id`, and `permit_group`. `land_agency` is a display string
+(`Eldorado NF/LTBMU`); `agency_id` is the matching key (`eldorado_nf;ltbmu`,
+semicolon-separated for co-managed land) that agency-scoped regulations resolve
+against — see "Rules do not stop where permits do" above for why a trailhead
+carries its own agency key rather than borrowing the permit's. Coordinates are to roughly 0.001 degrees and
 spot-checked against public sources such as the PCTA and NPS.
 
 Run:

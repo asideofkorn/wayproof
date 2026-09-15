@@ -18,9 +18,11 @@ So a regulation is stored once and *inherited*, via ``scope_type``:
 
 - ``jurisdiction`` -- state law, applying to every permit group in that state
   (``scope_value`` matches ``PermitRule.jurisdiction``)
-- ``agency`` -- a forest- or park-wide rule (matches ``PermitRule.agency_ids``)
+- ``agency`` -- a forest- or park-wide rule (matches ``PermitRule.agency_ids``,
+  and ``Trailhead.agency_id`` for land you can enter without a permit)
 - ``wilderness`` -- one designated wilderness's own rulebook, which can span
-  several permit products (matches ``PermitRule.wilderness_area``)
+  several permit products (matches ``PermitRule.wilderness_area``, falling back
+  to ``Trailhead.wilderness_area``)
 - ``permit_group`` -- specific to one permit product
 
 The wilderness layer exists because Mokelumne Wilderness is entered on two
@@ -29,7 +31,10 @@ Pass Management Area permit -- governed by a single set of wilderness
 regulations. Scoping those to a permit group would have meant maintaining
 ten rules in two places, which is the drift this module was built to stop.
 
-``regulations_for`` resolves all three layers for a given permit group. The
+``regulations_for`` resolves all three layers for a given permit group, and
+``regulations_in_force`` is what callers should use -- it derives those keys
+from a permit and a trailhead together, so permit-free land still inherits the
+rules of the agency that manages it. The
 jurisdiction layer is why ``permits.csv`` carries an explicit ``jurisdiction``
 column even though every group in the dataset is currently Californian: "all
 our groups are in California" is true today by coincidence of coverage, and
@@ -41,15 +46,27 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Optional, Sequence
+from typing import TYPE_CHECKING, List, Optional, Sequence
 
 import pandas as pd
+
+if TYPE_CHECKING:  # annotations only -- keeps this module at the bottom layer
+    from .model import Trailhead
+    from .permits import PermitRule
 
 JURISDICTION = "jurisdiction"
 AGENCY = "agency"
 WILDERNESS = "wilderness"
 PERMIT_GROUP = "permit_group"
 _VALID_SCOPES = {JURISDICTION, AGENCY, WILDERNESS, PERMIT_GROUP}
+
+NO_PERMIT_GROUP = "none"
+"""``permits.csv``'s shared "no wilderness permit required" row.
+
+Not a permit product. It is the fallback for every trailhead that needs no
+permit -- currently sixteen of them, across six different agencies -- which is
+why nothing may be scoped to it and why ``Trailhead.agency_id`` exists.
+"""
 
 # Ordered for presentation: the ones that carry a fine or ruin a trip first.
 CATEGORY_ORDER = [
@@ -66,6 +83,13 @@ CATEGORY_LABELS = {
     "waste": "Waste",
     "water": "Water",
     "fishing": "Fishing",
+    # "Pets", not "Dogs", and the distinction is load-bearing. Every pets row in
+    # this dataset today is written about dogs, because that is how the agencies
+    # write them. Someone arriving with a cat, a rabbit or a horse-adjacent
+    # animal is asking a question a dog leash rule does not answer, and reading
+    # a dog rule as a pet rule is the confident-wrong-answer failure this
+    # project exists to avoid. Label the category honestly and let the rule's
+    # own summary say which animal it actually governs.
     "pets": "Pets",
     "stock": "Stock and livestock",
     "weapons": "Firearms",
@@ -100,7 +124,11 @@ CATEGORY_VOCABULARY = {
     "camping": ("camp within", "camping within", "stay limit", "consecutive days"),
     "waste": ("cat hole", "human waste", "pack out", "toilet paper"),
     "water": ("treat all water", "purification"),
-    "pets": ("leash", "dog waste"),
+    # "pet"/"pets" and not a bare "cat": "cat hole" is the waste category's own
+    # vocabulary, and a bare "cat" would claim every waste rule in the dataset
+    # as a pet rule. "dog" stays because agencies overwhelmingly write "dogs"
+    # even where the rule is about pets generally -- see CATEGORY_LABELS.
+    "pets": ("leash", "pet waste", "dog waste", "pets", "pet", "dog"),
     "stock": ("livestock", "pack animal", "weed free", "weed-free"),
     "weapons": ("firearm", "discharge"),
     "fishing": ("fish and game", "fishing licence", "fishing license"),
@@ -180,10 +208,25 @@ def load_regulations(path: str | Path = "data/regulations.csv") -> List[Regulati
                 f"Invalid scope_type {scope_type!r} for {regulation_id!r}; "
                 f"expected one of {sorted(_VALID_SCOPES)}"
             )
+        scope_value = _str_field(row, "scope_value")
+        if scope_type == PERMIT_GROUP and scope_value == NO_PERMIT_GROUP:
+            # The obvious place to file a rule for land that needs no permit,
+            # and the one place it must never go. permits.csv's "none" row is a
+            # shared placeholder, not a permit product: sixteen trailheads
+            # across six agencies resolve to it, so a rule scoped here would
+            # hand an East Bay leash law to a trailhead in Plumas NF. Scope it
+            # to the agency or the wilderness that actually issues it.
+            raise ValueError(
+                f"Regulation {regulation_id!r} is scoped to permit_group "
+                f"{NO_PERMIT_GROUP!r}, which is the shared 'no permit required' "
+                "placeholder rather than a permit product -- every permit-free "
+                "trailhead in the dataset would inherit it, whatever agency "
+                "manages it. Scope it to an 'agency' or 'wilderness' instead."
+            )
         out.append(Regulation(
             regulation_id=regulation_id,
             scope_type=scope_type,
-            scope_value=_str_field(row, "scope_value"),
+            scope_value=scope_value,
             category=_str_field(row, "category"),
             summary=_str_field(row, "summary"),
             detail=_str_field(row, "detail"),
@@ -270,3 +313,53 @@ def group_by_category(regulations: Sequence[Regulation]) -> List[tuple]:
             key=lambda c: CATEGORY_ORDER.index(c) if c in CATEGORY_ORDER else len(CATEGORY_ORDER),
         )
     ]
+
+
+def regulations_in_force(
+    regulations: Sequence[Regulation],
+    rule: "Optional[PermitRule]" = None,
+    trailhead: "Optional[Trailhead]" = None,
+) -> List[Regulation]:
+    """Every regulation applying to a trip, resolved from both what admits you
+    and where you actually are.
+
+    :func:`regulations_for` takes scope keys; this takes the two objects a
+    caller already has and works out those keys, so the four surfaces that ask
+    "what rules apply here" -- ``plan``, the site views, the reports, and the
+    scorecard -- cannot answer it four subtly different ways. They previously
+    each built the call by hand off ``PermitRule`` alone, which is the same
+    copy-it-into-every-caller drift the regulations table itself was built to
+    stop.
+
+    Reading scope off the permit alone left a hole. A trailhead with no permit
+    resolves to ``permits.csv``'s shared ``none`` row, which carries no agency
+    and no wilderness -- and cannot, because sixteen trailheads across six
+    agencies share it. So every agency-scoped rule was unreachable from every
+    permit-free trailhead in the dataset: EBRPD's East Bay parks, but also
+    Plumas, Tahoe, and the LTBMU. ``Trailhead.agency_id`` closes that, and the
+    agencies are unioned rather than replaced because a permit's issuer and the
+    land you start on are both real (an Inyo trailhead into SEKI is under Inyo
+    forest rules for the Inyo part of the walk).
+
+    Wilderness resolves permit-first and falls back to the trailhead's, rather
+    than unioning: two named wildernesses on one trip is a route question this
+    project does not model, and asserting a second rulebook applies without
+    evidence would broaden rules onto a trip rather than narrow them. The
+    fallback alone fixes a real case -- Horseshoe Meadows (Cottonwood) sits in
+    the Golden Trout Wilderness while its ``inyo_gtw`` permit row leaves
+    ``wilderness_area`` blank, so that rulebook reached nothing.
+    """
+    permit_group = rule.permit_group if rule is not None else ""
+    jurisdiction = rule.jurisdiction if rule is not None else ""
+    wilderness = rule.wilderness_area if rule is not None else ""
+    agencies = set(rule.agency_ids) if rule is not None else set()
+
+    if trailhead is not None:
+        if not permit_group:
+            permit_group = trailhead.permit_group
+        agencies |= {key.strip() for key in trailhead.agency_id.split(";")}
+        wilderness = wilderness or trailhead.wilderness_area
+
+    agencies.discard("")
+    return regulations_for(regulations, permit_group, sorted(agencies),
+                           jurisdiction, wilderness)

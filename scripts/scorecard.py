@@ -45,7 +45,7 @@ from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
 from wayproof.permits import PermitRule, load_permits
 from wayproof.plan import UNKNOWN, PlanResult, resolve_plan
-from wayproof.regulations import Regulation, load_regulations, regulations_for
+from wayproof.regulations import Regulation, load_regulations, regulations_in_force
 from wayproof.release_policy import CONTACT_REQUIRED, OFF_SEASON, WALKUP
 from wayproof.water import load_water_source_log, load_water_sources
 
@@ -215,7 +215,7 @@ def _q12_fire(c: Ctx) -> str:
     return PARTIAL if c.category("fire") else NO_DATA
 
 
-def _q13_dog(c: Ctx) -> str:
+def _q13_pet(c: Ctx) -> str:
     return ANSWERED if c.category("pets") else NO_DATA
 
 
@@ -304,9 +304,13 @@ QUESTIONS: List[Question] = [
     Question("Q12", 3, "Can I have a fire?",
              "Wrong if it reports the statewide permit requirement without the "
              "local ban sitting on top of it.", _q12_fire),
-    Question("Q13", 3, "Can I bring a dog?",
-             "Wrong if it says 'under control' where the forest requires a leash.",
-             _q13_dog),
+    Question("Q13", 3, "Can I bring a pet?",
+             "Wrong if it says 'under control' where the forest requires a leash, "
+             "or if it answers for dogs when the animal is not a dog.",
+             _q13_pet,
+             limit="Scores only that a pets rule resolves. Every pets rule in "
+                   "the dataset is written about dogs; nothing checks that one "
+                   "answers for the animal actually being brought."),
     Question("Q14", 3, "Where can and cannot I camp?",
              "Setbacks, designated sites, restoration closures.", _q14_camp),
     Question("Q15", 3, "Does my permit still cover me in the next wilderness?",
@@ -366,8 +370,8 @@ def build(trip_date: datetime.date) -> dict:
     for peak in peaks:
         result = resolve_plan([peak.name], trip_date, peaks=peaks, **inputs)
         rule = permits.get(result.trailhead.permit_group) if result.trailhead else None
-        applicable = regulations_for(regs, rule.permit_group, rule.agency_ids,
-                                     rule.jurisdiction, rule.wilderness_area) if rule else []
+        applicable = (regulations_in_force(regs, rule, result.trailhead)
+                      if result.trailhead else [])
         ctx = Ctx(result=result, rule=rule, regs=applicable)
         for q in QUESTIONS:
             verdict = q.proxy(ctx)
