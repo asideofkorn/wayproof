@@ -1,8 +1,83 @@
-name,campground,capacity,water_proximity,restroom_proximity,notes
-Cathedral,Sunol Backpack Camp,5,,,"Densely shaded, cool in summer."
-Eagles Aerie,Sunol Backpack Camp,10,,,"Excellent view of Alameda Creek canyon and Oak Ridge. Noted as ""best"" among Sunol Backpack Camp's sites in this project's trip-planning research (source of that ranking not otherwise specified)."
-Hawks Nest,Sunol Backpack Camp,5,closest to water,near-ish,Excellent view of Alameda Creek canyon and Oak Ridge.
-Oak View,Sunol Backpack Camp,5,,,Excellent view of lower Alameda Creek canyon and Mission Peak.
-Sky Camp,Sunol Backpack Camp,3,,,Magnificent view of Alameda Creek canyon and Oak Ridge.
-Stars Rest,Sunol Backpack Camp,30,,,Good view of Alameda Creek canyon and Mission Peak.
-Sycamore,Sunol Backpack Camp,5,,,Good view of Alameda Creek canyon. Very shady.
+name,campground,capacity,water_proximity,restroom_proximity,notes,loop,site_type,hookups,online_bookable
+Cathedral,Sunol Backpack Camp,5,,,"Densely shaded, cool in summer.",,,,True
+Eagles Aerie,Sunol Backpack Camp,10,,,"Excellent view of Alameda Creek canyon and Oak Ridge. Noted as ""best"" among Sunol Backpack Camp's sites in this project's trip-planning research (source of that ranking not otherwise specified).",,,,True
+Hawks Nest,Sunol Backpack Camp,5,closest to water,near-ish,Excellent view of Alameda Creek canyon and Oak Ridge.,,,,True
+Oak View,Sunol Backpack Camp,5,,,Excellent view of lower Alameda Creek canyon and Mission Peak.,,,,True
+Sky Camp,Sunol Backpack Camp,3,,,Magnificent view of Alameda Creek canyon and Oak Ridge.,,,,True
+Stars Rest,Sunol Backpack Camp,30,,,Good view of Alameda Creek canyon and Mission Peak.,,,,True
+Sycamore,Sunol Backpack Camp,5,,,Good view of Alameda Creek canyon. Very shady.,,,,True
+001,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+002,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+003,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+004,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+005,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+006,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+007,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+008,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+009,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+010,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop A: Sites 1-12,,,False
+011,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+012,Anthony Chabot Campground,8,,,,Loop A: Sites 1-12,rv_hookup,"30 amp electric, water, sewer (full hookup)",True
+013,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+014,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+015,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+016,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+017,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+018,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+019,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+020,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+021,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+022,Anthony Chabot Campground,8,,,"Inside the campground, not a backpack site: 0.2 miles (about 1,000 feet) from parking with no vehicle access or adjacent pad. EBRPD suggests a wagon. Priced at the $25 tent-only rate.",Loop B: Hike-In Sites 13-22 (NO driving to site),tent_hike_in,,True
+023,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+024,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+025,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+026,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+027,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+028,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+029,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+030,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+031,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop C: Sites 23-33,,,False
+032,Anthony Chabot Campground,8,,,,Loop C: Sites 23-33,tent_drive_up,,True
+033,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop C: Sites 23-33,,,False
+034,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+035,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+036,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+037,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+038,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+039,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop D: Sites 34-61,,,False
+040,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+041,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+042,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+043,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+044,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+045,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+046,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+047,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+048,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+049,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+050,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+051,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+052,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+053,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop D: Sites 34-61,,,False
+054,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+055,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+056,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+057,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+058,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+059,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+060,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+061,Anthony Chabot Campground,8,,,,Loop D: Sites 34-61,tent_drive_up,,True
+062,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+063,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+064,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+065,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+066,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+067,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+068,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+069,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+070,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+071,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+072,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+073,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+074,Anthony Chabot Campground,8,,,,Loop F: Sites 62-75,tent_drive_up,,True
+075,Anthony Chabot Campground,8,,,"EXISTS BUT IS NOT IN THE ONLINE LISTING. The site number falls in this loop's stated range, so the loop is known; its type is not, and is left blank rather than inherited from its neighbours. No source read says why these six are absent -- the likeliest reading is that they are the accessible sites, since ADA campsites are phone-only here, but that is a hypothesis. Ask Reservations on (888) 327-2757 option 2.",Loop F: Sites 62-75,,,False

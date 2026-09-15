@@ -113,6 +113,18 @@ class Campground:
     """
 
 
+RV_HOOKUP = "rv_hookup"
+TENT_DRIVE_UP = "tent_drive_up"
+TENT_HIKE_IN = "tent_hike_in"
+_VALID_SITE_TYPES = {RV_HOOKUP, TENT_DRIVE_UP, TENT_HIKE_IN}
+
+SITE_TYPE_LABELS = {
+    RV_HOOKUP: "RV site with hookups",
+    TENT_DRIVE_UP: "drive-up tent site",
+    TENT_HIKE_IN: "walk-in tent site",
+}
+
+
 @dataclass
 class Campsite:
     """One row of ``data/campsites.csv``: an individually-bookable site
@@ -124,6 +136,26 @@ class Campsite:
     water_proximity: str = ""
     restroom_proximity: str = ""
     notes: str = ""
+    loop: str = ""
+    site_type: str = ""
+    """``rv_hookup``, ``tent_drive_up``, ``tent_hike_in``, or ``""`` when
+    nobody has recorded it.
+
+    Deliberately not named after the booking system's own filters, which are
+    actively misleading here: ReserveAmerica calls Anthony Chabot's ten walk-in
+    sites "Tent Only" and its forty-eight drive-up tent sites "Tent/No-Hookup",
+    so someone filtering for a tent site on foot-free terms gets the ones a
+    thousand feet from their car. The label a reader sees comes from
+    :data:`SITE_TYPE_LABELS`.
+    """
+    hookups: str = ""
+    online_bookable: bool = True
+    """False when the site exists but never appears in the online listing.
+
+    Six of Anthony Chabot's seventy-five do. A party browsing online and
+    concluding a campground is full has checked sixty-nine of them, so the
+    absence is data rather than a gap in this table.
+    """
 
 
 def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campground]:
@@ -178,6 +210,13 @@ def load_campsites(path: str | Path = "data/campsites.csv") -> List[Campsite]:
         if not name:
             continue
         capacity = row.get("capacity")
+        site_type = _str_field(row, "site_type")
+        if site_type and site_type not in _VALID_SITE_TYPES:
+            raise ValueError(
+                f"Invalid site_type {site_type!r} for campsite {name!r}; "
+                f"expected one of {sorted(_VALID_SITE_TYPES)} or blank"
+            )
+        bookable = row.get("online_bookable")
         campsites.append(Campsite(
             name=name,
             campground=_str_field(row, "campground"),
@@ -185,6 +224,11 @@ def load_campsites(path: str | Path = "data/campsites.csv") -> List[Campsite]:
             water_proximity=_str_field(row, "water_proximity"),
             restroom_proximity=_str_field(row, "restroom_proximity"),
             notes=_str_field(row, "notes"),
+            loop=_str_field(row, "loop"),
+            site_type=site_type,
+            hookups=_str_field(row, "hookups"),
+            online_bookable=(True if bookable is None or pd.isna(bookable)
+                             else str(bookable).strip().lower() in ("true", "1", "yes")),
         ))
     return campsites
 
@@ -217,3 +261,16 @@ def drive_in(campgrounds: List[Campground]) -> List[Campground]:
 def unknown_access(campgrounds: List[Campground]) -> List[Campground]:
     """Campgrounds whose access mode nobody has recorded yet."""
     return [c for c in campgrounds if not c.access_mode]
+
+
+def site_type_label(campsite: Campsite) -> str:
+    """How to describe a campsite's type to a reader."""
+    return SITE_TYPE_LABELS.get(campsite.site_type, "type not recorded")
+
+
+def sites_by_type(campsites: List[Campsite]) -> Dict[str, List[Campsite]]:
+    """Index campsites by :attr:`Campsite.site_type`, unrecorded ones under ``""``."""
+    out: Dict[str, List[Campsite]] = {}
+    for s in campsites:
+        out.setdefault(s.site_type, []).append(s)
+    return out

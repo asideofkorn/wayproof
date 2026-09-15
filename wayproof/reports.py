@@ -44,7 +44,7 @@ from typing import List, Optional, Sequence
 import pandas as pd
 
 from .access import ApproachRoute, UNCONFIRMED
-from .camping import Campground, Campsite
+from .camping import HIKE_IN, Campground, Campsite
 from .park_access import ParkAccess
 from .model import Peak, Trailhead
 from .evidence import UNVERIFIED, dangling_citations, evidence_for
@@ -271,7 +271,19 @@ def open_questions(
 
     if show_by_park:
         # -- Campsites missing both proximity fields. --
+        #
+        # Only where you walk to the site. Proximity to water and a restroom is a
+        # carrying problem: at Sunol's backpack camp it decides which site to
+        # take, and Hawks Nest being closer to both is recorded because someone
+        # noticed. At a drive-up campground with central flush toilets and hot
+        # showers it decides nothing, and asking it of all 75 of Anthony
+        # Chabot's numbered sites produced 75 questions that buried the 73 real
+        # ones. The trade is a bootstrap gap: a walk-in campground whose sites
+        # do differ still gets asked, a drive-up one never does.
+        access_by_campground = {c.name: c.access_mode for c in campgrounds}
         for s in campsites:
+            if access_by_campground.get(s.campground) != HIKE_IN:
+                continue
             if not _park_is_relevant(campground_park_by_name.get(s.campground, "")):
                 continue
             if not s.water_proximity and not s.restroom_proximity:

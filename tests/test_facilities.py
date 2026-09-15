@@ -15,6 +15,11 @@ import pytest
 from wayproof.camping import (
     DRIVE_IN,
     HIKE_IN,
+    RV_HOOKUP,
+    TENT_DRIVE_UP,
+    TENT_HIKE_IN,
+    site_type_label,
+    sites_by_type,
     UNKNOWN_ACCESS_LABEL,
     Campground,
     Campsite,
@@ -110,10 +115,48 @@ def test_campsites_by_campground_groups_all_seven_sunol_sites():
 
 def test_single_site_campgrounds_have_no_campsites_rows():
     # Boyd Camp etc. aren't split into named sub-sites -- no placeholder rows
-    # that just repeat the campground's own name.
+    # that just repeat the campground's own name. Sunol's sites differ by water
+    # and restroom proximity; Anthony Chabot's differ by loop and type.
     sites = load_campsites(CAMPSITES)
     names = {s.campground for s in sites}
-    assert names == {"Sunol Backpack Camp"}
+    assert names == {"Sunol Backpack Camp", "Anthony Chabot Campground"}
+
+
+def test_chabots_site_types_reproduce_the_booking_systems_own_filter_counts():
+    # 11 RV hookup, 10 tent-only (walk-in), 48 tent/no-hookup. If a row is
+    # mistyped the totals stop matching the source they were read from.
+    sites = [s for s in load_campsites(CAMPSITES)
+             if s.campground == "Anthony Chabot Campground"]
+    assert len(sites) == 75, "75 individual sites exist; the group camps are not among them"
+    counts = {t: len(g) for t, g in sites_by_type(sites).items()}
+    assert counts[RV_HOOKUP] == 11
+    assert counts[TENT_HIKE_IN] == 10
+    assert counts[TENT_DRIVE_UP] == 48
+    assert counts[""] == 6, "the six unlisted sites must not be typed by inference"
+
+
+def test_the_six_unlisted_sites_are_present_but_not_marked_bookable():
+    # They exist, so leaving them out would rebuild the online listing's own
+    # blind spot inside this table.
+    sites = {s.name: s for s in load_campsites(CAMPSITES)
+             if s.campground == "Anthony Chabot Campground"}
+    offline = sorted(n for n, s in sites.items() if not s.online_bookable)
+    assert offline == ["010", "031", "033", "039", "053", "075"]
+    for name in offline:
+        assert sites[name].loop, f"{name} should still carry its loop, which the ranges give"
+        assert sites[name].site_type == "", f"{name}'s type is not stated by any source"
+
+
+def test_walk_in_sites_are_not_labelled_with_the_booking_systems_wording():
+    # ReserveAmerica calls the ten walk-in sites "Tent Only" and the forty-eight
+    # drive-up ones "Tent/No-Hookup". Carrying that through would send someone
+    # filtering for a tent site to the ones 1,000 feet from their car.
+    sites = [s for s in load_campsites(CAMPSITES)
+             if s.campground == "Anthony Chabot Campground"]
+    walk_in = [s for s in sites if s.site_type == TENT_HIKE_IN]
+    assert all("Hike-In" in s.loop for s in walk_in)
+    assert site_type_label(walk_in[0]) == "walk-in tent site"
+    assert all("1,000 feet" in s.notes for s in walk_in)
 
 
 # --- water sources / ledger ---------------------------------------------------

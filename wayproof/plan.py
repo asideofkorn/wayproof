@@ -35,7 +35,9 @@ from typing import Dict, List, Optional, Sequence
 
 from .access import ApproachRoute
 from .booking import BookingChannel, channels_for
-from .camping import Campground, Campsite, access_label
+from .camping import (
+    Campground, Campsite, access_label, site_type_label, sites_by_type,
+)
 from .model import Cluster, Peak, Trailhead
 from .approach import EntryConflict, choose_trailhead, entry_conflicts
 from .data_loader import resolve_peak_name
@@ -666,8 +668,30 @@ def format_plan_summary(result: PlanResult) -> str:
             if c.nightly_entry_cutoff:
                 lines.append(f"    Nightly entry cutoff: {c.nightly_entry_cutoff}")
             sites = [s for s in fac.campsites if s.campground == c.name]
-            if sites:
+            # Named sites read one by one; a numbered campground does not. Anthony
+            # Chabot has 75, and listing them would bury the campground's own facts
+            # under three lines of site numbers.
+            if sites and len(sites) <= 12:
                 lines.append(f"    Sites: {', '.join(f'{s.name} ({s.capacity})' for s in sites)}")
+            elif sites:
+                by_type = sites_by_type(sites)
+                for key in ("rv_hookup", "tent_drive_up", "tent_hike_in", ""):
+                    group = by_type.get(key)
+                    if not group:
+                        continue
+                    offline = [s.name for s in group if not s.online_bookable]
+                    loops = sorted({s.loop.split(":")[0].strip() for s in group if s.loop})
+                    detail = f" -- {', '.join(loops)}" if loops else ""
+                    line = f"    {len(group)} x {site_type_label(group[0])}{detail}"
+                    if group[0].hookups:
+                        line += f" ({group[0].hookups})"
+                    lines.append(line)
+                    if offline:
+                        # "phone only" would state the hypothesis as fact. The
+                        # listing shows what is there, never why something is not.
+                        lines.append(
+                            f"      Exists but absent from the online listing, reason "
+                            f"unrecorded: {', '.join(offline)}")
         if fac.park_access:
             pa = fac.park_access
             lines.append(f"  Park access ({pa.park}):")

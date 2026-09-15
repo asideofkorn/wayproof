@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest
 
 from wayproof.access import ApproachRoute
-from wayproof.camping import Campground, Campsite
+from wayproof.camping import DRIVE_IN, HIKE_IN, Campground, Campsite
 from wayproof.model import Peak, Trailhead
 from wayproof.park_access import ParkAccess
 from wayproof.reports import (
@@ -184,16 +184,39 @@ def test_no_log_at_all_flagged_in_global_view():
 # --- open_questions: campsites / campgrounds (global view only) -----------
 
 def test_campsite_missing_both_proximity_fields_flagged_globally():
+    grounds = [Campground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5)]
-    qs = open_questions(campsites=sites, peak_names=None)
+    qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
     assert len(qs) == 1
     assert qs[0].target_file == "data/campsites.csv"
 
 
+def test_proximity_is_not_asked_of_a_drive_up_campgrounds_sites():
+    # Proximity to water and a restroom is a carrying problem. At a campground
+    # you park at, with central flush toilets, it decides nothing -- and asking
+    # it of Anthony Chabot's 75 numbered sites buried the 73 real questions
+    # under 75 identical ones.
+    grounds = [Campground(name="Anthony Chabot Campground",
+                          park="Anthony Chabot Regional Park", access_mode=DRIVE_IN)]
+    sites = [Campsite(name=f"{n:03d}", campground="Anthony Chabot Campground", capacity=8)
+             for n in range(1, 76)]
+    assert open_questions(campgrounds=grounds, campsites=sites, peak_names=None) == []
+
+
+def test_proximity_is_not_asked_when_the_campground_is_unknown():
+    # Without a campground row there is no way to tell whether the walk matters,
+    # and guessing that it does is what produced the noise.
+    sites = [Campsite(name="Somewhere", campground="Not In This Dataset", capacity=4)]
+    assert open_questions(campsites=sites, peak_names=None) == []
+
+
 def test_campsite_with_one_proximity_field_not_flagged():
+    grounds = [Campground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Hawks Nest", campground="Sunol Backpack Camp", capacity=5,
                        water_proximity="closest to water")]
-    qs = open_questions(campsites=sites, peak_names=None)
+    qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
     assert qs == []
 
 
@@ -215,7 +238,8 @@ def _trailhead(name, park=""):
 def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park")]
+    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Boyd Camp Site", campground="Boyd Camp", capacity=4)]
 
     qs = open_questions(peaks=peaks, trailheads=trailheads, campgrounds=grounds,
@@ -227,7 +251,8 @@ def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
 def test_campsite_gap_excluded_for_unrelated_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Eagle Springs", park="Mission Peak Regional Preserve")]
+    grounds = [Campground(name="Eagle Springs", park="Mission Peak Regional Preserve",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Eagle Springs Site", campground="Eagle Springs", capacity=4)]
 
     qs = open_questions(peaks=peaks, trailheads=trailheads, campgrounds=grounds,

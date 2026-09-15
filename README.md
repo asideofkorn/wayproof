@@ -476,7 +476,16 @@ exemptions.
 - **`data/campgrounds.csv`** / **`data/campsites.csv`** -- a campground is a
   physical cluster with shared facilities (one restroom, one water source,
   one reservation contact); a campsite is an individually-bookable unit
-  within one. Most campgrounds in this dataset are effectively a single
+  within one. A campsite row carries its `loop`, its
+  `site_type` and whether it is `online_bookable`. The type vocabulary is
+  deliberately not the booking system's: ReserveAmerica calls Anthony
+  Chabot's ten walk-in sites "Tent Only" and its forty-eight drive-up tent
+  sites "Tent/No-Hookup", so a reader filtering on the more tent-sounding
+  label lands on the ten that are a thousand feet from the car. They are
+  stored as `tent_hike_in` and `tent_drive_up`. `online_bookable` is false
+  for six of Chabot's seventy-five, which exist but never appear in the
+  listing — a table built only from what the listing shows would rebuild the
+  listing's own blind spot. Most campgrounds in this dataset are effectively a single
   site, but some (Sunol Backpack Camp) contain several named sites that
   share the campground's facilities yet have a genuinely different
   proximity to them -- Hawks Nest is documented as closer to both water and
