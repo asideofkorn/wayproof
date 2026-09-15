@@ -133,8 +133,23 @@ def _q3(c: Ctx) -> str:
 
 
 def _q5_other_end(c: Ctx) -> str:
-    # A trip has two ends; PlanResult has one `trailhead` and no exit.
-    return NO_MODEL
+    """DECLINED, not NO_MODEL: there is now somewhere to put the other end.
+
+    `resolve_plan(exit_trailhead=...)` resolves a named exit's permit group and
+    its park access, and the exit's entrance fee reaches the Cost block -- which
+    is this question's own "wrong if it treats exit parking as unrelated". So
+    "the schema has no place to put this yet" is no longer true.
+
+    What is left is genuine uncertainty only the caller can settle: which end you
+    finish at is a choice, not a fact about the terrain, and the same peak from
+    the same trailhead is an out-and-back or a one-way depending on the person.
+    The scored plan names no exit, so the tool states the assumption and names
+    the remedy rather than guessing -- which is what DECLINED means here.
+
+    Deliberately NOT ANSWERED. A default plan still tells you nothing about an
+    exit, and silence is never read as returns-to-start.
+    """
+    return DECLINED
 
 
 def _q6_carry(c: Ctx) -> str:
@@ -253,7 +268,15 @@ QUESTIONS: List[Question] = [
     Question("Q3", 1, "What is the scarce thing, and when does it become available?",
              "Wrong if it assumes the scarce thing is a permit.", _q3),
     Question("Q5", 1, "What do I need at the other end?",
-             "Wrong if it treats exit parking as unrelated.", _q5_other_end, structural=True),
+             "Wrong if it treats exit parking as unrelated.", _q5_other_end, structural=True,
+             limit="Scores the DEFAULT plan, which names no exit, so it is DECLINED "
+                   "for all 462 rather than measured. Naming --exit resolves the "
+                   "exit's permit group everywhere and compares it against the "
+                   "entry's; the PARKING half depends on park_access.csv, which has "
+                   "one row (Del Valle) and no Sierra trailhead carries a `park` at "
+                   "all -- so the half this question is named for is answerable for "
+                   "the Ohlone trip and empty across the Sierra. The route BETWEEN "
+                   "the ends is not modelled either way."),
     Question("Q6", 1, "What must I carry?",
              "Wrong if it says 'required' without saying that a digital reservation "
              "confirmation is not a permit.", _q6_carry,
@@ -372,6 +395,14 @@ def format_report(built: dict) -> str:
     # of it and buried every row that actually varies.
     varying = [q for q in QUESTIONS if not q.structural]
     structural = [q for q in QUESTIONS if q.structural]
+    # `structural` means "constant for every objective"; NO_MODEL means "the
+    # schema has no place for it". Those coincided until Q5 gained one and became
+    # a constant DECLINED, so counting structural rows as schema gaps would now
+    # overstate the gap by one. Verdict, not flag, decides.
+    def _constant_verdict(q):
+        seen = [v for v in VERDICTS if scores[q.qid][v]]
+        return seen[0] if len(seen) == 1 else None
+    no_model_qs = [q for q in structural if _constant_verdict(q) == NO_MODEL]
     total = sum(sum(scores[q.qid].values()) for q in varying)
     agg = collections.Counter()
     for q in varying:
@@ -382,10 +413,12 @@ def format_report(built: dict) -> str:
                                  for v in VERDICTS if agg[v]))
     if structural:
         out.append("")
-        out.append(f"+ {len(structural)} questions the schema cannot express for ANY "
-                   "objective (counted once, not per objective):")
+        out.append(f"+ {len(structural)} questions with the same verdict for every "
+                   f"objective, of which {len(no_model_qs)} the schema cannot express at "
+                   "all (counted once, not per objective):")
         for q in structural:
-            out.append(f"    {q.qid} tier {q.tier}  {q.text}")
+            out.append(f"    {q.qid} tier {q.tier}  [{_constant_verdict(q) or 'varies'}]  "
+                       f"{q.text}")
 
     answered, declined = agg[ANSWERED], agg[DECLINED]
     if answered + declined:
@@ -403,11 +436,14 @@ def format_report(built: dict) -> str:
     worst = min((scores[q.qid][ANSWERED], q.qid) for q in tier1)
     out.append(f"  At most {worst[0]} objectives can have all {len(tier1)} answered, "
                f"bounded by {worst[1]}.")
-    t1s = [q.qid for q in QUESTIONS if q.tier == 1 and q.structural]
+    t1s = [q for q in QUESTIONS if q.tier == 1 and q.structural]
     if t1s:
-        verb = "is" if len(t1s) == 1 else "are"
-        out.append(f"  {', '.join(t1s)} {verb} also tier 1 and unanswerable for every "
-                   "objective, so the real figure is 0 until the schema changes.")
+        for q in t1s:
+            verdict = _constant_verdict(q)
+            why = ("until the schema changes" if verdict == NO_MODEL
+                   else "for a plan that does not name one -- see its limit below")
+            out.append(f"  {q.qid} is also tier 1 and scores {verdict} for every "
+                       f"objective, so the real figure is 0 {why}.")
 
     out.append("")
     out.append("what each verdict asks of you:")
@@ -416,8 +452,8 @@ def format_report(built: dict) -> str:
             # Every no-model cell belongs to a structural question, and those are
             # counted once rather than per objective -- so the cell count here is
             # 0 and reads as "no schema gaps", which is the opposite of true.
-            out.append(f"  {v:9s} {len(structural):5d}  {VERDICT_MEANING[v]} "
-                       f"({len(structural)} whole questions, listed above)")
+            out.append(f"  {v:9s} {len(no_model_qs):5d}  {VERDICT_MEANING[v]} "
+                       f"({len(no_model_qs)} whole questions, listed above)")
             continue
         if not agg[v]:
             continue

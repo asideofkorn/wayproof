@@ -103,6 +103,49 @@ class PlanResult:
 
     The permit's own fee is one of these, not the trip's cost. Reporting it as
     the cost is what made a $97 trip read as free."""
+    exit_trailhead: Optional[Trailhead] = None
+    """The other end, when the caller named one.
+
+    docs/user_stories/ohlone-traverse-2026-09.md S1 is a completed trip whose two
+    ends were ~29 miles apart in different park units. Which end you finish at is
+    a choice the caller makes, not a fact about the terrain -- the same peak from
+    the same trailhead is an out-and-back or a one-way depending on the person --
+    so it arrives as an input and nothing about it is stored.
+    """
+    exit_requested: str = ""
+    exit_candidates: List[str] = field(default_factory=list)
+    """Trailheads an ambiguous ``--exit`` could have meant. Naming one for the
+    caller is how they plan the wrong trip."""
+    exit_park_access: Optional[ParkAccess] = None
+
+    @property
+    def route_shape(self) -> str:
+        """``unknown`` unless BOTH ends resolved. Absence is never a shape."""
+        if self.trailhead is None or self.exit_trailhead is None:
+            return UNKNOWN_SHAPE
+        if self.exit_trailhead.name == self.trailhead.name:
+            return RETURNS_TO_START
+        return ONE_WAY
+
+    @property
+    def exit_modelled(self) -> bool:
+        return self.route_shape != UNKNOWN_SHAPE
+
+    @property
+    def returns_to_start(self) -> bool:
+        return self.route_shape == RETURNS_TO_START
+
+    @property
+    def exit_permit_group_differs(self) -> bool:
+        """Two ends under two permit groups: the reciprocity question, concrete.
+
+        ``interagency_note`` reasons about this at length in prose that nothing
+        can check against a route. Comparing the two ends is the one part of it
+        that is computable from data already held.
+        """
+        if self.route_shape != ONE_WAY:
+            return False
+        return self.exit_trailhead.permit_group != self.trailhead.permit_group
 
     def to_dict(self) -> dict:
         d: dict = {
@@ -125,13 +168,32 @@ class PlanResult:
             # said nothing; the reverse would be worse, since an agent acting
             # on this cannot see the warning text.
             d["entry_point_resolved"] = not self.entry_conflicts
-            # An agent must be able to see that the other end is MISSING, rather
-            # than infer from its absence that there isn't one. "unknown" is the
-            # honest value: not "out_and_back", which is the common shape and so
-            # the tempting default -- the same mistake as a blank fee reading as
-            # free. When route shape is modelled these two become derived.
-            d["route_shape"] = "unknown"
-            d["exit_modelled"] = False
+            # An agent must be able to see whether the other end is MISSING,
+            # rather than infer from its absence that there isn't one. Both are
+            # derived from whether a plan named one end or two; "unknown" is the
+            # honest value when it named one, never "returns_to_start", which is
+            # the common case and so the tempting default -- the same mistake as
+            # a blank fee reading as free.
+            d["route_shape"] = self.route_shape
+            d["exit_modelled"] = self.exit_modelled
+            if self.exit_trailhead is not None:
+                d["exit"] = {
+                    "name": self.exit_trailhead.name,
+                    "side": self.exit_trailhead.side,
+                    "wilderness_area": self.exit_trailhead.wilderness_area,
+                    "land_agency": self.exit_trailhead.land_agency,
+                    "permit_group": self.exit_trailhead.permit_group,
+                    "permit_group_differs_from_entry": self.exit_permit_group_differs,
+                    # True of EVERY plan, one-way or not: two endpoints do not
+                    # determine the path between them, so a boundary crossed in
+                    # the middle is not resolved here. Onion Valley over
+                    # Kearsarge Pass into SEKI and back returns to its start and
+                    # still crosses an agency line.
+                    "route_between_ends_modelled": False,
+                }
+            if self.exit_requested and self.exit_trailhead is None:
+                d["exit_unresolved"] = {"requested": self.exit_requested,
+                                        "candidates": self.exit_candidates}
             if self.entry_conflicts:
                 d["entry_conflicts"] = [
                     {"peak": c.peak_name, "sourced_route": c.sourced_route,
@@ -236,6 +298,30 @@ class PlanResult:
         return d
 
 
+def resolve_trailhead_name(
+    name: str, trailheads: Sequence[Trailhead]
+) -> "tuple[Optional[Trailhead], List[str]]":
+    """``(trailhead, candidates)`` for a caller-supplied trailhead name.
+
+    Case-insensitive exact match first, then a unique case-insensitive substring
+    match -- stored names carry parentheticals ("Onion Valley (Kearsarge Pass)",
+    "Del Valle (Lichen Bark)") that nobody types. An ambiguous substring returns
+    every candidate and no trailhead, the same contract
+    :func:`resolve_peak_name` uses: picking one is how a caller plans the wrong
+    trip.
+    """
+    wanted = str(name or "").strip()
+    if not wanted:
+        return None, []
+    for th in trailheads:
+        if th.name.lower() == wanted.lower():
+            return th, []
+    partial = [th for th in trailheads if wanted.lower() in th.name.lower()]
+    if len(partial) == 1:
+        return partial[0], []
+    return None, sorted(th.name for th in partial)
+
+
 def resolve_plan(
     objective_names: Sequence[str],
     trip_date: date,
@@ -249,6 +335,7 @@ def resolve_plan(
     campsites: Optional[Sequence[Campsite]] = None,
     park_access: Optional[Sequence[ParkAccess]] = None,
     regulations: Optional[Sequence[Regulation]] = None,
+    exit_trailhead: Optional[str] = None,
     today: Optional[date] = None,
 ) -> PlanResult:
     """Resolve access and permit logistics for a specific, named set of objectives.
@@ -380,14 +467,37 @@ def resolve_plan(
                 campgrounds=cgs, campsites=sites, park_access=pa,
             )
 
+    # The other end. Resolved from existing tables only: the exit's permit group
+    # (comparable against the entry's, which is the computable part of the
+    # reciprocity question) and its park access (entrance fee, gate hours --
+    # Q5's own "wrong if it treats exit parking as unrelated"). No new table,
+    # and nothing inferred when the caller says nothing.
+    exit_th: Optional[Trailhead] = None
+    exit_candidates: List[str] = []
+    exit_pa: Optional[ParkAccess] = None
+    if exit_trailhead:
+        exit_th, exit_candidates = resolve_trailhead_name(exit_trailhead, trailheads)
+        if exit_th is None:
+            warnings.append(
+                f"Exit trailhead {exit_trailhead!r} matches "
+                + (f"more than one trailhead: {', '.join(exit_candidates)}. Name the one "
+                   "you mean." if exit_candidates
+                   else "no trailhead in this dataset, so the other end is NOT resolved.")
+            )
+        else:
+            exit_pa = next((pa for pa in (park_access or [])
+                            if exit_th.park and pa.park == exit_th.park), None)
+
+    costs = trip_costs(permit_entries, facilities, entry_unresolved=bool(conflicts),
+                       exit_park_access=exit_pa,
+                       entry_park=(trailhead.park if trailhead else ""))
+
     applicable: List[Regulation] = []
     if trailhead is not None and regulations:
         rule = permits.get(trailhead.permit_group)
         if rule is not None:
             applicable = regulations_for(regulations, rule.permit_group, rule.agency_ids,
                                          rule.jurisdiction, rule.wilderness_area)
-
-    costs = trip_costs(permit_entries, facilities, entry_unresolved=bool(conflicts))
 
     return PlanResult(
         requested_names=list(objective_names),
@@ -399,6 +509,10 @@ def resolve_plan(
         entry_conflicts=conflicts,
         permit_entries=permit_entries,
         warnings=warnings,
+        exit_trailhead=exit_th,
+        exit_requested=str(exit_trailhead or "").strip(),
+        exit_candidates=exit_candidates,
+        exit_park_access=exit_pa,
         open_questions=questions,
         facilities=facilities,
         regulations=applicable,
@@ -437,19 +551,60 @@ def format_plan_summary(result: PlanResult) -> str:
             lines.append("  These may be different entry points under different agencies, "
                          "which would mean a different permit entirely.")
         else:
-            lines.append(f"  Trailhead: {result.trailhead.name}{side}")
-        # Said out loud because the assumption is invisible otherwise, and it is
-        # load-bearing: docs/user_stories/ohlone-traverse-2026-09.md S1 is a real
-        # trip whose two ends were 29 miles apart in different park units, and
-        # permits.py rests its reciprocity conclusion on "the single-trailhead
-        # loop trips this tool plans". Stating the assumption is NOT a claim
-        # about the shape of the caller's route -- that is not in the dataset.
-        lines.append("  MODELS ONE END ONLY: this plan assumes you start and finish here. "
-                     "Route shape (out-and-back, loop, one-way) is not in this dataset, so "
-                     "that is an assumption, not a finding about your route. If yours is "
-                     "one-way, the other end is absent from everything below -- its parking, "
-                     "entrance fee and access hours are not in Cost, and the permit reasoning "
-                     "assumes continuous travel from this one trailhead.")
+            label = "Entry" if result.exit_modelled else "Trailhead"
+            lines.append(f"  {label}: {result.trailhead.name}{side}")
+
+        if result.route_shape == ONE_WAY:
+            exit_side = (f"  ({result.exit_trailhead.side} side)"
+                         if result.exit_trailhead.side else "")
+            lines.append(f"  Exit: {result.exit_trailhead.name}{exit_side}")
+            if result.exit_permit_group_differs:
+                # The computable half of reciprocity. interagency_note reasons
+                # about this in prose nothing can check against a route; two
+                # named ends can at least be compared.
+                lines.append(f"  TWO PERMIT GROUPS: entry is "
+                             f"{result.trailhead.permit_group!r}, exit is "
+                             f"{result.exit_trailhead.permit_group!r}. Whether one permit "
+                             "covers both ends is the reciprocity question -- read "
+                             "'Crosses into other land' below and confirm before booking; "
+                             "this tool has NOT resolved it for your route.")
+        elif result.returns_to_start:
+            lines.append("  Returns to start: you finish where you began, so there is no "
+                         "other end to arrange.")
+
+        if result.exit_requested and result.exit_trailhead is None:
+            # They asked for the other end and did not get it. The bottom-of-page
+            # Warnings block is not enough: "lead with the doubt", the same
+            # reason the entry-conflict branch above prints its caveat first.
+            detail = (f"matches more than one trailhead ({', '.join(result.exit_candidates)})"
+                      if result.exit_candidates else "matches no trailhead in this dataset")
+            lines.append(f"  EXIT NOT RESOLVED: {result.exit_requested!r} {detail}, "
+                         "so the other end is still missing.")
+
+        if result.exit_modelled:
+            # True of a returns-to-start plan as much as a one-way one. Onion
+            # Valley out and back over Kearsarge Pass into SEKI ends where it
+            # started and still crosses an agency line.
+            lines.append("  ENDS ONLY, NOT THE ROUTE BETWEEN THEM: two endpoints do not "
+                         "determine the path between them, so any wilderness or agency "
+                         "boundary you cross in the middle is not resolved here.")
+        else:
+            # Said out loud because the assumption is invisible otherwise, and it
+            # is load-bearing: docs/user_stories/ohlone-traverse-2026-09.md S1 is
+            # a real trip whose two ends were 29 miles apart in different park
+            # units, and permits.py rests its reciprocity conclusion on "the
+            # single-trailhead loop trips this tool plans". Stating the
+            # assumption is NOT a claim about the shape of the caller's route --
+            # that is not in the dataset, and naming --exit is what settles it.
+            lines.append("  MODELS ONE END ONLY: this plan assumes you start and finish here. "
+                         "Route shape is not in this dataset and has not been guessed, so "
+                         "that is an assumption, not a finding about your route. If yours is "
+                         "one-way, the other end is absent from everything below -- its "
+                         "parking, entrance fee and access hours are not in Cost, and the "
+                         "permit reasoning assumes continuous travel from this one "
+                         "trailhead."
+                         + ("" if result.exit_requested
+                            else " Name it with --exit to resolve it."))
     else:
         lines.append("  No trailhead data available.")
     lines.append("")
@@ -595,6 +750,17 @@ CHARGES = "charges"
 FREE = "free"
 UNKNOWN = "unknown"
 
+#: Route shape, DERIVED from whether a plan names one end or two -- never
+#: stored and never guessed. A trailhead is a place; "loop" is a property of a
+#: trip through places, which is why this is not a column on trailheads.csv (the
+#: same category error permit_zones.csv was keyed by permit_group to avoid).
+#: `returns_to_start` deliberately does not distinguish a loop from an
+#: out-and-back: Q5 only asks whether there IS another end, and approach.py
+#: already computes that distinction for the distance it affects.
+UNKNOWN_SHAPE = "unknown"
+RETURNS_TO_START = "returns_to_start"
+ONE_WAY = "one_way"
+
 _CURRENCY = re.compile(r"\$\s?\d")
 _FREE_PHRASES = ("free", "no fee", "no charge", "no cost")
 
@@ -651,6 +817,8 @@ def trip_costs(
     permit_entries: Sequence[ClusterPermitInfo],
     facilities: Optional[FacilitiesInfo],
     entry_unresolved: bool = False,
+    exit_park_access: Optional[ParkAccess] = None,
+    entry_park: str = "",
 ) -> List[CostComponent]:
     """Every chargeable component of this trip, from data already resolved.
 
@@ -683,6 +851,16 @@ def trip_costs(
             out.append(CostComponent("park_entrance", park.park,
                                      fee_status(park.entrance_fee),
                                      park.entrance_fee, park.fee_conditions))
+
+    # The other end's entrance fee, which Q5 exists for: "wrong if it treats
+    # exit parking as unrelated". Skipped when both ends sit in the same park --
+    # one gate, charged once, and listing it twice would inflate the trip.
+    if exit_park_access is not None and exit_park_access.park != entry_park:
+        out.append(CostComponent("park_entrance",
+                                 f"{exit_park_access.park} (at the exit)",
+                                 fee_status(exit_park_access.entrance_fee),
+                                 exit_park_access.entrance_fee,
+                                 exit_park_access.fee_conditions))
     return out
 
 

@@ -6,6 +6,43 @@ All notable changes to this project are documented here. The format is based on
 ## [Unreleased]
 
 ### Fixed
+- **`plan` can now be told where the trip ends, and Ohlone S1 is answered.**
+  That story is a completed trip whose entry was Del Valle and exit Stanford Ave,
+  ~29 miles apart in two different park units — and Del Valle's `$10` entrance fee
+  had been sitting in `park_access.csv` reachable from nothing. `--exit` names the
+  other end; the exit's entrance fee now lands in the cost roll-up labelled
+  `(at the exit)`, and its permit group is compared against the entry's, which is
+  the one computable part of the reciprocity question `interagency_note` argues in
+  prose. Route shape is **derived, not stored**: omitted `--exit` is `unknown`,
+  the same name is `returns_to_start`, a different one is `one_way`. It is not a
+  column on `trailheads.csv` for the reason destination zones are not either — a
+  trailhead is a place, "loop" is a property of a trip through places — and
+  `returns_to_start` does not distinguish a loop from an out-and-back, because the
+  question only asks whether there *is* another end and `approach.py` already
+  computes that difference for the distance it affects. **Omitting `--exit` is
+  never read as returning to start**, which is the commonest case and so the
+  tempting default. An unmatched or ambiguous name fails loudly in the `Access`
+  block rather than silently reverting to one end.
+- **Scorecard Q5 moves `no-model` → `declined`, and `no-model` drops 5 → 4.**
+  "The schema has no place to put this yet" stopped being true once `--exit`
+  existed; what remains is uncertainty only the caller can settle. Declining is
+  not answering, and a test pins Q5 at zero `answered` for a default plan. Q5's
+  `limit` states where naming an exit still comes up empty: `park_access.csv` has
+  **one row**, and no Sierra trailhead carries a `park` at all, so the parking half
+  — the half the question is named for — is answerable for the Ohlone trip and
+  empty across the Sierra.
+- **The scorecard report conflated "constant" with "schema gap".** `structural`
+  means a row scores the same for every objective; `no-model` means the schema
+  cannot express it. Those coincided until Q5 became a constant `declined`, at
+  which point counting structural rows as schema gaps overstated the gap by one.
+  The report now counts rows whose single constant verdict *is* `no-model`, and
+  labels each constant row with its verdict, since a constant `declined` and a
+  constant `no-model` ask for different work.
+- **Still not modelled, and now said out loud:** the route *between* two ends. Two
+  endpoints do not determine the path, so an out-and-back from Onion Valley over
+  Kearsarge Pass into SEKI finishes where it started and still crosses an agency
+  line. Both modelled shapes print that caveat and the JSON carries
+  `route_between_ends_modelled: false`.
 - **Eleven permit groups never said which document is valid.** `carry` shipped
   with four groups populated; Scorecard Q6 read `no-data` for **385 of 462**
   objectives, because the equipment half resolved from `regulations.csv` and
