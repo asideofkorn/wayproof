@@ -722,8 +722,10 @@ def test_conflicts_stay_separate_across_permit_groups():
         # Logged under "none" because it is about EBRPD land, which issues no
         # permit. The group is a bucket for permit-free agencies, so a conflict
         # here says nothing about the other fifteen trailheads sharing it.
+        # chabot-rv-length and ebrpd-group-camp-minimum were opened and then
+        # closed on evidence the same day; a closed thread leaves this set.
         "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
-                 "ebrpd-group-camp-minimum", "chabot-rv-length"},
+                 "chabot-season", "chabot-overflow-parking"},
     }
 
 
@@ -758,8 +760,10 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # One page giving two different quiet-hour ranges is the document
         # discrediting itself; the other two are separate pages disagreeing.
         "chabot-quiet-hours": "internal",
-        "ebrpd-group-camp-minimum": "cross_source",
-        "chabot-rv-length": "cross_source",
+        # The brochure says year-round camping; the booking system says closed
+        # 1 Nov - 1 Apr. Five months of the year turn on it.
+        "chabot-season": "cross_source",
+        "chabot-overflow-parking": "cross_source",
     }
 
 

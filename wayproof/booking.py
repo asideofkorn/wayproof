@@ -73,7 +73,7 @@ class BookingChannel:
     method: str = ""
     contact: str = ""
     not_accepted: str = ""
-    """What looks like a booking channel and is not.
+    """What looks like a booking channel and is not, or what voids a booking.
 
     Its own field for the same reason :attr:`wayproof.permits.PermitRule.carry`
     is: being wrong about it is discovered too late to fix. EBRPD publishes a
@@ -82,6 +82,16 @@ class BookingChannel:
     site is gone.
     """
     lead_time: str = ""
+    change_cancel: str = ""
+    """How to change or cancel, and through which channel.
+
+    The scorecard reports "Can I change or cancel, and by when?" as no-model
+    for every objective: nothing in the schema could express it. It belongs
+    here because the answer is a channel fact and splits by channel -- EBRPD
+    lets a family campsite be cancelled online but not changed online, and
+    neither changes nor cancellations are accepted by email even though the
+    email address is published.
+    """
     release_mechanics: str = ""
     """What changes on the day inventory opens, when the ordinary channel is not
     the one that gets you a site."""
@@ -132,6 +142,7 @@ def load_booking_channels(
             contact=_str_field(row, "contact"),
             not_accepted=_str_field(row, "not_accepted"),
             lead_time=_str_field(row, "lead_time"),
+            change_cancel=_str_field(row, "change_cancel"),
             release_mechanics=_str_field(row, "release_mechanics"),
             horizon=_str_field(row, "horizon"),
             horizon_as_of=_str_field(row, "horizon_as_of"),
