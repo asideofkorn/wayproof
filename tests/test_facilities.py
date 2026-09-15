@@ -201,7 +201,7 @@ def test_the_ohlone_corridor_camps_are_hike_in_and_the_family_ones_are_not():
     on_foot = {"Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp",
                "Sunol Backpack Camp", "Eagle Springs"}
     by_car = {"Del Valle Family Campground", "Anthony Chabot Campground",
-              "Dumbarton Quarry Campground on the Bay"}
+              "Dumbarton Quarry Campground on the Bay", "Bort Meadow Group Camp"}
     assert on_foot | by_car == set(by_name), "a campground is unclassified above"
     assert {by_name[n].access_mode for n in on_foot} == {HIKE_IN}
     assert {by_name[n].access_mode for n in by_car} == {DRIVE_IN}
