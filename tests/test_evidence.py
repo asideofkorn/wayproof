@@ -26,13 +26,15 @@ from wayproof.evidence import (
     index_log,
     parse_ids,
 )
-from wayproof.permits import SourceLogEntry, load_source_log
+from wayproof.permits import SourceLogEntry, load_permits, load_source_log
 from wayproof.provenance import load_sources
 from wayproof.regulations import load_regulations
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG = os.path.join(ROOT, "data", "permit_source_log.csv")
 REGS = os.path.join(ROOT, "data", "regulations.csv")
+PERMITS = os.path.join(ROOT, "data", "permits.csv")
+POLICIES = os.path.join(ROOT, "data", "release_policies.csv")
 REC = "https://www.recreation.gov/permits/233261"
 
 
@@ -201,3 +203,43 @@ def test_both_surfaces_state_the_evidence_and_agree():
     assert "sources disagree" in md.lower()   # the status label
     assert "open conflict" in md.lower()      # which one, named once
     assert "desolation-sma-distance" in md
+
+
+# -- the guard that would have caught the half-filled column ----------------
+#
+# `log_entry_ids` was populated only for the rows edited the day the column was
+# added, leaving 11 of 15 permit rows blank. Every one of them had a
+# `verified_date` and entries in the ledger, so the site rendered "Not
+# independently verified" on 66 of its 88 pages for permits that had in fact
+# been verified. The backfill is done; this is what stops it recurring.
+
+def test_a_verified_permit_row_cites_its_evidence():
+    permits = load_permits(PERMITS, POLICIES)
+    missing = sorted(g for g, r in permits.items()
+                     if r.verified_date and not r.log_entry_ids.strip())
+    assert missing == [], (
+        "these rows claim a verification date but cite no log entry, so they "
+        f"render as unverified: {missing}"
+    )
+
+
+def test_a_conflict_thread_is_named_once_however_many_entries_cite_it():
+    # A thread normally spans several entries (opened, restated, closed). One id
+    # per entry reads as several separate arguments about the same thing --
+    # latent until rows began citing whole chains, then live on two pages.
+    log = [
+        _entry("a", conflict_id="c1", verdict="unresolved-conflict"),
+        _entry("b", conflict_id="c1", verdict="unresolved-conflict"),
+        _entry("c", conflict_id="c1", verdict="corrects-existing"),
+    ]
+    got = evidence_for("a; b; c", log).as_dict()
+    assert got["resolved_conflicts"] == ["c1"]
+    assert got["open_conflicts"] == []
+
+
+def test_the_real_data_names_each_resolved_thread_once():
+    log = load_source_log(LOG)
+    for group, rule in load_permits(PERMITS, POLICIES).items():
+        d = evidence_for(rule.log_entry_ids, log).as_dict()
+        for key in ("open_conflicts", "resolved_conflicts"):
+            assert len(d[key]) == len(set(d[key])), f"{group}.{key} repeats a thread id"

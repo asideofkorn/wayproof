@@ -54,6 +54,15 @@ def parse_ids(value: str) -> tuple:
     return tuple(p.strip() for p in str(value or "").split(";") if p.strip())
 
 
+def _unique(values) -> List[str]:
+    """De-duplicate preserving first-seen order."""
+    seen: List[str] = []
+    for v in values:
+        if v and v not in seen:
+            seen.append(v)
+    return seen
+
+
 @dataclass
 class CitedEntry:
     """One verification event behind a claim, resolved for display."""
@@ -127,8 +136,11 @@ class ClaimEvidence:
                  "conflict_kind": e.conflict_kind, "conflict_open": e.conflict_open}
                 for e in self.entries
             ],
-            "open_conflicts": [e.conflict_id for e in self.open_conflicts],
-            "resolved_conflicts": [e.conflict_id for e in self.closed_conflicts],
+            # De-duplicated: a conflict thread usually spans several cited
+            # entries (opened, restated, closed), and listing its id once per
+            # entry reads as several separate arguments rather than one.
+            "open_conflicts": _unique(e.conflict_id for e in self.open_conflicts),
+            "resolved_conflicts": _unique(e.conflict_id for e in self.closed_conflicts),
             "dangling_citations": list(self.missing_ids),
         }
 
