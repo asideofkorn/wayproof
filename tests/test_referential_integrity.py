@@ -105,8 +105,14 @@ JOINS = [
      lambda: scoped("permit_group"), lambda: values("permits.csv", "permit_group")),
     ("regulations[scope=wilderness] -> permits.wilderness_area",
      lambda: scoped("wilderness"), lambda: values("permits.csv", "wilderness_area")),
-    ("regulations[scope=agency] -> permits.agency_id",
-     lambda: scoped("agency"), lambda: ids("permits.csv", "agency_id")),
+    # Both sides, because agency identity lives in two places: a permit row
+    # carries its issuer, and a trailhead carries the agency whose land it is
+    # on. Permit-free land (permit_group "none") has only the latter -- EBRPD's
+    # rules exist under no permit at all -- so scoping this join to permits.csv
+    # alone would reject every rule written for land you can walk onto freely.
+    ("regulations[scope=agency] -> permits.agency_id | trailheads.agency_id",
+     lambda: scoped("agency"),
+     lambda: ids("permits.csv", "agency_id") | ids("trailheads.csv", "agency_id")),
     ("regulations[scope=jurisdiction] -> permits.jurisdiction",
      lambda: scoped("jurisdiction"), lambda: values("permits.csv", "jurisdiction")),
     ("campgrounds.park -> trailheads.park | park_access.park",
@@ -126,13 +132,14 @@ def test_join_resolves(label, child, parent):
 
 # -- keys that must stay usable as keys -------------------------------------
 
-def test_agency_id_values_are_keys_not_display_names():
+@pytest.mark.parametrize("filename", ["permits.csv", "trailheads.csv"])
+def test_agency_id_values_are_keys_not_display_names(filename):
     # This column exists because matching on the display string silently made a
     # forest-wide rule apply to nobody. A value that looks like prose invites
     # exactly that mistake back in.
-    bad = sorted(a for a in ids("permits.csv", "agency_id")
+    bad = sorted(a for a in ids(filename, "agency_id")
                  if not re.fullmatch(r"[a-z0-9_]+", a))
-    assert bad == [], f"agency_id must be lowercase snake_case keys: {bad}"
+    assert bad == [], f"{filename} agency_id must be lowercase snake_case keys: {bad}"
 
 
 def test_peak_names_are_unique_case_insensitively():

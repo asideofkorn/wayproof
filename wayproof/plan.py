@@ -45,7 +45,10 @@ from .permits import (
     clusters_permit_info,
     format_permit_entry_body,
 )
-from .regulations import Regulation, group_by_category, regulations_in_force
+from .regulations import (
+    PERMIT_GROUP as REG_PERMIT_GROUP, Regulation, group_by_category,
+    regulations_in_force,
+)
 from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
@@ -670,11 +673,21 @@ def format_plan_summary(result: PlanResult) -> str:
 
     if result.regulations:
         lines.append("Rules in force")
-        lines.append("  What applies once you hold the permit. A rule scoped to anything "
-                     "other than")
-        lines.append("  this permit is inherited -- state law, a wilderness rulebook or an "
-                     "agency")
-        lines.append("  policy -- and applies to other permits in the same scope too.")
+        # "Once you hold the permit" is false where no permit is issued, and
+        # these rules now reach exactly that land: EBRPD's Ordinance 38 governs
+        # its parks with no permit product anywhere in the chain.
+        if any(r.scope_type == REG_PERMIT_GROUP for r in result.regulations):
+            lines.append("  What applies once you hold the permit. A rule scoped to anything "
+                         "other than")
+            lines.append("  this permit is inherited -- state law, a wilderness rulebook or "
+                         "an agency")
+            lines.append("  policy -- and applies to other permits in the same scope too.")
+        else:
+            lines.append("  What applies on this land. No permit carries these -- they are "
+                         "inherited")
+            lines.append("  from state law, a wilderness rulebook or the agency that manages "
+                         "the")
+            lines.append("  ground, and needing no permit does not mean there are no rules.")
         for label, items in group_by_category(result.regulations):
             lines.append(f"  {label}")
             for rule in items:

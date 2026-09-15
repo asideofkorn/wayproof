@@ -226,19 +226,29 @@ def test_a_group_stating_its_fire_rule_in_prose_is_not_flagged_as_unknown():
 # district and co-management detail. So the forest-wide rule applied to zero
 # groups and nothing said so. These tests make a dead scope fail loudly.
 
-def test_every_regulation_scope_reaches_at_least_one_permit_group():
+def test_every_regulation_scope_reaches_at_least_one_real_trip():
+    # Reach is measured over permit groups AND trailheads, because those are the
+    # two places scope comes from. Measuring it over permits alone would have
+    # rejected every rule written for land that needs no permit -- EBRPD's
+    # Ordinance 38 governs two trailheads and no permit product at all -- while
+    # still missing the failure it exists to catch, a rule reaching nobody.
     regs = load_regulations(os.path.join(ROOT, "data", "regulations.csv"))
     permits = load_permits(os.path.join(ROOT, "data", "permits.csv"),
                            os.path.join(ROOT, "data", "release_policies.csv"))
+    trailheads = load_trailheads(os.path.join(ROOT, "data", "trailheads.csv"))
+
     reached = set()
     for rule in permits.values():
-        for reg in regulations_for(regs, rule.permit_group, rule.agency_ids,
-                                   rule.jurisdiction, rule.wilderness_area):
-            reached.add(reg.regulation_id)
+        reached.update(r.regulation_id for r in regulations_in_force(regs, rule))
+    for th in trailheads:
+        reached.update(r.regulation_id
+                       for r in regulations_in_force(regs, permits.get(th.permit_group), th))
+
     dead = [r.regulation_id for r in regs if r.regulation_id not in reached]
     assert dead == [], (
-        f"regulations whose scope matches no permit group: {dead}. A rule that "
-        "inherits to nothing is worse than a missing one -- it reads as covered."
+        f"regulations whose scope matches no permit group and no trailhead: {dead}. "
+        "A rule that inherits to nothing is worse than a missing one -- it reads "
+        "as covered."
     )
 
 
