@@ -77,6 +77,23 @@ class Campground:
     name: str
     park: str
     land_agency: str = ""
+    agency_id: str = ""
+    """Stable key(s) for :attr:`land_agency`, ";"-separated for co-managed land.
+
+    The same display-string/key split ``Trailhead.agency_id`` makes, and here
+    for a sharper reason: a campground reached without a permit has no permit
+    row to borrow an agency from, so without this key an agency-scoped rule
+    cannot reach a trip that is only ever a campsite.
+    """
+    jurisdiction: str = ""
+    """State whose law applies, e.g. ``"CA"``.
+
+    A column rather than an inference for the same reason ``permits.csv``
+    carries one: state law reaches a trip through the permit's jurisdiction,
+    and a campground booked without a permit would otherwise inherit no state
+    law at all -- silently dropping the California Campfire Permit from every
+    car-camping plan.
+    """
     access_mode: str = ""
     """``drive_in``, ``hike_in``, or ``""`` when nobody has recorded it.
 
@@ -180,6 +197,8 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             name=name,
             park=_str_field(row, "park"),
             land_agency=_str_field(row, "land_agency"),
+            agency_id=_str_field(row, "agency_id"),
+            jurisdiction=_str_field(row, "jurisdiction"),
             access_mode=access_mode,
             campsite_type=_str_field(row, "campsite_type"),
             has_restroom=_bool_field(row, "has_restroom"),
@@ -274,3 +293,55 @@ def sites_by_type(campsites: List[Campsite]) -> Dict[str, List[Campsite]]:
     for s in campsites:
         out.setdefault(s.site_type, []).append(s)
     return out
+
+
+def resolve_campground_name(query: str, campgrounds: List[Campground]) -> tuple:
+    """``(campground, candidates)`` for a typed name.
+
+    Mirrors :func:`wayproof.data_loader.resolve_peak_name` and for the same
+    reason: exactly one of the two is meaningful. A unique match returns
+    ``(campground, [])``; an ambiguous one returns ``(None, [...])`` so the
+    caller can show the options instead of picking. "Bort Meadow" alone matches
+    a group camp here and could match a staging area elsewhere, and choosing one
+    is how someone books the wrong thing.
+
+    Matching is exact first, then case-insensitive, then against the name with a
+    generic trailing words dropped -- someone typing "Anthony Chabot" means the
+    campground, and making them type its full stored name is a lookup failure
+    dressed up as precision. A park name is not enough: "Del Valle" resolves to
+    nothing, because that park has five campgrounds and picking one would be the
+    same error as guessing a trailhead.
+    """
+    wanted = str(query or "").strip()
+    if not wanted:
+        return None, []
+
+    by_exact = {c.name: c for c in campgrounds}
+    if wanted in by_exact:
+        return by_exact[wanted], []
+
+    lowered = wanted.lower()
+    exact_ci = [c for c in campgrounds if c.name.strip().lower() == lowered]
+    if len(exact_ci) == 1:
+        return exact_ci[0], []
+    if len(exact_ci) > 1:
+        return None, sorted(c.name for c in exact_ci)
+
+    def _bare(name: str) -> str:
+        # Trailing generic words only, stripped one at a time so the same text
+        # reduces the same way whether it was typed or stored. Taking " family
+        # campground" as one unit did not: it reduced the stored name to "del
+        # valle" while "Del Valle Family" stayed put, and the two stopped
+        # matching. Qualifiers that name a different place -- "family",
+        # "backpack" -- are deliberately kept, so "Del Valle" alone still
+        # resolves to nothing rather than to one of that park's five campgrounds.
+        words = name.strip().lower().split()
+        while words and words[-1] in ("campground", "camp", "group"):
+            words.pop()
+        return " ".join(words)
+
+    target = _bare(wanted)
+    loose = [c for c in campgrounds if _bare(c.name) == target]
+    if len(loose) == 1:
+        return loose[0], []
+    return None, sorted(c.name for c in loose)

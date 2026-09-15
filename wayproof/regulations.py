@@ -319,6 +319,8 @@ def regulations_in_force(
     regulations: Sequence[Regulation],
     rule: "Optional[PermitRule]" = None,
     trailhead: "Optional[Trailhead]" = None,
+    agency: "str | Sequence[str]" = (),
+    jurisdiction: str = "",
 ) -> List[Regulation]:
     """Every regulation applying to a trip, resolved from both what admits you
     and where you actually are.
@@ -348,11 +350,19 @@ def regulations_in_force(
     fallback alone fixes a real case -- Horseshoe Meadows (Cottonwood) sits in
     the Golden Trout Wilderness while its ``inyo_gtw`` permit row leaves
     ``wilderness_area`` blank, so that rulebook reached nothing.
+
+    ``agency`` and ``jurisdiction`` carry scope from somewhere that is neither a
+    permit nor a trailhead -- a campground planned as the objective in its own
+    right. Jurisdiction especially: state law reaches a trip through the
+    permit's ``jurisdiction``, so a campsite booked without a permit would
+    otherwise inherit no state law at all, and every car-camping plan would
+    silently drop the California Campfire Permit.
     """
     permit_group = rule.permit_group if rule is not None else ""
-    jurisdiction = rule.jurisdiction if rule is not None else ""
+    jurisdiction = (rule.jurisdiction if rule is not None else "") or jurisdiction
     wilderness = rule.wilderness_area if rule is not None else ""
     agencies = set(rule.agency_ids) if rule is not None else set()
+    agencies |= ({agency} if isinstance(agency, str) else set(agency))
 
     if trailhead is not None:
         if not permit_group:

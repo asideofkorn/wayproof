@@ -36,7 +36,8 @@ from typing import Dict, List, Optional, Sequence
 from .access import ApproachRoute
 from .booking import BookingChannel, channels_for
 from .camping import (
-    Campground, Campsite, access_label, site_type_label, sites_by_type,
+    Campground, Campsite, access_label, resolve_campground_name,
+    site_type_label, sites_by_type,
 )
 from .model import Cluster, Peak, Trailhead
 from .approach import EntryConflict, choose_trailhead, entry_conflicts
@@ -82,10 +83,24 @@ class PlanResult:
 
     requested_names: List[str]
     objectives: List[Peak]
-    not_found: List[str]
-    trip_date: date
-    trailhead: Optional[Trailhead]
-    trailhead_ambiguous: bool
+    campground_objectives: List[Campground] = field(default_factory=list)
+    """Campgrounds named as the objective in their own right.
+
+    A night at a campsite is a trip, and it was previously unaskable: every
+    objective had to resolve to a summit, so ``plan "Anthony Chabot
+    Campground"`` answered "not found in peak data" for a place this project
+    held fees, gate hours and rules for. ``Peak`` was always documented as one
+    *type* of place-based objective rather than the ontology; this is the
+    second.
+
+    A campground objective resolves its park, agency and jurisdiction directly
+    and NEVER a trailhead. Car camping has no approach, so inventing one would
+    produce an entry point, a route shape and a permit that no source supports.
+    """
+    not_found: List[str] = field(default_factory=list)
+    trip_date: date = None  # type: ignore[assignment]
+    trailhead: Optional[Trailhead] = None
+    trailhead_ambiguous: bool = False
     entry_conflicts: List[EntryConflict] = field(default_factory=list)
     """Objectives whose sourced route contradicts the trailhead geometry chose.
 
@@ -126,6 +141,11 @@ class PlanResult:
     exit_park_access: Optional[ParkAccess] = None
 
     @property
+    def has_objectives(self) -> bool:
+        """Did anything the caller named resolve, of either kind?"""
+        return bool(self.objectives or self.campground_objectives)
+
+    @property
     def route_shape(self) -> str:
         """``unknown`` unless BOTH ends resolved. Absence is never a shape."""
         if self.trailhead is None or self.exit_trailhead is None:
@@ -160,6 +180,19 @@ class PlanResult:
             "trip_date": self.trip_date.isoformat(),
             "objectives": [p.to_dict() for p in self.objectives],
         }
+        if self.campground_objectives:
+            d["campground_objectives"] = [
+                {"name": c.name, "park": c.park, "land_agency": c.land_agency,
+                 "access_mode": c.access_mode or None,
+                 "campsite_type": c.campsite_type or None}
+                for c in self.campground_objectives
+            ]
+            # Stated, not implied by the absence of a trailhead key. An agent
+            # reading this must not fill the gap with geometry of its own.
+            d["trailhead_modelled"] = False
+            d["trailhead_modelled_reason"] = (
+                "A campground objective has no approach, so no entry point, route "
+                "shape or wilderness permit is resolved for it.")
         if self.not_found:
             d["not_found"] = self.not_found
         if self.trailhead:
@@ -272,6 +305,17 @@ class PlanResult:
                     }
                     for w in fac.water_sources
                 ]
+            if fac.booking_channels:
+                facilities_d["booking_channels"] = [
+                    {"channel_id": ch.channel_id, "applies_to": ch.applies_to,
+                     "method": ch.method or None, "contact": ch.contact or None,
+                     "not_accepted": ch.not_accepted or None,
+                     "lead_time": ch.lead_time or None,
+                     "change_cancel": ch.change_cancel or None,
+                     "horizon": ch.horizon or None,
+                     "horizon_as_of": ch.horizon_as_of or None}
+                    for ch in fac.booking_channels
+                ]
             if fac.campgrounds:
                 facilities_d["campgrounds"] = [
                     {
@@ -367,9 +411,21 @@ def resolve_plan(
     fee), linked to the resolved trailhead the same conservative way.
     """
     objectives: List[Peak] = []
+    campground_objectives: List[Campground] = []
     not_found: List[str] = []
     ambiguous: Dict[str, List[str]] = {}
     for name in objective_names:
+        # Peaks first, campgrounds second, and a name is never tried against
+        # campgrounds once it has matched a summit: the two namespaces are
+        # separate today and silently preferring one would be a coin toss the
+        # caller never sees.
+        camp, camp_candidates = resolve_campground_name(name, campgrounds or [])
+        if camp is not None and resolve_peak_name(name, peaks)[0] is None:
+            campground_objectives.append(camp)
+            continue
+        if camp_candidates and resolve_peak_name(name, peaks)[0] is None:
+            ambiguous[name] = camp_candidates
+            continue
         # Not a plain lowercase lookup: peaks.csv keys on the source list's own
         # formatting, so "Mount Carillon" (the GNIS spelling), "Duane Bliss
         # Peak" (stored with a trailing emblem marker) and "Mount Whitney"
@@ -444,7 +500,17 @@ def resolve_plan(
                 )
 
     questions: List[OpenQuestion] = []
-    if objectives:
+    if campground_objectives:
+        # Only the named campgrounds and their sites. Passing the whole dataset
+        # with no peak filter would return every open question in the project,
+        # which is a different report and not this trip's.
+        cg_names = {c.name for c in campground_objectives}
+        questions = open_questions(
+            campgrounds=list(campground_objectives),
+            campsites=[s for s in (campsites or []) if s.campground in cg_names],
+            peak_names=None,
+        )
+    elif objectives:
         questions = open_questions(
             peaks=objectives,
             approaches=approaches or [],
@@ -458,7 +524,43 @@ def resolve_plan(
         )
 
     facilities: Optional[FacilitiesInfo] = None
-    if trailhead is not None:
+    if campground_objectives:
+        # Asked about a campground, answer about that campground. The trailhead
+        # flow shows every campground in the park because the question there is
+        # "where can I sleep near this peak"; here the caller named the place,
+        # and listing its seven neighbours would answer a question nobody asked.
+        parks = {c.park for c in campground_objectives if c.park}
+        if len(parks) > 1:
+            warnings.append(
+                "Campground objectives are in different parks "
+                f"({', '.join(sorted(parks))}) -- entrance fees and gate hours "
+                "are resolved for the first only; check the others separately.")
+        park_name = next((c.park for c in campground_objectives if c.park), "")
+        pa = next((p for p in (park_access or []) if park_name and p.park == park_name), None)
+        cg_names = {c.name for c in campground_objectives}
+        sites = [s for s in (campsites or []) if s.campground in cg_names]
+        ws = [w for w in (water_sources or []) if w.location and w.location.strip() in cg_names]
+        water_status = {
+            name: entry
+            for name, entry in latest_status_by_source(water_source_log or []).items()
+            if name in {w.name for w in ws}
+        }
+        types = {c.campsite_type for c in campground_objectives if c.campsite_type}
+        seen_ch, chans = set(), []
+        for t in sorted(types) or [""]:
+            for ch in channels_for(
+                    booking_channels or [], t,
+                    agency=[k.strip() for c in campground_objectives
+                            for k in c.agency_id.split(";") if k.strip()]):
+                if ch.channel_id not in seen_ch:
+                    seen_ch.add(ch.channel_id)
+                    chans.append(ch)
+        facilities = FacilitiesInfo(
+            water_sources=ws, water_status=water_status,
+            campgrounds=list(campground_objectives), campsites=sites,
+            park_access=pa, booking_channels=chans,
+        )
+    elif trailhead is not None:
         ws = [w for w in (water_sources or [])
               if w.location and w.location.strip() == trailhead.name]
         water_status = {
@@ -515,7 +617,15 @@ def resolve_plan(
                        entry_park=(trailhead.park if trailhead else ""))
 
     applicable: List[Regulation] = []
-    if trailhead is not None and regulations:
+    if campground_objectives and regulations:
+        applicable = regulations_in_force(
+            regulations,
+            agency=[k.strip() for c in campground_objectives
+                    for k in c.agency_id.split(";") if k.strip()],
+            jurisdiction=next((c.jurisdiction for c in campground_objectives
+                               if c.jurisdiction), ""),
+        )
+    elif trailhead is not None and regulations:
         # Resolved even when the trailhead has no permit row: agency- and
         # wilderness-scoped rules still apply to permit-free land.
         applicable = regulations_in_force(
@@ -524,6 +634,7 @@ def resolve_plan(
     return PlanResult(
         requested_names=list(objective_names),
         objectives=objectives,
+        campground_objectives=campground_objectives,
         not_found=not_found,
         trip_date=trip_date,
         trailhead=trailhead,
@@ -542,20 +653,168 @@ def resolve_plan(
     )
 
 
+def _append_facilities(lines: List[str], result: PlanResult) -> None:
+    """Extracted so a campground objective renders the same section a peak
+    does, rather than a second copy of it that drifts."""
+    if result.facilities:
+        fac = result.facilities
+        lines.append("Facilities")
+        if fac.water_sources:
+            where = result.trailhead.name if result.trailhead else "this campground"
+            lines.append(f"  Water sources at {where}:")
+            for w in fac.water_sources:
+                status = fac.water_status.get(w.name)
+                if status:
+                    lines.append(f"    - {w.name}: {status.observed_status} "
+                                 f"(checked {status.checked_date})")
+                else:
+                    lines.append(f"    - {w.name}: no availability check on file")
+        for ch in fac.booking_channels:
+            lines.append(f"  Booking -- {ch.applies_label} ({ch.scope_label}):")
+            for label, text in (("How", ch.method), ("Contact", ch.contact),
+                                ("NOT a channel", ch.not_accepted),
+                                ("Lead time", ch.lead_time),
+                                ("On release day", ch.release_mechanics)):
+                if text:
+                    lines.append(f"    {label}: {text}")
+            if ch.horizon:
+                asof = f" (as of {ch.horizon_as_of})" if ch.horizon_as_of else ""
+                lines.append(f"    Booking horizon{asof}: {ch.horizon}")
+        for c in fac.campgrounds:
+            lines.append(f"  Campground: {c.name} ({access_label(c)})")
+            if c.reservation_method:
+                lines.append(f"    Reservation: {c.reservation_method}")
+            if c.fee_notes:
+                lines.append(f"    Fee: {c.fee_notes}")
+            if c.nightly_entry_cutoff:
+                lines.append(f"    Nightly entry cutoff: {c.nightly_entry_cutoff}")
+            sites = [s for s in fac.campsites if s.campground == c.name]
+            # Named sites read one by one; a numbered campground does not. Anthony
+            # Chabot has 75, and listing them would bury the campground's own facts
+            # under three lines of site numbers.
+            if sites and len(sites) <= 12:
+                lines.append(f"    Sites: {', '.join(f'{s.name} ({s.capacity})' for s in sites)}")
+            elif sites:
+                by_type = sites_by_type(sites)
+                for key in ("rv_hookup", "tent_drive_up", "tent_hike_in", ""):
+                    group = by_type.get(key)
+                    if not group:
+                        continue
+                    offline = [s.name for s in group if not s.online_bookable]
+                    loops = sorted({s.loop.split(":")[0].strip() for s in group if s.loop})
+                    detail = f" -- {', '.join(loops)}" if loops else ""
+                    line = f"    {len(group)} x {site_type_label(group[0])}{detail}"
+                    if group[0].hookups:
+                        line += f" ({group[0].hookups})"
+                    lines.append(line)
+                    if offline:
+                        # "phone only" would state the hypothesis as fact. The
+                        # listing shows what is there, never why something is not.
+                        lines.append(
+                            f"      Exists but absent from the online listing, reason "
+                            f"unrecorded: {', '.join(offline)}")
+        if fac.park_access:
+            pa = fac.park_access
+            lines.append(f"  Park access ({pa.park}):")
+            if pa.entrance_fee:
+                cond = f" ({pa.fee_conditions})" if pa.fee_conditions else ""
+                lines.append(f"    Entrance fee: {pa.entrance_fee}{cond}")
+            if pa.gate_open or pa.gate_close:
+                cond = f" ({pa.gate_hours_conditions})" if pa.gate_hours_conditions else ""
+                lines.append(f"    Gate hours: {pa.gate_open}-{pa.gate_close}{cond}")
+            if pa.fee_exemptions:
+                lines.append(f"    Fee exemptions: {pa.fee_exemptions}")
+        lines.append("")
+
+def _append_rules(lines: List[str], result: PlanResult) -> None:
+    """Extracted so a campground objective renders the same section a peak
+    does, rather than a second copy of it that drifts."""
+    if result.regulations:
+        lines.append("Rules in force")
+        # "Once you hold the permit" is false where no permit is issued, and
+        # these rules now reach exactly that land: EBRPD's Ordinance 38 governs
+        # its parks with no permit product anywhere in the chain.
+        if any(r.scope_type == REG_PERMIT_GROUP for r in result.regulations):
+            lines.append("  What applies once you hold the permit. A rule scoped to anything "
+                         "other than")
+            lines.append("  this permit is inherited -- state law, a wilderness rulebook or "
+                         "an agency")
+            lines.append("  policy -- and applies to other permits in the same scope too.")
+        else:
+            lines.append("  What applies on this land. No permit carries these -- they are "
+                         "inherited")
+            lines.append("  from state law, a wilderness rulebook or the agency that manages "
+                         "the")
+            lines.append("  ground, and needing no permit does not mean there are no rules.")
+        for label, items in group_by_category(result.regulations):
+            lines.append(f"  {label}")
+            for rule in items:
+                bits = [rule.summary]
+                if rule.citation:
+                    bits.append(f"({rule.citation})")
+                if rule.inherited:
+                    bits.append(f"[{rule.scope_label}]")
+                lines.append(f"    - {' '.join(bits)}")
+        lines.append("  Summaries only. Each rule's full text, source and last check are "
+                     "published per trailhead.")
+        lines.append("")
+
+def _append_open_questions(lines: List[str], result: PlanResult) -> None:
+    """Extracted so a campground objective renders the same section a peak
+    does, rather than a second copy of it that drifts."""
+    if result.open_questions:
+        lines.append("Help us confirm (if you're going, and you check, please report back)")
+        for q in result.open_questions:
+            lines.append(f"  - {q.question}")
+        lines.append("")
+
 def format_plan_summary(result: PlanResult) -> str:
     """Render a :class:`PlanResult` as a human-readable trip summary."""
     lines: List[str] = []
-    title = " + ".join(p.name for p in result.objectives) or " + ".join(result.requested_names)
-    lines.append(title.upper() if result.objectives else title)
+    named = [p.name for p in result.objectives] + [c.name for c in result.campground_objectives]
+    title = " + ".join(named) or " + ".join(result.requested_names)
+    lines.append(title.upper() if named else title)
     lines.append(f"Trip date: {result.trip_date:%Y-%m-%d}")
     lines.append("")
 
     if result.not_found:
-        lines.append(f"Not found in peak data: {', '.join(result.not_found)}")
+        lines.append("Not found in peak or campground data: "
+                     f"{', '.join(result.not_found)}")
+        lines.append("")
+
+    if not result.has_objectives:
+        lines.append("No objectives resolved -- nothing to plan.")
+        return "\n".join(lines)
+
+    if result.campground_objectives:
+        lines.append("Staying at")
+        for c in result.campground_objectives:
+            where = f" in {c.park}" if c.park else ""
+            lines.append(f"  {c.name}{where} ({access_label(c)})")
+            if c.access_mode == "hike_in":
+                lines.append("    Reached on foot. Distance from the road is in the "
+                             "campground's notes, and no approach is modelled here.")
+        lines.append("  No trailhead is resolved for a campground objective, and none is "
+                     "guessed: a night at a campsite has no approach, so there is no entry")
+        lines.append("  point, no route shape and no wilderness permit to report. What "
+                     "governs access here is the reservation and the rules below.")
         lines.append("")
 
     if not result.objectives:
-        lines.append("No objectives resolved -- nothing to plan.")
+        cost_lines = format_costs(result.costs)
+        if cost_lines:
+            lines.extend(cost_lines)
+            lines.append("")
+        _append_facilities(lines, result)
+        _append_rules(lines, result)
+        _append_open_questions(lines, result)
+        if result.warnings:
+            lines.append("Warnings")
+            for w in result.warnings:
+                lines.append(f"  - {w}")
+            lines.append("")
+        lines.append("Planning aid, not a booking guarantee -- verify the current rule at "
+                     "the official source before acting on any date above.")
         return "\n".join(lines)
 
     lines.append("Access")
@@ -636,74 +895,7 @@ def format_plan_summary(result: PlanResult) -> str:
         lines.extend(cost_lines)
         lines.append("")
 
-    if result.facilities:
-        fac = result.facilities
-        lines.append("Facilities")
-        if fac.water_sources:
-            lines.append(f"  Water sources at {result.trailhead.name}:")
-            for w in fac.water_sources:
-                status = fac.water_status.get(w.name)
-                if status:
-                    lines.append(f"    - {w.name}: {status.observed_status} "
-                                 f"(checked {status.checked_date})")
-                else:
-                    lines.append(f"    - {w.name}: no availability check on file")
-        for ch in fac.booking_channels:
-            lines.append(f"  Booking -- {ch.applies_label} ({ch.scope_label}):")
-            for label, text in (("How", ch.method), ("Contact", ch.contact),
-                                ("NOT a channel", ch.not_accepted),
-                                ("Lead time", ch.lead_time),
-                                ("On release day", ch.release_mechanics)):
-                if text:
-                    lines.append(f"    {label}: {text}")
-            if ch.horizon:
-                asof = f" (as of {ch.horizon_as_of})" if ch.horizon_as_of else ""
-                lines.append(f"    Booking horizon{asof}: {ch.horizon}")
-        for c in fac.campgrounds:
-            lines.append(f"  Campground: {c.name} ({access_label(c)})")
-            if c.reservation_method:
-                lines.append(f"    Reservation: {c.reservation_method}")
-            if c.fee_notes:
-                lines.append(f"    Fee: {c.fee_notes}")
-            if c.nightly_entry_cutoff:
-                lines.append(f"    Nightly entry cutoff: {c.nightly_entry_cutoff}")
-            sites = [s for s in fac.campsites if s.campground == c.name]
-            # Named sites read one by one; a numbered campground does not. Anthony
-            # Chabot has 75, and listing them would bury the campground's own facts
-            # under three lines of site numbers.
-            if sites and len(sites) <= 12:
-                lines.append(f"    Sites: {', '.join(f'{s.name} ({s.capacity})' for s in sites)}")
-            elif sites:
-                by_type = sites_by_type(sites)
-                for key in ("rv_hookup", "tent_drive_up", "tent_hike_in", ""):
-                    group = by_type.get(key)
-                    if not group:
-                        continue
-                    offline = [s.name for s in group if not s.online_bookable]
-                    loops = sorted({s.loop.split(":")[0].strip() for s in group if s.loop})
-                    detail = f" -- {', '.join(loops)}" if loops else ""
-                    line = f"    {len(group)} x {site_type_label(group[0])}{detail}"
-                    if group[0].hookups:
-                        line += f" ({group[0].hookups})"
-                    lines.append(line)
-                    if offline:
-                        # "phone only" would state the hypothesis as fact. The
-                        # listing shows what is there, never why something is not.
-                        lines.append(
-                            f"      Exists but absent from the online listing, reason "
-                            f"unrecorded: {', '.join(offline)}")
-        if fac.park_access:
-            pa = fac.park_access
-            lines.append(f"  Park access ({pa.park}):")
-            if pa.entrance_fee:
-                cond = f" ({pa.fee_conditions})" if pa.fee_conditions else ""
-                lines.append(f"    Entrance fee: {pa.entrance_fee}{cond}")
-            if pa.gate_open or pa.gate_close:
-                cond = f" ({pa.gate_hours_conditions})" if pa.gate_hours_conditions else ""
-                lines.append(f"    Gate hours: {pa.gate_open}-{pa.gate_close}{cond}")
-            if pa.fee_exemptions:
-                lines.append(f"    Fee exemptions: {pa.fee_exemptions}")
-        lines.append("")
+    _append_facilities(lines, result)
 
     if result.entry_conflicts:
         lines.append("Permit (CANDIDATE ONLY -- follows the unresolved entry point above)")
@@ -722,35 +914,7 @@ def format_plan_summary(result: PlanResult) -> str:
         lines.append("  No permit data resolved for this trailhead.")
         lines.append("")
 
-    if result.regulations:
-        lines.append("Rules in force")
-        # "Once you hold the permit" is false where no permit is issued, and
-        # these rules now reach exactly that land: EBRPD's Ordinance 38 governs
-        # its parks with no permit product anywhere in the chain.
-        if any(r.scope_type == REG_PERMIT_GROUP for r in result.regulations):
-            lines.append("  What applies once you hold the permit. A rule scoped to anything "
-                         "other than")
-            lines.append("  this permit is inherited -- state law, a wilderness rulebook or "
-                         "an agency")
-            lines.append("  policy -- and applies to other permits in the same scope too.")
-        else:
-            lines.append("  What applies on this land. No permit carries these -- they are "
-                         "inherited")
-            lines.append("  from state law, a wilderness rulebook or the agency that manages "
-                         "the")
-            lines.append("  ground, and needing no permit does not mean there are no rules.")
-        for label, items in group_by_category(result.regulations):
-            lines.append(f"  {label}")
-            for rule in items:
-                bits = [rule.summary]
-                if rule.citation:
-                    bits.append(f"({rule.citation})")
-                if rule.inherited:
-                    bits.append(f"[{rule.scope_label}]")
-                lines.append(f"    - {' '.join(bits)}")
-        lines.append("  Summaries only. Each rule's full text, source and last check are "
-                     "published per trailhead.")
-        lines.append("")
+    _append_rules(lines, result)
 
     lines.append("Known per-objective mileage (official round trip, from source data)")
     any_known = False
@@ -788,11 +952,7 @@ def format_plan_summary(result: PlanResult) -> str:
             lines.append(f"  - {w}")
         lines.append("")
 
-    if result.open_questions:
-        lines.append("Help us confirm (if you're going, and you check, please report back)")
-        for q in result.open_questions:
-            lines.append(f"  - {q.question}")
-        lines.append("")
+    _append_open_questions(lines, result)
 
     lines.append(
         "Planning aid, not a booking guarantee -- verify the current rule at the "

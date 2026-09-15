@@ -52,7 +52,9 @@ def _parse_args(argv=None) -> argparse.Namespace:
                      "named objectives on a given trip date."),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    p.add_argument("objectives", nargs="+", help="One or more objective (peak) names")
+    p.add_argument("objectives", nargs="+",
+                   help="One or more objective names -- a peak, or a campground "
+                        "for a trip that is a night at a campsite")
     p.add_argument("--date", required=True, help="Planned trip date (YYYY-MM-DD)")
     p.add_argument("--peaks-file", default="data/peaks.csv",
                    help="Core peak dataset: name, coordinates, elevation -- "
@@ -135,7 +137,9 @@ def main(argv=None) -> int:
             json.dump(result.to_dict(), fh, indent=2)
         print(f"\nWrote plan to {args.output}")
 
-    return 0 if result.objectives else 1
+    # A campground is an objective too; exiting non-zero on a resolved
+    # campsite plan would tell a script the trip could not be planned.
+    return 0 if result.has_objectives else 1
 
 
 if __name__ == "__main__":

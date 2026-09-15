@@ -126,6 +126,36 @@ worth making.** Worked examples with verified answers live in
 A question this project cannot answer should say so plainly. **Declining is a
 usable answer; being wrong is not.**
 
+## An Objective Is Not Only A Summit
+
+`plan "Anthony Chabot Campground" --date 2026-10-17` answers. It used not to:
+every objective had to resolve to a peak, so the flagship command replied
+"not found in peak data" for a place this project held fees, gate hours,
+booking channels and eleven rules for. `Peak` was always documented as one
+*type* of place-based objective rather than the ontology of the project.
+A campground is the second.
+
+A campground objective resolves its park, agency and jurisdiction directly,
+and **never a trailhead**. Car camping has no approach, so inventing one
+would manufacture an entry point, a route shape and a wilderness permit that
+no source supports. The summary says so in words and the JSON says so in a
+field — `trailhead_modelled: false` with a reason — because an agent reading
+a missing key is free to fill it with geometry of its own.
+
+Two columns exist on `campgrounds.csv` only because of this. `agency_id` is
+the key agency-scoped rules match on, since a campground reached without a
+permit has no permit row to borrow an agency from. `jurisdiction` is there
+for a sharper reason: state law reaches a trip through the *permit's*
+jurisdiction, so a campsite booked without a permit would inherit no state
+law at all, and every car-camping plan would silently drop the California
+Campfire Permit.
+
+Where the trailhead flow lists every campground in the park — the question
+there being "where can I sleep near this peak" — a campground objective
+answers about the campground the caller named. Listing its seven neighbours
+would answer a question nobody asked.
+
+
 ## `plan`: Objective + Date -> Logistics
 
 `plan.py` is that answer. It takes specific, named objectives and resolves
