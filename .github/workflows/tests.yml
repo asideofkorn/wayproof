@@ -24,3 +24,11 @@ jobs:
           pip install -r requirements.txt pytest
       - name: Run tests
         run: python -m pytest tests/ -v
+
+      # Printed, never asserted. This is a measurement of how much of the
+      # README's question list the tool can answer at all; a coverage number
+      # that fails the build becomes a target, and the cheapest way to move
+      # most rows is to add unchecked data. Read it in the log.
+      - name: Scorecard (coverage of the README's questions)
+        if: matrix.python-version == '3.12'
+        run: python scripts/scorecard.py

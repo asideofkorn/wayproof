@@ -5,6 +5,39 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Added
+- **A scorecard for the README's questions** (`scripts/scorecard.py`). The README
+  lists 21 questions this project exists to answer, each with what makes an
+  answer *wrong*. This scores every one against every objective, in 1.2s, with
+  no trip required -- turning "are we succeeding" into a number that moves.
+  Printed in CI on one Python version; **never asserted**, because a coverage
+  number that fails the build becomes a target, and the cheapest way to move
+  most rows is to add unchecked data.
+  - **Six verdicts, because each implies a different fix.** The two that matter:
+    `omitted` (the project holds this and the surface does not show it) is
+    separate from `declined` (the tool says it does not know) -- declining is
+    honest, omitting is not. And `no-model` (no field exists anywhere) is
+    separate from `no-data` (the field exists, unpopulated) -- schema gap versus
+    data-entry gap.
+  - `declined / (answered + declined)` is the calibration figure: **20%** today.
+    Near 0% risks confident wrong answers; near 100% is honest and unusable.
+    "Declining is a usable answer" now has a number attached.
+  - Constant-verdict questions are counted once, not 462 times. Five questions
+    the schema cannot express for *any* objective were burying every row that
+    varies.
+  - It measures **coverage, not correctness**. A question can score `answered`
+    while the answer is wrong -- the $97-reported-as-free trip would have scored
+    green on Q7. Correctness needs a trip; those stay in `docs/user_stories/`.
+    Each weak proxy states its own limit and the report prints them.
+  - What it says today: **0 of 462 objectives can have all tier-1 questions
+    answered**, bounded by Q6 "What must I carry?" -- which scores 0 answered
+    because the food-storage rules exist for 49 objectives and `plan.py`
+    surfaces none of them. Q16 water answers 2 of 462. Q12 fire is `partial` for
+    402, where only the statewide permit applies and no local rule sits on top.
+  - A test asserts every README question is either scored or excused with a
+    reason, that ids follow README order, and that the texts match verbatim. It
+    caught a dropped question and two misnumbered ids on its first run.
+
 ### Fixed
 - **A $97 trip reported as free.** `docs/user_stories/ohlone-traverse-2026-09.md`
   S2, the only finding in that document that harms someone today: the permit
