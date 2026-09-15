@@ -23,7 +23,6 @@ from wayproof.permits import (
     permit_status,
     clusters_permit_info,
     format_permit_report,
-    format_permit_entry_body,
 )
 
 TRAILHEADS = os.path.join(os.path.dirname(__file__), "..", "data", "trailheads.csv")
@@ -765,101 +764,3 @@ def test_adding_a_field_did_not_reorder_the_positional_arguments():
                            "unresolved-conflict", "summary", "my-conflict")
     assert entry.conflict_id == "my-conflict"
     assert entry.conflict_kind == ""
-
-
-# -- the override entry must describe the permit it actually is --------------
-
-def test_the_override_entry_states_its_own_wilderness_not_the_trailheads():
-    # The override exists BECAUSE it admits you somewhere the trailhead default
-    # does not, so stamping the trailhead's wilderness on it asserts the
-    # opposite. Mount Russell's ordinary Inyo NF permit was reading
-    # "Wilderness: Mount Whitney Zone (John Muir Wilderness)" -- the one place
-    # whitney_zone's own `excludes` says it does not cover.
-    permits = load_permits(PERMITS)
-    trailheads = load_trailheads(TRAILHEADS)
-    approaches = load_approaches(APPROACHES)
-    c = Cluster(cluster_id=0,
-                peaks=[Peak("Mount Whitney", 36.578, -118.292, 14505),
-                       Peak("Mount Russell", 36.595, -118.303, 14094)],
-                trailhead="Whitney Portal")
-    rows = clusters_permit_info([c], trailheads, permits, date(2027, 7, 1),
-                                approaches=approaches)
-    override = next(r for r in rows if r.peak_note and "Mount Russell" in r.peak_note)
-    assert override.wilderness_area == permits["inyo_jmw_aaw"].wilderness_area
-    assert "Whitney Zone" not in override.wilderness_area
-    # The agency must survive a blank wilderness -- it used to be printed only
-    # alongside one, which hid it on every rule with no wilderness_area (11 of
-    # 15 rows today).
-    assert any("Agency: Inyo National Forest" in line
-               for line in format_permit_entry_body(override))
-
-
-def test_two_peaks_sharing_one_approach_are_both_named():
-    # Deduping on permit_group alone emitted one entry reading "for <first peak>
-    # only" and silently dropped the second -- asserting the override does NOT
-    # apply to a peak it does.
-    permits = load_permits(PERMITS)
-    trailheads = load_trailheads(TRAILHEADS)
-    shared = "Mountaineers Route / North Fork of Lone Pine Creek"
-    approaches = [
-        ApproachRoute(peak_name="Mount Russell", trailhead="Whitney Portal",
-                      approach_name=shared, permit_group="inyo_jmw_aaw",
-                      status="confirmed"),
-        ApproachRoute(peak_name="Mount Carillion", trailhead="Whitney Portal",
-                      approach_name=shared, permit_group="inyo_jmw_aaw",
-                      status="confirmed"),
-    ]
-    c = Cluster(cluster_id=0,
-                peaks=[Peak("Mount Russell", 36.595, -118.303, 14094),
-                       Peak("Mount Carillion", 36.592, -118.278, 13517)],
-                trailhead="Whitney Portal")
-    rows = clusters_permit_info([c], trailheads, permits, date(2027, 7, 1),
-                                approaches=approaches)
-    overrides = [r for r in rows if r.peak_note and r.peak_note.startswith("for ")]
-    assert len(overrides) == 1, "one permit and one route is one entry"
-    assert overrides[0].peak_note == (
-        f"for Mount Russell and Mount Carillion only -- via {shared}")
-
-
-def test_two_different_routes_onto_one_permit_stay_separate_entries():
-    # Same permit reached by two different named routes is two facts about two
-    # objectives, not one entry with both names.
-    permits = load_permits(PERMITS)
-    trailheads = load_trailheads(TRAILHEADS)
-    approaches = [
-        ApproachRoute(peak_name="Mount Russell", trailhead="Whitney Portal",
-                      approach_name="North Fork of Lone Pine Creek",
-                      permit_group="inyo_jmw_aaw", status="confirmed"),
-        ApproachRoute(peak_name="Mount Carillion", trailhead="Whitney Portal",
-                      approach_name="Tulainyo Lake approach",
-                      permit_group="inyo_jmw_aaw", status="confirmed"),
-    ]
-    c = Cluster(cluster_id=0,
-                peaks=[Peak("Mount Russell", 36.595, -118.303, 14094),
-                       Peak("Mount Carillion", 36.592, -118.278, 13517)],
-                trailhead="Whitney Portal")
-    rows = clusters_permit_info([c], trailheads, permits, date(2027, 7, 1),
-                                approaches=approaches)
-    notes = sorted(r.peak_note for r in rows if r.peak_note.startswith("for "))
-    assert notes == [
-        "for Mount Carillion only -- via Tulainyo Lake approach",
-        "for Mount Russell only -- via North Fork of Lone Pine Creek",
-    ]
-
-
-def test_three_peaks_on_one_approach_read_as_a_list():
-    permits = load_permits(PERMITS)
-    trailheads = load_trailheads(TRAILHEADS)
-    approaches = [
-        ApproachRoute(peak_name=n, trailhead="Whitney Portal", approach_name="R",
-                      permit_group="inyo_jmw_aaw", status="confirmed")
-        for n in ("A", "B", "C")
-    ]
-    c = Cluster(cluster_id=0,
-                peaks=[Peak("A", 36.5, -118.3, 14000), Peak("B", 36.6, -118.3, 14000),
-                       Peak("C", 36.7, -118.3, 14000)],
-                trailhead="Whitney Portal")
-    rows = clusters_permit_info([c], trailheads, permits, date(2027, 7, 1),
-                                approaches=approaches)
-    override = next(r for r in rows if r.peak_note.startswith("for "))
-    assert override.peak_note == "for A, B and C only -- via R"

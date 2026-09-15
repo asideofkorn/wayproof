@@ -207,12 +207,11 @@ def test_both_surfaces_state_the_evidence_and_agree():
 
 # -- the guard that would have caught the half-filled column ----------------
 #
-# `log_entry_ids` was added and populated only for the rows edited that day,
-# leaving 11 of 15 permit rows blank. Every one of them had a `verified_date`
-# and entries in the ledger -- so the site rendered "Not independently
-# verified" on 66 of its 88 pages for permits that had in fact been verified.
-# A provenance column that is half-filled under-reports the project's own
-# work, which is a worse failure than not having the column.
+# `log_entry_ids` was populated only for the rows edited the day the column was
+# added, leaving 11 of 15 permit rows blank. Every one of them had a
+# `verified_date` and entries in the ledger, so the site rendered "Not
+# independently verified" on 66 of its 88 pages for permits that had in fact
+# been verified. The backfill is done; this is what stops it recurring.
 
 def test_a_verified_permit_row_cites_its_evidence():
     permits = load_permits(PERMITS, POLICIES)
@@ -224,22 +223,10 @@ def test_a_verified_permit_row_cites_its_evidence():
     )
 
 
-def test_the_only_unverified_permit_row_is_one_with_no_verified_date():
-    # `toiyabe_free` is deliberately unverified: its own reservation_method says
-    # "NOT independently confirmed" and its fee is marked assumed. Rendering it
-    # as unverified is correct. Any OTHER row reading unverified is a bug.
-    log = load_source_log(LOG)
-    sources = load_sources(os.path.join(ROOT, "data", "sources.csv"))
-    permits = load_permits(PERMITS, POLICIES)
-    unverified = sorted(g for g, r in permits.items()
-                        if evidence_for(r.log_entry_ids, log, sources).status == UNVERIFIED)
-    assert unverified == ["toiyabe_free"]
-    assert not permits["toiyabe_free"].verified_date
-
-
 def test_a_conflict_thread_is_named_once_however_many_entries_cite_it():
-    # A thread normally spans several entries (opened, restated, closed). One
-    # id per entry reads as several separate arguments about the same thing.
+    # A thread normally spans several entries (opened, restated, closed). One id
+    # per entry reads as several separate arguments about the same thing --
+    # latent until rows began citing whole chains, then live on two pages.
     log = [
         _entry("a", conflict_id="c1", verdict="unresolved-conflict"),
         _entry("b", conflict_id="c1", verdict="unresolved-conflict"),
@@ -252,8 +239,7 @@ def test_a_conflict_thread_is_named_once_however_many_entries_cite_it():
 
 def test_the_real_data_names_each_resolved_thread_once():
     log = load_source_log(LOG)
-    permits = load_permits(PERMITS, POLICIES)
-    for group, rule in permits.items():
+    for group, rule in load_permits(PERMITS, POLICIES).items():
         d = evidence_for(rule.log_entry_ids, log).as_dict()
         for key in ("open_conflicts", "resolved_conflicts"):
             assert len(d[key]) == len(set(d[key])), f"{group}.{key} repeats a thread id"

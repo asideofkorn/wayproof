@@ -32,17 +32,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional, Sequence
 
-from .access import (
-    ENTRY_CONTRADICTED,
-    ENTRY_CORRIDOR,
-    ENTRY_INFERRED,
-    ENTRY_ROUTE_CONSISTENT,
-    ENTRY_SOURCED,
-    ApproachRoute,
-    EntryResolution,
-    classify_entry,
-    trailhead_name_index,
-)
+from .access import ApproachRoute
 from .camping import Campground, Campsite
 from .model import Cluster, Peak, Trailhead
 from .approach import EntryConflict, choose_trailhead, entry_conflicts
@@ -298,16 +288,6 @@ def resolve_plan(
         if trailhead is None:
             warnings.append("No trailhead data available -- cannot resolve permit logistics.")
         else:
-            index = trailhead_name_index([t.name for t in trailheads])
-            th_by_name = {t.name: t for t in trailheads}
-            entry_resolutions = [
-                classify_entry(p, trailhead.name, index, approaches or [])
-                for p in objectives
-            ]
-            warnings.extend(
-                _contradiction_warning(e, trailhead, th_by_name, permits)
-                for e in entry_resolutions if e.basis == ENTRY_CONTRADICTED
-            )
             cluster = Cluster(
                 cluster_id=0, peaks=list(objectives),
                 trailhead=trailhead.name, trailhead_side=trailhead.side,
@@ -368,62 +348,6 @@ def resolve_plan(
         open_questions=questions,
         facilities=facilities,
     )
-
-
-def _contradiction_warning(
-    entry: EntryResolution,
-    trailhead: Trailhead,
-    th_by_name: Dict[str, Trailhead],
-    permits: Dict[str, PermitRule],
-) -> str:
-    """Say that geometry and the objective's own sourced route disagree.
-
-    Separates the two severities, because they are genuinely different. When
-    both entry points carry the same permit product, the permit answer stands
-    and only the trailhead shown is suspect. When they differ, the permit itself
-    is likely wrong -- and the sharpest case is a lottery: Mount LeConte's
-    geometric trailhead is Whitney Portal, so the plan sends a reader into the
-    Whitney Zone lottery (a Feb 1 - Mar 1 window) for a peak whose sourced route
-    needs an ordinary Inyo NF rolling reservation.
-    """
-    other = th_by_name.get(entry.sourced_trailhead)
-    head = (
-        f"{entry.peak_name}: this plan enters at {trailhead.name}, but the "
-        f"objective's own sourced route ({entry.sourced_route}) starts at "
-        f"{entry.sourced_trailhead}."
-    )
-    here, there = trailhead.permit_group, (other.permit_group if other else "")
-    if not other or not there or here == there:
-        return (f"{head} Both carry the same permit group ({here or 'none'}), so the "
-                "permit below is unaffected -- but the entry point shown may be wrong.")
-
-    def label(group: str) -> str:
-        rule = permits.get(group)
-        return f"{rule.permit_type} ({group})" if rule else group
-
-    return (f"{head} THESE ARE DIFFERENT PERMITS: {label(here)} here versus "
-            f"{label(there)} there. Confirm your actual route before acting on the "
-            "permit below -- this project has no sourced entry relationship for "
-            "this objective, so the trailhead above is a straight-line guess.")
-
-
-#: How each basis reads to someone who has not seen the data.
-_ENTRY_BASIS_TEXT = {
-    ENTRY_SOURCED: "confirmed against a source (data/approaches.csv).",
-    ENTRY_ROUTE_CONSISTENT: "the objective's own sourced route ({route}) starts here.",
-    ENTRY_CONTRADICTED: ("DISAGREES with the objective's own sourced route ({route}), "
-                         "which starts at {other} -- see Warnings."),
-    ENTRY_CORRIDOR: ("its sourced route is {route}, a long-distance corridor with no "
-                     "single entry point; this entry is a straight-line guess."),
-    ENTRY_INFERRED: ("straight-line proximity only; no sourced route confirms this "
-                     "entry point."),
-}
-
-
-def _entry_basis_line(entry: EntryResolution) -> str:
-    text = _ENTRY_BASIS_TEXT[entry.basis].format(
-        route=entry.sourced_route or "unnamed", other=entry.sourced_trailhead)
-    return f"{entry.basis.replace('_', ' ')} -- {text}"
 
 
 def format_plan_summary(result: PlanResult) -> str:
