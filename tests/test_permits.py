@@ -725,7 +725,8 @@ def test_conflicts_stay_separate_across_permit_groups():
         # chabot-rv-length and ebrpd-group-camp-minimum were opened and then
         # closed on evidence the same day; a closed thread leaves this set.
         "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
-                 "chabot-season", "chabot-overflow-parking"},
+                 "chabot-season", "chabot-overflow-parking",
+                 "stewartville-vehicles"},
     }
 
 
@@ -764,6 +765,9 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # 1 Nov - 1 Apr. Five months of the year turn on it.
         "chabot-season": "cross_source",
         "chabot-overflow-parking": "cross_source",
+        # One booking page says max 1 vehicle in its structured detail and
+        # 5 parking passes in its own notes.
+        "stewartville-vehicles": "internal",
     }
 
 

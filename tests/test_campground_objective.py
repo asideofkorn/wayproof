@@ -168,11 +168,24 @@ def test_the_flattened_tier_reading_is_marked_as_having_had_a_wrong_row():
 
 
 def test_star_mine_states_who_may_book_it_not_only_how_many():
-    # The only campground here restricted by the character of the party.
+    # The only campground here restricted by the character of the party -- and
+    # the booking system is narrower than the park page: "School Groups and
+    # Scouts", not "organized, educational groups". A community group reading
+    # the park page as permission would be refused at the gate.
     cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
-    assert "ORGANIZED, EDUCATIONAL GROUPS ONLY" in cg.notes
-    assert "NO WATER AT THE SITE" in cg.notes
+    assert "SCHOOL GROUPS AND SCOUTS ONLY" in cg.notes.upper()
+    assert "NO WATER" in cg.notes.upper()
     assert cg.fee_notes == "", "no fee is published for this camp; absent is not free"
+
+
+def test_a_group_camp_can_be_hike_in():
+    # Star Mine is classified Hike-In with parking a quarter mile off, so the
+    # assumption that group camps are driven to was wrong. Booking one for a
+    # party of 35 means carrying everything that distance.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
+    assert cg.campsite_type == "group"
+    assert cg.access_mode == "hike_in"
+    assert "quarter mile" in cg.notes.lower()
 
 
 def test_black_diamonds_seven_gate_bands_are_not_flattened_to_one_time():

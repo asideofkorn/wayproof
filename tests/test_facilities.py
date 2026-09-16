@@ -249,11 +249,19 @@ def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to()
     # Stated as a rule rather than a list of names, so it keeps holding as the
     # District's parks land. Getting it backwards means booking a site up to
     # 16.7 trail miles from where you parked.
-    expected = {"backpack": HIKE_IN, "family": DRIVE_IN, "group": DRIVE_IN}
+    # Group camps are NOT uniformly drive-in, and assuming so was wrong: Star
+    # Mine is classified Hike-In with its parking a quarter mile off. So the
+    # rule holds for backpack and family sites, and group sites are checked
+    # only for carrying a mode at all.
+    expected = {"backpack": HIKE_IN, "family": DRIVE_IN}
     for c in load_campgrounds(CAMPGROUNDS):
-        assert c.campsite_type in expected, f"{c.name}: unclassified campsite_type"
+        assert c.campsite_type in ("backpack", "family", "group"), (
+            f"{c.name}: unclassified campsite_type")
         if c.name in ACCESS_MODE_UNRECORDED:
             assert c.access_mode == "", f"{c.name} is listed as unrecorded but has a mode"
+            continue
+        if c.campsite_type == "group":
+            assert c.access_mode in (DRIVE_IN, HIKE_IN), c.name
             continue
         assert c.access_mode == expected[c.campsite_type], (
             f"{c.name} is {c.campsite_type} but tagged {c.access_mode!r}")
