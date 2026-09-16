@@ -238,7 +238,7 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_group_camp_access_is_mostly_hike_in_with_one_exception_and_five_blanks():
+def test_group_camp_access_is_mostly_hike_in_with_one_exception_and_four_blanks():
     # Sixteen were hike-in, three of them corrected from a wrong drive_in, and
     # that looked like a District fact until Las Trampas' Corral said Drive-In.
     # Del Valle's three then arrived off a map that names them and says nothing
@@ -246,14 +246,14 @@ def test_group_camp_access_is_mostly_hike_in_with_one_exception_and_five_blanks(
     # majority, the exception, nor the blanks can quietly disappear.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
-    assert len(group) == 20
+    assert len(group) == 21
     by_mode = {}
     for c in group:
         by_mode.setdefault(c.access_mode, []).append(c.name)
     assert sorted(by_mode) == ["", "drive_in", "hike_in"]
     assert by_mode["drive_in"] == ["Corral Group Camp"]
-    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Punta Vaca Group Camp",
-                                   "Wild Turkey Group Camp"]
+    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Point Pinole Group Camp",
+                                   "Punta Vaca Group Camp", "Wild Turkey Group Camp"]
     assert "FIRST DRIVE-IN GROUP CAMP" in {c.name: c for c in group}["Corral Group Camp"].notes
 
 

@@ -289,6 +289,9 @@ ACCESS_MODE_UNRECORDED = {
     "Cedar Group Camp",
     "Lil Chaparral Horse Camp",
     "Caballo Loco Horse Camp",
+    # Point Pinole's camp is stated as 200-300 yards from the PIER, which is a
+    # distance from the wrong end: the two car parks are elsewhere entirely.
+    "Point Pinole Group Camp",
 }
 
 
@@ -476,16 +479,20 @@ def test_coyote_hills_cannot_store_one_opening_time():
     assert "CURFEW" in pa.gate_hours_conditions.upper()
 
 
-def test_the_only_potable_sources_are_the_two_drinking_fountains():
-    # Every other source here is a spigot or trough EBRPD states is non-potable.
-    # Both of these are drinking fountains at group camps, and neither has ever
-    # been checked -- potable is a reading of what a drinking fountain is for,
-    # not a word either page uses.
+def test_every_potable_source_here_is_a_drinking_fountain_at_a_group_camp():
+    # Three now, and the rule has held every time: the only sources this project
+    # reads as drinkable are drinking fountains, and every one is at a group
+    # camp. Potable is a reading of what a drinking fountain is for, not a word
+    # any of the three pages uses. None has ever been checked.
     from wayproof.water import load_water_sources
     sources = load_water_sources(WATER_SOURCES)
     potable = [w for w in sources if w.potable]
-    assert [w.name for w in potable] == ["Dairy Glen Group Camp", "Arroyo Flats Group Camp"]
+    assert [w.name for w in potable] == ["Dairy Glen Group Camp", "Arroyo Flats Group Camp",
+                                         "Point Pinole Group Camp"]
     assert all(w.type == "drinking fountain" for w in potable)
+    group_camps = {c.name for c in load_campgrounds(CAMPGROUNDS)
+                   if c.campsite_type == "group"}
+    assert all(w.location in group_camps for w in potable)
 
 
 def test_no_drive_in_row_contradicts_itself_in_its_own_notes():
@@ -775,3 +782,39 @@ def test_eagle_springs_is_the_only_camp_with_no_shade_rating_anywhere():
     cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Eagle Springs"]
     assert "NO SHADE RATING AT ALL" in cg.notes
     assert "heat stroke" in cg.notes
+
+
+def test_the_only_shower_at_a_primitive_camp_is_at_point_pinole():
+    # This test was first written as "the only shower in this dataset" and
+    # failed at once: Anthony Chabot's family campground has hot showers and
+    # Puma Point Group Camp has access to them. A superlative is a claim about
+    # the whole dataset and has to be checked against it, so it is now the
+    # narrower claim the sources actually support.
+    cgs = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    pinole = cgs["Point Pinole Group Camp"]
+    assert "RINSING SHOWER" in pinole.notes
+    assert "STORAGE CONTAINER WITH A COMBO LOCK" in pinole.notes
+    assert "Hot showers" in cgs["Anthony Chabot Campground"].notes
+    # Every other mention is a camp saying it has none, or one borrowing the
+    # family campground's.
+    for c in load_campgrounds(CAMPGROUNDS):
+        if c.name in ("Point Pinole Group Camp", "Anthony Chabot Campground",
+                      "Puma Point Group Camp"):
+            continue
+        if "shower" in c.notes.lower():
+            assert "no access to showers" in c.notes.lower() \
+                or "no showers" in c.notes.lower(), c.name
+
+
+def test_two_ebrpd_dog_limits_count_the_same_number_differently():
+    # Three per SITE District-wide, three per PERSON at Point Pinole. Not a
+    # conflict -- a campsite occupancy cap and a park-wide walking limit -- and
+    # for a party of ten they differ by twenty-seven dogs.
+    from wayproof.regulations import load_regulations
+    regs = {r.regulation_id: r for r in
+            load_regulations(os.path.join(DATA, "regulations.csv"))}
+    assert "THREE DOGS PER SITE" in regs["ebrpd-pets-count"].summary
+    pinole = regs["point-pinole-dogs"]
+    assert pinole.scope_type == "park"
+    assert "THREE DOGS PER PERSON" in pinole.summary
+    assert "the stricter applies where both do" in pinole.detail
