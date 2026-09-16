@@ -107,3 +107,58 @@ def test_every_committed_channel_cites_a_source():
     for c in load_booking_channels(CHANNELS):
         assert c.source_url, c.channel_id
         assert c.log_entry_ids, c.channel_id
+
+
+# -- park scope --------------------------------------------------------------
+
+def test_a_park_scoped_channel_needs_the_park_to_resolve():
+    # Booking mechanics were agency-wide until Coyote Hills stated a group
+    # deadline of its own, so a park-scoped row used to load and reach nothing.
+    chans = [_ch("all", ALL),
+             BookingChannel(channel_id="park-group", scope_type="park",
+                            scope_value="Coyote Hills Regional Park",
+                            applies_to=GROUP)]
+    assert [c.channel_id for c in channels_for(chans, GROUP, agency="ebrpd")] == ["all"]
+    got = channels_for(chans, GROUP, agency="ebrpd", park="Coyote Hills Regional Park")
+    assert [c.channel_id for c in got] == ["all", "park-group"]
+
+
+def test_a_parks_deadline_reads_after_the_districts_not_instead_of_it():
+    # The narrower row is a tightening of the agency's, not a free-standing
+    # claim -- shown in that order so it cannot be read as the only rule.
+    chans = [_ch("aaa-agency-group", GROUP),
+             BookingChannel(channel_id="zzz-park-group", scope_type="park",
+                            scope_value="P", applies_to=GROUP)]
+    got = channels_for(chans, GROUP, agency="ebrpd", park="P")
+    assert [c.channel_id for c in got] == ["aaa-agency-group", "zzz-park-group"]
+
+
+def test_a_park_scoped_channel_does_not_leak_to_another_park():
+    chans = [BookingChannel(channel_id="park-group", scope_type="park",
+                            scope_value="Coyote Hills Regional Park",
+                            applies_to=GROUP)]
+    assert channels_for(chans, GROUP, agency="ebrpd", park="Briones Regional Park") == []
+
+
+def test_coyote_hills_asks_for_five_working_days_where_the_district_asks_three():
+    # Both are true and they are not the same deadline. A party reading only
+    # the District row plans to call three days out and is two days late.
+    chans = load_booking_channels(CHANNELS)
+    district = " ".join(c.lead_time for c in channels_for(chans, GROUP, agency="ebrpd"))
+    assert "5 working days" not in district
+
+    park = " ".join(c.lead_time for c in channels_for(
+        chans, GROUP, agency="ebrpd", park="Coyote Hills Regional Park"))
+    assert "5 working days" in park
+    assert "paid in full" in park
+
+
+def test_the_park_scoped_row_says_how_far_its_scope_is_a_judgement():
+    # It was read on one campsite's page. Stored at park scope because four
+    # other EBRPD listings do not carry it -- which is an inference, not a
+    # quote, and the row has to say so.
+    chans = channels_for(load_booking_channels(CHANNELS), GROUP,
+                         agency="ebrpd", park="Coyote Hills Regional Park")
+    row = next(c for c in chans if c.scope_type == "park")
+    assert "JUDGEMENT" in row.lead_time
+    assert "site scope" in row.lead_time

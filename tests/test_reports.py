@@ -228,6 +228,40 @@ def test_campground_uncertain_note_flagged_globally():
     assert "Del Valle Family Campground" in qs[0].target_key
 
 
+def test_a_hedge_inside_a_quotation_belongs_to_the_source_not_to_us():
+    # ReserveAmerica calls Dairy Glen's walk "approximately 1/4 mile on a flat,
+    # paved surface". Quoting that exactly is the point of quoting it; matched
+    # naively it asked a visitor to go and confirm a distance the operator had
+    # already stated. The markers are for OUR hedging.
+    grounds = [Campground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes=("The listing says it twice: 'This is a HIKE-IN only site "
+               "(approximately 1/4 mile on a flat, paved surface)' and "
+               "'Hike-in ONLY site. NO vehicle access.'"))]
+    assert open_questions(campgrounds=grounds, peak_names=None) == []
+
+
+def test_a_hedge_outside_the_quotation_still_flags_the_row():
+    # Same quotation, but the row then hedges in its own voice. That is the
+    # case the markers exist for, and stripping quotes must not swallow it.
+    grounds = [Campground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes=("The listing says 'a flat, paved surface'. Whether the party "
+               "unloads at the lot is unconfirmed."))]
+    qs = open_questions(campgrounds=grounds, peak_names=None)
+    assert len(qs) == 1
+
+
+def test_a_possessive_apostrophe_does_not_open_a_quotation():
+    # "Dairy Glen's" must not start a quoted span and swallow the hedge that
+    # follows it. The opening quote has to follow whitespace.
+    grounds = [Campground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes="Dairy Glen's distance from the lot is approximate.")]
+    qs = open_questions(campgrounds=grounds, peak_names=None)
+    assert len(qs) == 1
+
+
 # --- open_questions: campground/campsite/park-access peak-filtering via
 # Trailhead.park ---------------------------------------------------------
 

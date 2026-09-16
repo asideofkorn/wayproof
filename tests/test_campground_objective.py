@@ -209,3 +209,22 @@ def test_group_and_backpack_sites_are_block_released_not_rolling():
     assert "SIX-MONTH BLOCK" in backpack
     family = " ".join(c.release_mechanics for c in channels_for(chans, FAMILY, agency="ebrpd"))
     assert "rolling 12-week" in family
+
+
+def test_planning_dairy_glen_surfaces_the_parks_deadline_and_the_districts():
+    # The park-scoped channel is only worth storing if the objective actually
+    # reaches it. Coyote Hills is the park that made booking.channels_for take
+    # a park at all; before that the plan would have shown three days only.
+    res = _plan("Dairy Glen Group Camp")
+    lead = " ".join(c.lead_time for c in res.facilities.booking_channels)
+    assert "5 working days" in lead, "the park's own deadline"
+    assert "3 days before arrival" in lead, "and the District's, still shown"
+
+
+def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
+    # Corrected from a drive_in that no source supported. Fifty people carry
+    # their kit a quarter mile; ten vehicles stay at the lot.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Dairy Glen Group Camp"]
+    assert cg.access_mode == "hike_in"
+    text = format_plan_summary(_plan("Dairy Glen Group Camp"))
+    assert "HIKE-IN" in text.upper()

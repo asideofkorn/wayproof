@@ -36,6 +36,7 @@ citing the report ID, then calls :func:`resolve_report` to close it out.
 
 from __future__ import annotations
 
+import re
 from dataclasses import asdict, dataclass, field
 from datetime import date
 from pathlib import Path
@@ -63,6 +64,21 @@ from .water import WaterSource, WaterSourceLogEntry, log_by_source
 
 _UNCERTAIN_NOTE_MARKERS = ("approximate", "unconfirmed", "not a confirmed", "not found")
 _CONFLICT_STATUS_MARKERS = ("contradict", "unclear")
+
+# A quoted passage is the source speaking, not this project. ReserveAmerica
+# calls Dairy Glen's walk "approximately 1/4 mile on a flat, paved surface",
+# and quoting that exactly is the whole point of quoting it -- but matched
+# naively it flagged the row uncertain and asked a visitor to go and confirm a
+# distance the operator had already stated. The markers exist to catch OUR
+# hedging. Requiring the opening quote to follow whitespace and the closing one
+# to precede punctuation keeps possessives ("Dairy Glen's") out of it.
+_QUOTED_SPAN = re.compile(r"(?:^|(?<=\s))'.+?'(?=[\s.,;:)\]]|$)")
+
+
+def _hedges_in_own_voice(text: str) -> bool:
+    """Does *text* hedge outside anything it quotes?"""
+    own_voice = _QUOTED_SPAN.sub(" ", text or "").lower()
+    return any(m in own_voice for m in _UNCERTAIN_NOTE_MARKERS)
 
 _VALID_CONFIDENCE = {"firsthand", "official_source", "told_by_staff", "secondhand"}
 _VALID_STATUS = {"pending", "accepted", "rejected", "needs-more-evidence"}
@@ -212,7 +228,7 @@ def open_questions(
         if peak_names_lower is not None and not _matches_peak_names(p.name, peak_names_lower):
             continue
         note = str(p.meta.get("notes", "") or "")
-        if note and any(m in note.lower() for m in _UNCERTAIN_NOTE_MARKERS):
+        if note and _hedges_in_own_voice(note):
             questions.append(OpenQuestion(
                 target_file="data/peaks.csv",
                 target_key=p.name,
@@ -299,7 +315,7 @@ def open_questions(
             if not _park_is_relevant(c.park):
                 continue
             for field_name, text in (("notes", c.notes), ("nightly_entry_cutoff", c.nightly_entry_cutoff)):
-                if text and any(m in text.lower() for m in _UNCERTAIN_NOTE_MARKERS):
+                if text and _hedges_in_own_voice(text):
                     questions.append(OpenQuestion(
                         target_file="data/campgrounds.csv",
                         target_key=f"{c.name}.{field_name}",

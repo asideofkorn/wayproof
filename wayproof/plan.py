@@ -556,14 +556,18 @@ def resolve_plan(
         }
         types = {c.campsite_type for c in campground_objectives if c.campsite_type}
         seen_ch, chans = set(), []
+        # Every park present, not just the first: a park-scoped booking deadline
+        # is the one fact above where resolving only the first park would hand a
+        # party the District's three days for a camp that wants five.
         for t in sorted(types) or [""]:
-            for ch in channels_for(
-                    booking_channels or [], t,
-                    agency=[k.strip() for c in campground_objectives
-                            for k in c.agency_id.split(";") if k.strip()]):
-                if ch.channel_id not in seen_ch:
-                    seen_ch.add(ch.channel_id)
-                    chans.append(ch)
+            for pk in sorted(parks) or [""]:
+                for ch in channels_for(
+                        booking_channels or [], t, park=pk,
+                        agency=[k.strip() for c in campground_objectives
+                                for k in c.agency_id.split(";") if k.strip()]):
+                    if ch.channel_id not in seen_ch:
+                        seen_ch.add(ch.channel_id)
+                        chans.append(ch)
         facilities = FacilitiesInfo(
             water_sources=ws, water_status=water_status,
             campgrounds=list(campground_objectives), campsites=sites,
@@ -589,6 +593,7 @@ def resolve_plan(
         for t in sorted(types) or [""]:
             for ch in channels_for(booking_channels or [], t,
                                    permit_group=trailhead.permit_group,
+                                   park=trailhead.park,
                                    agency=trailhead.agency_id.split(";")):
                 if ch.channel_id not in seen:
                     seen.add(ch.channel_id)

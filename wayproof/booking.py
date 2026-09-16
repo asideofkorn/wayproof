@@ -39,7 +39,7 @@ from typing import List, Sequence
 
 import pandas as pd
 
-from .regulations import scope_applies
+from .regulations import SPECIFICITY, scope_applies
 
 ALL = "all"
 FAMILY = "family"
@@ -161,23 +161,35 @@ def channels_for(
     agency: "str | Sequence[str]" = "",
     jurisdiction: str = "",
     wilderness: str = "",
+    park: str = "",
 ) -> List[BookingChannel]:
     """Channels reaching one class of campsite, general ones first.
 
     A blank ``campsite_type`` means the caller does not know what class of site
     is being booked, so only ``all`` channels are returned. Guessing ``family``
     there would tell a backpacker to book online, which EBRPD does not allow.
+
+    ``park`` reaches park-scoped channels, added when Coyote Hills turned out to
+    state a group booking deadline of its own -- five working days, paid in full
+    -- against the District's three. Before that every booking mechanic here was
+    agency-wide, and a park-scoped row would have loaded and resolved to nothing.
     """
     def applies(channel: BookingChannel) -> bool:
         if not scope_applies(channel.scope_type, channel.scope_value,
                              permit_group=permit_group, agency=agency,
-                             jurisdiction=jurisdiction, wilderness=wilderness):
+                             jurisdiction=jurisdiction, wilderness=wilderness,
+                             park=park):
             return False
         if channel.applies_to == ALL:
             return True
         return bool(campsite_type) and channel.applies_to == campsite_type
 
     # `all` first: the District-wide contact reads as context for the
-    # class-specific method that follows it, not as a competing answer.
+    # class-specific method that follows it, not as a competing answer. Within a
+    # class, the agency-wide row reads before a park's narrower one, so Coyote
+    # Hills' five-working-day deadline lands as a tightening of the District's
+    # three rather than as a free-standing claim.
     return sorted((c for c in channels if applies(c)),
-                  key=lambda c: (c.applies_to != ALL, c.channel_id))
+                  key=lambda c: (c.applies_to != ALL,
+                                 SPECIFICITY.get(c.scope_type, 0) * -1,
+                                 c.channel_id))
