@@ -696,3 +696,39 @@ def test_the_looking_for_category_is_a_search_facet_not_a_booking_class():
     assert morgan.campsite_type == "backpack"
     assert "multi-valued search facet, not a class" in morgan.notes
     assert by_name["Round Valley Backpack Camp"].campsite_type == "backpack"
+
+
+def test_a_gravel_driveway_on_a_site_four_miles_up_a_trail_is_not_read_literally():
+    # ReserveAmerica publishes "Driveway Surface: Gravel" and "Maximum Number
+    # of Vehicles: 1" for camps two to eleven miles from any road. Both fields
+    # exist for drive-in campgrounds and get filled in anyway. The rows record
+    # what they are rather than storing either as a fact about the site --
+    # the same care "Looking For Category" needed.
+    sites = {s.name: s for s in load_campsites(CAMPSITES)}
+    assert "SCHEMA LEAKING" in sites["Boyd #1"].notes
+    assert "one car at the trailhead, not at the pitch" in sites["Boyd #1"].notes
+
+
+def test_the_one_stated_hike_in_distance_is_not_read_across_to_its_neighbours():
+    # Eagle Springs #4 gives 21,120 feet -- exactly 4.0 miles. Its three
+    # siblings leave the field empty, and four sites at one camp are unlikely
+    # to differ much, which is not a reason to write a number on three rows.
+    sites = {s.name: s for s in load_campsites(CAMPSITES)}
+    assert "21120" in sites["Eagle Springs #4"].notes
+    assert "EXACTLY 4.0 MILES" in sites["Eagle Springs #4"].notes
+    for sibling in ("Eagle Springs #1", "Eagle Springs #2", "Eagle Springs #3"):
+        assert "4.0 MILES" not in sites[sibling].notes, sibling
+
+
+def test_no_ohlone_corridor_site_is_marked_pets_allowed_domestic():
+    # Structural corroboration for a rule carried on the booking platform's
+    # word alone. Ten sites read at site level, none marked Domestic, where
+    # every EBRPD group camp read for this project is. The only animal named
+    # anywhere on the corridor is Doe #1's horse.
+    from wayproof.regulations import load_regulations
+    rule = {r.regulation_id: r for r in load_regulations(
+        os.path.join(DATA, "regulations.csv"))}["ebrpd-backpack-no-dogs-ohlone"]
+    assert "NOT ONE carries a 'Pets Allowed: Domestic' marker" in rule.detail
+    assert "is not a second source for the rule" in rule.detail
+    sites = {s.name: s for s in load_campsites(CAMPSITES)}
+    assert "PETS FIELD READS 'HORSE' AND NOTHING ELSE" in sites["Doe #1"].notes
