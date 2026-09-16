@@ -188,3 +188,17 @@ def test_the_rules_are_ordered_consequence_first():
               if line.startswith("  ") and not line.startswith("    ")
               and line.strip() in ("Fire", "Food storage", "Group size", "Camping")]
     assert labels == ["Fire", "Food storage", "Group size", "Camping"]
+
+
+def test_the_stay_limit_says_it_is_counted_per_household_not_per_person():
+    # A family reading "30 total days per year" as a per-person allowance plans
+    # roughly twice the camping it may book, and cannot fix it by reserving in
+    # another member's name. Ordinance 38 does not say how the limit is
+    # counted; the booking system does, and the rule has to carry it.
+    from wayproof.regulations import load_regulations
+    rule = next(r for r in load_regulations(D("regulations.csv"))
+                if r.regulation_id == "ebrpd-camping-stay-limit")
+    blob = f"{rule.summary} {rule.detail}".lower()
+    assert "per household address" in blob
+    assert "not per person" in blob
+    assert "walk-in" in blob, "nights taken without a reservation count toward the tally"
