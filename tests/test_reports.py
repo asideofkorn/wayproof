@@ -14,7 +14,7 @@ import pytest
 
 from wayproof.access import ApproachRoute
 from wayproof.camping import (
-    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, Campground, Campsite,
+    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, UNIT_CAMP, UNIT_SITE, Campground, Campsite,
 )
 from wayproof.model import Peak, Trailhead
 from wayproof.park_access import ParkAccess
@@ -234,6 +234,39 @@ def test_campsite_with_one_proximity_field_not_flagged():
                        water_proximity="closest to water")]
     qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
     assert qs == []
+
+
+def test_a_camp_that_holds_sites_and_holds_none_of_them_is_an_open_question():
+    grounds = [_ground(name="Del Valle Family Campground", park="Del Valle Regional Park",
+                       unit_level=UNIT_CAMP)]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert qs[0].target_file == "data/campsites.csv"
+    assert "holds none of them" in qs[0].question
+
+
+def test_a_single_unit_camp_with_no_sites_is_not_a_gap():
+    # Corral Group Camp having no campsite rows is the correct state, not a
+    # hole. Asking about it would put twenty-five false questions on the list.
+    grounds = [_ground(name="Corral Group Camp",
+                       park="Las Trampas Wilderness Regional Preserve",
+                       unit_level=UNIT_SITE)]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
+
+
+def test_an_unrecorded_booking_level_is_not_reported_as_a_missing_site_list():
+    # Venados might be either. Asking for its site list would assert it is a
+    # container, which is the guess the blank exists to refuse.
+    grounds = [_ground(name="Venados", park="Del Valle Regional Park")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
+
+
+def test_a_camp_whose_sites_are_recorded_is_not_a_gap():
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                       access_mode=HIKE_IN, unit_level=UNIT_CAMP)]
+    sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5,
+                      water_proximity="near", restroom_proximity="near")]
+    assert open_questions(campgrounds=grounds, campsites=sites, peak_names=None) == []
 
 
 def test_campground_uncertain_note_flagged_globally():

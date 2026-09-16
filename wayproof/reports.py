@@ -45,7 +45,7 @@ from typing import List, Optional, Sequence
 import pandas as pd
 
 from .access import ApproachRoute, UNCONFIRMED
-from .camping import HIKE_IN, Campground, Campsite
+from .camping import HIKE_IN, Campground, Campsite, camps_without_sites
 from .park_access import ParkAccess
 from .model import Peak, Trailhead
 from .evidence import UNVERIFIED, dangling_citations, evidence_for
@@ -334,6 +334,27 @@ def open_questions(
                           f"{park_name or 'an unnamed park'}, so a proximity "
                           f"search cannot place them: {', '.join(sorted(names))}."),
                 context=park_name,
+            ))
+
+        # -- Camps recorded as holding sites, of which none are held. --
+        #
+        # A question the unit_level column created. Before it, Del Valle Family
+        # Campground -- 155 sites, none of them in campsites.csv -- looked
+        # exactly like Corral Group Camp, which really is one unit, so there was
+        # nothing to ask about. ONE QUESTION PER CAMPGROUND rather than per park:
+        # unlike a coordinate, one facility page does not fill several camps'
+        # site lists at once, and there are few enough of these to name.
+        for c in camps_without_sites(campgrounds, campsites):
+            if not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campsites.csv",
+                target_key=c.name,
+                question=(f"{c.name} is recorded as holding individually bookable "
+                          f"sites and this project holds none of them, so a plan "
+                          f"can say a site must be chosen but not which sites "
+                          f"exist."),
+                context=c.name,
             ))
 
         # -- Trailhead/campground notes flagging their own uncertainty. --

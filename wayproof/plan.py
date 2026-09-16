@@ -37,7 +37,8 @@ from .access import ApproachRoute
 from .advisories import Advisory, advisories_for
 from .booking import BookingChannel, channels_for
 from .camping import (
-    Campground, Campsite, access_label, resolve_campground_name,
+    Campground, Campsite, UNIT_CAMP, UNIT_SITE, access_label,
+    resolve_campground_name,
     site_type_label, sites_by_type,
 )
 from .model import Cluster, Peak, Trailhead
@@ -194,6 +195,7 @@ class PlanResult:
                  "access_mode": c.access_mode or None,
                  "season_closed": c.season_label or None,
                  "closed_on_trip_date": c.closed_on(self.trip_date),
+                 "unit_level": c.unit_level or None,
                  "campsite_type": c.campsite_type or None}
                 for c in self.campground_objectives
             ]
@@ -333,6 +335,7 @@ class PlanResult:
                         "access_mode": c.access_mode or None,
                         "season_closed": c.season_label or None,
                         "closed_on_trip_date": c.closed_on(self.trip_date),
+                        "unit_level": c.unit_level or None,
                         "campsite_type": c.campsite_type or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
@@ -853,6 +856,23 @@ def format_plan_summary(result: PlanResult) -> str:
             if "hike_in" in c.access_modes:
                 lines.append("    Reached on foot. Distance from the road is in the "
                              "campground's notes, and no approach is modelled here.")
+            sites = result.facilities.campsites if result.facilities else []
+            held = [x for x in sites if x.campground == c.name]
+            if c.unit_level == UNIT_SITE:
+                lines.append("    Booked as one unit -- the reservation is the whole "
+                             "camp, and there is no site to choose inside it.")
+            elif c.unit_level == UNIT_CAMP and held:
+                lines.append(f"    Holds individually bookable sites; you reserve one of "
+                             f"them, not the camp. {len(held)} recorded here.")
+            elif c.unit_level == UNIT_CAMP:
+                lines.append("    Holds individually bookable sites; you reserve one of "
+                             "them, not the camp. NONE OF THEM ARE RECORDED HERE, so "
+                             "this plan cannot tell you which sites exist or what they "
+                             "cost -- go to the booking page for the list.")
+            else:
+                lines.append("    Whether you reserve this whole camp or one site inside "
+                             "it is not recorded, which is not the same as knowing it is "
+                             "a single unit.")
             # Said on every campground objective, in all three states. A plan
             # that takes a date and never mentioned the season priced a closed
             # camp for a January trip and never said it was shut.

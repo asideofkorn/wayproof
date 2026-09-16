@@ -22,7 +22,10 @@ from wayproof.camping import (
     TENT_HIKE_IN,
     site_type_label,
     sites_by_type,
+    UNIT_CAMP,
+    UNIT_SITE,
     UNKNOWN_ACCESS_LABEL,
+    UNKNOWN_UNIT_LEVEL_LABEL,
     Campground,
     Campsite,
     access_label,
@@ -31,6 +34,9 @@ from wayproof.camping import (
     load_campsites,
     located,
     campsites_by_campground,
+    camps_without_sites,
+    unit_level_label,
+    unit_level_unrecorded,
     unknown_access,
 )
 from wayproof.water import (
@@ -981,3 +987,113 @@ def test_fifteen_campgrounds_close_for_the_winter_and_the_rest_say_nothing():
         "1 November to 15 May", "1 November to 31 March", "1 November to 1 April"}
     # And the rest are unrecorded, not open.
     assert len(season_unrecorded(cgs)) == len(cgs) - 15
+
+
+# Four rows whose booking level nobody has established, each for a stated
+# reason, and each of which would be a lie either way round. Calling Dumbarton
+# a camp rests on a site count nobody here has read; calling Hetch Hetchy a
+# single unit tells a camper the reservation is the whole thing.
+UNIT_LEVEL_UNRECORDED = {
+    "Dumbarton Quarry Campground on the Bay",
+    "Lil Chaparral Horse Camp",
+    "Hetch Hetchy",
+    "Venados",
+}
+
+
+def test_every_blank_unit_level_is_a_named_gap_that_says_why():
+    blank = {c.name for c in load_campgrounds(CAMPGROUNDS) if not c.unit_level}
+    assert blank == UNIT_LEVEL_UNRECORDED
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in blank:
+        assert "BOOKING LEVEL IS NOT RECORDED" in by_name[name].notes, name
+
+
+def test_a_campground_holding_recorded_sites_is_never_called_a_single_unit():
+    """The one invariant the two tables can check against each other.
+
+    If campsites.csv names sites inside a campground, that campground is not
+    the unit you reserve, and a plan saying "the reservation is the whole camp"
+    would be flatly contradicted by the site list printed underneath it.
+    """
+    sites = load_campsites(CAMPSITES)
+    have = {s.campground for s in sites}
+    for c in load_campgrounds(CAMPGROUNDS):
+        if c.name in have:
+            assert c.unit_level != UNIT_SITE, (
+                f"{c.name} is unit_level=site but campsites.csv names "
+                f"{len([s for s in sites if s.campground == c.name])} sites in it"
+            )
+
+
+def test_stewarts_camp_holds_one_site_and_is_still_a_camp():
+    # The level is not a restatement of the site count. Stewart's sits in the
+    # 'Ohlone Backpack' loop in the same series as Boyd #1 and Boyd #2.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    assert by_name["Stewart's Camp"].unit_level == UNIT_CAMP
+    sites = [s for s in load_campsites(CAMPSITES) if s.campground == "Stewart's Camp"]
+    assert len(sites) == 1
+
+
+def test_a_camp_whose_sites_are_not_recorded_is_visible_rather_than_silent():
+    # The gap the column created. Before it, Del Valle Family Campground was
+    # indistinguishable from Corral Group Camp, which really is one unit.
+    cgs = load_campgrounds(CAMPGROUNDS)
+    gaps = {c.name for c in camps_without_sites(cgs, load_campsites(CAMPSITES))}
+    assert "Del Valle Family Campground" in gaps
+    assert "Corral Group Camp" not in gaps  # a single unit, not a gap
+    assert "Sunol Backpack Camp" not in gaps  # seven sites recorded
+
+
+def test_the_class_to_level_correlation_holds_for_three_classes_and_breaks_for_one():
+    """Written after a first version of this test asserted the wrong thing.
+
+    It claimed group camps appear at both levels; they do not. In the
+    thirty-three rows with both fields, every group camp is a single unit and
+    every family campground is a container, and only BACKPACK spans both --
+    Stewartville, Round Valley and Morgan Territory are one unit each, while
+    Boyd, Doe, Maggie's, Stewart's, Sunol and Eagle Springs each hold sites.
+
+    That correlation is the reason the column is stored rather than derived,
+    not a reason to derive it. It is an observed regularity in what has been
+    read, one class already breaks it, and this project's rule after the
+    Anthony Chabot site count and the 15-versus-18 park count is that a pattern
+    landing neatly is a reason to go and read, not a substitute for reading.
+    If the fourth class breaks it too, this test fails and says so.
+    """
+    levels_per_type: dict = {}
+    for c in load_campgrounds(CAMPGROUNDS):
+        if c.campsite_type and c.unit_level:
+            levels_per_type.setdefault(c.campsite_type, set()).add(c.unit_level)
+    assert levels_per_type["backpack"] == {UNIT_SITE, UNIT_CAMP}
+    assert levels_per_type["group"] == {UNIT_SITE}
+    assert levels_per_type["family"] == {UNIT_CAMP}
+    assert levels_per_type["equestrian"] == {UNIT_SITE}
+
+
+def test_unit_level_is_not_predicted_by_access_mode_either():
+    # Drive-in camps and hike-in camps both appear at both levels, so the
+    # physical-arrival axis carries no information about the booking one.
+    levels_per_mode: dict = {}
+    for c in load_campgrounds(CAMPGROUNDS):
+        for m in c.access_modes:
+            if c.unit_level:
+                levels_per_mode.setdefault(m, set()).add(c.unit_level)
+    assert levels_per_mode[DRIVE_IN] == {UNIT_SITE, UNIT_CAMP}
+    assert levels_per_mode[HIKE_IN] == {UNIT_SITE, UNIT_CAMP}
+
+
+def test_unit_level_label_names_the_gap_rather_than_guessing():
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    assert unit_level_label(by_name["Corral Group Camp"]) == "booked as one unit"
+    assert unit_level_label(by_name["Venados"]) == UNKNOWN_UNIT_LEVEL_LABEL
+    assert unit_level_unrecorded(load_campgrounds(CAMPGROUNDS)) != []
+
+
+def test_an_unknown_unit_level_is_rejected_loudly(tmp_path):
+    # 'facility' is the tempting one: it is a real level in ReserveAmerica and
+    # deliberately absent here, because no row in this file is one.
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,unit_level\nX,P,facility\n")
+    with pytest.raises(ValueError):
+        load_campgrounds(path)

@@ -76,6 +76,44 @@ COORD_PRECISION_LABELS = {
     COORD_PARK: "to the park, not the campground",
 }
 
+UNIT_SITE = "site"
+"""This row IS one bookable unit. Reserving it reserves the whole thing.
+
+Corral Group Camp and Wild Turkey Group Camp are this, and so is every camp
+whose own ``/campsite-booking`` page was read: that page sells one thing, with
+one capacity. The word "Camp" in a name says nothing about the level -- what
+decides it is whether a source shows the camp as a single line with a single
+capacity, or as a container of lines.
+"""
+
+UNIT_CAMP = "camp"
+"""This row HOLDS bookable sites; the reservation is for one of them.
+
+Anthony Chabot Campground (75 numbered sites over five loops) and Sunol
+Backpack Camp (seven named ones) are this. So is Stewart's Camp, which holds
+exactly one -- the Sunol facility lists 'Stewart's' as a site inside the
+'Ohlone Backpack' loop, in the same series as Boyd #1 and Boyd #2, and a camp
+that happens to hold one site is still a camp.
+"""
+
+_VALID_UNIT_LEVELS = {UNIT_SITE, UNIT_CAMP}
+
+UNIT_LEVEL_LABELS = {
+    UNIT_SITE: "booked as one unit",
+    UNIT_CAMP: "holds individually bookable sites",
+}
+
+UNKNOWN_UNIT_LEVEL_LABEL = "booking level not recorded"
+"""What a blank ``unit_level`` reads as.
+
+There is no facility level in this vocabulary, deliberately. Every row in
+``campgrounds.csv`` is a camp or a site INSIDE a ReserveAmerica facility --
+EB/110028 holds Sunol Backpack Camp, Eagle Springs and four Del Valle camps,
+across four different parks -- and no row is a facility. The facility is one
+level up and has no table yet; naming a value with no member would invite
+someone to use it.
+"""
+
 UNKNOWN_ACCESS_LABEL = "access mode not recorded"
 """What a blank ``access_mode`` reads as.
 
@@ -194,6 +232,29 @@ class Campground:
     def access_modes(self) -> List[str]:
         """The modes as a list; empty when nobody has recorded any."""
         return [m for m in (p.strip() for p in self.access_mode.split(";")) if m]
+    unit_level: str = ""
+    """Whether this row is one bookable unit or a container of them:
+    ``site``, ``camp``, or ``""``.
+
+    A THIRD AXIS, orthogonal to both of the two above. ``campsite_type`` is
+    which queue you book in and ``access_mode`` is how you physically arrive;
+    this is how many reservations the row is. Nothing else in the table carries
+    it, and the table a thing lives in does not either: "Cathedral" is a row of
+    ``campsites.csv`` and "Wild Turkey Group Camp" is a row of this file, and
+    both are exactly one bookable unit with one booking page.
+
+    IT IS NOT DERIVABLE from whether ``campsites.csv`` holds rows for this
+    campground, which is why it is stored. Del Valle Family Campground has 155
+    sites and this project records none of them; counting rows would call it a
+    single site and be wrong in the direction that matters, telling a camper
+    the reservation is the whole campground.
+
+    BLANK MEANS NOBODY HAS ESTABLISHED IT -- see
+    :data:`UNKNOWN_UNIT_LEVEL_LABEL`. Four rows are blank and each says why in
+    ``notes``: Hetch Hetchy and Venados are named only in a closure list, Lil
+    Chaparral only on a map, and Dumbarton Quarry's composition is still
+    web-search material behind a deliberately empty ``verified_date``.
+    """
     campsite_type: str = ""
     """Which class of site the agency sells this as: ``family``, ``group`` or
     ``backpack``. Keys into ``data/booking_channels.csv``.
@@ -339,6 +400,13 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 f"Campground {name!r} has half a closure season; a start "
                 f"without an end says nothing about when it reopens"
             )
+        unit_level = _str_field(row, "unit_level")
+        if unit_level and unit_level not in _VALID_UNIT_LEVELS:
+            raise ValueError(
+                f"Invalid unit_level {unit_level!r} for campground {name!r}; "
+                f"expected one of {sorted(_VALID_UNIT_LEVELS)} or blank. There "
+                f"is no 'facility' level here -- see UNKNOWN_UNIT_LEVEL_LABEL."
+            )
         latitude = _float_field(row, "latitude")
         longitude = _float_field(row, "longitude")
         coord_precision = _str_field(row, "coord_precision")
@@ -371,6 +439,7 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             agency_id=_str_field(row, "agency_id"),
             jurisdiction=_str_field(row, "jurisdiction"),
             access_mode=access_mode,
+            unit_level=unit_level,
             campsite_type=_str_field(row, "campsite_type"),
             has_restroom=_bool_field(row, "has_restroom"),
             restroom_type=_str_field(row, "restroom_type"),
@@ -478,6 +547,29 @@ def season_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
     reader shown nothing would reasonably assume the place is open.
     """
     return [c for c in campgrounds if c.season_closed_start is None]
+
+
+def unit_level_label(campground: Campground) -> str:
+    """How to describe a campground's booking level, blank included."""
+    return UNIT_LEVEL_LABELS.get(campground.unit_level, UNKNOWN_UNIT_LEVEL_LABEL)
+
+
+def unit_level_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds whose booking level nobody has established."""
+    return [c for c in campgrounds if not c.unit_level]
+
+
+def camps_without_sites(
+    campgrounds: Sequence[Campground], campsites: Sequence["Campsite"]
+) -> List[Campground]:
+    """Campgrounds recorded as holding sites, of which this project holds none.
+
+    A gap the column created and only the column can see. Before ``unit_level``
+    existed, Del Valle Family Campground -- 155 sites, none of them here -- was
+    indistinguishable from a one-unit camp, so there was nothing to report.
+    """
+    have = {s.campground for s in campsites}
+    return [c for c in campgrounds if c.unit_level == UNIT_CAMP and c.name not in have]
 
 
 def unlocated(campgrounds: Sequence[Campground]) -> List[Campground]:

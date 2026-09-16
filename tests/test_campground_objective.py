@@ -570,3 +570,60 @@ def test_anthony_chabots_disputed_season_is_left_out_of_the_columns():
     cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Anthony Chabot Campground"]
     assert cg.season_closed_start is None and cg.season_closed_end is None
     assert "DELIBERATELY" in cg.notes and "chabot-season" in cg.notes
+
+
+def _stay(name, when=datetime.date(2027, 7, 15)):
+    return resolve_plan(
+        [name], when,
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        campsites=load_campsites(D("campsites.csv")))
+
+
+def test_a_single_unit_camp_says_there_is_no_site_to_choose():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Booked as one unit" in text
+    assert "no site to choose inside it" in text
+
+
+def test_a_camp_whose_sites_are_recorded_says_how_many():
+    text = format_plan_summary(_stay("Sunol Backpack Camp"))
+    assert "Holds individually bookable sites" in text
+    assert "7 recorded here" in text
+
+
+def test_a_camp_whose_sites_are_not_recorded_says_so_instead_of_implying_none():
+    """Del Valle Family Campground has 155 sites and this project holds none.
+
+    The failure mode without this: a plan that names a container campground,
+    prints no site list, and leaves a reader to conclude there is nothing to
+    choose -- which is the same wrong answer as calling it a single unit.
+    """
+    text = format_plan_summary(_stay("Del Valle Family Campground"))
+    assert "Holds individually bookable sites" in text
+    assert "NONE OF THEM ARE RECORDED HERE" in text
+    assert "go to the booking page for the list" in text
+
+
+def test_an_unrecorded_booking_level_is_said_rather_than_assumed_to_be_one_unit():
+    text = format_plan_summary(_stay("Venados"))
+    assert "is not recorded" in text
+    assert "not the same as knowing it is a single unit" in text
+
+
+def test_the_machine_surface_carries_the_booking_level_on_both_of_its_campground_lists():
+    # The objective list and the facilities list are two different renderings
+    # of the same rows, and a field on one and not the other is how the two
+    # human surfaces came to disagree before.
+    payload = _stay("Corral Group Camp").to_dict()
+    assert payload["campground_objectives"][0]["unit_level"] == "site"
+    nearby = resolve_plan(
+        ["Rose Peak"], datetime.date(2027, 7, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        campsites=load_campsites(D("campsites.csv"))).to_dict()
+    listed = nearby.get("facilities", {}).get("campgrounds", [])
+    assert listed, "expected campgrounds in the facilities block"
+    assert all("unit_level" in c for c in listed)
