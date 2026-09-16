@@ -732,3 +732,46 @@ def test_no_ohlone_corridor_site_is_marked_pets_allowed_domestic():
     assert "is not a second source for the rule" in rule.detail
     sites = {s.name: s for s in load_campsites(CAMPSITES)}
     assert "PETS FIELD READS 'HORSE' AND NOTHING ELSE" in sites["Doe #1"].notes
+
+
+def test_every_site_on_the_sunol_facility_has_been_read():
+    # Nineteen sites across three parks. Reading the whole set is what makes
+    # the cross-site patterns visible; reading nine of them showed none of it.
+    sites = [s for s in load_campsites(CAMPSITES) if s.loop.endswith("Backpack")]
+    assert len(sites) == 19
+    assert all("PER-SITE DETAIL" in s.notes for s in sites)
+
+
+def test_picnic_tables_split_perfectly_between_sunol_and_everywhere_else():
+    # Seven for seven against none for twelve. An absent marker is not a stated
+    # absence, and a table is still the difference between cooking on the
+    # ground and not after four to eleven miles with a stove on your back.
+    sites = [s for s in load_campsites(CAMPSITES) if s.loop.endswith("Backpack")]
+    tabled = {s.name for s in sites if "PICNIC TABLE" in s.notes}
+    assert tabled == {s.name for s in sites if s.loop == "Sunol Backpack"}
+    assert len(tabled) == 7
+
+
+def test_the_group_site_facet_tracks_capacity_and_no_site_sits_in_the_gap():
+    # It appears on every site of 14 or more and none of 10 or less. Nothing
+    # here is 11, 12 or 13, so the threshold is unknown -- which is the honest
+    # shape of the finding, and why round-valley-camp-class is narrowed and not
+    # closed by it.
+    sites = [s for s in load_campsites(CAMPSITES) if s.loop.endswith("Backpack")]
+    grouped = [s for s in sites if "Category: Group Site" in s.notes]
+    plain = [s for s in sites if "Category: Group Site" not in s.notes]
+    assert min(s.capacity for s in grouped) == 14
+    assert max(s.capacity for s in plain) == 10
+    assert not [s for s in sites if 10 < s.capacity < 14]
+
+
+def test_eagle_springs_is_the_only_camp_with_no_shade_rating_anywhere():
+    # Fifteen of fifteen others carry one. This is the park whose own page
+    # leads with dogs dying of heat stroke, so the gap is recorded rather than
+    # filled in with a guess.
+    sites = [s for s in load_campsites(CAMPSITES) if s.loop.endswith("Backpack")]
+    unrated = {s.campground for s in sites if "shade" not in s.notes.lower()}
+    assert unrated == {"Eagle Springs"}
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Eagle Springs"]
+    assert "NO SHADE RATING AT ALL" in cg.notes
+    assert "heat stroke" in cg.notes
