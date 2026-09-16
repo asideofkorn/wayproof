@@ -71,7 +71,9 @@ def scoped(scope_type: str) -> set:
 # Listing them by name keeps the guard working: a MISSPELLED park still fails.
 UNKEYED_PARKS = {
     "Sunol Regional Wilderness",
-    "Dumbarton Quarry Campground on the Bay",
+    # Dumbarton Quarry left this set when Coyote Hills' own brochure listed it
+    # under that park's Camping heading: it is a campground in Coyote Hills,
+    # not a park, so its park now resolves like any other.
     # Arrived through an alerts page, not a camping page: all this project
     # knows is that the camp exists and its water is off.
     "Round Valley Regional Preserve",

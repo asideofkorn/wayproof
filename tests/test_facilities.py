@@ -384,3 +384,36 @@ def test_group_camp_capacities_are_per_site_not_a_range():
     for camp, capacity in expected.items():
         notes = by_name[f"{camp} Group Camp"].notes
         assert f"CAPACITY {capacity}," in notes, f"{camp} lacks its own capacity"
+
+
+def test_dumbarton_quarry_is_a_campground_of_coyote_hills_not_a_park():
+    # It was its own park as a placeholder. Coyote Hills' brochure lists it
+    # under that park's Camping heading, and ReserveAmerica says it is within
+    # the park -- so the join now resolves like any other campground's.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    dq = cg["Dumbarton Quarry Campground on the Bay"]
+    assert dq.park == "Coyote Hills Regional Park"
+    assert dq.park != dq.name, "a park field pointing at the campground is a placeholder"
+    # The inherited fee and gate hours may not be what a camper there meets.
+    assert "UNCONFIRMED" in dq.notes
+
+
+def test_coyote_hills_cannot_store_one_opening_time():
+    # Three parks before it open at 8am in every band, so gate_open held one
+    # figure. This one opens at 7am for five months and 8am for seven, which is
+    # where the single gate_open/gate_close pair stops being an awkward fit and
+    # becomes the wrong shape.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(PARK_ACCESS)["Coyote Hills Regional Park"]
+    assert "varies by season" in pa.gate_open
+    assert "varies by season" in pa.gate_close
+    # A curfew is not a gate: one governs driving in, the other being there.
+    assert "CURFEW" in pa.gate_hours_conditions.upper()
+
+
+def test_dairy_glens_drinking_fountain_is_the_only_potable_source():
+    from wayproof.water import load_water_sources
+    potable = [w.name for w in load_water_sources(WATER_SOURCES) if w.potable]
+    assert potable == ["Dairy Glen Group Camp"], (
+        "every other source here is a spigot or trough EBRPD states is non-potable"
+    )
