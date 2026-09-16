@@ -274,8 +274,17 @@ def test_rules_resting_on_a_non_owning_source_are_flagged(reg):
     keys = [q.target_key for q in open_questions(regulations=regs, sources=sources,
                                                  deferrals=deferrals, today=TODAY)
             if "sourced to" in q.target_key]
-    assert sorted(keys) == ["desolation (sourced to Recreation.gov)",
-                            "sierra_nf (sourced to Recreation.gov)"], (
+    assert sorted(keys) == [
+        # Black Diamond's total fire and alcohol bans appear on NO EBRPD surface
+        # -- not the park page, not Ordinance 38 -- so the booking platform is
+        # the only place they are stated. Citing the District's own page instead
+        # would be a false citation, and dropping the rules would let the
+        # permissive agency rule stand unopposed. Carrying them flagged is the
+        # least wrong of the three, and this is the flag.
+        "Black Diamond Mines Regional Preserve (sourced to ReserveAmerica)",
+        "desolation (sourced to Recreation.gov)",
+        "sierra_nf (sourced to Recreation.gov)",
+    ], (
         "these rules were transcribed from the booking platform, which restates the land "
         "manager's regulations rather than making them"
     )

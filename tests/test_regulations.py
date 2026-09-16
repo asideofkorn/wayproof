@@ -13,6 +13,7 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from wayproof.camping import load_campgrounds
 from wayproof.data_loader import load_trailheads
 from wayproof.model import Trailhead
 from wayproof.permits import load_permits
@@ -236,6 +237,7 @@ def test_every_regulation_scope_reaches_at_least_one_real_trip():
     permits = load_permits(os.path.join(ROOT, "data", "permits.csv"),
                            os.path.join(ROOT, "data", "release_policies.csv"))
     trailheads = load_trailheads(os.path.join(ROOT, "data", "trailheads.csv"))
+    campgrounds = load_campgrounds(os.path.join(ROOT, "data", "campgrounds.csv"))
 
     reached = set()
     for rule in permits.values():
@@ -243,10 +245,17 @@ def test_every_regulation_scope_reaches_at_least_one_real_trip():
     for th in trailheads:
         reached.update(r.regulation_id
                        for r in regulations_in_force(regs, permits.get(th.permit_group), th))
+    # Campgrounds are objectives too, and a park-scoped rule can reach a park
+    # that has no trailhead at all: Black Diamond's fire ban governs two
+    # campsites and no summit.
+    for cg in campgrounds:
+        reached.update(r.regulation_id for r in regulations_in_force(
+            regs, agency=[k.strip() for k in cg.agency_id.split(";") if k.strip()],
+            jurisdiction=cg.jurisdiction, park=cg.park))
 
     dead = [r.regulation_id for r in regs if r.regulation_id not in reached]
     assert dead == [], (
-        f"regulations whose scope matches no permit group and no trailhead: {dead}. "
+        f"regulations reaching no permit group, trailhead or campground: {dead}. "
         "A rule that inherits to nothing is worse than a missing one -- it reads "
         "as covered."
     )

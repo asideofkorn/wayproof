@@ -624,6 +624,7 @@ def resolve_plan(
                     for k in c.agency_id.split(";") if k.strip()],
             jurisdiction=next((c.jurisdiction for c in campground_objectives
                                if c.jurisdiction), ""),
+            park=next((c.park for c in campground_objectives if c.park), ""),
         )
     elif trailhead is not None and regulations:
         # Resolved even when the trailhead has no permit row: agency- and

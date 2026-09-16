@@ -112,6 +112,12 @@ JOINS = [
      lambda: values("permits.csv", "permit_group")),
     ("regulations[scope=permit_group] -> permits.permit_group",
      lambda: scoped("permit_group"), lambda: values("permits.csv", "permit_group")),
+    # A park-scoped rule must name a park something in this dataset sits in,
+    # or it is the dead scope the wilderness join was added to catch.
+    ("regulations[scope=park] -> campgrounds.park | park_access.park | trailheads.park",
+     lambda: scoped("park"),
+     lambda: values("campgrounds.csv", "park") | values("park_access.csv", "park")
+             | values("trailheads.csv", "park")),
     ("regulations[scope=wilderness] -> permits.wilderness_area",
      lambda: scoped("wilderness"), lambda: values("permits.csv", "wilderness_area")),
     # Both sides, because agency identity lives in two places: a permit row

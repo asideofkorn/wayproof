@@ -18,8 +18,10 @@ So a regulation is stored once and *inherited*, via ``scope_type``:
 
 - ``jurisdiction`` -- state law, applying to every permit group in that state
   (``scope_value`` matches ``PermitRule.jurisdiction``)
-- ``agency`` -- a forest- or park-wide rule (matches ``PermitRule.agency_ids``,
+- ``agency`` -- a forest- or District-wide rule (matches ``PermitRule.agency_ids``,
   and ``Trailhead.agency_id`` for land you can enter without a permit)
+- ``park`` -- one park unit's own rule, stricter than its agency's (matches
+  ``Campground.park``/``Trailhead.park``)
 - ``wilderness`` -- one designated wilderness's own rulebook, which can span
   several permit products (matches ``PermitRule.wilderness_area``, falling back
   to ``Trailhead.wilderness_area``)
@@ -57,8 +59,9 @@ if TYPE_CHECKING:  # annotations only -- keeps this module at the bottom layer
 JURISDICTION = "jurisdiction"
 AGENCY = "agency"
 WILDERNESS = "wilderness"
+PARK = "park"
 PERMIT_GROUP = "permit_group"
-_VALID_SCOPES = {JURISDICTION, AGENCY, WILDERNESS, PERMIT_GROUP}
+_VALID_SCOPES = {JURISDICTION, AGENCY, WILDERNESS, PARK, PERMIT_GROUP}
 
 NO_PERMIT_GROUP = "none"
 """``permits.csv``'s shared "no wilderness permit required" row.
@@ -174,7 +177,7 @@ class Regulation:
     def scope_label(self) -> str:
         if self.scope_type == JURISDICTION:
             return f"{self.scope_display or self.scope_value} state law"
-        if self.scope_type in (AGENCY, WILDERNESS):
+        if self.scope_type in (AGENCY, WILDERNESS, PARK):
             return self.scope_display or self.scope_value
         return "this permit"
 
@@ -240,14 +243,20 @@ def load_regulations(path: str | Path = "data/regulations.csv") -> List[Regulati
     return out
 
 
-SPECIFICITY = {PERMIT_GROUP: 0, WILDERNESS: 1, AGENCY: 2, JURISDICTION: 3}
-"""Lower is more specific. A permit's own rule reads above the wilderness
-rulebook, which reads above forest policy, which reads above state law."""
+SPECIFICITY = {PERMIT_GROUP: 0, PARK: 1, WILDERNESS: 2, AGENCY: 3, JURISDICTION: 4}
+"""Lower is more specific. A permit's own rule reads above one park's rule,
+which reads above the wilderness rulebook, which reads above agency policy,
+which reads above state law.
+
+A park sits above its agency because that is the direction real strictness
+runs: EBRPD permits portable barbecues District-wide and Black Diamond Mines
+bans every fire and barbecue outright. A reader shown only the agency rule
+brings a barbecue."""
 
 
 def scope_applies(scope_type: str, scope_value: str, permit_group: str = "",
                   agency: "str | Sequence[str]" = "", jurisdiction: str = "",
-                  wilderness: str = "") -> bool:
+                  wilderness: str = "", park: str = "") -> bool:
     """Does a rule at ``scope_type``/``scope_value`` reach this permit group?
 
     Split out of :func:`regulations_for` so any other scoped table -- conditions,
@@ -263,6 +272,8 @@ def scope_applies(scope_type: str, scope_value: str, permit_group: str = "",
         return bool(permit_group) and scope_value == permit_group
     if scope_type == WILDERNESS:
         return bool(wilderness) and scope_value == wilderness
+    if scope_type == PARK:
+        return bool(park) and scope_value == park
     if scope_type == AGENCY:
         agencies = {agency} if isinstance(agency, str) else set(agency)
         agencies.discard("")
@@ -276,6 +287,7 @@ def regulations_for(
     agency: "str | Sequence[str]" = "",
     jurisdiction: str = "",
     wilderness: str = "",
+    park: str = "",
 ) -> List[Regulation]:
     """Every regulation applying to one permit group, all three scopes resolved.
 
@@ -290,7 +302,8 @@ def regulations_for(
     """
     def applies(reg: Regulation) -> bool:
         return scope_applies(reg.scope_type, reg.scope_value, permit_group=permit_group,
-                             agency=agency, jurisdiction=jurisdiction, wilderness=wilderness)
+                             agency=agency, jurisdiction=jurisdiction,
+                             wilderness=wilderness, park=park)
 
     def sort_key(reg: Regulation):
         category_rank = (CATEGORY_ORDER.index(reg.category)
@@ -321,6 +334,7 @@ def regulations_in_force(
     trailhead: "Optional[Trailhead]" = None,
     agency: "str | Sequence[str]" = (),
     jurisdiction: str = "",
+    park: str = "",
 ) -> List[Regulation]:
     """Every regulation applying to a trip, resolved from both what admits you
     and where you actually are.
@@ -370,6 +384,9 @@ def regulations_in_force(
         agencies |= {key.strip() for key in trailhead.agency_id.split(";")}
         wilderness = wilderness or trailhead.wilderness_area
 
+    if trailhead is not None:
+        park = park or trailhead.park
+
     agencies.discard("")
     return regulations_for(regulations, permit_group, sorted(agencies),
-                           jurisdiction, wilderness)
+                           jurisdiction, wilderness, park)
