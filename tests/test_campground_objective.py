@@ -128,3 +128,47 @@ def test_a_peak_objective_is_unaffected_by_the_campground_path():
     assert r.campground_objectives == []
     assert r.trailhead is not None
     assert r.permit_entries, "the peak flow still resolves a permit"
+
+
+def test_a_group_camps_minimum_is_its_own_not_the_districts_floor():
+    # The District floor is 17. Bort Meadow holds 300 and needs 100, so a party
+    # of twenty reading 17 would plan a trip it cannot book.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    assert "MINIMUM PARTY SIZE IS 100" in by_name["Bort Meadow Group Camp"].notes
+    assert "MINIMUM PARTY SIZE IS 50" in by_name["Hawk Ridge Group Camp"].notes
+    assert "MINIMUM PARTY SIZE 17" in by_name["Puma Point Group Camp"].notes
+    for name in ("Bort Meadow Group Camp", "Hawk Ridge Group Camp"):
+        assert "reconstructed" in by_name[name].notes, (
+            "the tier table extracted as flattened columns; the row alignment "
+            "is a reading and must not read as a stated per-site figure")
+
+
+def test_star_mine_states_who_may_book_it_not_only_how_many():
+    # The only campground here restricted by the character of the party.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
+    assert "ORGANIZED, EDUCATIONAL GROUPS ONLY" in cg.notes
+    assert "NO WATER AT THE SITE" in cg.notes
+    assert cg.fee_notes == "", "no fee is published for this camp; absent is not free"
+
+
+def test_black_diamonds_seven_gate_bands_are_not_flattened_to_one_time():
+    # park_access holds one closing time and this park has seven. A single
+    # figure would be wrong for most of the year, and the gate shuts on a
+    # backpacker walking out 3.2 miles from Stewartville.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Black Diamond Mines Regional Preserve"]
+    assert pa.gate_open == "8:00 AM", "opening is 8am in every band, so it is storable"
+    assert "varies by season" in pa.gate_close
+    for band in ("Jan 1-Jan 30 8am-5pm", "Apr 4-Sept 7 8am-8pm", "Nov 1-Dec 31 8am-5pm"):
+        assert band in pa.gate_hours_conditions
+
+
+def test_group_and_backpack_sites_are_block_released_not_rolling():
+    # A date is unbookable until its six-month block opens, however far ahead
+    # you plan -- which a rolling horizon would have implied otherwise.
+    from wayproof.booking import BACKPACK, FAMILY, channels_for, load_booking_channels
+    chans = load_booking_channels(D("booking_channels.csv"))
+    backpack = " ".join(c.release_mechanics for c in channels_for(chans, BACKPACK, agency="ebrpd"))
+    assert "SIX-MONTH BLOCK" in backpack
+    family = " ".join(c.release_mechanics for c in channels_for(chans, FAMILY, agency="ebrpd"))
+    assert "rolling 12-week" in family
