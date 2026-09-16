@@ -232,10 +232,17 @@ def test_the_schema_gap_count_drops_by_exactly_one():
     structural = [q for q in QUESTIONS if q.structural]
     gaps = [q for q in structural
             if [v for v in VERDICTS if built["scores"][q.qid][v]] == [NO_MODEL]]
-    assert len(structural) == 5, "5 questions are constant for every objective"
-    assert len(gaps) == 4, (
-        "4 of them are genuine schema gaps -- Q5 no longer is, and conflating "
-        "'constant' with 'the schema cannot express it' overstates the gap"
+    assert len(structural) == 3, (
+        "3 questions are constant for every objective. Q8 and Q17 left this set "
+        "when booking_channels.change_cancel and advisories.csv gave them "
+        "somewhere to live -- they now vary, which is what having a field means"
+    )
+    assert len(gaps) == 2, (
+        "2 of them are genuine schema gaps -- Q11 and Q18. Q5 stopped being one "
+        "when the other end got a field, Q8 when cancellation did, Q17 when "
+        "advisories did. Conflating 'constant' with 'the schema cannot express "
+        "it' overstates the gap; so does leaving NO_MODEL on a question the "
+        "schema has since grown a place for"
     )
 
 

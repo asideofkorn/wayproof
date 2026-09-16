@@ -40,6 +40,8 @@ from typing import Callable, List, Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from wayproof.access import load_approaches
+from wayproof.advisories import load_advisories
+from wayproof.booking import load_booking_channels
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
@@ -179,9 +181,15 @@ def _q7_cost(c: Ctx) -> str:
 
 
 def _q8_change_cancel(c: Ctx) -> str:
-    # Cancellation and change deadlines live in `permits.notes` prose. Nothing
-    # parses them, so there is no structured cutoff to report.
-    return NO_MODEL
+    # Was NO_MODEL until booking_channels.csv gained a change_cancel field.
+    # It has one now, so this is a data gap rather than a schema gap -- but
+    # only for the half of the question the field answers. "Can I change or
+    # cancel" is now expressible; "and by when" is not: the field holds the
+    # CHANNEL (online, phone, not email), and no structured cutoff exists
+    # anywhere. A permit's refund deadline is still prose in permits.notes.
+    fac = c.result.facilities
+    channels = fac.booking_channels if fac else []
+    return ANSWERED if any(ch.change_cancel for ch in channels) else NO_DATA
 
 
 def _q9_party(c: Ctx) -> str:
@@ -238,9 +246,20 @@ def _q16_water(c: Ctx) -> str:
 
 
 def _q17_closed(c: Ctx) -> str:
-    # Ohlone S6: a closed facility and one that never existed are
-    # indistinguishable. No lifecycle field exists on any table.
-    return NO_MODEL
+    # Was NO_MODEL until data/advisories.csv existed. It does now, so the
+    # schema gap is closed and what remains is a data gap: most parks in this
+    # project have no advisory recorded, which is a different and lesser
+    # failure than being unable to express one.
+    #
+    # Still NOT the whole question. Ohlone S6 was about a closed facility and
+    # one that never existed being indistinguishable, and that is a lifecycle
+    # field on campgrounds, which no table has. An advisory says "closed until
+    # further notice"; it cannot say "this camp no longer exists".
+    closures = [a for a in c.result.advisories
+                if a.kind in ("trail_closure", "area_closure", "facility")]
+    if closures:
+        return ANSWERED
+    return NO_DATA if c.result.advisories else NO_DATA
 
 
 def _q18_hazard(c: Ctx) -> str:
@@ -291,7 +310,11 @@ QUESTIONS: List[Question] = [
                    "Measures 'did we price what we know of', not 'did we know of "
                    "everything'. The $97-reported-as-free trip would score ANSWERED."),
     Question("Q8", 2, "Can I change or cancel, and by when?",
-             "Wrong if it gives a refund rule without its cutoff.", _q8_change_cancel, structural=True),
+             "Wrong if it gives a refund rule without its cutoff.", _q8_change_cancel,
+             limit="Scores only that a change/cancel CHANNEL is recorded. That is "
+                   "half the question: no structured cutoff exists anywhere, and a "
+                   "permit's refund deadline is still prose in permits.notes, so "
+                   "'and by when' remains unanswerable."),
     Question("Q9", 2, "How many of us can go?",
              "Wrong if it gives one number.", _q9_party,
              limit="Scores the group-size REGULATION. Party size as a booking and "
@@ -320,7 +343,11 @@ QUESTIONS: List[Question] = [
     Question("Q16", 3, "Where is water, and when was it last confirmed?",
              "Wrong if availability is reported without a date.", _q16_water),
     Question("Q17", 3, "What is closed?",
-             "Wrong if closed and never-existed look the same.", _q17_closed, structural=True),
+             "Wrong if closed and never-existed look the same.", _q17_closed,
+             limit="Scores only whether a closure is recorded for this objective's "
+                   "park. advisories.csv can say a thing is closed; nothing can yet "
+                   "say a facility was removed, which is the half of Ohlone S6 that "
+                   "made closed and never-existed indistinguishable."),
     Question("Q18", 3, "What is hazardous right now?",
              "Burn scars, snow windows, exposure.", _q18_hazard, structural=True),
     Question("Q20", 0, "How do you know, and when did you last check?",
@@ -360,6 +387,8 @@ def build(trip_date: datetime.date) -> dict:
         approaches=load_approaches(d / "approaches.csv"),
         water_sources=load_water_sources(d / "water_sources.csv"),
         water_source_log=load_water_source_log(d / "water_source_log.csv"),
+        advisories=load_advisories(d / "advisories.csv"),
+        booking_channels=load_booking_channels(d / "booking_channels.csv"),
         campgrounds=load_campgrounds(d / "campgrounds.csv"),
         campsites=load_campsites(d / "campsites.csv"),
         park_access=list(load_park_access(d / "park_access.csv").values()),
