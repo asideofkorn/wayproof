@@ -320,17 +320,36 @@ def test_every_committed_campground_states_its_access_mode():
         assert "ACCESS MODE IS NOT RECORDED" in by_name[name].notes, name
 
 
-def test_the_one_unsourced_access_mode_says_that_it_is_unsourced():
-    # Briones' three carry a value no page states. A reader cannot tell a
-    # sourced field from an unsourced one by looking at the column, so the row
-    # has to say which it is.
+def test_no_access_mode_here_rests_on_an_unsourced_claim_any_more():
+    # Briones' three carried drive_in on the maintainer's word, flagged as the
+    # one value in this dataset no page stated and filed as report R0002. Their
+    # booking pages say Hike-In, so the rows are corrected and the report is
+    # rejected. The rows still name R0002, because how a value got here is part
+    # of the value.
     by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
     for name in ("Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp",
                  "Homestead Valley Group Camp"):
         cg = by_name[name]
-        assert cg.access_mode == DRIVE_IN
-        assert "MAINTAINER'S WORD RATHER THAN A PUBLISHED PAGE" in cg.notes, name
+        assert cg.access_mode == HIKE_IN, name
+        assert "CORRECTS THE DRIVE-IN THIS ROW CARRIED" in cg.notes, name
         assert "R0002" in cg.notes, name
+    # The phrase that marked a LIVE unsourced value is gone. The rows still
+    # mention the maintainer's word, because that is now history, not a claim.
+    assert not any("MAINTAINER'S WORD RATHER THAN A PUBLISHED PAGE" in c.notes
+                   for c in load_campgrounds(CAMPGROUNDS))
+
+
+def test_wee_ta_chi_keeps_the_half_of_the_rejected_report_that_was_true():
+    # Driving to the site is permitted in dry weather -- four vehicles of ten --
+    # and forbidden within seven days of rain, when the carry is 1.5 miles.
+    # access_mode holds one value and EBRPD's own field says hike-in, so the
+    # conditional lives in prose. Losing it would make the correction a lie by
+    # omission.
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Wee-Ta-Chi Group Camp"]
+    assert "within 7 days of rain" in cg.notes
+    assert "1.5 MILES" in cg.notes
+    assert "NO WATER AT THE SITE" in cg.notes
+    assert "ALCOHOL: NOT PERMITTED" in cg.notes
 
 
 def test_blank_access_mode_reads_as_unrecorded_not_as_a_mode():

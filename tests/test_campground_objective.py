@@ -149,22 +149,30 @@ def test_each_briones_camp_gives_its_own_minimum_not_a_shared_range():
     # Maud Whalen, and is eighty short of Homestead Valley.
     by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
     for camp, minimum, maximum in (("Wee-Ta-Chi", "17", "50"),
-                                   ("Maud Whalen", "25", "75"),
                                    ("Homestead Valley", "100", "300")):
         notes = by_name[f"{camp} Group Camp"].notes
         assert f"MINIMUM {minimum}, MAXIMUM {maximum}" in notes, camp
         # Closed for over five months; booking a winter date is not possible.
         assert "SEASONALLY CLOSED 1 NOVEMBER - 15 MAY" in notes, camp
+    # Maud Whalen is deliberately not in that list: its two EBRPD pages give
+    # two different floors, so the row states both rather than picking one.
+    maud = by_name["Maud Whalen Group Camp"].notes
+    assert "SEASONALLY CLOSED 1 NOVEMBER - 15 MAY" in maud
+    assert "Minimum Number of People 17" in maud and "overview says 25" in maud
+    assert "arroyo-flats-minimum" in maud
 
 
-def test_the_flattened_tier_reading_is_marked_as_having_had_a_wrong_row():
-    # Maud Whalen is 25 at 75 capacity; the reconstruction said 17. No Anthony
-    # Chabot camp is 75, so nothing there rested on it -- but the rows that used
-    # the reading must say it was tested and partly failed, not just that it was
-    # a reading.
+def test_the_flattened_tier_reading_is_marked_as_no_longer_deciding_anything():
+    # Its 75-capacity row was corrected once and then contradicted back: the
+    # per-site pages say 17, the summary pages say 25. Neither reading is
+    # restored. No Chabot camp is 75, and the only two sites that row governed
+    # now state their own numbers, so the table has nothing left to decide --
+    # and the rows that used it have to say so rather than look confident.
     by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
     for camp in ("Bort Meadow Group Camp", "Puma Point Group Camp"):
-        assert "ONE ROW OF IT WAS WRONG" in by_name[camp].notes, camp
+        notes = by_name[camp].notes
+        assert "ONE ROW OF IT WAS WRONG BOTH TIMES" in notes, camp
+        assert "DECIDES NOTHING ANYWHERE" in notes, camp
 
 
 def test_star_mine_states_who_may_book_it_not_only_how_many():
@@ -270,3 +278,27 @@ def test_the_group_alcohol_permit_is_priced_on_the_row_that_costs_it():
     # And the side charge must not be allowed to read as the nightly rate: the
     # row still carries the project's own guard for a fee nobody has recorded.
     assert "absent is not free" in cg.fee_notes
+
+
+def test_the_unsourced_access_report_is_rejected_and_says_what_it_got_right():
+    # R0002 claimed Briones' camps are drive-in. The booking pages say hike-in,
+    # so it is rejected -- but Wee-Ta-Chi does permit driving in dry weather,
+    # and a ledger that records only "wrong" teaches the wrong lesson.
+    from wayproof.reports import pending_reports
+    r = {x.report_id: x for x in pending_reports(D("pending_reports.csv"))}["R0002"]
+    assert r.status == "rejected"
+    assert "SCHEMA GAP" in r.resolution_notes
+    assert "conditions permitting" in r.resolution_notes
+    # The earlier acceptance text survives: the ledger shows its own reversals.
+    assert "ACCEPTED 2026-09-16" in r.resolution_notes
+
+
+def test_the_alcohol_rule_names_the_exception_it_cannot_hold():
+    # Wee-Ta-Chi bans alcohol on its own page. regulations.csv has no site
+    # scope, so the ban lives on the campground row and the agency rule has to
+    # point at it -- otherwise the District rule reads as reaching everywhere.
+    from wayproof.regulations import load_regulations
+    rule = {r.regulation_id: r for r in
+            load_regulations(D("regulations.csv"))}["ebrpd-alcohol"]
+    assert "Wee-Ta-Chi" in rule.detail
+    assert "nowhere to go" in rule.detail
