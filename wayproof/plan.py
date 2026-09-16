@@ -192,6 +192,8 @@ class PlanResult:
             d["campground_objectives"] = [
                 {"name": c.name, "park": c.park, "land_agency": c.land_agency,
                  "access_mode": c.access_mode or None,
+                 "season_closed": c.season_label or None,
+                 "closed_on_trip_date": c.closed_on(self.trip_date),
                  "campsite_type": c.campsite_type or None}
                 for c in self.campground_objectives
             ]
@@ -329,6 +331,8 @@ class PlanResult:
                     {
                         "name": c.name,
                         "access_mode": c.access_mode or None,
+                        "season_closed": c.season_label or None,
+                        "closed_on_trip_date": c.closed_on(self.trip_date),
                         "campsite_type": c.campsite_type or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
@@ -849,6 +853,20 @@ def format_plan_summary(result: PlanResult) -> str:
             if "hike_in" in c.access_modes:
                 lines.append("    Reached on foot. Distance from the road is in the "
                              "campground's notes, and no approach is modelled here.")
+            # Said on every campground objective, in all three states. A plan
+            # that takes a date and never mentioned the season priced a closed
+            # camp for a January trip and never said it was shut.
+            shut = c.closed_on(result.trip_date)
+            if shut is True:
+                lines.append(f"    CLOSED ON YOUR DATE. This campground shuts annually from "
+                             f"{c.season_label}, and {result.trip_date} falls inside that. "
+                             "Nothing below changes it: the fees, the booking channel and "
+                             "the rules are what apply when it is open.")
+            elif shut is False:
+                lines.append(f"    Open on your date. It shuts annually from {c.season_label}.")
+            else:
+                lines.append("    No seasonal closure is recorded for this campground, which "
+                             "is not the same as knowing it is open all year.")
         lines.append("  No trailhead is resolved for a campground objective, and none is "
                      "guessed: a night at a campsite has no approach, so there is no entry")
         lines.append("  point, no route shape and no wilderness permit to report. What "

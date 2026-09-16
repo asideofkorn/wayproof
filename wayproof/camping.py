@@ -29,6 +29,7 @@ the filing-cabinet use of ``notes`` this project warns against.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
@@ -103,6 +104,20 @@ def _float_field(row, col: str) -> Optional[float]:
     return float(text)
 
 
+def _mmdd_field(row, col: str) -> Optional[tuple]:
+    """``(month, day)`` from an ``MM-DD`` cell, or ``None`` when it is empty."""
+    val = row.get(col)
+    if val is None or pd.isna(val):
+        return None
+    text = str(val).strip()
+    if not text:
+        return None
+    month, day = text.split("-")
+    month, day = int(month), int(day)
+    date(2001, month, day)  # raises on 02-30 and friends
+    return (month, day)
+
+
 def _bool_field(row, col: str) -> bool:
     val = row.get(col)
     if val is None or pd.isna(val):
@@ -152,6 +167,29 @@ class Campground:
     notice and a staff escort. Those live in ``notes``.
     """
 
+    def closed_on(self, on: "date") -> Optional[bool]:
+        """Is this campground inside its annual closure on *on*?
+
+        ``None`` when no closure is recorded -- which a caller must render as
+        "not known", never as "open".
+        """
+        if not self.season_closed_start or not self.season_closed_end:
+            return None
+        start, end = self.season_closed_start, self.season_closed_end
+        today = (on.month, on.day)
+        if start <= end:
+            return start <= today <= end
+        # Wraps the new year, which every EBRPD closure here does.
+        return today >= start or today <= end
+
+    @property
+    def season_label(self) -> str:
+        """The closure as a reader sees it, or "" when none is recorded."""
+        if not self.season_closed_start or not self.season_closed_end:
+            return ""
+        fmt = lambda md: f"{date(2001, md[0], md[1]):%-d %B}"  # noqa: E731
+        return f"{fmt(self.season_closed_start)} to {fmt(self.season_closed_end)}"
+
     @property
     def access_modes(self) -> List[str]:
         """The modes as a list; empty when nobody has recorded any."""
@@ -188,6 +226,25 @@ class Campground:
     coord_source: str = ""
     """Which page the coordinate came off, in prose. Same rule as every other
     field here: a value carries where it came from."""
+    season_closed_start: Optional[tuple] = None
+    season_closed_end: Optional[tuple] = None
+    """The annual closure as ``(month, day)`` pairs, or ``None`` when no source
+    states one.
+
+    Stored as MM-DD like ``permits.csv``'s quota season, and read the same way
+    -- except that these WRAP THE YEAR and quota seasons do not. Every EBRPD
+    closure read for this project runs 1 November to somewhere in spring, so
+    ``PermitRule.in_quota_season``'s straight ``start <= today <= end`` would
+    answer False on every day of every closure. :meth:`closed_on` handles the
+    wrap; the permits version is left alone because its seasons run inside one
+    year.
+
+    BLANK IS NOT "OPEN ALL YEAR". It is "nobody has recorded a closure", which
+    is the same rule as a blank fee or a blank access mode. Anthony Chabot is
+    why it matters: its season is an open conflict -- the brochure says
+    year-round and the booking system says closed 1 Nov to 1 Apr -- and filling
+    these columns would launder a disputed reading into a fact.
+    """
     has_restroom: bool = False
     restroom_type: str = ""
     reservation_method: str = ""
@@ -275,6 +332,13 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 )
         if len(set(modes)) != len(modes):
             raise ValueError(f"Repeated access_mode in {access_mode!r} for {name!r}")
+        season_start = _mmdd_field(row, "season_closed_start")
+        season_end = _mmdd_field(row, "season_closed_end")
+        if (season_start is None) != (season_end is None):
+            raise ValueError(
+                f"Campground {name!r} has half a closure season; a start "
+                f"without an end says nothing about when it reopens"
+            )
         latitude = _float_field(row, "latitude")
         longitude = _float_field(row, "longitude")
         coord_precision = _str_field(row, "coord_precision")
@@ -295,6 +359,8 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 f"and no coordinates"
             )
         campgrounds.append(Campground(
+            season_closed_start=season_start,
+            season_closed_end=season_end,
             latitude=latitude,
             longitude=longitude,
             coord_precision=coord_precision,
@@ -398,6 +464,20 @@ def unknown_access(campgrounds: List[Campground]) -> List[Campground]:
 def located(campgrounds: Sequence[Campground]) -> List[Campground]:
     """Campgrounds that can be placed on a map."""
     return [c for c in campgrounds if c.latitude is not None]
+
+
+def closed_on(campgrounds: Sequence[Campground], on: "date") -> List[Campground]:
+    """Campgrounds whose recorded closure covers *on*."""
+    return [c for c in campgrounds if c.closed_on(on)]
+
+
+def season_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds with no closure on file.
+
+    Returned so a caller can SAY so. Silence here means nobody looked, and a
+    reader shown nothing would reasonably assume the place is open.
+    """
+    return [c for c in campgrounds if c.season_closed_start is None]
 
 
 def unlocated(campgrounds: Sequence[Campground]) -> List[Campground]:

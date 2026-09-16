@@ -924,3 +924,60 @@ def test_the_sunol_facility_is_cited_by_every_camp_it_sells():
     # a different source for the same facility's sites, left as it is because
     # that is where its facts were read.
     assert cgs["Eagle Springs"].source_url.endswith("mission-peak-map.pdf")
+
+
+def test_a_closure_that_wraps_the_new_year_is_handled():
+    # Every EBRPD closure here runs 1 November into spring. PermitRule's quota
+    # season uses a straight start <= today <= end, which would answer False on
+    # every day of every one of them; its own seasons run inside one year, so it
+    # is left alone and this does the wrap.
+    import datetime
+    c = Campground(name="X", park="P",
+                   season_closed_start=(11, 1), season_closed_end=(3, 31))
+    assert c.closed_on(datetime.date(2027, 1, 15)) is True
+    assert c.closed_on(datetime.date(2026, 11, 1)) is True, "closes on the first day"
+    assert c.closed_on(datetime.date(2027, 3, 31)) is True, "and on the last"
+    assert c.closed_on(datetime.date(2027, 4, 1)) is False
+    assert c.closed_on(datetime.date(2027, 7, 1)) is False
+    assert c.season_label == "1 November to 31 March"
+
+
+def test_a_season_inside_one_year_still_works():
+    import datetime
+    c = Campground(name="X", park="P",
+                   season_closed_start=(1, 1), season_closed_end=(1, 31))
+    assert c.closed_on(datetime.date(2027, 1, 15)) is True
+    assert c.closed_on(datetime.date(2027, 2, 1)) is False
+
+
+def test_no_season_is_none_rather_than_open():
+    import datetime
+    assert Campground(name="X", park="P").closed_on(datetime.date(2027, 1, 15)) is None
+    assert Campground(name="X", park="P").season_label == ""
+
+
+def test_half_a_season_is_rejected(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,season_closed_start,season_closed_end\nX,P,11-01,\n")
+    with pytest.raises(ValueError, match="half a closure season"):
+        load_campgrounds(path)
+
+
+def test_an_impossible_date_is_rejected(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,season_closed_start,season_closed_end\nX,P,11-01,02-30\n")
+    with pytest.raises(ValueError):
+        load_campgrounds(path)
+
+
+def test_fifteen_campgrounds_close_for_the_winter_and_the_rest_say_nothing():
+    import datetime
+    from wayproof.camping import closed_on as closed_list, season_unrecorded
+    cgs = load_campgrounds(CAMPGROUNDS)
+    shut = closed_list(cgs, datetime.date(2027, 1, 15))
+    assert len(shut) == 15
+    # Three windows, all EBRPD's own wording, none of them the same.
+    assert {c.season_label for c in shut} == {
+        "1 November to 15 May", "1 November to 31 March", "1 November to 1 April"}
+    # And the rest are unrecorded, not open.
+    assert len(season_unrecorded(cgs)) == len(cgs) - 15

@@ -513,3 +513,60 @@ def test_the_ohlone_camps_park_field_is_right_about_the_fee_and_maybe_wrong_abou
     sites = [s for s in load_campsites(D("campsites.csv")) if s.loop == "Ohlone Backpack"]
     assert {s.campground for s in sites} == {
         "Boyd Camp", "Doe Camp", "Maggie's Half Acre", "Stewart's Camp"}
+
+
+# -- seasonal closure --------------------------------------------------------
+
+def test_a_january_plan_for_a_winter_closed_camp_says_it_is_shut():
+    # The defect this column was added for. Before it, planning Corral Group
+    # Camp for 15 January produced a full costed plan with booking channels and
+    # never mentioned that the camp shuts 1 November to 31 March.
+    text = format_plan_summary(resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        park_access=list(load_park_access(D("park_access.csv")).values())))
+    assert "CLOSED ON YOUR DATE" in text
+    assert "1 November to 31 March" in text
+
+
+def test_the_same_camp_in_july_says_it_is_open_and_still_names_the_season():
+    text = format_plan_summary(resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 7, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))))
+    assert "Open on your date" in text
+    assert "CLOSED ON YOUR DATE" not in text
+
+
+def test_no_season_on_file_is_said_rather_than_left_silent():
+    # Silence would read as "open". Absent is not a value, here as everywhere.
+    text = format_plan_summary(resolve_plan(
+        ["Star Mine Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))))
+    assert "No seasonal closure is recorded" in text
+    assert "not the same as knowing it is open all year" in text
+
+
+def test_the_machine_surface_carries_the_season_and_the_verdict():
+    payload = resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))).to_dict()
+    camp = payload["campground_objectives"][0]
+    assert camp["season_closed"] == "1 November to 31 March"
+    assert camp["closed_on_trip_date"] is True
+
+
+def test_anthony_chabots_disputed_season_is_left_out_of_the_columns():
+    # Its season is an open conflict: the brochure says year-round, the booking
+    # system says closed 1 Nov to 1 Apr. Filling the columns would launder a
+    # disputed reading into a fact a date-aware planner then asserts.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Anthony Chabot Campground"]
+    assert cg.season_closed_start is None and cg.season_closed_end is None
+    assert "DELIBERATELY" in cg.notes and "chabot-season" in cg.notes
