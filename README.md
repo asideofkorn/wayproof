@@ -1224,21 +1224,27 @@ for a *named* objective is `plan.py`.
 All accept the same `--*-file` overrides as `plan.py` for pointing at
 alternative datasets.
 
-**Two things `--campgrounds` will not do**, both for the same reason the rest
+**Three things `--campgrounds` will not do**, all for the same reason the rest
 of this project states its gaps rather than hiding them:
 
 - **It does not drop what it cannot measure.** A campground with no
   coordinates is reported under `CANNOT BE PLACED`, not omitted. Omitting it
   would make "nothing is near you" and "nobody has looked" identical, which is
-  the failure the scorecard already names for Q21. Today that is 22 of 24
-  campgrounds, including all three drive-in ones, so `--near` is honest rather
-  than useful until the coordinates land.
-- **It does not pretend a park centroid is a campsite.** Every coordinate here
-  came off a ReserveAmerica park overview page, so `coord_precision` is `park`
-  and each distance renders as "to the park, not the campground". Dumbarton
-  Quarry is why: it resolves to Coyote Hills Regional Park and has its own
-  entrance miles round the marsh, so it is deliberately left unplaced rather
-  than given that park's point.
+  the failure the scorecard already names for Q21. Today that is 12 of 24
+  campgrounds -- every drive-in one is placed, and what is left is backcountry.
+- **It does not pretend a park centroid is a campsite.** Most coordinates here
+  came off a ReserveAmerica *park* overview page, so `coord_precision` is
+  `park` and the distance renders as "to the park, not the campground". Only
+  Dumbarton Quarry has its own facility page, so only it reads "to the
+  campground".
+- **It does not give a park's point to every campground in that park.** A park
+  coordinate is assigned when that point is a reasonable stand-in for where you
+  arrive, and withheld when a source states a distance that makes it
+  misleading, or when the campground has its own entrance. Anthony Chabot's
+  point goes to all eight of its campgrounds; Del Valle's goes to one of five,
+  because its four backpack camps sit 2 to 11.5 miles up the Ohlone Wilderness
+  Trail. A blank that is a decision says so in `coord_source`, the same rule as
+  an unsourced `access_mode`.
 
 ## Python Usage
 
