@@ -283,6 +283,14 @@ def test_rules_resting_on_a_non_owning_source_are_flagged(reg):
         # least wrong of the three, and this is the flag.
         "Black Diamond Mines Regional Preserve (sourced to ReserveAmerica)",
         "desolation (sourced to Recreation.gov)",
+        # The District's backpack-site terms -- stay limit, the Ohlone
+        # overnight dog ban, no fires and no alcohol -- appear on NO
+        # ebparks.org page read here. EBRPD publishes that whole class of rule
+        # only through its booking platform, so every one of them arrives from
+        # a publisher that does not own what you may do on the ground. That is
+        # a fact about how the District publishes, not a shortcut taken here,
+        # and it is flagged rather than hidden.
+        "ebrpd (sourced to ReserveAmerica)",
         "sierra_nf (sourced to Recreation.gov)",
     ], (
         "these rules were transcribed from the booking platform, which restates the land "

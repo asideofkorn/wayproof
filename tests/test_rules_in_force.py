@@ -202,3 +202,25 @@ def test_the_stay_limit_says_it_is_counted_per_household_not_per_person():
     assert "per household address" in blob
     assert "not per person" in blob
     assert "walk-in" in blob, "nights taken without a reservation count toward the tally"
+
+
+def test_backpack_sites_have_their_own_stay_limit_and_ohlone_an_exception():
+    # Not the family campground's 15 consecutive days. The Ohlone exception
+    # exists because the trail is 28 miles and two nights does not cover it.
+    from wayproof.regulations import load_regulations
+    rule = next(r for r in load_regulations(D("regulations.csv"))
+                if r.regulation_id == "ebrpd-backpack-stay-limit")
+    assert "2 nights" in rule.summary
+    assert "3 consecutive nights" in rule.summary
+    assert "Ohlone" in rule.summary
+
+
+def test_the_ohlone_overnight_dog_ban_is_agency_scoped_not_park_scoped():
+    # Those camps are filed under Del Valle Regional Park, where the family
+    # campground allows dogs. A park-scoped rule would ban them at the wrong
+    # campground, so this one names its own sites instead.
+    from wayproof.regulations import load_regulations
+    rule = next(r for r in load_regulations(D("regulations.csv"))
+                if r.regulation_id == "ebrpd-backpack-no-dogs-ohlone")
+    assert rule.scope_type == "agency"
+    assert "NOT STATED" in rule.detail, "whether it reaches a cat is not stated"
