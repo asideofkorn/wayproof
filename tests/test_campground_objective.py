@@ -304,3 +304,44 @@ def test_the_alcohol_rule_names_the_exception_it_cannot_hold():
             load_regulations(D("regulations.csv"))}["ebrpd-alcohol"]
     assert "Wee-Ta-Chi" in rule.detail
     assert "nowhere to go" in rule.detail
+
+
+def test_the_only_reservable_camp_across_both_halves_of_one_parkland():
+    # Garin and Dry Creek Pioneer share one brochure map whose legend has a
+    # single "Reservable Camp" symbol, used once. 5,800 acres, one camp -- and
+    # Dry Creek Pioneer is tagged for camping anyway, which is what makes it an
+    # over-count in the 15-versus-18 thread rather than a second camping park.
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    parkland = [c for c in cgs if c.park in ("Garin Regional Park",
+                                             "Dry Creek Pioneer Regional Park")]
+    assert [c.name for c in parkland] == ["Arroyo Flats Group Camp"]
+    assert "only reservable camp across both parks" in parkland[0].notes
+    # And the four reservable areas beside it on the same inset are picnic
+    # areas, the call already made for Briones' Oak Grove, Newt Hollow and Crow.
+    for picnic in ("Cattlemen", "Buttonwood", "Ranchside", "Pioneer"):
+        assert picnic not in {c.name for c in cgs}
+
+
+def test_a_park_held_without_a_camp_is_not_filed_as_one_not_yet_checked():
+    # "Nobody has checked" and "checked, and there is nothing" are the two
+    # states this project spends its time separating, and the integrity guard
+    # has a separate allowlist for each.
+    from tests.test_referential_integrity import (
+        PARKS_HELD_WITHOUT_A_SITE, PARKS_WITH_NO_SITE_YET,
+    )
+    assert "Dry Creek Pioneer Regional Park" in PARKS_HELD_WITHOUT_A_SITE
+    assert PARKS_HELD_WITHOUT_A_SITE.isdisjoint(PARKS_WITH_NO_SITE_YET)
+
+
+def test_the_garden_closure_stays_where_a_reader_will_meet_it():
+    # The garden is in Dry Creek Pioneer. Nothing in this dataset sits in that
+    # park, so an advisory scoped there could never reach a plan. It stays on
+    # Garin, where EBRPD posts it and where Arroyo Flats is -- and the row says
+    # it is mis-scoped rather than pretending otherwise.
+    from wayproof.advisories import load_advisories
+    advisories = {a.advisory_id: a for a in load_advisories(D("advisories.csv"))}
+    assert "dry-creek-pioneer-garden" not in advisories, "no unreachable duplicate"
+    garden = advisories["garin-dry-creek-garden"]
+    assert garden.scope_value == "Garin Regional Park"
+    assert "ACTUALLY IN THE ADJOINING PARK" in garden.detail
+    assert "can never reach a plan" in garden.detail

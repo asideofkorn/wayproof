@@ -86,6 +86,17 @@ UNKEYED_PARKS = {
 # facility, and the two arrive on different pages.
 PARKS_WITH_NO_SITE_YET: set = set()
 
+# Not the same thing, and the difference is the one this project keeps making:
+# "nobody has checked" against "checked, and there is nothing". These parks
+# have been read and have no campground to find. Dry Creek Pioneer is tagged
+# for camping on its own park page, has no ReserveAmerica facility, and shares
+# a map with Garin on which the single Reservable Camp symbol is Arroyo Flats,
+# in the Garin half. Its park_access row is held because the park is real and
+# its gate, fee and closure are published -- not because a camp is expected.
+PARKS_HELD_WITHOUT_A_SITE = {
+    "Dry Creek Pioneer Regional Park",
+}
+
 
 #: ``(label, child values, parent values)`` -- every declared join in data/.
 JOINS = [
@@ -162,7 +173,8 @@ JOINS = [
      lambda: values("campgrounds.csv", "park") - UNKEYED_PARKS,
      lambda: values("trailheads.csv", "park") | values("park_access.csv", "park")),
     ("park_access.park -> trailheads.park | campgrounds.park",
-     lambda: values("park_access.csv", "park") - PARKS_WITH_NO_SITE_YET,
+     lambda: (values("park_access.csv", "park")
+              - PARKS_WITH_NO_SITE_YET - PARKS_HELD_WITHOUT_A_SITE),
      lambda: values("trailheads.csv", "park") | values("campgrounds.csv", "park")),
 ]
 
