@@ -13,6 +13,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest
 
 from wayproof.camping import (
+    COORD_CAMPGROUND,
+    COORD_PARK,
     DRIVE_IN,
     HIKE_IN,
     RV_HOOKUP,
@@ -519,19 +521,36 @@ def test_a_blank_coordinate_is_none_and_never_zero():
     assert all(c.longitude is None and c.coord_precision == "" for c in unplaced)
 
 
-def test_dumbarton_is_deliberately_not_given_its_parks_coordinate():
-    # It resolves to Coyote Hills and has its own entrance miles round the
-    # marsh, so that park's centroid would place it somewhere it is not. The
-    # park field being 2-2 across sources makes borrowing worse, not better.
+def test_refusing_to_borrow_dumbartons_park_centroid_was_worth_about_two_miles():
+    # It was left unplaced while its park had a coordinate. Its own facility
+    # page then gave it one, and the two points are ~2 miles apart -- which is
+    # what borrowing the centroid would have cost, in the direction of the marsh.
+    from wayproof.distances import haversine_miles
     by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
     dumbarton = by_name["Dumbarton Quarry Campground on the Bay"]
-    dairy_glen = by_name["Dairy Glen Group Camp"]
+    dairy_glen = by_name["Dairy Glen Group Camp"]  # carries the park's point
     assert dumbarton.park == dairy_glen.park == "Coyote Hills Regional Park"
-    assert dairy_glen.latitude is not None
-    assert dumbarton.latitude is None
+    assert dumbarton.coord_precision == COORD_CAMPGROUND
+    assert dairy_glen.coord_precision == COORD_PARK
+    gap = haversine_miles(dumbarton.latitude, dumbarton.longitude,
+                          dairy_glen.latitude, dairy_glen.longitude)
+    assert 1.0 < gap < 3.0
+
+
+def test_the_ohlone_trail_camps_are_left_unplaced_on_purpose_and_say_why():
+    # Del Valle has a coordinate and these four are in that park. They sit 2 to
+    # 11.5 miles up the Ohlone Wilderness Trail, so the park's point would
+    # misplace them by that much. A blank that is a decision has to read as one.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    assert by_name["Del Valle Family Campground"].latitude is not None
+    for name in ("Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp"):
+        c = by_name[name]
+        assert c.latitude is None, name
+        assert "DELIBERATELY UNPLACED" in c.coord_source, name
+        assert "Ohlone Wilderness Trail" in c.coord_source, name
 
 
 def test_every_stored_coordinate_says_which_page_it_came_off():
     for c in located(load_campgrounds(CAMPGROUNDS)):
         assert "ReserveAmerica" in c.coord_source, c.name
-        assert "PARK PRECISION" in c.coord_source.upper(), c.name
+        assert "PRECISION" in c.coord_source.upper(), c.name

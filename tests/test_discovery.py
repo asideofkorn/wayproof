@@ -155,17 +155,40 @@ def test_the_drive_in_question_this_was_built_for():
     assert unknown_access(cgs) == []
 
 
-def test_the_near_search_can_currently_place_almost_nothing_and_says_so():
-    # Two of twenty-four, both at park precision, both off a ReserveAmerica
-    # overview page. This test exists to fail loudly if that silently changes
-    # in either direction -- and to state that the feature is honest rather
-    # than useful until the coordinates land.
+def test_the_question_this_was_built_for_now_has_a_ranked_answer():
+    # The whole point: "which campgrounds near me can I drive to". Nearest
+    # first, from Oakland City Hall. If this ever returns an empty list again,
+    # coordinates have been lost, not campgrounds.
     cgs = load_campgrounds(CAMPGROUNDS)
-    assert [c.name for c in located(cgs)] == ["Dairy Glen Group Camp",
-                                              "Arroyo Flats Group Camp"]
-    assert {c.coord_precision for c in located(cgs)} == {COORD_PARK}
-
     got = find_campgrounds(cgs, access=DRIVE_IN, near=OAKLAND)
-    assert got.matches == [], "no drive-in campground has coordinates yet"
-    assert len(got.unplaced) == 3
+    assert [m.campground.name for m in got.matches] == [
+        "Anthony Chabot Campground",
+        "Dumbarton Quarry Campground on the Bay",
+        "Del Valle Family Campground",
+    ]
+    assert got.unplaced == [], "every drive-in campground is placed"
+    # Ordered, and the spread is real rather than noise in a centroid.
+    miles = [m.distance_miles for m in got.matches]
+    assert miles == sorted(miles)
+    assert miles[0] < 15 < miles[-1]
+
+
+def test_the_one_campground_precision_coordinate_renders_differently():
+    # Dumbarton has its own ReserveAmerica facility page, so its GPS names the
+    # camp. Every other coordinate here names a park and says so.
+    cgs = load_campgrounds(CAMPGROUNDS)
+    got = find_campgrounds(cgs, access=DRIVE_IN, near=OAKLAND)
+    bases = {m.campground.name: m.distance_basis for m in got.matches}
+    assert bases["Dumbarton Quarry Campground on the Bay"] == "to the campground"
+    assert bases["Anthony Chabot Campground"] == "to the park, not the campground"
+    assert {c.coord_precision for c in located(cgs)} == {COORD_PARK, COORD_CAMPGROUND}
+
+
+def test_what_is_still_unplaced_is_still_reported_rather_than_dropped():
+    # Ten campgrounds have no coordinates: Black Diamond's two, Briones' three,
+    # Round Valley, Sunol, Mission Peak, and Del Valle's four Ohlone-trail
+    # camps minus none -- the search must still carry them out.
+    cgs = load_campgrounds(CAMPGROUNDS)
+    got = find_campgrounds(cgs, near=OAKLAND)
+    assert len(got.unplaced) == len(unlocated(cgs)) > 0
     assert "CANNOT BE PLACED" in "\n".join(format_campground_list(got))

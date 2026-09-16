@@ -727,7 +727,7 @@ def test_conflicts_stay_separate_across_permit_groups():
         "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
                  "chabot-season", "chabot-overflow-parking",
                  "stewartville-vehicles", "arroyo-flats-minimum",
-                 "ebrpd-generators"},
+                 "ebrpd-generators", "del-valle-gate-close"},
     }
 
 
@@ -775,6 +775,9 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # Ordinance 38 allows a generator that disturbs nobody; the campground
         # rules attached to every reservation say "No gas generators", flat.
         "ebrpd-generators": "cross_source",
+        # The park page says the gate shuts at 9pm, ReserveAmerica and the
+        # District alert say 10pm. Nine miles of back road turn on it.
+        "del-valle-gate-close": "cross_source",
     }
 
 
