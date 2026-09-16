@@ -348,3 +348,63 @@ def test_every_cited_url_in_the_real_data_is_registered(reg):
     unknown = sorted({r.source_url for r in regs
                       if r.source_url and source_for(r.source_url, sources) is None})
     assert unknown == [], f"cited but unregistered: {unknown}"
+
+
+# -- booking-facility identifiers -------------------------------------------
+
+def test_a_facility_id_never_appears_under_two_different_slugs():
+    """The check that would have caught two fabricated citations.
+
+    Park-to-facility is NOT one-to-one and must not be asserted to be:
+    EB/110028 "sunol" sells sites in Mission Peak, Ohlone and Sunol, and Coyote
+    Hills has two facilities because Dumbarton Quarry has its own. A shared
+    facility is legitimate.
+
+    What cannot happen is one ID appearing under two SLUGS -- Sunol's three
+    parks all sit behind the single slug "sunol". EB/110455 appeared under both
+    "las-trampas-regional-wilderness" (real, pasted) and "del-valle-regional-
+    park" (invented here by pattern), which is how the fabrication surfaced.
+    """
+    import csv
+    import glob
+    import re
+    from collections import defaultdict
+
+    # URL-bearing columns only. Prose that QUOTES a bad URL -- as the two
+    # corrected entries now do, so the fabrication stays visible -- is not a
+    # citation, and scanning every field made this test fail on its own
+    # evidence. Same rule as the uncertainty markers: a string quoted as
+    # something that went wrong is not the project asserting it.
+    url_columns = {"source_url", "apply_url", "evidence_url", "source"}
+    slugs_by_id = defaultdict(set)
+    for path in glob.glob(os.path.join(ROOT, "data", "*.csv")):
+        with open(path) as fh:
+            for row in csv.DictReader(fh):
+                for column, value in row.items():
+                    if column not in url_columns or not value:
+                        continue
+                    for m in re.finditer(
+                            r"reserveamerica\.com/explore/([a-z0-9-]+)/EB/(\d+)", str(value)):
+                        slugs_by_id[m.group(2)].add(m.group(1))
+
+    collisions = {eb: sorted(s) for eb, s in slugs_by_id.items() if len(s) > 1}
+    assert collisions == {}, (
+        f"one facility ID under several slugs: {collisions}. A shared facility "
+        "is fine; a shared ID under two names means one of them was invented."
+    )
+    assert slugs_by_id, "the check must actually be finding facility URLs"
+
+
+def test_the_two_fabricated_citations_are_blank_and_say_so():
+    # A blank field says "nobody checked". A plausible URL says "somebody
+    # checked, here is where" and is a lie that survives inspection until
+    # someone clicks it. The fabricated strings stay recorded in the entries so
+    # the correction is visible rather than tidy.
+    from wayproof.permits import load_source_log
+    log = {e.entry_id: e for e in load_source_log(
+        os.path.join(ROOT, "data", "permit_source_log.csv"))}
+    for entry_id in ("none-2026-09-16-30", "none-2026-09-16-31"):
+        entry = log[entry_id]
+        assert entry.source_url == "", entry_id
+        assert "CITATION IN THIS ENTRY WAS FABRICATED" in entry.summary, entry_id
+    assert "FABRICATED BY THIS PROJECT" in log["none-2026-09-16-54"].summary
