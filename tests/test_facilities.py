@@ -180,14 +180,19 @@ def test_load_water_source_log_reads_committed_data():
     assert all(isinstance(e, WaterSourceLogEntry) for e in entries)
 
 
-def test_boyd_camp_has_official_and_conflicting_field_entries():
+def test_boyd_camp_keeps_every_check_including_the_one_that_disagreed():
+    # The ledger is append-only: a later check never overwrites an earlier one.
+    # Boyd Camp has an official update, this project's own field note
+    # contradicting it, and a newer official update -- and all three stay.
     entries = load_water_source_log(WATER_SOURCE_LOG)
     boyd = [e for e in entries if e.water_source_name == "Boyd Camp"]
-    assert len(boyd) == 2
+    assert len(boyd) == 3
     official = [e for e in boyd if "EBRPD" in e.source]
-    assert official and official[0].observed_status == "running"
+    assert len(official) == 2 and {e.observed_status for e in official} == {"running"}
     conflicting = [e for e in boyd if "contradicts" in e.observed_status]
-    assert conflicting
+    assert conflicting, "the disagreement must survive the newer official check"
+    # Newest wins for "what is it doing now", without erasing the doubt.
+    assert latest_status_by_source(entries)["Boyd Camp"].checked_date == "2026-09-15"
 
 
 def test_latest_status_by_source_picks_newest_dated_entry():

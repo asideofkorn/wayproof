@@ -72,6 +72,9 @@ def scoped(scope_type: str) -> set:
 UNKEYED_PARKS = {
     "Sunol Regional Wilderness",
     "Dumbarton Quarry Campground on the Bay",
+    # Arrived through an alerts page, not a camping page: all this project
+    # knows is that the camp exists and its water is off.
+    "Round Valley Regional Preserve",
 }
 
 # The mirror case: a park whose ACCESS is known while nothing in this dataset
