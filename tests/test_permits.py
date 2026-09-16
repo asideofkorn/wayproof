@@ -727,7 +727,8 @@ def test_conflicts_stay_separate_across_permit_groups():
         "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
                  "chabot-season", "chabot-overflow-parking",
                  "stewartville-vehicles", "arroyo-flats-minimum",
-                 "ebrpd-generators", "del-valle-gate-close"},
+                 "ebrpd-generators", "del-valle-gate-close",
+                 "las-trampas-bbq"},
     }
 
 
@@ -778,6 +779,10 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # The park page says the gate shuts at 9pm, ReserveAmerica and the
         # District alert say 10pm. Nine miles of back road turn on it.
         "del-valle-gate-close": "cross_source",
+        # One listing describes two XL BBQs, flags BBQ: Y, and says "No
+        # campfires/BBQ's" -- three parts of the same page disagreeing, so
+        # there is no publisher to rank and no recency to apply.
+        "las-trampas-bbq": "internal",
     }
 
 

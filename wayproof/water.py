@@ -51,7 +51,17 @@ class WaterSource:
 
     name: str
     type: str = ""
-    potable: bool = False
+    potable: "bool | None" = None
+    """Drinkable, not drinkable, or ``None`` when nobody has said.
+
+    Three-valued, and it was two-valued until Las Trampas. A blank used to load
+    as ``False``, which reads as "the agency says do not drink this" -- a claim
+    nobody made, about the one field where being wrong either way is a health
+    question. Las Trampas' faucets are the case: EBRPD marks Drinking Water on
+    its map, never uses the word potable, and says the supply may run out at
+    any time. Same rule as a blank ``access_mode`` or a blank coordinate:
+    absent is not a value.
+    """
     location: str = ""  # name of the associated trailhead or campground
     latitude: float | None = None
     longitude: float | None = None
@@ -85,7 +95,8 @@ def load_water_sources(path: str | Path = "data/water_sources.csv") -> List[Wate
         sources.append(WaterSource(
             name=name,
             type=_str_field(row, "type"),
-            potable=bool(potable) if potable is not None and not pd.isna(potable) else False,
+            potable=(None if potable is None or pd.isna(potable)
+                     or str(potable).strip() == "" else bool(potable)),
             location=_str_field(row, "location"),
             latitude=_float_or_none(row.get("latitude")),
             longitude=_float_or_none(row.get("longitude")),

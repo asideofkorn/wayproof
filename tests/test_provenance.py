@@ -288,6 +288,10 @@ def test_rules_resting_on_a_non_owning_source_are_flagged(reg):
         # site type". The number exists in exactly one place and that place is
         # not the land manager's, so it is carried flagged.
         "Dr. Aurelia Reinhardt Redwood Regional Park (sourced to ReserveAmerica)",
+        # Las Trampas' park page says only "NO campfires are permitted". The
+        # barbecue half of the ban -- and the contradiction with the two XL
+        # BBQs the same listing describes -- exists only on the platform.
+        "Las Trampas Wilderness Regional Preserve (sourced to ReserveAmerica)",
         "desolation (sourced to Recreation.gov)",
         # The District's backpack-site terms -- stay limit, the Ohlone
         # overnight dog ban, no fires and no alcohol -- appear on NO

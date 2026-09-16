@@ -150,6 +150,7 @@ def test_the_drive_in_question_this_was_built_for():
         "Del Valle Family Campground",
         "Anthony Chabot Campground",
         "Dumbarton Quarry Campground on the Bay",
+        "Corral Group Camp",
     ]
     # Nothing is excluded for being unchecked, because nothing is unchecked --
     # a state this dataset has now left and re-entered twice, so the assertion
@@ -165,6 +166,7 @@ def test_the_question_this_was_built_for_now_has_a_ranked_answer():
     got = find_campgrounds(cgs, access=DRIVE_IN, near=OAKLAND)
     assert [m.campground.name for m in got.matches] == [
         "Anthony Chabot Campground",
+        "Corral Group Camp",
         "Dumbarton Quarry Campground on the Bay",
         "Del Valle Family Campground",
     ]

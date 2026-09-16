@@ -238,16 +238,19 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_every_group_camp_in_this_dataset_is_hike_in():
-    # Sixteen of sixteen. An earlier version hand-picked three names, which is
-    # how Anthony Chabot's seven stayed wrong while saying "no driving in" in
-    # their own notes; a later one carved out Girls' Camp while its access was
-    # unknown. Its booking page then said Hike-In, so the carve-out is gone and
-    # the class is asserted whole again.
+def test_the_rule_that_group_camps_are_walked_into_was_about_eight_parks():
+    # Sixteen group camps were hike-in, three of them corrected from a wrong
+    # drive_in, and that looked like a District fact. Las Trampas' Corral says
+    # Drive-In on its own booking page. So the generalisation was about the
+    # parks read first, not about EBRPD -- assert both sides so neither the
+    # majority nor the exception can quietly disappear.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
-    assert len(group) == 16
-    assert {c.access_mode for c in group} == {"hike_in"}
+    assert len(group) == 17
+    drive_in_group = [c for c in group if c.access_mode == "drive_in"]
+    assert [c.name for c in drive_in_group] == ["Corral Group Camp"]
+    assert all(c.access_mode == "hike_in" for c in group if c not in drive_in_group)
+    assert "FIRST DRIVE-IN GROUP CAMP" in drive_in_group[0].notes
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():

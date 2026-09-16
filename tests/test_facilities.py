@@ -475,16 +475,18 @@ def test_no_drive_in_row_contradicts_itself_in_its_own_notes():
     assert len([s for s in sites if s.site_type == TENT_HIKE_IN]) == 10
 
 
-def test_the_only_drive_in_campgrounds_left_are_the_three_family_ones():
-    # Every group and backpack camp in this dataset is reached on foot. That is
-    # the answer to "which campgrounds can I drive to", and it is short.
+def test_the_drive_in_list_is_three_family_campgrounds_and_one_group_camp():
+    # Every group and backpack camp in the eight parks read first is walked to,
+    # which looked like a District fact until Las Trampas' Corral stated
+    # Drive-In. Ordered as the file is, so a new row cannot slip in unnoticed.
     drivable = drive_in(load_campgrounds(CAMPGROUNDS))
     assert [c.name for c in drivable] == [
         "Del Valle Family Campground",
         "Anthony Chabot Campground",
         "Dumbarton Quarry Campground on the Bay",
+        "Corral Group Camp",
     ]
-    assert {c.campsite_type for c in drivable} == {"family"}
+    assert [c.campsite_type for c in drivable] == ["family"] * 3 + ["group"]
 
 
 # -- coordinates -------------------------------------------------------------
@@ -557,3 +559,41 @@ def test_every_stored_coordinate_says_which_page_it_came_off():
     for c in located(load_campgrounds(CAMPGROUNDS)):
         assert "ReserveAmerica" in c.coord_source, c.name
         assert "PRECISION" in c.coord_source.upper(), c.name
+
+
+def test_las_trampas_water_is_unreliable_by_the_operators_own_account():
+    # Every other row in this table is a source nobody has verified lately.
+    # This is one the agency verifies as unpromised, which is a different fact
+    # and must not read as "unchecked".
+    from wayproof.water import (
+        latest_status_by_source, load_water_source_log, load_water_sources,
+    )
+    src = {w.name: w for w in load_water_sources(WATER_SOURCES)}["Corral Group Camp faucets"]
+    assert src.location == "Corral Group Camp"
+    assert src.potable is None, "nothing read says whether it is drinkable when it flows"
+    assert "unreliable" in src.notes
+
+    entry = latest_status_by_source(
+        load_water_source_log(WATER_SOURCE_LOG))["Corral Group Camp faucets"]
+    assert "not guaranteed" in entry.observed_status
+    assert "Nobody has turned these taps" in entry.notes
+
+
+def test_a_blank_potable_is_unknown_not_a_statement_that_it_is_undrinkable():
+    # It loaded as False until Las Trampas, which reads as "the agency says do
+    # not drink this" -- a claim nobody made, about the one field where being
+    # wrong either way is a health question. No committed row changed meaning:
+    # every other row states True or False explicitly.
+    from wayproof.water import WaterSource, load_water_sources
+    assert WaterSource(name="x").potable is None
+    sources = load_water_sources(WATER_SOURCES)
+    unknown = [w.name for w in sources if w.potable is None]
+    assert unknown == ["Corral Group Camp faucets"]
+    assert all(isinstance(w.potable, bool) for w in sources if w.name not in unknown)
+
+
+def test_a_blank_potable_column_does_not_load_as_false(tmp_path):
+    from wayproof.water import load_water_sources
+    path = tmp_path / "water_sources.csv"
+    path.write_text("name,type,potable,location\nSpring,spring,,Somewhere\n")
+    assert load_water_sources(path)[0].potable is None
