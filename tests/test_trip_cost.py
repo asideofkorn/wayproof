@@ -132,7 +132,7 @@ def test_an_unpriced_component_says_so_rather_than_disappearing():
     result = _plan("Rose Peak")
     unpriced = [c for c in result.costs if c.status == UNKNOWN]
     assert unpriced[0].label == "Del Valle Family Campground"
-    assert len(unpriced) == 6
+    assert len(unpriced) == 8
     assert {c.kind for c in unpriced} == {"campground"}
     text = format_plan_summary(result)
     assert "NO FEE ON FILE" in text

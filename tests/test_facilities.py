@@ -77,11 +77,37 @@ def test_the_district_wide_contact_is_not_copied_into_every_campground():
         assert "option 2" not in c.reservation_method, c.name
 
 
-def test_campsite_type_is_set_for_every_campground():
+# Campgrounds whose CLASS no source states. Blank means booking resolves only
+# the District-wide channel and no class-specific method -- which is the honest
+# answer, and the reason this is a named allowlist rather than an empty one.
+#
+# Hetch Hetchy and Venados appear only in Del Valle's six-name seasonal closure
+# list. An arithmetic argument makes them very likely group camps -- 7 GROUP
+# CAMPING sites, 1 equestrian group camp which is Caballo Loco, four of the
+# other five closure names already known to be group camps -- and this project
+# has twice been wrong following arithmetic that worked.
+CAMPSITE_TYPE_UNSTATED = {
+    "Hetch Hetchy",
+    "Venados",
+}
+
+
+def test_campsite_type_is_set_wherever_a_source_states_one():
     # Blank means booking resolves only agency-wide channels, so a backpacker
-    # would never be told their sites are phone-only.
-    blank = [c.name for c in load_campgrounds(CAMPGROUNDS) if not c.campsite_type]
-    assert blank == [], f"campgrounds with no campsite_type: {blank}"
+    # would never be told their sites are phone-only. The exceptions are named,
+    # so a NEW blank still fails.
+    blank = {c.name for c in load_campgrounds(CAMPGROUNDS) if not c.campsite_type}
+    assert blank == CAMPSITE_TYPE_UNSTATED
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in blank:
+        assert "campsite_type IS DELIBERATELY BLANK" in by_name[name].notes, name
+
+
+def test_a_class_less_campground_gets_the_district_channel_and_no_method():
+    from wayproof.booking import channels_for, load_booking_channels
+    chans = channels_for(load_booking_channels(os.path.join(DATA, "booking_channels.csv")),
+                         "", agency="ebrpd")
+    assert [c.applies_to for c in chans] == ["all"]
 
 
 def test_load_campgrounds_missing_file_returns_empty(tmp_path):
@@ -289,6 +315,9 @@ ACCESS_MODE_UNRECORDED = {
     "Cedar Group Camp",
     "Lil Chaparral Horse Camp",
     "Caballo Loco Horse Camp",
+    # Named only in a seasonal closure list: a name and a season, nothing else.
+    "Hetch Hetchy",
+    "Venados",
 }
 
 
@@ -310,6 +339,9 @@ def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to()
             # "Boat-In, Hike-In" -- EBRPD's own pair, the only multi-valued
             # access_mode here and the reason the field takes a list at all.
             assert c.access_modes == ["boat_in", "hike_in"]
+            continue
+        if c.name in CAMPSITE_TYPE_UNSTATED:
+            assert c.campsite_type == "", c.name
             continue
         assert c.campsite_type in ("backpack", "family", "group", "equestrian"), (
             f"{c.name}: unclassified campsite_type")

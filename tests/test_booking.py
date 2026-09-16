@@ -13,7 +13,7 @@ import pytest
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from wayproof.booking import (
-    ALL, BACKPACK, FAMILY, GROUP, BookingChannel, channels_for,
+    ALL, BACKPACK, CABIN, FAMILY, GROUP, BookingChannel, channels_for,
     load_booking_channels,
 )
 
@@ -31,8 +31,11 @@ def test_missing_file_is_not_an_error(tmp_path):
 
 
 def test_invalid_applies_to_is_rejected_loudly(tmp_path):
+    # This test used "cabin" as its nonsense value until Del Valle's facility
+    # turned out to sell five of them, which is a small lesson in picking
+    # placeholders: the vocabulary was incomplete, not the value absurd.
     path = tmp_path / "booking_channels.csv"
-    path.write_text("channel_id,scope_type,scope_value,applies_to\nx,agency,ebrpd,cabin\n")
+    path.write_text("channel_id,scope_type,scope_value,applies_to\nx,agency,ebrpd,yurt\n")
     with pytest.raises(ValueError, match="applies_to"):
         load_booking_channels(path)
 
@@ -162,3 +165,30 @@ def test_the_park_scoped_row_says_how_far_its_scope_is_a_judgement():
     row = next(c for c in chans if c.scope_type == "park")
     assert "JUDGEMENT" in row.lead_time
     assert "site scope" in row.lead_time
+
+
+def test_a_cabin_borrows_one_rule_from_each_neighbour():
+    # Booked on the family calendar's far end -- twelve weeks -- and on the
+    # group clock at the near end, 72 hours rather than 48, then cancelled on
+    # the group tiers. A class that fits neither is why applies_to is a
+    # vocabulary rather than a flag for "is this a group site".
+    chans = load_booking_channels(CHANNELS)
+    cabin = next(c for c in channels_for(chans, CABIN, agency="ebrpd")
+                 if c.applies_to == CABIN)
+    assert "72 hours and 12 weeks" in cabin.lead_time
+    assert "PHONE ONLY" in cabin.method
+    assert "90% of site use fees refundable" in cabin.change_cancel
+    assert "COUNT TOWARD THE HOUSEHOLD'S TWO-SITE LIMIT" in cabin.change_cancel
+
+
+def test_family_refunds_are_prorated_by_night_and_group_ones_are_not():
+    # A different SHAPE, not a different number: group bookings refund a
+    # percentage of the whole, family bookings lose only the nights inside 48
+    # hours. Cancelling a four-night family stay the day before returns three.
+    chans = load_booking_channels(CHANNELS)
+    family = " ".join(c.change_cancel for c in channels_for(chans, FAMILY, agency="ebrpd"))
+    group = " ".join(c.change_cancel for c in channels_for(chans, GROUP, agency="ebrpd"))
+    assert "within 48 hours of the cancellation request are non-refundable" in family
+    assert "PRORATED BY NIGHT" in family
+    assert "90% of site use fees refundable" in group
+    assert "PRORATED BY NIGHT" not in group

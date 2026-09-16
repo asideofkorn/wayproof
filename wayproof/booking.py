@@ -45,13 +45,24 @@ ALL = "all"
 FAMILY = "family"
 GROUP = "group"
 BACKPACK = "backpack"
-_VALID_APPLIES_TO = {ALL, FAMILY, GROUP, BACKPACK}
+CABIN = "cabin"
+"""EBRPD's fourth class, and its mechanics belong to neither neighbour.
+
+Added when Del Valle's facility turned out to sell five cabins: booked on the
+family calendar's far end, twelve weeks, and on the GROUP clock at the near
+end, seventy-two hours rather than forty-eight -- then cancelled on the group
+tiers. A class that borrows one rule from each is why ``applies_to`` is a
+vocabulary rather than a boolean for "is this a group site".
+"""
+
+_VALID_APPLIES_TO = {ALL, FAMILY, GROUP, BACKPACK, CABIN}
 
 APPLIES_TO_LABELS = {
     ALL: "Any campsite",
     FAMILY: "Family campsites",
     GROUP: "Group campsites",
     BACKPACK: "Backpack campsites",
+    CABIN: "Cabins",
 }
 
 
