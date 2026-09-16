@@ -238,14 +238,16 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_every_group_camp_whose_access_a_page_states_is_hike_in():
-    # Three for three: Star Mine, Dairy Glen, Arroyo Flats, each a quarter-mile
-    # carry. Briones' three carry drive_in from a single unsourced answer and
-    # are excluded here deliberately -- this test is about what pages say.
+def test_every_group_camp_in_this_dataset_is_hike_in():
+    # This began as a hand-picked list of the three whose access a page stated,
+    # which was the wrong test twice over: Briones' three were about to be
+    # corrected, and Anthony Chabot's seven said "no driving in" in their own
+    # notes while the column said drive_in. Naming the exceptions was how they
+    # stayed hidden. Assert the whole class instead -- thirteen of thirteen.
     cgs = load_campgrounds(D("campgrounds.csv"))
-    sourced = {"Star Mine Group Camp", "Dairy Glen Group Camp", "Arroyo Flats Group Camp"}
-    assert {c.access_mode for c in cgs if c.name in sourced} == {"hike_in"}
-    assert len([c for c in cgs if c.name in sourced]) == 3
+    group = [c for c in cgs if c.campsite_type == "group"]
+    assert len(group) == 13
+    assert {c.access_mode for c in group} == {"hike_in"}
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
