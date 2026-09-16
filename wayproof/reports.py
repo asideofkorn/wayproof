@@ -296,9 +296,9 @@ def open_questions(
         # Chabot's numbered sites produced 75 questions that buried the 73 real
         # ones. The trade is a bootstrap gap: a walk-in campground whose sites
         # do differ still gets asked, a drive-up one never does.
-        access_by_campground = {c.name: c.access_mode for c in campgrounds}
+        access_by_campground = {c.name: c.access_modes for c in campgrounds}
         for s in campsites:
-            if access_by_campground.get(s.campground) != HIKE_IN:
+            if HIKE_IN not in access_by_campground.get(s.campground, ()):
                 continue
             if not _park_is_relevant(campground_park_by_name.get(s.campground, "")):
                 continue

@@ -289,9 +289,6 @@ ACCESS_MODE_UNRECORDED = {
     "Cedar Group Camp",
     "Lil Chaparral Horse Camp",
     "Caballo Loco Horse Camp",
-    # Point Pinole's camp is stated as 200-300 yards from the PIER, which is a
-    # distance from the wrong end: the two car parks are elsewhere entirely.
-    "Point Pinole Group Camp",
 }
 
 
@@ -309,6 +306,11 @@ def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to()
     # invented here to hold a row that did not fit.
     expected = {"backpack": HIKE_IN, "family": DRIVE_IN}
     for c in load_campgrounds(CAMPGROUNDS):
+        if c.name == "Point Pinole Group Camp":
+            # "Boat-In, Hike-In" -- EBRPD's own pair, the only multi-valued
+            # access_mode here and the reason the field takes a list at all.
+            assert c.access_modes == ["boat_in", "hike_in"]
+            continue
         assert c.campsite_type in ("backpack", "family", "group", "equestrian"), (
             f"{c.name}: unclassified campsite_type")
         if c.name in ACCESS_MODE_UNRECORDED:
@@ -795,6 +797,7 @@ def test_the_only_shower_at_a_primitive_camp_is_at_point_pinole():
     assert "RINSING SHOWER" in pinole.notes
     assert "STORAGE CONTAINER WITH A COMBO LOCK" in pinole.notes
     assert "Hot showers" in cgs["Anthony Chabot Campground"].notes
+    assert "PRIVATE showers" in pinole.notes, "the rinsing shower is open-air"
     # Every other mention is a camp saying it has none, or one borrowing the
     # family campground's.
     for c in load_campgrounds(CAMPGROUNDS):
@@ -818,3 +821,51 @@ def test_two_ebrpd_dog_limits_count_the_same_number_differently():
     assert pinole.scope_type == "park"
     assert "THREE DOGS PER PERSON" in pinole.summary
     assert "the stricter applies where both do" in pinole.detail
+
+
+# -- access_mode takes a list because EBRPD publishes one --------------------
+
+def test_a_site_can_have_two_access_modes_and_reads_as_both():
+    cg = Campground(name="X", park="P", access_mode="boat_in;hike_in")
+    assert cg.access_modes == ["boat_in", "hike_in"]
+    assert access_label(cg) == "boat-in or hike-in"
+
+
+def test_one_mode_still_reads_as_one_and_blank_still_reads_as_unrecorded():
+    assert access_label(Campground(name="X", park="P", access_mode=HIKE_IN)) == "hike-in"
+    assert access_label(Campground(name="X", park="P")) == UNKNOWN_ACCESS_LABEL
+
+
+def test_an_invalid_mode_inside_a_list_is_rejected_loudly(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,access_mode\nX,P,hike_in;helicopter\n")
+    with pytest.raises(ValueError, match="helicopter"):
+        load_campgrounds(path)
+
+
+def test_a_repeated_mode_is_rejected(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,access_mode\nX,P,hike_in;hike_in\n")
+    with pytest.raises(ValueError, match="Repeated"):
+        load_campgrounds(path)
+
+
+def test_the_boat_in_camp_is_found_by_asking_for_either_of_its_modes():
+    # Membership, not equality: a site EBRPD calls "Boat-In, Hike-In" is a
+    # hike-in campground, and asking for hike-in must return it.
+    from wayproof.discovery import find_campgrounds
+    cgs = load_campgrounds(CAMPGROUNDS)
+    for mode in ("hike_in", "boat_in"):
+        found = {m.campground.name for m in find_campgrounds(cgs, access=mode).matches}
+        assert "Point Pinole Group Camp" in found, mode
+    # And it is still not a campground you can drive to: the four escorted
+    # vehicles need a fortnight's notice and a staff escort out.
+    drivable = {m.campground.name for m in find_campgrounds(cgs, access=DRIVE_IN).matches}
+    assert "Point Pinole Group Camp" not in drivable
+
+
+def test_the_escorted_vehicles_are_recorded_and_not_stored_as_drive_in():
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Point Pinole Group Camp"]
+    assert DRIVE_IN not in cg.access_modes
+    assert "at least 2 WEEKS before trip" in cg.notes
+    assert "2 pm-3:30 pm for staff escort" in cg.notes

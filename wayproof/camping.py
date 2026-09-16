@@ -40,9 +40,18 @@ DRIVE_IN = "drive_in"
 HIKE_IN = "hike_in"
 """Reached on foot (or horseback). Distance from the road belongs in ``notes``."""
 
-_VALID_ACCESS_MODES = {DRIVE_IN, HIKE_IN}
+BOAT_IN = "boat_in"
+"""Reached by water. EBRPD's own field is the source of this value.
 
-ACCESS_MODE_LABELS = {DRIVE_IN: "drive-in", HIKE_IN: "hike-in"}
+Added for Point Pinole's group camp, whose booking page reads "Site Access:
+Boat-In, Hike-In" -- two modes, comma-separated, by the operator. That is what
+made :attr:`Campground.access_mode` multi-valued: the field was single-valued
+because every site read before had one answer, not because sites have one.
+"""
+
+_VALID_ACCESS_MODES = {DRIVE_IN, HIKE_IN, BOAT_IN}
+
+ACCESS_MODE_LABELS = {DRIVE_IN: "drive-in", HIKE_IN: "hike-in", BOAT_IN: "boat-in"}
 
 COORD_CAMPGROUND = "campground"
 """The coordinate names the camping area itself."""
@@ -128,10 +137,25 @@ class Campground:
     car-camping plan.
     """
     access_mode: str = ""
-    """``drive_in``, ``hike_in``, or ``""`` when nobody has recorded it.
+    """How you reach it: ``drive_in``, ``hike_in``, ``boat_in``, or ``""``.
+
+    ";"-separated when a site has more than one, the same shape as
+    :attr:`agency_id`, and for the same reason: the operator publishes a list.
+    Point Pinole's group camp reads "Site Access: Boat-In, Hike-In" on its own
+    booking page. Use :meth:`access_modes` rather than comparing the string.
 
     See :data:`UNKNOWN_ACCESS_LABEL` -- blank is a stated gap, not a default.
+    A CONDITIONAL mode does not belong here: Wee-Ta-Chi can be driven to in dry
+    weather and Point Pinole's camp takes four escorted vehicles by prior
+    arrangement, and neither is stored as ``drive_in``, because a filter for
+    campgrounds you can drive to must not return a site that needs a fortnight's
+    notice and a staff escort. Those live in ``notes``.
     """
+
+    @property
+    def access_modes(self) -> List[str]:
+        """The modes as a list; empty when nobody has recorded any."""
+        return [m for m in (p.strip() for p in self.access_mode.split(";")) if m]
     campsite_type: str = ""
     """Which class of site the agency sells this as: ``family``, ``group`` or
     ``backpack``. Keys into ``data/booking_channels.csv``.
@@ -242,11 +266,15 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
         if not name:
             continue
         access_mode = _str_field(row, "access_mode")
-        if access_mode and access_mode not in _VALID_ACCESS_MODES:
-            raise ValueError(
-                f"Invalid access_mode {access_mode!r} for campground {name!r}; "
-                f"expected one of {sorted(_VALID_ACCESS_MODES)} or blank"
-            )
+        modes = [m for m in (p.strip() for p in access_mode.split(";")) if m]
+        for mode in modes:
+            if mode not in _VALID_ACCESS_MODES:
+                raise ValueError(
+                    f"Invalid access_mode {mode!r} for campground {name!r}; "
+                    f"expected one of {sorted(_VALID_ACCESS_MODES)} or blank"
+                )
+        if len(set(modes)) != len(modes):
+            raise ValueError(f"Repeated access_mode in {access_mode!r} for {name!r}")
         latitude = _float_field(row, "latitude")
         longitude = _float_field(row, "longitude")
         coord_precision = _str_field(row, "coord_precision")
@@ -340,9 +368,17 @@ def campsites_by_campground(sites: List[Campsite]) -> Dict[str, List[Campsite]]:
 def access_label(campground: Campground) -> str:
     """How to describe a campground's access to a reader.
 
-    Blank reads as :data:`UNKNOWN_ACCESS_LABEL`, never as a mode.
+    Blank reads as :data:`UNKNOWN_ACCESS_LABEL`, never as a mode. Several modes
+    read as all of them, joined -- "boat-in or hike-in" -- because a reader who
+    sees only one has been told the site is harder or easier to reach than it is.
     """
-    return ACCESS_MODE_LABELS.get(campground.access_mode, UNKNOWN_ACCESS_LABEL)
+    modes = [ACCESS_MODE_LABELS[m] for m in campground.access_modes
+             if m in ACCESS_MODE_LABELS]
+    if not modes:
+        return UNKNOWN_ACCESS_LABEL
+    if len(modes) == 1:
+        return modes[0]
+    return " or ".join([", ".join(modes[:-1]), modes[-1]])
 
 
 def drive_in(campgrounds: List[Campground]) -> List[Campground]:
@@ -351,7 +387,7 @@ def drive_in(campgrounds: List[Campground]) -> List[Campground]:
     Excludes unrecorded ones: a blank ``access_mode`` is not evidence of a road.
     Pair it with :func:`unknown_access` so the gap is shown rather than dropped.
     """
-    return [c for c in campgrounds if c.access_mode == DRIVE_IN]
+    return [c for c in campgrounds if DRIVE_IN in c.access_modes]
 
 
 def unknown_access(campgrounds: List[Campground]) -> List[Campground]:

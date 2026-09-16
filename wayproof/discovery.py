@@ -113,6 +113,10 @@ def find_campgrounds(
         if attr == "agency_id":
             kept = [c for c in kept
                     if value in {k.strip() for k in c.agency_id.split(";")}]
+        elif attr == "access_mode":
+            # Membership, not equality: a site EBRPD calls "Boat-In, Hike-In"
+            # is a hike-in campground, and asking for hike-in must return it.
+            kept = [c for c in kept if value in c.access_modes]
         else:
             kept = [c for c in kept if getattr(c, attr) == value]
 

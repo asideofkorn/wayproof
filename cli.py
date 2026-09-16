@@ -36,7 +36,7 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    help="List campgrounds matching the filters below. This is "
                         "the only command here that answers 'where could I go' "
                         "rather than 'why do we believe this'.")
-    p.add_argument("--access", choices=("drive_in", "hike_in"), default="",
+    p.add_argument("--access", choices=("drive_in", "hike_in", "boat_in"), default="",
                    help="Only campgrounds with this access mode. Campgrounds "
                         "whose access nobody has recorded are excluded and "
                         "then listed, because absent is not a value.")

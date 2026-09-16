@@ -238,23 +238,22 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_group_camp_access_is_mostly_hike_in_with_one_exception_and_four_blanks():
-    # Sixteen were hike-in, three of them corrected from a wrong drive_in, and
-    # that looked like a District fact until Las Trampas' Corral said Drive-In.
-    # Del Valle's three then arrived off a map that names them and says nothing
-    # about how you reach them. Assert all three states, so neither the
-    # majority, the exception, nor the blanks can quietly disappear.
+def test_group_camp_access_covers_four_states_and_none_of_them_is_a_guess():
+    # Seventeen hike-in; one drive-in, Las Trampas' Corral, which broke the
+    # rule that was forming; one boat-in AND hike-in, Point Pinole, which broke
+    # the field's single-valuedness; and three blank, named on a map that says
+    # nothing about reaching them. Assert all four, so none can quietly go.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
     assert len(group) == 21
     by_mode = {}
     for c in group:
         by_mode.setdefault(c.access_mode, []).append(c.name)
-    assert sorted(by_mode) == ["", "drive_in", "hike_in"]
+    assert sorted(by_mode) == ["", "boat_in;hike_in", "drive_in", "hike_in"]
     assert by_mode["drive_in"] == ["Corral Group Camp"]
-    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Point Pinole Group Camp",
-                                   "Punta Vaca Group Camp", "Wild Turkey Group Camp"]
-    assert "FIRST DRIVE-IN GROUP CAMP" in {c.name: c for c in group}["Corral Group Camp"].notes
+    assert by_mode["boat_in;hike_in"] == ["Point Pinole Group Camp"]
+    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Punta Vaca Group Camp",
+                                   "Wild Turkey Group Camp"]
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():

@@ -846,7 +846,7 @@ def format_plan_summary(result: PlanResult) -> str:
         for c in result.campground_objectives:
             where = f" in {c.park}" if c.park else ""
             lines.append(f"  {c.name}{where} ({access_label(c)})")
-            if c.access_mode == "hike_in":
+            if "hike_in" in c.access_modes:
                 lines.append("    Reached on foot. Distance from the road is in the "
                              "campground's notes, and no approach is modelled here.")
         lines.append("  No trailhead is resolved for a campground objective, and none is "
