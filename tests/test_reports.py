@@ -121,6 +121,10 @@ def _ground(**kw):
     kw.setdefault("latitude", 37.0)
     kw.setdefault("longitude", -121.0)
     kw.setdefault("coord_precision", COORD_CAMPGROUND)
+    # Same reason, one table up: a campground with no booking facility is its
+    # own gap with its own tests, and without this default every assertion
+    # below would quietly also be counting it.
+    kw.setdefault("facility_id", "EB/110000")
     return Campground(**kw)
 
 
@@ -267,6 +271,22 @@ def test_a_camp_whose_sites_are_recorded_is_not_a_gap():
     sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5,
                       water_proximity="near", restroom_proximity="near")]
     assert open_questions(campgrounds=grounds, campsites=sites, peak_names=None) == []
+
+
+def test_a_campground_with_no_booking_facility_is_an_open_question():
+    grounds = [_ground(name="Lil Chaparral Horse Camp", park="Del Valle Regional Park",
+                       unit_level=UNIT_SITE, facility_id="")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert "No booking facility recorded" in qs[0].question
+    assert "The park does not answer this" in qs[0].question
+
+
+def test_a_campground_with_a_facility_is_not_asked_about():
+    grounds = [_ground(name="Corral Group Camp",
+                       park="Las Trampas Wilderness Regional Preserve",
+                       unit_level=UNIT_SITE, facility_id="EB/110455")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
 
 
 def test_campground_uncertain_note_flagged_globally():

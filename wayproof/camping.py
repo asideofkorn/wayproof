@@ -109,9 +109,11 @@ UNKNOWN_UNIT_LEVEL_LABEL = "booking level not recorded"
 There is no facility level in this vocabulary, deliberately. Every row in
 ``campgrounds.csv`` is a camp or a site INSIDE a ReserveAmerica facility --
 EB/110028 holds Sunol Backpack Camp, Eagle Springs and four Del Valle camps,
-across four different parks -- and no row is a facility. The facility is one
-level up and has no table yet; naming a value with no member would invite
-someone to use it.
+across THREE parks -- and no row is a facility. Corrected from "four different
+parks", which was written here and in none-2026-09-16-58 while two earlier log
+entries already said three; four is the number of Del Valle camps on that
+facility, not the number of parks it reaches. The facility level now has a
+table, ``data/booking_facilities.csv``, and ``facility_id`` joins to it.
 """
 
 UNKNOWN_ACCESS_LABEL = "access mode not recorded"
@@ -179,6 +181,22 @@ class Campground:
     for a sharper reason: a campground reached without a permit has no permit
     row to borrow an agency from, so without this key an agency-scoped rule
     cannot reach a trip that is only ever a campsite.
+    """
+    facility_id: str = ""
+    """The booking-system facility this campground is sold through, e.g.
+    ``EB/110003``. Keys into ``data/booking_facilities.csv``.
+
+    STORED, NOT DERIVED FROM :attr:`park`, because the two do not line up in
+    either direction. EB/110028 sells sites in three parks; Del Valle Regional
+    Park is sold through two facilities and so is Coyote Hills. A park cannot
+    supply this key, and a campground's own ``source_url`` only sometimes
+    carries it -- the seven Anthony Chabot group camps cite a District PDF and
+    Dumbarton Quarry an ebparks.org page, and all eight belong to a facility.
+
+    Blank means unrecorded, and one row is: Lil Chaparral Horse Camp, named on
+    the Ohlone Wilderness permit map and absent from the Del Valle listing that
+    was read. Its pair Caballo Loco is on that listing, which is what gives
+    that row a key and not this one.
     """
     jurisdiction: str = ""
     """State whose law applies, e.g. ``"CA"``.
@@ -437,6 +455,7 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             park=_str_field(row, "park"),
             land_agency=_str_field(row, "land_agency"),
             agency_id=_str_field(row, "agency_id"),
+            facility_id=_str_field(row, "facility_id"),
             jurisdiction=_str_field(row, "jurisdiction"),
             access_mode=access_mode,
             unit_level=unit_level,

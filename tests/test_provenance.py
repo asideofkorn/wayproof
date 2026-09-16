@@ -364,6 +364,10 @@ def test_a_facility_id_never_appears_under_two_different_slugs():
     parks all sit behind the single slug "sunol". EB/110455 appeared under both
     "las-trampas-regional-wilderness" (real, pasted) and "del-valle-regional-
     park" (invented here by pattern), which is how the fabrication surfaced.
+
+    ``data/booking_facilities.csv`` is in scope through its ``url`` column,
+    which is the whole point of that table having one: thirteen slug/ID pairs
+    in one place, checked by the guard that the fabrication escaped.
     """
     import csv
     import glob
@@ -375,7 +379,7 @@ def test_a_facility_id_never_appears_under_two_different_slugs():
     # citation, and scanning every field made this test fail on its own
     # evidence. Same rule as the uncertainty markers: a string quoted as
     # something that went wrong is not the project asserting it.
-    url_columns = {"source_url", "apply_url", "evidence_url", "source"}
+    url_columns = {"source_url", "apply_url", "evidence_url", "source", "url"}
     slugs_by_id = defaultdict(set)
     for path in glob.glob(os.path.join(ROOT, "data", "*.csv")):
         with open(path) as fh:

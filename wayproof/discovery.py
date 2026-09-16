@@ -171,6 +171,11 @@ def format_campground_list(search: CampgroundSearch,
             bits.append(f"{c.campsite_type} site")
         if m.distance_miles is not None:
             bits.append(f"{m.distance_miles:.1f} mi {m.distance_basis}")
+        # Which page sells it. Two of these parks are sold through more than
+        # one facility and one facility sells sites in three parks, so a list
+        # that groups by park is not a list of booking pages.
+        bits.append(c.facility_id if c.facility_id
+                    else "booking facility not recorded")
         lines.append(f"      {'; '.join(bits)}")
 
     if search.unplaced:

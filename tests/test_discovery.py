@@ -201,3 +201,16 @@ def test_what_is_still_unplaced_is_still_reported_rather_than_dropped():
     got = find_campgrounds(cgs, near=OAKLAND)
     assert len(got.unplaced) == len(unlocated(cgs)) > 0
     assert "CANNOT BE PLACED" in "\n".join(format_campground_list(got))
+
+
+def test_the_list_names_the_booking_page_because_a_park_does_not():
+    """One Del Valle listing, two booking pages, and the list says which.
+
+    Grouping by park reads as "here is the park's camping page". Del Valle
+    has two and one of them also sells sites in two other parks.
+    """
+    cgs = load_campgrounds(CAMPGROUNDS)
+    text = "\n".join(format_campground_list(
+        find_campgrounds(cgs, park="Del Valle Regional Park")))
+    assert "EB/110003" in text and "EB/110028" in text
+    assert "booking facility not recorded" in text  # Lil Chaparral

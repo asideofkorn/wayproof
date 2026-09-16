@@ -57,6 +57,14 @@ vocabulary rather than a boolean for "is this a group site".
 
 _VALID_APPLIES_TO = {ALL, FAMILY, GROUP, BACKPACK, CABIN}
 
+UNKNOWN_FACILITY_LABEL = "booking facility not recorded"
+"""What a blank ``facility_id`` reads as.
+
+Not the park's facility. A park does not have one: Del Valle is sold through
+two and Coyote Hills through two, so inheriting would be a coin toss dressed
+as a fact.
+"""
+
 APPLIES_TO_LABELS = {
     ALL: "Any campsite",
     FAMILY: "Family campsites",
@@ -204,3 +212,167 @@ def channels_for(
                   key=lambda c: (c.applies_to != ALL,
                                  SPECIFICITY.get(c.scope_type, 0) * -1,
                                  c.channel_id))
+
+
+@dataclass
+class BookingFacility:
+    """One row of ``data/booking_facilities.csv``: a page in a booking system.
+
+    THE LEVEL ABOVE A CAMPGROUND, AND IT IS NOT A PARK. A ReserveAmerica
+    facility is the thing a booking URL names -- ``EB/110028``, slug ``sunol``
+    -- and EBRPD's facilities do not line up with EBRPD's parks in either
+    direction. EB/110028 sells nineteen backpack sites across THREE parks under
+    one listing, while Del Valle Regional Park is sold through TWO facilities:
+    EB/110003 for its family campground, group camps and horse camps, and
+    EB/110028 for its four Ohlone corridor backpack camps.
+
+    That is why :attr:`Campground.facility_id` is a stored column and not
+    something derived from a campground's park. A park cannot supply it, and a
+    campground's own ``source_url`` only sometimes carries it -- the seven
+    Anthony Chabot group camps are sourced to a District PDF and Dumbarton
+    Quarry to an ebparks.org page, and all eight belong to facilities anyway.
+    """
+
+    facility_id: str
+    """The booking system's own key, e.g. ``EB/110003``. Primary key here."""
+    operator: str = ""
+    """Who runs the booking system, e.g. ``ReserveAmerica``. A column rather
+    than an assumption: EBRPD backpack and group sites are phone-only through
+    the District, and the day a second operator appears, nothing here should
+    have to be renamed."""
+    slug: str = ""
+    """The URL segment, e.g. ``del-valle``.
+
+    Stored separately from :attr:`facility_name` because the two are NOT the
+    same and this project has the counterexample: EB/110028's slug is ``sunol``
+    and its published title is ``Sunol`` -- neither of which is the park's name,
+    which is Sunol Regional Wilderness. A slug is a URL segment. Treating one as
+    a name is one step from constructing a URL out of a name, which is exactly
+    how two citations came to be fabricated here.
+    """
+    facility_name: str = ""
+    """The operator's own published title, or ``""`` where nobody has read it.
+
+    Twelve of thirteen are blank and honestly so. The one that is filled is the
+    one that matters: ``Sunol``, which is what showed that a slug is not a name.
+    """
+    land_agency: str = ""
+    agency_id: str = ""
+    url: str = ""
+    verified_date: str = ""
+    notes: str = ""
+    log_entry_ids: str = ""
+
+
+def load_booking_facilities(
+    path: str | Path = "data/booking_facilities.csv",
+) -> List[BookingFacility]:
+    """Load booking facilities. Empty list if the file doesn't exist."""
+    path = Path(path)
+    if not path.exists():
+        return []
+    df = pd.read_csv(path)
+
+    out: List[BookingFacility] = []
+    seen_id: dict = {}
+    seen_slug: dict = {}
+    for _, row in df.iterrows():
+        facility_id = _str_field(row, "facility_id")
+        if not facility_id:
+            continue
+        slug = _str_field(row, "slug")
+        # The bijection guard, at load rather than only in a test. A repeated ID
+        # under two slugs is the exact shape of the fabricated citation that put
+        # Las Trampas' 110455 under a del-valle slug.
+        if facility_id in seen_id:
+            raise ValueError(
+                f"Facility {facility_id!r} appears twice, under slugs "
+                f"{seen_id[facility_id]!r} and {slug!r}"
+            )
+        if slug and slug in seen_slug:
+            raise ValueError(
+                f"Slug {slug!r} appears under two facility ids "
+                f"{seen_slug[slug]!r} and {facility_id!r}"
+            )
+        seen_id[facility_id] = slug
+        if slug:
+            seen_slug[slug] = facility_id
+        out.append(BookingFacility(
+            facility_id=facility_id,
+            operator=_str_field(row, "operator"),
+            slug=slug,
+            facility_name=_str_field(row, "facility_name"),
+            land_agency=_str_field(row, "land_agency"),
+            agency_id=_str_field(row, "agency_id"),
+            url=_str_field(row, "url"),
+            verified_date=_str_field(row, "verified_date"),
+            notes=_str_field(row, "notes"),
+            log_entry_ids=_str_field(row, "log_entry_ids"),
+        ))
+    return out
+
+
+def facility_for(
+    campground, facilities: Sequence[BookingFacility]
+) -> "BookingFacility | None":
+    """The facility a campground books through, or ``None`` when unrecorded.
+
+    ``None`` is never filled in from the campground's park. Del Valle has two
+    facilities and Coyote Hills has two, so a park cannot answer this, and the
+    one campground with no key -- Lil Chaparral Horse Camp, named on a map and
+    absent from the Del Valle page that was read -- would get the wrong one
+    exactly as often as the right one.
+    """
+    if not getattr(campground, "facility_id", ""):
+        return None
+    for f in facilities:
+        if f.facility_id == campground.facility_id:
+            return f
+    return None
+
+
+def facility_label(facility: "BookingFacility | None") -> str:
+    """How to name a facility to a reader, title or slug, never inventing one."""
+    if facility is None:
+        return UNKNOWN_FACILITY_LABEL
+    if facility.facility_name:
+        return f"{facility.facility_name} ({facility.facility_id})"
+    # No published title has been read, so the URL segment stands in and says
+    # so. Dressing the slug up as a name is how 'del-valle-regional-park'
+    # became a citation.
+    return f"{facility.facility_id}, slug '{facility.slug}'"
+
+
+def parks_by_facility(campgrounds: Sequence) -> "dict[str, set]":
+    """``facility_id -> {park}``, for the facilities that span several."""
+    out: dict = {}
+    for c in campgrounds:
+        if getattr(c, "facility_id", ""):
+            out.setdefault(c.facility_id, set()).add(c.park)
+    return out
+
+
+def facilities_by_park(campgrounds: Sequence) -> "dict[str, set]":
+    """``park -> {facility_id}``, for the parks sold through several."""
+    out: dict = {}
+    for c in campgrounds:
+        if getattr(c, "facility_id", ""):
+            out.setdefault(c.park, set()).add(c.facility_id)
+    return out
+
+
+def dangling_facility_ids(
+    campgrounds: Sequence, facilities: Sequence[BookingFacility]
+) -> List[str]:
+    """Campground names whose ``facility_id`` matches no facility row."""
+    known = {f.facility_id for f in facilities}
+    return [c.name for c in campgrounds
+            if getattr(c, "facility_id", "") and c.facility_id not in known]
+
+
+def facilities_without_campgrounds(
+    campgrounds: Sequence, facilities: Sequence[BookingFacility]
+) -> List[BookingFacility]:
+    """Facilities no campground books through -- the other end of the join."""
+    used = {getattr(c, "facility_id", "") for c in campgrounds}
+    return [f for f in facilities if f.facility_id not in used]

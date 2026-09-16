@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from wayproof.booking import load_booking_channels
+from wayproof.booking import load_booking_channels, load_booking_facilities
 from wayproof.camping import (
     Campground, load_campgrounds, load_campsites, resolve_campground_name,
 )
@@ -578,7 +578,8 @@ def _stay(name, when=datetime.date(2027, 7, 15)):
         peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
         permits=load_permits(D("permits.csv"), D("release_policies.csv")),
         campgrounds=load_campgrounds(D("campgrounds.csv")),
-        campsites=load_campsites(D("campsites.csv")))
+        campsites=load_campsites(D("campsites.csv")),
+        booking_facilities=load_booking_facilities(D("booking_facilities.csv")))
 
 
 def test_a_single_unit_camp_says_there_is_no_site_to_choose():
@@ -627,3 +628,57 @@ def test_the_machine_surface_carries_the_booking_level_on_both_of_its_campground
     listed = nearby.get("facilities", {}).get("campgrounds", [])
     assert listed, "expected campgrounds in the facilities block"
     assert all("unit_level" in c for c in listed)
+
+
+def test_a_plan_names_the_booking_page_rather_than_the_park():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Booked through EB/110455, slug 'las-trampas-regional-wilderness'" in text
+    assert "reserveamerica.com/explore/las-trampas-regional-wilderness" in text
+
+
+def test_a_facility_that_spans_parks_says_so_on_the_camp_it_sells():
+    """Boyd Camp is in Del Valle and books through the Sunol facility.
+
+    Sending a reader to "the Del Valle page" for this camp lands them on
+    EB/110003, which does not sell it. That is the failure this line exists
+    to prevent, and it is only visible from the whole table.
+    """
+    text = format_plan_summary(_stay("Boyd Camp"))
+    assert "Booked through Sunol (EB/110028)" in text
+    assert "That page is not this park's alone" in text
+    assert "Mission Peak Regional Preserve and Sunol Regional Wilderness" in text
+
+
+def test_a_park_sold_through_several_facilities_says_so():
+    text = format_plan_summary(_stay("Dairy Glen Group Camp"))
+    assert "this park is sold through more than one" in text
+    assert "EB/110750" in text
+    assert "not one page" in text
+
+
+def test_a_single_facility_single_park_camp_says_neither_thing():
+    # The lines must fire on the asymmetry, not on every campground.
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "not this park's alone" not in text
+    assert "sold through more than one" not in text
+
+
+def test_an_unrecorded_facility_is_not_filled_in_from_the_park():
+    text = format_plan_summary(_stay("Lil Chaparral Horse Camp"))
+    assert "Which booking facility sells this camp is not recorded" in text
+    assert "not inherited from the park" in text
+    assert "EB/110003" not in text  # its park's other facility, not borrowed
+
+
+def test_the_machine_surface_carries_the_facility_and_both_directions_of_the_join():
+    payload = _stay("Boyd Camp").to_dict()
+    assert payload["campground_objectives"][0]["facility_id"] == "EB/110028"
+    fac = payload["facilities"]
+    assert fac["facility_parks"]["EB/110028"] == [
+        "Del Valle Regional Park", "Mission Peak Regional Preserve",
+        "Sunol Regional Wilderness"]
+    assert fac["park_facilities"]["Del Valle Regional Park"] == [
+        "EB/110003", "EB/110028"]
+    listed = {f["facility_id"]: f for f in fac["booking_facilities"]}
+    assert listed["EB/110028"]["facility_name"] == "Sunol"
+    assert listed["EB/110028"]["slug"] == "sunol"

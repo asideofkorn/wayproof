@@ -35,7 +35,10 @@ from typing import Dict, List, Optional, Sequence
 
 from .access import ApproachRoute
 from .advisories import Advisory, advisories_for
-from .booking import BookingChannel, channels_for
+from .booking import (
+    BookingChannel, BookingFacility, channels_for, facilities_by_park,
+    facility_for, facility_label, parks_by_facility,
+)
 from .camping import (
     Campground, Campsite, UNIT_CAMP, UNIT_SITE, access_label,
     resolve_campground_name,
@@ -59,6 +62,11 @@ from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
 
+def _sorted_map(m: "dict") -> "Dict[str, List[str]]":
+    """Sets to sorted lists, so the JSON surface is deterministic."""
+    return {k: sorted(v) for k, v in m.items()}
+
+
 @dataclass
 class FacilitiesInfo:
     """What IS known about the resolved trailhead's nearby facilities --
@@ -75,6 +83,17 @@ class FacilitiesInfo:
     water_status: Dict[str, WaterSourceLogEntry] = field(default_factory=dict)
     campgrounds: List[Campground] = field(default_factory=list)
     booking_channels: List[BookingChannel] = field(default_factory=list)
+    booking_facilities: List[BookingFacility] = field(default_factory=list)
+    facility_parks: Dict[str, List[str]] = field(default_factory=dict)
+    """``facility_id -> parks it sells in``, over every campground loaded.
+
+    Derived from the WHOLE table rather than the resolved objectives, because
+    the fact worth saying is about the facility. Boyd Camp resolved alone would
+    otherwise show its facility selling sites in exactly one park -- the answer
+    a reader already assumed and the one that is wrong.
+    """
+    park_facilities: Dict[str, List[str]] = field(default_factory=dict)
+    """``park -> facilities it is sold through``, over every campground loaded."""
     campsites: List[Campsite] = field(default_factory=list)
     park_access: Optional[ParkAccess] = None
 
@@ -196,6 +215,7 @@ class PlanResult:
                  "season_closed": c.season_label or None,
                  "closed_on_trip_date": c.closed_on(self.trip_date),
                  "unit_level": c.unit_level or None,
+                 "facility_id": c.facility_id or None,
                  "campsite_type": c.campsite_type or None}
                 for c in self.campground_objectives
             ]
@@ -336,6 +356,7 @@ class PlanResult:
                         "season_closed": c.season_label or None,
                         "closed_on_trip_date": c.closed_on(self.trip_date),
                         "unit_level": c.unit_level or None,
+                        "facility_id": c.facility_id or None,
                         "campsite_type": c.campsite_type or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
@@ -350,6 +371,21 @@ class PlanResult:
                     }
                     for c in fac.campgrounds
                 ]
+            if fac.booking_facilities:
+                used = {g.facility_id for g in fac.campgrounds if g.facility_id}
+                facilities_d["booking_facilities"] = [
+                    {"facility_id": f.facility_id, "operator": f.operator,
+                     "slug": f.slug, "facility_name": f.facility_name or None,
+                     "url": f.url, "verified_date": f.verified_date or None}
+                    for f in fac.booking_facilities if f.facility_id in used
+                ]
+            # Both directions of the park/facility relationship, because
+            # neither is inferable from the other and an agent that assumes
+            # one facility per park sends a backpacker to the wrong page.
+            if fac.facility_parks:
+                facilities_d["facility_parks"] = fac.facility_parks
+            if fac.park_facilities:
+                facilities_d["park_facilities"] = fac.park_facilities
             if fac.park_access:
                 pa = fac.park_access
                 facilities_d["park_access"] = {
@@ -402,6 +438,7 @@ def resolve_plan(
     campgrounds: Optional[Sequence[Campground]] = None,
     campsites: Optional[Sequence[Campsite]] = None,
     booking_channels: Optional[Sequence[BookingChannel]] = None,
+    booking_facilities: Optional[Sequence[BookingFacility]] = None,
     park_access: Optional[Sequence[ParkAccess]] = None,
     regulations: Optional[Sequence[Regulation]] = None,
     advisories: Optional[Sequence[Advisory]] = None,
@@ -579,6 +616,9 @@ def resolve_plan(
             water_sources=ws, water_status=water_status,
             campgrounds=list(campground_objectives), campsites=sites,
             park_access=pa, booking_channels=chans,
+            booking_facilities=list(booking_facilities or []),
+            facility_parks=_sorted_map(parks_by_facility(campgrounds or [])),
+            park_facilities=_sorted_map(facilities_by_park(campgrounds or [])),
         )
     elif trailhead is not None:
         ws = [w for w in (water_sources or [])
@@ -610,6 +650,9 @@ def resolve_plan(
                 water_sources=ws, water_status=water_status,
                 campgrounds=cgs, campsites=sites, park_access=pa,
                 booking_channels=chans,
+                booking_facilities=list(booking_facilities or []),
+                facility_parks=_sorted_map(parks_by_facility(campgrounds or [])),
+                park_facilities=_sorted_map(facilities_by_park(campgrounds or [])),
             )
 
     # The other end. Resolved from existing tables only: the exit's permit group
@@ -873,6 +916,34 @@ def format_plan_summary(result: PlanResult) -> str:
                 lines.append("    Whether you reserve this whole camp or one site inside "
                              "it is not recorded, which is not the same as knowing it is "
                              "a single unit.")
+            # WHICH BOOKING PAGE, AND WHAT ELSE IS ON IT. A park does not
+            # answer this: EB/110028 sells sites in three parks, and Del Valle
+            # and Coyote Hills are each sold through two facilities. A reader
+            # sent to "the Del Valle page" for a backpack camp lands on the
+            # facility that does not sell it.
+            fac_rows = result.facilities.booking_facilities if result.facilities else []
+            facility = facility_for(c, fac_rows)
+            if facility is None:
+                lines.append("    Which booking facility sells this camp is not "
+                             "recorded, and it is not inherited from the park: two "
+                             "of these parks are sold through more than one.")
+            else:
+                lines.append(f"    Booked through {facility_label(facility)}"
+                             f"{': ' + facility.url if facility.url else ''}")
+                shared = [p for p in result.facilities.facility_parks.get(
+                    c.facility_id, []) if p != c.park]
+                if shared:
+                    joined = (shared[0] if len(shared) == 1
+                              else " and ".join([", ".join(shared[:-1]), shared[-1]]))
+                    lines.append(f"      That page is not this park's alone -- it "
+                                 f"also sells sites in {joined}.")
+                others = [f for f in result.facilities.park_facilities.get(
+                    c.park, []) if f != c.facility_id]
+                if others:
+                    lines.append(f"      And this park is sold through more than "
+                                 f"one: {', '.join(others)} covers other camps in "
+                                 f"{c.park}, so the park's 'camping page' is not "
+                                 f"one page.")
             # Said on every campground objective, in all three states. A plan
             # that takes a date and never mentioned the season priced a closed
             # camp for a January trip and never said it was shut.

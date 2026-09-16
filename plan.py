@@ -37,7 +37,7 @@ import sys
 
 from wayproof.access import load_approaches
 from wayproof.advisories import load_advisories
-from wayproof.booking import load_booking_channels
+from wayproof.booking import load_booking_channels, load_booking_facilities
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
@@ -88,6 +88,10 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    help="Backpack campgrounds (default data/campgrounds.csv)")
     p.add_argument("--campsites-file", default="data/campsites.csv",
                    help="Individually-bookable campsites (default data/campsites.csv)")
+    p.add_argument("--booking-facilities-file",
+                   default="data/booking_facilities.csv",
+                   help="CSV of booking-system facilities "
+                        "(default data/booking_facilities.csv)")
     p.add_argument("--booking-channels-file", default="data/booking_channels.csv",
                    help="How to book a campsite, scoped by agency "
                         "(default data/booking_channels.csv)")
@@ -123,6 +127,7 @@ def main(argv=None) -> int:
     campgrounds = load_campgrounds(args.campgrounds_file)
     campsites = load_campsites(args.campsites_file)
     booking_channels = load_booking_channels(args.booking_channels_file)
+    booking_facilities = load_booking_facilities(args.booking_facilities_file)
     park_access = list(load_park_access(args.park_access_file).values())
     regulations = load_regulations(args.regulations_file)
     advisories = load_advisories(args.advisories_file)
@@ -131,7 +136,9 @@ def main(argv=None) -> int:
                            approaches=approaches, water_sources=water_sources,
                            water_source_log=water_source_log, campgrounds=campgrounds,
                            campsites=campsites,
-                           booking_channels=booking_channels, park_access=park_access,
+                           booking_channels=booking_channels,
+                           booking_facilities=booking_facilities,
+                           park_access=park_access,
                            regulations=regulations, advisories=advisories,
                            exit_trailhead=args.exit_trailhead)
 

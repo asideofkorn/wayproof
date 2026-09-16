@@ -13,12 +13,17 @@ import pytest
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from wayproof.booking import (
-    ALL, BACKPACK, CABIN, FAMILY, GROUP, BookingChannel, channels_for,
-    load_booking_channels,
+    ALL, BACKPACK, CABIN, FAMILY, GROUP, UNKNOWN_FACILITY_LABEL, BookingChannel,
+    channels_for, dangling_facility_ids, facilities_by_park,
+    facilities_without_campgrounds, facility_for, facility_label,
+    load_booking_channels, load_booking_facilities, parks_by_facility,
 )
+from wayproof.camping import load_campgrounds
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHANNELS = os.path.join(ROOT, "data", "booking_channels.csv")
+FACILITIES = os.path.join(ROOT, "data", "booking_facilities.csv")
+CAMPGROUNDS = os.path.join(ROOT, "data", "campgrounds.csv")
 
 
 def _ch(cid, applies_to, scope_value="ebrpd"):
@@ -192,3 +197,121 @@ def test_family_refunds_are_prorated_by_night_and_group_ones_are_not():
     assert "PRORATED BY NIGHT" in family
     assert "90% of site use fees refundable" in group
     assert "PRORATED BY NIGHT" not in group
+
+
+# --- booking facilities: the level above a campground --------------------
+
+# The one campground with no facility key. Named on the Ohlone Wilderness
+# permit map and absent from the Del Valle listing that was read; its pair
+# Caballo Loco IS on that listing, which is what gives that row a key.
+FACILITY_UNRECORDED = {"Lil Chaparral Horse Camp"}
+
+
+def test_missing_facility_file_is_not_an_error(tmp_path):
+    assert load_booking_facilities(tmp_path / "nope.csv") == []
+
+
+def test_every_campground_facility_key_resolves_to_a_facility():
+    cgs = load_campgrounds(CAMPGROUNDS)
+    assert dangling_facility_ids(cgs, load_booking_facilities(FACILITIES)) == []
+
+
+def test_no_facility_sits_in_the_table_unused():
+    # The other end of the join. A facility nobody books through is either a
+    # row that should not be here or a campground that has not been keyed.
+    cgs = load_campgrounds(CAMPGROUNDS)
+    orphans = facilities_without_campgrounds(cgs, load_booking_facilities(FACILITIES))
+    assert [f.facility_id for f in orphans] == []
+
+
+def test_the_sunol_facility_sells_sites_in_exactly_three_parks():
+    """The count this project has now got wrong once and must not again.
+
+    A commit message, a docstring and a log entry all read "four different
+    parks" while two earlier log entries said three. Four is the number of Del
+    Valle camps on that facility, not the number of parks it reaches. This is
+    the guard, and it fails if the number moves in either direction.
+    """
+    parks = parks_by_facility(load_campgrounds(CAMPGROUNDS))["EB/110028"]
+    assert parks == {
+        "Del Valle Regional Park",
+        "Mission Peak Regional Preserve",
+        "Sunol Regional Wilderness",
+    }
+
+
+def test_two_parks_are_sold_through_more_than_one_facility():
+    # The other direction of the same asymmetry, and the reason facility_id is
+    # a stored column rather than something a park could supply.
+    by_park = facilities_by_park(load_campgrounds(CAMPGROUNDS))
+    several = {p: sorted(f) for p, f in by_park.items() if len(f) > 1}
+    assert several == {
+        "Coyote Hills Regional Park": ["EB/110453", "EB/110750"],
+        "Del Valle Regional Park": ["EB/110003", "EB/110028"],
+    }
+
+
+def test_park_does_not_determine_facility_in_either_direction():
+    """Stated as an assertion because the tempting shortcut is to derive it.
+
+    If park determined facility, this table could be dropped and the key read
+    off the campground's park. It does not, in both directions at once.
+    """
+    cgs = load_campgrounds(CAMPGROUNDS)
+    assert any(len(p) > 1 for p in parks_by_facility(cgs).values())
+    assert any(len(f) > 1 for f in facilities_by_park(cgs).values())
+
+
+def test_only_the_named_campground_has_no_facility():
+    blank = {c.name for c in load_campgrounds(CAMPGROUNDS) if not c.facility_id}
+    assert blank == FACILITY_UNRECORDED
+
+
+def test_a_slug_is_never_presented_as_a_name():
+    """The habit that produced two fabricated citations, guarded at the label.
+
+    EB/110028's slug is 'sunol' and its published title is 'Sunol', while its
+    park is Sunol Regional Wilderness -- so the two coincide there and nowhere
+    else. Where no title has been read the label says "slug '...'" in words,
+    because a bare slug rendered as a name is one step from a slug constructed
+    from a name, which is how 'del-valle-regional-park' became a citation.
+    """
+    facs = {f.facility_id: f for f in load_booking_facilities(FACILITIES)}
+    named = facility_label(facs["EB/110028"])
+    assert named == "Sunol (EB/110028)"
+    unnamed = facility_label(facs["EB/110453"])
+    assert unnamed == "EB/110453, slug 'coyote-hills-regional-park'"
+    assert "slug" in unnamed
+
+
+def test_an_unrecorded_facility_is_labelled_rather_than_guessed_from_the_park():
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Lil Chaparral Horse Camp"]
+    facs = load_booking_facilities(FACILITIES)
+    assert facility_for(cg, facs) is None
+    assert facility_label(None) == UNKNOWN_FACILITY_LABEL
+    # Its park HAS facilities. Falling back on one would be a coin toss.
+    assert len(facilities_by_park(load_campgrounds(CAMPGROUNDS))[cg.park]) == 2
+
+
+def test_a_repeated_facility_id_is_rejected_at_load(tmp_path):
+    # The exact shape of the fabrication: 110455 under two slugs.
+    path = tmp_path / "f.csv"
+    path.write_text("facility_id,slug\nEB/110455,las-trampas-regional-wilderness\n"
+                    "EB/110455,del-valle-regional-park\n")
+    with pytest.raises(ValueError, match="appears twice"):
+        load_booking_facilities(path)
+
+
+def test_a_repeated_slug_is_rejected_at_load(tmp_path):
+    path = tmp_path / "f.csv"
+    path.write_text("facility_id,slug\nEB/110003,del-valle\nEB/110999,del-valle\n")
+    with pytest.raises(ValueError, match="two facility ids"):
+        load_booking_facilities(path)
+
+
+def test_the_fabricated_facility_id_is_not_in_the_table():
+    # EB/110448 was invented for Anthony Chabot, whose real facility is
+    # EB/110004. It exists only in prose recording the mistake.
+    ids = {f.facility_id for f in load_booking_facilities(FACILITIES)}
+    assert "EB/110448" not in ids
+    assert "EB/110004" in ids and "EB/110003" in ids

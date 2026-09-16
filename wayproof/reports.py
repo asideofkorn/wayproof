@@ -336,6 +336,26 @@ def open_questions(
                 context=park_name,
             ))
 
+        # -- Campgrounds with no booking facility. --
+        #
+        # Substantive rather than cosmetic: without it a plan cannot say which
+        # page sells the camp, and it cannot fall back on the park, because
+        # Del Valle and Coyote Hills are each sold through two facilities.
+        # ONE QUESTION PER CAMPGROUND, because unlike a coordinate no single
+        # page answers it for several at once -- and there is one.
+        for c in campgrounds:
+            if c.facility_id or not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=c.name,
+                question=(f"No booking facility recorded for {c.name}, so a plan "
+                          f"cannot name the page that sells it. The park does not "
+                          f"answer this: {c.park or 'its park'} may be sold "
+                          f"through more than one facility."),
+                context=c.name,
+            ))
+
         # -- Camps recorded as holding sites, of which none are held. --
         #
         # A question the unit_level column created. Before it, Del Valle Family
