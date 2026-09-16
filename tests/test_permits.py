@@ -729,7 +729,7 @@ def test_conflicts_stay_separate_across_permit_groups():
                  "stewartville-vehicles", "arroyo-flats-minimum",
                  "ebrpd-generators", "del-valle-gate-close",
                  "las-trampas-bbq", "round-valley-camp-class",
-                 "morgan-territory-vehicles"},
+                 "morgan-territory-vehicles", "ohlone-camps-park"},
     }
 
 
@@ -792,6 +792,11 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # says 4 vehicles and its own notes say 5 parking passes. Everywhere
         # the two agree they are the same number, so a pass is a vehicle.
         "morgan-territory-vehicles": "internal",
+        # This project files four camps under Del Valle; the booking facility
+        # prefixes them OHL: and loops them "Ohlone Backpack". The park field
+        # is what park_access joins on, so a $10 fee and a disputed gate ride
+        # on it.
+        "ohlone-camps-park": "cross_source",
     }
 
 

@@ -116,13 +116,39 @@ def test_campsites_by_campground_groups_all_seven_sunol_sites():
     assert len(grouped["Sunol Backpack Camp"]) == 7
 
 
-def test_single_site_campgrounds_have_no_campsites_rows():
-    # Boyd Camp etc. aren't split into named sub-sites -- no placeholder rows
-    # that just repeat the campground's own name. Sunol's sites differ by water
-    # and restroom proximity; Anthony Chabot's differ by loop and type.
+def test_campgrounds_are_split_into_sites_only_where_a_source_names_them():
+    # This test used to assert Boyd Camp had no sub-sites, on the strength of no
+    # source naming any. The Sunol booking facility -- one ReserveAmerica
+    # listing selling nineteen sites across three parks -- names them: Boyd has
+    # two, Doe two, Maggie's three, Eagle Springs four. So the rule was never
+    # "these camps are single sites", it was "nobody had read the page".
+    #
+    # What the rule actually is, and still holds: no placeholder row that just
+    # repeats its campground's name. Every row here is a site a source names.
     sites = load_campsites(CAMPSITES)
-    names = {s.campground for s in sites}
-    assert names == {"Sunol Backpack Camp", "Anthony Chabot Campground"}
+    by_cg = {}
+    for s in sites:
+        by_cg.setdefault(s.campground, []).append(s)
+    assert sorted(by_cg) == [
+        "Anthony Chabot Campground", "Boyd Camp", "Doe Camp", "Eagle Springs",
+        "Maggie's Half Acre", "Stewart's Camp", "Sunol Backpack Camp",
+    ]
+    assert [len(by_cg[c]) for c in ("Boyd Camp", "Doe Camp", "Eagle Springs",
+                                    "Maggie's Half Acre", "Stewart's Camp")] == [2, 2, 4, 3, 1]
+    for s in sites:
+        assert s.name != s.campground, f"{s.name} just repeats its campground"
+
+
+def test_no_backpack_site_claims_to_be_bookable_online():
+    # ReserveAmerica lists all nineteen and sells none of them: EBRPD's backpack
+    # sites are phone-only District-wide, which booking_channels has said since
+    # it was built while seven Sunol rows quietly contradicted it. Listing is
+    # not selling, and the column means sellable.
+    backpack_camps = {c.name for c in load_campgrounds(CAMPGROUNDS)
+                      if c.campsite_type == "backpack"}
+    sites = [s for s in load_campsites(CAMPSITES) if s.campground in backpack_camps]
+    assert len(sites) == 19
+    assert not any(s.online_bookable for s in sites)
 
 
 def test_chabots_site_types_reproduce_the_booking_systems_own_filter_counts():

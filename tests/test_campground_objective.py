@@ -488,3 +488,29 @@ def test_equestrian_resolves_no_class_specific_booking_channel_and_that_is_hones
     chans = channels_for(load_booking_channels(D("booking_channels.csv")),
                          "equestrian", agency="ebrpd")
     assert [c.applies_to for c in chans] == ["all"]
+
+
+def test_one_booking_facility_sells_three_parks_worth_of_backpack_sites():
+    # EB/110028 is titled just "Sunol" and lists MIS:, OHL: and SUN: sites.
+    # That is why Mission Peak has no facility of its own -- and why searching
+    # the booking system for a park's name is not a way to find out whether the
+    # park has camping.
+    sites = load_campsites(D("campsites.csv"))
+    loops = {s.loop for s in sites if s.loop.endswith("Backpack")}
+    assert loops == {"Mission Peak Backpack", "Ohlone Backpack", "Sunol Backpack"}
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    assert "NOT NAMED FOR THIS PARK" in cgs["Eagle Springs"].notes
+    assert "OPEN YEAR ROUND" in cgs["Sunol Backpack Camp"].notes
+
+
+def test_the_ohlone_camps_park_field_is_right_about_the_fee_and_maybe_wrong_about_the_land():
+    # Filed under Del Valle, prefixed OHL: by the facility. park_access joins
+    # on this field, so as filed they inherit Del Valle's $10 weekend fee --
+    # which is what a backpacker walking in from Lichen Bark actually pays,
+    # whatever the boundary says.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for name in ("Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp"):
+        assert cgs[name].park == "Del Valle Regional Park", name
+    sites = [s for s in load_campsites(D("campsites.csv")) if s.loop == "Ohlone Backpack"]
+    assert {s.campground for s in sites} == {
+        "Boyd Camp", "Doe Camp", "Maggie's Half Acre", "Stewart's Camp"}
