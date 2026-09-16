@@ -36,6 +36,7 @@ import json
 import sys
 
 from wayproof.access import load_approaches
+from wayproof.advisories import load_advisories
 from wayproof.booking import load_booking_channels
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
@@ -92,6 +93,9 @@ def _parse_args(argv=None) -> argparse.Namespace:
                         "(default data/booking_channels.csv)")
     p.add_argument("--park-access-file", default="data/park_access.csv",
                    help="Park-level entrance fee/hours dataset (default data/park_access.csv)")
+    p.add_argument("--advisories-file", default="data/advisories.csv",
+                   help="Conditions with an end -- closures, outages, water quality "
+                        "(default data/advisories.csv)")
     p.add_argument("--regulations-file", default="data/regulations.csv",
                    help="Rules in force once you hold the permit "
                         "(default data/regulations.csv)")
@@ -121,13 +125,14 @@ def main(argv=None) -> int:
     booking_channels = load_booking_channels(args.booking_channels_file)
     park_access = list(load_park_access(args.park_access_file).values())
     regulations = load_regulations(args.regulations_file)
+    advisories = load_advisories(args.advisories_file)
 
     result = resolve_plan(args.objectives, trip_date, peaks, trailheads, permits,
                            approaches=approaches, water_sources=water_sources,
                            water_source_log=water_source_log, campgrounds=campgrounds,
                            campsites=campsites,
                            booking_channels=booking_channels, park_access=park_access,
-                           regulations=regulations,
+                           regulations=regulations, advisories=advisories,
                            exit_trailhead=args.exit_trailhead)
 
     print(format_plan_summary(result))

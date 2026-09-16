@@ -819,6 +819,44 @@ California"* is true today by coincidence of coverage, and inheriting statewide
 law off that coincidence would break silently the first time a Nevada or Oregon
 group is added. There's a test for exactly that.
 
+### Conditions expire; everything else here does not
+
+`data/advisories.csv` holds the facts with an end. Every other table holds
+facts that stay true until someone corrects them — a quota, a leash rule, a
+fee. A trail is closed *until the culvert is repaired*; an algae warning is
+posted *this week*; a water supply is off *until further notice*.
+
+That difference is why the scorecard read **"What is closed?" as no-model for
+all 462 objectives** for so long. There was nowhere to put an expiring fact,
+so sixty live District notices were read and dropped. Storing them badly
+would have been worse: a closure copied in September and read in March is not
+stale data, it is a wrong answer with a date on it.
+
+Three properties are structural, not convention:
+
+| Rule | Why |
+|---|---|
+| `observed_date` is required, or the row is refused at load | It is the only thing that lets a reader judge the rest |
+| `ends` and `until_further_notice` are mutually exclusive | They are the two answers this table exists to keep apart |
+| An open-ended advisory never expires on its own | The agency has not said it is over; deciding that for them is the failure mode |
+
+Instead of expiring, an open-ended advisory reports its age, and past
+`STALE_DAYS` says it is old enough to doubt. That is not a claim about how
+long closures last — it is how long this project is willing to repeat one
+without saying when it last looked.
+
+`plan` resolves advisories by **date** as well as scope, so a trip planned
+after a stated reopening is not warned about a closure that will be over, and
+prints them above cost and facilities: a closed trail changes whether the trip
+happens, where a fee only changes what it costs.
+
+A fact belongs here only if it expires. Sunol's fire ban names its exceptions
+by *place* rather than by date, so it stayed a park-scoped regulation; Round
+Valley's water outage stayed in the water ledger, which already records dated
+checks. Holding one fact in two tables is the drift `regulations.csv` was
+built to stop.
+
+
 ### Booking mechanics belong to the agency, not the campsite
 
 `data/campgrounds.csv` answers *what is this place like*.

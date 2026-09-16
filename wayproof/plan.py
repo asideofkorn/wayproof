@@ -34,6 +34,7 @@ from datetime import date
 from typing import Dict, List, Optional, Sequence
 
 from .access import ApproachRoute
+from .advisories import Advisory, advisories_for
 from .booking import BookingChannel, channels_for
 from .camping import (
     Campground, Campsite, access_label, resolve_campground_name,
@@ -119,6 +120,13 @@ class PlanResult:
     Desolation bear-canister requirement -- a $5,000 fine under 36 CFR
     261.58(cc) -- for every objective. Held data the surface hides is worse than
     data nobody entered: nothing signals the gap.
+    """
+    advisories: List[Advisory] = field(default_factory=list)
+    """Conditions in force on the trip date: closures, outages, water quality.
+
+    Date-filtered as well as scope-filtered, so a trip after a stated
+    reopening is not warned about a closure that will be over. Open-ended ones
+    survive every date, and carry their age instead.
     """
     costs: List["CostComponent"] = field(default_factory=list)
     """Every component of this trip that may charge, permit and otherwise.
@@ -389,6 +397,7 @@ def resolve_plan(
     booking_channels: Optional[Sequence[BookingChannel]] = None,
     park_access: Optional[Sequence[ParkAccess]] = None,
     regulations: Optional[Sequence[Regulation]] = None,
+    advisories: Optional[Sequence[Advisory]] = None,
     exit_trailhead: Optional[str] = None,
     today: Optional[date] = None,
 ) -> PlanResult:
@@ -632,6 +641,15 @@ def resolve_plan(
         applicable = regulations_in_force(
             regulations, permits.get(trailhead.permit_group), trailhead)
 
+    advisory_park = (next((c.park for c in campground_objectives if c.park), "")
+                     or (trailhead.park if trailhead else ""))
+    in_force = advisories_for(
+        advisories or [], trip_date, park=advisory_park,
+        agency=([k.strip() for c in campground_objectives
+                 for k in c.agency_id.split(";") if k.strip()]
+                or (trailhead.agency_id.split(";") if trailhead else [])),
+    ) if advisory_park or trailhead else []
+
     return PlanResult(
         requested_names=list(objective_names),
         objectives=objectives,
@@ -650,8 +668,39 @@ def resolve_plan(
         open_questions=questions,
         facilities=facilities,
         regulations=applicable,
+        advisories=in_force,
         costs=costs,
     )
+
+
+def _append_advisories(lines: List[str], result: PlanResult, today: date) -> None:
+    """Conditions in force, printed before anything you can book.
+
+    High in the output because a closed trail or a dry tap changes whether the
+    trip happens, where a fee only changes what it costs.
+    """
+    if not result.advisories:
+        return
+    lines.append("Conditions on your date")
+    for a in result.advisories:
+        mark = {"danger": "DANGER", "caution": "CAUTION"}.get(a.severity, "NOTE")
+        where = f" -- {a.location}" if a.location else ""
+        lines.append(f"  [{mark}] {a.kind_label}{where}: {a.summary}")
+        if a.detail:
+            lines.append(f"    {a.detail}")
+        if a.ends:
+            lines.append(f"    Stated to end {a.ends}.")
+        else:
+            age = a.age_days(today)
+            aged = f", {age} days ago" if age is not None else ""
+            lines.append(f"    No end date given. Last updated {a.observed_date}{aged}"
+                         + (" -- OLD ENOUGH TO DOUBT: it may have been lifted and nothing "
+                            "here would know. Check before relying on it."
+                            if a.stale(today) else "."))
+    lines.append("  These expire. Everything else in this plan is a standing fact; "
+                 "these are not,")
+    lines.append("  and a closure read months ago is a wrong answer with a date on it.")
+    lines.append("")
 
 
 def _append_facilities(lines: List[str], result: PlanResult) -> None:
@@ -802,6 +851,7 @@ def format_plan_summary(result: PlanResult) -> str:
         lines.append("")
 
     if not result.objectives:
+        _append_advisories(lines, result, date.today())
         cost_lines = format_costs(result.costs)
         if cost_lines:
             lines.extend(cost_lines)
@@ -890,6 +940,8 @@ def format_plan_summary(result: PlanResult) -> str:
     else:
         lines.append("  No trailhead data available.")
     lines.append("")
+
+    _append_advisories(lines, result, date.today())
 
     cost_lines = format_costs(result.costs)
     if cost_lines:

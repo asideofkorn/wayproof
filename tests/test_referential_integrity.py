@@ -145,6 +145,14 @@ JOINS = [
               if r["scope_type"].strip() == "agency" and r["scope_value"].strip()},
      lambda: ids("permits.csv", "agency_id") | ids("trailheads.agency_id".split(".")[0] + ".csv",
                                                    "agency_id")),
+    ("advisories[scope=park] -> campgrounds.park | park_access.park | trailheads.park",
+     lambda: {r["scope_value"].strip() for r in rows("advisories.csv")
+              if r["scope_type"].strip() == "park" and r["scope_value"].strip()},
+     lambda: values("campgrounds.csv", "park") | values("park_access.csv", "park")
+             | values("trailheads.csv", "park")),
+    ("advisories.log_entry_ids -> permit_source_log.entry_id",
+     lambda: ids("advisories.csv", "log_entry_ids"),
+     lambda: values("permit_source_log.csv", "entry_id")),
     ("booking_channels.log_entry_ids -> permit_source_log.entry_id",
      lambda: ids("booking_channels.csv", "log_entry_ids"),
      lambda: values("permit_source_log.csv", "entry_id")),
