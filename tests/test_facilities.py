@@ -642,3 +642,17 @@ def test_eagle_springs_water_is_treatable_not_merely_undrinkable():
     w = {x.name: x for x in load_water_sources(WATER_SOURCES)}["Eagle Springs"]
     assert w.potable is False
     assert "treated or boiled" in w.notes
+
+
+def test_the_looking_for_category_is_a_search_facet_not_a_booking_class():
+    # Morgan Territory's camp is filed under BACKPACK SITE, its loop is
+    # "Backpack Seasonal" and its minimum is 1 -- while its Looking For
+    # Category reads "Group Site, Horse Site, Tent Site". That field is
+    # multi-valued, so it cannot be read as the class that keys booking
+    # channels, which is most of why a neighbouring map could call Round
+    # Valley's camp a group camp.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    morgan = by_name["Morgan Territory Backpack Camp"]
+    assert morgan.campsite_type == "backpack"
+    assert "multi-valued search facet, not a class" in morgan.notes
+    assert by_name["Round Valley Backpack Camp"].campsite_type == "backpack"

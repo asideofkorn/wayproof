@@ -385,19 +385,38 @@ def test_the_briones_season_no_longer_leans_on_the_misread_field():
         assert "three independent surfaces" in notes, name
 
 
-def test_a_constructed_campground_name_says_that_it_is_constructed():
-    # No source names Morgan Territory's camp -- the park page says "a backpack
-    # campsite" and the map says "BACKPACK CAMP". A constructed key renders
-    # identically to a sourced one, which is how a guessed access_mode survived
-    # four days, so the row has to say which it is.
+def test_the_constructed_name_turned_out_right_and_the_flag_was_still_correct():
+    # Keyed "Morgan Territory Backpack Camp" when nothing read named the camp.
+    # The booking system calls it exactly that. A convention holding is not a
+    # licence to construct names: the row still records that it was a guess,
+    # because the flag would have been just as right if the name had been wrong.
     cg = {c.name: c for c in
           load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
-    assert cg.notes.startswith("THIS CAMP HAS NO PUBLISHED NAME")
-    assert "a key rather than a claim" in cg.notes
-    # Nothing is known about it, and the blanks are blanks rather than defaults.
-    assert cg.has_restroom is False and cg.restroom_type == ""
-    assert "has_restroom is left BLANK rather than False" in cg.notes
-    assert cg.fee_notes == "" and cg.latitude is None
+    assert "CONSTRUCTED NAME TURNED OUT TO BE THE PUBLISHED ONE" in cg.notes
+    assert "not a licence to construct names" in cg.notes
+
+
+def test_the_longest_carry_in_the_dataset_is_on_the_row_that_has_it():
+    # 4.5 miles from the parking, against 3.2 at Stewartville, 1.5 at
+    # Wee-Ta-Chi and a quarter mile at three others. A park-precision
+    # coordinate is nowhere near this camp and the row says so.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert "4.5 MILES FROM THE SITE" in cg.notes
+    assert cg.coord_precision == "park"
+    assert "nowhere near it" in cg.coord_source
+
+
+def test_a_reservation_buys_the_night_and_costs_the_freedom_to_move():
+    # "Campers are restricted to campsite during curfew hours (10pm-5am)" is
+    # the sentence that answers whether a booking exempts you from a park's
+    # posted hours -- left open at Mission Peak, where the penalty is a $300
+    # minimum citation and the page says nothing about campers.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert "RESTRICTED TO THE CAMPSITE DURING CURFEW HOURS" in cg.notes
+    assert "$300" in cg.notes, "names the Mission Peak penalty it bears on"
+
 
 
 def test_morgan_territorys_gate_bands_cover_the_year_exactly():
