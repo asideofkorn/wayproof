@@ -14,6 +14,7 @@ import pytest
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from wayproof.camping import load_campgrounds
+from wayproof.park_access import load_park_access
 from wayproof.data_loader import load_trailheads
 from wayproof.model import Trailhead
 from wayproof.permits import load_permits
@@ -252,6 +253,16 @@ def test_every_regulation_scope_reaches_at_least_one_real_trip():
         reached.update(r.regulation_id for r in regulations_in_force(
             regs, agency=[k.strip() for k in cg.agency_id.split(";") if k.strip()],
             jurisdiction=cg.jurisdiction, park=cg.park))
+    # A park this project holds access for is a real place, even before anything
+    # sits in it. Briones' leash segments govern four named trails in a park
+    # whose three group campsites no source has yet named, so the rule is ahead
+    # of its objects rather than pointing nowhere. Typos are not what this test
+    # catches for park scope -- the referential-integrity join already requires
+    # a park-scoped value to name a park in campgrounds, park_access or
+    # trailheads, so a misspelling fails there and loudly.
+    for park in {p.park for p in load_park_access(
+            os.path.join(ROOT, "data", "park_access.csv")).values() if p.park}:
+        reached.update(r.regulation_id for r in regulations_in_force(regs, park=park))
 
     dead = [r.regulation_id for r in regs if r.regulation_id not in reached]
     assert dead == [], (
