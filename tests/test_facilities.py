@@ -245,12 +245,17 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 # --- campground access mode (drive-in vs hike-in) ----------------------------
 
 # Campgrounds whose source says nothing about how you reach them. Blank is the
-# honest value: every other EBRPD group camp here is drive-in, and that is not
-# evidence about these three. Named individually so a NEW blank still fails.
-# Empty again: Briones' three were here until the maintainer supplied the mode
-# directly. Kept because the state recurs -- EBRPD publishes capacity, fees and
-# minimums for a group camp without ever saying how you reach it.
-ACCESS_MODE_UNRECORDED: set = set()
+# honest value, and it is named here individually so a NEW blank still fails.
+#
+# Briones' three sat here, then left on the maintainer's word, then came back
+# corrected to hike-in off their own booking pages. That round trip is the
+# argument for this set existing: the value that was wrong is the one that was
+# never blank. Girls' Camp arrives blank on purpose -- four access corrections
+# in four days, three of them because something was written that no page
+# supported, so nothing is written for it here.
+ACCESS_MODE_UNRECORDED = {
+    "Girls' Camp",
+}
 
 
 def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():

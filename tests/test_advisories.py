@@ -137,3 +137,36 @@ def test_the_algae_advisory_notes_that_animals_were_never_allowed_there():
     west = next(a for a in adv if a.advisory_id == "del-valle-algae-west")
     assert west.kind == WATER_QUALITY
     assert "801.1" in west.detail
+
+
+# -- fields that had never been used until Reinhardt Redwood ------------------
+
+def test_the_start_date_field_finally_carries_a_value():
+    # Every advisory before this one was already in force when it was read, so
+    # `starts` was a column nothing used. A closure that began three weeks
+    # before it was read is the case it exists for.
+    advisories = {a.advisory_id: a for a in load_advisories(ADVISORIES)}
+    repairs = advisories["reinhardt-stream-trail-repairs"]
+    assert repairs.starts == "2026-08-24"
+    assert repairs.in_force(datetime.date(2026, 9, 16))
+    assert not repairs.in_force(datetime.date(2026, 8, 1)), "not yet begun"
+
+
+def test_a_vague_window_is_stored_as_words_not_as_invented_dates():
+    # "late September and early October" is not a date. Writing 2026-09-20
+    # would be inventing precision EBRPD did not publish -- the same error as a
+    # guessed coordinate or a guessed access mode.
+    a = {x.advisory_id: x for x in load_advisories(ADVISORIES)}["reinhardt-stream-trail-old-church"]
+    assert a.starts == "" and a.ends == ""
+    assert a.until_further_notice is True
+    assert "late September and early October" in a.detail
+    assert "OVERSTATES" in a.detail, "says openly that open-ended is too strong here"
+
+
+def test_the_boil_water_notice_is_rated_danger_and_says_why_it_is_not_a_water_row():
+    # The first danger-rated advisory, and the first water fact here that is
+    # not about availability: the spigot runs and must not be drunk untreated.
+    a = {x.advisory_id: x
+         for x in load_advisories(ADVISORIES)}["reinhardt-piedmont-stables-boil-water"]
+    assert a.kind == "water_quality" and a.severity == "danger"
+    assert "water_sources.location must resolve" in a.detail

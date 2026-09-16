@@ -238,16 +238,19 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_every_group_camp_in_this_dataset_is_hike_in():
-    # This began as a hand-picked list of the three whose access a page stated,
-    # which was the wrong test twice over: Briones' three were about to be
-    # corrected, and Anthony Chabot's seven said "no driving in" in their own
-    # notes while the column said drive_in. Naming the exceptions was how they
-    # stayed hidden. Assert the whole class instead -- thirteen of thirteen.
+def test_every_group_camp_whose_access_is_known_is_hike_in():
+    # Thirteen of fourteen, and the fourteenth is blank rather than guessed.
+    # The earlier version of this test hand-picked three names, which is how
+    # Anthony Chabot's seven stayed wrong while saying "no driving in" in their
+    # own notes -- so the class is asserted, and the blank is asserted to be a
+    # blank rather than quietly excluded.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
-    assert len(group) == 13
-    assert {c.access_mode for c in group} == {"hike_in"}
+    assert len(group) == 14
+    assert {c.access_mode for c in group} == {"hike_in", ""}
+    blank = [c for c in group if not c.access_mode]
+    assert [c.name for c in blank] == ["Girls' Camp"]
+    assert "ACCESS MODE IS NOT RECORDED" in blank[0].notes
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
