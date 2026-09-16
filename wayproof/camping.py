@@ -30,7 +30,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional, Sequence, Tuple
 
 import pandas as pd
 
@@ -43,6 +43,28 @@ HIKE_IN = "hike_in"
 _VALID_ACCESS_MODES = {DRIVE_IN, HIKE_IN}
 
 ACCESS_MODE_LABELS = {DRIVE_IN: "drive-in", HIKE_IN: "hike-in"}
+
+COORD_CAMPGROUND = "campground"
+"""The coordinate names the camping area itself."""
+
+COORD_PARK = "park"
+"""The coordinate names the PARK the campground is in, not the campground.
+
+Stored separately because the two are not interchangeable and reading one as
+the other is the same error as a guessed ``access_mode``: it renders
+identically to a precise value. ReserveAmerica publishes a GPS pair on each
+park's overview page and none on its campsite pages, so every coordinate this
+project has is of this kind. Dumbarton Quarry is why it matters -- it resolves
+to Coyote Hills Regional Park and has its own entrance several miles round the
+marsh, so that park's coordinate would place it somewhere it is not.
+"""
+
+_VALID_COORD_PRECISION = {COORD_CAMPGROUND, COORD_PARK}
+
+COORD_PRECISION_LABELS = {
+    COORD_CAMPGROUND: "to the campground",
+    COORD_PARK: "to the park, not the campground",
+}
 
 UNKNOWN_ACCESS_LABEL = "access mode not recorded"
 """What a blank ``access_mode`` reads as.
@@ -59,6 +81,17 @@ def _str_field(row, col: str) -> str:
     if val is None or pd.isna(val):
         return ""
     return str(val).strip()
+
+
+def _float_field(row, col: str) -> Optional[float]:
+    """A number, or ``None`` when the cell is empty -- never 0.0 for blank."""
+    val = row.get(col)
+    if val is None or pd.isna(val):
+        return None
+    text = str(val).strip()
+    if not text:
+        return None
+    return float(text)
 
 
 def _bool_field(row, col: str) -> bool:
@@ -105,11 +138,32 @@ class Campground:
 
     A different axis from :attr:`access_mode`, not a restatement of it. Access
     mode is how you physically reach the site; this is which queue you book it
-    in, and EBRPD's two differ -- a group camp can be drive-in, and Anthony
-    Chabot's family campground contains hike-in sites. Blank means unknown, and
+    in, and EBRPD's two differ -- Anthony Chabot's family campground is
+    drive-in and contains ten hike-in sites, so neither axis predicts the
+    other even inside one campground. Blank means unknown, and
     :func:`wayproof.booking.channels_for` then returns only agency-wide
     channels rather than guessing a class.
     """
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
+    """Where it is, or ``None`` when nobody has recorded it.
+
+    ``None`` rather than 0.0: a zero pair is a real place in the Gulf of
+    Guinea, and a campground silently sorted 8,000 miles away is worse than
+    one the search says it cannot place. :func:`unlocated` is how the gap is
+    shown rather than dropped.
+    """
+    coord_precision: str = ""
+    """``campground`` or ``park`` -- what the coordinate above actually names.
+
+    Required whenever a coordinate is present; :func:`load_campgrounds`
+    refuses a pair without it. An unlabelled coordinate reads as the campsite's
+    own position, which for a park centroid can be miles wrong, and nothing
+    downstream could tell the difference.
+    """
+    coord_source: str = ""
+    """Which page the coordinate came off, in prose. Same rule as every other
+    field here: a value carries where it came from."""
     has_restroom: bool = False
     restroom_type: str = ""
     reservation_method: str = ""
@@ -193,7 +247,30 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 f"Invalid access_mode {access_mode!r} for campground {name!r}; "
                 f"expected one of {sorted(_VALID_ACCESS_MODES)} or blank"
             )
+        latitude = _float_field(row, "latitude")
+        longitude = _float_field(row, "longitude")
+        coord_precision = _str_field(row, "coord_precision")
+        if (latitude is None) != (longitude is None):
+            raise ValueError(
+                f"Campground {name!r} has half a coordinate; give both or neither"
+            )
+        if latitude is not None and coord_precision not in _VALID_COORD_PRECISION:
+            raise ValueError(
+                f"Campground {name!r} has coordinates and coord_precision "
+                f"{coord_precision!r}; expected one of "
+                f"{sorted(_VALID_COORD_PRECISION)}. An unlabelled coordinate "
+                f"reads as the campsite's own position."
+            )
+        if latitude is None and coord_precision:
+            raise ValueError(
+                f"Campground {name!r} has coord_precision {coord_precision!r} "
+                f"and no coordinates"
+            )
         campgrounds.append(Campground(
+            latitude=latitude,
+            longitude=longitude,
+            coord_precision=coord_precision,
+            coord_source=_str_field(row, "coord_source"),
             name=name,
             park=_str_field(row, "park"),
             land_agency=_str_field(row, "land_agency"),
@@ -280,6 +357,27 @@ def drive_in(campgrounds: List[Campground]) -> List[Campground]:
 def unknown_access(campgrounds: List[Campground]) -> List[Campground]:
     """Campgrounds whose access mode nobody has recorded yet."""
     return [c for c in campgrounds if not c.access_mode]
+
+
+def located(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds that can be placed on a map."""
+    return [c for c in campgrounds if c.latitude is not None]
+
+
+def unlocated(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds with no coordinates recorded.
+
+    Returned so a proximity search can *report* them rather than drop them.
+    Dropping is what makes "nothing is near you" and "nobody has looked"
+    indistinguishable -- the failure the scorecard already names for Q21.
+    """
+    return [c for c in campgrounds if c.latitude is None]
+
+
+def coord_precision_label(campground: Campground) -> str:
+    """What this campground's coordinate is a coordinate *of*."""
+    return COORD_PRECISION_LABELS.get(campground.coord_precision,
+                                      "precision not recorded")
 
 
 def site_type_label(campsite: Campsite) -> str:

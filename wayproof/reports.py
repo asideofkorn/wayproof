@@ -310,6 +310,32 @@ def open_questions(
                     context=s.campground,
                 ))
 
+        # -- Campgrounds nobody can place on a map. --
+        #
+        # Added when --campgrounds --near was built and could place two of
+        # twenty-four. A proximity search that cannot rank the three drive-in
+        # campgrounds is not a feature, it is a question, and this is where the
+        # question belongs. ReserveAmerica publishes a GPS pair on each park's
+        # overview page, which is where both of the two came from.
+        # ONE QUESTION PER PARK, NOT PER CAMPGROUND, for the reason the
+        # campsite-proximity question is fired only at hike-in campgrounds:
+        # asking it twenty-two times would bury the rest of this list, and the
+        # twenty-two share about eight answers. A park's ReserveAmerica
+        # overview page carries one GPS pair and fills every camp in it.
+        unplaced_by_park = {}
+        for c in campgrounds:
+            if c.latitude is None and _park_is_relevant(c.park):
+                unplaced_by_park.setdefault(c.park, []).append(c.name)
+        for park_name, names in sorted(unplaced_by_park.items()):
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=park_name or "(no park recorded)",
+                question=(f"No coordinates for {len(names)} campground(s) in "
+                          f"{park_name or 'an unnamed park'}, so a proximity "
+                          f"search cannot place them: {', '.join(sorted(names))}."),
+                context=park_name,
+            ))
+
         # -- Trailhead/campground notes flagging their own uncertainty. --
         for c in campgrounds:
             if not _park_is_relevant(c.park):

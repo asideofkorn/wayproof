@@ -13,7 +13,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest
 
 from wayproof.access import ApproachRoute
-from wayproof.camping import DRIVE_IN, HIKE_IN, Campground, Campsite
+from wayproof.camping import (
+    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, Campground, Campsite,
+)
 from wayproof.model import Peak, Trailhead
 from wayproof.park_access import ParkAccess
 from wayproof.reports import (
@@ -108,6 +110,20 @@ def test_peakbagger_and_unconfirmed_are_mutually_exclusive_not_doubled():
     assert len(coord_qs) == 1
 
 
+def _ground(**kw):
+    """A campground fixture that is already on the map.
+
+    Every test below predates coordinates and is about some other question.
+    Placing the fixture keeps each assertion counting only what it is about --
+    otherwise every one of them silently also counts "this campground has no
+    coordinates", which has its own tests at the end of this file.
+    """
+    kw.setdefault("latitude", 37.0)
+    kw.setdefault("longitude", -121.0)
+    kw.setdefault("coord_precision", COORD_CAMPGROUND)
+    return Campground(**kw)
+
+
 # --- open_questions: peak notes (duplicate-name tie-break, etc.) ----------
 
 def test_peak_note_with_uncertainty_marker_produces_a_question():
@@ -184,7 +200,7 @@ def test_no_log_at_all_flagged_in_global_view():
 # --- open_questions: campsites / campgrounds (global view only) -----------
 
 def test_campsite_missing_both_proximity_fields_flagged_globally():
-    grounds = [Campground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
                           access_mode=HIKE_IN)]
     sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5)]
     qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
@@ -197,7 +213,7 @@ def test_proximity_is_not_asked_of_a_drive_up_campgrounds_sites():
     # you park at, with central flush toilets, it decides nothing -- and asking
     # it of Anthony Chabot's 75 numbered sites buried the 73 real questions
     # under 75 identical ones.
-    grounds = [Campground(name="Anthony Chabot Campground",
+    grounds = [_ground(name="Anthony Chabot Campground",
                           park="Anthony Chabot Regional Park", access_mode=DRIVE_IN)]
     sites = [Campsite(name=f"{n:03d}", campground="Anthony Chabot Campground", capacity=8)
              for n in range(1, 76)]
@@ -212,7 +228,7 @@ def test_proximity_is_not_asked_when_the_campground_is_unknown():
 
 
 def test_campsite_with_one_proximity_field_not_flagged():
-    grounds = [Campground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
                           access_mode=HIKE_IN)]
     sites = [Campsite(name="Hawks Nest", campground="Sunol Backpack Camp", capacity=5,
                        water_proximity="closest to water")]
@@ -221,7 +237,7 @@ def test_campsite_with_one_proximity_field_not_flagged():
 
 
 def test_campground_uncertain_note_flagged_globally():
-    grounds = [Campground(name="Del Valle Family Campground", park="Del Valle Regional Park",
+    grounds = [_ground(name="Del Valle Family Campground", park="Del Valle Regional Park",
                            nightly_entry_cutoff="~10:00 PM (approximate, not a confirmed posted time)")]
     qs = open_questions(campgrounds=grounds, peak_names=None)
     assert len(qs) == 1
@@ -233,7 +249,7 @@ def test_a_hedge_inside_a_quotation_belongs_to_the_source_not_to_us():
     # paved surface". Quoting that exactly is the point of quoting it; matched
     # naively it asked a visitor to go and confirm a distance the operator had
     # already stated. The markers are for OUR hedging.
-    grounds = [Campground(
+    grounds = [_ground(
         name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
         notes=("The listing says it twice: 'This is a HIKE-IN only site "
                "(approximately 1/4 mile on a flat, paved surface)' and "
@@ -244,7 +260,7 @@ def test_a_hedge_inside_a_quotation_belongs_to_the_source_not_to_us():
 def test_a_hedge_outside_the_quotation_still_flags_the_row():
     # Same quotation, but the row then hedges in its own voice. That is the
     # case the markers exist for, and stripping quotes must not swallow it.
-    grounds = [Campground(
+    grounds = [_ground(
         name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
         notes=("The listing says 'a flat, paved surface'. Whether the party "
                "unloads at the lot is unconfirmed."))]
@@ -255,7 +271,7 @@ def test_a_hedge_outside_the_quotation_still_flags_the_row():
 def test_a_possessive_apostrophe_does_not_open_a_quotation():
     # "Dairy Glen's" must not start a quoted span and swallow the hedge that
     # follows it. The opening quote has to follow whitespace.
-    grounds = [Campground(
+    grounds = [_ground(
         name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
         notes="Dairy Glen's distance from the lot is approximate.")]
     qs = open_questions(campgrounds=grounds, peak_names=None)
@@ -272,7 +288,7 @@ def _trailhead(name, park=""):
 def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park",
+    grounds = [_ground(name="Boyd Camp", park="Del Valle Regional Park",
                           access_mode=HIKE_IN)]
     sites = [Campsite(name="Boyd Camp Site", campground="Boyd Camp", capacity=4)]
 
@@ -285,7 +301,7 @@ def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
 def test_campsite_gap_excluded_for_unrelated_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Eagle Springs", park="Mission Peak Regional Preserve",
+    grounds = [_ground(name="Eagle Springs", park="Mission Peak Regional Preserve",
                           access_mode=HIKE_IN)]
     sites = [Campsite(name="Eagle Springs Site", campground="Eagle Springs", capacity=4)]
 
@@ -298,7 +314,7 @@ def test_campground_gap_not_peak_filtered_without_trailheads_param():
     # Omitting `trailheads` entirely must fall back to the old behavior:
     # campground/campsite gaps only show in the unfiltered view.
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
-    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park",
+    grounds = [_ground(name="Boyd Camp", park="Del Valle Regional Park",
                            notes="Coordinates approximate.")]
     qs = open_questions(peaks=peaks, campgrounds=grounds, peak_names=["Rose Peak"])
     assert qs == []

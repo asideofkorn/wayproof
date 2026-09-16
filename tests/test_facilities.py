@@ -27,6 +27,7 @@ from wayproof.camping import (
     drive_in,
     load_campgrounds,
     load_campsites,
+    located,
     campsites_by_campground,
     unknown_access,
 )
@@ -479,3 +480,58 @@ def test_the_only_drive_in_campgrounds_left_are_the_three_family_ones():
         "Dumbarton Quarry Campground on the Bay",
     ]
     assert {c.campsite_type for c in drivable} == {"family"}
+
+
+# -- coordinates -------------------------------------------------------------
+
+def test_a_coordinate_without_a_precision_is_rejected_loudly(tmp_path):
+    # An unlabelled coordinate reads as the campsite's own position. For a park
+    # centroid that can be miles wrong, and nothing downstream could tell --
+    # the same shape as the guessed access_mode this project already got wrong.
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,latitude,longitude,coord_precision\n"
+                    "X,P,37.5,-122.0,\n")
+    with pytest.raises(ValueError, match="coord_precision"):
+        load_campgrounds(path)
+
+
+def test_half_a_coordinate_is_rejected(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,latitude,longitude,coord_precision\n"
+                    "X,P,37.5,,campground\n")
+    with pytest.raises(ValueError, match="half a coordinate"):
+        load_campgrounds(path)
+
+
+def test_a_precision_with_no_coordinate_is_rejected(tmp_path):
+    path = tmp_path / "campgrounds.csv"
+    path.write_text("name,park,latitude,longitude,coord_precision\n"
+                    "X,P,,,park\n")
+    with pytest.raises(ValueError, match="no coordinates"):
+        load_campgrounds(path)
+
+
+def test_a_blank_coordinate_is_none_and_never_zero():
+    # 0.0 is a real place in the Gulf of Guinea. A campground silently sorted
+    # 8,000 miles away is worse than one the search says it cannot place.
+    unplaced = [c for c in load_campgrounds(CAMPGROUNDS) if c.latitude is None]
+    assert unplaced, "this dataset still has campgrounds with no coordinates"
+    assert all(c.longitude is None and c.coord_precision == "" for c in unplaced)
+
+
+def test_dumbarton_is_deliberately_not_given_its_parks_coordinate():
+    # It resolves to Coyote Hills and has its own entrance miles round the
+    # marsh, so that park's centroid would place it somewhere it is not. The
+    # park field being 2-2 across sources makes borrowing worse, not better.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    dumbarton = by_name["Dumbarton Quarry Campground on the Bay"]
+    dairy_glen = by_name["Dairy Glen Group Camp"]
+    assert dumbarton.park == dairy_glen.park == "Coyote Hills Regional Park"
+    assert dairy_glen.latitude is not None
+    assert dumbarton.latitude is None
+
+
+def test_every_stored_coordinate_says_which_page_it_came_off():
+    for c in located(load_campgrounds(CAMPGROUNDS)):
+        assert "ReserveAmerica" in c.coord_source, c.name
+        assert "PARK PRECISION" in c.coord_source.upper(), c.name

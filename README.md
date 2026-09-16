@@ -1156,6 +1156,10 @@ python cli.py --permit-sources desolation
 
 # List every unconfirmed or conflicting fact currently derivable.
 python cli.py --open-questions
+
+# Find a campground you cannot already name: the only command that answers
+# "where could I go" rather than "why do we believe this".
+python cli.py --campgrounds --access drive_in --near 37.8044,-122.2712
 ```
 
 ## CLI Usage
@@ -1203,15 +1207,38 @@ from `plan.py` rather than a flag on it.
 
 ### `cli.py`
 
-Two read-only views into the data's provenance. Trip planning is `plan.py`.
+Two read-only views into the data's provenance, and one search. Trip planning
+for a *named* objective is `plan.py`.
 
 | Flag | Default | Description |
 |------|---------|-------------|
 | `--permit-sources [GROUP]` | all groups | Verification history for one permit group, or all |
 | `--open-questions` | off | Every unconfirmed or conflicting fact currently derivable |
+| `--campgrounds` | off | List campgrounds matching the filters below |
+| `--access` | any | `drive_in` / `hike_in`. Campgrounds whose access nobody has recorded are excluded **and then listed** -- absent is not a value |
+| `--type` | any | `family` / `group` / `backpack` |
+| `--park` | any | Only campgrounds in this park |
+| `--near LAT,LON` | none | Sort by straight-line distance from a point. Oakland City Hall is `37.8044,-122.2712` |
+| `--within MILES` | none | With `--near`, drop matches beyond this distance |
 
-Both accept the same `--*-file` overrides as `plan.py` for pointing at
+All accept the same `--*-file` overrides as `plan.py` for pointing at
 alternative datasets.
+
+**Two things `--campgrounds` will not do**, both for the same reason the rest
+of this project states its gaps rather than hiding them:
+
+- **It does not drop what it cannot measure.** A campground with no
+  coordinates is reported under `CANNOT BE PLACED`, not omitted. Omitting it
+  would make "nothing is near you" and "nobody has looked" identical, which is
+  the failure the scorecard already names for Q21. Today that is 22 of 24
+  campgrounds, including all three drive-in ones, so `--near` is honest rather
+  than useful until the coordinates land.
+- **It does not pretend a park centroid is a campsite.** Every coordinate here
+  came off a ReserveAmerica park overview page, so `coord_precision` is `park`
+  and each distance renders as "to the park, not the campground". Dumbarton
+  Quarry is why: it resolves to Coyote Hills Regional Park and has its own
+  entrance miles round the marsh, so it is deliberately left unplaced rather
+  than given that park's point.
 
 ## Python Usage
 

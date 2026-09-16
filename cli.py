@@ -32,6 +32,25 @@ def _parse_args(argv=None) -> argparse.Namespace:
                         "or all groups when given no value.")
     p.add_argument("--open-questions", action="store_true",
                    help="Print every unconfirmed or conflicting fact currently derivable.")
+    p.add_argument("--campgrounds", action="store_true",
+                   help="List campgrounds matching the filters below. This is "
+                        "the only command here that answers 'where could I go' "
+                        "rather than 'why do we believe this'.")
+    p.add_argument("--access", choices=("drive_in", "hike_in"), default="",
+                   help="Only campgrounds with this access mode. Campgrounds "
+                        "whose access nobody has recorded are excluded and "
+                        "then listed, because absent is not a value.")
+    p.add_argument("--type", dest="campsite_type", default="",
+                   choices=("family", "group", "backpack"),
+                   help="Only campgrounds the agency sells as this class.")
+    p.add_argument("--park", default="", help="Only campgrounds in this park.")
+    p.add_argument("--near", default="", metavar="LAT,LON",
+                   help="Sort by straight-line distance from a point. Oakland "
+                        "City Hall is 37.8044,-122.2712. Campgrounds with no "
+                        "coordinates on file are reported separately rather "
+                        "than dropped -- unmeasured is not far away.")
+    p.add_argument("--within", type=float, default=None, metavar="MILES",
+                   help="With --near, drop matches beyond this many miles.")
 
     p.add_argument("--input", default="data/peaks.csv")
     p.add_argument("--collections-file", default="data/collections/sps.csv")
@@ -97,7 +116,34 @@ def main(argv=None) -> int:
         print(format_pending_reports(pending_reports(args.pending_reports_file)))
         return 0
 
-    print("Nothing to do. Use --permit-sources or --open-questions, "
+    if args.campgrounds:
+        from wayproof.camping import load_campgrounds, unknown_access
+        from wayproof.discovery import find_campgrounds, format_campground_list
+
+        near = None
+        if args.near:
+            try:
+                lat, lon = (float(x) for x in args.near.split(","))
+            except ValueError:
+                print("--near wants LAT,LON, e.g. 37.8044,-122.2712", file=sys.stderr)
+                return 2
+            near = (lat, lon)
+        if args.within is not None and near is None:
+            print("--within needs --near to measure from", file=sys.stderr)
+            return 2
+
+        campgrounds = load_campgrounds(args.campgrounds_file)
+        search = find_campgrounds(
+            campgrounds, access=args.access, campsite_type=args.campsite_type,
+            park=args.park, near=near, within_miles=args.within,
+        )
+        # Only when the question was about access: a --type filter did not
+        # exclude these, so naming them there would be noise.
+        unrecorded = unknown_access(campgrounds) if args.access else []
+        print("\n".join(format_campground_list(search, unrecorded)))
+        return 0
+
+    print("Nothing to do. Use --permit-sources, --open-questions or --campgrounds, "
           "or see plan.py for trip planning.", file=sys.stderr)
     return 2
 
