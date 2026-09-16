@@ -754,3 +754,47 @@ def test_a_rule_scoped_to_the_no_permit_placeholder_is_rejected_loudly(tmp_path)
     )
     with pytest.raises(ValueError, match="agency"):
         load_regulations(path)
+
+
+# -- the District's booking-system rules, filed six parks late ---------------
+
+def _ebrpd_rules():
+    regs = load_regulations(os.path.join(ROOT, "data", "regulations.csv"))
+    return {r.regulation_id: r for r in regs}
+
+
+def test_the_district_allows_beer_and_wine_and_two_narrower_rules_ban_it():
+    # A camper who reads only the agency rule and goes to Stewartville is
+    # wrong. The exceptions are narrower in scope, so they must still be there.
+    regs = _ebrpd_rules()
+    assert "no hard alcohol" in regs["ebrpd-alcohol"].summary.lower()
+    assert "$25.00" in regs["ebrpd-alcohol"].detail
+    assert regs["black-diamond-no-alcohol"].scope_type == "park"
+    assert "no alcohol at all" in regs["ebrpd-backpack-no-fire-no-alcohol"].summary.lower()
+
+
+def test_collecting_firewood_is_prohibited_which_is_not_the_same_as_no_fires():
+    # Whether a fire may burn and what may burn in it are different questions.
+    # A site with a fire circle and nowhere to buy wood is one you carry to.
+    regs = _ebrpd_rules()
+    assert "COLLECTING WOOD IS PROHIBITED" in regs["ebrpd-firewood"].summary
+    assert regs["ebrpd-firewood"].category == "fire"
+
+
+def test_the_three_dog_limit_is_not_read_across_to_other_animals():
+    # The booking rules say dogs; Ordinance 38 s.801 says "dog, cat or other
+    # animal". Inventing a number for cats from the dog figure is the error
+    # this row exists to prevent.
+    rule = _ebrpd_rules()["ebrpd-pets-count"]
+    assert "THREE DOGS PER SITE" in rule.summary
+    assert "no number here" in rule.detail
+    assert "cats" in rule.detail
+
+
+def test_the_generator_rule_names_its_own_contradiction_rather_than_picking():
+    # Ordinance 38 sets a disturbance test; the terms every reservation is made
+    # under say "No gas generators", flat. Both are EBRPD.
+    rule = _ebrpd_rules()["ebrpd-camping-quiet"]
+    assert "ebrpd-generators" in rule.summary, "points at the open thread"
+    assert "No gas generators" in rule.detail or "no gas generators" in rule.detail.lower()
+    assert "safer reading" in rule.detail

@@ -411,9 +411,13 @@ def test_coyote_hills_cannot_store_one_opening_time():
     assert "CURFEW" in pa.gate_hours_conditions.upper()
 
 
-def test_dairy_glens_drinking_fountain_is_the_only_potable_source():
+def test_the_only_potable_sources_are_the_two_drinking_fountains():
+    # Every other source here is a spigot or trough EBRPD states is non-potable.
+    # Both of these are drinking fountains at group camps, and neither has ever
+    # been checked -- potable is a reading of what a drinking fountain is for,
+    # not a word either page uses.
     from wayproof.water import load_water_sources
-    potable = [w.name for w in load_water_sources(WATER_SOURCES) if w.potable]
-    assert potable == ["Dairy Glen Group Camp"], (
-        "every other source here is a spigot or trough EBRPD states is non-potable"
-    )
+    sources = load_water_sources(WATER_SOURCES)
+    potable = [w for w in sources if w.potable]
+    assert [w.name for w in potable] == ["Dairy Glen Group Camp", "Arroyo Flats Group Camp"]
+    assert all(w.type == "drinking fountain" for w in potable)

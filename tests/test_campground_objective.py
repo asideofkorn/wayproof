@@ -228,3 +228,45 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert cg.access_mode == "hike_in"
     text = format_plan_summary(_plan("Dairy Glen Group Camp"))
     assert "HIKE-IN" in text.upper()
+
+
+def test_every_group_camp_whose_access_a_page_states_is_hike_in():
+    # Three for three: Star Mine, Dairy Glen, Arroyo Flats, each a quarter-mile
+    # carry. Briones' three carry drive_in from a single unsourced answer and
+    # are excluded here deliberately -- this test is about what pages say.
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    sourced = {"Star Mine Group Camp", "Dairy Glen Group Camp", "Arroyo Flats Group Camp"}
+    assert {c.access_mode for c in cgs if c.name in sourced} == {"hike_in"}
+    assert len([c for c in cgs if c.name in sourced]) == 3
+
+
+def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
+    # 17 on the booking system, 25 on the park page and in the tier table. A
+    # party of twenty is booked by one and refused by the other, and the site
+    # is booked by phone, so neither number is enforced by a checkout.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Arroyo Flats Group Camp"]
+    assert "minimum 17" in cg.notes
+    assert "25 people or more" in cg.notes
+    assert "arroyo-flats-minimum" in cg.notes, "points at the open thread"
+
+
+def test_garins_published_gate_bands_leave_two_days_of_the_year_uncovered():
+    # Six bands running Nov 1 to Oct 29. October 30 and 31 fall in none of
+    # them, at a park whose group camp says to check the gate before arriving.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Garin Regional Park"]
+    assert pa.gate_open == "8:00 AM", "opening is 8am in every band, so it is storable"
+    assert "OCTOBER 30 AND 31 FALL IN NO BAND" in pa.gate_hours_conditions
+    for band in ("Nov 1-Mar 5 8am-6pm", "May 22-Aug 27 8am-9pm", "Sep 25-Oct 29 8am-7pm"):
+        assert band in pa.gate_hours_conditions
+
+
+def test_the_group_alcohol_permit_is_priced_on_the_row_that_costs_it():
+    # $25, bought in advance by phone, and not the site fee. A group that turns
+    # up with beer and no permit is in breach although beer is allowed.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Arroyo Flats Group Camp"]
+    assert "$25.00" in cg.fee_notes
+    assert "NOT THAT FEE" in cg.fee_notes
+    # And the side charge must not be allowed to read as the nightly rate: the
+    # row still carries the project's own guard for a fee nobody has recorded.
+    assert "absent is not free" in cg.fee_notes

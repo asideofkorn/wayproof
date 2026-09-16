@@ -726,7 +726,8 @@ def test_conflicts_stay_separate_across_permit_groups():
         # closed on evidence the same day; a closed thread leaves this set.
         "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
                  "chabot-season", "chabot-overflow-parking",
-                 "stewartville-vehicles"},
+                 "stewartville-vehicles", "arroyo-flats-minimum",
+                 "ebrpd-generators"},
     }
 
 
@@ -768,6 +769,12 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # One booking page says max 1 vehicle in its structured detail and
         # 5 parking passes in its own notes.
         "stewartville-vehicles": "internal",
+        # The park page says Arroyo Flats takes groups of 25 or more; the
+        # booking system says minimum 17, twice. A party of twenty turns on it.
+        "arroyo-flats-minimum": "cross_source",
+        # Ordinance 38 allows a generator that disturbs nobody; the campground
+        # rules attached to every reservation say "No gas generators", flat.
+        "ebrpd-generators": "cross_source",
     }
 
 
