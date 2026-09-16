@@ -869,3 +869,26 @@ def test_the_escorted_vehicles_are_recorded_and_not_stored_as_drive_in():
     assert DRIVE_IN not in cg.access_modes
     assert "at least 2 WEEKS before trip" in cg.notes
     assert "2 pm-3:30 pm for staff escort" in cg.notes
+
+
+def test_every_campground_now_cites_a_source():
+    # Six had none: Del Valle Family Campground and the five camps sold through
+    # the Sunol facility. They were the oldest rows in the file, added before
+    # per-park reading began, and nothing flagged them -- campgrounds.csv has no
+    # guard requiring a citation where regulations.csv does. This is that guard.
+    missing = [c.name for c in load_campgrounds(CAMPGROUNDS) if not c.source_url]
+    assert missing == [], f"campgrounds citing nothing: {missing}"
+
+
+def test_the_sunol_facility_is_cited_by_every_camp_it_sells():
+    # One facility, three parks. The five camps whose sites it sells all point
+    # at it, which is the closest this schema gets to recording the
+    # relationship -- there is no facility table to join on.
+    cgs = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in ("Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp",
+                 "Sunol Backpack Camp"):
+        assert "/explore/sunol/EB/110028/" in cgs[name].source_url, name
+    # And Eagle Springs, the sixth, cites the Mission Peak map it came from --
+    # a different source for the same facility's sites, left as it is because
+    # that is where its facts were read.
+    assert cgs["Eagle Springs"].source_url.endswith("mission-peak-map.pdf")
