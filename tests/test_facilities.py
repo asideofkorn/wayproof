@@ -236,6 +236,14 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 
 # --- campground access mode (drive-in vs hike-in) ----------------------------
 
+# Campgrounds whose source says nothing about how you reach them. Blank is the
+# honest value: every other EBRPD group camp here is drive-in, and that is not
+# evidence about these three. Named individually so a NEW blank still fails.
+ACCESS_MODE_UNRECORDED = {
+    "Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp", "Homestead Valley Group Camp",
+}
+
+
 def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():
     # Stated as a rule rather than a list of names, so it keeps holding as the
     # District's parks land. Getting it backwards means booking a site up to
@@ -243,6 +251,9 @@ def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to()
     expected = {"backpack": HIKE_IN, "family": DRIVE_IN, "group": DRIVE_IN}
     for c in load_campgrounds(CAMPGROUNDS):
         assert c.campsite_type in expected, f"{c.name}: unclassified campsite_type"
+        if c.name in ACCESS_MODE_UNRECORDED:
+            assert c.access_mode == "", f"{c.name} is listed as unrecorded but has a mode"
+            continue
         assert c.access_mode == expected[c.campsite_type], (
             f"{c.name} is {c.campsite_type} but tagged {c.access_mode!r}")
 
@@ -285,7 +296,14 @@ def test_anthony_chabot_was_promoted_from_guesswork_to_a_read_source():
 def test_every_committed_campground_states_its_access_mode():
     # Not a style rule: a blank here reads as "nobody checked", and shipping a
     # dataset that is silently all-unknown would make the column decorative.
-    assert unknown_access(load_campgrounds(CAMPGROUNDS)) == []
+    # The exceptions are named, so an unnoticed blank still fails -- and each
+    # one must say in its notes that the mode is unrecorded, rather than
+    # leaving a reader to infer it from the column being empty.
+    blank = {c.name for c in unknown_access(load_campgrounds(CAMPGROUNDS))}
+    assert blank == ACCESS_MODE_UNRECORDED
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in blank:
+        assert "ACCESS MODE IS NOT RECORDED" in by_name[name].notes, name
 
 
 def test_blank_access_mode_reads_as_unrecorded_not_as_a_mode():

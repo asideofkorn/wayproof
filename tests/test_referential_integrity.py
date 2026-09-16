@@ -75,13 +75,11 @@ UNKEYED_PARKS = {
 }
 
 # The mirror case: a park whose ACCESS is known while nothing in this dataset
-# sits in it yet. Briones publishes gate hours, a cash-only fee and five
-# staging areas, and has three group campsites that no page read so far names,
-# so there is no campground row to point back at it. Dropping the access row
-# until a campsite is named would mean re-reading the park later; inventing a
-# campground to satisfy the join would be worse. Named one by one, so a
-# misspelled park still fails.
-PARKS_WITH_NO_SITE_YET = {"Briones Regional Park"}
+# sits in it yet. Empty again -- Briones was here for one commit, until its map
+# brochure named the three group camps the park page had only counted. Kept
+# because the shape recurs: access is published per park, campgrounds per
+# facility, and the two arrive on different pages.
+PARKS_WITH_NO_SITE_YET: set = set()
 
 
 #: ``(label, child values, parent values)`` -- every declared join in data/.
