@@ -597,3 +597,48 @@ def test_a_blank_potable_column_does_not_load_as_false(tmp_path):
     path = tmp_path / "water_sources.csv"
     path.write_text("name,type,potable,location\nSpring,spring,,Somewhere\n")
     assert load_water_sources(path)[0].potable is None
+
+
+def test_mission_peaks_hours_are_one_entrances_and_the_row_says_which():
+    # Two entrances, two published schedules, one gate_open/gate_close pair.
+    # Stanford Avenue's are stored because it is the only entrance where a
+    # camper may park overnight -- a choice, written down rather than inferred.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(PARK_ACCESS)["Mission Peak Regional Preserve"]
+    assert pa.gate_open == "6:30 AM", "Stanford Avenue's, not Ohlone College's 6am"
+    assert "STANFORD AVENUE HOURS" in pa.gate_hours_conditions
+    assert "6am-10pm" in pa.gate_hours_conditions, "the other entrance is still shown"
+    assert "PER-ENTRANCE FAILURE" in pa.gate_hours_conditions
+
+
+def test_the_only_fee_at_mission_peak_is_charged_by_a_college():
+    # EBRPD charges nothing at either entrance. An agent that dropped the
+    # park_entrance component because the land manager is free would
+    # under-price the trip by $4 and send a camper to the wrong lot.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(PARK_ACCESS)["Mission Peak Regional Preserve"]
+    assert "$4" in pa.entrance_fee and "Ohlone College" in pa.entrance_fee
+    assert "OVERNIGHT PARKING IS NOT ALLOWED AT OHLONE COLLEGE" in pa.fee_conditions
+
+
+def test_eagle_spring_keeps_both_of_ebrpds_spellings_for_itself():
+    # The park page and map say "Eagle Spring Backpack Camp"; the District's
+    # own water update says "Eagle Springs". The plural stays as the key
+    # because the water source and its append-only ledger are built on it.
+    from wayproof.water import load_water_source_log, load_water_sources
+    cg = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}["Eagle Springs"]
+    assert "EAGLE SPRING BACKPACK CAMP" in cg.notes
+    assert "append-only" in cg.notes
+    assert {w.location for w in load_water_sources(WATER_SOURCES)
+            if w.name == "Eagle Springs"} == {"Eagle Springs"}
+    assert any(e.water_source_name == "Eagle Springs"
+               for e in load_water_source_log(WATER_SOURCE_LOG))
+
+
+def test_eagle_springs_water_is_treatable_not_merely_undrinkable():
+    # "Water needs to be treated or boiled" is a stronger and more useful claim
+    # than the non-potable flag: the water is there and usable with a stove.
+    from wayproof.water import load_water_sources
+    w = {x.name: x for x in load_water_sources(WATER_SOURCES)}["Eagle Springs"]
+    assert w.potable is False
+    assert "treated or boiled" in w.notes

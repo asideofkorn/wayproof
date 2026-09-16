@@ -225,9 +225,14 @@ def test_resolve_plan_mission_peak_facilities_dont_leak_del_valle_campgrounds():
 
     campground_names = {c.name for c in result.facilities.campgrounds}
     assert campground_names == {"Eagle Springs"}
-    # Mission Peak Regional Preserve has no park_access.csv row -- must not
-    # silently show Del Valle's fee/hours as if they applied here too.
-    assert result.facilities.park_access is None
+    # Mission Peak had no park_access row when this test was written, and the
+    # assertion was that Del Valle's fee and hours must not leak in to fill the
+    # hole. It has its own row now, so the leak test becomes an identity test:
+    # the row shown is this park's, and the fee it names is a college's.
+    pa = result.facilities.park_access
+    assert pa is not None and pa.park == "Mission Peak Regional Preserve"
+    assert "Ohlone College" in pa.entrance_fee
+    assert "$10" not in pa.entrance_fee, "Del Valle's fee must still not appear"
 
 
 def test_resolve_plan_sierra_peak_has_no_facilities():

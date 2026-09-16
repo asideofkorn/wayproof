@@ -195,7 +195,14 @@ def test_an_agent_can_answer_is_this_free_without_parsing_prose():
     payload = json.loads(json.dumps(_plan("Mission Peak").to_dict()))
     cost = payload["cost"]
     assert cost["free"] is False and cost["charges"] is True
-    assert {c["kind"] for c in cost["components"]} == {"permit", "campground"}
+    # park_entrance joined the set when Mission Peak got a park_access row, and
+    # the fee it carries is a community college's $4 rather than the District's
+    # -- EBRPD charges nothing at either entrance. An agent that dropped the
+    # component because the land manager is free would under-price the trip.
+    assert {c["kind"] for c in cost["components"]} == {
+        "permit", "campground", "park_entrance"}
+    entrance = next(c for c in cost["components"] if c["kind"] == "park_entrance")
+    assert "$4" in entrance["detail"]
 
 
 def test_an_unpriced_component_is_not_free_on_the_machine_surface():
