@@ -383,3 +383,42 @@ def test_the_briones_season_no_longer_leans_on_the_misread_field():
         assert "fourth surface" not in notes, name
         assert "WAS MISREAD" in notes, name
         assert "three independent surfaces" in notes, name
+
+
+def test_a_constructed_campground_name_says_that_it_is_constructed():
+    # No source names Morgan Territory's camp -- the park page says "a backpack
+    # campsite" and the map says "BACKPACK CAMP". A constructed key renders
+    # identically to a sourced one, which is how a guessed access_mode survived
+    # four days, so the row has to say which it is.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert cg.notes.startswith("THIS CAMP HAS NO PUBLISHED NAME")
+    assert "a key rather than a claim" in cg.notes
+    # Nothing is known about it, and the blanks are blanks rather than defaults.
+    assert cg.has_restroom is False and cg.restroom_type == ""
+    assert "has_restroom is left BLANK rather than False" in cg.notes
+    assert cg.fee_notes == "" and cg.latitude is None
+
+
+def test_morgan_territorys_gate_bands_cover_the_year_exactly():
+    # Third clean set, with Reinhardt Redwood -- against Garin and Dry Creek
+    # Pioneer leaving two days in no band and Las Trampas doubling one.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Morgan Territory Regional Preserve"]
+    assert pa.gate_open == "8:00 AM"
+    assert "no hole and no overlap" in pa.gate_hours_conditions
+    for band in ("January 8am-5pm", "Apr 18-Sept 5 8am-8pm", "Nov 6-Dec 31 8am-5pm"):
+        assert band in pa.gate_hours_conditions, band
+
+
+def test_a_stated_no_fee_is_not_filed_like_an_absent_fee_section():
+    # Morgan Territory says "Parking: No fee". Las Trampas' page has no Fees
+    # section at all. Reading those the same way is how absent becomes free.
+    from wayproof.park_access import load_park_access
+    by_park = load_park_access(D("park_access.csv"))
+    stated = by_park["Morgan Territory Regional Preserve"]
+    silent = by_park["Las Trampas Wilderness Regional Preserve"]
+    assert stated.entrance_fee == "No fee"
+    assert silent.entrance_fee == ""
+    assert "NO PARKING FEE IS PUBLISHED" in silent.fee_conditions
+    assert "Absent is not free" in silent.fee_conditions

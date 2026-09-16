@@ -728,7 +728,7 @@ def test_conflicts_stay_separate_across_permit_groups():
                  "chabot-season", "chabot-overflow-parking",
                  "stewartville-vehicles", "arroyo-flats-minimum",
                  "ebrpd-generators", "del-valle-gate-close",
-                 "las-trampas-bbq"},
+                 "las-trampas-bbq", "round-valley-camp-class"},
     }
 
 
@@ -783,6 +783,10 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         # campfires/BBQ's" -- three parts of the same page disagreeing, so
         # there is no publisher to rank and no recency to apply.
         "las-trampas-bbq": "internal",
+        # The alerts page and the booking page call it a backpack camp; a
+        # neighbouring park's map calls it a group camp. The class keys into
+        # booking_channels, so 48 hours or 72 hours turns on it.
+        "round-valley-camp-class": "cross_source",
     }
 
 
