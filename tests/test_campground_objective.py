@@ -238,19 +238,16 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_every_group_camp_whose_access_is_known_is_hike_in():
-    # Thirteen of fourteen, and the fourteenth is blank rather than guessed.
-    # The earlier version of this test hand-picked three names, which is how
-    # Anthony Chabot's seven stayed wrong while saying "no driving in" in their
-    # own notes -- so the class is asserted, and the blank is asserted to be a
-    # blank rather than quietly excluded.
+def test_every_group_camp_in_this_dataset_is_hike_in():
+    # Sixteen of sixteen. An earlier version hand-picked three names, which is
+    # how Anthony Chabot's seven stayed wrong while saying "no driving in" in
+    # their own notes; a later one carved out Girls' Camp while its access was
+    # unknown. Its booking page then said Hike-In, so the carve-out is gone and
+    # the class is asserted whole again.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
-    assert len(group) == 14
-    assert {c.access_mode for c in group} == {"hike_in", ""}
-    blank = [c for c in group if not c.access_mode]
-    assert [c.name for c in blank] == ["Girls' Camp"]
-    assert "ACCESS MODE IS NOT RECORDED" in blank[0].notes
+    assert len(group) == 16
+    assert {c.access_mode for c in group} == {"hike_in"}
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
@@ -348,3 +345,38 @@ def test_the_garden_closure_stays_where_a_reader_will_meet_it():
     assert garden.scope_value == "Garin Regional Park"
     assert "ACTUALLY IN THE ADJOINING PARK" in garden.detail
     assert "can never reach a plan" in garden.detail
+
+
+def test_reinhardts_three_camps_answer_the_several_the_map_could_not():
+    # The park page said "several", the map named one, and this project
+    # recorded one rather than guessing from eight labels. Two of those eight
+    # were camps -- guessing would have been wrong five times out of eight.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    reinhardt = [c for c in cgs.values()
+                 if c.park == "Dr. Aurelia Reinhardt Redwood Regional Park"]
+    assert sorted(c.name for c in reinhardt) == ["Fern Dell", "Girls' Camp", "Trail's End"]
+    assert all(c.access_mode == "hike_in" for c in reinhardt)
+    # Named places that turned out NOT to be camps stayed out of the dataset.
+    for label in ("Big Bend Meadow", "Orchard", "Old Church", "Anna Costa", "Quail", "Owl"):
+        assert label not in cgs
+
+
+def test_trails_end_has_the_tightest_party_band_in_the_dataset():
+    # 17 to 25. Eight people wide, at the closest camping to Oakland here: a
+    # party of 16 cannot book it and a party of 26 cannot fit.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Trail's End"]
+    assert "MINIMUM 17, MAXIMUM 25" in cg.notes
+    assert "TIGHTEST PARTY-SIZE BAND" in cg.notes
+
+
+def test_the_briones_season_no_longer_leans_on_the_misread_field():
+    # "Open through 31 October" was counted as a surface confirming the 1 Nov
+    # closure. Reinhardt's copy of that field says 06 Jan 2027 on a page that
+    # also states a 1 Nov closure, so it is a booking horizon, not a season.
+    # The closure stands on three other surfaces; the count was what was wrong.
+    for name in ("Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp",
+                 "Homestead Valley Group Camp"):
+        notes = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}[name].notes
+        assert "fourth surface" not in notes, name
+        assert "WAS MISREAD" in notes, name
+        assert "three independent surfaces" in notes, name

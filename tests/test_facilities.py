@@ -250,12 +250,10 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 # Briones' three sat here, then left on the maintainer's word, then came back
 # corrected to hike-in off their own booking pages. That round trip is the
 # argument for this set existing: the value that was wrong is the one that was
-# never blank. Girls' Camp arrives blank on purpose -- four access corrections
-# in four days, three of them because something was written that no page
-# supported, so nothing is written for it here.
-ACCESS_MODE_UNRECORDED = {
-    "Girls' Camp",
-}
+# never blank. Girls' Camp sat here for one commit and left the honest way --
+# its own booking page said Hike-In, so a blank became a sourced value without
+# ever having been a guess. Empty again, and kept for the next one.
+ACCESS_MODE_UNRECORDED: set = set()
 
 
 def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():

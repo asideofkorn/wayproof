@@ -282,6 +282,12 @@ def test_rules_resting_on_a_non_owning_source_are_flagged(reg):
         # permissive agency rule stand unopposed. Carrying them flagged is the
         # least wrong of the three, and this is the flag.
         "Black Diamond Mines Regional Preserve (sourced to ReserveAmerica)",
+        # Reinhardt Redwood's group stay limit -- 7 nights a month, 30 a year --
+        # is stated on the booking platform and nowhere on ebparks.org, where
+        # Garin's copy of the same block says only that stay limits "vary by
+        # site type". The number exists in exactly one place and that place is
+        # not the land manager's, so it is carried flagged.
+        "Dr. Aurelia Reinhardt Redwood Regional Park (sourced to ReserveAmerica)",
         "desolation (sourced to Recreation.gov)",
         # The District's backpack-site terms -- stay limit, the Ohlone
         # overnight dog ban, no fires and no alcohol -- appear on NO

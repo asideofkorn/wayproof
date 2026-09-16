@@ -151,13 +151,10 @@ def test_the_drive_in_question_this_was_built_for():
         "Anthony Chabot Campground",
         "Dumbarton Quarry Campground on the Bay",
     ]
-    # One campground IS excluded for being unchecked, and the rendering has to
-    # say so -- a list of three that hides a fourth nobody looked at is the
-    # failure this whole command is shaped around.
-    unchecked = unknown_access(cgs)
-    assert [c.name for c in unchecked] == ["Girls' Camp"]
-    text = "\n".join(format_campground_list(got, unrecorded_access=unchecked))
-    assert "ACCESS MODE NOT RECORDED" in text and "Girls' Camp" in text
+    # Nothing is excluded for being unchecked, because nothing is unchecked --
+    # a state this dataset has now left and re-entered twice, so the assertion
+    # is on the rendering path either way.
+    assert unknown_access(cgs) == []
 
 
 def test_the_question_this_was_built_for_now_has_a_ranked_answer():
