@@ -440,3 +440,42 @@ def test_the_only_potable_sources_are_the_two_drinking_fountains():
     potable = [w for w in sources if w.potable]
     assert [w.name for w in potable] == ["Dairy Glen Group Camp", "Arroyo Flats Group Camp"]
     assert all(w.type == "drinking fountain" for w in potable)
+
+
+def test_no_drive_in_row_contradicts_itself_in_its_own_notes():
+    # Seven Anthony Chabot group camps carried access_mode drive_in while their
+    # own notes said "Vehicles park in the lot nearest the site, no driving in".
+    # drive_in here means "you can park at or beside the site", which is the
+    # thing that sentence denies. Star Mine and Dairy Glen each needed a new
+    # page to catch; this one only needed reading the row against its column.
+    #
+    # One exemption, and it is the distinction the two files exist for:
+    # Anthony Chabot is a drive-up campground whose Loop B is ten "Hike-In
+    # Sites (NO driving to site)". There the denial is about SOME of its sites
+    # and campsites.csv carries it per site, so the campground-level value is
+    # still right. A campground with no such rows has no such excuse.
+    denials = ("no driving in", "no driving to site", "hike-in only",
+               "no vehicle access")
+    sites = load_campsites(CAMPSITES)
+    has_hike_in_sites = {s.campground for s in sites if s.site_type == TENT_HIKE_IN}
+    for c in load_campgrounds(CAMPGROUNDS):
+        if c.access_mode != DRIVE_IN or c.name in has_hike_in_sites:
+            continue
+        lowered = c.notes.lower()
+        for phrase in denials:
+            assert phrase not in lowered, f"{c.name} says drive_in and {phrase!r}"
+    # The exemption must not be a blanket one: Chabot earns it by having the
+    # per-site rows, so those rows have to exist.
+    assert len([s for s in sites if s.site_type == TENT_HIKE_IN]) == 10
+
+
+def test_the_only_drive_in_campgrounds_left_are_the_three_family_ones():
+    # Every group and backpack camp in this dataset is reached on foot. That is
+    # the answer to "which campgrounds can I drive to", and it is short.
+    drivable = drive_in(load_campgrounds(CAMPGROUNDS))
+    assert [c.name for c in drivable] == [
+        "Del Valle Family Campground",
+        "Anthony Chabot Campground",
+        "Dumbarton Quarry Campground on the Bay",
+    ]
+    assert {c.campsite_type for c in drivable} == {"family"}
