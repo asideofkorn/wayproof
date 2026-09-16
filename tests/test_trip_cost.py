@@ -125,9 +125,15 @@ def test_the_permit_fee_line_no_longer_claims_to_be_the_trip_cost():
 
 def test_an_unpriced_component_says_so_rather_than_disappearing():
     # Del Valle Family Campground has no fee_notes and took $43 of the $97.
+    # Five more joined it when the Ohlone permit map named Del Valle's group
+    # and horse camps -- every one of them unpriced, which is the point: a
+    # trip through this park now has six components nobody has costed, and
+    # each says so rather than vanishing from the roll-up.
     result = _plan("Rose Peak")
     unpriced = [c for c in result.costs if c.status == UNKNOWN]
-    assert [c.label for c in unpriced] == ["Del Valle Family Campground"]
+    assert unpriced[0].label == "Del Valle Family Campground"
+    assert len(unpriced) == 6
+    assert {c.kind for c in unpriced} == {"campground"}
     text = format_plan_summary(result)
     assert "NO FEE ON FILE" in text
     assert "absent is not free" in text

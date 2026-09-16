@@ -238,19 +238,23 @@ def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
     assert "HIKE-IN" in text.upper()
 
 
-def test_the_rule_that_group_camps_are_walked_into_was_about_eight_parks():
-    # Sixteen group camps were hike-in, three of them corrected from a wrong
-    # drive_in, and that looked like a District fact. Las Trampas' Corral says
-    # Drive-In on its own booking page. So the generalisation was about the
-    # parks read first, not about EBRPD -- assert both sides so neither the
-    # majority nor the exception can quietly disappear.
+def test_group_camp_access_is_mostly_hike_in_with_one_exception_and_five_blanks():
+    # Sixteen were hike-in, three of them corrected from a wrong drive_in, and
+    # that looked like a District fact until Las Trampas' Corral said Drive-In.
+    # Del Valle's three then arrived off a map that names them and says nothing
+    # about how you reach them. Assert all three states, so neither the
+    # majority, the exception, nor the blanks can quietly disappear.
     cgs = load_campgrounds(D("campgrounds.csv"))
     group = [c for c in cgs if c.campsite_type == "group"]
-    assert len(group) == 17
-    drive_in_group = [c for c in group if c.access_mode == "drive_in"]
-    assert [c.name for c in drive_in_group] == ["Corral Group Camp"]
-    assert all(c.access_mode == "hike_in" for c in group if c not in drive_in_group)
-    assert "FIRST DRIVE-IN GROUP CAMP" in drive_in_group[0].notes
+    assert len(group) == 20
+    by_mode = {}
+    for c in group:
+        by_mode.setdefault(c.access_mode, []).append(c.name)
+    assert sorted(by_mode) == ["", "drive_in", "hike_in"]
+    assert by_mode["drive_in"] == ["Corral Group Camp"]
+    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Punta Vaca Group Camp",
+                                   "Wild Turkey Group Camp"]
+    assert "FIRST DRIVE-IN GROUP CAMP" in {c.name: c for c in group}["Corral Group Camp"].notes
 
 
 def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
@@ -441,3 +445,46 @@ def test_a_stated_no_fee_is_not_filed_like_an_absent_fee_section():
     assert silent.entrance_fee == ""
     assert "NO PARKING FEE IS PUBLISHED" in silent.fee_conditions
     assert "Absent is not free" in silent.fee_conditions
+
+
+def test_the_ohlone_permit_is_gone_and_two_ebrpd_maps_still_require_it():
+    # permit_group has always been "none" on this corridor, so nothing changed.
+    # A blank nobody filled and a sourced absence with a date look identical in
+    # a column and are not the same claim -- and EBRPD still links two maps
+    # telling a planner to buy a permit that is no longer sold.
+    from wayproof.data_loader import load_trailheads
+    ths = {t.name: t for t in load_trailheads(D("trailheads.csv"))}
+    for name in ("Del Valle (Lichen Bark)", "Stanford Ave Staging Area"):
+        th = ths[name]
+        assert th.permit_group == "none", name
+        assert "ABOLISHED ON 1 JANUARY 2026" in th.notes, name
+        assert "STALE-SOURCE TRAP IS LIVE" in th.notes, name
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Sunol Backpack Camp"]
+    assert "Backpacking reservations are still required" in cg.notes
+
+
+def test_del_valles_five_camps_answer_a_gap_this_project_logged_itself():
+    # ReserveAmerica said "Group campsite gate hours change seasonally" at a
+    # park where this project held no group campsite. The Ohlone permit map
+    # names five, with the type in the name -- which is why they are added
+    # where Reinhardt Redwood's symbol-coded labels were not.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    named = ["Wild Turkey Group Camp", "Punta Vaca Group Camp", "Cedar Group Camp",
+             "Lil Chaparral Horse Camp", "Caballo Loco Horse Camp"]
+    for name in named:
+        c = cgs[name]
+        assert c.park == "Del Valle Regional Park", name
+        assert c.access_mode == "", name
+        assert "ACCESS MODE IS NOT RECORDED" in c.notes, name
+    assert {cgs[n].campsite_type for n in named} == {"group", "equestrian"}
+
+
+def test_equestrian_resolves_no_class_specific_booking_channel_and_that_is_honest():
+    # EBRPD names equestrian as a class in its own cancellation text, so the
+    # word is the District's. No equestrian channel exists here, so a plan gets
+    # the District-wide contact and no method -- which is what nobody knowing
+    # how an equestrian site is booked should look like.
+    from wayproof.booking import channels_for, load_booking_channels
+    chans = channels_for(load_booking_channels(D("booking_channels.csv")),
+                         "equestrian", agency="ebrpd")
+    assert [c.applies_to for c in chans] == ["all"]

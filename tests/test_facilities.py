@@ -253,7 +253,17 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 # never blank. Girls' Camp sat here for one commit and left the honest way --
 # its own booking page said Hike-In, so a blank became a sourced value without
 # ever having been a guess. Empty again, and kept for the next one.
-ACCESS_MODE_UNRECORDED: set = set()
+ACCESS_MODE_UNRECORDED = {
+    # Del Valle's five, named on the Ohlone Wilderness permit map and nowhere
+    # else read here. The map gives their names and their type and says nothing
+    # about how you reach them. Del Valle's own ReserveAmerica campsites page
+    # would fill this and has never been read.
+    "Wild Turkey Group Camp",
+    "Punta Vaca Group Camp",
+    "Cedar Group Camp",
+    "Lil Chaparral Horse Camp",
+    "Caballo Loco Horse Camp",
+}
 
 
 def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():
@@ -264,9 +274,13 @@ def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to()
     # Mine is classified Hike-In with its parking a quarter mile off. So the
     # rule holds for backpack and family sites, and group sites are checked
     # only for carrying a mode at all.
+    # "equestrian" joined the vocabulary with Del Valle's two horse camps. It
+    # is EBRPD's own word, from the cancellation text attached to every
+    # reservation -- "backpacking, equestrian, or group camping" -- not a class
+    # invented here to hold a row that did not fit.
     expected = {"backpack": HIKE_IN, "family": DRIVE_IN}
     for c in load_campgrounds(CAMPGROUNDS):
-        assert c.campsite_type in ("backpack", "family", "group"), (
+        assert c.campsite_type in ("backpack", "family", "group", "equestrian"), (
             f"{c.name}: unclassified campsite_type")
         if c.name in ACCESS_MODE_UNRECORDED:
             assert c.access_mode == "", f"{c.name} is listed as unrecorded but has a mode"
