@@ -143,6 +143,30 @@ def test_a_group_camps_minimum_is_its_own_not_the_districts_floor():
             "is a reading and must not read as a stated per-site figure")
 
 
+def test_each_briones_camp_gives_its_own_minimum_not_a_shared_range():
+    # The park page published one 50-to-300 range across all three, which is no
+    # answer for any of them: a party of twenty can book Wee-Ta-Chi, cannot book
+    # Maud Whalen, and is eighty short of Homestead Valley.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for camp, minimum, maximum in (("Wee-Ta-Chi", "17", "50"),
+                                   ("Maud Whalen", "25", "75"),
+                                   ("Homestead Valley", "100", "300")):
+        notes = by_name[f"{camp} Group Camp"].notes
+        assert f"MINIMUM {minimum}, MAXIMUM {maximum}" in notes, camp
+        # Closed for over five months; booking a winter date is not possible.
+        assert "SEASONALLY CLOSED 1 NOVEMBER - 15 MAY" in notes, camp
+
+
+def test_the_flattened_tier_reading_is_marked_as_having_had_a_wrong_row():
+    # Maud Whalen is 25 at 75 capacity; the reconstruction said 17. No Anthony
+    # Chabot camp is 75, so nothing there rested on it -- but the rows that used
+    # the reading must say it was tested and partly failed, not just that it was
+    # a reading.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for camp in ("Bort Meadow Group Camp", "Puma Point Group Camp"):
+        assert "ONE ROW OF IT WAS WRONG" in by_name[camp].notes, camp
+
+
 def test_star_mine_states_who_may_book_it_not_only_how_many():
     # The only campground here restricted by the character of the party.
     cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
