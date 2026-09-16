@@ -239,9 +239,10 @@ def test_load_park_access_missing_file_returns_empty_dict(tmp_path):
 # Campgrounds whose source says nothing about how you reach them. Blank is the
 # honest value: every other EBRPD group camp here is drive-in, and that is not
 # evidence about these three. Named individually so a NEW blank still fails.
-ACCESS_MODE_UNRECORDED = {
-    "Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp", "Homestead Valley Group Camp",
-}
+# Empty again: Briones' three were here until the maintainer supplied the mode
+# directly. Kept because the state recurs -- EBRPD publishes capacity, fees and
+# minimums for a group camp without ever saying how you reach it.
+ACCESS_MODE_UNRECORDED: set = set()
 
 
 def test_backpack_sites_are_walked_to_and_family_and_group_sites_are_driven_to():
@@ -304,6 +305,19 @@ def test_every_committed_campground_states_its_access_mode():
     by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
     for name in blank:
         assert "ACCESS MODE IS NOT RECORDED" in by_name[name].notes, name
+
+
+def test_the_one_unsourced_access_mode_says_that_it_is_unsourced():
+    # Briones' three carry a value no page states. A reader cannot tell a
+    # sourced field from an unsourced one by looking at the column, so the row
+    # has to say which it is.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    for name in ("Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp",
+                 "Homestead Valley Group Camp"):
+        cg = by_name[name]
+        assert cg.access_mode == DRIVE_IN
+        assert "MAINTAINER'S WORD RATHER THAN A PUBLISHED PAGE" in cg.notes, name
+        assert "R0002" in cg.notes, name
 
 
 def test_blank_access_mode_reads_as_unrecorded_not_as_a_mode():
