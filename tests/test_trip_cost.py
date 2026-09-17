@@ -125,9 +125,15 @@ def test_the_permit_fee_line_no_longer_claims_to_be_the_trip_cost():
 
 def test_an_unpriced_component_says_so_rather_than_disappearing():
     # Del Valle Family Campground has no fee_notes and took $43 of the $97.
+    # Five more joined it when the Ohlone permit map named Del Valle's group
+    # and horse camps -- every one of them unpriced, which is the point: a
+    # trip through this park now has six components nobody has costed, and
+    # each says so rather than vanishing from the roll-up.
     result = _plan("Rose Peak")
     unpriced = [c for c in result.costs if c.status == UNKNOWN]
-    assert [c.label for c in unpriced] == ["Del Valle Family Campground"]
+    assert unpriced[0].label == "Del Valle Family Campground"
+    assert len(unpriced) == 8
+    assert {c.kind for c in unpriced} == {"campground"}
     text = format_plan_summary(result)
     assert "NO FEE ON FILE" in text
     assert "absent is not free" in text
@@ -195,7 +201,14 @@ def test_an_agent_can_answer_is_this_free_without_parsing_prose():
     payload = json.loads(json.dumps(_plan("Mission Peak").to_dict()))
     cost = payload["cost"]
     assert cost["free"] is False and cost["charges"] is True
-    assert {c["kind"] for c in cost["components"]} == {"permit", "campground"}
+    # park_entrance joined the set when Mission Peak got a park_access row, and
+    # the fee it carries is a community college's $4 rather than the District's
+    # -- EBRPD charges nothing at either entrance. An agent that dropped the
+    # component because the land manager is free would under-price the trip.
+    assert {c["kind"] for c in cost["components"]} == {
+        "permit", "campground", "park_entrance"}
+    entrance = next(c for c in cost["components"] if c["kind"] == "park_entrance")
+    assert "$4" in entrance["detail"]
 
 
 def test_an_unpriced_component_is_not_free_on_the_machine_surface():

@@ -274,8 +274,35 @@ def test_rules_resting_on_a_non_owning_source_are_flagged(reg):
     keys = [q.target_key for q in open_questions(regulations=regs, sources=sources,
                                                  deferrals=deferrals, today=TODAY)
             if "sourced to" in q.target_key]
-    assert sorted(keys) == ["desolation (sourced to Recreation.gov)",
-                            "sierra_nf (sourced to Recreation.gov)"], (
+    assert sorted(keys) == [
+        # Black Diamond's total fire and alcohol bans appear on NO EBRPD surface
+        # -- not the park page, not Ordinance 38 -- so the booking platform is
+        # the only place they are stated. Citing the District's own page instead
+        # would be a false citation, and dropping the rules would let the
+        # permissive agency rule stand unopposed. Carrying them flagged is the
+        # least wrong of the three, and this is the flag.
+        "Black Diamond Mines Regional Preserve (sourced to ReserveAmerica)",
+        # Reinhardt Redwood's group stay limit -- 7 nights a month, 30 a year --
+        # is stated on the booking platform and nowhere on ebparks.org, where
+        # Garin's copy of the same block says only that stay limits "vary by
+        # site type". The number exists in exactly one place and that place is
+        # not the land manager's, so it is carried flagged.
+        "Dr. Aurelia Reinhardt Redwood Regional Park (sourced to ReserveAmerica)",
+        # Las Trampas' park page says only "NO campfires are permitted". The
+        # barbecue half of the ban -- and the contradiction with the two XL
+        # BBQs the same listing describes -- exists only on the platform.
+        "Las Trampas Wilderness Regional Preserve (sourced to ReserveAmerica)",
+        "desolation (sourced to Recreation.gov)",
+        # The District's backpack-site terms -- stay limit, the Ohlone
+        # overnight dog ban, no fires and no alcohol -- appear on NO
+        # ebparks.org page read here. EBRPD publishes that whole class of rule
+        # only through its booking platform, so every one of them arrives from
+        # a publisher that does not own what you may do on the ground. That is
+        # a fact about how the District publishes, not a shortcut taken here,
+        # and it is flagged rather than hidden.
+        "ebrpd (sourced to ReserveAmerica)",
+        "sierra_nf (sourced to Recreation.gov)",
+    ], (
         "these rules were transcribed from the booking platform, which restates the land "
         "manager's regulations rather than making them"
     )
@@ -321,3 +348,67 @@ def test_every_cited_url_in_the_real_data_is_registered(reg):
     unknown = sorted({r.source_url for r in regs
                       if r.source_url and source_for(r.source_url, sources) is None})
     assert unknown == [], f"cited but unregistered: {unknown}"
+
+
+# -- booking-facility identifiers -------------------------------------------
+
+def test_a_facility_id_never_appears_under_two_different_slugs():
+    """The check that would have caught two fabricated citations.
+
+    Park-to-facility is NOT one-to-one and must not be asserted to be:
+    EB/110028 "sunol" sells sites in Mission Peak, Ohlone and Sunol, and Coyote
+    Hills has two facilities because Dumbarton Quarry has its own. A shared
+    facility is legitimate.
+
+    What cannot happen is one ID appearing under two SLUGS -- Sunol's three
+    parks all sit behind the single slug "sunol". EB/110455 appeared under both
+    "las-trampas-regional-wilderness" (real, pasted) and "del-valle-regional-
+    park" (invented here by pattern), which is how the fabrication surfaced.
+
+    ``data/booking_facilities.csv`` is in scope through its ``url`` column,
+    which is the whole point of that table having one: thirteen slug/ID pairs
+    in one place, checked by the guard that the fabrication escaped.
+    """
+    import csv
+    import glob
+    import re
+    from collections import defaultdict
+
+    # URL-bearing columns only. Prose that QUOTES a bad URL -- as the two
+    # corrected entries now do, so the fabrication stays visible -- is not a
+    # citation, and scanning every field made this test fail on its own
+    # evidence. Same rule as the uncertainty markers: a string quoted as
+    # something that went wrong is not the project asserting it.
+    url_columns = {"source_url", "apply_url", "evidence_url", "source", "url"}
+    slugs_by_id = defaultdict(set)
+    for path in glob.glob(os.path.join(ROOT, "data", "*.csv")):
+        with open(path) as fh:
+            for row in csv.DictReader(fh):
+                for column, value in row.items():
+                    if column not in url_columns or not value:
+                        continue
+                    for m in re.finditer(
+                            r"reserveamerica\.com/explore/([a-z0-9-]+)/EB/(\d+)", str(value)):
+                        slugs_by_id[m.group(2)].add(m.group(1))
+
+    collisions = {eb: sorted(s) for eb, s in slugs_by_id.items() if len(s) > 1}
+    assert collisions == {}, (
+        f"one facility ID under several slugs: {collisions}. A shared facility "
+        "is fine; a shared ID under two names means one of them was invented."
+    )
+    assert slugs_by_id, "the check must actually be finding facility URLs"
+
+
+def test_the_two_fabricated_citations_are_blank_and_say_so():
+    # A blank field says "nobody checked". A plausible URL says "somebody
+    # checked, here is where" and is a lie that survives inspection until
+    # someone clicks it. The fabricated strings stay recorded in the entries so
+    # the correction is visible rather than tidy.
+    from wayproof.permits import load_source_log
+    log = {e.entry_id: e for e in load_source_log(
+        os.path.join(ROOT, "data", "permit_source_log.csv"))}
+    for entry_id in ("none-2026-09-16-30", "none-2026-09-16-31"):
+        entry = log[entry_id]
+        assert entry.source_url == "", entry_id
+        assert "CITATION IN THIS ENTRY WAS FABRICATED" in entry.summary, entry_id
+    assert "FABRICATED BY THIS PROJECT" in log["none-2026-09-16-54"].summary

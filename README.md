@@ -96,8 +96,12 @@ worth making.** Worked examples with verified answers live in
 
 - **Can I have a fire?** Wrong if it reports the statewide permit requirement
   without the local ban sitting on top of it.
-- **Can I bring a dog?** Wrong if it says "under control" where the forest
-  requires a leash under six feet.
+- **Can I bring a pet?** Wrong if it says "under control" where the forest
+  requires a leash under six feet. Also wrong if it answers for a dog when the
+  animal is not one: every pets rule in this dataset is written about dogs,
+  because that is how the agencies write them, and a leash rule is not an
+  answer to whether a cat, a rabbit or a bird may come. Say which animal the
+  rule governs, or say there is no rule on file.
 - **Where can and cannot I camp?** Setbacks, designated sites, restoration
   closures.
 - **Does my permit still cover me in the next wilderness?** Reciprocity, and
@@ -121,6 +125,36 @@ worth making.** Worked examples with verified answers live in
 
 A question this project cannot answer should say so plainly. **Declining is a
 usable answer; being wrong is not.**
+
+## An Objective Is Not Only A Summit
+
+`plan "Anthony Chabot Campground" --date 2026-10-17` answers. It used not to:
+every objective had to resolve to a peak, so the flagship command replied
+"not found in peak data" for a place this project held fees, gate hours,
+booking channels and eleven rules for. `Peak` was always documented as one
+*type* of place-based objective rather than the ontology of the project.
+A campground is the second.
+
+A campground objective resolves its park, agency and jurisdiction directly,
+and **never a trailhead**. Car camping has no approach, so inventing one
+would manufacture an entry point, a route shape and a wilderness permit that
+no source supports. The summary says so in words and the JSON says so in a
+field — `trailhead_modelled: false` with a reason — because an agent reading
+a missing key is free to fill it with geometry of its own.
+
+Two columns exist on `campgrounds.csv` only because of this. `agency_id` is
+the key agency-scoped rules match on, since a campground reached without a
+permit has no permit row to borrow an agency from. `jurisdiction` is there
+for a sharper reason: state law reaches a trip through the *permit's*
+jurisdiction, so a campsite booked without a permit would inherit no state
+law at all, and every car-camping plan would silently drop the California
+Campfire Permit.
+
+Where the trailhead flow lists every campground in the park — the question
+there being "where can I sleep near this peak" — a campground objective
+answers about the campground the caller named. Listing its seven neighbours
+would answer a question nobody asked.
+
 
 ## `plan`: Objective + Date -> Logistics
 
@@ -415,12 +449,14 @@ The repository currently includes:
 
 - `data/peaks.csv` - collection-agnostic summit identity: name, coordinates, elevation, region, nearest-trailhead access signal
 - `data/collections/sps.csv` - the SPS collection layer: list membership, section, class, official mileage/gain, benchmark rating
-- `data/trailheads.csv` - curated trailheads and access metadata (Sierra Nevada plus, as of Rose Peak/Mission Peak, the East Bay's Diablo Range)
+- `data/trailheads.csv` - curated trailheads and access metadata, including the `agency_id` key that scopes agency-wide regulations to permit-free land (Sierra Nevada plus, as of Rose Peak/Mission Peak, the East Bay's Diablo Range)
 - `data/permits.csv` - structured wilderness-entry permit rules
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - backpack campgrounds and their individually-bookable sites
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
+- `data/booking_facilities.csv` - the booking system's own pages, keyed by facility id. A level above a campground and *not* a park: one facility sells sites in three different parks, and two parks are each sold through two facilities, so `facility_id` is stored on a campground rather than inferred from where it is
+- `data/booking_channels.csv` - how to book a campsite, scoped by agency and by class of site — the channel, what is *not* a channel, lead time, release-day mechanics and booking horizon
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
 - `data/park_access.csv` - park-level vehicle entrance fees, gate hours, and fee exemptions (distinct from a wilderness permit or a campsite reservation)
 - `data/passes.csv` - Sierra pass data used for optional coarse cross-crest
@@ -471,13 +507,67 @@ exemptions.
 - **`data/campgrounds.csv`** / **`data/campsites.csv`** -- a campground is a
   physical cluster with shared facilities (one restroom, one water source,
   one reservation contact); a campsite is an individually-bookable unit
-  within one. Most campgrounds in this dataset are effectively a single
-  site, but some (Sunol Backpack Camp) contain several named sites that
-  share the campground's facilities yet have a genuinely different
-  proximity to them -- Hawks Nest is documented as closer to both water and
-  the restroom than Sunol Backpack Camp's other six sites. A campground
-  with no differentiated sub-sites has no rows in `campsites.csv` at all,
-  rather than a placeholder row repeating the campground's own name.
+  within one. A campsite row carries its `loop`, its
+  `site_type` and whether it is `online_bookable`. The type vocabulary is
+  deliberately not the booking system's: ReserveAmerica calls Anthony
+  Chabot's ten walk-in sites "Tent Only" and its forty-eight drive-up tent
+  sites "Tent/No-Hookup", so a reader filtering on the more tent-sounding
+  label lands on the ten that are a thousand feet from the car. They are
+  stored as `tent_hike_in` and `tent_drive_up`. `online_bookable` is false
+  for six of Chabot's seventy-five, which exist but never appear in the
+  listing — a table built only from what the listing shows would rebuild the
+  listing's own blind spot. Some campgrounds (Sunol Backpack Camp) contain
+  several named sites that share the campground's facilities yet have a
+  genuinely different proximity to them -- Hawks Nest is documented as closer
+  to both water and the restroom than Sunol Backpack Camp's other six sites.
+  Others are themselves the unit you reserve and have no rows in
+  `campsites.csv` at all, rather than a placeholder row repeating the
+  campground's own name.
+  Which of the two a row is, is `unit_level`, and it is stored because it is
+  not derivable: Del Valle Family Campground holds 155 sites and this project
+  records none of them, so counting `campsites.csv` rows would call it a single
+  unit and tell a camper the reservation is the whole campground. Nor does the
+  table a thing lives in answer it -- "Cathedral" is a row of `campsites.csv`
+  and "Wild Turkey Group Camp" is a row of `campgrounds.csv`, and both are
+  exactly one bookable unit with one booking page. A `camp` holding no recorded
+  sites reports as an open question rather than reading as a campground with
+  nothing in it.
+  `facility_id` names the booking page, and is a column for the same reason:
+  a park cannot supply it. `EB/110028` sells nineteen backpack sites across
+  three parks under one listing, while Del Valle Regional Park is sold through
+  two facilities and so is Coyote Hills. Send a reader to "the Del Valle page"
+  for Boyd Camp and they land on the facility that does not sell it.
+  `loop` is the operator's own label, free text, no vocabulary and no rules --
+  the same column `campsites.csv` has always carried, added here because the
+  rows missing one were in this table. It is *nearly* inert: `Seasonal` in a
+  loop name is never read as a closure, because Round Valley sits in a loop
+  called `Backpack Seasonal` and is open year round.
+  `access_mode` is the separate question of whether you can *drive* there.
+  It is a column because it is the first thing a car camper filters on, and
+  because most of this dataset's campgrounds are hike-in — listing them
+  beside a drive-in campground with no
+  distinction invites someone to book a site 10.72 trail miles from their car.
+  It was previously recoverable only by reading `notes` ("~mile 6.58 on the
+  Ohlone Wilderness Trail", "General car-camping area"), which is the
+  filing-cabinet use of `notes` this README warns against two sections down. A
+  blank `access_mode` reads as "not recorded", never as either mode: guessing
+  drive-in strands someone at a trailhead, guessing hike-in hides a site they
+  could have used.
+  `season_closed_start`/`season_closed_end` are MM-DD pairs, and every one read
+  here wraps the new year, unlike `permits.csv`'s quota seasons -- so the two
+  are read by different code rather than one generalised into something neither
+  fits. A blank is not "open all year": Anthony Chabot's season is an open
+  conflict between two EBRPD sources, and filling the columns would launder a
+  disputed reading into a fact a date-aware planner then asserts.
+  `source_url` and `verified_date` were added later, when EBRPD campgrounds
+  outside the Ohlone corridor were. The table had carried no provenance at
+  all, which in a project whose rule is that every claim cites its evidence
+  was a gap rather than a style choice. The seven original rows stay blank:
+  nobody recorded where their facts came from, and a citation invented for
+  them now would read as a check that never happened. A blank `verified_date`
+  on a row that *does* carry a `source_url` — Anthony Chabot, Dumbarton
+  Quarry — means the opposite of confirmed: there is a page to check it
+  against and nobody has.
 - **`data/water_sources.csv`** / **`data/water_source_log.csv`** -- unlike a
   coordinate, "is this spigot running" isn't a fact that stays true once
   recorded. `water_sources.csv` holds the static facts (name, type,
@@ -740,13 +830,13 @@ So a regulation is now stored once and *inherited*, by `scope_type`:
 | Scope | Matches | Example |
 |---|---|---|
 | `jurisdiction` | `PermitRule.jurisdiction` | California Campfire Permit |
-| `agency` | `PermitRule.agency_ids` | Eldorado NF's 10-day dispersed-camping limit |
-| `wilderness` | `PermitRule.wilderness_area` | Mokelumne's campfire ban, shared by both its permits |
+| `agency` | `PermitRule.agency_ids`, or `Trailhead.agency_id` | Eldorado NF's 10-day dispersed-camping limit |
+| `wilderness` | `PermitRule.wilderness_area`, falling back to `Trailhead.wilderness_area` | Mokelumne's campfire ban, shared by both its permits |
 | `permit_group` | the permit product itself | Desolation's bear canister requirement |
 
-`regulations_for()` resolves all three layers, sorting the specific before the
-general so a wilderness's own fire ban reads above the statewide permit rule it
-sits on top of. Both the human and agent surfaces label an inherited rule with
+`regulations_in_force()` resolves all three layers, sorting the specific before
+the general so a wilderness's own fire ban reads above the statewide permit rule
+it sits on top of. Both the human and agent surfaces label an inherited rule with
 its scope, so nobody mistakes state law for one wilderness's local quirk.
 
 This is why `permits.csv` carries an explicit `jurisdiction` column even though
@@ -754,6 +844,109 @@ every group in the dataset is currently Californian: *"all our groups are in
 California"* is true today by coincidence of coverage, and inheriting statewide
 law off that coincidence would break silently the first time a Nevada or Oregon
 group is added. There's a test for exactly that.
+
+### Conditions expire; everything else here does not
+
+`data/advisories.csv` holds the facts with an end. Every other table holds
+facts that stay true until someone corrects them — a quota, a leash rule, a
+fee. A trail is closed *until the culvert is repaired*; an algae warning is
+posted *this week*; a water supply is off *until further notice*.
+
+That difference is why the scorecard read **"What is closed?" as no-model for
+all 462 objectives** for so long. There was nowhere to put an expiring fact,
+so sixty live District notices were read and dropped. Storing them badly
+would have been worse: a closure copied in September and read in March is not
+stale data, it is a wrong answer with a date on it.
+
+Three properties are structural, not convention:
+
+| Rule | Why |
+|---|---|
+| `observed_date` is required, or the row is refused at load | It is the only thing that lets a reader judge the rest |
+| `ends` and `until_further_notice` are mutually exclusive | They are the two answers this table exists to keep apart |
+| An open-ended advisory never expires on its own | The agency has not said it is over; deciding that for them is the failure mode |
+
+Instead of expiring, an open-ended advisory reports its age, and past
+`STALE_DAYS` says it is old enough to doubt. That is not a claim about how
+long closures last — it is how long this project is willing to repeat one
+without saying when it last looked.
+
+`plan` resolves advisories by **date** as well as scope, so a trip planned
+after a stated reopening is not warned about a closure that will be over, and
+prints them above cost and facilities: a closed trail changes whether the trip
+happens, where a fee only changes what it costs.
+
+A fact belongs here only if it expires. Sunol's fire ban names its exceptions
+by *place* rather than by date, so it stayed a park-scoped regulation; Round
+Valley's water outage stayed in the water ledger, which already records dated
+checks. Holding one fact in two tables is the drift `regulations.csv` was
+built to stop.
+
+
+### Booking mechanics belong to the agency, not the campsite
+
+`data/campgrounds.csv` answers *what is this place like*.
+`data/booking_channels.csv` answers *how do I book it*, and it is a separate
+table for the same reason `regulations.csv` is: the answer belongs to the
+agency.
+
+EBRPD's reservations line, its walk-in counter at District HQ, and the fact
+that its published reservations email accepts no reservations are true of
+every campground the District runs. Stored per campground, that text sat in
+nine rows and would have sat in twenty-one once the rest of the District's
+parks landed — the same shape as the California Campfire Permit copied into
+seven `permits.csv` rows, which drifted five ways before anyone noticed.
+
+Two axes select a channel:
+
+| Axis | What it is | Why both |
+|---|---|---|
+| `scope_type`/`scope_value` | `agency`/`ebrpd`, resolved by the same `scope_applies()` regulations use | Booking mechanics are the second scoped table — what that function was split out for |
+| `applies_to` | the class of site sold: `family`, `group`, `backpack`, or `all` | EBRPD's split *is* the answer: family sites book online, group and backpack sites are phone-only and cannot be booked online at all |
+
+A channel scoped `all` is returned *alongside* the class-specific one rather
+than instead of it, the same specific-plus-general layering `regulations_for`
+does. That stores the District-wide contact once while per-class method, lead
+time and horizon stay separate — family sites need 2 business days, group
+sites 3.
+
+Two fields earn their place by being the kind of wrong you discover too late.
+`not_accepted` holds what *looks* like a channel and is not: someone who
+emails EBRPD's published reservations address and waits has not booked
+anything, and finds out when the site is gone. `horizon_as_of` dates the
+booking window, because a rolling horizon is a fact that expires and reads as
+current forever if stored undated.
+
+A blank `campsite_type` on a campground resolves only agency-wide channels.
+Guessing `family` there would tell a backpacker to book online, which EBRPD
+does not allow.
+
+
+### Rules do not stop where permits do
+
+Reading scope off the permit alone left a hole big enough to lose a whole
+agency in. A trailhead that needs no permit resolves to `permits.csv`'s shared
+`none` row, which carries no agency and no wilderness — and *cannot*, because
+sixteen trailheads across six different agencies share that one row. So every
+agency-scoped rule was silently unreachable from every permit-free trailhead in
+the dataset: East Bay Regional Park District's Diablo Range land, but also
+Plumas NF, Tahoe NF and the LTBMU. The failure was invisible in the worst way —
+no error, no empty section, just rules that never appeared.
+
+`Trailhead.agency_id` closes it, and it is a key beside the `land_agency`
+display string for the same reason `PermitRule.agency_ids` sits beside
+`agency`: matching on a display string matches nothing. The two sets are
+**unioned**, not swapped, because a permit's issuer and the ground you start on
+are both real — an Inyo NF trailhead walking into Sequoia-Kings is under Inyo's
+forest rules for the Inyo part of the walk.
+
+Wilderness resolves permit-first and *falls back* to the trailhead's rather
+than unioning. Two named wildernesses on one trip is a route question this
+project has no data to answer, and asserting a second rulebook applies would
+broaden the rules on a trip without evidence. The fallback alone paid for
+itself: Horseshoe Meadows (Cottonwood) sits in the Golden Trout Wilderness
+while its `inyo_gtw` permit row leaves `wilderness_area` blank, so that
+wilderness's campfire restriction had been reaching nobody who started there.
 
 The `wilderness` layer earned itself immediately. Mokelumne Wilderness is
 entered on two different permits — the free general self-issue one and the
@@ -989,6 +1182,10 @@ python cli.py --permit-sources desolation
 
 # List every unconfirmed or conflicting fact currently derivable.
 python cli.py --open-questions
+
+# Find a campground you cannot already name: the only command that answers
+# "where could I go" rather than "why do we believe this".
+python cli.py --campgrounds --access drive_in --near 37.8044,-122.2712
 ```
 
 ## CLI Usage
@@ -1036,15 +1233,44 @@ from `plan.py` rather than a flag on it.
 
 ### `cli.py`
 
-Two read-only views into the data's provenance. Trip planning is `plan.py`.
+Two read-only views into the data's provenance, and one search. Trip planning
+for a *named* objective is `plan.py`.
 
 | Flag | Default | Description |
 |------|---------|-------------|
 | `--permit-sources [GROUP]` | all groups | Verification history for one permit group, or all |
 | `--open-questions` | off | Every unconfirmed or conflicting fact currently derivable |
+| `--campgrounds` | off | List campgrounds matching the filters below |
+| `--access` | any | `drive_in` / `hike_in`. Campgrounds whose access nobody has recorded are excluded **and then listed** -- absent is not a value |
+| `--type` | any | `family` / `group` / `backpack` |
+| `--park` | any | Only campgrounds in this park |
+| `--near LAT,LON` | none | Sort by straight-line distance from a point. Oakland City Hall is `37.8044,-122.2712` |
+| `--within MILES` | none | With `--near`, drop matches beyond this distance |
 
-Both accept the same `--*-file` overrides as `plan.py` for pointing at
+All accept the same `--*-file` overrides as `plan.py` for pointing at
 alternative datasets.
+
+**Three things `--campgrounds` will not do**, all for the same reason the rest
+of this project states its gaps rather than hiding them:
+
+- **It does not drop what it cannot measure.** A campground with no
+  coordinates is reported under `CANNOT BE PLACED`, not omitted. Omitting it
+  would make "nothing is near you" and "nobody has looked" identical, which is
+  the failure the scorecard already names for Q21. Today that is 12 of 24
+  campgrounds -- every drive-in one is placed, and what is left is backcountry.
+- **It does not pretend a park centroid is a campsite.** Most coordinates here
+  came off a ReserveAmerica *park* overview page, so `coord_precision` is
+  `park` and the distance renders as "to the park, not the campground". Only
+  Dumbarton Quarry has its own facility page, so only it reads "to the
+  campground".
+- **It does not give a park's point to every campground in that park.** A park
+  coordinate is assigned when that point is a reasonable stand-in for where you
+  arrive, and withheld when a source states a distance that makes it
+  misleading, or when the campground has its own entrance. Anthony Chabot's
+  point goes to all eight of its campgrounds; Del Valle's goes to one of five,
+  because its four backpack camps sit 2 to 11.5 miles up the Ohlone Wilderness
+  Trail. A blank that is a decision says so in `coord_source`, the same rule as
+  an unsourced `access_mode`.
 
 ## Python Usage
 
@@ -1143,7 +1369,11 @@ including `scripts/assign_trailheads.py`.
 
 `data/trailheads.csv` is a curated list of major east-, west-, and crest-side
 Sierra trailheads with lat/long coordinates, side of range, wilderness area,
-land agency, and `permit_group`. Coordinates are to roughly 0.001 degrees and
+land agency, `agency_id`, and `permit_group`. `land_agency` is a display string
+(`Eldorado NF/LTBMU`); `agency_id` is the matching key (`eldorado_nf;ltbmu`,
+semicolon-separated for co-managed land) that agency-scoped regulations resolve
+against — see "Rules do not stop where permits do" above for why a trailhead
+carries its own agency key rather than borrowing the permit's. Coordinates are to roughly 0.001 degrees and
 spot-checked against public sources such as the PCTA and NPS.
 
 Run:

@@ -13,16 +13,23 @@ import pytest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from wayproof.camping import load_campgrounds
+from wayproof.park_access import load_park_access
+from wayproof.data_loader import load_trailheads
+from wayproof.model import Trailhead
 from wayproof.permits import load_permits
 from wayproof.regulations import (
     WILDERNESS,
     AGENCY,
     JURISDICTION,
     PERMIT_GROUP,
+    CATEGORY_LABELS,
+    CATEGORY_VOCABULARY,
     Regulation,
     group_by_category,
     load_regulations,
     regulations_for,
+    regulations_in_force,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -221,19 +228,47 @@ def test_a_group_stating_its_fire_rule_in_prose_is_not_flagged_as_unknown():
 # district and co-management detail. So the forest-wide rule applied to zero
 # groups and nothing said so. These tests make a dead scope fail loudly.
 
-def test_every_regulation_scope_reaches_at_least_one_permit_group():
+def test_every_regulation_scope_reaches_at_least_one_real_trip():
+    # Reach is measured over permit groups AND trailheads, because those are the
+    # two places scope comes from. Measuring it over permits alone would have
+    # rejected every rule written for land that needs no permit -- EBRPD's
+    # Ordinance 38 governs two trailheads and no permit product at all -- while
+    # still missing the failure it exists to catch, a rule reaching nobody.
     regs = load_regulations(os.path.join(ROOT, "data", "regulations.csv"))
     permits = load_permits(os.path.join(ROOT, "data", "permits.csv"),
                            os.path.join(ROOT, "data", "release_policies.csv"))
+    trailheads = load_trailheads(os.path.join(ROOT, "data", "trailheads.csv"))
+    campgrounds = load_campgrounds(os.path.join(ROOT, "data", "campgrounds.csv"))
+
     reached = set()
     for rule in permits.values():
-        for reg in regulations_for(regs, rule.permit_group, rule.agency_ids,
-                                   rule.jurisdiction, rule.wilderness_area):
-            reached.add(reg.regulation_id)
+        reached.update(r.regulation_id for r in regulations_in_force(regs, rule))
+    for th in trailheads:
+        reached.update(r.regulation_id
+                       for r in regulations_in_force(regs, permits.get(th.permit_group), th))
+    # Campgrounds are objectives too, and a park-scoped rule can reach a park
+    # that has no trailhead at all: Black Diamond's fire ban governs two
+    # campsites and no summit.
+    for cg in campgrounds:
+        reached.update(r.regulation_id for r in regulations_in_force(
+            regs, agency=[k.strip() for k in cg.agency_id.split(";") if k.strip()],
+            jurisdiction=cg.jurisdiction, park=cg.park))
+    # A park this project holds access for is a real place, even before anything
+    # sits in it. Briones' leash segments govern four named trails in a park
+    # whose three group campsites no source has yet named, so the rule is ahead
+    # of its objects rather than pointing nowhere. Typos are not what this test
+    # catches for park scope -- the referential-integrity join already requires
+    # a park-scoped value to name a park in campgrounds, park_access or
+    # trailheads, so a misspelling fails there and loudly.
+    for park in {p.park for p in load_park_access(
+            os.path.join(ROOT, "data", "park_access.csv")).values() if p.park}:
+        reached.update(r.regulation_id for r in regulations_in_force(regs, park=park))
+
     dead = [r.regulation_id for r in regs if r.regulation_id not in reached]
     assert dead == [], (
-        f"regulations whose scope matches no permit group: {dead}. A rule that "
-        "inherits to nothing is worse than a missing one -- it reads as covered."
+        f"regulations reaching no permit group, trailhead or campground: {dead}. "
+        "A rule that inherits to nothing is worse than a missing one -- it reads "
+        "as covered."
     )
 
 
@@ -599,3 +634,167 @@ def test_the_missing_desolation_trailheads_are_stated_not_implied():
     assert "known coverage gap" in notes
     for th in ("Loon Lake", "Echo Lake", "Meeks Bay", "Glen Alpine"):
         assert th in notes
+
+
+# -- scope resolved from the trailhead, not the permit alone -----------------
+
+def _th(name="T", agency_id="", permit_group="none", wilderness_area=""):
+    return Trailhead(name=name, latitude=0.0, longitude=0.0,
+                     agency_id=agency_id, permit_group=permit_group,
+                     wilderness_area=wilderness_area)
+
+
+def test_permit_free_trailhead_inherits_the_rules_of_the_agency_that_manages_it():
+    # The bug this closes: permits.csv's "none" row carries no agency and never
+    # can -- sixteen trailheads across six agencies share it -- so every
+    # agency-scoped rule was unreachable from every permit-free trailhead.
+    rule = _reg("ebrpd-pets", AGENCY, "ebrpd", category="pets")
+    got = regulations_in_force([rule], None, _th(agency_id="ebrpd"))
+    assert [r.regulation_id for r in got] == ["ebrpd-pets"]
+
+
+def test_permit_free_trailheads_do_not_inherit_each_others_agency_rules():
+    # They share the "none" permit group, so scoping off the permit would have
+    # given an East Bay pet rule to a Tahoe NF trailhead.
+    rule = _reg("ebrpd-pets", AGENCY, "ebrpd", category="pets")
+    assert regulations_in_force([rule], None, _th(agency_id="tahoe_nf")) == []
+
+
+def test_trailhead_agency_adds_to_the_permits_rather_than_replacing_it():
+    permit_side = _reg("eldorado-leash", AGENCY, "eldorado_nf", category="pets")
+    ground_side = _reg("ltbmu-leash", AGENCY, "ltbmu", category="pets")
+
+    class _Rule:
+        permit_group, jurisdiction, wilderness_area = "desolation", "CA", ""
+        agency_ids = ("eldorado_nf",)
+
+    got = regulations_in_force([permit_side, ground_side], _Rule(),
+                               _th(agency_id="ltbmu", permit_group="desolation"))
+    assert {r.regulation_id for r in got} == {"eldorado-leash", "ltbmu-leash"}
+
+
+def test_co_managed_trailhead_splits_its_agency_key_on_semicolons():
+    rules = [_reg("blm-r", AGENCY, "blm"), _reg("seq-r", AGENCY, "sequoia_nf")]
+    got = regulations_in_force(rules, None, _th(agency_id="blm;sequoia_nf"))
+    assert {r.regulation_id for r in got} == {"blm-r", "seq-r"}
+
+
+def test_wilderness_falls_back_to_the_trailhead_when_the_permit_leaves_it_blank():
+    # Real case: Horseshoe Meadows (Cottonwood) is in the Golden Trout
+    # Wilderness, but its inyo_gtw permit row leaves wilderness_area blank, so
+    # that wilderness's own rulebook reached nothing.
+    rule = _reg("gtw-rule", WILDERNESS, "Golden Trout Wilderness")
+    got = regulations_in_force([rule], None,
+                               _th(wilderness_area="Golden Trout Wilderness"))
+    assert [r.regulation_id for r in got] == ["gtw-rule"]
+
+
+def test_the_permits_wilderness_wins_over_the_trailheads():
+    # Fallback, not union: asserting a second rulebook applies is a route claim
+    # this project does not have the data to make.
+    rules = [_reg("moke", WILDERNESS, "Mokelumne Wilderness"),
+             _reg("gtw", WILDERNESS, "Golden Trout Wilderness")]
+
+    class _Rule:
+        permit_group, jurisdiction = "mokelumne_free", "CA"
+        wilderness_area, agency_ids = "Mokelumne Wilderness", ()
+
+    got = regulations_in_force(rules, _Rule(),
+                               _th(wilderness_area="Golden Trout Wilderness"))
+    assert [r.regulation_id for r in got] == ["moke"]
+
+
+def test_the_committed_trailheads_all_carry_an_agency_key():
+    # A blank key silently un-scopes every agency rule for that trailhead, and
+    # the failure is invisible: rules simply don't appear.
+    trailheads = load_trailheads(os.path.join(ROOT, "data", "trailheads.csv"))
+    missing = [t.name for t in trailheads if t.land_agency and not t.agency_id]
+    assert missing == [], f"trailheads with a land_agency but no agency_id: {missing}"
+
+
+def test_del_valle_resolves_to_the_east_bay_agency_key():
+    trailheads = {t.name: t for t in
+                  load_trailheads(os.path.join(ROOT, "data", "trailheads.csv"))}
+    del_valle = trailheads["Del Valle (Lichen Bark)"]
+    assert del_valle.land_agency == "East Bay Regional Park District"
+    assert del_valle.agency_id == "ebrpd"
+
+
+# -- pets is a category about animals, not only about dogs -------------------
+
+def test_pets_vocabulary_does_not_swallow_the_waste_categorys_cat_hole():
+    # A bare "cat" would match "6-8 inch cat hole" and claim every waste rule in
+    # the dataset as a pet rule.
+    assert "cat" not in CATEGORY_VOCABULARY["pets"]
+    assert any("cat hole" in term for term in CATEGORY_VOCABULARY["waste"])
+    for term in CATEGORY_VOCABULARY["pets"]:
+        assert "cat hole" not in term
+
+
+def test_pets_vocabulary_reaches_pet_wording_not_just_dog_wording():
+    assert "pet" in CATEGORY_VOCABULARY["pets"]
+    assert "dog" in CATEGORY_VOCABULARY["pets"]
+
+
+def test_the_pets_category_is_labelled_for_animals_generally():
+    # Every pets row in the dataset is written about dogs because that is how
+    # the agencies write them; the label must not harden that into the schema.
+    assert CATEGORY_LABELS["pets"] == "Pets"
+
+
+def test_a_rule_scoped_to_the_no_permit_placeholder_is_rejected_loudly(tmp_path):
+    # The natural-looking place to file a rule for land that needs no permit,
+    # and the one place it must not go: "none" is shared by sixteen trailheads
+    # across six agencies, so an East Bay leash law filed here would reach a
+    # trailhead in Plumas NF.
+    path = tmp_path / "regulations.csv"
+    path.write_text(
+        "regulation_id,scope_type,scope_value,category,summary\n"
+        "ebrpd-pets,permit_group,none,pets,Dogs on leash\n"
+    )
+    with pytest.raises(ValueError, match="agency"):
+        load_regulations(path)
+
+
+# -- the District's booking-system rules, filed six parks late ---------------
+
+def _ebrpd_rules():
+    regs = load_regulations(os.path.join(ROOT, "data", "regulations.csv"))
+    return {r.regulation_id: r for r in regs}
+
+
+def test_the_district_allows_beer_and_wine_and_two_narrower_rules_ban_it():
+    # A camper who reads only the agency rule and goes to Stewartville is
+    # wrong. The exceptions are narrower in scope, so they must still be there.
+    regs = _ebrpd_rules()
+    assert "no hard alcohol" in regs["ebrpd-alcohol"].summary.lower()
+    assert "$25.00" in regs["ebrpd-alcohol"].detail
+    assert regs["black-diamond-no-alcohol"].scope_type == "park"
+    assert "no alcohol at all" in regs["ebrpd-backpack-no-fire-no-alcohol"].summary.lower()
+
+
+def test_collecting_firewood_is_prohibited_which_is_not_the_same_as_no_fires():
+    # Whether a fire may burn and what may burn in it are different questions.
+    # A site with a fire circle and nowhere to buy wood is one you carry to.
+    regs = _ebrpd_rules()
+    assert "COLLECTING WOOD IS PROHIBITED" in regs["ebrpd-firewood"].summary
+    assert regs["ebrpd-firewood"].category == "fire"
+
+
+def test_the_three_dog_limit_is_not_read_across_to_other_animals():
+    # The booking rules say dogs; Ordinance 38 s.801 says "dog, cat or other
+    # animal". Inventing a number for cats from the dog figure is the error
+    # this row exists to prevent.
+    rule = _ebrpd_rules()["ebrpd-pets-count"]
+    assert "THREE DOGS PER SITE" in rule.summary
+    assert "no number here" in rule.detail
+    assert "cats" in rule.detail
+
+
+def test_the_generator_rule_names_its_own_contradiction_rather_than_picking():
+    # Ordinance 38 sets a disturbance test; the terms every reservation is made
+    # under say "No gas generators", flat. Both are EBRPD.
+    rule = _ebrpd_rules()["ebrpd-camping-quiet"]
+    assert "ebrpd-generators" in rule.summary, "points at the open thread"
+    assert "No gas generators" in rule.detail or "no gas generators" in rule.detail.lower()
+    assert "safer reading" in rule.detail

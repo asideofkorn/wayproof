@@ -36,6 +36,7 @@ citing the report ID, then calls :func:`resolve_report` to close it out.
 
 from __future__ import annotations
 
+import re
 from dataclasses import asdict, dataclass, field
 from datetime import date
 from pathlib import Path
@@ -44,7 +45,10 @@ from typing import List, Optional, Sequence
 import pandas as pd
 
 from .access import ApproachRoute, UNCONFIRMED
-from .camping import Campground, Campsite
+from .camping import (
+    HIKE_IN, Campground, Campsite, camps_without_sites,
+    seasonal_loop_contradicting_a_season, seasonal_loop_without_a_season,
+)
 from .park_access import ParkAccess
 from .model import Peak, Trailhead
 from .evidence import UNVERIFIED, dangling_citations, evidence_for
@@ -63,6 +67,21 @@ from .water import WaterSource, WaterSourceLogEntry, log_by_source
 
 _UNCERTAIN_NOTE_MARKERS = ("approximate", "unconfirmed", "not a confirmed", "not found")
 _CONFLICT_STATUS_MARKERS = ("contradict", "unclear")
+
+# A quoted passage is the source speaking, not this project. ReserveAmerica
+# calls Dairy Glen's walk "approximately 1/4 mile on a flat, paved surface",
+# and quoting that exactly is the whole point of quoting it -- but matched
+# naively it flagged the row uncertain and asked a visitor to go and confirm a
+# distance the operator had already stated. The markers exist to catch OUR
+# hedging. Requiring the opening quote to follow whitespace and the closing one
+# to precede punctuation keeps possessives ("Dairy Glen's") out of it.
+_QUOTED_SPAN = re.compile(r"(?:^|(?<=\s))'.+?'(?=[\s.,;:)\]]|$)")
+
+
+def _hedges_in_own_voice(text: str) -> bool:
+    """Does *text* hedge outside anything it quotes?"""
+    own_voice = _QUOTED_SPAN.sub(" ", text or "").lower()
+    return any(m in own_voice for m in _UNCERTAIN_NOTE_MARKERS)
 
 _VALID_CONFIDENCE = {"firsthand", "official_source", "told_by_staff", "secondhand"}
 _VALID_STATUS = {"pending", "accepted", "rejected", "needs-more-evidence"}
@@ -212,7 +231,7 @@ def open_questions(
         if peak_names_lower is not None and not _matches_peak_names(p.name, peak_names_lower):
             continue
         note = str(p.meta.get("notes", "") or "")
-        if note and any(m in note.lower() for m in _UNCERTAIN_NOTE_MARKERS):
+        if note and _hedges_in_own_voice(note):
             questions.append(OpenQuestion(
                 target_file="data/peaks.csv",
                 target_key=p.name,
@@ -271,7 +290,19 @@ def open_questions(
 
     if show_by_park:
         # -- Campsites missing both proximity fields. --
+        #
+        # Only where you walk to the site. Proximity to water and a restroom is a
+        # carrying problem: at Sunol's backpack camp it decides which site to
+        # take, and Hawks Nest being closer to both is recorded because someone
+        # noticed. At a drive-up campground with central flush toilets and hot
+        # showers it decides nothing, and asking it of all 75 of Anthony
+        # Chabot's numbered sites produced 75 questions that buried the 73 real
+        # ones. The trade is a bootstrap gap: a walk-in campground whose sites
+        # do differ still gets asked, a drive-up one never does.
+        access_by_campground = {c.name: c.access_modes for c in campgrounds}
         for s in campsites:
+            if HIKE_IN not in access_by_campground.get(s.campground, ()):
+                continue
             if not _park_is_relevant(campground_park_by_name.get(s.campground, "")):
                 continue
             if not s.water_proximity and not s.restroom_proximity:
@@ -282,12 +313,102 @@ def open_questions(
                     context=s.campground,
                 ))
 
+        # -- Campgrounds nobody can place on a map. --
+        #
+        # Added when --campgrounds --near was built and could place two of
+        # twenty-four. A proximity search that cannot rank the three drive-in
+        # campgrounds is not a feature, it is a question, and this is where the
+        # question belongs. ReserveAmerica publishes a GPS pair on each park's
+        # overview page, which is where both of the two came from.
+        # ONE QUESTION PER PARK, NOT PER CAMPGROUND, for the reason the
+        # campsite-proximity question is fired only at hike-in campgrounds:
+        # asking it twenty-two times would bury the rest of this list, and the
+        # twenty-two share about eight answers. A park's ReserveAmerica
+        # overview page carries one GPS pair and fills every camp in it.
+        unplaced_by_park = {}
+        for c in campgrounds:
+            if c.latitude is None and _park_is_relevant(c.park):
+                unplaced_by_park.setdefault(c.park, []).append(c.name)
+        for park_name, names in sorted(unplaced_by_park.items()):
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=park_name or "(no park recorded)",
+                question=(f"No coordinates for {len(names)} campground(s) in "
+                          f"{park_name or 'an unnamed park'}, so a proximity "
+                          f"search cannot place them: {', '.join(sorted(names))}."),
+                context=park_name,
+            ))
+
+        # -- Loop names that say "Seasonal" with no season on file. --
+        #
+        # The loop name is a label with no rules attached, with one exception
+        # worth asking about. ROUND VALLEY IS EXCLUDED, not overlooked: its
+        # loop is "Backpack Seasonal" and EBRPD says the camp is open year
+        # round, so that one has been read and answered, and the answer is that
+        # the token is not a season. Asking again would turn a resolved reading
+        # back into a doubt. The rest are unread.
+        answered = {c.name for c in seasonal_loop_contradicting_a_season(campgrounds)}
+        for c in seasonal_loop_without_a_season(campgrounds):
+            if c.name in answered or not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=c.name,
+                question=(f"{c.name} sits in a loop the booking system calls "
+                          f"'{c.loop}' and no closure is recorded for it. The "
+                          f"word is not a season -- Round Valley's loop says "
+                          f"Seasonal and the camp is open year round -- so this "
+                          f"is a row to go and read, not one to fill in."),
+                context=c.name,
+            ))
+
+        # -- Campgrounds with no booking facility. --
+        #
+        # Substantive rather than cosmetic: without it a plan cannot say which
+        # page sells the camp, and it cannot fall back on the park, because
+        # Del Valle and Coyote Hills are each sold through two facilities.
+        # ONE QUESTION PER CAMPGROUND, because unlike a coordinate no single
+        # page answers it for several at once -- and there is one.
+        for c in campgrounds:
+            if c.facility_id or not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=c.name,
+                question=(f"No booking facility recorded for {c.name}, so a plan "
+                          f"cannot name the page that sells it. The park does not "
+                          f"answer this: {c.park or 'its park'} may be sold "
+                          f"through more than one facility."),
+                context=c.name,
+            ))
+
+        # -- Camps recorded as holding sites, of which none are held. --
+        #
+        # A question the unit_level column created. Before it, Del Valle Family
+        # Campground -- 155 sites, none of them in campsites.csv -- looked
+        # exactly like Corral Group Camp, which really is one unit, so there was
+        # nothing to ask about. ONE QUESTION PER CAMPGROUND rather than per park:
+        # unlike a coordinate, one facility page does not fill several camps'
+        # site lists at once, and there are few enough of these to name.
+        for c in camps_without_sites(campgrounds, campsites):
+            if not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campsites.csv",
+                target_key=c.name,
+                question=(f"{c.name} is recorded as holding individually bookable "
+                          f"sites and this project holds none of them, so a plan "
+                          f"can say a site must be chosen but not which sites "
+                          f"exist."),
+                context=c.name,
+            ))
+
         # -- Trailhead/campground notes flagging their own uncertainty. --
         for c in campgrounds:
             if not _park_is_relevant(c.park):
                 continue
             for field_name, text in (("notes", c.notes), ("nightly_entry_cutoff", c.nightly_entry_cutoff)):
-                if text and any(m in text.lower() for m in _UNCERTAIN_NOTE_MARKERS):
+                if text and _hedges_in_own_voice(text):
                     questions.append(OpenQuestion(
                         target_file="data/campgrounds.csv",
                         target_key=f"{c.name}.{field_name}",
@@ -465,6 +586,10 @@ def open_questions(
         # rules, so category vocabulary there is expected rather than
         # suspicious. Even so this is a prompt to look, not a verdict -- prose
         # can mention camping without restating the camping rule.
+        # regulations_for, not regulations_in_force: this asks whether ONE
+        # permit's prose restates a rule that permit already carries. There is no
+        # trip and no trailhead here, so trailhead-derived scope would widen the
+        # comparison to rules the permit's own text was never asked to avoid.
         for rule in permits:
             applicable = regulations_for(regulations, rule.permit_group, rule.agency_ids,
                                          rule.jurisdiction, rule.wilderness_area)

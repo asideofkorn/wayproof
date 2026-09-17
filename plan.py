@@ -36,6 +36,8 @@ import json
 import sys
 
 from wayproof.access import load_approaches
+from wayproof.advisories import load_advisories
+from wayproof.booking import load_booking_channels, load_booking_facilities
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
@@ -51,7 +53,9 @@ def _parse_args(argv=None) -> argparse.Namespace:
                      "named objectives on a given trip date."),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    p.add_argument("objectives", nargs="+", help="One or more objective (peak) names")
+    p.add_argument("objectives", nargs="+",
+                   help="One or more objective names -- a peak, or a campground "
+                        "for a trip that is a night at a campsite")
     p.add_argument("--date", required=True, help="Planned trip date (YYYY-MM-DD)")
     p.add_argument("--peaks-file", default="data/peaks.csv",
                    help="Core peak dataset: name, coordinates, elevation -- "
@@ -84,8 +88,18 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    help="Backpack campgrounds (default data/campgrounds.csv)")
     p.add_argument("--campsites-file", default="data/campsites.csv",
                    help="Individually-bookable campsites (default data/campsites.csv)")
+    p.add_argument("--booking-facilities-file",
+                   default="data/booking_facilities.csv",
+                   help="CSV of booking-system facilities "
+                        "(default data/booking_facilities.csv)")
+    p.add_argument("--booking-channels-file", default="data/booking_channels.csv",
+                   help="How to book a campsite, scoped by agency "
+                        "(default data/booking_channels.csv)")
     p.add_argument("--park-access-file", default="data/park_access.csv",
                    help="Park-level entrance fee/hours dataset (default data/park_access.csv)")
+    p.add_argument("--advisories-file", default="data/advisories.csv",
+                   help="Conditions with an end -- closures, outages, water quality "
+                        "(default data/advisories.csv)")
     p.add_argument("--regulations-file", default="data/regulations.csv",
                    help="Rules in force once you hold the permit "
                         "(default data/regulations.csv)")
@@ -112,14 +126,20 @@ def main(argv=None) -> int:
     water_source_log = load_water_source_log(args.water_source_log_file)
     campgrounds = load_campgrounds(args.campgrounds_file)
     campsites = load_campsites(args.campsites_file)
+    booking_channels = load_booking_channels(args.booking_channels_file)
+    booking_facilities = load_booking_facilities(args.booking_facilities_file)
     park_access = list(load_park_access(args.park_access_file).values())
     regulations = load_regulations(args.regulations_file)
+    advisories = load_advisories(args.advisories_file)
 
     result = resolve_plan(args.objectives, trip_date, peaks, trailheads, permits,
                            approaches=approaches, water_sources=water_sources,
                            water_source_log=water_source_log, campgrounds=campgrounds,
-                           campsites=campsites, park_access=park_access,
-                           regulations=regulations,
+                           campsites=campsites,
+                           booking_channels=booking_channels,
+                           booking_facilities=booking_facilities,
+                           park_access=park_access,
+                           regulations=regulations, advisories=advisories,
                            exit_trailhead=args.exit_trailhead)
 
     print(format_plan_summary(result))
@@ -129,7 +149,9 @@ def main(argv=None) -> int:
             json.dump(result.to_dict(), fh, indent=2)
         print(f"\nWrote plan to {args.output}")
 
-    return 0 if result.objectives else 1
+    # A campground is an objective too; exiting non-zero on a resolved
+    # campsite plan would tell a script the trip could not be planned.
+    return 0 if result.has_objectives else 1
 
 
 if __name__ == "__main__":

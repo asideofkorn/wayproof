@@ -78,7 +78,15 @@ class Trailhead:
     side: str = ""          # "east", "west", or "crest"
     notes: str = ""
     wilderness_area: str = ""  # backcountry/permit designation, e.g. "Ohlone Wilderness"
-    land_agency: str = ""
+    land_agency: str = ""   # display name, e.g. "Eldorado NF/LTBMU". Never match on it.
+    agency_id: str = ""     # stable key(s) for land_agency, ";"-separated for co-managed
+                             # land, e.g. "eldorado_nf;ltbmu". Same display-string/key split
+                             # PermitRule.agency vs agency_ids makes, and for the same reason:
+                             # agency-scoped regulations have to match something. It lives on
+                             # the trailhead as well as the permit because a permit-free
+                             # trailhead (permit_group "none") has no permit row to carry an
+                             # agency -- and "none" is shared by 16 trailheads across six
+                             # different agencies, so it can never carry one.
     permit_group: str = ""  # key into data/permits.csv; "" if unclassified
     park: str = ""          # specific park/preserve unit, e.g. "Del Valle Regional Park" --
                              # distinct from wilderness_area: a trailhead's governing backcountry

@@ -13,7 +13,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import pytest
 
 from wayproof.access import ApproachRoute
-from wayproof.camping import Campground, Campsite
+from wayproof.camping import (
+    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, UNIT_CAMP, UNIT_SITE, Campground, Campsite,
+)
 from wayproof.model import Peak, Trailhead
 from wayproof.park_access import ParkAccess
 from wayproof.reports import (
@@ -108,6 +110,24 @@ def test_peakbagger_and_unconfirmed_are_mutually_exclusive_not_doubled():
     assert len(coord_qs) == 1
 
 
+def _ground(**kw):
+    """A campground fixture that is already on the map.
+
+    Every test below predates coordinates and is about some other question.
+    Placing the fixture keeps each assertion counting only what it is about --
+    otherwise every one of them silently also counts "this campground has no
+    coordinates", which has its own tests at the end of this file.
+    """
+    kw.setdefault("latitude", 37.0)
+    kw.setdefault("longitude", -121.0)
+    kw.setdefault("coord_precision", COORD_CAMPGROUND)
+    # Same reason, one table up: a campground with no booking facility is its
+    # own gap with its own tests, and without this default every assertion
+    # below would quietly also be counting it.
+    kw.setdefault("facility_id", "EB/110000")
+    return Campground(**kw)
+
+
 # --- open_questions: peak notes (duplicate-name tie-break, etc.) ----------
 
 def test_peak_note_with_uncertainty_marker_produces_a_question():
@@ -184,25 +204,131 @@ def test_no_log_at_all_flagged_in_global_view():
 # --- open_questions: campsites / campgrounds (global view only) -----------
 
 def test_campsite_missing_both_proximity_fields_flagged_globally():
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5)]
-    qs = open_questions(campsites=sites, peak_names=None)
+    qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
     assert len(qs) == 1
     assert qs[0].target_file == "data/campsites.csv"
 
 
+def test_proximity_is_not_asked_of_a_drive_up_campgrounds_sites():
+    # Proximity to water and a restroom is a carrying problem. At a campground
+    # you park at, with central flush toilets, it decides nothing -- and asking
+    # it of Anthony Chabot's 75 numbered sites buried the 73 real questions
+    # under 75 identical ones.
+    grounds = [_ground(name="Anthony Chabot Campground",
+                          park="Anthony Chabot Regional Park", access_mode=DRIVE_IN)]
+    sites = [Campsite(name=f"{n:03d}", campground="Anthony Chabot Campground", capacity=8)
+             for n in range(1, 76)]
+    assert open_questions(campgrounds=grounds, campsites=sites, peak_names=None) == []
+
+
+def test_proximity_is_not_asked_when_the_campground_is_unknown():
+    # Without a campground row there is no way to tell whether the walk matters,
+    # and guessing that it does is what produced the noise.
+    sites = [Campsite(name="Somewhere", campground="Not In This Dataset", capacity=4)]
+    assert open_questions(campsites=sites, peak_names=None) == []
+
+
 def test_campsite_with_one_proximity_field_not_flagged():
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Hawks Nest", campground="Sunol Backpack Camp", capacity=5,
                        water_proximity="closest to water")]
-    qs = open_questions(campsites=sites, peak_names=None)
+    qs = open_questions(campgrounds=grounds, campsites=sites, peak_names=None)
     assert qs == []
 
 
+def test_a_camp_that_holds_sites_and_holds_none_of_them_is_an_open_question():
+    grounds = [_ground(name="Del Valle Family Campground", park="Del Valle Regional Park",
+                       unit_level=UNIT_CAMP)]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert qs[0].target_file == "data/campsites.csv"
+    assert "holds none of them" in qs[0].question
+
+
+def test_a_single_unit_camp_with_no_sites_is_not_a_gap():
+    # Corral Group Camp having no campsite rows is the correct state, not a
+    # hole. Asking about it would put twenty-five false questions on the list.
+    grounds = [_ground(name="Corral Group Camp",
+                       park="Las Trampas Wilderness Regional Preserve",
+                       unit_level=UNIT_SITE)]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
+
+
+def test_an_unrecorded_booking_level_is_not_reported_as_a_missing_site_list():
+    # Venados might be either. Asking for its site list would assert it is a
+    # container, which is the guess the blank exists to refuse.
+    grounds = [_ground(name="Venados", park="Del Valle Regional Park")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
+
+
+def test_a_camp_whose_sites_are_recorded_is_not_a_gap():
+    grounds = [_ground(name="Sunol Backpack Camp", park="Sunol Regional Wilderness",
+                       access_mode=HIKE_IN, unit_level=UNIT_CAMP)]
+    sites = [Campsite(name="Cathedral", campground="Sunol Backpack Camp", capacity=5,
+                      water_proximity="near", restroom_proximity="near")]
+    assert open_questions(campgrounds=grounds, campsites=sites, peak_names=None) == []
+
+
+def test_a_campground_with_no_booking_facility_is_an_open_question():
+    grounds = [_ground(name="Lil Chaparral Horse Camp", park="Del Valle Regional Park",
+                       unit_level=UNIT_SITE, facility_id="")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert "No booking facility recorded" in qs[0].question
+    assert "The park does not answer this" in qs[0].question
+
+
+def test_a_campground_with_a_facility_is_not_asked_about():
+    grounds = [_ground(name="Corral Group Camp",
+                       park="Las Trampas Wilderness Regional Preserve",
+                       unit_level=UNIT_SITE, facility_id="EB/110455")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
+
+
 def test_campground_uncertain_note_flagged_globally():
-    grounds = [Campground(name="Del Valle Family Campground", park="Del Valle Regional Park",
+    grounds = [_ground(name="Del Valle Family Campground", park="Del Valle Regional Park",
                            nightly_entry_cutoff="~10:00 PM (approximate, not a confirmed posted time)")]
     qs = open_questions(campgrounds=grounds, peak_names=None)
     assert len(qs) == 1
     assert "Del Valle Family Campground" in qs[0].target_key
+
+
+def test_a_hedge_inside_a_quotation_belongs_to_the_source_not_to_us():
+    # ReserveAmerica calls Dairy Glen's walk "approximately 1/4 mile on a flat,
+    # paved surface". Quoting that exactly is the point of quoting it; matched
+    # naively it asked a visitor to go and confirm a distance the operator had
+    # already stated. The markers are for OUR hedging.
+    grounds = [_ground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes=("The listing says it twice: 'This is a HIKE-IN only site "
+               "(approximately 1/4 mile on a flat, paved surface)' and "
+               "'Hike-in ONLY site. NO vehicle access.'"))]
+    assert open_questions(campgrounds=grounds, peak_names=None) == []
+
+
+def test_a_hedge_outside_the_quotation_still_flags_the_row():
+    # Same quotation, but the row then hedges in its own voice. That is the
+    # case the markers exist for, and stripping quotes must not swallow it.
+    grounds = [_ground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes=("The listing says 'a flat, paved surface'. Whether the party "
+               "unloads at the lot is unconfirmed."))]
+    qs = open_questions(campgrounds=grounds, peak_names=None)
+    assert len(qs) == 1
+
+
+def test_a_possessive_apostrophe_does_not_open_a_quotation():
+    # "Dairy Glen's" must not start a quoted span and swallow the hedge that
+    # follows it. The opening quote has to follow whitespace.
+    grounds = [_ground(
+        name="Dairy Glen Group Camp", park="Coyote Hills Regional Park",
+        notes="Dairy Glen's distance from the lot is approximate.")]
+    qs = open_questions(campgrounds=grounds, peak_names=None)
+    assert len(qs) == 1
 
 
 # --- open_questions: campground/campsite/park-access peak-filtering via
@@ -215,7 +341,8 @@ def _trailhead(name, park=""):
 def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park")]
+    grounds = [_ground(name="Boyd Camp", park="Del Valle Regional Park",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Boyd Camp Site", campground="Boyd Camp", capacity=4)]
 
     qs = open_questions(peaks=peaks, trailheads=trailheads, campgrounds=grounds,
@@ -227,7 +354,8 @@ def test_campsite_gap_becomes_peak_filterable_via_trailhead_park():
 def test_campsite_gap_excluded_for_unrelated_park():
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
     trailheads = [_trailhead("Del Valle (Lichen Bark)", park="Del Valle Regional Park")]
-    grounds = [Campground(name="Eagle Springs", park="Mission Peak Regional Preserve")]
+    grounds = [_ground(name="Eagle Springs", park="Mission Peak Regional Preserve",
+                          access_mode=HIKE_IN)]
     sites = [Campsite(name="Eagle Springs Site", campground="Eagle Springs", capacity=4)]
 
     qs = open_questions(peaks=peaks, trailheads=trailheads, campgrounds=grounds,
@@ -239,7 +367,7 @@ def test_campground_gap_not_peak_filtered_without_trailheads_param():
     # Omitting `trailheads` entirely must fall back to the old behavior:
     # campground/campsite gaps only show in the unfiltered view.
     peaks = [_peak("Rose Peak", nearest_trailhead="Del Valle (Lichen Bark)")]
-    grounds = [Campground(name="Boyd Camp", park="Del Valle Regional Park",
+    grounds = [_ground(name="Boyd Camp", park="Del Valle Regional Park",
                            notes="Coordinates approximate.")]
     qs = open_questions(peaks=peaks, campgrounds=grounds, peak_names=["Rose Peak"])
     assert qs == []
@@ -432,3 +560,31 @@ def test_conflict_questions_are_global_not_peak_filtered():
                           "unresolved-conflict", "x", "a")]
     assert [q for q in open_questions(permit_source_log=log, peak_names=["Mount Tallac"])
             if q.target_file == "data/permit_source_log.csv"] == []
+
+
+def test_a_seasonal_loop_with_no_season_is_an_open_question():
+    grounds = [_ground(name="Bort Meadow Group Camp",
+                       park="Anthony Chabot Regional Park",
+                       loop="Primitive Group Camp Seasonal B")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert "not a season" in qs[0].question
+    assert "go and read, not one to fill in" in qs[0].question
+
+
+def test_round_valley_is_excluded_because_it_has_been_answered():
+    # Its loop says Seasonal and EBRPD says open year round. That reading is
+    # done; re-asking would turn an answer back into a doubt.
+    grounds = [_ground(name="Round Valley Backpack Camp",
+                       park="Round Valley Regional Preserve",
+                       loop="Backpack Seasonal",
+                       notes="Round Valley is open year round, despite the "
+                             "booking system labelling the loop 'Backpack Seasonal'.")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert [q for q in qs if "not a season" in q.question] == []
+
+
+def test_a_loop_with_no_seasonal_token_is_not_asked_about():
+    grounds = [_ground(name="Wild Turkey Group Camp", park="Del Valle Regional Park",
+                       loop="Developed Group Camp Loop B")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []

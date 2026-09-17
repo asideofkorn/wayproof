@@ -719,6 +719,17 @@ def test_conflicts_stay_separate_across_permit_groups():
     assert by_group == {
         "desolation": {"desolation-sma-distance"},
         "cpma": {"cpma-designated-site-count", "mokelumne-carson-pass-season-pass"},
+        # Logged under "none" because it is about EBRPD land, which issues no
+        # permit. The group is a bucket for permit-free agencies, so a conflict
+        # here says nothing about the other fifteen trailheads sharing it.
+        # chabot-rv-length and ebrpd-group-camp-minimum were opened and then
+        # closed on evidence the same day; a closed thread leaves this set.
+        "none": {"ebrpd-camping-park-count", "chabot-quiet-hours",
+                 "chabot-season", "chabot-overflow-parking",
+                 "stewartville-vehicles", "arroyo-flats-minimum",
+                 "ebrpd-generators", "del-valle-gate-close",
+                 "las-trampas-bbq", "round-valley-camp-class",
+                 "morgan-territory-vehicles", "ohlone-camps-park"},
     }
 
 
@@ -747,6 +758,45 @@ def test_conflict_kind_says_how_each_open_conflict_must_be_resolved():
         "desolation-sma-distance": "cross_source",
         "cpma-designated-site-count": "internal",
         "mokelumne-carson-pass-season-pass": "cross_source",
+        # Two EBRPD pages, not one contradicting itself: the reservations page
+        # says camping at 15 parks, the park finder returns 18.
+        "ebrpd-camping-park-count": "cross_source",
+        # One page giving two different quiet-hour ranges is the document
+        # discrediting itself; the other two are separate pages disagreeing.
+        "chabot-quiet-hours": "internal",
+        # The brochure says year-round camping; the booking system says closed
+        # 1 Nov - 1 Apr. Five months of the year turn on it.
+        "chabot-season": "cross_source",
+        "chabot-overflow-parking": "cross_source",
+        # One booking page says max 1 vehicle in its structured detail and
+        # 5 parking passes in its own notes.
+        "stewartville-vehicles": "internal",
+        # The park page says Arroyo Flats takes groups of 25 or more; the
+        # booking system says minimum 17, twice. A party of twenty turns on it.
+        "arroyo-flats-minimum": "cross_source",
+        # Ordinance 38 allows a generator that disturbs nobody; the campground
+        # rules attached to every reservation say "No gas generators", flat.
+        "ebrpd-generators": "cross_source",
+        # The park page says the gate shuts at 9pm, ReserveAmerica and the
+        # District alert say 10pm. Nine miles of back road turn on it.
+        "del-valle-gate-close": "cross_source",
+        # One listing describes two XL BBQs, flags BBQ: Y, and says "No
+        # campfires/BBQ's" -- three parts of the same page disagreeing, so
+        # there is no publisher to rank and no recency to apply.
+        "las-trampas-bbq": "internal",
+        # The alerts page and the booking page call it a backpack camp; a
+        # neighbouring park's map calls it a group camp. The class keys into
+        # booking_channels, so 48 hours or 72 hours turns on it.
+        "round-valley-camp-class": "cross_source",
+        # Second instance of Stewartville's defect: one page's structured field
+        # says 4 vehicles and its own notes say 5 parking passes. Everywhere
+        # the two agree they are the same number, so a pass is a vehicle.
+        "morgan-territory-vehicles": "internal",
+        # This project files four camps under Del Valle; the booking facility
+        # prefixes them OHL: and loops them "Ohlone Backpack". The park field
+        # is what park_access joins on, so a $10 fee and a disputed gate ride
+        # on it.
+        "ohlone-camps-park": "cross_source",
     }
 
 

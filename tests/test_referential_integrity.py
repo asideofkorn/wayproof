@@ -63,7 +63,39 @@ def scoped(scope_type: str) -> set:
 # of its own, so a park with a campground but no trailhead (Sunol) is neither a
 # broken reference nor a satisfied one. PR B2's `land_units.csv` gives it a key
 # and this allowlist goes away. Until then a NEW orphan still fails.
-UNKEYED_PARKS = {"Sunol Regional Wilderness"}
+# Each of these has a campground and no trailhead, which is a real shape and
+# not a typo. Anthony Chabot and Dumbarton Quarry are drive-in campgrounds with
+# no peak objective in this dataset, so nothing gives them a trailhead row, and
+# neither has park_access data yet -- their entrance fee and gate hours are
+# unknown rather than absent, so no row was invented to satisfy this join.
+# Listing them by name keeps the guard working: a MISSPELLED park still fails.
+UNKEYED_PARKS = {
+    "Sunol Regional Wilderness",
+    # Dumbarton Quarry left this set when Coyote Hills' own brochure listed it
+    # under that park's Camping heading: it is a campground in Coyote Hills,
+    # not a park, so its park now resolves like any other.
+    # Arrived through an alerts page, not a camping page: all this project
+    # knows is that the camp exists and its water is off.
+    "Round Valley Regional Preserve",
+}
+
+# The mirror case: a park whose ACCESS is known while nothing in this dataset
+# sits in it yet. Empty again -- Briones was here for one commit, until its map
+# brochure named the three group camps the park page had only counted. Kept
+# because the shape recurs: access is published per park, campgrounds per
+# facility, and the two arrive on different pages.
+PARKS_WITH_NO_SITE_YET: set = set()
+
+# Not the same thing, and the difference is the one this project keeps making:
+# "nobody has checked" against "checked, and there is nothing". These parks
+# have been read and have no campground to find. Dry Creek Pioneer is tagged
+# for camping on its own park page, has no ReserveAmerica facility, and shares
+# a map with Garin on which the single Reservable Camp symbol is Arroyo Flats,
+# in the Garin half. Its park_access row is held because the park is real and
+# its gate, fee and closure are published -- not because a camp is expected.
+PARKS_HELD_WITHOUT_A_SITE = {
+    "Dry Creek Pioneer Regional Park",
+}
 
 
 #: ``(label, child values, parent values)`` -- every declared join in data/.
@@ -103,17 +135,46 @@ JOINS = [
      lambda: values("permits.csv", "permit_group")),
     ("regulations[scope=permit_group] -> permits.permit_group",
      lambda: scoped("permit_group"), lambda: values("permits.csv", "permit_group")),
+    # A park-scoped rule must name a park something in this dataset sits in,
+    # or it is the dead scope the wilderness join was added to catch.
+    ("regulations[scope=park] -> campgrounds.park | park_access.park | trailheads.park",
+     lambda: scoped("park"),
+     lambda: values("campgrounds.csv", "park") | values("park_access.csv", "park")
+             | values("trailheads.csv", "park")),
     ("regulations[scope=wilderness] -> permits.wilderness_area",
      lambda: scoped("wilderness"), lambda: values("permits.csv", "wilderness_area")),
-    ("regulations[scope=agency] -> permits.agency_id",
-     lambda: scoped("agency"), lambda: ids("permits.csv", "agency_id")),
+    # Both sides, because agency identity lives in two places: a permit row
+    # carries its issuer, and a trailhead carries the agency whose land it is
+    # on. Permit-free land (permit_group "none") has only the latter -- EBRPD's
+    # rules exist under no permit at all -- so scoping this join to permits.csv
+    # alone would reject every rule written for land you can walk onto freely.
+    ("regulations[scope=agency] -> permits.agency_id | trailheads.agency_id",
+     lambda: scoped("agency"),
+     lambda: ids("permits.csv", "agency_id") | ids("trailheads.csv", "agency_id")),
     ("regulations[scope=jurisdiction] -> permits.jurisdiction",
      lambda: scoped("jurisdiction"), lambda: values("permits.csv", "jurisdiction")),
+    ("booking_channels[scope=agency] -> permits.agency_id | trailheads.agency_id",
+     lambda: {r["scope_value"].strip() for r in rows("booking_channels.csv")
+              if r["scope_type"].strip() == "agency" and r["scope_value"].strip()},
+     lambda: ids("permits.csv", "agency_id") | ids("trailheads.agency_id".split(".")[0] + ".csv",
+                                                   "agency_id")),
+    ("advisories[scope=park] -> campgrounds.park | park_access.park | trailheads.park",
+     lambda: {r["scope_value"].strip() for r in rows("advisories.csv")
+              if r["scope_type"].strip() == "park" and r["scope_value"].strip()},
+     lambda: values("campgrounds.csv", "park") | values("park_access.csv", "park")
+             | values("trailheads.csv", "park")),
+    ("advisories.log_entry_ids -> permit_source_log.entry_id",
+     lambda: ids("advisories.csv", "log_entry_ids"),
+     lambda: values("permit_source_log.csv", "entry_id")),
+    ("booking_channels.log_entry_ids -> permit_source_log.entry_id",
+     lambda: ids("booking_channels.csv", "log_entry_ids"),
+     lambda: values("permit_source_log.csv", "entry_id")),
     ("campgrounds.park -> trailheads.park | park_access.park",
      lambda: values("campgrounds.csv", "park") - UNKEYED_PARKS,
      lambda: values("trailheads.csv", "park") | values("park_access.csv", "park")),
     ("park_access.park -> trailheads.park | campgrounds.park",
-     lambda: values("park_access.csv", "park"),
+     lambda: (values("park_access.csv", "park")
+              - PARKS_WITH_NO_SITE_YET - PARKS_HELD_WITHOUT_A_SITE),
      lambda: values("trailheads.csv", "park") | values("campgrounds.csv", "park")),
 ]
 
@@ -126,13 +187,14 @@ def test_join_resolves(label, child, parent):
 
 # -- keys that must stay usable as keys -------------------------------------
 
-def test_agency_id_values_are_keys_not_display_names():
+@pytest.mark.parametrize("filename", ["permits.csv", "trailheads.csv"])
+def test_agency_id_values_are_keys_not_display_names(filename):
     # This column exists because matching on the display string silently made a
     # forest-wide rule apply to nobody. A value that looks like prose invites
     # exactly that mistake back in.
-    bad = sorted(a for a in ids("permits.csv", "agency_id")
+    bad = sorted(a for a in ids(filename, "agency_id")
                  if not re.fullmatch(r"[a-z0-9_]+", a))
-    assert bad == [], f"agency_id must be lowercase snake_case keys: {bad}"
+    assert bad == [], f"{filename} agency_id must be lowercase snake_case keys: {bad}"
 
 
 def test_peak_names_are_unique_case_insensitively():

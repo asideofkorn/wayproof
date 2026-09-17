@@ -1,0 +1,711 @@
+"""A campground is an objective in its own right.
+
+Run with:  python -m pytest tests/test_campground_objective.py
+"""
+
+from __future__ import annotations
+
+import datetime
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from wayproof.booking import load_booking_channels, load_booking_facilities
+from wayproof.camping import (
+    Campground, load_campgrounds, load_campsites, resolve_campground_name,
+)
+from wayproof.data_loader import load_peaks, load_trailheads
+from wayproof.park_access import load_park_access
+from wayproof.permits import load_permits
+from wayproof.plan import resolve_plan, format_plan_summary
+from wayproof.regulations import load_regulations
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+D = lambda n: os.path.join(ROOT, "data", n)
+DATE = datetime.date(2026, 10, 17)
+
+
+def _plan(*names, **over):
+    kwargs = dict(
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        campsites=load_campsites(D("campsites.csv")),
+        park_access=list(load_park_access(D("park_access.csv")).values()),
+        regulations=load_regulations(D("regulations.csv")),
+        booking_channels=load_booking_channels(D("booking_channels.csv")),
+    )
+    kwargs.update(over)
+    return resolve_plan(list(names), DATE, **kwargs)
+
+
+# -- name resolution ---------------------------------------------------------
+
+def test_a_park_name_resolves_to_no_campground():
+    # Del Valle Regional Park holds five. Picking one would be the same error
+    # as guessing a trailhead.
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    assert resolve_campground_name("Del Valle", cgs) == (None, [])
+
+
+def test_a_generic_suffix_is_optional_but_a_qualifier_is_not():
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    assert resolve_campground_name("Anthony Chabot", cgs)[0].name == "Anthony Chabot Campground"
+    assert resolve_campground_name("Bort Meadow", cgs)[0].name == "Bort Meadow Group Camp"
+    # "Family" distinguishes it from the park's four backpack camps, so it stays.
+    assert resolve_campground_name("Del Valle Family", cgs)[0].name == "Del Valle Family Campground"
+
+
+def test_an_ambiguous_campground_name_offers_candidates_rather_than_picking():
+    cgs = [Campground(name="Ridge Camp", park="A"), Campground(name="Ridge Camp", park="B")]
+    site, candidates = resolve_campground_name("ridge camp", cgs)
+    assert site is None
+    assert candidates == ["Ridge Camp", "Ridge Camp"]
+
+
+# -- the plan ----------------------------------------------------------------
+
+def test_a_campground_alone_resolves_a_plan():
+    r = _plan("Anthony Chabot Campground")
+    assert [c.name for c in r.campground_objectives] == ["Anthony Chabot Campground"]
+    assert r.objectives == []
+    assert r.not_found == []
+    assert r.has_objectives
+
+
+def test_no_trailhead_is_invented_for_a_campground():
+    # Car camping has no approach. A trailhead here would produce an entry
+    # point, a route shape and a permit that no source supports.
+    r = _plan("Anthony Chabot Campground")
+    assert r.trailhead is None
+    assert r.permit_entries == []
+    assert r.route_shape == "unknown"
+    assert r.to_dict()["trailhead_modelled"] is False
+
+
+def test_the_campground_carries_state_law_without_a_permit_to_inherit_it_from():
+    # Jurisdiction reaches a trip through the permit. A campsite booked without
+    # one would otherwise silently drop the California Campfire Permit.
+    r = _plan("Anthony Chabot Campground")
+    ids = {x.regulation_id for x in r.regulations}
+    assert "ca-campfire-permit" in ids, "state law must still apply"
+    assert "ebrpd-pets-campground" in ids, "the agency's own rules must apply"
+
+
+def test_the_plan_answers_about_the_named_campground_not_its_neighbours():
+    # The trailhead flow lists every campground in the park, because there the
+    # question is "where can I sleep near this peak". Here the caller named one.
+    r = _plan("Anthony Chabot Campground")
+    assert [c.name for c in r.facilities.campgrounds] == ["Anthony Chabot Campground"]
+
+
+def test_costs_and_booking_resolve_for_a_campground_trip():
+    r = _plan("Anthony Chabot Campground")
+    kinds = {c.kind for c in r.costs}
+    assert "campground" in kinds and "park_entrance" in kinds
+    assert "permit" not in kinds, "no permit governs this trip"
+    channels = {c.channel_id for c in r.facilities.booking_channels}
+    assert "ebrpd-family" in channels, "the family queue is how this site is booked"
+
+
+def test_a_backpack_campground_objective_says_it_is_walked_to():
+    r = _plan("Sunol Backpack Camp")
+    out = format_plan_summary(r)
+    assert "Reached on foot" in out
+    channels = {c.channel_id for c in r.facilities.booking_channels}
+    assert "ebrpd-backpack" in channels, "backpack sites are a different queue"
+
+
+def test_an_unknown_name_still_reports_both_namespaces():
+    r = _plan("Nowhere At All")
+    assert r.not_found == ["Nowhere At All"]
+    assert "peak or campground data" in format_plan_summary(r)
+
+
+def test_a_peak_objective_is_unaffected_by_the_campground_path():
+    r = _plan("Rose Peak")
+    assert r.campground_objectives == []
+    assert r.trailhead is not None
+    assert r.permit_entries, "the peak flow still resolves a permit"
+
+
+def test_a_group_camps_minimum_is_its_own_not_the_districts_floor():
+    # The District floor is 17. Bort Meadow holds 300 and needs 100, so a party
+    # of twenty reading 17 would plan a trip it cannot book.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    assert "MINIMUM PARTY SIZE IS 100" in by_name["Bort Meadow Group Camp"].notes
+    assert "MINIMUM PARTY SIZE IS 50" in by_name["Hawk Ridge Group Camp"].notes
+    assert "MINIMUM PARTY SIZE 17" in by_name["Puma Point Group Camp"].notes
+    for name in ("Bort Meadow Group Camp", "Hawk Ridge Group Camp"):
+        assert "reconstructed" in by_name[name].notes, (
+            "the tier table extracted as flattened columns; the row alignment "
+            "is a reading and must not read as a stated per-site figure")
+
+
+def test_each_briones_camp_gives_its_own_minimum_not_a_shared_range():
+    # The park page published one 50-to-300 range across all three, which is no
+    # answer for any of them: a party of twenty can book Wee-Ta-Chi, cannot book
+    # Maud Whalen, and is eighty short of Homestead Valley.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for camp, minimum, maximum in (("Wee-Ta-Chi", "17", "50"),
+                                   ("Homestead Valley", "100", "300")):
+        notes = by_name[f"{camp} Group Camp"].notes
+        assert f"MINIMUM {minimum}, MAXIMUM {maximum}" in notes, camp
+        # Closed for over five months; booking a winter date is not possible.
+        assert "SEASONALLY CLOSED 1 NOVEMBER - 15 MAY" in notes, camp
+    # Maud Whalen is deliberately not in that list: its two EBRPD pages give
+    # two different floors, so the row states both rather than picking one.
+    maud = by_name["Maud Whalen Group Camp"].notes
+    assert "SEASONALLY CLOSED 1 NOVEMBER - 15 MAY" in maud
+    assert "Minimum Number of People 17" in maud and "overview says 25" in maud
+    assert "arroyo-flats-minimum" in maud
+
+
+def test_the_flattened_tier_reading_is_marked_as_no_longer_deciding_anything():
+    # Its 75-capacity row was corrected once and then contradicted back: the
+    # per-site pages say 17, the summary pages say 25. Neither reading is
+    # restored. No Chabot camp is 75, and the only two sites that row governed
+    # now state their own numbers, so the table has nothing left to decide --
+    # and the rows that used it have to say so rather than look confident.
+    by_name = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for camp in ("Bort Meadow Group Camp", "Puma Point Group Camp"):
+        notes = by_name[camp].notes
+        assert "ONE ROW OF IT WAS WRONG BOTH TIMES" in notes, camp
+        assert "DECIDES NOTHING ANYWHERE" in notes, camp
+
+
+def test_star_mine_states_who_may_book_it_not_only_how_many():
+    # The only campground here restricted by the character of the party -- and
+    # the booking system is narrower than the park page: "School Groups and
+    # Scouts", not "organized, educational groups". A community group reading
+    # the park page as permission would be refused at the gate.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
+    assert "SCHOOL GROUPS AND SCOUTS ONLY" in cg.notes.upper()
+    assert "NO WATER" in cg.notes.upper()
+    assert cg.fee_notes == "", "no fee is published for this camp; absent is not free"
+
+
+def test_a_group_camp_can_be_hike_in():
+    # Star Mine is classified Hike-In with parking a quarter mile off, so the
+    # assumption that group camps are driven to was wrong. Booking one for a
+    # party of 35 means carrying everything that distance.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Star Mine Group Camp"]
+    assert cg.campsite_type == "group"
+    assert cg.access_mode == "hike_in"
+    assert "quarter mile" in cg.notes.lower()
+
+
+def test_black_diamonds_seven_gate_bands_are_not_flattened_to_one_time():
+    # park_access holds one closing time and this park has seven. A single
+    # figure would be wrong for most of the year, and the gate shuts on a
+    # backpacker walking out 3.2 miles from Stewartville.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Black Diamond Mines Regional Preserve"]
+    assert pa.gate_open == "8:00 AM", "opening is 8am in every band, so it is storable"
+    assert "varies by season" in pa.gate_close
+    for band in ("Jan 1-Jan 30 8am-5pm", "Apr 4-Sept 7 8am-8pm", "Nov 1-Dec 31 8am-5pm"):
+        assert band in pa.gate_hours_conditions
+
+
+def test_group_and_backpack_sites_are_block_released_not_rolling():
+    # A date is unbookable until its six-month block opens, however far ahead
+    # you plan -- which a rolling horizon would have implied otherwise.
+    from wayproof.booking import BACKPACK, FAMILY, channels_for, load_booking_channels
+    chans = load_booking_channels(D("booking_channels.csv"))
+    backpack = " ".join(c.release_mechanics for c in channels_for(chans, BACKPACK, agency="ebrpd"))
+    assert "SIX-MONTH BLOCK" in backpack
+    family = " ".join(c.release_mechanics for c in channels_for(chans, FAMILY, agency="ebrpd"))
+    assert "rolling 12-week" in family
+
+
+def test_planning_dairy_glen_surfaces_the_parks_deadline_and_the_districts():
+    # The park-scoped channel is only worth storing if the objective actually
+    # reaches it. Coyote Hills is the park that made booking.channels_for take
+    # a park at all; before that the plan would have shown three days only.
+    res = _plan("Dairy Glen Group Camp")
+    lead = " ".join(c.lead_time for c in res.facilities.booking_channels)
+    assert "5 working days" in lead, "the park's own deadline"
+    assert "3 days before arrival" in lead, "and the District's, still shown"
+
+
+def test_dairy_glen_is_hike_in_and_says_so_where_a_planner_reads_it():
+    # Corrected from a drive_in that no source supported. Fifty people carry
+    # their kit a quarter mile; ten vehicles stay at the lot.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Dairy Glen Group Camp"]
+    assert cg.access_mode == "hike_in"
+    text = format_plan_summary(_plan("Dairy Glen Group Camp"))
+    assert "HIKE-IN" in text.upper()
+
+
+def test_group_camp_access_covers_four_states_and_none_of_them_is_a_guess():
+    # Seventeen hike-in; one drive-in, Las Trampas' Corral, which broke the
+    # rule that was forming; one boat-in AND hike-in, Point Pinole, which broke
+    # the field's single-valuedness; and three blank, named on a map that says
+    # nothing about reaching them. Assert all four, so none can quietly go.
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    group = [c for c in cgs if c.campsite_type == "group"]
+    assert len(group) == 21
+    by_mode = {}
+    for c in group:
+        by_mode.setdefault(c.access_mode, []).append(c.name)
+    assert sorted(by_mode) == ["", "boat_in;hike_in", "drive_in", "hike_in"]
+    assert by_mode["drive_in"] == ["Corral Group Camp"]
+    assert by_mode["boat_in;hike_in"] == ["Point Pinole Group Camp"]
+    assert sorted(by_mode[""]) == ["Cedar Group Camp", "Punta Vaca Group Camp",
+                                   "Wild Turkey Group Camp"]
+
+
+def test_arroyo_flats_carries_both_minimums_rather_than_choosing_one():
+    # 17 on the booking system, 25 on the park page and in the tier table. A
+    # party of twenty is booked by one and refused by the other, and the site
+    # is booked by phone, so neither number is enforced by a checkout.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Arroyo Flats Group Camp"]
+    assert "minimum 17" in cg.notes
+    assert "25 people or more" in cg.notes
+    assert "arroyo-flats-minimum" in cg.notes, "points at the open thread"
+
+
+def test_garins_published_gate_bands_leave_two_days_of_the_year_uncovered():
+    # Six bands running Nov 1 to Oct 29. October 30 and 31 fall in none of
+    # them, at a park whose group camp says to check the gate before arriving.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Garin Regional Park"]
+    assert pa.gate_open == "8:00 AM", "opening is 8am in every band, so it is storable"
+    assert "OCTOBER 30 AND 31 FALL IN NO BAND" in pa.gate_hours_conditions
+    for band in ("Nov 1-Mar 5 8am-6pm", "May 22-Aug 27 8am-9pm", "Sep 25-Oct 29 8am-7pm"):
+        assert band in pa.gate_hours_conditions
+
+
+def test_the_group_alcohol_permit_is_priced_on_the_row_that_costs_it():
+    # $25, bought in advance by phone, and not the site fee. A group that turns
+    # up with beer and no permit is in breach although beer is allowed.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Arroyo Flats Group Camp"]
+    assert "$25.00" in cg.fee_notes
+    assert "NOT THAT FEE" in cg.fee_notes
+    # And the side charge must not be allowed to read as the nightly rate: the
+    # row still carries the project's own guard for a fee nobody has recorded.
+    assert "absent is not free" in cg.fee_notes
+
+
+def test_the_unsourced_access_report_is_rejected_and_says_what_it_got_right():
+    # R0002 claimed Briones' camps are drive-in. The booking pages say hike-in,
+    # so it is rejected -- but Wee-Ta-Chi does permit driving in dry weather,
+    # and a ledger that records only "wrong" teaches the wrong lesson.
+    from wayproof.reports import pending_reports
+    r = {x.report_id: x for x in pending_reports(D("pending_reports.csv"))}["R0002"]
+    assert r.status == "rejected"
+    assert "SCHEMA GAP" in r.resolution_notes
+    assert "conditions permitting" in r.resolution_notes
+    # The earlier acceptance text survives: the ledger shows its own reversals.
+    assert "ACCEPTED 2026-09-16" in r.resolution_notes
+
+
+def test_the_alcohol_rule_names_the_exception_it_cannot_hold():
+    # Wee-Ta-Chi bans alcohol on its own page. regulations.csv has no site
+    # scope, so the ban lives on the campground row and the agency rule has to
+    # point at it -- otherwise the District rule reads as reaching everywhere.
+    from wayproof.regulations import load_regulations
+    rule = {r.regulation_id: r for r in
+            load_regulations(D("regulations.csv"))}["ebrpd-alcohol"]
+    assert "Wee-Ta-Chi" in rule.detail
+    assert "nowhere to go" in rule.detail
+
+
+def test_the_only_reservable_camp_across_both_halves_of_one_parkland():
+    # Garin and Dry Creek Pioneer share one brochure map whose legend has a
+    # single "Reservable Camp" symbol, used once. 5,800 acres, one camp -- and
+    # Dry Creek Pioneer is tagged for camping anyway, which is what makes it an
+    # over-count in the 15-versus-18 thread rather than a second camping park.
+    cgs = load_campgrounds(D("campgrounds.csv"))
+    parkland = [c for c in cgs if c.park in ("Garin Regional Park",
+                                             "Dry Creek Pioneer Regional Park")]
+    assert [c.name for c in parkland] == ["Arroyo Flats Group Camp"]
+    assert "only reservable camp across both parks" in parkland[0].notes
+    # And the four reservable areas beside it on the same inset are picnic
+    # areas, the call already made for Briones' Oak Grove, Newt Hollow and Crow.
+    for picnic in ("Cattlemen", "Buttonwood", "Ranchside", "Pioneer"):
+        assert picnic not in {c.name for c in cgs}
+
+
+def test_a_park_held_without_a_camp_is_not_filed_as_one_not_yet_checked():
+    # "Nobody has checked" and "checked, and there is nothing" are the two
+    # states this project spends its time separating, and the integrity guard
+    # has a separate allowlist for each.
+    from tests.test_referential_integrity import (
+        PARKS_HELD_WITHOUT_A_SITE, PARKS_WITH_NO_SITE_YET,
+    )
+    assert "Dry Creek Pioneer Regional Park" in PARKS_HELD_WITHOUT_A_SITE
+    assert PARKS_HELD_WITHOUT_A_SITE.isdisjoint(PARKS_WITH_NO_SITE_YET)
+
+
+def test_the_garden_closure_stays_where_a_reader_will_meet_it():
+    # The garden is in Dry Creek Pioneer. Nothing in this dataset sits in that
+    # park, so an advisory scoped there could never reach a plan. It stays on
+    # Garin, where EBRPD posts it and where Arroyo Flats is -- and the row says
+    # it is mis-scoped rather than pretending otherwise.
+    from wayproof.advisories import load_advisories
+    advisories = {a.advisory_id: a for a in load_advisories(D("advisories.csv"))}
+    assert "dry-creek-pioneer-garden" not in advisories, "no unreachable duplicate"
+    garden = advisories["garin-dry-creek-garden"]
+    assert garden.scope_value == "Garin Regional Park"
+    assert "ACTUALLY IN THE ADJOINING PARK" in garden.detail
+    assert "can never reach a plan" in garden.detail
+
+
+def test_reinhardts_three_camps_answer_the_several_the_map_could_not():
+    # The park page said "several", the map named one, and this project
+    # recorded one rather than guessing from eight labels. Two of those eight
+    # were camps -- guessing would have been wrong five times out of eight.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    reinhardt = [c for c in cgs.values()
+                 if c.park == "Dr. Aurelia Reinhardt Redwood Regional Park"]
+    assert sorted(c.name for c in reinhardt) == ["Fern Dell", "Girls' Camp", "Trail's End"]
+    assert all(c.access_mode == "hike_in" for c in reinhardt)
+    # Named places that turned out NOT to be camps stayed out of the dataset.
+    for label in ("Big Bend Meadow", "Orchard", "Old Church", "Anna Costa", "Quail", "Owl"):
+        assert label not in cgs
+
+
+def test_trails_end_has_the_tightest_party_band_in_the_dataset():
+    # 17 to 25. Eight people wide, at the closest camping to Oakland here: a
+    # party of 16 cannot book it and a party of 26 cannot fit.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Trail's End"]
+    assert "MINIMUM 17, MAXIMUM 25" in cg.notes
+    assert "TIGHTEST PARTY-SIZE BAND" in cg.notes
+
+
+def test_the_briones_season_no_longer_leans_on_the_misread_field():
+    # "Open through 31 October" was counted as a surface confirming the 1 Nov
+    # closure. Reinhardt's copy of that field says 06 Jan 2027 on a page that
+    # also states a 1 Nov closure, so it is a booking horizon, not a season.
+    # The closure stands on three other surfaces; the count was what was wrong.
+    for name in ("Wee-Ta-Chi Group Camp", "Maud Whalen Group Camp",
+                 "Homestead Valley Group Camp"):
+        notes = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}[name].notes
+        assert "fourth surface" not in notes, name
+        assert "WAS MISREAD" in notes, name
+        assert "three independent surfaces" in notes, name
+
+
+def test_the_constructed_name_turned_out_right_and_the_flag_was_still_correct():
+    # Keyed "Morgan Territory Backpack Camp" when nothing read named the camp.
+    # The booking system calls it exactly that. A convention holding is not a
+    # licence to construct names: the row still records that it was a guess,
+    # because the flag would have been just as right if the name had been wrong.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert "CONSTRUCTED NAME TURNED OUT TO BE THE PUBLISHED ONE" in cg.notes
+    assert "not a licence to construct names" in cg.notes
+
+
+def test_the_longest_carry_in_the_dataset_is_on_the_row_that_has_it():
+    # 4.5 miles from the parking, against 3.2 at Stewartville, 1.5 at
+    # Wee-Ta-Chi and a quarter mile at three others. A park-precision
+    # coordinate is nowhere near this camp and the row says so.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert "4.5 MILES FROM THE SITE" in cg.notes
+    assert cg.coord_precision == "park"
+    assert "nowhere near it" in cg.coord_source
+
+
+def test_a_reservation_buys_the_night_and_costs_the_freedom_to_move():
+    # "Campers are restricted to campsite during curfew hours (10pm-5am)" is
+    # the sentence that answers whether a booking exempts you from a park's
+    # posted hours -- left open at Mission Peak, where the penalty is a $300
+    # minimum citation and the page says nothing about campers.
+    cg = {c.name: c for c in
+          load_campgrounds(D("campgrounds.csv"))}["Morgan Territory Backpack Camp"]
+    assert "RESTRICTED TO THE CAMPSITE DURING CURFEW HOURS" in cg.notes
+    assert "$300" in cg.notes, "names the Mission Peak penalty it bears on"
+
+
+
+def test_morgan_territorys_gate_bands_cover_the_year_exactly():
+    # Third clean set, with Reinhardt Redwood -- against Garin and Dry Creek
+    # Pioneer leaving two days in no band and Las Trampas doubling one.
+    from wayproof.park_access import load_park_access
+    pa = load_park_access(D("park_access.csv"))["Morgan Territory Regional Preserve"]
+    assert pa.gate_open == "8:00 AM"
+    assert "no hole and no overlap" in pa.gate_hours_conditions
+    for band in ("January 8am-5pm", "Apr 18-Sept 5 8am-8pm", "Nov 6-Dec 31 8am-5pm"):
+        assert band in pa.gate_hours_conditions, band
+
+
+def test_a_stated_no_fee_is_not_filed_like_an_absent_fee_section():
+    # Morgan Territory says "Parking: No fee". Las Trampas' page has no Fees
+    # section at all. Reading those the same way is how absent becomes free.
+    from wayproof.park_access import load_park_access
+    by_park = load_park_access(D("park_access.csv"))
+    stated = by_park["Morgan Territory Regional Preserve"]
+    silent = by_park["Las Trampas Wilderness Regional Preserve"]
+    assert stated.entrance_fee == "No fee"
+    assert silent.entrance_fee == ""
+    assert "NO PARKING FEE IS PUBLISHED" in silent.fee_conditions
+    assert "Absent is not free" in silent.fee_conditions
+
+
+def test_the_ohlone_permit_is_gone_and_two_ebrpd_maps_still_require_it():
+    # permit_group has always been "none" on this corridor, so nothing changed.
+    # A blank nobody filled and a sourced absence with a date look identical in
+    # a column and are not the same claim -- and EBRPD still links two maps
+    # telling a planner to buy a permit that is no longer sold.
+    from wayproof.data_loader import load_trailheads
+    ths = {t.name: t for t in load_trailheads(D("trailheads.csv"))}
+    for name in ("Del Valle (Lichen Bark)", "Stanford Ave Staging Area"):
+        th = ths[name]
+        assert th.permit_group == "none", name
+        assert "ABOLISHED ON 1 JANUARY 2026" in th.notes, name
+        assert "STALE-SOURCE TRAP IS LIVE" in th.notes, name
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Sunol Backpack Camp"]
+    assert "Backpacking reservations are still required" in cg.notes
+
+
+def test_del_valles_five_camps_answer_a_gap_this_project_logged_itself():
+    # ReserveAmerica said "Group campsite gate hours change seasonally" at a
+    # park where this project held no group campsite. The Ohlone permit map
+    # names five, with the type in the name -- which is why they are added
+    # where Reinhardt Redwood's symbol-coded labels were not.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    named = ["Wild Turkey Group Camp", "Punta Vaca Group Camp", "Cedar Group Camp",
+             "Lil Chaparral Horse Camp", "Caballo Loco Horse Camp"]
+    for name in named:
+        c = cgs[name]
+        assert c.park == "Del Valle Regional Park", name
+        assert c.access_mode == "", name
+        assert "ACCESS MODE IS NOT RECORDED" in c.notes, name
+    assert {cgs[n].campsite_type for n in named} == {"group", "equestrian"}
+
+
+def test_equestrian_resolves_no_class_specific_booking_channel_and_that_is_honest():
+    # EBRPD names equestrian as a class in its own cancellation text, so the
+    # word is the District's. No equestrian channel exists here, so a plan gets
+    # the District-wide contact and no method -- which is what nobody knowing
+    # how an equestrian site is booked should look like.
+    from wayproof.booking import channels_for, load_booking_channels
+    chans = channels_for(load_booking_channels(D("booking_channels.csv")),
+                         "equestrian", agency="ebrpd")
+    assert [c.applies_to for c in chans] == ["all"]
+
+
+def test_one_booking_facility_sells_three_parks_worth_of_backpack_sites():
+    # EB/110028 is titled just "Sunol" and lists MIS:, OHL: and SUN: sites.
+    # That is why Mission Peak has no facility of its own -- and why searching
+    # the booking system for a park's name is not a way to find out whether the
+    # park has camping.
+    sites = load_campsites(D("campsites.csv"))
+    loops = {s.loop for s in sites if s.loop.endswith("Backpack")}
+    assert loops == {"Mission Peak Backpack", "Ohlone Backpack", "Sunol Backpack"}
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    assert "NOT NAMED FOR THIS PARK" in cgs["Eagle Springs"].notes
+    assert "OPEN YEAR ROUND" in cgs["Sunol Backpack Camp"].notes
+
+
+def test_the_ohlone_camps_park_field_is_right_about_the_fee_and_maybe_wrong_about_the_land():
+    # Filed under Del Valle, prefixed OHL: by the facility. park_access joins
+    # on this field, so as filed they inherit Del Valle's $10 weekend fee --
+    # which is what a backpacker walking in from Lichen Bark actually pays,
+    # whatever the boundary says.
+    cgs = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}
+    for name in ("Boyd Camp", "Stewart's Camp", "Maggie's Half Acre", "Doe Camp"):
+        assert cgs[name].park == "Del Valle Regional Park", name
+    sites = [s for s in load_campsites(D("campsites.csv")) if s.loop == "Ohlone Backpack"]
+    assert {s.campground for s in sites} == {
+        "Boyd Camp", "Doe Camp", "Maggie's Half Acre", "Stewart's Camp"}
+
+
+# -- seasonal closure --------------------------------------------------------
+
+def test_a_january_plan_for_a_winter_closed_camp_says_it_is_shut():
+    # The defect this column was added for. Before it, planning Corral Group
+    # Camp for 15 January produced a full costed plan with booking channels and
+    # never mentioned that the camp shuts 1 November to 31 March.
+    text = format_plan_summary(resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        park_access=list(load_park_access(D("park_access.csv")).values())))
+    assert "CLOSED ON YOUR DATE" in text
+    assert "1 November to 31 March" in text
+
+
+def test_the_same_camp_in_july_says_it_is_open_and_still_names_the_season():
+    text = format_plan_summary(resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 7, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))))
+    assert "Open on your date" in text
+    assert "CLOSED ON YOUR DATE" not in text
+
+
+def test_no_season_on_file_is_said_rather_than_left_silent():
+    # Silence would read as "open". Absent is not a value, here as everywhere.
+    text = format_plan_summary(resolve_plan(
+        ["Star Mine Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))))
+    assert "No seasonal closure is recorded" in text
+    assert "not the same as knowing it is open all year" in text
+
+
+def test_the_machine_surface_carries_the_season_and_the_verdict():
+    payload = resolve_plan(
+        ["Corral Group Camp"], datetime.date(2027, 1, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv"))).to_dict()
+    camp = payload["campground_objectives"][0]
+    assert camp["season_closed"] == "1 November to 31 March"
+    assert camp["closed_on_trip_date"] is True
+
+
+def test_anthony_chabots_disputed_season_is_left_out_of_the_columns():
+    # Its season is an open conflict: the brochure says year-round, the booking
+    # system says closed 1 Nov to 1 Apr. Filling the columns would launder a
+    # disputed reading into a fact a date-aware planner then asserts.
+    cg = {c.name: c for c in load_campgrounds(D("campgrounds.csv"))}["Anthony Chabot Campground"]
+    assert cg.season_closed_start is None and cg.season_closed_end is None
+    assert "DELIBERATELY" in cg.notes and "chabot-season" in cg.notes
+
+
+def _stay(name, when=datetime.date(2027, 7, 15)):
+    return resolve_plan(
+        [name], when,
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        campsites=load_campsites(D("campsites.csv")),
+        booking_facilities=load_booking_facilities(D("booking_facilities.csv")))
+
+
+def test_a_single_unit_camp_says_there_is_no_site_to_choose():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Booked as one unit" in text
+    assert "no site to choose inside it" in text
+
+
+def test_a_camp_whose_sites_are_recorded_says_how_many():
+    text = format_plan_summary(_stay("Sunol Backpack Camp"))
+    assert "Holds individually bookable sites" in text
+    assert "7 recorded here" in text
+
+
+def test_a_camp_whose_sites_are_not_recorded_says_so_instead_of_implying_none():
+    """Del Valle Family Campground has 155 sites and this project holds none.
+
+    The failure mode without this: a plan that names a container campground,
+    prints no site list, and leaves a reader to conclude there is nothing to
+    choose -- which is the same wrong answer as calling it a single unit.
+    """
+    text = format_plan_summary(_stay("Del Valle Family Campground"))
+    assert "Holds individually bookable sites" in text
+    assert "NONE OF THEM ARE RECORDED HERE" in text
+    assert "go to the booking page for the list" in text
+
+
+def test_an_unrecorded_booking_level_is_said_rather_than_assumed_to_be_one_unit():
+    text = format_plan_summary(_stay("Venados"))
+    assert "is not recorded" in text
+    assert "not the same as knowing it is a single unit" in text
+
+
+def test_the_machine_surface_carries_the_booking_level_on_both_of_its_campground_lists():
+    # The objective list and the facilities list are two different renderings
+    # of the same rows, and a field on one and not the other is how the two
+    # human surfaces came to disagree before.
+    payload = _stay("Corral Group Camp").to_dict()
+    assert payload["campground_objectives"][0]["unit_level"] == "site"
+    nearby = resolve_plan(
+        ["Rose Peak"], datetime.date(2027, 7, 15),
+        peaks=load_peaks(D("peaks.csv")), trailheads=load_trailheads(D("trailheads.csv")),
+        permits=load_permits(D("permits.csv"), D("release_policies.csv")),
+        campgrounds=load_campgrounds(D("campgrounds.csv")),
+        campsites=load_campsites(D("campsites.csv"))).to_dict()
+    listed = nearby.get("facilities", {}).get("campgrounds", [])
+    assert listed, "expected campgrounds in the facilities block"
+    assert all("unit_level" in c for c in listed)
+
+
+def test_a_plan_names_the_booking_page_rather_than_the_park():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Booked through EB/110455, slug 'las-trampas-regional-wilderness'" in text
+    assert "reserveamerica.com/explore/las-trampas-regional-wilderness" in text
+
+
+def test_a_facility_that_spans_parks_says_so_on_the_camp_it_sells():
+    """Boyd Camp is in Del Valle and books through the Sunol facility.
+
+    Sending a reader to "the Del Valle page" for this camp lands them on
+    EB/110003, which does not sell it. That is the failure this line exists
+    to prevent, and it is only visible from the whole table.
+    """
+    text = format_plan_summary(_stay("Boyd Camp"))
+    assert "Booked through Sunol (EB/110028)" in text
+    assert "That page is not this park's alone" in text
+    assert "Mission Peak Regional Preserve and Sunol Regional Wilderness" in text
+
+
+def test_a_park_sold_through_several_facilities_says_so():
+    text = format_plan_summary(_stay("Dairy Glen Group Camp"))
+    assert "this park is sold through more than one" in text
+    assert "EB/110750" in text
+    assert "not one page" in text
+
+
+def test_a_single_facility_single_park_camp_says_neither_thing():
+    # The lines must fire on the asymmetry, not on every campground.
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "not this park's alone" not in text
+    assert "sold through more than one" not in text
+
+
+def test_an_unrecorded_facility_is_not_filled_in_from_the_park():
+    text = format_plan_summary(_stay("Lil Chaparral Horse Camp"))
+    assert "Which booking facility sells this camp is not recorded" in text
+    assert "not inherited from the park" in text
+    assert "EB/110003" not in text  # its park's other facility, not borrowed
+
+
+def test_the_machine_surface_carries_the_facility_and_both_directions_of_the_join():
+    payload = _stay("Boyd Camp").to_dict()
+    assert payload["campground_objectives"][0]["facility_id"] == "EB/110028"
+    fac = payload["facilities"]
+    assert fac["facility_parks"]["EB/110028"] == [
+        "Del Valle Regional Park", "Mission Peak Regional Preserve",
+        "Sunol Regional Wilderness"]
+    assert fac["park_facilities"]["Del Valle Regional Park"] == [
+        "EB/110003", "EB/110028"]
+    listed = {f["facility_id"]: f for f in fac["booking_facilities"]}
+    assert listed["EB/110028"]["facility_name"] == "Sunol"
+    assert listed["EB/110028"]["slug"] == "sunol"
+
+
+def test_a_plan_shows_the_loop_and_says_it_carries_no_rule():
+    text = format_plan_summary(_stay("Wee-Ta-Chi Group Camp"))
+    assert "Loop: Primitive Group Camp Seasonal" in text
+    assert "the booking system's own label; it carries no rule here" in text
+    # Its season IS recorded, so the caution does not fire.
+    assert "'Seasonal' in a loop name is not a closure" not in text
+
+
+def test_a_seasonal_loop_with_no_season_carries_the_caution():
+    text = format_plan_summary(_stay("Bort Meadow Group Camp"))
+    assert "Loop: Primitive Group Camp Seasonal B" in text
+    assert "'Seasonal' in a loop name is not a closure" in text
+    assert "Round Valley's loop says Seasonal and that camp is open year round" in text
+
+
+def test_a_camp_with_no_loop_prints_no_loop_line():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Loop:" not in text
+
+
+def test_the_machine_surface_carries_the_loop():
+    payload = _stay("Wee-Ta-Chi Group Camp").to_dict()
+    assert payload["campground_objectives"][0]["loop"] == "Primitive Group Camp Seasonal"
+    assert _stay("Corral Group Camp").to_dict()[
+        "campground_objectives"][0]["loop"] is None
