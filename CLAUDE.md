@@ -114,6 +114,7 @@ close it. If you read part of a page, fill what you read and leave
 Three, and the procedures above serve them.
 
 - **Never write a value you did not read.** Web-search summaries are not a read.
+  `ingest.py` enforces this: no source, no row.
 - **Blank means nobody checked.** It never means "no".
 - **Name a column for what the source said**, not for the answer, wherever a
   rule can override it: `pets_marker`, `coord_precision`, not `pets_allowed`.
@@ -139,7 +140,16 @@ python cli.py --open-questions                        # what is unconfirmed
 python cli.py --campgrounds --access drive_in --near 37.8044,-122.2712
 python scripts/scorecard.py                           # coverage, never a target
 python scripts/build_site.py                          # -> _site/
+
+python ingest.py check campgrounds --set name="X" pets_marker=allowed
+python ingest.py add campgrounds --source URL --summary "what it said" --set ...
 ```
+
+`ingest.py` writes a row and its ledger entry together or neither, and refuses
+without a source. Use it rather than editing a CSV by hand: it catches the
+three failures that are silent once committed -- a column that does not exist,
+a value outside its vocabulary, a colliding entry id. It only ADDS rows;
+changing an existing value still follows the procedure above.
 
 `scorecard.py` is a measurement and does not fail the build. Do not chase it —
 the cheapest way to move most rows is to add unchecked data.
