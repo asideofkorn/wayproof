@@ -149,3 +149,69 @@ def test_the_whole_table_is_not_a_place_to_ask_from():
     ids = {r.regulation_id for r in scoped}
     assert "desolation-campfire-ban" not in ids
     assert "ebrpd-fire" in ids
+
+
+# -- the conversion: pets resolves through topic, and fire reaches a surface --
+
+def test_pets_matching_is_topics_matching():
+    # pets.py kept its marker logic and its phrasing; every regex and every
+    # scope resolution routes here. Two implementations of "which animals does
+    # this rule name" is how they drift.
+    from wayproof import pets
+    reg = next(r for r in _regs() if r.regulation_id == "ebrpd-pets-campground")
+    assert pets.rule_animals(reg) == topic.subjects_named(topic.PETS, reg)
+    assert pets.rule_reaches(reg, "rabbit") is topic.reaches(topic.PETS, reg, "rabbit")
+    assert pets.PETS_CATEGORY == topic.PETS.category
+
+
+def test_pets_scoping_is_topics_scoping():
+    from wayproof import pets
+    c = _camp("Round Valley Backpack Camp")
+    assert [r.regulation_id for r in pets.rules_for_campground(c, _regs())] == \
+           [r.regulation_id for r in topic.rules_for_place(
+               _regs(), c.agency_id, c.jurisdiction, c.park)]
+
+
+def test_a_park_fire_ban_reaches_the_plan_above_the_rules():
+    # Same call plan makes for the Whitney exclusion: a park-wide ban must not
+    # sit below a wall of regulations.
+    import datetime
+    from wayproof.camping import load_campgrounds, load_campsites
+    from wayproof.permits import load_permits
+    from wayproof.plan import format_plan_summary, resolve_plan
+    result = resolve_plan(
+        ["Stewartville Backpack Camp"], peaks=[], trailheads=[],
+        permits=load_permits(os.path.join(ROOT, "data", "permits.csv"),
+                             os.path.join(ROOT, "data", "release_policies.csv")),
+        trip_date=datetime.date(2026, 10, 17),
+        campgrounds=load_campgrounds(CAMPGROUNDS),
+        campsites=load_campsites(os.path.join(ROOT, "data", "campsites.csv")),
+        regulations=_regs())
+    text = format_plan_summary(result)
+    ban = "NO campfires and NO barbecues at Black Diamond Mines"
+    assert ban in text
+    assert text.index(ban) < text.index("Rules in force")
+
+
+def test_a_campground_with_no_park_fire_rule_gets_no_fire_block():
+    # A bare count is noise. Anthony Chabot has no park-scoped fire rule and
+    # every fire rule prints below anyway.
+    import datetime
+    from wayproof.camping import load_campgrounds, load_campsites
+    from wayproof.permits import load_permits
+    from wayproof.plan import format_plan_summary, resolve_plan
+    result = resolve_plan(
+        ["Anthony Chabot Campground"], peaks=[], trailheads=[],
+        permits=load_permits(os.path.join(ROOT, "data", "permits.csv"),
+                             os.path.join(ROOT, "data", "release_policies.csv")),
+        trip_date=datetime.date(2026, 10, 17),
+        campgrounds=load_campgrounds(CAMPGROUNDS),
+        campsites=load_campsites(os.path.join(ROOT, "data", "campsites.csv")),
+        regulations=_regs())
+    staying = format_plan_summary(result).split("Conditions on your date")[0]
+    assert "fire rule(s) apply to this land" not in staying
+
+
+def test_suppressed_quotes_leave_no_dangling_colon():
+    a = _answer("Anthony Chabot Campground", topic.FIRE, "campfire")
+    assert not any(line.rstrip().endswith("govern you:") for line in a.lines(rule_detail=0))

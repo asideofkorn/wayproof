@@ -61,7 +61,7 @@ from .regulations import (
     supersession_note,
     supersessions,
 )
-from . import pets
+from . import pets, topic
 from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
@@ -1002,6 +1002,15 @@ def format_plan_summary(result: PlanResult) -> str:
             pets_answer = pets.answer(
                 c, pets.rules_for_campground(c, result.regulations))
             lines.extend(f"    {line}" for line in pets_answer.lines(rule_detail=0))
+            # Fire, but only where the PARK has a rule of its own. Every fire
+            # rule prints below; what must not be scrolled past is a park-wide
+            # ban sitting on top of the District's permission -- the same call
+            # plan makes for the Whitney exclusion. A bare count is noise.
+            here = topic.rules_for_place(result.regulations, c.agency_id,
+                                         c.jurisdiction, c.park)
+            fire = topic.answer(c.name, c.park, topic.FIRE, here)
+            if fire.park_rules:
+                lines.extend(f"    {line}" for line in fire.lines(rule_detail=0))
             shut = c.closed_on(result.trip_date)
             if shut is True:
                 lines.append(f"    CLOSED ON YOUR DATE. This campground shuts annually from "

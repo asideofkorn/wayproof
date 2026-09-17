@@ -11,33 +11,21 @@ The species rules this encodes are pinned one test each in
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass, field
 from typing import List, Optional, Sequence
 
+from . import topic as _topic
 from .camping import (
-    PETS_ALLOWED, PETS_ANIMAL_LABELS, PETS_HORSE, PETS_NOT_MARKED, Campground,
-    pets_animals_label,
+    PETS_ALLOWED, PETS_HORSE, PETS_NOT_MARKED, Campground, pets_animals_label,
 )
-from .regulations import PARK, Regulation, regulations_in_force
+from .regulations import PARK, Regulation
+from .topic import PETS as TOPIC
 
 DOG = "dog"
 CAT = "cat"
 HORSE = "horse"
 
-#: How an agency writes each animal. Matched against a rule's ``summary`` only.
-#: ``cat`` excludes "cat hole" -- see test_a_cat_hole_is_not_a_cat.
-ANIMAL_PATTERNS = {
-    DOG: r"\bdogs?\b",
-    CAT: r"\bcats?\b(?!\s+holes?\b)",
-    HORSE: r"\bhorses?\b",
-}
-
-#: A rule written about animals generally: "dog, cat or other animal".
-#: Anchored on "animal" -- see test_other_locations_is_not_other_animals.
-GENERAL_ANIMAL_PATTERN = r"\bor\s+other\s+(?:type\s+of\s+)?animals?\b|\bother\s+animals?\b"
-
-PETS_CATEGORY = "pets"
+PETS_CATEGORY = TOPIC.category
 
 #: Which animals a listing's own category word names. ``domestic`` maps to
 #: nothing: no source defines it -- see test_domestic_names_no_species.
@@ -56,43 +44,31 @@ def _plural(animals) -> str:
 
 
 def rule_animals(reg: Regulation) -> List[str]:
-    """Which animals a rule's ``summary`` names. SUMMARY ONLY -- passing
-    ``detail`` inverts ``ebrpd-pets-count``; see
-    test_a_rules_species_come_from_its_summary_not_its_commentary."""
-    text = reg.summary or ""
-    return [animal for animal, pattern in ANIMAL_PATTERNS.items()
-            if re.search(pattern, text, re.I)]
+    """Which animals a rule's ``summary`` names. Resolution lives in
+    :mod:`wayproof.topic`; this is the pets-shaped name for it."""
+    return _topic.subjects_named(TOPIC, reg)
 
 
 def rule_is_species_general(reg: Regulation) -> bool:
     """Does this rule reach an animal it does not name -- "or other animal"?"""
-    return bool(re.search(GENERAL_ANIMAL_PATTERN, reg.summary or "", re.I))
+    return _topic.is_general(TOPIC, reg)
 
 
 def rule_reaches(reg: Regulation, animal: str) -> bool:
     """Does this rule govern *animal*, by name or by "or other animal"?"""
-    if not animal:
-        return True
-    return animal.lower() in rule_animals(reg) or rule_is_species_general(reg)
+    return _topic.reaches(TOPIC, reg, animal)
 
 
 def pets_rules(regulations: Sequence[Regulation]) -> List[Regulation]:
-    """The ``pets`` rules from a set already resolved for this trip -- pass
-    :func:`wayproof.regulations.regulations_in_force`, never the whole table."""
-    return [r for r in regulations if r.category == PETS_CATEGORY]
+    """The ``pets`` rules from a set already resolved for this trip."""
+    return [r for r in regulations if r.category == TOPIC.category]
 
 
 def rules_for_campground(campground: Campground,
                          regulations: Sequence[Regulation]) -> List[Regulation]:
-    """Every rule in force at one campground: a thin wrapper over
-    :func:`wayproof.regulations.regulations_in_force` with the three scope keys
-    a campground can supply. ``plan`` keeps its own call; it unions several."""
-    return regulations_in_force(
-        regulations,
-        agency=[k.strip() for k in campground.agency_id.split(";") if k.strip()],
-        jurisdiction=campground.jurisdiction,
-        park=campground.park,
-    )
+    """Every rule in force at one campground, scoped the shared way."""
+    return _topic.rules_for_place(regulations, campground.agency_id,
+                                  campground.jurisdiction, campground.park)
 
 
 def marker_animals(campground: Campground) -> List[str]:

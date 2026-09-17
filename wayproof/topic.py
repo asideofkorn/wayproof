@@ -203,8 +203,12 @@ class Answer:
                 bits.append(f"{len(general)} reach it as "
                             f"'{self.topic.general_phrase}'")
             tail = f"; {' and '.join(bits)}" if bits else ""
+            # No dangling "Those govern you:" when the caller suppresses the
+            # quotes -- plan prints every rule further down, and a colon
+            # introducing nothing reads as a bug.
+            lead = "Those govern you:" if rule_detail else "See the rules in force below."
             out.append(f"  {len(self.rules)} {self.topic.label.lower()} rule(s) apply "
-                       f"to this land{tail}. Those govern you:")
+                       f"to this land{tail}. {lead}")
             for r in deciding[:rule_detail] if rule_detail else ():
                 out.append(f"    - {r.summary}")
             hidden = len(deciding) - rule_detail
