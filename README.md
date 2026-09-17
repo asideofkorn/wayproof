@@ -454,7 +454,8 @@ The repository currently includes:
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds (with `access_mode`: whether you drive to the site or walk to it, `campsite_type`: which queue you book it in, and `source_url`/`verified_date`) and their individually-bookable sites
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
+- `data/booking_facilities.csv` - the booking system's own pages, keyed by facility id. A level above a campground and *not* a park: one facility sells sites in three different parks, and two parks are each sold through two facilities, so `facility_id` is stored on a campground rather than inferred from where it is
 - `data/booking_channels.csv` - how to book a campsite, scoped by agency and by class of site — the channel, what is *not* a channel, lead time, release-day mechanics and booking horizon
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
 - `data/park_access.csv` - park-level vehicle entrance fees, gate hours, and fee exemptions (distinct from a wilderness permit or a campsite reservation)
@@ -515,17 +516,36 @@ exemptions.
   stored as `tent_hike_in` and `tent_drive_up`. `online_bookable` is false
   for six of Chabot's seventy-five, which exist but never appear in the
   listing — a table built only from what the listing shows would rebuild the
-  listing's own blind spot. Most campgrounds in this dataset are effectively a single
-  site, but some (Sunol Backpack Camp) contain several named sites that
-  share the campground's facilities yet have a genuinely different
-  proximity to them -- Hawks Nest is documented as closer to both water and
-  the restroom than Sunol Backpack Camp's other six sites. A campground
-  with no differentiated sub-sites has no rows in `campsites.csv` at all,
-  rather than a placeholder row repeating the campground's own name.
+  listing's own blind spot. Some campgrounds (Sunol Backpack Camp) contain
+  several named sites that share the campground's facilities yet have a
+  genuinely different proximity to them -- Hawks Nest is documented as closer
+  to both water and the restroom than Sunol Backpack Camp's other six sites.
+  Others are themselves the unit you reserve and have no rows in
+  `campsites.csv` at all, rather than a placeholder row repeating the
+  campground's own name.
+  Which of the two a row is, is `unit_level`, and it is stored because it is
+  not derivable: Del Valle Family Campground holds 155 sites and this project
+  records none of them, so counting `campsites.csv` rows would call it a single
+  unit and tell a camper the reservation is the whole campground. Nor does the
+  table a thing lives in answer it -- "Cathedral" is a row of `campsites.csv`
+  and "Wild Turkey Group Camp" is a row of `campgrounds.csv`, and both are
+  exactly one bookable unit with one booking page. A `camp` holding no recorded
+  sites reports as an open question rather than reading as a campground with
+  nothing in it.
+  `facility_id` names the booking page, and is a column for the same reason:
+  a park cannot supply it. `EB/110028` sells nineteen backpack sites across
+  three parks under one listing, while Del Valle Regional Park is sold through
+  two facilities and so is Coyote Hills. Send a reader to "the Del Valle page"
+  for Boyd Camp and they land on the facility that does not sell it.
+  `loop` is the operator's own label, free text, no vocabulary and no rules --
+  the same column `campsites.csv` has always carried, added here because the
+  rows missing one were in this table. It is *nearly* inert: `Seasonal` in a
+  loop name is never read as a closure, because Round Valley sits in a loop
+  called `Backpack Seasonal` and is open year round.
   `access_mode` is the separate question of whether you can *drive* there.
   It is a column because it is the first thing a car camper filters on, and
-  because six of this dataset's seven campgrounds are Ohlone Wilderness Trail
-  backpack camps — listing them beside a drive-in campground with no
+  because most of this dataset's campgrounds are hike-in — listing them
+  beside a drive-in campground with no
   distinction invites someone to book a site 10.72 trail miles from their car.
   It was previously recoverable only by reading `notes` ("~mile 6.58 on the
   Ohlone Wilderness Trail", "General car-camping area"), which is the
@@ -533,6 +553,12 @@ exemptions.
   blank `access_mode` reads as "not recorded", never as either mode: guessing
   drive-in strands someone at a trailhead, guessing hike-in hides a site they
   could have used.
+  `season_closed_start`/`season_closed_end` are MM-DD pairs, and every one read
+  here wraps the new year, unlike `permits.csv`'s quota seasons -- so the two
+  are read by different code rather than one generalised into something neither
+  fits. A blank is not "open all year": Anthony Chabot's season is an open
+  conflict between two EBRPD sources, and filling the columns would launder a
+  disputed reading into a fact a date-aware planner then asserts.
   `source_url` and `verified_date` were added later, when EBRPD campgrounds
   outside the Ohlone corridor were. The table had carried no provenance at
   all, which in a project whose rule is that every claim cites its evidence
