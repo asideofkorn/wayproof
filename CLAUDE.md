@@ -159,6 +159,11 @@ Do not treat these as bugs to fix in passing; they are tracked design debt.
 - The website publishes trailhead reference only. Campgrounds, pets, costs,
   advisories and conditions are CLI-only.
 - The scorecard scores peaks only; campground objectives score zero times.
+- `topic.py` records which subjects a rule NAMES, not what it says about them.
+  Black Diamond bans campfires and permits camp stoves in one sentence, so both
+  resolve to the same rules and no answer can say which is which. A verdict
+  needs polarity per subject, and polarity is in nobody's data yet. See
+  test_naming_a_subject_is_not_the_same_as_permitting_it.
 
 ## Open — do not build without asking
 
