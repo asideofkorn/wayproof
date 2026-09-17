@@ -25,6 +25,15 @@ jobs:
       - name: Run tests
         run: python -m pytest tests/ -v
 
+      # The outcome check: rows added to data/ without a reading behind them.
+      # Not a path check -- it does not care whether a row arrived through
+      # ingest.py, a heredoc or an editor.
+      - name: Provenance (every added row cites a reading)
+        if: matrix.python-version == '3.12' && github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags --depth=50 origin ${{ github.base_ref }}
+          python scripts/check_provenance.py --base origin/${{ github.base_ref }}
+
       # Printed, never asserted. This is a measurement of how much of the
       # README's question list the tool can answer at all; a coverage number
       # that fails the build becomes a target, and the cheapest way to move

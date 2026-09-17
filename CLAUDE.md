@@ -145,8 +145,15 @@ python ingest.py check campgrounds --set name="X" pets_marker=allowed
 python ingest.py add campgrounds --source URL --summary "what it said" --set ...
 ```
 
+CI runs `scripts/check_provenance.py` on every PR: rows added to `data/`
+without a new entry in `permit_source_log.csv` fail the build. It checks the
+OUTCOME, not the path -- a heredoc satisfies it exactly as well as the tool.
+Say `[migration]` in the commit message when a change moves facts that were
+already sourced and adds no reading.
+
 `ingest.py` writes a row and its ledger entry together or neither, and refuses
-without a source. Use it rather than editing a CSV by hand: it catches the
+without a source. It is the convenient way to satisfy that check, not the
+required one. Use it rather than editing a CSV by hand: it catches the
 three failures that are silent once committed -- a column that does not exist,
 a value outside its vocabulary, a colliding entry id. It only ADDS rows;
 changing an existing value still follows the procedure above.
