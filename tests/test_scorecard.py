@@ -184,6 +184,45 @@ def test_nothing_is_held_and_hidden_any_more():
     assert still_hidden == {}, f"data held but not surfaced: {still_hidden}"
 
 
+def test_every_question_is_scored_or_excused_and_never_both():
+    # The guard the README coupling used to provide, rebuilt on the scorecard's
+    # own list. A question that is in neither is measured by nothing; one in
+    # both is measured and waved through at the same time.
+    scored = {q.qid for q in QUESTIONS}
+    excused = {k.split(" ", 1)[0] for k in NOT_SCORED}
+    both = sorted(scored & excused)
+    assert both == [], f"scored AND excused: {both}"
+
+
+def test_no_question_is_excused_without_a_reason():
+    # An empty or placeholder reason reads as a decision and is an omission.
+    # NOT_SCORED is the honest escape hatch; it stops being honest here.
+    weak = [k for k, why in NOT_SCORED.items()
+            if len(why.strip()) < 25 or why.strip().lower().startswith(("todo", "tbd"))]
+    assert weak == [], f"excused with no real reason: {weak}"
+
+
+def test_question_ids_are_unique_and_leave_no_gaps():
+    # Ids used to be derived from README position, which made them unique and
+    # contiguous for free. Nothing does now: a duplicate silently overwrites a
+    # row in any by-id lookup, and a gap means a question was dropped without
+    # anyone deciding to drop it.
+    ids = [q.qid for q in QUESTIONS] + [k.split(" ", 1)[0] for k in NOT_SCORED]
+    assert len(ids) == len(set(ids)), f"duplicate question ids: {sorted(ids)}"
+    numbers = sorted(int(q[1:]) for q in ids)
+    assert numbers == list(range(1, len(numbers) + 1)), (
+        f"question ids are not contiguous from Q1: {numbers}"
+    )
+
+
+def test_every_question_states_what_makes_an_answer_wrong():
+    # The project's whole discipline. A question with no falsification
+    # criterion cannot tell a right answer from a confident wrong one, which is
+    # the failure this scorecard exists to track.
+    missing = [q.qid for q in QUESTIONS if len(q.wrong_if.strip()) < 20]
+    assert missing == [], f"questions with no 'wrong if': {missing}"
+
+
 def test_each_tier_is_represented():
     # A scorecard that only measured tier 3 would look busy and say nothing
     # about whether a trip can happen.
