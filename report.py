@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Submit, list, and resolve data reports -- the write side of the
-scavenger-hunt loop (see wayproof.reports and README's "The Scavenger Hunt").
+scavenger-hunt loop (see wayproof.reports).
 
 Deliberately separate from plan.py: planning resolves/reads trip logistics
 for named objectives on a date; reporting submits a claim about the dataset
