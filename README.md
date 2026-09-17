@@ -246,6 +246,8 @@ It can:
   booking listing marked from what the land manager's rules actually say, and
   naming the rules that are written about a different animal instead of
   counting them as an answer.
+- Say which of the rules in force a narrower one displaces, so a District-wide
+  norm and the park rule that overrides it do not read as peer bullets.
 
 
 The geographic grouping capability is useful for discovery. It is not an
@@ -1036,6 +1038,68 @@ A blank `campsite_type` on a campground resolves only agency-wide channels.
 Guessing `family` there would tell a backpacker to book online, which EBRPD
 does not allow.
 
+
+### Local beats general, where a source says so
+
+Rules are layered, and layered is not the same as equal. At Stewartville
+Backpack Camp three alcohol rules reach you at once: the District's "beer and
+wine, 21 and over", Black Diamond Mines' "no alcohol at all", and the
+District's own backpack-site ban. All three used to print as peer bullets, one
+under the other, with nothing saying which one you are actually under. A
+camper reading top-down got the permissive one.
+
+`supersedes` on `regulations.csv` is the edge. A rule names the broader rules
+it **displaces**, and a displaced rule renders marked rather than deleted:
+
+```text
+Camping
+  - No alcohol at all is allowed at Black Diamond Mines. [Black Diamond Mines]
+  - [DOES NOT APPLY HERE] No hard alcohol anywhere. Beer and wine only, 21 and
+    over... [East Bay Regional Park District]
+      The District-wide rule, displaced here by a stricter rule: "No alcohol at
+      all is allowed at Black Diamond Mines." Read that, not this.
+```
+
+Four decisions, each from a case in the data:
+
+**Recorded, never derived.** The obvious implementation reads the edge off
+`SPECIFICITY` — narrower wins — and `point-pinole-dogs` is why it is wrong.
+That park caps dogs at three *per person*; the District's campground rule caps
+them at three *per site*. It is narrower and it displaces nothing: the two
+govern different things, one a walking limit and one a campsite occupancy
+limit, and the stricter applies where both do. Derived supersession would let
+a party of ten bring thirty dogs to one campsite. So a rule declares what it
+displaces, and a rule that declares nothing displaces nothing.
+
+**Declared by the narrow rule.** That is the row being written when the
+relationship is found. The alternative, `superseded_by` on the general rule,
+means editing a rule every time an exception turns up somewhere else — which
+is exactly how `ebrpd-alcohol` came to hand-maintain a list of its own
+exceptions in prose and to admit, in that same prose, that the list was
+incomplete. That list is now derived and the sentence is gone.
+
+**Scoped by being in force, not by a second scope field.** Black Diamond's ban
+displaces the District rule at Black Diamond and nowhere else, automatically:
+pass the rules in force for *this* trip and the park rule is simply absent
+everywhere else, so its edge cannot fire.
+
+**Only full displacement, and only from a narrower scope.** The second half of
+that was added because its absence produced a wrong answer within an hour of
+the column existing. `ebrpd-backpack-no-fire-no-alcohol` is narrow by naming a
+*class of site*, which this table has no scope level for, so it sits at
+`agency` scope and is in force at every EBRPD campground. Given an edge onto
+Ordinance 38's fire rule it fired at Anthony Chabot's drive-in family
+campground — where every site has a fire ring with a grill — and marked the
+barbecue permission "does not apply here". The loader now refuses an edge
+whose declaring rule is not strictly narrower in scope, which catches that
+whole class of mistake. A rule too narrow for any scope level here needs a new
+level, not an edge.
+
+Partial overrides are not representable and are not written as if they were.
+`round-valley-no-dogs` bans dogs from a preserve whose campground rule governs
+"dog, cat or other animal"; recording it as superseding would tell someone
+arriving with a cat that Ordinance 38 does not apply to them. Those stay in
+`detail`, as prose a person reads rather than an edge code acts on.
 
 ### Rules do not stop where permits do
 

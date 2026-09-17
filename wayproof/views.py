@@ -35,7 +35,10 @@ from .access import ApproachRoute
 from .model import Peak, Trailhead
 from .permit_zones import PermitZone
 from .provenance import Source
-from .regulations import Regulation, group_by_category, regulations_in_force
+from .regulations import (
+    Regulation, group_by_category, regulations_in_force, supersession_note,
+    supersessions,
+)
 from .evidence import evidence_for
 from .permits import PermitRule, SourceLogEntry
 from .release_policy import CONTACT_REQUIRED, LOTTERY_ANNUAL, WALKUP, ReleasePhase
@@ -217,6 +220,10 @@ def trailhead_view(
            if rule is not None and entry.permit_group == rule.permit_group]
     zone_list = (zones or {}).get(rule.permit_group, []) if rule is not None else []
     applicable = regulations_in_force(regulations, rule, trailhead)
+    # Which of those a narrower rule displaces HERE. Computed once over the
+    # whole in-force set rather than inside the per-category comprehension
+    # below, because a rule can displace one filed under another category.
+    _displaced = supersessions(applicable)
 
     return {
         "type": "trailhead",
@@ -263,6 +270,14 @@ def trailhead_view(
                     {"id": r.regulation_id, "summary": r.summary, "detail": r.detail,
                      "citation": r.citation, "source_url": r.source_url,
                      "scope": r.scope_label, "inherited": r.inherited,
+                     # Resolved over the whole in-force set, not per category
+                     # block: a rule can displace one filed under a different
+                     # category, and the backpack fire/alcohol rule does.
+                     "superseded": bool(_displaced.get(r.regulation_id)),
+                     "superseded_by": [d.regulation_id
+                                       for d in _displaced.get(r.regulation_id, [])],
+                     "superseded_note": supersession_note(
+                         _displaced.get(r.regulation_id, [])),
                      "evidence": evidence_for(r.log_entry_ids, source_log, sources).as_dict()}
                     for r in items
                 ],

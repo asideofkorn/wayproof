@@ -48,7 +48,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import TYPE_CHECKING, List, Optional, Sequence
+from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple
 
 import pandas as pd
 
@@ -162,6 +162,45 @@ class Regulation:
     Blank means nobody has logged a check of this rule, which renders as
     unverified rather than as fine. See :mod:`wayproof.evidence`.
     """
+    supersedes: str = ""
+    """Semicolon-separated ``regulation_id`` values this rule DISPLACES where
+    both are in force. Use :attr:`superseded_ids` rather than the string.
+
+    THE EDGE IS RECORDED, NEVER COMPUTED, and that is the whole of the design.
+    The tempting shortcut is to derive it from :data:`SPECIFICITY` -- the
+    narrower rule wins -- and ``point-pinole-dogs`` is why it would be wrong.
+    That park caps dogs at three PER PERSON where the District's campground
+    rule caps them at three PER SITE. It is narrower, and it does not displace
+    anything: the two govern different things, one a walking limit and one a
+    campsite occupancy limit, and the stricter applies where both do. Derived
+    supersession would let a party of ten bring thirty dogs to a campsite.
+
+    So a rule declares what it displaces, and a rule that declares nothing
+    displaces nothing.
+
+    DECLARED BY THE NARROW RULE, not the broad one, because that is the row
+    being written when the relationship is discovered. The alternative --
+    ``superseded_by`` on the general rule -- means editing a rule every time an
+    exception is found somewhere else, which is exactly how ``ebrpd-alcohol``
+    came to hand-maintain a list of its own exceptions in prose and to admit,
+    in that same prose, that the list was incomplete.
+
+    NEITHER SCOPE NOR CATEGORY IS REQUIRED TO DIFFER, because in this dataset
+    they do not. ``ebrpd-backpack-no-fire-no-alcohol`` is scoped ``agency``
+    exactly like the ``ebrpd-fire`` and ``ebrpd-alcohol`` rules it displaces --
+    it is narrow by naming a CLASS OF SITE, which no scope level expresses --
+    and it is filed under ``fire`` while ``ebrpd-alcohol`` is under
+    ``camping``. A validator demanding a narrower scope or a matching category
+    would reject the clearest real case in the table.
+
+    ONLY FULL DISPLACEMENT GOES HERE. A rule that overrides part of another is
+    not representable and must not be written as if it were. ``round-valley-no-
+    dogs`` bans dogs from a preserve whose campground rule
+    (``ebrpd-pets-campground``) governs "dog, cat or other animal" -- recording
+    it as superseding would tell someone arriving with a cat that Ordinance 38
+    does not apply to them. Those partial relationships stay in ``detail``,
+    where they are prose a person reads rather than an edge code acts on.
+    """
     scope_display: str = ""
     """How to name this rule's scope to a reader, when the key isn't readable.
 
@@ -169,6 +208,11 @@ class Regulation:
     ``eldorado_nf``. Set this to ``Eldorado National Forest`` and the surfaces
     show that instead.
     """
+
+    @property
+    def superseded_ids(self) -> List[str]:
+        """:attr:`supersedes` as a list; empty when it displaces nothing."""
+        return [p.strip() for p in self.supersedes.split(";") if p.strip()]
 
     @property
     def inherited(self) -> bool:
@@ -241,9 +285,88 @@ def load_regulations(path: str | Path = "data/regulations.csv") -> List[Regulati
             source_last_updated=_str_field(row, "source_last_updated"),
             verified_date=_str_field(row, "verified_date"),
             log_entry_ids=_str_field(row, "log_entry_ids"),
+            supersedes=_str_field(row, "supersedes"),
             scope_display=_str_field(row, "scope_display"),
         ))
+
+    _validate_supersessions(out)
     return out
+
+
+def _validate_supersessions(regulations: List[Regulation]) -> None:
+    """Refuse a supersession edge that cannot mean anything.
+
+    A dangling id is the dangerous one: it does not raise at render time, it
+    silently renders the general rule as still applying, which is the failure
+    the edge exists to prevent. So it is caught at load.
+    """
+    known = {r.regulation_id for r in regulations}
+    for reg in regulations:
+        for target in reg.superseded_ids:
+            if target == reg.regulation_id:
+                raise ValueError(
+                    f"Regulation {reg.regulation_id!r} supersedes itself"
+                )
+            if target not in known:
+                raise ValueError(
+                    f"Regulation {reg.regulation_id!r} supersedes unknown rule "
+                    f"{target!r}. A typo here does not fail at render time -- it "
+                    f"quietly leaves the displaced rule reading as if it still "
+                    f"applied, which is the answer this edge exists to prevent."
+                )
+    by_id = {r.regulation_id: r for r in regulations}
+    # Checked BEFORE the scope rule below, which would otherwise catch every
+    # mutual pair and report it as a scope error. A pair cannot satisfy the
+    # scope rule in both directions -- each would have to be narrower than
+    # the other -- so this only ever fires on an authoring mistake, and it
+    # names that mistake instead of a symptom of it.
+    #
+    # Mutual supersession is two rules each claiming to be the exception to the
+    # other, which names no winner and cannot be rendered. It is a real
+    # authoring mistake rather than a hypothetical: it is what you write if you
+    # read "stricter than" in both rows' detail and fill in both.
+    for reg in regulations:
+        for target in reg.superseded_ids:
+            if reg.regulation_id in by_id[target].superseded_ids:
+                raise ValueError(
+                    f"Regulations {reg.regulation_id!r} and {target!r} supersede "
+                    f"each other, so neither governs. One of them is the "
+                    f"exception; say which."
+                )
+    # A rule may only displace something BROADER than itself, and this check
+    # was added because its absence produced a wrong answer within an hour of
+    # the column existing. `ebrpd-backpack-no-fire-no-alcohol` is filed at
+    # AGENCY scope -- it is narrow by naming a class of site, which this table
+    # has no level for -- and it was given edges onto the District's fire and
+    # alcohol rules. Both are also AGENCY scope, so the edge fired everywhere
+    # the class-of-site rule did: at Anthony Chabot's drive-in family
+    # campground, where every site has a fire ring with a grill, the tool
+    # marked Ordinance 38's barbecue permission "does not apply here".
+    #
+    # SPECIFICITY IS A PROXY for the real invariant, which is that a rule may
+    # only declare an edge if its scope covers everything it reaches. That is
+    # not computable -- it is a fact about the rule's own words. Requiring a
+    # strictly narrower scope is computable, catches the whole class of
+    # mistake, and its false rejection is exactly the case that should be
+    # rejected today: a rule too narrow for any scope level here needs a new
+    # level, not an edge.
+    for reg in regulations:
+        for target in reg.superseded_ids:
+            mine = SPECIFICITY.get(reg.scope_type, 4)
+            theirs = SPECIFICITY.get(by_id[target].scope_type, 4)
+            if mine >= theirs:
+                raise ValueError(
+                    f"Regulation {reg.regulation_id!r} ({reg.scope_type}) "
+                    f"supersedes {target!r} ({by_id[target].scope_type}), which is "
+                    f"not broader than it. A rule may only displace something it "
+                    f"is narrower THAN BY SCOPE: an edge fires everywhere the "
+                    f"declaring rule is in force, so one that is narrow only in "
+                    f"its wording -- 'at a BACKPACK site' filed at agency scope -- "
+                    f"displaces the general rule at every site the agency manages. "
+                    f"Such a rule needs a narrower scope level, not an edge."
+                )
+
+
 
 
 SPECIFICITY = {PERMIT_GROUP: 0, PARK: 1, WILDERNESS: 2, AGENCY: 3, JURISDICTION: 4}
@@ -314,6 +437,96 @@ def regulations_for(
         return (category_rank, SPECIFICITY.get(reg.scope_type, 4), reg.regulation_id)
 
     return sorted((r for r in regulations if applies(r)), key=sort_key)
+
+
+def supersessions(regulations: Sequence[Regulation]) -> "Dict[str, List[Regulation]]":
+    """``{displaced regulation_id: [rules displacing it]}``, among these rules only.
+
+    SCOPE FALLS OUT AND IS NOT COMPUTED. Black Diamond's alcohol ban displaces
+    the District's beer-and-wine rule at Black Diamond and nowhere else, and
+    that is automatic: pass the rules in force for THIS trip and the park rule
+    is simply absent everywhere else, so its edge cannot fire. Nothing here
+    needs to know where the caller is.
+
+    Pass the output of :func:`regulations_in_force`. Passing the whole table
+    would report Sunol's fire ban as displacing the District rule at Anthony
+    Chabot.
+    """
+    present = {r.regulation_id: r for r in regulations}
+    out: "Dict[str, List[Regulation]]" = {}
+    for reg in regulations:
+        for target in reg.superseded_ids:
+            if target in present:
+                out.setdefault(target, []).append(reg)
+    return out
+
+
+def in_force_after_supersession(
+    regulations: Sequence[Regulation],
+) -> "List[Tuple[Regulation, List[Regulation]]]":
+    """``[(rule, rules displacing it), ...]`` in the order they should read.
+
+    A DISPLACED RULE IS RETURNED, NOT DROPPED. Two reasons, and the second is
+    the one that decides it. Dropping hides that a District norm exists at all,
+    so a camper who read "beer and wine for over-21s" on EBRPD's own page and
+    then sees nothing about alcohol here concludes this project has no data
+    rather than that the rule does not reach them. And this project does not
+    silently drop: the whole of ``discovery`` and the ``pets`` marker states
+    what it excluded and why.
+
+    The caller renders the pair. What it must not do is print a displaced rule
+    as a peer of the one displacing it, which is what every surface did before
+    this existed -- at Stewartville, "No alcohol at all" and "beer and wine, 21
+    and over" read as two bullets of equal weight, one above the other, with
+    nothing saying which one you are actually under.
+    """
+    displaced = supersessions(regulations)
+    return [(r, displaced.get(r.regulation_id, [])) for r in regulations]
+
+
+SUPERSEDED_FLAG = "DOES NOT APPLY HERE"
+"""What a displaced rule is marked with, on every surface.
+
+In the bullet itself rather than in a note under it. The failure being fixed
+is a reader skimming rules and taking the District norm for their answer, and
+a caveat on the line below is exactly what such a reader skips.
+"""
+
+
+def supersession_note(displacers: Sequence[Regulation], limit: int = 160) -> str:
+    """One line saying which rules displace this one, quoting them.
+
+    QUOTED, NOT NAMED BY SCOPE, because scope does not identify them. Both
+    ``ebrpd-fire`` and ``ebrpd-backpack-no-fire-no-alcohol`` carry the scope
+    label "East Bay Regional Park District", so "displaced by the rule from
+    East Bay Regional Park District" reads, on the District's own rule, as
+    gibberish. The rule's own words are the only handle a reader has, and they
+    are also the answer they came for.
+
+    The limit is 160 rather than something tidier because the longest rule
+    here is 152 and TRUNCATING IT CUTS OFF THE HALF THAT DOES THE DISPLACING.
+    ``ebrpd-backpack-no-fire-no-alcohol`` reads "no campfires and no charcoal
+    barbecues. Camp stoves are permitted. No alcohol at all, beer and wine
+    included" -- the alcohol clause is last, and it is the clause that
+    displaces ``ebrpd-alcohol``. A quote ending before it explains nothing.
+
+    Shared by all four surfaces for the reason ``regulations_in_force`` is:
+    each one phrasing this itself is how they drift into four different
+    answers to the same question.
+    """
+    if not displacers:
+        return ""
+    quotes = []
+    # Most specific first, the same order regulations_for sorts into, so a
+    # park's own ban reads before a District-wide class-of-site rule.
+    for reg in sorted(displacers, key=lambda r: SPECIFICITY.get(r.scope_type, 4)):
+        text = " ".join((reg.summary or "").split())
+        quotes.append(f'"{text[:limit].rstrip()}..."' if len(text) > limit
+                      else f'"{text}"')
+    joined = "; ".join(quotes)
+    return (f"The District-wide rule, displaced here by "
+            f"{'a stricter rule' if len(quotes) == 1 else 'stricter rules'}: "
+            f"{joined} Read that, not this.")
 
 
 def group_by_category(regulations: Sequence[Regulation]) -> List[tuple]:

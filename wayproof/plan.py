@@ -57,6 +57,9 @@ from .permits import (
 from .regulations import (
     PERMIT_GROUP as REG_PERMIT_GROUP, Regulation, group_by_category,
     regulations_in_force,
+    SUPERSEDED_FLAG,
+    supersession_note,
+    supersessions,
 )
 from . import pets
 from .reports import OpenQuestion, open_questions
@@ -869,6 +872,12 @@ def _append_rules(lines: List[str], result: PlanResult) -> None:
             lines.append("  from state law, a wilderness rulebook or the agency that manages "
                          "the")
             lines.append("  ground, and needing no permit does not mean there are no rules.")
+        # Which rules a narrower one displaces HERE, resolved once over the
+        # whole in-force set rather than per category block: a rule can
+        # displace one filed under a different category, and the backpack
+        # fire/alcohol rule does exactly that.
+        displaced = supersessions(result.regulations)
+        displacing = {r.regulation_id for rs in displaced.values() for r in rs}
         for label, items in group_by_category(result.regulations):
             lines.append(f"  {label}")
             for rule in items:
@@ -877,7 +886,17 @@ def _append_rules(lines: List[str], result: PlanResult) -> None:
                     bits.append(f"({rule.citation})")
                 if rule.inherited:
                     bits.append(f"[{rule.scope_label}]")
-                lines.append(f"    - {' '.join(bits)}")
+                over = displaced.get(rule.regulation_id, [])
+                if over:
+                    lines.append(f"    - [{SUPERSEDED_FLAG}] {' '.join(bits)}")
+                    lines.append(f"        {supersession_note(over)}")
+                else:
+                    # The rule doing the displacing gets no annotation. The
+                    # marking that matters is on the rule that does NOT apply,
+                    # and a badge on both halves is twice the text for the same
+                    # fact -- which on a page of twenty rules is how the one
+                    # that matters stops standing out.
+                    lines.append(f"    - {' '.join(bits)}")
         lines.append("  Summaries only. Each rule's full text, source and last check are "
                      "published per trailhead.")
         lines.append("")

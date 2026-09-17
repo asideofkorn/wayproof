@@ -20,6 +20,7 @@ import html
 import json
 from typing import Optional, Sequence
 
+from .regulations import SUPERSEDED_FLAG
 from .views import REPO, SITE_URL
 
 STYLESHEET = """\
@@ -275,8 +276,21 @@ def render_trailhead_html(view: dict) -> str:
                 meta = (f'<div class="meta">{" &middot; ".join(bits)}</div>') if bits else ""
                 scope = (f' <span class="flag">{_e(rule["scope"])}</span>'
                          if rule["inherited"] else "")
-                body.append(f'<div class="card"><div>{_e(rule["summary"])}{scope}</div>{meta}'
-                            f'{_evidence_html(rule.get("evidence"))}</div>')
+                if rule.get("superseded"):
+                    # The flag goes INSIDE the summary line, before the text,
+                    # for the reason SUPERSEDED_FLAG documents: a reader
+                    # skimming rule cards must not take a displaced District
+                    # norm for their answer, and a caveat below the fold of a
+                    # card is what such a reader skips.
+                    body.append(
+                        f'<div class="card"><div>'
+                        f'<span class="flag">{_e(SUPERSEDED_FLAG)}</span> '
+                        f'<s>{_e(rule["summary"])}</s>{scope}</div>'
+                        f'<div class="meta">{_e(rule["superseded_note"])}</div>{meta}'
+                        f'{_evidence_html(rule.get("evidence"))}</div>')
+                else:
+                    body.append(f'<div class="card"><div>{_e(rule["summary"])}{scope}</div>{meta}'
+                                f'{_evidence_html(rule.get("evidence"))}</div>')
 
     zones = view.get("zones", {})
     if zones.get("quota_by_zone"):
@@ -466,6 +480,11 @@ def render_trailhead_markdown(view: dict) -> str:
         for group in regs:
             out += [f'### {group["label"]}', ""]
             for rule in group["rules"]:
+                if rule.get("superseded"):
+                    line = (f'- **[{SUPERSEDED_FLAG}]** ~~{rule["summary"]}~~ '
+                            f'{rule["superseded_note"]}')
+                    out.append(line)
+                    continue
                 line = f'- **[{rule["scope"]}]** {rule["summary"]}'
                 if rule["detail"]:
                     line += f' {rule["detail"]}'
