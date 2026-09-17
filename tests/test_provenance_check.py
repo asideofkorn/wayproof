@@ -2,8 +2,8 @@
 
 The outcome check, not a path check. Every convention in this repo has drifted
 and every mechanical check has held, so this does not care how a row arrived --
-`ingest.py`, a heredoc, an editor -- only that the ledger grew when the data
-did.
+`wayproof.ingest.add_row`, a heredoc, an editor -- only that the ledger grew
+when the data did.
 
 Run with:  python -m pytest tests/test_provenance_check.py
 """
@@ -74,4 +74,4 @@ def test_a_deleted_file_is_not_reported_as_growth():
 def test_the_message_names_the_way_out():
     problems = verdict({"data/campgrounds.csv": 1, LEDGER: 1},
                        {"data/campgrounds.csv": 2, LEDGER: 1})
-    assert "ingest.py add" in problems[0] and MIGRATION in problems[0]
+    assert "wayproof.ingest.add_row" in problems[0] and MIGRATION in problems[0]

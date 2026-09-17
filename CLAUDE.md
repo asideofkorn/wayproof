@@ -114,7 +114,7 @@ close it. If you read part of a page, fill what you read and leave
 Three, and the procedures above serve them.
 
 - **Never write a value you did not read.** Web-search summaries are not a read.
-  `ingest.py` enforces this: no source, no row.
+  `wayproof.ingest.add_row` enforces this: no source, no row.
 - **Blank means nobody checked.** It never means "no".
 - **Name a column for what the source said**, not for the answer, wherever a
   rule can override it: `pets_marker`, `coord_precision`, not `pets_allowed`.
@@ -141,8 +141,7 @@ python cli.py --campgrounds --access drive_in --near 37.8044,-122.2712
 python scripts/scorecard.py                           # coverage, never a target
 python scripts/build_site.py                          # -> _site/
 
-python ingest.py check campgrounds --set name="X" pets_marker=allowed
-python ingest.py add campgrounds --source URL --summary "what it said" --set ...
+python -c "from wayproof import ingest; ..."   # see wayproof/ingest.py
 ```
 
 CI runs `scripts/check_provenance.py` on every PR: rows added to `data/`
@@ -151,9 +150,10 @@ OUTCOME, not the path -- a heredoc satisfies it exactly as well as the tool.
 Say `[migration]` in the commit message when a change moves facts that were
 already sourced and adds no reading.
 
-`ingest.py` writes a row and its ledger entry together or neither, and refuses
-without a source. It is the convenient way to satisfy that check, not the
-required one. Use it rather than editing a CSV by hand: it catches the
+`wayproof.ingest.add_row` writes a row and its ledger entry together or
+neither, and refuses without a source. It is the convenient way to satisfy that
+check, not the required one. There is no CLI for it on purpose: this repo is
+worked by an agent that writes Python. Use it rather than editing a CSV by hand: it catches the
 three failures that are silent once committed -- a column that does not exist,
 a value outside its vocabulary, a colliding entry id. It only ADDS rows;
 changing an existing value still follows the procedure above.

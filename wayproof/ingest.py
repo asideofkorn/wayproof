@@ -7,8 +7,15 @@ What this removes is the mechanical part that goes wrong quietly -- a column
 that does not exist, a value outside its vocabulary, a colliding entry id.
 
 It cannot write a row without a source and a ledger entry. That is the point:
-"never write a value you did not read" stops being a convention and becomes
-the only way through.
+"never write a value you did not read" stops being a convention.
+
+    from wayproof import ingest
+    entry = ingest.build_entry(source_url=URL, summary="what the page said")
+    ingest.add_row("campgrounds.csv", {"name": "Foo Camp", ...}, entry)
+
+No CLI: this repo is worked by an agent that writes Python, and a heredoc
+calling this is cheaper than argparse. `scripts/check_provenance.py` is what
+makes it matter -- it fails the build on an unsourced row however it arrived.
 
 Rules are pinned one test each in ``tests/test_ingest.py``.
 """

@@ -27,7 +27,7 @@ jobs:
 
       # The outcome check: rows added to data/ without a reading behind them.
       # Not a path check -- it does not care whether a row arrived through
-      # ingest.py, a heredoc or an editor.
+      # wayproof.ingest.add_row, a heredoc or an editor.
       - name: Provenance (every added row cites a reading)
         if: matrix.python-version == '3.12' && github.event_name == 'pull_request'
         run: |
