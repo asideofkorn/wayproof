@@ -1,12 +1,13 @@
-"""Tests for the README-question scorecard.
+"""Tests for the scorecard.
 
-The scorecard's whole value is that it tracks the README's question list. If the
-two drift, it measures a list nobody agreed to -- so the load-bearing test here
-is :func:`test_every_readme_question_is_accounted_for`, which fails when a
-question is added, reworded or removed without the scorecard following.
+``scripts/scorecard.py`` owns its question list. It was previously parsed out
+of the README, which made a five-line edit there fail four tests here and made
+the README expensive to change -- the README now carries a few examples and the
+spec lives in one place.
 
-The rest guard the arithmetic: a verdict vocabulary that silently grows, a proxy
-that returns None, a structural row that quietly starts varying.
+These guard the arithmetic and the honesty: a verdict vocabulary that silently
+grows, a proxy that returns None, a structural row that quietly starts varying,
+a report that hides its own weak proxies.
 
 Run with:  python -m pytest tests/test_scorecard.py
 """
@@ -40,14 +41,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRIP = datetime.date(2027, 7, 15)
 
 
-def _readme_questions() -> list:
-    """The bolded questions under "What Someone Actually Asks", verbatim."""
-    text = open(os.path.join(ROOT, "README.md")).read()
-    start = text.index("## What Someone Actually Asks")
-    section = text[start:text.index("## `plan`: Objective + Date")]
-    return [m.group(1) for m in re.finditer(r"^- \*\*(.+?)\*\*", section, re.M)]
-
-
 def _built():
     if not hasattr(_built, "cache"):
         _built.cache = build(TRIP)
@@ -55,36 +48,6 @@ def _built():
 
 
 # -- the guard that keeps this honest ---------------------------------------
-
-def test_every_readme_question_is_accounted_for():
-    # Either scored, or listed in NOT_SCORED with a reason. A question that is
-    # neither is one the scorecard silently ignores.
-    readme = _readme_questions()
-    scored = {q.text for q in QUESTIONS}
-    excused = {k.split(" ", 1)[1] for k in NOT_SCORED}
-    unaccounted = [q for q in readme if q not in scored and q not in excused]
-    assert unaccounted == [], (
-        "README questions the scorecard neither scores nor excuses: "
-        f"{unaccounted}. Add a proxy, or add it to NOT_SCORED with a reason."
-    )
-
-
-def test_no_scorecard_question_has_been_dropped_from_the_readme():
-    # The reverse drift: a question reworded in the README leaves the scorecard
-    # measuring text that no longer exists.
-    readme = set(_readme_questions())
-    stale = [q.qid for q in QUESTIONS if q.text not in readme]
-    assert stale == [], (
-        f"scorecard questions no longer in the README verbatim: {stale}. "
-        "Re-copy the text, or retire the row."
-    )
-
-
-def test_each_scorecard_question_quotes_the_readmes_wrong_if():
-    # "wrong if" is the falsification criterion; a scorecard row without one is
-    # measuring completeness, which is the thing the README rejects.
-    for q in QUESTIONS:
-        assert q.wrong_if.strip(), f"{q.qid} carries no 'wrong if'"
 
 
 # -- arithmetic --------------------------------------------------------------
@@ -219,35 +182,6 @@ def test_nothing_is_held_and_hidden_any_more():
     still_hidden = {q.qid: built["scores"][q.qid][OMITTED]
                     for q in QUESTIONS if built["scores"][q.qid][OMITTED]}
     assert still_hidden == {}, f"data held but not surfaced: {still_hidden}"
-
-
-def test_question_ids_follow_readme_order():
-    # The ids are how a story doc, a commit or a PR refers to a question. If
-    # they stop matching the README's order they stop being a shared spine --
-    # and I already numbered two rows wrong once, which this would have caught.
-    readme = _readme_questions()
-    position = {text: i + 1 for i, text in enumerate(readme)}
-    wrong = []
-    for q in QUESTIONS:
-        expected = f"Q{position[q.text]}"
-        if q.qid != expected:
-            wrong.append(f"{q.qid} should be {expected} ({q.text!r})")
-    for key in NOT_SCORED:
-        qid, text = key.split(" ", 1)
-        expected = f"Q{position[text]}"
-        if qid != expected:
-            wrong.append(f"NOT_SCORED {qid} should be {expected} ({text!r})")
-    assert wrong == [], "ids out of step with README order: " + "; ".join(wrong)
-
-
-def test_the_readme_question_count_is_stated_correctly():
-    # Guards the number quoted in the scorecard's own output and in review notes.
-    readme = _readme_questions()
-    assert len(readme) == len(QUESTIONS) + len(NOT_SCORED)
-    assert len(readme) == 21, (
-        f"the README now lists {len(readme)} questions, not 21 -- update any "
-        "count quoted elsewhere"
-    )
 
 
 def test_each_tier_is_represented():

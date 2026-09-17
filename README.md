@@ -45,88 +45,54 @@ answer.
 
 ## What Someone Actually Asks
 
-These are the questions this project exists to answer. Every one comes from a
-trip that happened, and each carries **what makes an answer wrong** rather than
-what makes it complete.
+Every question below came from a trip that happened, and each carries **what
+makes an answer wrong** rather than what makes it complete. That emphasis is
+deliberate: this project's failures have not been missing features, they have
+been confident wrong answers. `plan.py` once returned a Sequoia-Kings Canyon
+permit for a peak its own data routes over Shepherd Pass on the Inyo side, and
+printed a verification date underneath. A tool that says nothing is useless. A
+tool that says the wrong thing with a date attached is worse, because it is
+trusted.
 
-That emphasis is deliberate. This project's failures have not been missing
-features; they have been confident wrong answers. `plan.py` once returned a
-Sequoia-Kings Canyon permit for a peak its own data routes over Shepherd Pass on
-the Inyo side, and printed a verification date underneath. A tool that says
-nothing is useless. A tool that says the wrong thing with a date attached is
-worse, because it is trusted.
+**These are asked about a place, not about a level.** Nobody asks whether dogs
+are allowed at the district level, the park level or the site level. They ask
+*can I take my dog to this campsite*, and *can I walk it on the trails in this
+park*. The levels exist to answer that, and which level decided is part of the
+answer rather than a footnote: if the campground's listing does not say, the
+answer says so, and then says what the park says. Every answer carries where it
+came from and when it was last checked — that is how someone challenges it, and
+how we know what to re-read when a page changes.
 
-So: **a change that does not improve one of the answers below is probably not
-worth making.** Worked examples with verified answers live in
-`docs/user_stories/`.
+A handful of examples, to show the shape. The full list the project measures
+itself against lives in `scripts/scorecard.py`.
 
-### Getting these wrong costs you the trip
-
+- **Where can I car-camp near here, and can my animal come?** Wrong if a
+  campground with no coordinates is dropped rather than reported: "nothing is
+  near you" and "nobody has looked" are different answers.
 - **What do I need to do this trip?** Wrong if it names a permit but omits a
   fee, booking or pass that also gates entry. An Ohlone traverse was reported as
   free; it cost $97 and needed a phone call three weeks out.
 - **Does my specific route change which permit I need?** Wrong if it answers per
   trailhead. Whitney Portal serves the main trail, the Mountaineers Route and
   the East Face, under two different permits.
-- **What is the scarce thing, and when does it become available?** Wrong if it
-  assumes the scarce thing is a permit. At Ohlone it is a campsite; at Whitney
-  it is a lottery slot.
-- **How do I actually get it?** Wrong if it implies online booking where the
-  channel is phone-only in business hours, or in person only, as at Carson Pass.
-- **What do I need at the other end?** Wrong if it treats exit parking as
-  unrelated. At Stanford Ave the overnight pass is obtainable only while booking
-  the campsite.
-- **What must I carry?** Wrong if it says "required" without saying that a
-  digital reservation confirmation is not a permit.
-
-### Getting these wrong costs money or a day
-
-- **What will it cost, all in?** Wrong if entrance, parking and reservation fees
-  are reported away from the headline figure.
-- **Can I change or cancel, and by when?** Wrong if it gives a refund rule
-  without its cutoff.
-- **How many of us can go?** Wrong if it gives one number. Mokelumne allows 8
-  overnight and 12 on a day hike.
-- **If I miss the release, what are my options?** Wrong if it reports "sold out"
-  where a walk-up share, a cancellation window or an off-season route exists.
-- **Is the trailhead reachable on my dates?** Wrong if it ignores seasonal road
-  closure or snow.
-
-### Getting these wrong is uncomfortable but recoverable
-
+- **Can I take my dog to this campsite?** Wrong if it answers from whichever
+  level happens to hold data. Round Valley Backpack Camp is marked
+  pets-allowed and its preserve bans dogs outright. Wrong, too, if it answers
+  for a dog when the animal is not one — most rules here are written about dogs
+  because that is how agencies write them, and a leash rule is not an answer
+  about a cat. Say which animal the rule governs, or say there is no rule on
+  file.
 - **Can I have a fire?** Wrong if it reports the statewide permit requirement
   without the local ban sitting on top of it.
-- **Can I bring a pet?** Wrong if it says "under control" where the forest
-  requires a leash under six feet. Also wrong if it answers for a dog when the
-  animal is not one: most pets rules in this dataset are written about dogs,
-  because that is how the agencies write them, and a leash rule is not an
-  answer to whether a cat, a rabbit or a bird may come. Say which animal the
-  rule governs, or say there is no rule on file. It is also wrong to answer
-  from the booking listing's pets marker alone: Round Valley Backpack Camp is
-  marked pets-allowed and its preserve bans dogs outright.
-- **Where can and cannot I camp?** Setbacks, designated sites, restoration
-  closures.
-- **Does my permit still cover me in the next wilderness?** Reciprocity, and
-  where it stops.
-- **Where is water, and when was it last confirmed?** Wrong if availability is
-  reported without a date.
-- **What is closed?** Wrong if closed and never-existed look the same.
-- **What is hazardous right now?** Burn scars, snow windows, exposure.
-
-### Afterwards
-
-- **This is wrong, and here is what I found.** Wrong if the report is accepted
-  without being checked against the data. This project's first community report
-  claimed a peak was missing that was present under a misspelling.
-
-### The two that run underneath all of them
-
+- **What is closed on my dates?** Wrong if closed and never-existed look the
+  same.
 - **How do you know, and when did you last check?** Wrong if a verification date
   is attached to a claim it does not cover.
 - **What do you not know here?** Wrong if silence reads as confirmation.
 
 A question this project cannot answer should say so plainly. **Declining is a
-usable answer; being wrong is not.**
+usable answer; being wrong is not.** Worked examples with verified answers live
+in `docs/user_stories/`.
 
 ## `plan`: Objective + Date -> Logistics
 
