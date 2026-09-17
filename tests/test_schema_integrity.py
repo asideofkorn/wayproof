@@ -1,11 +1,12 @@
 """Guards that the CSVs and the code that loads them still agree.
 
 Written after a prototype data dictionary found `campgrounds.csv:campsite_type`
-holding `equestrian`, a value its own docstring said keys into
-`booking_channels.csv` and which no channel vocabulary contained. Nothing
-raised: `channels_for()` matched nothing and fell back to agency-wide channels,
-so a party booking a horse camp got the generic District phone number and no
-warning. A document would not have caught that. These do.
+holding `equestrian`, which no channel vocabulary contains: `channels_for()`
+matches nothing and falls back to agency-wide channels, so a party booking a
+horse camp gets the generic District phone number and no warning. That column
+is deliberately still unbound below -- binding it needs a site-class vocabulary
+that does not exist yet. A document would not have found it; these guard the
+columns that do have one.
 
 Run with:  python -m pytest tests/test_schema_integrity.py
 """
@@ -33,11 +34,13 @@ DATA = ROOT / "data"
 #: ``(csv, column, allowed values, multi-valued)``. Every vocabulary that
 #: governs stored data belongs here, whether or not its loader also checks it
 #: -- `permit_source_log.csv:verdict` is the case that does not.
+#:
+#: `campgrounds.csv:campsite_type` is absent on purpose: it has no vocabulary
+#: to bind to. See CLAUDE.md's Known list.
 BOUND = [
     ("campgrounds.csv", "access_mode", camping._VALID_ACCESS_MODES, True),
     ("campgrounds.csv", "coord_precision", camping._VALID_COORD_PRECISION, False),
     ("campgrounds.csv", "unit_level", camping._VALID_UNIT_LEVELS, False),
-    ("campgrounds.csv", "campsite_type", booking.SITE_CLASSES, False),
     ("campgrounds.csv", "pets_marker", camping._VALID_PETS_MARKERS, False),
     ("campgrounds.csv", "pets_animals", camping._VALID_PETS_ANIMALS, True),
     ("campsites.csv", "site_type", camping._VALID_SITE_TYPES, False),

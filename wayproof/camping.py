@@ -50,8 +50,6 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 import pandas as pd
 
-from .booking import SITE_CLASSES
-
 DRIVE_IN = "drive_in"
 """You can park at or beside the site; the car is part of the trip."""
 
@@ -410,8 +408,8 @@ class Campground:
     web-search material behind a deliberately empty ``verified_date``.
     """
     campsite_type: str = ""
-    """Which class of site the agency sells this as -- one of
-    :data:`wayproof.booking.SITE_CLASSES`, blank when unknown.
+    """Which class of site the agency sells this as: ``family``, ``group``,
+    ``backpack`` or ``equestrian``. UNVALIDATED -- see CLAUDE.md's Known list.
 
     A different axis from :attr:`access_mode`: that is how you physically
     reach the site, this is which queue you book it in. Anthony Chabot's
@@ -592,14 +590,6 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 f"Campground {name!r} has half a closure season; a start "
                 f"without an end says nothing about when it reopens"
             )
-        campsite_type = _str_field(row, "campsite_type")
-        if campsite_type and campsite_type not in SITE_CLASSES:
-            raise ValueError(
-                f"Invalid campsite_type {campsite_type!r} for campground "
-                f"{name!r}; expected one of {sorted(SITE_CLASSES)} or blank. "
-                f"This column keys into data/booking_channels.csv, so a value "
-                f"that is not a site class resolves to no channel silently."
-            )
         unit_level = _str_field(row, "unit_level")
         if unit_level and unit_level not in _VALID_UNIT_LEVELS:
             raise ValueError(
@@ -671,7 +661,7 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             access_mode=access_mode,
             loop=_str_field(row, "loop"),
             unit_level=unit_level,
-            campsite_type=campsite_type,
+            campsite_type=_str_field(row, "campsite_type"),
             pets_marker=pets_marker,
             pets_animals=pets_animals,
             has_restroom=_bool_field(row, "has_restroom"),

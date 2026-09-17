@@ -55,16 +55,7 @@ tiers. A class that borrows one rule from each is why ``applies_to`` is a
 vocabulary rather than a boolean for "is this a group site".
 """
 
-EQUESTRIAN = "equestrian"
-"""A horse camp. Two campground rows carried this before it was a value here."""
-
-SITE_CLASSES = {FAMILY, GROUP, BACKPACK, CABIN, EQUESTRIAN}
-"""The classes a site can BE. Shared with ``campgrounds.csv``'s
-``campsite_type``, which keys into this table and was unvalidated until a
-schema-integrity test found ``equestrian`` in it and no channel to match."""
-
-_VALID_APPLIES_TO = SITE_CLASSES | {ALL}
-"""What a CHANNEL can sell: any site class, or ``all`` of them."""
+_VALID_APPLIES_TO = {ALL, FAMILY, GROUP, BACKPACK, CABIN}
 
 UNKNOWN_FACILITY_LABEL = "booking facility not recorded"
 """What a blank ``facility_id`` reads as.
@@ -75,7 +66,6 @@ as a fact.
 """
 
 APPLIES_TO_LABELS = {
-    EQUESTRIAN: "Equestrian campsites",
     ALL: "Any campsite",
     FAMILY: "Family campsites",
     GROUP: "Group campsites",
