@@ -142,42 +142,19 @@ absent is not a value.
 
 
 PETS_ALLOWED = "allowed"
-"""The listing's pets field marks this campground as taking animals.
-
-It says nothing about WHICH animals unless :attr:`Campground.pets_animals`
-carries a category, and eight rows carry the marker with no category at all.
-It is also not the last word: a rule can ban an animal the marker admits, as
-Round Valley's does, so no caller should read this value alone --
-:func:`wayproof.pets.answer` is what combines the two.
-"""
+"""The listing's pets field marks this campground as taking animals. Says
+nothing about WHICH, and a rule can ban one the marker admits -- resolve with
+:func:`wayproof.pets.answer`, never this value alone."""
 
 PETS_NOT_MARKED = "not_marked"
-"""A source publishing a pets field was read, and this campground is not in it.
+"""A source publishing a pets field was read and this campground is not in it.
 
-DISTINCT FROM BLANK, AND THE DISTINCTION IS THE WHOLE POINT. Star Mine Group
-Camp sits on one ReserveAmerica page beside Stewartville, which is marked
-"Domestic, Horse"; Star Mine's field is simply empty. Somebody has looked, the
-field exists, and this camp has nothing in it -- which is evidence, and is not
-the same as nobody having looked.
-
-IT IS NOT A BAN, and must never be rendered as one. The absence of a marker is
-the absence of a statement. It is a reason to phone Reservations before
-driving out with an animal, which is exactly what a reader should be told.
-"""
+Distinct from blank, and NOT a ban -- see CLAUDE.md, "When does a column need a
+third state?", and test_an_unmarked_listing_never_renders_as_a_ban."""
 
 _VALID_PETS_MARKERS = {PETS_ALLOWED, PETS_NOT_MARKED}
-"""No ``prohibited`` value, deliberately.
-
-Nothing in this dataset is a listing that states a ban -- every prohibition
-read so far is a REGULATION, scoped to a park or an agency, and that is where
-they stay: Round Valley's park-wide dog ban and the District's "no dogs
-overnight at the Ohlone corridor backpack sites" are both rules, and both
-reach campgrounds whose listing marker is ``allowed``. Adding a value for a
-shape no source has produced would model structure nobody has stated, and
-would invite someone to express a ban here instead of as the scoped rule it
-actually is. If a listing ever does read "No Pets", this set gets a third
-member and the ban gets a marker as well as a rule.
-"""
+"""No ``prohibited`` value: every ban read so far is a scoped REGULATION, and
+that is where bans belong. A listing that reads "No Pets" would earn one."""
 
 PETS_MARKER_LABELS = {
     PETS_ALLOWED: "the listing marks pets allowed",
@@ -185,47 +162,21 @@ PETS_MARKER_LABELS = {
 }
 
 UNKNOWN_PETS_LABEL = "no pets field has been read for this campground"
-"""What a blank ``pets_marker`` reads as.
-
-Same rule as a blank ``access_mode`` or a blank fee: absent is not a value.
-Nine rows are blank and they are the honest nine -- the Del Valle group camps
-and horse camps came off a facility's site list rather than each site's own
-page, and Dumbarton Quarry has no verified date at all.
-"""
+"""What a blank ``pets_marker`` reads as. Absent is not a value."""
 
 PETS_DOMESTIC = "domestic"
-"""The operator's own category, and IT NAMES NO SPECIES.
-
-EBRPD's booking system prints "Pets Allowed: Domestic" and, on equestrian
-sites, "Pets Allowed: Domestic, Horse". Nothing read for this project defines
-the word. It cannot be a superset of :data:`PETS_HORSE`, because the two are
-printed side by side on the same listings; beyond that, whether it reaches a
-cat, a rabbit or a bird is not stated anywhere.
-
-So this token is stored verbatim and resolved to an empty species list. That
-is the difference between recording what a source said and inventing what it
-meant, and it is the reason someone arriving with a cat is told the listing
-does not answer them rather than being told yes.
-"""
+"""The operator's own category, and it NAMES NO SPECIES -- no source read here
+defines the word. See test_domestic_names_no_species."""
 
 PETS_HORSE = "horse"
-"""The operator's own category, and it names the animal outright.
-
-Four rows carry it. Three pair it with :data:`PETS_DOMESTIC` at equestrian
-camps; Round Valley Backpack Camp and Doe Camp carry it ALONE, which is the
-most informative pets value in the table -- the one animal those listings name
-is a horse, corroborating a dog ban this project otherwise held on the
-booking platform's word.
-"""
+"""The operator's own category, and it names the animal outright. Two rows
+carry it alone -- see test_the_ohlone_corridor_names_one_animal_and_it_is_a_horse."""
 
 _VALID_PETS_ANIMALS = {PETS_DOMESTIC, PETS_HORSE}
 
 PETS_ANIMAL_LABELS = {PETS_DOMESTIC: "Domestic", PETS_HORSE: "Horse"}
-"""Rendered in the operator's own capitalisation, because the value is a quote.
-
-A reader who sees "Domestic" can search the booking page for it. A reader who
-sees this project's gloss of it cannot, and would have to trust the gloss.
-"""
+"""The operator's own capitalisation: the value is a quote a reader can search
+the booking page for."""
 
 
 def _str_field(row, col: str) -> str:

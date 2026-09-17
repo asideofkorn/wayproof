@@ -1,61 +1,12 @@
-"""Whether the animal you are bringing may come.
+"""Whether the named animal you are bringing may come to one campground.
 
-That is not the same question as "does this campground allow pets", and this
-project has the README bullet to prove it:
+Reads the booking listing's marker (``campgrounds.csv``) AND the pets rules in
+force (``regulations.csv``) -- neither alone is safe. Round Valley Backpack
+Camp is marked pets-allowed and its preserve bans dogs outright.
 
-    **Can I bring a pet?** Wrong if it says "under control" where the forest
-    requires a leash under six feet. Also wrong if it answers for a dog when
-    the animal is not one: most pets rules in this dataset are written about
-    dogs, because that is how the agencies write them, and a leash rule is not
-    an answer to whether a cat, a rabbit or a bird may come. Say which animal
-    the rule governs, or say there is no rule on file.
-
-Answering it needs two things that live apart, and neither is sufficient:
-
-- ``campgrounds.csv``'s ``pets_marker``/``pets_animals`` -- what the BOOKING
-  LISTING says. It is per-campground and it is the only per-campground pets
-  fact this project holds. It is also weak: eight rows say pets are allowed
-  and name no animal, and one (Round Valley Backpack Camp) says pets are
-  allowed at a camp whose park bans dogs outright.
-- ``regulations.csv``'s ``pets`` rules -- what the LAND MANAGER says, scoped to
-  an agency, a park or a wilderness. These carry the bans and the leash lengths
-  and they are what actually governs you. They are also mostly written about
-  dogs.
-
-Read either alone and you get a confident wrong answer in a different
-direction: the marker alone admits a dog to Round Valley, and the rules alone
-never mention the campground you asked about. :func:`answer` reads both.
-
-Three things about species, all of them learned from the data
--------------------------------------------------------------
-
-**A rule's species come from its ``summary``, never its ``detail``.** The
-summary is the rule as the agency states it; the detail is this project's
-commentary, and the commentary talks about animals precisely in order to say
-the rule does NOT cover them. ``ebrpd-pets-count`` is the trap in full: its
-summary is "MAXIMUM THREE DOGS PER SITE" and its detail says "a party bringing
-cats has no number here". Search the detail and you conclude the rule answers
-for cats, which is the exact inversion of what it says.
-
-**"or other animal" is a species-general rule, and it is the good news.**
-EBRPD's Ordinance 38 is written as "dog, cat or other animal", so it reaches a
-rabbit and a bird as well. A rule that names only dogs reaches only dogs, and
-the honest answer for any other animal is that there is no rule on file --
-which is a usable answer, and is the one this project prefers to a guess.
-
-**A bare "cat" is not safe to match on.** ``regulations.py``'s own category
-vocabulary already warns about it: "cat hole" is the waste category's term, and
-matching it here would claim a human-waste rule as a cat rule. The pattern
-excludes it.
-
-What this deliberately does not do
-----------------------------------
-
-It does not reach the ``stock`` category. Three stock rules exist and a horse
-is plainly stock as well as a listed pets category, so a horse answer from here
-is partial and says so. Joining the two categories is a real piece of work
-about pack animals, not a line of regex, and pretending otherwise would put a
-confident answer where a stated limit belongs.
+The species rules this encodes are pinned one test each in
+``tests/test_pets.py``; read those names for the spec. It does not reach the
+``stock`` category, so a horse answer from here is partial.
 """
 
 from __future__ import annotations
@@ -75,47 +26,28 @@ CAT = "cat"
 HORSE = "horse"
 
 #: How an agency writes each animal. Matched against a rule's ``summary`` only.
-#:
-#: ``cat`` excludes "cat hole", the waste category's own term -- the same
-#: hazard ``regulations.CATEGORY_VOCABULARY`` documents, and for the same
-#: reason: a human-waste rule read as a cat rule would answer the user's
-#: question with someone else's.
+#: ``cat`` excludes "cat hole" -- see test_a_cat_hole_is_not_a_cat.
 ANIMAL_PATTERNS = {
     DOG: r"\bdogs?\b",
     CAT: r"\bcats?\b(?!\s+holes?\b)",
     HORSE: r"\bhorses?\b",
 }
 
-#: A rule written about animals generally rather than a named species.
-#:
-#: "dog, cat or other animal" is Ordinance 38's phrasing throughout, and it is
-#: what lets this project answer for an animal nobody legislated about by name.
-#: Anchored on "animal" so that "Other locations vary" -- which really is in
-#: ``ebrpd-backpack-no-dogs-ohlone``'s summary -- does not read as one.
+#: A rule written about animals generally: "dog, cat or other animal".
+#: Anchored on "animal" -- see test_other_locations_is_not_other_animals.
 GENERAL_ANIMAL_PATTERN = r"\bor\s+other\s+(?:type\s+of\s+)?animals?\b|\bother\s+animals?\b"
 
 PETS_CATEGORY = "pets"
 
-#: Which animals a booking listing's own category word actually names.
-#:
-#: ``domestic`` maps to nothing, and that is the single most important entry in
-#: this module. EBRPD prints "Pets Allowed: Domestic" and, on equestrian sites,
-#: "Pets Allowed: Domestic, Horse"; no source read here defines the word. The
-#: pairing rules out its being a superset of ``horse``, and says nothing at all
-#: about a cat. Guessing that "domestic" means "dogs and cats" would answer
-#: fifteen rows' worth of questions with an inference, which is how a
-#: confident wrong answer gets into a dataset.
+#: Which animals a listing's own category word names. ``domestic`` maps to
+#: nothing: no source defines it -- see test_domestic_names_no_species.
 CATEGORY_ANIMALS = {
     PETS_HORSE: (HORSE,),
 }
 
 
 def _plural(animals) -> str:
-    """``["dog", "dog", "cat"]`` -> ``"cats and dogs"``.
-
-    Plural because a rule is about dogs, not about dog, and the singular read
-    as a typo in every line this module emitted before it existed.
-    """
+    """``["dog", "dog", "cat"]`` -> ``"cats and dogs"``."""
     unique = sorted(set(animals))
     words = [f"{a}s" for a in unique]
     if len(words) <= 1:
@@ -124,12 +56,9 @@ def _plural(animals) -> str:
 
 
 def rule_animals(reg: Regulation) -> List[str]:
-    """Which animals a rule's ``summary`` names, in :data:`ANIMAL_PATTERNS` order.
-
-    Summary only -- see the module docstring. Passing ``detail`` in here makes
-    ``ebrpd-pets-count`` answer for cats when its whole point is that it does
-    not.
-    """
+    """Which animals a rule's ``summary`` names. SUMMARY ONLY -- passing
+    ``detail`` inverts ``ebrpd-pets-count``; see
+    test_a_rules_species_come_from_its_summary_not_its_commentary."""
     text = reg.summary or ""
     return [animal for animal, pattern in ANIMAL_PATTERNS.items()
             if re.search(pattern, text, re.I)]
@@ -148,26 +77,16 @@ def rule_reaches(reg: Regulation, animal: str) -> bool:
 
 
 def pets_rules(regulations: Sequence[Regulation]) -> List[Regulation]:
-    """The ``pets`` rules from a set already resolved for this trip.
-
-    Takes rules IN FORCE, not the whole table: scope resolution belongs to
-    :func:`wayproof.regulations.regulations_in_force`, which four surfaces
-    already share, and re-deriving it here is how those surfaces drift apart.
-    """
+    """The ``pets`` rules from a set already resolved for this trip -- pass
+    :func:`wayproof.regulations.regulations_in_force`, never the whole table."""
     return [r for r in regulations if r.category == PETS_CATEGORY]
 
 
 def rules_for_campground(campground: Campground,
                          regulations: Sequence[Regulation]) -> List[Regulation]:
-    """Every rule in force at one campground, scoped the shared way.
-
-    A thin wrapper over :func:`wayproof.regulations.regulations_in_force` and
-    deliberately nothing more -- the three scope keys a campground can supply
-    are its agencies, its jurisdiction and its park, and a campground objective
-    resolves no trailhead and no permit to add any others. ``plan`` keeps its
-    own call because it unions several campgrounds at once; everything asking
-    about one should come through here rather than rebuild the argument list.
-    """
+    """Every rule in force at one campground: a thin wrapper over
+    :func:`wayproof.regulations.regulations_in_force` with the three scope keys
+    a campground can supply. ``plan`` keeps its own call; it unions several."""
     return regulations_in_force(
         regulations,
         agency=[k.strip() for k in campground.agency_id.split(";") if k.strip()],
@@ -177,11 +96,8 @@ def rules_for_campground(campground: Campground,
 
 
 def marker_animals(campground: Campground) -> List[str]:
-    """Which animals the booking listing itself names. Usually none.
-
-    Fifteen of the twenty-two marked rows say "Domestic", which names no
-    species; eight say nothing but "allowed". Only ``horse`` names an animal.
-    """
+    """Which animals the booking listing itself names. Usually none -- only
+    ``horse`` names one."""
     named: List[str] = []
     for category in campground.pets_animal_list:
         for animal in CATEGORY_ANIMALS.get(category, ()):
@@ -194,12 +110,8 @@ def marker_animals(campground: Campground) -> List[str]:
 class PetsAnswer:
     """What is known about bringing an animal to one campground.
 
-    Four fields and not one verdict, deliberately. A single allowed/denied
-    would have to pick a side on the case this exists for: Round Valley
-    Backpack Camp, where the listing says pets and the park bans dogs. The
-    answer there is that two sources say different things about different
-    animals, and a reader needs both.
-    """
+    No single verdict field: at Round Valley the listing says pets and the park
+    bans dogs, and a reader needs both."""
 
     campground: Campground
     animal: str = ""
@@ -221,53 +133,25 @@ class PetsAnswer:
 
     @property
     def park_rules(self) -> List[Regulation]:
-        """Pets rules scoped to this campground's OWN park.
-
-        A structural signal, not a reading of anybody's prose, and the one that
-        keeps the marker honest. Round Valley Backpack Camp's listing marks it
-        pets-allowed and its preserve bans dogs outright, so the marker and the
-        rulebook disagree about the only thing a dog owner needs -- and the
-        disagreement is visible here as a ``scope_type == "park"`` row matching
-        ``campground.park``, with no text analysis and nothing inferred.
-
-        Quoted in :meth:`lines` even by surfaces that print every rule further
-        down. That is the same call ``plan`` already makes for the Whitney
-        exclusion: a fact that is discovered on arrival and cannot be fixed
-        there must not sit below a wall of regulations.
-        """
+        """Pets rules scoped to this campground's OWN park -- a structural
+        signal, no text analysis. Quoted in :meth:`lines` even where every rule
+        prints below; see test_the_park_ban_survives_a_surface_that_suppresses_rule_quotes."""
         return [r for r in self.rules
                 if r.scope_type == PARK and r.scope_value == self.campground.park]
 
     @property
     def silent(self) -> List[Regulation]:
-        """Pets rules in force that say nothing about this animal.
-
-        Carried rather than filtered away, because "four rules apply to you and
-        two are about dogs" is a different state from "four rules apply to
-        you", and a reader planning around a cat needs to know the leash count
-        they can see on the page is not theirs.
-        """
+        """Pets rules in force that say nothing about this animal. Carried, not
+        filtered: a cat owner needs to know the leash count is not theirs."""
         return [r for r in self.rules if not rule_reaches(r, self.animal)]
 
     def lines(self, rule_detail: int = 3) -> List[str]:
-        """The answer as a reader sees it.
+        """The answer as a reader sees it: what the listing says, then the
+        rules, then the gap -- which is never omitted.
 
-        Order is fixed and is the point: what the listing says, then what the
-        rules say, then what nobody says. The gap goes LAST and is never
-        omitted -- silence reading as permission is the failure this whole
-        module is built around.
-
-        ``rule_detail`` is how many governing rules to quote when an animal was
-        named. COUNTING THEM IS NOT ENOUGH, and Round Valley Backpack Camp is
-        why: "seven pets rules govern you" is true of a dog there and hides
-        that one of the seven bans dogs from the whole preserve. They are
-        quoted most-specific-first, which is the order
-        :func:`wayproof.regulations.regulations_for` already sorts them into,
-        so a park's own ban reads before the District's leash rule.
-
-        Pass ``0`` from a surface that prints the rules in full anyway -- as
-        ``plan`` does, under "Rules in force" -- rather than saying it twice.
-        """
+        ``rule_detail`` quotes that many governing rules, most-specific-first.
+        Pass ``0`` from a surface that prints them in full anyway, as ``plan``
+        does; the park's own rule is quoted regardless."""
         c = self.campground
         out: List[str] = []
 
@@ -360,15 +244,8 @@ def answer(campground: Campground, regulations: Sequence[Regulation] = (),
            animal: str = "") -> PetsAnswer:
     """What is known about bringing *animal* to *campground*.
 
-    *regulations* must already be scoped to this trip -- pass the output of
-    :func:`wayproof.regulations.regulations_in_force`, which is what ``plan``,
-    the site views, the reports and the scorecard all use. Passing the whole
-    table would answer with Desolation's dog rules at an East Bay campground.
-
-    *animal* is free text and is not validated against a species list: someone
-    arriving with a rabbit is asking a real question, and the honest answer --
-    no rule on file names a rabbit, and these rules reach any animal -- is one
-    this can give. Blank asks the general question instead.
-    """
+    *regulations* must already be scoped to this trip. *animal* is free text
+    and deliberately unvalidated -- a rabbit is a real question. Blank asks the
+    general one."""
     return PetsAnswer(campground=campground, animal=str(animal or "").strip().lower(),
                       rules=pets_rules(regulations))

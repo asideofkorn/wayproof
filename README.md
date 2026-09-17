@@ -103,8 +103,7 @@ worth making.** Worked examples with verified answers live in
   answer to whether a cat, a rabbit or a bird may come. Say which animal the
   rule governs, or say there is no rule on file. It is also wrong to answer
   from the booking listing's pets marker alone: Round Valley Backpack Camp is
-  marked pets-allowed and its preserve bans dogs outright. See
-  [Pets Is Not One Question](#pets-is-not-one-question).
+  marked pets-allowed and its preserve bans dogs outright.
 - **Where can and cannot I camp?** Setbacks, designated sites, restoration
   closures.
 - **Does my permit still cover me in the next wilderness?** Reciprocity, and
@@ -463,7 +462,7 @@ The repository currently includes:
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus `pets_marker`/`pets_animals`, named after the booking listing's pets field rather than after the answer, because a park rule can ban an animal the listing admits — see [Pets Is Not One Question](#pets-is-not-one-question). Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus `pets_marker`/`pets_animals`, named after the booking listing's pets field rather than after the answer. Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
 - `data/booking_facilities.csv` - the booking system's own pages, keyed by facility id. A level above a campground and *not* a park: one facility sells sites in three different parks, and two parks are each sold through two facilities, so `facility_id` is stored on a campground rather than inferred from where it is
 - `data/booking_channels.csv` - how to book a campsite, scoped by agency and by class of site — the channel, what is *not* a channel, lead time, release-day mechanics and booking horizon
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
@@ -640,114 +639,6 @@ designation, e.g. `"Ohlone Wilderness"`), since a trailhead's governing
 wilderness and its vehicle-access park unit aren't always the same name.
 A trailhead with no known `park` (every Sierra trailhead today) simply
 shows no `Facilities` section, rather than a guessed link.
-
-## Pets Is Not One Question
-
-"Can I bring a pet" is three questions wearing one word, and this project got
-them confused for as long as the answer lived in prose. Twenty-two campground
-rows said something about animals, in twenty-two phrasings -- `Pets are allowed
-here, listed per site`, `Pets Allowed: Domestic, Horse`, `PETS ARE ALLOWED AT
-EVERY SITE`, `Pets allowed here are listed as HORSE only` -- so there was no
-column, no query, and no way to ask the table anything at all.
-
-The three questions are:
-
-1. **Does this campground take animals?** The operator answers this, on the
-   booking listing, and nobody else does. It is now `pets_marker` on
-   `campgrounds.csv`.
-2. **Which animals?** Sometimes the operator says, in its own vocabulary, and
-   that is `pets_animals`. Usually it does not.
-3. **What may the animal do when it gets there?** The land manager answers
-   this, and it is already in `regulations.csv` under the `pets` category,
-   scoped to an agency, a park or a wilderness.
-
-### The columns are named after the marker, not after the answer
-
-`pets_marker` is `allowed`, `not_marked`, or blank. There is no `prohibited`
-value, deliberately: every ban read for this project is a *rule*, scoped to a
-park or an agency, and that is where bans stay. Adding a value for a shape no
-source has produced would invite the next person to express a ban as a checkbox
-instead of as the scoped rule it actually is.
-
-That naming is load-bearing, because the marker and the rulebook come apart.
-**Round Valley Backpack Camp's listing marks it pets-allowed. Round Valley
-Regional Preserve bans dogs everywhere, at any time, because the endangered San
-Joaquin kit fox is there at the northern extreme of its range and dogs are a
-disease vector to it.** A column called `pets_allowed` would have answered
-"yes" to the one party in this dataset that most needed to be turned away. So
-no surface renders the marker alone: `wayproof/pets.py` reads the marker *and*
-the rules in force, and a pets rule scoped to the campground's own park is
-quoted above everything else -- the same call `plan` already makes for the
-Whitney exclusion, because a fact discovered on arrival cannot be fixed there.
-
-### `not_marked` is not a ban, and blank is not `not_marked`
-
-Star Mine Group Camp sits on one ReserveAmerica page beside Stewartville, which
-is marked `Domestic, Horse`. Star Mine's pets field is empty. Somebody has
-looked, the field exists, and this camp has nothing in it — which is evidence,
-and is not the same as nobody having looked. Six rows are `not_marked` and nine
-are blank, and they ask for different work: a `not_marked` row is a phone call
-to Reservations, a blank one is a page nobody has opened. Neither is a no.
-
-### "Domestic" names no animal
-
-`pets_animals` stores the operator's own category words, and resolves
-`domestic` to **no species at all**. EBRPD prints `Pets Allowed: Domestic` and,
-on equestrian sites, `Pets Allowed: Domestic, Horse`; nothing read for this
-project defines the word. The pairing rules out its being a superset of
-`horse`, and beyond that, whether it reaches a cat, a rabbit or a bird is not
-stated anywhere. Guessing it means "dogs and cats" would answer fifteen rows'
-worth of questions from a hunch.
-
-`horse` is the exception and names its animal outright. Four rows carry it, and
-two carry it *alone* -- Round Valley Backpack Camp and Doe Camp, where the one
-animal the listing names is a horse. That is the most informative pets value in
-the table: it corroborates a no-dogs-overnight rule this project otherwise held
-on the booking platform's word alone.
-
-### Which animal a rule is about comes from its `summary`
-
-A rule's species are read off `summary` and never off `detail`, and the
-distinction is not pedantry. `ebrpd-pets-count`'s summary is "MAXIMUM THREE DOGS
-PER SITE"; its detail says "a party bringing cats has no number here". Search
-the detail and the rule answers for cats, which is the exact inverse of what it
-says. The summary is the rule as the agency states it; the detail is this
-project's commentary, and the commentary mentions animals precisely in order to
-say the rule does not reach them.
-
-Two more readings that had to be got right:
-
-- **"or other animal" is species-general, and it is the good news.** EBRPD's
-  Ordinance 38 is written as "dog, cat or other animal", so it reaches a rabbit
-  and a bird as well as the two it names. Four of the six rules in force at an
-  East Bay campground are like this.
-- **A bare "cat" is not safe to match on.** "cat hole" is the waste category's
-  own term, and matching it would claim a human-waste rule as a cat rule.
-
-Where every rule in force is written about dogs alone, the answer is **"no rule
-on file governs a cat here"**, said in those words. That is a usable answer.
-`scorecard.py` scores Q13 `partial` rather than `answered` in that case, which
-moved 35 Sierra objectives out of the green column the day the check was
-tightened.
-
-### The query
-
-```bash
-python cli.py --campgrounds --access drive_in --pets allowed --animal cat \
-    --near 37.8044,-122.2712
-```
-
-`--pets` filters on the marker. **`--animal` filters nothing** -- it annotates.
-Dropping a campground because no source names a cat would turn "nobody said"
-into "no", and fifteen of the twenty-two marked rows name no species at all.
-What it does instead is ask each result the question and report which rules
-govern that animal, which are written about another one, and which of them is
-the park's own.
-
-The two kinds of silence are listed under the results rather than dropped, the
-same way an unrecorded `access_mode` already is. Both also surface in
-`--open-questions` and on the website's gaps list, one question per park, since
-a facility's own site list carries the pets field for every camp on it.
 
 ## The Scavenger Hunt: Confirming What's Unclear
 
@@ -1038,68 +929,6 @@ A blank `campsite_type` on a campground resolves only agency-wide channels.
 Guessing `family` there would tell a backpacker to book online, which EBRPD
 does not allow.
 
-
-### Local beats general, where a source says so
-
-Rules are layered, and layered is not the same as equal. At Stewartville
-Backpack Camp three alcohol rules reach you at once: the District's "beer and
-wine, 21 and over", Black Diamond Mines' "no alcohol at all", and the
-District's own backpack-site ban. All three used to print as peer bullets, one
-under the other, with nothing saying which one you are actually under. A
-camper reading top-down got the permissive one.
-
-`supersedes` on `regulations.csv` is the edge. A rule names the broader rules
-it **displaces**, and a displaced rule renders marked rather than deleted:
-
-```text
-Camping
-  - No alcohol at all is allowed at Black Diamond Mines. [Black Diamond Mines]
-  - [DOES NOT APPLY HERE] No hard alcohol anywhere. Beer and wine only, 21 and
-    over... [East Bay Regional Park District]
-      The District-wide rule, displaced here by a stricter rule: "No alcohol at
-      all is allowed at Black Diamond Mines." Read that, not this.
-```
-
-Four decisions, each from a case in the data:
-
-**Recorded, never derived.** The obvious implementation reads the edge off
-`SPECIFICITY` — narrower wins — and `point-pinole-dogs` is why it is wrong.
-That park caps dogs at three *per person*; the District's campground rule caps
-them at three *per site*. It is narrower and it displaces nothing: the two
-govern different things, one a walking limit and one a campsite occupancy
-limit, and the stricter applies where both do. Derived supersession would let
-a party of ten bring thirty dogs to one campsite. So a rule declares what it
-displaces, and a rule that declares nothing displaces nothing.
-
-**Declared by the narrow rule.** That is the row being written when the
-relationship is found. The alternative, `superseded_by` on the general rule,
-means editing a rule every time an exception turns up somewhere else — which
-is exactly how `ebrpd-alcohol` came to hand-maintain a list of its own
-exceptions in prose and to admit, in that same prose, that the list was
-incomplete. That list is now derived and the sentence is gone.
-
-**Scoped by being in force, not by a second scope field.** Black Diamond's ban
-displaces the District rule at Black Diamond and nowhere else, automatically:
-pass the rules in force for *this* trip and the park rule is simply absent
-everywhere else, so its edge cannot fire.
-
-**Only full displacement, and only from a narrower scope.** The second half of
-that was added because its absence produced a wrong answer within an hour of
-the column existing. `ebrpd-backpack-no-fire-no-alcohol` is narrow by naming a
-*class of site*, which this table has no scope level for, so it sits at
-`agency` scope and is in force at every EBRPD campground. Given an edge onto
-Ordinance 38's fire rule it fired at Anthony Chabot's drive-in family
-campground — where every site has a fire ring with a grill — and marked the
-barbecue permission "does not apply here". The loader now refuses an edge
-whose declaring rule is not strictly narrower in scope, which catches that
-whole class of mistake. A rule too narrow for any scope level here needs a new
-level, not an edge.
-
-Partial overrides are not representable and are not written as if they were.
-`round-valley-no-dogs` bans dogs from a preserve whose campground rule governs
-"dog, cat or other animal"; recording it as superseding would tell someone
-arriving with a cat that Ordinance 38 does not apply to them. Those stay in
-`detail`, as prose a person reads rather than an edge code acts on.
 
 ### Rules do not stop where permits do
 
