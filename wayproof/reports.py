@@ -401,14 +401,34 @@ def open_questions(
             if c.pets_marker or not _park_is_relevant(c.park):
                 continue
             no_pets_source.setdefault(c.park, []).append(c.name)
+        # WHERE THE FIELD IS, appended for the rows where this project can say.
+        # The pets field is published PER SITE -- every campground whose own
+        # site rows are held here carries a pets value, 7 of 7 -- so a camp
+        # recorded as holding sites this project does not hold has two gaps
+        # that close on the same page-read. Del Valle Family Campground is the
+        # one row in that state, and it is the second drive-in family
+        # campground in the East Bay, so it is the one most likely to be asked
+        # about. Said only where it is true rather than as a general hint: the
+        # group camps and horse camps below are single units with no site list
+        # to read, and telling someone to go and read one would waste the trip
+        # to the page.
+        holds_no_sites = {c.name for c in camps_without_sites(campgrounds, campsites)}
         for park_name, names in sorted(no_pets_source.items()):
+            question = (f"No source carrying a pets field has been read for "
+                        f"{len(names)} campground(s) in {park_name or 'an unnamed park'}, "
+                        f"so a plan can only answer from the agency's rules and "
+                        f"cannot say what the listing says: {', '.join(sorted(names))}.")
+            also_siteless = sorted(n for n in names if n in holds_no_sites)
+            if also_siteless:
+                question += (f" The field is published per site, and "
+                             f"{', '.join(also_siteless)} is recorded as holding "
+                             f"individually bookable sites that this project does "
+                             f"not hold -- so the pets field and the site list are "
+                             f"the same page-read, not two.")
             questions.append(OpenQuestion(
                 target_file="data/campgrounds.csv",
                 target_key=park_name or "(no park recorded)",
-                question=(f"No source carrying a pets field has been read for "
-                          f"{len(names)} campground(s) in {park_name or 'an unnamed park'}, "
-                          f"so a plan can only answer from the agency's rules and "
-                          f"cannot say what the listing says: {', '.join(sorted(names))}."),
+                question=question,
                 context=park_name,
             ))
 

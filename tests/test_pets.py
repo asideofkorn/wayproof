@@ -407,3 +407,63 @@ def test_what_the_columns_cannot_hold_is_still_in_notes():
     assert "Reservations" in by_name["Star Mine Group Camp"].notes
     assert "round-valley-no-dogs" in by_name["Round Valley Backpack Camp"].notes
     assert "horse camp" in by_name["Doe Camp"].notes.lower()
+
+
+# -- the gap says what would close it --------------------------------------
+
+def test_the_per_site_coupling_this_hint_rests_on_still_holds():
+    # The hint below asserts that the pets field is published per site. The
+    # evidence is that every campground whose own site rows this project holds
+    # carries a pets value. If that stops being true the hint is guesswork and
+    # should come out, so it is asserted rather than assumed.
+    from wayproof.camping import load_campsites
+    held = {s.campground for s in load_campsites(
+        os.path.join(ROOT, "data", "campsites.csv"))}
+    unread = [c.name for c in _campgrounds() if not c.pets_marker and c.name in held]
+    assert unread == [], f"a campground with site rows and no pets value: {unread}"
+
+
+def test_the_unread_gap_names_what_would_close_it_where_it_can():
+    # Del Valle Family Campground is the East Bay's other drive-in family
+    # campground and the row most likely to be asked about. Its pets field and
+    # its unrecorded site list are one page-read, not two, and the question
+    # says so rather than leaving someone to notice.
+    from wayproof.camping import load_campsites
+    from wayproof.reports import open_questions
+    questions = open_questions(
+        campgrounds=_campgrounds(),
+        campsites=load_campsites(os.path.join(ROOT, "data", "campsites.csv")),
+        regulations=load_regulations(REGS))
+    hint = [q for q in questions if "the same page-read, not two" in q.question]
+    assert len(hint) == 1
+    assert "Del Valle Family Campground" in hint[0].question
+
+
+def test_the_hint_is_not_given_for_a_single_unit_camp():
+    # A group camp is one bookable unit with no site list to read. Telling
+    # someone to go and read one would send them to a page that does not exist.
+    from wayproof.camping import load_campsites
+    from wayproof.reports import open_questions
+    questions = open_questions(
+        campgrounds=_campgrounds(),
+        campsites=load_campsites(os.path.join(ROOT, "data", "campsites.csv")),
+        regulations=load_regulations(REGS))
+    hint = next(q for q in questions if "the same page-read, not two" in q.question)
+    for single_unit in ("Wild Turkey Group Camp", "Caballo Loco Horse Camp"):
+        head, _, tail = hint.question.partition("The field is published per site")
+        assert single_unit not in tail, f"{single_unit} is one unit, not a site list"
+
+
+# -- and the sentence the answer gives is generated, never stored ----------
+
+def test_no_rule_on_file_is_computed_and_not_a_stored_value():
+    # It is a fact about a QUERY -- this animal, against the rules in force
+    # here -- not a fact about a campground, so it must not be findable in any
+    # data file. Storing it would freeze one animal's answer into a row and
+    # make it wrong for the next animal asked about.
+    import glob
+    for path in glob.glob(os.path.join(ROOT, "data", "**", "*.csv"), recursive=True):
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read().lower()
+        assert "no rule on file" not in text, f"{path} stores a query's answer"
+        assert "governs a cat" not in text, f"{path} stores a query's answer"
