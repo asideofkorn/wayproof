@@ -1,25 +1,17 @@
-"""Which vocabulary governs which stored column, and whether a row is well formed.
+"""Which vocabulary governs which stored column.
 
-Moved out of ``tests/test_schema_integrity.py`` when the ingest path needed the
-same registry: a value is checked the same way whether it is already committed
-or about to be written.
-
-Rules are pinned one test each in ``tests/test_schema_integrity.py`` and
-``tests/test_ingest.py``.
+A fact about the data rather than about any one caller, so it lives in the
+package. Guarded by ``tests/test_schema_integrity.py``.
 """
 
 from __future__ import annotations
 
-import csv
-import pathlib
-from typing import Dict, List, Mapping, Sequence, Tuple
+from typing import List, Tuple
 
 from . import booking, camping, permits
 from .access import _VALID_STATUSES
 from .advisories import _VALID_KINDS, _VALID_SEVERITY
 from .regulations import _VALID_SCOPES
-
-DATA = pathlib.Path("data")
 
 #: ``(csv, column, allowed values, multi-valued)``. Every vocabulary that
 #: governs stored data belongs here, whether or not its loader also checks it --
@@ -51,67 +43,3 @@ NOT_STORED = {
     "_VALID_ROLES",                          # provenance.py
     "_VALID_MECHANISMS", "_VALID_SEASONS",   # release_policy.py, parsed from prose
 }
-
-
-def vocabularies_for(table: str) -> List[Tuple[str, set, bool]]:
-    """``[(column, allowed, multi), ...]`` bound for one table."""
-    return [(c, v, m) for t, c, v, m in BOUND if t == table]
-
-
-def header(table: str, data_dir: pathlib.Path = DATA) -> List[str]:
-    with open(data_dir / table, newline="") as f:
-        return next(csv.reader(f))
-
-
-def rows(table: str, data_dir: pathlib.Path = DATA) -> List[dict]:
-    with open(data_dir / table, newline="") as f:
-        return list(csv.DictReader(f))
-
-
-def key_is_unique(table: str, data_dir: pathlib.Path = DATA) -> bool:
-    """Is this table's first column currently a unique key?
-
-    Derived rather than declared: five tables are legitimately one-to-many
-    (`timed_entry`, `release_policies`, ...) and hard-coding a list of them
-    would go stale. What matters is that a table which IS keyed stays keyed.
-    """
-    col = header(table, data_dir)[0]
-    values = [r[col] for r in rows(table, data_dir)]
-    return len(values) == len(set(values))
-
-
-def validate_row(table: str, values: Mapping[str, str],
-                 data_dir: pathlib.Path = DATA) -> List[str]:
-    """Everything wrong with a row about to be written. Empty means writable.
-
-    Checks the three things that fail silently once committed: a column that
-    does not exist (the value is simply dropped), a value outside its
-    vocabulary (the join resolves to nothing), and a duplicate key in a table
-    that has unique keys (one row shadows the other).
-    """
-    problems: List[str] = []
-    cols = header(table, data_dir)
-
-    unknown = [c for c in values if c not in cols]
-    if unknown:
-        problems.append(f"columns not in {table}: {sorted(unknown)}")
-
-    for column, allowed, multi in vocabularies_for(table):
-        raw = str(values.get(column, "") or "").strip()
-        if not raw:
-            continue
-        parts = [p.strip() for p in raw.split(";")] if multi else [raw]
-        bad = [p for p in parts if p and p not in allowed]
-        if bad:
-            problems.append(f"{column}={bad} outside {sorted(allowed)}")
-
-    key = cols[0]
-    new_key = str(values.get(key, "") or "").strip()
-    if not new_key:
-        problems.append(f"{key} is required: it is this table's key")
-    elif key_is_unique(table, data_dir):
-        existing = {r[key] for r in rows(table, data_dir)}
-        if new_key in existing:
-            problems.append(f"{key}={new_key!r} already exists in {table}")
-
-    return problems

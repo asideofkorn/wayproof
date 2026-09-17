@@ -4,7 +4,7 @@
 Checks the OUTCOME, not the path. Every convention in this repo has drifted --
 CONTRIBUTING's test command, the README's counts, "concise comments" -- and
 every mechanical check has held. So this does not care whether a row arrived
-through `wayproof.ingest.add_row`, a heredoc or an editor; it cares that the ledger
+through a script, a heredoc or an editor; it cares that the ledger
 gained an entry when the data gained rows.
 
     python scripts/check_provenance.py --base origin/main
@@ -72,9 +72,9 @@ def verdict(before: Dict[str, int], after: Dict[str, int],
     detail = ", ".join(f"{p} +{n}" for p, n in sorted(grew.items()))
     return [
         f"{total} row(s) added with no new entry in {LEDGER}: {detail}. "
-        f"A row with no reading behind it is a guess. Add the entry "
-        f"(`wayproof.ingest.add_row` writes both), or say {MIGRATION} in the commit "
-        f"message if this moves facts that were already sourced."
+        f"A row with no reading behind it is a guess. Append the entry to "
+        f"{LEDGER} as well, or say {MIGRATION} in the commit message if this "
+        f"moves facts that were already sourced."
     ]
 
 
