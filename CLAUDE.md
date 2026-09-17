@@ -151,6 +151,11 @@ Do not treat these as bugs to fix in passing; they are tracked design debt.
 - The website publishes trailhead reference only. Campgrounds, pets, costs,
   advisories and conditions are CLI-only.
 - The scorecard scores peaks only; campground objectives score zero times.
+- `equestrian` is a valid site class with no booking channel of its own, so
+  Lil Chaparral and Caballo Loco resolve to the agency-wide contact only.
+  Nobody has read how EBRPD sells an equestrian site; do not invent a channel.
+- `permit_source_log.csv:verdict` has a vocabulary that no loader validates.
+  `tests/test_schema_integrity.py` checks the data; the loader still does not.
 
 ## Open — do not build without asking
 
