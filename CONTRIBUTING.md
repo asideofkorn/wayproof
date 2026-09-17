@@ -10,13 +10,13 @@ git clone https://github.com/<owner>/wayproof.git
 cd wayproof
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python tests/test_pipeline.py        # or: python -m pytest tests/
+python -m pytest tests/
 ```
 
 ## Development guidelines
 
-- **Tests must pass.** Run `python tests/test_pipeline.py` before opening a PR;
-  add a test for any new behavior or fixed bug.
+- **Tests must pass.** Run `python -m pytest tests/` before opening a PR; add a
+  test for any new behavior or fixed bug. Name it after the failure it catches.
 - **Match the surrounding style.** Type hints, module docstrings, and concise
   comments that explain *why*, as in the existing code.
 - **Keep changes focused.** One logical change per PR with a clear description.
