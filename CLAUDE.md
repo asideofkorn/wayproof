@@ -96,6 +96,14 @@ occur*. Give it a value (`PETS_NOT_MARKED`); never collapse it into blank.
 existing values cannot carry — never to anticipate one. It needs a line saying
 what it means, loader validation, and a test.
 
+**When a fix opens a question nobody can answer, don't make it.** Adding
+`equestrian` to the site-class vocabulary closed a silent join and created an
+obligation in the same move — a class with no booking channel, and no source
+for how one is sold. The missing channel was pre-existing; making the class
+first-class turned it into work. Leave the small bug, and do not add a bullet
+about it either: an item-level note with no test behind it is how this file
+becomes the README. If a test guards it, the test is the record.
+
 **When you cannot reach the source:** do not fill the field, and do not fill it
 from a search summary. Leave it blank and make the gap name the page that would
 close it. If you read part of a page, fill what you read and leave
@@ -151,13 +159,6 @@ Do not treat these as bugs to fix in passing; they are tracked design debt.
 - The website publishes trailhead reference only. Campgrounds, pets, costs,
   advisories and conditions are CLI-only.
 - The scorecard scores peaks only; campground objectives score zero times.
-- `campgrounds.csv:campsite_type` is unvalidated and holds `equestrian`, which
-  no booking-channel vocabulary contains, so Lil Chaparral and Caballo Loco
-  resolve to the agency-wide contact silently. Giving it a vocabulary means
-  deciding whether a site class must have a channel; nobody has read how EBRPD
-  sells an equestrian site. Deferred on purpose — do not fix in passing.
-- `permit_source_log.csv:verdict` has a vocabulary that no loader validates.
-  `tests/test_schema_integrity.py` checks the data; the loader still does not.
 
 ## Open — do not build without asking
 
