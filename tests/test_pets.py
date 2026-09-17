@@ -260,6 +260,30 @@ def test_no_pets_rule_at_all_is_a_gap_and_not_a_permission():
     assert "gap and not a permission" in _text(pets.answer(c, []))
 
 
+def test_a_gap_is_still_a_gap_when_an_animal_was_asked_about():
+    # The no-animal path said this and the animal path did not: it reported "0
+    # pets rule(s) apply to this land and every one is written about another
+    # animal", a sentence about rules that do not exist.
+    c = Campground(name="X", park="Y", pets_marker=PETS_ALLOWED)
+    assert "gap and not a permission" in _text(pets.answer(c, [], "cat"))
+
+
+def test_a_displaced_pets_rule_is_not_offered_as_an_answer():
+    # pets.py answered without reading `supersedes` while the fire surface
+    # honoured it -- two implementations of one question, which is how they
+    # drift. No pets edge exists in the data yet, so this builds one: the day
+    # somebody records a park rule displacing the District's, the displaced
+    # rule must not read as if it still applied.
+    district = _reg("Dogs must be leashed.", regulation_id="district-leash")
+    narrower = _reg("Dogs must be leashed, four-foot maximum, at Test Park.",
+                    regulation_id="park-leash", scope_type="park",
+                    scope_value="Test Park", supersedes="district-leash")
+    c = Campground(name="X", park="Test Park", pets_marker=PETS_ALLOWED)
+    answer = pets.answer(c, [district, narrower], "dog")
+    assert [r.regulation_id for r in answer.deciding()] == ["park-leash"]
+    assert "Dogs must be leashed." not in _text(answer)
+
+
 # -- silence never renders as no ------------------------------------------
 
 def test_an_unmarked_listing_never_renders_as_a_ban():

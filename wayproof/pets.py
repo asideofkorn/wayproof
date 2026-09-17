@@ -4,21 +4,22 @@ Reads the booking listing's marker (``campgrounds.csv``) AND the pets rules in
 force (``regulations.csv``) -- neither alone is safe. Round Valley Backpack
 Camp is marked pets-allowed and its preserve bans dogs outright.
 
-The species rules this encodes are pinned one test each in
-``tests/test_pets.py``; read those names for the spec. It does not reach the
+Scoping, matching and supersession live in :mod:`wayproof.topic`; what is here
+is the marker, which only pets has, and the animal phrasing. The species rules
+are pinned one test each in ``tests/test_pets.py``. This does not reach the
 ``stock`` category, so a horse answer from here is partial.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List, Optional, Sequence
 
 from . import topic as _topic
 from .camping import (
     PETS_ALLOWED, PETS_HORSE, PETS_NOT_MARKED, Campground, pets_animals_label,
 )
-from .regulations import PARK, Regulation
+from .regulations import Regulation
 from .topic import PETS as TOPIC
 
 DOG = "dog"
@@ -82,70 +83,68 @@ def marker_animals(campground: Campground) -> List[str]:
     return named
 
 
+def marker(campground: Campground) -> _topic.Marker:
+    """What this listing's pets field said, as a sentence a reader sees.
+
+    Three states, three sentences: collapsing any two of them is the failure
+    pinned by test_the_three_states_are_three_different_sentences.
+    """
+    if campground.pets_marker == PETS_ALLOWED:
+        categories = pets_animals_label(campground)
+        if categories:
+            states = (f"the booking listing marks this camp pets-allowed, in its "
+                      f"own categories -- {categories}.")
+        else:
+            states = ("the booking listing marks this camp pets-allowed and gives "
+                      "no category, so it does not say which animals.")
+    elif campground.pets_marker == PETS_NOT_MARKED:
+        states = ("the listing carries a pets field and this camp is not marked in "
+                  "it. THAT IS NOT A STATED BAN -- it is the absence of a "
+                  "statement, and worth a call to the operator.")
+    else:
+        states = ("no source carrying a pets field has been read for this "
+                  "campground. Nobody has checked; that is not the same as no.")
+    return _topic.Marker(states=states, names=marker_animals(campground))
+
+
 @dataclass
-class PetsAnswer:
+class PetsAnswer(_topic.Answer):
     """What is known about bringing an animal to one campground.
 
-    No single verdict field: at Round Valley the listing says pets and the park
-    bans dogs, and a reader needs both."""
+    Every level question -- which rules are in force, which reach this animal,
+    which are displaced -- is :class:`wayproof.topic.Answer`'s. What is added
+    here is the marker and the sentences, because a pets answer talks about
+    animals. No single verdict field: at Round Valley the listing says pets and
+    the park bans dogs, and a reader needs both.
+    """
 
-    campground: Campground
-    animal: str = ""
-    """Lower-cased, as asked. "" means the general question was asked."""
-    rules: List[Regulation] = field(default_factory=list)
-    """Every pets rule in force here, whatever animal it is about."""
+    campground: Optional[Campground] = None
+
+    def __post_init__(self) -> None:
+        if self.marker is None and self.campground is not None:
+            self.marker = marker(self.campground)
+
+    @property
+    def animal(self) -> str:
+        """The subject, under the name this module's callers use."""
+        return self.subject
 
     @property
     def marker_names_animal(self) -> Optional[bool]:
         """Does the listing name this animal? ``None`` when no animal was asked."""
         if not self.animal:
             return None
-        return self.animal in marker_animals(self.campground)
-
-    @property
-    def governing(self) -> List[Regulation]:
-        """The rules that reach :attr:`animal`, by name or as "other animal"."""
-        return [r for r in self.rules if rule_reaches(r, self.animal)]
-
-    @property
-    def park_rules(self) -> List[Regulation]:
-        """Pets rules scoped to this campground's OWN park -- a structural
-        signal, no text analysis. Quoted in :meth:`lines` even where every rule
-        prints below; see test_the_park_ban_survives_a_surface_that_suppresses_rule_quotes."""
-        return [r for r in self.rules
-                if r.scope_type == PARK and r.scope_value == self.campground.park]
-
-    @property
-    def silent(self) -> List[Regulation]:
-        """Pets rules in force that say nothing about this animal. Carried, not
-        filtered: a cat owner needs to know the leash count is not theirs."""
-        return [r for r in self.rules if not rule_reaches(r, self.animal)]
+        return self.animal in (self.marker.names if self.marker else ())
 
     def lines(self, rule_detail: int = 3) -> List[str]:
         """The answer as a reader sees it: what the listing says, then the
         rules, then the gap -- which is never omitted.
 
-        ``rule_detail`` quotes that many governing rules, most-specific-first.
+        ``rule_detail`` quotes that many deciding rules, most-specific-first.
         Pass ``0`` from a surface that prints them in full anyway, as ``plan``
         does; the park's own rule is quoted regardless."""
         c = self.campground
-        out: List[str] = []
-
-        if c.pets_marker == PETS_ALLOWED:
-            categories = pets_animals_label(c)
-            if categories:
-                out.append(f"Pets: the booking listing marks this camp pets-allowed, "
-                           f"in its own categories -- {categories}.")
-            else:
-                out.append("Pets: the booking listing marks this camp pets-allowed "
-                           "and gives no category, so it does not say which animals.")
-        elif c.pets_marker == PETS_NOT_MARKED:
-            out.append("Pets: the listing carries a pets field and this camp is not "
-                       "marked in it. THAT IS NOT A STATED BAN -- it is the absence "
-                       "of a statement, and worth a call to the operator.")
-        else:
-            out.append("Pets: no source carrying a pets field has been read for this "
-                       "campground. Nobody has checked; that is not the same as no.")
+        out: List[str] = [f"{TOPIC.label}: {self.marker.states}"]
 
         park_rules = self.park_rules
         if park_rules and not self.animal:
@@ -185,10 +184,10 @@ class PetsAnswer:
                        f"{animal}. It is not in the marker:")
             out.extend(f"    - {r.summary}" for r in park_reaching)
 
-        governing, silent = self.governing, self.silent
-        if governing:
-            by_name = [r for r in governing if animal in rule_animals(r)]
-            general = [r for r in governing if r not in by_name]
+        deciding, silent = self.deciding(), self.silent
+        if deciding:
+            by_name = [r for r in deciding if animal in rule_animals(r)]
+            general = [r for r in deciding if r not in by_name]
             bits = []
             if by_name:
                 bits.append(f"{len(by_name)} name a {animal}")
@@ -196,17 +195,20 @@ class PetsAnswer:
                 bits.append(f"{len(general)} reach one as 'or other animal'")
             out.append(f"  {len(self.rules)} pets rule(s) apply to this land; "
                        f"{' and '.join(bits)}. Those govern you:")
-            for reg in governing[:rule_detail] if rule_detail else ():
+            for reg in deciding[:rule_detail] if rule_detail else ():
                 out.append(f"    - {reg.summary}")
-            hidden = len(governing) - rule_detail
+            hidden = len(deciding) - rule_detail
             if rule_detail and hidden > 0:
                 out.append(f"    - and {hidden} more; all of them are published "
                            f"under the rules in force for this land.")
-        else:
+        elif self.rules:
             out.append(f"  NO RULE ON FILE GOVERNS A {animal.upper()} HERE. "
                        f"{len(self.rules)} pets rule(s) apply to this land and every "
                        f"one is written about another animal, so nothing here says "
                        f"yes and nothing says no.")
+        else:
+            out.append("  No pets rule is on file for this land at all, which is a "
+                       "gap and not a permission.")
         if silent:
             about = _plural([a for r in silent for a in rule_animals(r)])
             out.append(f"  {len(silent)} more pets rule(s) apply here and are written "
@@ -223,5 +225,6 @@ def answer(campground: Campground, regulations: Sequence[Regulation] = (),
     *regulations* must already be scoped to this trip. *animal* is free text
     and deliberately unvalidated -- a rabbit is a real question. Blank asks the
     general one."""
-    return PetsAnswer(campground=campground, animal=str(animal or "").strip().lower(),
-                      rules=pets_rules(regulations))
+    return PetsAnswer(place=campground.name, park=campground.park, topic=TOPIC,
+                      subject=str(animal or "").strip().lower(),
+                      rules=pets_rules(regulations), campground=campground)
