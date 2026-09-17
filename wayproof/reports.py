@@ -47,7 +47,8 @@ import pandas as pd
 from .access import ApproachRoute, UNCONFIRMED
 from .camping import (
     HIKE_IN, Campground, Campsite, camps_without_sites,
-    seasonal_loop_contradicting_a_season, seasonal_loop_without_a_season,
+    pets_marked_without_animals, seasonal_loop_contradicting_a_season,
+    seasonal_loop_without_a_season,
 )
 from .park_access import ParkAccess
 from .model import Peak, Trailhead
@@ -380,6 +381,57 @@ def open_questions(
                           f"answer this: {c.park or 'its park'} may be sold "
                           f"through more than one facility."),
                 context=c.name,
+            ))
+
+        # -- Campgrounds with no pets field read, and ones read without a
+        # -- species.
+        #
+        # Two questions because they need two different actions, the same split
+        # `pets_marker`'s `not_marked` value exists to keep. ONE PER PARK, like
+        # the coordinates above and for the same reason: a facility's own site
+        # list carries the pets field for every camp on it, so Del Valle's six
+        # blanks are one page-read, not six. The `not_marked` rows are
+        # deliberately NOT asked about here -- they have been read, the answer
+        # was "the operator did not mark it", and the next step is a phone call
+        # to Reservations rather than another look at the page. That call is
+        # named on the row (Star Mine) rather than reported as a gap in the
+        # data, because the data is not missing.
+        no_pets_source = {}
+        for c in campgrounds:
+            if c.pets_marker or not _park_is_relevant(c.park):
+                continue
+            no_pets_source.setdefault(c.park, []).append(c.name)
+        for park_name, names in sorted(no_pets_source.items()):
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=park_name or "(no park recorded)",
+                question=(f"No source carrying a pets field has been read for "
+                          f"{len(names)} campground(s) in {park_name or 'an unnamed park'}, "
+                          f"so a plan can only answer from the agency's rules and "
+                          f"cannot say what the listing says: {', '.join(sorted(names))}."),
+                context=park_name,
+            ))
+
+        # A separate and sharper gap: the listing SAYS pets and names no animal.
+        # It reads as an answer and is not one -- the agency rules underneath it
+        # are written about dogs, so a party bringing anything else is told
+        # "pets allowed" by a source that never considered them.
+        unspecified = {}
+        for c in pets_marked_without_animals(campgrounds):
+            if not _park_is_relevant(c.park):
+                continue
+            unspecified.setdefault(c.park, []).append(c.name)
+        for park_name, names in sorted(unspecified.items()):
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=park_name or "(no park recorded)",
+                question=(f"{len(names)} campground(s) in {park_name or 'an unnamed park'} "
+                          f"are marked pets-allowed by a source that names no category "
+                          f"of animal, so nothing says whether that reaches anything "
+                          f"but a dog: {', '.join(sorted(names))}. The booking "
+                          f"system's own pets field carries the category where it "
+                          f"has been read -- 'Domestic', 'Domestic, Horse'."),
+                context=park_name,
             ))
 
         # -- Camps recorded as holding sites, of which none are held. --

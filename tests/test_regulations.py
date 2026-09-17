@@ -737,8 +737,10 @@ def test_pets_vocabulary_reaches_pet_wording_not_just_dog_wording():
 
 
 def test_the_pets_category_is_labelled_for_animals_generally():
-    # Every pets row in the dataset is written about dogs because that is how
+    # Most pets rows in the dataset are written about dogs because that is how
     # the agencies write them; the label must not harden that into the schema.
+    # The ones that are not -- Ordinance 38's "dog, cat or other animal" -- are
+    # what wayproof.pets reads to answer for a cat. See tests/test_pets.py.
     assert CATEGORY_LABELS["pets"] == "Pets"
 
 

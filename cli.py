@@ -6,6 +6,7 @@ views into how the data got here:
 
     python cli.py --permit-sources desolation   # why we believe what we believe
     python cli.py --open-questions              # what is still unconfirmed
+    python cli.py --campgrounds --access drive_in --pets allowed --animal cat
 
 The experimental geographic clustering pipeline that used to dominate this file
 was removed. It grouped SPS peaks by DBSCAN and ordered them with a TSP solver,
@@ -44,6 +45,21 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    choices=("family", "group", "backpack"),
                    help="Only campgrounds the agency sells as this class.")
     p.add_argument("--park", default="", help="Only campgrounds in this park.")
+    p.add_argument("--pets", choices=("allowed", "not_marked"), default="",
+                   help="Only campgrounds whose booking listing's pets field "
+                        "says this. 'allowed' is what the LISTING says, not "
+                        "what the land manager says -- a park rule can still "
+                        "ban an animal the listing admits, so read the rules "
+                        "printed with each result. Campgrounds the listing "
+                        "left unmarked, and campgrounds with no pets source "
+                        "read at all, are excluded and then listed separately.")
+    p.add_argument("--animal", default="", metavar="ANIMAL",
+                   help="Which animal you are bringing -- dog, cat, horse, or "
+                        "anything else. THIS FILTERS NOTHING. It asks each "
+                        "result the question and reports which rules govern "
+                        "that animal and which are written about another one. "
+                        "Excluding a campground because no source names a cat "
+                        "would turn 'nobody said' into 'no'.")
     p.add_argument("--near", default="", metavar="LAT,LON",
                    help="Sort by straight-line distance from a point. Oakland "
                         "City Hall is 37.8044,-122.2712. Campgrounds with no "
@@ -117,8 +133,11 @@ def main(argv=None) -> int:
         return 0
 
     if args.campgrounds:
-        from wayproof.camping import load_campgrounds, unknown_access
+        from wayproof.camping import (
+            load_campgrounds, pets_not_marked, pets_unrecorded, unknown_access,
+        )
         from wayproof.discovery import find_campgrounds, format_campground_list
+        from wayproof.regulations import load_regulations
 
         near = None
         if args.near:
@@ -135,12 +154,18 @@ def main(argv=None) -> int:
         campgrounds = load_campgrounds(args.campgrounds_file)
         search = find_campgrounds(
             campgrounds, access=args.access, campsite_type=args.campsite_type,
-            park=args.park, near=near, within_miles=args.within,
+            park=args.park, pets=args.pets, animal=args.animal,
+            near=near, within_miles=args.within,
         )
         # Only when the question was about access: a --type filter did not
-        # exclude these, so naming them there would be noise.
+        # exclude these, so naming them there would be noise. Same rule for
+        # the two pets gaps, which only --pets excluded.
         unrecorded = unknown_access(campgrounds) if args.access else []
-        print("\n".join(format_campground_list(search, unrecorded)))
+        unmarked_pets = pets_not_marked(campgrounds) if args.pets == "allowed" else []
+        no_pets_source = pets_unrecorded(campgrounds) if args.pets else []
+        print("\n".join(format_campground_list(
+            search, unrecorded, regulations=load_regulations(),
+            unmarked_pets=unmarked_pets, unrecorded_pets=no_pets_source)))
         return 0
 
     print("Nothing to do. Use --permit-sources, --open-questions or --campgrounds, "

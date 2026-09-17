@@ -24,6 +24,21 @@ no distinction invites someone to book a site 10.72 trail miles from their
 car. It was previously recoverable only by reading ``notes`` ("~mile 6.58 on
 the Ohlone Wilderness Trail", "General car-camping area"), which is exactly
 the filing-cabinet use of ``notes`` this project warns against.
+
+``pets_marker`` and ``pets_animals`` are the same move, made for the same
+reason and one step more carefully. Whether an animal may come was in prose in
+twenty-two rows and phrased twenty-two ways -- "Pets are allowed here, listed
+per site", "Pets Allowed: Domestic, Horse", "PETS ARE ALLOWED AT EVERY SITE",
+"Pets allowed here are listed as HORSE only" -- so there was no way to ask the
+question of the table at all.
+
+The care is in the name. These columns record WHAT THE BOOKING LISTING'S PETS
+FIELD SAYS, not whether your animal may come, and the two are different
+questions with different answers. A listing marker is not a rulebook: Round
+Valley Backpack Camp is marked pets-allowed and its park bans dogs outright,
+so a column called ``pets_allowed`` would have answered yes to the one party
+it most needed to turn away. What may come is resolved in
+:mod:`wayproof.pets`, which reads this column *and* the pets rules in force.
 """
 
 from __future__ import annotations
@@ -123,6 +138,93 @@ Blank means nobody has checked, and it renders as that rather than defaulting
 to either mode. Guessing "drive-in" strands someone at a trailhead; guessing
 "hike-in" hides a site they could have used. Same rule as a missing fee:
 absent is not a value.
+"""
+
+
+PETS_ALLOWED = "allowed"
+"""The listing's pets field marks this campground as taking animals.
+
+It says nothing about WHICH animals unless :attr:`Campground.pets_animals`
+carries a category, and eight rows carry the marker with no category at all.
+It is also not the last word: a rule can ban an animal the marker admits, as
+Round Valley's does, so no caller should read this value alone --
+:func:`wayproof.pets.answer` is what combines the two.
+"""
+
+PETS_NOT_MARKED = "not_marked"
+"""A source publishing a pets field was read, and this campground is not in it.
+
+DISTINCT FROM BLANK, AND THE DISTINCTION IS THE WHOLE POINT. Star Mine Group
+Camp sits on one ReserveAmerica page beside Stewartville, which is marked
+"Domestic, Horse"; Star Mine's field is simply empty. Somebody has looked, the
+field exists, and this camp has nothing in it -- which is evidence, and is not
+the same as nobody having looked.
+
+IT IS NOT A BAN, and must never be rendered as one. The absence of a marker is
+the absence of a statement. It is a reason to phone Reservations before
+driving out with an animal, which is exactly what a reader should be told.
+"""
+
+_VALID_PETS_MARKERS = {PETS_ALLOWED, PETS_NOT_MARKED}
+"""No ``prohibited`` value, deliberately.
+
+Nothing in this dataset is a listing that states a ban -- every prohibition
+read so far is a REGULATION, scoped to a park or an agency, and that is where
+they stay: Round Valley's park-wide dog ban and the District's "no dogs
+overnight at the Ohlone corridor backpack sites" are both rules, and both
+reach campgrounds whose listing marker is ``allowed``. Adding a value for a
+shape no source has produced would model structure nobody has stated, and
+would invite someone to express a ban here instead of as the scoped rule it
+actually is. If a listing ever does read "No Pets", this set gets a third
+member and the ban gets a marker as well as a rule.
+"""
+
+PETS_MARKER_LABELS = {
+    PETS_ALLOWED: "the listing marks pets allowed",
+    PETS_NOT_MARKED: "the listing has a pets field and does not mark this camp",
+}
+
+UNKNOWN_PETS_LABEL = "no pets field has been read for this campground"
+"""What a blank ``pets_marker`` reads as.
+
+Same rule as a blank ``access_mode`` or a blank fee: absent is not a value.
+Nine rows are blank and they are the honest nine -- the Del Valle group camps
+and horse camps came off a facility's site list rather than each site's own
+page, and Dumbarton Quarry has no verified date at all.
+"""
+
+PETS_DOMESTIC = "domestic"
+"""The operator's own category, and IT NAMES NO SPECIES.
+
+EBRPD's booking system prints "Pets Allowed: Domestic" and, on equestrian
+sites, "Pets Allowed: Domestic, Horse". Nothing read for this project defines
+the word. It cannot be a superset of :data:`PETS_HORSE`, because the two are
+printed side by side on the same listings; beyond that, whether it reaches a
+cat, a rabbit or a bird is not stated anywhere.
+
+So this token is stored verbatim and resolved to an empty species list. That
+is the difference between recording what a source said and inventing what it
+meant, and it is the reason someone arriving with a cat is told the listing
+does not answer them rather than being told yes.
+"""
+
+PETS_HORSE = "horse"
+"""The operator's own category, and it names the animal outright.
+
+Four rows carry it. Three pair it with :data:`PETS_DOMESTIC` at equestrian
+camps; Round Valley Backpack Camp and Doe Camp carry it ALONE, which is the
+most informative pets value in the table -- the one animal those listings name
+is a horse, corroborating a dog ban this project otherwise held on the
+booking platform's word.
+"""
+
+_VALID_PETS_ANIMALS = {PETS_DOMESTIC, PETS_HORSE}
+
+PETS_ANIMAL_LABELS = {PETS_DOMESTIC: "Domestic", PETS_HORSE: "Horse"}
+"""Rendered in the operator's own capitalisation, because the value is a quote.
+
+A reader who sees "Domestic" can search the booking page for it. A reader who
+sees this project's gloss of it cannot, and would have to trust the gloss.
 """
 
 
@@ -317,6 +419,45 @@ class Campground:
     :func:`wayproof.booking.channels_for` then returns only agency-wide
     channels rather than guessing a class.
     """
+    pets_marker: str = ""
+    """What the booking listing's pets field says: ``allowed``, ``not_marked``,
+    or ``""`` when no source carrying that field has been read.
+
+    NAMED FOR THE MARKER AND NOT FOR THE ANSWER, because they come apart. It
+    records one operator's checkbox, and three other things decide whether an
+    animal may actually come: a park rule (Round Valley bans dogs across a
+    preserve whose camp is marked pets-allowed), an agency rule scoped to a
+    class of site (no dogs overnight on the Ohlone corridor), and which animal
+    is being brought at all. :func:`wayproof.pets.answer` resolves all of it;
+    a caller reading this field alone will be confidently wrong at Round
+    Valley, which is the failure mode this project exists to avoid.
+
+    See :data:`PETS_NOT_MARKED` for why an unmarked camp is not a blank one,
+    and :data:`UNKNOWN_PETS_LABEL` for what blank reads as.
+    """
+    pets_animals: str = ""
+    """The operator's own pets categories, ";"-separated: ``domestic``,
+    ``horse``, or both. Use :attr:`pets_animal_list` rather than the string.
+
+    A QUOTE, NOT A TAXONOMY. These are the words the booking system prints,
+    kept in its vocabulary rather than translated into species, because
+    translating is where the wrong answer would enter -- see
+    :data:`PETS_DOMESTIC`, which names no animal at all and is carried by
+    fifteen of the twenty-two marked rows.
+
+    BLANK WITH ``pets_marker == "allowed"`` IS A REAL AND COMMON STATE, not a
+    missing value to be filled by inference: eight rows are marked pets-allowed
+    by a source that gives no category. Anthony Chabot Campground is the one
+    that matters most, being this project's only drive-in family campground
+    with a marker -- pets are allowed at every one of its 76 listings and
+    nothing says which animals. That gap is reported rather than guessed at.
+    """
+
+    @property
+    def pets_animal_list(self) -> List[str]:
+        """The categories as a list; empty when the listing named none."""
+        return [a for a in (p.strip() for p in self.pets_animals.split(";")) if a]
+
     latitude: Optional[float] = None
     longitude: Optional[float] = None
     """Where it is, or ``None`` when nobody has recorded it.
@@ -457,6 +598,35 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
                 f"expected one of {sorted(_VALID_UNIT_LEVELS)} or blank. There "
                 f"is no 'facility' level here -- see UNKNOWN_UNIT_LEVEL_LABEL."
             )
+        pets_marker = _str_field(row, "pets_marker")
+        if pets_marker and pets_marker not in _VALID_PETS_MARKERS:
+            raise ValueError(
+                f"Invalid pets_marker {pets_marker!r} for campground {name!r}; "
+                f"expected one of {sorted(_VALID_PETS_MARKERS)} or blank. There "
+                f"is no 'prohibited' value -- see _VALID_PETS_MARKERS; a ban is "
+                f"a scoped rule in regulations.csv, not a listing marker."
+            )
+        pets_animals = _str_field(row, "pets_animals")
+        animals = [a for a in (p.strip() for p in pets_animals.split(";")) if a]
+        for animal in animals:
+            if animal not in _VALID_PETS_ANIMALS:
+                raise ValueError(
+                    f"Invalid pets_animals entry {animal!r} for campground "
+                    f"{name!r}; expected one of {sorted(_VALID_PETS_ANIMALS)}. "
+                    f"These are the operator's own category words, and an "
+                    f"unrecognised one must not pass silently into a species "
+                    f"answer -- add it to _VALID_PETS_ANIMALS with a docstring "
+                    f"saying which animals, if any, it names."
+                )
+        if len(set(animals)) != len(animals):
+            raise ValueError(f"Repeated pets_animals in {pets_animals!r} for {name!r}")
+        if animals and pets_marker != PETS_ALLOWED:
+            raise ValueError(
+                f"Campground {name!r} lists pets categories {pets_animals!r} "
+                f"with pets_marker {pets_marker or 'blank'!r}. A category is "
+                f"part of the allowed-marker; there is nothing for it to "
+                f"qualify without one."
+            )
         latitude = _float_field(row, "latitude")
         longitude = _float_field(row, "longitude")
         coord_precision = _str_field(row, "coord_precision")
@@ -493,6 +663,8 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             loop=_str_field(row, "loop"),
             unit_level=unit_level,
             campsite_type=_str_field(row, "campsite_type"),
+            pets_marker=pets_marker,
+            pets_animals=pets_animals,
             has_restroom=_bool_field(row, "has_restroom"),
             restroom_type=_str_field(row, "restroom_type"),
             reservation_method=_str_field(row, "reservation_method"),
@@ -580,6 +752,68 @@ def drive_in(campgrounds: List[Campground]) -> List[Campground]:
 def unknown_access(campgrounds: List[Campground]) -> List[Campground]:
     """Campgrounds whose access mode nobody has recorded yet."""
     return [c for c in campgrounds if not c.access_mode]
+
+
+def pets_marker_label(campground: Campground) -> str:
+    """How to describe a campground's pets marker, blank included.
+
+    Every one of these reads as a statement about THE LISTING, never about
+    your animal. "the listing marks pets allowed" is true of Round Valley
+    Backpack Camp, where dogs are banned park-wide.
+    """
+    return PETS_MARKER_LABELS.get(campground.pets_marker, UNKNOWN_PETS_LABEL)
+
+
+def pets_animals_label(campground: Campground) -> str:
+    """The operator's categories as a reader sees them, or "" when it gave none."""
+    names = [PETS_ANIMAL_LABELS[a] for a in campground.pets_animal_list
+             if a in PETS_ANIMAL_LABELS]
+    return ", ".join(names)
+
+
+def pets_marked(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds whose listing marks pets allowed.
+
+    Excludes both blanks and unmarked rows, the same conservative direction
+    :func:`drive_in` takes: neither is evidence of an animal being welcome.
+    Pair it with :func:`pets_not_marked` and :func:`pets_unrecorded` so the two
+    kinds of silence are shown rather than dropped.
+
+    NOT A LIST OF CAMPGROUNDS YOUR ANIMAL MAY COME TO. It is a list of
+    campgrounds whose listing says so, which a park rule can still override --
+    :func:`wayproof.pets.answer` is what checks.
+    """
+    return [c for c in campgrounds if c.pets_marker == PETS_ALLOWED]
+
+
+def pets_not_marked(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds on a listing with a pets field, carrying no value in it.
+
+    Separate from :func:`pets_unrecorded` because the two ask for different
+    work. These have been read and are a question for the operator; those have
+    not been read at all and are a question for whoever next opens the page.
+    """
+    return [c for c in campgrounds if c.pets_marker == PETS_NOT_MARKED]
+
+
+def pets_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds for which no source carrying a pets field has been read."""
+    return [c for c in campgrounds if not c.pets_marker]
+
+
+def pets_marked_without_animals(
+    campgrounds: Sequence[Campground],
+) -> List[Campground]:
+    """Marked pets-allowed by a source that names no category of animal.
+
+    A gap the column created and only the column can see, and the sharpest one
+    in it: eight rows say animals may come and no source says which. Before the
+    split these read as prose that sounded like an answer ("Pets are allowed
+    here, listed per site") and were indistinguishable from the rows that name
+    a species.
+    """
+    return [c for c in campgrounds
+            if c.pets_marker == PETS_ALLOWED and not c.pets_animal_list]
 
 
 def located(campgrounds: Sequence[Campground]) -> List[Campground]:

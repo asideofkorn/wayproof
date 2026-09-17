@@ -9,8 +9,8 @@ This module is the other direction -- filter the campgrounds by the things a
 person actually decides on (can I drive to it, what class of site is it, how
 far is it from home) and return what survives.
 
-Two rules shape all of it, and both come from mistakes this dataset has
-already made.
+Three rules shape all of it, and each one comes from a mistake this dataset
+has already made.
 
 **A filter must not turn a gap into an answer.** ``drive_in()`` excludes a
 blank ``access_mode`` because blank is not evidence of a road -- but a person
@@ -19,6 +19,16 @@ Every function here returns what it could not place alongside what it could,
 and :func:`format_campground_list` prints both. The failure being avoided is
 the one the scorecard names for Q21: not being able to tell "nothing is near
 you" from "nobody has looked".
+
+**A filter on one source's word is not a filter on the rule.** ``--pets``
+matches ``campgrounds.csv``'s ``pets_marker``, which is what a booking listing
+says and not what the land manager says. Round Valley Backpack Camp is marked
+pets-allowed and its park bans dogs outright, so a list built from the marker
+alone would hand a dog owner the one camp in this dataset they must not take a
+dog to. Every pets result therefore renders through
+:func:`wayproof.pets.answer`, which reads the marker and the rules in force
+together, and ``--animal`` NEVER FILTERS -- it annotates. Dropping a camp
+because no source names a cat would turn "nobody said" into "no".
 
 **A distance must say what it is a distance to.** Every coordinate in this
 project came off a park's overview page, so it locates the PARK. Dumbarton
@@ -35,10 +45,13 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List, Optional, Sequence, Tuple
 
+from . import pets as pets_module
 from .camping import (
     COORD_PRECISION_LABELS, Campground, access_label, coord_precision_label,
+    pets_marker_label,
 )
 from .distances import haversine_miles
+from .regulations import Regulation
 
 STRAIGHT_LINE = ("straight-line, not driving -- no road network is modelled "
                  "here, and a bay or a ridge makes the drive longer")
@@ -76,6 +89,10 @@ class CampgroundSearch:
     filters: Tuple[Tuple[str, str], ...] = ()
     """The filters as given, for rendering. A list of three means nothing
     without the question it answers."""
+    animal: str = ""
+    """The animal asked about, if one was. NOT A FILTER -- see the module
+    docstring. It selects nothing and excludes nothing; it decides what each
+    result is asked about when it is rendered."""
 
 
 def find_campgrounds(
@@ -84,6 +101,8 @@ def find_campgrounds(
     campsite_type: str = "",
     park: str = "",
     agency: str = "",
+    pets: str = "",
+    animal: str = "",
     near: Optional[Tuple[float, float]] = None,
     within_miles: Optional[float] = None,
 ) -> CampgroundSearch:
@@ -94,6 +113,15 @@ def find_campgrounds(
     drive-in campgrounds excludes the ones nobody has checked, which is the
     conservative direction and is why :attr:`CampgroundSearch.unplaced` and the
     unrecorded count are reported separately.
+
+    ``pets`` matches ``pets_marker`` exactly, so asking for ``allowed``
+    excludes both the camps nobody has checked and the camps a listing left
+    unmarked -- report them with :func:`wayproof.camping.pets_unrecorded` and
+    :func:`wayproof.camping.pets_not_marked` rather than letting them vanish.
+
+    ``animal`` is carried, never applied. Filtering on it would mean deciding
+    that a camp naming no species excludes a cat, and fifteen of the
+    twenty-two marked rows name no species at all.
 
     ``within_miles`` without ``near`` is a programming error rather than an
     empty result, so it raises.
@@ -106,6 +134,7 @@ def find_campgrounds(
     for label, value, attr in (("access", access, "access_mode"),
                                ("type", campsite_type, "campsite_type"),
                                ("park", park, "park"),
+                               ("pets", pets, "pets_marker"),
                                ("agency", agency, "agency_id")):
         if not value:
             continue
@@ -123,7 +152,7 @@ def find_campgrounds(
     if near is None:
         return CampgroundSearch(
             matches=[CampgroundMatch(c) for c in kept],
-            unplaced=[], filters=tuple(filters),
+            unplaced=[], filters=tuple(filters), animal=animal,
         )
 
     lat, lon = near
@@ -138,11 +167,15 @@ def find_campgrounds(
         matches.append(CampgroundMatch(c, distance_miles=float(miles)))
     matches.sort(key=lambda m: m.distance_miles)
     return CampgroundSearch(matches=matches, unplaced=unplaced, near=near,
-                            within_miles=within_miles, filters=tuple(filters))
+                            within_miles=within_miles, filters=tuple(filters),
+                            animal=animal)
 
 
 def format_campground_list(search: CampgroundSearch,
-                           unrecorded_access: Sequence[Campground] = ()) -> List[str]:
+                           unrecorded_access: Sequence[Campground] = (),
+                           regulations: Sequence[Regulation] = (),
+                           unmarked_pets: Sequence[Campground] = (),
+                           unrecorded_pets: Sequence[Campground] = ()) -> List[str]:
     """Render a search, leading with what the question was.
 
     ``unrecorded_access`` is the campgrounds whose ``access_mode`` is blank. It
@@ -150,9 +183,28 @@ def format_campground_list(search: CampgroundSearch,
     the filter that dropped them was about access at all -- and when it was,
     naming them is the difference between "three can be driven to" and "three
     can be driven to and nobody checked the rest".
+
+    ``unmarked_pets`` and ``unrecorded_pets`` are the same courtesy for the
+    pets filter, and they are TWO LISTS BECAUSE THEY ARE TWO ANSWERS. A camp a
+    listing left unmarked has been looked at and is a question for the
+    operator; a camp with no pets source read at all is a question for whoever
+    next opens the page. Collapsing them would lose the only thing the
+    ``not_marked`` value was introduced to keep.
+
+    ``regulations`` is the whole table; each campground's own rules are scoped
+    out of it per row. Without it the pets lines still render, and they say
+    only what the listing said -- which at Round Valley would be the marker
+    with the park's dog ban missing, so pass it.
     """
     asked = ", ".join(f"{k}={v}" for k, v in search.filters) or "no filters"
+    asked_about_pets = bool(search.animal
+                            or any(k == "pets" for k, _ in search.filters))
     lines = [f"Campgrounds ({asked})"]
+    if search.animal:
+        lines.append(f"  Asked about a {search.animal}. THAT IS NOT A FILTER -- "
+                     f"nothing below was excluded for failing to mention one, "
+                     f"because no source saying a {search.animal} may come is not "
+                     f"a source saying it may not.")
     if search.near is not None:
         lat, lon = search.near
         within = f" within {search.within_miles:g} miles" if search.within_miles else ""
@@ -177,6 +229,14 @@ def format_campground_list(search: CampgroundSearch,
         bits.append(c.facility_id if c.facility_id
                     else "booking facility not recorded")
         lines.append(f"      {'; '.join(bits)}")
+        # Only when pets were part of the question. Printed on every result
+        # otherwise it is four lines of noise per campground on a search about
+        # access, and a reader stops reading it -- which is how the one line
+        # that mattered at Round Valley would get skipped.
+        if asked_about_pets:
+            answer = pets_module.answer(
+                c, pets_module.rules_for_campground(c, regulations), search.animal)
+            lines.extend(f"      {line}" for line in answer.lines())
 
     if search.unplaced:
         lines.append(f"  CANNOT BE PLACED -- {len(search.unplaced)} matched every "
@@ -192,5 +252,20 @@ def format_campground_list(search: CampgroundSearch,
                      "whether you can drive to them. Absent is not a value.")
         for c in unrecorded_access:
             lines.append(f"    - {c.name}")
+
+    if unmarked_pets:
+        lines.append(f"  PETS FIELD READ AND EMPTY -- {len(unmarked_pets)} "
+                     "campgrounds were excluded because their listing carries a "
+                     "pets field and does not mark them in it. THAT IS NOT A BAN. "
+                     "It is the one gap here a phone call closes.")
+        for c in unmarked_pets:
+            lines.append(f"    - {c.name}{' (' + c.park + ')' if c.park else ''}")
+
+    if unrecorded_pets:
+        lines.append(f"  NO PETS FIELD READ -- {len(unrecorded_pets)} campgrounds "
+                     "were excluded because no source carrying one has been read "
+                     "for them. Nobody has checked, which is not a no.")
+        for c in unrecorded_pets:
+            lines.append(f"    - {c.name}{' (' + c.park + ')' if c.park else ''}")
 
     return lines

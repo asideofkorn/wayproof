@@ -14,7 +14,8 @@ import pytest
 
 from wayproof.access import ApproachRoute
 from wayproof.camping import (
-    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, UNIT_CAMP, UNIT_SITE, Campground, Campsite,
+    COORD_CAMPGROUND, DRIVE_IN, HIKE_IN, PETS_ALLOWED, UNIT_CAMP, UNIT_SITE,
+    Campground, Campsite,
 )
 from wayproof.model import Peak, Trailhead
 from wayproof.park_access import ParkAccess
@@ -125,6 +126,12 @@ def _ground(**kw):
     # own gap with its own tests, and without this default every assertion
     # below would quietly also be counting it.
     kw.setdefault("facility_id", "EB/110000")
+    # And the same again for pets, which has TWO gaps: no pets field read at
+    # all, and a field read that names no animal. Defaulting to a marker with a
+    # category answers both, so these fixtures keep counting only what they are
+    # about. Both gaps have their own tests in tests/test_pets.py.
+    kw.setdefault("pets_marker", PETS_ALLOWED)
+    kw.setdefault("pets_animals", "domestic")
     return Campground(**kw)
 
 

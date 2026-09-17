@@ -58,6 +58,7 @@ from .regulations import (
     PERMIT_GROUP as REG_PERMIT_GROUP, Regulation, group_by_category,
     regulations_in_force,
 )
+from . import pets
 from .reports import OpenQuestion, open_questions
 from .water import WaterSource, WaterSourceLogEntry, latest_status_by_source
 
@@ -217,7 +218,20 @@ class PlanResult:
                  "loop": c.loop or None,
                  "unit_level": c.unit_level or None,
                  "facility_id": c.facility_id or None,
-                 "campsite_type": c.campsite_type or None}
+                 "campsite_type": c.campsite_type or None,
+                 # Named for the marker, not for the answer, in the JSON too.
+                 # An agent reading "pets_allowed: true" would take it to the
+                 # one camp in this dataset whose park bans dogs.
+                 "pets_marker": c.pets_marker or None,
+                 "pets_animals_listed": c.pets_animal_list or None,
+                 "pets_marker_note": (
+                     "What the booking listing's pets field says. NOT whether "
+                     "your animal may come: a park or agency rule can ban an "
+                     "animal the listing admits, and the categories are the "
+                     "operator's own words naming no species unless 'horse' is "
+                     "among them. Resolve it against the pets rules in "
+                     "rules_in_force."),
+                 }
                 for c in self.campground_objectives
             ]
             # Stated, not implied by the absence of a trailhead key. An agent
@@ -360,6 +374,8 @@ class PlanResult:
                         "unit_level": c.unit_level or None,
                         "facility_id": c.facility_id or None,
                         "campsite_type": c.campsite_type or None,
+                        "pets_marker": c.pets_marker or None,
+                        "pets_animals_listed": c.pets_animal_list or None,
                         "reservation_method": c.reservation_method,
                         "reservation_contact": c.reservation_contact,
                         "fee_notes": c.fee_notes,
@@ -955,9 +971,18 @@ def format_plan_summary(result: PlanResult) -> str:
                                  f"one: {', '.join(others)} covers other camps in "
                                  f"{c.park}, so the park's 'camping page' is not "
                                  f"one page.")
-            # Said on every campground objective, in all three states. A plan
-            # that takes a date and never mentioned the season priced a closed
-            # camp for a January trip and never said it was shut.
+            # Said on every campground objective, in all three states, for the
+            # same reason the season is: silence here reads as permission. The
+            # pets rules print in full under "Rules in force" below, so this
+            # quotes none of them (rule_detail=0) and says only what the
+            # listing said and which of those rules are about which animal.
+            # Re-scoped from the union rather than reused: with two campground
+            # objectives in different parks, result.regulations holds both
+            # parks' rules, and Round Valley's dog ban must not print under a
+            # camp in another preserve.
+            pets_answer = pets.answer(
+                c, pets.rules_for_campground(c, result.regulations))
+            lines.extend(f"    {line}" for line in pets_answer.lines(rule_detail=0))
             shut = c.closed_on(result.trip_date)
             if shut is True:
                 lines.append(f"    CLOSED ON YOUR DATE. This campground shuts annually from "

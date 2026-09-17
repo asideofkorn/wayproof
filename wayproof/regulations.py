@@ -86,13 +86,16 @@ CATEGORY_LABELS = {
     "waste": "Waste",
     "water": "Water",
     "fishing": "Fishing",
-    # "Pets", not "Dogs", and the distinction is load-bearing. Every pets row in
-    # this dataset today is written about dogs, because that is how the agencies
-    # write them. Someone arriving with a cat, a rabbit or a horse-adjacent
-    # animal is asking a question a dog leash rule does not answer, and reading
-    # a dog rule as a pet rule is the confident-wrong-answer failure this
-    # project exists to avoid. Label the category honestly and let the rule's
-    # own summary say which animal it actually governs.
+    # "Pets", not "Dogs", and the distinction is load-bearing. MOST pets rows in
+    # this dataset are written about dogs, because that is how the agencies
+    # write them -- but not all: EBRPD's Ordinance 38 says "dog, cat or other
+    # animal" throughout, which is what lets this project answer for an animal
+    # nobody legislated about by name. Someone arriving with a cat, a rabbit or
+    # a horse-adjacent animal is asking a question a dog leash rule does not
+    # answer, and reading a dog rule as a pet rule is the confident-wrong-answer
+    # failure this project exists to avoid. Label the category honestly and let
+    # the rule's own summary say which animal it actually governs --
+    # :mod:`wayproof.pets` is what reads it, and it reads the summary only.
     "pets": "Pets",
     "stock": "Stock and livestock",
     "weapons": "Firearms",

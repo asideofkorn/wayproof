@@ -98,10 +98,13 @@ worth making.** Worked examples with verified answers live in
   without the local ban sitting on top of it.
 - **Can I bring a pet?** Wrong if it says "under control" where the forest
   requires a leash under six feet. Also wrong if it answers for a dog when the
-  animal is not one: every pets rule in this dataset is written about dogs,
+  animal is not one: most pets rules in this dataset are written about dogs,
   because that is how the agencies write them, and a leash rule is not an
   answer to whether a cat, a rabbit or a bird may come. Say which animal the
-  rule governs, or say there is no rule on file.
+  rule governs, or say there is no rule on file. It is also wrong to answer
+  from the booking listing's pets marker alone: Round Valley Backpack Camp is
+  marked pets-allowed and its preserve bans dogs outright. See
+  [Pets Is Not One Question](#pets-is-not-one-question).
 - **Where can and cannot I camp?** Setbacks, designated sites, restoration
   closures.
 - **Does my permit still cover me in the next wilderness?** Reciprocity, and
@@ -239,6 +242,10 @@ It can:
 - Apply explicitly sourced, peak-specific approach relationships when a
   trailhead's default permit is not sufficient for a particular objective,
   including flagging suspected-but-unconfirmed cases rather than guessing.
+- Answer whether a named animal may come to a campground, separating what the
+  booking listing marked from what the land manager's rules actually say, and
+  naming the rules that are written about a different animal instead of
+  counting them as an answer.
 
 
 The geographic grouping capability is useful for discovery. It is not an
@@ -454,7 +461,7 @@ The repository currently includes:
 - `data/release_policies.csv` - structured, computable permit release phases
 - `data/approaches.csv` - peak-specific approach/permit relationships, confirmed and unconfirmed
 - `data/permit_source_log.csv` - append-only permit verification history
-- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
+- `data/campgrounds.csv` / `data/campsites.csv` - campgrounds and their individually-bookable sites. Four independent axes on a campground, none predicting another: `access_mode` (how you physically reach it — `drive_in`/`hike_in`/`boat_in`, `;`-separated where the operator lists several), `campsite_type` (which queue the agency sells it in), `unit_level` (whether the row IS one bookable unit or holds several), and `facility_id` (which booking page sells it). Plus `pets_marker`/`pets_animals`, named after the booking listing's pets field rather than after the answer, because a park rule can ban an animal the listing admits — see [Pets Is Not One Question](#pets-is-not-one-question). Plus coordinates with a `coord_precision` saying whether they name the campground or only its park, `season_closed_start`/`season_closed_end`, the operator's own `loop` label, and `source_url`/`verified_date`
 - `data/booking_facilities.csv` - the booking system's own pages, keyed by facility id. A level above a campground and *not* a park: one facility sells sites in three different parks, and two parks are each sold through two facilities, so `facility_id` is stored on a campground rather than inferred from where it is
 - `data/booking_channels.csv` - how to book a campsite, scoped by agency and by class of site — the channel, what is *not* a channel, lead time, release-day mechanics and booking horizon
 - `data/water_sources.csv` / `data/water_source_log.csv` - named backcountry water sources and an append-only ledger of dated availability checks (a source can go dry with no announcement, so a later check never overwrites an earlier one)
@@ -631,6 +638,114 @@ designation, e.g. `"Ohlone Wilderness"`), since a trailhead's governing
 wilderness and its vehicle-access park unit aren't always the same name.
 A trailhead with no known `park` (every Sierra trailhead today) simply
 shows no `Facilities` section, rather than a guessed link.
+
+## Pets Is Not One Question
+
+"Can I bring a pet" is three questions wearing one word, and this project got
+them confused for as long as the answer lived in prose. Twenty-two campground
+rows said something about animals, in twenty-two phrasings -- `Pets are allowed
+here, listed per site`, `Pets Allowed: Domestic, Horse`, `PETS ARE ALLOWED AT
+EVERY SITE`, `Pets allowed here are listed as HORSE only` -- so there was no
+column, no query, and no way to ask the table anything at all.
+
+The three questions are:
+
+1. **Does this campground take animals?** The operator answers this, on the
+   booking listing, and nobody else does. It is now `pets_marker` on
+   `campgrounds.csv`.
+2. **Which animals?** Sometimes the operator says, in its own vocabulary, and
+   that is `pets_animals`. Usually it does not.
+3. **What may the animal do when it gets there?** The land manager answers
+   this, and it is already in `regulations.csv` under the `pets` category,
+   scoped to an agency, a park or a wilderness.
+
+### The columns are named after the marker, not after the answer
+
+`pets_marker` is `allowed`, `not_marked`, or blank. There is no `prohibited`
+value, deliberately: every ban read for this project is a *rule*, scoped to a
+park or an agency, and that is where bans stay. Adding a value for a shape no
+source has produced would invite the next person to express a ban as a checkbox
+instead of as the scoped rule it actually is.
+
+That naming is load-bearing, because the marker and the rulebook come apart.
+**Round Valley Backpack Camp's listing marks it pets-allowed. Round Valley
+Regional Preserve bans dogs everywhere, at any time, because the endangered San
+Joaquin kit fox is there at the northern extreme of its range and dogs are a
+disease vector to it.** A column called `pets_allowed` would have answered
+"yes" to the one party in this dataset that most needed to be turned away. So
+no surface renders the marker alone: `wayproof/pets.py` reads the marker *and*
+the rules in force, and a pets rule scoped to the campground's own park is
+quoted above everything else -- the same call `plan` already makes for the
+Whitney exclusion, because a fact discovered on arrival cannot be fixed there.
+
+### `not_marked` is not a ban, and blank is not `not_marked`
+
+Star Mine Group Camp sits on one ReserveAmerica page beside Stewartville, which
+is marked `Domestic, Horse`. Star Mine's pets field is empty. Somebody has
+looked, the field exists, and this camp has nothing in it — which is evidence,
+and is not the same as nobody having looked. Six rows are `not_marked` and nine
+are blank, and they ask for different work: a `not_marked` row is a phone call
+to Reservations, a blank one is a page nobody has opened. Neither is a no.
+
+### "Domestic" names no animal
+
+`pets_animals` stores the operator's own category words, and resolves
+`domestic` to **no species at all**. EBRPD prints `Pets Allowed: Domestic` and,
+on equestrian sites, `Pets Allowed: Domestic, Horse`; nothing read for this
+project defines the word. The pairing rules out its being a superset of
+`horse`, and beyond that, whether it reaches a cat, a rabbit or a bird is not
+stated anywhere. Guessing it means "dogs and cats" would answer fifteen rows'
+worth of questions from a hunch.
+
+`horse` is the exception and names its animal outright. Four rows carry it, and
+two carry it *alone* -- Round Valley Backpack Camp and Doe Camp, where the one
+animal the listing names is a horse. That is the most informative pets value in
+the table: it corroborates a no-dogs-overnight rule this project otherwise held
+on the booking platform's word alone.
+
+### Which animal a rule is about comes from its `summary`
+
+A rule's species are read off `summary` and never off `detail`, and the
+distinction is not pedantry. `ebrpd-pets-count`'s summary is "MAXIMUM THREE DOGS
+PER SITE"; its detail says "a party bringing cats has no number here". Search
+the detail and the rule answers for cats, which is the exact inverse of what it
+says. The summary is the rule as the agency states it; the detail is this
+project's commentary, and the commentary mentions animals precisely in order to
+say the rule does not reach them.
+
+Two more readings that had to be got right:
+
+- **"or other animal" is species-general, and it is the good news.** EBRPD's
+  Ordinance 38 is written as "dog, cat or other animal", so it reaches a rabbit
+  and a bird as well as the two it names. Four of the six rules in force at an
+  East Bay campground are like this.
+- **A bare "cat" is not safe to match on.** "cat hole" is the waste category's
+  own term, and matching it would claim a human-waste rule as a cat rule.
+
+Where every rule in force is written about dogs alone, the answer is **"no rule
+on file governs a cat here"**, said in those words. That is a usable answer.
+`scorecard.py` scores Q13 `partial` rather than `answered` in that case, which
+moved 35 Sierra objectives out of the green column the day the check was
+tightened.
+
+### The query
+
+```bash
+python cli.py --campgrounds --access drive_in --pets allowed --animal cat \
+    --near 37.8044,-122.2712
+```
+
+`--pets` filters on the marker. **`--animal` filters nothing** -- it annotates.
+Dropping a campground because no source names a cat would turn "nobody said"
+into "no", and fifteen of the twenty-two marked rows name no species at all.
+What it does instead is ask each result the question and report which rules
+govern that animal, which are written about another one, and which of them is
+the park's own.
+
+The two kinds of silence are listed under the results rather than dropped, the
+same way an unrecorded `access_mode` already is. Both also surface in
+`--open-questions` and on the website's gaps list, one question per park, since
+a facility's own site list carries the pets field for every camp on it.
 
 ## The Scavenger Hunt: Confirming What's Unclear
 
@@ -1186,6 +1301,10 @@ python cli.py --open-questions
 # Find a campground you cannot already name: the only command that answers
 # "where could I go" rather than "why do we believe this".
 python cli.py --campgrounds --access drive_in --near 37.8044,-122.2712
+
+# ...and whether the animal you are bringing may come to them
+python cli.py --campgrounds --access drive_in --pets allowed --animal cat \
+    --near 37.8044,-122.2712
 ```
 
 ## CLI Usage
@@ -1244,6 +1363,8 @@ for a *named* objective is `plan.py`.
 | `--access` | any | `drive_in` / `hike_in`. Campgrounds whose access nobody has recorded are excluded **and then listed** -- absent is not a value |
 | `--type` | any | `family` / `group` / `backpack` |
 | `--park` | any | Only campgrounds in this park |
+| `--pets` | any | `allowed` / `not_marked`, matching the booking listing's own pets field. Both kinds of silence are excluded **and then listed separately**, because a listing left unmarked and a listing never read ask for different work |
+| `--animal ANIMAL` | none | Which animal you are bringing. **Filters nothing** -- it asks each result the question and reports which rules govern that animal and which are written about another one |
 | `--near LAT,LON` | none | Sort by straight-line distance from a point. Oakland City Hall is `37.8044,-122.2712` |
 | `--within MILES` | none | With `--near`, drop matches beyond this distance |
 

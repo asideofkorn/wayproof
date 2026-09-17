@@ -45,6 +45,7 @@ from wayproof.booking import load_booking_channels
 from wayproof.camping import load_campgrounds, load_campsites
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
+from wayproof import pets
 from wayproof.permits import PermitRule, load_permits
 from wayproof.plan import UNKNOWN, PlanResult, resolve_plan
 from wayproof.regulations import Regulation, load_regulations, regulations_in_force
@@ -224,7 +225,20 @@ def _q12_fire(c: Ctx) -> str:
 
 
 def _q13_pet(c: Ctx) -> str:
-    return ANSWERED if c.category("pets") else NO_DATA
+    # Tightened when campgrounds.csv got a pets marker. The old proxy was
+    # "does any pets rule resolve", which scored green for a party arriving
+    # with a cat at a unit whose every pets rule is a dog leash law -- exactly
+    # the wrong-if this question carries, passed by its own proxy.
+    #
+    # PARTIAL, not ANSWERED, when the only rules in force are written about
+    # dogs: the tool can answer one species and has nothing for any other, and
+    # the honest output there is "no rule on file", which it can now produce.
+    regs = [r for r in c.regs if r.category == "pets"]
+    if not regs:
+        return NO_DATA
+    beyond_dogs = any(pets.rule_is_species_general(r)
+                      or set(pets.rule_animals(r)) - {pets.DOG} for r in regs)
+    return ANSWERED if beyond_dogs else PARTIAL
 
 
 def _q14_camp(c: Ctx) -> str:
@@ -331,9 +345,12 @@ QUESTIONS: List[Question] = [
              "Wrong if it says 'under control' where the forest requires a leash, "
              "or if it answers for dogs when the animal is not a dog.",
              _q13_pet,
-             limit="Scores only that a pets rule resolves. Every pets rule in "
-                   "the dataset is written about dogs; nothing checks that one "
-                   "answers for the animal actually being brought."),
+             limit="Scores that a pets rule resolves AND that at least one of "
+                   "them reaches an animal other than a dog, by name or as 'or "
+                   "other animal'. It still does not check the per-campground "
+                   "marker, which is what says whether the operator takes "
+                   "animals at all -- and eight rows carry that marker with no "
+                   "species attached."),
     Question("Q14", 3, "Where can and cannot I camp?",
              "Setbacks, designated sites, restoration closures.", _q14_camp),
     Question("Q15", 3, "Does my permit still cover me in the next wilderness?",
