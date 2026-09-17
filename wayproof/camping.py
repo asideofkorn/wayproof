@@ -250,6 +250,38 @@ class Campground:
     def access_modes(self) -> List[str]:
         """The modes as a list; empty when nobody has recorded any."""
         return [m for m in (p.strip() for p in self.access_mode.split(";")) if m]
+    loop: str = ""
+    """The operator's own loop name, verbatim, e.g.
+    ``Primitive Group Camp Seasonal``. Free text, and deliberately so.
+
+    THE SAME COLUMN ``campsites.csv`` ALREADY HAD. It is here because the camps
+    that were missing one are rows of this file, not that one: every campsite
+    row has carried a loop since Anthony Chabot was read, while sixteen
+    campgrounds had theirs in prose. No vocabulary, no validation and no
+    loops table -- the loop is a label the booking system prints, and inventing
+    a level for it would model structure nobody has stated.
+
+    NOT QUITE RULE-FREE, WHICH IS THE ARGUMENT FOR A COLUMN RATHER THAN AGAINST
+    ONE. Three things currently live only in this string:
+
+    - ``Seasonal`` in the name against :attr:`season_closed_start`. Round Valley
+      Backpack Camp sits in a loop called ``Backpack Seasonal`` and is open year
+      round, on EBRPD's own word -- so the token is not a season and must never
+      be read as one. It is asked about, never asserted.
+    - ``Seasonal A`` against ``Seasonal B`` at Anthony Chabot, where Bort Meadow
+      is alone in B and its open period may therefore differ from the other
+      five. Anthony Chabot's season is an open conflict, and this is the only
+      handle on the split.
+    - ``Developed`` against ``Primitive``. Del Valle's two group camps are the
+      only ``Developed`` ones read here; everywhere else is ``Primitive``. EBRPD
+      does not say what the word buys, so it is recorded, not interpreted.
+
+    Blank means nobody has read one. Puma Point Group Camp is the interesting
+    blank: five of its six siblings state ``Seasonal A`` and Bort Meadow is
+    stated to be the only one in ``B``, which makes Puma Point ``A`` by
+    subtraction. That is arithmetic, and this project has twice been wrong
+    following arithmetic that worked.
+    """
     unit_level: str = ""
     """Whether this row is one bookable unit or a container of them:
     ``site``, ``camp``, or ``""``.
@@ -458,6 +490,7 @@ def load_campgrounds(path: str | Path = "data/campgrounds.csv") -> List[Campgrou
             facility_id=_str_field(row, "facility_id"),
             jurisdiction=_str_field(row, "jurisdiction"),
             access_mode=access_mode,
+            loop=_str_field(row, "loop"),
             unit_level=unit_level,
             campsite_type=_str_field(row, "campsite_type"),
             has_restroom=_bool_field(row, "has_restroom"),
@@ -566,6 +599,43 @@ def season_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
     reader shown nothing would reasonably assume the place is open.
     """
     return [c for c in campgrounds if c.season_closed_start is None]
+
+
+def seasonal_loop_without_a_season(
+    campgrounds: Sequence[Campground],
+) -> List[Campground]:
+    """Campgrounds whose loop name says ``Seasonal`` and whose season is blank.
+
+    A QUESTION, NOT A DERIVATION. The obvious move is to read the token as a
+    closure and fill the columns from it, and Round Valley Backpack Camp is why
+    that is wrong: its loop is ``Backpack Seasonal`` and EBRPD says the camp is
+    open year round. The token means the booking system files it among seasonal
+    loops; it does not say when, or whether, anything shuts.
+
+    So this returns rows worth going and reading, which is what the loop name
+    is good for and the whole of what it is good for.
+    """
+    return [c for c in campgrounds
+            if "seasonal" in c.loop.lower() and c.season_closed_start is None]
+
+
+def seasonal_loop_contradicting_a_season(
+    campgrounds: Sequence[Campground],
+) -> List[Campground]:
+    """Campgrounds stated open year round from a loop the operator calls seasonal.
+
+    Distinct from the above and worth its own list: there the season is unread,
+    here it is read and disagrees with the loop name. One row, and it is the
+    reason the token is never trusted.
+    """
+    return [c for c in campgrounds
+            if "seasonal" in c.loop.lower() and c.season_closed_start is None
+            and "open year round" in c.notes.lower()]
+
+
+def loop_unrecorded(campgrounds: Sequence[Campground]) -> List[Campground]:
+    """Campgrounds with no loop name on file."""
+    return [c for c in campgrounds if not c.loop]
 
 
 def unit_level_label(campground: Campground) -> str:

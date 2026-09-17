@@ -35,6 +35,9 @@ from wayproof.camping import (
     located,
     campsites_by_campground,
     camps_without_sites,
+    loop_unrecorded,
+    seasonal_loop_contradicting_a_season,
+    seasonal_loop_without_a_season,
     unit_level_label,
     unit_level_unrecorded,
     unknown_access,
@@ -1097,3 +1100,81 @@ def test_an_unknown_unit_level_is_rejected_loudly(tmp_path):
     path.write_text("name,park,unit_level\nX,P,facility\n")
     with pytest.raises(ValueError):
         load_campgrounds(path)
+
+
+# --- loop: the same free-text column campsites.csv already had ------------
+
+def test_every_campsite_already_carries_a_loop_and_now_campgrounds_can_too():
+    """Why the column landed on campgrounds rather than being added to sites.
+
+    All 94 campsite rows have carried a loop since Anthony Chabot was read.
+    The rows that were missing one were in the other table.
+    """
+    assert [s.name for s in load_campsites(CAMPSITES) if not s.loop] == []
+    assert len([c for c in load_campgrounds(CAMPGROUNDS) if c.loop]) == 18
+
+
+def test_a_loop_name_is_stored_verbatim_with_no_vocabulary():
+    # Free text on purpose. These are operator strings, and normalising them
+    # would lose the Seasonal A / Seasonal B split and the Developed /
+    # Primitive one, which are the only handles on either distinction.
+    loops = {c.loop for c in load_campgrounds(CAMPGROUNDS) if c.loop}
+    assert "Primitive Group Camp Seasonal A" in loops
+    assert "Primitive Group Camp Seasonal B" in loops
+    assert "Developed Group Camp Loop B" in loops
+    assert "Equestrian Group Camp Seasonal" in loops
+
+
+def test_bort_meadow_is_alone_in_season_b():
+    """The split that bears on the open chabot-season conflict.
+
+    Bort Meadow's own row says it is the only camp in season B, so its open
+    period may differ from the other five. Nothing else in the data records
+    that, and it would have stayed in prose without this column.
+    """
+    chabot = [c for c in load_campgrounds(CAMPGROUNDS)
+              if c.park == "Anthony Chabot Regional Park" and c.loop]
+    b = [c.name for c in chabot if c.loop.endswith("Seasonal B")]
+    a = [c.name for c in chabot if c.loop.endswith("Seasonal A")]
+    assert b == ["Bort Meadow Group Camp"]
+    assert len(a) == 5
+
+
+def test_puma_point_has_no_loop_because_the_only_argument_for_one_is_arithmetic():
+    # Five siblings state Seasonal A and Bort Meadow is stated to be alone in
+    # B, which makes Puma Point A by subtraction. Twice now a sum that landed
+    # neatly has been wrong here.
+    by_name = {c.name: c for c in load_campgrounds(CAMPGROUNDS)}
+    assert by_name["Puma Point Group Camp"].loop == ""
+
+
+def test_the_seasonal_token_is_never_read_as_a_closure():
+    """Round Valley is the counterexample that keeps this a label.
+
+    Its loop is 'Backpack Seasonal' and EBRPD says the camp is open year
+    round. Any code that filled a season from the word would close a camp
+    that is open.
+    """
+    cgs = load_campgrounds(CAMPGROUNDS)
+    rv = {c.name: c for c in cgs}["Round Valley Backpack Camp"]
+    assert "seasonal" in rv.loop.lower()
+    assert rv.season_closed_start is None
+    assert [c.name for c in seasonal_loop_contradicting_a_season(cgs)] == [
+        "Round Valley Backpack Camp"]
+
+
+def test_a_seasonal_loop_with_no_season_is_a_row_to_read():
+    cgs = load_campgrounds(CAMPGROUNDS)
+    flagged = {c.name for c in seasonal_loop_without_a_season(cgs)}
+    # The six Anthony Chabot camps whose season is the open conflict, plus the
+    # one already answered.
+    assert "Bort Meadow Group Camp" in flagged
+    assert "Round Valley Backpack Camp" in flagged
+    # And never a camp whose season IS recorded.
+    assert "Wee-Ta-Chi Group Camp" not in flagged
+
+
+def test_loop_gaps_are_counted_rather_than_guessed():
+    blank = {c.name for c in loop_unrecorded(load_campgrounds(CAMPGROUNDS))}
+    assert len(blank) == 19
+    assert "Corral Group Camp" in blank  # its loop has never been read

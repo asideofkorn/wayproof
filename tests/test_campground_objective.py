@@ -682,3 +682,30 @@ def test_the_machine_surface_carries_the_facility_and_both_directions_of_the_joi
     listed = {f["facility_id"]: f for f in fac["booking_facilities"]}
     assert listed["EB/110028"]["facility_name"] == "Sunol"
     assert listed["EB/110028"]["slug"] == "sunol"
+
+
+def test_a_plan_shows_the_loop_and_says_it_carries_no_rule():
+    text = format_plan_summary(_stay("Wee-Ta-Chi Group Camp"))
+    assert "Loop: Primitive Group Camp Seasonal" in text
+    assert "the booking system's own label; it carries no rule here" in text
+    # Its season IS recorded, so the caution does not fire.
+    assert "'Seasonal' in a loop name is not a closure" not in text
+
+
+def test_a_seasonal_loop_with_no_season_carries_the_caution():
+    text = format_plan_summary(_stay("Bort Meadow Group Camp"))
+    assert "Loop: Primitive Group Camp Seasonal B" in text
+    assert "'Seasonal' in a loop name is not a closure" in text
+    assert "Round Valley's loop says Seasonal and that camp is open year round" in text
+
+
+def test_a_camp_with_no_loop_prints_no_loop_line():
+    text = format_plan_summary(_stay("Corral Group Camp"))
+    assert "Loop:" not in text
+
+
+def test_the_machine_surface_carries_the_loop():
+    payload = _stay("Wee-Ta-Chi Group Camp").to_dict()
+    assert payload["campground_objectives"][0]["loop"] == "Primitive Group Camp Seasonal"
+    assert _stay("Corral Group Camp").to_dict()[
+        "campground_objectives"][0]["loop"] is None

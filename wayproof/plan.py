@@ -214,6 +214,7 @@ class PlanResult:
                  "access_mode": c.access_mode or None,
                  "season_closed": c.season_label or None,
                  "closed_on_trip_date": c.closed_on(self.trip_date),
+                 "loop": c.loop or None,
                  "unit_level": c.unit_level or None,
                  "facility_id": c.facility_id or None,
                  "campsite_type": c.campsite_type or None}
@@ -355,6 +356,7 @@ class PlanResult:
                         "access_mode": c.access_mode or None,
                         "season_closed": c.season_label or None,
                         "closed_on_trip_date": c.closed_on(self.trip_date),
+                        "loop": c.loop or None,
                         "unit_level": c.unit_level or None,
                         "facility_id": c.facility_id or None,
                         "campsite_type": c.campsite_type or None,
@@ -916,6 +918,15 @@ def format_plan_summary(result: PlanResult) -> str:
                 lines.append("    Whether you reserve this whole camp or one site inside "
                              "it is not recorded, which is not the same as knowing it is "
                              "a single unit.")
+            if c.loop:
+                lines.append(f"    Loop: {c.loop} (the booking system's own "
+                             f"label; it carries no rule here)")
+            # The one thing the label does do, said once, as a caution.
+            if "seasonal" in c.loop.lower() and c.season_closed_start is None:
+                lines.append("      'Seasonal' in a loop name is not a closure. "
+                             "Round Valley's loop says Seasonal and that camp is "
+                             "open year round, so nothing here reads a season off "
+                             "this word.")
             # WHICH BOOKING PAGE, AND WHAT ELSE IS ON IT. A park does not
             # answer this: EB/110028 sells sites in three parks, and Del Valle
             # and Coyote Hills are each sold through two facilities. A reader

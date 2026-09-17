@@ -45,7 +45,10 @@ from typing import List, Optional, Sequence
 import pandas as pd
 
 from .access import ApproachRoute, UNCONFIRMED
-from .camping import HIKE_IN, Campground, Campsite, camps_without_sites
+from .camping import (
+    HIKE_IN, Campground, Campsite, camps_without_sites,
+    seasonal_loop_contradicting_a_season, seasonal_loop_without_a_season,
+)
 from .park_access import ParkAccess
 from .model import Peak, Trailhead
 from .evidence import UNVERIFIED, dangling_citations, evidence_for
@@ -334,6 +337,29 @@ def open_questions(
                           f"{park_name or 'an unnamed park'}, so a proximity "
                           f"search cannot place them: {', '.join(sorted(names))}."),
                 context=park_name,
+            ))
+
+        # -- Loop names that say "Seasonal" with no season on file. --
+        #
+        # The loop name is a label with no rules attached, with one exception
+        # worth asking about. ROUND VALLEY IS EXCLUDED, not overlooked: its
+        # loop is "Backpack Seasonal" and EBRPD says the camp is open year
+        # round, so that one has been read and answered, and the answer is that
+        # the token is not a season. Asking again would turn a resolved reading
+        # back into a doubt. The rest are unread.
+        answered = {c.name for c in seasonal_loop_contradicting_a_season(campgrounds)}
+        for c in seasonal_loop_without_a_season(campgrounds):
+            if c.name in answered or not _park_is_relevant(c.park):
+                continue
+            questions.append(OpenQuestion(
+                target_file="data/campgrounds.csv",
+                target_key=c.name,
+                question=(f"{c.name} sits in a loop the booking system calls "
+                          f"'{c.loop}' and no closure is recorded for it. The "
+                          f"word is not a season -- Round Valley's loop says "
+                          f"Seasonal and the camp is open year round -- so this "
+                          f"is a row to go and read, not one to fill in."),
+                context=c.name,
             ))
 
         # -- Campgrounds with no booking facility. --

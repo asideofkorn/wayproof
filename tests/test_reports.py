@@ -560,3 +560,31 @@ def test_conflict_questions_are_global_not_peak_filtered():
                           "unresolved-conflict", "x", "a")]
     assert [q for q in open_questions(permit_source_log=log, peak_names=["Mount Tallac"])
             if q.target_file == "data/permit_source_log.csv"] == []
+
+
+def test_a_seasonal_loop_with_no_season_is_an_open_question():
+    grounds = [_ground(name="Bort Meadow Group Camp",
+                       park="Anthony Chabot Regional Park",
+                       loop="Primitive Group Camp Seasonal B")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert len(qs) == 1
+    assert "not a season" in qs[0].question
+    assert "go and read, not one to fill in" in qs[0].question
+
+
+def test_round_valley_is_excluded_because_it_has_been_answered():
+    # Its loop says Seasonal and EBRPD says open year round. That reading is
+    # done; re-asking would turn an answer back into a doubt.
+    grounds = [_ground(name="Round Valley Backpack Camp",
+                       park="Round Valley Regional Preserve",
+                       loop="Backpack Seasonal",
+                       notes="Round Valley is open year round, despite the "
+                             "booking system labelling the loop 'Backpack Seasonal'.")]
+    qs = open_questions(campgrounds=grounds, campsites=[], peak_names=None)
+    assert [q for q in qs if "not a season" in q.question] == []
+
+
+def test_a_loop_with_no_seasonal_token_is_not_asked_about():
+    grounds = [_ground(name="Wild Turkey Group Camp", park="Del Valle Regional Park",
+                       loop="Developed Group Camp Loop B")]
+    assert open_questions(campgrounds=grounds, campsites=[], peak_names=None) == []
