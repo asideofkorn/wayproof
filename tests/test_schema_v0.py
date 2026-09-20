@@ -6,6 +6,8 @@ import pytest
 
 from wayproof.schema import (
     CanonicalRecords,
+    ChangeAction,
+    ChangeOperation,
     ChangeSet,
     ChangeSetStatus,
     Claim,
@@ -93,19 +95,11 @@ def test_incremental_validation_resolves_existing_ids_but_rejects_collisions():
 def test_changeset_lifecycle_is_enforced():
     change = ChangeSet("change-1", evidence_chain())
     with pytest.raises(ValueError, match="validated"):
-        change.approve("reviewer")
-    with pytest.raises(ValueError, match="approved"):
-        change.promote()
+        change.assert_validated_unchanged()
 
     assert change.validate() == ()
     assert change.status is ChangeSetStatus.VALIDATED
-    with pytest.raises(ValueError, match="identified reviewer"):
-        change.approve(" ")
-    change.approve("human-reviewer", "evidence checked")
-    assert change.status is ChangeSetStatus.APPROVED
-    change.promote()
-    assert change.status is ChangeSetStatus.PROMOTED
-    assert change.approved_by == "human-reviewer"
+    change.assert_validated_unchanged()
 
 
 def test_failed_validation_remains_a_draft():
@@ -121,23 +115,40 @@ def test_changes_after_validation_require_revalidation():
     assert change.validate() == ()
     change.records.entities.append(Entity("place-2", "place", "Place Two"))
     with pytest.raises(ValueError, match="validate it again"):
-        change.approve("reviewer")
+        change.assert_validated_unchanged()
     assert change.validate() == ()
-    change.approve("reviewer")
-
-
-def test_changes_after_approval_cannot_be_promoted():
-    change = ChangeSet("change-1", evidence_chain())
-    assert change.validate() == ()
-    change.approve("reviewer")
-    change.records.entities.append(Entity("place-2", "place", "Place Two"))
-    with pytest.raises(ValueError, match="cannot be promoted"):
-        change.promote()
+    change.assert_validated_unchanged()
 
 
 def test_changeset_identity_is_required():
     with pytest.raises(ValueError, match="must not be blank"):
         ChangeSet(" ", CanonicalRecords())
+
+
+def test_change_operation_carries_domain_intent_not_git_audit_metadata():
+    operation = ChangeOperation(
+        ChangeAction.ADD,
+        "claim",
+        "claim-birch-creek-2026-09",
+        "canonical/v0/claims/claim-birch-creek-2026-09.json",
+        "Add dated water evidence without inferring current flow",
+        evidence_refs=("evidence-birch",),
+        knowledge_gap_refs=("gap-current-water",),
+    )
+    change = ChangeSet(
+        "wp-20260920-a4f29c7d", evidence_chain(),
+        summary="Add Birch Creek water evidence", operations=(operation,))
+    assert change.operations[0].action is ChangeAction.ADD
+    assert change.summary.startswith("Add Birch")
+
+
+def test_change_operation_requires_a_canonical_path_and_reason():
+    with pytest.raises(ValueError, match="under canonical"):
+        ChangeOperation(ChangeAction.ADD, "claim", "claim-1",
+                        "outside/claim-1.json", "reason")
+    with pytest.raises(ValueError, match="reason"):
+        ChangeOperation(ChangeAction.ADD, "claim", "claim-1",
+                        "canonical/v0/claims/claim-1.json", " ")
 
 
 def test_requirement_coverage_detects_partial_fulfillment():

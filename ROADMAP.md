@@ -20,15 +20,19 @@ knowledge for the MVP fixtures.
   evidence lineage; trip/context and route/access/traversal; claims and rules;
   requirements, fulfillments, coverage, answerability, derived results,
   knowledge gaps, and ChangeSets.
-- Keep exact serialization, module layout, enum spellings, ChangeSet disk shape,
-  and SQLite timing open until implementation evidence supports a choice.
+- Keep exact module layout, enum spellings, and SQLite timing open until
+  implementation evidence supports a choice. Use the decided deterministic,
+  versioned, one-record-per-file JSON storage model.
 - Implement deterministic validation before scaled ingestion: references,
   provenance, atomicity, evidence integrity, temporal and geospatial scope,
   applicability, coverage, and lifecycle transitions.
-- Implement one domain write boundary and the
-  `DRAFT -> VALIDATED -> APPROVED -> PROMOTED` state machine.
-- Make promotion the only normal way candidate knowledge reaches Git-backed
-  canonical storage; add CI enforcement and reproducibility checks.
+- Implement one domain write boundary that produces validated, detached
+  candidate snapshots. GitHub review supplies approval and merge to `main`
+  supplies promotion/publication.
+- Keep permanent ChangeSets focused on typed domain intent; use Git for content
+  identity, diffs, concurrency, audit history, rollback, and publication.
+- Add CI enforcement proving every canonical diff is exactly accounted for by
+  a validated ChangeSet or explicit schema-migration artifact.
 - Encode the Ohlone, Williamson/Tyndall, Whitney, facility/concessioner,
   fishing, boating/invasive-species, and California 14ers social-water fixtures.
 - Encode the 8/8 adversarial schema audit as regression tests.
@@ -37,7 +41,8 @@ knowledge for the MVP fixtures.
   directly migrate ambiguous, inferred, composite, stale, or weakly sourced
   values.
 - Run the California 14ers social-water evidence case end to end through
-  proposal, validation, explanation, approval, promotion, and Git review.
+  proposal, validation, explanation, candidate preparation, Git review, and
+  merge-based publication.
 
 **Exit criteria:** all Schema v0 invariants and fixtures pass; canonical changes
 are traceable to approved ChangeSets; the initial clean corpus can be built and
@@ -91,8 +96,8 @@ without granting direct canonical write access.
   sources into candidate observations/evidence.
 - Add constrained proposal operations for sources, observations, claims, rules,
   and relationships plus ChangeSet validation and explanation.
-- Keep approval and promotion human-controlled until authorization, audit, and
-  operational experience support any narrower delegation.
+- Keep approval and publication in GitHub review and merge; MCP proposal tools
+  do not gain a separate promotion path.
 - Improve entity resolution, duplicate detection, supersession/conflict review,
   and research queues for `REVERIFY` and `RECONSTRUCT` legacy material.
 - Preserve licensing and source-policy constraints from `DATA_LICENSE.md` and
@@ -129,7 +134,7 @@ The implementation order is deliberately:
 ```text
 Schema v0 domain model
   -> validators and regression fixtures
-  -> ChangeSet lifecycle and controlled promotion
+  -> ChangeSet validation and candidate preparation
   -> clean canonical storage
   -> selective legacy salvage
   -> planning/readiness/recheck services
@@ -146,12 +151,10 @@ response to demonstrated needs.
 
 These are intentionally deferred, not forgotten:
 
-- canonical file serialization and directory layout;
 - exact Python module and class boundaries;
 - exact enum names and wire spellings;
-- exact ChangeSet on-disk representation;
 - generated SQLite timing, if any; and
-- the precise authorization model for any post-M3 approval/promotion tools.
+- exceptional repair/redaction policy for published artifacts.
 
 Any new gap that changes product semantics, evidence integrity, applicability,
 or coverage should reopen the architecture explicitly. Mechanical choices

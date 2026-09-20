@@ -91,14 +91,30 @@ uncertainties, conflicts, and knowledge gaps. A proposal can be valid while its
 underlying fact remains uncertain: validation means the uncertainty is
 represented correctly, not that the world is fully known.
 
-Canonical promotion follows one controlled lifecycle:
+Candidate preparation follows a controlled domain workflow:
 
 ```text
-DRAFT -> VALIDATED -> APPROVED -> PROMOTED
+DRAFT -> VALIDATED -> PREPARED CANDIDATE
+                         -> Git commit and PR
+                         -> maintainer approval
+                         -> merge to main = PROMOTED/PUBLISHED
 ```
 
-Human approval is initially required. Git review and CI remain the publication
-boundary, and `main` represents published canonical knowledge.
+Git and GitHub are the revision, concurrency, review, and publication system;
+Wayproof does not reproduce them inside its domain model. Human approval is
+required. CI proves that the typed ChangeSet accounts for the canonical diff,
+and `main` represents published canonical knowledge.
+
+Promoted ChangeSets are public provenance. Consumers can inspect which
+published edit created, replaced, or removed a record and follow it to the Git
+commit and PR. Rejected drafts and private research are not published
+automatically.
+
+Wayproof should feel like a trustworthy current wiki page: the primary view is
+the currently applicable, cited answer, while every published revision and its
+domain rationale remains available for inspection. ChangeSet history records
+when Wayproof knowledge changed; dated Observations and Claims record when the
+real-world condition changed.
 
 ## MVP contract
 
@@ -155,6 +171,8 @@ Gaia GPS, and similar tools. It does not manufacture an exact route from nearby
 geometry.
 
 The following remain intentionally unresolved until implementation provides
-evidence: canonical serialization (for example YAML, JSON, or JSONL), exact
-Python module/class layout, exact enum spellings, the on-disk ChangeSet shape,
-and whether or when a generated SQLite read index is useful.
+evidence: exact Python module/class layout, exact enum spellings, and whether or
+when a generated SQLite read index is useful. Canonical storage will use
+versioned, deterministic, one-record-per-file JSON; ChangeSets will be small
+public domain-intent manifests alongside Git history rather than a second
+version-control system.

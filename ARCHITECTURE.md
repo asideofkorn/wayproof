@@ -145,17 +145,17 @@ volatile portions against the same context and explains changes.
 
 ## Controlled write architecture
 
-All writers use the same domain/service boundary:
+All writers use the same domain/service boundary, while Git and GitHub remain
+the publication authority:
 
 ```text
 evidence
   -> ChangeSet (DRAFT)
   -> validate (VALIDATED)
-  -> human review and approve (APPROVED)
-  -> promote (PROMOTED)
-  -> canonical storage
+  -> prepare candidate snapshot
   -> Git commit / PR / CI
-  -> main
+  -> maintainer approval
+  -> merge to main (PROMOTED / PUBLISHED)
 ```
 
 Validation enforces schema conformance, durable references, atomicity,
@@ -164,13 +164,30 @@ predicates/attributes, rule applicability, coverage integrity, and change-state
 transitions. Validation failure cannot be promoted. `VALIDATED` means that
 uncertainty and gaps are represented legally, not that every claim is certain.
 
-Approval is an explicit recorded state transition. Promotion is the only normal
-path from candidate knowledge to canonical knowledge. CI should reject canonical
-changes that cannot be traced to an approved ChangeSet. Git supplies diffs,
-review, rollback, history, and reproducible published versions.
+The domain service does not approve, publish, or mutate the canonical base. It
+produces a detached candidate for Git review. Git supplies content identity,
+exact diffs, concurrency, review, rollback, history, and reproducible published
+versions. Maintainer merge authorization is approval for the current
+single-maintainer project; merge to `main` is promotion and publication. CI
+rejects canonical changes that are not fully accounted for by a validated typed
+ChangeSet.
 
-An administrative escape hatch may eventually exist, but bypassing validation
-must never be the routine contributor or agent workflow.
+A permanent ChangeSet carries domain intent rather than duplicating Git audit
+metadata: an ID, versions, summary, and ordered `ADD`, `REPLACE`, or
+`REMOVE` operations naming affected record types, durable IDs, canonical
+paths, reasons, and relevant evidence or knowledge-gap references. Git and
+GitHub remain authoritative for authors, timestamps, reviews, commits, and PRs.
+
+Promoted ChangeSets form public, wiki-like revision history. Consumers can walk
+from a current record to the published edits that affected it, or from a
+ChangeSet to its records and Git history. Real-world history remains in dated
+Observations and temporally scoped Claims; publication history remains in Git
+and ChangeSets.
+
+Ordinary code, tests, documentation, and rendering PRs require no ChangeSet when
+canonical knowledge is untouched. Schema migrations use a separately reviewed,
+deterministic migration artifact. An administrative escape hatch may eventually
+exist, but bypassing validation must never be the routine workflow.
 
 ## Storage and service boundaries
 
@@ -181,11 +198,17 @@ services but do not define domain semantics.
 
 A generated SQLite index may later improve read performance, and a transactional
 database may eventually serve a concurrent application, but neither decision is
-part of Schema v0. Canonical serialization and exact file layout also remain
-open.
+part of Schema v0. Canonical storage uses versioned, deterministic,
+one-record-per-file JSON named by durable record ID. The serializer owns
+formatting; normal contributors and agents do not hand-author canonical files.
 
 CLI, website, importers, and MCP are adapters over the same domain/service layer.
 MCP must not create a second mutation path.
+
+Schema migrations change representation rather than outdoor knowledge. They
+declare source and target versions, preserve provenance, produce explicit gaps
+instead of invented values, and never rewrite historical promoted ChangeSets.
+Artifact format, domain schema, and validator versions are tracked separately.
 
 Initial MCP capability is read-oriented, conceptually including objective
 search, trip planning, requirements, advisories, and evidence inspection. Later
@@ -254,7 +277,6 @@ gaps and conflicts, and does not invent a destination-specific exception.
 
 ## Intentionally unresolved
 
-Implementation will decide canonical serialization, exact Python module/class
-layout, exact enum spellings, exact ChangeSet file structure, and if or when to
-generate SQLite. These are not architectural gaps until implementation evidence
-requires a choice.
+Implementation will decide exact Python module/class layout, exact enum
+spellings, and if or when to generate SQLite. These are not architectural gaps
+until implementation evidence requires a choice.
