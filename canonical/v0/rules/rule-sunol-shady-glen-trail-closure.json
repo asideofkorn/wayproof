@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-shady-glen-trail-closed-20260920",
+    "conditions": [
+      {
+        "dimension": "route_uses",
+        "operator": "contains",
+        "value": "Shady Glen Trail"
+      }
+    ],
+    "consequence": "Do not plan to use Shady Glen Trail while the published closure remains active.",
+    "rule_id": "rule-sunol-shady-glen-trail-closure",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "temporal_scope": {
+      "starts_on": "2026-09-20",
+      "ends_on": null
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

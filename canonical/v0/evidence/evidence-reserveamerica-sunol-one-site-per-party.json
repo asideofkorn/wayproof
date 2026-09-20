@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-one-site-per-party",
+    "evidence_id": "evidence-reserveamerica-sunol-one-site-per-party",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-reserveamerica-sunol-rules",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

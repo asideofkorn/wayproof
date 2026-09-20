@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-backpack-fire-policy",
+    "evidence_ids": [
+      "evidence-ohlone-backpack-fire-policy"
+    ],
+    "predicate": "backpack_fire_policy",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "campfires": false,
+      "charcoal_barbecues": false,
+      "camp_stoves": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

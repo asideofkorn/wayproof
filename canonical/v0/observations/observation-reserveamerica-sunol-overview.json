@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Important Information",
+      "Description",
+      "Recreation",
+      "Facilities"
+    ],
+    "content": "The rendered overview identifies Sunol as an EBRPD campsite facility with limited backpack sites, describes the Ohlone Wilderness Trail as a hiking destination, and requires backpack reservations for overnight stays at least 48 hours in advance.",
+    "observation_id": "observation-reserveamerica-sunol-overview",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-sunol-overview"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

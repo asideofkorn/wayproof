@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-swimming-wading-prohibited",
+    "evidence_ids": [
+      "evidence-sunol-swimming-wading-prohibited"
+    ],
+    "predicate": "water_contact_allowed",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "subject_id": "park-sunol-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Ohlone Wilderness Trail"
+    ],
+    "content": "The page states that as of January 1, 2026 an Ohlone permit is not required and no additional permits will be sold. Overnight backpacking reservations remain required, and designated Ohlone Trail campsites require advance reservation two or more business days ahead.",
+    "observation_id": "observation-ebrpd-sunol-ohlone-policy",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-sunol-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-one-site-per-party",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "booking"
+      }
+    ],
+    "consequence": "Reserve no more than one backpack site per party on a given date.",
+    "rule_id": "rule-reserveamerica-sunol-one-site-per-party",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

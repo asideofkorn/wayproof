@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-maximum-consecutive-nights",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "overnight"
+      }
+    ],
+    "consequence": "Limit an Ohlone Wilderness Trail through-hike reservation to three consecutive nights.",
+    "rule_id": "rule-ohlone-maximum-three-consecutive-nights",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

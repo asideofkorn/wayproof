@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Additional Information"
+    ],
+    "content": "The rendered rules allow up to three consecutive nights for an Ohlone Wilderness Trail hike; prohibit campfires and charcoal barbecues while allowing camp stoves; prohibit dogs overnight at Mission Peak, Sunol, and Ohlone Trail sites; prohibit alcohol; require one backpack site maximum per party per date; and warn that cell reception may be spotty.",
+    "observation_id": "observation-reserveamerica-sunol-rules",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-sunol-overview"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

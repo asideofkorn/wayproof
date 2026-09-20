@@ -1,0 +1,490 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-sunol-ohlone-sources",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-sunol-park-page.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "source-ebrpd-sunol-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-overview.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "source-reserveamerica-sunol-overview",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-sunol-backpack-camp.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "scope-sunol-backpack-camp",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-sunol-wilderness-regional-preserve.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "scope-sunol-wilderness-regional-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-current-conditions.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-sunol-current-conditions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-ohlone-policy.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-sunol-ohlone-policy",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-recreation.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-sunol-recreation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-visitor-access.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-sunol-visitor-access",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-overview.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-reserveamerica-sunol-overview",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-rules.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "observation-reserveamerica-sunol-rules",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-sunol-ohlone-overnight-reservation.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ebrpd-sunol-ohlone-overnight-reservation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-sunol-ohlone-permit-not-required-2026.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ebrpd-sunol-ohlone-permit-not-required-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-backpack-fire-policy.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ohlone-backpack-fire-policy",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-overnight-alcohol-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ohlone-overnight-alcohol-prohibited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-overnight-dogs-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ohlone-overnight-dogs-prohibited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-trail-maximum-consecutive-nights.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ohlone-trail-maximum-consecutive-nights",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-backpack-facility.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-reserveamerica-sunol-backpack-facility",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-ohlone-overnight-reservation.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-reserveamerica-sunol-ohlone-overnight-reservation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-one-site-per-party.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-reserveamerica-sunol-one-site-per-party",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-cell-reception-spotty.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-cell-reception-spotty",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-drinking-water-unavailable.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-drinking-water-unavailable",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-fire-policy-20260920.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-fire-policy-20260920",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-shady-glen-trail-closed-20260920.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-shady-glen-trail-closed-20260920",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-swimming-wading-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-swimming-wading-prohibited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sunol-visitor-access.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-sunol-visitor-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-backpack-fire-policy"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-backpack-fire-policy.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-ohlone-backpack-fire-policy",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-overnight-alcohol-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-overnight-alcohol-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-ohlone-overnight-alcohol-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-overnight-dogs-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-overnight-dogs-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-ohlone-overnight-dogs-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-trail-maximum-consecutive-nights"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-maximum-consecutive-nights.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-ohlone-trail-maximum-consecutive-nights",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-backpack-facility"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-backpack-facility.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-reserveamerica-sunol-backpack-facility",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-one-site-per-party"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-one-site-per-party.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-reserveamerica-sunol-one-site-per-party",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-cell-reception-spotty"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-cell-reception-spotty.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-cell-reception-spotty",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-drinking-water-unavailable"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-drinking-water-unavailable.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-drinking-water-unavailable",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-fire-policy-20260920"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-fire-policy-20260920.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-fire-policy-20260920",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-shady-glen-trail-closed-20260920"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-shady-glen-trail-closed-20260920.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-shady-glen-trail-closed-20260920",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-swimming-wading-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-swimming-wading-prohibited.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-swimming-wading-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sunol-visitor-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-visitor-access.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "claim-sunol-visitor-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-backpack-stoves-only.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-ohlone-backpack-stoves-only",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-maximum-three-consecutive-nights.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-ohlone-maximum-three-consecutive-nights",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-no-alcohol.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-ohlone-no-alcohol",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-no-overnight-dogs.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-ohlone-no-overnight-dogs",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-reserveamerica-sunol-one-site-per-party.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-reserveamerica-sunol-one-site-per-party",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-sunol-bring-drinking-water.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-sunol-bring-drinking-water",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-sunol-fire-policy-20260920.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-sunol-fire-policy-20260920",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-sunol-no-swimming-wading.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-sunol-no-swimming-wading",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-sunol-shady-glen-trail-closure.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "rule-sunol-shady-glen-trail-closure",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-sunol-current-trail-and-fire-status.json",
+      "reason": "Add source-grounded Sunol and Ohlone trail knowledge with explicit provenance and applicability.",
+      "record_id": "gap-sunol-current-trail-and-fire-status",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-ebrpd-sunol-ohlone-overnight-reservation",
+        "evidence-reserveamerica-sunol-ohlone-overnight-reservation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-overnight-reservation.json",
+      "reason": "Corroborate the existing overnight reservation claim with both newly reviewed sources.",
+      "record_id": "claim-ohlone-overnight-reservation",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-ebrpd-sunol-ohlone-permit-not-required-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-permit-not-required-2026.json",
+      "reason": "Corroborate the existing 2026 permit change from the Sunol park page.",
+      "record_id": "claim-ohlone-trail-permit-not-required-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-sunol-current-trail-and-fire-status"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Include volatile Sunol trail and fire conditions in pre-trip rechecks.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the EBRPD Sunol park page and ReserveAmerica Sunol overview, corroborate Ohlone permit and reservation policy, and add bounded Sunol access, safety, camping, and volatile-condition knowledge."
+}

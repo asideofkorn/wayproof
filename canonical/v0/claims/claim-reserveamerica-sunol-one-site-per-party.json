@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-one-site-per-party",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-one-site-per-party"
+    ],
+    "predicate": "maximum_sites_per_party_per_date",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "camp-ohlone-map-sunol-backpack",
+    "temporal_scope": null,
+    "value": 1
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

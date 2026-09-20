@@ -1,7 +1,7 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Operational conditions, swimming schedules and fees, water-quality meanings, access, inspection history, and weather procedures can change and must be checked near departure. Campground and individual-site closures also require a live alert check. Ohlone backcountry water status is dated and must be checked near departure.",
+    "explanation": "Operational conditions, swimming schedules and fees, water-quality meanings, access, inspection history, and weather procedures can change and must be checked near departure. Campground and individual-site closures also require a live alert check. Ohlone backcountry water status and current Sunol trail and fire conditions must be checked near departure.",
     "input_ids": [
       "claim-del-valle-volatile-alerts",
       "claim-del-valle-boat-inspection",
@@ -27,7 +27,8 @@
       "claim-ebrpd-alerts-closures-live",
       "claim-del-valle-seasonal-closures-2026",
       "gap-del-valle-seasonal-closures-current",
-      "claim-ohlone-water-availability-20260919"
+      "claim-ohlone-water-availability-20260919",
+      "gap-sunol-current-trail-and-fire-status"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-del-valle-pretrip-recheck",
@@ -47,7 +48,8 @@
         "inspection_fee_and_band_eligibility",
         "wet_weather_inspection_protocol",
         "campground_and_site_closures",
-        "ohlone_backcountry_water"
+        "ohlone_backcountry_water",
+        "sunol_trail_and_fire_status"
       ]
     }
   },

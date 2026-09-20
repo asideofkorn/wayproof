@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-fire-policy-20260920",
+    "conditions": [],
+    "consequence": "Do not use open fires or barbecues; use a gas stove only at Alameda Grove or School Camp while this policy remains active.",
+    "rule_id": "rule-sunol-fire-policy-20260920",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "temporal_scope": {
+      "starts_on": "2026-09-20",
+      "ends_on": null
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
