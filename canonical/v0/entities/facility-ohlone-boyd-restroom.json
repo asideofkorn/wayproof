@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-ohlone-boyd-restroom",
+    "kind": "restroom",
+    "name": "Boyd Camp restroom"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

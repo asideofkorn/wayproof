@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-ohlone-stromer-spring-water-20260905",
+    "evidence_ids": [
+      "evidence-user-ohlone-stromer-spring-water-20260905"
+    ],
+    "predicate": "firsthand_facility_observation",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "water-ohlone-stromer-springs",
+    "temporal_scope": {
+      "starts_on": "2026-09-05",
+      "ends_on": "2026-09-05"
+    },
+    "value": {
+      "facility_type": "water source",
+      "observed_present": true,
+      "latitude": 37.5628719,
+      "longitude": -121.7049534,
+      "route_segment": "Del Valle to Backpack Camp",
+      "provenance_class": "user_firsthand_field_observation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

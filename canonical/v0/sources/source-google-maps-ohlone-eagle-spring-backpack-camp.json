@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-ohlone-eagle-spring-backpack-camp",
+    "locator": "https://maps.app.goo.gl/ikv6Co1QeyoxgSs2A?g_st=ic",
+    "publisher": "Google Maps (user-supplied labeled place)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

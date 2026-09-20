@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User-supplied Google Maps link",
+      "Google Maps labeled place and Plus Code"
+    ],
+    "content": "The link resolves to the Google Maps labeled place Stewart's Camp. Google Maps displays Plus Code 849WG7JV+64; its cell center is 37.5305625, -121.7071875. This is approximate Google Maps place evidence, not an official EBRPD or surveyed coordinate.",
+    "observation_id": "observation-google-maps-ohlone-stewarts-camp-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live browser review of user-supplied Google Maps link",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-ohlone-stewarts-camp"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

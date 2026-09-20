@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-ohlone-eagle-springs-water-20260906",
+    "evidence_ids": [
+      "evidence-user-ohlone-eagle-springs-water-20260906"
+    ],
+    "predicate": "firsthand_facility_observation",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "water-ohlone-eagle-springs",
+    "temporal_scope": {
+      "starts_on": "2026-09-06",
+      "ends_on": "2026-09-06"
+    },
+    "value": {
+      "facility_type": "water source",
+      "observed_present": true,
+      "latitude": 37.5116769,
+      "longitude": -121.8770215,
+      "route_segment": "Backpack Camp to Mission Peak, exiting at Stanford Avenue",
+      "provenance_class": "user_firsthand_field_observation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User firsthand trip report",
+      "User-supplied Google Maps pin"
+    ],
+    "content": "The user reports personally observing the restroom at Boyd Camp restroom on 2026-09-05 while traveling Del Valle to Backpack Camp. The supplied pin resolves to 37.559669, -121.7036606.",
+    "observation_id": "observation-user-ohlone-boyd-restroom-20260905",
+    "observed_at": "2026-09-05T00:00:00+00:00",
+    "observer": "User firsthand field observation, transcribed by Wayproof",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-ohlone-boyd-restroom"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User firsthand trip report",
+      "User-supplied Google Maps pin"
+    ],
+    "content": "The user reports personally observing the water source at Stewart's Camp water on 2026-09-05 while traveling Del Valle to Backpack Camp. The supplied pin resolves to 37.5305625, -121.7071875. The same pin represents the water and restroom reported next to each other at Stewart's Camp.",
+    "observation_id": "observation-user-ohlone-stewarts-water-20260905",
+    "observed_at": "2026-09-05T00:00:00+00:00",
+    "observer": "User firsthand field observation, transcribed by Wayproof",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-ohlone-stewarts-camp"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

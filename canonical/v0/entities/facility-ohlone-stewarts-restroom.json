@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-ohlone-stewarts-restroom",
+    "kind": "restroom",
+    "name": "Stewart's Camp restroom"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

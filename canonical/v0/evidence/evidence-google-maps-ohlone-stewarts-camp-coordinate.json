@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-ohlone-corridor-place-coordinates",
+    "evidence_id": "evidence-google-maps-ohlone-stewarts-camp-coordinate",
+    "notes": "Supports a Google-labeled approximate coordinate only.",
+    "observation_id": "observation-google-maps-ohlone-stewarts-camp-coordinate",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User-supplied Google Maps link",
+      "Google Maps labeled place and Plus Code"
+    ],
+    "content": "The link resolves to the Google Maps labeled place Maggie’s Half Acre Camp. Google Maps displays Plus Code 849WG77F+9C; its cell center is 37.5134375, -121.7264375. This is approximate Google Maps place evidence, not an official EBRPD or surveyed coordinate.",
+    "observation_id": "observation-google-maps-ohlone-maggies-half-acre-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live browser review of user-supplied Google Maps link",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-ohlone-maggies-half-acre"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

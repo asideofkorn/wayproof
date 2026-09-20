@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User firsthand trip report",
+      "User-supplied Google Maps pin"
+    ],
+    "content": "The user reports personally observing the water source at Eagle Springs water on 2026-09-06 while traveling Backpack Camp to Mission Peak, exiting at Stanford Avenue. The supplied pin resolves to 37.5116769, -121.8770215.",
+    "observation_id": "observation-user-ohlone-eagle-springs-water-20260906",
+    "observed_at": "2026-09-06T00:00:00+00:00",
+    "observer": "User firsthand field observation, transcribed by Wayproof",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-ohlone-eagle-springs-water"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

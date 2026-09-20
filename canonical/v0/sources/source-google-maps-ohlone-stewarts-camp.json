@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-ohlone-stewarts-camp",
+    "locator": "https://maps.app.goo.gl/9qKP7Y4b8AaVQczB9?g_st=ic",
+    "publisher": "Google Maps (user-supplied labeled place)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
