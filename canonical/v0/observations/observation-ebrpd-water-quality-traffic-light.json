@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "California swim-water evaluation uses total coliform, fecal coliform, Enterococcus, and E. coli indicators. Green means results are below maximums and meet state standards; yellow means one or more indicators exceeds a daily maximum; red means the beach is closed for a water-quality issue and visitors must not enter.",
+    "observation_id": "observation-ebrpd-water-quality-traffic-light",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-current-water-quality"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

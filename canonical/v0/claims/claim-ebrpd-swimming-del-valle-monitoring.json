@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-ebrpd-swimming-del-valle-monitoring",
     "evidence_ids": [
-      "evidence-ebrpd-swimming-del-valle-monitoring"
+      "evidence-ebrpd-swimming-del-valle-monitoring",
+      "evidence-ebrpd-water-quality-del-valle-monitoring"
     ],
     "predicate": "del_valle_beach_monitoring",
     "spatial_scope_ids": [

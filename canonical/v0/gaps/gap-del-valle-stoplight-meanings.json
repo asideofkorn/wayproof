@@ -2,10 +2,10 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-del-valle-stoplight-meanings",
-    "question": "What activities does each Del Valle water-quality stop-light designation allow?",
-    "reason": "The page says the sign combines bacterial and algae conditions but the image text and linked designation rules were not supplied.",
+    "question": "How do Del Valle algae advisory levels combine with the now-defined bacterial traffic-light designation?",
+    "reason": "Green/yellow/red bacterial meanings are now defined, but the source does not explain how a simultaneous algae Caution or Danger changes allowed activities.",
     "related_ids": [
-      "claim-ebrpd-swimming-del-valle-monitoring",
+      "claim-ebrpd-water-quality-traffic-light",
       "gap-ebrpd-algae-advisory-level-actions"
     ]
   },

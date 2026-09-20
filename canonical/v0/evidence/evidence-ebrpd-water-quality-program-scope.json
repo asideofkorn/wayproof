@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-water-quality-program-scope",
+    "evidence_id": "evidence-ebrpd-water-quality-program-scope",
+    "notes": "",
+    "observation_id": "observation-ebrpd-water-quality-program",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

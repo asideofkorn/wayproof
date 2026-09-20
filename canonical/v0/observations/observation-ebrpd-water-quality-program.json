@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "EBRPD routinely monitors recreational and drinking water, storm water, wastewater, lakes and creeks, and responds to sewage, oil, and hazardous-material incidents. Natural swim areas are sampled weekly April-October in collaboration with county environmental-health departments, with current data posted for safe recreation choices.",
+    "observation_id": "observation-ebrpd-water-quality-program",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-current-water-quality"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

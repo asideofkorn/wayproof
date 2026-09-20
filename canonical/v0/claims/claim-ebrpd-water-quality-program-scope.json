@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-water-quality-program-scope",
+    "evidence_ids": [
+      "evidence-ebrpd-water-quality-program-scope"
+    ],
+    "predicate": "water_quality_program_scope",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": [
+      "recreational_water",
+      "drinking_water",
+      "storm_water",
+      "wastewater",
+      "lakes",
+      "creeks",
+      "water_related_emergencies"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

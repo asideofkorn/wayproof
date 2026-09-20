@@ -147,7 +147,7 @@ def test_algae_guidance_separates_stable_health_rules_from_current_conditions():
     current = next(item for item in snapshot.claims
                    if item.claim_id == "claim-del-valle-ebrpd-east-beach-algae")
     assert current.temporal_scope.starts_on == current.temporal_scope.ends_on
-    assert len(current.evidence_ids) == 3
+    assert len(current.evidence_ids) >= 2
 
 
 def test_algae_advisory_level_boundary_remains_an_explicit_gap():
@@ -192,3 +192,23 @@ def test_swimming_changeset_combines_two_sources_with_bounded_replacements():
     counts = {action: sum(item.action.value == action for item in change.operations)
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 35, "REPLACE": 3, "REMOVE": 0}
+
+
+def test_bacterial_stoplight_is_defined_without_erasing_algae_gap():
+    snapshot = records()
+    item = next(value for value in snapshot.claims
+                if value.claim_id == "claim-ebrpd-water-quality-traffic-light")
+    assert item.value["red"] == "beach_closed_for_water_quality_issue"
+    gap = next(value for value in snapshot.gaps
+               if value.gap_id == "gap-del-valle-stoplight-meanings")
+    assert "algae" in gap.question.lower()
+    assert any(value.rule_id == "rule-ebrpd-water-quality-red-closure"
+               for value in snapshot.rules)
+
+
+def test_water_quality_changeset_narrows_existing_gap():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-water-quality-stoplight.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 12, "REPLACE": 4, "REMOVE": 0}

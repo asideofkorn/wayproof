@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-water-quality-traffic-light",
+    "evidence_ids": [
+      "evidence-ebrpd-water-quality-traffic-light"
+    ],
+    "predicate": "bacterial_stoplight_meanings",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "green": "indicator_results_below_maximums_meet_state_standards",
+      "indicators": [
+        "total_coliform",
+        "fecal_coliform",
+        "Enterococcus",
+        "E_coli"
+      ],
+      "red": "beach_closed_for_water_quality_issue",
+      "yellow": "one_or_more_indicators_exceed_daily_maximum"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
