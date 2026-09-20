@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-camping-eagles-view-details",
+    "evidence_ids": [
+      "evidence-del-valle-camping-eagles-view-details"
+    ],
+    "predicate": "official_campsite_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-group-camps"
+    ],
+    "subject_id": "group-camp-del-valle-eagles-view",
+    "temporal_scope": null,
+    "value": {
+      "capacity": {
+        "minimum": 17,
+        "maximum": 50
+      },
+      "kind": "primitive",
+      "lake_view": true,
+      "picnic_tables": true,
+      "barbecues": true,
+      "fire_ring": true,
+      "drinking_fountain": true,
+      "flush_toilets": "uphill_from_site",
+      "showers": false,
+      "beer_wine_permit_usd": 25,
+      "parking_passes": 10,
+      "prohibited_vehicles_and_services": [
+        "buses",
+        "RVs",
+        "trailers",
+        "food trucks",
+        "caterers"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

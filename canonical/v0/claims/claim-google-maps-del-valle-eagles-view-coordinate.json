@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-del-valle-eagles-view-coordinate",
+    "evidence_ids": [
+      "evidence-google-maps-del-valle-eagles-view-coordinate"
+    ],
+    "predicate": "google_maps_coordinate",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-eagles-view",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 37.5833377,
+      "longitude": -121.6930213,
+      "plus_code": "H8M4+8QQ",
+      "provenance_class": "user_supplied_map_estimate",
+      "official_map_context_claim_id": "claim-del-valle-map-eagles-view-location"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

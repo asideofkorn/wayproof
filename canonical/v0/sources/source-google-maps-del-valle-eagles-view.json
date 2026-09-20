@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-del-valle-eagles-view",
+    "locator": "https://maps.app.goo.gl/9tfxKJQcg7eUiQPx6?g_st=ic",
+    "publisher": "Google Maps (user-supplied pin)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

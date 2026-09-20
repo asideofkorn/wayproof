@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-del-valle-eagles-view-coordinate",
+    "evidence_id": "evidence-google-maps-del-valle-eagles-view-coordinate",
+    "notes": "Supports an approximate user-selected map point corroborated by official map context; it is not an official or Google-labeled surveyed coordinate and does not alter ReserveAmerica's null GIS fields.",
+    "observation_id": "observation-google-maps-del-valle-eagles-view-coordinate",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
