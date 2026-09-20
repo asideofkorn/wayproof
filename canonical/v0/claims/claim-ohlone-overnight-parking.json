@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-parking",
+    "evidence_ids": [
+      "evidence-ohlone-overnight-parking"
+    ],
+    "predicate": "reserved_overnight_parking",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "allowed_with_reservation_and_permit": true,
+      "locations": [
+        "Del Valle",
+        "Sunol",
+        "Mission Peak"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-use",
+    "evidence_ids": [
+      "evidence-ohlone-trail-use"
+    ],
+    "predicate": "trail_use",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "bicycles": false,
+      "distance_miles": 28,
+      "equestrians": true,
+      "hikers": true,
+      "motor_vehicles": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

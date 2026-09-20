@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-hours",
+    "evidence_ids": [
+      "evidence-ohlone-hours"
+    ],
+    "predicate": "seasonal_hours",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-preserve"
+    ],
+    "subject_id": "park-ohlone-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "Feb 1-Mar 8": "08:00-18:00",
+      "Mar 9-May 8": "08:00-20:00",
+      "May 9-Nov 1": "08:00-21:00",
+      "Nov 2-Jan 31": "08:00-17:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

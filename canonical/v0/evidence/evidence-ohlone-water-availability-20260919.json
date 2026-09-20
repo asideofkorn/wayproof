@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-water-availability-20260919",
+    "evidence_id": "evidence-ohlone-water-availability-20260919",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ohlone-water-20260919",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

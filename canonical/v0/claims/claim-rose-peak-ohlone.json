@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rose-peak-ohlone",
+    "evidence_ids": [
+      "evidence-rose-peak-ohlone"
+    ],
+    "predicate": "published_elevation_feet",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-preserve"
+    ],
+    "subject_id": "peak-rose",
+    "temporal_scope": null,
+    "value": 3817
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

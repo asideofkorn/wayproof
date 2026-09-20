@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-reservation",
+    "evidence_id": "evidence-ohlone-overnight-reservation",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ohlone-camping",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

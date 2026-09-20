@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page publishes seasonal preserve hours and allows dogs during daytime only.",
+    "observation_id": "observation-ebrpd-ohlone-hours-dogs",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-water-availability-20260919",
+    "conditions": [
+      {
+        "dimension": "activity",
+        "operator": "equals",
+        "value": "drink_backcountry_water"
+      }
+    ],
+    "consequence": "Treat, filter, or boil water from Ohlone Trail sources before human consumption.",
+    "rule_id": "rule-ohlone-water-treatment",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": {
+      "ends_on": "2026-09-19",
+      "starts_on": "2026-09-19"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

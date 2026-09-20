@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-dogs-daytime-only",
+    "evidence_ids": [
+      "evidence-ohlone-dogs-daytime-only"
+    ],
+    "predicate": "dogs_allowed_period",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-preserve"
+    ],
+    "subject_id": "park-ohlone-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": "daytime_only"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

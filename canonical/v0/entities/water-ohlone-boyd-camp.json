@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "water-ohlone-boyd-camp",
+    "kind": "water_source",
+    "name": "Boyd Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

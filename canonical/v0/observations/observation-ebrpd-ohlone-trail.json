@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The 28-mile Ohlone Wilderness Trail is open to hikers and equestrians, not bicycles or motor vehicles, and crosses Ohlone Wilderness, Mission Peak, Sunol, Del Valle, and leased watershed lands where users must stay in the trail corridor.",
+    "observation_id": "observation-ebrpd-ohlone-trail",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -46,9 +46,10 @@ def test_del_valle_inventory_is_corroborated_and_old_gap_is_historical():
 def test_uncorroborated_ohlone_statement_is_not_a_current_rule():
     snapshot = records()
     statement = "claim-del-valle-ohlone-permit-page-statement"
-    assert any(item.claim_id == statement for item in snapshot.claims)
+    claim = next(item for item in snapshot.claims if item.claim_id == statement)
+    assert str(claim.temporal_scope.ends_on) == "2025-12-31"
     assert not any(item.claim_id == statement for item in snapshot.rules)
-    assert any(statement in item.related_ids for item in snapshot.gaps)
+    assert not any(statement in item.related_ids for item in snapshot.gaps)
 
 
 def test_volatile_conditions_require_pretrip_recheck():
@@ -308,3 +309,50 @@ def test_ordinance_38_manifest_is_complete():
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 40, "REPLACE": 7, "REMOVE": 0}
     assert sum(item.record_type == "source" for item in change.operations) == 2
+
+
+def test_ohlone_page_resolves_old_permit_ambiguity_by_date():
+    snapshot = records()
+    current = next(item for item in snapshot.claims
+                   if item.claim_id == "claim-ohlone-trail-permit-not-required-2026")
+    historical = next(item for item in snapshot.claims
+                      if item.claim_id == "claim-del-valle-ohlone-permit-page-statement")
+    assert current.value is False
+    assert str(current.temporal_scope.starts_on) == "2026-01-01"
+    assert str(historical.temporal_scope.ends_on) == "2025-12-31"
+    assert not any(item.gap_id == "gap-del-valle-ohlone-permit-current"
+                   for item in snapshot.gaps)
+
+
+def test_ohlone_overnight_reservation_remains_separate_from_trail_permit():
+    snapshot = records()
+    overnight = next(item for item in snapshot.claims
+                     if item.claim_id == "claim-ohlone-overnight-reservation")
+    assert overnight.value == {
+        "channel": "phone",
+        "designated_sites_only": True,
+        "minimum_advance_days": 2,
+        "required": True,
+    }
+    assert any(item.rule_id == "rule-ohlone-overnight-reservation"
+               for item in snapshot.rules)
+
+
+def test_ohlone_water_status_is_dated_and_requires_recheck():
+    snapshot = records()
+    water = next(item for item in snapshot.claims
+                 if item.claim_id == "claim-ohlone-water-availability-20260919")
+    assert water.temporal_scope.starts_on == water.temporal_scope.ends_on
+    assert water.value["potable"] is False
+    assert len(water.value["available"]) == 7
+    recheck = next(item for item in snapshot.derived_results
+                   if item.result_id == "result-del-valle-pretrip-recheck")
+    assert "ohlone_backcountry_water" in recheck.value["topics"]
+
+
+def test_ohlone_page_manifest_exercises_resolution_lifecycle():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-ohlone-park-page.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 49, "REPLACE": 3, "REMOVE": 1}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-reservation",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "overnight"
+      }
+    ],
+    "consequence": "For an overnight Ohlone Trail stay, reserve a designated campsite by phone at least two days ahead.",
+    "rule_id": "rule-ohlone-overnight-reservation",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

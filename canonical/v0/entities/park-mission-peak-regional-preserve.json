@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-mission-peak-regional-preserve",
+    "kind": "park",
+    "name": "Mission Peak Regional Preserve"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

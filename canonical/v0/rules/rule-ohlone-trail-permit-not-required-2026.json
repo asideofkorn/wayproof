@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-permit-not-required-2026",
+    "conditions": [
+      {
+        "dimension": "trip_date",
+        "operator": "greater_than_or_equal",
+        "value": "2026-01-01"
+      }
+    ],
+    "consequence": "Do not require an Ohlone trail permit for trips on or after 2026-01-01.",
+    "rule_id": "rule-ohlone-trail-permit-not-required-2026",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-01-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

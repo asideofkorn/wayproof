@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Ohlone Wilderness Regional Preserve.",
+    "entity_id": "park-ohlone-wilderness-regional-preserve",
+    "kind": "park",
+    "scope_id": "scope-ohlone-wilderness-preserve"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

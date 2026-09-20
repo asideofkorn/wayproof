@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-reservation",
+    "evidence_ids": [
+      "evidence-ohlone-overnight-reservation"
+    ],
+    "predicate": "overnight_camping_reservation",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "channel": "phone",
+      "designated_sites_only": true,
+      "minimum_advance_days": 2,
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

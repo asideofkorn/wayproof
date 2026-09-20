@@ -1,0 +1,486 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-ohlone-park-page",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-ohlone-wilderness-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "park-ohlone-wilderness-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-sunol-wilderness-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "park-sunol-wilderness-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-mission-peak-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "park-mission-peak-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-rose.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "peak-rose",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-eagle-springs.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-eagle-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-backpack-camp.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-backpack-camp",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-doe-camp.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-doe-camp",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-maggies-half-acre.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-maggies-half-acre",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-boyd-camp.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-boyd-camp",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-stromer-springs.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-stromer-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-ohlone-stewarts-camp.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "water-ohlone-stewarts-camp",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-ohlone-wilderness-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "scope-ohlone-wilderness-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-ohlone-wilderness-trail.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "scope-ohlone-wilderness-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-ohlone-park-page.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "source-ebrpd-ohlone-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-identity.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-identity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-trail.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-trail",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-permit-2026.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-permit-2026",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-camping.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-camping",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-water-20260919.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-water-20260919",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ohlone-hours-dogs.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "observation-ebrpd-ohlone-hours-dogs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-preserve-identity.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-preserve-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rose-peak-ohlone.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-rose-peak-ohlone",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-trail-use.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-trail-use",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-trail-traversed-parks.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-trail-traversed-parks",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-trail-permit-not-required-2026.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-trail-permit-not-required-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-overnight-reservation.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-overnight-reservation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-overnight-parking.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-overnight-parking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-water-availability-20260919.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-water-availability-20260919",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-hours.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-dogs-daytime-only.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ohlone-dogs-daytime-only",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-ohlone-gateway-current.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "evidence-ebrpd-ohlone-gateway-current",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-preserve-identity.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-preserve-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rose-peak-ohlone.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-rose-peak-ohlone",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-use.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-trail-use",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-traversed-parks.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-trail-traversed-parks",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-permit-not-required-2026.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-trail-permit-not-required-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-overnight-reservation.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-overnight-reservation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-overnight-parking.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-overnight-parking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-water-availability-20260919.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-water-availability-20260919",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-hours.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-dogs-daytime-only.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-ohlone-dogs-daytime-only",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ohlone-permit-page-statement.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-del-valle-ohlone-permit-page-statement",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ohlone-gateway.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "claim-del-valle-ohlone-gateway",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-trail-traverses-ohlone-wilderness-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "relationship-ohlone-trail-traverses-ohlone-wilderness-regional-preserve",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-trail-traverses-mission-peak-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "relationship-ohlone-trail-traverses-mission-peak-regional-preserve",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-trail-traverses-sunol-wilderness-regional-preserve.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "relationship-ohlone-trail-traverses-sunol-wilderness-regional-preserve",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-trail-traverses-del-valle-regional-park.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "relationship-ohlone-trail-traverses-del-valle-regional-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-trail-permit-not-required-2026.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "rule-ohlone-trail-permit-not-required-2026",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-overnight-reservation.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "rule-ohlone-overnight-reservation",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-water-treatment.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "rule-ohlone-water-treatment",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-trail-no-bikes-motor-vehicles.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "rule-ohlone-trail-no-bikes-motor-vehicles",
+      "record_type": "rule"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-ohlone-permit-current.json",
+      "reason": "Add the official Ohlone preserve page, resolve the 2026 permit change, and date volatile water status.",
+      "record_id": "gap-del-valle-ohlone-permit-current",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Ingest the official Ohlone preserve page, resolve the obsolete permit ambiguity, and preserve dated water availability."
+}
