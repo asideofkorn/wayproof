@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
+    "evidence_id": "evidence-ebrpd-mussels-contra-loma-quarantine",
+    "notes": "",
+    "observation_id": "observation-ebrpd-mussels-contra-loma",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

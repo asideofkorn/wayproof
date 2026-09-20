@@ -1,0 +1,492 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-invasive-mussel-program",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/program-ebrpd-invasive-mussel.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "program-ebrpd-invasive-mussel",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/reservoir-contra-loma.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "reservoir-contra-loma",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-ebrpd-inspected-lakes.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "scope-ebrpd-inspected-lakes",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-contra-loma-reservoir.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "scope-contra-loma-reservoir",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-invasive-mussel-program.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "source-ebrpd-invasive-mussel-program",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-program-scope.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-program-scope",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-history-survey.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-history-survey",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-clean-dry-pass.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-clean-dry-pass",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-registration-fees.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-registration-fees",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-failed-inspection.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-failed-inspection",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-banding.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-banding",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-contra-loma.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-contra-loma",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mussels-wet-weather.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "observation-ebrpd-mussels-wet-weather",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-inspection-scope.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-inspection-scope",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-del-valle-inspection.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-del-valle-inspection",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-history-survey.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-history-survey",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-clean-dry-pass.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-clean-dry-pass",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-motorized-registration.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-motorized-registration",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-inspection-fees.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-inspection-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-motorized-failure.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-motorized-failure",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-lake-specific-bands.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-lake-specific-bands",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-contra-loma-quarantine.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-contra-loma-quarantine",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-clean-drain-dry.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-clean-drain-dry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mussels-wet-weather.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "evidence-ebrpd-mussels-wet-weather",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-inspection-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-inspection-scope.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-inspection-scope",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-boat-inspection",
+        "evidence-del-valle-ebrpd-boat-inspection",
+        "evidence-ebrpd-mussels-del-valle-inspection"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-boat-inspection.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-del-valle-boat-inspection",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-history-survey"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-history-survey.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-history-survey",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-clean-dry-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-clean-dry-pass.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-clean-dry-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-motorized-registration"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-motorized-registration.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-motorized-registration",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-inspection-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-inspection-fees.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-inspection-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-motorized-failure"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-motorized-failure.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-motorized-failure",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-lake-specific-bands"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-lake-specific-bands.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-lake-specific-bands",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-contra-loma-quarantine",
+        "evidence-ebrpd-mussels-contra-loma-quarantine"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-contra-loma-quarantine.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-clean-drain-dry",
+        "evidence-ebrpd-mussels-clean-drain-dry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-clean-drain-dry.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-del-valle-ebrpd-clean-drain-dry",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-wet-weather"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-mussels-wet-weather.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "claim-ebrpd-mussels-wet-weather",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-inspection-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ebrpd-mussel-program-applies-del-valle.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "relationship-ebrpd-mussel-program-applies-del-valle",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-inspection-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-inspection-required.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-inspection-required",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-history-survey"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-history-survey.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-history-survey",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-clean-dry-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-clean-dry-pass.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-clean-dry-pass",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-motorized-registration"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-motorized-registration.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-motorized-registration",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-inspection-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-inspection-fees.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-inspection-fees",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-motorized-failure"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-motorized-failure.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-motorized-failure",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-lake-specific-bands"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-same-lake-band.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-same-lake-band",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mussels-wet-weather"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-mussels-wet-weather.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "rule-ebrpd-mussels-wet-weather",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ebrpd-mussels-nonmotorized-failure-quarantine.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "gap-ebrpd-mussels-nonmotorized-failure-quarantine",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ebrpd-mussels-current-flagged-waters.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "gap-ebrpd-mussels-current-flagged-waters",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ebrpd-mussels-standing-water-quarantine.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "gap-ebrpd-mussels-standing-water-quarantine",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-del-valle-current-fire-status",
+        "gap-del-valle-current-algae-status",
+        "gap-del-valle-current-flood-closure",
+        "gap-del-valle-marina-schedule-effective-year",
+        "gap-ebrpd-mussels-current-flagged-waters",
+        "gap-ebrpd-mussels-standing-water-quarantine"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add EBRPD invasive-mussel inspection evidence and equipment-context rules.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the EBRPD invasive-mussel program as the equipment and prior-waterbody fixture, including inspection, failure, banding, fee, and wet-weather semantics."
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-inspection-scope",
+    "conditions": [
+      {
+        "dimension": "equipment_type",
+        "operator": "in",
+        "value": [
+          "boat",
+          "kayak",
+          "canoe",
+          "sailboat",
+          "inflatable_craft",
+          "floating_board"
+        ]
+      }
+    ],
+    "consequence": "Complete the invasive-mussel inspection before launch and, when camping, before campground check-in.",
+    "rule_id": "rule-ebrpd-mussels-inspection-required",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

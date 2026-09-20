@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-inspection-fees",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-inspection-fees"
+    ],
+    "predicate": "inspection_fees",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": {
+      "motorized_usd": 10,
+      "non_motorized_receipt_valid_days": 30,
+      "non_motorized_reinspection_each_entry": true,
+      "non_motorized_usd": 5,
+      "refundable": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

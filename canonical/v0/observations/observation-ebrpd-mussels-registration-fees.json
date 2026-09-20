@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Motorized craft require current registration. Inspection fees are non-refundable: $10 motorized and $5 non-motorized. A motorized fee may be waived on a later same-lake banded visit; the non-motorized receipt is valid 30 days although inspection is required on every entry.",
+    "observation_id": "observation-ebrpd-mussels-registration-fees",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

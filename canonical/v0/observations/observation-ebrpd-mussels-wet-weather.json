@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inspection stations remain open in rain unless weather creates serious injury risk or the water agency closes launching. Rainwater may be distinguished from suspect water, but water in motors, sealed compartments, unexposed wet gear, or dirty vessel water fails inspection. Intact banded craft may launch in rain. Standing-water quarantine may be adjusted using the 100th Meridian calculator.",
+    "observation_id": "observation-ebrpd-mussels-wet-weather",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

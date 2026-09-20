@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "A failed watercraft may not launch. The page states a five-day wait before returning and specifically applies a five-day quarantine to failed motorized craft; it says failed non-motorized craft are subject to 'the quarantine period' without stating its duration. Launch fees are refunded, entry fees are refunded if the visitor exits, and inspection fees are not refunded.",
+    "observation_id": "observation-ebrpd-mussels-failed-inspection",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

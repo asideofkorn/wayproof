@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-inspection-fees",
+    "conditions": [],
+    "consequence": "Pay the applicable non-refundable inspection fee unless a stated same-lake banding or receipt exception applies.",
+    "rule_id": "rule-ebrpd-mussels-inspection-fees",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

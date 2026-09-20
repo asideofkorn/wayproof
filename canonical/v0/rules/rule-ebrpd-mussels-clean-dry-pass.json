@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-clean-dry-pass",
+    "conditions": [],
+    "consequence": "Present the watercraft and all associated equipment completely clean and dry.",
+    "rule_id": "rule-ebrpd-mussels-clean-dry-pass",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

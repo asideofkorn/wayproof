@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "EBRPD requires watercraft inspection at Contra Loma, Del Valle, Lake Chabot, Quarry Lakes, and Shadow Cliffs. Covered craft include boats, kayaks, canoes, sailboats, inflatable craft, and every form of floating board. Campers with watercraft must complete inspection before campground check-in.",
+    "observation_id": "observation-ebrpd-mussels-program-scope",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

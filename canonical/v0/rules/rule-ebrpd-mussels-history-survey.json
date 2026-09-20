@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-history-survey",
+    "conditions": [
+      {
+        "dimension": "equipment_prior_waterbody_events",
+        "operator": "within_days",
+        "value": 30
+      }
+    ],
+    "consequence": "Disclose all water bodies visited during the prior 30 days for the vessel-history survey.",
+    "rule_id": "rule-ebrpd-mussels-history-survey",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

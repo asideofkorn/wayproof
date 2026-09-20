@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-motorized-registration",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-motorized-registration"
+    ],
+    "predicate": "motorized_registration_required",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": true
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

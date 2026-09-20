@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-history-survey",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-history-survey"
+    ],
+    "predicate": "prior_waterbody_screening",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "list_is_growing": true,
+      "lookback_days": 30,
+      "published_flagged_waters": [
+        "Contra Loma Reservoir",
+        "Sacramento-San Joaquin Delta",
+        "San Luis Reservoir",
+        "Bethany Reservoir",
+        "San Justo Reservoir",
+        "Lake Mead",
+        "Lake Havasu",
+        "San Benito County waters",
+        "California south of Tehachapi Mountains",
+        "waters outside California"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

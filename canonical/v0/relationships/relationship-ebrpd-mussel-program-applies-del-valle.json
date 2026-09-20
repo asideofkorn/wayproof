@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-inspection-scope"
+    ],
+    "object_id": "lake-del-valle",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-ebrpd-mussel-program-applies-del-valle",
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inspection includes a 30-day vessel-history survey and hands-on visual check. The survey flags use in an infested water body, including Contra Loma, the Delta, San Luis, Bethany, San Justo, Lakes Mead and Havasu, San Benito County, California south of the Tehachapis, and waters outside California; the page warns that this list is growing.",
+    "observation_id": "observation-ebrpd-mussels-history-survey",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

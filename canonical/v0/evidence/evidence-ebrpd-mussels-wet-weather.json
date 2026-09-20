@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-wet-weather",
+    "evidence_id": "evidence-ebrpd-mussels-wet-weather",
+    "notes": "",
+    "observation_id": "observation-ebrpd-mussels-wet-weather",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

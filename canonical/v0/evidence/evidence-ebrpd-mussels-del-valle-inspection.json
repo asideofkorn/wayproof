@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-boat-inspection",
+    "evidence_id": "evidence-ebrpd-mussels-del-valle-inspection",
+    "notes": "",
+    "observation_id": "observation-ebrpd-mussels-program-scope",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
     "evidence_ids": [
-      "evidence-del-valle-ebrpd-contra-loma-quarantine"
+      "evidence-del-valle-ebrpd-contra-loma-quarantine",
+      "evidence-ebrpd-mussels-contra-loma-quarantine"
     ],
     "predicate": "cross_lake_boat_quarantine",
     "spatial_scope_ids": [
