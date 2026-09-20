@@ -135,12 +135,50 @@ def test_prepare_requires_operations_to_account_for_every_candidate_record():
     change = one_claim_change()
     change.operations = change.operations[:-1]
     writes.propose(change, "researcher")
-    assert writes.validate("change-1", "validator") == ()
+    errors = writes.validate("change-1", "validator")
+    assert "candidate record has no ADD or REPLACE operation: claim:claim-place-1" in errors
     explanation = writes.explain("change-1")
-    assert "candidate record has no ADD operation: claim:claim-place-1" in (
+    assert "candidate record has no ADD or REPLACE operation: claim:claim-place-1" in (
         explanation.validation_errors)
-    with pytest.raises(PreparationRejected, match="no ADD operation"):
+    with pytest.raises(PreparationRejected, match="validated"):
         writes.prepare("change-1", "candidate-builder")
+
+
+def test_replace_and_remove_are_applied_to_detached_candidate():
+    initial = CanonicalRecords(entities=[
+        Entity("replace-me", "place", "Old name"),
+        Entity("remove-me", "place", "Temporary place"),
+    ])
+    _, writes = service(initial)
+    change = ChangeSet(
+        "edit-1",
+        CanonicalRecords(entities=[Entity("replace-me", "place", "New name")]),
+        summary="Correct one entity and remove another",
+        operations=(
+            ChangeOperation(ChangeAction.REPLACE, "entity", "replace-me",
+                            "canonical/v0/entities/replace-me.json", "Correct name"),
+            ChangeOperation(ChangeAction.REMOVE, "entity", "remove-me",
+                            "canonical/v0/entities/remove-me.json", "Retract entity"),
+        ),
+    )
+    writes.propose(change, "researcher")
+    assert writes.validate("edit-1", "validator") == ()
+    prepared = writes.prepare("edit-1", "candidate-builder")
+    assert prepared.result.entities == [Entity("replace-me", "place", "New name")]
+
+
+def test_removal_that_breaks_existing_references_cannot_validate():
+    initial = one_claim_change("initial", "place-1").records
+    _, writes = service(initial)
+    change = ChangeSet(
+        "unsafe-remove", CanonicalRecords(), summary="Remove referenced entity",
+        operations=(ChangeOperation(
+            ChangeAction.REMOVE, "entity", "place-1",
+            "canonical/v0/entities/place-1.json", "Unsafe test removal"),))
+    writes.propose(change, "researcher")
+    errors = writes.validate("unsafe-remove", "validator")
+    assert any("claim claim-place-1 references unknown id: place-1" in error
+               for error in errors)
 
 
 def test_prepare_builds_a_detached_candidate_without_publishing_it():
@@ -169,6 +207,15 @@ def test_invalid_change_cannot_be_prepared():
     with pytest.raises(PreparationRejected, match="validated"):
         writes.prepare("bad", "candidate-builder")
     assert repository.snapshot() == CanonicalRecords()
+
+
+def test_operations_changed_after_validation_cannot_be_prepared():
+    _, writes = service()
+    writes.propose(one_claim_change(), "researcher")
+    assert writes.validate("change-1", "validator") == ()
+    writes._changes["change-1"].operations = ()
+    with pytest.raises(PreparationRejected, match="operations changed"):
+        writes.prepare("change-1", "candidate-builder")
 
 
 def test_a_changed_canonical_base_rejects_candidate_preparation():
