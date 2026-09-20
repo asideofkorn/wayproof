@@ -387,3 +387,45 @@ def test_ohlone_map_manifest_is_additive_with_bounded_corroboration():
     counts = {action: sum(item.action.value == action for item in change.operations)
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 30, "REPLACE": 2, "REMOVE": 0}
+
+
+def test_del_valle_picnic_inventory_captures_all_named_capacities():
+    snapshot = records()
+    item = next(value for value in snapshot.claims
+                if value.claim_id == "claim-del-valle-picnic-inventory")
+    assert len(item.value) == 12
+    assert item.value["Fiesta Grande"]["capacity"] == 500
+    assert item.value["Vista Del Lago"]["capacity"] == 35
+
+
+def test_del_valle_fishing_credentials_are_age_and_place_specific():
+    snapshot = records()
+    item = next(value for value in snapshot.claims
+                if value.claim_id == "claim-del-valle-fishing-license-requirements")
+    assert item.value == {
+        "california_license_required": True,
+        "district_permit_required": True,
+        "minimum_age": 16,
+    }
+    rule = next(value for value in snapshot.rules
+                if value.rule_id == "rule-del-valle-fishing-credentials")
+    assert rule.conditions[0].dimension == "participant_age"
+
+
+def test_del_valle_map_and_horse_capacity_uncertainties_remain_visible():
+    snapshot = records()
+    gaps = {item.gap_id for item in snapshot.gaps}
+    assert "gap-del-valle-map-no-fishing-segment" in gaps
+    assert "gap-del-valle-little-chaparral-horse-capacity" in gaps
+    map_claim = next(value for value in snapshot.claims
+                     if value.claim_id == "claim-del-valle-map-use-restrictions")
+    assert str(map_claim.temporal_scope.starts_on) == "2026-04-01"
+
+
+def test_del_valle_map_picnic_fishing_manifest_is_additive():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-del-valle-map-picnic-fishing.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 50, "REPLACE": 0, "REMOVE": 0}
+    assert sum(item.record_type == "source" for item in change.operations) == 3

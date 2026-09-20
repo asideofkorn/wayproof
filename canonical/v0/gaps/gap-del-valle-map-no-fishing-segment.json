@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-map-no-fishing-segment",
+    "question": "What exact shoreline endpoints define the map's no-fishing segment?",
+    "reason": "The extracted map text identifies a no-fishing shoreline but does not reliably preserve its geometric endpoints.",
+    "related_ids": [
+      "claim-del-valle-map-use-restrictions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

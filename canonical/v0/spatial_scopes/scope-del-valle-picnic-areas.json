@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The twelve reservable Del Valle picnic areas.",
+    "entity_id": "park-del-valle-regional-park",
+    "kind": "facility_group",
+    "scope_id": "scope-del-valle-picnic-areas"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

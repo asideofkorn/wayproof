@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page describes parking, restroom, lake, swim-area, concession, visitor-center, slope, and accessibility relationships for each named picnic area.",
+    "observation_id": "observation-del-valle-picnic-access",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-picnic-areas"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

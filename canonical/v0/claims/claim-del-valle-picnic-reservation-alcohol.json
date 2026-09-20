@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-picnic-reservation-alcohol",
+    "evidence_ids": [
+      "evidence-del-valle-picnic-reservation-alcohol"
+    ],
+    "predicate": "picnic_reservation_rules",
+    "spatial_scope_ids": [
+      "scope-del-valle-picnic-areas"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "additional_alcohol_permit_required": false,
+      "beer_and_wine_allowed": true,
+      "channel": "phone",
+      "sites": 12
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fishing-license-requirements",
+    "evidence_id": "evidence-del-valle-fishing-license-requirements",
+    "notes": "",
+    "observation_id": "observation-ebrpd-fishing-licenses",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

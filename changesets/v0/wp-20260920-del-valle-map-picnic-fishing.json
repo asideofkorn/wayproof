@@ -1,0 +1,459 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-del-valle-map-picnic-fishing",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-agua-vista.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-agua-vista",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-arroyo-mocho.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-arroyo-mocho",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-beach-view.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-beach-view",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-coyote-corner.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-coyote-corner",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-fiesta-grande.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-fiesta-grande",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-oak-point.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-oak-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-gray-pine.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-gray-pine",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-lichen-bark.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-lichen-bark",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-shady-oak.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-shady-oak",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-school-house-flats.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-school-house-flats",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-valley-oak.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-valley-oak",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/picnic-del-valle-vista-del-lago.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "picnic-del-valle-vista-del-lago",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-picnic-areas.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "scope-del-valle-picnic-areas",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-map-2026-04.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "source-ebrpd-del-valle-map-2026-04",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-picnic-areas.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "source-ebrpd-del-valle-picnic-areas",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-fishing.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "source-ebrpd-fishing",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-map-2026.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-map-2026",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-map-rules.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-map-rules",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-map-trails.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-map-trails",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-picnic-inventory.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-picnic-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-picnic-access.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-picnic-access",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-fishing-licenses.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-ebrpd-fishing-licenses",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-fishing-stocking.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-ebrpd-fishing-stocking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-little-chaparral-park-page.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "observation-del-valle-little-chaparral-park-page",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-map-revision-2026-04.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-map-revision-2026-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-map-facility-topology.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-map-facility-topology",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-map-use-restrictions.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-map-use-restrictions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-map-route-disclosure.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-map-route-disclosure",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-picnic-inventory.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-picnic-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-picnic-reservation-alcohol.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-picnic-reservation-alcohol",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-picnic-accessibility.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-picnic-accessibility",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-fishing-license-requirements.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-fishing-license-requirements",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-fishing-stocking.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-fishing-stocking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-little-chaparral-park-page-capacity.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "evidence-del-valle-little-chaparral-park-page-capacity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-map-revision-2026-04.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-map-revision-2026-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-map-facility-topology.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-map-facility-topology",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-map-use-restrictions.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-map-use-restrictions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-map-route-disclosure.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-map-route-disclosure",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-picnic-inventory.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-picnic-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-picnic-reservation-alcohol.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-picnic-reservation-alcohol",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-picnic-accessibility.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-picnic-accessibility",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-fishing-license-requirements.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-fishing-license-requirements",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-fishing-stocking.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-fishing-stocking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-little-chaparral-park-page-capacity.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "claim-del-valle-little-chaparral-park-page-capacity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-fishing-credentials.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "rule-del-valle-fishing-credentials",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-map-horse-restrictions.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "rule-del-valle-map-horse-restrictions",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-map-swim-designated-areas.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "rule-del-valle-map-swim-designated-areas",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-little-chaparral-horse-capacity.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "gap-del-valle-little-chaparral-horse-capacity",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-map-no-fishing-segment.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "gap-del-valle-map-no-fishing-segment",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-current-fishing-conditions.json",
+      "reason": "Add the April 2026 Del Valle map plus official picnic and fishing evidence, preserving applicability gaps.",
+      "record_id": "gap-del-valle-current-fishing-conditions",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Ingest the April 2026 park map, picnic inventory, and fishing requirements with explicit conflicts and spatial gaps."
+}

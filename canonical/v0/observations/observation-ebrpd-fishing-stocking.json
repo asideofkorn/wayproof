@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The District lists Del Valle among waters stocked with rainbow trout from fall through spring and channel catfish in summer, and manages other gamefish including bass, bluegill, sunfish, and crappie.",
+    "observation_id": "observation-ebrpd-fishing-stocking",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-fishing"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

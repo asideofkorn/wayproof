@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fishing-stocking",
+    "evidence_ids": [
+      "evidence-del-valle-fishing-stocking"
+    ],
+    "predicate": "fish_stocking",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "channel_catfish": "summer",
+      "rainbow_trout": "fall_through_spring"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

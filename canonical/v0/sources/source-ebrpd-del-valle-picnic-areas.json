@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/recreation/picnics/del-valle-picnic-areas",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-del-valle-picnic-areas"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

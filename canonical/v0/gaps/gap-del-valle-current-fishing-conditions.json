@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-current-fishing-conditions",
+    "question": "What current conditions or closures affect fishing at Del Valle?",
+    "reason": "Fishing conditions and stocking information are operationally volatile and should be checked near departure.",
+    "related_ids": [
+      "claim-del-valle-fishing-stocking",
+      "claim-ebrpd-alerts-closures-live"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

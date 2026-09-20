@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-little-chaparral-horse-capacity",
+    "question": "Does a Little Chaparral paddock currently allow one horse or one to two horses?",
+    "reason": "The main park page says one to two horses; the more specific camping page says one horse maximum.",
+    "related_ids": [
+      "claim-del-valle-little-chaparral-park-page-capacity",
+      "claim-del-valle-equestrian-camping"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

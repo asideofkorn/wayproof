@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fishing-license-requirements",
+    "evidence_ids": [
+      "evidence-del-valle-fishing-license-requirements"
+    ],
+    "predicate": "fishing_credentials",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "california_license_required": true,
+      "district_permit_required": true,
+      "minimum_age": 16
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

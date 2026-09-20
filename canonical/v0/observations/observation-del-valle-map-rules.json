@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map requires swimming in designated swim-beach areas, marks a no-fishing shoreline segment, prohibits horses in developed, lawn, picnic, and East/West Beach areas, and marks EBRPD land bank as no access.",
+    "observation_id": "observation-del-valle-map-rules",
+    "observed_at": "2026-04-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-map-2026-04"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

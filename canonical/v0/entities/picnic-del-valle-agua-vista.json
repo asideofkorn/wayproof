@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "picnic-del-valle-agua-vista",
+    "kind": "reservable_picnic_area",
+    "name": "Agua Vista"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

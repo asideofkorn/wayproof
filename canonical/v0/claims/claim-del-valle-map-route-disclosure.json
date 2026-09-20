@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-route-disclosure",
+    "evidence_ids": [
+      "evidence-del-valle-map-route-disclosure"
+    ],
+    "predicate": "mapped_route_information",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-04-01"
+    },
+    "value": {
+      "badger_cove_to_arroyo_road_miles": 5.14,
+      "mode_specific_trails": true,
+      "ohlone_connection": [
+        "Sunol Wilderness",
+        "Mission Peak"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-use-restrictions",
+    "conditions": [
+      {
+        "dimension": "equipment_type",
+        "operator": "equals",
+        "value": "horse"
+      }
+    ],
+    "consequence": "Do not take horses into developed areas, grassy lawns, picnic areas, or East or West Beach picnic and swim areas.",
+    "rule_id": "rule-del-valle-map-horse-restrictions",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-04-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
