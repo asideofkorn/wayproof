@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-site-361-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-site-361-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-reserveamerica-sunol-eb-110028"
+    ],
+    "subject_id": "campsite-reserveamerica-sunol-361",
+    "temporal_scope": null,
+    "value": {
+      "booking_url": "https://www.reserveamerica.com/explore/sunol/EB/110028/361/campsite-booking",
+      "details": {
+        "site_reserve_type": "Site-Specific",
+        "site_access": "Hike-In",
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "type_of_use": "Overnight",
+        "minimum_number_of_people": 1,
+        "maximum_number_of_people": 6,
+        "maximum_number_of_vehicles": 1,
+        "looking_for_category": "Tent Site",
+        "driveway_surface": "Gravel",
+        "shade_or_tree_cover": "Partial"
+      },
+      "latitude": null,
+      "listed_capacity": 6,
+      "longitude": null,
+      "loop": "Ohlone Backpack",
+      "name": "OHL: MAGGIE'S #1 BP CAMP (6)",
+      "product_id": "361",
+      "site_type": "BACKPACK SITE"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

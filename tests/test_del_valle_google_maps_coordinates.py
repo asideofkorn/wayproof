@@ -28,7 +28,9 @@ def test_google_maps_coordinates_are_separate_attributed_claims():
 def test_reserveamerica_profiles_remain_source_faithful_and_unmodified():
     snapshot = load_canonical(ROOT)
     profiles = [item for item in snapshot.claims
-                if item.predicate == "reserveamerica_site_profile"]
+                if item.predicate == "reserveamerica_site_profile"
+                and item.value.get("booking_url", "").startswith(
+                    "https://www.reserveamerica.com/explore/del-valle/EB/110003/")]
     missing = {item.value["name"] for item in profiles
                if item.value["latitude"] is None
                and item.value["longitude"] is None}

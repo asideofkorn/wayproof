@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-campsites-inventory",
+    "evidence_id": "evidence-reserveamerica-sunol-campsites-inventory",
+    "notes": "Structured directly from the live 19-row campsite inventory.",
+    "observation_id": "observation-reserveamerica-sunol-campsites-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

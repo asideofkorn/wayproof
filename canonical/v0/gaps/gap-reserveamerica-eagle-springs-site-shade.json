@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-reserveamerica-eagle-springs-site-shade",
+    "question": "What shade conditions apply at the four Eagle Springs backpack sites?",
+    "reason": "All four Eagle Springs detail pages omit the shade field while the other 15 facility sites publish one.",
+    "related_ids": [
+      "claim-reserveamerica-sunol-site-773-profile",
+      "claim-reserveamerica-sunol-site-774-profile",
+      "claim-reserveamerica-sunol-site-775-profile",
+      "claim-reserveamerica-sunol-site-776-profile"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "relationship_id": "relationship-reserveamerica-sunol-site-361-contained-by-camp",
+    "subject_id": "campsite-reserveamerica-sunol-361",
+    "predicate": "contained_by",
+    "object_id": "camp-ohlone-map-maggies-half-acre",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-site-361-profile"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

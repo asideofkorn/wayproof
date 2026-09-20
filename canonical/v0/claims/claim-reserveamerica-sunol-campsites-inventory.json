@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-campsites-inventory",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-campsites-inventory"
+    ],
+    "predicate": "reserveamerica_campsite_inventory",
+    "spatial_scope_ids": [
+      "scope-reserveamerica-sunol-eb-110028"
+    ],
+    "subject_id": "facility-reserveamerica-sunol-eb-110028",
+    "temporal_scope": null,
+    "value": {
+      "facility_id": "EB/110028",
+      "total_sites": 19,
+      "site_type": "BACKPACK SITE",
+      "loops": {
+        "Mission Peak Backpack": 4,
+        "Ohlone Backpack": 8,
+        "Sunol Backpack": 7
+      },
+      "open_year_round": true,
+      "nightly_fee_usd": 15,
+      "reservation_service_fee_usd": 8,
+      "maximum_nights": 3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

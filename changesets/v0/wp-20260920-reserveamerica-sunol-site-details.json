@@ -1,0 +1,1214 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-reserveamerica-sunol-site-details",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-reserveamerica-sunol-eb-110028.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "facility-reserveamerica-sunol-eb-110028",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-reserveamerica-sunol-eb-110028.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "scope-reserveamerica-sunol-eb-110028",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-campsites.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-campsites",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-campsites-inventory.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-campsites-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-campsites-inventory.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-campsites-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-campsites-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-campsites-inventory.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-campsites-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-facility-three-loop-scope.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-facility-three-loop-scope",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-773.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-773",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-773.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-773",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-773.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-773",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-773-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-773-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-773-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-773-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-773-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-773-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-773-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-773-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-774.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-774",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-774.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-774",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-774.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-774",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-774-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-774-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-774-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-774-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-774-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-774-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-774-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-774-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-775.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-775",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-775.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-775",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-775.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-775",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-775-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-775-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-775-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-775-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-775-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-775-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-775-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-775-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-776.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-776",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-776.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-776",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-776.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-776",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-776-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-776-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-776-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-776-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-776-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-776-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-776-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-776-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-313.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-313",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-313.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-313",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-313.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-313",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-313-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-313-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-313-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-313-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-313-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-313-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-313-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-313-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-314.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-314",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-314.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-314",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-314.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-314",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-314-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-314-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-314-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-314-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-314-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-314-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-314-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-314-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-317.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-317",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-317.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-317",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-317.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-317",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-317-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-317-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-317-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-317-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-317-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-317-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-317-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-317-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-355.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-355",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-355.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-355",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-355.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-355",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-355-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-355-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-355-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-355-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-355-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-355-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-355-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-355-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-361.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-361",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-361.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-361",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-361.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-361",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-361-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-361-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-361-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-361-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-361-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-361-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-361-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-361-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-379.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-379",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-379.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-379",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-379.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-379",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-379-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-379-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-379-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-379-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-379-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-379-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-379-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-379-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-392.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-392",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-392.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-392",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-392.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-392",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-392-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-392-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-392-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-392-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-392-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-392-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-392-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-392-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-396.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-396",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-396.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-396",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-396.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-396",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-396-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-396-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-396-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-396-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-396-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-396-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-396-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-396-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-390.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-390",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-390.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-390",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-390.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-390",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-390-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-390-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-390-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-390-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-390-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-390-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-390-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-390-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-357.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-357",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-357.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-357",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-357.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-357",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-357-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-357-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-357-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-357-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-357-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-357-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-357-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-357-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-375.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-375",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-375.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-375",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-375.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-375",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-375-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-375-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-375-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-375-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-375-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-375-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-375-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-375-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-391.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-391",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-391.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-391",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-391.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-391",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-391-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-391-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-391-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-391-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-391-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-391-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-391-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-391-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-389.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-389",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-389.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-389",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-389.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-389",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-389-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-389-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-389-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-389-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-389-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-389-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-389-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-389-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-393.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-393",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-393.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-393",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-393.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-393",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-393-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-393-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-393-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-393-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-393-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-393-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-393-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-393-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-reserveamerica-sunol-316.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "campsite-reserveamerica-sunol-316",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-sunol-site-316.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "source-reserveamerica-sunol-site-316",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-reserveamerica-sunol-site-316.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "observation-reserveamerica-sunol-site-316",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-sunol-site-316-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "evidence-reserveamerica-sunol-site-316-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-316-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-site-316-profile.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "claim-reserveamerica-sunol-site-316-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-site-316-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-sunol-site-316-contained-by-camp.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "relationship-reserveamerica-sunol-site-316-contained-by-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-reserveamerica-sunol-site-water-restroom-proximity.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "gap-reserveamerica-sunol-site-water-restroom-proximity",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-reserveamerica-sunol-site-coordinates.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "gap-reserveamerica-sunol-site-coordinates",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-reserveamerica-eagle-springs-site-shade.json",
+      "reason": "Capture the complete live ReserveAmerica Sunol facility inventory and source-faithful individual site details.",
+      "record_id": "gap-reserveamerica-eagle-springs-site-shade",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-reserveamerica-sunol-facility-three-loop-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reserveamerica-sunol-backpack-facility.json",
+      "reason": "Correct EB/110028 from a Sunol-camp scope to the shared three-loop booking facility demonstrated by its live inventory.",
+      "record_id": "claim-reserveamerica-sunol-backpack-facility",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Capture all 19 live EB/110028 campsite detail pages, relate them to six existing camp entities, preserve missing coordinates and site-proximity data as gaps, and correct the facility's geographic scope."
+}

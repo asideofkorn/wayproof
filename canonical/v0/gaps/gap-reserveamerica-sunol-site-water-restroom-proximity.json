@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-reserveamerica-sunol-site-water-restroom-proximity",
+    "question": "What are the water and restroom proximity details for each of the 19 backpack sites?",
+    "reason": "Neither the inventory nor any individual ReserveAmerica site-detail page publishes site-level water or restroom proximity.",
+    "related_ids": [
+      "claim-reserveamerica-sunol-campsites-inventory"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
