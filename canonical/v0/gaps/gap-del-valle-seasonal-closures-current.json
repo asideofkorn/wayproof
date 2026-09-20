@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-seasonal-closures-current",
+    "question": "Have Del Valle seasonal closures changed since the 2026-05-20 sheet?",
+    "reason": "The closure sheet explicitly says dates may change without notice.",
+    "related_ids": [
+      "claim-del-valle-seasonal-closures-2026",
+      "claim-ebrpd-alerts-closures-live"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

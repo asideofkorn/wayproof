@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The FAQ describes five year-round pilot cabins, phone-only booking three business days to twelve weeks ahead, prices, deposits, stay limits, occupancy, vehicles, accessibility, check-in/out, no-show handling, and cancellation tiers.",
+    "observation_id": "observation-del-valle-cabin-faq-operations",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-cabin-faq"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

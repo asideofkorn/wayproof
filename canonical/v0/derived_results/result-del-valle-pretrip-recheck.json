@@ -1,7 +1,7 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Operational conditions, swimming schedules and fees, water-quality meanings, access, inspection history, and weather procedures can change and must be checked near departure.",
+    "explanation": "Operational conditions, swimming schedules and fees, water-quality meanings, access, inspection history, and weather procedures can change and must be checked near departure. Campground and individual-site closures also require a live alert check.",
     "input_ids": [
       "claim-del-valle-volatile-alerts",
       "claim-del-valle-boat-inspection",
@@ -23,7 +23,10 @@
       "gap-ebrpd-algae-advisory-level-actions",
       "gap-del-valle-swimming-parking-fee",
       "gap-del-valle-lifeguard-schedule-year",
-      "gap-del-valle-stoplight-meanings"
+      "gap-del-valle-stoplight-meanings",
+      "claim-ebrpd-alerts-closures-live",
+      "claim-del-valle-seasonal-closures-2026",
+      "gap-del-valle-seasonal-closures-current"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-del-valle-pretrip-recheck",
@@ -41,7 +44,8 @@
         "cross_lake_boat_quarantine",
         "flagged_prior_waterbodies",
         "inspection_fee_and_band_eligibility",
-        "wet_weather_inspection_protocol"
+        "wet_weather_inspection_protocol",
+        "campground_and_site_closures"
       ]
     }
   },

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-pricing",
+    "evidence_ids": [
+      "evidence-del-valle-cabin-pricing"
+    ],
+    "predicate": "cabin_pricing",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "memorial_labor_day_minimum_nights": 3,
+      "nightly_usd": 100,
+      "nonrefundable_service_fee_usd": 8,
+      "refundable_security_deposit_usd": 100,
+      "weekend_minimum_nights": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

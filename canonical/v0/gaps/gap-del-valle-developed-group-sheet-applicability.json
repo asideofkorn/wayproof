@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-developed-group-sheet-applicability",
+    "question": "Does the 2026 district group-capacity row apply to both Wild Turkey and Punta Vaca?",
+    "reason": "The sheet labels Del Valle developed sites collectively rather than naming the sites.",
+    "related_ids": [
+      "claim-del-valle-developed-group-capacity-2026",
+      "claim-del-valle-group-camp-details"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

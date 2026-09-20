@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-amenities",
+    "evidence_ids": [
+      "evidence-del-valle-cabin-amenities"
+    ],
+    "predicate": "cabin_amenities",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "bedding_provided": false,
+      "extension_cords": false,
+      "hvac": true,
+      "inside_cooking": false,
+      "interior_square_feet": 283.5,
+      "open_flame_inside": false,
+      "porch_square_feet": 81,
+      "sleeps": 5,
+      "surge_protectors": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

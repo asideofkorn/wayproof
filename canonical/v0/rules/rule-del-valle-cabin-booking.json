@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-cabins",
+    "conditions": [
+      {
+        "dimension": "lodging_type",
+        "operator": "equals",
+        "value": "cabin"
+      }
+    ],
+    "consequence": "Reserve a Del Valle cabin by phone at least three business days and no more than twelve weeks before arrival.",
+    "rule_id": "rule-del-valle-cabin-booking",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Each 283.5-square-foot cabin has an 81-square-foot porch, beds for five, HVAC, electrical amenities and detectors. Cooking, open flame, extension cords, and surge protectors are prohibited inside; guests bring bedding.",
+    "observation_id": "observation-del-valle-cabin-faq-amenities",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-cabin-faq"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

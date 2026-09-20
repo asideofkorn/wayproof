@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-accessibility",
+    "evidence_ids": [
+      "evidence-del-valle-cabin-accessibility"
+    ],
+    "predicate": "cabin_accessibility",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "accessible_cabins": [
+        55,
+        56
+      ],
+      "placard_not_required": [
+        56
+      ],
+      "placard_required": [
+        55
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

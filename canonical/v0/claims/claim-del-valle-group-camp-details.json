@@ -1,0 +1,77 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-group-camp-details",
+    "evidence_ids": [
+      "evidence-del-valle-group-camp-details"
+    ],
+    "predicate": "named_group_camp_details",
+    "spatial_scope_ids": [
+      "scope-del-valle-group-camps"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "Ardilla": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "primitive",
+        "parking_passes": 10
+      },
+      "Cedar Camp": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "primitive",
+        "parking_passes": 10,
+        "water": false
+      },
+      "Eagles View": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "primitive",
+        "parking_passes": 10
+      },
+      "Hetch Hetchy": {
+        "capacity": [
+          50,
+          100
+        ],
+        "kind": "primitive",
+        "parking_passes": 20
+      },
+      "Punta Vaca": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "developed",
+        "parking_passes": 15
+      },
+      "Venados": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "primitive",
+        "parking_passes": 10,
+        "water_at_site": false
+      },
+      "Wild Turkey": {
+        "capacity": [
+          17,
+          50
+        ],
+        "kind": "developed",
+        "parking_passes": 15
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

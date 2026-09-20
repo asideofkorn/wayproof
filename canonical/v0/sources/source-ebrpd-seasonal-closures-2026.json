@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/New-Seasonal-Closures-05.20.26.pdf",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-seasonal-closures-2026"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

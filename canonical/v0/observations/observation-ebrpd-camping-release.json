@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "District family and cabin inventory is released on a rolling twelve-week window. Group and backpack inventory is released in six-month blocks by phone, with at most two reservations per opening-date call.",
+    "observation_id": "observation-ebrpd-camping-release",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

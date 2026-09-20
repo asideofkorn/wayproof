@@ -1,0 +1,648 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-del-valle-campground-corpus",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-wild-turkey.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-wild-turkey",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-punta-vaca.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-punta-vaca",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-cedar.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-cedar",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-ardilla.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-ardilla",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-eagles-view.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-eagles-view",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-venados.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-venados",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-hetch-hetchy.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/group-camp-del-valle-caballo-loco.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "group-camp-del-valle-caballo-loco",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-del-valle-little-chaparral.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "camp-del-valle-little-chaparral",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-group-camps.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "scope-del-valle-group-camps",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-equestrian-camps.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "scope-del-valle-equestrian-camps",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-camping.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-del-valle-camping",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-cabin-faq.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-del-valle-cabin-faq",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-camping.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-camping",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-alerts-closures.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-alerts-closures",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-camp-map.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-del-valle-camp-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-general-brochure-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-general-brochure-2025",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-group-camping-capacity-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-group-camping-capacity-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-seasonal-closures-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "source-ebrpd-seasonal-closures-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-camping-inventory.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-camping-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-camping-groups.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-camping-groups",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-camping-reservations.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-camping-reservations",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-cabin-faq-operations.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-cabin-faq-operations",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-cabin-faq-amenities.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-cabin-faq-amenities",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-camping-release.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-ebrpd-camping-release",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-alerts-recheck.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-ebrpd-alerts-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-camp-map-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-camp-map-2025",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-brochure-2025-del-valle.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-ebrpd-brochure-2025-del-valle",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-group-capacity-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-group-capacity-2026",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-seasonal-closures-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "observation-del-valle-seasonal-closures-2026",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camping-current-inventory.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-camping-current-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camping-current-cabins.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-camping-current-cabins",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camping-current-group-booking.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-camping-current-group-booking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-group-camp-inventory.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-group-camp-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-group-camp-details.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-group-camp-details",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-equestrian-camping.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-equestrian-camping",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-cabin-site-use.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-cabin-site-use",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-cabin-pricing.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-cabin-pricing",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-cabin-accessibility.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-cabin-accessibility",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-cabin-amenities.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-cabin-amenities",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-camping-release-policy.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-ebrpd-camping-release-policy",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camp-map-inventory-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-camp-map-inventory-2025",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camp-map-group-lead-time-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-camp-map-group-lead-time-2025",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-brochure-activities-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-brochure-activities-2025",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-developed-group-capacity-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-developed-group-capacity-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-seasonal-closures-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-del-valle-seasonal-closures-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-alerts-closures-live.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "evidence-ebrpd-alerts-closures-live",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-inventory.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-campground-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-cabins.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-ebrpd-cabins",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-group-booking.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-group-booking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-group-camp-inventory.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-group-camp-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-group-camp-details.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-group-camp-details",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-equestrian-camping.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-equestrian-camping",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-cabin-site-use.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-cabin-site-use",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-cabin-pricing.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-cabin-pricing",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-cabin-accessibility.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-cabin-accessibility",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-cabin-amenities.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-cabin-amenities",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-camping-release-policy.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-ebrpd-camping-release-policy",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-camp-map-inventory-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-camp-map-inventory-2025",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-camp-map-group-lead-time-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-camp-map-group-lead-time-2025",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-brochure-activities-2025.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-brochure-activities-2025",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-developed-group-capacity-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-developed-group-capacity-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-seasonal-closures-2026.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-del-valle-seasonal-closures-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-alerts-closures-live.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "claim-ebrpd-alerts-closures-live",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-cabin-booking.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "rule-del-valle-cabin-booking",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-cabin-stay.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "rule-del-valle-cabin-stay",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-group-vehicle-types.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "rule-del-valle-group-vehicle-types",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-camp-map-currentness.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "gap-del-valle-camp-map-currentness",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-developed-group-sheet-applicability.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "gap-del-valle-developed-group-sheet-applicability",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-seasonal-closures-current.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "gap-del-valle-seasonal-closures-current",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add the official EBRPD Del Valle campground corpus, preserving dated conflicts and live recheck boundaries.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Ingest eight official EBRPD campground sources with current, dated, conflicting, and volatile evidence kept distinct."
+}

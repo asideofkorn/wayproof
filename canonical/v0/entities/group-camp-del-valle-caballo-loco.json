@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "group-camp-del-valle-caballo-loco",
+    "kind": "equestrian_group_campsite",
+    "name": "Caballo Loco"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

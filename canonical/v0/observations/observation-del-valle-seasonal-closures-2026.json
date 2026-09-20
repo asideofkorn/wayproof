@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "Updated 2026-05-20: cabins close Jan 1-31; Cedar is closed until further notice; Caballo Loco, Hetch Hetchy, Venados and Wild Turkey close Nov 1-Mar 31; family sites 65-110 close Nov 1-Mar 31; sites 111-150 and Punta Vaca close Nov 1-Apr 30. Dates may change without notice.",
+    "observation_id": "observation-del-valle-seasonal-closures-2026",
+    "observed_at": "2026-05-20T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-seasonal-closures-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

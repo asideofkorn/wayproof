@@ -1,0 +1,56 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-seasonal-closures-2026",
+    "evidence_ids": [
+      "evidence-del-valle-seasonal-closures-2026"
+    ],
+    "predicate": "published_seasonal_closures",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-05-20"
+    },
+    "value": {
+      "Caballo Loco": [
+        "11-01",
+        "03-31"
+      ],
+      "Cedar Camp": "until_further_notice",
+      "Hetch Hetchy": [
+        "11-01",
+        "03-31"
+      ],
+      "Punta Vaca": [
+        "11-01",
+        "04-30"
+      ],
+      "Venados": [
+        "11-01",
+        "03-31"
+      ],
+      "Wild Turkey": [
+        "11-01",
+        "03-31"
+      ],
+      "cabins": [
+        "01-01",
+        "01-31"
+      ],
+      "family_sites_111_150": [
+        "11-01",
+        "04-30"
+      ],
+      "family_sites_65_110": [
+        "11-01",
+        "03-31"
+      ],
+      "subject_to_change_without_notice": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

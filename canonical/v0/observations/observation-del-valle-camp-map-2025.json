@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1",
+      "PDF page 2"
+    ],
+    "content": "The campground map marked Rev. 2025/11 reports 145 family sites, a five-business-day group booking minimum, and rules and site details that conflict in places with newer live pages.",
+    "observation_id": "observation-del-valle-camp-map-2025",
+    "observed_at": "2025-11-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-camp-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

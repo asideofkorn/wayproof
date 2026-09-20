@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The developed and primitive group camps at Del Valle.",
+    "entity_id": "park-del-valle-regional-park",
+    "kind": "facility_group",
+    "scope_id": "scope-del-valle-group-camps"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

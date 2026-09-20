@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "group-camp-del-valle-eagles-view",
+    "kind": "group_campsite",
+    "name": "Eagles View"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

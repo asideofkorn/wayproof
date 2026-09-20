@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The 2026 group camping sheet gives Del Valle developed group camping a minimum of 17 people, maximum of 50, and 15 vehicles, while warning that RVs and similar vehicles are not permitted.",
+    "observation_id": "observation-del-valle-group-capacity-2026",
+    "observed_at": "2026-01-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-group-camping-capacity-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

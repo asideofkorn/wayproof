@@ -1,21 +1,19 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-group-booking",
+    "claim_id": "claim-ebrpd-alerts-closures-live",
     "evidence_ids": [
-      "evidence-del-valle-group-booking",
-      "evidence-del-valle-camping-current-group-booking"
+      "evidence-ebrpd-alerts-closures-live"
     ],
-    "predicate": "group_camping_reservation",
+    "predicate": "live_alert_source",
     "spatial_scope_ids": [
       "scope-del-valle-park"
     ],
     "subject_id": "park-del-valle-regional-park",
     "temporal_scope": null,
     "value": {
-      "channel": "phone",
-      "minimum_advance_business_days": 3,
-      "minimum_group_size": 17
+      "use": "pretrip_recheck",
+      "volatile": true
     }
   },
   "record_type": "claim",

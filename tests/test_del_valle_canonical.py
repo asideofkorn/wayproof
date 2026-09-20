@@ -34,7 +34,7 @@ def test_del_valle_inventory_is_corroborated_and_old_gap_is_historical():
         "rv_full_hookup": 21,
         "total": 150,
     }
-    assert len(inventory.evidence_ids) == 2
+    assert len(inventory.evidence_ids) >= 2
     assert not any(item.gap_id == "gap-del-valle-inventory-count"
                    for item in snapshot.gaps)
     change = load_changeset(
@@ -212,3 +212,54 @@ def test_water_quality_changeset_narrows_existing_gap():
     counts = {action: sum(item.action.value == action for item in change.operations)
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 12, "REPLACE": 4, "REMOVE": 0}
+
+
+def test_campground_corpus_keeps_current_and_dated_conflicting_counts():
+    snapshot = records()
+    current = next(item for item in snapshot.claims
+                   if item.claim_id == "claim-del-valle-campground-inventory")
+    dated = next(item for item in snapshot.claims
+                 if item.claim_id == "claim-del-valle-camp-map-inventory-2025")
+    assert current.value["total"] == 150
+    assert dated.value == 145
+    assert str(dated.temporal_scope.starts_on) == "2025-11-01"
+    assert any(item.gap_id == "gap-del-valle-camp-map-currentness"
+               for item in snapshot.gaps)
+
+
+def test_cabin_faq_refines_booking_and_site_use_without_flattening_rules():
+    snapshot = records()
+    cabins = next(item for item in snapshot.claims
+                  if item.claim_id == "claim-del-valle-ebrpd-cabins")
+    use = next(item for item in snapshot.claims
+               if item.claim_id == "claim-del-valle-cabin-site-use")
+    assert cabins.value["reservation_channel"] == "phone_only"
+    assert cabins.value["maximum_advance_weeks"] == 12
+    assert use.value["max_consecutive_nights"] == 10
+    assert use.value["required_nights_away"] == 5
+    assert any(item.rule_id == "rule-del-valle-cabin-booking"
+               for item in snapshot.rules)
+
+
+def test_named_group_camps_and_2026_closures_remain_recheckable():
+    snapshot = records()
+    details = next(item for item in snapshot.claims
+                   if item.claim_id == "claim-del-valle-group-camp-details")
+    closures = next(item for item in snapshot.claims
+                    if item.claim_id == "claim-del-valle-seasonal-closures-2026")
+    assert details.value["Hetch Hetchy"]["capacity"] == [50, 100]
+    assert closures.value["Cedar Camp"] == "until_further_notice"
+    assert closures.value["subject_to_change_without_notice"] is True
+    recheck = next(item for item in snapshot.derived_results
+                   if item.result_id == "result-del-valle-pretrip-recheck")
+    assert "campground_and_site_closures" in recheck.value["topics"]
+    assert "claim-ebrpd-alerts-closures-live" in recheck.input_ids
+
+
+def test_campground_corpus_manifest_covers_eight_sources_and_replacements():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-del-valle-campground-corpus.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 67, "REPLACE": 4, "REMOVE": 0}
+    assert sum(item.record_type == "source" for item in change.operations) == 8

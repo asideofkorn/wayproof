@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-group-camp-inventory",
+    "conditions": [
+      {
+        "dimension": "camping_type",
+        "operator": "equals",
+        "value": "group"
+      }
+    ],
+    "consequence": "RVs, trailers, motorhomes, buses, food trucks, and caterers are not permitted at Del Valle group camps.",
+    "rule_id": "rule-del-valle-group-vehicle-types",
+    "spatial_scope_ids": [
+      "scope-del-valle-group-camps"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

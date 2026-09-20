@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-site-use",
+    "conditions": [
+      {
+        "dimension": "lodging_type",
+        "operator": "equals",
+        "value": "cabin"
+      }
+    ],
+    "consequence": "A cabin stay is limited to ten consecutive nights, followed by five nights away, and twenty cabin nights per calendar year.",
+    "rule_id": "rule-del-valle-cabin-stay",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
