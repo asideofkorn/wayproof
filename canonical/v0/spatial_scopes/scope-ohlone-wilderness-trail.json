@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The Ohlone Wilderness Trail corridor.",
+    "entity_id": "trail-ohlone-wilderness",
+    "kind": "trail_corridor",
+    "scope_id": "scope-ohlone-wilderness-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

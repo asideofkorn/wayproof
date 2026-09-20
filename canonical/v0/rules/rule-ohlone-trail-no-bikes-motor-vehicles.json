@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-use",
+    "conditions": [],
+    "consequence": "Do not use bicycles or motor vehicles on the Ohlone Wilderness Trail.",
+    "rule_id": "rule-ohlone-trail-no-bikes-motor-vehicles",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

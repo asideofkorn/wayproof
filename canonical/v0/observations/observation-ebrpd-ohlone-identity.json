@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official page describes a 9,737-acre preserve accessible only via the Ohlone Wilderness Trail, with 3,817-foot Rose Peak as its centerpiece.",
+    "observation_id": "observation-ebrpd-ohlone-identity",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

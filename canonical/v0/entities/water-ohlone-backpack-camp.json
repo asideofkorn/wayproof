@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "water-ohlone-backpack-camp",
+    "kind": "water_source",
+    "name": "Backpack Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

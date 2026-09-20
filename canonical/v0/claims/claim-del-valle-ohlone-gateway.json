@@ -4,7 +4,8 @@
     "claim_id": "claim-del-valle-ohlone-gateway",
     "evidence_ids": [
       "evidence-del-valle-ohlone-gateway",
-      "evidence-del-valle-ebrpd-ohlone-gateway"
+      "evidence-del-valle-ebrpd-ohlone-gateway",
+      "evidence-ebrpd-ohlone-gateway-current"
     ],
     "predicate": "eastern_gateway",
     "spatial_scope_ids": [

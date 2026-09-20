@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "water-ohlone-stewarts-camp",
+    "kind": "water_source",
+    "name": "Stewart's Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

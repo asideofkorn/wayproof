@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Updated 2026-09-19: Eagle Springs, Backpack Camp, Doe Camp, Maggie's Half Acre, Boyd Camp, Stromer Springs, and Stewart's Camp report water available. All water is non-potable and must be filtered, treated, or boiled for human consumption.",
+    "observation_id": "observation-ebrpd-ohlone-water-20260919",
+    "observed_at": "2026-09-19T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

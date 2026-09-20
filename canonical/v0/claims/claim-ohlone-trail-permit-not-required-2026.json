@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-permit-not-required-2026",
+    "evidence_ids": [
+      "evidence-ohlone-trail-permit-not-required-2026"
+    ],
+    "predicate": "trail_permit_required",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-01-01"
+    },
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

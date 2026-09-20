@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "As of 2026-01-01, an Ohlone trail permit is not required and no additional permits will be sold. An overnight backpacking reservation is still required.",
+    "observation_id": "observation-ebrpd-ohlone-permit-2026",
+    "observed_at": "2026-01-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

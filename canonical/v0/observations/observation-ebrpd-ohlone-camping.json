@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Overnight use requires a separate reservation for a designated trail campsite, made by phone at least two days in advance. Reserved overnight parking is allowed at Del Valle, Sunol, and Mission Peak parking lots.",
+    "observation_id": "observation-ebrpd-ohlone-camping",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

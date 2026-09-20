@@ -10,7 +10,10 @@
       "scope-del-valle-park"
     ],
     "subject_id": "trail-ohlone-wilderness",
-    "temporal_scope": null,
+    "temporal_scope": {
+      "ends_on": "2025-12-31",
+      "starts_on": null
+    },
     "value": "The ReserveAmerica overview states that a permit is required on portions of the trail."
   },
   "record_type": "claim",

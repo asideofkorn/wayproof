@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-preserve-identity",
+    "evidence_ids": [
+      "evidence-ohlone-preserve-identity"
+    ],
+    "predicate": "published_identity",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-preserve"
+    ],
+    "subject_id": "park-ohlone-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": "ohlone_wilderness_trail_only",
+      "area_acres": 9737
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

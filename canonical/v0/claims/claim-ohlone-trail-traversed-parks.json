@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-traversed-parks",
+    "evidence_ids": [
+      "evidence-ohlone-trail-traversed-parks"
+    ],
+    "predicate": "traversed_parks",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": [
+      "park-ohlone-wilderness-regional-preserve",
+      "park-mission-peak-regional-preserve",
+      "park-sunol-wilderness-regional-preserve",
+      "park-del-valle-regional-park"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

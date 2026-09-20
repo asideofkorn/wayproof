@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-trail-traversed-parks"
+    ],
+    "object_id": "park-ohlone-wilderness-regional-preserve",
+    "predicate": "traverses",
+    "relationship_id": "relationship-ohlone-trail-traverses-ohlone-wilderness-regional-preserve",
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
