@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-family-vehicles",
     "evidence_ids": [
-      "evidence-del-valle-family-vehicles"
+      "evidence-del-valle-family-vehicles",
+      "evidence-ordinance38-family-vehicles"
     ],
     "predicate": "vehicles_per_family_site",
     "spatial_scope_ids": [

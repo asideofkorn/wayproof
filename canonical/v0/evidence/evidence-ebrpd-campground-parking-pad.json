@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-campground-parking-pad",
+    "evidence_id": "evidence-ebrpd-campground-parking-pad",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ordinance-38-parking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

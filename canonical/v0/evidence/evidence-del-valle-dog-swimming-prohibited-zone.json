@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-dog-swimming-prohibited-zone",
+    "evidence_id": "evidence-del-valle-dog-swimming-prohibited-zone",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ordinance-38-dogs",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

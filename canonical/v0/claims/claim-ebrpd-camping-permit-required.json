@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-camping-permit-required",
+    "evidence_ids": [
+      "evidence-ebrpd-camping-permit-required"
+    ],
+    "predicate": "camping_authorization",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "covered_types": [
+        "tent",
+        "rv",
+        "cabin",
+        "walk_in"
+      ],
+      "designated_areas_only": true,
+      "valid_district_permit_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

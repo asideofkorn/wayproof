@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official EBRPD Ordinance 38 page links to an online code and a PDF of the rules and regulations.",
+    "observation_id": "observation-ebrpd-ordinance-38-publication",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ordinance-38-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ordinance-boat-launch",
+    "evidence_id": "evidence-del-valle-ordinance-boat-launch",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ordinance-38-del-valle-boating",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

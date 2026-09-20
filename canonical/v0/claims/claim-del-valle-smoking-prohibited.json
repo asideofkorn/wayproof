@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-smoking-prohibited",
     "evidence_ids": [
-      "evidence-del-valle-smoking-prohibited"
+      "evidence-del-valle-smoking-prohibited",
+      "evidence-ordinance38-smoking"
     ],
     "predicate": "smoking_and_vaping_allowed",
     "spatial_scope_ids": [

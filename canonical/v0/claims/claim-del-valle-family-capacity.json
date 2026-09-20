@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-family-capacity",
     "evidence_ids": [
-      "evidence-del-valle-family-capacity"
+      "evidence-del-valle-family-capacity",
+      "evidence-ordinance38-family-capacity"
     ],
     "predicate": "people_per_family_site",
     "spatial_scope_ids": [

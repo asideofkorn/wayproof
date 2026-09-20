@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF pages 5-6"
+    ],
+    "content": "Revised September 2023. Sections 400.1-400.6 require a valid permit in designated camping areas; limit family sites to eight occupants, 15 consecutive days and 30 days per year with a two-day break; regulate disturbing generators and sound devices; govern juveniles; and apply camping rules to tent, RV, cabin, and walk-in camping.",
+    "observation_id": "observation-ebrpd-ordinance-38-camping",
+    "observed_at": "2023-09-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ordinance-38-september-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

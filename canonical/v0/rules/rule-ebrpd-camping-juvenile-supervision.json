@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-camping-juvenile-supervision",
+    "conditions": [
+      {
+        "dimension": "participant_age",
+        "operator": "less_than",
+        "value": 18
+      }
+    ],
+    "consequence": "A juvenile camper must have a parent or guardian, or be in a permitted group with at least one responsible adult age 21 or older per ten juveniles.",
+    "rule_id": "rule-ebrpd-camping-juvenile-supervision",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

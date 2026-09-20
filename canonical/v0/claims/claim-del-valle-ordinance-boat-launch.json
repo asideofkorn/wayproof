@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ordinance-boat-launch",
+    "evidence_ids": [
+      "evidence-del-valle-ordinance-boat-launch"
+    ],
+    "predicate": "private_boat_launch",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "car_top": true,
+      "size_restriction": null,
+      "trailered": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

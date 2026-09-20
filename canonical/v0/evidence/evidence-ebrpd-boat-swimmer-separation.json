@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-boat-swimmer-separation",
+    "evidence_id": "evidence-ebrpd-boat-swimmer-separation",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ordinance-38-del-valle-boating",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

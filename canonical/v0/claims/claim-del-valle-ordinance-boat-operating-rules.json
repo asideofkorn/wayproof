@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ordinance-boat-operating-rules",
+    "evidence_ids": [
+      "evidence-del-valle-ordinance-boat-operating-rules"
+    ],
+    "predicate": "boat_operating_rules",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "gasoline_or_oil_pollution_allowed": false,
+      "hours": "sunrise_to_sunset_or_posted",
+      "maximum_speed_mph": 10,
+      "towed_persons_allowed": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-developed-area-dog-restraint",
+    "evidence_ids": [
+      "evidence-ebrpd-developed-area-dog-restraint"
+    ],
+    "predicate": "developed_area_dog_restraint",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "campground_attended": true,
+      "campground_confinement_alternative": true,
+      "leash_required": true,
+      "maximum_dogs_per_person": 3,
+      "maximum_leash_feet": 6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

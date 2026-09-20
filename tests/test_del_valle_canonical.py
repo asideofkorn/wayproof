@@ -263,3 +263,48 @@ def test_campground_corpus_manifest_covers_eight_sources_and_replacements():
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 67, "REPLACE": 4, "REMOVE": 0}
     assert sum(item.record_type == "source" for item in change.operations) == 8
+
+
+def test_ordinance_38_corroborates_core_campground_limits():
+    snapshot = records()
+    for claim_id in (
+        "claim-del-valle-family-capacity",
+        "claim-del-valle-family-stay-limit",
+        "claim-del-valle-family-vehicles",
+        "claim-del-valle-smoking-prohibited",
+    ):
+        item = next(value for value in snapshot.claims if value.claim_id == claim_id)
+        assert any("ordinance38" in evidence_id for evidence_id in item.evidence_ids)
+
+
+def test_ordinance_38_keeps_district_and_del_valle_boating_rules_distinct():
+    snapshot = records()
+    launch = next(item for item in snapshot.claims
+                  if item.claim_id == "claim-del-valle-ordinance-boat-launch")
+    operating = next(item for item in snapshot.claims
+                     if item.claim_id == "claim-del-valle-ordinance-boat-operating-rules")
+    assert launch.value["size_restriction"] is None
+    assert operating.value["maximum_speed_mph"] == 10
+    assert operating.value["towed_persons_allowed"] is False
+    assert str(operating.temporal_scope.starts_on) == "2023-09-01"
+
+
+def test_ordinance_38_records_dog_zone_and_generator_rule_layering():
+    snapshot = records()
+    dog_zone = next(item for item in snapshot.claims
+                    if item.claim_id == "claim-del-valle-dog-swimming-prohibited-zone")
+    assert dog_zone.value == "Oak Point north to East Marina"
+    gap = next(item for item in snapshot.gaps
+               if item.gap_id == "gap-del-valle-generator-rule-layering")
+    assert "stricter" in gap.reason
+    assert any(item.rule_id == "rule-ebrpd-campground-disturbing-devices"
+               for item in snapshot.rules)
+
+
+def test_ordinance_38_manifest_is_complete():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-ordinance-38-del-valle.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 40, "REPLACE": 7, "REMOVE": 0}
+    assert sum(item.record_type == "source" for item in change.operations) == 2

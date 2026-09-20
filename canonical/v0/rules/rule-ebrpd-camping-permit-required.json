@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-camping-permit-required",
+    "conditions": [],
+    "consequence": "Camp only in a designated area with a valid District permit.",
+    "rule_id": "rule-ebrpd-camping-permit-required",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fire-rules",
+    "evidence_id": "evidence-ordinance38-fire-rules",
+    "notes": "Supports designated-area, attendance, extinguishing, and changing-restriction portions; it does not address wood collection.",
+    "observation_id": "observation-ebrpd-ordinance-38-fire-smoking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

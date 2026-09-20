@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-dog-swimming-prohibited-zone",
+    "evidence_ids": [
+      "evidence-del-valle-dog-swimming-prohibited-zone"
+    ],
+    "predicate": "dog_swimming_prohibited_area",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": "Oak Point north to East Marina"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

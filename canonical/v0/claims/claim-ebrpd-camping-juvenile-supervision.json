@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-camping-juvenile-supervision",
+    "evidence_ids": [
+      "evidence-ebrpd-camping-juvenile-supervision"
+    ],
+    "predicate": "juvenile_camping_supervision",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "juvenile_under_age": 18,
+      "juveniles_per_responsible_adult": 10,
+      "parent_or_guardian_required_unless_permitted_group": true,
+      "permitted_group_adult_minimum_age": 21
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

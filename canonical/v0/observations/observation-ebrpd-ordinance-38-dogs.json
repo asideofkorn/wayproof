@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF pages 25-27"
+    ],
+    "content": "Sections 801.1-801.3 prohibit dog swimming at Lake Del Valle from Oak Point north to the East Marina; require leashes in developed areas including campgrounds; cap leashes at six feet and dogs at three per person; and require campground animals to be attended and leashed or confined.",
+    "observation_id": "observation-ebrpd-ordinance-38-dogs",
+    "observed_at": "2023-09-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ordinance-38-september-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

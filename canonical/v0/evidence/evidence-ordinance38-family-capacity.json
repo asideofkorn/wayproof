@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-capacity",
+    "evidence_id": "evidence-ordinance38-family-capacity",
+    "notes": "Section 400.3(a).",
+    "observation_id": "observation-ebrpd-ordinance-38-camping",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
