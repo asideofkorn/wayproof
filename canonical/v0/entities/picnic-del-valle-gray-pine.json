@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "picnic-del-valle-gray-pine",
+    "kind": "reservable_picnic_area",
+    "name": "Gray Pine"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-facility-topology",
+    "evidence_ids": [
+      "evidence-del-valle-map-facility-topology"
+    ],
+    "predicate": "mapped_facilities",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-04-01"
+    },
+    "value": [
+      "main entrance",
+      "Arroyo staging",
+      "family campground",
+      "group camps",
+      "horse camps",
+      "picnic areas",
+      "swim beaches",
+      "visitor center",
+      "marina",
+      "boat launch",
+      "boat inspection station"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map distinguishes hiker-horse-bicycle, hiker-horse, hiker-bicycle, and paved hiker-bicycle trails; labels the Ohlone connection toward Sunol and Mission Peak; and states 5.14 miles from Badger Cove to Arroyo Road.",
+    "observation_id": "observation-del-valle-map-trails",
+    "observed_at": "2026-04-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-map-2026-04"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-picnic-inventory",
+    "evidence_id": "evidence-del-valle-picnic-inventory",
+    "notes": "",
+    "observation_id": "observation-del-valle-picnic-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

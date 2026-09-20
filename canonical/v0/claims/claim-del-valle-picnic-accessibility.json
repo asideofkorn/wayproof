@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-picnic-accessibility",
+    "evidence_ids": [
+      "evidence-del-valle-picnic-accessibility"
+    ],
+    "predicate": "picnic_accessibility",
+    "spatial_scope_ids": [
+      "scope-del-valle-picnic-areas"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "Arroyo Mocho": "ADA accessible",
+      "Beach View": "wheelchair accessible",
+      "Vista Del Lago": [
+        "sloped paved access trail",
+        "ADA picnic tables"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

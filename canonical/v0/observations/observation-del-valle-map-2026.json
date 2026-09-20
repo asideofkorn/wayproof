@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map is revised 2026/4 and depicts park entrances, staging, parking counts, trails and mileages, beaches, campground and group sites, picnic areas, visitor center, marina, launch, inspection station, restricted areas, and accessibility symbols.",
+    "observation_id": "observation-del-valle-map-2026",
+    "observed_at": "2026-04-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-map-2026-04"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

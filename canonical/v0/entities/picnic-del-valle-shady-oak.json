@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "picnic-del-valle-shady-oak",
+    "kind": "reservable_picnic_area",
+    "name": "Shady Oak"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The main Del Valle page says one Little Chaparral paddock includes space for one to two horses and four people, while the dedicated camping page says one horse maximum per site.",
+    "observation_id": "observation-del-valle-little-chaparral-park-page",
+    "observed_at": null,
+    "observer": "Wayproof source comparison",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fishing-stocking",
+    "evidence_id": "evidence-del-valle-fishing-stocking",
+    "notes": "",
+    "observation_id": "observation-ebrpd-fishing-stocking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

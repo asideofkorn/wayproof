@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page lists twelve reservable Del Valle picnic areas, six on each side, with capacities from 35 to 500 people. Beer and wine are allowed without an additional permit; reservations are by phone.",
+    "observation_id": "observation-del-valle-picnic-inventory",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-picnic-areas"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

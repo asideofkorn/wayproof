@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-little-chaparral-park-page-capacity",
+    "evidence_ids": [
+      "evidence-del-valle-little-chaparral-park-page-capacity"
+    ],
+    "predicate": "published_paddock_capacity",
+    "spatial_scope_ids": [
+      "scope-del-valle-equestrian-camps"
+    ],
+    "subject_id": "camp-del-valle-little-chaparral",
+    "temporal_scope": null,
+    "value": {
+      "horses": [
+        1,
+        2
+      ],
+      "people_max": 4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

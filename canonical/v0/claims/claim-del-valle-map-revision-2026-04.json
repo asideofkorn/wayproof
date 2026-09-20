@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-revision-2026-04",
+    "evidence_ids": [
+      "evidence-del-valle-map-revision-2026-04"
+    ],
+    "predicate": "map_revision",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-04-30",
+      "starts_on": "2026-04-01"
+    },
+    "value": "2026-04"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

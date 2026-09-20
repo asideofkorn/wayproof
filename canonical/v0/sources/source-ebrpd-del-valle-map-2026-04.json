@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/del-valle-map.pdf",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-del-valle-map-2026-04"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

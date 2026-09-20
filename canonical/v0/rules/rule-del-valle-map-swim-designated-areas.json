@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-use-restrictions",
+    "conditions": [
+      {
+        "dimension": "activity",
+        "operator": "equals",
+        "value": "swimming"
+      }
+    ],
+    "consequence": "Swim only in designated swim-beach areas.",
+    "rule_id": "rule-del-valle-map-swim-designated-areas",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-04-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

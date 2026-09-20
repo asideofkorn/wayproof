@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-use-restrictions",
+    "evidence_ids": [
+      "evidence-del-valle-map-use-restrictions"
+    ],
+    "predicate": "mapped_use_restrictions",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-04-01"
+    },
+    "value": {
+      "horses_prohibited": [
+        "developed_areas",
+        "grassy_lawns",
+        "picnic_areas",
+        "east_beach",
+        "west_beach"
+      ],
+      "land_bank_access": false,
+      "no_fishing_shoreline_segment": true,
+      "swimming": "designated_beach_areas_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-facility-topology",
+    "evidence_id": "evidence-del-valle-map-facility-topology",
+    "notes": "",
+    "observation_id": "observation-del-valle-map-2026",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

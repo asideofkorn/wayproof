@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-little-chaparral-park-page-capacity",
+    "evidence_id": "evidence-del-valle-little-chaparral-park-page-capacity",
+    "notes": "",
+    "observation_id": "observation-del-valle-little-chaparral-park-page",
+    "stance": "conflicts"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

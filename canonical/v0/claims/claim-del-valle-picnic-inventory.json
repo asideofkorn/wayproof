@@ -1,0 +1,67 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-picnic-inventory",
+    "evidence_ids": [
+      "evidence-del-valle-picnic-inventory"
+    ],
+    "predicate": "reservable_picnic_inventory",
+    "spatial_scope_ids": [
+      "scope-del-valle-picnic-areas"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "Agua Vista": {
+        "capacity": 150,
+        "side": "east"
+      },
+      "Arroyo Mocho": {
+        "capacity": 150,
+        "side": "east"
+      },
+      "Beach View": {
+        "capacity": 50,
+        "side": "east"
+      },
+      "Coyote Corner": {
+        "capacity": 50,
+        "side": "east"
+      },
+      "Fiesta Grande": {
+        "capacity": 500,
+        "side": "east"
+      },
+      "Gray Pine": {
+        "capacity": 50,
+        "side": "west"
+      },
+      "Lichen Bark": {
+        "capacity": 300,
+        "side": "west"
+      },
+      "Oak Point": {
+        "capacity": 150,
+        "side": "east"
+      },
+      "School House Flats": {
+        "capacity": 150,
+        "side": "west"
+      },
+      "Shady Oak": {
+        "capacity": 75,
+        "side": "west"
+      },
+      "Valley Oak": {
+        "capacity": 75,
+        "side": "west"
+      },
+      "Vista Del Lago": {
+        "capacity": 35,
+        "side": "west"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

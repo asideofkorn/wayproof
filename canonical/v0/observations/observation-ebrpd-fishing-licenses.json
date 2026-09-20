@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Anglers age 16 or older need a California fishing license for eligible District inland waters and a District fishing permit unless fishing at one of four named exceptions; Del Valle is not an exception. Current alerts should be checked.",
+    "observation_id": "observation-ebrpd-fishing-licenses",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-fishing"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
