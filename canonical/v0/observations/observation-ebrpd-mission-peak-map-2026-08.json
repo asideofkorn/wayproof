@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1",
+      "Map revision 2026-8",
+      "Legend and mapped facility symbols"
+    ],
+    "content": "The current standalone Mission Peak map is marked 2026-8. It depicts a restroom at Stanford Avenue Staging Area and distinguishes restroom, drinking-water, horse-water, parking, trail-post, picnic-table, and reservable-camping symbols. It states 8.66 miles from Stanford Avenue Staging Area to Sunol Visitor Center and 3.59 miles between the Mission Peak Regional Preserve and Sunol Regional Wilderness boundaries. It also maps trail-use classes, individual segment mileages, emergency trail-post numbers, the Eagle Spring Backpack Camp, and prohibited access from Mill Creek Road.",
+    "observation_id": "observation-ebrpd-mission-peak-map-2026-08",
+    "observed_at": null,
+    "observer": "Wayproof PDF visual review",
+    "retrieved_at": "2026-09-20T00:00:00-07:00",
+    "source_id": "source-ebrpd-mission-peak-map-2026-08"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

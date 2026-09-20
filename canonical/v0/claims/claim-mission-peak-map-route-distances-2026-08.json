@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-map-route-distances-2026-08",
+    "evidence_ids": [
+      "evidence-ebrpd-mission-peak-map-route-distances-2026-08"
+    ],
+    "predicate": "official_map_route_distances",
+    "spatial_scope_ids": [
+      "scope-mission-peak-stanford-avenue-staging",
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "park-mission-peak-regional-preserve",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-08-01"
+    },
+    "value": {
+      "mission_peak_to_sunol_boundary_miles": 3.59,
+      "stanford_staging_to_sunol_visitor_center_miles": 8.66
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -301,9 +301,67 @@
       "reason": "Capture the user-supplied Stanford Avenue restroom pin, dated community media, and provenance-qualified facility details.",
       "record_id": "claim-google-maps-mission-peak-stanford-restroom-20260920",
       "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-mission-peak-map-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "source-ebrpd-mission-peak-map-2026-08",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mission-peak-map-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "observation-ebrpd-mission-peak-map-2026-08",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mission-peak-map-route-distances-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "evidence-ebrpd-mission-peak-map-route-distances-2026-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mission-peak-map-stanford-restroom-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "evidence-ebrpd-mission-peak-map-stanford-restroom-2026-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mission-peak-map-route-distances-2026-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-map-route-distances-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "claim-mission-peak-map-route-distances-2026-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mission-peak-map-stanford-restroom-2026-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-stanford-restroom-official-map-2026-08.json",
+      "reason": "Ingest the current August 2026 official Mission Peak map with explicit revision provenance.",
+      "record_id": "claim-mission-peak-stanford-restroom-official-map-2026-08",
+      "record_type": "claim"
     }
   ],
   "schema_version": 0,
   "status": "VALIDATED",
-  "summary": "Add official Mission Peak access and parking sources, Ohlone College visitor permit policy, linked access-point references, and the user-supplied Stanford Avenue restroom pin with dated, provenance-qualified community media evidence."
+  "summary": "Add official Mission Peak access and parking sources, Ohlone College visitor permit policy, linked access-point references, the Stanford Avenue restroom pin, and the current August 2026 official Mission Peak map with route distances and restroom corroboration."
 }
