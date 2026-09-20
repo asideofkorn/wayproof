@@ -1,0 +1,1040 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-del-valle-ebrpd-park-page",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/beach-del-valle-east.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "beach-del-valle-east",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/beach-del-valle-west.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "beach-del-valle-west",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-del-valle-main.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "entrance-del-valle-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/staging-del-valle-arroyo-road.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "staging-del-valle-arroyo-road",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-del-valle-visitor-center.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "facility-del-valle-visitor-center",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-del-valle-east-beach-marina.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "facility-del-valle-east-beach-marina",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-del-valle-camp-store.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "facility-del-valle-camp-store",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/org-rocky-mountain-recreation.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "org-rocky-mountain-recreation",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/org-outback-adventures.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "org-outback-adventures",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-east-beach.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-east-beach",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-west-beach.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-west-beach",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-main-entrance.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-main-entrance",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-arroyo-staging.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-arroyo-staging",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-visitor-center.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-visitor-center",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-east-beach-marina.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "scope-del-valle-east-beach-marina",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-park-page.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "source-ebrpd-del-valle-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-identity.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-identity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-campground.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-campground",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-hours.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-hours",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-fees",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-water-quality.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-water-quality",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-golden-mussel.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-golden-mussel",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-boating.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-boating",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-access.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-access",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-current-amenities.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-current-amenities",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-seasonal-stores.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-seasonal-stores",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ebrpd-concessioners.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "observation-del-valle-ebrpd-concessioners",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-park-address.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-park-address",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-lake-length.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-lake-length",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-ohlone-gateway.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-ohlone-gateway",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-park-area.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-park-area",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-campground-inventory.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-campground-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-campground-sanitation.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-campground-sanitation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-campground-accessibility.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-campground-accessibility",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-rv-hookups.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-rv-hookups",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-cabins.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-cabins",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-park-gate-hours.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-park-gate-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-park-curfew.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-park-curfew",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-entry-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-entry-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-east-beach-algae.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-east-beach-algae",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-west-beach-water.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-west-beach-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-boat-inspection.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-boat-inspection",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-contra-loma-quarantine.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-contra-loma-quarantine",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-clean-drain-dry.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-clean-drain-dry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-boating-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-boating-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-boat-speed.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-boat-speed",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-hydrofoil-prohibition.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-hydrofoil-prohibition",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-main-entrance.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-main-entrance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-arroyo-staging.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-arroyo-staging",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-park-open-limited.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-park-open-limited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-food-concession.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-food-concession",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-storm-trails.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-storm-trails",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-visitor-center-open.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-visitor-center-open",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-marina-schedule.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-marina-schedule",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-camp-store-schedule.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-camp-store-schedule",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-concession-rocky-mountain.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-concession-rocky-mountain",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ebrpd-concession-outback.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "evidence-del-valle-ebrpd-concession-outback",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-park-address",
+        "evidence-del-valle-ebrpd-park-address"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-park-address.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-park-address",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-lake-length",
+        "evidence-del-valle-ebrpd-lake-length"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-lake-length.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-lake-length",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ohlone-gateway",
+        "evidence-del-valle-ebrpd-ohlone-gateway"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ohlone-gateway.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ohlone-gateway",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-park-area.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-park-area",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-campground-inventory",
+        "evidence-del-valle-ebrpd-campground-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-inventory.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-campground-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-campground-sanitation",
+        "evidence-del-valle-ebrpd-campground-sanitation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-sanitation.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-campground-sanitation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-campground-accessibility"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-campground-accessibility.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-campground-accessibility",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-rv-hookups"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-rv-hookups.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-rv-hookups",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-cabins"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-cabins.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-cabins",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-gate-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-park-gate-hours.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-park-gate-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-curfew"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-park-curfew.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-park-curfew",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-entry-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-entry-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-entry-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-east-beach-algae"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-east-beach-algae.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-east-beach-algae",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-west-beach-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-west-beach-water.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-west-beach-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-boat-inspection",
+        "evidence-del-valle-ebrpd-boat-inspection"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-boat-inspection.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-boat-inspection",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-contra-loma-quarantine"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-contra-loma-quarantine.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-clean-drain-dry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-clean-drain-dry.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-clean-drain-dry",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-boating-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-boating-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-boating-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-boat-speed"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-boat-speed.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-boat-speed",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-hydrofoil-prohibition"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-hydrofoil-prohibition.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-hydrofoil-prohibition",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-main-entrance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-main-entrance.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-main-entrance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-arroyo-staging"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-arroyo-staging.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-arroyo-staging",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-open-limited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-park-open-limited.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-park-open-limited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-food-concession"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-food-concession.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-food-concession",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-storm-trails"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-storm-trails.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-storm-trails",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-visitor-center-open"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-visitor-center-open.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-visitor-center-open",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-marina-schedule"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-marina-schedule.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-marina-schedule",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-camp-store-schedule"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-camp-store-schedule.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-camp-store-schedule",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-concession-rocky-mountain"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-concession-rocky-mountain.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-concession-rocky-mountain",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-concession-outback"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-concession-outback.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "claim-del-valle-ebrpd-concession-outback",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-main-entrance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-ebrpd-main-entrance.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "relationship-del-valle-ebrpd-main-entrance",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-arroyo-staging"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-ebrpd-arroyo-staging.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "relationship-del-valle-ebrpd-arroyo-staging",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-concession-rocky-mountain"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-ebrpd-concession-rocky-mountain.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "relationship-del-valle-ebrpd-concession-rocky-mountain",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-concession-outback"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-ebrpd-concession-outback.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "relationship-del-valle-ebrpd-concession-outback",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-gate-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-park-gate-hours.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-park-gate-hours",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-park-curfew"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-park-curfew.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-park-curfew",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-entry-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-entry-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-entry-fees",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-contra-loma-quarantine"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-contra-loma-quarantine.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-contra-loma-quarantine",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-clean-drain-dry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-clean-drain-dry.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-clean-drain-dry",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-boating-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-boating-fees.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-boating-fees",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-boat-speed"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-boat-speed.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-boat-speed",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-hydrofoil-prohibition"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ebrpd-hydrofoil-prohibition.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "rule-del-valle-ebrpd-hydrofoil-prohibition",
+      "record_type": "rule"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-accessibility-specifics.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "gap-del-valle-accessibility-specifics",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-park-area-conflict.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "gap-del-valle-park-area-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-marina-schedule-effective-year.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "gap-del-valle-marina-schedule-effective-year",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-del-valle-current-fire-status",
+        "gap-del-valle-current-algae-status",
+        "gap-del-valle-current-flood-closure",
+        "gap-del-valle-marina-schedule-effective-year"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add EBRPD park-page evidence, preserve conflicts, and refine current Del Valle knowledge.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-inventory-count.json",
+      "reason": "Resolve the inventory question: both published source descriptions state 150 family-campground sites.",
+      "record_id": "gap-del-valle-inventory-count",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add EBRPD Del Valle park-page evidence, corroborate the 150-site campground inventory, preserve the acreage conflict, and capture dated operational conditions and rechecks."
+}

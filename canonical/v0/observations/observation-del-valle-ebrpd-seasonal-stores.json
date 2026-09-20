@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page publishes September-December operating and rental hours for the marina store and September-December hours for the camp store, including weather-dependent first-come boat rentals and closures on some days; the displayed schedule does not state an effective year.",
+    "observation_id": "observation-del-valle-ebrpd-seasonal-stores",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

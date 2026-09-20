@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-arroyo-staging"
+    ],
+    "object_id": "park-del-valle-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-del-valle-ebrpd-arroyo-staging",
+    "subject_id": "staging-del-valle-arroyo-road",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

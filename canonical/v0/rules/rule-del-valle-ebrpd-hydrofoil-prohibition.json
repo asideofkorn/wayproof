@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-hydrofoil-prohibition",
+    "conditions": [],
+    "consequence": "Do not operate a hydrofoil or E-Foil on Lake Del Valle.",
+    "rule_id": "rule-del-valle-ebrpd-hydrofoil-prohibition",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

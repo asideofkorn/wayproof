@@ -1,0 +1,47 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-park-gate-hours",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-park-gate-hours"
+    ],
+    "predicate": "seasonal_gate_hours",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "after_labor_day_through_september_30": [
+        "06:00",
+        "20:00"
+      ],
+      "april": [
+        "06:00",
+        "20:00"
+      ],
+      "january_february": [
+        "07:00",
+        "18:00"
+      ],
+      "march": [
+        "06:00",
+        "19:00"
+      ],
+      "may_through_labor_day": [
+        "06:00",
+        "21:00"
+      ],
+      "november_december": [
+        "07:00",
+        "18:00"
+      ],
+      "october": [
+        "06:00",
+        "19:00"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

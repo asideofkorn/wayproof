@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-concession-outback"
+    ],
+    "object_id": "facility-del-valle-east-beach-marina",
+    "predicate": "provides_service_at",
+    "relationship_id": "relationship-del-valle-ebrpd-concession-outback",
+    "subject_id": "org-outback-adventures",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

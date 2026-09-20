@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page lists launch and inspection fees of $5 and $10 for motorized vessels and $3 and $5 for non-motorized vessels, a lake-wide 10 mph speed limit, and a prohibition on hydrofoils and E-Foils. It permits any-size boats at the public ramp.",
+    "observation_id": "observation-del-valle-ebrpd-boating",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

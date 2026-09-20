@@ -1,18 +1,17 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-boat-inspection",
+    "claim_id": "claim-del-valle-ebrpd-boat-speed",
     "evidence_ids": [
-      "evidence-del-valle-boat-inspection",
-      "evidence-del-valle-ebrpd-boat-inspection"
+      "evidence-del-valle-ebrpd-boat-speed"
     ],
-    "predicate": "boat_inspection_required",
+    "predicate": "boat_speed_limit_mph",
     "spatial_scope_ids": [
       "scope-lake-del-valle"
     ],
     "subject_id": "lake-del-valle",
     "temporal_scope": null,
-    "value": true
+    "value": 10
   },
   "record_type": "claim",
   "schema_version": 0

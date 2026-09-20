@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-visitor-center-open",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-visitor-center-open"
+    ],
+    "predicate": "operating_status",
+    "spatial_scope_ids": [
+      "scope-del-valle-visitor-center"
+    ],
+    "subject_id": "facility-del-valle-visitor-center",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": "open"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

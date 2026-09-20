@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-camp-store-schedule",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-camp-store-schedule"
+    ],
+    "predicate": "published_seasonal_schedule",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "facility-del-valle-camp-store",
+    "temporal_scope": null,
+    "value": {
+      "november_december": "closed",
+      "october": "Friday-Sunday limited hours",
+      "september": "daily 06:00-19:00",
+      "year_stated": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-marina-schedule",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-marina-schedule"
+    ],
+    "predicate": "published_seasonal_schedule",
+    "spatial_scope_ids": [
+      "scope-del-valle-east-beach-marina"
+    ],
+    "subject_id": "facility-del-valle-east-beach-marina",
+    "temporal_scope": null,
+    "value": {
+      "boat_rentals": "weather_permitting_first_come",
+      "period": "September through December",
+      "year_stated": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

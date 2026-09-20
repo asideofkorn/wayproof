@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-boating-fees",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-boating-fees"
+    ],
+    "predicate": "published_boating_fees",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "motorized_inspection_usd": 10,
+      "motorized_launch_usd": 5,
+      "non_motorized_inspection_usd": 5,
+      "non_motorized_launch_usd": 3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-main-entrance"
+    ],
+    "object_id": "park-del-valle-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-del-valle-ebrpd-main-entrance",
+    "subject_id": "entrance-del-valle-main",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

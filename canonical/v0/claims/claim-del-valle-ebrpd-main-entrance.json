@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-main-entrance",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-main-entrance"
+    ],
+    "predicate": "accesses",
+    "spatial_scope_ids": [
+      "scope-del-valle-main-entrance"
+    ],
+    "subject_id": "entrance-del-valle-main",
+    "temporal_scope": null,
+    "value": "park-del-valle-regional-park"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

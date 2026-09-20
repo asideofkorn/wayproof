@@ -1,18 +1,17 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-park-address",
+    "claim_id": "claim-del-valle-ebrpd-park-area",
     "evidence_ids": [
-      "evidence-del-valle-park-address",
-      "evidence-del-valle-ebrpd-park-address"
+      "evidence-del-valle-ebrpd-park-area"
     ],
-    "predicate": "street_address",
+    "predicate": "published_area_acres",
     "spatial_scope_ids": [
       "scope-del-valle-park"
     ],
     "subject_id": "park-del-valle-regional-park",
     "temporal_scope": null,
-    "value": "7000 Del Valle Road, Livermore, CA 94550"
+    "value": 4395
   },
   "record_type": "claim",
   "schema_version": 0

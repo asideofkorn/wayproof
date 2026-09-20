@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-lake-length",
     "evidence_ids": [
-      "evidence-del-valle-lake-length"
+      "evidence-del-valle-lake-length",
+      "evidence-del-valle-ebrpd-lake-length"
     ],
     "predicate": "published_length_miles",
     "spatial_scope_ids": [

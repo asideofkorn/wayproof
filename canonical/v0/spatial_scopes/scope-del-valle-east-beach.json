@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "beach-del-valle-east",
+    "kind": "swim_beach",
+    "scope_id": "scope-del-valle-east-beach"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-del-valle-arroyo-road",
+    "kind": "staging_area",
+    "name": "Arroyo Road Staging Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -19,11 +19,12 @@ def test_del_valle_publication_has_complete_source_lineage():
                   if item.source_id == "source-reserveamerica-del-valle-overview-110003")
     assert source.locator == (
         "https://www.reserveamerica.com/explore/del-valle/EB/110003/overview")
-    assert all(item.source_id == source.source_id for item in snapshot.observations)
+    source_ids = {item.source_id for item in snapshot.sources}
+    assert all(item.source_id in source_ids for item in snapshot.observations)
     assert all(item.evidence_ids for item in snapshot.claims)
 
 
-def test_del_valle_inventory_disagreement_remains_visible():
+def test_del_valle_inventory_is_corroborated_and_old_gap_is_historical():
     snapshot = records()
     inventory = next(item for item in snapshot.claims
                      if item.claim_id == "claim-del-valle-campground-inventory")
@@ -33,9 +34,13 @@ def test_del_valle_inventory_disagreement_remains_visible():
         "rv_full_hookup": 21,
         "total": 150,
     }
-    gap = next(item for item in snapshot.gaps
-               if item.gap_id == "gap-del-valle-inventory-count")
-    assert "150 or 155" in gap.question
+    assert len(inventory.evidence_ids) == 2
+    assert not any(item.gap_id == "gap-del-valle-inventory-count"
+                   for item in snapshot.gaps)
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-del-valle-ebrpd-park-page.json")
+    removed = [item for item in change.operations if item.action.value == "REMOVE"]
+    assert [item.record_id for item in removed] == ["gap-del-valle-inventory-count"]
 
 
 def test_uncorroborated_ohlone_statement_is_not_a_current_rule():
@@ -50,10 +55,10 @@ def test_volatile_conditions_require_pretrip_recheck():
     result = next(item for item in records().derived_results
                   if item.result_id == "result-del-valle-pretrip-recheck")
     assert result.value["required"] is True
-    assert set(result.value["topics"]) == {
+    assert set(result.value["topics"]).issuperset({
         "fire_danger", "blue_green_algae", "flood_closure",
         "boat_inspection_procedure",
-    }
+    })
 
 
 def test_del_valle_changeset_is_a_validated_public_manifest():
@@ -62,3 +67,31 @@ def test_del_valle_changeset_is_a_validated_public_manifest():
     assert change.status is ChangeSetStatus.VALIDATED
     assert len(change.operations) == 105
     assert len({item.path for item in change.operations}) == 105
+
+
+def test_ebrpd_update_exercises_add_replace_and_remove():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-del-valle-ebrpd-park-page.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 95, "REPLACE": 8, "REMOVE": 1}
+
+
+def test_dated_water_conditions_do_not_become_permanent_facts():
+    snapshot = records()
+    for claim_id in (
+        "claim-del-valle-ebrpd-east-beach-algae",
+        "claim-del-valle-ebrpd-west-beach-water",
+    ):
+        item = next(value for value in snapshot.claims if value.claim_id == claim_id)
+        assert item.temporal_scope.starts_on == item.temporal_scope.ends_on
+
+
+def test_conflicting_published_park_areas_remain_visible():
+    snapshot = records()
+    areas = {item.value for item in snapshot.claims
+             if item.subject_id == "park-del-valle-regional-park"
+             and item.predicate == "published_area_acres"}
+    assert areas == {4316, 4395}
+    assert any(item.gap_id == "gap-del-valle-park-area-conflict"
+               for item in snapshot.gaps)

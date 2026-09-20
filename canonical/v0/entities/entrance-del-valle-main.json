@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-del-valle-main",
+    "kind": "park_entrance",
+    "name": "Del Valle Road Park Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

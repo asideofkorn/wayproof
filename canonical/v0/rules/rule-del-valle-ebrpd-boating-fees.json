@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-boating-fees",
+    "conditions": [
+      {
+        "dimension": "party_launches_boat",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Pay the applicable launch and inspection fees for the vessel type.",
+    "rule_id": "rule-del-valle-ebrpd-boating-fees",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

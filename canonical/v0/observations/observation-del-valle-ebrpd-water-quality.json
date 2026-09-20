@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "At retrieval, the EBRPD page posted a blue-green algae Caution Advisory for the East Swim Beach and stated that the West Swim Beach had no water because of low lake levels.",
+    "observation_id": "observation-del-valle-ebrpd-water-quality",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

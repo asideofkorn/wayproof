@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-clean-drain-dry",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-clean-drain-dry"
+    ],
+    "predicate": "watercraft_preparation",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": [
+      "clean",
+      "drain",
+      "dry"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

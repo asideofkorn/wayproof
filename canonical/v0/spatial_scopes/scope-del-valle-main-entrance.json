@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "entrance-del-valle-main",
+    "kind": "park_entrance",
+    "scope_id": "scope-del-valle-main-entrance"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

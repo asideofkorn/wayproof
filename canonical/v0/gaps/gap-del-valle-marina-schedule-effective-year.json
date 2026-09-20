@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-marina-schedule-effective-year",
+    "question": "For which year is the displayed September-December marina and camp-store schedule effective?",
+    "reason": "The live page supplies month/day schedules without an effective year.",
+    "related_ids": [
+      "claim-del-valle-ebrpd-marina-schedule",
+      "claim-del-valle-ebrpd-camp-store-schedule"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

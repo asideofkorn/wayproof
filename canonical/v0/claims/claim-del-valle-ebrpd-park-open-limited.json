@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-park-open-limited",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-park-open-limited"
+    ],
+    "predicate": "operating_status",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": "open_limited_amenities"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -2,10 +2,10 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-del-valle-accessibility-specifics",
-    "question": "Which individual campsites and facilities meet the party's accessibility needs?",
-    "reason": "The page lists handicap access only as a general amenity.",
+    "question": "Which two family campsites are wheelchair accessible, and do they meet the party's specific needs?",
+    "reason": "The EBRPD page confirms two accessible sites and general accessible facilities but does not identify the site numbers or dimensions.",
     "related_ids": [
-      "campground-del-valle-family"
+      "claim-del-valle-ebrpd-campground-accessibility"
     ]
   },
   "record_type": "gap",

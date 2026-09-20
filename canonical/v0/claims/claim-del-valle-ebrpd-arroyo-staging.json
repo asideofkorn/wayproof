@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-arroyo-staging",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-arroyo-staging"
+    ],
+    "predicate": "accesses",
+    "spatial_scope_ids": [
+      "scope-del-valle-arroyo-staging"
+    ],
+    "subject_id": "staging-del-valle-arroyo-road",
+    "temporal_scope": null,
+    "value": "park-del-valle-regional-park"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

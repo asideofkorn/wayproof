@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page directs motorboat and patio-boat rental questions to Rocky Mountain Recreation and seasonal kayak and paddleboard rental questions to Outback Adventures.",
+    "observation_id": "observation-del-valle-ebrpd-concessioners",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page lists $5 vehicle parking, $5 trailered-vehicle parking, $25 bus parking, and no parking fee at Arroyo staging. On weekends and holidays from April through Labor Day it lists a $10 flat entry fee including vehicle and trailer parking and boat launch, excluding fishing permits and mussel inspection.",
+    "observation_id": "observation-del-valle-ebrpd-fees",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

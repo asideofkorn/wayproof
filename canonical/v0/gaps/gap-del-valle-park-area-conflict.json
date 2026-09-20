@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-park-area-conflict",
+    "question": "Why do the published Del Valle park-area figures differ between 4,316 and 4,395 acres?",
+    "reason": "ReserveAmerica and EBRPD publish different acreage; neither value is silently discarded.",
+    "related_ids": [
+      "claim-del-valle-park-area",
+      "claim-del-valle-ebrpd-park-area"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
