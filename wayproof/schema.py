@@ -305,6 +305,8 @@ class ChangeSet:
     validation_errors: Tuple[str, ...] = ()
     _validated_snapshot: Optional[CanonicalRecords] = field(
         default=None, init=False, repr=False, compare=False)
+    _validated_operations: Optional[Tuple[ChangeOperation, ...]] = field(
+        default=None, init=False, repr=False, compare=False)
 
     def __post_init__(self) -> None:
         if not self.change_set_id.strip():
@@ -326,6 +328,7 @@ class ChangeSet:
         self.status = (ChangeSetStatus.VALIDATED
                        if not errors else ChangeSetStatus.DRAFT)
         self._validated_snapshot = deepcopy(self.records) if not errors else None
+        self._validated_operations = deepcopy(self.operations) if not errors else None
         return errors
 
     def assert_validated_unchanged(self) -> None:
@@ -333,3 +336,5 @@ class ChangeSet:
             raise ValueError("only a validated ChangeSet can be prepared")
         if self.records != self._validated_snapshot:
             raise ValueError("ChangeSet changed after validation; validate it again")
+        if self.operations != self._validated_operations:
+            raise ValueError("ChangeSet operations changed after validation; validate it again")

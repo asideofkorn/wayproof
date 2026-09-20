@@ -106,15 +106,30 @@ def _utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def _combined(left: CanonicalRecords,
-              right: CanonicalRecords) -> CanonicalRecords:
+def _without_targets(base: CanonicalRecords,
+                     operations: Tuple[ChangeOperation, ...]) -> CanonicalRecords:
+    """Return the validation base after records being replaced/removed vanish."""
+    removed = {
+        (operation.record_type, operation.record_id)
+        for operation in operations
+        if operation.action in (ChangeAction.REPLACE, ChangeAction.REMOVE)
+    }
     values = {}
-    for definition in fields(CanonicalRecords):
-        values[definition.name] = (
-            deepcopy(getattr(left, definition.name))
-            + deepcopy(getattr(right, definition.name))
-        )
+    for record_type, (collection, attribute) in _RECORD_TYPES.items():
+        values[collection] = [
+            deepcopy(item) for item in getattr(base, collection)
+            if (record_type, getattr(item, attribute)) not in removed
+        ]
     return CanonicalRecords(**values)
+
+
+def _apply_operations(base: CanonicalRecords, change: ChangeSet) -> CanonicalRecords:
+    """Apply a fully checked ChangeSet to a detached canonical snapshot."""
+    result = _without_targets(base, change.operations)
+    for definition in fields(CanonicalRecords):
+        getattr(result, definition.name).extend(
+            deepcopy(getattr(change.records, definition.name)))
+    return result
 
 
 def _operation_errors(change: ChangeSet, base: CanonicalRecords) -> Tuple[str, ...]:
@@ -141,7 +156,7 @@ def _operation_errors(change: ChangeSet, base: CanonicalRecords) -> Tuple[str, .
     if len(paths) != len(set(paths)):
         errors.append("ChangeSet operations repeat a canonical path")
 
-    add_targets = set()
+    value_targets = set()
     for operation in change.operations:
         target = (operation.record_type, operation.record_id)
         if operation.record_type not in _RECORD_TYPES:
@@ -152,21 +167,30 @@ def _operation_errors(change: ChangeSet, base: CanonicalRecords) -> Tuple[str, .
         if operation.path != expected_path:
             errors.append(f"operation path must be {expected_path}")
         if operation.action is ChangeAction.ADD:
-            add_targets.add(target)
+            value_targets.add(target)
             if target not in candidate_targets:
                 errors.append(f"ADD operation has no candidate record: {operation.record_id}")
-        elif operation.action in (ChangeAction.REPLACE, ChangeAction.REMOVE):
+            if target in existing_targets:
+                errors.append(f"ADD targets existing record: {operation.record_id}")
+        elif operation.action is ChangeAction.REPLACE:
+            value_targets.add(target)
             if target not in existing_targets:
-                errors.append(f"{operation.action.value} targets missing record: "
+                errors.append(f"REPLACE targets missing record: {operation.record_id}")
+            if target not in candidate_targets:
+                errors.append(f"REPLACE operation has no candidate record: "
                               f"{operation.record_id}")
-            errors.append(f"{operation.action.value} preparation is deferred to "
-                          "the Git storage adapter")
+        elif operation.action is ChangeAction.REMOVE:
+            if target not in existing_targets:
+                errors.append(f"REMOVE targets missing record: {operation.record_id}")
+            if target in candidate_targets:
+                errors.append(f"REMOVE operation must not include a candidate record: "
+                              f"{operation.record_id}")
 
-    missing = sorted(candidate_targets - add_targets)
-    extra = sorted(add_targets - candidate_targets)
-    errors.extend(f"candidate record has no ADD operation: {kind}:{record_id}"
+    missing = sorted(candidate_targets - value_targets)
+    extra = sorted(value_targets - candidate_targets)
+    errors.extend(f"candidate record has no ADD or REPLACE operation: {kind}:{record_id}"
                   for kind, record_id in missing)
-    errors.extend(f"ADD operation has no candidate record: {kind}:{record_id}"
+    errors.extend(f"value operation has no candidate record: {kind}:{record_id}"
                   for kind, record_id in extra)
 
     evidence_ids = {item.evidence_id for item in base.evidence + change.records.evidence}
@@ -226,7 +250,16 @@ class ChangeSetWriteService:
         occurred_at = self._clock()
         change = self._stored(change_set_id)
         before = change.status
-        errors = change.validate(existing=self._repository.snapshot())
+        base = self._repository.snapshot()
+        operation_errors = _operation_errors(change, base)
+        errors = change.validate(existing=_without_targets(base, change.operations))
+        result_errors = tuple(validate_records(_apply_operations(base, change)))
+        errors = tuple(sorted(set(errors + operation_errors + result_errors)))
+        change.validation_errors = errors
+        if errors:
+            change.status = ChangeSetStatus.DRAFT
+            change._validated_snapshot = None
+            change._validated_operations = None
         action = "validation_failed" if errors else "validated"
         self._event(change_set_id, action, actor, before, change.status,
                     occurred_at, errors)
@@ -241,15 +274,17 @@ class ChangeSetWriteService:
             if ids:
                 additions.append((collection, ids))
         base = self._repository.snapshot()
-        errors = tuple(validate_records(change.records, existing=base))
+        errors = tuple(validate_records(
+            change.records, existing=_without_targets(base, change.operations)))
         errors += _operation_errors(change, base)
+        errors += tuple(validate_records(_apply_operations(base, change)))
         return ChangeSetExplanation(
             change_set_id=change.change_set_id,
             status=change.status,
             summary=change.summary,
             additions=tuple(additions),
             operations=change.operations,
-            validation_errors=errors,
+            validation_errors=tuple(sorted(set(errors))),
         )
 
     def prepare(self, change_set_id: str, actor: str) -> PreparedCandidate:
@@ -263,14 +298,15 @@ class ChangeSetWriteService:
             raise PreparationRejected(str(exc)) from exc
 
         base = self._repository.snapshot()
-        errors = tuple(validate_records(change.records, existing=base))
+        errors = tuple(validate_records(
+            change.records, existing=_without_targets(base, change.operations)))
         errors += _operation_errors(change, base)
         if errors:
             self._event(change_set_id, "preparation_rejected", actor,
                         change.status, change.status, occurred_at, errors)
             raise PreparationRejected("canonical base changed: " + "; ".join(errors))
 
-        result = _combined(base, change.records)
+        result = _apply_operations(base, change)
         result_errors = tuple(validate_records(result))
         if result_errors:
             raise PreparationRejected("candidate snapshot invalid: "

@@ -14,6 +14,8 @@ jobs:
         python-version: ["3.9", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
@@ -24,6 +26,9 @@ jobs:
           pip install -r requirements.txt pytest
       - name: Run tests
         run: python -m pytest tests/ -v
+      - name: Verify canonical publication boundary
+        if: github.event_name == 'pull_request' && matrix.python-version == '3.12'
+        run: python scripts/verify_canonical_diff.py --base origin/${{ github.base_ref }}
 
       # Printed, never asserted. This is a measurement of how much of the
       # README's question list the tool can answer at all; a coverage number

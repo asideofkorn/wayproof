@@ -201,6 +201,11 @@ database may eventually serve a concurrent application, but neither decision is
 part of Schema v0. Canonical storage uses versioned, deterministic,
 one-record-per-file JSON named by durable record ID. The serializer owns
 formatting; normal contributors and agents do not hand-author canonical files.
+Schema v0 records live at `canonical/v0/<collection>/<record-id>.json`, and
+permanent intent manifests live at `changesets/v0/<change-set-id>.json`. The
+storage adapter applies only paths authorized by a validated ChangeSet. CI
+loads and validates the resulting snapshot, then requires the Git action for
+every canonical path to match exactly one typed operation in the new manifest.
 
 CLI, website, importers, and MCP are adapters over the same domain/service layer.
 MCP must not create a second mutation path.
