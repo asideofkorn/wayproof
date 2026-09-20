@@ -1,0 +1,161 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-google-maps-del-valle-group-camp-coordinates",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-del-valle-ardilla.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "source-google-maps-del-valle-ardilla",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-del-valle-ardilla-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "observation-google-maps-del-valle-ardilla-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-del-valle-ardilla-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "evidence-google-maps-del-valle-ardilla-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-del-valle-ardilla-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-del-valle-ardilla-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "claim-google-maps-del-valle-ardilla-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-del-valle-cedar.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "source-google-maps-del-valle-cedar",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-del-valle-cedar-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "observation-google-maps-del-valle-cedar-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-del-valle-cedar-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "evidence-google-maps-del-valle-cedar-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-del-valle-cedar-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-del-valle-cedar-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "claim-google-maps-del-valle-cedar-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-del-valle-hetch-hetchy.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "source-google-maps-del-valle-hetch-hetchy",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-del-valle-hetch-hetchy-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "observation-google-maps-del-valle-hetch-hetchy-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-del-valle-hetch-hetchy-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "evidence-google-maps-del-valle-hetch-hetchy-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-del-valle-hetch-hetchy-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-del-valle-hetch-hetchy-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "claim-google-maps-del-valle-hetch-hetchy-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-del-valle-venados.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "source-google-maps-del-valle-venados",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-del-valle-venados-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "observation-google-maps-del-valle-venados-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-del-valle-venados-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "evidence-google-maps-del-valle-venados-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-del-valle-venados-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-del-valle-venados-coordinate.json",
+      "reason": "Add an explicitly third-party Google Maps coordinate without altering the source-faithful ReserveAmerica profile.",
+      "record_id": "claim-google-maps-del-valle-venados-coordinate",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add separately attributed Google Maps labeled-place coordinates for four Del Valle group camps while leaving ReserveAmerica GIS omissions and unresolved sites intact."
+}

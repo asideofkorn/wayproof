@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://maps.app.goo.gl/PTJYFLXt7jzNCTHL7?g_st=ic",
+    "publisher": "Google Maps",
+    "source_id": "source-google-maps-del-valle-venados"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
