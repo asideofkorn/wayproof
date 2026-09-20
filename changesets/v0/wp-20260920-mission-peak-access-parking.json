@@ -64,7 +64,7 @@
       "path": "canonical/v0/entities/entrance-mission-peak-anza-pine.json",
       "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
       "record_id": "entrance-mission-peak-anza-pine",
-      "record_type": "entitie"
+      "record_type": "entity"
     },
     {
       "action": "ADD",
@@ -73,7 +73,7 @@
       "path": "canonical/v0/entities/entrance-mission-peak-ohlone-college.json",
       "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
       "record_id": "entrance-mission-peak-ohlone-college",
-      "record_type": "entitie"
+      "record_type": "entity"
     },
     {
       "action": "ADD",
@@ -82,7 +82,7 @@
       "path": "canonical/v0/entities/staging-mission-peak-stanford-avenue.json",
       "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
       "record_id": "staging-mission-peak-stanford-avenue",
-      "record_type": "entitie"
+      "record_type": "entity"
     },
     {
       "action": "ADD",
