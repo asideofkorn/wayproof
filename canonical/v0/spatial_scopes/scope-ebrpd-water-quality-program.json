@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "program-ebrpd-hab-monitoring",
+    "kind": "monitoring_program",
+    "scope_id": "scope-ebrpd-water-quality-program"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

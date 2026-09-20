@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-advisory-fish-guidance",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-advisory-fish-guidance"
+    ],
+    "predicate": "advisory_fish_guidance",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "avoid_unnecessary_water_contact": true,
+      "cook_thoroughly": true,
+      "discard_guts_and_liver": true,
+      "wash_fillet_with_safe_water": true,
+      "wash_hands_after_wet_contact": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

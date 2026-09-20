@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-human-exposure",
+    "evidence_id": "evidence-ebrpd-algae-human-exposure",
+    "notes": "",
+    "observation_id": "observation-ebrpd-algae-health-risk",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

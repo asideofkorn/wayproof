@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-monitoring",
+    "evidence_id": "evidence-ebrpd-algae-monitoring",
+    "notes": "",
+    "observation_id": "observation-ebrpd-algae-monitoring",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

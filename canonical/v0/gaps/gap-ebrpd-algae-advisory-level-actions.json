@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ebrpd-algae-advisory-level-actions",
+    "question": "Which activities are allowed or prohibited at each EBRPD algae advisory level?",
+    "reason": "This page gives general health guidance but does not define the operational rules for Caution versus Danger; the linked beach-conditions material is still needed.",
+    "related_ids": [
+      "claim-ebrpd-algae-human-exposure",
+      "claim-ebrpd-algae-dog-exposure",
+      "claim-ebrpd-algae-advisory-fish-guidance",
+      "claim-del-valle-ebrpd-east-beach-algae"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

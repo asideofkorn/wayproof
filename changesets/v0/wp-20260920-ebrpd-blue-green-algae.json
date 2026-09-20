@@ -1,0 +1,322 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-blue-green-algae",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/program-ebrpd-hab-monitoring.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "program-ebrpd-hab-monitoring",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-ebrpd-water-quality-program.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "scope-ebrpd-water-quality-program",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-blue-green-algae.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "source-ebrpd-blue-green-algae",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-algae-bloom-context.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "observation-ebrpd-algae-bloom-context",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-algae-health-risk.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "observation-ebrpd-algae-health-risk",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-algae-fish-guidance.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "observation-ebrpd-algae-fish-guidance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-algae-monitoring.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "observation-ebrpd-algae-monitoring",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-algae-current-del-valle.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "observation-ebrpd-algae-current-del-valle",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-bloom-conditions.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-bloom-conditions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-human-exposure.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-human-exposure",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-dog-exposure.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-dog-exposure",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-advisory-fish-guidance.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-advisory-fish-guidance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-fish-testing-result.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-fish-testing-result",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-monitoring.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-monitoring",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-del-valle-drinking-water.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-del-valle-drinking-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-east-beach-caution.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-east-beach-caution",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-algae-west-beach-no-water.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "evidence-ebrpd-algae-west-beach-no-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-bloom-conditions"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-bloom-conditions.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-bloom-conditions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-human-exposure"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-human-exposure.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-human-exposure",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-dog-exposure"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-dog-exposure.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-dog-exposure",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-advisory-fish-guidance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-advisory-fish-guidance.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-advisory-fish-guidance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-fish-testing-result"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-fish-testing-result.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-fish-testing-result",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-monitoring"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-monitoring.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-monitoring",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-del-valle-drinking-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-algae-del-valle-drinking-water.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-ebrpd-algae-del-valle-drinking-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-east-beach-algae",
+        "evidence-ebrpd-algae-east-beach-caution"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-east-beach-algae.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-del-valle-ebrpd-east-beach-algae",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-west-beach-water",
+        "evidence-ebrpd-algae-west-beach-no-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-west-beach-water.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "claim-del-valle-ebrpd-west-beach-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-dog-exposure"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-algae-dog-water-access.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "rule-ebrpd-algae-dog-water-access",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-advisory-fish-guidance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-algae-advisory-water-contact.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "rule-ebrpd-algae-advisory-water-contact",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-algae-advisory-fish-guidance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-algae-advisory-fish-handling.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "rule-ebrpd-algae-advisory-fish-handling",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ebrpd-algae-advisory-level-actions.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "gap-ebrpd-algae-advisory-level-actions",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-del-valle-current-fire-status",
+        "gap-del-valle-current-algae-status",
+        "gap-del-valle-current-flood-closure",
+        "gap-del-valle-marina-schedule-effective-year",
+        "gap-ebrpd-mussels-current-flagged-waters",
+        "gap-ebrpd-mussels-standing-water-quarantine",
+        "gap-ebrpd-algae-advisory-level-actions"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add EBRPD blue-green-algae health guidance and dated Del Valle conditions.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add EBRPD harmful-algal-bloom health and monitoring guidance, corroborate dated Del Valle beach conditions, and preserve the unresolved advisory-level action boundary."
+}

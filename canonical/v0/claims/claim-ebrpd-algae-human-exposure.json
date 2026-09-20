@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-human-exposure",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-human-exposure"
+    ],
+    "predicate": "human_exposure_risk",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "effects": [
+        "rash",
+        "skin_eye_irritation",
+        "allergic_reaction",
+        "breathing_difficulty",
+        "congestion",
+        "gastrointestinal_illness",
+        "serious_illness",
+        "death"
+      ],
+      "routes": [
+        "ingestion",
+        "inhalation",
+        "skin_contact"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

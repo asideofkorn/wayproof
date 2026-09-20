@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-del-valle-drinking-water",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-del-valle-drinking-water"
+    ],
+    "predicate": "drinking_water_bloom_testing",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": "regular"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

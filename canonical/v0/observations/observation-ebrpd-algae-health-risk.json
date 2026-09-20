@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Exposure to toxic algae by ingestion, inhalation, or skin contact can cause rashes, eye or skin irritation, allergic reactions, breathing difficulty or congestion, gastrointestinal illness, and in high exposures serious illness or death. Dogs face special risk from drinking, swimming, wading, grooming contaminated fur or paws, or eating dried shoreline algae.",
+    "observation_id": "observation-ebrpd-algae-health-risk",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-blue-green-algae"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

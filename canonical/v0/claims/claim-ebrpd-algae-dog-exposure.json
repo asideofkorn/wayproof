@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-dog-exposure",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-dog-exposure"
+    ],
+    "predicate": "dog_exposure_risk",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "high_susceptibility": true,
+      "routes": [
+        "drinking",
+        "swimming",
+        "wading",
+        "grooming_fur_or_paws",
+        "eating_dried_shoreline_algae"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

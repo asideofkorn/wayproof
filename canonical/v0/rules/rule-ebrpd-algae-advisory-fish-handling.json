@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-advisory-fish-guidance",
+    "conditions": [
+      {
+        "dimension": "activity",
+        "operator": "equals",
+        "value": "fishing"
+      },
+      {
+        "dimension": "algae_advisory",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Wash fillets with tap or bottled water, discard guts and liver, and cook fish thoroughly.",
+    "rule_id": "rule-ebrpd-algae-advisory-fish-handling",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

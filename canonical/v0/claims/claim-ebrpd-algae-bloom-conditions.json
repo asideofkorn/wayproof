@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-bloom-conditions",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-bloom-conditions"
+    ],
+    "predicate": "bloom_conditions",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": [
+      "low_water",
+      "limited_circulation",
+      "increased_temperature",
+      "increased_light",
+      "low_oxygen",
+      "high_phosphorus"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
