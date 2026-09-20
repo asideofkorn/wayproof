@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.google.com/maps?q=37.5044641253631,-121.908478932501",
+    "publisher": "Google Maps (linked by East Bay Regional Park District)",
+    "source_id": "source-google-maps-mission-peak-stanford-entrance"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

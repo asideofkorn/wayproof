@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "To Reach The Park",
+      "Ohlone College Entrance",
+      "Stanford Avenue Entrance"
+    ],
+    "content": "The live park page distinguishes Ohlone College, Anza–Pine walk-in, and Stanford Avenue access. Ohlone College has more than 900 parking spaces in Lots E, G, H and the parking structure, requires a college parking permit from 6 a.m. to 11 p.m. except stated college holidays and semester breaks, and prohibits overnight parking. Stanford Avenue has 43 spaces and permits overnight parking only with the permit issued through an Ohlone Wilderness camping reservation. The page warns that nearby residential parking is restricted on weekends and national holidays, states there is no Mission Peak access from Mill Creek Road, and encourages Ohlone College access because Stanford Avenue is heavily used.",
+    "observation_id": "observation-ebrpd-mission-peak-access",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T00:00:00-07:00",
+    "source_id": "source-ebrpd-mission-peak-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Daily Permits",
+      "Hourly Permits"
+    ],
+    "content": "The current college permit page states that visitors and students without semester permits need a daily permit. It publishes a $4 daily rate, identifies permit kiosks in most lots and on all levels near the South Parking Structure elevator at the Fremont campus, offers mobile purchase by QR code, and says a daily permit is valid only on its purchase date at either campus. It separately limits hourly permits to two hours in marked hourly stalls in Lot P.",
+    "observation_id": "observation-ohlone-college-daily-permits",
+    "observed_at": null,
+    "observer": "Wayproof live source review via browser",
+    "retrieved_at": "2026-09-20T00:00:00-07:00",
+    "source_id": "source-ohlone-college-parking-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/mission_peak_ohlone_parking.pdf",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-mission-peak-ohlone-parking-map"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

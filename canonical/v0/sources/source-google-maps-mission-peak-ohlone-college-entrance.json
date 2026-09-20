@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.google.com/maps/place/43600+Mission+Blvd,+Fremont,+CA+94539/@37.5310629,-121.9136101",
+    "publisher": "Google Maps (linked by East Bay Regional Park District)",
+    "source_id": "source-google-maps-mission-peak-ohlone-college-entrance"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

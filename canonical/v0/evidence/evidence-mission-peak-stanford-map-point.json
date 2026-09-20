@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-stanford-map-point",
+    "evidence_id": "evidence-mission-peak-stanford-map-point",
+    "notes": "The official EBRPD page labels and links this exact coordinate query as the Stanford Avenue entrance; its directions shortcut independently resolves to the staging area.",
+    "observation_id": "observation-ebrpd-linked-mission-peak-map-points",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

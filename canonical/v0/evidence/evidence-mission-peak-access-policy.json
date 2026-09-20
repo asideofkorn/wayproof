@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-access-policy",
+    "evidence_id": "evidence-mission-peak-access-policy",
+    "notes": "The official park page directly compares parking capacity, permit requirements, overnight use, and access restrictions for the two principal approaches.",
+    "observation_id": "observation-ebrpd-mission-peak-access",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

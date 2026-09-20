@@ -1,0 +1,253 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-mission-peak-access-parking",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-access-policy"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-access-policy.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "claim-mission-peak-access-policy",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-anza-pine-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-anza-pine-map-point.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "claim-mission-peak-anza-pine-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-ohlone-college-address"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-ohlone-college-address.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "claim-mission-peak-ohlone-college-address",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-stanford-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mission-peak-stanford-map-point.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "claim-mission-peak-stanford-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-college-daily-permit-policy-20260920"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-college-daily-permit-policy-20260920.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "claim-ohlone-college-daily-permit-policy-20260920",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-mission-peak-anza-pine.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "entrance-mission-peak-anza-pine",
+      "record_type": "entitie"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-mission-peak-ohlone-college.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "entrance-mission-peak-ohlone-college",
+      "record_type": "entitie"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/staging-mission-peak-stanford-avenue.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "staging-mission-peak-stanford-avenue",
+      "record_type": "entitie"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mission-peak-access-policy.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-mission-peak-access-policy",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mission-peak-anza-pine-map-point.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-mission-peak-anza-pine-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mission-peak-ohlone-college-address.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-mission-peak-ohlone-college-address",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mission-peak-stanford-map-point.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-mission-peak-stanford-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-college-daily-permit-policy-20260920.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "evidence-ohlone-college-daily-permit-policy-20260920",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-linked-mission-peak-map-points.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-linked-mission-peak-map-points",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mission-peak-access.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ebrpd-mission-peak-access",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-college-daily-permits.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "observation-ohlone-college-daily-permits",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-mission-peak-ohlone-parking-map.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-ebrpd-mission-peak-ohlone-parking-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-mission-peak-park-page.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-ebrpd-mission-peak-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-mission-peak-anza-pine-entrance.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-google-maps-mission-peak-anza-pine-entrance",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-mission-peak-ohlone-college-entrance.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-google-maps-mission-peak-ohlone-college-entrance",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-mission-peak-stanford-directions.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-google-maps-mission-peak-stanford-directions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-mission-peak-stanford-entrance.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-google-maps-mission-peak-stanford-entrance",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ohlone-college-parking-permits.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "source-ohlone-college-parking-permits",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-mission-peak-anza-pine-entrance.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "scope-mission-peak-anza-pine-entrance",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-mission-peak-ohlone-college-entrance.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "scope-mission-peak-ohlone-college-entrance",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-mission-peak-stanford-avenue-staging.json",
+      "reason": "Capture Mission Peak access, parking, permit, and official-page-linked map-point knowledge with explicit provenance and applicability.",
+      "record_id": "scope-mission-peak-stanford-avenue-staging",
+      "record_type": "spatial_scope"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official Mission Peak access and parking sources, Ohlone College visitor permit policy, and EBRPD-linked Ohlone College, Anza–Pine, and Stanford Avenue map references."
+}

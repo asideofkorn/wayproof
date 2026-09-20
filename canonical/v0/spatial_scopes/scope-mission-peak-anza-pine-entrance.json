@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The Anza–Pine walk-in entrance to Mission Peak from the Ohlone College side.",
+    "entity_id": "entrance-mission-peak-anza-pine",
+    "kind": "walk_in_entrance",
+    "scope_id": "scope-mission-peak-anza-pine-entrance"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

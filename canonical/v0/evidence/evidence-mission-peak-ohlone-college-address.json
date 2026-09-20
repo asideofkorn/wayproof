@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-ohlone-college-address",
+    "evidence_id": "evidence-mission-peak-ohlone-college-address",
+    "notes": "The official EBRPD page identifies and links 43600 Mission Boulevard as the Ohlone College entrance address.",
+    "observation_id": "observation-ebrpd-linked-mission-peak-map-points",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

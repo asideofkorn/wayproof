@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Ohlone College entrance address link",
+      "Anza–Pine walk-in entrance link",
+      "Stanford Avenue entrance link",
+      "Mission Peak directions link"
+    ],
+    "content": "The EBRPD To Reach The Park section links 43600 Mission Boulevard for the Ohlone College entrance, a coordinate pin at 37.527465089624, -121.912493393071 for the Anza–Pine walk-in entrance, and a coordinate pin at 37.5044641253631, -121.908478932501 for the Stanford Avenue entrance. Its separate directions shortcut resolves to the Stanford Avenue Staging Area. The address-map URL includes a map-view center, but that center is not asserted as an authoritative entrance coordinate.",
+    "observation_id": "observation-ebrpd-linked-mission-peak-map-points",
+    "observed_at": null,
+    "observer": "Wayproof linked-source review",
+    "retrieved_at": "2026-09-20T00:00:00-07:00",
+    "source_id": "source-ebrpd-mission-peak-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-access-policy",
+    "evidence_ids": [
+      "evidence-mission-peak-access-policy"
+    ],
+    "predicate": "visitor_access_policy",
+    "spatial_scope_ids": [
+      "scope-mission-peak-ohlone-college-entrance",
+      "scope-mission-peak-stanford-avenue-staging"
+    ],
+    "subject_id": "park-mission-peak-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "mill_creek_road_access": false,
+      "ohlone_college": {
+        "approximate_spaces": 900,
+        "overnight_parking": false,
+        "parking_areas": [
+          "Lot E",
+          "Lot G",
+          "Lot H",
+          "South Parking Structure"
+        ],
+        "permit_required_hours": "06:00–23:00 daily, except college-observed holidays and semester breaks"
+      },
+      "preferred_over_stanford_for_capacity": true,
+      "stanford_avenue": {
+        "spaces": 43,
+        "overnight_parking": "Only with a permit issued through an Ohlone Wilderness camping reservation",
+        "residential_parking_restricted": "Saturday 00:01 through Sunday 23:59 and on national holidays"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
