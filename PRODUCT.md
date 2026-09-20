@@ -1,0 +1,160 @@
+# Wayproof Product Direction
+
+## Purpose
+
+Wayproof is open-source, source-backed logistics for outdoor trips. It turns a
+specific objective and date into an executable plan: how the trip is accessed,
+which constraints apply, what must be obtained or done, when action is needed,
+and what evidence supports every answer.
+
+The present repository is Sierra Nevada- and SPS-focused and already provides a
+working planning CLI and research corpus. This document defines the product
+direction those capabilities are moving toward; it does not claim that the
+target architecture is implemented today.
+
+## Product promise
+
+For a proposed trip, Wayproof should answer:
+
+- what route, access points, traversals, land units, facilities, and resources
+  are relevant;
+- which rules apply to the date, route, activity, party, and equipment;
+- which requirements gate the trip and what can fulfill each requirement;
+- when scarce inventory or an application window becomes actionable;
+- which facts are supported, stale, disputed, route-dependent, or unknown; and
+- what must be rechecked shortly before departure.
+
+A clear refusal or `UNKNOWN` result is better than a confident unsupported
+answer. Absence of data is never evidence that a restriction, fee, closure, or
+requirement does not exist.
+
+## Product model
+
+A `Trip` is evaluated from an expressed `TripIntent` and a resolved
+`PlanningContext`. An intent may name a summit, trail, traverse, campground,
+waterbody, facility, or another legitimate objective; a peak is one objective
+type, not the ontology of the product.
+
+The planning context includes:
+
+- `TripObjective` values and ordered `TripStage` values;
+- route, access, and traversal choices, including distinct entry and exit;
+- date and time;
+- `PartyContext`, including characteristics that materially affect a rule or
+  booking constraint;
+- `ActivityContext`; and
+- `EquipmentContext`, including bounded equipment history when a rule depends
+  on it.
+
+Wayproof projects knowledge onto that context. It must distinguish legal access
+from physical condition and user/equipment capability. It must also distinguish
+facility existence from operational availability, and inventory that is
+confirmed unavailable from inventory that simply cannot be checked.
+
+## Core user outcomes
+
+### Trip readiness
+
+`Trip Readiness` is the consolidated, evidence-backed view of whether the
+currently described trip can proceed. It includes applicable requirements,
+coverage by proposed fulfillments, unresolved gaps, conflicts, deadlines,
+closures, cost components, and route-dependent uncertainty. Readiness is not a
+generic safety score or a booking guarantee.
+
+Coverage is explicit: a reservation, credential, completed action, or verified
+condition may cover only certain people, vehicles, dates, stages, places, or
+activities. A partially covered requirement remains incomplete.
+
+### Pre-trip recheck
+
+`Pre-trip Recheck` reevaluates facts likely to change after initial planning:
+roads, closures, water, fire restrictions, weather-sensitive operations,
+facility status, inventory, and other time-sensitive claims. The result explains
+what changed, what remains unresolved, and which sources should be checked.
+
+### Explainability and answerability
+
+Every material conclusion should expose its supporting claims and evidence.
+Results use explicit answerability states such as answered, partial, conflicting,
+unknown, not applicable, and needs-current-check. Exact enum spellings are an
+implementation decision; the semantic distinctions are not.
+
+## Contributor and research workflow
+
+Evidence may arrive as an official page, PDF, screenshot, GPX trace, field
+report, social post, GitHub issue, or structured authoritative dataset. Agents
+may help identify entities, preserve observations, extract candidate claims, and
+explain proposals. They must not directly author canonical knowledge.
+
+The reviewer sees a `ChangeSet` containing the proposed changes, provenance,
+uncertainties, conflicts, and knowledge gaps. A proposal can be valid while its
+underlying fact remains uncertain: validation means the uncertainty is
+represented correctly, not that the world is fully known.
+
+Canonical promotion follows one controlled lifecycle:
+
+```text
+DRAFT -> VALIDATED -> APPROVED -> PROMOTED
+```
+
+Human approval is initially required. Git review and CI remain the publication
+boundary, and `main` represents published canonical knowledge.
+
+## MVP contract
+
+The MVP is complete when Wayproof can take a bounded real trip and:
+
+1. represent objectives, stages, access, route/traversal, relevant context, and
+   temporal scope without destination-specific schema exceptions;
+2. trace `Source -> Observation -> Evidence -> Claim -> Rule/DerivedResult`;
+3. derive applicable requirements and evaluate explicit fulfillment coverage;
+4. produce Trip Readiness and Pre-trip Recheck outputs with answerability and
+   provenance;
+5. decline or surface gaps instead of inferring permission, availability, or
+   correctness from silence;
+6. accept new knowledge only through a validated, approved ChangeSet; and
+7. expose the same behavior through the domain/service layer used by CLI and,
+   later, MCP adapters.
+
+MVP does not require nationwide coverage, exact route navigation, a database,
+automated booking, or autonomous publication by an AI agent.
+
+## Reference and regression fixtures
+
+The product contract is grounded in real journeys and adversarial cases:
+
+- the completed Ohlone traverse: two ends, campsite scarcity, phone booking,
+  parking dependency, full cost, facility closure, and dated water evidence;
+- Williamson plus Tyndall: shared objectives, Shepherd Pass access, effort, and
+  continuous-travel/permit reasoning;
+- Whitney-area routes: the same portal serving approaches governed by different
+  permit products;
+- facility and concessioner cases: operator, land manager, booking facility,
+  booking channel, and governed place must remain separate;
+- fishing: activity-, participant-, credential-, season-, method-, and species-
+  dependent rules;
+- boating and invasive-species controls: equipment identity and prior history,
+  inspection, quarantine/dry-out, decontamination, and vessel-specific
+  credentials;
+- the California 14ers social-water thread: multiple reporters, screenshots,
+  uncertain dates and geographic fit, and no unsupported inference of current
+  water availability; and
+- the eight adversarial schema cases covering legal versus physical access,
+  water evidence, partial route resolution, coverage mismatch, supersession,
+  unknown versus unavailable, compound scope, and evidence disagreement.
+
+Canonical Schema v0 passed all eight adversarial cases without needing a
+special-purpose primitive and is frozen for initial implementation. Frozen means
+stable enough to implement and migrate against, not immune to evidence-driven
+future change.
+
+## Deliberate non-goals and open implementation choices
+
+Wayproof complements rather than replaces navigation products such as CalTopo,
+Gaia GPS, and similar tools. It does not manufacture an exact route from nearby
+geometry.
+
+The following remain intentionally unresolved until implementation provides
+evidence: canonical serialization (for example YAML, JSON, or JSONL), exact
+Python module/class layout, exact enum spellings, the on-disk ChangeSet shape,
+and whether or when a generated SQLite read index is useful.
