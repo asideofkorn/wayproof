@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The live district alerts and closures page is a volatile source for conditions that may affect park access, facilities, water recreation, fire restrictions, and closures.",
+    "observation_id": "observation-ebrpd-alerts-recheck",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-alerts-closures"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

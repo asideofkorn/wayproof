@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page identifies two developed and five primitive group camps, gives named-site capacities, facilities, parking allocations, fees, and seasonal notes, and prohibits RVs, trailers, motorhomes, buses, food trucks, and caterers at group camps.",
+    "observation_id": "observation-del-valle-camping-groups",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

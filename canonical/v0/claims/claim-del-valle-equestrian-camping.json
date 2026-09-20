@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-equestrian-camping",
+    "evidence_ids": [
+      "evidence-del-valle-equestrian-camping"
+    ],
+    "predicate": "equestrian_camping_details",
+    "spatial_scope_ids": [
+      "scope-del-valle-equestrian-camps"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "Caballo Loco": {
+        "horses": [
+          5,
+          15
+        ],
+        "parking_passes": 10,
+        "people": [
+          4,
+          50
+        ]
+      },
+      "Little Chaparral": {
+        "max_horses_per_site": 1,
+        "max_people_per_site": 4,
+        "sites": 4
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

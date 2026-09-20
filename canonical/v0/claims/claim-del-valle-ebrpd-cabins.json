@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-ebrpd-cabins",
     "evidence_ids": [
-      "evidence-del-valle-ebrpd-cabins"
+      "evidence-del-valle-ebrpd-cabins",
+      "evidence-del-valle-camping-current-cabins"
     ],
     "predicate": "cabin_inventory",
     "spatial_scope_ids": [
@@ -13,10 +14,12 @@
     "temporal_scope": null,
     "value": {
       "cabin_sleeping_capacity": 5,
+      "maximum_advance_weeks": 12,
       "maximum_people_per_site": 8,
       "minimum_advance_business_days": 3,
-      "reservation_channel": "phone",
-      "sites": 5
+      "reservation_channel": "phone_only",
+      "sites": 5,
+      "year_round_pilot": true
     }
   },
   "record_type": "claim",

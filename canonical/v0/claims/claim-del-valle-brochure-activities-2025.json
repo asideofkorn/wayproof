@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-brochure-activities-2025",
+    "evidence_ids": [
+      "evidence-del-valle-brochure-activities-2025"
+    ],
+    "predicate": "published_activity_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": "2025-12-31",
+      "starts_on": "2025-01-01"
+    },
+    "value": [
+      "camping",
+      "boating",
+      "fishing",
+      "hiking",
+      "horseback_riding",
+      "picnicking",
+      "swimming"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

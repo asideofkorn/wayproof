@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "group-camp-del-valle-cedar",
+    "kind": "group_campsite",
+    "name": "Cedar Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

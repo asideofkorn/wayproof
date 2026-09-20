@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "group-camp-del-valle-hetch-hetchy",
+    "kind": "group_campsite",
+    "name": "Hetch Hetchy"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

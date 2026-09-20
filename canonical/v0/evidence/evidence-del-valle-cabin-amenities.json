@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-amenities",
+    "evidence_id": "evidence-del-valle-cabin-amenities",
+    "notes": "",
+    "observation_id": "observation-del-valle-cabin-faq-amenities",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

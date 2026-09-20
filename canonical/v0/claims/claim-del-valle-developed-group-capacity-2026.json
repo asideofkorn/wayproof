@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-developed-group-capacity-2026",
+    "evidence_ids": [
+      "evidence-del-valle-developed-group-capacity-2026"
+    ],
+    "predicate": "developed_group_camping_capacity",
+    "spatial_scope_ids": [
+      "scope-del-valle-group-camps"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_people": 50,
+      "maximum_vehicles": 15,
+      "minimum_people": 17
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF"
+    ],
+    "content": "The 2025 general brochure places Del Valle in the district system and identifies camping, boating, fishing, hiking, horseback riding, picnicking, and swimming as available activities.",
+    "observation_id": "observation-ebrpd-brochure-2025-del-valle",
+    "observed_at": "2025-01-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-general-brochure-2025"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-camp-map-group-lead-time-2025",
+    "evidence_ids": [
+      "evidence-del-valle-camp-map-group-lead-time-2025"
+    ],
+    "predicate": "published_group_reservation_minimum_business_days",
+    "spatial_scope_ids": [
+      "scope-del-valle-group-camps"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": {
+      "ends_on": "2025-11-30",
+      "starts_on": "2025-11-01"
+    },
+    "value": 5
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

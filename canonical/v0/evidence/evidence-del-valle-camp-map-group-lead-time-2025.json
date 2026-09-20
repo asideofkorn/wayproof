@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-camp-map-group-lead-time-2025",
+    "evidence_id": "evidence-del-valle-camp-map-group-lead-time-2025",
+    "notes": "Conflicts with current official pages, which report three business days.",
+    "observation_id": "observation-del-valle-camp-map-2025",
+    "stance": "conflicts"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

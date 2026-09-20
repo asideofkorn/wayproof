@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-alerts-closures-live",
+    "evidence_id": "evidence-ebrpd-alerts-closures-live",
+    "notes": "",
+    "observation_id": "observation-ebrpd-alerts-recheck",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

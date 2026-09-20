@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-camp-map-inventory-2025",
+    "evidence_ids": [
+      "evidence-del-valle-camp-map-inventory-2025"
+    ],
+    "predicate": "published_family_site_count",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": {
+      "ends_on": "2025-11-30",
+      "starts_on": "2025-11-01"
+    },
+    "value": 145
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-camping-release-policy",
+    "evidence_ids": [
+      "evidence-ebrpd-camping-release-policy"
+    ],
+    "predicate": "reservation_release_policy",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": null,
+    "value": {
+      "family_and_cabin": "rolling_12_weeks",
+      "group_and_backpacking": "six_month_blocks_phone_only",
+      "opening_day_max_reservations_per_call": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -4,7 +4,8 @@
     "claim_id": "claim-del-valle-campground-inventory",
     "evidence_ids": [
       "evidence-del-valle-campground-inventory",
-      "evidence-del-valle-ebrpd-campground-inventory"
+      "evidence-del-valle-ebrpd-campground-inventory",
+      "evidence-del-valle-camping-current-inventory"
     ],
     "predicate": "site_inventory",
     "spatial_scope_ids": [

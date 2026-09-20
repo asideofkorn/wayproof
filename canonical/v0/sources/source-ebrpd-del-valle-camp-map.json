@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/DelValle-Camp-Map.pdf",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-del-valle-camp-map"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

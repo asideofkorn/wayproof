@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-cabin-site-use",
+    "evidence_ids": [
+      "evidence-del-valle-cabin-site-use"
+    ],
+    "predicate": "cabin_site_use",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "check_in": "15:00",
+      "check_out": "11:00",
+      "max_consecutive_nights": 10,
+      "max_nights_per_calendar_year": 20,
+      "max_overlapping_per_household": 1,
+      "max_people_inside": 5,
+      "max_people_site": 8,
+      "max_vehicles_included": 2,
+      "required_nights_away": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

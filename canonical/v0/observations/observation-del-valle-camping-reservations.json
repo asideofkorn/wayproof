@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Camping requires a reservation. Family sites require at least two business days; group sites at least three. ADA and group reservations are phone-only. Family sites may also be booked online.",
+    "observation_id": "observation-del-valle-camping-reservations",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

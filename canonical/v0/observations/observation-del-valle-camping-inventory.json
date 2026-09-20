@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The current camping page lists 150 family sites: 21 full-hookup RV sites, 124 drive-up tent sites, and five cabins; all family sites allow at most eight people and two vehicles.",
+    "observation_id": "observation-del-valle-camping-inventory",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

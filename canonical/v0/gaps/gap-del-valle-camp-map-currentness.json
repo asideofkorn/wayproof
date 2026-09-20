@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-camp-map-currentness",
+    "question": "Which campground-map facts remain current after newer official camping pages?",
+    "reason": "The dated map reports 145 sites and five-day group lead time; newer official sources report 150 and three days.",
+    "related_ids": [
+      "claim-del-valle-camp-map-inventory-2025",
+      "claim-del-valle-camp-map-group-lead-time-2025",
+      "claim-del-valle-campground-inventory",
+      "claim-del-valle-group-booking"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

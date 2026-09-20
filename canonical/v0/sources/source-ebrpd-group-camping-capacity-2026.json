@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/ebprd-group-camping-minimum-2026.pdf?v=20251210",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-group-camping-capacity-2026"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
