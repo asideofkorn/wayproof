@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-west-beach-in-park",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-west-beach-in-park"
+    ],
+    "predicate": "located_in",
+    "spatial_scope_ids": [
+      "scope-del-valle-west-beach"
+    ],
+    "subject_id": "beach-del-valle-west",
+    "temporal_scope": null,
+    "value": "park-del-valle-regional-park"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

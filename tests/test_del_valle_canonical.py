@@ -147,7 +147,7 @@ def test_algae_guidance_separates_stable_health_rules_from_current_conditions():
     current = next(item for item in snapshot.claims
                    if item.claim_id == "claim-del-valle-ebrpd-east-beach-algae")
     assert current.temporal_scope.starts_on == current.temporal_scope.ends_on
-    assert len(current.evidence_ids) == 2
+    assert len(current.evidence_ids) == 3
 
 
 def test_algae_advisory_level_boundary_remains_an_explicit_gap():
@@ -165,3 +165,30 @@ def test_algae_changeset_adds_guidance_and_replaces_corroborated_state():
     counts = {action: sum(item.action.value == action for item in change.operations)
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 28, "REPLACE": 3, "REMOVE": 0}
+
+
+def test_swimming_registration_is_not_misapplied_to_del_valle():
+    snapshot = records()
+    registration = next(item for item in snapshot.claims
+                        if item.claim_id == "claim-ebrpd-swimming-registration-applicability")
+    assert "Del Valle" not in registration.value["named_facilities"]
+    assert registration.value["price_usd"] == 6
+
+
+def test_del_valle_swimming_safety_and_fee_ambiguity_are_explicit():
+    snapshot = records()
+    safety = next(item for item in snapshot.claims
+                  if item.claim_id == "claim-ebrpd-swimming-del-valle-safety")
+    assert safety.value["days_to_avoid_after_rain"] == 3
+    assert any(item.gap_id == "gap-del-valle-swimming-parking-fee"
+               for item in snapshot.gaps)
+    assert any(item.gap_id == "gap-del-valle-stoplight-meanings"
+               for item in snapshot.gaps)
+
+
+def test_swimming_changeset_combines_two_sources_with_bounded_replacements():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-del-valle-swimming.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 35, "REPLACE": 3, "REMOVE": 0}

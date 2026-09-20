@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-stoplight-meanings",
+    "question": "What activities does each Del Valle water-quality stop-light designation allow?",
+    "reason": "The page says the sign combines bacterial and algae conditions but the image text and linked designation rules were not supplied.",
+    "related_ids": [
+      "claim-ebrpd-swimming-del-valle-monitoring",
+      "gap-ebrpd-algae-advisory-level-actions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

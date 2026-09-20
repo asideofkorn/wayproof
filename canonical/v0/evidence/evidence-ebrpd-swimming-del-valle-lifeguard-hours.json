@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-lifeguard-hours",
+    "evidence_id": "evidence-ebrpd-swimming-del-valle-lifeguard-hours",
+    "notes": "",
+    "observation_id": "observation-ebrpd-swimming-del-valle-hours",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

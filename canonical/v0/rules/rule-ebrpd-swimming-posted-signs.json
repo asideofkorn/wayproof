@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-safety",
+    "conditions": [],
+    "consequence": "Check posted water-quality signs before entering the water.",
+    "rule_id": "rule-ebrpd-swimming-posted-signs",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

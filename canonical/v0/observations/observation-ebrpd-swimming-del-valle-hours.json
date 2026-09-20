@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Del Valle swimming page lists lifeguards 11 AM-6 PM on weekends and holidays from May 16 through September 27, two beaches, and year-round swimming without lifeguards north of the boat ramp.",
+    "observation_id": "observation-ebrpd-swimming-del-valle-hours",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

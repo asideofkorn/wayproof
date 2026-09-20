@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "EBRPD describes six lakefront beaches, two chlorinated lagoons, two pools, and two bay beaches. Walk-ins at open facilities are first-come until capacity. Optional weekend/holiday registration is named only for Castle Rock/Diablo Foothills, Cull Canyon, and Don Castro; registered sessions cost $6 per person, limit each registration to five entrants, and run 11 AM-6 PM with water exit at 5:30 PM.",
+    "observation_id": "observation-ebrpd-swimming-district-registration",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

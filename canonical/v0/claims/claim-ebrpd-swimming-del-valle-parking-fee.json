@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-parking-fee",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-del-valle-parking-fee"
+    ],
+    "predicate": "published_swimming_page_parking_fee_usd",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": 10
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,7 +1,7 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Operational conditions, water quality and advisory meaning, access, inspection history, band eligibility, and wet-weather procedures can change and must be checked near departure.",
+    "explanation": "Operational conditions, swimming schedules and fees, water-quality meanings, access, inspection history, and weather procedures can change and must be checked near departure.",
     "input_ids": [
       "claim-del-valle-volatile-alerts",
       "claim-del-valle-boat-inspection",
@@ -20,7 +20,10 @@
       "claim-ebrpd-mussels-wet-weather",
       "gap-ebrpd-mussels-current-flagged-waters",
       "gap-ebrpd-mussels-standing-water-quarantine",
-      "gap-ebrpd-algae-advisory-level-actions"
+      "gap-ebrpd-algae-advisory-level-actions",
+      "gap-del-valle-swimming-parking-fee",
+      "gap-del-valle-lifeguard-schedule-year",
+      "gap-del-valle-stoplight-meanings"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-del-valle-pretrip-recheck",

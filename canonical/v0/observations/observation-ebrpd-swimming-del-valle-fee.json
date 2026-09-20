@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Del Valle swimming page displays a $10 parking fee without seasonal or vehicle-type detail.",
+    "observation_id": "observation-ebrpd-swimming-del-valle-fee",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

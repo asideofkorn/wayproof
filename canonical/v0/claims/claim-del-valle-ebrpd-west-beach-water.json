@@ -4,7 +4,8 @@
     "claim_id": "claim-del-valle-ebrpd-west-beach-water",
     "evidence_ids": [
       "evidence-del-valle-ebrpd-west-beach-water",
-      "evidence-ebrpd-algae-west-beach-no-water"
+      "evidence-ebrpd-algae-west-beach-no-water",
+      "evidence-ebrpd-swimming-west-no-water"
     ],
     "predicate": "water_availability",
     "spatial_scope_ids": [

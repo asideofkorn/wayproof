@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-safety",
+    "conditions": [
+      {
+        "dimension": "days_since_rainstorm",
+        "operator": "less_than_or_equal",
+        "value": 3
+      }
+    ],
+    "consequence": "Do not swim in Lake Del Valle for three days after a rainstorm.",
+    "rule_id": "rule-ebrpd-swimming-post-rain",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-swimming-parking-fee",
+    "question": "When does the swimming page's $10 parking fee apply?",
+    "reason": "The swimming page says $10, while the park page distinguishes $5 parking from a seasonal $10 flat entry fee.",
+    "related_ids": [
+      "claim-ebrpd-swimming-del-valle-parking-fee",
+      "claim-del-valle-ebrpd-entry-fees"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

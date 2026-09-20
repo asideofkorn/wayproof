@@ -1,0 +1,398 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-del-valle-swimming",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-swimming.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "source-ebrpd-swimming",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-del-valle-swimming.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "source-ebrpd-del-valle-swimming",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-district-registration.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-district-registration",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-del-valle-hours.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-del-valle-hours",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-del-valle-fee.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-del-valle-fee",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-monitoring.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-monitoring",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-safety.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-safety",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-swimming-current-beaches.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "observation-ebrpd-swimming-current-beaches",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-registration-applicability.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-registration-applicability",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-del-valle-lifeguard-hours.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-del-valle-lifeguard-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-year-round-unlifeguarded.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-year-round-unlifeguarded",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-del-valle-parking-fee.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-del-valle-parking-fee",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-del-valle-monitoring.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-del-valle-monitoring",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-del-valle-safety.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-del-valle-safety",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-east-caution.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-east-caution",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-west-no-water.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-west-no-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-east-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-east-beach-in-park",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-swimming-west-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "evidence-ebrpd-swimming-west-beach-in-park",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-registration-applicability"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-registration-applicability.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-registration-applicability",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-lifeguard-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-del-valle-lifeguard-hours.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-del-valle-lifeguard-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-year-round-unlifeguarded"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-year-round-unlifeguarded.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-year-round-unlifeguarded",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-parking-fee"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-del-valle-parking-fee.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-del-valle-parking-fee",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-monitoring"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-del-valle-monitoring.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-del-valle-monitoring",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-safety"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-del-valle-safety.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-del-valle-safety",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-east-beach-algae",
+        "evidence-ebrpd-algae-east-beach-caution",
+        "evidence-ebrpd-swimming-east-caution"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-east-beach-algae.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-del-valle-ebrpd-east-beach-algae",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-west-beach-water",
+        "evidence-ebrpd-algae-west-beach-no-water",
+        "evidence-ebrpd-swimming-west-no-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-west-beach-water.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-del-valle-ebrpd-west-beach-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-east-beach-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-east-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-east-beach-in-park",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-west-beach-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-west-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "claim-ebrpd-swimming-west-beach-in-park",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-east-beach-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-east-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "relationship-del-valle-east-beach-in-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-west-beach-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-del-valle-west-beach-in-park.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "relationship-del-valle-west-beach-in-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-lifeguard-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-swimming-lifeguarded-swimming.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "rule-ebrpd-swimming-lifeguarded-swimming",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-safety"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-swimming-post-rain.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "rule-ebrpd-swimming-post-rain",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-safety"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-swimming-posted-signs.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "rule-ebrpd-swimming-posted-signs",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-safety"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-swimming-dogs-away.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "rule-ebrpd-swimming-dogs-away",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-swimming-parking-fee.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "gap-del-valle-swimming-parking-fee",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-lifeguard-schedule-year.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "gap-del-valle-lifeguard-schedule-year",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-stoplight-meanings.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "gap-del-valle-stoplight-meanings",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-del-valle-current-fire-status",
+        "gap-del-valle-current-algae-status",
+        "gap-del-valle-current-flood-closure",
+        "gap-del-valle-marina-schedule-effective-year",
+        "gap-ebrpd-mussels-current-flagged-waters",
+        "gap-ebrpd-mussels-standing-water-quarantine",
+        "gap-ebrpd-algae-advisory-level-actions",
+        "gap-del-valle-swimming-parking-fee",
+        "gap-del-valle-lifeguard-schedule-year",
+        "gap-del-valle-stoplight-meanings"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Add district-wide and Del Valle-specific swimming evidence with explicit applicability.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add two linked EBRPD swimming sources while keeping district registration rules separate from Del Valle-specific schedules, safety, fees, and current conditions."
+}

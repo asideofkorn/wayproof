@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-lifeguard-hours",
+    "conditions": [],
+    "consequence": "Treat lifeguard coverage as limited to the posted dates and hours.",
+    "rule_id": "rule-ebrpd-swimming-lifeguarded-swimming",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
