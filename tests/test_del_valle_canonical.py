@@ -137,3 +137,31 @@ def test_mussel_changeset_exercises_corroborating_replacements():
     boat_inspection = next(item for item in records().claims
                            if item.claim_id == "claim-del-valle-boat-inspection")
     assert len(boat_inspection.evidence_ids) == 3
+
+
+def test_algae_guidance_separates_stable_health_rules_from_current_conditions():
+    snapshot = records()
+    human = next(item for item in snapshot.claims
+                 if item.claim_id == "claim-ebrpd-algae-human-exposure")
+    assert set(human.value["routes"]) == {"ingestion", "inhalation", "skin_contact"}
+    current = next(item for item in snapshot.claims
+                   if item.claim_id == "claim-del-valle-ebrpd-east-beach-algae")
+    assert current.temporal_scope.starts_on == current.temporal_scope.ends_on
+    assert len(current.evidence_ids) == 2
+
+
+def test_algae_advisory_level_boundary_remains_an_explicit_gap():
+    snapshot = records()
+    gap = next(item for item in snapshot.gaps
+               if item.gap_id == "gap-ebrpd-algae-advisory-level-actions")
+    assert "Caution versus Danger" in gap.reason
+    assert any(item.rule_id == "rule-ebrpd-algae-dog-water-access"
+               for item in snapshot.rules)
+
+
+def test_algae_changeset_adds_guidance_and_replaces_corroborated_state():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-blue-green-algae.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 28, "REPLACE": 3, "REMOVE": 0}

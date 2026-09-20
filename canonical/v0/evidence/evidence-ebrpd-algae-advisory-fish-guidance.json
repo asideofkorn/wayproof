@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-advisory-fish-guidance",
+    "evidence_id": "evidence-ebrpd-algae-advisory-fish-guidance",
+    "notes": "",
+    "observation_id": "observation-ebrpd-algae-fish-guidance",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

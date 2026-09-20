@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-advisory-fish-guidance",
+    "conditions": [
+      {
+        "dimension": "algae_advisory",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "During an algae advisory, avoid unnecessary water contact and wash hands after handling fish or wet equipment.",
+    "rule_id": "rule-ebrpd-algae-advisory-water-contact",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

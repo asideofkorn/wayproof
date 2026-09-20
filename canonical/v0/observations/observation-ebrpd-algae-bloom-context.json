@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Blue-green algae are cyanobacteria. Low water, limited circulation, increased temperature and light, low oxygen, and high phosphorus can favor blooms and potential toxin release; toxin production remains incompletely understood.",
+    "observation_id": "observation-ebrpd-algae-bloom-context",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-blue-green-algae"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

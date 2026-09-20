@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "program-ebrpd-hab-monitoring",
+    "kind": "monitoring_program",
+    "name": "EBRPD Harmful Algal Bloom Monitoring Program"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

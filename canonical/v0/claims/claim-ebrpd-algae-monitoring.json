@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-monitoring",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-monitoring"
+    ],
+    "predicate": "monitoring_practice",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "lakes_and_shorelines": "regular",
+      "posts_warnings_and_closures": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

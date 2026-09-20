@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "During an algae advisory, EBRPD advises avoiding unnecessary water contact and washing hands after handling fish or wet equipment. Fish fillets should be washed with tap or bottled water, guts and liver discarded, and fish cooked thoroughly. Reservoir fish are tested annually; at retrieval the page reported no microcystin detected to date in fish flesh from District-managed waters.",
+    "observation_id": "observation-ebrpd-algae-fish-guidance",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-blue-green-algae"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

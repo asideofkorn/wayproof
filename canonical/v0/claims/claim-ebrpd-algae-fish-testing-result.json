@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-fish-testing-result",
+    "evidence_ids": [
+      "evidence-ebrpd-algae-fish-testing-result"
+    ],
+    "predicate": "published_fish_testing_result",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "frequency": "annual",
+      "microcystin_in_flesh_detected_to_date": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

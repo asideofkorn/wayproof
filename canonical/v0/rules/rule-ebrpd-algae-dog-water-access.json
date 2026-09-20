@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-algae-dog-exposure",
+    "conditions": [
+      {
+        "dimension": "party_has_dog",
+        "operator": "equals",
+        "value": true
+      },
+      {
+        "dimension": "hab_incident",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "During a harmful-algal-bloom incident, follow posted warnings and prevent dogs from accessing affected water or shoreline algae.",
+    "rule_id": "rule-ebrpd-algae-dog-water-access",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
