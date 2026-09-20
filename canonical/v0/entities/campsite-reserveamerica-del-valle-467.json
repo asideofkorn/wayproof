@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campsite-reserveamerica-del-valle-467",
+    "kind": "equestrian_campsite",
+    "name": "Horse Camp #3"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

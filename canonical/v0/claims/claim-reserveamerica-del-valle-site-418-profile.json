@@ -1,0 +1,54 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-418-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-418-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-cedar",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "Cedar Camp is a primitive site with partial shade and includes three 8' tables, two serving tables, one XL BBQ, a fire circle with benches, and two chemical toilets. There is a 1/4 mile hike in to the site and you must hike in all of your gear. Water is not available at the site, you must bring in your drinking water. No access to showers.",
+        "SITE ACCESS: Site can be accessed through the Cedar Camp trail. The entrance to the trail is just past the park entrance to your left.",
+        "CAPACITY: Minimum 17, maximum 50.",
+        "PARKING: 10 parking passes will be emailed 5-10 days before your reservation begins. Additional passes are not available for purchase. Buses, RVs, trailers, food trucks, or caterers are prohibited. Violators may be cited and/or towed.",
+        "ALCOHOL: Beer and wine allowed with permit ($25.00). No hard alcohol. Please call at least 3 days prior to the first night of your reservation to purchase. The permit does not allow the selling of alcoholic beverages, or consumption outside of your designated campsite. Reservation holder must be 21 years of age to purchase beer and wine permit. You are subject to citation for violation of these rules."
+      ],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/418/campsite-booking",
+      "details": {
+        "bbq": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "fire_pit": true,
+        "looking_for_category": "Group Site",
+        "maximum_number_of_people": 50,
+        "maximum_number_of_vehicles": 10,
+        "minimum_number_of_people": 17,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "shade": " or Tree CoverPartial",
+        "site_access": "Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": null,
+      "listed_capacity": 50,
+      "listed_driveway": "",
+      "longitude": null,
+      "loop": "Primitive Group Camp Seasonal",
+      "name": "CEDAR CAMP(50)",
+      "product_id": "418",
+      "site_type": "GROUP CAMPING"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-site-coordinates-unpublished",
+    "question": "What are the authoritative coordinates for the nine Del Valle site pages that publish no GIS latitude or longitude?",
+    "reason": "ReserveAmerica publishes coordinates for 146 of 155 entries but omits them for Horse Camp #1-#4 and five primitive group camps. Nearby or map-derived points were not substituted.",
+    "related_ids": [
+      "campsite-reserveamerica-del-valle-465",
+      "campsite-reserveamerica-del-valle-466",
+      "campsite-reserveamerica-del-valle-467",
+      "campsite-reserveamerica-del-valle-468",
+      "group-camp-del-valle-ardilla",
+      "group-camp-del-valle-eagles-view",
+      "group-camp-del-valle-cedar",
+      "group-camp-del-valle-hetch-hetchy",
+      "group-camp-del-valle-venados"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

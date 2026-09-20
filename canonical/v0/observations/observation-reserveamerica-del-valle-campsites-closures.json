@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Season Dates",
+      "Seasonal site closures"
+    ],
+    "content": "At retrieval the live listing marked Cedar, Wild Turkey, Punta Vaca, Caballo Loco, Hetch Hetchy, and Venados closed November 1 through March 31 and cabins closed January 1 through January 31; this conflicts with the May 20, 2026 EBRPD closure sheet for Cedar and Punta Vaca.",
+    "observation_id": "observation-reserveamerica-del-valle-campsites-closures",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-campsites-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

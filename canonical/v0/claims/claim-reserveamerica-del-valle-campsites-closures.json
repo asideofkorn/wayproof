@@ -1,0 +1,48 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-campsites-closures",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-campsites-closures"
+    ],
+    "predicate": "published_seasonal_closures",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "facility-reserveamerica-del-valle-110003",
+    "temporal_scope": null,
+    "value": {
+      "Caballo Loco": [
+        "11-01",
+        "03-31"
+      ],
+      "Cedar Camp": [
+        "11-01",
+        "03-31"
+      ],
+      "Hetch Hetchy": [
+        "11-01",
+        "03-31"
+      ],
+      "Punta Vaca": [
+        "11-01",
+        "03-31"
+      ],
+      "Venados": [
+        "11-01",
+        "03-31"
+      ],
+      "Wild Turkey": [
+        "11-01",
+        "03-31"
+      ],
+      "cabins": [
+        "01-01",
+        "01-31"
+      ],
+      "retrieved_on": "2026-09-20"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

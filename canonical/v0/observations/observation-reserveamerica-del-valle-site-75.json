@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Activities & Amenities",
+      "Site Details",
+      "Alerts and Important Information"
+    ],
+    "content": "The live site-detail page identifies 023 in Loop B: Sites 14-53 as RV Hookup Site, publishes 26 structured detail fields and 0 alert statements, and exposes coordinates 37.57211156, -121.6886062.",
+    "observation_id": "observation-reserveamerica-del-valle-site-75",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-site-75"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

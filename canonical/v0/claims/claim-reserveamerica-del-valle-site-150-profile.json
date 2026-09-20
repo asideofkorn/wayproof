@@ -1,0 +1,54 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-150-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-150-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "campsite-reserveamerica-del-valle-150",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/150/campsite-booking",
+      "details": {
+        "bbq": true,
+        "campfire_allowed": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "driveway_entry": "Back-In",
+        "driveway_length": 25,
+        "driveway_surface": "Paved",
+        "fire_pit": true,
+        "looking_for_category": "RV Site, Tent Site, Trailer Site",
+        "maximum_number_of_people": 8,
+        "maximum_number_of_vehicles": 2,
+        "maximum_vehicle_length": 20,
+        "maxnumberofpets": 3,
+        "minimum_number_of_people": 1,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "shade": " or Tree CoverFull",
+        "site_access": "Drive-In, Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": 37.5650193,
+      "listed_capacity": 8,
+      "listed_driveway": "20 Back-In",
+      "longitude": -121.6848667,
+      "loop": "Loop D: Sites 111-150",
+      "name": "115",
+      "product_id": "150",
+      "site_type": "Tent/No-Hookup Site"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Activities & Amenities",
+      "Site Details",
+      "Alerts and Important Information"
+    ],
+    "content": "The live site-detail page identifies Cabin 056* in Cabin as CABIN, publishes 34 structured detail fields and 9 alert statements, and exposes coordinates 37.57060827, -121.6884709.",
+    "observation_id": "observation-reserveamerica-del-valle-site-2300",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-site-2300"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Activities & Amenities",
+      "Site Details",
+      "Alerts and Important Information"
+    ],
+    "content": "The live site-detail page identifies PUNTA VACA (50) in Developed Group Camp Loop D as GROUP CAMPING, publishes 17 structured detail fields and 4 alert statements, and exposes coordinates 37.56604082145933, -121.68637385851659.",
+    "observation_id": "observation-reserveamerica-del-valle-site-277",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-site-277"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

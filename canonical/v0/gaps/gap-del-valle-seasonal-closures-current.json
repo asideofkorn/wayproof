@@ -2,11 +2,11 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-del-valle-seasonal-closures-current",
-    "question": "Have Del Valle seasonal closures changed since the 2026-05-20 sheet?",
-    "reason": "The closure sheet explicitly says dates may change without notice.",
+    "question": "Which published Del Valle closure schedule governs Cedar Camp and Punta Vaca?",
+    "reason": "The May 20, 2026 EBRPD sheet closes Cedar until further notice and Punta Vaca through April 30; the live ReserveAmerica listing shows both reopening March 31. Neither source explains the disagreement.",
     "related_ids": [
       "claim-del-valle-seasonal-closures-2026",
-      "claim-ebrpd-alerts-closures-live"
+      "claim-reserveamerica-del-valle-campsites-closures"
     ]
   },
   "record_type": "gap",

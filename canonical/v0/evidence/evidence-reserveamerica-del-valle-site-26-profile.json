@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-26-profile",
+    "evidence_id": "evidence-reserveamerica-del-valle-site-26-profile",
+    "notes": "Structured directly from the rendered individual ReserveAmerica site-detail page.",
+    "observation_id": "observation-reserveamerica-del-valle-site-26",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

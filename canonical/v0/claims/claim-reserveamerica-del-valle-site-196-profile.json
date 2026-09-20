@@ -1,0 +1,59 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-196-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-196-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "campsite-reserveamerica-del-valle-196",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "WHEELCHAIR-ACCESSIBLE SITES:",
+        "This site is reserved for campers with disabilities. IMPORTANT: If you reserve this site but do not meet the Accessible Site Requirement below, your reservation is invalid, you will not be allowed to use the site and NO REFUNDS will be given.",
+        "ACCESSIBLE SITE REQUIREMENT:",
+        "You must possess a valid California DMV Disabled Person (or Disabled Veteran) Placard or License Plate (or those issued by similar agency of another state) in order to reserve and to stay at this time. You will be required to show both the placard and an ID at check-in, and the owner of the placard must stay at the site for the entire reservation. If no one in your party meets this requirement, do not reserve this site."
+      ],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/196/campsite-booking",
+      "details": {
+        "ada_accessible": true,
+        "bbq": true,
+        "campfire_allowed": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "driveway_entry": "Back-In",
+        "driveway_length": 38,
+        "driveway_surface": "Paved",
+        "fire_pit": true,
+        "looking_for_category": "RV Site, Tent Site, Trailer Site",
+        "maximum_number_of_people": 8,
+        "maximum_number_of_vehicles": 2,
+        "maximum_vehicle_length": 34,
+        "maxnumberofpets": 3,
+        "minimum_number_of_people": 1,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "site_access": "Drive-In, Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": 37.57239154,
+      "listed_capacity": 8,
+      "listed_driveway": "34 Back-In",
+      "longitude": -121.6899824,
+      "loop": "Loop B: Sites 14-53",
+      "name": "052*",
+      "product_id": "196",
+      "site_type": "Tent/No-Hookup Site"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
