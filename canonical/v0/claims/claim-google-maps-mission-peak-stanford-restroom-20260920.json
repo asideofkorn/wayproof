@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-mission-peak-stanford-restroom-20260920",
+    "evidence_ids": [
+      "evidence-google-maps-mission-peak-stanford-restroom-20260920"
+    ],
+    "predicate": "mapped_facility_observation",
+    "spatial_scope_ids": [
+      "scope-mission-peak-stanford-avenue-staging",
+      "scope-mission-peak-stanford-restroom"
+    ],
+    "subject_id": "restroom-mission-peak-stanford-avenue",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "community_reported_handwashing": false,
+      "google_category": "Public bathroom",
+      "google_lists_wheelchair_accessible_entrance": true,
+      "latitude": 37.5041895,
+      "longitude": -121.9081485,
+      "pin_creation_date": null,
+      "pin_creation_date_exposed": false,
+      "visible_in_dated_photos": {
+        "fixed_restroom_structure": true,
+        "photo_dates": [
+          "2021-09",
+          "2022-03",
+          "2023-01",
+          "2025-07"
+        ],
+        "portable_toilet_units_minimum": 3
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-mission-peak-stanford-restroom-20260920",
+    "evidence_id": "evidence-google-maps-mission-peak-stanford-restroom-20260920",
+    "notes": "The place record supports the label, coordinates, category, and accessibility attribute. Dated community photos support only the visible exterior facility types; the handwashing statement remains explicitly community-reported.",
+    "observation_id": "observation-google-maps-mission-peak-stanford-restroom-20260920",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "restroom-mission-peak-stanford-avenue",
+    "kind": "restroom",
+    "name": "Stanford Avenue Staging Area Restroom"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
