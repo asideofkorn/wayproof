@@ -8,6 +8,7 @@ knowledge is built through ChangeSet values and validation.
 
 from __future__ import annotations
 
+from copy import deepcopy
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from enum import Enum
@@ -270,6 +271,12 @@ class ChangeSet:
     validation_errors: Tuple[str, ...] = ()
     approved_by: str = ""
     approval_note: str = ""
+    _validated_snapshot: Optional[CanonicalRecords] = field(
+        default=None, init=False, repr=False, compare=False)
+
+    def __post_init__(self) -> None:
+        if not self.change_set_id.strip():
+            raise ValueError("ChangeSet id must not be blank")
 
     def validate(self, existing: Optional[CanonicalRecords] = None) -> Tuple[str, ...]:
         """Validate and advance a clean draft to VALIDATED."""
@@ -282,11 +289,14 @@ class ChangeSet:
         self.validation_errors = errors
         self.status = (ChangeSetStatus.VALIDATED
                        if not errors else ChangeSetStatus.DRAFT)
+        self._validated_snapshot = deepcopy(self.records) if not errors else None
         return errors
 
     def approve(self, reviewer: str, note: str = "") -> None:
         if self.status is not ChangeSetStatus.VALIDATED:
             raise ValueError("only a validated ChangeSet can be approved")
+        if self.records != self._validated_snapshot:
+            raise ValueError("ChangeSet changed after validation; validate it again")
         if not reviewer.strip():
             raise ValueError("approval requires an identified reviewer")
         self.approved_by = reviewer.strip()
@@ -296,4 +306,6 @@ class ChangeSet:
     def promote(self) -> None:
         if self.status is not ChangeSetStatus.APPROVED:
             raise ValueError("only an approved ChangeSet can be promoted")
+        if self.records != self._validated_snapshot:
+            raise ValueError("ChangeSet changed after approval; it cannot be promoted")
         self.status = ChangeSetStatus.PROMOTED

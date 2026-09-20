@@ -116,6 +116,30 @@ def test_failed_validation_remains_a_draft():
     assert change.validation_errors
 
 
+def test_changes_after_validation_require_revalidation():
+    change = ChangeSet("change-1", evidence_chain())
+    assert change.validate() == ()
+    change.records.entities.append(Entity("place-2", "place", "Place Two"))
+    with pytest.raises(ValueError, match="validate it again"):
+        change.approve("reviewer")
+    assert change.validate() == ()
+    change.approve("reviewer")
+
+
+def test_changes_after_approval_cannot_be_promoted():
+    change = ChangeSet("change-1", evidence_chain())
+    assert change.validate() == ()
+    change.approve("reviewer")
+    change.records.entities.append(Entity("place-2", "place", "Place Two"))
+    with pytest.raises(ValueError, match="cannot be promoted"):
+        change.promote()
+
+
+def test_changeset_identity_is_required():
+    with pytest.raises(ValueError, match="must not be blank"):
+        ChangeSet(" ", CanonicalRecords())
+
+
 def test_requirement_coverage_detects_partial_fulfillment():
     required = Coverage(participant_ids=("a", "b"), stage_ids=("entry", "camp"),
                         starts_on=date(2027, 7, 1), ends_on=date(2027, 7, 3))
