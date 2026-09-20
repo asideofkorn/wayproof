@@ -1,0 +1,54 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-382-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-382-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-hetch-hetchy",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "Hetch Hetchy is a primitive group campsite located near the lake and includes two 6' picnic tables, a serving table, an XL BBQ, a fire circle with seating, and a water spigot. Three pit toilets (ADA) with fans are available at the site; there is no access to showers. Boats can be anchored or launched from site.",
+        "SITE ACCESS: Hetch Hetchy can be accessed through the East Shore Trail located at the end of the East Beach Parking lot near the Boat Launch. It is a 3/4 mile hike to the site.",
+        "CAPACITY: Minimum 50, maximum 100.",
+        "PARKING AND VEHICLES: 19 Parking passes at East Beach parking lot plus 1 for outside the East Beach parking lot gate will be emailed 5-10 days before your reservations begins. Additional passes are not available for purchase. Buses, RVs, trailers, food trucks, or caterers are prohibited. Violators may be cited and/or towed.",
+        "ALCOHOL: Beer and wine allowed with permit ($25.00). No hard alcohol. Please call at least 3 days prior to the first night of your reservation to purchase. The permit does not allow the selling of alcoholic beverages, or consumption outside of your designated campsite. Reservation holder must be 21 years of age to purchase beer and wine permit. You are subject to citation for violation of these rules."
+      ],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/382/campsite-booking",
+      "details": {
+        "bbq": true,
+        "campfire_allowed": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "fire_pit": true,
+        "looking_for_category": "Boat-in Group Camp, Group Site",
+        "maximum_number_of_people": 100,
+        "maximum_number_of_vehicles": 20,
+        "minimum_number_of_people": 50,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "site_access": "Boat-In, Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": null,
+      "listed_capacity": 100,
+      "listed_driveway": "",
+      "longitude": null,
+      "loop": "Primitive Group Camp Seasonal",
+      "name": "HETCH HETCHY (100)",
+      "product_id": "382",
+      "site_type": "GROUP CAMPING"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,54 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-381-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-381-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-venados",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "Venados is a primitive campsite located near the lake and includes 3 ten-foot tables, one serving table, one XL BBQ, and a fire circle with benches. Two pit toilets (ADA) with fans are available at the site. There is no access to showers. There is no water at the site, a water spigot is located near Hetch Hetchy.",
+        "SITE ACCESS: Venados can be accessed through the East Shore Trail located at the end of the East Beach parking lot near the boat launch. It is a 1 1/2 mile hike to the site.",
+        "CAPACITY: Minimum 17, maximum 50.",
+        "PARKING: 9 parking passes and 1 for outside of the East Beach parking lot will be emailed 5-10 days before your reservation begins. Additional passes are not available for purchase. Buses, RVs, trailers, food trucks, or caterers are prohibited. Violators may be cited and/or towed.",
+        "ALCOHOL: Beer and wine allowed with permit ($25.00). No hard alcohol. Please call at least 3 days prior to the first night of your reservation to purchase. The permit does not allow the selling of alcoholic beverages, or consumption outside of your designated campsite. Reservation holder must be 21 years of age to purchase beer and wine permit. You are subject to citation for violation of these rules."
+      ],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/381/campsite-booking",
+      "details": {
+        "bbq": true,
+        "campfire_allowed": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "fire_pit": true,
+        "looking_for_category": "Group Site",
+        "maximum_number_of_people": 50,
+        "maximum_number_of_vehicles": 10,
+        "minimum_number_of_people": 17,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "site_access": "Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": null,
+      "listed_capacity": 50,
+      "listed_driveway": "",
+      "longitude": null,
+      "loop": "Primitive Group Camp Seasonal",
+      "name": "VENADOS(50)",
+      "product_id": "381",
+      "site_type": "GROUP CAMPING"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

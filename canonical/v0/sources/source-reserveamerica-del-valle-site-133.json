@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.reserveamerica.com/explore/del-valle/EB/110003/133/campsite-booking",
+    "publisher": "ReserveAmerica / East Bay Regional Park District",
+    "source_id": "source-reserveamerica-del-valle-site-133"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

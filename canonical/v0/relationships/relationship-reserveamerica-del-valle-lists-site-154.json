@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-154-profile"
+    ],
+    "object_id": "campsite-reserveamerica-del-valle-154",
+    "predicate": "lists_site",
+    "relationship_id": "relationship-reserveamerica-del-valle-lists-site-154",
+    "subject_id": "facility-reserveamerica-del-valle-110003",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,53 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-243-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-243-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-eagles-view",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "Eagles View Eagle's View is a primitive campsite with a view of the lake, and includes five 10' tables, one serving table, two double BBQs, one single BBQ, a fire circle with benches, and a drinking fountain with spigot. Flush toilets are uphill from the site. No access to showers.",
+        "SITE ACCESS: Eagles View can be accessed off of the East Beach Parking lot just past the gate.",
+        "CAPACITY: Minimum 17, maximum 50.",
+        "PARKING AND VEHICLES: 9 Parking passes and 1 for outside of the East Beach Parking lot gate will be emailed 5-10 days before your reservations begins. Additional passes are not available for purchase. Buses, RVs, trailers, food trucks, or caterers are prohibited. Violators may be cited and/or towed.",
+        "ALCOHOL: Beer and wine allowed with permit ($25.00). No hard alcohol. Please call at least 3 days prior to the first night of your reservation to purchase. The permit does not allow the selling of alcoholic beverages, or consumption outside of your designated campsite. Reservation holder must be 21 years of age to purchase beer and wine permit. You are subject to citation for violation of these rules."
+      ],
+      "amenities": [
+        "Pets Allowed"
+      ],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/243/campsite-booking",
+      "details": {
+        "bbq": true,
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "fire_pit": true,
+        "looking_for_category": "Group Site",
+        "maximum_number_of_people": 50,
+        "maximum_number_of_vehicles": 10,
+        "minimum_number_of_people": 17,
+        "pets_allowed": "Domestic",
+        "picnic_table": true,
+        "site_access": "Hike-In",
+        "site_reserve_type": "Site-Specific",
+        "type_of_use": "Overnight"
+      },
+      "latitude": null,
+      "listed_capacity": 50,
+      "listed_driveway": "",
+      "longitude": null,
+      "loop": "Primitive Group Camp",
+      "name": "EAGLES VIEW (50)",
+      "product_id": "243",
+      "site_type": "GROUP CAMPING"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

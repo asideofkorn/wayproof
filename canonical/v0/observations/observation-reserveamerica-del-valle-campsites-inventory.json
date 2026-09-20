@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "pages 1-8",
+      "category counts",
+      "site table"
+    ],
+    "content": "The live eight-page listing contains 155 bookable entries: 118 tent/no-hookup, 20 RV hookup, five cabins, seven group camps, four individual equestrian sites, and one equestrian group camp. The family categories total 143, not the 150 stated on other EBRPD surfaces.",
+    "observation_id": "observation-reserveamerica-del-valle-campsites-inventory",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-campsites-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

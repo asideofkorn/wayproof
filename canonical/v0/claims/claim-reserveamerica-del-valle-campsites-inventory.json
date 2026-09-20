@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-campsites-inventory",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-campsites-inventory"
+    ],
+    "predicate": "published_site_listing_inventory",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "facility-reserveamerica-del-valle-110003",
+    "temporal_scope": null,
+    "value": {
+      "cabins": 5,
+      "equestrian_group_camps": 1,
+      "equestrian_sites": 4,
+      "family_category_total": 143,
+      "group_camping": 7,
+      "missing_family_site_numbers_1_through_150": [
+        33,
+        42,
+        54,
+        67,
+        88,
+        97,
+        150
+      ],
+      "rv_hookup": 20,
+      "tent_no_hookup": 118,
+      "total_entries": 155
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

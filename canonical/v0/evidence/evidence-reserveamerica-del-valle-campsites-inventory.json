@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-campsites-inventory",
+    "evidence_id": "evidence-reserveamerica-del-valle-campsites-inventory",
+    "notes": "Counts were verified against all 155 rendered rows.",
+    "observation_id": "observation-reserveamerica-del-valle-campsites-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,70 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-site-2301-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-del-valle-site-2301-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "campsite-reserveamerica-del-valle-2301",
+    "temporal_scope": null,
+    "value": {
+      "alerts": [
+        "CABINS:",
+        "MAX 2 vehicles. Vehicles must fit on paved parking pad. NO RV, motorhomes, or trailers permitted. Cabins are NON-SMOKING; Smoking is prohibited in all parks",
+        "Cabin capacity: 5 person (includes children/infants)",
+        "Site capacity: 8 (3 people can tent camp outside)",
+        "(the total number of people staying at the site includes both youth and adults) Pets are not allowed in cabins."
+      ],
+      "amenities": [],
+      "booking_url": "https://www.reserveamerica.com/explore/del-valle/EB/110003/2301/campsite-booking",
+      "details": {
+        "air_conditioning": "Room Only",
+        "bbq": true,
+        "bed_type": "Bunk",
+        "campfire_allowed": true,
+        "ceiling_fans": true,
+        "checkin_time": "3:00 PM",
+        "checkout_time": "11:00 AM",
+        "distance_to_drinking_water": 60,
+        "distance_to_restroom_ft": 540,
+        "driveway_entry": "Back-In",
+        "driveway_length": 40,
+        "driveway_surface": "Paved",
+        "electric_heating": true,
+        "fire_pit": true,
+        "hike_in_distance_to_site": 30,
+        "lighting": "Electric",
+        "looking_for_category": "Cabin and Lodging",
+        "maximum_number_of_people": 8,
+        "maximum_number_of_vehicles": 2,
+        "maximum_vehicle_length": 30,
+        "non_smoking": true,
+        "num_of_rooms": 1,
+        "number_of_bunk_beds_single_double": 1,
+        "number_of_bunk_beds_single_single": 1,
+        "picnic_table": true,
+        "porch": "Open",
+        "shade": " or Tree CoverPartial",
+        "site_access": "Drive-In, Hike-In",
+        "site_length": 85,
+        "site_reserve_type": "Site-Specific",
+        "site_width": 100,
+        "type_of_use": "Overnight"
+      },
+      "latitude": 37.57029847,
+      "listed_capacity": 8,
+      "listed_driveway": "30 Back-In",
+      "longitude": -121.6882827,
+      "loop": "Cabin",
+      "name": "Cabin 059",
+      "product_id": "2301",
+      "site_type": "CABIN"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

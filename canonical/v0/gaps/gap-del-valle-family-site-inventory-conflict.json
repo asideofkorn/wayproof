@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-family-site-inventory-conflict",
+    "question": "Does Del Valle currently have 150 family campsites, or the 143 family-category entries exposed by its live booking inventory?",
+    "reason": "The official overview/camping surfaces publish 150 as 124 tent, 21 RV, and five cabins; the complete live booking listing publishes 118 tent, 20 RV, and five cabins. Seven numbers from 1 through 150 have no listing.",
+    "related_ids": [
+      "claim-del-valle-campground-inventory",
+      "claim-reserveamerica-del-valle-campsites-inventory"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

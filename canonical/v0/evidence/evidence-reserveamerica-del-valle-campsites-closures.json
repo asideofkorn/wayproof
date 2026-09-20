@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-del-valle-campsites-closures",
+    "evidence_id": "evidence-reserveamerica-del-valle-campsites-closures",
+    "notes": "Undated live-page schedule captured on retrieval date; no effective year was printed for the recurring windows.",
+    "observation_id": "observation-reserveamerica-del-valle-campsites-closures",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

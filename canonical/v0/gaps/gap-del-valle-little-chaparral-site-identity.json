@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-little-chaparral-site-identity",
+    "question": "Is Little Chaparral Horse Camp the collective name for ReserveAmerica Horse Camp #1-#4, or a separate facility not listed by that name?",
+    "reason": "The EBRPD park page names Little Chaparral as four paddocks, while the booking system exposes four individual equestrian sites without using the Little Chaparral name. The apparent match is recorded as a question rather than an identity assertion.",
+    "related_ids": [
+      "camp-del-valle-little-chaparral",
+      "campsite-reserveamerica-del-valle-465",
+      "campsite-reserveamerica-del-valle-466",
+      "campsite-reserveamerica-del-valle-467",
+      "campsite-reserveamerica-del-valle-468"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
