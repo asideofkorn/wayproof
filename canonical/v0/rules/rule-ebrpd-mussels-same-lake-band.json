@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-lake-specific-bands",
+    "conditions": [
+      {
+        "dimension": "band_origin",
+        "operator": "equals",
+        "value": "destination_lake"
+      }
+    ],
+    "consequence": "Use an intact band from that same lake and retain the inspection form to receive abbreviated re-entry inspection and an inspection-fee waiver.",
+    "rule_id": "rule-ebrpd-mussels-same-lake-band",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-05-07"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

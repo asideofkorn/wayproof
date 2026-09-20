@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Passing requires the vessel, motor and cooling system, deck, hull, bilge, bait wells, ropes, floats, fishing equipment, trailer, rear of vehicle, flotation devices, and other gear to be clean and dry. Wet motors, gear, or equipment are denied. Live bait is prohibited except worms and nightcrawlers.",
+    "observation_id": "observation-ebrpd-mussels-clean-dry-pass",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

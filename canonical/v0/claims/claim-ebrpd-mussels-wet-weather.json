@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-wet-weather",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-wet-weather"
+    ],
+    "predicate": "wet_weather_protocol",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": {
+      "banded_watercraft_permitted": true,
+      "closure_reasons": [
+        "serious_injury_risk",
+        "waterbody_closed_to_launching"
+      ],
+      "dirty_water_fails": true,
+      "motor_internal_water_fails": true,
+      "sealed_compartment_water_fails": true,
+      "standing_water_quarantine_adjustable": true,
+      "stations_normally_open": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

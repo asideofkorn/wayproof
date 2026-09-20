@@ -95,3 +95,45 @@ def test_conflicting_published_park_areas_remain_visible():
     assert areas == {4316, 4395}
     assert any(item.gap_id == "gap-del-valle-park-area-conflict"
                for item in snapshot.gaps)
+
+
+def test_mussel_inspection_applies_to_motorized_and_nonmotorized_equipment():
+    snapshot = records()
+    item = next(value for value in snapshot.claims
+                if value.claim_id == "claim-ebrpd-mussels-inspection-scope")
+    assert set(item.value["equipment"]) == {
+        "boat", "kayak", "canoe", "sailboat", "inflatable_craft", "floating_board"
+    }
+    rule = next(value for value in snapshot.rules
+                if value.rule_id == "rule-ebrpd-mussels-inspection-required")
+    assert rule.conditions[0].dimension == "equipment_type"
+
+
+def test_mussel_history_rule_uses_bounded_prior_events():
+    snapshot = records()
+    rule = next(value for value in snapshot.rules
+                if value.rule_id == "rule-ebrpd-mussels-history-survey")
+    assert rule.conditions[0].dimension == "equipment_prior_waterbody_events"
+    assert rule.conditions[0].value == 30
+    assert any(item.gap_id == "gap-ebrpd-mussels-current-flagged-waters"
+               for item in snapshot.gaps)
+
+
+def test_band_effective_date_and_failed_nonmotorized_gap_are_explicit():
+    snapshot = records()
+    band = next(value for value in snapshot.claims
+                if value.claim_id == "claim-ebrpd-mussels-lake-specific-bands")
+    assert str(band.temporal_scope.starts_on) == "2025-05-07"
+    assert any(item.gap_id == "gap-ebrpd-mussels-nonmotorized-failure-quarantine"
+               for item in snapshot.gaps)
+
+
+def test_mussel_changeset_exercises_corroborating_replacements():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-invasive-mussel-program.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 44, "REPLACE": 4, "REMOVE": 0}
+    boat_inspection = next(item for item in records().claims
+                           if item.claim_id == "claim-del-valle-boat-inspection")
+    assert len(boat_inspection.evidence_ids) == 3

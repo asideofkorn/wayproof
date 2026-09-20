@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-motorized-failure",
+    "evidence_id": "evidence-ebrpd-mussels-motorized-failure",
+    "notes": "",
+    "observation_id": "observation-ebrpd-mussels-failed-inspection",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

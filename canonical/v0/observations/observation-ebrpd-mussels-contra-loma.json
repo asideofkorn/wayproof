@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The current notice reports golden mussels at Contra Loma and states that a boat launched there is quarantined for 30 days from inspected lakes including Del Valle. All vessels should be cleaned, drained, and dried, and bands are honored only at their issuing lake.",
+    "observation_id": "observation-ebrpd-mussels-contra-loma",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

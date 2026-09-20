@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ebrpd-mussels-standing-water-quarantine",
+    "question": "What quarantine duration does the current wet-weather calculator produce?",
+    "reason": "The page delegates the adjusted duration to an external calculator and does not state it.",
+    "related_ids": [
+      "claim-ebrpd-mussels-wet-weather"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

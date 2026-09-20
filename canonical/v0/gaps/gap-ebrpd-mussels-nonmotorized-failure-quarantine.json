@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ebrpd-mussels-nonmotorized-failure-quarantine",
+    "question": "How long is the quarantine after a non-motorized watercraft fails inspection?",
+    "reason": "The page says non-motorized craft receive 'the quarantine period' but specifies five days only for motorized craft.",
+    "related_ids": [
+      "claim-ebrpd-mussels-motorized-failure"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

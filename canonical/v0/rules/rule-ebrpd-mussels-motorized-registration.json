@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-motorized-registration",
+    "conditions": [
+      {
+        "dimension": "equipment_propulsion",
+        "operator": "equals",
+        "value": "motorized"
+      }
+    ],
+    "consequence": "Carry current registration for motorized watercraft.",
+    "rule_id": "rule-ebrpd-mussels-motorized-registration",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

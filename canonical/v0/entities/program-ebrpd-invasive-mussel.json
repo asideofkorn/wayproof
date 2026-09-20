@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "program-ebrpd-invasive-mussel",
+    "kind": "inspection_program",
+    "name": "EBRPD Invasive Mussel Program"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-inspection-fees",
+    "evidence_id": "evidence-ebrpd-mussels-inspection-fees",
+    "notes": "",
+    "observation_id": "observation-ebrpd-mussels-registration-fees",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

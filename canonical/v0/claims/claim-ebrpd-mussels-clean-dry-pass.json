@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-clean-dry-pass",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-clean-dry-pass"
+    ],
+    "predicate": "inspection_pass_condition",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": {
+      "clean_required": true,
+      "components": [
+        "motor",
+        "motor_cooling_system",
+        "deck",
+        "hull",
+        "bilge",
+        "bait_wells",
+        "ropes",
+        "lines",
+        "floats",
+        "fishing_equipment",
+        "trailer",
+        "rear_of_vehicle",
+        "personal_flotation_devices",
+        "inflatable_craft",
+        "gear"
+      ],
+      "dry_required": true,
+      "live_bait_exception": [
+        "worms",
+        "nightcrawlers"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

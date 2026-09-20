@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-wet-weather",
+    "conditions": [],
+    "consequence": "Expect inspection during rain; keep motors, sealed compartments, protected gear, and the vessel free of standing or dirty water.",
+    "rule_id": "rule-ebrpd-mussels-wet-weather",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

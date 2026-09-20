@@ -4,7 +4,8 @@
     "claim_id": "claim-del-valle-boat-inspection",
     "evidence_ids": [
       "evidence-del-valle-boat-inspection",
-      "evidence-del-valle-ebrpd-boat-inspection"
+      "evidence-del-valle-ebrpd-boat-inspection",
+      "evidence-ebrpd-mussels-del-valle-inspection"
     ],
     "predicate": "boat_inspection_required",
     "spatial_scope_ids": [

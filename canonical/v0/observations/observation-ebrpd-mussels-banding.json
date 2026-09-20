@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Effective May 7, 2025, bands are color-coded and lake-specific. An intact band from the same lake plus the inspection form permits abbreviated inspection and waives another inspection fee; launch and entry fees remain. Other-lake bands require full inspection and fee. Decontamination certificates do not replace inspection. Non-motorized craft are inspected every entry.",
+    "observation_id": "observation-ebrpd-mussels-banding",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-invasive-mussel-program"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

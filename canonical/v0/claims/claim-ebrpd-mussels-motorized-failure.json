@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-motorized-failure",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-motorized-failure"
+    ],
+    "predicate": "failed_inspection_outcome",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": {
+      "entry_fee_refunded_if_exit": true,
+      "inspection_fee_refunded": false,
+      "launch_allowed": false,
+      "launch_fee_refunded": true,
+      "motorized_quarantine_days": 5,
+      "new_inspection_fee_on_return": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

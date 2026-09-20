@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "reservoir-contra-loma",
+    "kind": "reservoir",
+    "scope_id": "scope-contra-loma-reservoir"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

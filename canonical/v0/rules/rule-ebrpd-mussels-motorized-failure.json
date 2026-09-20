@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-motorized-failure",
+    "conditions": [
+      {
+        "dimension": "equipment_propulsion",
+        "operator": "equals",
+        "value": "motorized"
+      },
+      {
+        "dimension": "inspection_result",
+        "operator": "equals",
+        "value": "failed"
+      }
+    ],
+    "consequence": "After a failed motorized inspection, do not return for reinspection until the five-day quarantine has elapsed.",
+    "rule_id": "rule-ebrpd-mussels-motorized-failure",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

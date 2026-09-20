@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-ebrpd-clean-drain-dry",
     "evidence_ids": [
-      "evidence-del-valle-ebrpd-clean-drain-dry"
+      "evidence-del-valle-ebrpd-clean-drain-dry",
+      "evidence-ebrpd-mussels-clean-drain-dry"
     ],
     "predicate": "watercraft_preparation",
     "spatial_scope_ids": [

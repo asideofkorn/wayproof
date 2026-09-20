@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-inspection-scope",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-inspection-scope"
+    ],
+    "predicate": "inspection_scope",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": null,
+    "value": {
+      "campground_checkin_order": "inspection_before_checkin",
+      "equipment": [
+        "boat",
+        "kayak",
+        "canoe",
+        "sailboat",
+        "inflatable_craft",
+        "floating_board"
+      ],
+      "locations": [
+        "Contra Loma Regional Park",
+        "Del Valle Regional Park",
+        "Lake Chabot Regional Park",
+        "Quarry Lakes Regional Recreation Area",
+        "Shadow Cliffs Regional Recreation Area"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

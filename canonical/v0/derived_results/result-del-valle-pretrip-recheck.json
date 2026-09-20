@@ -1,7 +1,7 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Operational conditions, water quality, access, inspections, and seasonal services can change after reservation and must be checked near departure.",
+    "explanation": "Operational conditions, water quality, access, inspection history, band eligibility, and wet-weather procedures can change and must be checked near departure.",
     "input_ids": [
       "claim-del-valle-volatile-alerts",
       "claim-del-valle-boat-inspection",
@@ -13,7 +13,13 @@
       "claim-del-valle-ebrpd-contra-loma-quarantine",
       "claim-del-valle-ebrpd-park-open-limited",
       "claim-del-valle-ebrpd-storm-trails",
-      "gap-del-valle-marina-schedule-effective-year"
+      "gap-del-valle-marina-schedule-effective-year",
+      "claim-ebrpd-mussels-history-survey",
+      "claim-ebrpd-mussels-inspection-fees",
+      "claim-ebrpd-mussels-lake-specific-bands",
+      "claim-ebrpd-mussels-wet-weather",
+      "gap-ebrpd-mussels-current-flagged-waters",
+      "gap-ebrpd-mussels-standing-water-quarantine"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-del-valle-pretrip-recheck",
@@ -28,7 +34,10 @@
         "storm_damaged_trails",
         "limited_amenities",
         "marina_and_store_hours",
-        "cross_lake_boat_quarantine"
+        "cross_lake_boat_quarantine",
+        "flagged_prior_waterbodies",
+        "inspection_fee_and_band_eligibility",
+        "wet_weather_inspection_protocol"
       ]
     }
   },

@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-mussels-lake-specific-bands",
+    "evidence_ids": [
+      "evidence-ebrpd-mussels-lake-specific-bands"
+    ],
+    "predicate": "banding_program",
+    "spatial_scope_ids": [
+      "scope-ebrpd-inspected-lakes"
+    ],
+    "subject_id": "program-ebrpd-invasive-mussel",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-05-07"
+    },
+    "value": {
+      "decontamination_certificate_substitutes": false,
+      "inspection_form_required": true,
+      "intact_band_required": true,
+      "lake_specific": true,
+      "launch_and_entry_fees_still_apply": true,
+      "other_lake_band_requires_full_inspection": true,
+      "same_lake_abbreviated_inspection": true,
+      "same_lake_inspection_fee_waived": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

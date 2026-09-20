@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ebrpd-mussels-current-flagged-waters",
+    "question": "Which water bodies are on the vessel-history screening list on the trip date?",
+    "reason": "The program explicitly says its published list is growing.",
+    "related_ids": [
+      "claim-ebrpd-mussels-history-survey"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
