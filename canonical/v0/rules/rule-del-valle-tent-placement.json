@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-tent-placement",
+    "conditions": [
+      {
+        "dimension": "equipment",
+        "operator": "contains",
+        "value": "tent"
+      }
+    ],
+    "consequence": "Place tents on dirt or a designated tent pad, not on a lawn.",
+    "rule_id": "rule-del-valle-tent-placement",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

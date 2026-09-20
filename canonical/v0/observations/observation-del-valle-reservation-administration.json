@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "IMPORTANT INFORMATION and ATTENTION notices"
+    ],
+    "content": "The live page says family campsite reservations may be canceled online, but family changes and backpacking, equestrian, or group changes and cancellations require a phone call during weekday reservation-office hours. Email is not accepted for cancellations or change requests.",
+    "observation_id": "observation-del-valle-reservation-administration",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

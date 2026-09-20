@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-backpacking-reservation",
+    "conditions": [
+      {
+        "dimension": "trip_activity",
+        "operator": "equals",
+        "value": "backpacking"
+      }
+    ],
+    "consequence": "Make the backpacking reservation by phone at least 48 hours before arrival.",
+    "rule_id": "rule-del-valle-backpacking-reservation",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-backpacking-reservation",
+    "evidence_ids": [
+      "evidence-del-valle-backpacking-reservation"
+    ],
+    "predicate": "backpacking_reservation_window",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": null,
+    "value": {
+      "channel": "phone",
+      "minimum_advance_hours": 48
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

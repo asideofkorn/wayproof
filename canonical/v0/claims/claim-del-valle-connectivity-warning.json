@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-connectivity-warning",
+    "evidence_ids": [
+      "evidence-del-valle-connectivity-warning"
+    ],
+    "predicate": "connectivity_warning",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "cell_service": "not_available_per_source_warning",
+      "wifi": "not_available_per_source_warning"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

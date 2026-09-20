@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-reservation-administration",
+    "evidence_ids": [
+      "evidence-del-valle-reservation-administration"
+    ],
+    "predicate": "reservation_change_and_cancellation_channels",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": null,
+    "value": {
+      "email_accepted_for_changes_or_cancellations": false,
+      "family_cancellation": "online_or_phone",
+      "family_change": "phone_only",
+      "group_backpacking_equestrian_change_or_cancellation": "phone_only",
+      "phone_hours": "09:00-16:00 Pacific, Monday-Friday, excluding holidays"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

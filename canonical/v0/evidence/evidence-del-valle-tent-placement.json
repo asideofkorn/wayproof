@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-tent-placement",
+    "evidence_id": "evidence-del-valle-tent-placement",
+    "notes": "The placement rule appears in the facility's Additional Information section.",
+    "observation_id": "observation-del-valle-tents-connectivity",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "IMPORTANT INFORMATION notice"
+    ],
+    "content": "The live page says backpacking reservations must be made by phone through EBRPD Reservations at least 48 hours in advance.",
+    "observation_id": "observation-del-valle-backpacking-reservation",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
