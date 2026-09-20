@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Additional Information"
+    ],
+    "content": "Reservations for non-family site types are limited to one per date per party, group, household address, or primary contact. Cabin, group, backpack, and equestrian-group guests are told to expect an additional-information letter five to seven days before arrival.",
+    "observation_id": "observation-del-valle-nonfamily-reservation-details",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

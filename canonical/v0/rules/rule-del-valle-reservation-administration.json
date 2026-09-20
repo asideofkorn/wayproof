@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-reservation-administration",
+    "conditions": [],
+    "consequence": "Cancel a family campsite online or by phone; use the weekday reservations phone line for changes and for backpacking, equestrian, or group cancellations. Do not rely on email for a change or cancellation request.",
+    "rule_id": "rule-del-valle-reservation-administration",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

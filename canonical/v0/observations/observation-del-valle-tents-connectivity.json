@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Additional Information"
+    ],
+    "content": "The live page places no numeric limit on tents but requires them to be on dirt or designated tent pads and prohibits tents on lawns. It also warns that cell service and Wi-Fi are unavailable.",
+    "observation_id": "observation-del-valle-tents-connectivity",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

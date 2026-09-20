@@ -70,6 +70,32 @@ def test_del_valle_changeset_is_a_validated_public_manifest():
     assert len({item.path for item in change.operations}) == 105
 
 
+def test_live_reserveamerica_supplement_captures_actionable_omissions():
+    snapshot = records()
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-reserveamerica-live-page-supplement.json")
+    assert change.status is ChangeSetStatus.VALIDATED
+    assert len(change.operations) == 16
+    assert len({item.path for item in change.operations}) == 16
+
+    administration = next(
+        item for item in snapshot.claims
+        if item.claim_id == "claim-del-valle-reservation-administration")
+    assert administration.value["family_cancellation"] == "online_or_phone"
+    assert administration.value["family_change"] == "phone_only"
+    assert administration.value["email_accepted_for_changes_or_cancellations"] is False
+
+    backpacking = next(
+        item for item in snapshot.claims
+        if item.claim_id == "claim-del-valle-backpacking-reservation")
+    assert backpacking.value == {"channel": "phone", "minimum_advance_hours": 48}
+
+    tent_rule = next(
+        item for item in snapshot.rules
+        if item.rule_id == "rule-del-valle-tent-placement")
+    assert "not on a lawn" in tent_rule.consequence
+
+
 def test_ebrpd_update_exercises_add_replace_and_remove():
     change = load_changeset(
         ROOT / "changesets/v0/wp-20260920-del-valle-ebrpd-park-page.json")

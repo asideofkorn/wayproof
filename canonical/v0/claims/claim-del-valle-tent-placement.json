@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-tent-placement",
+    "evidence_ids": [
+      "evidence-del-valle-tent-placement"
+    ],
+    "predicate": "tent_placement",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "allowed_surfaces": [
+        "dirt",
+        "designated_tent_pad"
+      ],
+      "lawns_allowed": false,
+      "numeric_tent_limit": null
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

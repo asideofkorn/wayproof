@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-reservation-administration",
+    "evidence_id": "evidence-del-valle-reservation-administration",
+    "notes": "ReserveAmerica republishes EBRPD reservation-channel instructions on the live facility page.",
+    "observation_id": "observation-del-valle-reservation-administration",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

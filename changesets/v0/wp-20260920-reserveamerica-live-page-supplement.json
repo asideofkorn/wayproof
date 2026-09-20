@@ -1,0 +1,169 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-reserveamerica-live-page-supplement",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-reservation-administration.json",
+      "reason": "Capture decision-relevant details found by reviewing the live ReserveAmerica overview in Chrome.",
+      "record_id": "observation-del-valle-reservation-administration",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-backpacking-reservation.json",
+      "reason": "Capture decision-relevant details found by reviewing the live ReserveAmerica overview in Chrome.",
+      "record_id": "observation-del-valle-backpacking-reservation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-tents-connectivity.json",
+      "reason": "Capture decision-relevant details found by reviewing the live ReserveAmerica overview in Chrome.",
+      "record_id": "observation-del-valle-tents-connectivity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-nonfamily-reservation-details.json",
+      "reason": "Capture decision-relevant details found by reviewing the live ReserveAmerica overview in Chrome.",
+      "record_id": "observation-del-valle-nonfamily-reservation-details",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-reservation-administration.json",
+      "reason": "Connect live-page observations to explicit claims.",
+      "record_id": "evidence-del-valle-reservation-administration",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-backpacking-reservation.json",
+      "reason": "Connect live-page observations to explicit claims.",
+      "record_id": "evidence-del-valle-backpacking-reservation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-tent-placement.json",
+      "reason": "Connect live-page observations to explicit claims.",
+      "record_id": "evidence-del-valle-tent-placement",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-connectivity-warning.json",
+      "reason": "Connect live-page observations to explicit claims.",
+      "record_id": "evidence-del-valle-connectivity-warning",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-reservation-administration"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-reservation-administration.json",
+      "reason": "Promote actionable booking-channel details without duplicating the source record.",
+      "record_id": "claim-del-valle-reservation-administration",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-backpacking-reservation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-backpacking-reservation.json",
+      "reason": "Promote actionable booking-channel details without duplicating the source record.",
+      "record_id": "claim-del-valle-backpacking-reservation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-tent-placement"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-tent-placement.json",
+      "reason": "Promote an actionable campground equipment constraint found on the live page.",
+      "record_id": "claim-del-valle-tent-placement",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-connectivity-warning"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-connectivity-warning.json",
+      "reason": "Promote a pre-trip readiness warning found on the live page.",
+      "record_id": "claim-del-valle-connectivity-warning",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-reservation-administration"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-reservation-administration.json",
+      "reason": "Expose reservation administration as a planning rule.",
+      "record_id": "rule-del-valle-reservation-administration",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-backpacking-reservation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-backpacking-reservation.json",
+      "reason": "Expose the backpacking reservation lead time as a planning rule.",
+      "record_id": "rule-del-valle-backpacking-reservation",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-tent-placement"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-tent-placement.json",
+      "reason": "Expose tent placement as an equipment-context rule.",
+      "record_id": "rule-del-valle-tent-placement",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-connectivity-warning"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-connectivity-warning.json",
+      "reason": "Expose the connectivity warning as a pre-trip readiness rule.",
+      "record_id": "rule-del-valle-connectivity-warning",
+      "record_type": "rule"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Supplement the existing Del Valle ReserveAmerica source with live-page booking administration, backpacking, tent-placement, connectivity, and non-family reservation details."
+}

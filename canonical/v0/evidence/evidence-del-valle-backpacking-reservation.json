@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-backpacking-reservation",
+    "evidence_id": "evidence-del-valle-backpacking-reservation",
+    "notes": "The booking-platform notice supplies both the channel and minimum lead time.",
+    "observation_id": "observation-del-valle-backpacking-reservation",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
