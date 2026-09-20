@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-lifeguard-schedule-year",
+    "question": "For which year are the May 16-September 27 lifeguard dates effective?",
+    "reason": "The page gives dates and hours but no effective year.",
+    "related_ids": [
+      "claim-ebrpd-swimming-del-valle-lifeguard-hours"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

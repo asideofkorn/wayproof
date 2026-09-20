@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-registration-applicability",
+    "evidence_id": "evidence-ebrpd-swimming-registration-applicability",
+    "notes": "",
+    "observation_id": "observation-ebrpd-swimming-district-registration",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

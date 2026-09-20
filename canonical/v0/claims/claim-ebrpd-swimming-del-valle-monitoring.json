@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-monitoring",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-del-valle-monitoring"
+    ],
+    "predicate": "del_valle_beach_monitoring",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "program-ebrpd-hab-monitoring",
+    "temporal_scope": null,
+    "value": {
+      "april_october": "weekly",
+      "november_march": "twice_monthly",
+      "sample_sites_per_beach": 2,
+      "sign_inputs": [
+        "bacteria",
+        "blue_green_algae"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

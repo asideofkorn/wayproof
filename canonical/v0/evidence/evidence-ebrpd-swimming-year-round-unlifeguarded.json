@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-year-round-unlifeguarded",
+    "evidence_id": "evidence-ebrpd-swimming-year-round-unlifeguarded",
+    "notes": "",
+    "observation_id": "observation-ebrpd-swimming-del-valle-hours",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

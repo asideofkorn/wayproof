@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-monitoring",
+    "evidence_id": "evidence-ebrpd-swimming-del-valle-monitoring",
+    "notes": "",
+    "observation_id": "observation-ebrpd-swimming-monitoring",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

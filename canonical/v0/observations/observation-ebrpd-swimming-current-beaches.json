@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "At retrieval, East Beach had a blue-green algae Caution Advisory and West Beach had no water because of low lake levels.",
+    "observation_id": "observation-ebrpd-swimming-current-beaches",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

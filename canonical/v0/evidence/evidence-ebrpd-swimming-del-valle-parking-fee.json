@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-parking-fee",
+    "evidence_id": "evidence-ebrpd-swimming-del-valle-parking-fee",
+    "notes": "",
+    "observation_id": "observation-ebrpd-swimming-del-valle-fee",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

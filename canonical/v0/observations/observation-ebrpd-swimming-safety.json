@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page advises keeping water out of the mouth, showering and towel-drying promptly after swimming, avoiding lake swimming for three days after rain, checking posted water-quality signs, and keeping dogs away from the water.",
+    "observation_id": "observation-ebrpd-swimming-safety",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

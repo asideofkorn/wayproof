@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-safety",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-del-valle-safety"
+    ],
+    "predicate": "swimming_safety_guidance",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "check_posted_signs": true,
+      "days_to_avoid_after_rain": 3,
+      "keep_dogs_away": true,
+      "keep_water_out_of_mouth": true,
+      "shower_and_dry_after": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

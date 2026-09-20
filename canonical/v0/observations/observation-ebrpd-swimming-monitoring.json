@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Del Valle beaches are sampled for bacteria weekly April-October and twice monthly November-March, with two sample sites per beach. Posted stop-light signs combine latest bacteriological tests and blue-green algae conditions.",
+    "observation_id": "observation-ebrpd-swimming-monitoring",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-swimming"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

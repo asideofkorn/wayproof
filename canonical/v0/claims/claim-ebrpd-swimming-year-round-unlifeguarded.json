@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-year-round-unlifeguarded",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-year-round-unlifeguarded"
+    ],
+    "predicate": "unlifeguarded_swimming_area",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "allowed": "year_round",
+      "lifeguard_service": false,
+      "location": "north of boat ramp"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

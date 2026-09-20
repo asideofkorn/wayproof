@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-del-valle-safety",
+    "conditions": [
+      {
+        "dimension": "party_has_dog",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Keep dogs away from Lake Del Valle water.",
+    "rule_id": "rule-ebrpd-swimming-dogs-away",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

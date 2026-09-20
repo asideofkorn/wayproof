@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-swimming-registration-applicability",
+    "evidence_ids": [
+      "evidence-ebrpd-swimming-registration-applicability"
+    ],
+    "predicate": "optional_swim_registration",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": null,
+    "value": {
+      "named_facilities": [
+        "Castle Rock/Diablo Foothills",
+        "Cull Canyon",
+        "Don Castro"
+      ],
+      "pass_hours": [
+        "11:00",
+        "18:00"
+      ],
+      "people_per_registration": 5,
+      "price_usd": 6,
+      "refundable": false,
+      "transferable": false,
+      "water_exit": "17:30"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

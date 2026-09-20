@@ -4,7 +4,8 @@
     "claim_id": "claim-del-valle-ebrpd-east-beach-algae",
     "evidence_ids": [
       "evidence-del-valle-ebrpd-east-beach-algae",
-      "evidence-ebrpd-algae-east-beach-caution"
+      "evidence-ebrpd-algae-east-beach-caution",
+      "evidence-ebrpd-swimming-east-caution"
     ],
     "predicate": "water_quality_advisory",
     "spatial_scope_ids": [
