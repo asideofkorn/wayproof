@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User-supplied Google Maps link",
+      "Google Maps labeled place and Plus Code"
+    ],
+    "content": "The user-supplied link resolves to the Google Maps labeled place Stars Rest Backpack Camp. Google Maps displays Plus Code 849WG674+8X; the center of that 10-character Plus Code cell is 37.5133125, -121.7925625. This is an approximate Google Maps place coordinate, not an official EBRPD or surveyed campsite coordinate.",
+    "observation_id": "observation-google-maps-sunol-stars-rest-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live browser review of user-supplied Google Maps link",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-sunol-stars-rest"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

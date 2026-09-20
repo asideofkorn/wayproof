@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User-supplied Google Maps link",
+      "Google Maps labeled place and Plus Code"
+    ],
+    "content": "The user-supplied link resolves to the Google Maps labeled place Oak View Backpack Camp. Google Maps displays Plus Code 849WG653+P7; the center of that 10-character Plus Code cell is 37.5093125, -121.7968125. This is an approximate Google Maps place coordinate, not an official EBRPD or surveyed campsite coordinate.",
+    "observation_id": "observation-google-maps-sunol-oak-view-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live browser review of user-supplied Google Maps link",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-sunol-oak-view"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

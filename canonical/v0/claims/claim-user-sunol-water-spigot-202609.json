@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-sunol-water-spigot-202609",
+    "evidence_ids": [
+      "evidence-user-sunol-water-spigot-202609"
+    ],
+    "predicate": "firsthand_facility_observation",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "water-ohlone-backpack-camp",
+    "temporal_scope": null,
+    "value": {
+      "facility_type": "water spigot",
+      "official_source_name": "Backpack Camp",
+      "official_availability_claim_id": "claim-ohlone-water-availability-20260919",
+      "observed_present_and_used": true,
+      "observed_period": "early September 2026",
+      "latitude": 37.5115678,
+      "longitude": -121.7924162,
+      "provenance_class": "user_firsthand_field_observation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

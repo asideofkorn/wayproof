@@ -2,26 +2,531 @@
   "artifact_format_version": 1,
   "change_set_id": "wp-20260920-ohlone-official-camping-sources",
   "operations": [
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/sources/source-ebrpd-backpack-camping-faqs.json","reason":"Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.","record_id":"source-ebrpd-backpack-camping-faqs","record_type":"source"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/sources/source-ebrpd-sunol-camping-map-2015.json","reason":"Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.","record_id":"source-ebrpd-sunol-camping-map-2015","record_type":"source"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/sources/source-ebrpd-mission-peak-map.json","reason":"Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.","record_id":"source-ebrpd-mission-peak-map","record_type":"source"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/observations/observation-ebrpd-backpack-faq-ohlone-inventory.json","reason":"Capture the official current corridor inventory and restrictions.","record_id":"observation-ebrpd-backpack-faq-ohlone-inventory","record_type":"observation"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/observations/observation-ebrpd-backpack-faq-eagle-springs.json","reason":"Capture official Eagle Springs facilities and approach distances.","record_id":"observation-ebrpd-backpack-faq-eagle-springs","record_type":"observation"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":["gap-reserveamerica-sunol-site-water-restroom-proximity","gap-reserveamerica-sunol-site-coordinates"],"path":"canonical/v0/observations/observation-ebrpd-sunol-camping-map-site-layout.json","reason":"Capture relative layout without inventing coordinates or measured proximity.","record_id":"observation-ebrpd-sunol-camping-map-site-layout","record_type":"observation"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/observations/observation-ebrpd-sunol-camping-map-site-descriptions.json","reason":"Record historical site descriptions while excluding stale operating details.","record_id":"observation-ebrpd-sunol-camping-map-site-descriptions","record_type":"observation"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/observations/observation-ebrpd-mission-peak-map-eagle-spring.json","reason":"Capture the official map annotation for Eagle Spring Backpack Camp.","record_id":"observation-ebrpd-mission-peak-map-eagle-spring","record_type":"observation"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/evidence/evidence-ebrpd-backpack-faq-ohlone-inventory.json","reason":"Link the FAQ observation to its corridor inventory claim.","record_id":"evidence-ebrpd-backpack-faq-ohlone-inventory","record_type":"evidence"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/evidence/evidence-ebrpd-backpack-faq-eagle-springs-facilities.json","reason":"Link the FAQ observation to its shared-facilities claim.","record_id":"evidence-ebrpd-backpack-faq-eagle-springs-facilities","record_type":"evidence"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/evidence/evidence-ebrpd-backpack-faq-eagle-springs-access.json","reason":"Link the FAQ observation to its approach-distance claim.","record_id":"evidence-ebrpd-backpack-faq-eagle-springs-access","record_type":"evidence"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":["gap-reserveamerica-sunol-site-water-restroom-proximity","gap-reserveamerica-sunol-site-coordinates"],"path":"canonical/v0/evidence/evidence-ebrpd-sunol-camping-map-layout.json","reason":"Bound map evidence to relative layout only.","record_id":"evidence-ebrpd-sunol-camping-map-layout","record_type":"evidence"},
-    {"action":"ADD","evidence_refs":[],"knowledge_gap_refs":[],"path":"canonical/v0/evidence/evidence-ebrpd-mission-peak-map-eagle-spring.json","reason":"Link the Mission Peak map observation to its camp-constraints claim.","record_id":"evidence-ebrpd-mission-peak-map-eagle-spring","record_type":"evidence"},
-    {"action":"ADD","evidence_refs":["evidence-ebrpd-backpack-faq-ohlone-inventory"],"knowledge_gap_refs":[],"path":"canonical/v0/claims/claim-ebrpd-backpack-faq-ohlone-inventory.json","reason":"Promote the current official ordered inventory.","record_id":"claim-ebrpd-backpack-faq-ohlone-inventory","record_type":"claim"},
-    {"action":"ADD","evidence_refs":["evidence-ebrpd-backpack-faq-eagle-springs-facilities"],"knowledge_gap_refs":[],"path":"canonical/v0/claims/claim-eagle-springs-shared-facilities.json","reason":"Promote official shared-facility facts.","record_id":"claim-eagle-springs-shared-facilities","record_type":"claim"},
-    {"action":"ADD","evidence_refs":["evidence-ebrpd-backpack-faq-eagle-springs-access"],"knowledge_gap_refs":[],"path":"canonical/v0/claims/claim-eagle-springs-access-distances.json","reason":"Promote official approximate approach distances.","record_id":"claim-eagle-springs-access-distances","record_type":"claim"},
-    {"action":"ADD","evidence_refs":["evidence-ebrpd-sunol-camping-map-layout"],"knowledge_gap_refs":["gap-reserveamerica-sunol-site-water-restroom-proximity","gap-reserveamerica-sunol-site-coordinates"],"path":"canonical/v0/claims/claim-sunol-backpack-map-layout-2015.json","reason":"Promote the dated map depiction without implying current precision.","record_id":"claim-sunol-backpack-map-layout-2015","record_type":"claim"},
-    {"action":"ADD","evidence_refs":["evidence-ebrpd-mission-peak-map-eagle-spring"],"knowledge_gap_refs":[],"path":"canonical/v0/claims/claim-eagle-spring-map-operating-restrictions.json","reason":"Promote the map's direct camp annotation.","record_id":"claim-eagle-spring-map-operating-restrictions","record_type":"claim"}
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-backpack-camping-faqs.json",
+      "reason": "Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.",
+      "record_id": "source-ebrpd-backpack-camping-faqs",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-sunol-camping-map-2015.json",
+      "reason": "Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.",
+      "record_id": "source-ebrpd-sunol-camping-map-2015",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-mission-peak-map.json",
+      "reason": "Ingest three official EBRPD sources while retaining source age and unresolved precision gaps.",
+      "record_id": "source-ebrpd-mission-peak-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-backpack-faq-ohlone-inventory.json",
+      "reason": "Capture the official current corridor inventory and restrictions.",
+      "record_id": "observation-ebrpd-backpack-faq-ohlone-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-backpack-faq-eagle-springs.json",
+      "reason": "Capture official Eagle Springs facilities and approach distances.",
+      "record_id": "observation-ebrpd-backpack-faq-eagle-springs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-reserveamerica-sunol-site-water-restroom-proximity",
+        "gap-reserveamerica-sunol-site-coordinates"
+      ],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-camping-map-site-layout.json",
+      "reason": "Capture relative layout without inventing coordinates or measured proximity.",
+      "record_id": "observation-ebrpd-sunol-camping-map-site-layout",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-camping-map-site-descriptions.json",
+      "reason": "Record historical site descriptions while excluding stale operating details.",
+      "record_id": "observation-ebrpd-sunol-camping-map-site-descriptions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-mission-peak-map-eagle-spring.json",
+      "reason": "Capture the official map annotation for Eagle Spring Backpack Camp.",
+      "record_id": "observation-ebrpd-mission-peak-map-eagle-spring",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-backpack-faq-ohlone-inventory.json",
+      "reason": "Link the FAQ observation to its corridor inventory claim.",
+      "record_id": "evidence-ebrpd-backpack-faq-ohlone-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-backpack-faq-eagle-springs-facilities.json",
+      "reason": "Link the FAQ observation to its shared-facilities claim.",
+      "record_id": "evidence-ebrpd-backpack-faq-eagle-springs-facilities",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-backpack-faq-eagle-springs-access.json",
+      "reason": "Link the FAQ observation to its approach-distance claim.",
+      "record_id": "evidence-ebrpd-backpack-faq-eagle-springs-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-reserveamerica-sunol-site-water-restroom-proximity",
+        "gap-reserveamerica-sunol-site-coordinates"
+      ],
+      "path": "canonical/v0/evidence/evidence-ebrpd-sunol-camping-map-layout.json",
+      "reason": "Bound map evidence to relative layout only.",
+      "record_id": "evidence-ebrpd-sunol-camping-map-layout",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-mission-peak-map-eagle-spring.json",
+      "reason": "Link the Mission Peak map observation to its camp-constraints claim.",
+      "record_id": "evidence-ebrpd-mission-peak-map-eagle-spring",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-backpack-faq-ohlone-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-backpack-faq-ohlone-inventory.json",
+      "reason": "Promote the current official ordered inventory.",
+      "record_id": "claim-ebrpd-backpack-faq-ohlone-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-backpack-faq-eagle-springs-facilities"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-eagle-springs-shared-facilities.json",
+      "reason": "Promote official shared-facility facts.",
+      "record_id": "claim-eagle-springs-shared-facilities",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-backpack-faq-eagle-springs-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-eagle-springs-access-distances.json",
+      "reason": "Promote official approximate approach distances.",
+      "record_id": "claim-eagle-springs-access-distances",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-sunol-camping-map-layout"
+      ],
+      "knowledge_gap_refs": [
+        "gap-reserveamerica-sunol-site-water-restroom-proximity",
+        "gap-reserveamerica-sunol-site-coordinates"
+      ],
+      "path": "canonical/v0/claims/claim-sunol-backpack-map-layout-2015.json",
+      "reason": "Promote the dated map depiction without implying current precision.",
+      "record_id": "claim-sunol-backpack-map-layout-2015",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-mission-peak-map-eagle-spring"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-eagle-spring-map-operating-restrictions.json",
+      "reason": "Promote the map's direct camp annotation.",
+      "record_id": "claim-eagle-spring-map-operating-restrictions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-eagles-aerie.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-eagles-aerie",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-eagles-aerie-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-eagles-aerie-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-eagles-aerie-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-eagles-aerie-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-hawks-nest.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-hawks-nest",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-hawks-nest-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-hawks-nest-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-hawks-nest-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-hawks-nest-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-sky-camp.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-sky-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-sky-camp-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-sky-camp-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-sky-camp-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-sky-camp-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-stars-rest.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-stars-rest",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-stars-rest-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-stars-rest-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-stars-rest-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-stars-rest-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-sycamore.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-sycamore",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-sycamore-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-sycamore-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-sycamore-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-sycamore-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-cathedral.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-cathedral",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-cathedral-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-cathedral-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-cathedral-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-cathedral-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-oak-view.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-oak-view",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-sunol-oak-view-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-google-maps-sunol-oak-view-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-sunol-oak-view-coordinate.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-google-maps-sunol-oak-view-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-sunol-eagles-aerie-coordinate",
+        "evidence-google-maps-sunol-hawks-nest-coordinate",
+        "evidence-google-maps-sunol-sky-camp-coordinate",
+        "evidence-google-maps-sunol-stars-rest-coordinate",
+        "evidence-google-maps-sunol-sycamore-coordinate",
+        "evidence-google-maps-sunol-cathedral-coordinate",
+        "evidence-google-maps-sunol-oak-view-coordinate"
+      ],
+      "knowledge_gap_refs": [
+        "gap-reserveamerica-sunol-site-coordinates"
+      ],
+      "path": "canonical/v0/claims/claim-google-maps-sunol-backpack-site-coordinates.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "claim-google-maps-sunol-backpack-site-coordinates",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-water-spigot.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-water-spigot",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-sunol-water-spigot-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-user-sunol-water-spigot-202609",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-sunol-water-spigot-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-user-sunol-water-spigot-202609",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-sunol-water-spigot-202609"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-sunol-water-spigot-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "claim-user-sunol-water-spigot-202609",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-sunol-backpack-pit-toilet.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "facility-sunol-backpack-pit-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-sunol-pit-toilet.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "source-google-maps-sunol-pit-toilet",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-sunol-pit-toilet-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "observation-user-sunol-pit-toilet-202609",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-sunol-pit-toilet-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "evidence-user-sunol-pit-toilet-202609",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-sunol-pit-toilet-202609"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-sunol-pit-toilet-202609.json",
+      "reason": "Add user-supplied Google Maps site labels and firsthand Sunol facility observations without representing them as official coordinates.",
+      "record_id": "claim-user-sunol-pit-toilet-202609",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-eagles-eyrie-spelling.json",
+      "reason": "Preserve source-specific Aerie/Eyrie spellings as aliases and associate the firsthand spigot pin with EBRPD's existing Backpack Camp water-source identity.",
+      "record_id": "observation-ohlone-map-eagles-eyrie-spelling",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-eagles-eyrie-spelling.json",
+      "reason": "Preserve source-specific Aerie/Eyrie spellings as aliases and associate the firsthand spigot pin with EBRPD's existing Backpack Camp water-source identity.",
+      "record_id": "evidence-ohlone-map-eagles-eyrie-spelling",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-reserveamerica-eagles-aerie-spelling.json",
+      "reason": "Preserve source-specific Aerie/Eyrie spellings as aliases and associate the firsthand spigot pin with EBRPD's existing Backpack Camp water-source identity.",
+      "record_id": "evidence-reserveamerica-eagles-aerie-spelling",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-eagles-aerie-spelling.json",
+      "reason": "Preserve source-specific Aerie/Eyrie spellings as aliases and associate the firsthand spigot pin with EBRPD's existing Backpack Camp water-source identity.",
+      "record_id": "evidence-google-maps-eagles-aerie-spelling",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-eagles-eyrie-spelling",
+        "evidence-reserveamerica-eagles-aerie-spelling",
+        "evidence-google-maps-eagles-aerie-spelling"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sunol-eagles-aerie-eyrie-name-variants.json",
+      "reason": "Preserve source-specific Aerie/Eyrie spellings as aliases and associate the firsthand spigot pin with EBRPD's existing Backpack Camp water-source identity.",
+      "record_id": "claim-sunol-eagles-aerie-eyrie-name-variants",
+      "record_type": "claim"
+    }
   ],
   "schema_version": 0,
   "status": "VALIDATED",
-  "summary": "Ingest the official backpack camping FAQ, dated Sunol camping map, and Mission Peak map; promote source-bounded Ohlone campsite and Eagle Springs facts while preserving unresolved coordinate and measured-proximity gaps."
+  "summary": "Ingest official Ohlone camping sources, Google-labeled campsite coordinates, firsthand Backpack Camp spigot and pit-toilet observations, and source-specific Eagles Aerie/Eyrie naming; preserve provenance boundaries and unresolved authoritative-coordinate and measured-proximity gaps."
 }

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User firsthand trip report",
+      "User-supplied Google Maps pin"
+    ],
+    "content": "The user reports personally observing the restroom as a pit toilet during an Ohlone trip in early September 2026. The supplied pin resolves to 37.5122487, -121.7929973. The date is intentionally retained as the user-provided approximate period rather than converted to an invented exact day.",
+    "observation_id": "observation-user-sunol-pit-toilet-202609",
+    "observed_at": null,
+    "observer": "User firsthand field observation, transcribed by Wayproof",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-sunol-pit-toilet"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

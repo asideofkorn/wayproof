@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-sunol-backpack-pit-toilet",
+    "kind": "restroom",
+    "name": "Sunol Backpack Camp pit toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

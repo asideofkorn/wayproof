@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-sunol-pit-toilet-202609",
+    "evidence_ids": [
+      "evidence-user-sunol-pit-toilet-202609"
+    ],
+    "predicate": "firsthand_facility_observation",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "facility-sunol-backpack-pit-toilet",
+    "temporal_scope": null,
+    "value": {
+      "facility_type": "pit toilet",
+      "observed_present": true,
+      "observed_period": "early September 2026",
+      "latitude": 37.5122487,
+      "longitude": -121.7929973,
+      "provenance_class": "user_firsthand_field_observation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

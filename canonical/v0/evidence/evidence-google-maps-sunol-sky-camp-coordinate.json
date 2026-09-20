@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-sunol-backpack-site-coordinates",
+    "evidence_id": "evidence-google-maps-sunol-sky-camp-coordinate",
+    "notes": "Supports a Google-labeled approximate place coordinate only; it does not close the gap for authoritative campsite coordinates.",
+    "observation_id": "observation-google-maps-sunol-sky-camp-coordinate",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

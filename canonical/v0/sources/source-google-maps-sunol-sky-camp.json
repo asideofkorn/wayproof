@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-sunol-sky-camp",
+    "locator": "https://maps.app.goo.gl/xv6Acp73E2a5vX3G9?g_st=ic",
+    "publisher": "Google Maps (user-supplied labeled place)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

@@ -1,0 +1,79 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-sunol-backpack-site-coordinates",
+    "evidence_ids": [
+      "evidence-google-maps-sunol-eagles-aerie-coordinate",
+      "evidence-google-maps-sunol-hawks-nest-coordinate",
+      "evidence-google-maps-sunol-sky-camp-coordinate",
+      "evidence-google-maps-sunol-stars-rest-coordinate",
+      "evidence-google-maps-sunol-sycamore-coordinate",
+      "evidence-google-maps-sunol-cathedral-coordinate",
+      "evidence-google-maps-sunol-oak-view-coordinate"
+    ],
+    "predicate": "google_maps_labeled_site_coordinates",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "camp-ohlone-map-sunol-backpack",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_basis": "center of Google Maps displayed 10-character Plus Code cell",
+      "provenance_class": "user_supplied_google_maps_labeled_places",
+      "authoritative": false,
+      "sites": {
+        "campsite-reserveamerica-sunol-357": {
+          "label": "Eagles Aerie Backpack Camp",
+          "latitude": 37.5110625,
+          "longitude": -121.7923125,
+          "plus_code": "849WG665+C3",
+          "source_id": "source-google-maps-sunol-eagles-aerie"
+        },
+        "campsite-reserveamerica-sunol-375": {
+          "label": "Hawks Nest Backpack Camp",
+          "latitude": 37.5116875,
+          "longitude": -121.7926875,
+          "plus_code": "849WG664+MW",
+          "source_id": "source-google-maps-sunol-hawks-nest"
+        },
+        "campsite-reserveamerica-sunol-389": {
+          "label": "Sky Camp Backpack Camp",
+          "latitude": 37.5100625,
+          "longitude": -121.7933125,
+          "plus_code": "849WG664+2M",
+          "source_id": "source-google-maps-sunol-sky-camp"
+        },
+        "campsite-reserveamerica-sunol-393": {
+          "label": "Stars Rest Backpack Camp",
+          "latitude": 37.5133125,
+          "longitude": -121.7925625,
+          "plus_code": "849WG674+8X",
+          "source_id": "source-google-maps-sunol-stars-rest"
+        },
+        "campsite-reserveamerica-sunol-316": {
+          "label": "Sycamore Camp",
+          "latitude": 37.5131875,
+          "longitude": -121.7941875,
+          "plus_code": "849WG674+78",
+          "source_id": "source-google-maps-sunol-sycamore"
+        },
+        "campsite-reserveamerica-sunol-390": {
+          "label": "Cathedral Backpack Camp",
+          "latitude": 37.5106875,
+          "longitude": -121.7961875,
+          "plus_code": "849WG663+7G",
+          "source_id": "source-google-maps-sunol-cathedral"
+        },
+        "campsite-reserveamerica-sunol-391": {
+          "label": "Oak View Backpack Camp",
+          "latitude": 37.5093125,
+          "longitude": -121.7968125,
+          "plus_code": "849WG653+P7",
+          "source_id": "source-google-maps-sunol-oak-view"
+        }
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
