@@ -356,3 +356,34 @@ def test_ohlone_page_manifest_exercises_resolution_lifecycle():
     counts = {action: sum(item.action.value == action for item in change.operations)
               for action in ("ADD", "REPLACE", "REMOVE")}
     assert counts == {"ADD": 49, "REPLACE": 3, "REMOVE": 1}
+
+
+def test_ohlone_map_preserves_spatial_evidence_without_reviving_permit():
+    snapshot = records()
+    title = next(item for item in snapshot.claims
+                 if item.claim_id == "claim-ohlone-map-permit-title-historical")
+    current = next(item for item in snapshot.claims
+                   if item.claim_id == "claim-ohlone-trail-permit-not-required-2026")
+    assert str(title.temporal_scope.ends_on) == "2025-12-31"
+    assert current.value is False
+    assert str(current.temporal_scope.starts_on) == "2026-01-01"
+
+
+def test_ohlone_map_records_corridor_distances_and_access_boundaries():
+    snapshot = records()
+    distances = next(item for item in snapshot.claims
+                     if item.claim_id == "claim-ohlone-map-corridor-distances")
+    restrictions = next(item for item in snapshot.claims
+                        if item.claim_id == "claim-ohlone-map-access-restrictions")
+    assert distances.value["sunol_boundary_to_del_valle_boundary"] == 13.9
+    assert distances.value["sunol_boundary_to_del_valle_west_beach_services"] == 15.6
+    assert restrictions.value["sfwd_land_stay_on_trail"] is True
+    assert restrictions.value["land_bank_entry"] is False
+
+
+def test_ohlone_map_manifest_is_additive_with_bounded_corroboration():
+    change = load_changeset(
+        ROOT / "changesets/v0/wp-20260920-ebrpd-ohlone-map-2025-08.json")
+    counts = {action: sum(item.action.value == action for item in change.operations)
+              for action in ("ADD", "REPLACE", "REMOVE")}
+    assert counts == {"ADD": 30, "REPLACE": 2, "REMOVE": 0}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-ohlone-map-backpack",
+    "kind": "backcountry_camp",
+    "name": "Backpack Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

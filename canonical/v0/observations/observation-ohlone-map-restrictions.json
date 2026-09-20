@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map repeatedly says stay on trail and no bicycles, identifies the Ohlone Wilderness Trail for hikers and horses only, and marks service roads and land-bank areas as no access. It requires staying on the trail in San Francisco Water Department land.",
+    "observation_id": "observation-ohlone-map-restrictions",
+    "observed_at": "2025-08-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

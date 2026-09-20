@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rose-peak-ohlone",
+    "evidence_id": "evidence-ohlone-map-rose-peak",
+    "notes": "",
+    "observation_id": "observation-ohlone-map-rose-peak",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

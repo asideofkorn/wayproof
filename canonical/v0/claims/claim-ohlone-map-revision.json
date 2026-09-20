@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-revision",
+    "evidence_ids": [
+      "evidence-ohlone-map-revision"
+    ],
+    "predicate": "map_revision",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": "2025-08-31",
+      "starts_on": "2025-08-01"
+    },
+    "value": "2025-08"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

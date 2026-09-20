@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The one-page map is marked Rev. 2025-8 and titled Ohlone Wilderness Permit Map.",
+    "observation_id": "observation-ohlone-map-metadata",
+    "observed_at": "2025-08-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-corridor-distances",
+    "evidence_ids": [
+      "evidence-ohlone-map-corridor-distances"
+    ],
+    "predicate": "published_corridor_distances_miles",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "sunol_boundary_to_del_valle_boundary": 13.9,
+      "sunol_boundary_to_del_valle_west_beach_services": 15.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

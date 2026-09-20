@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-permit-title-historical",
+    "evidence_ids": [
+      "evidence-ohlone-map-permit-title-historical"
+    ],
+    "predicate": "published_map_title",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": "2025-12-31",
+      "starts_on": "2025-08-01"
+    },
+    "value": "Ohlone Wilderness Permit Map"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

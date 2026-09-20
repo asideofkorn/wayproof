@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-permit-title-historical",
+    "evidence_id": "evidence-ohlone-map-permit-title-historical",
+    "notes": "",
+    "observation_id": "observation-ohlone-map-metadata",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

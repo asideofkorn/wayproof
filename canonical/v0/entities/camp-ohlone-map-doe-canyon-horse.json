@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-ohlone-map-doe-canyon-horse",
+    "kind": "backcountry_camp",
+    "name": "Doe Canyon Horse Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

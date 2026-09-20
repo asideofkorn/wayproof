@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-ohlone-map-stewarts",
+    "kind": "backcountry_camp",
+    "name": "Stewart's Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

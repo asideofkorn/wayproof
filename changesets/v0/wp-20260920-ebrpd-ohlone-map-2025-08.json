@@ -1,0 +1,297 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-ohlone-map-2025-08",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-eagle-spring.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-eagle-spring",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-backpack.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-backpack",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-maggies-half-acre.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-maggies-half-acre",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-stewarts.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-stewarts",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-boyd.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-boyd",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-sunol-backpack.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-sunol-backpack",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-high-valley-group.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-high-valley-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-ohlone-map-doe-canyon-horse.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "camp-ohlone-map-doe-canyon-horse",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-ohlone-wilderness-map-2025-08.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "source-ebrpd-ohlone-wilderness-map-2025-08",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-metadata.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "observation-ohlone-map-metadata",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-corridor.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "observation-ohlone-map-corridor",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-restrictions.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "observation-ohlone-map-restrictions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-camps.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "observation-ohlone-map-camps",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-rose-peak.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "observation-ohlone-map-rose-peak",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-revision.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-revision",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-permit-title-historical.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-permit-title-historical",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-corridor-distances.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-corridor-distances",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-access-restrictions.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-access-restrictions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-backcountry-camps.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-backcountry-camps",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-cartography.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-cartography",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-rose-peak.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-rose-peak",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-trail-use.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "evidence-ohlone-map-trail-use",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-revision.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-revision",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-permit-title-historical.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-permit-title-historical",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-corridor-distances.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-corridor-distances",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-access-restrictions.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-access-restrictions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-backcountry-camps.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-backcountry-camps",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-map-cartography.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-map-cartography",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rose-peak-ohlone.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-rose-peak-ohlone",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-trail-use.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "claim-ohlone-trail-use",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-map-sfwd-stay-on-trail.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "rule-ohlone-map-sfwd-stay-on-trail",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ohlone-map-no-restricted-access.json",
+      "reason": "Add the August 2025 Ohlone map as dated spatial evidence without reviving its obsolete permit title.",
+      "record_id": "rule-ohlone-map-no-restricted-access",
+      "record_type": "rule"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Ingest the August 2025 Ohlone map as spatial evidence while bounding its permit-era title."
+}

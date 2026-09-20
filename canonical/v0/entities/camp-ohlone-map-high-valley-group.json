@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-ohlone-map-high-valley-group",
+    "kind": "backcountry_camp",
+    "name": "High Valley Group Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
