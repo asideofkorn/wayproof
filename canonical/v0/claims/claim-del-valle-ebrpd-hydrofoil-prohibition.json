@@ -1,18 +1,20 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-boat-inspection",
+    "claim_id": "claim-del-valle-ebrpd-hydrofoil-prohibition",
     "evidence_ids": [
-      "evidence-del-valle-boat-inspection",
-      "evidence-del-valle-ebrpd-boat-inspection"
+      "evidence-del-valle-ebrpd-hydrofoil-prohibition"
     ],
-    "predicate": "boat_inspection_required",
+    "predicate": "prohibited_watercraft",
     "spatial_scope_ids": [
       "scope-lake-del-valle"
     ],
     "subject_id": "lake-del-valle",
     "temporal_scope": null,
-    "value": true
+    "value": [
+      "hydrofoil",
+      "e_foil"
+    ]
   },
   "record_type": "claim",
   "schema_version": 0

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page gives a 10 PM to 5 AM park curfew and seasonal park gate hours: 7 AM-6 PM January-February, 6 AM-7 PM March, 6 AM-8 PM April, 6 AM-9 PM May through Labor Day, 6 AM-8 PM after Labor Day through September 30, 6 AM-7 PM October, and 7 AM-6 PM November-December.",
+    "observation_id": "observation-del-valle-ebrpd-hours",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

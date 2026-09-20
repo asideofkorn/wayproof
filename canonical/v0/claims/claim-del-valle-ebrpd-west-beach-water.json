@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-west-beach-water",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-west-beach-water"
+    ],
+    "predicate": "water_availability",
+    "spatial_scope_ids": [
+      "scope-del-valle-west-beach"
+    ],
+    "subject_id": "beach-del-valle-west",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": "no_water"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

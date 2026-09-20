@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-boat-speed",
+    "conditions": [
+      {
+        "dimension": "party_uses_boat",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Keep boat speed at or below 10 mph.",
+    "rule_id": "rule-del-valle-ebrpd-boat-speed",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

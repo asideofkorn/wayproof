@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-clean-drain-dry",
+    "conditions": [
+      {
+        "dimension": "party_launches_boat",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Clean, drain, and dry the vessel before launch.",
+    "rule_id": "rule-del-valle-ebrpd-clean-drain-dry",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

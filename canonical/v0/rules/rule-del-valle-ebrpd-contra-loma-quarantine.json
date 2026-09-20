@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
+    "conditions": [
+      {
+        "dimension": "prior_launch_lake",
+        "operator": "equals",
+        "value": "Contra Loma Reservoir"
+      }
+    ],
+    "consequence": "Do not launch at Del Valle within 30 days after launching at Contra Loma.",
+    "rule_id": "rule-del-valle-ebrpd-contra-loma-quarantine",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

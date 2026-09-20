@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "beach-del-valle-west",
+    "kind": "swim_beach",
+    "name": "Del Valle West Swim Beach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

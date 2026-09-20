@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-contra-loma-quarantine",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-contra-loma-quarantine"
+    ],
+    "predicate": "cross_lake_boat_quarantine",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "duration_days": 30,
+      "restricted_destination": "Lake Del Valle",
+      "trigger_lake": "Contra Loma Reservoir"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

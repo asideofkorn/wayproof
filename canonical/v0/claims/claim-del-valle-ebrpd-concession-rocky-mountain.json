@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-concession-rocky-mountain",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-concession-rocky-mountain"
+    ],
+    "predicate": "provides_service_at",
+    "spatial_scope_ids": [
+      "scope-del-valle-east-beach-marina"
+    ],
+    "subject_id": "org-rocky-mountain-recreation",
+    "temporal_scope": null,
+    "value": {
+      "facility": "facility-del-valle-east-beach-marina",
+      "service": "motorboat_and_patio_boat_rentals"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

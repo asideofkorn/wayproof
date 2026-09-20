@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "facility-del-valle-east-beach-marina",
+    "kind": "marina",
+    "scope_id": "scope-del-valle-east-beach-marina"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,13 +1,19 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Operational conditions can change after reservation and must be checked near departure.",
+    "explanation": "Operational conditions, water quality, access, inspections, and seasonal services can change after reservation and must be checked near departure.",
     "input_ids": [
       "claim-del-valle-volatile-alerts",
       "claim-del-valle-boat-inspection",
       "gap-del-valle-current-fire-status",
       "gap-del-valle-current-algae-status",
-      "gap-del-valle-current-flood-closure"
+      "gap-del-valle-current-flood-closure",
+      "claim-del-valle-ebrpd-east-beach-algae",
+      "claim-del-valle-ebrpd-west-beach-water",
+      "claim-del-valle-ebrpd-contra-loma-quarantine",
+      "claim-del-valle-ebrpd-park-open-limited",
+      "claim-del-valle-ebrpd-storm-trails",
+      "gap-del-valle-marina-schedule-effective-year"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-del-valle-pretrip-recheck",
@@ -17,7 +23,12 @@
         "fire_danger",
         "blue_green_algae",
         "flood_closure",
-        "boat_inspection_procedure"
+        "boat_inspection_procedure",
+        "swim_beach_water_level",
+        "storm_damaged_trails",
+        "limited_amenities",
+        "marina_and_store_hours",
+        "cross_lake_boat_quarantine"
       ]
     }
   },

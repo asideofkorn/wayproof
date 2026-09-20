@@ -1,22 +1,25 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-campground-inventory",
+    "claim_id": "claim-del-valle-ebrpd-rv-hookups",
     "evidence_ids": [
-      "evidence-del-valle-campground-inventory",
-      "evidence-del-valle-ebrpd-campground-inventory"
+      "evidence-del-valle-ebrpd-rv-hookups"
     ],
-    "predicate": "site_inventory",
+    "predicate": "rv_hookup_details",
     "spatial_scope_ids": [
       "scope-del-valle-family-campground"
     ],
     "subject_id": "campground-del-valle-family",
     "temporal_scope": null,
     "value": {
-      "cabins": 5,
-      "drive_up_tent": 124,
-      "rv_full_hookup": 21,
-      "total": 150
+      "electrical_amps": [
+        50,
+        30
+      ],
+      "electrical_volts": 120,
+      "sewage": true,
+      "sites": 21,
+      "water": true
     }
   },
   "record_type": "claim",

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-campground-accessibility",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-campground-accessibility"
+    ],
+    "predicate": "accessibility_features",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "bathroom_buildings_wheelchair_accessible": true,
+      "many_water_fountains_wheelchair_accessible": true,
+      "wheelchair_accessible_sites": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

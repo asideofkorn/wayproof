@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-del-valle-visitor-center",
+    "kind": "visitor_center",
+    "name": "Del Valle Visitor Center"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

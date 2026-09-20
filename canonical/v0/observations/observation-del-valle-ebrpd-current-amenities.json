@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "At retrieval, the park was open with limited amenities; the swim-beach food concession was closed until further notice, storm-damaged trails required caution, construction equipment or noise could be present during working hours, and the visitor center was open.",
+    "observation_id": "observation-del-valle-ebrpd-current-amenities",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

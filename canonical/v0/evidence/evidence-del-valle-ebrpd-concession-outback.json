@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-concession-outback",
+    "evidence_id": "evidence-del-valle-ebrpd-concession-outback",
+    "notes": "",
+    "observation_id": "observation-del-valle-ebrpd-concessioners",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

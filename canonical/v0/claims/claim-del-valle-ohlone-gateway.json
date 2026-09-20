@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-ohlone-gateway",
     "evidence_ids": [
-      "evidence-del-valle-ohlone-gateway"
+      "evidence-del-valle-ohlone-gateway",
+      "evidence-del-valle-ebrpd-ohlone-gateway"
     ],
     "predicate": "eastern_gateway",
     "spatial_scope_ids": [

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-storm-trails",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-storm-trails"
+    ],
+    "predicate": "trail_condition",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": "storm_damage_use_caution"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

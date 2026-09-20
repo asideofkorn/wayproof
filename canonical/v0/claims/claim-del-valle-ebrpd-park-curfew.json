@@ -1,18 +1,20 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "claim_id": "claim-del-valle-park-address",
+    "claim_id": "claim-del-valle-ebrpd-park-curfew",
     "evidence_ids": [
-      "evidence-del-valle-park-address",
-      "evidence-del-valle-ebrpd-park-address"
+      "evidence-del-valle-ebrpd-park-curfew"
     ],
-    "predicate": "street_address",
+    "predicate": "curfew",
     "spatial_scope_ids": [
       "scope-del-valle-park"
     ],
     "subject_id": "park-del-valle-regional-park",
     "temporal_scope": null,
-    "value": "7000 Del Valle Road, Livermore, CA 94550"
+    "value": {
+      "ends": "05:00",
+      "starts": "22:00"
+    }
   },
   "record_type": "claim",
   "schema_version": 0

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-del-valle-camp-store",
+    "kind": "store",
+    "name": "Del Valle Camp Store"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

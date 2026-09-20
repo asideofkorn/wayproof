@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-del-valle-east-beach-marina",
+    "kind": "marina",
+    "name": "Del Valle East Beach Marina"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

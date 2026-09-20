@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The EBRPD page states that the family campground has 150 sites, including two accessible sites and 21 sites with water, sewage, and 120-volt 50/30-amp electrical hookups; toilets and showers are centrally located. It separately states that five cabin sites take up to eight people and sleep five.",
+    "observation_id": "observation-del-valle-ebrpd-campground",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

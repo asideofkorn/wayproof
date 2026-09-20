@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "At retrieval, the page stated that a boat launched at Contra Loma would be quarantined for 30 days from inspected lakes including Del Valle; vessels must be cleaned, drained, and dried, and boat bands are honored only by the lake that issued them. It also requires campground guests with watercraft to complete inspection before campground check-in.",
+    "observation_id": "observation-del-valle-ebrpd-golden-mussel",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

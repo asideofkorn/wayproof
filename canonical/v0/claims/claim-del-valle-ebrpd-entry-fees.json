@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-entry-fees",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-entry-fees"
+    ],
+    "predicate": "published_entry_fees",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "arroyo_staging_parking_usd": 0,
+      "bus_parking_usd": 25,
+      "flat_entry_excludes": [
+        "fishing_permit",
+        "mussel_inspection"
+      ],
+      "flat_entry_includes": [
+        "vehicle_parking",
+        "trailer_parking",
+        "boat_launch"
+      ],
+      "flat_entry_season": "April through Labor Day",
+      "trailered_vehicle_parking_usd": 5,
+      "vehicle_parking_usd": 5,
+      "weekend_holiday_flat_entry_usd": 10
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

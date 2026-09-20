@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "staging-del-valle-arroyo-road",
+    "kind": "staging_area",
+    "scope_id": "scope-del-valle-arroyo-staging"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

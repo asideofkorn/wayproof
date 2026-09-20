@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-entry-fees",
+    "conditions": [],
+    "consequence": "Budget the applicable published parking or seasonal flat-entry fee; fishing permits and mussel inspection remain separate.",
+    "rule_id": "rule-del-valle-ebrpd-entry-fees",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

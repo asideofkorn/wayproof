@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ebrpd-concession-outback",
+    "evidence_ids": [
+      "evidence-del-valle-ebrpd-concession-outback"
+    ],
+    "predicate": "provides_service_at",
+    "spatial_scope_ids": [
+      "scope-del-valle-east-beach-marina"
+    ],
+    "subject_id": "org-outback-adventures",
+    "temporal_scope": null,
+    "value": {
+      "facility": "facility-del-valle-east-beach-marina",
+      "service": "kayak_and_paddleboard_rentals"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
