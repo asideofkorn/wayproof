@@ -1,9 +1,8 @@
-"""Controlled in-memory write boundary for Canonical Schema v0.
+"""Prepare validated canonical candidates for Git-backed publication.
 
-The service proves the ChangeSet workflow before Wayproof chooses a canonical
-file serialization.  Callers receive defensive copies: the repository is not a
-mutable storage API, and promotion is the only operation that changes canonical
-records.
+Wayproof owns domain intent and validation. Git owns content identity and exact
+diffs; GitHub owns review; merging to main publishes the change. This service
+therefore never approves, promotes, or mutates canonical storage.
 """
 
 from __future__ import annotations
@@ -13,12 +12,13 @@ from dataclasses import dataclass, fields
 from datetime import datetime, timezone
 from typing import Callable, Dict, List, Optional, Tuple
 
-from .schema import CanonicalRecords, ChangeSet, ChangeSetStatus
+from .schema import (CanonicalRecords, ChangeAction, ChangeOperation, ChangeSet,
+                     ChangeSetStatus)
 from .validation import validate_records
 
 
 class WriteServiceError(ValueError):
-    """Base class for rejected write-service operations."""
+    """Base class for rejected candidate-preparation operations."""
 
 
 class UnknownChangeSet(WriteServiceError):
@@ -29,12 +29,14 @@ class DuplicateChangeSet(WriteServiceError):
     pass
 
 
-class PromotionRejected(WriteServiceError):
+class PreparationRejected(WriteServiceError):
     pass
 
 
 @dataclass(frozen=True)
-class AuditEvent:
+class WorkflowEvent:
+    """Ephemeral local workflow history; Git is the publication ledger."""
+
     sequence: int
     change_set_id: str
     action: str
@@ -42,7 +44,6 @@ class AuditEvent:
     occurred_at: datetime
     from_status: ChangeSetStatus
     to_status: ChangeSetStatus
-    note: str = ""
     errors: Tuple[str, ...] = ()
 
 
@@ -50,13 +51,24 @@ class AuditEvent:
 class ChangeSetExplanation:
     change_set_id: str
     status: ChangeSetStatus
+    summary: str
     additions: Tuple[Tuple[str, Tuple[str, ...]], ...]
+    operations: Tuple[ChangeOperation, ...]
     validation_errors: Tuple[str, ...]
-    approved_by: str
 
     @property
     def addition_count(self) -> int:
         return sum(len(ids) for _, ids in self.additions)
+
+
+@dataclass(frozen=True)
+class PreparedCandidate:
+    """Detached result ready to serialize, commit, and submit as a PR."""
+
+    change_set_id: str
+    base: CanonicalRecords
+    result: CanonicalRecords
+    operations: Tuple[ChangeOperation, ...]
 
 
 _ID_ATTRIBUTES = {
@@ -74,6 +86,21 @@ _ID_ATTRIBUTES = {
     "derived_results": "result_id",
 }
 
+_RECORD_TYPES = {
+    "entity": ("entities", "entity_id"),
+    "spatial_scope": ("spatial_scopes", "scope_id"),
+    "source": ("sources", "source_id"),
+    "observation": ("observations", "observation_id"),
+    "evidence": ("evidence", "evidence_id"),
+    "claim": ("claims", "claim_id"),
+    "relationship": ("relationships", "relationship_id"),
+    "rule": ("rules", "rule_id"),
+    "requirement": ("requirements", "requirement_id"),
+    "fulfillment": ("fulfillments", "fulfillment_id"),
+    "gap": ("gaps", "gap_id"),
+    "derived_result": ("derived_results", "result_id"),
+}
+
 
 def _utc_now() -> datetime:
     return datetime.now(timezone.utc)
@@ -81,7 +108,6 @@ def _utc_now() -> datetime:
 
 def _combined(left: CanonicalRecords,
               right: CanonicalRecords) -> CanonicalRecords:
-    """Create a detached union without choosing a persistence format."""
     values = {}
     for definition in fields(CanonicalRecords):
         values[definition.name] = (
@@ -91,8 +117,72 @@ def _combined(left: CanonicalRecords,
     return CanonicalRecords(**values)
 
 
+def _operation_errors(change: ChangeSet, base: CanonicalRecords) -> Tuple[str, ...]:
+    """Check that typed intent exactly accounts for the additive candidate."""
+    errors = []
+    if not change.summary.strip():
+        errors.append("ChangeSet summary must not be blank")
+    candidate_targets = set()
+    existing_targets = set()
+    for record_type, (collection, attribute) in _RECORD_TYPES.items():
+        candidate_targets.update(
+            (record_type, getattr(item, attribute))
+            for item in getattr(change.records, collection))
+        existing_targets.update(
+            (record_type, getattr(item, attribute))
+            for item in getattr(base, collection)
+        )
+
+    operation_targets = [(operation.record_type, operation.record_id)
+                         for operation in change.operations]
+    if len(operation_targets) != len(set(operation_targets)):
+        errors.append("ChangeSet operations repeat a record target")
+    paths = [operation.path for operation in change.operations]
+    if len(paths) != len(set(paths)):
+        errors.append("ChangeSet operations repeat a canonical path")
+
+    add_targets = set()
+    for operation in change.operations:
+        target = (operation.record_type, operation.record_id)
+        if operation.record_type not in _RECORD_TYPES:
+            errors.append(f"unknown operation record type: {operation.record_type}")
+            continue
+        collection, _ = _RECORD_TYPES[operation.record_type]
+        expected_path = f"canonical/v0/{collection}/{operation.record_id}.json"
+        if operation.path != expected_path:
+            errors.append(f"operation path must be {expected_path}")
+        if operation.action is ChangeAction.ADD:
+            add_targets.add(target)
+            if target not in candidate_targets:
+                errors.append(f"ADD operation has no candidate record: {operation.record_id}")
+        elif operation.action in (ChangeAction.REPLACE, ChangeAction.REMOVE):
+            if target not in existing_targets:
+                errors.append(f"{operation.action.value} targets missing record: "
+                              f"{operation.record_id}")
+            errors.append(f"{operation.action.value} preparation is deferred to "
+                          "the Git storage adapter")
+
+    missing = sorted(candidate_targets - add_targets)
+    extra = sorted(add_targets - candidate_targets)
+    errors.extend(f"candidate record has no ADD operation: {kind}:{record_id}"
+                  for kind, record_id in missing)
+    errors.extend(f"ADD operation has no candidate record: {kind}:{record_id}"
+                  for kind, record_id in extra)
+
+    evidence_ids = {item.evidence_id for item in base.evidence + change.records.evidence}
+    gap_ids = {item.gap_id for item in base.gaps + change.records.gaps}
+    for operation in change.operations:
+        for reference in operation.evidence_refs:
+            if reference not in evidence_ids:
+                errors.append(f"operation references unknown evidence: {reference}")
+        for reference in operation.knowledge_gap_refs:
+            if reference not in gap_ids:
+                errors.append(f"operation references unknown knowledge gap: {reference}")
+    return tuple(sorted(set(errors)))
+
+
 class InMemoryCanonicalRepository:
-    """Read-only snapshots plus one private, atomic promotion operation."""
+    """A read-only canonical base used while preparing a Git candidate."""
 
     def __init__(self, initial: Optional[CanonicalRecords] = None) -> None:
         records = deepcopy(initial or CanonicalRecords())
@@ -104,24 +194,16 @@ class InMemoryCanonicalRepository:
     def snapshot(self) -> CanonicalRecords:
         return deepcopy(self._records)
 
-    def _promote(self, candidate: CanonicalRecords) -> None:
-        """Replace state only after the complete proposed state validates."""
-        proposed = _combined(self._records, candidate)
-        errors = validate_records(proposed)
-        if errors:
-            raise PromotionRejected("atomic promotion rejected: " + "; ".join(errors))
-        self._records = proposed
-
 
 class ChangeSetWriteService:
-    """The sole normal mutation path into a canonical repository."""
+    """Propose, validate, explain, and prepare—never publish—changes."""
 
     def __init__(self, repository: InMemoryCanonicalRepository,
                  clock: Callable[[], datetime] = _utc_now) -> None:
         self._repository = repository
         self._clock = clock
         self._changes: Dict[str, ChangeSet] = {}
-        self._events: List[AuditEvent] = []
+        self._events: List[WorkflowEvent] = []
 
     def propose(self, change_set: ChangeSet, actor: str) -> ChangeSet:
         actor = self._require_actor(actor, "proposed")
@@ -132,9 +214,8 @@ class ChangeSetWriteService:
             raise WriteServiceError("a proposed ChangeSet must be a draft")
         stored = deepcopy(change_set)
         self._changes[stored.change_set_id] = stored
-        self._audit(stored.change_set_id, "proposed", actor,
-                    ChangeSetStatus.DRAFT, ChangeSetStatus.DRAFT,
-                    occurred_at=occurred_at)
+        self._event(stored.change_set_id, "proposed", actor,
+                    ChangeSetStatus.DRAFT, ChangeSetStatus.DRAFT, occurred_at)
         return deepcopy(stored)
 
     def get(self, change_set_id: str) -> ChangeSet:
@@ -147,8 +228,8 @@ class ChangeSetWriteService:
         before = change.status
         errors = change.validate(existing=self._repository.snapshot())
         action = "validation_failed" if errors else "validated"
-        self._audit(change_set_id, action, actor, before, change.status,
-                    errors=errors, occurred_at=occurred_at)
+        self._event(change_set_id, action, actor, before, change.status,
+                    occurred_at, errors)
         return errors
 
     def explain(self, change_set_id: str) -> ChangeSetExplanation:
@@ -159,57 +240,51 @@ class ChangeSetWriteService:
                         for item in getattr(change.records, collection))
             if ids:
                 additions.append((collection, ids))
-        errors = tuple(validate_records(
-            change.records, existing=self._repository.snapshot()))
+        base = self._repository.snapshot()
+        errors = tuple(validate_records(change.records, existing=base))
+        errors += _operation_errors(change, base)
         return ChangeSetExplanation(
             change_set_id=change.change_set_id,
             status=change.status,
+            summary=change.summary,
             additions=tuple(additions),
+            operations=change.operations,
             validation_errors=errors,
-            approved_by=change.approved_by,
         )
 
-    def approve(self, change_set_id: str, reviewer: str,
-                note: str = "") -> None:
-        reviewer = self._require_actor(reviewer, "approved")
+    def prepare(self, change_set_id: str, actor: str) -> PreparedCandidate:
+        """Build a detached candidate; GitHub approval and merge happen later."""
+        actor = self._require_actor(actor, "prepared")
         occurred_at = self._clock()
         change = self._stored(change_set_id)
-        before = change.status
-        change.approve(reviewer, note)
-        self._audit(change_set_id, "approved", reviewer, before, change.status,
-                    note=note, occurred_at=occurred_at)
-
-    def promote(self, change_set_id: str, actor: str) -> None:
-        actor = self._require_actor(actor, "promoted")
-        occurred_at = self._clock()
-        change = self._stored(change_set_id)
-        if change.status is not ChangeSetStatus.APPROVED:
-            raise PromotionRejected("only an approved ChangeSet can be promoted")
-
-        # Re-check against the current repository. Another ChangeSet may have
-        # promoted between this one's validation and approval.
-        errors = tuple(validate_records(
-            change.records, existing=self._repository.snapshot()))
-        if errors:
-            self._audit(change_set_id, "promotion_rejected", actor,
-                        change.status, change.status, errors=errors,
-                        occurred_at=occurred_at)
-            raise PromotionRejected("canonical state changed: " + "; ".join(errors))
-
-        before = change.status
-        # The ChangeSet verifies that approved content still equals its
-        # validated snapshot; the repository validates the complete new state
-        # before swapping it in. Neither operation partially mutates storage.
         try:
-            change.promote()
-            self._repository._promote(change.records)
-        except Exception:
-            change.status = before
-            raise
-        self._audit(change_set_id, "promoted", actor, before, change.status,
-                    occurred_at=occurred_at)
+            change.assert_validated_unchanged()
+        except ValueError as exc:
+            raise PreparationRejected(str(exc)) from exc
 
-    def audit_log(self, change_set_id: Optional[str] = None) -> Tuple[AuditEvent, ...]:
+        base = self._repository.snapshot()
+        errors = tuple(validate_records(change.records, existing=base))
+        errors += _operation_errors(change, base)
+        if errors:
+            self._event(change_set_id, "preparation_rejected", actor,
+                        change.status, change.status, occurred_at, errors)
+            raise PreparationRejected("canonical base changed: " + "; ".join(errors))
+
+        result = _combined(base, change.records)
+        result_errors = tuple(validate_records(result))
+        if result_errors:
+            raise PreparationRejected("candidate snapshot invalid: "
+                                      + "; ".join(result_errors))
+        self._event(change_set_id, "prepared", actor,
+                    change.status, change.status, occurred_at)
+        return PreparedCandidate(
+            change_set_id=change_set_id,
+            base=base,
+            result=result,
+            operations=change.operations,
+        )
+
+    def workflow_log(self, change_set_id: Optional[str] = None) -> Tuple[WorkflowEvent, ...]:
         events = self._events
         if change_set_id is not None:
             events = [event for event in events
@@ -222,19 +297,17 @@ class ChangeSetWriteService:
         except KeyError as exc:
             raise UnknownChangeSet(change_set_id) from exc
 
-    def _audit(self, change_set_id: str, action: str, actor: str,
+    def _event(self, change_set_id: str, action: str, actor: str,
                before: ChangeSetStatus, after: ChangeSetStatus,
-               note: str = "", errors: Tuple[str, ...] = (),
-               occurred_at: Optional[datetime] = None) -> None:
-        self._events.append(AuditEvent(
+               occurred_at: datetime, errors: Tuple[str, ...] = ()) -> None:
+        self._events.append(WorkflowEvent(
             sequence=len(self._events) + 1,
             change_set_id=change_set_id,
             action=action,
-            actor=actor.strip(),
-            occurred_at=occurred_at or self._clock(),
+            actor=actor,
+            occurred_at=occurred_at,
             from_status=before,
             to_status=after,
-            note=note.strip(),
             errors=tuple(errors),
         ))
 

@@ -257,8 +257,38 @@ class CanonicalRecords:
 class ChangeSetStatus(str, Enum):
     DRAFT = "DRAFT"
     VALIDATED = "VALIDATED"
-    APPROVED = "APPROVED"
-    PROMOTED = "PROMOTED"
+
+
+class ChangeAction(str, Enum):
+    ADD = "ADD"
+    REPLACE = "REPLACE"
+    REMOVE = "REMOVE"
+
+
+@dataclass(frozen=True)
+class ChangeOperation:
+    """Domain intent for one canonical path changed by a future Git diff."""
+
+    action: ChangeAction
+    record_type: str
+    record_id: str
+    path: str
+    reason: str
+    evidence_refs: Tuple[str, ...] = ()
+    knowledge_gap_refs: Tuple[str, ...] = ()
+
+    def __post_init__(self) -> None:
+        required = {
+            "record_type": self.record_type,
+            "record_id": self.record_id,
+            "path": self.path,
+            "reason": self.reason,
+        }
+        for label, value in required.items():
+            if not value or not value.strip():
+                raise ValueError(f"ChangeOperation {label} must not be blank")
+        if not self.path.startswith("canonical/") or ".." in self.path.split("/"):
+            raise ValueError("ChangeOperation path must stay under canonical/")
 
 
 @dataclass
@@ -267,16 +297,22 @@ class ChangeSet:
 
     change_set_id: str
     records: CanonicalRecords
+    summary: str = ""
+    operations: Tuple[ChangeOperation, ...] = ()
+    artifact_format_version: int = 1
+    schema_version: int = 0
     status: ChangeSetStatus = ChangeSetStatus.DRAFT
     validation_errors: Tuple[str, ...] = ()
-    approved_by: str = ""
-    approval_note: str = ""
     _validated_snapshot: Optional[CanonicalRecords] = field(
         default=None, init=False, repr=False, compare=False)
 
     def __post_init__(self) -> None:
         if not self.change_set_id.strip():
             raise ValueError("ChangeSet id must not be blank")
+        if self.artifact_format_version < 1:
+            raise ValueError("artifact format version must be positive")
+        if self.schema_version < 0:
+            raise ValueError("schema version must not be negative")
 
     def validate(self, existing: Optional[CanonicalRecords] = None) -> Tuple[str, ...]:
         """Validate and advance a clean draft to VALIDATED."""
@@ -292,20 +328,8 @@ class ChangeSet:
         self._validated_snapshot = deepcopy(self.records) if not errors else None
         return errors
 
-    def approve(self, reviewer: str, note: str = "") -> None:
+    def assert_validated_unchanged(self) -> None:
         if self.status is not ChangeSetStatus.VALIDATED:
-            raise ValueError("only a validated ChangeSet can be approved")
+            raise ValueError("only a validated ChangeSet can be prepared")
         if self.records != self._validated_snapshot:
             raise ValueError("ChangeSet changed after validation; validate it again")
-        if not reviewer.strip():
-            raise ValueError("approval requires an identified reviewer")
-        self.approved_by = reviewer.strip()
-        self.approval_note = note.strip()
-        self.status = ChangeSetStatus.APPROVED
-
-    def promote(self) -> None:
-        if self.status is not ChangeSetStatus.APPROVED:
-            raise ValueError("only an approved ChangeSet can be promoted")
-        if self.records != self._validated_snapshot:
-            raise ValueError("ChangeSet changed after approval; it cannot be promoted")
-        self.status = ChangeSetStatus.PROMOTED
