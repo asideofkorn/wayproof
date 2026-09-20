@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ordinance-boat-operating-rules",
+    "conditions": [
+      {
+        "dimension": "activity",
+        "operator": "equals",
+        "value": "boating"
+      }
+    ],
+    "consequence": "At Del Valle, operate private boats only during allowed hours, at no more than 10 mph; do not tow people or pollute the water with fuel or oil.",
+    "rule_id": "rule-del-valle-ordinance-boat-operating",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

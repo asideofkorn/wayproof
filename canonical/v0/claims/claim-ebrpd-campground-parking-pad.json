@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-campground-parking-pad",
+    "evidence_ids": [
+      "evidence-ebrpd-campground-parking-pad"
+    ],
+    "predicate": "campground_vehicle_parking",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "maximum_vehicles": 2,
+      "off_paved_pad_allowed": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

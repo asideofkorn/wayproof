@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-dogs",
+    "evidence_id": "evidence-ordinance38-dog-rules",
+    "notes": "Supports leash, maximum-number, unattended, and water-exclusion portions; other claim fields come from campground-specific evidence.",
+    "observation_id": "observation-ebrpd-ordinance-38-dogs",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

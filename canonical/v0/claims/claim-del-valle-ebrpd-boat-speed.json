@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-del-valle-ebrpd-boat-speed",
     "evidence_ids": [
-      "evidence-del-valle-ebrpd-boat-speed"
+      "evidence-del-valle-ebrpd-boat-speed",
+      "evidence-ordinance38-del-valle-boat-speed"
     ],
     "predicate": "boat_speed_limit_mph",
     "spatial_scope_ids": [

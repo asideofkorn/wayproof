@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-campground-disturbing-devices",
+    "conditions": [
+      {
+        "dimension": "disturbs_other_campers",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Do not operate a generator or sound-amplification device in a campground when it disturbs other campers.",
+    "rule_id": "rule-ebrpd-campground-disturbing-devices",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

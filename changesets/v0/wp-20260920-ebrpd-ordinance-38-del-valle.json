@@ -1,0 +1,432 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-ordinance-38-del-valle",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-ordinance-38-page.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "source-ebrpd-ordinance-38-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-ordinance-38-september-2023.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "source-ebrpd-ordinance-38-september-2023",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-publication.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-publication",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-camping.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-camping",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-fire-smoking.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-fire-smoking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-del-valle-boating.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-del-valle-boating",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-dogs.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-dogs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ordinance-38-parking.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "observation-ebrpd-ordinance-38-parking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-family-capacity.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-family-capacity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-family-stay-limit.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-family-stay-limit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-smoking.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-smoking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-del-valle-boat-speed.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-del-valle-boat-speed",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-family-vehicles.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-family-vehicles",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-fire-rules.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-fire-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ordinance38-dog-rules.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ordinance38-dog-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-camping-permit-required.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-camping-permit-required",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-campground-disturbing-devices.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-campground-disturbing-devices",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-camping-juvenile-supervision.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-camping-juvenile-supervision",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ordinance-boat-launch.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-del-valle-ordinance-boat-launch",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ordinance-boat-operating-rules.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-del-valle-ordinance-boat-operating-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-boat-swimmer-separation.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-boat-swimmer-separation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-dog-swimming-prohibited-zone.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-del-valle-dog-swimming-prohibited-zone",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-developed-area-dog-restraint.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-developed-area-dog-restraint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-campground-parking-pad.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "evidence-ebrpd-campground-parking-pad",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-capacity.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-family-capacity",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-stay-limit.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-family-stay-limit",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-smoking-prohibited.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-smoking-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-boat-speed.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-ebrpd-boat-speed",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-vehicles.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-family-vehicles",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-fire-rules.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-fire-rules",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-dogs.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-dogs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-camping-permit-required.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-camping-permit-required",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-campground-disturbing-devices.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-campground-disturbing-devices",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-camping-juvenile-supervision.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-camping-juvenile-supervision",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ordinance-boat-launch.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-ordinance-boat-launch",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ordinance-boat-operating-rules.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-ordinance-boat-operating-rules",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-boat-swimmer-separation.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-boat-swimmer-separation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-dog-swimming-prohibited-zone.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-del-valle-dog-swimming-prohibited-zone",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-developed-area-dog-restraint.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-developed-area-dog-restraint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-campground-parking-pad.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "claim-ebrpd-campground-parking-pad",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-camping-permit-required.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-ebrpd-camping-permit-required",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-campground-disturbing-devices.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-ebrpd-campground-disturbing-devices",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-camping-juvenile-supervision.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-ebrpd-camping-juvenile-supervision",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-ordinance-boat-operating.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-del-valle-ordinance-boat-operating",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-dog-swimming-prohibited-zone.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-del-valle-dog-swimming-prohibited-zone",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-campground-parking-pad.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "rule-ebrpd-campground-parking-pad",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-generator-rule-layering.json",
+      "reason": "Add September 2023 Ordinance 38 as primary regulatory evidence for Del Valle planning.",
+      "record_id": "gap-del-valle-generator-rule-layering",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Ingest the Ordinance 38 landing page and September 2023 PDF, separating district-wide and Del Valle-specific rules."
+}

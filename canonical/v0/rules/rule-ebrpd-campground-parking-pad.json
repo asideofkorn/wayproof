@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-campground-parking-pad",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "campground_stay"
+      }
+    ],
+    "consequence": "Do not keep more than two vehicles at a campground site or park a vehicle off the paved pad.",
+    "rule_id": "rule-ebrpd-campground-parking-pad",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

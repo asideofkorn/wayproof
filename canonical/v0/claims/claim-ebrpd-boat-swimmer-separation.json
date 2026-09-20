@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-boat-swimmer-separation",
+    "evidence_ids": [
+      "evidence-ebrpd-boat-swimmer-separation"
+    ],
+    "predicate": "boat_swimmer_separation_feet",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2023-09-01"
+    },
+    "value": {
+      "minimum": 100,
+      "open_lake_del_valle_exception": "unless_otherwise_posted"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

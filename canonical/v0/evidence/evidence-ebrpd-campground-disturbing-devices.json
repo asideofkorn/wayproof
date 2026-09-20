@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-campground-disturbing-devices",
+    "evidence_id": "evidence-ebrpd-campground-disturbing-devices",
+    "notes": "",
+    "observation_id": "observation-ebrpd-ordinance-38-camping",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

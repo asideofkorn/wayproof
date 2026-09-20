@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF pages 16, 18-19"
+    ],
+    "content": "Sections 501.2 and 503.4-503.9 allow car-top and trailered boats at Del Valle without size restriction; limit use to sunrise-sunset or posted hours; cap gasoline-powered boats at 10 mph; prohibit towing people and fuel/oil pollution; and regulate proximity to swim areas and swimmers.",
+    "observation_id": "observation-ebrpd-ordinance-38-del-valle-boating",
+    "observed_at": "2023-09-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ordinance-38-september-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

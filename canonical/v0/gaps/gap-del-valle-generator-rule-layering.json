@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-generator-rule-layering",
+    "question": "How should the district conditional generator rule and Del Valle's stricter no-generator rule be presented together?",
+    "reason": "Ordinance 38 prohibits generator use when it disturbs campers; the current Del Valle camping sources prohibit generators categorically. The site-specific rule is stricter, not contradicted.",
+    "related_ids": [
+      "claim-ebrpd-campground-disturbing-devices",
+      "claim-del-valle-generators-prohibited"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
