@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-swimming",
+    "evidence_ids": [
+      "evidence-del-valle-swimming"
+    ],
+    "predicate": "published_swimming_facilities",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": {
+      "beaches": 2,
+      "lifeguards": "during posted periods"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fire-rules",
+    "evidence_ids": [
+      "evidence-del-valle-fire-rules"
+    ],
+    "predicate": "fire_rules",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "adult_attendance_required": true,
+      "designated_areas_only": true,
+      "extinguish_before_departure": true,
+      "subject_to_current_restrictions": true,
+      "wood_collection_allowed": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

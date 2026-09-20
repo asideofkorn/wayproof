@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-generators-prohibited",
+    "evidence_id": "evidence-del-valle-generators-prohibited",
+    "notes": "",
+    "observation_id": "observation-del-valle-quiet-generators",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Tent or RV family campsites at Del Valle may be reserved online from 48 hours through 12 weeks before arrival; no more than two family campsites may be reserved for the same date per household, primary occupant, customer name, or registered vehicles.",
+    "observation_id": "observation-del-valle-family-booking",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

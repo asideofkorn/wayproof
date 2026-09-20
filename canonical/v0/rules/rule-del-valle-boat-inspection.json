@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-boat-inspection",
+    "conditions": [
+      {
+        "dimension": "party_launches_boat",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Complete the mandatory invasive-mussel inspection before launching a boat.",
+    "rule_id": "rule-del-valle-boat-inspection",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-quiet-hours",
+    "conditions": [],
+    "consequence": "Do not create noise that disturbs campers between 10:00 PM and 7:00 AM.",
+    "rule_id": "rule-del-valle-quiet-hours",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

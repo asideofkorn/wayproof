@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Groups of 17 or more are directed to group campsites. Group campsites are available by phone reservation only and require at least three business days of advance notice; requirements may differ for reservations made less than seven days ahead.",
+    "observation_id": "observation-del-valle-group-booking",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

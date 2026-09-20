@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-reservation-count",
+    "conditions": [],
+    "consequence": "A party may hold at most two family campsites for a given date.",
+    "rule_id": "rule-del-valle-family-reservation-count",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

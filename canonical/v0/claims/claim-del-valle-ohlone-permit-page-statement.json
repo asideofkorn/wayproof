@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ohlone-permit-page-statement",
+    "evidence_ids": [
+      "evidence-del-valle-ohlone-permit-page-statement"
+    ],
+    "predicate": "published_permit_statement",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": "The ReserveAmerica overview states that a permit is required on portions of the trail."
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

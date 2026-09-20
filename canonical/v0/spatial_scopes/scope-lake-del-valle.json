@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "lake-del-valle",
+    "kind": "lake",
+    "scope_id": "scope-lake-del-valle"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

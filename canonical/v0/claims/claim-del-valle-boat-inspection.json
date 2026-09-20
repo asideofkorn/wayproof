@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-boat-inspection",
+    "evidence_ids": [
+      "evidence-del-valle-boat-inspection"
+    ],
+    "predicate": "boat_inspection_required",
+    "spatial_scope_ids": [
+      "scope-lake-del-valle"
+    ],
+    "subject_id": "lake-del-valle",
+    "temporal_scope": null,
+    "value": true
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

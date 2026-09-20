@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page directs visitors to check current fire-danger restrictions and blue-green algae updates before travel, and warns that flooding can cause site or park closure and reservation cancellation with email or phone notice.",
+    "observation_id": "observation-del-valle-volatile-alerts",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

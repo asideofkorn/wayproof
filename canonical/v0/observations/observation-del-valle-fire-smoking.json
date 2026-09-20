@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Fire restrictions may apply. Fires are allowed only in designated areas, must use commercially purchased wood, processed logs, or cut lumber, must remain attended by an adult, and must be extinguished before departure. Collecting wood, smoking, and vaping are prohibited.",
+    "observation_id": "observation-del-valle-fire-smoking",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

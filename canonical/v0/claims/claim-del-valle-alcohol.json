@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-alcohol",
+    "evidence_ids": [
+      "evidence-del-valle-alcohol"
+    ],
+    "predicate": "alcohol_rules",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "beer_wine_locations": [
+        "campsites",
+        "picnic_areas"
+      ],
+      "group_site_beer_wine_permit_required": true,
+      "hard_alcohol_allowed": false,
+      "minimum_age": 21,
+      "prohibited_locations": [
+        "parking_lots",
+        "trails",
+        "swim_beaches"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

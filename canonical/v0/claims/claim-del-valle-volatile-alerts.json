@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-volatile-alerts",
+    "evidence_ids": [
+      "evidence-del-valle-volatile-alerts"
+    ],
+    "predicate": "pretrip_alert_topics",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": [
+      "fire_danger",
+      "blue_green_algae",
+      "flood_closure"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

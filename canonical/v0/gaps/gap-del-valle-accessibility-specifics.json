@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-accessibility-specifics",
+    "question": "Which individual campsites and facilities meet the party's accessibility needs?",
+    "reason": "The page lists handicap access only as a general amenity.",
+    "related_ids": [
+      "campground-del-valle-family"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

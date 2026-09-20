@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-dogs",
+    "evidence_ids": [
+      "evidence-del-valle-dogs"
+    ],
+    "predicate": "dog_rules",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "confined_during_quiet_hours": true,
+      "excluded_places": [
+        "swim_beach",
+        "swim_area",
+        "cabins",
+        "select_trails"
+      ],
+      "leash_in_developed_areas": true,
+      "maximum_per_site": 3,
+      "trained_service_animal_exception": true,
+      "unattended_allowed": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "campground-del-valle-family",
+    "kind": "campground",
+    "scope_id": "scope-del-valle-family-campground"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

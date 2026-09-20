@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-capacity",
+    "evidence_ids": [
+      "evidence-del-valle-family-capacity"
+    ],
+    "predicate": "people_per_family_site",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": 8
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

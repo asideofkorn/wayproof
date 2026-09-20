@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page identifies Del Valle Regional Park as an East Bay Regional Park District park about ten miles south of Livermore, with a 4,316-acre park around a five-mile-long lake; it lists 7000 Del Valle Road, Livermore, California 94550 and coordinates 37.56917, -121.68722.",
+    "observation_id": "observation-del-valle-identity-location",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

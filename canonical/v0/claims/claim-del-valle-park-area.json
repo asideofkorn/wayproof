@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-park-area",
+    "evidence_ids": [
+      "evidence-del-valle-park-area"
+    ],
+    "predicate": "published_area_acres",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": 4316
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

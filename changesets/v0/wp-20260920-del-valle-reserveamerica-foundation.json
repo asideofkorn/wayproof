@@ -1,0 +1,1052 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-del-valle-reserveamerica-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/org-east-bay-regional-park-district.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "org-east-bay-regional-park-district",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-del-valle-regional-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "park-del-valle-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/lake-del-valle.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "lake-del-valle",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-del-valle-family.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "campground-del-valle-family",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-reserveamerica-del-valle-110003.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "facility-reserveamerica-del-valle-110003",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trail-ohlone-wilderness.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "trail-ohlone-wilderness",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "scope-del-valle-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-del-valle-family-campground.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "scope-del-valle-family-campground",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-lake-del-valle.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "scope-lake-del-valle",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-reserveamerica-del-valle-overview-110003.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "source-reserveamerica-del-valle-overview-110003",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-identity-location.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-identity-location",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-campground-inventory.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-campground-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-family-booking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-family-booking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-group-booking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-group-booking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-gates-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-gates-hours",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-quiet-generators.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-quiet-generators",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-family-capacity-stays-vehicles.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-family-capacity-stays-vehicles",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-dogs.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-dogs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-fire-smoking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-fire-smoking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-alcohol.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-alcohol",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-boating-swimming.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-boating-swimming",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-volatile-alerts.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-volatile-alerts",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-ohlone-permit-statement.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "observation-del-valle-ohlone-permit-statement",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-park-managed-by-ebrpd.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-park-managed-by-ebrpd",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-park-address.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-park-address",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-park-coordinate.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-park-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-park-area.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-park-area",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-lake-in-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-lake-in-park",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-lake-length.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-lake-length",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-campground-in-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-campground-in-park",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-campground-inventory.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-campground-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-campground-sanitation.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-campground-sanitation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-family-booking-window.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-family-booking-window",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-booking-facility.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-booking-facility",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-family-reservation-count.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-family-reservation-count",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-group-booking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-group-booking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-gate-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-gate-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-quiet-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-quiet-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-generators-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-generators-prohibited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-family-capacity.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-family-capacity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-family-vehicles.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-family-vehicles",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-family-stay-limit.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-family-stay-limit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-dogs.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-dogs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-fire-rules.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-fire-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-smoking-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-smoking-prohibited",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-alcohol.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-alcohol",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-boat-inspection.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-boat-inspection",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-swimming.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-swimming",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-volatile-alerts.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-volatile-alerts",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ohlone-gateway.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-ohlone-gateway",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-ohlone-permit-page-statement.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "evidence-del-valle-ohlone-permit-page-statement",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-park-managed-by-ebrpd"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-park-managed-by-ebrpd.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-park-managed-by-ebrpd",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-park-address"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-park-address.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-park-address",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-park-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-park-coordinate.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-park-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-park-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-park-area.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-park-area",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-lake-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-lake-in-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-lake-in-park",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-lake-length"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-lake-length.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-lake-length",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-campground-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-in-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-campground-in-park",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-campground-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-inventory.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-campground-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-campground-sanitation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-campground-sanitation.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-campground-sanitation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-booking-window"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-booking-window.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-family-booking-window",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-booking-facility"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-booking-facility.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-booking-facility",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-reservation-count"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-reservation-count.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-family-reservation-count",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-group-booking"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-group-booking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-group-booking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-gate-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-gate-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-gate-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-quiet-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-quiet-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-quiet-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-generators-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-generators-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-generators-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-capacity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-capacity.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-family-capacity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-vehicles"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-vehicles.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-family-vehicles",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-stay-limit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-family-stay-limit.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-family-stay-limit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-dogs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-dogs.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-dogs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-fire-rules"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-fire-rules.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-fire-rules",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-smoking-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-smoking-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-smoking-prohibited",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-alcohol"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-alcohol.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-alcohol",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-boat-inspection"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-boat-inspection.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-boat-inspection",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-swimming"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-swimming.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-swimming",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-volatile-alerts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-volatile-alerts.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-volatile-alerts",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ohlone-gateway"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ohlone-gateway.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-ohlone-gateway",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ohlone-permit-page-statement"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ohlone-permit-page-statement.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "claim-del-valle-ohlone-permit-page-statement",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-park-managed-by-ebrpd"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ebrpd-manages-del-valle.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "relationship-ebrpd-manages-del-valle",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-lake-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lake-del-valle-in-park.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "relationship-lake-del-valle-in-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-campground-in-park"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-family-campground-in-del-valle.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "relationship-family-campground-in-del-valle",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-booking-facility"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110003-books-family-campground.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "relationship-reserveamerica-110003-books-family-campground",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-ohlone-gateway"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-gateway-del-valle.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "relationship-ohlone-gateway-del-valle",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-booking-window"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-family-booking-window.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-family-booking-window",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-reservation-count"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-family-reservation-count.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-family-reservation-count",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-group-booking"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-group-booking.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-group-booking",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-gate-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-gate-arrival.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-gate-arrival",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-quiet-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-quiet-hours.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-quiet-hours",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-generators-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-generators-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-generators-prohibited",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-capacity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-family-capacity.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-family-capacity",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-vehicles"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-family-vehicles.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-family-vehicles",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-family-stay-limit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-family-stay-limit.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-family-stay-limit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-dogs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-dogs.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-dogs",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-fire-rules"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-fire-rules.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-fire-rules",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-smoking-prohibited"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-smoking-prohibited.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-smoking-prohibited",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-alcohol"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-alcohol.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-alcohol",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-boat-inspection"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-del-valle-boat-inspection.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "rule-del-valle-boat-inspection",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-inventory-count.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-inventory-count",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-ohlone-permit-current.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-ohlone-permit-current",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-current-fire-status.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-current-fire-status",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-current-algae-status.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-current-algae-status",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-current-flood-closure.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-current-flood-closure",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-accessibility-specifics.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "gap-del-valle-accessibility-specifics",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-del-valle-current-fire-status",
+        "gap-del-valle-current-algae-status",
+        "gap-del-valle-current-flood-closure"
+      ],
+      "path": "canonical/v0/derived_results/result-del-valle-pretrip-recheck.json",
+      "reason": "Establish the source-backed Del Valle foundation from the supplied ReserveAmerica overview.",
+      "record_id": "result-del-valle-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Establish Del Valle park and family-campground knowledge from the ReserveAmerica overview while preserving inventory, permit, and operational-condition uncertainty."
+}

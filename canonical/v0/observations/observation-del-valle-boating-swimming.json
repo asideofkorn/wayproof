@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page lists two swimming beaches, lifeguards during posted periods, boat rentals, and a public launch for boats of any size; it warns that boaters must comply with the Invasive Mussel Prevention Program and mandatory inspections.",
+    "observation_id": "observation-del-valle-boating-swimming",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
