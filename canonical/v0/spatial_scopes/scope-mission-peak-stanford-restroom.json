@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The Google Maps-labeled public restroom at the Stanford Avenue staging area for Mission Peak.",
+    "entity_id": "restroom-mission-peak-stanford-avenue",
+    "kind": "restroom",
+    "scope_id": "scope-mission-peak-stanford-restroom"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://goo.gl/maps/t59zQLkyMBK2",
+    "publisher": "Google Maps (linked by East Bay Regional Park District)",
+    "source_id": "source-google-maps-mission-peak-stanford-directions"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

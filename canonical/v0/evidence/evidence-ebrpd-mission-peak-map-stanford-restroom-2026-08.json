@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-stanford-restroom-official-map-2026-08",
+    "evidence_id": "evidence-ebrpd-mission-peak-map-stanford-restroom-2026-08",
+    "notes": "The official current park map depicts a restroom symbol at Stanford Avenue Staging Area, independently corroborating the Google Maps place record without asserting an interior fixture type.",
+    "observation_id": "observation-ebrpd-mission-peak-map-2026-08",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

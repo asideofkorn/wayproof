@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-college-daily-permit-policy-20260920",
+    "evidence_id": "evidence-ohlone-college-daily-permit-policy-20260920",
+    "notes": "The college's current permit page directly supports the retrieved-day price, purchase channels, validity, and hourly-permit distinction.",
+    "observation_id": "observation-ohlone-college-daily-permits",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

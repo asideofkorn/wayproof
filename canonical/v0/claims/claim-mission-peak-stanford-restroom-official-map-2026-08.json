@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-stanford-restroom-official-map-2026-08",
+    "evidence_ids": [
+      "evidence-ebrpd-mission-peak-map-stanford-restroom-2026-08"
+    ],
+    "predicate": "official_map_facility_presence",
+    "spatial_scope_ids": [
+      "scope-mission-peak-stanford-avenue-staging",
+      "scope-mission-peak-stanford-restroom"
+    ],
+    "subject_id": "restroom-mission-peak-stanford-avenue",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-08-01"
+    },
+    "value": {
+      "facility_type": "restroom",
+      "mapped_present": true,
+      "map_revision": "2026-08",
+      "toilet_fixture_type_specified": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

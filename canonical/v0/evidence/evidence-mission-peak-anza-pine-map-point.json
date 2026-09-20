@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-anza-pine-map-point",
+    "evidence_id": "evidence-mission-peak-anza-pine-map-point",
+    "notes": "The official EBRPD page labels and links this exact coordinate query as the Anza–Pine walk-in entrance.",
+    "observation_id": "observation-ebrpd-linked-mission-peak-map-points",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

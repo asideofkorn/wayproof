@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-anza-pine-map-point",
+    "evidence_ids": [
+      "evidence-mission-peak-anza-pine-map-point"
+    ],
+    "predicate": "official_page_linked_map_point",
+    "spatial_scope_ids": [
+      "scope-mission-peak-anza-pine-entrance"
+    ],
+    "subject_id": "entrance-mission-peak-anza-pine",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 37.527465089624,
+      "longitude": -121.912493393071,
+      "source_id": "source-google-maps-mission-peak-anza-pine-entrance"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

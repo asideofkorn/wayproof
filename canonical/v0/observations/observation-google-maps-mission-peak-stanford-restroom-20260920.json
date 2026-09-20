@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Google Maps place overview",
+      "Five-photo gallery",
+      "Community reviews"
+    ],
+    "content": "The user-supplied pin resolves to a Google Maps place named Restroom at 37.5041895, -121.9081485 on the Ohlone Wilderness Trail near Stanford Avenue. Google categorizes it as a public bathroom and displays a wheelchair-accessible-entrance attribute. Community photos visibly show a fixed restroom structure and at least three portable toilet units. Gallery metadata exposes photos dated September 2021, March 2022, and July 2025 plus imagery captured January 2023; Google does not expose the pin creation date. A review displayed as one year old reports that this is the last restroom before the trailhead and that it has no handwashing place; this is community-reported rather than independently verified.",
+    "observation_id": "observation-google-maps-mission-peak-stanford-restroom-20260920",
+    "observed_at": null,
+    "observer": "Wayproof browser and visual source review",
+    "retrieved_at": "2026-09-20T00:00:00-07:00",
+    "source_id": "source-google-maps-mission-peak-stanford-restroom"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-ohlone-college-address",
+    "evidence_ids": [
+      "evidence-mission-peak-ohlone-college-address"
+    ],
+    "predicate": "access_address",
+    "spatial_scope_ids": [
+      "scope-mission-peak-ohlone-college-entrance"
+    ],
+    "subject_id": "entrance-mission-peak-ohlone-college",
+    "temporal_scope": null,
+    "value": {
+      "address": "43600 Mission Boulevard, Fremont, CA 94539",
+      "source_id": "source-google-maps-mission-peak-ohlone-college-entrance"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

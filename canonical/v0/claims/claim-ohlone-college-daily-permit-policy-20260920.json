@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-college-daily-permit-policy-20260920",
+    "evidence_ids": [
+      "evidence-ohlone-college-daily-permit-policy-20260920"
+    ],
+    "predicate": "published_daily_parking_permit_policy",
+    "spatial_scope_ids": [
+      "scope-mission-peak-ohlone-college-entrance"
+    ],
+    "subject_id": "entrance-mission-peak-ohlone-college",
+    "temporal_scope": {
+      "ends_on": "2026-09-20",
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "daily_price_usd": 4,
+      "purchase_channels": [
+        "campus kiosk",
+        "mobile QR"
+      ],
+      "validity": "Purchase date only; either Ohlone College campus",
+      "visitor_daily_permit_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

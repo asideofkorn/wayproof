@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The Stanford Avenue staging and parking access to Mission Peak.",
+    "entity_id": "staging-mission-peak-stanford-avenue",
+    "kind": "staging_area",
+    "scope_id": "scope-mission-peak-stanford-avenue-staging"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

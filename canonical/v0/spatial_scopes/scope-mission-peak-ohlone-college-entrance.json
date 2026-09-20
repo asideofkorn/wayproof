@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mission Peak access through the Ohlone College campus and associated visitor parking.",
+    "entity_id": "entrance-mission-peak-ohlone-college",
+    "kind": "park_entrance",
+    "scope_id": "scope-mission-peak-ohlone-college-entrance"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

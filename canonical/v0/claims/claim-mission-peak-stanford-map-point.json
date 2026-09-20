@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-stanford-map-point",
+    "evidence_ids": [
+      "evidence-mission-peak-stanford-map-point"
+    ],
+    "predicate": "official_page_linked_map_point",
+    "spatial_scope_ids": [
+      "scope-mission-peak-stanford-avenue-staging"
+    ],
+    "subject_id": "staging-mission-peak-stanford-avenue",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 37.5044641253631,
+      "longitude": -121.908478932501,
+      "source_ids": [
+        "source-google-maps-mission-peak-stanford-entrance",
+        "source-google-maps-mission-peak-stanford-directions"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

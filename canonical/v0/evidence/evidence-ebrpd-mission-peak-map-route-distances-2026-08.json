@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-map-route-distances-2026-08",
+    "evidence_id": "evidence-ebrpd-mission-peak-map-route-distances-2026-08",
+    "notes": "The official current map directly labels the Stanford-to-Sunol Visitor Center and park-boundary-to-boundary distances.",
+    "observation_id": "observation-ebrpd-mission-peak-map-2026-08",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
