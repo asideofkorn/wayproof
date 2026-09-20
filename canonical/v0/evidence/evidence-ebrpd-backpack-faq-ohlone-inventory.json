@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-backpack-faq-ohlone-inventory",
+    "evidence_id": "evidence-ebrpd-backpack-faq-ohlone-inventory",
+    "notes": "The current official FAQ provides an ordered inventory and site numbering for the corridor.",
+    "observation_id": "observation-ebrpd-backpack-faq-ohlone-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The Mission Peak map depicts Eagle Spring Backpack Camp beside the Ohlone Wilderness Trail. Its map annotation states no campfires, personal cooking equipment only, water must be treated or boiled, and camping is by reservation only.",
+    "observation_id": "observation-ebrpd-mission-peak-map-eagle-spring",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-mission-peak-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

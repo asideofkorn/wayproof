@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User firsthand trip report",
+      "User-supplied Google Maps pin"
+    ],
+    "content": "The user reports personally using this water spigot during an Ohlone trip in early September 2026 and identifies it as the source EBRPD calls Backpack Camp in its Ohlone water-availability list. The supplied pin resolves to 37.5115678, -121.7924162. EBRPD independently reports Backpack Camp water available; the user observation supplies the physical pin. The date is intentionally retained as the user-provided approximate period rather than converted to an invented exact day.",
+    "observation_id": "observation-user-sunol-water-spigot-202609",
+    "observed_at": null,
+    "observer": "User firsthand field observation, transcribed by Wayproof",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-sunol-water-spigot"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

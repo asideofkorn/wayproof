@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-backpack-map-layout-2015",
+    "evidence_ids": [
+      "evidence-ebrpd-sunol-camping-map-layout"
+    ],
+    "predicate": "historical_mapped_site_layout",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "camp-ohlone-map-sunol-backpack",
+    "temporal_scope": {
+      "ends_on": "2015-01-01",
+      "starts_on": "2015-01-01"
+    },
+    "value": {
+      "depicted_sites": [
+        "Sycamore",
+        "Stars Rest",
+        "Hawks Nest",
+        "Eagles Eyrie",
+        "Sky Camp",
+        "Cathedral",
+        "Oak View"
+      ],
+      "has_shared_drinking_water_symbol": true,
+      "has_shared_restroom_symbol": true,
+      "measured_site_facility_distances": null,
+      "site_coordinates": null
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

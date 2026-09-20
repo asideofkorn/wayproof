@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-springs-access-distances",
+    "evidence_id": "evidence-ebrpd-backpack-faq-eagle-springs-access",
+    "notes": "The official FAQ publishes approximate approach distances from both Stanford Avenue and Sunol.",
+    "observation_id": "observation-ebrpd-backpack-faq-eagle-springs",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

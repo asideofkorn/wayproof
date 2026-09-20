@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-sunol-pit-toilet-202609",
+    "evidence_id": "evidence-user-sunol-pit-toilet-202609",
+    "notes": "Firsthand user observation with a user-supplied coordinate pin; distinct from official EBRPD evidence.",
+    "observation_id": "observation-user-sunol-pit-toilet-202609",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

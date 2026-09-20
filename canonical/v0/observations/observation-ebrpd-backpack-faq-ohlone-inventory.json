@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The current backpack-camping FAQ lists, in Del Valle-to-Mission Peak order, Boyd Camp sites 1-2, Stewart's Camp, Maggie's Half Acre sites 1-3, Doe Camp sites 1-2, the seven named Sunol Backpack Camp sites, and Eagle Springs sites 1-4. It states that these sites require advance reservations made at least two business days ahead and prohibit dogs, alcohol, campfires or barbecues, and bicycles.",
+    "observation_id": "observation-ebrpd-backpack-faq-ohlone-inventory",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-backpack-camping-faqs"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

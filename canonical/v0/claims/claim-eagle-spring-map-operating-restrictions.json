@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-spring-map-operating-restrictions",
+    "evidence_ids": [
+      "evidence-ebrpd-mission-peak-map-eagle-spring"
+    ],
+    "predicate": "mapped_camp_constraints",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "camp-ohlone-map-eagle-spring",
+    "temporal_scope": null,
+    "value": {
+      "campfires_allowed": false,
+      "camping_requires_reservation": true,
+      "cooking": "personal cooking equipment only",
+      "water_treatment": [
+        "treat",
+        "boil"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

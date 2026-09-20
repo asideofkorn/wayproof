@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-eagles-aerie-eyrie-name-variants",
+    "evidence_id": "evidence-google-maps-eagles-aerie-spelling",
+    "notes": "Supports Google Maps' Aerie spelling.",
+    "observation_id": "observation-google-maps-sunol-eagles-aerie-coordinate",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

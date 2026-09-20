@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-eagles-aerie-eyrie-name-variants",
+    "evidence_id": "evidence-ohlone-map-eagles-eyrie-spelling",
+    "notes": "Supports the official trail map's Eyrie spelling.",
+    "observation_id": "observation-ohlone-map-eagles-eyrie-spelling",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

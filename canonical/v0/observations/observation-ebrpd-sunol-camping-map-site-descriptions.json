@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The January 2015 brochure describes Sycamore as very shady, Cathedral as densely shaded and cool in summer, and the other five sites by their views. It gives capacities of 3 to 30 people. These are historical brochure statements; current ReserveAmerica site pages independently corroborate capacities and most shade fields. Fees, reservation procedures, closures, and other operating rules printed in this older brochure are not treated as current facts.",
+    "observation_id": "observation-ebrpd-sunol-camping-map-site-descriptions",
+    "observed_at": "2015-01-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-sunol-camping-map-2015"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

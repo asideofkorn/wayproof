@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/recreation/camping/backpack-camping-faqs",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-backpack-camping-faqs"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

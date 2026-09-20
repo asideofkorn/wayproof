@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-eagles-aerie-eyrie-name-variants",
+    "evidence_ids": [
+      "evidence-ohlone-map-eagles-eyrie-spelling",
+      "evidence-reserveamerica-eagles-aerie-spelling",
+      "evidence-google-maps-eagles-aerie-spelling"
+    ],
+    "predicate": "source_name_variants",
+    "spatial_scope_ids": ["scope-sunol-backpack-camp"],
+    "subject_id": "campsite-reserveamerica-sunol-357",
+    "temporal_scope": null,
+    "value": {
+      "same_site": true,
+      "variants": [
+        {"name": "Eagles Eyrie", "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"},
+        {"name": "Eagle's Aerie", "source_id": "source-reserveamerica-sunol-site-357"},
+        {"name": "Eagles Aerie Backpack Camp", "source_id": "source-google-maps-sunol-eagles-aerie"}
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

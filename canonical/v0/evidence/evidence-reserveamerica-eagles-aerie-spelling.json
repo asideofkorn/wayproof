@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-eagles-aerie-eyrie-name-variants",
+    "evidence_id": "evidence-reserveamerica-eagles-aerie-spelling",
+    "notes": "Supports ReserveAmerica's Aerie spelling.",
+    "observation_id": "observation-reserveamerica-sunol-site-357",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
