@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-trail-permit-not-required-2026",
+    "evidence_id": "evidence-ebrpd-sunol-ohlone-permit-not-required-2026",
+    "notes": "The Sunol park page independently corroborates the Ohlone park page's effective-date statement.",
+    "observation_id": "observation-ebrpd-sunol-ohlone-policy",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

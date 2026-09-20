@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-visitor-access",
+    "evidence_ids": [
+      "evidence-sunol-visitor-access"
+    ],
+    "predicate": "visitor_access_profile",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "subject_id": "park-sunol-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "address": "1895 Geary Road, Sunol, CA",
+      "parking_fee_weekends_holidays_usd": 5,
+      "public_transit": false,
+      "visitor_center_public_wifi": true,
+      "seasonal_gate_hours_published": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

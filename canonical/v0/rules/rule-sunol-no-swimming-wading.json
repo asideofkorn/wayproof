@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-swimming-wading-prohibited",
+    "conditions": [],
+    "consequence": "Do not swim or wade in Alameda Creek or elsewhere in Sunol Wilderness Regional Preserve.",
+    "rule_id": "rule-sunol-no-swimming-wading",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

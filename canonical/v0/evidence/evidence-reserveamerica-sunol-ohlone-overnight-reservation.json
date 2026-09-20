@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-reservation",
+    "evidence_id": "evidence-reserveamerica-sunol-ohlone-overnight-reservation",
+    "notes": "The booking overview corroborates the overnight reservation requirement and expresses the lead time as 48 hours.",
+    "observation_id": "observation-reserveamerica-sunol-overview",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

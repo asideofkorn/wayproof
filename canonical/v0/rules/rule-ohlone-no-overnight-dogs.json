@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-dogs-prohibited",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "overnight"
+      }
+    ],
+    "consequence": "Do not bring a dog for an overnight stay at Mission Peak, Sunol, or Ohlone Trail sites.",
+    "rule_id": "rule-ohlone-no-overnight-dogs",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

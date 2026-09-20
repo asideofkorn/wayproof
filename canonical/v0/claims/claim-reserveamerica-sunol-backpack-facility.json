@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-backpack-facility",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-backpack-facility"
+    ],
+    "predicate": "reserveamerica_facility_profile",
+    "spatial_scope_ids": [
+      "scope-sunol-backpack-camp"
+    ],
+    "subject_id": "camp-ohlone-map-sunol-backpack",
+    "temporal_scope": null,
+    "value": {
+      "facility_id": "EB/110028",
+      "inventory_description": "limited backpack sites",
+      "overnight_reservation_required": true,
+      "minimum_advance_hours": 48
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

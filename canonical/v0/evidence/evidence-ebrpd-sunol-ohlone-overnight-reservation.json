@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-reservation",
+    "evidence_id": "evidence-ebrpd-sunol-ohlone-overnight-reservation",
+    "notes": "The Sunol park page corroborates designated-site reservation and two-business-day advance requirements.",
+    "observation_id": "observation-ebrpd-sunol-ohlone-policy",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

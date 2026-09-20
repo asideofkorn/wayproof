@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-swimming-wading-prohibited",
+    "evidence_id": "evidence-sunol-swimming-wading-prohibited",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-ebrpd-sunol-recreation",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

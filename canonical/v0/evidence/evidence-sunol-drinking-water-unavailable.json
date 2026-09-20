@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-drinking-water-unavailable",
+    "evidence_id": "evidence-sunol-drinking-water-unavailable",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-ebrpd-sunol-current-conditions",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Hours",
+      "Fees",
+      "Address",
+      "Internet & Cellular Access",
+      "Public Transit"
+    ],
+    "content": "The live Sunol park page publishes seasonal park hours, weekend and holiday parking fees, the 1895 Geary Road address, public WiFi at the Visitor Center, and no public transit to the park.",
+    "observation_id": "observation-ebrpd-sunol-visitor-access",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-sunol-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

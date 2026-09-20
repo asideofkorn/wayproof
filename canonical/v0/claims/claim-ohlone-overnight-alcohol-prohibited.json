@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-alcohol-prohibited",
+    "evidence_ids": [
+      "evidence-ohlone-overnight-alcohol-prohibited"
+    ],
+    "predicate": "alcohol_allowed",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

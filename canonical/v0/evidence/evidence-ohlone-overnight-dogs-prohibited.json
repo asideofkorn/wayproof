@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-dogs-prohibited",
+    "evidence_id": "evidence-ohlone-overnight-dogs-prohibited",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-reserveamerica-sunol-rules",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

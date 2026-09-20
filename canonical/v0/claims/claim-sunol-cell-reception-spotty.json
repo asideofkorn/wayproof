@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-cell-reception-spotty",
+    "evidence_ids": [
+      "evidence-sunol-cell-reception-spotty"
+    ],
+    "predicate": "cell_reception",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "subject_id": "park-sunol-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": "may_be_spotty"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

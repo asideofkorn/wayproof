@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-visitor-access",
+    "evidence_id": "evidence-sunol-visitor-access",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-ebrpd-sunol-visitor-access",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

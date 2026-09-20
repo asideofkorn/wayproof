@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Attractions",
+      "Sunol Backpack Area",
+      "Ohlone Wilderness Trail"
+    ],
+    "content": "The page prohibits swimming or wading in Alameda Creek or elsewhere in Sunol, identifies a reservation-only Sunol Backpack Area, and describes the Ohlone Wilderness Trail as part of Sunol recreation.",
+    "observation_id": "observation-ebrpd-sunol-recreation",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-sunol-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -3,7 +3,9 @@
   "record": {
     "claim_id": "claim-ohlone-overnight-reservation",
     "evidence_ids": [
-      "evidence-ohlone-overnight-reservation"
+      "evidence-ohlone-overnight-reservation",
+      "evidence-ebrpd-sunol-ohlone-overnight-reservation",
+      "evidence-reserveamerica-sunol-ohlone-overnight-reservation"
     ],
     "predicate": "overnight_camping_reservation",
     "spatial_scope_ids": [

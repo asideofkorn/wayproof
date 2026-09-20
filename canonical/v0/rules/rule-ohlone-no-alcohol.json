@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-overnight-alcohol-prohibited",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "overnight"
+      }
+    ],
+    "consequence": "Do not bring alcohol, including beer or wine, to an Ohlone Trail overnight site.",
+    "rule_id": "rule-ohlone-no-alcohol",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

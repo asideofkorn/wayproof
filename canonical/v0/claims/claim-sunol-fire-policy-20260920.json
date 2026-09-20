@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-fire-policy-20260920",
+    "evidence_ids": [
+      "evidence-sunol-fire-policy-20260920"
+    ],
+    "predicate": "fire_policy",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "subject_id": "park-sunol-wilderness-regional-preserve",
+    "temporal_scope": {
+      "starts_on": "2026-09-20",
+      "ends_on": null
+    },
+    "value": {
+      "open_fires": false,
+      "barbecues": false,
+      "gas_stoves_allowed_only_at": [
+        "Alameda Grove",
+        "School Camp"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

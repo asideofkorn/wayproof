@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-shady-glen-trail-closed-20260920",
+    "evidence_id": "evidence-sunol-shady-glen-trail-closed-20260920",
+    "notes": "Structured directly from the identified live page section.",
+    "observation_id": "observation-ebrpd-sunol-current-conditions",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

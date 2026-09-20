@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-backpack-fire-policy",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "overnight"
+      }
+    ],
+    "consequence": "Do not use campfires or charcoal barbecues at Ohlone backpack sites; camp stoves are permitted.",
+    "rule_id": "rule-ohlone-backpack-stoves-only",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

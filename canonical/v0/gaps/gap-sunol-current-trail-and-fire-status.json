@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-sunol-current-trail-and-fire-status",
+    "question": "Are Shady Glen Trail and Sunol fire restrictions unchanged for the planned trip date?",
+    "reason": "The park page publishes these as current operational conditions, so they require a live pre-trip recheck.",
+    "related_ids": [
+      "claim-sunol-shady-glen-trail-closed-20260920",
+      "claim-sunol-fire-policy-20260920"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-drinking-water-unavailable",
+    "conditions": [
+      {
+        "dimension": "destination",
+        "operator": "equals",
+        "value": "Sunol Wilderness Regional Preserve"
+      }
+    ],
+    "consequence": "Bring sufficient drinking water; the park publishes no drinking water availability.",
+    "rule_id": "rule-sunol-bring-drinking-water",
+    "spatial_scope_ids": [
+      "scope-sunol-wilderness-regional-preserve"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}
