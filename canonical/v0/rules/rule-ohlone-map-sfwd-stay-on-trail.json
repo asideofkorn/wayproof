@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-access-restrictions",
+    "conditions": [
+      {
+        "dimension": "land_manager",
+        "operator": "equals",
+        "value": "San Francisco Water Department"
+      }
+    ],
+    "consequence": "Stay on the Ohlone Trail while crossing San Francisco Water Department land.",
+    "rule_id": "rule-ohlone-map-sfwd-stay-on-trail",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

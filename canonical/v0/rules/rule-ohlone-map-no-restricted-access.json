@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-access-restrictions",
+    "conditions": [],
+    "consequence": "Do not enter mapped service-road or EBRPD land-bank no-access areas.",
+    "rule_id": "rule-ohlone-map-no-restricted-access",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-access-restrictions",
+    "evidence_ids": [
+      "evidence-ohlone-map-access-restrictions"
+    ],
+    "predicate": "mapped_access_restrictions",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "bicycles": false,
+      "land_bank_entry": false,
+      "service_roads_access": false,
+      "sfwd_land_stay_on_trail": true,
+      "users": [
+        "hiker",
+        "horse"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

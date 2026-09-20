@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-ohlone-map-maggies-half-acre",
+    "kind": "backcountry_camp",
+    "name": "Maggie's Half Acre"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-access-restrictions",
+    "evidence_id": "evidence-ohlone-map-access-restrictions",
+    "notes": "",
+    "observation_id": "observation-ohlone-map-restrictions",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

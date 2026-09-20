@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-ohlone-trail-use",
     "evidence_ids": [
-      "evidence-ohlone-trail-use"
+      "evidence-ohlone-trail-use",
+      "evidence-ohlone-map-trail-use"
     ],
     "predicate": "trail_use",
     "spatial_scope_ids": [

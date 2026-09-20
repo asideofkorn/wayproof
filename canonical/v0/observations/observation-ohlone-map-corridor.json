@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map depicts the Ohlone trail corridor across Mission Peak, Sunol, Ohlone Wilderness, San Francisco Water Department lands, and Del Valle. It states 13.9 miles between the Sunol and Del Valle park boundaries and 15.6 miles to Del Valle West Beach services.",
+    "observation_id": "observation-ohlone-map-corridor",
+    "observed_at": "2025-08-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

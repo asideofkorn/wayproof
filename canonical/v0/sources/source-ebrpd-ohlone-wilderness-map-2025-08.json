@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/sites/default/files/Ohlone-Wilderness-Permit-Map-11x17.pdf",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

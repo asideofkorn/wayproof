@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-rose-peak-ohlone",
     "evidence_ids": [
-      "evidence-rose-peak-ohlone"
+      "evidence-rose-peak-ohlone",
+      "evidence-ohlone-map-rose-peak"
     ],
     "predicate": "published_elevation_feet",
     "spatial_scope_ids": [

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-cartography",
+    "evidence_ids": [
+      "evidence-ohlone-map-cartography"
+    ],
+    "predicate": "map_cartography",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "contour_interval_feet": 40,
+      "inches_to_miles": 0.45,
+      "scale": "1:28,750"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
