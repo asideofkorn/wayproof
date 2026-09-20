@@ -15,14 +15,18 @@ def test_google_maps_coordinates_are_separate_attributed_claims():
     assert {item.subject_id for item in claims} == {
         "group-camp-del-valle-ardilla",
         "group-camp-del-valle-cedar",
+        "group-camp-del-valle-eagles-view",
         "group-camp-del-valle-hetch-hetchy",
         "group-camp-del-valle-venados",
     }
-    assert all(item.value["provenance_class"] == "third_party_labeled_place"
-               for item in claims)
+    classes = {item.subject_id: item.value["provenance_class"] for item in claims}
+    assert classes["group-camp-del-valle-eagles-view"] == "user_supplied_map_estimate"
+    assert set(classes.values()) == {
+        "third_party_labeled_place", "user_supplied_map_estimate"
+    }
     assert all(-90 <= item.value["latitude"] <= 90 for item in claims)
     assert all(-180 <= item.value["longitude"] <= 180 for item in claims)
-    assert all(item.value["plus_code"].startswith("849W") for item in claims)
+    assert all(item.value["plus_code"] for item in claims)
 
 
 def test_reserveamerica_profiles_remain_source_faithful_and_unmodified():

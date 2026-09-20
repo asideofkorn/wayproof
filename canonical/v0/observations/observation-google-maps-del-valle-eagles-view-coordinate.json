@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "User-supplied Google Maps pin",
+      "Official map visual comparison"
+    ],
+    "content": "The user-supplied Google Maps pin resolves to 37.5833377, -121.6930213 (displayed as 37.583338, -121.693021; Plus Code H8M4+8QQ). Its placement corresponds visually to the Eagles View Group Camp area labeled on the official April 2026 park map. Google Maps does not label the pin as Eagles View.",
+    "observation_id": "observation-google-maps-del-valle-eagles-view-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome review of user-supplied map estimate",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-del-valle-eagles-view"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

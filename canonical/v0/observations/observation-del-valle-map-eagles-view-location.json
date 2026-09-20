@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1",
+      "Eagles View Group Camp label"
+    ],
+    "content": "The April 2026 official park map labels Eagles View Group Camp east of Lake Del Valle and west of Del Valle Road, adjacent to parking area 66 and northwest of the park entry kiosk.",
+    "observation_id": "observation-del-valle-map-eagles-view-location",
+    "observed_at": "2026-04-01T00:00:00+00:00",
+    "observer": "Wayproof visual map review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-map-2026-04"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Group Campsites",
+      "Eagles View"
+    ],
+    "content": "The official camping page identifies Eagles View as a primitive group campsite for 17 to 50 people with a lake view, picnic tables, BBQs, a fire ring, and a drinking fountain. Flush toilets are uphill, showers are unavailable, beer and wine require an additional $25 permit, ten parking passes are issued, and buses, RVs, trailers, food trucks, and caterers are prohibited.",
+    "observation_id": "observation-del-valle-camping-eagles-view-details",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-del-valle-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

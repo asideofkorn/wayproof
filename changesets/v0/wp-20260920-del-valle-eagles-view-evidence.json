@@ -1,0 +1,105 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-del-valle-eagles-view-evidence",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-del-valle-eagles-view.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "source-google-maps-del-valle-eagles-view",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-map-eagles-view-location.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "observation-del-valle-map-eagles-view-location",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-map-eagles-view-location.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "evidence-del-valle-map-eagles-view-location",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-map-eagles-view-location"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-map-eagles-view-location.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "claim-del-valle-map-eagles-view-location",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-del-valle-camping-eagles-view-details.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "observation-del-valle-camping-eagles-view-details",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-del-valle-camping-eagles-view-details.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "evidence-del-valle-camping-eagles-view-details",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-del-valle-camping-eagles-view-details"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-camping-eagles-view-details.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "claim-del-valle-camping-eagles-view-details",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-del-valle-eagles-view-coordinate.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "observation-google-maps-del-valle-eagles-view-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-del-valle-eagles-view-coordinate.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "evidence-google-maps-del-valle-eagles-view-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-del-valle-eagles-view-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-del-valle-eagles-view-coordinate.json",
+      "reason": "Add bounded Eagles View identity, official facilities, and explicitly approximate coordinate evidence.",
+      "record_id": "claim-google-maps-del-valle-eagles-view-coordinate",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official map and camping-page evidence for Eagles View and a separately attributed user-selected Google Maps estimate without altering ReserveAmerica's null GIS fields."
+}

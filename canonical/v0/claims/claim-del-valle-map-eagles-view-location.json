@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-map-eagles-view-location",
+    "evidence_ids": [
+      "evidence-del-valle-map-eagles-view-location"
+    ],
+    "predicate": "official_map_location_context",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-eagles-view",
+    "temporal_scope": null,
+    "value": {
+      "adjacent_to": "parking area 66",
+      "east_of": "Lake Del Valle",
+      "northwest_of": "park entry kiosk",
+      "west_of": "Del Valle Road"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
