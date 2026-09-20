@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-del-valle-cedar-coordinate",
+    "evidence_ids": [
+      "evidence-google-maps-del-valle-cedar-coordinate"
+    ],
+    "predicate": "google_maps_coordinate",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "group-camp-del-valle-cedar",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 37.5841875,
+      "longitude": -121.6864375,
+      "plus_code": "849WH8M7+MC",
+      "provenance_class": "third_party_labeled_place"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

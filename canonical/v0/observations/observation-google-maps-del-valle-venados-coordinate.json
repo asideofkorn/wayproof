@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Google Maps labeled place",
+      "Plus Code"
+    ],
+    "content": "Google Maps labels Venados at 37.5931875, -121.7204375 and publishes Plus Code 849WH7VH+7R. This is a third-party map location, not an EBRPD-published survey coordinate.",
+    "observation_id": "observation-google-maps-del-valle-venados-coordinate",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-google-maps-del-valle-venados"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

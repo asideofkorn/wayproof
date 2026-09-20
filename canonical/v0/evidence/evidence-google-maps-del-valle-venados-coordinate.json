@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-del-valle-venados-coordinate",
+    "evidence_id": "evidence-google-maps-del-valle-venados-coordinate",
+    "notes": "Supports a separately attributed third-party map point; it does not fill or modify the null GIS fields in the ReserveAmerica site profile.",
+    "observation_id": "observation-google-maps-del-valle-venados-coordinate",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

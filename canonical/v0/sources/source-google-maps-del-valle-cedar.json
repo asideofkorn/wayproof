@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://maps.app.goo.gl/e5HLMEFbSXjnLfpR9?g_st=ic",
+    "publisher": "Google Maps",
+    "source_id": "source-google-maps-del-valle-cedar"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
