@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-site-317-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-site-317-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-reserveamerica-sunol-eb-110028"
+    ],
+    "subject_id": "campsite-reserveamerica-sunol-317",
+    "temporal_scope": null,
+    "value": {
+      "booking_url": "https://www.reserveamerica.com/explore/sunol/EB/110028/317/campsite-booking",
+      "details": {
+        "site_reserve_type": "Site-Specific",
+        "site_access": "Hike-In",
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "type_of_use": "Overnight",
+        "minimum_number_of_people": 1,
+        "maximum_number_of_people": 14,
+        "maximum_number_of_vehicles": null,
+        "looking_for_category": "Group Site, Horse Site, Tent Site",
+        "pets_allowed": "Horse",
+        "shade_or_tree_cover": "Partial",
+        "horse_hitching_post": "Y",
+        "privacy": "Y",
+        "quiet_area": "Y"
+      },
+      "latitude": null,
+      "listed_capacity": 14,
+      "longitude": null,
+      "loop": "Ohlone Backpack",
+      "name": "OHL: DOE #1 BP CAMP (14)",
+      "product_id": "317",
+      "site_type": "BACKPACK SITE"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

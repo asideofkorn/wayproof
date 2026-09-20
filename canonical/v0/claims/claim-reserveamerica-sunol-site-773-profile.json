@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-site-773-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-site-773-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-reserveamerica-sunol-eb-110028"
+    ],
+    "subject_id": "campsite-reserveamerica-sunol-773",
+    "temporal_scope": null,
+    "value": {
+      "booking_url": "https://www.reserveamerica.com/explore/sunol/EB/110028/773/campsite-booking",
+      "details": {
+        "site_reserve_type": "Site-Specific",
+        "site_access": "Hike-In",
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "type_of_use": "Overnight",
+        "minimum_number_of_people": 1,
+        "maximum_number_of_people": 10,
+        "maximum_number_of_vehicles": 1,
+        "looking_for_category": "Tent Site"
+      },
+      "latitude": null,
+      "listed_capacity": 10,
+      "longitude": null,
+      "loop": "Mission Peak Backpack",
+      "name": "MIS EAGLESPRINGS#1 BP CAMP (10)",
+      "product_id": "773",
+      "site_type": "BACKPACK SITE"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

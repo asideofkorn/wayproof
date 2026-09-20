@@ -3,13 +3,14 @@
   "record": {
     "claim_id": "claim-reserveamerica-sunol-backpack-facility",
     "evidence_ids": [
-      "evidence-reserveamerica-sunol-backpack-facility"
+      "evidence-reserveamerica-sunol-backpack-facility",
+      "evidence-reserveamerica-sunol-facility-three-loop-scope"
     ],
     "predicate": "reserveamerica_facility_profile",
     "spatial_scope_ids": [
-      "scope-sunol-backpack-camp"
+      "scope-reserveamerica-sunol-eb-110028"
     ],
-    "subject_id": "camp-ohlone-map-sunol-backpack",
+    "subject_id": "facility-reserveamerica-sunol-eb-110028",
     "temporal_scope": null,
     "value": {
       "facility_id": "EB/110028",

@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-reserveamerica-sunol-site-coordinates",
+    "question": "What are the authoritative coordinates for each of the 19 backpack sites?",
+    "reason": "The individual ReserveAmerica pages expose no GIS latitude or longitude.",
+    "related_ids": [
+      "claim-reserveamerica-sunol-campsites-inventory"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

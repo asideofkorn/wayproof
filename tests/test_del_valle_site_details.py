@@ -15,7 +15,9 @@ def records():
 
 def profiles():
     return [item for item in records().claims
-            if item.predicate == "reserveamerica_site_profile"]
+            if item.predicate == "reserveamerica_site_profile"
+            and item.value.get("booking_url", "").startswith(
+                "https://www.reserveamerica.com/explore/del-valle/EB/110003/")]
 
 
 def test_all_155_site_pages_have_unique_profiles_and_sources():

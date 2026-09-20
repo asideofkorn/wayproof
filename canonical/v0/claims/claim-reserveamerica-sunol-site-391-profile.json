@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-site-391-profile",
+    "evidence_ids": [
+      "evidence-reserveamerica-sunol-site-391-profile"
+    ],
+    "predicate": "reserveamerica_site_profile",
+    "spatial_scope_ids": [
+      "scope-reserveamerica-sunol-eb-110028"
+    ],
+    "subject_id": "campsite-reserveamerica-sunol-391",
+    "temporal_scope": null,
+    "value": {
+      "booking_url": "https://www.reserveamerica.com/explore/sunol/EB/110028/391/campsite-booking",
+      "details": {
+        "site_reserve_type": "Site-Specific",
+        "site_access": "Hike-In",
+        "checkin_time": "2:00 PM",
+        "checkout_time": "12:00 PM",
+        "type_of_use": "Overnight",
+        "minimum_number_of_people": 1,
+        "maximum_number_of_people": 5,
+        "maximum_number_of_vehicles": 1,
+        "looking_for_category": "Tent Site",
+        "driveway_surface": "Gravel",
+        "shade_or_tree_cover": "Full",
+        "picnic_table": "Y"
+      },
+      "latitude": null,
+      "listed_capacity": 5,
+      "longitude": null,
+      "loop": "Sunol Backpack",
+      "name": "SUN: OAK VIEW BP CAMP (5)",
+      "product_id": "391",
+      "site_type": "BACKPACK SITE"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

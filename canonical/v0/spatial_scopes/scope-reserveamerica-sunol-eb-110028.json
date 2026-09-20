@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "scope_id": "scope-reserveamerica-sunol-eb-110028",
+    "kind": "booking_facility",
+    "entity_id": "facility-reserveamerica-sunol-eb-110028",
+    "description": "ReserveAmerica facility EB/110028, spanning Mission Peak, Ohlone, and Sunol backpack campsite loops."
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

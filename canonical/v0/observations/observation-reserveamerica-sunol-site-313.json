@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Site Details"
+    ],
+    "content": "The live individual site page identifies OHL: BOYD #1 BP CAMP (8) in Ohlone Backpack as BACKPACK SITE and publishes 11 structured site-detail fields. It exposes no GIS latitude or longitude.",
+    "observation_id": "observation-reserveamerica-sunol-site-313",
+    "observed_at": null,
+    "observer": "Wayproof live Chrome source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-sunol-site-313"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

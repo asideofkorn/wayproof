@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reserveamerica-sunol-backpack-facility",
+    "evidence_id": "evidence-reserveamerica-sunol-facility-three-loop-scope",
+    "notes": "The live 19-row inventory shows that EB/110028 spans Mission Peak, Ohlone, and Sunol loops, correcting the earlier camp-scoped interpretation.",
+    "observation_id": "observation-reserveamerica-sunol-campsites-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
