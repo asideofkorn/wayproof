@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page calls Del Valle the eastern gateway to the Ohlone Wilderness Trail, describes the trail as 28 miles connecting to Sunol and Mission Peak, and states that permits are required on portions and may be purchased at the park entrance kiosk; it separately states that backpack reservations remain available.",
+    "observation_id": "observation-del-valle-ohlone-permit-statement",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

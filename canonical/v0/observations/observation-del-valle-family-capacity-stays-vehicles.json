@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Family campsites allow up to eight people and two vehicles. Family camping is limited to 15 consecutive nights and 30 total nights per year, with 48 hours separating reservations after a 15-night stay.",
+    "observation_id": "observation-del-valle-family-capacity-stays-vehicles",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

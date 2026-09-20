@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Hard alcohol is prohibited. Adults 21 and older may consume beer and wine at campsites or picnic areas, but not in parking lots, on trails, or at swim beaches; group campsites require an advance beer and wine permit.",
+    "observation_id": "observation-del-valle-alcohol",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

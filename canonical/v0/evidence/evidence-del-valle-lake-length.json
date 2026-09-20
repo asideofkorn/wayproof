@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-lake-length",
+    "evidence_id": "evidence-del-valle-lake-length",
+    "notes": "",
+    "observation_id": "observation-del-valle-identity-location",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

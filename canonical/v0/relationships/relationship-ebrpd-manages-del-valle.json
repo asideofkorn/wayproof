@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-del-valle-park-managed-by-ebrpd"
+    ],
+    "object_id": "park-del-valle-regional-park",
+    "predicate": "manages",
+    "relationship_id": "relationship-ebrpd-manages-del-valle",
+    "subject_id": "org-east-bay-regional-park-district",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

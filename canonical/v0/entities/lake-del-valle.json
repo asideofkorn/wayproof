@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "lake-del-valle",
+    "kind": "lake",
+    "name": "Lake Del Valle"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

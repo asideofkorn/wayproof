@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-alcohol",
+    "conditions": [
+      {
+        "dimension": "party_plans_alcohol",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Do not bring hard alcohol; beer and wine use is limited by age, location, and the advance group-site permit requirement.",
+    "rule_id": "rule-del-valle-alcohol",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

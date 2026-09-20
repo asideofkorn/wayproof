@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-current-algae-status",
+    "question": "What blue-green algae advisory applies for the planned trip date and beach?",
+    "reason": "The overview points to changing updates and does not state a current beach-specific status.",
+    "related_ids": [
+      "claim-del-valle-volatile-alerts",
+      "claim-del-valle-swimming"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

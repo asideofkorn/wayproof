@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-smoking-prohibited",
+    "evidence_id": "evidence-del-valle-smoking-prohibited",
+    "notes": "",
+    "observation_id": "observation-del-valle-fire-smoking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-del-valle-current-fire-status",
+    "question": "What fire restrictions apply for the planned trip date?",
+    "reason": "The overview directs visitors to a changing fire-danger source.",
+    "related_ids": [
+      "claim-del-valle-fire-rules",
+      "claim-del-valle-volatile-alerts"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

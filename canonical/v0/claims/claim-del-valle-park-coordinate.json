@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-park-coordinate",
+    "evidence_ids": [
+      "evidence-del-valle-park-coordinate"
+    ],
+    "predicate": "published_coordinate",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 37.56917,
+      "longitude": -121.68722
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

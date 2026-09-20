@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-group-booking",
+    "conditions": [
+      {
+        "dimension": "party_size",
+        "operator": "greater_than_or_equal",
+        "value": 17
+      }
+    ],
+    "consequence": "Groups of 17 or more should use a group campsite reserved by phone at least three business days in advance.",
+    "rule_id": "rule-del-valle-group-booking",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

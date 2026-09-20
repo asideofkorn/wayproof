@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-stay-limit",
+    "conditions": [],
+    "consequence": "Observe the 15-consecutive-night and 30-night annual family-camping limits; wait 48 hours after a 15-night stay before another reservation.",
+    "rule_id": "rule-del-valle-family-stay-limit",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

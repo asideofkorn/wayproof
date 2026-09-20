@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-ohlone-gateway",
+    "evidence_ids": [
+      "evidence-del-valle-ohlone-gateway"
+    ],
+    "predicate": "eastern_gateway",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": "park-del-valle-regional-park"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

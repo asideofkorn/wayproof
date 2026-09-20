@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "org-east-bay-regional-park-district",
+    "kind": "organization",
+    "name": "East Bay Regional Park District"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

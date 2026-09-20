@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Quiet hours are 10:00 PM to 7:00 AM. The page prohibits generators, including a separate statement that gas generators are not allowed.",
+    "observation_id": "observation-del-valle-quiet-generators",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

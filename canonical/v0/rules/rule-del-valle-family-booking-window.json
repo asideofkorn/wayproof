@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-booking-window",
+    "conditions": [
+      {
+        "dimension": "site_type",
+        "operator": "in",
+        "value": [
+          "family_tent",
+          "family_rv"
+        ]
+      }
+    ],
+    "consequence": "Reserve a tent or RV family campsite online no less than 48 hours and no more than 12 weeks before arrival.",
+    "rule_id": "rule-del-valle-family-booking-window",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

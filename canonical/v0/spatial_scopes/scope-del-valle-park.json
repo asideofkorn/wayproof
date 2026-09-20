@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "park-del-valle-regional-park",
+    "kind": "park",
+    "scope_id": "scope-del-valle-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

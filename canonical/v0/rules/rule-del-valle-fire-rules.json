@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-fire-rules",
+    "conditions": [
+      {
+        "dimension": "party_plans_fire",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Check current restrictions; use fire only in a designated area with permitted fuel, adult attendance, and complete extinguishment.",
+    "rule_id": "rule-del-valle-fire-rules",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

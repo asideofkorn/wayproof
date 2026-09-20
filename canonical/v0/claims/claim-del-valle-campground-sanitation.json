@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-campground-sanitation",
+    "evidence_ids": [
+      "evidence-del-valle-campground-sanitation"
+    ],
+    "predicate": "shared_facilities",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": [
+      "toilets",
+      "showers"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-group-booking",
+    "evidence_id": "evidence-del-valle-group-booking",
+    "notes": "",
+    "observation_id": "observation-del-valle-group-booking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

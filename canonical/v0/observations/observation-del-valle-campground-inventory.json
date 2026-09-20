@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page describes Del Valle Family Campground as 150 campsites: 21 RV sites with full hookups, 124 drive-up tent sites, and five cabins, served by centrally located toilets and showers.",
+    "observation_id": "observation-del-valle-campground-inventory",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

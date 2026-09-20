@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-capacity",
+    "conditions": [],
+    "consequence": "Limit each family campsite to eight people, including children and infants.",
+    "rule_id": "rule-del-valle-family-capacity",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

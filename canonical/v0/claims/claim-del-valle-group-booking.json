@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-group-booking",
+    "evidence_ids": [
+      "evidence-del-valle-group-booking"
+    ],
+    "predicate": "group_camping_reservation",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "channel": "phone",
+      "minimum_advance_business_days": 3,
+      "minimum_group_size": 17
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

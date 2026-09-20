@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-del-valle-campground-in-park"
+    ],
+    "object_id": "park-del-valle-regional-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-family-campground-in-del-valle",
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

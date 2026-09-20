@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-generators-prohibited",
+    "evidence_ids": [
+      "evidence-del-valle-generators-prohibited"
+    ],
+    "predicate": "generators_allowed",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

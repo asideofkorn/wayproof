@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-family-stay-limit",
+    "evidence_ids": [
+      "evidence-del-valle-family-stay-limit"
+    ],
+    "predicate": "stay_limit",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "maximum_consecutive_nights": 15,
+      "maximum_nights_per_year": 30,
+      "separation_after_maximum_stay_hours": 48
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

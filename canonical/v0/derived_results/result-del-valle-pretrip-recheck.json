@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Operational conditions can change after reservation and must be checked near departure.",
+    "input_ids": [
+      "claim-del-valle-volatile-alerts",
+      "claim-del-valle-boat-inspection",
+      "gap-del-valle-current-fire-status",
+      "gap-del-valle-current-algae-status",
+      "gap-del-valle-current-flood-closure"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-del-valle-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "fire_danger",
+        "blue_green_algae",
+        "flood_closure",
+        "boat_inspection_procedure"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

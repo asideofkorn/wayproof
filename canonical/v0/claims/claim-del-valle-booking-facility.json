@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-booking-facility",
+    "evidence_ids": [
+      "evidence-del-valle-booking-facility"
+    ],
+    "predicate": "accepts_reservations_for",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "facility-reserveamerica-del-valle-110003",
+    "temporal_scope": null,
+    "value": "campground-del-valle-family"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

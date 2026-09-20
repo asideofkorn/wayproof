@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The page permits at most three dogs per campsite, requires leashes in campgrounds and developed areas, requires confinement in a vehicle or tent during quiet hours, prohibits unattended dogs, and excludes dogs other than trained service animals from swim beaches, swim areas, cabins, and select trails.",
+    "observation_id": "observation-del-valle-dogs",
+    "observed_at": null,
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-reserveamerica-del-valle-overview-110003"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

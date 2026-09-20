@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-gate-hours",
+    "evidence_ids": [
+      "evidence-del-valle-gate-hours"
+    ],
+    "predicate": "gate_hours",
+    "spatial_scope_ids": [
+      "scope-del-valle-family-campground"
+    ],
+    "subject_id": "campground-del-valle-family",
+    "temporal_scope": null,
+    "value": {
+      "closes": "22:00",
+      "opens": "08:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

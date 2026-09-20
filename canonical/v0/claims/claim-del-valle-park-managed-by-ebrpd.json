@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-del-valle-park-managed-by-ebrpd",
+    "evidence_ids": [
+      "evidence-del-valle-park-managed-by-ebrpd"
+    ],
+    "predicate": "managed_by",
+    "spatial_scope_ids": [
+      "scope-del-valle-park"
+    ],
+    "subject_id": "park-del-valle-regional-park",
+    "temporal_scope": null,
+    "value": "org-east-bay-regional-park-district"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
