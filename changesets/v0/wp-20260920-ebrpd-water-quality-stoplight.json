@@ -1,0 +1,172 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-water-quality-stoplight",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-current-water-quality.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "source-ebrpd-current-water-quality",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-water-quality-program.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "observation-ebrpd-water-quality-program",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-water-quality-traffic-light.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "observation-ebrpd-water-quality-traffic-light",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-water-quality-current-del-valle.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "observation-ebrpd-water-quality-current-del-valle",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-water-quality-program-scope.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "evidence-ebrpd-water-quality-program-scope",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-water-quality-del-valle-monitoring.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "evidence-ebrpd-water-quality-del-valle-monitoring",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-water-quality-traffic-light.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "evidence-ebrpd-water-quality-traffic-light",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-water-quality-east-caution.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "evidence-ebrpd-water-quality-east-caution",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-water-quality-west-no-water.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "evidence-ebrpd-water-quality-west-no-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-water-quality-program-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-water-quality-program-scope.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "claim-ebrpd-water-quality-program-scope",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-ebrpd-swimming-del-valle-monitoring",
+        "evidence-ebrpd-water-quality-del-valle-monitoring"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-swimming-del-valle-monitoring.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "claim-ebrpd-swimming-del-valle-monitoring",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-water-quality-traffic-light"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ebrpd-water-quality-traffic-light.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "claim-ebrpd-water-quality-traffic-light",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-east-beach-algae",
+        "evidence-ebrpd-algae-east-beach-caution",
+        "evidence-ebrpd-swimming-east-caution",
+        "evidence-ebrpd-water-quality-east-caution"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-east-beach-algae.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "claim-del-valle-ebrpd-east-beach-algae",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-del-valle-ebrpd-west-beach-water",
+        "evidence-ebrpd-algae-west-beach-no-water",
+        "evidence-ebrpd-swimming-west-no-water",
+        "evidence-ebrpd-water-quality-west-no-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-del-valle-ebrpd-west-beach-water.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "claim-del-valle-ebrpd-west-beach-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-water-quality-traffic-light"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-ebrpd-water-quality-red-closure.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "rule-ebrpd-water-quality-red-closure",
+      "record_type": "rule"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-del-valle-stoplight-meanings.json",
+      "reason": "Add EBRPD bacterial water-quality stop-light evidence and narrow the remaining algae interaction gap.",
+      "record_id": "gap-del-valle-stoplight-meanings",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Define EBRPD bacterial traffic-light meanings without treating green as overriding algae advisories or other closures."
+}

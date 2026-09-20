@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-water-quality-traffic-light",
+    "conditions": [
+      {
+        "dimension": "bacterial_stoplight",
+        "operator": "equals",
+        "value": "red"
+      }
+    ],
+    "consequence": "Do not enter the water when the beach displays a red water-quality designation.",
+    "rule_id": "rule-ebrpd-water-quality-red-closure",
+    "spatial_scope_ids": [
+      "scope-ebrpd-water-quality-program"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-water-quality-traffic-light",
+    "evidence_id": "evidence-ebrpd-water-quality-traffic-light",
+    "notes": "",
+    "observation_id": "observation-ebrpd-water-quality-traffic-light",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

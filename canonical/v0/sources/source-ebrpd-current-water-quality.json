@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/natural-resources/water-quality",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-current-water-quality"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

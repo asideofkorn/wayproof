@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "At retrieval, the table listed a Caution algae advisory at Del Valle East Beach and no advisory at West Beach, where there was no water because of low lake levels.",
+    "observation_id": "observation-ebrpd-water-quality-current-del-valle",
+    "observed_at": "2026-09-20T00:00:00+00:00",
+    "observer": "user-supplied page transcription",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-current-water-quality"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
