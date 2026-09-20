@@ -1,0 +1,415 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ohlone-corridor-map-locations",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-rose-peak.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-rose-peak",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-rose-peak-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-rose-peak-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-rose-peak-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-rose-peak-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-maggies-half-acre.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-maggies-half-acre",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-maggies-half-acre-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-maggies-half-acre-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-maggies-half-acre-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-maggies-half-acre-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-boyds-camp.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-boyds-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-boyds-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-boyds-camp-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-boyds-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-boyds-camp-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-stewarts-camp.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-stewarts-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-stewarts-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-stewarts-camp-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-stewarts-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-stewarts-camp-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-doe-canyon-horse-camp.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-doe-canyon-horse-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-doe-canyon-horse-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-doe-canyon-horse-camp-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-doe-canyon-horse-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-doe-canyon-horse-camp-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-eagle-spring-backpack-camp.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-eagle-spring-backpack-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-eagle-spring-backpack-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-google-maps-ohlone-eagle-spring-backpack-camp-coordinate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-eagle-spring-backpack-camp-coordinate.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-google-maps-ohlone-eagle-spring-backpack-camp-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-ohlone-rose-peak-coordinate",
+        "evidence-google-maps-ohlone-maggies-half-acre-coordinate",
+        "evidence-google-maps-ohlone-boyds-camp-coordinate",
+        "evidence-google-maps-ohlone-stewarts-camp-coordinate",
+        "evidence-google-maps-ohlone-doe-canyon-horse-camp-coordinate",
+        "evidence-google-maps-ohlone-eagle-spring-backpack-camp-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-ohlone-corridor-place-coordinates.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-google-maps-ohlone-corridor-place-coordinates",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-boyd-water.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-boyd-water",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-boyd-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-boyd-water-20260905",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-boyd-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-boyd-water-20260905",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-boyd-water-20260905"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-boyd-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-boyd-water-20260905",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-boyd-restroom.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-boyd-restroom",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-ohlone-boyd-restroom.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "facility-ohlone-boyd-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-boyd-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-boyd-restroom-20260905",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-boyd-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-boyd-restroom-20260905",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-boyd-restroom-20260905"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-boyd-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-boyd-restroom-20260905",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-stromer-spring-water.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-stromer-spring-water",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-stromer-spring-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-stromer-spring-water-20260905",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-stromer-spring-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-stromer-spring-water-20260905",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-stromer-spring-water-20260905"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-stromer-spring-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-stromer-spring-water-20260905",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-stewarts-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-stewarts-water-20260905",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-stewarts-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-stewarts-water-20260905",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-stewarts-water-20260905"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-stewarts-water-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-stewarts-water-20260905",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-ohlone-stewarts-restroom.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "facility-ohlone-stewarts-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-stewarts-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-stewarts-restroom-20260905",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-stewarts-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-stewarts-restroom-20260905",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-stewarts-restroom-20260905"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-stewarts-restroom-20260905.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-stewarts-restroom-20260905",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-eagle-springs-water.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "source-google-maps-ohlone-eagle-springs-water",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-user-ohlone-eagle-springs-water-20260906.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "observation-user-ohlone-eagle-springs-water-20260906",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-user-ohlone-eagle-springs-water-20260906.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "evidence-user-ohlone-eagle-springs-water-20260906",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-user-ohlone-eagle-springs-water-20260906"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-user-ohlone-eagle-springs-water-20260906.json",
+      "reason": "Capture user-supplied Google Maps locations and dated firsthand Ohlone corridor facility observations with explicit provenance.",
+      "record_id": "claim-user-ohlone-eagle-springs-water-20260906",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Capture six Google Maps labeled Ohlone corridor places plus dated September 5-6, 2026 firsthand water and restroom observations from the user's Del Valle-to-Mission Peak trip."
+}

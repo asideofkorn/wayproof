@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-ohlone-rose-peak",
+    "locator": "https://maps.app.goo.gl/zvbtAHkDxw8zkzGT8?g_st=ic",
+    "publisher": "Google Maps (user-supplied labeled place)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

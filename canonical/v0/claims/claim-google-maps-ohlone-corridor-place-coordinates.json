@@ -1,0 +1,70 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-google-maps-ohlone-corridor-place-coordinates",
+    "evidence_ids": [
+      "evidence-google-maps-ohlone-rose-peak-coordinate",
+      "evidence-google-maps-ohlone-maggies-half-acre-coordinate",
+      "evidence-google-maps-ohlone-boyds-camp-coordinate",
+      "evidence-google-maps-ohlone-stewarts-camp-coordinate",
+      "evidence-google-maps-ohlone-doe-canyon-horse-camp-coordinate",
+      "evidence-google-maps-ohlone-eagle-spring-backpack-camp-coordinate"
+    ],
+    "predicate": "google_maps_labeled_place_coordinates",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "authoritative": false,
+      "coordinate_basis": "center of Google Maps displayed 10-character Plus Code cell",
+      "places": {
+        "peak-rose": {
+          "label": "Rose Peak",
+          "latitude": 37.5111875,
+          "longitude": -121.7246875,
+          "plus_code": "849WG76G+F4",
+          "source_id": "source-google-maps-ohlone-rose-peak"
+        },
+        "camp-ohlone-map-maggies-half-acre": {
+          "label": "Maggie’s Half Acre Camp",
+          "latitude": 37.5134375,
+          "longitude": -121.7264375,
+          "plus_code": "849WG77F+9C",
+          "source_id": "source-google-maps-ohlone-maggies-half-acre"
+        },
+        "camp-ohlone-map-boyd": {
+          "label": "Boyd's Camp",
+          "latitude": 37.5596875,
+          "longitude": -121.7034375,
+          "plus_code": "849WH75W+VJ",
+          "source_id": "source-google-maps-ohlone-boyds-camp"
+        },
+        "camp-ohlone-map-stewarts": {
+          "label": "Stewart's Camp",
+          "latitude": 37.5305625,
+          "longitude": -121.7071875,
+          "plus_code": "849WG7JV+64",
+          "source_id": "source-google-maps-ohlone-stewarts-camp"
+        },
+        "camp-ohlone-map-doe-canyon-horse": {
+          "label": "Doe Canyon Horse Camp",
+          "latitude": 37.5156875,
+          "longitude": -121.7370625,
+          "plus_code": "849WG787+75",
+          "source_id": "source-google-maps-ohlone-doe-canyon-horse-camp"
+        },
+        "camp-ohlone-map-eagle-spring": {
+          "label": "Eagle Spring Backpack Camp",
+          "latitude": 37.5116875,
+          "longitude": -121.8764375,
+          "plus_code": "849WG46F+MC",
+          "source_id": "source-google-maps-ohlone-eagle-spring-backpack-camp"
+        }
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

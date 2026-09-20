@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-user-ohlone-eagle-springs-water-20260906",
+    "evidence_id": "evidence-user-ohlone-eagle-springs-water-20260906",
+    "notes": "Firsthand dated field observation with user-supplied coordinate pin; distinct from official EBRPD availability evidence.",
+    "observation_id": "observation-user-ohlone-eagle-springs-water-20260906",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

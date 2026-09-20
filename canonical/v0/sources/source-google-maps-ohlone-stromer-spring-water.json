@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "source_id": "source-google-maps-ohlone-stromer-spring-water",
+    "locator": "https://maps.app.goo.gl/5612kzH6g3j7epgN7?g_st=ic",
+    "publisher": "Google Maps (user-supplied firsthand-observation pin)"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
