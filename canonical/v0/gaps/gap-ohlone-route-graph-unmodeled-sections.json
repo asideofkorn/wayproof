@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ohlone-route-graph-unmodeled-sections",
+    "question": "What are the remaining segment-level connections between OT40 and OT35 and outside OT26-OT35?",
+    "reason": "This intentionally bounded pilot must not be mistaken for the complete Stanford-to-Del-Valle graph.",
+    "related_ids": [
+      "trailhead-ohlone-lichen-bark",
+      "route-node-ohlone-ot40",
+      "route-node-ohlone-ot35",
+      "trail-ohlone-wilderness"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

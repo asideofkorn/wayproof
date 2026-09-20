@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-ohlone-ot28",
+    "kind": "numbered_trail_post",
+    "name": "Ohlone Trail post OT28"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-route-segment-lichen-bark-ot40",
+    "evidence_id": "evidence-ohlone-route-segment-lichen-bark-ot40",
+    "notes": "",
+    "observation_id": "observation-ohlone-map-route-graph-pilot",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

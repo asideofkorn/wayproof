@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official Ohlone Wilderness Permit Map marks the red hikers-and-horses-only Ohlone route, numbered posts OT26 through OT35, and the Lichen Bark start area. It prints 0.91 mile from Lichen Bark to OT40; mainline distances of 0.37, 0.16, 0.22+0.21+0.35, 0.28, 0.99, 0.91, 0.52, 0.35, and 0.83 mile between OT26 and OT35; a Maggie's Half Acre parallel route of 0.05+0.84 mile between OT27 and OT29; a Stewart's Camp parallel route of 0.60+0.46+0.61+0.28 mile between OT33 and OT35; and a 0.16-mile one-way spur from OT26 to Doe Canyon Horse Camp. The map places water and restrooms at Lichen Bark and shows camp/facility access on the alternate routes. Distances are transcribed from printed tick labels; sums are derived and do not replace the printed components.",
+    "observation_id": "observation-ohlone-map-route-graph-pilot",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-ohlone-wilderness-map-2025-08"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-route-segment-ot27-ot28",
+    "evidence_ids": [
+      "evidence-ohlone-route-segment-ot27-ot28"
+    ],
+    "predicate": "printed_route_distance_miles",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "route-segment-ohlone-ot27-ot28",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "calculation": "printed_directly",
+      "distance_miles": 0.16,
+      "printed_components_miles": [
+        0.16
+      ],
+      "route_role": "official_mainline"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

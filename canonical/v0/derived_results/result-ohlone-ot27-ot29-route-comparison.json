@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The Maggie's route is 0.05 mile shorter from OT27 to OT29 using the map's printed components; it trades the Rose Peak mainline for camp and water access.",
+    "input_ids": [
+      "claim-ohlone-route-segment-ot27-ot28",
+      "claim-ohlone-route-segment-ot28-ot29-rose",
+      "claim-ohlone-route-segment-ot27-ot29-maggies"
+    ],
+    "kind": "route_alternative_comparison",
+    "result_id": "result-ohlone-ot27-ot29-route-comparison",
+    "value": {
+      "alternate_difference_miles": -0.05,
+      "maggies_alternate_miles": 0.89,
+      "official_mainline_miles": 0.94
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

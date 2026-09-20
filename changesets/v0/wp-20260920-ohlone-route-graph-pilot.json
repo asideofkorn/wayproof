@@ -1,0 +1,1183 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ohlone-route-graph-pilot",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-ohlone-lichen-bark.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "trailhead-ohlone-lichen-bark",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-del-valle-lichen-bark.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "water-del-valle-lichen-bark",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/restroom-del-valle-lichen-bark.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "restroom-del-valle-lichen-bark",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot26.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot26",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot27.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot27",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot28.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot28",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot29.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot29",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot30.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot30",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot31.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot31",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot32.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot32",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot33.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot33",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot34.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot34",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot35.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot35",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot40.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-node-ohlone-ot40",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-lichen-bark-ot40.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-lichen-bark-ot40",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot26-ot27.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot26-ot27",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot27-ot28.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot27-ot28",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot28-ot29-rose.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot28-ot29-rose",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot29-ot30.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot29-ot30",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot30-ot31.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot30-ot31",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot31-ot32.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot31-ot32",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot32-ot33.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot32-ot33",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot33-ot34.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot33-ot34",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot34-ot35.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot34-ot35",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot27-ot29-maggies.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot27-ot29-maggies",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot33-ot35-stewarts.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot33-ot35-stewarts",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-ohlone-ot26-doe-canyon.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "route-segment-ohlone-ot26-doe-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-google-maps-ohlone-lichen-bark-360.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "source-google-maps-ohlone-lichen-bark-360",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ohlone-map-route-graph-pilot.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "observation-ohlone-map-route-graph-pilot",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-google-maps-ohlone-lichen-bark-360.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "observation-google-maps-ohlone-lichen-bark-360",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-lichen-bark-start-area.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-lichen-bark-start-area",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-google-maps-ohlone-lichen-bark-360.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-google-maps-ohlone-lichen-bark-360",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-lichen-bark-ot40.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-lichen-bark-ot40",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot26-ot27.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot26-ot27",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot27-ot28.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot27-ot28",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot28-ot29-rose.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot28-ot29-rose",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot29-ot30.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot29-ot30",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot30-ot31.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot30-ot31",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot31-ot32.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot31-ot32",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot32-ot33.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot32-ot33",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot33-ot34.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot33-ot34",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot34-ot35.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot34-ot35",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot27-ot29-maggies.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot27-ot29-maggies",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot33-ot35-stewarts.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot33-ot35-stewarts",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-route-segment-ot26-doe-canyon.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "evidence-ohlone-route-segment-ot26-doe-canyon",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-lichen-bark-start-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-lichen-bark-start-area.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-lichen-bark-start-area",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-google-maps-ohlone-lichen-bark-360"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-google-maps-ohlone-lichen-bark-start-coordinate.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-google-maps-ohlone-lichen-bark-start-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-lichen-bark-ot40"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-lichen-bark-ot40.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-lichen-bark-ot40",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-ot27"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot26-ot27.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot26-ot27",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot28"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot27-ot28.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot27-ot28",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot28-ot29-rose"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot28-ot29-rose.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot28-ot29-rose",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot29-ot30"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot29-ot30.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot29-ot30",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot30-ot31"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot30-ot31.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot30-ot31",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot31-ot32"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot31-ot32.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot31-ot32",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot32-ot33"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot32-ot33.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot32-ot33",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot34"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot33-ot34.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot33-ot34",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot34-ot35"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot34-ot35.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot34-ot35",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot27-ot29-maggies.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot27-ot29-maggies",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot33-ot35-stewarts.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot33-ot35-stewarts",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-doe-canyon"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-route-segment-ot26-doe-canyon.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "claim-ohlone-route-segment-ot26-doe-canyon",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-lichen-bark-ot40"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-lichen-bark-ot40-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-lichen-bark-ot40-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-lichen-bark-ot40"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-lichen-bark-ot40-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-lichen-bark-ot40-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-lichen-bark-ot40"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-lichen-bark-ot40-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-lichen-bark-ot40-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-ot27"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-ot27-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-ot27-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-ot27"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-ot27-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-ot27-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-ot27"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-ot27-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-ot27-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot28"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot28-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot28-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot28"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot28-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot28-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot28"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot28-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot28-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot28-ot29-rose"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot28-ot29-rose-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot28-ot29-rose-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot28-ot29-rose"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot28-ot29-rose-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot28-ot29-rose-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot28-ot29-rose"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot28-ot29-rose-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot28-ot29-rose-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot29-ot30"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot29-ot30-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot29-ot30-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot29-ot30"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot29-ot30-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot29-ot30-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot29-ot30"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot29-ot30-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot29-ot30-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot30-ot31"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot30-ot31-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot30-ot31-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot30-ot31"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot30-ot31-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot30-ot31-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot30-ot31"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot30-ot31-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot30-ot31-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot31-ot32"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot31-ot32-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot31-ot32-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot31-ot32"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot31-ot32-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot31-ot32-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot31-ot32"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot31-ot32-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot31-ot32-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot32-ot33"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot32-ot33-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot32-ot33-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot32-ot33"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot32-ot33-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot32-ot33-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot32-ot33"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot32-ot33-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot32-ot33-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot34"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot34-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot34-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot34"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot34-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot34-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot34"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot34-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot34-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot34-ot35"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot34-ot35-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot34-ot35-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot34-ot35"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot34-ot35-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot34-ot35-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot34-ot35"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot34-ot35-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot34-ot35-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot29-maggies-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot29-maggies-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot29-maggies-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-doe-canyon"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-doe-canyon-start.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-doe-canyon-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-doe-canyon"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-doe-canyon-end.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-doe-canyon-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-doe-canyon"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-doe-canyon-trail.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-doe-canyon-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot28-ot29-rose"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot28-ot29-rose-access-peak-rose.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot28-ot29-rose-access-peak-rose",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot29-maggies-access-camp-ohlone-map-maggies-half-acre.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-access-camp-ohlone-map-maggies-half-acre",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot27-ot29-maggies"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot27-ot29-maggies-access-water-ohlone-maggies-half-acre.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-access-water-ohlone-maggies-half-acre",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-access-camp-ohlone-map-stewarts.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-access-camp-ohlone-map-stewarts",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-access-water-ohlone-stewarts-camp.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-access-water-ohlone-stewarts-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot33-ot35-stewarts-access-facility-ohlone-stewarts-restroom.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot33-ot35-stewarts-access-facility-ohlone-stewarts-restroom",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-route-segment-ot26-doe-canyon"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-ohlone-ot26-doe-canyon-access-water-ohlone-doe-camp.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-route-segment-ohlone-ot26-doe-canyon-access-water-ohlone-doe-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-lichen-bark-start-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-lichen-bark-co-located-picnic.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-ohlone-lichen-bark-co-located-picnic",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-lichen-bark-start-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-lichen-bark-near-water.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-ohlone-lichen-bark-near-water",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-lichen-bark-start-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-lichen-bark-near-restroom.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "relationship-ohlone-lichen-bark-near-restroom",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ohlone-lichen-bark-water-current-status.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "gap-ohlone-lichen-bark-water-current-status",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ohlone-doe-water-exact-coordinate.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "gap-ohlone-doe-water-exact-coordinate",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-ohlone-route-graph-unmodeled-sections.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "gap-ohlone-route-graph-unmodeled-sections",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-ohlone-ot27-ot29-route-comparison.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "result-ohlone-ot27-ot29-route-comparison",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-ohlone-ot33-ot35-route-comparison.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "result-ohlone-ot33-ot35-route-comparison",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-ohlone-doe-canyon-roundtrip-detour.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "result-ohlone-doe-canyon-roundtrip-detour",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-lichen-bark-water-current-status"
+      ],
+      "path": "canonical/v0/derived_results/result-ohlone-lichen-bark-pretrip-recheck.json",
+      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
+      "record_id": "result-ohlone-lichen-bark-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add an Ohlone route-graph pilot for Lichen Bark and OT26-OT35, including official and alternate segments, facilities, printed mileage, derived detours, and explicit completeness/current-status gaps."
+}
