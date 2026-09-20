@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-route-segment-ot33-ot35-stewarts",
+    "evidence_ids": [
+      "evidence-ohlone-route-segment-ot33-ot35-stewarts"
+    ],
+    "predicate": "printed_route_distance_miles",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "route-segment-ohlone-ot33-ot35-stewarts",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "calculation": "sum_of_printed_components",
+      "distance_miles": 1.95,
+      "printed_components_miles": [
+        0.6,
+        0.46,
+        0.61,
+        0.28
+      ],
+      "route_role": "parallel_alternate"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-route-segment-ot27-ot29-maggies"
+    ],
+    "object_id": "route-node-ohlone-ot27",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-ohlone-ot27-ot29-maggies-start",
+    "subject_id": "route-segment-ohlone-ot27-ot29-maggies",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

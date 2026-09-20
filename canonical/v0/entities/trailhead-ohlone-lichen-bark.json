@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-ohlone-lichen-bark",
+    "kind": "trailhead",
+    "name": "Lichen Bark Ohlone Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

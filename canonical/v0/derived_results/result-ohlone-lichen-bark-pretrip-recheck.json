@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Mapped presence and current operation are different questions; confirm water status before departure.",
+    "input_ids": [
+      "claim-ohlone-lichen-bark-start-area",
+      "gap-ohlone-lichen-bark-water-current-status"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-ohlone-lichen-bark-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "drinking_water_operational_status"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

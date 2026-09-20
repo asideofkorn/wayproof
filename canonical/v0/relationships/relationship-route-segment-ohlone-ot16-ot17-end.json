@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-map-cartography"
+    ],
+    "object_id": "route-node-ohlone-ot17",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-ohlone-ot16-ot17-end",
+    "subject_id": "route-segment-ohlone-ot16-ot17",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

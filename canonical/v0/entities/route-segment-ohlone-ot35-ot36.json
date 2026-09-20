@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-ohlone-ot35-ot36",
+    "kind": "route_segment",
+    "name": "OT35 to OT36 official mainline"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

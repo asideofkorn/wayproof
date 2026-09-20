@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-route-segment-lichen-bark-ot40"
+    ],
+    "object_id": "trailhead-ohlone-lichen-bark",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-ohlone-lichen-bark-ot40-end",
+    "subject_id": "route-segment-ohlone-lichen-bark-ot40",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

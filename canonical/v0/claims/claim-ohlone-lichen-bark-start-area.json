@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-lichen-bark-start-area",
+    "evidence_ids": [
+      "evidence-ohlone-lichen-bark-start-area"
+    ],
+    "predicate": "official_route_start_area",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trailhead-ohlone-lichen-bark",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "first_numbered_post": "route-node-ohlone-ot40",
+      "nearby_mapped_drinking_water": true,
+      "nearby_mapped_restroom": true,
+      "parking": true,
+      "printed_distance_to_first_numbered_post_miles": 0.91
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
