@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ebrpd-backpack-faq-ohlone-inventory",
+    "evidence_ids": [
+      "evidence-ebrpd-backpack-faq-ohlone-inventory"
+    ],
+    "predicate": "ordered_backpack_camp_inventory",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": null,
+    "value": [
+      "Boyd Camp #1-2",
+      "Stewart's Camp",
+      "Maggie's Half Acre #1-3",
+      "Doe Camp #1-2",
+      "Sunol Backpack Camp: Sky Camp, Cathedral, Hawks Nest, Oak View, Sycamore, Eagles Aerie, Stars Rest",
+      "Eagle Springs #1-4"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

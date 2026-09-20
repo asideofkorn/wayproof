@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-springs-shared-facilities",
+    "evidence_id": "evidence-ebrpd-backpack-faq-eagle-springs-facilities",
+    "notes": "The official FAQ explicitly states that the four sites share one chemical toilet and one non-potable water source.",
+    "observation_id": "observation-ebrpd-backpack-faq-eagle-springs",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-springs-access-distances",
+    "evidence_ids": [
+      "evidence-ebrpd-backpack-faq-eagle-springs-access"
+    ],
+    "predicate": "approximate_hike_distance_miles",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "camp-ohlone-map-eagle-spring",
+    "temporal_scope": null,
+    "value": {
+      "from_stanford_avenue_staging": 4.5,
+      "from_sunol": 4.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

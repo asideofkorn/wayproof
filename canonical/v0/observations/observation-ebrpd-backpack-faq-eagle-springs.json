@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The current FAQ describes four Eagle Springs backpack sites on the back side of Mission Peak. Each accommodates 1-10 people and has a picnic table. The four sites share a chemical toilet and a non-potable water source. The camp is approximately 4.5 miles from Stanford Avenue staging or 4 miles from Sunol.",
+    "observation_id": "observation-ebrpd-backpack-faq-eagle-springs",
+    "observed_at": null,
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-backpack-camping-faqs"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

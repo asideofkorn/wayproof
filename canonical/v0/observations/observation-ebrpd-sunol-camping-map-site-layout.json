@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "PDF page 1"
+    ],
+    "content": "The map depicts the relative locations of Sycamore, Stars Rest, Hawks Nest, Eagles Eyrie, Sky Camp, Cathedral, and Oak View within the Sunol Backpack Camping Area. It also depicts shared drinking-water and restroom symbols. The map does not publish GIS coordinates or measured site-to-facility distances.",
+    "observation_id": "observation-ebrpd-sunol-camping-map-site-layout",
+    "observed_at": "2015-01-01T00:00:00+00:00",
+    "observer": "Wayproof source review",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-ebrpd-sunol-camping-map-2015"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

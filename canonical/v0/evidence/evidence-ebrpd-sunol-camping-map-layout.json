@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sunol-backpack-map-layout-2015",
+    "evidence_id": "evidence-ebrpd-sunol-camping-map-layout",
+    "notes": "Supports relative layout only. The 2015 map provides neither coordinates nor measured facility proximity.",
+    "observation_id": "observation-ebrpd-sunol-camping-map-site-layout",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

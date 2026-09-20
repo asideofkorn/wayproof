@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-springs-shared-facilities",
+    "evidence_ids": [
+      "evidence-ebrpd-backpack-faq-eagle-springs-facilities"
+    ],
+    "predicate": "shared_facilities",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "camp-ohlone-map-eagle-spring",
+    "temporal_scope": null,
+    "value": {
+      "applies_to_sites": 4,
+      "restroom": "chemical toilet",
+      "water": "non-potable water source"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

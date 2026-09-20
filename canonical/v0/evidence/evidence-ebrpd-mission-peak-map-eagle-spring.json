@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-eagle-spring-map-operating-restrictions",
+    "evidence_id": "evidence-ebrpd-mission-peak-map-eagle-spring",
+    "notes": "The official park map directly annotates the camp and its water, fire, cooking, and reservation constraints.",
+    "observation_id": "observation-ebrpd-mission-peak-map-eagle-spring",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
