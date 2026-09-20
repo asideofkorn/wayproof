@@ -8,11 +8,17 @@
     "predicate": "visitor_access_policy",
     "spatial_scope_ids": [
       "scope-mission-peak-ohlone-college-entrance",
+      "scope-mission-peak-anza-pine-entrance",
       "scope-mission-peak-stanford-avenue-staging"
     ],
     "subject_id": "park-mission-peak-regional-preserve",
     "temporal_scope": null,
     "value": {
+      "anza_pine_walk_in": {
+        "access_mode": "walk-in",
+        "parking_location": "Ohlone College campus",
+        "separate_parking_destination": false
+      },
       "mill_creek_road_access": false,
       "ohlone_college": {
         "approximate_spaces": 900,
