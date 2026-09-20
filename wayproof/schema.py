@@ -1,0 +1,299 @@
+"""Canonical Schema v0 domain records.
+
+These records define what valid Wayproof knowledge is. They deliberately do
+not choose an on-disk serialization, database, or package-wide migration path.
+The existing CSV-backed planner remains operational while new canonical
+knowledge is built through ChangeSet values and validation.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from datetime import date, datetime
+from enum import Enum
+from typing import Any, Dict, List, Optional, Tuple
+
+
+@dataclass(frozen=True)
+class TemporalScope:
+    """An inclusive effective interval; either boundary may be open."""
+
+    starts_on: Optional[date] = None
+    ends_on: Optional[date] = None
+
+
+@dataclass(frozen=True)
+class SpatialScope:
+    """A named spatial target without committing to a geometry format."""
+
+    scope_id: str
+    kind: str
+    entity_id: str = ""
+    description: str = ""
+
+
+@dataclass(frozen=True)
+class Entity:
+    entity_id: str
+    kind: str
+    name: str
+
+
+@dataclass(frozen=True)
+class Source:
+    source_id: str
+    locator: str
+    publisher: str = ""
+
+
+@dataclass(frozen=True)
+class Observation:
+    """What a source or reporter actually stated or recorded."""
+
+    observation_id: str
+    source_id: str
+    content: str
+    observed_at: Optional[datetime] = None
+    retrieved_at: Optional[datetime] = None
+    observer: str = ""
+    artifact_refs: Tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class Evidence:
+    """The use of an observation in support of or against a claim."""
+
+    evidence_id: str
+    observation_id: str
+    claim_id: str
+    stance: str = "supports"
+    notes: str = ""
+
+
+@dataclass(frozen=True)
+class Claim:
+    """An atomic proposition with explicit evidence, time, and scope."""
+
+    claim_id: str
+    subject_id: str
+    predicate: str
+    value: Any
+    evidence_ids: Tuple[str, ...]
+    temporal_scope: Optional[TemporalScope] = None
+    spatial_scope_ids: Tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class Relationship:
+    """A sourced, optionally temporal edge between durable entities."""
+
+    relationship_id: str
+    subject_id: str
+    predicate: str
+    object_id: str
+    evidence_ids: Tuple[str, ...]
+    temporal_scope: Optional[TemporalScope] = None
+
+
+@dataclass(frozen=True)
+class Condition:
+    """One bounded input to rule applicability."""
+
+    dimension: str
+    operator: str
+    value: Any
+
+
+@dataclass(frozen=True)
+class Rule:
+    """A normative or operational consequence grounded in a source claim."""
+
+    rule_id: str
+    claim_id: str
+    consequence: str
+    conditions: Tuple[Condition, ...] = ()
+    spatial_scope_ids: Tuple[str, ...] = ()
+    temporal_scope: Optional[TemporalScope] = None
+
+
+@dataclass(frozen=True)
+class Coverage:
+    """The portion of a trip a requirement or fulfillment applies to."""
+
+    participant_ids: Tuple[str, ...] = ()
+    equipment_ids: Tuple[str, ...] = ()
+    stage_ids: Tuple[str, ...] = ()
+    starts_on: Optional[date] = None
+    ends_on: Optional[date] = None
+
+
+def coverage_contains(offered: Coverage, required: Coverage) -> bool:
+    """Whether one fulfillment coverage fully contains required coverage.
+
+    Empty ID tuples mean that dimension is unrestricted.  A missing date bound
+    is open-ended.  This keeps partial coverage visible rather than treating
+    the presence of any credential as satisfaction of the whole requirement.
+    """
+    dimensions = (
+        (set(offered.participant_ids), set(required.participant_ids)),
+        (set(offered.equipment_ids), set(required.equipment_ids)),
+        (set(offered.stage_ids), set(required.stage_ids)),
+    )
+    for offered_ids, required_ids in dimensions:
+        if not required_ids and offered_ids:
+            return False
+        if required_ids and offered_ids and not offered_ids.issuperset(required_ids):
+            return False
+    if offered.starts_on and required.starts_on and offered.starts_on > required.starts_on:
+        return False
+    if offered.ends_on and required.ends_on and offered.ends_on < required.ends_on:
+        return False
+    if offered.starts_on and not required.starts_on:
+        return False
+    if offered.ends_on and not required.ends_on:
+        return False
+    return True
+
+
+@dataclass(frozen=True)
+class Requirement:
+    requirement_id: str
+    rule_id: str
+    description: str
+    coverage: Coverage = field(default_factory=Coverage)
+
+
+@dataclass(frozen=True)
+class Fulfillment:
+    """Evidence that all or part of one requirement has been satisfied."""
+
+    fulfillment_id: str
+    requirement_id: str
+    kind: str
+    evidence_ids: Tuple[str, ...]
+    coverage: Coverage = field(default_factory=Coverage)
+
+
+@dataclass(frozen=True)
+class TripObjective:
+    objective_id: str
+    entity_id: str
+    kind: str
+
+
+@dataclass(frozen=True)
+class TripStage:
+    stage_id: str
+    sequence: int
+    kind: str
+    spatial_scope_ids: Tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class PartyContext:
+    participant_ids: Tuple[str, ...] = ()
+    attributes: Dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class ActivityContext:
+    activities: Tuple[str, ...] = ()
+    attributes: Dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
+class EquipmentContext:
+    equipment_ids: Tuple[str, ...] = ()
+    attributes: Dict[str, Any] = field(default_factory=dict)
+    prior_events: Tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class PlanningContext:
+    trip_date: date
+    objectives: Tuple[TripObjective, ...]
+    stages: Tuple[TripStage, ...]
+    party: PartyContext = field(default_factory=PartyContext)
+    activities: ActivityContext = field(default_factory=ActivityContext)
+    equipment: EquipmentContext = field(default_factory=EquipmentContext)
+
+
+@dataclass(frozen=True)
+class KnowledgeGap:
+    gap_id: str
+    question: str
+    related_ids: Tuple[str, ...] = ()
+    reason: str = ""
+
+
+@dataclass(frozen=True)
+class DerivedResult:
+    result_id: str
+    kind: str
+    value: Any
+    input_ids: Tuple[str, ...]
+    explanation: str = ""
+
+
+@dataclass
+class CanonicalRecords:
+    """An in-memory validation boundary, not a storage decision."""
+
+    entities: List[Entity] = field(default_factory=list)
+    spatial_scopes: List[SpatialScope] = field(default_factory=list)
+    sources: List[Source] = field(default_factory=list)
+    observations: List[Observation] = field(default_factory=list)
+    evidence: List[Evidence] = field(default_factory=list)
+    claims: List[Claim] = field(default_factory=list)
+    relationships: List[Relationship] = field(default_factory=list)
+    rules: List[Rule] = field(default_factory=list)
+    requirements: List[Requirement] = field(default_factory=list)
+    fulfillments: List[Fulfillment] = field(default_factory=list)
+    gaps: List[KnowledgeGap] = field(default_factory=list)
+    derived_results: List[DerivedResult] = field(default_factory=list)
+
+
+class ChangeSetStatus(str, Enum):
+    DRAFT = "DRAFT"
+    VALIDATED = "VALIDATED"
+    APPROVED = "APPROVED"
+    PROMOTED = "PROMOTED"
+
+
+@dataclass
+class ChangeSet:
+    """The only normal boundary for proposing canonical knowledge changes."""
+
+    change_set_id: str
+    records: CanonicalRecords
+    status: ChangeSetStatus = ChangeSetStatus.DRAFT
+    validation_errors: Tuple[str, ...] = ()
+    approved_by: str = ""
+    approval_note: str = ""
+
+    def validate(self, existing: Optional[CanonicalRecords] = None) -> Tuple[str, ...]:
+        """Validate and advance a clean draft to VALIDATED."""
+        if self.status not in (ChangeSetStatus.DRAFT, ChangeSetStatus.VALIDATED):
+            raise ValueError("only a draft or validated ChangeSet can be validated")
+
+        from .validation import validate_records
+
+        errors = tuple(validate_records(self.records, existing=existing))
+        self.validation_errors = errors
+        self.status = (ChangeSetStatus.VALIDATED
+                       if not errors else ChangeSetStatus.DRAFT)
+        return errors
+
+    def approve(self, reviewer: str, note: str = "") -> None:
+        if self.status is not ChangeSetStatus.VALIDATED:
+            raise ValueError("only a validated ChangeSet can be approved")
+        if not reviewer.strip():
+            raise ValueError("approval requires an identified reviewer")
+        self.approved_by = reviewer.strip()
+        self.approval_note = note.strip()
+        self.status = ChangeSetStatus.APPROVED
+
+    def promote(self) -> None:
+        if self.status is not ChangeSetStatus.APPROVED:
+            raise ValueError("only an approved ChangeSet can be promoted")
+        self.status = ChangeSetStatus.PROMOTED
