@@ -86,14 +86,14 @@ PREDICATE_ACTIVITIES = {
     "published_swimming_page_parking_fee_usd": {"swimming"},
     "cabin_inventory": {"camping"},
     "group_camp_inventory": {"camping"},
-    "ordered_backpack_camp_inventory": {"backpacking", "camping"},
+    "ordered_backpack_camp_inventory": {"backpacking"},
     "published_site_listing_inventory": {"camping"},
     "reservable_picnic_inventory": {"picnicking"},
     "reserveamerica_campsite_inventory": {"backpacking", "camping"},
     "site_inventory": {"camping"},
-    "backpacking_reservation_window": {"backpacking", "camping"},
+    "backpacking_reservation_window": {"backpacking"},
     "group_camping_reservation": {"camping"},
-    "overnight_camping_reservation": {"backpacking", "camping"},
+    "overnight_camping_reservation": {"backpacking"},
     "published_group_reservation_minimum_business_days": {"camping"},
     "reservation_release_policy": {"backpacking", "camping"},
     "reservation_window": {"camping"},
@@ -133,17 +133,26 @@ def _relevant_entity_ids(records: CanonicalRecords,
     # One sourced relationship hop includes contained facilities, managers,
     # booking systems, and permits without turning the whole graph relevant.
     overnight = resolution.context.activities.attributes.get("overnight")
-    relationships = (
+    relationships = tuple(
         item for item in records.relationships
         if not (item.predicate == "day_use_governed_by" and overnight is True)
         and not (item.predicate == "overnight_governed_by" and overnight is False)
     )
-    adjacent = {
-        endpoint
-        for relationship in relationships
-        if relationship.subject_id in ids or relationship.object_id in ids
-        for endpoint in (relationship.subject_id, relationship.object_id)
+    forward = {
+        "accepts_reservations_for", "accesses", "applies_at", "contained_by",
+        "day_use_governed_by", "lists_site", "located_in",
+        "overnight_governed_by", "provides_service_at",
     }
+    reverse = {
+        "accepts_reservations_for", "contained_by", "located_in", "manages",
+        "provides_service_at",
+    }
+    adjacent = set()
+    for relationship in relationships:
+        if relationship.subject_id in ids and relationship.predicate in forward:
+            adjacent.add(relationship.object_id)
+        if relationship.object_id in ids and relationship.predicate in reverse:
+            adjacent.add(relationship.subject_id)
     return ids | adjacent
 
 

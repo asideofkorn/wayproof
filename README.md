@@ -249,7 +249,7 @@ The same object exposes:
 
 - `get(record_type, record_id)` and `entity(entity_id)`;
 - `resolve_intent(intent)` for conservative `TripIntent` resolution;
-- `plan(intent, fulfillments=(), recheck_result_ids=())` for integrated
+- `plan(intent, fulfillments=(), recheck_result_ids=(), as_of_date=None)` for integrated
   resolution, constraint evaluation, readiness, and named rechecks;
 - `requirements(context, fulfillments=())`;
 - `readiness(context, fulfillments=())`; and
@@ -308,6 +308,14 @@ evidence IDs, category, and `answered`, `unknown`, `needs_current_check`, or
 relationship neighborhood, trip scopes, date, and declared activities. It is
 not a final price calculator: an applicable fee claim is a component, while an
 activity-dependent fee with missing activity context remains unknown.
+
+Operational evaluation totals costs only when every applicable input has one
+unambiguous amount. Alternative fee fields remain visible components with no
+false total. Structured advance windows become `not_open`, `actionable`, or
+`expired` only when the caller supplies an explicit `as_of_date`; otherwise
+status is unknown. Published inventory remains distinct from live availability.
+Explicit effective closures can block, while open-ended or seasonal closure
+information requires a current check.
 
 The MCP server intentionally exposes no proposal, approval, promotion,
 publication, filesystem, or raw canonical CRUD tools.
@@ -369,8 +377,8 @@ The following remain incomplete:
 
 - richer `TripIntent` resolution beyond named objectives, sourced endpoints,
   and published segment topology, including aliases and constraint matching;
-- arithmetic/selection over projected cost components and richer operational
-  evaluation of deadlines, live inventory, and closures;
+- quantity and option selection for multi-component costs, plus live inventory
+  and closure integrations;
 - completion of the legacy CLI migration to `CanonicalReadService`;
 - constrained MCP proposal adapter;
 - automated URL/artifact ingestion and stronger duplicate/entity resolution;

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Any, Iterable, Optional, Tuple
 
@@ -132,9 +133,10 @@ class CanonicalReadService:
 
     def plan(self, intent: TripIntent,
              fulfillments: Iterable[Fulfillment] = (),
-             recheck_result_ids: Iterable[str] = ()) -> TripPlan:
+             recheck_result_ids: Iterable[str] = (),
+             as_of_date: Optional[date] = None) -> TripPlan:
         """Resolve and evaluate one trip through the shared domain boundary."""
-        return plan_trip(self, intent, fulfillments, recheck_result_ids)
+        return plan_trip(self, intent, fulfillments, recheck_result_ids, as_of_date)
 
     def planning_inputs(self, resolution: IntentResolution) -> PlanningInputProjection:
         """Project explicitly classified planning inputs onto a resolved trip."""

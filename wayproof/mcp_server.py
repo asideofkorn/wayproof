@@ -190,12 +190,14 @@ class WayproofReadTools:
 
     def plan_trip(self, intent: dict[str, Any],
                   fulfillments: list[dict[str, Any]] | None = None,
-                  recheck_result_ids: list[str] | None = None) -> dict:
+                  recheck_result_ids: list[str] | None = None,
+                  as_of_date: str = "") -> dict:
         """Resolve a trip and evaluate readiness plus explicitly named rechecks."""
         return _plain(self.reads.plan(
             trip_intent_from_dict(intent),
             fulfillments_from_list(fulfillments),
             _tuple(recheck_result_ids),
+            _date(as_of_date, "as_of_date"),
         ))
 
     def evaluate_requirements(self, context: dict[str, Any]) -> dict:

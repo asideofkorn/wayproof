@@ -4,11 +4,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
+from datetime import date
 from typing import Iterable, Optional, Protocol, Tuple
 
 from .intent import IntentResolution, IntentResolutionState
 from .planning_inputs import (PlanningInputAnswerability,
                               PlanningInputProjection)
+from .operational import (OperationalEvaluation, OperationalState,
+                          evaluate_operational_inputs)
 from .readiness import ReadinessState, TripReadiness
 from .recheck import PretripRecheck
 from .schema import Fulfillment, PlanningContext, TripIntent
@@ -29,6 +32,7 @@ class TripPlan:
     resolution: IntentResolution
     readiness: Optional[TripReadiness] = None
     planning_inputs: Optional[PlanningInputProjection] = None
+    operational: Optional[OperationalEvaluation] = None
     rechecks: Tuple[PretripRecheck, ...] = ()
 
 
@@ -46,6 +50,7 @@ class PlanningReads(Protocol):
 def _outcome_state(
     resolution: IntentResolution, readiness: Optional[TripReadiness],
     inputs: Optional[PlanningInputProjection] = None,
+    operational: Optional[OperationalEvaluation] = None,
 ) -> PlanningOutcomeState:
     if resolution.state is IntentResolutionState.AMBIGUOUS:
         return PlanningOutcomeState.AMBIGUOUS
@@ -53,6 +58,8 @@ def _outcome_state(
         return PlanningOutcomeState.UNKNOWN
     if resolution.state is IntentResolutionState.PARTIAL:
         return PlanningOutcomeState.PARTIAL
+    if operational and operational.state is OperationalState.BLOCKED:
+        return PlanningOutcomeState.BLOCKED
     state = {
         ReadinessState.READY: PlanningOutcomeState.READY,
         ReadinessState.BLOCKED: PlanningOutcomeState.BLOCKED,
@@ -61,10 +68,12 @@ def _outcome_state(
         ReadinessState.NOT_APPLICABLE: PlanningOutcomeState.NOT_APPLICABLE,
     }[readiness.state]
     if state in {PlanningOutcomeState.READY, PlanningOutcomeState.NOT_APPLICABLE} and (
-        inputs and any(
+        (inputs and any(
             item.answerability is not PlanningInputAnswerability.ANSWERED
             for item in inputs.inputs
-        )
+        )) or (operational and operational.state in {
+            OperationalState.PARTIAL, OperationalState.NEEDS_CURRENT_CHECK,
+        })
     ):
         return PlanningOutcomeState.PARTIAL
     return state
@@ -75,6 +84,7 @@ def plan_trip(
     intent: TripIntent,
     fulfillments: Iterable[Fulfillment] = (),
     recheck_result_ids: Iterable[str] = (),
+    as_of_date: Optional[date] = None,
 ) -> TripPlan:
     """Resolve and evaluate one trip without allowing adapters to reimplement it."""
     resolution = reads.resolve_intent(intent)
@@ -83,9 +93,14 @@ def plan_trip(
 
     readiness = reads.readiness(resolution.context, fulfillments)
     inputs = reads.planning_inputs(resolution)
+    operational = evaluate_operational_inputs(
+        inputs, resolution.context.trip_date, as_of_date,
+    )
     rechecks = tuple(
         reads.pretrip_recheck(resolution.context, result_id)
         for result_id in recheck_result_ids
     )
-    return TripPlan(_outcome_state(resolution, readiness, inputs), resolution,
-                    readiness, inputs, rechecks)
+    return TripPlan(
+        _outcome_state(resolution, readiness, inputs, operational), resolution,
+        readiness, inputs, operational, rechecks,
+    )

@@ -183,6 +183,12 @@ not presented as owed when activity context is absent. Computing a final total,
 selecting live inventory, and deciding operational deadlines remain later
 readiness work.
 
+Operational evaluation now computes a total only for unambiguous applicable
+amounts, calculates structured reservation-window dates from an explicit
+planning date, distinguishes published inventory from live availability, and
+propagates closures and conflicts into overall planning answerability. It does
+not choose vehicle/site/party fee alternatives or invent live booking status.
+
 The deployed website is the first complete canonical read adapter. It publishes
 entity search and evidence/history details; automatic Parks, Trails, Camping,
 Peaks, and Changes indexes; JSON representations and sitemap discovery; and
