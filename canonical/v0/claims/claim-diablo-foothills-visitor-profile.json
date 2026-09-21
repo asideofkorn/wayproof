@@ -1,0 +1,56 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-diablo-foothills-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-diablo-foothills-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-diablo-foothills-regional-park"
+    ],
+    "subject_id": "park-diablo-foothills-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "northern": [
+          "Orchard staging area",
+          "Castle Rock Road staging area"
+        ],
+        "southern": [
+          "Livorna staging area"
+        ],
+        "walk_in": [
+          "Childers Lane"
+        ]
+      },
+      "accessible_facilities_at_castle_rock": [
+        "pathways",
+        "restroom",
+        "drinking fountain",
+        "pool lift"
+      ],
+      "acreage": 1060,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "kid-friendly"
+      ],
+      "address": "1700 Castle Rock Road, Walnut Creek, CA 94598",
+      "annual_closure": "Pine Canyon rock formations close February 1 through July 31 for peregrine falcon nesting",
+      "connections": [
+        "Mount Diablo State Park",
+        "Walnut Creek Open Space"
+      ],
+      "contains": "Castle Rock Regional Recreation Area",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "seasonal_parking_lot_hours": "07:30 opening; closing varies from 19:00 to 21:00 by month",
+      "swimming": "Castle Rock Pool only when lifeguards are on duty; seasonal schedule and entry fee apply"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

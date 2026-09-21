@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dry-creek-pioneer-visitor-profile",
+    "evidence_id": "evidence-ebrpd-dry-creek-pioneer-visitor-profile",
+    "notes": "Direct transcription and conservative structuring of planning-relevant fields from the official park page.",
+    "observation_id": "observation-ebrpd-dry-creek-pioneer-visitor-profile",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
