@@ -122,6 +122,11 @@ class CanonicalReadService:
             key=lambda item: (item.question.casefold(), item.gap_id),
         ))
 
+    def knowledge_gaps(self) -> Tuple[KnowledgeGap, ...]:
+        """Return every published gap for canonical research/discovery views."""
+        return tuple(sorted(self._records.gaps,
+                            key=lambda item: (item.question.casefold(), item.gap_id)))
+
     def explain_claim(self, claim_id: str) -> ClaimProvenance:
         claim = self.get("claim", claim_id)
         evidence = tuple(self.get("evidence", item) for item in claim.evidence_ids)
