@@ -1,0 +1,765 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-sierra-reference-fixtures",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/agency-inyo-national-forest.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "agency-inyo-national-forest",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-sequoia-kings-canyon.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "park-sequoia-kings-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/wilderness-john-muir.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "wilderness-john-muir",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-mount-williamson.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "peak-mount-williamson",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-mount-tyndall.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "peak-mount-tyndall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-mount-whitney.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "peak-mount-whitney",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-mount-russell.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "peak-mount-russell",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-shepherd-pass-hiker.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "trailhead-shepherd-pass-hiker",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-whitney-portal.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "trailhead-whitney-portal",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-shepherd-pass.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "route-shepherd-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mount-whitney-classic.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "route-mount-whitney-classic",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-north-fork-lone-pine.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "route-north-fork-lone-pine",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/permit-inyo-overnight-wilderness.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "permit-inyo-overnight-wilderness",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/permit-whitney-zone-day-use.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "permit-whitney-zone-day-use",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/permit-whitney-trail-overnight.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "permit-whitney-trail-overnight",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-shepherd-pass.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "scope-route-shepherd-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-whitney-classic.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "scope-route-whitney-classic",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-north-fork-lone-pine.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "scope-route-north-fork-lone-pine",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-whitney-zone.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "scope-whitney-zone",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-shepherd-pass-trail.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-usfs-shepherd-pass-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-inyo-trail-quotas.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-usfs-inyo-trail-quotas",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreationgov-inyo-wilderness.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-recreationgov-inyo-wilderness",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreationgov-mount-whitney.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-recreationgov-mount-whitney",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-north-fork-lone-pine.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-usfs-north-fork-lone-pine",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreationgov-seki-wilderness.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "source-recreationgov-seki-wilderness",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-shepherd-pass-trail.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-usfs-shepherd-pass-trail",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-inyo-trail-quotas.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-usfs-inyo-trail-quotas",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-inyo-wilderness.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-recreationgov-inyo-wilderness",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-mount-whitney.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-recreationgov-mount-whitney",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-north-fork-lone-pine.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-usfs-north-fork-lone-pine",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-seki-wilderness.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "observation-recreationgov-seki-wilderness",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-shepherd-pass-route-profile.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-shepherd-pass-route-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-route-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-shepherd-pass-route-profile.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-shepherd-pass-route-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-shepherd-pass-access.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-shepherd-pass-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-shepherd-pass-access.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-shepherd-pass-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-shepherd-pass-quota.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-shepherd-pass-quota",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-quota"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-shepherd-pass-quota.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-shepherd-pass-quota",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-inyo-overnight-release.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-inyo-overnight-release",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-inyo-overnight-release"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-inyo-overnight-release.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-inyo-overnight-release",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-inyo-overnight-fees.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-inyo-overnight-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-inyo-overnight-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-inyo-overnight-fees.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-inyo-overnight-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-inyo-print-deadline.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-inyo-print-deadline",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-inyo-print-deadline"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-inyo-print-deadline.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-inyo-print-deadline",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-inyo-continuous-travel.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-inyo-continuous-travel",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-inyo-continuous-travel"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-inyo-continuous-travel.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-inyo-continuous-travel",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-classic-profile.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-whitney-classic-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-classic-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-classic-profile.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-whitney-classic-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-day-use-scope.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-whitney-day-use-scope",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-day-use-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-day-use-scope.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-whitney-day-use-scope",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-overnight-scope.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-whitney-overnight-scope",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-overnight-scope"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-overnight-scope.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-whitney-overnight-scope",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-lottery.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-whitney-lottery",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-lottery"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-lottery.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-whitney-lottery",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-no-show-deadlines.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-whitney-no-show-deadlines",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-no-show-deadlines"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-no-show-deadlines.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-whitney-no-show-deadlines",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-north-fork-route-character.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-north-fork-route-character",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-north-fork-route-character.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-north-fork-route-character",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-north-fork-quota.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "evidence-north-fork-quota",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-quota"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-north-fork-quota.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "claim-north-fork-quota",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-route-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-shepherd-starts-hiker-trailhead.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-shepherd-starts-hiker-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-route-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-williamson-approached-shepherd.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-williamson-approached-shepherd",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-pass-route-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tyndall-approached-shepherd.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-tyndall-approached-shepherd",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-inyo-overnight-release"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-shepherd-inyo-overnight-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-shepherd-inyo-overnight-permit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-classic-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-classic-starts-portal.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-whitney-classic-starts-portal",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-fork-starts-portal.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-north-fork-starts-portal",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-classic-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-classic.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-whitney-approached-classic",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-north-fork.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-whitney-approached-north-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-russell-approached-north-fork.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-russell-approached-north-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-classic-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-classic-overnight-whitney-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-classic-overnight-whitney-permit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-fork-overnight-inyo-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-north-fork-overnight-inyo-permit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-whitney-classic-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-day-zone-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-whitney-day-zone-permit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-fork-route-character"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-fork-day-zone-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "relationship-north-fork-day-zone-permit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-shepherd-overnight-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "rule-shepherd-overnight-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-north-fork-overnight-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "rule-north-fork-overnight-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-whitney-zone-day-use-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "rule-whitney-zone-day-use-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-whitney-classic-overnight-permit.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "rule-whitney-classic-overnight-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-williamson-tyndall-shared-access.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "result-williamson-tyndall-shared-access",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-whitney-route-permit-split.json",
+      "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
+      "record_id": "result-whitney-route-permit-split",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Williamson/Tyndall shared-access and Whitney route/activity permit fixtures."
+}

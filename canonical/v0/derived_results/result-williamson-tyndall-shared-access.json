@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Both objectives share official Shepherd Pass access and the ordinary Inyo overnight permit.",
+    "input_ids": [
+      "relationship-williamson-approached-shepherd",
+      "relationship-tyndall-approached-shepherd",
+      "relationship-shepherd-inyo-overnight-permit"
+    ],
+    "kind": "shared_access_fixture",
+    "result_id": "result-williamson-tyndall-shared-access",
+    "value": {
+      "overnight_permit": "permit-inyo-overnight-wilderness",
+      "shared_route": "route-shepherd-pass",
+      "shared_trailhead": "trailhead-shepherd-pass-hiker"
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Shepherd Pass Trail corridor",
+    "kind": "route",
+    "scope_id": "scope-route-shepherd-pass"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

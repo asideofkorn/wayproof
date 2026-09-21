@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-overnight-fees",
+    "evidence_ids": [
+      "evidence-inyo-overnight-fees"
+    ],
+    "predicate": "fees",
+    "spatial_scope_ids": [],
+    "subject_id": "permit-inyo-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "ordinary_entry_per_person_usd": 5,
+      "reservation_usd": 6,
+      "whitney_zone_per_person_usd": 15
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

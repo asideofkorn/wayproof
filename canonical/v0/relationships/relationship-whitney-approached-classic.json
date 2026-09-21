@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-classic-profile"
+    ],
+    "object_id": "route-mount-whitney-classic",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-whitney-approached-classic",
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

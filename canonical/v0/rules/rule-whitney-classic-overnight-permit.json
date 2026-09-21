@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-overnight-scope",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Require the Mount Whitney Trail overnight permit for a multi-day trip starting on the classic trail.",
+    "rule_id": "rule-whitney-classic-overnight-permit",
+    "spatial_scope_ids": [
+      "scope-route-whitney-classic"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

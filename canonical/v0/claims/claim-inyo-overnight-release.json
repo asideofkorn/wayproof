@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-overnight-release",
+    "evidence_ids": [
+      "evidence-inyo-overnight-release"
+    ],
+    "predicate": "reservation_release",
+    "spatial_scope_ids": [],
+    "subject_id": "permit-inyo-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "quota_period": "May 1-November 1",
+      "release_time": "07:00 America/Los_Angeles",
+      "required_year_round": true,
+      "six_month_percent": 60,
+      "two_week_percent": 40
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

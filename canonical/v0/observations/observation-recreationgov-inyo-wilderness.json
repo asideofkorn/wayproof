@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Current permit page describes year-round overnight permits, releases, fees, printing, continuous travel, and cancellation policy.",
+    "observation_id": "observation-recreationgov-inyo-wilderness",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-recreationgov-inyo-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

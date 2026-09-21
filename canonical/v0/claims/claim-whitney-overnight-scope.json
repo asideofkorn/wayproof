@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-overnight-scope",
+    "evidence_ids": [
+      "evidence-whitney-overnight-scope"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-route-whitney-classic"
+    ],
+    "subject_id": "permit-whitney-trail-overnight",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "activity": "overnight",
+      "excluded_route": "North Fork of Lone Pine Creek",
+      "included_route": "classic Mount Whitney Trail",
+      "multi_night_allowed": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

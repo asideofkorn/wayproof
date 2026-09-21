@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-lottery",
+    "evidence_ids": [
+      "evidence-whitney-lottery"
+    ],
+    "predicate": "reservation_release",
+    "spatial_scope_ids": [],
+    "subject_id": "permit-whitney-zone-day-use",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "claim_deadline": "April 21",
+      "fee_per_person_usd": 15,
+      "refunds": false,
+      "results": "March 15",
+      "unclaimed_release": "April 22"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

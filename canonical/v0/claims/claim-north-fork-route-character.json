@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-north-fork-route-character",
+    "evidence_ids": [
+      "evidence-north-fork-route-character"
+    ],
+    "predicate": "route_character",
+    "spatial_scope_ids": [
+      "scope-route-north-fork-lone-pine"
+    ],
+    "subject_id": "route-north-fork-lone-pine",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "difficult_to_follow": true,
+      "rugged": true,
+      "steep": true,
+      "technical_approaches": [
+        "Mountaineers Route",
+        "East Face",
+        "East Ridge",
+        "Fishhook Arete"
+      ],
+      "third_class_travel": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

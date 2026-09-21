@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "North Fork of Lone Pine Creek corridor",
+    "kind": "route",
+    "scope_id": "scope-route-north-fork-lone-pine"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

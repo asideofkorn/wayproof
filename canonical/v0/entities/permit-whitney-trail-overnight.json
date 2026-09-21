@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-whitney-trail-overnight",
+    "kind": "permit_product",
+    "name": "Mount Whitney Trail Overnight Permit"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

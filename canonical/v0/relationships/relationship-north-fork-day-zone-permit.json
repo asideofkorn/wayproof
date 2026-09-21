@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-north-fork-route-character"
+    ],
+    "object_id": "permit-whitney-zone-day-use",
+    "predicate": "day_use_governed_by",
+    "relationship_id": "relationship-north-fork-day-zone-permit",
+    "subject_id": "route-north-fork-lone-pine",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

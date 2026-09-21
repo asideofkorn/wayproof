@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Current Whitney page distinguishes day use, classic-trail overnight use, and multi-day North Fork climbing routes.",
+    "observation_id": "observation-recreationgov-mount-whitney",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-recreationgov-mount-whitney"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

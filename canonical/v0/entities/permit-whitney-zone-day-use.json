@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-whitney-zone-day-use",
+    "kind": "permit_product",
+    "name": "Mount Whitney Zone Day Use Permit"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

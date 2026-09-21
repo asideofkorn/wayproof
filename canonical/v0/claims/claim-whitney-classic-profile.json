@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-classic-profile",
+    "evidence_ids": [
+      "evidence-whitney-classic-profile"
+    ],
+    "predicate": "official_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-whitney-classic"
+    ],
+    "subject_id": "route-mount-whitney-classic",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "elevation_gain_ft": 6200,
+      "round_trip_miles": 22,
+      "starts_at": "Whitney Portal",
+      "summit_land_unit": "Sequoia National Park"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

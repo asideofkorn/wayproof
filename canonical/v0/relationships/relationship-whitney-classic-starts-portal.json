@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-classic-profile"
+    ],
+    "object_id": "trailhead-whitney-portal",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-whitney-classic-starts-portal",
+    "subject_id": "route-mount-whitney-classic",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

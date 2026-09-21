@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Official trail guide describes access, mileage, facilities, restrictions, and the trail entering Sequoia National Park.",
+    "observation_id": "observation-usfs-shepherd-pass-trail",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-usfs-shepherd-pass-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

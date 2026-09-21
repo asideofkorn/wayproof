@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-shepherd-pass-access",
+    "evidence_ids": [
+      "evidence-shepherd-pass-access"
+    ],
+    "predicate": "vehicle_access",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-shepherd-pass-hiker",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "high_clearance_recommended": true,
+      "trailhead_water": false,
+      "winter_maintenance": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-shepherd-pass-route-profile"
+    ],
+    "object_id": "route-shepherd-pass",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-williamson-approached-shepherd",
+    "subject_id": "peak-mount-williamson",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
