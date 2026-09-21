@@ -15,7 +15,7 @@ draw or navigate an exact route and it is not a booking system.
 
 Wayproof is currently a hybrid application:
 
-- the established CSV-backed CLI and static website remain operational;
+- the established CSV-backed CLI and trailhead pages remain operational;
 - Canonical Schema v0 knowledge is stored as deterministic, versioned JSON;
 - published knowledge changes are authorized by validated ChangeSets and GitHub
   review;
@@ -315,7 +315,7 @@ The following remain incomplete:
 - general `TripIntent` resolution into canonical objectives and stages;
 - complete Trip Readiness aggregation for costs, deadlines, inventory,
   closures, and conflicts;
-- migration of the legacy CLI and website to `CanonicalReadService`;
+- completion of the legacy CLI and website migration to `CanonicalReadService`;
 - MCP read and constrained proposal adapters;
 - automated URL/artifact ingestion and stronger duplicate/entity resolution;
 - operational freshness scheduling beyond explicit canonical recheck manifests;
@@ -329,10 +329,11 @@ additional read index or transactional service.
 ## Website
 
 [wayproof.dev](https://wayproof.dev) is generated from this repository and
-deployed through GitHub Pages. The current site still reflects the established
-CSV-backed views. Its next revision will consume the shared canonical read
-service and present the implemented provenance, history, readiness, and recheck
-behavior without duplicating domain logic.
+deployed through GitHub Pages. Canonical search and entity-detail pages consume
+the shared read service and present claims, source evidence, knowledge gaps,
+relationships, and published ChangeSet history. Established trailhead pages
+remain CSV-backed while the rest of the site migrates incrementally, without
+duplicating domain logic.
 
 ## Development
 

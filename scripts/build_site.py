@@ -5,6 +5,8 @@ Generates, from the committed dataset on every build:
 
 - a landing page whose "Help us confirm" list comes straight from
   ``wayproof.reports.open_questions()``;
+- canonical entity search and evidence/history detail pages backed only by
+  ``CanonicalReadService``;
 - one page per trailhead, led by the permit that governs entry there --
   agency, quota season, fees, and the dates you actually need to act on;
 - ``sitemap.xml`` and ``robots.txt``.
@@ -32,6 +34,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from wayproof.access import load_approaches
 from wayproof.camping import load_campgrounds, load_campsites
+from wayproof.canonical_site import build_canonical_site
 from wayproof.data_loader import load_peaks, load_trailheads
 from wayproof.park_access import load_park_access
 from wayproof.permit_zones import load_permit_zones
@@ -47,6 +50,7 @@ from wayproof.render import (
     render_trailhead_markdown,
 )
 from wayproof.regulations import load_regulations
+from wayproof.read_service import CanonicalReadService
 from wayproof.reports import open_questions
 from wayproof.timed_entry import load_timed_entry
 from wayproof.views import SITE_URL, trailhead_views
@@ -134,11 +138,20 @@ what it costs, and which source says so &mdash; every fact dated, and the
 uncertain ones labelled rather than guessed.</p>
 
 <nav>
+  <a href="/search/">Canonical search</a>
   <a href="/trailheads/">Trailheads</a>
   <a href="https://github.com/{repo}">GitHub</a>
   <a href="https://github.com/{repo}#readme">Docs</a>
   <a href="https://github.com/{repo}/issues/new?template=data_report.md&labels=data">Submit a report</a>
 </nav>
+
+<section>
+  <h2>Search canonical knowledge</h2>
+  <p>Search {canonical_entity_count} published places, routes, campsites, water
+  sources, and other entities. Each detail page distinguishes supported claims,
+  known gaps, source evidence, and published ChangeSet history.</p>
+  <p><a href="/search/">Search canonical knowledge &rarr;</a></p>
+</section>
 
 <section>
   <h2>Start with a trailhead</h2>
@@ -226,10 +239,14 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     # custom domain survives every GitHub Actions Pages deployment.
     (output_dir / "CNAME").write_text("wayproof.dev\n")
 
+    canonical_reads = CanonicalReadService(Path("."))
+    canonical_stats = build_canonical_site(canonical_reads, output_dir, SITE_URL)
+
     (output_dir / "index.html").write_text(LANDING_TEMPLATE.format(
         site=SITE_URL, repo=REPO, count=len(questions),
         questions_html=_render_questions_html(questions),
         trailhead_count=len(views), trailhead_sample=_featured_html(views),
+        canonical_entity_count=canonical_stats["canonical_entities"],
     ))
 
     trailhead_dir = output_dir / "trailheads"
@@ -248,13 +265,15 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
         (trailhead_dir / f'{view["slug"]}.md').write_text(render_trailhead_markdown(view))
         (trailhead_dir / f'{view["slug"]}.json').write_text(render_json(view))
 
-    urls = [f"{SITE_URL}/", f"{SITE_URL}/trailheads/"]
+    canonical_entities = canonical_reads.search_entities()
+    urls = [f"{SITE_URL}/", f"{SITE_URL}/trailheads/", f"{SITE_URL}/search/"]
     urls += [v["canonical_url"] for v in views if v["indexable"]]
+    urls += [f"{SITE_URL}/knowledge/{item.entity_id}/" for item in canonical_entities]
     (output_dir / "sitemap.xml").write_text(render_sitemap(urls))
     (output_dir / "robots.txt").write_text(render_robots())
 
     return {"open_questions": len(questions), "trailheads": len(views),
-            "indexed_urls": len(urls)}
+            "indexed_urls": len(urls), **canonical_stats}
 
 
 def _parse_args(argv=None) -> argparse.Namespace:
@@ -270,6 +289,7 @@ def main(argv=None) -> int:
     stats = build(Path(args.output))
     print(f"Built site into {args.output}/: "
           f"{stats['trailheads']} trailhead pages (x3 representations), "
+          f"{stats['canonical_entities']} canonical entity pages, "
           f"{stats['open_questions']} open questions, "
           f"{stats['indexed_urls']} URLs in sitemap")
     return 0

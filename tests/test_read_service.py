@@ -51,6 +51,24 @@ def test_unknown_records_fail_explicitly(reads):
         reads.get("table", "anything")
 
 
+def test_entity_context_reads_are_deterministic_and_public(reads):
+    entity_id = "park-del-valle-regional-park"
+    claims = reads.claims_for(entity_id)
+    assert claims
+    assert all(item.subject_id == entity_id for item in claims)
+    assert list(claims) == sorted(
+        claims, key=lambda item: (item.predicate.casefold(), item.claim_id)
+    )
+
+    relationships = reads.relationships_for(entity_id)
+    assert relationships
+    assert all(entity_id in (item.subject_id, item.object_id)
+               for item in relationships)
+
+    gaps = reads.knowledge_gaps_for(entity_id)
+    assert all(entity_id in item.related_ids for item in gaps)
+
+
 def test_claim_explanation_traverses_the_complete_provenance_chain(reads):
     bundle = reads.explain_claim("claim-whitney-overnight-scope")
     assert bundle.claim.subject_id == "permit-whitney-trail-overnight"

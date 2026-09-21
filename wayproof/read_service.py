@@ -11,7 +11,8 @@ from .readiness import TripReadiness, evaluate_trip_readiness
 from .recheck import PretripRecheck, evaluate_pretrip_recheck
 from .requirements import RequirementEvaluation, evaluate_requirements
 from .schema import (ChangeAction, Claim, Entity, Evidence, Fulfillment,
-                     Observation, PlanningContext, Source)
+                     KnowledgeGap, Observation, PlanningContext, Relationship,
+                     Source)
 
 
 @dataclass(frozen=True)
@@ -42,6 +43,7 @@ class CanonicalReadService:
         self._root = Path(root)
         self._records = load_canonical(self._root)
         self._indexes = self._build_indexes()
+        self._change_history = self._build_change_history()
 
     def _build_indexes(self):
         indexes = {}
@@ -56,6 +58,25 @@ class CanonicalReadService:
         """Reload a newly published canonical snapshot from Git-backed files."""
         self._records = load_canonical(self._root)
         self._indexes = self._build_indexes()
+        self._change_history = self._build_change_history()
+
+    def _build_change_history(self) -> Tuple[ChangeHistoryEntry, ...]:
+        entries = []
+        for path in sorted((self._root / "changesets" / "v0").glob("*.json")):
+            change = load_changeset(path)
+            for operation in change.operations:
+                entries.append(ChangeHistoryEntry(
+                    change_set_id=change.change_set_id,
+                    summary=change.summary,
+                    action=operation.action,
+                    record_type=operation.record_type,
+                    record_id=operation.record_id,
+                    path=operation.path,
+                    reason=operation.reason,
+                    evidence_refs=operation.evidence_refs,
+                    knowledge_gap_refs=operation.knowledge_gap_refs,
+                ))
+        return tuple(entries)
 
     def get(self, record_type: str, record_id: str) -> Any:
         if record_type not in self._indexes:
@@ -79,6 +100,28 @@ class CanonicalReadService:
         )
         return tuple(sorted(matches, key=lambda item: (item.name.casefold(), item.entity_id)))
 
+    def claims_for(self, subject_id: str) -> Tuple[Claim, ...]:
+        """Return claims whose subject is the requested canonical record."""
+        return tuple(sorted(
+            (item for item in self._records.claims if item.subject_id == subject_id),
+            key=lambda item: (item.predicate.casefold(), item.claim_id),
+        ))
+
+    def relationships_for(self, entity_id: str) -> Tuple[Relationship, ...]:
+        """Return sourced relationships touching an entity in either direction."""
+        return tuple(sorted(
+            (item for item in self._records.relationships
+             if entity_id in (item.subject_id, item.object_id)),
+            key=lambda item: (item.predicate.casefold(), item.relationship_id),
+        ))
+
+    def knowledge_gaps_for(self, record_id: str) -> Tuple[KnowledgeGap, ...]:
+        """Return explicit gaps that name a record as related context."""
+        return tuple(sorted(
+            (item for item in self._records.gaps if record_id in item.related_ids),
+            key=lambda item: (item.question.casefold(), item.gap_id),
+        ))
+
     def explain_claim(self, claim_id: str) -> ClaimProvenance:
         claim = self.get("claim", claim_id)
         evidence = tuple(self.get("evidence", item) for item in claim.evidence_ids)
@@ -92,26 +135,11 @@ class CanonicalReadService:
 
     def changes(self, record_id: Optional[str] = None,
                 record_type: Optional[str] = None) -> Tuple[ChangeHistoryEntry, ...]:
-        entries = []
-        for path in sorted((self._root / "changesets" / "v0").glob("*.json")):
-            change = load_changeset(path)
-            for operation in change.operations:
-                if record_id is not None and operation.record_id != record_id:
-                    continue
-                if record_type is not None and operation.record_type != record_type:
-                    continue
-                entries.append(ChangeHistoryEntry(
-                    change_set_id=change.change_set_id,
-                    summary=change.summary,
-                    action=operation.action,
-                    record_type=operation.record_type,
-                    record_id=operation.record_id,
-                    path=operation.path,
-                    reason=operation.reason,
-                    evidence_refs=operation.evidence_refs,
-                    knowledge_gap_refs=operation.knowledge_gap_refs,
-                ))
-        return tuple(entries)
+        return tuple(
+            entry for entry in self._change_history
+            if (record_id is None or entry.record_id == record_id)
+            and (record_type is None or entry.record_type == record_type)
+        )
 
     def requirements(self, context: PlanningContext,
                      fulfillments: Iterable[Fulfillment] = ()) -> RequirementEvaluation:
