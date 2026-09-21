@@ -172,6 +172,31 @@ def test_del_valle_destination_is_in_the_sitemap(site):
     assert "https://wayproof.dev/destinations/del-valle/" in sitemap
 
 
+def test_primary_navigation_connects_every_public_page_type(site):
+    tmp_path, _ = site
+    pages = (
+        tmp_path / "index.html",
+        tmp_path / "search" / "index.html",
+        tmp_path / "destinations" / "del-valle" / "index.html",
+        tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html",
+        tmp_path / "trailheads" / "index.html",
+        tmp_path / "trailheads" / "whitney-portal" / "index.html",
+    )
+    expected_links = {
+        'href="/"',
+        'href="/search/"',
+        'href="/destinations/del-valle/"',
+        'href="/trailheads/"',
+    }
+
+    for page in pages:
+        html = page.read_text()
+        missing = expected_links.difference(
+            link for link in expected_links if link in html
+        )
+        assert not missing, f"{page.relative_to(tmp_path)} lacks {sorted(missing)}"
+
+
 def test_issue_url_is_prefilled_and_escaped():
     url = build_site._issue_url(
         "data/peaks.csv", "Mount Carillon", "Isn't in the dataset at all",

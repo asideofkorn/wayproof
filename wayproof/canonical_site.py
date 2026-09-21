@@ -303,8 +303,10 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     answered = [item for item in items
                 if item["result"]["answerability"] == "answered"]
     body = [
-        '<nav class="crumbs"><a href="/">Wayproof</a> / '
-        '<a href="/search/">Search</a></nav>',
+        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
+        '<a href="/search/">Search</a> / '
+        '<a href="/destinations/del-valle/">Del Valle</a> / '
+        '<a href="/trailheads/">Trailheads</a></nav>',
         f'<h1>{_e(entity["name"])}</h1>',
         '<p class="tagline">Plan access, camping, lake recreation, and the '
         'Ohlone Wilderness Trail from one evidence-backed view.</p>',
@@ -361,8 +363,10 @@ def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str
         'No direct claim is published for this entity. That absence is not confirmation.'
     )
     body = [
-        '<nav class="crumbs"><a href="/">Wayproof</a> / '
-        '<a href="/search/">Canonical search</a></nav>',
+        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
+        '<a href="/search/">Search</a> / '
+        '<a href="/destinations/del-valle/">Del Valle</a> / '
+        '<a href="/trailheads/">Trailheads</a></nav>',
         f'<h1>{_e(entity["name"])}</h1>',
         f'<p class="subtitle"><span class="pill">{_e(entity["kind"])}</span> '
         f'<code>{_e(entity["entity_id"])}</code></p>',
@@ -429,7 +433,10 @@ def render_search_html(entities: Iterable[dict], site_url: str,
     )
     options = ''.join(f'<option value="{_e(kind)}">{_e(kind)}</option>' for kind in kinds)
     body = f"""
-<nav class="crumbs"><a href="/">Wayproof</a></nav>
+<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> /
+<a href="/search/">Search</a> /
+<a href="/destinations/del-valle/">Del Valle</a> /
+<a href="/trailheads/">Trailheads</a></nav>
 <h1>Canonical search</h1>
 <p class="subtitle">Search {len(entities)} published entities. Results link to the
 same canonical read service used for provenance and history.</p>

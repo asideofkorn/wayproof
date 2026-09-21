@@ -137,7 +137,8 @@ U.S. public lands.</p>
 what it costs, and which source says so &mdash; every fact dated, and the
 uncertain ones labelled rather than guessed.</p>
 
-<nav>
+<nav aria-label="Primary">
+  <a href="/">Home</a>
   <a href="/search/">Canonical search</a>
   <a href="/trailheads/">Trailheads</a>
   <a href="https://github.com/{repo}">GitHub</a>
