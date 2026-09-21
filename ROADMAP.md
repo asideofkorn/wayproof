@@ -2,15 +2,20 @@
 
 ## Roadmap contract
 
-This roadmap moves Wayproof from the current Sierra/SPS CSV-backed planner to
-the architecture in `PRODUCT.md` and `ARCHITECTURE.md` without pretending the
-target is already implemented. Milestones are capability gates, not dates.
+This roadmap moves Wayproof from the legacy Sierra/SPS CSV-backed planner to the
+architecture in `PRODUCT.md` and `ARCHITECTURE.md`. Canonical foundations and
+several planning services are now implemented alongside the legacy planner;
+milestones remain capability gates, not dates.
 
 Canonical Schema v0 is frozen for initial implementation. The legacy audit is
 complete: existing data will be selectively salvaged under the field-level
 `KEEP / REVERIFY / RECONSTRUCT / DISCARD` policy, never bulk-migrated as truth.
 
 ## M0 — Trusted foundation
+
+**Status: complete.** The accepted M0 scope excludes bulk legacy migration and
+the California 14ers social-water example. Existing data is added only when it
+exercises a product capability or can pass the selective salvage policy.
 
 **Outcome:** Wayproof can define, validate, review, and safely promote canonical
 knowledge for the MVP fixtures.
@@ -20,9 +25,9 @@ knowledge for the MVP fixtures.
   evidence lineage; trip/context and route/access/traversal; claims and rules;
   requirements, fulfillments, coverage, answerability, derived results,
   knowledge gaps, and ChangeSets.
-- Keep exact module layout, enum spellings, and SQLite timing open until
-  implementation evidence supports a choice. Use the decided deterministic,
-  versioned, one-record-per-file JSON storage model.
+- Use the implemented Python service boundaries and enum spellings as the
+  initial adapter contracts. Keep SQLite timing open until measured evidence
+  supports it. Use deterministic, versioned, one-record-per-file JSON storage.
 - Implement deterministic validation before scaled ingestion: references,
   provenance, atomicity, evidence integrity, temporal and geospatial scope,
   applicability, coverage, and lifecycle transitions.
@@ -34,15 +39,15 @@ knowledge for the MVP fixtures.
 - Add CI enforcement proving every canonical diff is exactly accounted for by
   a validated ChangeSet or explicit schema-migration artifact.
 - Encode the Ohlone, Williamson/Tyndall, Whitney, facility/concessioner,
-  fishing, boating/invasive-species, and California 14ers social-water fixtures.
+  fishing, and boating/invasive-species fixtures.
 - Encode the 8/8 adversarial schema audit as regression tests.
-- Build the selective salvage importer/queue from the completed field-level
-  manifest. Preserve research history and surface re-verification work; do not
-  directly migrate ambiguous, inferred, composite, stale, or weakly sourced
-  values.
-- Run the California 14ers social-water evidence case end to end through
-  proposal, validation, explanation, candidate preparation, Git review, and
-  merge-based publication.
+- Apply the completed field-level salvage manifest selectively as fixture or
+  product needs arise. Preserve research history and surface re-verification
+  work; do not directly migrate ambiguous, inferred, composite, stale, or weakly
+  sourced values.
+- Run the controlled lifecycle end to end through proposal, validation,
+  explanation, separate candidate preparation, publication verification,
+  Git-backed persistence, read history, requirements, readiness, and recheck.
 
 **Exit criteria:** all Schema v0 invariants and fixtures pass; canonical changes
 are traceable to approved ChangeSets; the initial clean corpus can be built and
@@ -50,6 +55,11 @@ reproduced without direct table editing; no fixture requires a special-purpose
 schema object.
 
 ## M1 — Planning MVP
+
+**Status: in progress.** Rule applicability, runtime requirements, explicit
+fulfillment coverage, bounded Trip Readiness, Pre-trip Recheck, provenance, and
+the complete lifecycle acceptance test are implemented. General intent
+resolution and several readiness inputs remain.
 
 **Outcome:** a bounded trip produces explainable Trip Readiness and Pre-trip
 Recheck results from canonical Schema v0 knowledge.
@@ -72,6 +82,10 @@ coverage mismatches, historical rules, and volatile water/access rechecks.
 
 ## M2 — Read interfaces and MCP
 
+**Status: in progress.** The shared read-only service facade now supports entity
+search, typed lookup, evidence provenance, published ChangeSet history,
+requirements, readiness, and recheck. Adapter migration is still pending.
+
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
 
@@ -89,13 +103,18 @@ invoke the same domain behavior rather than reimplementing planning logic.
 
 ## M3 — Constrained contribution workflow
 
+**Status: started.** An identified-actor, additive-only proposal service can
+derive a DRAFT ChangeSet, validate it, and explain failures. It cannot prepare,
+approve, promote, or publish canonical knowledge.
+
 **Outcome:** community and agent-assisted evidence becomes reviewable proposals
 without granting direct canonical write access.
 
 - Ingest URLs, issues, artifacts, field reports, GPX, and supported structured
   sources into candidate observations/evidence.
-- Add constrained proposal operations for sources, observations, claims, rules,
-  and relationships plus ChangeSet validation and explanation.
+- Add constrained proposal operations for evidence-bearing records and
+  relationships plus ChangeSet validation and explanation. Keep normative rule
+  and derived-result authoring outside the initial consumer proposal surface.
 - Keep approval and publication in GitHub review and merge; MCP proposal tools
   do not gain a separate promotion path.
 - Improve entity resolution, duplicate detection, supersession/conflict review,
@@ -136,11 +155,12 @@ Schema v0 domain model
   -> validators and regression fixtures
   -> ChangeSet validation and candidate preparation
   -> clean canonical storage
-  -> selective legacy salvage
+  -> selective legacy salvage as needed
   -> planning/readiness/recheck services
+  -> shared read facade and constrained proposal service
   -> CLI and website adapters
   -> MCP read adapter
-  -> constrained proposal adapter
+  -> MCP proposal adapter
 ```
 
 MCP is not the knowledge store and is not a separate write architecture. A
@@ -151,10 +171,9 @@ response to demonstrated needs.
 
 These are intentionally deferred, not forgotten:
 
-- exact Python module and class boundaries;
-- exact enum names and wire spellings;
-- generated SQLite timing, if any; and
-- exceptional repair/redaction policy for published artifacts.
+- generated SQLite timing, if any;
+- exceptional repair/redaction policy for published artifacts; and
+- authorization policy beyond the current maintainer-reviewed GitHub workflow.
 
 Any new gap that changes product semantics, evidence integrity, applicability,
 or coverage should reopen the architecture explicitly. Mechanical choices

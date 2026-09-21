@@ -2,11 +2,12 @@
 
 ## Status and scope
 
-This document records the target architecture for Canonical Schema v0. The
-existing CSV-backed planner remains the current implementation during migration.
-Schema v0 is frozen for initial implementation after reference-fixture review,
-an 8/8 adversarial audit, and a complete legacy-corpus audit that found no case
-requiring a redesign.
+This document records the implemented foundation and remaining target
+architecture for Canonical Schema v0. The repository is currently hybrid: the
+existing CSV-backed planner remains operational while canonical JSON and the
+new domain services run alongside it. Schema v0 is frozen for initial
+implementation after reference-fixture review, an 8/8 adversarial audit, and a
+complete legacy-corpus audit that found no case requiring a redesign.
 
 The architecture is domain-first and storage-independent. Names below identify
 durable concepts, not final Python classes, files, tables, or enum spellings.
@@ -139,9 +140,12 @@ thing was checked and confirmed unavailable. `CLOSED` is an operational state,
 not absence. Freshness is predicate- and trip-date-specific: a dated observation
 can be valid history while being too old to establish a future condition.
 
-Trip Readiness aggregates applicable rules, requirements, fulfillment coverage,
-conditions, costs, deadlines, gaps, and conflicts. Pre-trip Recheck reruns
-volatile portions against the same context and explains changes.
+The implemented Trip Readiness slice aggregates rule applicability,
+requirements, fulfillment coverage, linked gaps, answerability, and provenance.
+The target also includes conditions, costs, deadlines, closures, and conflicts;
+those inputs are not all integrated yet. Pre-trip Recheck projects the canonical
+recheck manifest onto trip date and spatial scope, distinguishes answered,
+unknown, and needs-current-check results, and returns the sources to revisit.
 
 ## Controlled write architecture
 
@@ -193,8 +197,10 @@ exist, but bypassing validation must never be the routine workflow.
 
 Git-backed structured files are sufficient canonical storage for M0/M1; no
 database is required. The domain layer loads and indexes canonical knowledge in
-memory and exposes query and write services. Storage adapters implement those
-services but do not define domain semantics.
+memory and exposes query and write services. `CanonicalReadService` is the
+shared read-only facade for entity search, typed lookup, provenance, published
+ChangeSet history, requirements, readiness, and recheck. Storage adapters
+implement those services but do not define domain semantics.
 
 A generated SQLite index may later improve read performance, and a transactional
 database may eventually serve a concurrent application, but neither decision is
@@ -215,12 +221,16 @@ declare source and target versions, preserve provenance, produce explicit gaps
 instead of invented values, and never rewrite historical promoted ChangeSets.
 Artifact format, domain schema, and validator versions are tracked separately.
 
-Initial MCP capability is read-oriented, conceptually including objective
-search, trip planning, requirements, advisories, and evidence inspection. Later
-constrained proposal tools may inspect entities/evidence, propose sources,
-observations, claims, rules, and relationships, then validate and explain a
-ChangeSet. Raw canonical CRUD, arbitrary SQL, and direct agent promotion are not
-part of the initial authoring surface.
+Initial MCP capability remains read-oriented, conceptually including objective
+search, trip planning, requirements, advisories, history, and evidence
+inspection. The implemented `ConstrainedProposalService` is the boundary for a
+later proposal adapter: an identified actor may submit additive entities,
+scopes, sources, observations, evidence, claims, relationships, and gaps, then
+validate and explain the draft. It derives paths and operations and deliberately
+excludes rules, derived results, runtime requirements/fulfillments,
+`REPLACE`/`REMOVE`, candidate preparation, approval, and promotion. Raw
+canonical CRUD, arbitrary SQL, and direct agent promotion are not part of the
+authoring surface.
 
 ## Legacy corpus audit and salvage policy
 
@@ -264,8 +274,8 @@ knowledge-gap primitives; none forced Schema v0 to reopen.
 ## Required regression suite
 
 Implementation must preserve the Ohlone, Williamson/Tyndall, Whitney,
-facility/concessioner, fishing, boating/invasive-species, and California 14ers
-social-water fixtures described in `PRODUCT.md`. It must also encode the eight
+facility/concessioner, fishing, and boating/invasive-species fixtures described
+in `PRODUCT.md`. It must also encode the eight
 adversarial cases as durable tests:
 
 1. legally open road versus physically impassable;
@@ -280,8 +290,11 @@ adversarial cases as durable tests:
 Passing means the case resolves with general Schema v0 primitives, preserves
 gaps and conflicts, and does not invent a destination-specific exception.
 
-## Intentionally unresolved
+## Implementation boundary and unresolved decisions
 
-Implementation will decide exact Python module/class layout, exact enum
-spellings, and if or when to generate SQLite. These are not architectural gaps
-until implementation evidence requires a choice.
+The initial modules and enum spellings are now implemented in code and guarded
+by the end-to-end lifecycle acceptance test. They are service contracts to
+exercise through adapters, not justification for a database or a schema
+redesign. Generated SQLite timing and an exceptional repair/redaction policy
+for published artifacts remain unresolved until implementation evidence makes
+them necessary.
