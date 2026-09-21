@@ -57,6 +57,29 @@ def _parse_args(argv=None) -> argparse.Namespace:
                    help="One or more objective names -- a peak, or a campground "
                         "for a trip that is a night at a campsite")
     p.add_argument("--date", required=True, help="Planned trip date (YYYY-MM-DD)")
+    p.add_argument("--canonical", action="store_true",
+                   help="Plan from canonical Git-backed knowledge through the shared "
+                        "service used by MCP. Legacy CSV planning remains the default "
+                        "during migration.")
+    p.add_argument("--repository", default=".",
+                   help="Repository containing canonical/v0 (canonical mode only).")
+    p.add_argument("--route", default="",
+                   help="Explicit route name or ID; ambiguity is never guessed.")
+    p.add_argument("--entry", default="",
+                   help="Explicit entry name or ID (canonical mode only).")
+    p.add_argument("--activity", action="append", default=[],
+                   help="Trip activity such as hiking, backpacking, camping, boating, "
+                        "or swimming; repeat for multiple activities.")
+    p.add_argument("--overnight", action="store_true",
+                   help="Set the canonical overnight activity constraint.")
+    p.add_argument("--participant", action="append", default=[],
+                   help="Participant ID for fulfillment coverage; repeat as needed.")
+    p.add_argument("--equipment", action="append", default=[],
+                   help="Equipment ID for rule context; repeat as needed.")
+    p.add_argument("--as-of", default="", metavar="YYYY-MM-DD",
+                   help="Explicit planning date for deadline status; no wall-clock default.")
+    p.add_argument("--recheck-result", action="append", default=[],
+                   help="Canonical pre-trip recheck manifest ID; repeat as needed.")
     p.add_argument("--peaks-file", default="data/peaks.csv",
                    help="Core peak dataset: name, coordinates, elevation -- "
                         "collection-agnostic (default data/peaks.csv)")
@@ -114,7 +137,24 @@ def _parse_args(argv=None) -> argparse.Namespace:
 
 def main(argv=None) -> int:
     args = _parse_args(argv)
-    trip_date = datetime.date.fromisoformat(args.date)
+    try:
+        trip_date = datetime.date.fromisoformat(args.date)
+        if args.as_of:
+            datetime.date.fromisoformat(args.as_of)
+    except ValueError:
+        print("--date and --as-of must use YYYY-MM-DD", file=sys.stderr)
+        return 2
+
+    if args.canonical:
+        from wayproof.cli_planning import (canonical_exit_code,
+                                           run_canonical_plan,
+                                           write_plan_json)
+        result, summary = run_canonical_plan(args)
+        print(summary)
+        if args.output:
+            write_plan_json(args.output, result)
+            print(f"\nWrote plan to {args.output}")
+        return canonical_exit_code(result)
 
     list_filter = None if args.list.lower() == "all" else args.list
     peaks = load_peaks(args.peaks_file, list_filter=list_filter,

@@ -14,7 +14,9 @@ requirement coverage, bounded Trip Readiness, Pre-trip Recheck, published
 ChangeSet history, and constrained additive proposals are implemented. The
 website now reads exclusively through the canonical service layer and publishes
 automatic discovery pages plus focused Del Valle and Ohlone views. The legacy
-CLI has not yet fully migrated. The initial MCP adapter is implemented as a
+CLI has not yet fully migrated, but `plan.py --canonical` now exposes the
+composed planner for named objectives while preserving the CSV mode during
+transition. The initial MCP adapter is implemented as a
 read-only surface over the same canonical service layer, including bounded
 intent-to-context resolution.
 

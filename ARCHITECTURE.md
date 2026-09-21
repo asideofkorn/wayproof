@@ -263,6 +263,12 @@ every canonical path to match exactly one typed operation in the new manifest.
 CLI, website, importers, and MCP are adapters over the same domain/service layer.
 MCP must not create a second mutation path.
 
+The canonical `plan.py` mode is a thin terminal adapter: it constructs a typed
+intent, calls `CanonicalReadService.plan`, renders the returned object, and can
+serialize that same object as JSON. It has no route, rule, cost, deadline, or
+readiness logic of its own. The CSV-backed mode remains available during
+migration rather than being reinterpreted as canonical knowledge.
+
 The deployed website is a static publication adapter over
 `CanonicalReadService`, not an independent content model. Every canonical
 entity receives an evidence/history detail page. Search and the Parks, Trails,
