@@ -8,6 +8,7 @@ from typing import Any, Iterable, Optional, Tuple
 
 from .canonical_storage import RECORD_SPECS, load_canonical, load_changeset
 from .intent import IntentResolution, resolve_trip_intent
+from .planning import TripPlan, plan_trip
 from .readiness import TripReadiness, evaluate_trip_readiness
 from .recheck import PretripRecheck, evaluate_pretrip_recheck
 from .requirements import RequirementEvaluation, evaluate_requirements
@@ -127,6 +128,12 @@ class CanonicalReadService:
     def resolve_intent(self, intent: TripIntent) -> IntentResolution:
         """Resolve an intent without guessing at ambiguous routes or access."""
         return resolve_trip_intent(self, intent)
+
+    def plan(self, intent: TripIntent,
+             fulfillments: Iterable[Fulfillment] = (),
+             recheck_result_ids: Iterable[str] = ()) -> TripPlan:
+        """Resolve and evaluate one trip through the shared domain boundary."""
+        return plan_trip(self, intent, fulfillments, recheck_result_ids)
 
     def knowledge_gaps_for(self, record_id: str) -> Tuple[KnowledgeGap, ...]:
         """Return explicit gaps that name a record as related context."""

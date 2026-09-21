@@ -249,6 +249,8 @@ The same object exposes:
 
 - `get(record_type, record_id)` and `entity(entity_id)`;
 - `resolve_intent(intent)` for conservative `TripIntent` resolution;
+- `plan(intent, fulfillments=(), recheck_result_ids=())` for integrated
+  resolution, constraint evaluation, readiness, and named rechecks;
 - `requirements(context, fulfillments=())`;
 - `readiness(context, fulfillments=())`; and
 - `pretrip_recheck(context, result_id=...)`.
@@ -263,13 +265,13 @@ storage mutation methods.
 
 ## MCP read server
 
-The initial MCP adapter exposes ten read-only tools over
+The initial MCP adapter exposes eleven read-only tools over
 `CanonicalReadService`:
 
 - `search_entities`, `get_record`, and `get_entity`;
 - `explain_claim`, `get_changes`, and `list_knowledge_gaps`; and
-- `resolve_trip_intent`, `evaluate_requirements`, `evaluate_readiness`, and
-  `pretrip_recheck`.
+- `resolve_trip_intent`, `plan_trip`, `evaluate_requirements`,
+  `evaluate_readiness`, and `pretrip_recheck`.
 
 Install the project, then start its standard-input/output server from the
 repository root:
@@ -291,6 +293,13 @@ accessible entities, and separately identified alternate segments. Those leg
 scopes become ordered planning stages used by requirement and readiness
 evaluation. The evaluation tools also accept an already-resolved context with
 objectives and ordered stages.
+
+`plan_trip` is the composed operation for consumers: it accepts the same intent,
+optional fulfillments, and explicitly named recheck manifests. Ambiguous or
+unknown intent stops before readiness; a partial resolution can still expose a
+separately blocked or ready requirement slice. This prevents a satisfied permit
+from hiding missing route topology, and prevents an unresolved route from being
+treated as permit-free.
 
 The MCP server intentionally exposes no proposal, approval, promotion,
 publication, filesystem, or raw canonical CRUD tools.

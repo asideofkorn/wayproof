@@ -188,6 +188,16 @@ class WayproofReadTools:
         """Resolve named objectives into a bounded canonical planning context."""
         return _plain(self.reads.resolve_intent(trip_intent_from_dict(intent)))
 
+    def plan_trip(self, intent: dict[str, Any],
+                  fulfillments: list[dict[str, Any]] | None = None,
+                  recheck_result_ids: list[str] | None = None) -> dict:
+        """Resolve a trip and evaluate readiness plus explicitly named rechecks."""
+        return _plain(self.reads.plan(
+            trip_intent_from_dict(intent),
+            fulfillments_from_list(fulfillments),
+            _tuple(recheck_result_ids),
+        ))
+
     def evaluate_requirements(self, context: dict[str, Any]) -> dict:
         """Evaluate applicable canonical rules and requirements for a resolved context."""
         return _plain(self.reads.requirements(planning_context_from_dict(context)))
@@ -228,6 +238,7 @@ def create_server(root: Path | str = Path(".")) -> MCPServer:
     server.tool(name="get_changes")(tools.get_changes)
     server.tool(name="list_knowledge_gaps")(tools.list_knowledge_gaps)
     server.tool(name="resolve_trip_intent")(tools.resolve_trip_intent)
+    server.tool(name="plan_trip")(tools.plan_trip)
     server.tool(name="evaluate_requirements")(tools.evaluate_requirements)
     server.tool(name="evaluate_readiness")(tools.evaluate_readiness)
     server.tool(name="pretrip_recheck")(tools.pretrip_recheck)

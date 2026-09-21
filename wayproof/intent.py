@@ -6,7 +6,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Optional, Protocol, Tuple
 
-from .schema import Entity, PlanningContext, Relationship, SpatialScope, TripIntent, TripObjective, TripStage
+from .schema import (Claim, Entity, PlanningContext, Relationship, SpatialScope,
+                     TripIntent, TripObjective, TripStage)
 from .traversal import TraversalPlan, TraversalState, resolve_traversal
 
 
@@ -47,6 +48,7 @@ class IntentReads(Protocol):
     def entity(self, entity_id: str) -> Entity: ...
     def relationships_for(self, entity_id: str) -> Tuple[Relationship, ...]: ...
     def spatial_scopes_for(self, entity_id: str) -> Tuple[SpatialScope, ...]: ...
+    def claims_for(self, subject_id: str) -> Tuple[Claim, ...]: ...
 
 
 def _resolve_name(reads: IntentReads, query: str, kinds=()) -> tuple[Optional[Entity], tuple[Entity, ...]]:
@@ -87,7 +89,11 @@ def _route_access_candidates(reads: IntentReads, route: Entity, predicate: str) 
 
 
 def _scopes(reads: IntentReads, entity: Entity) -> tuple[str, ...]:
-    return tuple(item.scope_id for item in reads.spatial_scopes_for(entity.entity_id))
+    return tuple(sorted({
+        *(item.scope_id for item in reads.spatial_scopes_for(entity.entity_id)),
+        *(scope_id for claim in reads.claims_for(entity.entity_id)
+          for scope_id in claim.spatial_scope_ids),
+    }))
 
 
 def _objective_kind(entity: Entity) -> str:

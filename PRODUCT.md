@@ -168,6 +168,13 @@ complete cost/deadline/conflict
 aggregation, and completion of the legacy CLI migration onto the canonical read
 service.
 
+The read service and MCP now also expose one composed planning operation. It
+resolves the intent, evaluates party/activity/equipment-dependent rules and
+fulfillment coverage when a context exists, and can project explicitly selected
+recheck manifests. Resolution and readiness remain distinct: for example, a
+Whitney permit may be fully covered while the plan remains partial because its
+segment topology is not published.
+
 The deployed website is the first complete canonical read adapter. It publishes
 entity search and evidence/history details; automatic Parks, Trails, Camping,
 Peaks, and Changes indexes; JSON representations and sitemap discovery; and
