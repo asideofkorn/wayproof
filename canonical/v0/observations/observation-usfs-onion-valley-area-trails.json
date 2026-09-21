@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Official Forest Service area map depicts Mount Williamson and Mount Tyndall in relation to Shepherd Pass and the Shepherd Pass Trail.",
+    "observation_id": "observation-usfs-onion-valley-area-trails",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-usfs-onion-valley-area-trails"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

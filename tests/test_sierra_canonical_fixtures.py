@@ -18,8 +18,8 @@ def test_fixture_changeset_is_validated_and_exact():
         ROOT / "changesets/v0/wp-20260920-sierra-reference-fixtures.json"
     )
     assert change.status is ChangeSetStatus.VALIDATED
-    assert len(change.operations) == 78
-    assert len({item.path for item in change.operations}) == 78
+    assert len(change.operations) == 82
+    assert len({item.path for item in change.operations}) == 82
 
 
 def test_williamson_and_tyndall_share_shepherd_pass_access():
@@ -50,6 +50,9 @@ def test_shepherd_profile_and_quota_are_atomic_source_facts():
         "total": 15,
         "six_month_release": 9,
         "two_week_release": 6,
+    }
+    assert claims["claim-shepherd-williamson-tyndall-map-context"].value == {
+        "mapped_peaks": ["peak-mount-williamson", "peak-mount-tyndall"]
     }
 
 

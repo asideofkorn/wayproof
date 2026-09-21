@@ -575,7 +575,7 @@
     {
       "action": "ADD",
       "evidence_refs": [
-        "evidence-shepherd-pass-route-profile"
+        "evidence-shepherd-williamson-tyndall-map-context"
       ],
       "knowledge_gap_refs": [],
       "path": "canonical/v0/relationships/relationship-williamson-approached-shepherd.json",
@@ -586,7 +586,7 @@
     {
       "action": "ADD",
       "evidence_refs": [
-        "evidence-shepherd-pass-route-profile"
+        "evidence-shepherd-williamson-tyndall-map-context"
       ],
       "knowledge_gap_refs": [],
       "path": "canonical/v0/relationships/relationship-tyndall-approached-shepherd.json",
@@ -703,6 +703,44 @@
       "reason": "Publish the official-source Williamson/Tyndall and Whitney reference fixtures with route- and activity-specific permit semantics.",
       "record_id": "relationship-north-fork-day-zone-permit",
       "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-onion-valley-area-trails.json",
+      "reason": "Publish the official Forest Service map context for Williamson, Tyndall, and Shepherd Pass.",
+      "record_id": "source-usfs-onion-valley-area-trails",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-onion-valley-area-trails.json",
+      "reason": "Publish the official Forest Service map context for Williamson, Tyndall, and Shepherd Pass.",
+      "record_id": "observation-usfs-onion-valley-area-trails",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-shepherd-williamson-tyndall-map-context.json",
+      "reason": "Publish the official Forest Service map context for Williamson, Tyndall, and Shepherd Pass.",
+      "record_id": "evidence-shepherd-williamson-tyndall-map-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-shepherd-williamson-tyndall-map-context"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-shepherd-williamson-tyndall-map-context.json",
+      "reason": "Publish the official Forest Service map context for Williamson, Tyndall, and Shepherd Pass.",
+      "record_id": "claim-shepherd-williamson-tyndall-map-context",
+      "record_type": "claim"
     },
     {
       "action": "ADD",
