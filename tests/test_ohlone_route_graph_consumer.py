@@ -17,18 +17,29 @@ from wayproof.canonical_storage import load_canonical
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def _route_graph(snapshot, *, role="official_mainline"):
+def _route_graph(snapshot, *, atomic=False, role="official_mainline"):
     """Return directed adjacency built from canonical segment relationships."""
     relationships = defaultdict(list)
     for item in snapshot.relationships:
         relationships[item.subject_id].append((item.predicate, item.object_id))
 
+    predicate = (
+        "printed_atomic_route_distance_miles"
+        if atomic else "printed_route_distance_miles"
+    )
     distance_claims = {
         item.subject_id: item.value
         for item in snapshot.claims
-        if item.predicate == "printed_route_distance_miles"
+        if item.predicate == predicate
         and item.value.get("route_role") == role
     }
+    if atomic:
+        distance_claims.update({
+            item.subject_id: {**item.value, "distance_miles": 0.0}
+            for item in snapshot.claims
+            if item.predicate == "mapped_route_connector"
+            and item.value.get("route_role") == role
+        })
     graph = defaultdict(list)
     for segment_id, value in distance_claims.items():
         edges = relationships[segment_id]
@@ -89,7 +100,7 @@ def test_consumer_can_retrieve_the_ordered_outside_slice_labels(snapshot):
         (
             item.value
             for item in snapshot.claims
-            if item.predicate == "printed_route_mileage_label"
+            if item.claim_id.startswith("claim-ohlone-map-mainline-mileage-label-")
         ),
         key=lambda value: value["ordinal_stanford_to_lichen_bark"],
     )
@@ -99,16 +110,48 @@ def test_consumer_can_retrieve_the_ordered_outside_slice_labels(snapshot):
     assert labels[-1]["printed_label"] == ".91"
 
 
-def test_full_traverse_query_fails_closed_until_tick_topology_is_published(snapshot):
-    graph = _route_graph(snapshot)
+def test_consumer_can_traverse_stanford_to_lichen_bark(snapshot):
+    result = _path(
+        _route_graph(snapshot, atomic=True),
+        "staging-mission-peak-stanford-avenue",
+        "trailhead-ohlone-lichen-bark",
+    )
+    assert result is not None
+    segments, miles = result
+    assert len(segments) == 52
+    assert miles == pytest.approx(26.90)
+
+
+def test_atomic_path_visits_every_ot_anchor_in_order(snapshot):
+    graph = _route_graph(snapshot, atomic=True)
+    expected = [f"route-node-ohlone-ot{number}" for number in range(1, 41)]
+    node = "staging-mission-peak-stanford-avenue"
+    visited = []
+    while node != "trailhead-ohlone-lichen-bark":
+        assert len(graph[node]) == 1
+        node = graph[node][0][0]
+        if node.startswith("route-node-ohlone-ot"):
+            visited.append(node)
+    assert visited == expected
+
+
+def test_two_connectors_disclose_that_the_map_prints_no_distance(snapshot):
+    graph = _route_graph(snapshot, atomic=True)
+    connectors = [
+        item for item in snapshot.claims
+        if item.predicate == "mapped_route_connector"
+    ]
+    assert len(connectors) == 2
+    assert {item.value["distance_status"] for item in connectors} == {
+        "not_printed"
+    }
     assert _path(
         graph,
-        "access-point-mission-peak-stanford-avenue",
-        "trailhead-ohlone-lichen-bark",
-    ) is None
-
-    gaps = {item.gap_id: item for item in snapshot.gaps}
-    gap = gaps["gap-ohlone-route-graph-unmodeled-sections"]
-    assert "exact map coordinates and junction identities" in gap.question
-    assert "complete Stanford-to-Del-Valle endpoint graph" in gap.reason
-
+        "route-node-ohlone-ot9",
+        "route-node-ohlone-ot10",
+    )[1] == 0.0
+    assert _path(
+        graph,
+        "route-node-ohlone-ot16",
+        "route-node-ohlone-ot17",
+    )[1] == 0.0

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-map-mainline-mileage-label-016"
+    ],
+    "object_id": "trail-ohlone-wilderness",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-leg-ohlone-mainline-016-trail",
+    "subject_id": "route-leg-ohlone-mainline-016",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

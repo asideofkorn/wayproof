@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-mainline-atomic-distance-10"
+    ],
+    "object_id": "route-node-ohlone-ot33",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-leg-ohlone-mainline-040-start",
+    "subject_id": "route-leg-ohlone-mainline-040",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

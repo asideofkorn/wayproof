@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-mainline-connector-02",
+    "evidence_id": "evidence-ohlone-mainline-connector-02",
+    "notes": "The map shows these consecutive route posts connected by the red mainline but prints no distance between them.",
+    "observation_id": "observation-ohlone-map-route-graph-pilot",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ohlone-map-mainline-mileage-label-037"
+    ],
+    "object_id": "route-node-ohlone-mileage-tick-40-1",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-leg-ohlone-mainline-048-end",
+    "subject_id": "route-leg-ohlone-mainline-048",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -25,20 +25,24 @@ def test_pilot_changeset_is_validated_and_exactly_accounts_for_the_slice():
         ROOT / "changesets/v0/wp-20260920-ohlone-route-graph-pilot.json"
     )
     assert change.status is ChangeSetStatus.VALIDATED
-    assert len(change.operations) == 194
-    assert len({item.path for item in change.operations}) == 194
+    assert len(change.operations) == 467
+    assert len({item.path for item in change.operations}) == 467
     assert {item.action.value for item in change.operations} == {"ADD"}
 
 
 def test_numbered_posts_and_route_segments_are_durable_entities(snapshot):
     entities = by_id(snapshot.entities, "entity_id")
-    for number in (*range(26, 36), 40):
+    for number in range(1, 41):
         item = entities[f"route-node-ohlone-ot{number}"]
         assert item.kind == "numbered_trail_post"
     segments = [item for item in snapshot.entities
                 if item.entity_id.startswith("route-segment-ohlone-")]
     assert len(segments) == 13
     assert {item.kind for item in segments} == {"route_segment"}
+    atomic = [item for item in snapshot.entities
+              if item.entity_id.startswith("route-leg-ohlone-mainline-")]
+    assert len(atomic) == 52
+    assert {item.kind for item in atomic} == {"route_segment"}
 
 
 def test_every_segment_has_explicit_endpoints_and_trail_membership(snapshot):
@@ -132,11 +136,10 @@ def test_mapped_water_presence_does_not_become_a_current_availability_claim(snap
     }
 
 
-def test_pilot_does_not_claim_to_be_the_complete_traverse_graph(snapshot):
-    gap = next(item for item in snapshot.gaps
-               if item.gap_id == "gap-ohlone-route-graph-unmodeled-sections")
-    assert "exact map coordinates" in gap.question
-    assert "complete Stanford-to-Del-Valle endpoint graph" in gap.reason
+def test_completed_topology_retires_the_unmodeled_route_gap(snapshot):
+    assert "gap-ohlone-route-graph-unmodeled-sections" not in {
+        item.gap_id for item in snapshot.gaps
+    }
 
 
 def test_every_mainline_mileage_label_outside_detailed_slice_is_preserved(snapshot):
@@ -159,9 +162,9 @@ def test_every_mainline_mileage_label_outside_detailed_slice_is_preserved(snapsh
         ".36", "1.24", ".34", ".25", ".13", "1.10", ".45", ".25",
         "1.91", ".35", ".20", ".33", ".12", ".71", ".91",
     ]
-    assert {item.value["topology_status"] for item in claims} == {
-        "ordered_label_only"
-    }
+    assert {item.value["topology_status"] for item in claims} == {"atomic_leg"}
+    assert all(item.value["start_node_id"] for item in claims)
+    assert all(item.value["end_node_id"] for item in claims)
     assert sum(item.value["distance_miles"] for item in claims) == pytest.approx(
         21.71
     )

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-leg-ohlone-mainline-039",
+    "kind": "route_segment",
+    "name": "Ohlone mainline atomic leg 039"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

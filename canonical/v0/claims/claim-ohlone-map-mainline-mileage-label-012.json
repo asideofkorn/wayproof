@@ -5,22 +5,24 @@
     "evidence_ids": [
       "evidence-ohlone-map-mainline-mileage-label-012"
     ],
-    "predicate": "printed_route_mileage_label",
+    "predicate": "printed_atomic_route_distance_miles",
     "spatial_scope_ids": [
       "scope-ohlone-wilderness-trail"
     ],
-    "subject_id": "trail-ohlone-wilderness",
+    "subject_id": "route-leg-ohlone-mainline-012",
     "temporal_scope": {
       "ends_on": null,
       "starts_on": "2025-08-01"
     },
     "value": {
       "distance_miles": 1.33,
+      "end_node_id": "route-node-ohlone-ot11",
       "map_region": "stanford-to-sunol",
       "ordinal_stanford_to_lichen_bark": 12,
       "printed_label": "1.33",
       "route_role": "official_mainline",
-      "topology_status": "ordered_label_only"
+      "start_node_id": "route-node-ohlone-mileage-tick-11-1",
+      "topology_status": "atomic_leg"
     }
   },
   "record_type": "claim",

@@ -1133,15 +1133,6 @@
       "action": "ADD",
       "evidence_refs": [],
       "knowledge_gap_refs": [],
-      "path": "canonical/v0/gaps/gap-ohlone-route-graph-unmodeled-sections.json",
-      "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
-      "record_id": "gap-ohlone-route-graph-unmodeled-sections",
-      "record_type": "gap"
-    },
-    {
-      "action": "ADD",
-      "evidence_refs": [],
-      "knowledge_gap_refs": [],
       "path": "canonical/v0/derived_results/result-ohlone-ot27-ot29-route-comparison.json",
       "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
       "record_id": "result-ohlone-ot27-ot29-route-comparison",
@@ -1181,9 +1172,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-001"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-001.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-001",
@@ -1192,9 +1181,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-001.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-001",
@@ -1205,9 +1192,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-002"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-002.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-002",
@@ -1216,9 +1201,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-002.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-002",
@@ -1229,9 +1212,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-003"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-003.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-003",
@@ -1240,9 +1221,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-003.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-003",
@@ -1253,9 +1232,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-004"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-004.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-004",
@@ -1264,9 +1241,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-004.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-004",
@@ -1277,9 +1252,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-005"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-005.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-005",
@@ -1288,9 +1261,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-005.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-005",
@@ -1301,9 +1272,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-006"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-006.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-006",
@@ -1312,9 +1281,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-006.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-006",
@@ -1325,9 +1292,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-007"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-007.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-007",
@@ -1336,9 +1301,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-007.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-007",
@@ -1349,9 +1312,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-008"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-008.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-008",
@@ -1360,9 +1321,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-008.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-008",
@@ -1373,9 +1332,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-009"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-009.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-009",
@@ -1384,9 +1341,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-009.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-009",
@@ -1397,9 +1352,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-010"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-010.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-010",
@@ -1408,9 +1361,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-010.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-010",
@@ -1421,9 +1372,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-011"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-011.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-011",
@@ -1432,9 +1381,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-011.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-011",
@@ -1445,9 +1392,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-012"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-012.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-012",
@@ -1456,9 +1401,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-012.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-012",
@@ -1469,9 +1412,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-013"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-013.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-013",
@@ -1480,9 +1421,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-013.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-013",
@@ -1493,9 +1432,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-014"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-014.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-014",
@@ -1504,9 +1441,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-014.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-014",
@@ -1517,9 +1452,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-015"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-015.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-015",
@@ -1528,9 +1461,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-015.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-015",
@@ -1541,9 +1472,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-016"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-016.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-016",
@@ -1552,9 +1481,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-016.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-016",
@@ -1565,9 +1492,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-017"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-017.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-017",
@@ -1576,9 +1501,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-017.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-017",
@@ -1589,9 +1512,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-018"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-018.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-018",
@@ -1600,9 +1521,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-018.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-018",
@@ -1613,9 +1532,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-019"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-019.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-019",
@@ -1624,9 +1541,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-019.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-019",
@@ -1637,9 +1552,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-020"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-020.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-020",
@@ -1648,9 +1561,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-020.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-020",
@@ -1661,9 +1572,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-021"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-021.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-021",
@@ -1672,9 +1581,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-021.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-021",
@@ -1685,9 +1592,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-022"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-022.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-022",
@@ -1696,9 +1601,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-022.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-022",
@@ -1709,9 +1612,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-023"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-023.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-023",
@@ -1720,9 +1621,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-023.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-023",
@@ -1733,9 +1632,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-024"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-024.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-024",
@@ -1744,9 +1641,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-024.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-024",
@@ -1757,9 +1652,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-025"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-025.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-025",
@@ -1768,9 +1661,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-025.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-025",
@@ -1781,9 +1672,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-026"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-026.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-026",
@@ -1792,9 +1681,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-026.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-026",
@@ -1805,9 +1692,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-027"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-027.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-027",
@@ -1816,9 +1701,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-027.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-027",
@@ -1829,9 +1712,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-028"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-028.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-028",
@@ -1840,9 +1721,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-028.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-028",
@@ -1853,9 +1732,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-029"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-029.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-029",
@@ -1864,9 +1741,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-029.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-029",
@@ -1877,9 +1752,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-030"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-030.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-030",
@@ -1888,9 +1761,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-030.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-030",
@@ -1901,9 +1772,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-031"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-031.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-031",
@@ -1912,9 +1781,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-031.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-031",
@@ -1925,9 +1792,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-032"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-032.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-032",
@@ -1936,9 +1801,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-032.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-032",
@@ -1949,9 +1812,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-033"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-033.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-033",
@@ -1960,9 +1821,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-033.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-033",
@@ -1973,9 +1832,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-034"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-034.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-034",
@@ -1984,9 +1841,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-034.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-034",
@@ -1997,9 +1852,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-035"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-035.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-035",
@@ -2008,9 +1861,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-035.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-035",
@@ -2021,9 +1872,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-036"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-036.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-036",
@@ -2032,9 +1881,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-036.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-036",
@@ -2045,9 +1892,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-037"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-037.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-037",
@@ -2056,9 +1901,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-037.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-037",
@@ -2069,9 +1912,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-038"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-038.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-038",
@@ -2080,9 +1921,7 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-038.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-038",
@@ -2093,9 +1932,7 @@
       "evidence_refs": [
         "evidence-ohlone-map-mainline-mileage-label-039"
       ],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-039.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "claim-ohlone-map-mainline-mileage-label-039",
@@ -2104,13 +1941,2815 @@
     {
       "action": "ADD",
       "evidence_refs": [],
-      "knowledge_gap_refs": [
-        "gap-ohlone-route-graph-unmodeled-sections"
-      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-039.json",
       "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
       "record_id": "evidence-ohlone-map-mainline-mileage-label-039",
       "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot2.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot2",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot3.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot3",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot4.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot4",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot5.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot5",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot6.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot6",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot7.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot7",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot8.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot8",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot9.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot9",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot10.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot11.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot11",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot12.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot12",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot13.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot13",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot14.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot14",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot15.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot15",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot16.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot16",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot17.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot17",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot18.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot18",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot19.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot19",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot20.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot20",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot21.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot21",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot22.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot22",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot23.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot23",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot24.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot24",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot25.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot25",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot36.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot36",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot37.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot37",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot38.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot38",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-ot39.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-ot39",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-001.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-001",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-001"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-001-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-001-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-001"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-001-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-001-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-001"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-001-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-001-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-002.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-002",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-002"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-002-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-002-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-002"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-002-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-002-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-002"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-002-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-002-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-003.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-003",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-003"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-003-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-003-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-003"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-003-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-003-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-003"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-003-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-003-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-04-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-04-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-004.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-004",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-005.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-005",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-004"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-004-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-004-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-004"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-004-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-004-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-004"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-004-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-004-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-005"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-005-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-005-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-005"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-005-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-005-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-005"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-005-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-005-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-006.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-006",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-006"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-006-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-006-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-006"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-006-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-006-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-006"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-006-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-006-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-007.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-007",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-007"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-007-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-007-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-007"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-007-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-007-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-007"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-007-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-007-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-008.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-008",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-008"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-008-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-008-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-008"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-008-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-008-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-008"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-008-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-008-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-009.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-009",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-009"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-009-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-009-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-009"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-009-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-009-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-009"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-009-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-009-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-010.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-010",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-010"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-010-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-010-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-010"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-010-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-010-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-010"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-010-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-010-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-connector-01.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-connector-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-connector-01.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-connector-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-connector-01.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-connector-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-01-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-01-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-01-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-01-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-01-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-01-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-11-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-11-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-011.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-011",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-012.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-012",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-011"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-011-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-011-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-011"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-011-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-011-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-011"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-011-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-011-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-012"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-012-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-012-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-012"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-012-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-012-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-012"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-012-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-012-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-013.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-013",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-013"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-013-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-013-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-013"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-013-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-013-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-013"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-013-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-013-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-014.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-014",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-014"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-014-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-014-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-014"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-014-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-014-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-014"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-014-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-014-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-14-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-14-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-015.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-015",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-016.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-016",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-015"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-015-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-015-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-015"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-015-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-015-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-015"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-015-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-015-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-016"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-016-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-016-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-016"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-016-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-016-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-016"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-016-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-016-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-017.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-017",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-017"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-017-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-017-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-017"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-017-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-017-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-017"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-017-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-017-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-018.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-018",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-018"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-018-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-018-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-018"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-018-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-018-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-018"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-018-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-018-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-connector-02.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-connector-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-connector-02.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-connector-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-connector-02.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-connector-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-02-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-02-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-02-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-02-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-connector-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-connector-02-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-connector-02-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-019.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-019",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-019"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-019-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-019-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-019"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-019-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-019-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-019"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-019-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-019-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-020.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-020",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-020"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-020-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-020-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-020"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-020-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-020-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-020"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-020-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-020-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-20-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-20-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-20-2.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-20-2",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-021.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-021",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-022.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-022",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-023.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-023",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-021"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-021-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-021-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-021"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-021-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-021-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-021"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-021-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-021-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-022"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-022-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-022-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-022"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-022-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-022-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-022"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-022-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-022-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-023"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-023-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-023-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-023"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-023-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-023-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-023"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-023-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-023-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-024.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-024",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-024"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-024-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-024-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-024"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-024-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-024-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-024"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-024-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-024-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-025.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-025",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-025"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-025-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-025-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-025"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-025-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-025-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-025"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-025-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-025-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-026.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-026",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-026-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-026-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-026-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-026-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-026-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-026-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-027.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-027",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-027"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-027-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-027-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-027"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-027-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-027-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-027"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-027-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-027-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-25-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-25-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-028.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-028",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-029.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-029",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-028"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-028-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-028-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-028"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-028-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-028-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-028"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-028-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-028-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-029"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-029-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-029-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-029"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-029-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-029-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-029"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-029-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-029-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-030.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-030",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-030"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-030-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-030-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-030"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-030-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-030-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-030"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-030-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-030-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-031.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-031",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-01.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-01.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-031-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-031-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-031-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-031-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-01"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-031-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-031-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-032.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-032",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-02.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-02.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-032-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-032-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-032-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-032-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-02"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-032-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-032-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-29-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-29-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-29-2.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-29-2",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-033.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-033",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-03"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-03.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-03.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-034.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-034",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-04"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-04.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-04.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-035.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-035",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-05"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-05.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-05.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-03"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-033-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-033-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-03"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-033-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-033-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-03"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-033-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-033-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-04"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-034-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-034-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-04"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-034-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-034-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-04"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-034-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-034-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-05"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-035-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-035-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-05"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-035-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-035-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-05"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-035-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-035-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-036.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-036",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-06"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-06.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-06.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-06",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-06"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-036-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-036-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-06"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-036-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-036-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-06"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-036-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-036-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-037.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-037",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-07"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-07.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-07.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-07",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-07"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-037-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-037-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-07"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-037-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-037-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-07"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-037-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-037-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-038.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-038",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-08.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-08.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-038-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-038-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-038-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-038-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-08"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-038-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-038-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-039.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-039",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-09"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-09.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-09",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-09.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-09",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-09"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-039-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-039-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-09"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-039-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-039-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-09"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-039-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-039-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-040.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-040",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-10"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-10.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-10",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-10.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-10",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-10"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-040-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-040-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-10"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-040-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-040-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-10"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-040-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-040-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-041.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-041",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-11"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ohlone-mainline-atomic-distance-11.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "claim-ohlone-mainline-atomic-distance-11",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ohlone-mainline-atomic-distance-11.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "evidence-ohlone-mainline-atomic-distance-11",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-11"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-041-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-041-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-11"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-041-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-041-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-mainline-atomic-distance-11"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-041-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-041-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-042.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-042",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-031"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-042-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-042-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-031"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-042-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-042-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-031"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-042-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-042-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-37-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-37-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-043.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-043",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-044.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-044",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-032"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-043-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-043-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-032"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-043-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-043-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-032"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-043-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-043-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-033"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-044-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-044-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-033"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-044-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-044-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-033"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-044-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-044-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-045.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-045",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-034"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-045-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-045-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-034"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-045-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-045-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-034"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-045-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-045-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-39-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-39-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-046.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-046",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-047.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-047",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-035"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-046-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-046-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-035"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-046-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-046-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-035"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-046-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-046-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-036"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-047-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-047-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-036"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-047-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-047-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-036"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-047-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-047-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-ohlone-mileage-tick-40-1.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-node-ohlone-mileage-tick-40-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-048.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-048",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-049.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-049",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-037"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-048-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-048-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-037"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-048-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-048-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-037"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-048-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-048-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-038"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-049-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-049-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-038"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-049-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-049-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-038"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-049-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-049-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-leg-ohlone-mainline-050.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "route-leg-ohlone-mainline-050",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-039"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-050-start.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-050-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-039"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-050-end.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-050-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-039"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-leg-ohlone-mainline-050-trail.json",
+      "reason": "Publish the missing official-route anchors, atomic mileage legs, and intermediate map ticks needed for end-to-end traversal.",
+      "record_id": "relationship-route-leg-ohlone-mainline-050-trail",
+      "record_type": "relationship"
     }
   ],
   "schema_version": 0,
