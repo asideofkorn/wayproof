@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Round Valley Regional Preserve.",
+    "entity_id": "park-round-valley-regional-preserve",
+    "kind": "park",
+    "scope_id": "scope-round-valley-regional-preserve"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

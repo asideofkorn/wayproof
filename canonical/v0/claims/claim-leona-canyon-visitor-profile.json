@@ -1,0 +1,45 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-leona-canyon-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-leona-canyon-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-leona-canyon-open-space-regional-preserve"
+    ],
+    "subject_id": "park-leona-canyon-open-space-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Campus Drive staging area",
+        "Merritt College"
+      ],
+      "acreage": 290,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking"
+      ],
+      "address": "Campus Drive off Keller Avenue, Oakland",
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "closure": "Leona Trail between Artemisia Trail and Pyrite Trail",
+        "heavy_equipment": true,
+        "reason": "culvert repair"
+      },
+      "developed_facilities": false,
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "merritt_college_parking": {
+        "fee_required": true,
+        "weekends": "closed"
+      },
+      "parking_fee_usd": 0,
+      "water_access_rule": "People and dogs are not allowed in Rifle Range Creek; dogs that will not stay out must be leashed.",
+      "wheelchair_accessible_facilities": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,59 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sibley-volcanic-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-sibley-volcanic-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-sibley-volcanic-regional-preserve"
+    ],
+    "subject_id": "park-sibley-volcanic-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Skyline Boulevard entrance",
+        "Old Tunnel Road staging area",
+        "Eastport staging area",
+        "two Grizzly Peak Boulevard walk-in entrances"
+      ],
+      "accessible_routes": [
+        "Round Top Road",
+        "600-foot paved path north of the visitor center to a viewing platform",
+        "Quarry Road from Old Tunnel Road"
+      ],
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding"
+      ],
+      "addresses": {
+        "eastport": "Pinehurst Road, Orinda, CA 94563",
+        "main": "6800 Skyline Boulevard, Oakland, CA 94611",
+        "old_tunnel_road": "Quarry Road, Orinda, CA 94564"
+      },
+      "backpack_camp": {
+        "capacity": 15,
+        "facilities": [
+          "two picnic tables, one ADA",
+          "serving table",
+          "pit toilet"
+        ],
+        "hike_in_miles": 0.2,
+        "minimum_advance_business_days": 2,
+        "reservation_required": true
+      },
+      "parking_fee_usd": 0,
+      "seasonal_hours": "07:00–18:00 November–February; 07:00–22:00 March–October",
+      "trail_rules": {
+        "bicycles": "allowed on wider fire trails and paved roads, with published exceptions",
+        "dogs": "allowed in Sibley but not on adjacent Huckleberry trails",
+        "most_trails": "hiking and equestrian only"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
