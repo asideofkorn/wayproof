@@ -102,8 +102,15 @@ relationship hop, projected spatial scopes, trip date, and explicit activity
 applicability. Canonical knowledge gaps identify supported conflict threads.
 Every projected input retains evidence and answerability; volatile open-ended
 claims require a current check. This layer identifies planning components but
-does not yet add prices, choose an inventory item, or calculate whether a
-deadline has passed.
+does not infer quantities or choose among fee alternatives.
+
+Operational evaluation sits on that projection. It totals only a set of
+applicable inputs that each expose exactly one monetary amount. Structured
+advance windows can be converted to trip-relative opening and closing dates;
+their status requires an explicit caller-provided `as_of_date`, avoiding hidden
+wall-clock behavior. Published inventory never becomes live availability.
+Explicit effective closed status can block, while open-ended and seasonal
+closure claims require rechecking. Conflict gaps keep the evaluation partial.
 
 Ordered `TripStage` values locate relevant portions of a trip. Route primitives
 represent routes and route variants; access primitives represent ways to reach
@@ -172,9 +179,10 @@ can be valid history while being too old to establish a future condition.
 
 The implemented Trip Readiness slice aggregates rule applicability,
 requirements, fulfillment coverage, linked gaps, answerability, and provenance.
-The composed plan now carries explicitly classified cost, deadline, inventory,
-closure, and conflict inputs alongside that requirement slice; arithmetic and
-operational decisions over those inputs are not all integrated yet. Pre-trip Recheck projects the canonical
+The composed plan now carries explicitly classified and boundedly evaluated
+cost, deadline, inventory, closure, and conflict inputs alongside that
+requirement slice; quantity selection and live operational integrations remain.
+Pre-trip Recheck projects the canonical
 recheck manifest onto trip date and spatial scope, distinguishes answered,
 unknown, and needs-current-check results, and returns the sources to revisit.
 
