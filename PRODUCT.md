@@ -156,8 +156,9 @@ constrained DRAFT proposal
 This proves the trust boundary and the central Whitney/Del Valle/Ohlone
 semantics. It does not yet complete the whole product contract. Remaining MVP
 work includes broader `TripIntent` resolution, complete cost/deadline/conflict
-aggregation, and migration of the legacy CLI and website onto the canonical
-read service.
+aggregation, and completion of the legacy CLI and website migration onto the
+canonical read service. Canonical website search and entity details are the
+first migrated consumer slice.
 
 ## Reference and regression fixtures
 

@@ -84,7 +84,9 @@ coverage mismatches, historical rules, and volatile water/access rechecks.
 
 **Status: in progress.** The shared read-only service facade now supports entity
 search, typed lookup, evidence provenance, published ChangeSet history,
-requirements, readiness, and recheck. Adapter migration is still pending.
+requirements, readiness, and recheck. The website's canonical search and entity
+detail pilot now use that facade; remaining website, CLI, and MCP adapter
+migration is still pending.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
