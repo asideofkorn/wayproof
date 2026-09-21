@@ -1,0 +1,60 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cull-canyon-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-cull-canyon-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-cull-canyon-regional-recreation-area"
+    ],
+    "subject_id": "park-cull-canyon-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Cull Canyon Road entrance",
+        "Columbia Drive walk-in entrances",
+        "Heyer Avenue walk-in entrance"
+      ],
+      "activities": [
+        "dogs",
+        "hiking",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "18825 Cull Canyon Road, Castro Valley, CA 94552",
+      "curfew": "22:00–05:00",
+      "parking_fee_usd": 0,
+      "picnicking": {
+        "reservable_sites_outside_swim_complex": true,
+        "reservation_required_group_size": 30
+      },
+      "seasonal_parking_lot_hours": "08:00–22:00 March–November; 08:00–20:00 December–February",
+      "swim_facility": {
+        "capacity_rule": "no new entries for the remainder of the day after capacity is reached",
+        "cashless": true,
+        "dogs_allowed": false,
+        "fee_required": true,
+        "hours": "11:00–18:00; water closes 17:30",
+        "restrictions": [
+          "no alcohol",
+          "no glass containers",
+          "no portable barbecues"
+        ],
+        "season": "weekends and holidays May 16–September 27"
+      },
+      "trail": {
+        "connections": [
+          "Anthony Chabot Regional Park",
+          "Garin Regional Park"
+        ],
+        "ebmud_permit_required_section": true,
+        "name": "Chabot-to-Garin Regional Trail"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

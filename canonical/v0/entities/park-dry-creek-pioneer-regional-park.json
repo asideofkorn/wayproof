@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-dry-creek-pioneer-regional-park",
+    "kind": "park",
+    "name": "Dry Creek Pioneer Regional Park"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

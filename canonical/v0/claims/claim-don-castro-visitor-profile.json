@@ -1,0 +1,64 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-don-castro-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-don-castro-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-don-castro-regional-recreation-area"
+    ],
+    "subject_id": "park-don-castro-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": "Woodroe Avenue entrance; approximately 10-minute walk from the nearest published bus stop",
+      "accessible_facilities": [
+        "restrooms",
+        "drinking water",
+        "parking",
+        "loaner beach wheelchairs"
+      ],
+      "acreage": 101,
+      "activities": [
+        "fishing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "22400 Woodroe Avenue, Hayward, CA 94541",
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "fishing": {
+        "california_license_required_age": 16,
+        "ebrpd_fishing_access_permit_required": false
+      },
+      "payment": "cashless",
+      "reservoir": {
+        "boating": false,
+        "body_contact": false,
+        "dogs_in_water": false,
+        "name": "San Lorenzo Creek Reservoir",
+        "swimming": false
+      },
+      "seasonal_parking_fee_usd": 5,
+      "seasonal_parking_lot_hours": "08:00–22:00 March–October; 08:00–20:00 November–February",
+      "swim_lagoon": {
+        "animals": "only ADA-trained service dogs",
+        "fee_required": true,
+        "hours": "11:00–17:30; gates close 18:00",
+        "season": "weekends and holidays May 16–September 27"
+      },
+      "trail_connections": [
+        "Bay Area Ridge Trail",
+        "Chabot-to-Garin Trail",
+        "Five Canyons Open Space"
+      ],
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

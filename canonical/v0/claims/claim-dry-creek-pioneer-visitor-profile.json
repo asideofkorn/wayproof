@@ -1,0 +1,63 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dry-creek-pioneer-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-dry-creek-pioneer-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-dry-creek-pioneer-regional-park"
+    ],
+    "subject_id": "park-dry-creek-pioneer-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "May Road entrance and Dry Creek staging area",
+      "accessible_facilities": [
+        "parking at Dry Creek Garden",
+        "restrooms at Garin Barn",
+        "chemical toilet near Jordan Pond",
+        "drinking fountains in picnic area",
+        "Garin meadow service roads"
+      ],
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "fishing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "550 May Road, Union City, CA 94587",
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "dry_creek_garden": "closed until further notice due to storm damage; iris garden opens seasonally in spring"
+      },
+      "dog_rules": "six-foot leash in parking lots, picnic areas, lawns, and playfields; voice control elsewhere with leash ready",
+      "fishing": {
+        "california_license_required_age": 16,
+        "location": "Jordan Pond"
+      },
+      "parking_fee_usd": 5,
+      "relationship": {
+        "adjacent_park": "Garin Regional Park",
+        "combined_acres": 5857,
+        "combined_trail_miles_over": 20
+      },
+      "seasonal_gate_hours": "08:00 opening; closing varies from 18:00 to 21:00 by published date bands",
+      "trail_rules": [
+        "many unpaved trails suitable for bicycles",
+        "motor vehicles prohibited",
+        "no alcohol in backcountry",
+        "equestrians have right of way"
+      ],
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
