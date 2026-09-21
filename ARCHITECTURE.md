@@ -11,6 +11,9 @@ complete legacy-corpus audit that found no case requiring a redesign.
 
 The architecture is domain-first and storage-independent. Names below identify
 durable concepts, not final Python classes, files, tables, or enum spellings.
+The canonical website now exercises the shared read boundary at publication
+scale; the remaining hybrid boundary is primarily the legacy CLI and the
+not-yet-implemented MCP adapters.
 
 ## Architectural principles
 
@@ -216,6 +219,18 @@ every canonical path to match exactly one typed operation in the new manifest.
 CLI, website, importers, and MCP are adapters over the same domain/service layer.
 MCP must not create a second mutation path.
 
+The deployed website is a static publication adapter over
+`CanonicalReadService`, not an independent content model. Every canonical
+entity receives an evidence/history detail page. Search and the Parks, Trails,
+Camping, and Peaks directories are generated from canonical entity kinds;
+published ChangeSet operations generate the Changes page. Their HTML, JSON
+indexes, and sitemap entries are rebuilt after promotion to `main`. Focused
+destination and corridor pages may compose more useful views from the same read
+service, as Del Valle and the Ohlone Wilderness Trail do, but must not own
+parallel facts or planning logic. Volatile conditions and rechecks remain
+contextual to those entities and trips rather than forming a global status
+surface.
+
 Schema migrations change representation rather than outdoor knowledge. They
 declare source and target versions, preserve provenance, produce explicit gaps
 instead of invented values, and never rewrite historical promoted ChangeSets.
@@ -231,6 +246,11 @@ excludes rules, derived results, runtime requirements/fulfillments,
 `REPLACE`/`REMOVE`, candidate preparation, approval, and promotion. Raw
 canonical CRUD, arbitrary SQL, and direct agent promotion are not part of the
 authoring surface.
+
+The current EBRPD coverage expansion validates this separation: dozens of new
+park profiles passed through the ordinary Source-to-Claim and ChangeSet
+lifecycle, then appeared automatically in the website's canonical directories.
+No destination-specific schema or manually maintained web catalog was required.
 
 ## Legacy corpus audit and salvage policy
 
