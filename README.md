@@ -69,9 +69,9 @@ say so plainly: declining is a usable answer; being wrong is not.
 
 ## `plan`: Objective + Date
 
-The established `plan.py` command remains the current end-user planner while
-its behavior is migrated behind the canonical read service. Its quick-start
-commands appear below.
+`plan.py --canonical` is the terminal adapter over the same composed planning
+service used by MCP. The established CSV-backed mode remains the default during
+the transition so unsupported legacy behavior is not silently removed.
 
 ## Trust model
 
@@ -174,6 +174,32 @@ Run the complete test suite:
 ```bash
 python -m pytest -q
 ```
+
+## Canonical CLI quick start
+
+Resolve a route-specific Whitney request without guessing the route or shape:
+
+```bash
+python plan.py "Mount Whitney" --date 2027-08-12 --canonical \
+  --route "Mount Whitney Trail" --entry "Whitney Portal" \
+  --exit "Whitney Portal" --activity hiking --overnight \
+  --participant alice --participant bob --as-of 2027-05-20
+```
+
+Resolve the published Ohlone traversal and request its water recheck manifest:
+
+```bash
+python plan.py "Ohlone Wilderness Trail" --date 2027-09-05 --canonical \
+  --entry "Mission Peak Stanford Avenue Staging Area" \
+  --exit "Lichen Bark Ohlone Trailhead" --activity backpacking \
+  --recheck-result result-ohlone-lichen-bark-pretrip-recheck \
+  --output plan.json
+```
+
+Human output summarizes resolution, traversal, readiness, operational inputs,
+conflicts, and rechecks. JSON output is the complete composed domain result.
+Ambiguous or unknown intent exits nonzero; a resolved partial plan remains a
+successful query with explicit issues.
 
 ## Legacy CLI quick start
 

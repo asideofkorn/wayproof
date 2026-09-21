@@ -99,7 +99,9 @@ and Ohlone trail guides. It also generates corresponding JSON indexes and
 sitemap discovery. A read-only MCP server now exposes search, typed lookup,
 provenance, history, knowledge gaps, bounded intent resolution, requirements,
 readiness, contextual recheck, and the composed planning operation through the
-same facade. CLI migration remains.
+same facade. A canonical `plan.py` mode now calls that composed operation and
+renders human or complete JSON output; CSV-backed planning remains the default
+during transition.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
@@ -118,9 +120,9 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** migrate useful legacy CLI behavior onto the composed
-planner, while leaving live inventory/closure integrations and cost-option
-selection explicitly incomplete.
+**Next capability gate:** compare the canonical mode against retained legacy
+user stories, then decide which remaining inspection/discovery behaviors merit
+canonical adapters before making canonical planning the default.
 
 ## M3 — Constrained contribution workflow
 
