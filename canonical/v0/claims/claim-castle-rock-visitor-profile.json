@@ -1,0 +1,55 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-castle-rock-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-castle-rock-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-castle-rock-regional-recreation-area"
+    ],
+    "subject_id": "park-castle-rock-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Castle Rock main entrance",
+        "Orchard staging area",
+        "equestrian parking",
+        "Borges Ranch trailhead"
+      ],
+      "access_notes": {
+        "front_gate_to_pool_miles": 0.25,
+        "orchard_staging": "closed during winter and wet weather",
+        "orchard_staging_to_pool_miles": 0.5,
+        "shuttle": false
+      },
+      "accessible_facilities": [
+        "pathways",
+        "restrooms",
+        "changing rooms",
+        "drinking fountains",
+        "pool and lift"
+      ],
+      "activities": [
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "1700 Castle Rock Road, Walnut Creek, CA 94598",
+      "annual_closure": "Pine Canyon rock formations close February 1 through July 31 for peregrine falcon nesting",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "seasonal_parking_lot_hours": "07:30 opening; closing varies from 19:00 to 21:00 by month",
+      "setting": "within Diablo Foothills Regional Park",
+      "swim_complex": {
+        "capacity": 105,
+        "entry_fee_required": true,
+        "hours": "11:00–18:00 weekends and holidays May 16–September 27",
+        "lifeguard_required": true
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

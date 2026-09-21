@@ -1,0 +1,76 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-crown-beach-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-crown-beach-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-robert-w-crown-memorial-state-beach"
+    ],
+    "subject_id": "park-robert-w-crown-memorial-state-beach",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Crab Cove North Beach",
+        "Otis Drive entrance",
+        "five Shoreline Drive walk-in entrances"
+      ],
+      "accessible_facilities": [
+        "Neptune and Crolls Garden picnic areas",
+        "Rocky Shoreline Tide Ramp",
+        "bathhouse",
+        "Doug Siden Visitor Center",
+        "parking",
+        "paved trails",
+        "loaner beach wheelchairs"
+      ],
+      "activities": [
+        "boating",
+        "dogs",
+        "fishing",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "Eighth Street and Otis Drive, Alameda, CA",
+      "bathrooms_close": "18:30",
+      "beach_miles": 2.5,
+      "boating": {
+        "launch_facility": false,
+        "permitted": [
+          "sailboards",
+          "kayaks",
+          "car-top inflatables"
+        ]
+      },
+      "bus_fee_usd": 25,
+      "current_access": {
+        "as_of": "2026-09-20",
+        "elsie_roemer_bird_sanctuary": "no entry during restoration"
+      },
+      "dogs": {
+        "beach": false,
+        "lawn_and_paved_paths": true,
+        "six_foot_leash_required": true
+      },
+      "fishing": {
+        "california_license_required_age": 16,
+        "ebrpd_fishing_access_permit_required": false
+      },
+      "gate_closes": "19:00",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 5,
+      "payment": "cashless",
+      "swimming": {
+        "allowed": "year-round during park hours",
+        "lifeguards": false,
+        "water_quality_check_recommended": true
+      },
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Robert W. Crown Memorial State Beach.",
+    "entity_id": "park-robert-w-crown-memorial-state-beach",
+    "kind": "park",
+    "scope_id": "scope-robert-w-crown-memorial-state-beach"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

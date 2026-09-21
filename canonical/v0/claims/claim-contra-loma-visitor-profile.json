@@ -1,0 +1,61 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-contra-loma-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Frederickson Lane main entrance",
+        "swim lagoon",
+        "boat launch",
+        "ADA fishing dock",
+        "three walk-in entrances"
+      ],
+      "accessible_facilities": [
+        "restrooms",
+        "drinking fountains",
+        "parking",
+        "south fishing dock by paved trail",
+        "picnic areas",
+        "pool lift",
+        "loaner beach wheelchair"
+      ],
+      "acreage": 775,
+      "activities": [
+        "boating",
+        "fishing",
+        "hiking",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "1200 Frederickson Lane, Antioch, CA 94509",
+      "alcohol_allowed": false,
+      "bus_fee_usd": 25,
+      "current_alerts": {
+        "as_of": "2026-09-20",
+        "blue_green_algae": "no advisory posted",
+        "golden_mussels": "detected; boats launched here are quarantined 30 days from other inspected lakes",
+        "lake_view_trail": "closed at cattle pond due to storm damage"
+      },
+      "fishing": {
+        "district_fishing_permit_required": true
+      },
+      "parking_fee_usd": 5,
+      "reservoir_acres": 80,
+      "seasonal_hours": "opening varies from 06:00 to 07:00 and closing from 17:30 to 20:30 by month",
+      "swim_lagoon": "closed for water-quality and maintenance challenges",
+      "trail_connection": "Black Diamond Mines Regional Preserve",
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

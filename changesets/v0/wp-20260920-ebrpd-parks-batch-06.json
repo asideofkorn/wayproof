@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-parks-batch-06",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-castle-rock-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-castle-rock-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-castle-rock-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-castle-rock-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-castle-rock-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-castle-rock-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-castle-rock-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-castle-rock-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-castle-rock-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-castle-rock-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-castle-rock-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-castle-rock-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-castle-rock-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-contra-loma-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-contra-loma-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-contra-loma-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-contra-loma-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-contra-loma-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-contra-loma-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-contra-loma-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-contra-loma-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-contra-loma-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-contra-loma-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-contra-loma-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-contra-loma-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-contra-loma-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-coyote-hills-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-coyote-hills-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-coyote-hills-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-coyote-hills-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-coyote-hills-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-coyote-hills-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-coyote-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-coyote-hills-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-coyote-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-coyote-hills-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-coyote-hills-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-coyote-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-coyote-hills-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-robert-w-crown-memorial-state-beach.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-robert-w-crown-memorial-state-beach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-robert-w-crown-memorial-state-beach.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-robert-w-crown-memorial-state-beach",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-crown-beach-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-crown-beach-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-crown-beach-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-crown-beach-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-crown-beach-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-crown-beach-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-crown-beach-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-crown-beach-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-crown-beach-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four additional previously uncaptured EBRPD park visitor profiles."
+}
