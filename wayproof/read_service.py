@@ -1,0 +1,127 @@
+"""Stable read-only service boundary over canonical Wayproof knowledge."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Iterable, Optional, Tuple
+
+from .canonical_storage import RECORD_SPECS, load_canonical, load_changeset
+from .readiness import TripReadiness, evaluate_trip_readiness
+from .recheck import PretripRecheck, evaluate_pretrip_recheck
+from .requirements import RequirementEvaluation, evaluate_requirements
+from .schema import (ChangeAction, Claim, Entity, Evidence, Fulfillment,
+                     Observation, PlanningContext, Source)
+
+
+@dataclass(frozen=True)
+class ClaimProvenance:
+    claim: Claim
+    evidence: Tuple[Evidence, ...]
+    observations: Tuple[Observation, ...]
+    sources: Tuple[Source, ...]
+
+
+@dataclass(frozen=True)
+class ChangeHistoryEntry:
+    change_set_id: str
+    summary: str
+    action: ChangeAction
+    record_type: str
+    record_id: str
+    path: str
+    reason: str
+    evidence_refs: Tuple[str, ...]
+    knowledge_gap_refs: Tuple[str, ...]
+
+
+class CanonicalReadService:
+    """One consumer API for reads; all writes remain behind the write service."""
+
+    def __init__(self, root: Path):
+        self._root = Path(root)
+        self._records = load_canonical(self._root)
+        self._indexes = self._build_indexes()
+
+    def _build_indexes(self):
+        indexes = {}
+        for record_type, (collection, identifier, _) in RECORD_SPECS.items():
+            indexes[record_type] = {
+                getattr(item, identifier): item
+                for item in getattr(self._records, collection)
+            }
+        return indexes
+
+    def refresh(self) -> None:
+        """Reload a newly published canonical snapshot from Git-backed files."""
+        self._records = load_canonical(self._root)
+        self._indexes = self._build_indexes()
+
+    def get(self, record_type: str, record_id: str) -> Any:
+        if record_type not in self._indexes:
+            raise KeyError(f"unknown record type: {record_type}")
+        try:
+            return self._indexes[record_type][record_id]
+        except KeyError as exc:
+            raise KeyError(f"unknown {record_type}: {record_id}") from exc
+
+    def entity(self, entity_id: str) -> Entity:
+        return self.get("entity", entity_id)
+
+    def search_entities(self, query: str = "", kinds: Iterable[str] = ()) -> Tuple[Entity, ...]:
+        needle = query.strip().casefold()
+        allowed = {item.casefold() for item in kinds}
+        matches = (
+            item for item in self._records.entities
+            if (not allowed or item.kind.casefold() in allowed)
+            and (not needle or needle in item.name.casefold()
+                 or needle in item.entity_id.casefold())
+        )
+        return tuple(sorted(matches, key=lambda item: (item.name.casefold(), item.entity_id)))
+
+    def explain_claim(self, claim_id: str) -> ClaimProvenance:
+        claim = self.get("claim", claim_id)
+        evidence = tuple(self.get("evidence", item) for item in claim.evidence_ids)
+        observations = tuple(
+            self.get("observation", item.observation_id) for item in evidence
+        )
+        sources = tuple(dict.fromkeys(
+            self.get("source", item.source_id) for item in observations
+        ))
+        return ClaimProvenance(claim, evidence, observations, sources)
+
+    def changes(self, record_id: Optional[str] = None,
+                record_type: Optional[str] = None) -> Tuple[ChangeHistoryEntry, ...]:
+        entries = []
+        for path in sorted((self._root / "changesets" / "v0").glob("*.json")):
+            change = load_changeset(path)
+            for operation in change.operations:
+                if record_id is not None and operation.record_id != record_id:
+                    continue
+                if record_type is not None and operation.record_type != record_type:
+                    continue
+                entries.append(ChangeHistoryEntry(
+                    change_set_id=change.change_set_id,
+                    summary=change.summary,
+                    action=operation.action,
+                    record_type=operation.record_type,
+                    record_id=operation.record_id,
+                    path=operation.path,
+                    reason=operation.reason,
+                    evidence_refs=operation.evidence_refs,
+                    knowledge_gap_refs=operation.knowledge_gap_refs,
+                ))
+        return tuple(entries)
+
+    def requirements(self, context: PlanningContext,
+                     fulfillments: Iterable[Fulfillment] = ()) -> RequirementEvaluation:
+        return evaluate_requirements(self._records.rules, context, fulfillments)
+
+    def readiness(self, context: PlanningContext,
+                  fulfillments: Iterable[Fulfillment] = ()) -> TripReadiness:
+        return evaluate_trip_readiness(self._records, context, fulfillments)
+
+    def pretrip_recheck(self, context: PlanningContext,
+                        result_id: str = "result-del-valle-pretrip-recheck"
+                        ) -> PretripRecheck:
+        return evaluate_pretrip_recheck(self._records, context, result_id)
