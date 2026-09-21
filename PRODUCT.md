@@ -7,10 +7,12 @@ specific objective and date into an executable plan: how the trip is accessed,
 which constraints apply, what must be obtained or done, when action is needed,
 and what evidence supports every answer.
 
-The present repository is Sierra Nevada- and SPS-focused and already provides a
-working planning CLI and research corpus. This document defines the product
-direction those capabilities are moving toward; it does not claim that the
-target architecture is implemented today.
+The repository remains Sierra Nevada- and public-lands focused and provides a
+working legacy planning CLI, a research corpus, and the first implemented
+canonical planning services. Canonical Schema v0, controlled publication,
+requirement coverage, bounded Trip Readiness, Pre-trip Recheck, published
+ChangeSet history, and constrained additive proposals are implemented. The CLI,
+website, and future MCP adapter have not yet fully moved to those services.
 
 ## Product promise
 
@@ -135,6 +137,28 @@ The MVP is complete when Wayproof can take a bounded real trip and:
 MVP does not require nationwide coverage, exact route navigation, a database,
 automated booking, or autonomous publication by an AI agent.
 
+### Current implementation status
+
+The executable lifecycle currently demonstrates the core contract end to end:
+
+```text
+constrained DRAFT proposal
+  -> validation
+  -> separate candidate preparation
+  -> exact publication-diff verification
+  -> Git-backed canonical files and ChangeSet history
+  -> read service
+  -> requirement coverage
+  -> Trip Readiness
+  -> Pre-trip Recheck
+```
+
+This proves the trust boundary and the central Whitney/Del Valle/Ohlone
+semantics. It does not yet complete the whole product contract. Remaining MVP
+work includes broader `TripIntent` resolution, complete cost/deadline/conflict
+aggregation, and migration of the legacy CLI and website onto the canonical
+read service.
+
 ## Reference and regression fixtures
 
 The product contract is grounded in real journeys and adversarial cases:
@@ -152,9 +176,6 @@ The product contract is grounded in real journeys and adversarial cases:
 - boating and invasive-species controls: equipment identity and prior history,
   inspection, quarantine/dry-out, decontamination, and vessel-specific
   credentials;
-- the California 14ers social-water thread: multiple reporters, screenshots,
-  uncertain dates and geographic fit, and no unsupported inference of current
-  water availability; and
 - the eight adversarial schema cases covering legal versus physical access,
   water evidence, partial route resolution, coverage mismatch, supersession,
   unknown versus unavailable, compound scope, and evidence disagreement.
@@ -170,9 +191,9 @@ Wayproof complements rather than replaces navigation products such as CalTopo,
 Gaia GPS, and similar tools. It does not manufacture an exact route from nearby
 geometry.
 
-The following remain intentionally unresolved until implementation provides
-evidence: exact Python module/class layout, exact enum spellings, and whether or
-when a generated SQLite read index is useful. Canonical storage will use
-versioned, deterministic, one-record-per-file JSON; ChangeSets will be small
-public domain-intent manifests alongside Git history rather than a second
+The initial Python service boundaries and wire spellings now exist and may
+evolve compatibly as adapters exercise them. Whether or when a generated SQLite
+read index is useful remains intentionally unresolved. Canonical storage uses
+versioned, deterministic, one-record-per-file JSON; ChangeSets are small public
+domain-intent manifests alongside Git history rather than a second
 version-control system.
