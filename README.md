@@ -331,8 +331,10 @@ additional read index or transactional service.
 [wayproof.dev](https://wayproof.dev) is generated from this repository and
 deployed through GitHub Pages. Canonical search and entity-detail pages consume
 the shared read service and present claims, source evidence, knowledge gaps,
-relationships, and published ChangeSet history. Established trailhead pages
-remain CSV-backed while the rest of the site migrates incrementally, without
+relationships, and published ChangeSet history. The Del Valle destination view
+adds visitor-oriented access, camping, lake, Ohlone Trail, and Pre-trip Recheck
+sections over those same services. Established trailhead pages remain
+CSV-backed while the rest of the site migrates incrementally, without
 duplicating domain logic.
 
 ## Development
