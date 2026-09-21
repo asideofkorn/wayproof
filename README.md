@@ -49,70 +49,21 @@ depend on questions such as:
 Wayproof prefers an explicit `UNKNOWN` or `NEEDS_CURRENT_CHECK` result to a
 confident unsupported answer.
 
-## What Someone Actually Asks
+## What someone actually asks
 
-These are the questions this project exists to answer. Each carries what makes
-an answer wrong rather than merely what would make it more complete. The list is
-also the executable spine of the repository's planning scorecard.
+Wayproof is meant to answer practical questions such as:
 
-### Getting these wrong costs you the trip
+- What do I need to do for this trip, and how do I get it?
+- Does my route, date, party, activity, or equipment change the answer?
+- What will it cost, what is available, and what must I carry?
+- What is closed or hazardous, and what needs a current recheck?
+- Where are water and facilities, and when were they last confirmed?
+- How do you know—and what do you still not know?
 
-- **What do I need to do this trip?** Wrong if it names a permit but omits a
-  fee, booking or pass that also gates entry.
-- **Does my specific route change which permit I need?** Wrong if it answers per
-  trailhead even though routes from that trailhead use different permits.
-- **What is the scarce thing, and when does it become available?** Wrong if it
-  assumes the scarce thing is always a permit rather than a campsite or slot.
-- **How do I actually get it?** Wrong if it implies online booking where the
-  channel is phone-only, in person, or otherwise constrained.
-- **What do I need at the other end?** Wrong if it treats exit access and
-  parking as unrelated to the trip.
-- **What must I carry?** Wrong if it says "required" without distinguishing a
-  reservation confirmation from the credential that must be carried.
-
-### Getting these wrong costs money or a day
-
-- **What will it cost, all in?** Wrong if entrance, parking, inspection, and
-  reservation fees are separated from the trip total.
-- **Can I change or cancel, and by when?** Wrong if it gives a refund rule
-  without its cutoff and channel.
-- **How many of us can go?** Wrong if it gives one number where day, overnight,
-  site, or permit capacity differs.
-- **If I miss the release, what are my options?** Wrong if it reports sold out
-  while a later release, cancellation, walk-up share, or alternative exists.
-- **Is the trailhead reachable on my dates?** Wrong if it ignores seasonal road
-  closures or conditions.
-
-### Getting these wrong is uncomfortable but recoverable
-
-- **Can I have a fire?** Wrong if it reports a broad permit requirement without
-  the narrower local restriction layered on top.
-- **Can I bring a pet?** Wrong if it generalizes a dog-specific rule to every
-  animal or drops a stricter local leash rule.
-- **Where can and cannot I camp?** Wrong if designated sites, setbacks, or
-  restoration closures disappear.
-- **Does my permit still cover me in the next wilderness?** Wrong if continuous
-  travel and reciprocity are implied beyond their boundary.
-- **Where is water, and when was it last confirmed?** Wrong if availability is
-  reported without an observation date.
-- **What is closed?** Wrong if closed, unavailable, and never existed collapse
-  into the same answer.
-- **What is hazardous right now?** Wrong if a historical hazard is presented as
-  current, or a current hazard is omitted as stale data.
-
-### Afterwards
-
-- **This is wrong, and here is what I found.** Wrong if a submitted report is
-  promoted without evidence, validation, and review.
-
-### The two that run underneath all of them
-
-- **How do you know, and when did you last check?** Wrong if a source or date is
-  attached to a claim it does not support.
-- **What do you not know here?** Wrong if silence reads as confirmation.
-
-A question Wayproof cannot answer should say so plainly. Declining is a usable
-answer; being wrong is not.
+These examples explain the product; they are not an exhaustive or
+machine-readable contract. The planning scorecard owns its more detailed,
+stable question catalog independently. A question Wayproof cannot answer should
+say so plainly: declining is a usable answer; being wrong is not.
 
 ## `plan`: Objective + Date
 
