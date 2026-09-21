@@ -13,7 +13,7 @@ The architecture is domain-first and storage-independent. Names below identify
 durable concepts, not final Python classes, files, tables, or enum spellings.
 The canonical website now exercises the shared read boundary at publication
 scale; the remaining hybrid boundary is primarily the legacy CLI and the
-not-yet-implemented MCP adapters.
+not-yet-implemented constrained MCP proposal adapter.
 
 ## Architectural principles
 
@@ -236,10 +236,14 @@ declare source and target versions, preserve provenance, produce explicit gaps
 instead of invented values, and never rewrite historical promoted ChangeSets.
 Artifact format, domain schema, and validator versions are tracked separately.
 
-Initial MCP capability remains read-oriented, conceptually including objective
-search, trip planning, requirements, advisories, history, and evidence
-inspection. The implemented `ConstrainedProposalService` is the boundary for a
-later proposal adapter: an identified actor may submit additive entities,
+Initial MCP capability remains read-oriented, including entity search, typed
+lookup, requirements, readiness, contextual recheck, history, knowledge gaps,
+and evidence inspection. The implemented read-only MCP server exposes those
+capabilities directly over `CanonicalReadService` and has no write, approval,
+or promotion tools. General intent-to-plan resolution remains an M1 dependency
+rather than adapter-owned inference. The implemented
+`ConstrainedProposalService` is the boundary for a later proposal adapter: an
+identified actor may submit additive entities,
 scopes, sources, observations, evidence, claims, relationships, and gaps, then
 validate and explain the draft. It derives paths and operations and deliberately
 excludes rules, derived results, runtime requirements/fulfillments,

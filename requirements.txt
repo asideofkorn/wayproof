@@ -1,5 +1,6 @@
 pandas>=2.0
 numpy>=1.24
+mcp>=2,<3
 # Only used by wayproof/passes.py (isotonic fit of the Sierra crest), which is
 # reached from scripts/assign_trailheads.py when regenerating nearest_trailhead.
 scikit-learn>=1.3

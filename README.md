@@ -23,12 +23,14 @@ Wayproof is currently a hybrid application:
   Readiness, and Pre-trip Recheck are implemented as domain services;
 - a shared read service exposes search, provenance, published history,
   requirements, readiness, and rechecks; and
+- a read-only MCP server exposes that same canonical service boundary to agents;
+  and
 - a constrained additive proposal service lets identified consumers prepare and
   validate evidence drafts without gaining publication authority.
 
 M0, the trusted canonical foundation, is complete. M1–M3 are in progress. The
-legacy CLI has not yet fully migrated to the canonical services,
-and an MCP adapter has not yet been added. See [PRODUCT.md](PRODUCT.md),
+legacy CLI has not yet fully migrated to the canonical services, and the MCP
+surface is currently read-only. See [PRODUCT.md](PRODUCT.md),
 [ARCHITECTURE.md](ARCHITECTURE.md), and [ROADMAP.md](ROADMAP.md) for the product
 contract and exact milestone status.
 
@@ -224,8 +226,8 @@ A report changes only the queue. It does not directly modify domain data.
 
 ## Canonical read service
 
-`CanonicalReadService` is the common read-only boundary intended for the CLI,
-website, and future MCP adapter.
+`CanonicalReadService` is the common read-only boundary used by the website and
+MCP adapter and intended for the remaining CLI migration.
 
 ```python
 from pathlib import Path
@@ -257,6 +259,32 @@ Planning calls take a typed `PlanningContext`. Real examples are in
 
 The read service deliberately has no proposal, approval, promotion, or raw
 storage mutation methods.
+
+## MCP read server
+
+The initial MCP adapter exposes nine read-only tools over
+`CanonicalReadService`:
+
+- `search_entities`, `get_record`, and `get_entity`;
+- `explain_claim`, `get_changes`, and `list_knowledge_gaps`; and
+- `evaluate_requirements`, `evaluate_readiness`, and `pretrip_recheck`.
+
+Install the project, then start its standard-input/output server from the
+repository root:
+
+```bash
+pip install -e .
+wayproof-mcp
+```
+
+If a host launches the command from another directory, set
+`WAYPROOF_REPOSITORY` to the checkout containing `canonical/v0` and
+`changesets/v0`. The planning tools require an explicit resolved context with
+an ISO `trip_date`, objectives, and ordered stages. They do not guess a route or
+silently resolve a general `TripIntent`.
+
+The MCP server intentionally exposes no proposal, approval, promotion,
+publication, filesystem, or raw canonical CRUD tools.
 
 ## Constrained proposals
 
@@ -299,6 +327,7 @@ wayproof/requirements.py       rule applicability and fulfillment coverage
 wayproof/readiness.py          bounded Trip Readiness aggregation
 wayproof/recheck.py            volatile-condition projection and freshness
 wayproof/read_service.py       shared consumer read facade
+wayproof/mcp_server.py         read-only MCP adapter
 wayproof/proposal_service.py   constrained additive draft proposals
 ```
 
@@ -316,7 +345,7 @@ The following remain incomplete:
 - complete Trip Readiness aggregation for costs, deadlines, inventory,
   closures, and conflicts;
 - completion of the legacy CLI migration to `CanonicalReadService`;
-- MCP read and constrained proposal adapters;
+- constrained MCP proposal adapter;
 - automated URL/artifact ingestion and stronger duplicate/entity resolution;
 - operational freshness scheduling beyond explicit canonical recheck manifests;
   and
