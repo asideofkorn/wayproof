@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-black-diamond-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-black-diamond-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-black-diamond-mines-regional-preserve"
+    ],
+    "subject_id": "park-black-diamond-mines-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "acreage": 8533,
+      "address": "5175 Somersville Road, Antioch, CA 94509",
+      "camping": {
+        "Star Mine Group Camp": {
+          "capacity": 35,
+          "minimum_advance_business_days": 3,
+          "pit_toilet": true,
+          "water": false
+        },
+        "Stewartville Backpack Camp": {
+          "capacity": 20,
+          "distance_from_headquarters_miles": 3.2,
+          "minimum_advance_business_days": 2,
+          "pit_toilet": true,
+          "water": "non-potable horse water; treat for human use"
+        }
+      },
+      "mine_access": "Beyond the visitor center only through the Coal Mine Experience; minimum age 7",
+      "parking_fee_condition": "when kiosk is attended; seasonal weekends and some holidays",
+      "parking_fee_usd": 5,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by published date bands"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

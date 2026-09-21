@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-brooks-island-regional-preserve",
+    "kind": "park",
+    "name": "Brooks Island Regional Preserve"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

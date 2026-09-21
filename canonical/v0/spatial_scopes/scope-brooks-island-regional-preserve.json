@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Brooks Island Regional Preserve.",
+    "entity_id": "park-brooks-island-regional-preserve",
+    "kind": "park",
+    "scope_id": "scope-brooks-island-regional-preserve"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
