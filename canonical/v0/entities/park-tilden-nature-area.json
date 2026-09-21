@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-tilden-nature-area",
+    "kind": "park",
+    "name": "Tilden Nature Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

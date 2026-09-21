@@ -1,0 +1,74 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-nature-area-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-tilden-nature-area-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-tilden-nature-area"
+    ],
+    "subject_id": "park-tilden-nature-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Environmental Education Center staging",
+        "Lone Oak Road"
+      ],
+      "accessible_facilities": [
+        "Environmental Education Center parking",
+        "Environmental Education Center facilities"
+      ],
+      "acreage": 740,
+      "activities": [
+        "biking with restrictions",
+        "camping",
+        "hiking",
+        "kid-friendly"
+      ],
+      "bike_restrictions": [
+        "no bikes around the Environmental Education Center and Little Farm",
+        "no bikes on single-track trails",
+        "no mountain bikes on Laurel fire road"
+      ],
+      "dogs": false,
+      "eec_address": "1500 Central Park Drive, Berkeley, CA 94708",
+      "features": [
+        "Environmental Education Center",
+        "Little Farm",
+        "Jewel Lake",
+        "Wildcat Peak"
+      ],
+      "group_camps": [
+        {
+          "capacity_range": [
+            17,
+            50
+          ],
+          "name": "New Woodland"
+        },
+        {
+          "capacity_range": [
+            25,
+            75
+          ],
+          "name": "Wildcat View"
+        }
+      ],
+      "habitats": [
+        "oak and bay woodland",
+        "grassland",
+        "eucalyptus forest",
+        "streams"
+      ],
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "jewel_lake_boardwalk_feet": 750,
+      "parking_fee_usd": 0,
+      "trail_miles_over": 10,
+      "wildcat_peak_elevation_feet": 1211
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-little-hills-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-little-hills-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-little-hills-regional-recreation-area"
+    ],
+    "subject_id": "park-little-hills-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": "reservation only",
+      "address": "18013 Bollinger Canyon Road, San Ramon, CA 94583",
+      "facilities": [
+        "covered picnic areas",
+        "play-fields",
+        "barbecue and picnic areas",
+        "accessible parking",
+        "wheelchair-accessible picnic tables",
+        "accessible restrooms"
+      ],
+      "group_capacity_range": [
+        50,
+        1400
+      ],
+      "relationship": "adjacent to Las Trampas",
+      "reservation_phone": "510-754-9877",
+      "swimming_pool": "unavailable until further notice",
+      "uses": [
+        "group picnics",
+        "special events",
+        "weddings"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

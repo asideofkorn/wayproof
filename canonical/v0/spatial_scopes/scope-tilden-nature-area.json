@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Tilden Nature Area.",
+    "entity_id": "park-tilden-nature-area",
+    "kind": "park",
+    "scope_id": "scope-tilden-nature-area"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,53 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-crockett-hills-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-crockett-hills-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-crockett-hills-regional-park"
+    ],
+    "subject_id": "park-crockett-hills-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "Crockett Boulevard staging area",
+      "acreage": 2124,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "picnicking"
+      ],
+      "address": "1300 Crockett Boulevard, Crockett, CA 94525",
+      "elevation_range_feet": [
+        150,
+        800
+      ],
+      "features": [
+        "Crockett Ranch staging and picnic area",
+        "historic ranch barn, milk-house, and corrals",
+        "canyon and ridgetop views"
+      ],
+      "habitats": [
+        "annual grassland",
+        "oak woodland",
+        "coastal scrub",
+        "wooded ravines",
+        "eucalyptus-shaded meadows",
+        "river shoreline"
+      ],
+      "hours": "05:00–22:00",
+      "parking_fee_usd": 0,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00",
+      "trails": {
+        "bay_area_ridge_trail_segment_miles": 4.5,
+        "use": "multi-purpose"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

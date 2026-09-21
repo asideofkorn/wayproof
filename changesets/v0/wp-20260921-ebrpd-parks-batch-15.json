@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260921-ebrpd-parks-batch-15",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-crockett-hills-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "park-crockett-hills-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-crockett-hills-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "scope-crockett-hills-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-crockett-hills-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "source-ebrpd-crockett-hills-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-crockett-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "observation-ebrpd-crockett-hills-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-crockett-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "evidence-ebrpd-crockett-hills-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-crockett-hills-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-crockett-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "claim-crockett-hills-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-deer-valley-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "park-deer-valley-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-deer-valley-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "scope-deer-valley-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-deer-valley-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "source-ebrpd-deer-valley-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-deer-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "observation-ebrpd-deer-valley-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-deer-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "evidence-ebrpd-deer-valley-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-deer-valley-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-deer-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "claim-deer-valley-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-little-hills-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "park-little-hills-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-little-hills-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "scope-little-hills-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-little-hills-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "source-ebrpd-little-hills-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-little-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "observation-ebrpd-little-hills-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-little-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "evidence-ebrpd-little-hills-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-little-hills-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-little-hills-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "claim-little-hills-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-tilden-nature-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "park-tilden-nature-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-tilden-nature-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "scope-tilden-nature-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-tilden-nature-area-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "source-ebrpd-tilden-nature-area-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-tilden-nature-area-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "observation-ebrpd-tilden-nature-area-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-tilden-nature-area-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "evidence-ebrpd-tilden-nature-area-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-tilden-nature-area-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tilden-nature-area-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD park page reviewed on 2026-09-21.",
+      "record_id": "claim-tilden-nature-area-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Complete the EBRPD park-directory coverage audit with the four remaining parkland profiles."
+}
