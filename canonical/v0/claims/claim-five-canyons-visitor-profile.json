@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-five-canyons-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-five-canyons-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-five-canyons-open-space"
+    ],
+    "subject_id": "park-five-canyons-open-space",
+    "temporal_scope": null,
+    "value": {
+      "access": "Chabot-to-Garin Regional Trail crossing north of Five Canyons Parkway and Boulder Canyon Drive; nearby street and HARD park parking",
+      "acreage_over": 300,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking"
+      ],
+      "address": "5909 Gold Creek Drive, Castro Valley, CA 94552",
+      "current_connections": [
+        "Cull Canyon Regional Recreation Area",
+        "Don Castro Regional Recreation Area",
+        "Hayward Area Recreation and Park District parks"
+      ],
+      "future_connections": [
+        "Garin Regional Park",
+        "Dry Creek Pioneer Regional Park",
+        "Mission Peak Regional Preserve"
+      ],
+      "hours": "08:00 to dusk",
+      "internal_routes": "several loop trails through canyons and ridgelines",
+      "parking_fee_usd": 0,
+      "regional_trail": "Bay Area Ridge Trail",
+      "trail_miles": 5,
+      "wheelchair_accessible_facilities": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

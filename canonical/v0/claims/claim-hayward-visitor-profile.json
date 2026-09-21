@@ -1,0 +1,59 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hayward-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-hayward-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-hayward-regional-shoreline"
+    ],
+    "subject_id": "park-hayward-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "West Winton Avenue entrance and staging area",
+        "Grant Avenue staging area",
+        "Breakwater Avenue walk-in entrance"
+      ],
+      "accessible_facilities": [
+        "parking stalls at Grant and West Winton staging areas",
+        "drinking fountain at West Winton"
+      ],
+      "acreage": 1841,
+      "activities": [
+        "biking",
+        "dogs",
+        "fishing",
+        "hiking",
+        "picnicking"
+      ],
+      "address": "3050 West Winton Avenue, Hayward, CA 94545",
+      "dog_rule": "dogs are not allowed south of the West Winton Avenue flood-control channel",
+      "fishing": {
+        "allowed": "from levees except marsh areas",
+        "california_license_required_age": 16
+      },
+      "gate_hours": "07:00–17:00 year-round",
+      "habitats": [
+        "salt marsh",
+        "freshwater marsh",
+        "brackish marsh",
+        "seasonal wetlands"
+      ],
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "picnicking": {
+        "allowed": true,
+        "benches_along_trail": true,
+        "tables": false
+      },
+      "trail_miles": 5,
+      "trail_rule": "remain on trail and observe signed restricted areas to protect nesting and feeding wildlife",
+      "trail_surface": "gravel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
