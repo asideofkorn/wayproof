@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Vargas Plateau Regional Park.",
+    "entity_id": "park-vargas-plateau-regional-park",
+    "kind": "park",
+    "scope_id": "scope-vargas-plateau-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

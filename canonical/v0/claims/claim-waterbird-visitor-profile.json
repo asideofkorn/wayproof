@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-waterbird-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-waterbird-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-waterbird-regional-preserve"
+    ],
+    "subject_id": "park-waterbird-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": "Waterbird Way entrance",
+      "acreage": 198,
+      "activities": [
+        "hiking"
+      ],
+      "address": "851 Waterbird Way, Martinez, CA 94553",
+      "curfew": "22:00–05:00",
+      "future_connection": "proposed Point Edith-to-Martinez Shoreline Regional Trail",
+      "habitat": {
+        "ebrpd_marsh_acres": 46,
+        "focal_area": "Al McNabney Marsh",
+        "mountain_view_sanitary_district_marsh_acres": 69,
+        "pacific_flyway": true
+      },
+      "parking_fee_usd": 0,
+      "restrictions": {
+        "dogs": false,
+        "fishing": false,
+        "water_contact": false
+      },
+      "seasonal_hours": "08:00 opening; closing varies from 16:00 to 19:00",
+      "trails": "several miles of upland trails including Meadowlark Ridge Loop",
+      "water_note": "McNabney Marsh contains treated reclaimed water"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

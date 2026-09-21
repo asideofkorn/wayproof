@@ -1,0 +1,51 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-vargas-plateau-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-vargas-plateau-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-vargas-plateau-regional-park"
+    ],
+    "subject_id": "park-vargas-plateau-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "Vargas Plateau staging area; limited parking and no street parking",
+      "acreage": 1249,
+      "activities": [
+        "biking",
+        "hiking",
+        "horseback riding"
+      ],
+      "address": "2536 Morrison Canyon Road, Fremont, CA 94539",
+      "connections": [
+        "Garin",
+        "Pleasanton Ridge",
+        "Mission Peak",
+        "Sunol"
+      ],
+      "drinking_water": false,
+      "elevation_above_bay_plain_feet": 1000,
+      "facilities": [
+        "trailhead wayside panel",
+        "restroom"
+      ],
+      "habitats": [
+        "grassland",
+        "seasonal wetlands",
+        "stock ponds",
+        "drainages",
+        "coastal scrub",
+        "oak woodland"
+      ],
+      "regional_route": "Bay Area Ridge Trail",
+      "seasonal_hours": "08:00 opening; closing varies from 17:00 to 21:00",
+      "trail_miles_over": 6,
+      "wheelchair_accessible": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
