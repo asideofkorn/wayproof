@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Pleasanton Ridge Regional Park.",
+    "entity_id": "park-pleasanton-ridge-regional-park",
+    "kind": "park",
+    "scope_id": "scope-pleasanton-ridge-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

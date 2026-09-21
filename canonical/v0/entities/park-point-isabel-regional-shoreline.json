@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-point-isabel-regional-shoreline",
+    "kind": "park",
+    "name": "Point Isabel Regional Shoreline"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

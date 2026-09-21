@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Overview",
+      "To Reach The Park",
+      "Attractions"
+    ],
+    "content": "The live park page publishes the visitor profile represented by the associated claim, including access, operating information, facilities, and material restrictions.",
+    "observation_id": "observation-ebrpd-point-pinole-visitor-profile",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-20T07:00:00+00:00",
+    "source_id": "source-ebrpd-point-pinole-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
