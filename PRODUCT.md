@@ -175,6 +175,14 @@ recheck manifests. Resolution and readiness remain distinct: for example, a
 Whitney permit may be fully covered while the plan remains partial because its
 segment topology is not published.
 
+The composed plan also exposes source-backed cost, deadline, inventory,
+closure, and conflict inputs through explicit semantic registration. Activity,
+scope, date, and sourced relationships determine relevance. Volatile or
+conflicting inputs remain visibly unresolved, and an activity-dependent fee is
+not presented as owed when activity context is absent. Computing a final total,
+selecting live inventory, and deciding operational deadlines remain later
+readiness work.
+
 The deployed website is the first complete canonical read adapter. It publishes
 entity search and evidence/history details; automatic Parks, Trails, Camping,
 Peaks, and Changes indexes; JSON representations and sitemap discovery; and

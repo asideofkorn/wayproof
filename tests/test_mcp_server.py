@@ -151,6 +151,7 @@ def test_plan_tool_combines_resolution_and_constraint_evaluation(tools):
     assert result["readiness"]["evaluation"]["requirements"][0][
         "requirement"
     ]["requirement_id"] == "requirement-whitney-classic-overnight-permit"
+    assert result["planning_inputs"] == {"inputs": [], "counts": {}}
 
 
 def test_mcp_protocol_discovers_only_read_tools_and_calls_them():

@@ -63,8 +63,10 @@ route, and access intent resolution is implemented conservatively; richer
 published segment topology now expands into ordered planning stages and
 requirement coverage. A composed planner carries resolved party, activity, and
 equipment context through readiness and named rechecks without collapsing their
-answerability states. Cost, deadline, inventory, closure, and conflict inputs
-remain incomplete.
+answerability states. Explicitly registered cost, deadline, inventory, closure,
+and conflict claims now project into that plan with provenance and contextual
+answerability. Final cost arithmetic, deadline evaluation, live inventory
+selection, and closure decisions remain incomplete.
 
 **Outcome:** a bounded trip produces explainable Trip Readiness and Pre-trip
 Recheck results from canonical Schema v0 knowledge.
@@ -115,9 +117,9 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** define and integrate source-backed cost, deadline,
-inventory, closure, and conflict answerability, then migrate the useful legacy
-CLI behavior without duplicating domain resolution in an adapter.
+**Next capability gate:** evaluate the projected inputs into bounded cost and
+operational decisions, then migrate the useful legacy CLI behavior without
+duplicating domain resolution in an adapter.
 
 ## M3 — Constrained contribution workflow
 

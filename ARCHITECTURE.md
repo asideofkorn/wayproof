@@ -95,6 +95,16 @@ alternates, spurs, and their accessible facilities remain visible choices and
 are not silently substituted into the trip. A route without segment topology
 keeps a coarse route stage and produces a partial result.
 
+Planning-input projection uses an explicit predicate-to-category registry for
+cost, deadline, inventory, and closure claims. It never assigns semantics from
+predicate spelling or prose. Relevance follows resolved entities, one sourced
+relationship hop, projected spatial scopes, trip date, and explicit activity
+applicability. Canonical knowledge gaps identify supported conflict threads.
+Every projected input retains evidence and answerability; volatile open-ended
+claims require a current check. This layer identifies planning components but
+does not yet add prices, choose an inventory item, or calculate whether a
+deadline has passed.
+
 Ordered `TripStage` values locate relevant portions of a trip. Route primitives
 represent routes and route variants; access primitives represent ways to reach
 or leave them; traversal connects the trip to ordered segments, places, land
@@ -162,8 +172,9 @@ can be valid history while being too old to establish a future condition.
 
 The implemented Trip Readiness slice aggregates rule applicability,
 requirements, fulfillment coverage, linked gaps, answerability, and provenance.
-The target also includes conditions, costs, deadlines, closures, and conflicts;
-those inputs are not all integrated yet. Pre-trip Recheck projects the canonical
+The composed plan now carries explicitly classified cost, deadline, inventory,
+closure, and conflict inputs alongside that requirement slice; arithmetic and
+operational decisions over those inputs are not all integrated yet. Pre-trip Recheck projects the canonical
 recheck manifest onto trip date and spatial scope, distinguishes answered,
 unknown, and needs-current-check results, and returns the sources to revisit.
 

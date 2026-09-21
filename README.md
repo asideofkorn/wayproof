@@ -301,6 +301,14 @@ separately blocked or ready requirement slice. This prevents a satisfied permit
 from hiding missing route topology, and prevents an unresolved route from being
 treated as permit-free.
 
+The composed result also projects explicitly registered cost, deadline,
+inventory, closure, and conflict inputs. Each item carries its canonical value,
+evidence IDs, category, and `answered`, `unknown`, `needs_current_check`, or
+`conflicting` answerability. Projection uses the resolved entities, sourced
+relationship neighborhood, trip scopes, date, and declared activities. It is
+not a final price calculator: an applicable fee claim is a component, while an
+activity-dependent fee with missing activity context remains unknown.
+
 The MCP server intentionally exposes no proposal, approval, promotion,
 publication, filesystem, or raw canonical CRUD tools.
 
@@ -361,8 +369,8 @@ The following remain incomplete:
 
 - richer `TripIntent` resolution beyond named objectives, sourced endpoints,
   and published segment topology, including aliases and constraint matching;
-- complete Trip Readiness aggregation for costs, deadlines, inventory,
-  closures, and conflicts;
+- arithmetic/selection over projected cost components and richer operational
+  evaluation of deadlines, live inventory, and closures;
 - completion of the legacy CLI migration to `CanonicalReadService`;
 - constrained MCP proposal adapter;
 - automated URL/artifact ingestion and stronger duplicate/entity resolution;
