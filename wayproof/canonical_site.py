@@ -62,25 +62,46 @@ DEL_VALLE_SECTIONS = (
     ("Ohlone Wilderness Trail", (
         ("trail-ohlone-wilderness", (
             "eastern_gateway", "trail_permit_required", "overnight_camping_reservation",
-            "ordered_backpack_camp_inventory", "reported_water_availability",
-            "published_corridor_distances_miles", "mapped_access_restrictions",
         )),
     )),
 )
 
 OHLONE_SECTIONS = (
     ("Permits, reservations, and parking", (
-        "trail_permit_required", "overnight_camping_reservation",
-        "reserved_overnight_parking", "maximum_consecutive_nights",
+        (OHLONE_ID, (
+            "trail_permit_required", "overnight_camping_reservation",
+            "reserved_overnight_parking", "maximum_consecutive_nights",
+        )),
+    )),
+    ("Western access at Mission Peak", (
+        ("park-mission-peak-regional-preserve", (
+            "visitor_access_policy", "official_map_route_distances",
+        )),
+        ("staging-mission-peak-stanford-avenue", (
+            "official_page_linked_map_point",
+        )),
+        ("restroom-mission-peak-stanford-avenue", (
+            "official_map_facility_presence",
+        )),
+        ("entrance-mission-peak-ohlone-college", (
+            "access_address", "published_daily_parking_permit_policy",
+        )),
+        ("entrance-mission-peak-anza-pine", (
+            "official_page_linked_map_point",
+        )),
     )),
     ("Route, access, and distance", (
-        "eastern_gateway", "published_corridor_distances_miles",
-        "mapped_access_restrictions", "trail_use", "traversed_parks",
+        (OHLONE_ID, (
+            "eastern_gateway", "published_corridor_distances_miles",
+            "mapped_access_restrictions", "trail_use", "traversed_parks",
+        )),
     )),
     ("Camps and water", (
-        "ordered_backpack_camp_inventory", "mapped_backcountry_camps",
-        "reported_water_availability", "backpack_fire_policy",
-        "dogs_allowed_overnight", "alcohol_allowed",
+        (OHLONE_ID, (
+            "ordered_backpack_camp_inventory", "mapped_backcountry_camps",
+            "reported_water_availability", "backpack_fire_policy",
+            "dogs_allowed_overnight", "alcohol_allowed",
+        )),
     )),
 )
 
@@ -224,14 +245,17 @@ def del_valle_destination_payload(reads: CanonicalReadService,
 
 def ohlone_trail_payload(reads: CanonicalReadService) -> dict:
     """Compose the public Ohlone guide from canonical reads only."""
-    claims = {item.predicate: item for item in reads.claims_for(OHLONE_ID)}
-    sections = [
-        {"title": title, "claims": [
-            _claim_bundle(reads, claims[predicate])
-            for predicate in predicates if predicate in claims
-        ]}
-        for title, predicates in OHLONE_SECTIONS
-    ]
+    sections = []
+    for title, selections in OHLONE_SECTIONS:
+        bundles = []
+        for entity_id, predicates in selections:
+            wanted = set(predicates)
+            for claim in reads.claims_for(entity_id):
+                if claim.predicate in wanted:
+                    bundle = _claim_bundle(reads, claim)
+                    bundle["subject"] = reads.entity(entity_id)
+                    bundles.append(bundle)
+        sections.append({"title": title, "claims": bundles})
     results = [reads.get("derived_result", result_id) for result_id in (
         "result-ohlone-doe-canyon-roundtrip-detour",
         "result-ohlone-ot27-ot29-route-comparison",
@@ -274,6 +298,12 @@ def _human_label(value: str) -> str:
         "published_corridor_distances_miles": "Trail distance",
         "mapped_access_restrictions": "Who can use the trail",
         "reported_water_availability": "Water sources",
+        "visitor_access_policy": "Parking and access choices",
+        "official_map_route_distances": "Published route distances",
+        "official_page_linked_map_point": "Official map location",
+        "official_map_facility_presence": "Trailhead restroom",
+        "access_address": "Access address",
+        "published_daily_parking_permit_policy": "College parking permit",
     }
     return labels.get(value, value.replace("_", " ").strip().capitalize())
 
@@ -304,6 +334,23 @@ def _destination_claim_html(bundle: dict) -> str:
     return (
         '<article class="fact-row">'
         f'<h3>{_e(_human_label(claim["predicate"]))}</h3>'
+        f'{_human_value(claim["value"])}'
+        f'<details><summary>Sources and details</summary><ul>{sources}</ul>'
+        f'<p class="meta">Canonical claim <code>{_e(claim["claim_id"])}</code></p></details>'
+        '</article>'
+    )
+
+
+def _corridor_claim_html(bundle: dict) -> str:
+    """Render a claim while preserving which corridor place it describes."""
+    claim = bundle["claim"]
+    subject = bundle.get("subject")
+    subject_html = (f'<p class="meta fact-subject">{_e(subject["name"])}</p>'
+                    if subject and subject["entity_id"] != OHLONE_ID else "")
+    sources = ''.join(f'<li>{_source_label(source)}</li>' for source in bundle["sources"])
+    return (
+        '<article class="fact-row">'
+        f'{subject_html}<h3>{_e(_human_label(claim["predicate"]))}</h3>'
         f'{_human_value(claim["value"])}'
         f'<details><summary>Sources and details</summary><ul>{sources}</ul>'
         f'<p class="meta">Canonical claim <code>{_e(claim["claim_id"])}</code></p></details>'
@@ -398,6 +445,10 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     for section in payload["sections"]:
         anchor = section["title"].lower().replace(",", "").replace(" ", "-")
         body.append(f'<section id="{_e(anchor)}"><h2>{_e(section["title"])}</h2><div class="fact-list">')
+        if section["title"] == "Ohlone Wilderness Trail":
+            body.append('<p>Del Valle is the eastern gateway to the corridor. For Mission Peak, '
+                        'Stanford Avenue, Ohlone College, camps, water, route distances, and '
+                        f'alternatives, use the <a href="{OHLONE_PATH}">complete Ohlone Trail guide</a>.</p>')
         if section["claims"]:
             body.extend(_destination_claim_html(bundle) for bundle in section["claims"])
         else:
@@ -432,23 +483,37 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
         '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
         '<a href="/search/">Search</a> / <a href="/destinations/del-valle/">Del Valle</a> / '
         '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
-        '<h1>Ohlone Wilderness Trail</h1>',
-        '<p class="tagline">Permits, camps, water, access, and mapped route choices '
-        'from published canonical evidence.</p>',
-        f'<p class="meta"><a href="/knowledge/{OHLONE_ID}/">Canonical record</a> · '
-        f'<a href="{OHLONE_PATH}index.json">JSON</a></p>',
+        '<header class="page-header"><h1>Ohlone Wilderness Trail</h1>',
+        '<p class="tagline">Plan the full corridor from Del Valle through Sunol to Mission '
+        'Peak, including trailheads, parking, camps, water, and route choices.</p></header>',
+        '<ul class="section-nav" aria-label="On this page">'
+        '<li><a href="#permits-reservations-and-parking">Permits</a></li>'
+        '<li><a href="#western-access-at-mission-peak">Mission Peak access</a></li>'
+        '<li><a href="#route-access-and-distance">Route</a></li>'
+        '<li><a href="#camps-and-water">Camps and water</a></li>'
+        '<li><a href="#route-choices-and-detours">Alternatives</a></li></ul>',
+        '<section class="notice"><h2>Choose your endpoint</h2>'
+        '<p><strong>Del Valle</strong> is the eastern gateway. At the western end, use '
+        '<strong>Stanford Avenue</strong> for the staging area and permitted overnight '
+        'parking, or approach the <strong>Anza–Pine walk-in entrance</strong> from '
+        '<strong>Ohlone College</strong> for greater daytime parking capacity.</p></section>',
     ]
     for section in payload["sections"]:
-        body.append(f'<section><h2>{_e(section["title"])}</h2>')
-        body.extend(_destination_claim_html(item) for item in section["claims"])
-        body.append('</section>')
-    body.append('<section><h2>Route choices and detours</h2>')
+        anchor = section["title"].lower().replace(",", "").replace(" ", "-")
+        body.append(f'<section id="{_e(anchor)}"><h2>{_e(section["title"])}</h2>'
+                    '<div class="fact-list">')
+        body.extend(_corridor_claim_html(item) for item in section["claims"])
+        body.append('</div></section>')
+    body.append('<section id="route-choices-and-detours"><h2>Route choices and detours</h2>')
     for result in payload["route_results"]:
         body.append('<article class="card">'
                     f'<h3>{_e(_human_label(result["kind"]))}</h3>'
                     f'{_human_value(result["value"])}'
                     f'<p>{_e(result["explanation"])}</p></article>')
-    body.append('</section><footer><p class="meta">Wayproof is a planning aid. '
+    body.append(f'</section><aside class="technical-links"><strong>Reference formats</strong>'
+                f'<p><a href="/knowledge/{OHLONE_ID}/">Canonical record</a> · '
+                f'<a href="{OHLONE_PATH}index.json">JSON</a></p></aside>'
+                '<footer><p class="meta">Wayproof is a planning aid. '
                 'Confirm current conditions with the linked official sources.</p></footer>')
     return _page('Plan the Ohlone Wilderness Trail — Wayproof',
                  'Evidence-backed Ohlone Trail permits, camps, water, access, and route choices.',
