@@ -94,7 +94,11 @@ def format_canonical_plan(plan: TripPlan) -> str:
             for item in operational.deadlines
         ))
         _section(lines, "Inventory checks:", (
-            f"{item.state.value}: {item.input_id}" for item in operational.inventory
+            f"{item.state.value}: {item.input_id}"
+            + (f"; capacity {item.capacity}; "
+               f"{'fits party' if item.fits_party else 'does not fit party'}"
+               if item.fits_party is not None else "")
+            for item in operational.inventory
         ))
         _section(lines, "Closure checks:", (
             f"{item.state.value}: {item.input_id}" for item in operational.closures

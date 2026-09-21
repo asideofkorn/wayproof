@@ -56,6 +56,7 @@ PREDICATE_CATEGORIES = {
     "reserveamerica_campsite_inventory": (
         PlanningInputCategory.COST, PlanningInputCategory.INVENTORY,
     ),
+    "reserveamerica_site_profile": (PlanningInputCategory.INVENTORY,),
     "backpacking_reservation_window": (PlanningInputCategory.DEADLINE,),
     "group_camping_reservation": (PlanningInputCategory.DEADLINE,),
     "no_show_deadlines": (PlanningInputCategory.DEADLINE,),
@@ -90,6 +91,7 @@ PREDICATE_ACTIVITIES = {
     "published_site_listing_inventory": {"camping"},
     "reservable_picnic_inventory": {"picnicking"},
     "reserveamerica_campsite_inventory": {"backpacking", "camping"},
+    "reserveamerica_site_profile": {"backpacking", "camping"},
     "site_inventory": {"camping"},
     "backpacking_reservation_window": {"backpacking"},
     "group_camping_reservation": {"camping"},
@@ -141,19 +143,24 @@ def _relevant_entity_ids(records: CanonicalRecords,
     forward = {
         "accepts_reservations_for", "accesses", "applies_at", "contained_by",
         "day_use_governed_by", "lists_site", "located_in",
-        "overnight_governed_by", "provides_service_at",
+        "overnight_governed_by", "provides_access_to", "provides_service_at",
     }
     reverse = {
         "accepts_reservations_for", "contained_by", "located_in", "manages",
         "provides_service_at",
     }
-    adjacent = set()
-    for relationship in relationships:
-        if relationship.subject_id in ids and relationship.predicate in forward:
-            adjacent.add(relationship.object_id)
-        if relationship.object_id in ids and relationship.predicate in reverse:
-            adjacent.add(relationship.subject_id)
-    return ids | adjacent
+    # Two bounded hops cover route -> camp -> contained campsite without
+    # turning the entire canonical graph into relevant trip knowledge.
+    relevant = set(ids)
+    for _ in range(2):
+        adjacent = set()
+        for relationship in relationships:
+            if relationship.subject_id in relevant and relationship.predicate in forward:
+                adjacent.add(relationship.object_id)
+            if relationship.object_id in relevant and relationship.predicate in reverse:
+                adjacent.add(relationship.subject_id)
+        relevant.update(adjacent)
+    return relevant
 
 
 def _effective(scope: TemporalScope | None, day) -> bool:
@@ -193,11 +200,19 @@ def project_planning_inputs(records: CanonicalRecords,
     scopes = _trip_scopes(resolution)
     entity_ids = _relevant_entity_ids(records, resolution)
     activities = set(resolution.context.activities.activities)
+    if (resolution.context.activities.attributes.get("overnight") is True
+            and "hiking" in activities):
+        activities.add("backpacking")
     projected = []
     included_claim_ids = set()
     for claim in sorted(records.claims, key=lambda item: item.claim_id):
         categories = PREDICATE_CATEGORIES.get(claim.predicate, ())
         if not categories or not _claim_relevant(claim, scopes, entity_ids):
+            continue
+        if (claim.predicate == "reserveamerica_site_profile"
+                and "backpacking" in activities and "camping" not in activities
+                and (not isinstance(claim.value, dict)
+                     or claim.value.get("site_type") != "BACKPACK SITE")):
             continue
         required_activities = PREDICATE_ACTIVITIES.get(claim.predicate)
         if required_activities and activities and not activities.intersection(

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-access-policy",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Do not use Ohlone College parking as overnight parking; the published access policy does not allow it.",
+    "rule_id": "rule-mission-peak-ohlone-college-no-overnight-parking",
+    "spatial_scope_ids": [
+      "scope-mission-peak-ohlone-college-entrance"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -64,7 +64,13 @@ def _condition_value(dimension: str, context: PlanningContext) -> Any:
     if dimension == "trip_date":
         return context.trip_date
     if dimension == "trip_stage":
-        return tuple(stage.kind for stage in context.stages)
+        kinds = [stage.kind for stage in context.stages]
+        if context.activities.attributes.get("overnight") is True:
+            # These are semantic planning stages, not invented geographic
+            # legs. Existing canonical rules use them to gate overnight and
+            # booking obligations across any resolved route direction.
+            kinds.extend(("overnight", "booking", "campground_stay"))
+        return tuple(dict.fromkeys(kinds))
     if dimension in ("activity", "trip_activity"):
         return context.activities.activities
     if dimension.startswith("activity."):

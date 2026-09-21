@@ -45,17 +45,20 @@ def test_route_objective_and_distinct_endpoints_are_canonical(reads):
     assert plan.resolution.traversal.distance_complete is False
 
 
-def test_completed_ohlone_trip_direction_remains_an_explicit_parity_gap(reads):
+def test_completed_ohlone_trip_direction_resolves(reads):
     plan = reads.plan(_ohlone(
         "Lichen Bark Ohlone Trailhead",
         "Mission Peak Stanford Avenue Staging Area",
     ))
 
-    assert plan.state is PlanningOutcomeState.PARTIAL
-    assert plan.resolution.traversal.state is TraversalState.DISCONNECTED
-    assert {issue.code for issue in plan.resolution.issues} == {
-        "traversal_disconnected",
-    }
+    assert plan.resolution.state is IntentResolutionState.RESOLVED
+    assert plan.resolution.traversal.state is TraversalState.COMPLETE
+    assert plan.resolution.traversal.legs[0].start_node_id == (
+        "trailhead-ohlone-lichen-bark"
+    )
+    assert plan.resolution.traversal.legs[-1].end_node_id == (
+        "staging-mission-peak-stanford-avenue"
+    )
 
 
 def test_cost_alternatives_do_not_become_a_false_ohlone_total(reads):

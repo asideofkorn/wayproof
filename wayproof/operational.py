@@ -56,6 +56,8 @@ class InventoryEvaluationItem:
     input_id: str
     state: OperationalState
     explanation: str
+    fits_party: Optional[bool] = None
+    capacity: Optional[int] = None
 
 
 @dataclass(frozen=True)
@@ -186,6 +188,7 @@ def evaluate_operational_inputs(
     projection: PlanningInputProjection,
     trip_date: date,
     as_of_date: Optional[date] = None,
+    party_size: int = 0,
 ) -> OperationalEvaluation:
     grouped = {
         category: tuple(item for item in projection.inputs if item.category is category)
@@ -196,10 +199,32 @@ def evaluate_operational_inputs(
         _deadline(item, trip_date, as_of_date)
         for item in grouped[PlanningInputCategory.DEADLINE]
     )
-    inventory = tuple(InventoryEvaluationItem(
-        item.input_id, OperationalState.NEEDS_CURRENT_CHECK,
-        "published inventory describes the offering, not live availability",
-    ) for item in grouped[PlanningInputCategory.INVENTORY])
+    inventory_items = []
+    for item in grouped[PlanningInputCategory.INVENTORY]:
+        capacity = None
+        if item.predicate == "reserveamerica_site_profile" and isinstance(
+            item.value, dict
+        ):
+            value = item.value.get("listed_capacity")
+            capacity = value if isinstance(value, int) else None
+        fits = capacity >= party_size if capacity is not None and party_size else None
+        if fits is False:
+            explanation = (
+                f"published capacity {capacity} does not fit party size {party_size}; "
+                "this site is not a candidate"
+            )
+        elif fits is True:
+            explanation = (
+                f"published capacity {capacity} fits party size {party_size}; "
+                "live availability still requires a current check"
+            )
+        else:
+            explanation = "published inventory describes the offering, not live availability"
+        inventory_items.append(InventoryEvaluationItem(
+            item.input_id, OperationalState.NEEDS_CURRENT_CHECK, explanation,
+            fits, capacity,
+        ))
+    inventory = tuple(inventory_items)
     closures = tuple(ClosureEvaluationItem(
         item.input_id,
         (OperationalState.NEEDS_CURRENT_CHECK
