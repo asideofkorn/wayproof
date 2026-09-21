@@ -15,7 +15,8 @@ ChangeSet history, and constrained additive proposals are implemented. The
 website now reads exclusively through the canonical service layer and publishes
 automatic discovery pages plus focused Del Valle and Ohlone views. The legacy
 CLI has not yet fully migrated. The initial MCP adapter is implemented as a
-read-only surface over the same canonical service layer.
+read-only surface over the same canonical service layer, including bounded
+intent-to-context resolution.
 
 ## Product promise
 
@@ -157,8 +158,11 @@ constrained DRAFT proposal
 ```
 
 This proves the trust boundary and the central Whitney/Del Valle/Ohlone
-semantics. It does not yet complete the whole product contract. Remaining MVP
-work includes broader `TripIntent` resolution, complete cost/deadline/conflict
+semantics. Named objectives now resolve conservatively through sourced
+route/access relationships into a planning context, preserving ambiguous
+routes, unknown exits, and unsupported choices as explicit outcomes. It does
+not yet complete the whole product contract. Remaining MVP work includes richer
+traversal and constraint resolution, complete cost/deadline/conflict
 aggregation, and completion of the legacy CLI migration onto the canonical read
 service.
 

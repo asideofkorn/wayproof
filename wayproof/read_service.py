@@ -7,12 +7,13 @@ from pathlib import Path
 from typing import Any, Iterable, Optional, Tuple
 
 from .canonical_storage import RECORD_SPECS, load_canonical, load_changeset
+from .intent import IntentResolution, resolve_trip_intent
 from .readiness import TripReadiness, evaluate_trip_readiness
 from .recheck import PretripRecheck, evaluate_pretrip_recheck
 from .requirements import RequirementEvaluation, evaluate_requirements
 from .schema import (ChangeAction, Claim, Entity, Evidence, Fulfillment,
                      KnowledgeGap, Observation, PlanningContext, Relationship,
-                     Source)
+                     Source, SpatialScope, TripIntent)
 
 
 @dataclass(frozen=True)
@@ -114,6 +115,18 @@ class CanonicalReadService:
              if entity_id in (item.subject_id, item.object_id)),
             key=lambda item: (item.predicate.casefold(), item.relationship_id),
         ))
+
+    def spatial_scopes_for(self, entity_id: str) -> Tuple[SpatialScope, ...]:
+        """Return every canonical spatial scope attached to an entity."""
+        return tuple(sorted(
+            (item for item in self._records.spatial_scopes
+             if item.entity_id == entity_id),
+            key=lambda item: item.scope_id,
+        ))
+
+    def resolve_intent(self, intent: TripIntent) -> IntentResolution:
+        """Resolve an intent without guessing at ambiguous routes or access."""
+        return resolve_trip_intent(self, intent)
 
     def knowledge_gaps_for(self, record_id: str) -> Tuple[KnowledgeGap, ...]:
         """Return explicit gaps that name a record as related context."""

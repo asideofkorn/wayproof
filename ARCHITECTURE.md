@@ -78,6 +78,14 @@ answer must not overwrite the answer that applied to an earlier trip.
 requested objective and constraints; `PlanningContext` is the resolved context
 used for evaluation. `TripObjective` is not restricted to a peak.
 
+The implemented resolver matches named objectives to canonical entities and
+uses sourced `approached_via`, route-membership, and endpoint relationships to
+resolve route and access choices. It returns explicit resolved, partial,
+ambiguous, or unknown states. It does not choose between competing routes,
+infer a return-to-start, or invent topology. Later expansion may add aliases,
+constraint matching, and deeper traversal projection without moving this logic
+into an adapter.
+
 Ordered `TripStage` values locate relevant portions of a trip. Route primitives
 represent routes and route variants; access primitives represent ways to reach
 or leave them; traversal connects the trip to ordered segments, places, land
@@ -239,9 +247,9 @@ Artifact format, domain schema, and validator versions are tracked separately.
 Initial MCP capability remains read-oriented, including entity search, typed
 lookup, requirements, readiness, contextual recheck, history, knowledge gaps,
 and evidence inspection. The implemented read-only MCP server exposes those
-capabilities directly over `CanonicalReadService` and has no write, approval,
-or promotion tools. General intent-to-plan resolution remains an M1 dependency
-rather than adapter-owned inference. The implemented
+capabilities directly over `CanonicalReadService`, including bounded
+intent-to-plan resolution, and has no write, approval, or promotion tools. The
+resolver remains domain-owned rather than adapter-owned inference. The implemented
 `ConstrainedProposalService` is the boundary for a later proposal adapter: an
 identified actor may submit additive entities,
 scopes, sources, observations, evidence, claims, relationships, and gaps, then

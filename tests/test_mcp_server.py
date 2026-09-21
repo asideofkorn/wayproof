@@ -10,7 +10,8 @@ import pytest
 from mcp import Client
 
 from wayproof.mcp_server import (WayproofReadTools, create_server,
-                                 planning_context_from_dict)
+                                 planning_context_from_dict,
+                                 trip_intent_from_dict)
 from wayproof.read_service import CanonicalReadService
 
 
@@ -101,6 +102,21 @@ def test_context_parser_rejects_unresolved_or_malformed_inputs():
         planning_context_from_dict({"trip_date": "tomorrow"})
 
 
+def test_intent_parser_and_tool_preserve_ambiguity(tools):
+    payload = {
+        "trip_date": "2027-08-12",
+        "objective_queries": ["Mount Whitney"],
+        "activities": {"activities": ["hiking"]},
+    }
+    assert trip_intent_from_dict(payload).activities.activities == ("hiking",)
+    result = tools.resolve_trip_intent(payload)
+    assert result["state"] == "ambiguous"
+    assert result["context"] is None
+    assert result["issues"][0]["candidates"] == [
+        "route-mount-whitney-classic", "route-north-fork-lone-pine",
+    ]
+
+
 def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
     async def exercise():
         async with Client(create_server(ROOT)) as client:
@@ -109,7 +125,7 @@ def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
             assert names == {
                 "search_entities", "get_record", "get_entity", "explain_claim",
                 "get_changes", "list_knowledge_gaps", "evaluate_requirements",
-                "evaluate_readiness", "pretrip_recheck",
+                "evaluate_readiness", "pretrip_recheck", "resolve_trip_intent",
             }
             assert not names.intersection({"propose", "approve", "promote", "publish"})
             assert all(item.description for item in discovered.tools)

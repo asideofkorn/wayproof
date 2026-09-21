@@ -248,6 +248,7 @@ print(history[0].change_set_id)
 The same object exposes:
 
 - `get(record_type, record_id)` and `entity(entity_id)`;
+- `resolve_intent(intent)` for conservative `TripIntent` resolution;
 - `requirements(context, fulfillments=())`;
 - `readiness(context, fulfillments=())`; and
 - `pretrip_recheck(context, result_id=...)`.
@@ -262,12 +263,13 @@ storage mutation methods.
 
 ## MCP read server
 
-The initial MCP adapter exposes nine read-only tools over
+The initial MCP adapter exposes ten read-only tools over
 `CanonicalReadService`:
 
 - `search_entities`, `get_record`, and `get_entity`;
 - `explain_claim`, `get_changes`, and `list_knowledge_gaps`; and
-- `evaluate_requirements`, `evaluate_readiness`, and `pretrip_recheck`.
+- `resolve_trip_intent`, `evaluate_requirements`, `evaluate_readiness`, and
+  `pretrip_recheck`.
 
 Install the project, then start its standard-input/output server from the
 repository root:
@@ -279,9 +281,12 @@ wayproof-mcp
 
 If a host launches the command from another directory, set
 `WAYPROOF_REPOSITORY` to the checkout containing `canonical/v0` and
-`changesets/v0`. The planning tools require an explicit resolved context with
-an ISO `trip_date`, objectives, and ordered stages. They do not guess a route or
-silently resolve a general `TripIntent`.
+`changesets/v0`. `resolve_trip_intent` accepts an ISO `trip_date`, one or more
+objective names or IDs, and optional route, entry, and exit choices. It returns
+`resolved`, `partial`, `ambiguous`, or `unknown` plus a typed planning context
+when one can be built. It never guesses among multiple routes, silently assumes
+an exit, or treats missing topology as fact. The evaluation tools also accept
+an already-resolved context with objectives and ordered stages.
 
 The MCP server intentionally exposes no proposal, approval, promotion,
 publication, filesystem, or raw canonical CRUD tools.
@@ -341,7 +346,8 @@ canonical knowledge is untouched.
 
 The following remain incomplete:
 
-- general `TripIntent` resolution into canonical objectives and stages;
+- richer `TripIntent` resolution beyond named objectives and sourced
+  route/access endpoints, including traversal expansion and aliases;
 - complete Trip Readiness aggregation for costs, deadlines, inventory,
   closures, and conflicts;
 - completion of the legacy CLI migration to `CanonicalReadService`;

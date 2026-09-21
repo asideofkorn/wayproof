@@ -210,6 +210,20 @@ class EquipmentContext:
 
 
 @dataclass(frozen=True)
+class TripIntent:
+    """A requested trip before canonical objective and traversal resolution."""
+
+    objective_queries: Tuple[str, ...]
+    trip_date: date
+    route_query: str = ""
+    entry_query: str = ""
+    exit_query: str = ""
+    party: PartyContext = field(default_factory=PartyContext)
+    activities: ActivityContext = field(default_factory=ActivityContext)
+    equipment: EquipmentContext = field(default_factory=EquipmentContext)
+
+
+@dataclass(frozen=True)
 class PlanningContext:
     trip_date: date
     objectives: Tuple[TripObjective, ...]
