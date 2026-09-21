@@ -17,6 +17,54 @@ from typing import Any, Iterable
 from urllib.parse import urlparse
 
 from .read_service import CanonicalReadService
+from .schema import PlanningContext, TripObjective, TripStage
+
+
+DEL_VALLE_ID = "park-del-valle-regional-park"
+DEL_VALLE_PATH = "/destinations/del-valle/"
+DEL_VALLE_SCOPES = (
+    "scope-del-valle-park",
+    "scope-lake-del-valle",
+    "scope-del-valle-family-campground",
+    "scope-del-valle-east-beach",
+    "scope-del-valle-west-beach",
+)
+
+# Presentation choices, not a second knowledge model: ids and predicates select
+# canonical records for the questions a Del Valle visitor asks first.
+DEL_VALLE_SECTIONS = (
+    ("Getting there and entering", (
+        (DEL_VALLE_ID, ("street_address", "seasonal_gate_hours", "published_entry_fees",
+                       "operating_status", "trail_condition")),
+        ("entrance-del-valle-main", ("accesses",)),
+    )),
+    ("Camping", (
+        (DEL_VALLE_ID, ("group_camping_reservation", "developed_group_camping_capacity",
+                       "published_seasonal_closures")),
+        ("campground-del-valle-family", (
+            "reservation_window", "site_inventory", "people_per_family_site",
+            "vehicles_per_family_site", "shared_facilities", "gate_hours",
+            "quiet_hours", "fire_rules", "dog_rules", "generators_allowed",
+            "connectivity_warning",
+        )),
+    )),
+    ("Swimming, boating, and lake conditions", (
+        ("beach-del-valle-east", ("water_quality_advisory",)),
+        ("beach-del-valle-west", ("water_availability",)),
+        ("lake-del-valle", (
+            "published_swimming_facilities", "swimming_safety_guidance",
+            "boat_inspection_required", "watercraft_preparation",
+            "cross_lake_boat_quarantine", "published_boating_fees",
+        )),
+    )),
+    ("Ohlone Wilderness Trail", (
+        ("trail-ohlone-wilderness", (
+            "eastern_gateway", "trail_permit_required", "overnight_camping_reservation",
+            "ordered_backpack_camp_inventory", "reported_water_availability",
+            "published_corridor_distances_miles", "mapped_access_restrictions",
+        )),
+    )),
+)
 
 
 def _plain(value: Any) -> Any:
@@ -68,19 +116,23 @@ def _source_label(source: dict) -> str:
     return f'<code>{_e(label)}</code>'
 
 
+def _claim_bundle(reads: CanonicalReadService, claim) -> dict:
+    provenance = reads.explain_claim(claim.claim_id)
+    return {
+        "claim": claim,
+        "evidence": provenance.evidence,
+        "observations": provenance.observations,
+        "sources": provenance.sources,
+    }
+
+
 def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
     """Build one transport-neutral entity view exclusively through read APIs."""
     entity = reads.entity(entity_id)
     claims = []
     history = list(reads.changes(record_id=entity_id))
     for claim in reads.claims_for(entity_id):
-        provenance = reads.explain_claim(claim.claim_id)
-        claims.append({
-            "claim": claim,
-            "evidence": provenance.evidence,
-            "observations": provenance.observations,
-            "sources": provenance.sources,
-        })
+        claims.append(_claim_bundle(reads, claim))
         history.extend(reads.changes(record_id=claim.claim_id, record_type="claim"))
     return _plain({
         "type": "canonical_entity",
@@ -92,6 +144,63 @@ def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
         "relationships": reads.relationships_for(entity_id),
         "knowledge_gaps": reads.knowledge_gaps_for(entity_id),
         "history": history,
+    })
+
+
+def del_valle_destination_payload(reads: CanonicalReadService,
+                                  as_of: date) -> dict:
+    """Compose a visitor-oriented Del Valle view from canonical read APIs."""
+    sections = []
+    for title, selections in DEL_VALLE_SECTIONS:
+        bundles = []
+        for entity_id, predicates in selections:
+            wanted = set(predicates)
+            bundles.extend(
+                _claim_bundle(reads, claim)
+                for claim in reads.claims_for(entity_id)
+                if claim.predicate in wanted
+            )
+        sections.append({"title": title, "claims": bundles})
+
+    context = PlanningContext(
+        trip_date=as_of,
+        objectives=(TripObjective("visit", DEL_VALLE_ID, "visit"),),
+        stages=(TripStage("visit", 1, "visit", DEL_VALLE_SCOPES),),
+    )
+    recheck = reads.pretrip_recheck(context)
+    recheck_items = []
+    for item in recheck.items:
+        entry = {"result": item}
+        if item.claim_id:
+            claim = reads.get("claim", item.claim_id)
+            entry["claim"] = _claim_bundle(reads, claim)
+        else:
+            entry["gap"] = reads.get("gap", item.input_id)
+        recheck_items.append(entry)
+
+    related = []
+    for relationship in reads.relationships_for(DEL_VALLE_ID):
+        other_id = (relationship.object_id
+                    if relationship.subject_id == DEL_VALLE_ID
+                    else relationship.subject_id)
+        try:
+            entity = reads.entity(other_id)
+        except KeyError:
+            continue
+        related.append({"relationship": relationship, "entity": entity})
+
+    return _plain({
+        "type": "destination",
+        "as_of": as_of,
+        "entity": reads.entity(DEL_VALLE_ID),
+        "recheck": {
+            "result_id": recheck.result_id,
+            "state": recheck.state,
+            "topics": recheck.topics,
+            "items": recheck_items,
+        },
+        "sections": sections,
+        "related": related,
     })
 
 
@@ -114,6 +223,131 @@ def _claim_html(bundle: dict) -> str:
         f'<details><summary>Evidence and sources ({len(bundle["evidence"])})</summary>'
         f'<ul>{source_html}</ul></details>'
         '</article>'
+    )
+
+
+def _human_label(value: str) -> str:
+    return value.replace("_", " ").strip().capitalize()
+
+
+def _human_value(value: Any) -> str:
+    """Render structured claim values as readable nested HTML."""
+    if isinstance(value, bool):
+        return "Yes" if value else "No"
+    if value is None:
+        return "Unknown"
+    if isinstance(value, dict):
+        return '<dl>' + ''.join(
+            f'<dt>{_e(_human_label(str(key)))}</dt><dd>{_human_value(item)}</dd>'
+            for key, item in value.items()) + '</dl>'
+    if isinstance(value, list):
+        return '<ul>' + ''.join(f'<li>{_human_value(item)}</li>' for item in value) + '</ul>'
+    if isinstance(value, str):
+        parsed = urlparse(value)
+        if parsed.scheme in ("http", "https") and parsed.netloc:
+            return f'<a href="{_e(value)}" rel="noopener">{_e(value)}</a>'
+        return _e(value.replace("_", " "))
+    return _e(value)
+
+
+def _destination_claim_html(bundle: dict) -> str:
+    claim = bundle["claim"]
+    sources = ''.join(f'<li>{_source_label(source)}</li>' for source in bundle["sources"])
+    return (
+        '<article class="card">'
+        f'<h3>{_e(_human_label(claim["predicate"]))}</h3>'
+        f'{_human_value(claim["value"])}'
+        f'<details><summary>Why Wayproof says this</summary><ul>{sources}</ul>'
+        f'<p class="meta">Claim <code>{_e(claim["claim_id"])}</code></p></details>'
+        '</article>'
+    )
+
+
+def _recheck_item_html(item: dict) -> str:
+    result = item["result"]
+    status = result["answerability"]
+    if "claim" in item:
+        bundle = item["claim"]
+        claim = bundle["claim"]
+        title = _human_label(claim["predicate"])
+        detail = _human_value(claim["value"])
+        sources = ''.join(f'<li>{_source_label(source)}</li>'
+                          for source in bundle["sources"])
+    else:
+        gap = item["gap"]
+        title = gap["question"]
+        detail = f'<p>{_e(gap["reason"] or result["explanation"])}</p>'
+        sources = ""
+    explanation = ("" if "gap" in item and gap.get("reason") == result["explanation"]
+                   else f'<p class="meta">{_e(result["explanation"])}</p>')
+    source_block = (f'<details><summary>Sources</summary><ul>{sources}</ul></details>'
+                    if sources else "")
+    return (
+        f'<article class="card recheck-{_e(status)}">'
+        f'<p><span class="pill">{_e(status.replace("_", " "))}</span></p>'
+        f'<h3>{_e(title)}</h3>{detail}'
+        f'{explanation}{source_block}'
+        '</article>'
+    )
+
+
+def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
+    entity = payload["entity"]
+    recheck = payload["recheck"]
+    priority = {"unknown": 0, "needs_current_check": 1, "answered": 2}
+    items = sorted(recheck["items"],
+                   key=lambda item: (priority[item["result"]["answerability"]],
+                                     item["result"]["input_id"]))
+    unresolved = [item for item in items
+                  if item["result"]["answerability"] != "answered"]
+    answered = [item for item in items
+                if item["result"]["answerability"] == "answered"]
+    body = [
+        '<nav class="crumbs"><a href="/">Wayproof</a> / '
+        '<a href="/search/">Search</a></nav>',
+        f'<h1>{_e(entity["name"])}</h1>',
+        '<p class="tagline">Plan access, camping, lake recreation, and the '
+        'Ohlone Wilderness Trail from one evidence-backed view.</p>',
+        f'<p class="meta">Planning view generated {_e(payload["as_of"])} · '
+        f'<a href="/knowledge/{_e(entity["entity_id"])}/">Canonical record</a> · '
+        f'<a href="{DEL_VALLE_PATH}index.json">JSON</a></p>',
+        '<section><h2>Check before you go</h2>',
+        f'<p><strong>Recheck state: {_e(recheck["state"])}</strong>. '
+        f'{len(unresolved)} item(s) still require a current check or remain unknown. '
+        'Dated answers below describe the build date, not a guarantee for a later trip.</p>',
+    ]
+    body.extend(_recheck_item_html(item) for item in unresolved)
+    if answered:
+        body.append(f'<details><summary>{len(answered)} dated/current inputs available</summary>')
+        body.extend(_recheck_item_html(item) for item in answered)
+        body.append('</details>')
+    body.append('</section>')
+
+    for section in payload["sections"]:
+        body.append(f'<section><h2>{_e(section["title"])}</h2>')
+        if section["claims"]:
+            body.extend(_destination_claim_html(bundle) for bundle in section["claims"])
+        else:
+            body.append('<p>No canonical answer is published for this section.</p>')
+        body.append('</section>')
+
+    body.append('<section><h2>Explore related places and facilities</h2><ul>')
+    for item in payload["related"]:
+        relationship = item["relationship"]
+        related = item["entity"]
+        path = (DEL_VALLE_PATH if related["entity_id"] == DEL_VALLE_ID
+                else f'/knowledge/{related["entity_id"]}/')
+        body.append(
+            f'<li>{_e(_human_label(relationship["predicate"]))}: '
+            f'<a href="{_e(path)}">{_e(related["name"])}</a></li>'
+        )
+    body.append('</ul></section>')
+    body.append('<footer><p class="meta">Wayproof is a planning aid, not a booking or '
+                'safety guarantee. Follow linked official sources before acting.</p></footer>')
+    return _page(
+        'Plan Del Valle Regional Park — Wayproof',
+        'Evidence-backed Del Valle access, camping, lake conditions, and Ohlone Trail planning.',
+        f'{site_url}{DEL_VALLE_PATH}', "\n".join(body),
     )
 
 
@@ -180,13 +414,16 @@ def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str
     )
 
 
-def render_search_html(entities: Iterable[dict], site_url: str) -> str:
+def render_search_html(entities: Iterable[dict], site_url: str,
+                       preferred_paths: dict[str, str] | None = None) -> str:
     entities = list(entities)
+    preferred_paths = preferred_paths or {}
     kinds = sorted({item["kind"] for item in entities})
     rows = "".join(
         f'<li data-search="{_e((item["name"] + " " + item["entity_id"]).casefold())}" '
         f'data-kind="{_e(item["kind"])}">'
-        f'<a href="/knowledge/{_e(item["entity_id"])}">{_e(item["name"])}</a> '
+        f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
+        f'{_e(item["name"])}</a> '
         f'<span class="pill">{_e(item["kind"])}</span></li>'
         for item in entities
     )
@@ -228,13 +465,14 @@ kind.addEventListener('change', filterEntities);
 
 
 def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
-                         site_url: str) -> dict:
+                         site_url: str, as_of: date) -> dict:
     """Write canonical search and detail pages into an existing site artifact."""
     entities = tuple(_plain(item) for item in reads.search_entities())
     known_ids = {item["entity_id"] for item in entities}
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
-    (search_dir / "index.html").write_text(render_search_html(entities, site_url), encoding="utf-8")
+    (search_dir / "index.html").write_text(render_search_html(
+        entities, site_url, {DEL_VALLE_ID: DEL_VALLE_PATH}), encoding="utf-8")
     (search_dir / "index.json").write_text(_json({
         "type": "canonical_entity_index", "count": len(entities), "entities": entities,
     }), encoding="utf-8")
@@ -249,4 +487,12 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
             render_entity_html(payload, site_url, known_ids), encoding="utf-8")
         (knowledge_dir / f'{entity["entity_id"]}.json').write_text(
             _json(payload), encoding="utf-8")
-    return {"canonical_entities": len(entities)}
+
+    destination_dir = output_dir / "destinations" / "del-valle"
+    destination_dir.mkdir(parents=True, exist_ok=True)
+    destination = del_valle_destination_payload(reads, as_of)
+    (destination_dir / "index.html").write_text(
+        render_del_valle_destination_html(destination, site_url), encoding="utf-8")
+    (destination_dir / "index.json").write_text(_json(destination), encoding="utf-8")
+    return {"canonical_entities": len(entities),
+            "destination_urls": (f"{site_url}{DEL_VALLE_PATH}",)}
