@@ -1,0 +1,67 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-tilden-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-charles-lee-tilden-regional-park"
+    ],
+    "subject_id": "park-charles-lee-tilden-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "multiple entrances and staging areas from Grizzly Peak Boulevard, Wildcat Canyon Road, Canon Drive, and Shasta Road",
+      "accessible_facilities": [
+        "Steam Train",
+        "Merry-Go-Round",
+        "Little Farm",
+        "Environmental Education Center",
+        "Nimitz Way",
+        "Inspiration Point parking and restrooms",
+        "Botanic Garden visitor facilities"
+      ],
+      "acreage": 2079,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "fishing",
+        "golfing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "model trains",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "entrances off Wildcat Canyon Road and Grizzly Peak Boulevard, Berkeley, CA",
+      "camping": {
+        "equestrian_site": "ES Anderson",
+        "group_sites": 3,
+        "reservation_minimum_business_days": 3
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "major_facilities": [
+        "Lake Anza",
+        "Regional Parks Botanic Garden",
+        "Brazilian Room",
+        "Tilden Nature Area",
+        "Little Farm",
+        "golf course",
+        "Merry-Go-Round",
+        "Steam Train"
+      ],
+      "parking_fee_usd": 0,
+      "regional_routes": [
+        "Nimitz Way",
+        "East Bay Skyline National Recreation Trail"
+      ],
+      "seasonal_access": "South Park Drive closed to automobiles November 1–April 1 for migrating newts",
+      "trail_miles": 39.41
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

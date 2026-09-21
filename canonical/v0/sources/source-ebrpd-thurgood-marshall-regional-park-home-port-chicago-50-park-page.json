@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/parks/thurgood-marshall-regional-park-home-port-chicago-50",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-thurgood-marshall-regional-park-home-port-chicago-50-park-page"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

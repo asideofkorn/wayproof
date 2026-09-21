@@ -1,0 +1,61 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sycamore-valley-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-sycamore-valley-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-sycamore-valley-open-space-regional-preserve"
+    ],
+    "subject_id": "park-sycamore-valley-open-space-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "staging": [
+          "Holbrook Drive",
+          "Sherburne Hills Road"
+        ],
+        "walk_in": [
+          "Sunhaven Road",
+          "Northview Court",
+          "Tuscany Way",
+          "Woodside Court",
+          "Country Hills Court"
+        ]
+      },
+      "accessibility": {
+        "sherburne_hills_parking": "accessible toilets, drinking fountains, and spaces",
+        "trails": "generally unsuitable for wheelchairs due to steep grade"
+      },
+      "acreage_approx": 696,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding"
+      ],
+      "address": "Holbrook Drive, Danville, CA 94506",
+      "elevation_feet": {
+        "maximum": 1000,
+        "minimum": 600
+      },
+      "habitats": [
+        "grassland",
+        "oak savanna",
+        "woodland",
+        "intermittent drainages",
+        "ponds"
+      ],
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "units": {
+        "sherburne_hills_acres": 328,
+        "short_ridge_acres": 361
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

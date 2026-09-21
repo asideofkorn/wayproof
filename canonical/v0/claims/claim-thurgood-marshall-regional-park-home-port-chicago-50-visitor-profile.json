@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-thurgood-marshall-regional-park-home-port-chicago-50-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-thurgood-marshall-regional-park-home-port-chicago-50-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-thurgood-marshall-regional-park-home-port-chicago-50"
+    ],
+    "subject_id": "park-thurgood-marshall-regional-park-home-port-chicago-50",
+    "temporal_scope": null,
+    "value": {
+      "future_acreage": 3000,
+      "future_facilities": [
+        "visitor center",
+        "public transit routes",
+        "public access points",
+        "staging areas",
+        "camping",
+        "hiking",
+        "biking",
+        "picnic areas"
+      ],
+      "location": "Concord Hills",
+      "planning_note": "future facilities are planned rather than currently available",
+      "public_access": "occasional naturalist-led tours and public events only",
+      "purpose": [
+        "interpret the Port Chicago disaster and the Port Chicago 50",
+        "connect communities",
+        "protect habitat and wildlife corridors"
+      ],
+      "status": "land bank; closed with no general public access"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

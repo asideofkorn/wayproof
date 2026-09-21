@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Sycamore Valley Open Space Regional Preserve.",
+    "entity_id": "park-sycamore-valley-open-space-regional-preserve",
+    "kind": "park",
+    "scope_id": "scope-sycamore-valley-open-space-regional-preserve"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
