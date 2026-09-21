@@ -58,8 +58,9 @@ schema object.
 
 **Status: in progress.** Rule applicability, runtime requirements, explicit
 fulfillment coverage, bounded Trip Readiness, Pre-trip Recheck, provenance, and
-the complete lifecycle acceptance test are implemented. General intent
-resolution and several readiness inputs remain.
+the complete lifecycle acceptance test are implemented. Named objective,
+route, and access intent resolution is implemented conservatively; richer
+traversal/constraint resolution and several readiness inputs remain.
 
 **Outcome:** a bounded trip produces explainable Trip Readiness and Pre-trip
 Recheck results from canonical Schema v0 knowledge.
@@ -89,8 +90,9 @@ for canonical search, every entity detail, automatic Parks/Trails/Camping/Peaks
 directories, public ChangeSet history, and the focused Del Valle destination
 and Ohlone trail guides. It also generates corresponding JSON indexes and
 sitemap discovery. A read-only MCP server now exposes search, typed lookup,
-provenance, history, knowledge gaps, requirements, readiness, and contextual
-recheck through the same facade. CLI migration remains.
+provenance, history, knowledge gaps, bounded intent resolution, requirements,
+readiness, and contextual recheck through the same facade. CLI migration
+remains.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
@@ -109,8 +111,9 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** complete general `TripIntent` resolution in M1, then
-expose that richer planning behavior through the existing MCP read adapter.
+**Next capability gate:** expand the bounded intent result into traversal-aware
+planning inputs, then carry those inputs through readiness and the remaining
+CLI migration without duplicating resolution in an adapter.
 
 ## M3 — Constrained contribution workflow
 

@@ -19,6 +19,7 @@ from .schema import (
     Fulfillment,
     PartyContext,
     PlanningContext,
+    TripIntent,
     TripObjective,
     TripStage,
 )
@@ -92,6 +93,35 @@ def planning_context_from_dict(payload: dict[str, Any]) -> PlanningContext:
     )
 
 
+def trip_intent_from_dict(payload: dict[str, Any]) -> TripIntent:
+    """Parse a user request while keeping route and access choices optional."""
+    if not isinstance(payload, dict):
+        raise ValueError("intent must be an object")
+    trip_date = _date(payload.get("trip_date"), "trip_date")
+    if trip_date is None:
+        raise ValueError("trip_date is required")
+    objectives = _tuple(payload.get("objective_queries"))
+    if not objectives:
+        raise ValueError("at least one objective query is required")
+    party = payload.get("party") or {}
+    activities = payload.get("activities") or {}
+    equipment = payload.get("equipment") or {}
+    return TripIntent(
+        objective_queries=objectives,
+        trip_date=trip_date,
+        route_query=str(payload.get("route_query") or ""),
+        entry_query=str(payload.get("entry_query") or ""),
+        exit_query=str(payload.get("exit_query") or ""),
+        party=PartyContext(_tuple(party.get("participant_ids")),
+                           dict(party.get("attributes") or {})),
+        activities=ActivityContext(_tuple(activities.get("activities")),
+                                   dict(activities.get("attributes") or {})),
+        equipment=EquipmentContext(
+            _tuple(equipment.get("equipment_ids")),
+            dict(equipment.get("attributes") or {}),
+            _tuple(equipment.get("prior_events")),
+        ),
+    )
 def _coverage(payload: dict[str, Any] | None) -> Coverage:
     payload = payload or {}
     return Coverage(
@@ -154,6 +184,10 @@ class WayproofReadTools:
                 if record_id else self.reads.knowledge_gaps())
         return {"count": len(gaps), "knowledge_gaps": _plain(gaps)}
 
+    def resolve_trip_intent(self, intent: dict[str, Any]) -> dict:
+        """Resolve named objectives into a bounded canonical planning context."""
+        return _plain(self.reads.resolve_intent(trip_intent_from_dict(intent)))
+
     def evaluate_requirements(self, context: dict[str, Any]) -> dict:
         """Evaluate applicable canonical rules and requirements for a resolved context."""
         return _plain(self.reads.requirements(planning_context_from_dict(context)))
@@ -193,6 +227,7 @@ def create_server(root: Path | str = Path(".")) -> MCPServer:
     server.tool(name="explain_claim")(tools.explain_claim)
     server.tool(name="get_changes")(tools.get_changes)
     server.tool(name="list_knowledge_gaps")(tools.list_knowledge_gaps)
+    server.tool(name="resolve_trip_intent")(tools.resolve_trip_intent)
     server.tool(name="evaluate_requirements")(tools.evaluate_requirements)
     server.tool(name="evaluate_readiness")(tools.evaluate_readiness)
     server.tool(name="pretrip_recheck")(tools.pretrip_recheck)
