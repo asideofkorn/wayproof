@@ -125,7 +125,9 @@ def test_del_valle_search_opens_the_outcome_focused_destination(site):
         "Ohlone Wilderness Trail",
     ):
         assert heading in page
-    assert "Why Wayproof says this" in page
+    assert "Sources and details" in page
+    assert "At a glance" in page
+    assert 'class="summary-grid"' in page
     assert "Canonical record" in page
 
 
@@ -143,9 +145,10 @@ def test_del_valle_destination_projects_recheck_and_readable_claims(site):
                for item in payload["related"])
 
     page = (tmp_path / "destinations" / "del-valle" / "index.html").read_text()
-    assert "Recheck state: required" in page
+    assert "Recheck required" in page
+    assert "questions Wayproof cannot currently answer" in page
     assert "What fire restrictions apply for the planned trip date?" in page
-    assert "Reservation window" in page
+    assert "Book a campsite" in page
     assert "Ohlone Wilderness Trail" in page
 
 
@@ -165,7 +168,7 @@ def test_ohlone_trail_page_uses_canonical_route_evidence(site):
     for heading in ("Permits, reservations, and parking", "Route, access, and distance",
                     "Camps and water", "Route choices and detours"):
         assert heading in page
-    assert "Why Wayproof says this" in page
+    assert "Sources and details" in page
     assert "https://wayproof.dev/trails/ohlone-wilderness/" in (
         tmp_path / "sitemap.xml").read_text()
 

@@ -267,7 +267,15 @@ def _claim_html(bundle: dict) -> str:
 
 
 def _human_label(value: str) -> str:
-    return value.replace("_", " ").strip().capitalize()
+    labels = {
+        "operating_status": "Park status", "reservation_window": "Book a campsite",
+        "gate_hours": "Campground gate", "water_quality_advisory": "Swimming advisory",
+        "boat_inspection_required": "Boat inspection", "overnight_camping_reservation": "Ohlone overnights",
+        "published_corridor_distances_miles": "Trail distance",
+        "mapped_access_restrictions": "Who can use the trail",
+        "reported_water_availability": "Water sources",
+    }
+    return labels.get(value, value.replace("_", " ").strip().capitalize())
 
 
 def _human_value(value: Any) -> str:
@@ -294,11 +302,11 @@ def _destination_claim_html(bundle: dict) -> str:
     claim = bundle["claim"]
     sources = ''.join(f'<li>{_source_label(source)}</li>' for source in bundle["sources"])
     return (
-        '<article class="card">'
+        '<article class="fact-row">'
         f'<h3>{_e(_human_label(claim["predicate"]))}</h3>'
         f'{_human_value(claim["value"])}'
-        f'<details><summary>Why Wayproof says this</summary><ul>{sources}</ul>'
-        f'<p class="meta">Claim <code>{_e(claim["claim_id"])}</code></p></details>'
+        f'<details><summary>Sources and details</summary><ul>{sources}</ul>'
+        f'<p class="meta">Canonical claim <code>{_e(claim["claim_id"])}</code></p></details>'
         '</article>'
     )
 
@@ -323,8 +331,7 @@ def _recheck_item_html(item: dict) -> str:
     source_block = (f'<details><summary>Sources</summary><ul>{sources}</ul></details>'
                     if sources else "")
     return (
-        f'<article class="card recheck-{_e(status)}">'
-        f'<p><span class="pill">{_e(status.replace("_", " "))}</span></p>'
+        f'<article class="notice {"notice-unknown" if status == "unknown" else ""}">'
         f'<h3>{_e(title)}</h3>{detail}'
         f'{explanation}{source_block}'
         '</article>'
@@ -338,27 +345,50 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     items = sorted(recheck["items"],
                    key=lambda item: (priority[item["result"]["answerability"]],
                                      item["result"]["input_id"]))
-    unresolved = [item for item in items
-                  if item["result"]["answerability"] != "answered"]
+    current_checks = [item for item in items
+                      if item["result"]["answerability"] == "needs_current_check"]
+    unknown = [item for item in items if item["result"]["answerability"] == "unknown"]
     answered = [item for item in items
                 if item["result"]["answerability"] == "answered"]
+    claims = {bundle["claim"]["predicate"]: bundle
+              for section in payload["sections"] for bundle in section["claims"]}
+    summary_predicates = (
+        "operating_status", "reservation_window", "gate_hours",
+        "water_quality_advisory", "boat_inspection_required",
+        "overnight_camping_reservation",
+    )
+    summary = [claims[item] for item in summary_predicates if item in claims]
     body = [
         '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
         '<a href="/search/">Search</a> / '
         '<a href="/destinations/del-valle/">Del Valle</a> / '
         '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
-        f'<h1>{_e(entity["name"])}</h1>',
+        '<header class="page-header">', f'<h1>{_e(entity["name"])}</h1>',
         '<p class="tagline">Plan access, camping, lake recreation, and the '
         'Ohlone Wilderness Trail from one evidence-backed view.</p>',
-        f'<p class="meta">Planning view generated {_e(payload["as_of"])} · '
-        f'<a href="/knowledge/{_e(entity["entity_id"])}/">Canonical record</a> · '
-        f'<a href="{DEL_VALLE_PATH}index.json">JSON</a></p>',
-        '<section><h2>Check before you go</h2>',
-        f'<p><strong>Recheck state: {_e(recheck["state"])}</strong>. '
-        f'{len(unresolved)} item(s) still require a current check or remain unknown. '
-        'Dated answers below describe the build date, not a guarantee for a later trip.</p>',
+        f'<p class="meta page-meta">Updated {_e(payload["as_of"])}</p></header>',
+        '<ul class="section-nav" aria-label="On this page">'
+        '<li><a href="#before-you-go">Before you go</a></li>'
+        '<li><a href="#getting-there-and-entering">Getting there</a></li>'
+        '<li><a href="#camping">Camping</a></li>'
+        '<li><a href="#swimming-boating-and-lake-conditions">Lake recreation</a></li>'
+        '<li><a href="#ohlone-wilderness-trail">Ohlone Trail</a></li></ul>',
+        '<section aria-labelledby="at-a-glance"><h2 id="at-a-glance">At a glance</h2>',
+        '<div class="summary-grid">',
     ]
-    body.extend(_recheck_item_html(item) for item in unresolved)
+    for bundle in summary:
+        claim = bundle["claim"]
+        body.append('<div class="summary-item">'
+                    f'<strong>{_e(_human_label(claim["predicate"]))}</strong>'
+                    f'{_human_value(claim["value"])}</div>')
+    body.append('</div></section><section id="before-you-go"><h2>Check before you go</h2>'
+                f'<p><strong>Recheck {_e(recheck["state"])}</strong>. Conditions below can '
+                'change. Follow the linked official source before leaving.</p>')
+    body.extend(_recheck_item_html(item) for item in current_checks)
+    if unknown:
+        body.append(f'<details><summary>{len(unknown)} questions Wayproof cannot currently answer</summary>')
+        body.extend(_recheck_item_html(item) for item in unknown)
+        body.append('</details>')
     if answered:
         body.append(f'<details><summary>{len(answered)} dated/current inputs available</summary>')
         body.extend(_recheck_item_html(item) for item in answered)
@@ -366,12 +396,13 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     body.append('</section>')
 
     for section in payload["sections"]:
-        body.append(f'<section><h2>{_e(section["title"])}</h2>')
+        anchor = section["title"].lower().replace(",", "").replace(" ", "-")
+        body.append(f'<section id="{_e(anchor)}"><h2>{_e(section["title"])}</h2><div class="fact-list">')
         if section["claims"]:
             body.extend(_destination_claim_html(bundle) for bundle in section["claims"])
         else:
             body.append('<p>No canonical answer is published for this section.</p>')
-        body.append('</section>')
+        body.append('</div></section>')
 
     body.append('<section><h2>Explore related places and facilities</h2><ul>')
     for item in payload["related"]:
@@ -384,6 +415,9 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
             f'<a href="{_e(path)}">{_e(related["name"])}</a></li>'
         )
     body.append('</ul></section>')
+    body.append(f'<aside class="technical-links"><strong>Reference formats</strong><p>'
+                f'<a href="/knowledge/{_e(entity["entity_id"])}/">Canonical record</a> · '
+                f'<a href="{DEL_VALLE_PATH}index.json">JSON</a></p></aside>')
     body.append('<footer><p class="meta">Wayproof is a planning aid, not a booking or '
                 'safety guarantee. Follow linked official sources before acting.</p></footer>')
     return _page(
