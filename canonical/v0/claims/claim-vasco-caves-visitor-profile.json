@@ -1,0 +1,45 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-vasco-caves-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-vasco-caves-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-vasco-caves-regional-preserve"
+    ],
+    "subject_id": "park-vasco-caves-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "dogs": false,
+      "features": [
+        "rock outcrops",
+        "native grassland restoration",
+        "Native American archaeological sites and rock art"
+      ],
+      "general_public_access": false,
+      "management": "jointly acquired with Contra Costa Water District and operated by EBRPD",
+      "public_access": "advance-reservation guided tours only",
+      "sensitive_resources": [
+        "California red-legged frog",
+        "California tiger salamander",
+        "fairy shrimp",
+        "kit fox",
+        "nesting raptors"
+      ],
+      "tour_seasons": [
+        "fall",
+        "winter",
+        "spring"
+      ],
+      "tour_staging": [
+        "Round Valley Regional Preserve",
+        "Brushy Peak Regional Preserve"
+      ],
+      "transport": "District-provided shuttle bus"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

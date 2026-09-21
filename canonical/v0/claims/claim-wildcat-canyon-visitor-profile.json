@@ -1,0 +1,62 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wildcat-canyon-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-wildcat-canyon-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-wildcat-canyon-regional-park"
+    ],
+    "subject_id": "park-wildcat-canyon-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "main": "Alvarado staging area",
+        "walk_in": [
+          "Rifle Range Road",
+          "Park Avenue",
+          "Clark Road"
+        ]
+      },
+      "accessible_routes": [
+        "Nimitz Way",
+        "Alvarado Park entrance to main lawn and picnic areas"
+      ],
+      "acreage": 2789,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "5755 McBryde Avenue, Richmond, CA",
+      "bike_rules": "prohibited near EEC and Little Farm and on Tilden Nature Area single-track trails",
+      "curfew": "22:00–05:00",
+      "dog_rules": {
+        "nimitz_and_developed_areas": "leash required",
+        "open_space": "off leash under voice control",
+        "permit_required_over_three_dogs": true,
+        "tilden_nature_area": false
+      },
+      "hours": "05:00–22:00",
+      "parking_fee_usd": 0,
+      "relationships": [
+        "Tilden Nature Area",
+        "Alvarado Park",
+        "Nimitz Way"
+      ],
+      "seasonal_alvarado_gate_hours": "07:30 opening; closing varies from 17:00 to 19:00",
+      "trails": {
+        "paved_nimitz_way_miles": 2.5,
+        "tilden_nature_area_single_track_miles": 6,
+        "total_miles": 25
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

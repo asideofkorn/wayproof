@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Wildcat Canyon Regional Park.",
+    "entity_id": "park-wildcat-canyon-regional-park",
+    "kind": "park",
+    "scope_id": "scope-wildcat-canyon-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
