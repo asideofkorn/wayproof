@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-morgan-territory-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-morgan-territory-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-morgan-territory-regional-preserve"
+    ],
+    "subject_id": "park-morgan-territory-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": "Morgan Territory Road staging area and published walk-in entrances",
+      "acreage": 5323,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "picnicking"
+      ],
+      "address": "9401 Morgan Territory Road, Livermore",
+      "backpack_camp": {
+        "minimum_advance_business_days": 2,
+        "reservation_required": true,
+        "wheelchair_accessible": false
+      },
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "closure": "Stone Corral Trail between Coyote Trail and the Highland Ridge junction",
+        "reason": "storm damage"
+      },
+      "hours": "05:00–22:00",
+      "parking_fee_usd": 0,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by published date bands"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

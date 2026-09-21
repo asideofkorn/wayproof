@@ -1,0 +1,52 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-round-valley-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-round-valley-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-round-valley-regional-preserve"
+    ],
+    "subject_id": "park-round-valley-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": "Marsh Creek Road staging area",
+      "accessible_staging_facilities": [
+        "restrooms",
+        "drinking fountain"
+      ],
+      "acreage": 2191,
+      "activities": [
+        "biking",
+        "camping",
+        "hiking",
+        "horseback riding"
+      ],
+      "address": "19450 Marsh Creek Road, Brentwood, CA",
+      "backpack_camp": {
+        "capacity": 25,
+        "facilities": [
+          "leveled tent spaces",
+          "picnic table",
+          "ADA-accessible restroom"
+        ],
+        "hike_in_miles": 3.6,
+        "minimum_advance_business_days": 2,
+        "reservation_required": true,
+        "water": "normally non-potable and requires boiling, treatment, or filtration; currently unavailable"
+      },
+      "current_alerts": {
+        "as_of": "2026-09-20",
+        "backpack_camp_water": "not working until further notice",
+        "trail_closure": "Hardy Canyon Trail closed until further notice due to storm damage"
+      },
+      "dogs_allowed": false,
+      "parking_fee_usd": 0,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by published date bands"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

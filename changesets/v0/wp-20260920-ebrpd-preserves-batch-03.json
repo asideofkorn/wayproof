@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-preserves-batch-03",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-leona-canyon-open-space-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-leona-canyon-open-space-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-leona-canyon-open-space-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-leona-canyon-open-space-regional-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-leona-canyon-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-leona-canyon-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-leona-canyon-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-leona-canyon-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-leona-canyon-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-leona-canyon-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-leona-canyon-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-leona-canyon-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-leona-canyon-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-morgan-territory-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-morgan-territory-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-morgan-territory-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-morgan-territory-regional-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-morgan-territory-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-morgan-territory-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-morgan-territory-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-morgan-territory-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-morgan-territory-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-morgan-territory-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-morgan-territory-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-morgan-territory-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-morgan-territory-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-round-valley-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-round-valley-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-round-valley-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-round-valley-regional-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-round-valley-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-round-valley-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-round-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-round-valley-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-round-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-round-valley-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-round-valley-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-round-valley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-round-valley-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-sibley-volcanic-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-sibley-volcanic-regional-preserve",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-sibley-volcanic-regional-preserve.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-sibley-volcanic-regional-preserve",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-sibley-volcanic-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-sibley-volcanic-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-sibley-volcanic-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-sibley-volcanic-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-sibley-volcanic-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-sibley-volcanic-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-sibley-volcanic-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sibley-volcanic-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-sibley-volcanic-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four additional previously uncaptured EBRPD preserve visitor profiles."
+}
