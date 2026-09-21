@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Miller/Knox Regional Shoreline.",
+    "entity_id": "park-miller-knox-regional-shoreline",
+    "kind": "park",
+    "scope_id": "scope-miller-knox-regional-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

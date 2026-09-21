@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Ted and Kathy Radke Martinez Regional Shoreline.",
+    "entity_id": "park-ted-and-kathy-radke-martinez-regional-shoreline",
+    "kind": "park",
+    "scope_id": "scope-ted-and-kathy-radke-martinez-regional-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

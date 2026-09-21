@@ -1,0 +1,64 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-martin-luther-king-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-martin-luther-king-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-martin-luther-king-jr-regional-shoreline"
+    ],
+    "subject_id": "park-martin-luther-king-jr-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Swan Way entrance",
+        "multiple shoreline and marsh staging areas",
+        "Elmhurst walk-in entrance"
+      ],
+      "accessible_facilities": [
+        "parking",
+        "curb cuts",
+        "paved trails",
+        "fishing access",
+        "restrooms",
+        "drinking fountains",
+        "marsh overlook platform",
+        "Shoreline Center",
+        "Tidewater paddle-craft dock"
+      ],
+      "acreage": 748,
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "addresses": {
+        "main": "Doolittle Drive and Swan Way, Oakland, CA",
+        "shoreline_center": "7250 Doolittle Drive, Oakland, CA 94621",
+        "tidewater_boating_center": "4675-A Tidewater Avenue, Oakland, CA 94601"
+      },
+      "habitat": {
+        "arrowhead_marsh_acres": 50,
+        "pacific_flyway_stopover": true
+      },
+      "major_event_parking_fee_usd": 40,
+      "parking_fee_usd": 0,
+      "restrictions": {
+        "dogs_elsewhere": "six-foot leash",
+        "dogs_in_marsh": false,
+        "jet_skis_and_hydrofoils": "prohibited November 1–March 31",
+        "motorized_boats_in_marsh": false,
+        "swimming": false
+      },
+      "seasonal_hours": "08:00 opening; closing varies from 17:00 to 21:00 by month"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

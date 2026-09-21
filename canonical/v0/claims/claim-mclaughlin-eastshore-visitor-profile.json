@@ -1,0 +1,58 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mclaughlin-eastshore-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-mclaughlin-eastshore-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-mclaughlin-eastshore-state-park"
+    ],
+    "subject_id": "park-mclaughlin-eastshore-state-park",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Richmond Central Avenue",
+        "Albany Buchanan Street",
+        "Berkeley Gilman Street",
+        "Berkeley University Avenue",
+        "Berkeley Ashby Avenue",
+        "Emeryville Powell Street"
+      ],
+      "accessible_facilities": [
+        "two Berkeley Meadow trails",
+        "restroom at the end of Buchanan Street"
+      ],
+      "acreage": 1833,
+      "activities": [
+        "biking",
+        "hiking"
+      ],
+      "extent": [
+        "Oakland",
+        "Emeryville",
+        "Berkeley",
+        "Albany",
+        "Richmond"
+      ],
+      "habitats": [
+        "tidal marshes",
+        "beaches",
+        "seasonal wetlands",
+        "coastal prairie",
+        "coastal scrub"
+      ],
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "relationship": {
+        "albany_bulb": "adjacent, city-operated, and outside park boundary",
+        "point_isabel_to_richmond_marina": "multi-use trail connection"
+      },
+      "shoreline_miles": 8.5,
+      "trails": "pedestrian and bicycle trails run almost the entire park length",
+      "water_trail": "Albany Beach is a conditionally designated San Francisco Bay Water Trail trailhead"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
