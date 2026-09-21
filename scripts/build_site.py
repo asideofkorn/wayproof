@@ -153,6 +153,7 @@ uncertain ones labelled rather than guessed.</p>
   known gaps, source evidence, and published ChangeSet history.</p>
   <p><a href="/search/">Search canonical knowledge &rarr;</a></p>
   <p><a href="/destinations/del-valle/">Plan Del Valle Regional Park &rarr;</a></p>
+  <p><a href="/trails/ohlone-wilderness/">Plan the Ohlone Wilderness Trail &rarr;</a></p>
 </section>
 
 <section>

@@ -22,6 +22,8 @@ from .schema import PlanningContext, TripObjective, TripStage
 
 DEL_VALLE_ID = "park-del-valle-regional-park"
 DEL_VALLE_PATH = "/destinations/del-valle/"
+OHLONE_ID = "trail-ohlone-wilderness"
+OHLONE_PATH = "/trails/ohlone-wilderness/"
 DEL_VALLE_SCOPES = (
     "scope-del-valle-park",
     "scope-lake-del-valle",
@@ -63,6 +65,22 @@ DEL_VALLE_SECTIONS = (
             "ordered_backpack_camp_inventory", "reported_water_availability",
             "published_corridor_distances_miles", "mapped_access_restrictions",
         )),
+    )),
+)
+
+OHLONE_SECTIONS = (
+    ("Permits, reservations, and parking", (
+        "trail_permit_required", "overnight_camping_reservation",
+        "reserved_overnight_parking", "maximum_consecutive_nights",
+    )),
+    ("Route, access, and distance", (
+        "eastern_gateway", "published_corridor_distances_miles",
+        "mapped_access_restrictions", "trail_use", "traversed_parks",
+    )),
+    ("Camps and water", (
+        "ordered_backpack_camp_inventory", "mapped_backcountry_camps",
+        "reported_water_availability", "backpack_fire_policy",
+        "dogs_allowed_overnight", "alcohol_allowed",
     )),
 )
 
@@ -201,6 +219,28 @@ def del_valle_destination_payload(reads: CanonicalReadService,
         },
         "sections": sections,
         "related": related,
+    })
+
+
+def ohlone_trail_payload(reads: CanonicalReadService) -> dict:
+    """Compose the public Ohlone guide from canonical reads only."""
+    claims = {item.predicate: item for item in reads.claims_for(OHLONE_ID)}
+    sections = [
+        {"title": title, "claims": [
+            _claim_bundle(reads, claims[predicate])
+            for predicate in predicates if predicate in claims
+        ]}
+        for title, predicates in OHLONE_SECTIONS
+    ]
+    results = [reads.get("derived_result", result_id) for result_id in (
+        "result-ohlone-doe-canyon-roundtrip-detour",
+        "result-ohlone-ot27-ot29-route-comparison",
+        "result-ohlone-ot33-ot35-route-comparison",
+    )]
+    return _plain({
+        "type": "trail_guide", "entity": reads.entity(OHLONE_ID),
+        "sections": sections, "route_results": results,
+        "knowledge_gaps": reads.knowledge_gaps_for(OHLONE_ID),
     })
 
 
@@ -353,6 +393,34 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     )
 
 
+def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
+    body = [
+        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
+        '<a href="/search/">Search</a> / <a href="/destinations/del-valle/">Del Valle</a> / '
+        '<a href="/trailheads/">Trailheads</a></nav>',
+        '<h1>Ohlone Wilderness Trail</h1>',
+        '<p class="tagline">Permits, camps, water, access, and mapped route choices '
+        'from published canonical evidence.</p>',
+        f'<p class="meta"><a href="/knowledge/{OHLONE_ID}/">Canonical record</a> · '
+        f'<a href="{OHLONE_PATH}index.json">JSON</a></p>',
+    ]
+    for section in payload["sections"]:
+        body.append(f'<section><h2>{_e(section["title"])}</h2>')
+        body.extend(_destination_claim_html(item) for item in section["claims"])
+        body.append('</section>')
+    body.append('<section><h2>Route choices and detours</h2>')
+    for result in payload["route_results"]:
+        body.append('<article class="card">'
+                    f'<h3>{_e(_human_label(result["kind"]))}</h3>'
+                    f'{_human_value(result["value"])}'
+                    f'<p>{_e(result["explanation"])}</p></article>')
+    body.append('</section><footer><p class="meta">Wayproof is a planning aid. '
+                'Confirm current conditions with the linked official sources.</p></footer>')
+    return _page('Plan the Ohlone Wilderness Trail — Wayproof',
+                 'Evidence-backed Ohlone Trail permits, camps, water, access, and route choices.',
+                 f'{site_url}{OHLONE_PATH}', "\n".join(body))
+
+
 def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str:
     entity = payload["entity"]
     claims = payload["claims"]
@@ -479,7 +547,8 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
     (search_dir / "index.html").write_text(render_search_html(
-        entities, site_url, {DEL_VALLE_ID: DEL_VALLE_PATH}), encoding="utf-8")
+        entities, site_url, {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}),
+        encoding="utf-8")
     (search_dir / "index.json").write_text(_json({
         "type": "canonical_entity_index", "count": len(entities), "entities": entities,
     }), encoding="utf-8")
@@ -501,5 +570,12 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     (destination_dir / "index.html").write_text(
         render_del_valle_destination_html(destination, site_url), encoding="utf-8")
     (destination_dir / "index.json").write_text(_json(destination), encoding="utf-8")
+    trail_dir = output_dir / "trails" / "ohlone-wilderness"
+    trail_dir.mkdir(parents=True, exist_ok=True)
+    trail = ohlone_trail_payload(reads)
+    (trail_dir / "index.html").write_text(
+        render_ohlone_trail_html(trail, site_url), encoding="utf-8")
+    (trail_dir / "index.json").write_text(_json(trail), encoding="utf-8")
     return {"canonical_entities": len(entities),
-            "destination_urls": (f"{site_url}{DEL_VALLE_PATH}",)}
+            "destination_urls": (f"{site_url}{DEL_VALLE_PATH}",
+                                 f"{site_url}{OHLONE_PATH}")}
