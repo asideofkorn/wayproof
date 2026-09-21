@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-mount-russell",
+    "kind": "peak",
+    "name": "Mount Russell"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

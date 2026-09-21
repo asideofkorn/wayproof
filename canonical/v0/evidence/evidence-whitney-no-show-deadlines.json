@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-no-show-deadlines",
+    "evidence_id": "evidence-whitney-no-show-deadlines",
+    "notes": "",
+    "observation_id": "observation-recreationgov-mount-whitney",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

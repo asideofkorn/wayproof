@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-sequoia-kings-canyon",
+    "kind": "national_park",
+    "name": "Sequoia and Kings Canyon National Parks"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

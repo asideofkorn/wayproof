@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-shepherd-pass-quota",
+    "evidence_ids": [
+      "evidence-shepherd-pass-quota"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-route-shepherd-pass"
+    ],
+    "subject_id": "route-shepherd-pass",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "six_month_release": 9,
+      "total": 15,
+      "trail_code": "JM32",
+      "two_week_release": 6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

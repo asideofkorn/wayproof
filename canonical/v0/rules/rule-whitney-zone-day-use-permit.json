@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-day-use-scope",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": false
+      }
+    ],
+    "consequence": "Require the Whitney Zone day-use permit for a day hike on either route.",
+    "rule_id": "rule-whitney-zone-day-use-permit",
+    "spatial_scope_ids": [
+      "scope-whitney-zone"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

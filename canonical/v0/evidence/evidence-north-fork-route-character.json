@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-north-fork-route-character",
+    "evidence_id": "evidence-north-fork-route-character",
+    "notes": "",
+    "observation_id": "observation-usfs-north-fork-lone-pine",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

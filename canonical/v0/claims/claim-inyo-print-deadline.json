@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-print-deadline",
+    "evidence_ids": [
+      "evidence-inyo-print-deadline"
+    ],
+    "predicate": "permit_document",
+    "spatial_scope_ids": [],
+    "subject_id": "permit-inyo-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "no_show_deadline": "10:00 on entry date",
+      "print_available_days_before": 7,
+      "signed_copy_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-overnight-release",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Require an Inyo overnight wilderness permit for an overnight Shepherd Pass entry.",
+    "rule_id": "rule-shepherd-overnight-permit",
+    "spatial_scope_ids": [
+      "scope-route-shepherd-pass"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

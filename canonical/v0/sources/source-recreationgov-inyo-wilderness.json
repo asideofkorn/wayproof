@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.recreation.gov/permits/233262",
+    "publisher": "Recreation.gov / Inyo National Forest",
+    "source_id": "source-recreationgov-inyo-wilderness"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-print-deadline",
+    "evidence_id": "evidence-inyo-print-deadline",
+    "notes": "",
+    "observation_id": "observation-recreationgov-inyo-wilderness",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

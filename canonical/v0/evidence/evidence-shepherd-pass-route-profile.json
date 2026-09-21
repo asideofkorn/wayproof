@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-shepherd-pass-route-profile",
+    "evidence_id": "evidence-shepherd-pass-route-profile",
+    "notes": "",
+    "observation_id": "observation-usfs-shepherd-pass-trail",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

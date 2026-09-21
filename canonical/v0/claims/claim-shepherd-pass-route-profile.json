@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-shepherd-pass-route-profile",
+    "evidence_ids": [
+      "evidence-shepherd-pass-route-profile"
+    ],
+    "predicate": "official_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-shepherd-pass"
+    ],
+    "subject_id": "route-shepherd-pass",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "anvil_camp_miles": 9.25,
+      "hiker_trailhead_miles": 1.25,
+      "john_muir_trail_miles": 15.25,
+      "shepherd_pass_miles": 12.25,
+      "stock_trailhead_miles": 0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Permit selection depends on both route and whether the trip is day use or overnight.",
+    "input_ids": [
+      "claim-whitney-day-use-scope",
+      "claim-whitney-overnight-scope",
+      "relationship-north-fork-overnight-inyo-permit"
+    ],
+    "kind": "route_activity_permit_matrix",
+    "result_id": "result-whitney-route-permit-split",
+    "value": {
+      "day_use_any_whitney_zone_route": "permit-whitney-zone-day-use",
+      "overnight_classic": "permit-whitney-trail-overnight",
+      "overnight_north_fork": "permit-inyo-overnight-wilderness"
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

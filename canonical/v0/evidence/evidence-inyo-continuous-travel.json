@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-inyo-continuous-travel",
+    "evidence_id": "evidence-inyo-continuous-travel",
+    "notes": "",
+    "observation_id": "observation-recreationgov-seki-wilderness",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

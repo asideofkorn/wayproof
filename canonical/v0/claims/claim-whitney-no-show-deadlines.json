@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-no-show-deadlines",
+    "evidence_ids": [
+      "evidence-whitney-no-show-deadlines"
+    ],
+    "predicate": "no_show_deadlines",
+    "spatial_scope_ids": [],
+    "subject_id": "permit-whitney-zone-day-use",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-20"
+    },
+    "value": {
+      "day_use": "noon one day before entry",
+      "overnight_classic": "10:00 on entry date"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mount Whitney Zone",
+    "kind": "zone",
+    "scope_id": "scope-whitney-zone"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

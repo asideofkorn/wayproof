@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "SEKI confirms permits issued by Inyo for continuous travel are valid in SEKI subject to park conditions.",
+    "observation_id": "observation-recreationgov-seki-wilderness",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-20T00:00:00+00:00",
+    "source_id": "source-recreationgov-seki-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

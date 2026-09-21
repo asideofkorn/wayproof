@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-north-fork-lone-pine",
+    "kind": "route",
+    "name": "North Fork of Lone Pine Creek"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
