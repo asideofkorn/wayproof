@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-browns-island",
+    "kind": "park",
+    "name": "Browns Island"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

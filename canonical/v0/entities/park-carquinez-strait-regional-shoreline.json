@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-carquinez-strait-regional-shoreline",
+    "kind": "park",
+    "name": "Carquinez Strait Regional Shoreline"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

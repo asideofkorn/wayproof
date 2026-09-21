@@ -1,0 +1,56 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-carquinez-strait-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-carquinez-strait-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-carquinez-strait-regional-shoreline"
+    ],
+    "subject_id": "park-carquinez-strait-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access_constraint": "Carquinez Scenic Drive has no through traffic between the eastern and western portions because of a 1982 landslide",
+      "acreage": 1568,
+      "activities": [
+        "dogs",
+        "fishing",
+        "hiking",
+        "horseback riding"
+      ],
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "location": "Eckley Pier",
+        "water": "unavailable due to a Contra Costa Water District line break; no restoration estimate"
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee": "none at staging areas",
+      "planning_notes": [
+        "bluffs and shoreline",
+        "multi-purpose trails",
+        "George Miller Trail access",
+        "Eckley Pier fishing access"
+      ],
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by month",
+      "sections": "two non-contiguous sections separated by private property",
+      "staging_areas": [
+        "John A. Nejedly",
+        "Bull Valley",
+        "Crockett Boulevard",
+        "Eckley Pier",
+        "Port Costa"
+      ],
+      "walk_in_entrances": [
+        "Rankin Park",
+        "F Street",
+        "Winslow Street",
+        "San Pablo Avenue at Selby Road",
+        "Carquinez Scenic Drive at District Service Road"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

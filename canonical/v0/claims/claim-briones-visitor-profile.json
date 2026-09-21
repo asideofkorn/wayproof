@@ -1,0 +1,66 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-briones-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-briones-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-briones-regional-park"
+    ],
+    "subject_id": "park-briones-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "acreage": 6255,
+      "activities": [
+        "archery",
+        "biking",
+        "camping",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "picnicking"
+      ],
+      "bus_fee_usd": 25,
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "trail_damage": "Briones Crest/Mott Peak and Briones Crest/Lagoon intersections damaged but passable with care"
+      },
+      "dog_rules": "six-foot leash required on the published Tavan, Diablo View, Alhambra Creek, and Orchard trail segments",
+      "group_camps": {
+        "capacity_range": [
+          50,
+          300
+        ],
+        "count": 3,
+        "facilities": [
+          "picnic tables",
+          "barbecue",
+          "fire ring",
+          "chemical toilets"
+        ],
+        "minimum_people": 17,
+        "reservation_required": true
+      },
+      "parking_fee_usd": 5,
+      "parking_lot_hours": "08:00 to sunset",
+      "payment": "cash only",
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by published date bands",
+      "special_management_area": {
+        "acreage": 1600,
+        "trail_use": "route-specific allowed uses and directions; weekend bicycle/equestrian access alternates by even and odd calendar days"
+      },
+      "staging_areas": [
+        "Alhambra Creek",
+        "Bear Creek",
+        "Briones Road",
+        "Lafayette Ridge",
+        "Reliez Valley"
+      ],
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

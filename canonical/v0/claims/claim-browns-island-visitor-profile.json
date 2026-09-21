@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-browns-island-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-browns-island-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-browns-island"
+    ],
+    "subject_id": "park-browns-island",
+    "temporal_scope": null,
+    "value": {
+      "access": "restricted; by arrangement only",
+      "access_contact": "510-544-3095",
+      "acreage": 595,
+      "address": "Browns Island, Pittsburg, CA",
+      "facilities": false,
+      "hours": "05:00–22:00",
+      "planning_notes": [
+        "six rare and endangered plant species",
+        "aquatic bird habitat"
+      ],
+      "setting": "island at the junction of the Sacramento and San Joaquin rivers in the Sacramento Delta"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

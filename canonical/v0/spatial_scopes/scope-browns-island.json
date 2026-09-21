@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Browns Island.",
+    "entity_id": "park-browns-island",
+    "kind": "park",
+    "scope_id": "scope-browns-island"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
