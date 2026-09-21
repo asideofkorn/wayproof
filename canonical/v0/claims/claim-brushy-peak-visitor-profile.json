@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-brushy-peak-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-brushy-peak-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-brushy-peak-regional-preserve"
+    ],
+    "subject_id": "park-brushy-peak-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "accessible_facilities": [
+        "parking",
+        "restroom at Laughlin Ranch Staging Area"
+      ],
+      "acreage": 1979,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding"
+      ],
+      "address": "North end of Laughlin Road, Livermore, CA",
+      "dogs": "on leash at all times",
+      "drinking_water": false,
+      "parking_fee_usd": 0,
+      "peak_area_access": "Contact LARPD for guided-tour information",
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00 by published date bands"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

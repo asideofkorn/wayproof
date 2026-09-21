@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/parks/bishop-ranch",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-bishop-ranch-park-page"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

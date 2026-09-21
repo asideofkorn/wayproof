@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bishop-ranch-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-bishop-ranch-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-bishop-ranch-open-space-regional-preserve"
+    ],
+    "subject_id": "park-bishop-ranch-open-space-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "accessibility": "Steep trails are generally not suitable for wheelchair users",
+      "acreage": 806,
+      "activities": [
+        "dogs",
+        "hiking",
+        "picnicking"
+      ],
+      "address": "Mail: c/o Las Trampas Regional Wilderness, 18012 Bollinger Canyon Road, San Ramon, CA 94583",
+      "drinking_water": "not stated",
+      "facilities": "No facilities other than a trailhead and trails",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

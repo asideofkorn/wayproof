@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-brooks-island-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-brooks-island-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-brooks-island-regional-preserve"
+    ],
+    "subject_id": "park-brooks-island-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": "guided tours only",
+      "acreage": 373,
+      "advance_registration_required": true,
+      "facilities": "minimal",
+      "location": "off Richmond Inner Harbor",
+      "typical_annual_tours": "6–10, depending on weather and tides",
+      "visit_format": "naturalist-led boat or tandem-kayak trip with a guided two-mile island hike",
+      "wheelchair_accessible": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

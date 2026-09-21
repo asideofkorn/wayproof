@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Black Diamond Mines Regional Preserve.",
+    "entity_id": "park-black-diamond-mines-regional-preserve",
+    "kind": "park",
+    "scope_id": "scope-black-diamond-mines-regional-preserve"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
