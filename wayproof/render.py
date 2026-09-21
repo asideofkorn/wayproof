@@ -243,7 +243,9 @@ def render_trailhead_html(view: dict) -> str:
     loc, land = view["location"], view["land"]
 
     body = [
-        '<nav class="crumbs"><a href="/">Wayproof</a> / '
+        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
+        '<a href="/search/">Search</a> / '
+        '<a href="/destinations/del-valle/">Del Valle</a> / '
         '<a href="/trailheads/">Trailheads</a></nav>',
         f'<h1>{_e(view["name"])}</h1>',
         f'<p class="subtitle">{_e(land["wilderness_area"] or land["land_agency"])}'
@@ -557,7 +559,10 @@ def render_trailhead_index_html(views: Sequence[dict]) -> str:
     for view in views:
         by_agency.setdefault(view["land"]["land_agency"] or "Other", []).append(view)
 
-    body = ['<nav class="crumbs"><a href="/">Wayproof</a></nav>',
+    body = ['<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
+            '<a href="/search/">Search</a> / '
+            '<a href="/destinations/del-valle/">Del Valle</a> / '
+            '<a href="/trailheads/">Trailheads</a></nav>',
             '<h1>Trailheads</h1>',
             f'<p class="subtitle">{len(views)} trailheads, each with the permit that '
             'governs entry, its quota season, fees, and the dates you need to act.</p>']
