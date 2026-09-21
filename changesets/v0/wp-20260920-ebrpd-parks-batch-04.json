@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-parks-batch-04",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-anthony-chabot-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-anthony-chabot-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-anthony-chabot-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-anthony-chabot-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-anthony-chabot-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-anthony-chabot-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-anthony-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-anthony-chabot-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-anthony-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-anthony-chabot-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-anthony-chabot-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-anthony-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-anthony-chabot-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-antioch-oakley-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-antioch-oakley-regional-shoreline",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-antioch-oakley-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-antioch-oakley-regional-shoreline",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-antioch-oakley-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-antioch-oakley-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-antioch-oakley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-antioch-oakley-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-antioch-oakley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-antioch-oakley-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-antioch-oakley-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-antioch-oakley-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-antioch-oakley-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-ardenwood-historic-farm.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-ardenwood-historic-farm",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-ardenwood-historic-farm.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-ardenwood-historic-farm",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-ardenwood-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-ardenwood-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-ardenwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-ardenwood-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-ardenwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-ardenwood-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-ardenwood-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ardenwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-ardenwood-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-bay-point-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-bay-point-regional-shoreline",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-bay-point-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-bay-point-regional-shoreline",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-bay-point-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-bay-point-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-bay-point-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-bay-point-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-bay-point-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-bay-point-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-bay-point-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-bay-point-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-bay-point-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four additional previously uncaptured EBRPD park visitor profiles."
+}

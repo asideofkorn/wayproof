@@ -1,0 +1,64 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-anthony-chabot-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-anthony-chabot-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-anthony-chabot-regional-park"
+    ],
+    "subject_id": "park-anthony-chabot-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "multiple entrances, staging areas, and walk-in gates on Redwood Road and Skyline Boulevard, plus trail access from Lake Chabot",
+      "acreage": 3304,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "kid-friendly"
+      ],
+      "address": "9999 Redwood Road, Castro Valley, CA 94546",
+      "campground_and_group_camp_gate_hours": "08:00–22:00",
+      "current_alerts": {
+        "as_of": "2026-09-20",
+        "family_campground_closure": "2026-10-12 through 2026-11-30 for restroom improvements and hazardous tree work",
+        "trail_impacts": [
+          "Brandon Trail segment inaccessible to equestrians",
+          "Willowview Trail closed",
+          "Redtail Trail closed between Brandon Trail and Grass Valley Trail",
+          "Bird Trail permanently rerouted"
+        ]
+      },
+      "family_campground": {
+        "drive_to_tent_sites": 53,
+        "facilities": [
+          "picnic table and fire ring at each site",
+          "hot showers"
+        ],
+        "no_day_use_parking": true,
+        "rv_trailer_full_hookup_sites": 12,
+        "walk_to_tent_sites": 10
+      },
+      "group_camps": {
+        "capacity_range": [
+          35,
+          300
+        ],
+        "count": 7,
+        "equestrian_camping": "Bort Meadow Group Camp",
+        "minimum_people": 10,
+        "reservation_required": true
+      },
+      "hours": "05:00–22:00",
+      "parking_fee_usd": 0,
+      "trail_miles": 70
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

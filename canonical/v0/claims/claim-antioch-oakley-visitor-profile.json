@@ -1,0 +1,49 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-antioch-oakley-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-antioch-oakley-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-antioch-oakley-regional-shoreline"
+    ],
+    "subject_id": "park-antioch-oakley-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "accessible_facilities": [
+        "picnic tables and barbecues on wheelchair-friendly pads",
+        "paved trails",
+        "drinking fountains",
+        "restroom"
+      ],
+      "activities": [
+        "fishing",
+        "picnicking"
+      ],
+      "address": "Bridgehead Road at Wilbur Avenue, Antioch, CA 94509",
+      "admission_fee_usd": 0,
+      "fishing_pier": {
+        "hours": "24 hours daily, year-round",
+        "length_feet": 550,
+        "park_district_fishing_access_permit_required": false,
+        "state_license_required_age": 16
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "picnic_tables": {
+        "availability": "first-come, first-served",
+        "reservation_available": false
+      },
+      "restrictions": {
+        "camping": false,
+        "overnight_picnicking": false,
+        "overnight_use": false,
+        "swimming": false
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

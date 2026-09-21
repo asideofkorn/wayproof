@@ -1,0 +1,61 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ardenwood-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-ardenwood-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-ardenwood-historic-farm"
+    ],
+    "subject_id": "park-ardenwood-historic-farm",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Ardenwood Boulevard entrance",
+        "Lake Boulevard entrance"
+      ],
+      "accessible_facilities": [
+        "Patterson House",
+        "Hay Barn",
+        "train ride",
+        "Granary",
+        "Cafe",
+        "restrooms",
+        "wedding and reception sites",
+        "mostly paved roads with no significant grade changes"
+      ],
+      "activities": [
+        "hiking",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "34600 Ardenwood Boulevard, Fremont, CA 94555",
+      "entry_fee_required": true,
+      "historic_season": "April through mid-November",
+      "historic_season_selected_days": [
+        "Patterson House tours",
+        "train rides"
+      ],
+      "hours": "Tuesday–Sunday 10:00–16:00; holiday exceptions published",
+      "parking_fee_usd": 0,
+      "payment": "cashless; card or tap to pay",
+      "reservable_picnic_site": "EIO Picnic Area",
+      "restrictions": {
+        "dogs": false,
+        "examples": [
+          "frisbees",
+          "footballs",
+          "soccer balls",
+          "bicycles",
+          "balloons",
+          "barbecues"
+        ],
+        "modern_recreational_equipment": false
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
