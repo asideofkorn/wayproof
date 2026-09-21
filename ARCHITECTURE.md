@@ -167,6 +167,14 @@ those inputs are not all integrated yet. Pre-trip Recheck projects the canonical
 recheck manifest onto trip date and spatial scope, distinguishes answered,
 unknown, and needs-current-check results, and returns the sources to revisit.
 
+The shared `plan` operation composes intent resolution, constraint evaluation,
+readiness, and explicitly selected recheck manifests. It preserves separate
+states for resolution and readiness: complete permit coverage cannot erase an
+incomplete traversal, while ambiguous or unknown intent stops before rule
+evaluation. Spatial projection accepts both directly linked scopes and
+claim-backed scope attachments so older Schema v0 route fixtures participate
+without a data rewrite or adapter-specific exception.
+
 ## Controlled write architecture
 
 All writers use the same domain/service boundary, while Git and GitHub remain

@@ -61,8 +61,10 @@ fulfillment coverage, bounded Trip Readiness, Pre-trip Recheck, provenance, and
 the complete lifecycle acceptance test are implemented. Named objective,
 route, and access intent resolution is implemented conservatively; richer
 published segment topology now expands into ordered planning stages and
-requirement coverage. Richer constraint resolution and several readiness
-inputs remain.
+requirement coverage. A composed planner carries resolved party, activity, and
+equipment context through readiness and named rechecks without collapsing their
+answerability states. Cost, deadline, inventory, closure, and conflict inputs
+remain incomplete.
 
 **Outcome:** a bounded trip produces explainable Trip Readiness and Pre-trip
 Recheck results from canonical Schema v0 knowledge.
@@ -93,8 +95,8 @@ directories, public ChangeSet history, and the focused Del Valle destination
 and Ohlone trail guides. It also generates corresponding JSON indexes and
 sitemap discovery. A read-only MCP server now exposes search, typed lookup,
 provenance, history, knowledge gaps, bounded intent resolution, requirements,
-readiness, and contextual recheck through the same facade. CLI migration
-remains.
+readiness, contextual recheck, and the composed planning operation through the
+same facade. CLI migration remains.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
@@ -113,9 +115,9 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** add constraint-aware planning and remaining readiness
-inputs, then migrate the useful legacy CLI behavior without duplicating domain
-resolution in an adapter.
+**Next capability gate:** define and integrate source-backed cost, deadline,
+inventory, closure, and conflict answerability, then migrate the useful legacy
+CLI behavior without duplicating domain resolution in an adapter.
 
 ## M3 — Constrained contribution workflow
 

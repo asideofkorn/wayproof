@@ -132,6 +132,27 @@ def test_intent_tool_returns_ordered_traversal_when_canonical_topology_exists(to
     assert result["traversal"]["distance_complete"] is False
 
 
+def test_plan_tool_combines_resolution_and_constraint_evaluation(tools):
+    result = tools.plan_trip({
+        "trip_date": "2027-08-12",
+        "objective_queries": ["Mount Whitney"],
+        "route_query": "Mount Whitney Trail",
+        "entry_query": "Whitney Portal",
+        "exit_query": "Whitney Portal",
+        "party": {"participant_ids": ["alice", "bob"]},
+        "activities": {
+            "activities": ["hiking"], "attributes": {"overnight": True},
+        },
+    })
+
+    assert result["state"] == "partial"
+    assert result["resolution"]["issues"][0]["code"] == "traversal_unavailable"
+    assert result["readiness"]["state"] == "blocked"
+    assert result["readiness"]["evaluation"]["requirements"][0][
+        "requirement"
+    ]["requirement_id"] == "requirement-whitney-classic-overnight-permit"
+
+
 def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
     async def exercise():
         async with Client(create_server(ROOT)) as client:
@@ -141,6 +162,7 @@ def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
                 "search_entities", "get_record", "get_entity", "explain_claim",
                 "get_changes", "list_knowledge_gaps", "evaluate_requirements",
                 "evaluate_readiness", "pretrip_recheck", "resolve_trip_intent",
+                "plan_trip",
             }
             assert not names.intersection({"propose", "approve", "promote", "publish"})
             assert all(item.description for item in discovered.tools)
