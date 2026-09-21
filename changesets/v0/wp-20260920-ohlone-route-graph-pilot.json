@@ -1175,6 +1175,942 @@
       "reason": "Publish a source-grounded route-graph pilot with official mainline, alternate routes, facility access, printed mileage, derived detours, and explicit gaps.",
       "record_id": "result-ohlone-lichen-bark-pretrip-recheck",
       "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-001"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-001.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-001",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-001.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-001",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-002"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-002.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-002",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-002.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-002",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-003"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-003.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-003",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-003.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-003",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-004"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-004.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-004",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-004.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-004",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-005"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-005.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-005",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-005.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-005",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-006"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-006.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-006",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-006.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-006",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-007"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-007.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-007",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-007.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-007",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-008"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-008.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-008",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-008.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-008",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-009"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-009.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-009",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-009.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-009",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-010"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-010.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-010",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-010.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-010",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-011"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-011.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-011",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-011.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-011",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-012"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-012.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-012",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-012.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-012",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-013"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-013.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-013",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-013.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-013",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-014"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-014.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-014",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-014.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-014",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-015"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-015.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-015",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-015.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-015",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-016"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-016.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-016",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-016.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-016",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-017"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-017.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-017",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-017.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-017",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-018"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-018.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-018",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-018.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-018",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-019"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-019.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-019",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-019.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-019",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-020"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-020.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-020",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-020.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-020",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-021"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-021.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-021",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-021.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-021",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-022"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-022.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-022",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-022.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-022",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-023"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-023.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-023",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-023.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-023",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-024"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-024.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-024",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-024.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-024",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-025"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-025.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-025",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-025.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-025",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-026"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-026.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-026.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-027"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-027.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-027",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-027.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-027",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-028"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-028.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-028",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-028.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-028",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-029"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-029.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-029",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-029.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-029",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-030"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-030.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-030",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-030.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-030",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-031"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-031.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-031",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-031.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-031",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-032"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-032.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-032",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-032.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-032",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-033"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-033.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-033",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-033.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-033",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-034"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-034.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-034",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-034.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-034",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-035"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-035.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-035",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-035.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-035",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-036"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-036.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-036",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-036.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-036",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-037"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-037.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-037",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-037.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-037",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-038"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-038.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-038",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-038.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-038",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ohlone-map-mainline-mileage-label-039"
+      ],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/claims/claim-ohlone-map-mainline-mileage-label-039.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "claim-ohlone-map-mainline-mileage-label-039",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-ohlone-route-graph-unmodeled-sections"
+      ],
+      "path": "canonical/v0/evidence/evidence-ohlone-map-mainline-mileage-label-039.json",
+      "reason": "Preserve every individual official-mainline mileage label outside the detailed OT26-OT35 slice without inventing endpoint topology.",
+      "record_id": "evidence-ohlone-map-mainline-mileage-label-039",
+      "record_type": "evidence"
     }
   ],
   "schema_version": 0,

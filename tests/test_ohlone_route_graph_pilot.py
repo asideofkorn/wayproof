@@ -25,8 +25,8 @@ def test_pilot_changeset_is_validated_and_exactly_accounts_for_the_slice():
         ROOT / "changesets/v0/wp-20260920-ohlone-route-graph-pilot.json"
     )
     assert change.status is ChangeSetStatus.VALIDATED
-    assert len(change.operations) == 116
-    assert len({item.path for item in change.operations}) == 116
+    assert len(change.operations) == 194
+    assert len({item.path for item in change.operations}) == 194
     assert {item.action.value for item in change.operations} == {"ADD"}
 
 
@@ -135,5 +135,33 @@ def test_mapped_water_presence_does_not_become_a_current_availability_claim(snap
 def test_pilot_does_not_claim_to_be_the_complete_traverse_graph(snapshot):
     gap = next(item for item in snapshot.gaps
                if item.gap_id == "gap-ohlone-route-graph-unmodeled-sections")
-    assert "OT40 and OT35" in gap.question
-    assert "complete Stanford-to-Del-Valle graph" in gap.reason
+    assert "exact map coordinates" in gap.question
+    assert "complete Stanford-to-Del-Valle endpoint graph" in gap.reason
+
+
+def test_every_mainline_mileage_label_outside_detailed_slice_is_preserved(snapshot):
+    claims = sorted(
+        (
+            item
+            for item in snapshot.claims
+            if item.claim_id.startswith("claim-ohlone-map-mainline-mileage-label-")
+        ),
+        key=lambda item: item.value["ordinal_stanford_to_lichen_bark"],
+    )
+    assert len(claims) == 39
+    assert [item.value["ordinal_stanford_to_lichen_bark"] for item in claims] == list(
+        range(1, 40)
+    )
+    assert [item.value["printed_label"] for item in claims] == [
+        ".08", "1.51", ".65", ".18", ".12", ".15", ".23", ".24",
+        ".24", ".48", "1.56", "1.33", ".77", ".17", ".22", ".06",
+        ".36", ".94", ".38", "1.28", ".26", ".19", "1.46", ".20",
+        ".36", "1.24", ".34", ".25", ".13", "1.10", ".45", ".25",
+        "1.91", ".35", ".20", ".33", ".12", ".71", ".91",
+    ]
+    assert {item.value["topology_status"] for item in claims} == {
+        "ordered_label_only"
+    }
+    assert sum(item.value["distance_miles"] for item in claims) == pytest.approx(
+        21.71
+    )

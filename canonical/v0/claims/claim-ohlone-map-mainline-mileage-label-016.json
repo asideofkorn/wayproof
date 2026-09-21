@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-mainline-mileage-label-016",
+    "evidence_ids": [
+      "evidence-ohlone-map-mainline-mileage-label-016"
+    ],
+    "predicate": "printed_route_mileage_label",
+    "spatial_scope_ids": [
+      "scope-ohlone-wilderness-trail"
+    ],
+    "subject_id": "trail-ohlone-wilderness",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2025-08-01"
+    },
+    "value": {
+      "distance_miles": 0.06,
+      "map_region": "sunol-to-ot26",
+      "ordinal_stanford_to_lichen_bark": 16,
+      "printed_label": ".06",
+      "route_role": "official_mainline",
+      "topology_status": "ordered_label_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
