@@ -11,8 +11,10 @@ The repository remains Sierra Nevada- and public-lands focused and provides a
 working legacy planning CLI, a research corpus, and the first implemented
 canonical planning services. Canonical Schema v0, controlled publication,
 requirement coverage, bounded Trip Readiness, Pre-trip Recheck, published
-ChangeSet history, and constrained additive proposals are implemented. The CLI,
-website, and future MCP adapter have not yet fully moved to those services.
+ChangeSet history, and constrained additive proposals are implemented. The
+website now reads exclusively through the canonical service layer and publishes
+automatic discovery pages plus focused Del Valle and Ohlone views. The legacy
+CLI has not yet fully migrated, and an MCP adapter has not yet been implemented.
 
 ## Product promise
 
@@ -157,7 +159,21 @@ This proves the trust boundary and the central Whitney/Del Valle/Ohlone
 semantics. It does not yet complete the whole product contract. Remaining MVP
 work includes broader `TripIntent` resolution, complete cost/deadline/conflict
 aggregation, and completion of the legacy CLI migration onto the canonical read
-service. The website now publishes canonical read-service views only.
+service.
+
+The deployed website is the first complete canonical read adapter. It publishes
+entity search and evidence/history details; automatic Parks, Trails, Camping,
+Peaks, and Changes indexes; JSON representations and sitemap discovery; and
+focused Del Valle destination and Ohlone corridor pages. Directory membership
+is derived from canonical entity kinds at build time, so newly promoted records
+appear without a hand-maintained website catalog. Conditions and Pre-trip
+Recheck remain contextual parts of a trip, destination, or route rather than a
+standalone navigation category.
+
+Coverage has expanded through the same controlled lifecycle to every current
+top-level parkland page in the official East Bay Regional Park District
+directory. This demonstrates geographic growth without a schema fork; it does
+not by itself complete intent resolution, operational freshness, or MCP access.
 
 ## Reference and regression fixtures
 

@@ -84,16 +84,19 @@ coverage mismatches, historical rules, and volatile water/access rechecks.
 
 **Status: in progress.** The shared read-only service facade now supports entity
 search, typed lookup, evidence provenance, published ChangeSet history,
-requirements, readiness, and recheck. The website's canonical search, entity
-details, Del Valle destination view, and Ohlone trail guide use that facade.
-The deployed website is canonical-only; CLI and MCP adapter work remains.
+requirements, readiness, and recheck. The deployed website now uses that facade
+for canonical search, every entity detail, automatic Parks/Trails/Camping/Peaks
+directories, public ChangeSet history, and the focused Del Valle destination
+and Ohlone trail guides. It also generates corresponding JSON indexes and
+sitemap discovery. CLI and MCP adapter work remains.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
 
 - Provide stable read services for objective search, trip planning,
   requirements, advisories, evidence, conflicts, and knowledge gaps.
-- Adapt the CLI and website to those services rather than legacy storage shapes.
+- Keep the website on those services and migrate the remaining CLI behavior
+  away from legacy storage shapes.
 - Add an MCP read adapter for the same capabilities.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
@@ -102,6 +105,10 @@ the same service layer.
 
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
+
+**Next capability gate:** expose the already implemented search, typed lookup,
+provenance, history, requirements, readiness, and recheck reads through MCP,
+then expand its planning output as general `TripIntent` resolution lands in M1.
 
 ## M3 — Constrained contribution workflow
 
@@ -129,6 +136,12 @@ PR through the controlled lifecycle, and neither an AI agent nor an MCP client
 can perform raw canonical CRUD.
 
 ## M4 — Coverage and operational scale
+
+**Status: started for coverage; operational-scale work is not started.** The
+canonical corpus now includes every current top-level parkland page found in the
+official EBRPD directory, promoted in reviewable source-backed batches. This
+proved that a new regional corpus can reuse Schema v0, the controlled write
+lifecycle, and automatic publication without destination-specific branches.
 
 **Outcome:** expand geography, activities, and collaboration only after the
 MVP's trust model is durable.
