@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-map-mainline-mileage-label-019",
+    "evidence_id": "evidence-ohlone-map-mainline-mileage-label-019",
+    "notes": "Individually transcribed from the mileage-between-points label printed on the red official Ohlone route; exact tick coordinates are not asserted.",
+    "observation_id": "observation-ohlone-map-route-graph-pilot",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

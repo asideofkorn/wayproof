@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-ohlone-ot28-ot29-rose",
+    "kind": "route_segment",
+    "name": "OT28 to OT29 via Rose Peak"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

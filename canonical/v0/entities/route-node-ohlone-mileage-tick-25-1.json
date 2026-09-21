@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-ohlone-mileage-tick-25-1",
+    "kind": "route_mileage_tick",
+    "name": "Ohlone mainline mileage tick 25.1"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

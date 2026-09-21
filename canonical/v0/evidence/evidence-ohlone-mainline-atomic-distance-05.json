@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ohlone-mainline-atomic-distance-05",
+    "evidence_id": "evidence-ohlone-mainline-atomic-distance-05",
+    "notes": "Individually transcribed from the mileage label printed between ticks on the red official Ohlone route.",
+    "observation_id": "observation-ohlone-map-route-graph-pilot",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

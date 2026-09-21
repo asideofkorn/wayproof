@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ohlone-lichen-bark-water-current-status",
+    "question": "Is the mapped Lichen Bark drinking-water facility currently operating?",
+    "reason": "The official map establishes facility presence, while the 2015 imagery does not establish current operation; recheck before travel.",
+    "related_ids": [
+      "trailhead-ohlone-lichen-bark",
+      "water-del-valle-lichen-bark",
+      "claim-ohlone-lichen-bark-start-area"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

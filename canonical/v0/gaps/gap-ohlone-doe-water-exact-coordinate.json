@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-ohlone-doe-water-exact-coordinate",
+    "question": "What is the exact coordinate of the mapped Doe Camp water source?",
+    "reason": "The map supports water access at the camp but does not publish a survey-grade point.",
+    "related_ids": [
+      "camp-ohlone-map-doe-canyon-horse",
+      "water-ohlone-doe-camp",
+      "route-segment-ohlone-ot26-doe-canyon"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

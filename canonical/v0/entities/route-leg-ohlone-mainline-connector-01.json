@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-leg-ohlone-mainline-connector-01",
+    "kind": "route_segment",
+    "name": "Mapped connector route-node-ohlone-ot9 to route-node-ohlone-ot10"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
