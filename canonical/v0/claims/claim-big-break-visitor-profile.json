@@ -1,0 +1,61 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-big-break-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-big-break-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-big-break-regional-shoreline"
+    ],
+    "subject_id": "park-big-break-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "accessible_facilities": [
+        "paved relatively flat Big Break Regional Trail",
+        "drinking fountains",
+        "restroom"
+      ],
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "kid-friendly"
+      ],
+      "address": "69 Big Break Road, Oakley, CA 94561",
+      "boating": {
+        "beach_launch_walk_from_parking_miles": 0.25,
+        "water_trailhead": "San Francisco Bay Water Trail"
+      },
+      "current_alert": {
+        "as_of": "2026-09-20",
+        "water_quality": "Danger Advisory for blue-green algae"
+      },
+      "facilities": [
+        "visitor center with public Wi-Fi",
+        "picnic and meadow areas",
+        "shaded amphitheater",
+        "boat and kayak launch",
+        "100-foot fishing and observation pier"
+      ],
+      "fishing": {
+        "california_license_required": true,
+        "ebrpd_fishing_access_permit_required": false
+      },
+      "hours": "05:00–22:00",
+      "parking_fee_usd": 0,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 19:00 by month",
+      "swimming_allowed": false,
+      "trail_connections": [
+        "Marsh Creek Regional Trail",
+        "Delta de Anza Regional Trail"
+      ],
+      "visitor_center_hours": "Wednesday–Sunday 10:00–16:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
