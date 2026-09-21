@@ -14,7 +14,8 @@ requirement coverage, bounded Trip Readiness, Pre-trip Recheck, published
 ChangeSet history, and constrained additive proposals are implemented. The
 website now reads exclusively through the canonical service layer and publishes
 automatic discovery pages plus focused Del Valle and Ohlone views. The legacy
-CLI has not yet fully migrated, and an MCP adapter has not yet been implemented.
+CLI has not yet fully migrated. The initial MCP adapter is implemented as a
+read-only surface over the same canonical service layer.
 
 ## Product promise
 
@@ -173,7 +174,8 @@ standalone navigation category.
 Coverage has expanded through the same controlled lifecycle to every current
 top-level parkland page in the official East Bay Regional Park District
 directory. This demonstrates geographic growth without a schema fork; it does
-not by itself complete intent resolution, operational freshness, or MCP access.
+not by itself complete intent resolution, operational freshness, or the future
+constrained MCP contribution workflow.
 
 ## Reference and regression fixtures
 

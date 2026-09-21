@@ -88,7 +88,9 @@ requirements, readiness, and recheck. The deployed website now uses that facade
 for canonical search, every entity detail, automatic Parks/Trails/Camping/Peaks
 directories, public ChangeSet history, and the focused Del Valle destination
 and Ohlone trail guides. It also generates corresponding JSON indexes and
-sitemap discovery. CLI and MCP adapter work remains.
+sitemap discovery. A read-only MCP server now exposes search, typed lookup,
+provenance, history, knowledge gaps, requirements, readiness, and contextual
+recheck through the same facade. CLI migration remains.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
@@ -97,7 +99,8 @@ the same service layer.
   requirements, advisories, evidence, conflicts, and knowledge gaps.
 - Keep the website on those services and migrate the remaining CLI behavior
   away from legacy storage shapes.
-- Add an MCP read adapter for the same capabilities.
+- Keep the MCP read adapter on the same capabilities and expand its planning
+  output only as the underlying M1 services expand.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
 - Consider a generated read index only if measured query or startup needs
@@ -106,9 +109,8 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** expose the already implemented search, typed lookup,
-provenance, history, requirements, readiness, and recheck reads through MCP,
-then expand its planning output as general `TripIntent` resolution lands in M1.
+**Next capability gate:** complete general `TripIntent` resolution in M1, then
+expose that richer planning behavior through the existing MCP read adapter.
 
 ## M3 — Constrained contribution workflow
 
