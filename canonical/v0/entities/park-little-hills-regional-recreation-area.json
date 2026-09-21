@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-little-hills-regional-recreation-area",
+    "kind": "park",
+    "name": "Little Hills Regional Recreation Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

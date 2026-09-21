@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-deer-valley-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-deer-valley-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-deer-valley-regional-park"
+    ],
+    "subject_id": "park-deer-valley-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "construction_anticipated": 2027,
+      "construction_condition": "pending permit approvals",
+      "development_status": "planned habitat restoration and passive recreation access",
+      "former_golf_course_acres": 230,
+      "former_use": "18-hole Roddy Ranch Golf Course",
+      "planned_activities": [
+        "walking",
+        "biking",
+        "horseback riding",
+        "picnicking"
+      ],
+      "planned_facilities": [
+        "picnic areas",
+        "restrooms",
+        "nearly four miles of multi-use trails",
+        "interpretive pavilion"
+      ],
+      "planned_restoration": {
+        "grassland_acres": 84
+      },
+      "preserve_system": "East Contra Costa County Habitat Conservancy Preserve System",
+      "public_access": "not yet open to the public"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
