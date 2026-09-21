@@ -1,0 +1,63 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-quarry-lakes-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-quarry-lakes-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-quarry-lakes-regional-recreation-area"
+    ],
+    "subject_id": "park-quarry-lakes-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "main entrance",
+        "Niles Beach",
+        "boat launch",
+        "ADA fishing pier",
+        "two Alameda Creek Trail walk-in entrances"
+      ],
+      "accessible_facilities": [
+        "beach wheelchair",
+        "Horseshoe Lake fishing pier",
+        "Niles Beach facilities",
+        "Ensenada Pavilion",
+        "Orchard picnic area",
+        "Rock picnic-area restrooms and fountain"
+      ],
+      "acreage": {
+        "lakes": 350,
+        "total": 471
+      },
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "geocaching",
+        "hiking",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "2100 Isherwood Way, Fremont, CA 94536",
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "parking_fee_usd": 5,
+      "payment": "cashless",
+      "seasonal_gate_hours": "06:00 or 07:00 opening; closing varies from 17:00 to 20:00",
+      "trailered_vehicle_fee_usd": 5,
+      "water_rules": {
+        "lago_los_osos_water_contact": false,
+        "rainbow_lake_swimming": false,
+        "shinn_pond_swimming": false,
+        "swimming": "Niles Beach swim ropes only",
+        "watercraft_inspection_required": true
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

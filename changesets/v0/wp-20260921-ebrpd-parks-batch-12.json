@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260921-ebrpd-parks-batch-12",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-quarry-lakes-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-quarry-lakes-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-quarry-lakes-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-quarry-lakes-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-quarry-lakes-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-quarry-lakes-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-quarry-lakes-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-quarry-lakes-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-quarry-lakes-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-quarry-lakes-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-quarry-lakes-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-quarry-lakes-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-quarry-lakes-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-dr-aurelia-reinhardt-redwood-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-dr-aurelia-reinhardt-redwood-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-dr-aurelia-reinhardt-redwood-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-reinhardt-redwood-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-reinhardt-redwood-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-reinhardt-redwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-reinhardt-redwood-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-reinhardt-redwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-reinhardt-redwood-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-reinhardt-redwood-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-reinhardt-redwood-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-roberts-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-roberts-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-roberts-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-roberts-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-roberts-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-roberts-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-roberts-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-roberts-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-roberts-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-roberts-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-roberts-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-roberts-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-roberts-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-shadow-cliffs-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-shadow-cliffs-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-shadow-cliffs-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-shadow-cliffs-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-shadow-cliffs-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-shadow-cliffs-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-shadow-cliffs-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-shadow-cliffs-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-shadow-cliffs-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-shadow-cliffs-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-shadow-cliffs-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-shadow-cliffs-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-shadow-cliffs-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four additional previously uncaptured EBRPD park visitor profiles."
+}

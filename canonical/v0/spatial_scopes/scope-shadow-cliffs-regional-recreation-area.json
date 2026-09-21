@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Shadow Cliffs Regional Recreation Area.",
+    "entity_id": "park-shadow-cliffs-regional-recreation-area",
+    "kind": "park",
+    "scope_id": "scope-shadow-cliffs-regional-recreation-area"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

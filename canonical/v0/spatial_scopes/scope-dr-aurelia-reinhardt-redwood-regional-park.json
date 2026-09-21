@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Dr. Aurelia Reinhardt Redwood Regional Park.",
+    "entity_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "kind": "park",
+    "scope_id": "scope-dr-aurelia-reinhardt-redwood-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

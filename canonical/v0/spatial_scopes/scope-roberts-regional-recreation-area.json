@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Roberts Regional Recreation Area.",
+    "entity_id": "park-roberts-regional-recreation-area",
+    "kind": "park",
+    "scope_id": "scope-roberts-regional-recreation-area"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
