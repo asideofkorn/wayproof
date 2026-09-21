@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Thurgood Marshall Regional Park - Home of the Port Chicago 50.",
+    "entity_id": "park-thurgood-marshall-regional-park-home-port-chicago-50",
+    "kind": "park",
+    "scope_id": "scope-thurgood-marshall-regional-park-home-port-chicago-50"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

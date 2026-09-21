@@ -1,0 +1,50 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sobrante-ridge-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-sobrante-ridge-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-sobrante-ridge-botanic-regional-preserve"
+    ],
+    "subject_id": "park-sobrante-ridge-botanic-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "staging": "Coach Drive",
+        "walk_in": [
+          "Conestoga Way",
+          "Heavenly Ridge Lane"
+        ]
+      },
+      "acreage": 277,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "picnicking"
+      ],
+      "address": "Coach Drive, Richmond, CA",
+      "curfew": "22:00–05:00",
+      "features": [
+        "ridgetop bay and mountain views",
+        "benches",
+        "picnic tables"
+      ],
+      "habitats": [
+        "oak and bay woodland",
+        "coyote brush scrub",
+        "Alameda manzanita",
+        "open grassland",
+        "wildlife refuge pond"
+      ],
+      "trail_character": "dirt fire roads and multi-use single-track trails with elevation gain and loss",
+      "trail_miles": 2.5,
+      "wheelchair_accessible": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
