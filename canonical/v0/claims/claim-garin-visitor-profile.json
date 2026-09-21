@@ -1,0 +1,64 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-garin-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-garin-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-garin-regional-park"
+    ],
+    "subject_id": "park-garin-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "Garin Avenue entrance and staging area",
+      "accessible_facilities": [
+        "parking",
+        "restrooms at Garin Barn",
+        "chemical toilet near Jordan Pond",
+        "drinking fountains",
+        "0.25–0.5 miles of meadow and picnic service roads"
+      ],
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "fishing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "1580 Garin Avenue, Hayward, CA 94544",
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "fishing": {
+        "california_license_required_age": 16,
+        "location": "Jordan Pond"
+      },
+      "group_picnics": {
+        "areas": 4,
+        "capacity_each": 50,
+        "minimum_advance_business_days": 3
+      },
+      "parking_fee_usd": 5,
+      "payment": "cash only",
+      "relationship": {
+        "adjacent_park": "Dry Creek Pioneer Regional Park",
+        "combined_acres": 5857,
+        "combined_trail_miles_over": 20
+      },
+      "seasonal_gate_hours": "08:00 opening; closing varies from 18:00 to 21:00 by published date bands",
+      "trail_rules": [
+        "many unpaved trails suitable for bicycles",
+        "motor vehicles prohibited",
+        "equestrians have right of way"
+      ],
+      "trailered_vehicle_fee_usd": 5,
+      "visitor_center": "Garin Red Barn; seasonal Sunday hours"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

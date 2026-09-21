@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Five Canyons Open Space.",
+    "entity_id": "park-five-canyons-open-space",
+    "kind": "park",
+    "scope_id": "scope-five-canyons-open-space"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,65 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dumbarton-quarry-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-dumbarton-quarry-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-dumbarton-quarry-campground-on-the-bay"
+    ],
+    "subject_id": "park-dumbarton-quarry-campground-on-the-bay",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "bayview_to_shoreline_trail_miles": 2.05,
+        "entrance": "Quarry Road"
+      },
+      "acreage_phase_one": 45,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "9400 Quarry Road, Fremont, CA 94555",
+      "campground": {
+        "facilities": [
+          "camp store",
+          "amphitheater",
+          "playground",
+          "Wi-Fi",
+          "picnic areas"
+        ],
+        "full_service": true,
+        "reservation_window_weeks": 12,
+        "sites": 63
+      },
+      "gate_hours": "08:00–22:00",
+      "opened": 2021,
+      "parking_fee_usd": 5,
+      "published_hours": "open dusk to dawn unless otherwise posted or permitted",
+      "relationship": {
+        "contained_in": "Coyote Hills Regional Park",
+        "nearby": [
+          "Ardenwood Historic Farm",
+          "Mission Peak Regional Preserve",
+          "Don Edwards National Wildlife Refuge"
+        ]
+      },
+      "restrictions": {
+        "dogs_in_coyote_hills_marsh": false,
+        "ground_fires": false,
+        "horses_in_coyote_hills_marsh": false,
+        "picnic_reservation_minimum_business_days": 3
+      },
+      "seasonal_kiosk_hours": "08:00 opening; closing varies from 18:00 to 21:00 by month"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Garin Regional Park.",
+    "entity_id": "park-garin-regional-park",
+    "kind": "park",
+    "scope_id": "scope-garin-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Hayward Regional Shoreline.",
+    "entity_id": "park-hayward-regional-shoreline",
+    "kind": "park",
+    "scope_id": "scope-hayward-regional-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
