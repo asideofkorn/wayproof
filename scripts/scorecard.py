@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Score the README's questions against every objective in the dataset.
+"""Score the planning-capability catalog against every objective in the dataset.
 
-The README lists the questions this project exists to answer, each with what
-makes an answer *wrong*. This turns that list into a number that moves.
+The catalog below lists the questions this project exists to answer, each with
+what makes an answer *wrong*. This turns that list into a number that moves.
 
 It answers **can the tool answer at all**, for every objective, on every commit.
 It does **not** answer whether the answer is right -- only a completed trip does
@@ -80,12 +80,12 @@ VERDICT_MEANING = {
 
 @dataclass
 class Question:
-    """One README question, with a mechanical proxy for 'could the tool answer'."""
+    """One planning question, with a mechanical proxy for 'could the tool answer'."""
 
     qid: str
     tier: int            # 1 costs you the trip, 2 costs money or a day, 3 recoverable
-    text: str            # verbatim from README's "What Someone Actually Asks"
-    wrong_if: str        # verbatim -- the falsification criterion
+    text: str            # stable catalog wording used in reports and review
+    wrong_if: str        # the falsification criterion
     proxy: Callable      # (ctx) -> verdict
     limit: str = ""      # where the proxy is weaker than the question
     structural: bool = False
@@ -362,7 +362,7 @@ QUESTIONS: List[Question] = [
                    "13 raise any open question, so silence is not confirmation."),
 ]
 
-#: README questions with no honest mechanical proxy, and why. Listed so the
+#: Catalog questions with no honest mechanical proxy, and why. Listed so the
 #: scorecard's own coverage is visible rather than silently partial.
 NOT_SCORED = {
     "Q1 What do I need to do this trip?":
@@ -500,7 +500,7 @@ def format_report(built: dict) -> str:
             out.append(f"  {q.qid}: {q.limit}")
 
     out.append("")
-    out.append("README questions with no honest proxy:")
+    out.append("catalog questions with no honest proxy:")
     for question, why in NOT_SCORED.items():
         out.append(f"  {question}\n       {why}")
     return "\n".join(out)
