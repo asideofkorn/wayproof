@@ -34,6 +34,6 @@ jobs:
       # README's question list the tool can answer at all; a coverage number
       # that fails the build becomes a target, and the cheapest way to move
       # most rows is to add unchecked data. Read it in the log.
-      - name: Scorecard (coverage of the README's questions)
+      - name: Scorecard (planning-question coverage)
         if: matrix.python-version == '3.12'
         run: python scripts/scorecard.py
