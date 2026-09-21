@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-kennedy-grove-regional-recreation-area",
+    "kind": "park",
+    "name": "Kennedy Grove Regional Recreation Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

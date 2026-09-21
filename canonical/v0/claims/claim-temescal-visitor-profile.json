@@ -1,0 +1,63 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-temescal-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-temescal-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-temescal-regional-recreation-area"
+    ],
+    "subject_id": "park-temescal-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "north_entrance": "Broadway; over 180 parking spaces and closest to Beach House",
+        "south_entrance": "Broadway Terrace; about 20 parking spaces",
+        "walk_in": [
+          "Broadway Terrace",
+          "Broadway"
+        ]
+      },
+      "accessible_facilities": [
+        "Landvale Station Trail",
+        "East Shore Trail",
+        "all restrooms",
+        "Beach House",
+        "fishing pier and picnic table",
+        "south playground",
+        "selected picnic areas"
+      ],
+      "activities": [
+        "biking",
+        "fishing",
+        "hiking",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "addresses": {
+        "north_entrance": "6500 Broadway, Oakland, CA 94618",
+        "south_entrance": "6502 Broadway Terrace, Oakland, CA 94618"
+      },
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "gate_hours": "08:00–22:00",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 5,
+      "payment": "cashless",
+      "restrictions": {
+        "bicycles": "paved East Shore Trail or eastern-boundary bike path; 5 mph limit",
+        "dogs_in_lake_or_beach": false,
+        "kayaks_and_personal_watercraft": false,
+        "swimming": "designated swim area only"
+      },
+      "seasonal_parking_fee_months": "April–October when kiosk is attended",
+      "swim_area_hours": "11:00–18:00 during posted season",
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

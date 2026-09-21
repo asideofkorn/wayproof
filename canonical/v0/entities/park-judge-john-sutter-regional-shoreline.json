@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-judge-john-sutter-regional-shoreline",
+    "kind": "park",
+    "name": "Judge John Sutter Regional Shoreline"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

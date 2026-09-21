@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-lake-chabot-regional-park",
+    "kind": "park",
+    "name": "Lake Chabot Regional Park"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

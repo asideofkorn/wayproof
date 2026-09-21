@@ -1,0 +1,54 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-kennedy-grove-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-kennedy-grove-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-kennedy-grove-regional-recreation-area"
+    ],
+    "subject_id": "park-kennedy-grove-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "San Pablo Dam Road main entrance",
+        "Hillside Drive walk-in entrance",
+        "Patra Drive walk-in entrance"
+      ],
+      "accessible_facilities": [
+        "nine accessible parking spaces",
+        "picnic tables",
+        "drinking fountains",
+        "Fern Cottage ramp and restrooms"
+      ],
+      "accessible_routes": [
+        {
+          "distance_miles_approx": 0.3,
+          "name": "Kennedy Loop",
+          "surface": "paved and level"
+        },
+        {
+          "distance_miles_approx": 0.53,
+          "elevation_gain": "low",
+          "name": "Laurel Loop"
+        }
+      ],
+      "activities": [
+        "dogs",
+        "hiking",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "6531 San Pablo Dam Road, El Sobrante, CA 94803",
+      "bus_fee_usd": 25,
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:30 to 20:00 by month",
+      "seasonal_parking_fee_months": "April–September",
+      "trailered_vehicle_fee_usd": 5,
+      "weekend_holiday_parking_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
