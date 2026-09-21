@@ -1,0 +1,77 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-coyote-hills-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-coyote-hills-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-coyote-hills-regional-park"
+    ],
+    "subject_id": "park-coyote-hills-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "main entrance",
+        "Quarry staging area",
+        "Patterson Ranch staging area"
+      ],
+      "accessible_facilities": [
+        "visitor-center parking and restrooms",
+        "drinking fountains",
+        "chemical toilets at visitor center and Quarry staging",
+        "Dairy Glen camp"
+      ],
+      "acreage": 1266,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "horseback riding",
+        "kid-friendly",
+        "model recreation",
+        "picnicking"
+      ],
+      "address": "8000 Patterson Ranch Road, Fremont, CA 94555",
+      "bus_fee_usd": 25,
+      "connections": [
+        "Alameda Creek Trail",
+        "Don Edwards San Francisco Bay National Wildlife Refuge"
+      ],
+      "curfew": "22:00–05:00",
+      "group_camp": {
+        "ada_compliant": true,
+        "capacity": 50,
+        "facilities": [
+          "shade structures",
+          "picnic tables",
+          "drinking fountain",
+          "fire pit",
+          "hand-washing station",
+          "vault toilets"
+        ],
+        "minimum_advance_business_days": 3,
+        "name": "Dairy Glen",
+        "reservation_required": true
+      },
+      "parking_fee_usd": 5,
+      "routes": {
+        "alameda_creek_trail": {
+          "miles": 12,
+          "parallel_routes": "equestrian north levee and bicycle south levee"
+        },
+        "bayview_trail": {
+          "kind": "loop",
+          "miles": 3.5,
+          "surface": "paved"
+        }
+      },
+      "seasonal_gate_hours": "opening varies from 07:00 to 08:00 and closing from 18:00 to 20:00 by month",
+      "trailered_vehicle_fee_usd": 5,
+      "visitor_center_hours": "Wednesday–Sunday 10:00–16:00 with published holiday exceptions"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

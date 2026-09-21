@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.ebparks.org/parks/crown-beach",
+    "publisher": "East Bay Regional Park District",
+    "source_id": "source-ebrpd-crown-beach-park-page"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

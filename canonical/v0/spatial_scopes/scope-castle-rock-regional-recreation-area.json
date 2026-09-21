@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Castle Rock Regional Recreation Area.",
+    "entity_id": "park-castle-rock-regional-recreation-area",
+    "kind": "park",
+    "scope_id": "scope-castle-rock-regional-recreation-area"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

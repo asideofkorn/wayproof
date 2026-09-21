@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Coyote Hills Regional Park.",
+    "entity_id": "park-coyote-hills-regional-park",
+    "kind": "park",
+    "scope_id": "scope-coyote-hills-regional-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
