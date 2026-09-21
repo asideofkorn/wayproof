@@ -151,6 +151,7 @@ uncertain ones labelled rather than guessed.</p>
   sources, and other entities. Each detail page distinguishes supported claims,
   known gaps, source evidence, and published ChangeSet history.</p>
   <p><a href="/search/">Search canonical knowledge &rarr;</a></p>
+  <p><a href="/destinations/del-valle/">Plan Del Valle Regional Park &rarr;</a></p>
 </section>
 
 <section>
@@ -240,7 +241,7 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     (output_dir / "CNAME").write_text("wayproof.dev\n")
 
     canonical_reads = CanonicalReadService(Path("."))
-    canonical_stats = build_canonical_site(canonical_reads, output_dir, SITE_URL)
+    canonical_stats = build_canonical_site(canonical_reads, output_dir, SITE_URL, today)
 
     (output_dir / "index.html").write_text(LANDING_TEMPLATE.format(
         site=SITE_URL, repo=REPO, count=len(questions),
@@ -269,11 +270,13 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     urls = [f"{SITE_URL}/", f"{SITE_URL}/trailheads/", f"{SITE_URL}/search/"]
     urls += [v["canonical_url"] for v in views if v["indexable"]]
     urls += [f"{SITE_URL}/knowledge/{item.entity_id}/" for item in canonical_entities]
+    urls += list(canonical_stats["destination_urls"])
     (output_dir / "sitemap.xml").write_text(render_sitemap(urls))
     (output_dir / "robots.txt").write_text(render_robots())
 
     return {"open_questions": len(questions), "trailheads": len(views),
-            "indexed_urls": len(urls), **canonical_stats}
+            "indexed_urls": len(urls), "canonical_entities":
+            canonical_stats["canonical_entities"]}
 
 
 def _parse_args(argv=None) -> argparse.Namespace:

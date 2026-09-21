@@ -53,6 +53,7 @@ def test_build_writes_index_and_cname(site):
     index_html = (tmp_path / "index.html").read_text()
     assert f"({stats['open_questions']} open)" in index_html
     assert "github.com/asideofkorn/wayproof/issues/new" in index_html
+    assert 'href="/destinations/del-valle/"' in index_html
 
 
 def test_build_writes_three_representations_per_trailhead(site):
@@ -124,6 +125,51 @@ def test_ohlone_search_results_link_to_canonical_details(site):
     page = (tmp_path / "search" / "index.html").read_text()
     assert "/knowledge/trail-ohlone-wilderness" in page
     assert (tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html").exists()
+
+
+def test_del_valle_search_opens_the_outcome_focused_destination(site):
+    tmp_path, _ = site
+    search = (tmp_path / "search" / "index.html").read_text()
+    assert ('href="/destinations/del-valle/">Del Valle Regional Park</a>'
+            in search)
+
+    page = (tmp_path / "destinations" / "del-valle" / "index.html").read_text()
+    for heading in (
+        "Check before you go",
+        "Getting there and entering",
+        "Camping",
+        "Swimming, boating, and lake conditions",
+        "Ohlone Wilderness Trail",
+    ):
+        assert heading in page
+    assert "Why Wayproof says this" in page
+    assert "Canonical record" in page
+
+
+def test_del_valle_destination_projects_recheck_and_readable_claims(site):
+    tmp_path, _ = site
+    payload = json.loads(
+        (tmp_path / "destinations" / "del-valle" / "index.json").read_text()
+    )
+    assert payload["entity"]["entity_id"] == "park-del-valle-regional-park"
+    assert payload["recheck"]["state"] == "required"
+    answerability = {item["result"]["answerability"]
+                     for item in payload["recheck"]["items"]}
+    assert {"answered", "needs_current_check", "unknown"} <= answerability
+    assert any(item["entity"]["entity_id"] == "trail-ohlone-wilderness"
+               for item in payload["related"])
+
+    page = (tmp_path / "destinations" / "del-valle" / "index.html").read_text()
+    assert "Recheck state: required" in page
+    assert "What fire restrictions apply for the planned trip date?" in page
+    assert "Reservation window" in page
+    assert "Ohlone Wilderness Trail" in page
+
+
+def test_del_valle_destination_is_in_the_sitemap(site):
+    tmp_path, _ = site
+    sitemap = (tmp_path / "sitemap.xml").read_text()
+    assert "https://wayproof.dev/destinations/del-valle/" in sitemap
 
 
 def test_issue_url_is_prefilled_and_escaped():
