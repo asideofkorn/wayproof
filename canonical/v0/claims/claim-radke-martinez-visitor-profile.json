@@ -1,0 +1,60 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-radke-martinez-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-radke-martinez-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-ted-and-kathy-radke-martinez-regional-shoreline"
+    ],
+    "subject_id": "park-ted-and-kathy-radke-martinez-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "North Court Street entrance",
+        "Grangers Wharf entrance at Berrellesa Street"
+      ],
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "addresses": {
+        "grangers_wharf": "101 Berrellesa Street, Martinez, CA 94553",
+        "horse_arena": "200 Joe DiMaggio Drive, Martinez, CA 94553",
+        "main_lawn": "300 North Court Street, Martinez, CA 94553"
+      },
+      "curfew": "22:00–05:00",
+      "features": [
+        "marsh and shoreline trails",
+        "group and family picnic areas",
+        "horse arena",
+        "fishing access",
+        "city-operated sports facilities"
+      ],
+      "fishing": {
+        "california_license_required_age": 16,
+        "park_district_permit_required": false
+      },
+      "parking_fee_usd": 0,
+      "restrictions": {
+        "dogs_in_marsh_or_duck_pond": false,
+        "dogs_in_parking": "six-foot leash"
+      },
+      "seasonal_hours": {
+        "grangers_wharf": "08:00 opening; closing varies from 16:30 to 19:30 by month",
+        "main_lawn": "08:00 opening; closing varies from 17:00 to 20:00 by month"
+      },
+      "trail_miles_approx": 3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

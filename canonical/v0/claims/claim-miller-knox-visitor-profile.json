@@ -1,0 +1,67 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-miller-knox-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-miller-knox-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-miller-knox-regional-shoreline"
+    ],
+    "subject_id": "park-miller-knox-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "main": "Dornan Drive entrance",
+        "staging": [
+          "Dornan Drive north lot",
+          "two picnic-area lots",
+          "Ferry Point"
+        ],
+        "walk_in": [
+          "Canal Boulevard",
+          "Crest Avenue",
+          "Dornan Drive",
+          "West Ridge Point Trail",
+          "Keller Beach",
+          "Seacliff Drive"
+        ]
+      },
+      "accessible_facilities": [
+        "all picnic areas",
+        "Ferry Point ramp to high-tide line"
+      ],
+      "acreage": 307,
+      "activities": [
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "kid-friendly",
+        "model boats planes and trains",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "900 Dornan Drive, Richmond, CA 94801",
+      "features": {
+        "fishing": "Ferry Point pier",
+        "lagoon_loop_miles": 1,
+        "swimming": "Keller Beach; no lifeguards",
+        "water_trail_sites": [
+          "Keller Beach",
+          "Ferry Point"
+        ]
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "restrictions": {
+        "alcohol": false,
+        "dogs_in_lagoon": false,
+        "dogs_main_park": "six-foot leash"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
