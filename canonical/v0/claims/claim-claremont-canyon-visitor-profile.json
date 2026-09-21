@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-claremont-canyon-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-claremont-canyon-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-claremont-canyon-regional-preserve"
+    ],
+    "subject_id": "park-claremont-canyon-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "acreage": 208,
+      "activities": [
+        "dogs",
+        "hiking",
+        "horseback riding"
+      ],
+      "gwin_canyon_trail_miles": 0.6,
+      "hours": "05:00–22:00",
+      "main_trailhead": "Stonewall Road off Claremont Avenue, Oakland",
+      "parking": {
+        "gwin_canyon": "very limited street parking",
+        "panoramic_way": "no street parking",
+        "stonewall": "limited street parking"
+      },
+      "parking_fee_usd": 0,
+      "primary_route": {
+        "character": "steep",
+        "distance_to_ridgetop_miles": 0.75,
+        "name": "Stonewall–Panoramic Trail"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

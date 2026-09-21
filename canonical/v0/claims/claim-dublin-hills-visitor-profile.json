@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dublin-hills-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-dublin-hills-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-dublin-hills-regional-open-space-preserve"
+    ],
+    "subject_id": "park-dublin-hills-regional-open-space-preserve",
+    "temporal_scope": null,
+    "value": {
+      "acreage": 654,
+      "activities": [
+        "biking",
+        "hiking",
+        "horseback riding",
+        "kid-friendly"
+      ],
+      "curfew": "22:00–05:00",
+      "regional_trail": "Calaveras Ridge Regional Trail",
+      "seasonal_gate_hours": "08:00 opening; closing varies from 16:30 to 19:30 by month",
+      "staging_area": "east of Dublin Boulevard and Marshall Canyon Drive, Dublin"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

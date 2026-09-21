@@ -1,0 +1,47 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-las-trampas-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-las-trampas-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-las-trampas-wilderness-regional-preserve"
+    ],
+    "subject_id": "park-las-trampas-wilderness-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "accessible_facilities_at_bollinger": [
+        "disabled parking",
+        "wheelchair-accessible chemical toilet",
+        "drinking fountain",
+        "picnic site"
+      ],
+      "acreage": 6050,
+      "activities": [
+        "biking",
+        "camping",
+        "hiking",
+        "horseback riding",
+        "picnicking"
+      ],
+      "address": "18012 Bollinger Canyon Road, San Ramon, CA 94583",
+      "group_camp": {
+        "bring_own_water": true,
+        "minimum_advance_business_days": 3,
+        "name": "Corral Area",
+        "reservation_required": true
+      },
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:30 to 20:00 by published date bands",
+      "trail_rules": {
+        "ebmud_land_permit_required": true,
+        "rocky_ridge_view_trail_bicycles": false,
+        "use_only_signed_mapped_trails": true
+      },
+      "water": "inconsistent and may be unavailable; visitors should carry water"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

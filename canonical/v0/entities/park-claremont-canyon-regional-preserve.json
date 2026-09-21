@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-claremont-canyon-regional-preserve",
+    "kind": "park",
+    "name": "Claremont Canyon Regional Preserve"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
