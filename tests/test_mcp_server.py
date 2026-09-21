@@ -117,6 +117,21 @@ def test_intent_parser_and_tool_preserve_ambiguity(tools):
     ]
 
 
+def test_intent_tool_returns_ordered_traversal_when_canonical_topology_exists(tools):
+    result = tools.resolve_trip_intent({
+        "trip_date": "2027-09-05",
+        "objective_queries": ["Ohlone Wilderness Trail"],
+        "entry_query": "Mission Peak Stanford Avenue Staging Area",
+        "exit_query": "Lichen Bark Ohlone Trailhead",
+    })
+
+    assert result["state"] == "resolved"
+    assert result["traversal"]["state"] == "complete"
+    assert len(result["traversal"]["legs"]) == 52
+    assert result["traversal"]["total_known_distance_miles"] == 26.9
+    assert result["traversal"]["distance_complete"] is False
+
+
 def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
     async def exercise():
         async with Client(create_server(ROOT)) as client:

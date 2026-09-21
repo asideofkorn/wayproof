@@ -86,6 +86,15 @@ infer a return-to-start, or invent topology. Later expansion may add aliases,
 constraint matching, and deeper traversal projection without moving this logic
 into an adapter.
 
+When a route publishes directed member segments, the traversal resolver finds
+an evidenced path between the selected endpoints and emits one ordered stage
+per atomic leg. Distance is accumulated only from published values; mapped
+connectors without a printed distance keep the aggregate explicitly
+incomplete. Official-mainline segments provide the default path. Parallel
+alternates, spurs, and their accessible facilities remain visible choices and
+are not silently substituted into the trip. A route without segment topology
+keeps a coarse route stage and produces a partial result.
+
 Ordered `TripStage` values locate relevant portions of a trip. Route primitives
 represent routes and route variants; access primitives represent ways to reach
 or leave them; traversal connects the trip to ordered segments, places, land
