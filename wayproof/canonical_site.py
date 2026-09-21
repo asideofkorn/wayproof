@@ -346,7 +346,7 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
         '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
         '<a href="/search/">Search</a> / '
         '<a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trailheads/">Trailheads</a></nav>',
+        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
         f'<h1>{_e(entity["name"])}</h1>',
         '<p class="tagline">Plan access, camping, lake recreation, and the '
         'Ohlone Wilderness Trail from one evidence-backed view.</p>',
@@ -397,7 +397,7 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
     body = [
         '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
         '<a href="/search/">Search</a> / <a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trailheads/">Trailheads</a></nav>',
+        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
         '<h1>Ohlone Wilderness Trail</h1>',
         '<p class="tagline">Permits, camps, water, access, and mapped route choices '
         'from published canonical evidence.</p>',
@@ -434,7 +434,7 @@ def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str
         '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
         '<a href="/search/">Search</a> / '
         '<a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trailheads/">Trailheads</a></nav>',
+        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
         f'<h1>{_e(entity["name"])}</h1>',
         f'<p class="subtitle"><span class="pill">{_e(entity["kind"])}</span> '
         f'<code>{_e(entity["entity_id"])}</code></p>',
@@ -504,7 +504,7 @@ def render_search_html(entities: Iterable[dict], site_url: str,
 <nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> /
 <a href="/search/">Search</a> /
 <a href="/destinations/del-valle/">Del Valle</a> /
-<a href="/trailheads/">Trailheads</a></nav>
+<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>
 <h1>Canonical search</h1>
 <p class="subtitle">Search {len(entities)} published entities. Results link to the
 same canonical read service used for provenance and history.</p>

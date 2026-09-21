@@ -46,36 +46,17 @@ def test_build_writes_index_and_cname(site):
     assert (tmp_path / "index.html").exists()
     assert (tmp_path / "CNAME").read_text().strip() == "wayproof.dev"
     assert (tmp_path / "style.css").exists()
-    # The real dataset has known unconfirmed items (see wayproof/reports.py's
-    # open_questions()); a build against it should surface at least one.
-    assert stats["open_questions"] > 0
+    assert stats["knowledge_gaps"] > 0
 
     index_html = (tmp_path / "index.html").read_text()
-    assert f"({stats['open_questions']} open)" in index_html
-    assert "github.com/asideofkorn/wayproof/issues/new" in index_html
+    assert f"({stats['knowledge_gaps']} open)" in index_html
+    assert "Canonical knowledge gaps" in index_html
     assert 'href="/destinations/del-valle/"' in index_html
 
 
-def test_build_writes_three_representations_per_trailhead(site):
-    tmp_path, stats = site
-    trailheads = tmp_path / "trailheads"
-
-    assert stats["trailheads"] > 0
-    assert (trailheads / "index.html").exists()
-    assert (trailheads / "index.json").exists()
-
-    # Whitney Portal is the richest real example: a lottery permit plus a
-    # sourced route-level exception (Mount Russell) that doesn't inherit it.
-    assert (trailheads / "whitney-portal" / "index.html").exists()
-    markdown = (trailheads / "whitney-portal.md").read_text()
-    structured = json.loads((trailheads / "whitney-portal.json").read_text())
-
-    assert "Mount Russell" in markdown
-    assert structured["permit"]["permit_group"] == "whitney_zone"
-    assert structured["peaks_nearby"]["verified"] is False
-
-    pages = list(trailheads.glob("*/index.html"))
-    assert len(pages) == stats["trailheads"]
+def test_build_publishes_no_legacy_trailhead_pages(site):
+    tmp_path, _ = site
+    assert not (tmp_path / "trailheads").exists()
 
 
 def test_build_writes_sitemap_and_robots(site):
@@ -83,7 +64,7 @@ def test_build_writes_sitemap_and_robots(site):
     sitemap = (tmp_path / "sitemap.xml").read_text()
 
     assert sitemap.count("<loc>") == stats["indexed_urls"]
-    assert "https://wayproof.dev/trailheads/whitney-portal/" in sitemap
+    assert "/trailheads/" not in sitemap
     assert "Sitemap: https://wayproof.dev/sitemap.xml" in (tmp_path / "robots.txt").read_text()
 
 
@@ -196,14 +177,13 @@ def test_primary_navigation_connects_every_public_page_type(site):
         tmp_path / "search" / "index.html",
         tmp_path / "destinations" / "del-valle" / "index.html",
         tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html",
-        tmp_path / "trailheads" / "index.html",
-        tmp_path / "trailheads" / "whitney-portal" / "index.html",
+        tmp_path / "trails" / "ohlone-wilderness" / "index.html",
     )
     expected_links = {
         'href="/"',
         'href="/search/"',
         'href="/destinations/del-valle/"',
-        'href="/trailheads/"',
+        'href="/trails/ohlone-wilderness/"',
     }
 
     for page in pages:
@@ -214,19 +194,5 @@ def test_primary_navigation_connects_every_public_page_type(site):
         assert not missing, f"{page.relative_to(tmp_path)} lacks {sorted(missing)}"
 
 
-def test_issue_url_is_prefilled_and_escaped():
-    url = build_site._issue_url(
-        "data/peaks.csv", "Mount Carillon", "Isn't in the dataset at all",
-    )
-    assert url.startswith("https://github.com/asideofkorn/wayproof/issues/new?")
-    assert "title=%5Bdata%5D%20Mount%20Carillon" in url
-    assert "labels=data" in url
-    # The apostrophe in the question must be percent-encoded, not raw --
-    # otherwise it isn't a valid URL query value.
-    assert "Isn't" not in url
-    assert "Isn%27t" in url
-
-
-def test_no_open_questions_renders_a_friendly_placeholder():
-    html_out = build_site._render_questions_html([])
-    assert "No open questions on file" in html_out
+def test_no_canonical_gaps_renders_a_friendly_placeholder():
+    assert "No canonical knowledge gaps" in build_site._render_gaps_html([])

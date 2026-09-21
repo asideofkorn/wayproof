@@ -15,7 +15,7 @@ draw or navigate an exact route and it is not a booking system.
 
 Wayproof is currently a hybrid application:
 
-- the established CSV-backed CLI and trailhead pages remain operational;
+- the established CSV-backed CLI remains operational but is not published on the website;
 - Canonical Schema v0 knowledge is stored as deterministic, versioned JSON;
 - published knowledge changes are authorized by validated ChangeSets and GitHub
   review;
@@ -27,7 +27,7 @@ Wayproof is currently a hybrid application:
   validate evidence drafts without gaining publication authority.
 
 M0, the trusted canonical foundation, is complete. M1–M3 are in progress. The
-legacy CLI and website have not yet fully migrated to the canonical services,
+legacy CLI has not yet fully migrated to the canonical services,
 and an MCP adapter has not yet been added. See [PRODUCT.md](PRODUCT.md),
 [ARCHITECTURE.md](ARCHITECTURE.md), and [ROADMAP.md](ROADMAP.md) for the product
 contract and exact milestone status.
@@ -315,7 +315,7 @@ The following remain incomplete:
 - general `TripIntent` resolution into canonical objectives and stages;
 - complete Trip Readiness aggregation for costs, deadlines, inventory,
   closures, and conflicts;
-- completion of the legacy CLI and website migration to `CanonicalReadService`;
+- completion of the legacy CLI migration to `CanonicalReadService`;
 - MCP read and constrained proposal adapters;
 - automated URL/artifact ingestion and stronger duplicate/entity resolution;
 - operational freshness scheduling beyond explicit canonical recheck manifests;
@@ -333,9 +333,9 @@ deployed through GitHub Pages. Canonical search and entity-detail pages consume
 the shared read service and present claims, source evidence, knowledge gaps,
 relationships, and published ChangeSet history. The Del Valle destination view
 adds visitor-oriented access, camping, lake, Ohlone Trail, and Pre-trip Recheck
-sections over those same services. Established trailhead pages remain
-CSV-backed while the rest of the site migrates incrementally, without
-duplicating domain logic.
+sections over those same services. The deployed website is canonical-only;
+legacy CSV-backed planning tools remain available in the repository but do not
+publish web pages.
 
 ## Development
 

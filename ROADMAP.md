@@ -85,8 +85,8 @@ coverage mismatches, historical rules, and volatile water/access rechecks.
 **Status: in progress.** The shared read-only service facade now supports entity
 search, typed lookup, evidence provenance, published ChangeSet history,
 requirements, readiness, and recheck. The website's canonical search, entity
-details, and first Del Valle outcome-focused destination view now use that
-facade; remaining website, CLI, and MCP adapter migration is still pending.
+details, Del Valle destination view, and Ohlone trail guide use that facade.
+The deployed website is canonical-only; CLI and MCP adapter work remains.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
