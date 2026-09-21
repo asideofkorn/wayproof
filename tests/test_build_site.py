@@ -120,11 +120,13 @@ def test_del_valle_canonical_page_exposes_claims_sources_gaps_and_history(site):
     assert "Known gaps" in page
 
 
-def test_ohlone_search_results_link_to_canonical_details(site):
+def test_ohlone_search_opens_trail_page_with_canonical_detail_link(site):
     tmp_path, _ = site
     page = (tmp_path / "search" / "index.html").read_text()
-    assert "/knowledge/trail-ohlone-wilderness" in page
+    assert "/trails/ohlone-wilderness/" in page
     assert (tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html").exists()
+    trail = (tmp_path / "trails" / "ohlone-wilderness" / "index.html").read_text()
+    assert "/knowledge/trail-ohlone-wilderness/" in trail
 
 
 def test_del_valle_search_opens_the_outcome_focused_destination(site):
@@ -170,6 +172,21 @@ def test_del_valle_destination_is_in_the_sitemap(site):
     tmp_path, _ = site
     sitemap = (tmp_path / "sitemap.xml").read_text()
     assert "https://wayproof.dev/destinations/del-valle/" in sitemap
+
+
+def test_ohlone_trail_page_uses_canonical_route_evidence(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "trails" / "ohlone-wilderness" /
+                          "index.json").read_text())
+    assert payload["entity"]["entity_id"] == "trail-ohlone-wilderness"
+    assert len(payload["route_results"]) == 3
+    page = (tmp_path / "trails" / "ohlone-wilderness" / "index.html").read_text()
+    for heading in ("Permits, reservations, and parking", "Route, access, and distance",
+                    "Camps and water", "Route choices and detours"):
+        assert heading in page
+    assert "Why Wayproof says this" in page
+    assert "https://wayproof.dev/trails/ohlone-wilderness/" in (
+        tmp_path / "sitemap.xml").read_text()
 
 
 def test_primary_navigation_connects_every_public_page_type(site):
