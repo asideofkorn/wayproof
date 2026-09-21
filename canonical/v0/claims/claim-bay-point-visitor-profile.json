@@ -1,0 +1,47 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bay-point-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-bay-point-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-bay-point-regional-shoreline"
+    ],
+    "subject_id": "park-bay-point-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "McAvoy Road entrance",
+        "Trojan Road staging area"
+      ],
+      "acreage_approximate": 150,
+      "activities": [
+        "fishing",
+        "hiking",
+        "picnicking"
+      ],
+      "address": "end of McAvoy Road, Bay Point, CA",
+      "entrance_facilities": [
+        "parking",
+        "restrooms",
+        "picnic tables",
+        "benches",
+        "potable water"
+      ],
+      "fees": "none",
+      "gate_hours": "08:00–16:00 unless otherwise posted or permitted",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "loop_trail_miles": 1.1,
+      "planning_notes": [
+        "shoreline fishing access",
+        "bird-watching and nature study",
+        "cooler weather than surrounding inland areas"
+      ],
+      "setting": "marsh habitat and shoreline access at Suisun Bay near the San Francisco Bay Estuary and Sacramento–San Joaquin River Delta"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

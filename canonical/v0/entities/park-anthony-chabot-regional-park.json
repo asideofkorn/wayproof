@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-anthony-chabot-regional-park",
+    "kind": "park",
+    "name": "Anthony Chabot Regional Park"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

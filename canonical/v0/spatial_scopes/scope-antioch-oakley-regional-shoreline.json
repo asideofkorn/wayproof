@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Antioch/Oakley Regional Shoreline.",
+    "entity_id": "park-antioch-oakley-regional-shoreline",
+    "kind": "park",
+    "scope_id": "scope-antioch-oakley-regional-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
