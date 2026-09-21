@@ -96,7 +96,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid #ddd;
 }
 @media (max-width: 640px) {
   body { font-size:16.5px; padding:1.25rem 1rem 4rem; }
-  .summary-grid { grid-template-columns:1fr 1fr; }
+  .summary-grid { grid-template-columns:1fr; }
   .fact-row dl { grid-template-columns:1fr; gap:.1rem; }
   .fact-row dt { color:var(--muted); }
 }
