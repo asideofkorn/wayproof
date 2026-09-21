@@ -120,9 +120,11 @@ the same service layer.
 **Exit criteria:** CLI, website, and MCP agree on fixture outputs because they
 invoke the same domain behavior rather than reimplementing planning logic.
 
-**Next capability gate:** compare the canonical mode against retained legacy
-user stories, then decide which remaining inspection/discovery behaviors merit
-canonical adapters before making canonical planning the default.
+**Canonical parity gate:** the first outcome-level audit is complete in
+`docs/canonical-planning-parity.md`, with executable checkpoints. Canonical mode
+is not yet the default: complete evidenced Ohlone directionality and booking
+dependencies, decide the supported Sierra corpus, and add thin canonical CLI
+adapters for retained inspection/discovery behavior first.
 
 ## M3 — Constrained contribution workflow
 
