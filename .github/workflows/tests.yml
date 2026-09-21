@@ -8,18 +8,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.9", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 3.14
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.14"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -27,7 +23,7 @@ jobs:
       - name: Run tests
         run: python -m pytest tests/ -v
       - name: Verify canonical publication boundary
-        if: github.event_name == 'pull_request' && matrix.python-version == '3.12'
+        if: github.event_name == 'pull_request'
         run: python scripts/verify_canonical_diff.py --base origin/${{ github.base_ref }}
 
       # Printed, never asserted. This is a measurement of how much of the
@@ -35,5 +31,4 @@ jobs:
       # that fails the build becomes a target, and the cheapest way to move
       # most rows is to add unchecked data. Read it in the log.
       - name: Scorecard (planning-question coverage)
-        if: matrix.python-version == '3.12'
         run: python scripts/scorecard.py
