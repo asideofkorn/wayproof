@@ -190,12 +190,20 @@ def test_primary_navigation_connects_every_public_page_type(site):
         tmp_path / "destinations" / "del-valle" / "index.html",
         tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html",
         tmp_path / "trails" / "ohlone-wilderness" / "index.html",
+        tmp_path / "parks" / "index.html",
+        tmp_path / "trails" / "index.html",
+        tmp_path / "camping" / "index.html",
+        tmp_path / "peaks" / "index.html",
+        tmp_path / "changes" / "index.html",
     )
     expected_links = {
         'href="/"',
         'href="/search/"',
-        'href="/destinations/del-valle/"',
-        'href="/trails/ohlone-wilderness/"',
+        'href="/parks/"',
+        'href="/trails/"',
+        'href="/camping/"',
+        'href="/peaks/"',
+        'href="/changes/"',
     }
 
     for page in pages:
@@ -204,6 +212,38 @@ def test_primary_navigation_connects_every_public_page_type(site):
             link for link in expected_links if link in html
         )
         assert not missing, f"{page.relative_to(tmp_path)} lacks {sorted(missing)}"
+
+
+def test_directories_are_automatically_populated_from_canonical_kinds(site):
+    tmp_path, _ = site
+    expectations = {
+        "parks": ("park", "Del Valle Regional Park"),
+        "trails": ("trail", "Ohlone Wilderness Trail"),
+        "camping": ("family_campsite", "001"),
+        "peaks": ("peak", "Rose Peak"),
+    }
+    for directory, (kind, name) in expectations.items():
+        payload = json.loads((tmp_path / directory / "index.json").read_text())
+        assert payload["count"] > 0
+        assert any(item["kind"] == kind and item["name"] == name
+                   for item in payload["entities"])
+        assert name in (tmp_path / directory / "index.html").read_text()
+
+
+def test_changes_page_exposes_public_changeset_history(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "changes" / "index.json").read_text())
+    page = (tmp_path / "changes" / "index.html").read_text()
+    assert payload["operations"]
+    assert "Published changes" in page
+    assert "wp-20260921-ebrpd-parks-batch-15" in page
+
+
+def test_directory_pages_are_in_the_sitemap(site):
+    tmp_path, _ = site
+    sitemap = (tmp_path / "sitemap.xml").read_text()
+    for path in ("parks", "trails", "camping", "peaks", "changes"):
+        assert f"https://wayproof.dev/{path}/" in sitemap
 
 
 def test_no_canonical_gaps_renders_a_friendly_placeholder():

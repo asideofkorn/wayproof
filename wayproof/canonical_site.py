@@ -24,6 +24,39 @@ DEL_VALLE_ID = "park-del-valle-regional-park"
 DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
+PRIMARY_NAV = (
+    ("Home", "/"),
+    ("Parks", "/parks/"),
+    ("Trails", "/trails/"),
+    ("Camping", "/camping/"),
+    ("Peaks", "/peaks/"),
+    ("Changes", "/changes/"),
+    ("Search", "/search/"),
+)
+DIRECTORIES = {
+    "parks": {
+        "title": "Parks and preserves",
+        "description": "Browse published parks, preserves, recreation areas, wildernesses, and national parks.",
+        "kinds": ("park", "national_park", "wilderness"),
+    },
+    "trails": {
+        "title": "Trails and routes",
+        "description": "Browse human-level trails and routes. Detailed segments remain inside their parent route records.",
+        "kinds": ("trail", "route"),
+    },
+    "camping": {
+        "title": "Camping",
+        "description": "Browse campgrounds, developed sites, group camps, equestrian camps, cabins, and backcountry camps.",
+        "kinds": ("campground", "campsite", "family_campsite", "group_campsite",
+                  "cabin_campsite", "backcountry_camp", "equestrian_campsite",
+                  "equestrian_campsite_area", "equestrian_group_campsite"),
+    },
+    "peaks": {
+        "title": "Peaks",
+        "description": "Browse published summits and peaks.",
+        "kinds": ("peak",),
+    },
+}
 DEL_VALLE_SCOPES = (
     "scope-del-valle-park",
     "scope-lake-del-valle",
@@ -126,6 +159,14 @@ def _json(payload: Any) -> str:
 
 def _e(value: Any) -> str:
     return html.escape(str(value), quote=True)
+
+
+def render_primary_nav() -> str:
+    """Render the shared, stable navigation used by every public page."""
+    links = "\n".join(
+        f'<a href="{_e(path)}">{_e(label)}</a>' for label, path in PRIMARY_NAV
+    )
+    return f'<nav aria-label="Primary">\n{links}\n</nav>'
 
 
 def _page(title: str, description: str, canonical: str, body: str) -> str:
@@ -406,10 +447,7 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     )
     summary = [claims[item] for item in summary_predicates if item in claims]
     body = [
-        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
-        '<a href="/search/">Search</a> / '
-        '<a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
+        render_primary_nav(),
         '<header class="page-header">', f'<h1>{_e(entity["name"])}</h1>',
         '<p class="tagline">Plan access, camping, lake recreation, and the '
         'Ohlone Wilderness Trail from one evidence-backed view.</p>',
@@ -480,9 +518,7 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
 
 def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
     body = [
-        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
-        '<a href="/search/">Search</a> / <a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
+        render_primary_nav(),
         '<header class="page-header"><h1>Ohlone Wilderness Trail</h1>',
         '<p class="tagline">Plan the full corridor from Del Valle through Sunol to Mission '
         'Peak, including trailheads, parking, camps, water, and route choices.</p></header>',
@@ -530,10 +566,7 @@ def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str
         'No direct claim is published for this entity. That absence is not confirmation.'
     )
     body = [
-        '<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> / '
-        '<a href="/search/">Search</a> / '
-        '<a href="/destinations/del-valle/">Del Valle</a> / '
-        '<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>',
+        render_primary_nav(),
         f'<h1>{_e(entity["name"])}</h1>',
         f'<p class="subtitle"><span class="pill">{_e(entity["kind"])}</span> '
         f'<code>{_e(entity["entity_id"])}</code></p>',
@@ -600,10 +633,7 @@ def render_search_html(entities: Iterable[dict], site_url: str,
     )
     options = ''.join(f'<option value="{_e(kind)}">{_e(kind)}</option>' for kind in kinds)
     body = f"""
-<nav class="crumbs" aria-label="Primary"><a href="/">Wayproof</a> /
-<a href="/search/">Search</a> /
-<a href="/destinations/del-valle/">Del Valle</a> /
-<a href="/trails/ohlone-wilderness/">Ohlone Trail</a></nav>
+{render_primary_nav()}
 <h1>Canonical search</h1>
 <p class="subtitle">Search {len(entities)} published entities. Results link to the
 same canonical read service used for provenance and history.</p>
@@ -638,19 +668,122 @@ kind.addEventListener('change', filterEntities);
     )
 
 
+def render_directory_html(key: str, entities: Iterable[dict], site_url: str,
+                          preferred_paths: dict[str, str] | None = None) -> str:
+    """Render one automatically populated, canonical entity directory."""
+    spec = DIRECTORIES[key]
+    entities = list(entities)
+    preferred_paths = preferred_paths or {}
+    groups: dict[str, list[dict]] = {}
+    for entity in entities:
+        groups.setdefault(entity["kind"], []).append(entity)
+    sections = []
+    for kind, items in sorted(groups.items()):
+        rows = "".join(
+            '<li class="card">'
+            f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
+            f'<strong>{_e(item["name"])}</strong></a>'
+            f'<div class="meta">{_e(_human_label(item["kind"]))}</div></li>'
+            for item in items
+        )
+        sections.append(
+            f'<section><h2>{_e(_human_label(kind))} ({len(items)})</h2>'
+            f'<ul class="plain">{rows}</ul></section>'
+        )
+    body = (
+        render_primary_nav()
+        + f'<header class="page-header"><h1>{_e(spec["title"])}</h1>'
+        + f'<p class="tagline">{_e(spec["description"])}</p>'
+        + f'<p class="meta">{len(entities)} published records</p></header>'
+        + "".join(sections)
+    )
+    return _page(
+        f'{spec["title"]} — Wayproof', spec["description"],
+        f'{site_url}/{key}/', body,
+    )
+
+
+def render_changes_html(entries: Iterable[dict], site_url: str) -> str:
+    """Render ChangeSet history grouped into one readable entry per change."""
+    grouped: dict[str, dict] = {}
+    for entry in entries:
+        group = grouped.setdefault(entry["change_set_id"], {
+            "summary": entry["summary"], "operations": [],
+        })
+        group["operations"].append(entry)
+    articles = []
+    for change_set_id, group in reversed(tuple(grouped.items())):
+        operations = group["operations"]
+        rows = "".join(
+            f'<li>{_e(_human_label(item["action"]))} '
+            f'<code>{_e(item["record_type"])}</code> '
+            f'<code>{_e(item["record_id"])}</code>'
+            f'{" — " + _e(item["reason"]) if item["reason"] else ""}</li>'
+            for item in operations
+        )
+        articles.append(
+            '<article class="card">'
+            f'<h2><code>{_e(change_set_id)}</code></h2>'
+            f'<p>{_e(group["summary"])}</p>'
+            f'<details><summary>{len(operations)} published operations</summary>'
+            f'<ul>{rows}</ul></details></article>'
+        )
+    body = (
+        render_primary_nav()
+        + '<header class="page-header"><h1>Published changes</h1>'
+        + '<p class="tagline">See when canonical knowledge was added, replaced, or removed. '
+          'Current snapshots stay concise while ChangeSets preserve the public history.</p>'
+        + f'<p class="meta">{len(grouped)} published ChangeSets</p></header>'
+        + "".join(articles)
+    )
+    return _page(
+        'Published changes — Wayproof',
+        'Chronological history of published Wayproof canonical ChangeSets.',
+        f'{site_url}/changes/', body,
+    )
+
+
 def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
                          site_url: str, as_of: date) -> dict:
     """Write canonical search and detail pages into an existing site artifact."""
     entities = tuple(_plain(item) for item in reads.search_entities())
     known_ids = {item["entity_id"] for item in entities}
+    preferred_paths = {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
     (search_dir / "index.html").write_text(render_search_html(
-        entities, site_url, {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}),
+        entities, site_url, preferred_paths),
         encoding="utf-8")
     (search_dir / "index.json").write_text(_json({
         "type": "canonical_entity_index", "count": len(entities), "entities": entities,
     }), encoding="utf-8")
+
+    directory_urls = []
+    for key, spec in DIRECTORIES.items():
+        directory_entities = tuple(
+            item for item in entities if item["kind"] in spec["kinds"]
+        )
+        directory = output_dir / key
+        directory.mkdir(parents=True, exist_ok=True)
+        (directory / "index.html").write_text(
+            render_directory_html(key, directory_entities, site_url, preferred_paths),
+            encoding="utf-8",
+        )
+        (directory / "index.json").write_text(_json({
+            "type": "canonical_entity_directory", "directory": key,
+            "count": len(directory_entities), "entities": directory_entities,
+        }), encoding="utf-8")
+        directory_urls.append(f"{site_url}/{key}/")
+
+    changes = tuple(_plain(item) for item in reads.changes())
+    changes_dir = output_dir / "changes"
+    changes_dir.mkdir(parents=True, exist_ok=True)
+    (changes_dir / "index.html").write_text(
+        render_changes_html(changes, site_url), encoding="utf-8")
+    (changes_dir / "index.json").write_text(_json({
+        "type": "canonical_change_history", "operations": changes,
+    }), encoding="utf-8")
+    directory_urls.append(f"{site_url}/changes/")
 
     knowledge_dir = output_dir / "knowledge"
     knowledge_dir.mkdir(parents=True, exist_ok=True)
@@ -677,4 +810,4 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     (trail_dir / "index.json").write_text(_json(trail), encoding="utf-8")
     return {"canonical_entities": len(entities),
             "destination_urls": (f"{site_url}{DEL_VALLE_PATH}",
-                                 f"{site_url}{OHLONE_PATH}")}
+                                 f"{site_url}{OHLONE_PATH}", *directory_urls)}
