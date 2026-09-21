@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-huckleberry-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-huckleberry-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-huckleberry-botanic-regional-preserve"
+    ],
+    "subject_id": "park-huckleberry-botanic-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "acreage": 241,
+      "activities": [
+        "hiking",
+        "kid-friendly"
+      ],
+      "address": "Huckleberry Staging Area, 7087 Skyline Boulevard, Oakland, CA 94611",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "nature_path": {
+        "distance_miles": 1.7,
+        "kind": "loop",
+        "maintenance": "minimum standards"
+      },
+      "parking_fee_usd": 0,
+      "restrictions": {
+        "bicycles": false,
+        "dogs": false,
+        "exception": "Dogs and horses are allowed on the Skyline National Trail",
+        "horses": false,
+        "jogging": "discouraged"
+      },
+      "wheelchair_accessible": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "park-huckleberry-botanic-regional-preserve",
+    "kind": "park",
+    "name": "Huckleberry Botanic Regional Preserve"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
