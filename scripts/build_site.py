@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from wayproof.canonical_site import build_canonical_site
+from wayproof.canonical_site import build_canonical_site, render_primary_nav
 from wayproof.render import (
     STYLESHEET,
     render_robots,
@@ -74,15 +74,7 @@ U.S. public lands.</p>
 what it costs, and which source says so &mdash; every fact dated, and the
 uncertain ones labelled rather than guessed.</p>
 
-<nav aria-label="Primary">
-  <a href="/">Home</a>
-  <a href="/search/">Canonical search</a>
-  <a href="/destinations/del-valle/">Del Valle</a>
-  <a href="/trails/ohlone-wilderness/">Ohlone Trail</a>
-  <a href="https://github.com/{repo}">GitHub</a>
-  <a href="https://github.com/{repo}#readme">Docs</a>
-  <a href="https://github.com/{repo}/issues/new?template=data_report.md&labels=data">Submit a report</a>
-</nav>
+{primary_nav}
 
 <section>
   <h2>Search canonical knowledge</h2>
@@ -90,6 +82,10 @@ uncertain ones labelled rather than guessed.</p>
   sources, and other entities. Each detail page distinguishes supported claims,
   known gaps, source evidence, and published ChangeSet history.</p>
   <p><a href="/search/">Search canonical knowledge &rarr;</a></p>
+  <p><a href="/parks/">Browse parks and preserves &rarr;</a></p>
+  <p><a href="/trails/">Browse trails and routes &rarr;</a></p>
+  <p><a href="/camping/">Browse camping &rarr;</a></p>
+  <p><a href="/peaks/">Browse peaks &rarr;</a></p>
   <p><a href="/destinations/del-valle/">Plan Del Valle Regional Park &rarr;</a></p>
   <p><a href="/trails/ohlone-wilderness/">Plan the Ohlone Wilderness Trail &rarr;</a></p>
 </section>
@@ -103,6 +99,8 @@ uncertain ones labelled rather than guessed.</p>
 
 <footer>
   <p>Built from <a href="https://github.com/{repo}">{repo}</a>'s own dataset.</p>
+  <p><a href="https://github.com/{repo}#readme">About and documentation</a> ·
+  <a href="https://github.com/{repo}/issues/new?template=data_report.md&labels=data">Submit a report</a></p>
   <p class="meta">Planning aid, not a booking guarantee -- verify the current rule at
   the official source before acting on any date here.</p>
 </footer>
@@ -127,6 +125,7 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
         site=SITE_URL, repo=REPO, gap_count=len(gaps),
         gaps_html=_render_gaps_html(gaps),
         canonical_entity_count=canonical_stats["canonical_entities"],
+        primary_nav=render_primary_nav(),
     ))
 
     canonical_entities = canonical_reads.search_entities()
