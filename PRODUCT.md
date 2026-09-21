@@ -159,10 +159,12 @@ constrained DRAFT proposal
 
 This proves the trust boundary and the central Whitney/Del Valle/Ohlone
 semantics. Named objectives now resolve conservatively through sourced
-route/access relationships into a planning context, preserving ambiguous
-routes, unknown exits, and unsupported choices as explicit outcomes. It does
-not yet complete the whole product contract. Remaining MVP work includes richer
-traversal and constraint resolution, complete cost/deadline/conflict
+route/access relationships into a planning context. Published segment topology
+expands into ordered traversal stages with bounded distance completeness and
+visible alternates, while ambiguous routes, unknown exits, and unsupported
+choices remain explicit outcomes. It does not yet complete the whole product
+contract. Remaining MVP work includes richer constraint resolution and
+complete cost/deadline/conflict
 aggregation, and completion of the legacy CLI migration onto the canonical read
 service.
 

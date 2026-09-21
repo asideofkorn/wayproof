@@ -7,6 +7,7 @@ from enum import Enum
 from typing import Optional, Protocol, Tuple
 
 from .schema import Entity, PlanningContext, Relationship, SpatialScope, TripIntent, TripObjective, TripStage
+from .traversal import TraversalPlan, TraversalState, resolve_traversal
 
 
 ROUTE_KINDS = {"route", "trail"}
@@ -36,6 +37,7 @@ class IntentResolution:
     route: Optional[Entity] = None
     entry: Optional[Entity] = None
     exit: Optional[Entity] = None
+    traversal: Optional[TraversalPlan] = None
     context: Optional[PlanningContext] = None
     issues: Tuple[IntentResolutionIssue, ...] = ()
 
@@ -201,18 +203,37 @@ def resolve_trip_intent(reads: IntentReads, intent: TripIntent) -> IntentResolut
 
     if any(item.code.endswith("ambiguous") or item.code.endswith("not_supported")
            for item in issues):
-        return IntentResolution(IntentResolutionState.AMBIGUOUS, intent,
-                                tuple(objectives), route, entry, exit_entity,
-                                issues=tuple(issues))
+        return IntentResolution(
+            state=IntentResolutionState.AMBIGUOUS, intent=intent,
+            objectives=tuple(objectives), route=route, entry=entry,
+            exit=exit_entity, issues=tuple(issues),
+        )
+
+    traversal = None
+    if route and entry and exit_entity:
+        traversal = resolve_traversal(
+            reads, route, entry, exit_entity, intent.trip_date,
+        )
+        if traversal.state is not TraversalState.COMPLETE:
+            issues.append(IntentResolutionIssue(
+                f"traversal_{traversal.state.value}", traversal.message,
+                traversal.alternate_segment_ids,
+            ))
 
     stages = []
     sequence = 1
     if entry:
         stages.append(TripStage("entry", sequence, "entry", _scopes(reads, entry)))
         sequence += 1
-    if route:
+    if route and (not traversal or traversal.state is not TraversalState.COMPLETE):
         stages.append(TripStage("route", sequence, "traverse", _scopes(reads, route)))
         sequence += 1
+    elif traversal:
+        for leg in traversal.legs:
+            stages.append(TripStage(
+                leg.segment_id, sequence, "traverse", leg.spatial_scope_ids,
+            ))
+            sequence += 1
     trip_objectives = []
     for index, entity in enumerate(objectives, start=1):
         objective_id = f"objective-{index}"
@@ -228,5 +249,8 @@ def resolve_trip_intent(reads: IntentReads, intent: TripIntent) -> IntentResolut
         intent.activities, intent.equipment,
     )
     state = IntentResolutionState.PARTIAL if issues else IntentResolutionState.RESOLVED
-    return IntentResolution(state, intent, tuple(objectives), route, entry,
-                            exit_entity, context, tuple(issues))
+    return IntentResolution(
+        state=state, intent=intent, objectives=tuple(objectives), route=route,
+        entry=entry, exit=exit_entity, traversal=traversal, context=context,
+        issues=tuple(issues),
+    )

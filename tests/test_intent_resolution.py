@@ -57,8 +57,10 @@ def test_an_explicit_return_to_the_start_is_not_confused_with_an_inferred_loop(r
         exit_query="Whitney Portal",
     ))
 
-    assert result.state is IntentResolutionState.RESOLVED
+    assert result.state is IntentResolutionState.PARTIAL
     assert result.entry == result.exit
+    assert result.traversal.state.value == "unavailable"
+    assert issue_codes(result) == {"traversal_unavailable"}
     assert [stage.kind for stage in result.context.stages] == [
         "entry", "traverse", "summit", "exit",
     ]
@@ -87,6 +89,10 @@ def test_ohlone_endpoints_resolve_through_member_route_legs(reads):
     assert result.route.entity_id == "trail-ohlone-wilderness"
     assert result.entry.entity_id == "staging-mission-peak-stanford-avenue"
     assert result.exit.entity_id == "trailhead-ohlone-lichen-bark"
+    assert result.traversal.state.value == "complete"
+    assert len(result.traversal.legs) == 52
+    assert len(result.context.stages) == 55
+    assert result.context.stages[1].stage_id == "route-leg-ohlone-mainline-001"
 
 
 def test_a_route_not_sourced_for_the_objective_is_rejected(reads):

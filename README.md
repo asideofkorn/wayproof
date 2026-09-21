@@ -285,8 +285,12 @@ If a host launches the command from another directory, set
 objective names or IDs, and optional route, entry, and exit choices. It returns
 `resolved`, `partial`, `ambiguous`, or `unknown` plus a typed planning context
 when one can be built. It never guesses among multiple routes, silently assumes
-an exit, or treats missing topology as fact. The evaluation tools also accept
-an already-resolved context with objectives and ordered stages.
+an exit, or treats missing topology as fact. Where canonical segment topology
+exists, the result includes ordered legs, known distance, distance completeness,
+accessible entities, and separately identified alternate segments. Those leg
+scopes become ordered planning stages used by requirement and readiness
+evaluation. The evaluation tools also accept an already-resolved context with
+objectives and ordered stages.
 
 The MCP server intentionally exposes no proposal, approval, promotion,
 publication, filesystem, or raw canonical CRUD tools.
@@ -346,8 +350,8 @@ canonical knowledge is untouched.
 
 The following remain incomplete:
 
-- richer `TripIntent` resolution beyond named objectives and sourced
-  route/access endpoints, including traversal expansion and aliases;
+- richer `TripIntent` resolution beyond named objectives, sourced endpoints,
+  and published segment topology, including aliases and constraint matching;
 - complete Trip Readiness aggregation for costs, deadlines, inventory,
   closures, and conflicts;
 - completion of the legacy CLI migration to `CanonicalReadService`;
