@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mission-peak-access-policy",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Obtain the Stanford Avenue overnight-parking permit through the Ohlone Wilderness camping reservation; it is not a separate parking permission.",
+    "rule_id": "rule-mission-peak-stanford-overnight-parking",
+    "spatial_scope_ids": [
+      "scope-mission-peak-stanford-avenue-staging"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

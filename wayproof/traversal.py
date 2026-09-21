@@ -149,6 +149,10 @@ def resolve_traversal(
     graph = defaultdict(list)
     for segment_id, description in described.items():
         graph[description[0]].append((description[1], segment_id))
+        # starts_at/ends_at preserve a stable map-transcription orientation;
+        # they do not make an ordinary official trail mainline one-way. Roles
+        # such as one_way_spur stay outside this graph and are not reversed.
+        graph[description[1]].append((description[0], segment_id))
 
     queue = deque([(entry.entity_id, ())])
     paths = []
@@ -161,9 +165,12 @@ def resolve_traversal(
             shortest_length = len(segment_ids)
             paths.append(segment_ids)
             continue
-        visited_nodes = {entry.entity_id}
+        visited_nodes = {entry.entity_id, node}
+        cursor = entry.entity_id
         for segment_id in segment_ids:
-            visited_nodes.add(described[segment_id][1])
+            start, end = described[segment_id][0:2]
+            cursor = end if cursor == start else start
+            visited_nodes.add(cursor)
         for next_node, segment_id in sorted(graph[node]):
             if next_node not in visited_nodes:
                 queue.append((next_node, (*segment_ids, segment_id)))
@@ -182,11 +189,15 @@ def resolve_traversal(
         )
 
     legs = []
+    current_node = entry.entity_id
     for sequence, segment_id in enumerate(paths[0], start=1):
         start, end, _, distance, status, scopes, access, _ = described[segment_id]
+        if current_node == end:
+            start, end = end, start
         legs.append(TraversalLeg(
             sequence, segment_id, start, end, distance, status, scopes, access,
         ))
+        current_node = end
     path_nodes = [entry.entity_id, *(item.end_node_id for item in legs)]
     node_positions = {node_id: index for index, node_id in enumerate(path_nodes)}
     accessible = {
@@ -194,7 +205,6 @@ def resolve_traversal(
         for description in official_descriptions.values()
         if description[0] in node_positions
         and description[1] in node_positions
-        and node_positions[description[0]] < node_positions[description[1]]
         for entity_id in description[6]
     }
     alternate_legs = tuple(

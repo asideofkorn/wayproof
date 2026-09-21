@@ -95,6 +95,7 @@ def plan_trip(
     inputs = reads.planning_inputs(resolution)
     operational = evaluate_operational_inputs(
         inputs, resolution.context.trip_date, as_of_date,
+        len(resolution.context.party.participant_ids),
     )
     rechecks = tuple(
         reads.pretrip_recheck(resolution.context, result_id)

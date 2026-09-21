@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260921-ohlone-booking-readiness",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-backpack-faq-ohlone-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ohlone-trail-accesses-sunol-backpack-camp.json",
+      "reason": "Connect the Ohlone route to its source-listed Sunol Backpack Camp so its contained site capacities can be projected into trip planning.",
+      "record_id": "relationship-ohlone-trail-accesses-sunol-backpack-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-access-policy"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-mission-peak-stanford-overnight-parking.json",
+      "reason": "Make the source-backed dependency between an Ohlone camping reservation and Stanford Avenue overnight parking evaluable as a trip requirement.",
+      "record_id": "rule-mission-peak-stanford-overnight-parking",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mission-peak-access-policy"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-mission-peak-ohlone-college-no-overnight-parking.json",
+      "reason": "Make the source-backed prohibition on Ohlone College overnight parking evaluable for trips using that access point.",
+      "record_id": "rule-mission-peak-ohlone-college-no-overnight-parking",
+      "record_type": "rule"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Connect existing Ohlone booking, parking, and campsite-capacity evidence to canonical trip readiness."
+}

@@ -95,7 +95,7 @@ def test_route_without_segment_topology_fails_closed(reads):
     assert plan.total_known_distance_miles == 0.0
 
 
-def test_reversed_ohlone_endpoints_are_not_assumed_bidirectional(reads):
+def test_ohlone_official_mainline_resolves_in_the_completed_trip_direction(reads):
     plan = resolve_traversal(
         reads,
         reads.entity("trail-ohlone-wilderness"),
@@ -104,5 +104,11 @@ def test_reversed_ohlone_endpoints_are_not_assumed_bidirectional(reads):
         date(2027, 9, 5),
     )
 
-    assert plan.state is TraversalState.DISCONNECTED
-    assert plan.legs == ()
+    assert plan.state is TraversalState.COMPLETE
+    assert len(plan.legs) == 52
+    assert plan.legs[0].segment_id == "route-leg-ohlone-mainline-050"
+    assert plan.legs[-1].segment_id == "route-leg-ohlone-mainline-001"
+    assert plan.legs[0].start_node_id == "trailhead-ohlone-lichen-bark"
+    assert plan.legs[-1].end_node_id == "staging-mission-peak-stanford-avenue"
+    assert plan.total_known_distance_miles == pytest.approx(26.90)
+    assert plan.distance_complete is False
