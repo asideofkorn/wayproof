@@ -1,0 +1,59 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-pleasanton-ridge-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-pleasanton-ridge-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-pleasanton-ridge-regional-park"
+    ],
+    "subject_id": "park-pleasanton-ridge-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "castleridge_trailhead": {
+          "coordinates": [
+            37.660081,
+            -121.911618
+          ]
+        },
+        "foothill_staging": {
+          "coordinates": [
+            37.614818,
+            -121.881837
+          ]
+        },
+        "tyler_ranch": "12565 Foothill Road, Sunol, CA",
+        "walk_in": "Foothill Road"
+      },
+      "accessible_facilities": [
+        "one paved parking space",
+        "wheelchair-accessible portable toilet",
+        "one wheelchair-compatible picnic table"
+      ],
+      "acreage": 9090,
+      "activities": [
+        "biking",
+        "dogs",
+        "hiking",
+        "horseback riding"
+      ],
+      "parking_fee_usd": 0,
+      "seasonal_hours": "08:00 opening; closing varies from 17:00 to 20:00 by month",
+      "trail_character": "multi-use dirt trails with canyon and ridgetop views; elevations exceed 1,600 feet",
+      "tyler_ranch_addition": {
+        "acres": 2844,
+        "routes": [
+          "Tyler Ranch Trail",
+          "Sunol Ridge Trail",
+          "Robertson property trails"
+        ],
+        "trail_miles_approx": 18
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

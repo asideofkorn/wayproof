@@ -1,0 +1,57 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-point-isabel-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-point-isabel-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-point-isabel-regional-shoreline"
+    ],
+    "subject_id": "park-point-isabel-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "main": "Isabel Street",
+        "staging": "Rydin Road",
+        "walk_in": [
+          "Central Avenue",
+          "South 51st Street",
+          "Bay Trail"
+        ]
+      },
+      "accessible_facilities": [
+        "parking",
+        "trails",
+        "restrooms"
+      ],
+      "acreage": {
+        "main": 23,
+        "north_point_isabel": 20
+      },
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "picnicking"
+      ],
+      "address": "2701 Isabel Street, Richmond, CA",
+      "dog_rules": {
+        "leash_required_in_parking_and_streets": true,
+        "off_leash": true,
+        "permit_required": "fee-based dog walking or more than three personal dogs",
+        "voice_control_and_sight_required": true
+      },
+      "fishing": "California license required for shore fishing",
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "nearby_bay_trail_miles_over": 2.5,
+      "parking_fee_usd": 0,
+      "water_trail": "conditionally designated San Francisco Bay Water Trail trailhead"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

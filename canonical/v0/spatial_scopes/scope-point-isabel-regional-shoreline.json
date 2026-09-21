@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published boundary and visitor facilities of Point Isabel Regional Shoreline.",
+    "entity_id": "park-point-isabel-regional-shoreline",
+    "kind": "park",
+    "scope_id": "scope-point-isabel-regional-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

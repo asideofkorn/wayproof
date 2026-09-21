@@ -1,0 +1,69 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-point-pinole-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-point-pinole-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-point-pinole-regional-shoreline"
+    ],
+    "subject_id": "park-point-pinole-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": {
+        "atlas_road": "3000 Atlas Road, Richmond, CA 94806; 78 spaces",
+        "dotson_family_marsh": "Goodrick Avenue staging",
+        "giant_highway": "5551 Giant Highway, Richmond, CA 94806; 120 spaces"
+      },
+      "accessible_facilities": [
+        "Atlas Road vehicle and pedestrian bridge",
+        "parking",
+        "picnic sites",
+        "restrooms",
+        "paved trail"
+      ],
+      "acreage": 2432,
+      "activities": [
+        "camping",
+        "dogs",
+        "fishing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly"
+      ],
+      "bay_trail": {
+        "added_miles": 1.8,
+        "existing_miles": 4.5
+      },
+      "bus_fee_usd": 25,
+      "dog_rules": {
+        "commercial_dog_walking": false,
+        "dogs_on_pier": false,
+        "maximum_per_person": 3
+      },
+      "group_camp": {
+        "distance_from_pier_yards": "200–300",
+        "facilities": [
+          "tables",
+          "barbecue",
+          "fire circle",
+          "shade",
+          "rinsing shower",
+          "drinking water",
+          "chemical toilets",
+          "storage"
+        ],
+        "primitive": true,
+        "reservation_minimum_business_days": 3
+      },
+      "parking_fee_usd": 5,
+      "seasonal_hours": "08:00 opening; closing varies from 16:00 to 19:00 by month",
+      "seasonal_parking_fee_months": "April–October when kiosk is attended",
+      "trails_miles": 12
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

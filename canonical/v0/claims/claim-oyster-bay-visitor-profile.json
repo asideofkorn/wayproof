@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-oyster-bay-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-oyster-bay-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-oyster-bay-regional-shoreline"
+    ],
+    "subject_id": "park-oyster-bay-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Neptune Drive entrance",
+        "Bill Lockyer Bridge walk-in entrance"
+      ],
+      "activities": [
+        "dogs",
+        "hiking",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "1600 Neptune Drive, San Leandro, CA 94577",
+      "features": {
+        "disc_golf_holes": 18,
+        "group_picnic_areas": 7,
+        "group_picnic_reservable": false,
+        "perimeter_bay_trail_miles": 2,
+        "toilets": "picnic and lawn area",
+        "winter_monarch_garden": true
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 0,
+      "setting": "developing shoreline park with bay views and diverse bird habitat",
+      "trails": "multipurpose interior trails and a paved perimeter route from Neptune entrance to Bill Lockyer Bridge"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
