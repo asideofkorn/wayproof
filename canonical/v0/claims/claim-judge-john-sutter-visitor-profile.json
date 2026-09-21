@@ -1,0 +1,37 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-judge-john-sutter-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-judge-john-sutter-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-judge-john-sutter-regional-shoreline"
+    ],
+    "subject_id": "park-judge-john-sutter-regional-shoreline",
+    "temporal_scope": null,
+    "value": {
+      "access": "Burma Road parking",
+      "accessible_facilities": [
+        "day-use parking",
+        "restrooms",
+        "drinking fountain",
+        "trail to observation pier",
+        "restrooms at pier entrance",
+        "picnic tables on observation pier"
+      ],
+      "acreage": 22.47,
+      "address": "210 Burma Road, Oakland, CA 94607",
+      "attractions": {
+        "alexander_zuckermann_bay_bridge_trail": "over four miles from Emeryville to Yerba Buena Island",
+        "bridge_yard_building_square_feet": 24000,
+        "observation_pier": true
+      },
+      "gate_hours": "07:00–17:00",
+      "setting": "Oakland waterfront at the foot of the eastern span of the San Francisco-Oakland Bay Bridge"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

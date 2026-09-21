@@ -1,0 +1,62 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-lake-chabot-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-lake-chabot-regional-park"
+    ],
+    "subject_id": "park-lake-chabot-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "Lake Chabot Road marina entrance",
+      "accessible_facilities": [
+        "fishing pier",
+        "parking-to-marina wheelchair ramp",
+        "restrooms",
+        "drinking fountains",
+        "picnic tables"
+      ],
+      "activities": [
+        "biking",
+        "boating",
+        "dogs",
+        "fishing",
+        "golfing",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "17600 Lake Chabot Road, Castro Valley, CA 94546",
+      "bus_fee_usd": 25,
+      "daily_fishing_access_fee_usd": 5,
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "lake_acres": 315,
+      "mussel_inspection_fee_usd": 5,
+      "non_motorized_launch_fee_usd": 3,
+      "parking_fee_usd": 5,
+      "seasonal_gate_hours": "06:00 opening; closing varies from 18:00 to 21:00 by month",
+      "trailered_vehicle_fee_usd": 5,
+      "trails": {
+        "adjoining_anthony_chabot_trail_miles": 70,
+        "bicycle_loop_miles": {
+          "via_honker_bay": 14.41,
+          "via_live_oak": 12.42
+        },
+        "park_trail_miles_over": 20,
+        "paved_shore_trails_miles": 3.52
+      },
+      "water_use": {
+        "boating": "controlled non-water-contact use",
+        "reason": "standby emergency water supply",
+        "swimming_permitted": false
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,233 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260920-ebrpd-parks-batch-09",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-judge-john-sutter-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-judge-john-sutter-regional-shoreline",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-judge-john-sutter-regional-shoreline.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-judge-john-sutter-regional-shoreline",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-judge-john-sutter-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-judge-john-sutter-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-judge-john-sutter-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-judge-john-sutter-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-judge-john-sutter-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-judge-john-sutter-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-judge-john-sutter-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-judge-john-sutter-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-judge-john-sutter-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-kennedy-grove-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-kennedy-grove-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-kennedy-grove-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-kennedy-grove-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-kennedy-grove-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-kennedy-grove-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-kennedy-grove-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-kennedy-grove-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-kennedy-grove-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-kennedy-grove-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-kennedy-grove-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-kennedy-grove-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-kennedy-grove-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-lake-chabot-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-lake-chabot-regional-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-lake-chabot-regional-park.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-lake-chabot-regional-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-lake-chabot-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-lake-chabot-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-lake-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-lake-chabot-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-lake-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-lake-chabot-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-lake-chabot-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lake-chabot-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-lake-chabot-visitor-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-temescal-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "park-temescal-regional-recreation-area",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-temescal-regional-recreation-area.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "scope-temescal-regional-recreation-area",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-temescal-park-page.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "source-ebrpd-temescal-park-page",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-ebrpd-temescal-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "observation-ebrpd-temescal-visitor-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ebrpd-temescal-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "evidence-ebrpd-temescal-visitor-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ebrpd-temescal-visitor-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-temescal-visitor-profile.json",
+      "reason": "Add a deduplicated planning profile from the live EBRPD preserve page reviewed on 2026-09-20.",
+      "record_id": "claim-temescal-visitor-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four additional previously uncaptured EBRPD park visitor profiles."
+}
