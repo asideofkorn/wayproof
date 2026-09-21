@@ -1,0 +1,62 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-roberts-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-roberts-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-roberts-regional-recreation-area"
+    ],
+    "subject_id": "park-roberts-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Skyline Boulevard main entrance",
+        "Roberts Pool",
+        "Bowmen archery range",
+        "Redwood Bowl staging",
+        "ADA play area"
+      ],
+      "accessible_facilities": [
+        "barrier-free children's play area",
+        "swim complex",
+        "bathhouse",
+        "pool lift",
+        "ADA parking and restrooms"
+      ],
+      "acreage": 87,
+      "activities": [
+        "archery",
+        "biking",
+        "dogs",
+        "hiking",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "10570 Skyline Boulevard, Oakland, CA 94619",
+      "bus_fee_usd": 25,
+      "curfew": "22:00–05:00",
+      "features": {
+        "heated_pool_square_feet": 5600,
+        "reservable_picnic_sites": 8,
+        "sports": [
+          "baseball",
+          "playfields",
+          "sand volleyball",
+          "archery"
+        ]
+      },
+      "hours": "05:00–22:00 unless otherwise posted or permitted",
+      "parking_fee_usd": 5,
+      "payment": "cashless",
+      "relationship": "trail connections to neighboring Reinhardt Redwood Regional Park",
+      "seasonal_gate_hours": "08:00 opening; closing varies from 17:00 to 20:00",
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

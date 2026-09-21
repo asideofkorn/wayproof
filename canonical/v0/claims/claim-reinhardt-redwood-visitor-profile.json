@@ -1,0 +1,59 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-reinhardt-redwood-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-dr-aurelia-reinhardt-redwood-regional-park"
+    ],
+    "subject_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "access": "Redwood Gate plus multiple Redwood Road and Skyline Boulevard staging areas",
+      "accessible_facilities": [
+        "selected picnic sites",
+        "Canyon Meadow staging",
+        "Skyline Gate staging"
+      ],
+      "acreage": 1833,
+      "activities": [
+        "biking",
+        "camping",
+        "dogs",
+        "hiking",
+        "horseback riding",
+        "kid-friendly",
+        "picnicking"
+      ],
+      "address": "7867 Redwood Road, Oakland, CA 94619",
+      "bus_fee_usd": 25,
+      "cell_service": "little or none; limited public Wi-Fi at park office",
+      "curfew": "22:00–05:00",
+      "features": [
+        "coast redwood forest",
+        "group picnic sites",
+        "group overnight camps",
+        "children's play structure"
+      ],
+      "parking_fee_usd": 5,
+      "payment": "cash only",
+      "regional_routes": [
+        "East Bay Skyline National Trail",
+        "Bay Area Ridge Trail"
+      ],
+      "restrictions": {
+        "fishing": false,
+        "group_camp_reservation_minimum_business_days": 3
+      },
+      "seasonal_gate_hours": "08:00 opening; closing varies from 18:00 to 20:00",
+      "seasonal_parking_fee": "weekends and major holidays April–October at Redwood Gate",
+      "trailered_vehicle_fee_usd": 5,
+      "trails_miles_nearly": 40
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

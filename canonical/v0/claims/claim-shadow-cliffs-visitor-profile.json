@@ -1,0 +1,68 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-shadow-cliffs-visitor-profile",
+    "evidence_ids": [
+      "evidence-ebrpd-shadow-cliffs-visitor-profile"
+    ],
+    "predicate": "visitor_profile",
+    "spatial_scope_ids": [
+      "scope-shadow-cliffs-regional-recreation-area"
+    ],
+    "subject_id": "park-shadow-cliffs-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "access": [
+        "Stanley Boulevard entrance",
+        "Vineyard Avenue staging",
+        "Stanley Boulevard walk-in"
+      ],
+      "accessible_facilities": [
+        "parking",
+        "trails",
+        "picnic tables",
+        "restrooms",
+        "fishing pier",
+        "bathhouse",
+        "beach wheelchairs",
+        "interpretive pavilion",
+        "Lake Trail"
+      ],
+      "acreage": {
+        "main_lake": 80,
+        "park": 266
+      },
+      "activities": [
+        "boating",
+        "dogs",
+        "fishing",
+        "hiking",
+        "kid-friendly",
+        "picnicking",
+        "swimming"
+      ],
+      "address": "2500 Stanley Boulevard, Pleasanton, CA 94566",
+      "boating": {
+        "arroyo_boating": false,
+        "electric_motors_only": true,
+        "gas_engines": false,
+        "inspection_required": true,
+        "jet_skis": false,
+        "maximum_boat_length_feet": 17
+      },
+      "bus_fee_usd": 25,
+      "daily_fishing_permit_usd": 5,
+      "parking_fee_usd": 5,
+      "restrictions": {
+        "alcohol": false,
+        "arroyo_swimming": false,
+        "group_picnic_reservation_minimum_business_days": 3,
+        "pets_on_swim_beach": false
+      },
+      "seasonal_hours": "06:00 or 07:00 opening; closing varies from 17:00 to 21:00",
+      "trailered_vehicle_fee_usd": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
