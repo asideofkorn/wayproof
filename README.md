@@ -157,7 +157,7 @@ truth.
 
 ## Installation
 
-Wayproof requires Python 3.9 or newer.
+Wayproof supports Python 3.14.
 
 ```bash
 git clone https://github.com/asideofkorn/wayproof.git
@@ -349,8 +349,8 @@ python scripts/verify_canonical_diff.py --base origin/main --head HEAD
 The canonical-diff verifier is required only when a branch changes canonical
 records or ChangeSets.
 
-Pull requests run the suite on Python 3.9, 3.11, and 3.12. Existing unrelated
-worktree changes should be preserved.
+Pull requests run the suite on Python 3.14. Existing unrelated worktree changes
+should be preserved.
 
 ## Contributing
 
