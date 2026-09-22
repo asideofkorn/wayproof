@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-anthony-chabot-family-vehicles","claim_id":"claim-anthony-chabot-reserveamerica-terms","conditions":[],"consequence":"Limit each family campsite to two vehicles; no overflow parking is published.","spatial_scope_ids":["scope-anthony-chabot-family-campground"],"temporal_scope":null},"record_type":"rule","schema_version":0}
