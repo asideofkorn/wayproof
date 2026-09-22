@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-yosemite-creek-vehicle-length-limits",
+    "evidence_id": "evidence-yosemite-yosemite-creek-vehicle-length-limits",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-campground-inventory-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

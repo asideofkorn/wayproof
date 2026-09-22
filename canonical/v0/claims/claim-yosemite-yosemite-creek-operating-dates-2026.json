@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-yosemite-creek-operating-dates-2026",
+    "evidence_ids": [
+      "evidence-yosemite-yosemite-creek-operating-dates-2026"
+    ],
+    "predicate": "tentative_operating_dates",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-yosemite-creek"
+    ],
+    "subject_id": "campground-yosemite-yosemite-creek",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "July 1 through September 7"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

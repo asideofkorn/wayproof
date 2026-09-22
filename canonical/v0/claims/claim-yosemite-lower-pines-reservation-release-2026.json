@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-lower-pines-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-lower-pines-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-lower-pines"
+    ],
+    "subject_id": "campground-yosemite-lower-pines",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "5 months ahead on the 15th"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

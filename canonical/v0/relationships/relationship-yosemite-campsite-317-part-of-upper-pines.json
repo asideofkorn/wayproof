@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-317-profile"
+    ],
+    "object_id": "campground-yosemite-upper-pines",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-317-part-of-upper-pines",
+    "subject_id": "campsite-recreation-yosemite-317",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

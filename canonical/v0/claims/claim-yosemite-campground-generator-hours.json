@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-generator-hours",
+    "evidence_ids": [
+      "evidence-yosemite-campground-generator-hours"
+    ],
+    "predicate": "generator_hours",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": [
+      "07:00-09:00",
+      "12:00-14:00",
+      "17:00-19:00"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

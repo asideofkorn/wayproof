@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-lower-pines-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-lower-pines-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-lower-pines"
+    ],
+    "subject_id": "campground-yosemite-lower-pines",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232450",
+      "public_open_records": 74,
+      "status_counts": {
+        "Not Available": 1,
+        "Open": 74
+      },
+      "total_records": 75,
+      "type_counts": {
+        "MANAGEMENT": 1,
+        "RV NONELECTRIC": 12,
+        "STANDARD NONELECTRIC": 62
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

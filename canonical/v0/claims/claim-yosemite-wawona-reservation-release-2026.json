@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campground-yosemite-wawona",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "5 months ahead on the 15th for April 15 through October 26 in Loops B and C and through November 29 in Loop A"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

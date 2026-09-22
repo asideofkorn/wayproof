@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Wawona Horse Campsites facility.",
+    "entity_id": "equestrian-area-yosemite-wawona-horse",
+    "kind": "equestrian_campsite_area",
+    "scope_id": "scope-yosemite-wawona-horse"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

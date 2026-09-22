@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-tuolumne-meadows-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-tuolumne-meadows-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tuolumne-meadows"
+    ],
+    "subject_id": "campground-yosemite-tuolumne-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": 35,
+      "maximum_trailer_feet": 24,
+      "notes": []
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

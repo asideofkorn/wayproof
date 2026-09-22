@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-tamarack-flat-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-tamarack-flat-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tamarack-flat"
+    ],
+    "subject_id": "campground-yosemite-tamarack-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": null,
+      "maximum_trailer_feet": null,
+      "notes": [
+        "RVs and trailers not allowed"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

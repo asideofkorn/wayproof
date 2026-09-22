@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-campfires",
+    "evidence_ids": [
+      "evidence-yosemite-campground-campfires"
+    ],
+    "predicate": "campfire_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "general": "allowed in open campgrounds unless fire restrictions are in effect",
+      "requires_current_fire_restriction_check": true,
+      "yosemite_valley_and_hodgdon_may_through_september": "wood fires only 17:00-22:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

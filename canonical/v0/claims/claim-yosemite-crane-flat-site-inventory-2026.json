@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-crane-flat-site-inventory-2026",
+    "evidence_ids": [
+      "evidence-yosemite-crane-flat-site-inventory-2026"
+    ],
+    "predicate": "published_site_inventory",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-crane-flat"
+    ],
+    "subject_id": "campground-yosemite-crane-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "accessible_sites": 7,
+      "sites": 148
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

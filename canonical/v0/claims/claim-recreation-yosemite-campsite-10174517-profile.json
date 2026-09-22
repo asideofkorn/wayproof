@@ -1,0 +1,91 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-10174517-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10174517-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-white-wolf"
+    ],
+    "subject_id": "campsite-recreation-yosemite-10174517",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/10174517",
+      "campsite_id": "10174517",
+      "details": {
+        "bed_type": "N/A",
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "condition_rating": "N/A",
+        "electric_hookup": "N/A",
+        "location_rating": "N/A",
+        "max_num_people": "6",
+        "min_num_people": "1",
+        "pets_allowed": "Yes",
+        "proximity_water": "N/A",
+        "shower_bath_type": "N/A",
+        "site_access": "N/A",
+        "site_rating": "N/A",
+        "water_hookup": "No"
+      },
+      "facility_id": "10083567",
+      "latitude": 37.87034073,
+      "longitude": -119.647372,
+      "loop": "White Wolf",
+      "name": "11",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "RV"
+        },
+        {
+          "maximum_length_feet": 15,
+          "name": "Trailer"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "Pickup Camper"
+        },
+        {
+          "maximum_length_feet": 15,
+          "name": "Pop up"
+        },
+        {
+          "maximum_length_feet": null,
+          "name": "Vehicle"
+        },
+        {
+          "maximum_length_feet": 15,
+          "name": "Fifth Wheel"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "Caravan/Camper Van"
+        },
+        {
+          "maximum_length_feet": null,
+          "name": "Car"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "STANDARD NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

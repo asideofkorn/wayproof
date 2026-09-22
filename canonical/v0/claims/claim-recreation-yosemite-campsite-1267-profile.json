@@ -1,0 +1,52 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-1267-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-1267-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tuolumne-meadows"
+    ],
+    "subject_id": "campsite-recreation-yosemite-1267",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/1267",
+      "campsite_id": "1267",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "hike_in_distance": "10",
+        "max_num_people": "6",
+        "min_num_people": "1",
+        "pets_allowed": "Yes",
+        "shade": "Yes"
+      },
+      "facility_id": "232448",
+      "latitude": 37.8733041,
+      "longitude": -119.3523862,
+      "loop": "A",
+      "name": "A029",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Small Tent"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "WALK TO",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

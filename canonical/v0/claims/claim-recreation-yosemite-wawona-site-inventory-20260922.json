@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-wawona-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-wawona-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campground-yosemite-wawona",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232446",
+      "public_open_records": 96,
+      "status_counts": {
+        "Not Available": 2,
+        "Not Reservable Management": 3,
+        "Open": 96
+      },
+      "total_records": 101,
+      "type_counts": {
+        "GROUP TENT ONLY AREA NONELECTRIC": 1,
+        "MANAGEMENT": 5,
+        "RV NONELECTRIC": 2,
+        "STANDARD NONELECTRIC": 63,
+        "TENT ONLY NONELECTRIC": 20,
+        "WALK TO": 10
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

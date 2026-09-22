@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Tuolumne Meadows Campground campground area.",
+    "entity_id": "campground-yosemite-tuolumne-meadows",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-tuolumne-meadows"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

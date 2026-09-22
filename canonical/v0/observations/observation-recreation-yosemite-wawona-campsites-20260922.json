@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov returned 101 site records for Wawona Campground; 96 had status Open. Other records remain represented in the facility snapshot counts rather than as public campsite entities.",
+    "observation_id": "observation-recreation-yosemite-wawona-campsites-20260922",
+    "observed_at": "2026-09-22T00:00:00+00:00",
+    "observer": "Recreation.gov",
+    "retrieved_at": "2026-09-22T00:00:00+00:00",
+    "source_id": "source-recreation-yosemite-wawona-campsites"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

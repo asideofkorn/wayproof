@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-camp-4-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-camp-4-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-camp-4"
+    ],
+    "subject_id": "campground-yosemite-camp-4",
+    "temporal_scope": null,
+    "value": 4000
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Camp 4 campground area.",
+    "entity_id": "campground-yosemite-camp-4",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-camp-4"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

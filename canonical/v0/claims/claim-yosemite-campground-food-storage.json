@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-food-storage",
+    "evidence_ids": [
+      "evidence-yosemite-campground-food-storage"
+    ],
+    "predicate": "food_storage",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "required": "24 hours per day"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,58 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-13-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-13-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campsite-recreation-yosemite-13",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/13",
+      "campsite_id": "13",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "max_num_people": "6",
+        "pets_allowed": "Yes",
+        "shade": "Yes"
+      },
+      "facility_id": "232446",
+      "latitude": 37.55052303,
+      "longitude": -119.6850642,
+      "loop": "C",
+      "name": "078",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        },
+        {
+          "maximum_length_feet": null,
+          "name": "Large Tent Over 9X12`"
+        },
+        {
+          "maximum_length_feet": null,
+          "name": "Small Tent"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "TENT ONLY NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

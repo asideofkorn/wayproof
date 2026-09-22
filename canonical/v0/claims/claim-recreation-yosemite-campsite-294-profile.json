@@ -1,0 +1,73 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-294-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-294-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-upper-pines"
+    ],
+    "subject_id": "campsite-recreation-yosemite-294",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/294",
+      "campsite_id": "294",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "max_num_people": "6",
+        "pets_allowed": "Yes"
+      },
+      "facility_id": "232447",
+      "latitude": 37.73636693,
+      "longitude": -119.5640775,
+      "loop": "Upper Pines",
+      "name": "094",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        },
+        {
+          "maximum_length_feet": 35,
+          "name": "RV"
+        },
+        {
+          "maximum_length_feet": 24,
+          "name": "Trailer"
+        },
+        {
+          "maximum_length_feet": 35,
+          "name": "Pickup Camper"
+        },
+        {
+          "maximum_length_feet": 24,
+          "name": "Pop up"
+        },
+        {
+          "maximum_length_feet": 35,
+          "name": "Caravan/Camper Van"
+        },
+        {
+          "maximum_length_feet": 24,
+          "name": "Fifth Wheel"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "STANDARD NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

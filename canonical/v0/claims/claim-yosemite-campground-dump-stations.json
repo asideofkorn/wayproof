@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-dump-stations",
+    "evidence_ids": [
+      "evidence-yosemite-campground-dump-stations"
+    ],
+    "predicate": "dump_station_locations",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "all_year": [
+        "Upper Pines Campground"
+      ],
+      "summer": [
+        "near Wawona Campground",
+        "near Tuolumne Meadows Campground"
+      ],
+      "tuolumne_2026_status": "closed beginning September 8 until further notice"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

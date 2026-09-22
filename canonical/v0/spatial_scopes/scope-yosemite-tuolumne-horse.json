@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Tuolumne Meadows Horse Campsites facility.",
+    "entity_id": "equestrian-area-yosemite-tuolumne-horse",
+    "kind": "equestrian_campsite_area",
+    "scope_id": "scope-yosemite-tuolumne-horse"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

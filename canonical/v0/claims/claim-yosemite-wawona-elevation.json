@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campground-yosemite-wawona",
+    "temporal_scope": null,
+    "value": 4000
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

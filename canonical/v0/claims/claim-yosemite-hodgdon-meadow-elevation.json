@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hodgdon-meadow-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-hodgdon-meadow-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-hodgdon-meadow"
+    ],
+    "subject_id": "campground-yosemite-hodgdon-meadow",
+    "temporal_scope": null,
+    "value": 4900
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-camp-4-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-camp-4-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-camp-4"
+    ],
+    "subject_id": "campground-yosemite-camp-4",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "1 week ahead for April 15 through November 29"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

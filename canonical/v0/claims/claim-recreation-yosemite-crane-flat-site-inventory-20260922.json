@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-crane-flat-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-crane-flat-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-crane-flat"
+    ],
+    "subject_id": "campground-yosemite-crane-flat",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232452",
+      "public_open_records": 148,
+      "status_counts": {
+        "Not Available": 15,
+        "Not Reservable Management": 3,
+        "Open": 148
+      },
+      "total_records": 166,
+      "type_counts": {
+        "MANAGEMENT": 3,
+        "STANDARD NONELECTRIC": 116,
+        "TENT ONLY NONELECTRIC": 43,
+        "WALK TO": 4
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

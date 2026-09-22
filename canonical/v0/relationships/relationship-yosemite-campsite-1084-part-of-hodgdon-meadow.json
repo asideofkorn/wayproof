@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-1084-profile"
+    ],
+    "object_id": "campground-yosemite-hodgdon-meadow",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-1084-part-of-hodgdon-meadow",
+    "subject_id": "campsite-recreation-yosemite-1084",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-vehicle-limit",
+    "evidence_ids": [
+      "evidence-yosemite-campground-vehicle-limit"
+    ],
+    "predicate": "vehicles_per_campsite",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "exceptions": "some sites accommodate only one; consult site details",
+      "maximum": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

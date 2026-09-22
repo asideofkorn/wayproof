@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hodgdon-meadow-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-hodgdon-meadow-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-hodgdon-meadow"
+    ],
+    "subject_id": "campground-yosemite-hodgdon-meadow",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "5 months ahead on the 15th for April 15 through October 26"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-backcountry-campground-policy"
+    ],
+    "object_id": "backcountry-camp-yosemite-may-lake",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-backcountry-campgrounds-contains-may-lake",
+    "subject_id": "campgrounds-yosemite-backcountry",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

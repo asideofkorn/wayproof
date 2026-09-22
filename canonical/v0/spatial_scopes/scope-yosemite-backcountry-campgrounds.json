@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Named backcountry campground areas in Yosemite Wilderness.",
+    "entity_id": "campgrounds-yosemite-backcountry",
+    "kind": "campground_collection",
+    "scope_id": "scope-yosemite-backcountry-campgrounds"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

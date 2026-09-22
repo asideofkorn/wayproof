@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-hookups",
+    "evidence_ids": [
+      "evidence-yosemite-campground-hookups"
+    ],
+    "predicate": "campsite_hookups",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "electrical": false,
+      "sewer": false,
+      "water": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

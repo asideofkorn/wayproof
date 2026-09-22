@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-yosemite-white-wolf",
+    "kind": "campground",
+    "name": "White Wolf Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

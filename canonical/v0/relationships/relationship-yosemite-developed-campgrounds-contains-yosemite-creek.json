@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-yosemite-creek-site-inventory-2026"
+    ],
+    "object_id": "campground-yosemite-yosemite-creek",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-developed-campgrounds-contains-yosemite-creek",
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
