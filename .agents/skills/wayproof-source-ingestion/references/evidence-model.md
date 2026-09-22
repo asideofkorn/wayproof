@@ -28,6 +28,10 @@ Required distinctions:
 - facility inventory != live availability;
 - location proximity != route access;
 - source retrieval date != condition start date.
+- approximate value != exact value;
+- a recorded current-condition gap != a consumer-visible pre-trip recheck;
+- a persisted rule != a rule proven to apply to normal trip input;
+- a similarly named runtime requirement != the same canonical requirement.
 
 Preserve history through dated claims and observations. Preserve publication
 intent through permanent ChangeSets. Never rewrite an older observation merely
@@ -43,3 +47,7 @@ Examples:
   not a timeless guarantee.
 - A Google Maps pin can support approximate identity or geometry while an
   official operating rule remains sourced to its publisher.
+- "Nearly 1,200 square miles" should retain an approximation marker; storing
+  exact `1200` silently adds certainty not present in the source.
+- A current-conditions page should normally support a recheck topic and source
+  pointer rather than a timeless assertion of whatever it said at ingestion.

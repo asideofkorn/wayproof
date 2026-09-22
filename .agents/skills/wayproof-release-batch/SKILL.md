@@ -26,6 +26,17 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   `python scripts/verify_canonical_diff.py --base origin/main --head HEAD`.
 - Build or exercise the website when read models, canonical data, rendering, or
   navigation changed.
+- For each newly introduced entity kind, confirm whether it belongs in an
+  existing generated directory. Test the generic classification so later
+  entities populate automatically; never patch a single destination into nav.
+- Run at least one end-to-end consumer assertion for each changed rule or
+  recheck. Confirm runtime and persisted identifiers join exactly.
+- Treat source fidelity as behavior: check that approximations, ranges,
+  exceptions, time bounds, and dynamic status remain visible after serialization
+  and publication.
+- Do not make an existing regression test less specific to obtain a green build.
+  Determine whether the new data exposes a real implementation gap, then add the
+  narrowest generic support and retain the original invariant.
 - Confirm no unrelated files, browser captures, copyrighted downloads, secrets,
   or local environments are staged.
 
