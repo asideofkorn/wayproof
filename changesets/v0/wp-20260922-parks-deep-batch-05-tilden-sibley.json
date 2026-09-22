@@ -1,0 +1,405 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-parks-deep-batch-05-tilden-sibley",
+  "status": "VALIDATED",
+  "summary": "Deepen Tilden and Sibley camping planning knowledge.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-sibley-backpack-camp-official",
+      "path": "canonical/v0/claims/claim-sibley-backpack-camp-official.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-sibley-backpack-camp-reserveamerica",
+      "path": "canonical/v0/claims/claim-sibley-backpack-camp-reserveamerica.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-camps-official",
+      "path": "canonical/v0/claims/claim-tilden-camps-official.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-camps-reserveamerica",
+      "path": "canonical/v0/claims/claim-tilden-camps-reserveamerica.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-gillespie-seasonal-closure-2026-2027",
+      "path": "canonical/v0/claims/claim-tilden-gillespie-seasonal-closure-2026-2027.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-wildcat-view-closed",
+      "path": "canonical/v0/claims/claim-tilden-wildcat-view-closed.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "backpack-camp-sibley",
+      "path": "canonical/v0/entities/backpack-camp-sibley.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "equestrian-camp-tilden-es-anderson",
+      "path": "canonical/v0/entities/equestrian-camp-tilden-es-anderson.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-sibley-110550",
+      "path": "canonical/v0/entities/facility-reserveamerica-sibley-110550.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-tilden-110460",
+      "path": "canonical/v0/entities/facility-reserveamerica-tilden-110460.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-tilden-gillespie",
+      "path": "canonical/v0/entities/group-camp-tilden-gillespie.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-tilden-new-woodland",
+      "path": "canonical/v0/entities/group-camp-tilden-new-woodland.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-tilden-wildcat-view",
+      "path": "canonical/v0/entities/group-camp-tilden-wildcat-view.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-sibley-backpack-camp-official",
+      "path": "canonical/v0/evidence/evidence-sibley-backpack-camp-official.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-sibley-backpack-camp-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-sibley-backpack-camp-reserveamerica.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-camps-official",
+      "path": "canonical/v0/evidence/evidence-tilden-camps-official.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-camps-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-tilden-camps-reserveamerica.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-gillespie-seasonal-closure",
+      "path": "canonical/v0/evidence/evidence-tilden-gillespie-seasonal-closure.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-wildcat-view-closed",
+      "path": "canonical/v0/evidence/evidence-tilden-wildcat-view-closed.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-sibley-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-sibley-camping-20260922.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-tilden-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-tilden-camping-20260922.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-sibley-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-sibley-20260922.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-tilden-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-tilden-20260922.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110460-books-es-anderson",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110460-books-es-anderson.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110460-books-gillespie",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110460-books-gillespie.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110460-books-new-woodland",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110460-books-new-woodland.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110460-books-wildcat-view",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110460-books-wildcat-view.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110550-books-sibley-backpack",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110550-books-sibley-backpack.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-sibley-backpack-camp-in-park",
+      "path": "canonical/v0/relationships/relationship-sibley-backpack-camp-in-park.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-es-anderson-in-park",
+      "path": "canonical/v0/relationships/relationship-tilden-es-anderson-in-park.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-gillespie-in-park",
+      "path": "canonical/v0/relationships/relationship-tilden-gillespie-in-park.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-new-woodland-in-park",
+      "path": "canonical/v0/relationships/relationship-tilden-new-woodland-in-park.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-wildcat-view-in-park",
+      "path": "canonical/v0/relationships/relationship-tilden-wildcat-view-in-park.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-sibley-backpack-booking-lead",
+      "path": "canonical/v0/rules/rule-sibley-backpack-booking-lead.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-sibley-backpack-use",
+      "path": "canonical/v0/rules/rule-sibley-backpack-use.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-tilden-camp-booking-lead",
+      "path": "canonical/v0/rules/rule-tilden-camp-booking-lead.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-tilden-es-anderson-horse-minimum",
+      "path": "canonical/v0/rules/rule-tilden-es-anderson-horse-minimum.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-sibley-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-sibley-campsites.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-tilden-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-tilden-campsites.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-sibley-backpack-camp",
+      "path": "canonical/v0/spatial_scopes/scope-sibley-backpack-camp.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-tilden-es-anderson-equestrian-camp",
+      "path": "canonical/v0/spatial_scopes/scope-tilden-es-anderson-equestrian-camp.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-tilden-gillespie-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-tilden-gillespie-group-camp.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-tilden-new-woodland-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-tilden-new-woodland-group-camp.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-tilden-wildcat-view-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-tilden-wildcat-view-group-camp.json",
+      "reason": "Publish source-backed Tilden and Sibley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ],
+  "schema_version": 0
+}
