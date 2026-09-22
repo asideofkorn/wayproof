@@ -230,6 +230,21 @@ def test_directories_are_automatically_populated_from_canonical_kinds(site):
         assert name in (tmp_path / directory / "index.html").read_text()
 
 
+def test_deep_campground_records_publish_without_handwritten_pages(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "camping" / "index.json").read_text())
+    names = {item["name"] for item in payload["entities"]}
+
+    assert "Anthony Chabot Family Campground" in names
+    assert "Dumbarton Quarry Campground" in names
+    assert (
+        tmp_path / "knowledge" / "campground-anthony-chabot-family" / "index.html"
+    ).exists()
+    assert (
+        tmp_path / "knowledge" / "campground-dumbarton-quarry" / "index.html"
+    ).exists()
+
+
 def test_changes_page_exposes_public_changeset_history(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "changes" / "index.json").read_text())

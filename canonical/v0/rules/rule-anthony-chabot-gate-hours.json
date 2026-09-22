@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-anthony-chabot-gate-hours","claim_id":"claim-anthony-chabot-campground-profile","conditions":[],"consequence":"Arrive before the campground gate locks at 10 PM; no entry is possible until 8 AM.","spatial_scope_ids":["scope-anthony-chabot-family-campground"],"temporal_scope":null},"record_type":"rule","schema_version":0}

@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-dumbarton-quarry-gate-hours","claim_id":"claim-dumbarton-quarry-campground-profile","conditions":[],"consequence":"Enter the campground only between 8 AM and 10 PM.","spatial_scope_ids":["scope-dumbarton-quarry-campground"],"temporal_scope":null},"record_type":"rule","schema_version":0}
