@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-martinez-shoreline-water-quality-20260922",
+    "evidence_ids": [
+      "evidence-martinez-shoreline-water-quality-20260922"
+    ],
+    "predicate": "water_quality_status",
+    "spatial_scope_ids": [
+      "scope-waterbody-martinez-shoreline"
+    ],
+    "subject_id": "waterbody-martinez-shoreline",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "as_of_retrieval": "2026-09-22",
+      "hazard": "blue-green algae",
+      "status": "danger_advisory",
+      "volatile": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

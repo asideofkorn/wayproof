@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-water-quality-20260922",
+    "evidence_ids": [
+      "evidence-lake-chabot-water-quality-20260922"
+    ],
+    "predicate": "water_quality_status",
+    "spatial_scope_ids": [
+      "scope-reservoir-lake-chabot"
+    ],
+    "subject_id": "reservoir-lake-chabot",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "as_of_retrieval": "2026-09-22",
+      "hazard": "blue-green algae",
+      "status": "caution_advisory",
+      "volatile": true,
+      "water_contact_rule": "swimming never permitted"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

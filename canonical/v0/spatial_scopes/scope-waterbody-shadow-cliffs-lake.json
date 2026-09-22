@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Shadow Cliffs Lake.",
+    "entity_id": "waterbody-shadow-cliffs-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-shadow-cliffs-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

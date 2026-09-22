@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Crown Beach.",
+    "entity_id": "beach-crown",
+    "kind": "swim_beach",
+    "scope_id": "scope-beach-crown"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

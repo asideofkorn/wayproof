@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-big-break-shoreline",
+    "kind": "waterbody",
+    "name": "Big Break Regional Shoreline Water"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

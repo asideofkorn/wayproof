@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-martinez-shoreline-water-quality-20260922"
+    ],
+    "object_id": "park-ted-and-kathy-radke-martinez-regional-shoreline",
+    "predicate": "located_in",
+    "relationship_id": "relationship-waterbody-martinez-shoreline-in-ted-and-kathy-radke-martinez-regional-shoreline",
+    "subject_id": "waterbody-martinez-shoreline",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

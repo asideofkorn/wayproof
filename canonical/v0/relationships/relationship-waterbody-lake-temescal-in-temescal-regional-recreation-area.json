@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lake-temescal-water-quality-20260922"
+    ],
+    "object_id": "park-temescal-regional-recreation-area",
+    "predicate": "located_in",
+    "relationship_id": "relationship-waterbody-lake-temescal-in-temescal-regional-recreation-area",
+    "subject_id": "waterbody-lake-temescal",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

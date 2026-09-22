@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Water Quality Notices table"
+    ],
+    "content": "The live Current Water Quality Conditions table reported the location-specific advisory states represented by the associated claims.",
+    "observation_id": "observation-ebrpd-current-water-quality-20260922",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-22T21:00:00+00:00",
+    "source_id": "source-ebrpd-current-water-quality"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

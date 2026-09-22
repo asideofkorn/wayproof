@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Big Break Regional Shoreline Water.",
+    "entity_id": "waterbody-big-break-shoreline",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-big-break-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

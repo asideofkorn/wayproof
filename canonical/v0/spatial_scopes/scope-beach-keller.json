@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Keller Beach.",
+    "entity_id": "beach-keller",
+    "kind": "swim_beach",
+    "scope_id": "scope-beach-keller"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

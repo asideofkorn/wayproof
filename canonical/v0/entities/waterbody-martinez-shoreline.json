@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-martinez-shoreline",
+    "kind": "waterbody",
+    "name": "Martinez Shoreline"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

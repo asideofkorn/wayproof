@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Lake Anza.",
+    "entity_id": "waterbody-tilden-lake-anza",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-tilden-lake-anza"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

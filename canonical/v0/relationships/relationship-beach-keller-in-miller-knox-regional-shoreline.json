@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-keller-water-quality-20260922"
+    ],
+    "object_id": "park-miller-knox-regional-shoreline",
+    "predicate": "located_in",
+    "relationship_id": "relationship-beach-keller-in-miller-knox-regional-shoreline",
+    "subject_id": "beach-keller",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
