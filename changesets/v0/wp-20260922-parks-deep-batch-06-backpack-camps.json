@@ -1,0 +1,441 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-parks-deep-batch-06-backpack-camps",
+  "status": "VALIDATED",
+  "summary": "Deepen Black Diamond, Morgan Territory, and Round Valley camping knowledge.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-black-diamond-camps-official",
+      "path": "canonical/v0/claims/claim-black-diamond-camps-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-black-diamond-camps-reserveamerica",
+      "path": "canonical/v0/claims/claim-black-diamond-camps-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-black-diamond-stewartville-seasonal-closure-2026-2027",
+      "path": "canonical/v0/claims/claim-black-diamond-stewartville-seasonal-closure-2026-2027.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-morgan-territory-backpack-official",
+      "path": "canonical/v0/claims/claim-morgan-territory-backpack-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-morgan-territory-backpack-reserveamerica",
+      "path": "canonical/v0/claims/claim-morgan-territory-backpack-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-morgan-territory-seasonal-closure-2026-2027",
+      "path": "canonical/v0/claims/claim-morgan-territory-seasonal-closure-2026-2027.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-round-valley-backpack-official",
+      "path": "canonical/v0/claims/claim-round-valley-backpack-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-round-valley-backpack-reserveamerica",
+      "path": "canonical/v0/claims/claim-round-valley-backpack-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "backpack-camp-black-diamond-stewartville",
+      "path": "canonical/v0/entities/backpack-camp-black-diamond-stewartville.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "backpack-camp-morgan-territory",
+      "path": "canonical/v0/entities/backpack-camp-morgan-territory.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "backpack-camp-round-valley",
+      "path": "canonical/v0/entities/backpack-camp-round-valley.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-black-diamond-110452",
+      "path": "canonical/v0/entities/facility-reserveamerica-black-diamond-110452.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-morgan-territory-110456",
+      "path": "canonical/v0/entities/facility-reserveamerica-morgan-territory-110456.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-round-valley-110459",
+      "path": "canonical/v0/entities/facility-reserveamerica-round-valley-110459.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-black-diamond-star-mine",
+      "path": "canonical/v0/entities/group-camp-black-diamond-star-mine.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-black-diamond-camps-official",
+      "path": "canonical/v0/evidence/evidence-black-diamond-camps-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-black-diamond-camps-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-black-diamond-camps-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-black-diamond-stewartville-seasonal-closure",
+      "path": "canonical/v0/evidence/evidence-black-diamond-stewartville-seasonal-closure.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-morgan-territory-backpack-official",
+      "path": "canonical/v0/evidence/evidence-morgan-territory-backpack-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-morgan-territory-backpack-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-morgan-territory-backpack-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-morgan-territory-seasonal-closure",
+      "path": "canonical/v0/evidence/evidence-morgan-territory-seasonal-closure.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-round-valley-backpack-official",
+      "path": "canonical/v0/evidence/evidence-round-valley-backpack-official.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-round-valley-backpack-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-round-valley-backpack-reserveamerica.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-black-diamond-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-black-diamond-camping-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-morgan-territory-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-morgan-territory-camping-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-round-valley-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-round-valley-camping-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-black-diamond-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-black-diamond-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-morgan-territory-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-morgan-territory-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-round-valley-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-round-valley-20260922.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-black-diamond-star-mine-in-park",
+      "path": "canonical/v0/relationships/relationship-black-diamond-star-mine-in-park.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-black-diamond-stewartville-in-park",
+      "path": "canonical/v0/relationships/relationship-black-diamond-stewartville-in-park.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-morgan-territory-backpack-in-park",
+      "path": "canonical/v0/relationships/relationship-morgan-territory-backpack-in-park.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110452-books-star-mine",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110452-books-star-mine.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110452-books-stewartville",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110452-books-stewartville.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110456-books-morgan-territory",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110456-books-morgan-territory.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110459-books-round-valley",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110459-books-round-valley.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-round-valley-backpack-in-park",
+      "path": "canonical/v0/relationships/relationship-round-valley-backpack-in-park.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-black-diamond-star-mine-use",
+      "path": "canonical/v0/rules/rule-black-diamond-star-mine-use.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-black-diamond-stewartville-use",
+      "path": "canonical/v0/rules/rule-black-diamond-stewartville-use.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-morgan-territory-backpack-booking",
+      "path": "canonical/v0/rules/rule-morgan-territory-backpack-booking.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-round-valley-backpack-use",
+      "path": "canonical/v0/rules/rule-round-valley-backpack-use.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-black-diamond-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-black-diamond-campsites.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-morgan-territory-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-morgan-territory-campsites.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-round-valley-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-round-valley-campsites.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-black-diamond-star-mine-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-black-diamond-star-mine-group-camp.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-black-diamond-stewartville-backpack-camp",
+      "path": "canonical/v0/spatial_scopes/scope-black-diamond-stewartville-backpack-camp.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-morgan-territory-backpack-camp",
+      "path": "canonical/v0/spatial_scopes/scope-morgan-territory-backpack-camp.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-round-valley-backpack-camp",
+      "path": "canonical/v0/spatial_scopes/scope-round-valley-backpack-camp.json",
+      "reason": "Publish source-backed Black Diamond, Morgan Territory, and Round Valley camping knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ],
+  "schema_version": 0
+}

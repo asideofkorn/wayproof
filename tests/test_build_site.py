@@ -324,6 +324,14 @@ def test_tilden_and_sibley_camps_publish_automatically(site):
         assert (tmp_path / "knowledge" / entity_id / "index.html").exists()
 
 
+def test_remaining_reservable_park_camps_publish_automatically(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "camping" / "index.json").read_text())
+    names = {item["name"] for item in payload["entities"]}
+    expected = {"Star Mine Group Camp", "Stewartville Backpack Camp", "Morgan Territory Backpack Camp", "Round Valley Backpack Camp"}
+    assert expected <= names
+
+
 def test_changes_page_exposes_public_changeset_history(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "changes" / "index.json").read_text())
