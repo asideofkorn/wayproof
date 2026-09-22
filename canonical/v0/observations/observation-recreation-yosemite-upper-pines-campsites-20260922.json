@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov returned 240 site records for Upper Pines Campground; 235 had status Open. Other records remain represented in the facility snapshot counts rather than as public campsite entities.",
+    "observation_id": "observation-recreation-yosemite-upper-pines-campsites-20260922",
+    "observed_at": "2026-09-22T00:00:00+00:00",
+    "observer": "Recreation.gov",
+    "retrieved_at": "2026-09-22T00:00:00+00:00",
+    "source_id": "source-recreation-yosemite-upper-pines-campsites"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

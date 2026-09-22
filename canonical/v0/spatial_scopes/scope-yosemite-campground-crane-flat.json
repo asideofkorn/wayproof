@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Crane Flat Campground campground area.",
+    "entity_id": "campground-yosemite-crane-flat",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-crane-flat"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

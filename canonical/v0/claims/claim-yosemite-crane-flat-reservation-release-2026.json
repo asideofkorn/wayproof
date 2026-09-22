@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-crane-flat-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-crane-flat-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-crane-flat"
+    ],
+    "subject_id": "campground-yosemite-crane-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "2 weeks ahead"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

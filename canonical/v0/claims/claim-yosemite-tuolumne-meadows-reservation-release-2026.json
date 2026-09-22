@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-tuolumne-meadows-reservation-release-2026",
+    "evidence_ids": [
+      "evidence-yosemite-tuolumne-meadows-reservation-release-2026"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tuolumne-meadows"
+    ],
+    "subject_id": "campground-yosemite-tuolumne-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "2 months ahead on the 15th and 14 days ahead"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

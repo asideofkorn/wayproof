@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-live-campsite-availability-recheck",
+    "evidence_id": "evidence-yosemite-live-campsite-availability-recheck",
+    "notes": "",
+    "observation_id": "observation-recreation-yosemite-live-availability-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

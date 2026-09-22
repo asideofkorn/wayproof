@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-north-pines-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-north-pines-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-north-pines"
+    ],
+    "subject_id": "campground-yosemite-north-pines",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232449",
+      "public_open_records": 81,
+      "status_counts": {
+        "Not Available": 12,
+        "Not Reservable Management": 6,
+        "Open": 81
+      },
+      "total_records": 99,
+      "type_counts": {
+        "MANAGEMENT": 18,
+        "RV NONELECTRIC": 18,
+        "STANDARD NONELECTRIC": 63
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

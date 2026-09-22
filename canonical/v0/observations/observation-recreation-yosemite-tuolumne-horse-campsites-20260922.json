@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov returned 4 site records for Tuolumne Meadows Horse Campsites; 4 had status Open. Other records remain represented in the facility snapshot counts rather than as public campsite entities.",
+    "observation_id": "observation-recreation-yosemite-tuolumne-horse-campsites-20260922",
+    "observed_at": "2026-09-22T00:00:00+00:00",
+    "observer": "Recreation.gov",
+    "retrieved_at": "2026-09-22T00:00:00+00:00",
+    "source_id": "source-recreation-yosemite-tuolumne-horse-campsites"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

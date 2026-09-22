@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-showers",
+    "evidence_ids": [
+      "evidence-yosemite-campground-showers"
+    ],
+    "predicate": "campground_showers",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "available_in_campgrounds": false,
+      "paid_alternative": "Curry Village pool showerhouse"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

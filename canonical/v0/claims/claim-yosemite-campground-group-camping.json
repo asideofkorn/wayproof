@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-group-camping",
+    "evidence_ids": [
+      "evidence-yosemite-campground-group-camping"
+    ],
+    "predicate": "group_camping_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "nearby_vehicle_maximum": 5,
+      "normally_available_at": [
+        "Wawona Campground",
+        "Hodgdon Meadow Campground",
+        "Bridalveil Creek Campground",
+        "Tuolumne Meadows Campground"
+      ],
+      "party_size_maximum": 30,
+      "party_size_minimum": 13,
+      "reservation_required": true,
+      "tent_only": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

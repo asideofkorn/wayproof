@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-hodgdon-meadow-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-hodgdon-meadow-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-hodgdon-meadow"
+    ],
+    "subject_id": "campground-yosemite-hodgdon-meadow",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232451",
+      "public_open_records": 104,
+      "status_counts": {
+        "Not Available": 2,
+        "Not Reservable Management": 2,
+        "Open": 104
+      },
+      "total_records": 108,
+      "type_counts": {
+        "GROUP TENT ONLY AREA NONELECTRIC": 4,
+        "HIKE TO": 59,
+        "MANAGEMENT": 4,
+        "STANDARD NONELECTRIC": 34,
+        "TENT ONLY NONELECTRIC": 5,
+        "WALK TO": 2
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

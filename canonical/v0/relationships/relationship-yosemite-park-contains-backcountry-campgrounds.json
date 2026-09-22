@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-backcountry-campground-policy"
+    ],
+    "object_id": "campgrounds-yosemite-backcountry",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-park-contains-backcountry-campgrounds",
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

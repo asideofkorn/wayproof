@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Porcupine Flat Campground campground area.",
+    "entity_id": "campground-yosemite-porcupine-flat",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-porcupine-flat"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

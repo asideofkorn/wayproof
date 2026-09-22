@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-porcupine-flat-site-inventory-2026",
+    "evidence_ids": [
+      "evidence-yosemite-porcupine-flat-site-inventory-2026"
+    ],
+    "predicate": "published_site_inventory",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-porcupine-flat"
+    ],
+    "subject_id": "campground-yosemite-porcupine-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "accessible_sites": 4,
+      "sites": 55
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

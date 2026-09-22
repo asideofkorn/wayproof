@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-white-wolf-site-inventory-2026",
+    "evidence_ids": [
+      "evidence-yosemite-white-wolf-site-inventory-2026"
+    ],
+    "predicate": "published_site_inventory",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-white-wolf"
+    ],
+    "subject_id": "campground-yosemite-white-wolf",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "accessible_sites": 2,
+      "sites": 68
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

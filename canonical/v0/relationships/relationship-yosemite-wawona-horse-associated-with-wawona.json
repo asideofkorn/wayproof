@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-wawona-horse-site-inventory-20260922"
+    ],
+    "object_id": "campground-yosemite-wawona",
+    "predicate": "associated_with",
+    "relationship_id": "relationship-yosemite-wawona-horse-associated-with-wawona",
+    "subject_id": "equestrian-area-yosemite-wawona-horse",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

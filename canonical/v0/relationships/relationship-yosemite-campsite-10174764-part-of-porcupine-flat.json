@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10174764-profile"
+    ],
+    "object_id": "campground-yosemite-porcupine-flat",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-10174764-part-of-porcupine-flat",
+    "subject_id": "campsite-recreation-yosemite-10174764",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

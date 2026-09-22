@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-tuolumne-meadows-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-tuolumne-meadows-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tuolumne-meadows"
+    ],
+    "subject_id": "campground-yosemite-tuolumne-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232448",
+      "public_open_records": 289,
+      "status_counts": {
+        "Not Available": 11,
+        "Not Reservable": 1,
+        "Not Reservable Management": 25,
+        "Open": 289
+      },
+      "total_records": 326,
+      "type_counts": {
+        "GROUP TENT ONLY AREA NONELECTRIC": 7,
+        "HIKE TO": 26,
+        "MANAGEMENT": 34,
+        "RV NONELECTRIC": 1,
+        "STANDARD NONELECTRIC": 119,
+        "TENT ONLY NONELECTRIC": 133,
+        "WALK TO": 6
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

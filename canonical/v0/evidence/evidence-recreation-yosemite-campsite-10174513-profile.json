@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-10174513-profile",
+    "evidence_id": "evidence-recreation-yosemite-campsite-10174513-profile",
+    "notes": "",
+    "observation_id": "observation-recreation-yosemite-white-wolf-campsites-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

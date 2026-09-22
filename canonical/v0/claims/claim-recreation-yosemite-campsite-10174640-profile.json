@@ -1,0 +1,64 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-10174640-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10174640-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-yosemite-creek"
+    ],
+    "subject_id": "campsite-recreation-yosemite-10174640",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/10174640",
+      "campsite_id": "10174640",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "electric_hookup": "N/A",
+        "max_num_people": "6",
+        "min_num_people": "1",
+        "pets_allowed": "Yes",
+        "water_hookup": "No"
+      },
+      "facility_id": "10083840",
+      "latitude": 37.8270348,
+      "longitude": -119.5982406,
+      "loop": "Yose Creek",
+      "name": "06",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "Pickup Camper"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "Vehicle"
+        },
+        {
+          "maximum_length_feet": 20,
+          "name": "Caravan/Camper Van"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "STANDARD NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

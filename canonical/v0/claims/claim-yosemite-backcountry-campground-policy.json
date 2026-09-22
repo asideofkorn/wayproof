@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-backcountry-campground-policy",
+    "evidence_ids": [
+      "evidence-yosemite-backcountry-campground-policy"
+    ],
+    "predicate": "backcountry_campground_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-backcountry-campgrounds",
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "campgrounds-yosemite-backcountry",
+    "temporal_scope": null,
+    "value": {
+      "part_of_developed_reservation_system": false,
+      "wilderness_permit_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

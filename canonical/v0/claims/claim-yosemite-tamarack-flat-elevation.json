@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-tamarack-flat-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-tamarack-flat-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tamarack-flat"
+    ],
+    "subject_id": "campground-yosemite-tamarack-flat",
+    "temporal_scope": null,
+    "value": 6300
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

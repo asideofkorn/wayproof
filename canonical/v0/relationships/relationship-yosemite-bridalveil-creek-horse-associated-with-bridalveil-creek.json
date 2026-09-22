@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-bridalveil-creek-horse-site-inventory-20260922"
+    ],
+    "object_id": "campground-yosemite-bridalveil-creek",
+    "predicate": "associated_with",
+    "relationship_id": "relationship-yosemite-bridalveil-creek-horse-associated-with-bridalveil-creek",
+    "subject_id": "equestrian-area-yosemite-bridalveil-creek-horse",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

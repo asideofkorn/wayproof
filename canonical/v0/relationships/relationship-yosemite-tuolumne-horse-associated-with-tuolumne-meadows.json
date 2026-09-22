@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-tuolumne-horse-site-inventory-20260922"
+    ],
+    "object_id": "campground-yosemite-tuolumne-meadows",
+    "predicate": "associated_with",
+    "relationship_id": "relationship-yosemite-tuolumne-horse-associated-with-tuolumne-meadows",
+    "subject_id": "equestrian-area-yosemite-tuolumne-horse",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

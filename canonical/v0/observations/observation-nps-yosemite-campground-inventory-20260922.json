@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official 2026 campground table identifies 13 developed campgrounds and publishes their tentative operating dates, elevation, vehicle limits, reservation timing, daily fee, site count, accessible-site count, water service, and operational notes.",
+    "observation_id": "observation-nps-yosemite-campground-inventory-20260922",
+    "observed_at": "2026-09-17T00:00:00+00:00",
+    "observer": "National Park Service",
+    "retrieved_at": "2026-09-22T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-campground-inventory-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

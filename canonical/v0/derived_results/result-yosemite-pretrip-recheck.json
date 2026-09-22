@@ -11,7 +11,8 @@
       "claim-yosemite-public-transportation",
       "claim-yosemite-campground-reservations",
       "gap-yosemite-current-conditions",
-      "gap-yosemite-campground-availability"
+      "gap-yosemite-campground-availability",
+      "claim-yosemite-live-campsite-availability-recheck"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-yosemite-pretrip-recheck",

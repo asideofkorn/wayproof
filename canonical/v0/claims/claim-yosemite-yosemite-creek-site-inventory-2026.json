@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-yosemite-creek-site-inventory-2026",
+    "evidence_ids": [
+      "evidence-yosemite-yosemite-creek-site-inventory-2026"
+    ],
+    "predicate": "published_site_inventory",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-yosemite-creek"
+    ],
+    "subject_id": "campground-yosemite-yosemite-creek",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "accessible_sites": 2,
+      "sites": 74
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

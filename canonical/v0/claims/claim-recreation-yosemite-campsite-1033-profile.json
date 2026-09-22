@@ -1,0 +1,51 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-1033-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-1033-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-hodgdon-meadow"
+    ],
+    "subject_id": "campsite-recreation-yosemite-1033",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/1033",
+      "campsite_id": "1033",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "max_num_people": "6",
+        "pets_allowed": "Yes",
+        "shade": "Yes",
+        "site_access": "Walk-In"
+      },
+      "facility_id": "232451",
+      "latitude": 37.79888338,
+      "longitude": -119.8661481,
+      "loop": "Hodgdon Campground",
+      "name": "055",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "TENT ONLY NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

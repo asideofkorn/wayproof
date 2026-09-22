@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10174597-profile"
+    ],
+    "object_id": "campground-yosemite-tamarack-flat",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-10174597-part-of-tamarack-flat",
+    "subject_id": "campsite-recreation-yosemite-10174597",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

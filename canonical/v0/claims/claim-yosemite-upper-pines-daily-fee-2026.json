@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-upper-pines-daily-fee-2026",
+    "evidence_ids": [
+      "evidence-yosemite-upper-pines-daily-fee-2026"
+    ],
+    "predicate": "published_daily_fee",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-upper-pines"
+    ],
+    "subject_id": "campground-yosemite-upper-pines",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "amount_usd": 36,
+      "basis": "per site"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

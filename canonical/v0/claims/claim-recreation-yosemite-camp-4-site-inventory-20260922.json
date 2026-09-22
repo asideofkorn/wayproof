@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-camp-4-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-camp-4-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-camp-4"
+    ],
+    "subject_id": "campground-yosemite-camp-4",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "10004152",
+      "public_open_records": 61,
+      "status_counts": {
+        "Available": 1,
+        "Not Reservable Management": 6,
+        "Open": 61
+      },
+      "total_records": 68,
+      "type_counts": {
+        "MANAGEMENT": 6,
+        "TENT ONLY NONELECTRIC": 62
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-horse-camping",
+    "evidence_ids": [
+      "evidence-yosemite-campground-horse-camping"
+    ],
+    "predicate": "horse_camping_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "reservation_required": true,
+      "summer_locations": [
+        "Wawona Campground",
+        "Bridalveil Creek Campground",
+        "Tuolumne Meadows Campground"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-white-wolf-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-white-wolf-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-white-wolf"
+    ],
+    "subject_id": "campground-yosemite-white-wolf",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": 27,
+      "maximum_trailer_feet": 24,
+      "notes": []
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

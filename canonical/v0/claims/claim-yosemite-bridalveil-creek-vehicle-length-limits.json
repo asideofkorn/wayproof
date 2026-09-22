@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-bridalveil-creek-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-bridalveil-creek-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-bridalveil-creek"
+    ],
+    "subject_id": "campground-yosemite-bridalveil-creek",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": 35,
+      "maximum_trailer_feet": 24,
+      "notes": [
+        "2026 season ended early after lightning damaged potable water and restroom infrastructure"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

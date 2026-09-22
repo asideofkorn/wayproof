@@ -2,11 +2,12 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-yosemite-campground-availability",
-    "question": "Which specific Yosemite campground and campsite have live availability for the planned dates?",
-    "reason": "The official page describes release policy but does not establish live inventory.",
+    "question": "Which published Yosemite campsite has live availability for the planned dates?",
+    "reason": "Stable campground and campsite inventory is published, but live inventory is dynamic and must be checked for the trip dates.",
     "related_ids": [
       "campgrounds-yosemite-developed",
-      "claim-yosemite-campground-reservations"
+      "claim-yosemite-campground-reservations",
+      "claim-yosemite-live-campsite-availability-recheck"
     ]
   },
   "record_type": "gap",

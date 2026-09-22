@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-bridalveil-creek-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-bridalveil-creek-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-bridalveil-creek"
+    ],
+    "subject_id": "campground-yosemite-bridalveil-creek",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232453",
+      "public_open_records": 106,
+      "status_counts": {
+        "Not Available": 3,
+        "Not Reservable Management": 1,
+        "Open": 106
+      },
+      "total_records": 110,
+      "type_counts": {
+        "GROUP TENT ONLY AREA NONELECTRIC": 2,
+        "MANAGEMENT": 4,
+        "STANDARD NONELECTRIC": 78,
+        "TENT ONLY NONELECTRIC": 26
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

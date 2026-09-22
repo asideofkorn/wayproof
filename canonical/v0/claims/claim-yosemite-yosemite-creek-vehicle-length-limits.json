@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-yosemite-creek-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-yosemite-creek-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-yosemite-creek"
+    ],
+    "subject_id": "campground-yosemite-yosemite-creek",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": null,
+      "maximum_trailer_feet": null,
+      "notes": [
+        "RVs and trailers not recommended"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

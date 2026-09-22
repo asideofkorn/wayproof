@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-water-service-2026",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-water-service-2026"
+    ],
+    "predicate": "published_water_service",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campground-yosemite-wawona",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "tap"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

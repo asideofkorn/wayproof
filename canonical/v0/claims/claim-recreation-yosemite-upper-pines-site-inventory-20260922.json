@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-upper-pines-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-upper-pines-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-upper-pines"
+    ],
+    "subject_id": "campground-yosemite-upper-pines",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "232447",
+      "public_open_records": 235,
+      "status_counts": {
+        "Not Available": 2,
+        "Not Reservable Management": 3,
+        "Open": 235
+      },
+      "total_records": 240,
+      "type_counts": {
+        "MANAGEMENT": 5,
+        "RV NONELECTRIC": 29,
+        "STANDARD NONELECTRIC": 202,
+        "TENT ONLY NONELECTRIC": 4
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
