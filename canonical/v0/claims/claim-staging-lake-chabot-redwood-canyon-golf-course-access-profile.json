@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-lake-chabot-redwood-canyon-golf-course-access-profile",
+    "evidence_ids": [
+      "evidence-staging-lake-chabot-redwood-canyon-golf-course-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-lake-chabot-redwood-canyon-golf-course"
+    ],
+    "subject_id": "staging-lake-chabot-redwood-canyon-golf-course",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.7260193375457,
+      "longitude": -122.081155538761
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

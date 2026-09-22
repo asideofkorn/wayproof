@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-skyline-gate-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-skyline-gate-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-skyline-gate"
+    ],
+    "subject_id": "staging-reinhardt-redwood-skyline-gate",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8318268616984,
+      "longitude": -122.185196184701
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

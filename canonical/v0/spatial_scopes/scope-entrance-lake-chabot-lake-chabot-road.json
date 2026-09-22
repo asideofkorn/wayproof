@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Lake Chabot Road Park Entrance.",
+    "entity_id": "entrance-lake-chabot-lake-chabot-road",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-lake-chabot-lake-chabot-road"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

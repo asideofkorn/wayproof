@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Chabot Staging Area (EBMUD).",
+    "entity_id": "staging-lake-chabot-chabot-ebmud",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-lake-chabot-chabot-ebmud"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

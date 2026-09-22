@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-fishing-prohibited",
+    "evidence_id": "evidence-reinhardt-redwood-fishing-prohibited",
+    "notes": "Official park guidance; time-sensitive statuses require a pre-trip recheck.",
+    "observation_id": "observation-ebrpd-reinhardt-redwood-access-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

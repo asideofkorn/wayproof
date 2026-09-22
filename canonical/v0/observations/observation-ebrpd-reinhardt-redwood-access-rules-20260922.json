@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Current notices",
+      "To Reach The Park",
+      "Park Accessibility",
+      "Attractions"
+    ],
+    "content": "The live official park page publishes named access points with linked coordinates, route guidance, facilities, recreation rules, and current conditions.",
+    "observation_id": "observation-ebrpd-reinhardt-redwood-access-rules-20260922",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-22T17:00:00+00:00",
+    "source_id": "source-ebrpd-reinhardt-redwood-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

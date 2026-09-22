@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-lake-chabot-crest-avenue-walk-in",
+    "kind": "entrance",
+    "name": "Crest Avenue Walk-In Entrance near Irma Way"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-fishing-prohibited",
+    "evidence_ids": [
+      "evidence-reinhardt-redwood-fishing-prohibited"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-dr-aurelia-reinhardt-redwood-regional-park"
+    ],
+    "subject_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "activity": "fishing",
+      "permitted": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

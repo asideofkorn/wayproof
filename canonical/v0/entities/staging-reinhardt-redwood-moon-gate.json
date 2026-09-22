@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-reinhardt-redwood-moon-gate",
+    "kind": "staging_area",
+    "name": "Reinhardt Redwood Moon Gate Staging Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

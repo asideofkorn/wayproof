@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-reinhardt-redwood-redwood-road",
+    "kind": "entrance",
+    "name": "Reinhardt Redwood Road Park Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

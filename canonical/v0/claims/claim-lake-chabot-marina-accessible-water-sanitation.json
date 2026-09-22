@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-marina-accessible-water-sanitation",
+    "evidence_ids": [
+      "evidence-lake-chabot-marina-accessible-water-sanitation"
+    ],
+    "predicate": "facility_profile",
+    "spatial_scope_ids": [
+      "scope-lake-chabot-regional-park"
+    ],
+    "subject_id": "park-lake-chabot-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "drinking_fountains": true,
+      "location": "marina area",
+      "picnic_tables": true,
+      "restrooms": true,
+      "wheelchair_accessible": true,
+      "wheelchair_ramp_from_parking": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

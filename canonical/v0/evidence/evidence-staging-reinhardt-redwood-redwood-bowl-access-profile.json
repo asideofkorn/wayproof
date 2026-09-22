@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-redwood-bowl-access-profile",
+    "evidence_id": "evidence-staging-reinhardt-redwood-redwood-bowl-access-profile",
+    "notes": "Official access listing and linked coordinate.",
+    "observation_id": "observation-ebrpd-reinhardt-redwood-access-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

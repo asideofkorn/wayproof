@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-pinehurst-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-pinehurst-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-pinehurst"
+    ],
+    "subject_id": "staging-reinhardt-redwood-pinehurst",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8011788797151,
+      "longitude": -122.135988802226
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

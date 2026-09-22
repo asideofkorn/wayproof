@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-reinhardt-redwood-redwood-road-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-reinhardt-redwood-redwood-road-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-reinhardt-redwood-redwood-road"
+    ],
+    "subject_id": "entrance-reinhardt-redwood-redwood-road",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.800358,
+      "longitude": -122.145175
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

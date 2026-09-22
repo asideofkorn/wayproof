@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Skyline Boulevard Parking at Trudeau Center.",
+    "entity_id": "staging-reinhardt-redwood-skyline-trudeau",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-reinhardt-redwood-skyline-trudeau"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

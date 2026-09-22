@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-west-east-shore-profile",
+    "evidence_ids": [
+      "evidence-lake-chabot-west-east-shore-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "route-lake-chabot-west-east-shore",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 3.52,
+      "equestrians_allowed": false,
+      "surface": "paved"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

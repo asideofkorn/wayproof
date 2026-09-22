@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-lake-chabot-old-lake-chabot-road-walk-in"
+    ],
+    "subject_id": "entrance-lake-chabot-old-lake-chabot-road-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.7252227753727,
+      "longitude": -122.115104830583
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-lake-chabot-redwood-road-alta-mira-walk-in",
+    "kind": "entrance",
+    "name": "Redwood Road Walk-In Entrance at Alta Mira"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

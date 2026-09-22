@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-lake-chabot-fairmont-drive-walk-in",
+    "kind": "entrance",
+    "name": "Fairmont Drive Walk-In Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

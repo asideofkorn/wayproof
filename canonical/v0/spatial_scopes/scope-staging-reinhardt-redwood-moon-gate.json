@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Moon Gate Staging Area.",
+    "entity_id": "staging-reinhardt-redwood-moon-gate",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-reinhardt-redwood-moon-gate"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-lake-chabot-redwood-road-alta-mira-walk-in"
+    ],
+    "subject_id": "entrance-lake-chabot-redwood-road-alta-mira-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.7187454450291,
+      "longitude": -122.074036341169
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

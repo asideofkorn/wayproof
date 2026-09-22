@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Road Walk-In Entrance at Monteiro Trail.",
+    "entity_id": "entrance-reinhardt-redwood-monteiro-trail-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-reinhardt-redwood-monteiro-trail-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

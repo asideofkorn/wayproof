@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-fishing-rules",
+    "evidence_id": "evidence-lake-chabot-fishing-rules",
+    "notes": "Official park guidance; time-sensitive statuses require a pre-trip recheck.",
+    "observation_id": "observation-ebrpd-lake-chabot-access-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

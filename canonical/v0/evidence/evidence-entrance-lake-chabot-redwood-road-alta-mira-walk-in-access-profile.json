@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile",
+    "evidence_id": "evidence-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile",
+    "notes": "Official access listing and linked coordinate.",
+    "observation_id": "observation-ebrpd-lake-chabot-access-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

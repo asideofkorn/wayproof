@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-bay-area-ridge-trail",
+    "kind": "route",
+    "name": "Bay Area Ridge Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

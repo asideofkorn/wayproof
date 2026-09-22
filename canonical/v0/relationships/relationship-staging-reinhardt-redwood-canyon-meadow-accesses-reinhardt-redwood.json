@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-canyon-meadow-access-profile"
+    ],
+    "object_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-staging-reinhardt-redwood-canyon-meadow-accesses-reinhardt-redwood",
+    "subject_id": "staging-reinhardt-redwood-canyon-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

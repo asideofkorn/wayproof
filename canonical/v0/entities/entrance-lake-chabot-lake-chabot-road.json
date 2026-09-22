@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-lake-chabot-lake-chabot-road",
+    "kind": "entrance",
+    "name": "Lake Chabot Road Park Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

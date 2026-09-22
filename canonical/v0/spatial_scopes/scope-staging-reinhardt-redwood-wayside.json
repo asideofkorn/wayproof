@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Wayside Staging Area.",
+    "entity_id": "staging-reinhardt-redwood-wayside",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-reinhardt-redwood-wayside"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

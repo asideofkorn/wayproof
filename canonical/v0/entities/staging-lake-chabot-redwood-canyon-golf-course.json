@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-lake-chabot-redwood-canyon-golf-course",
+    "kind": "staging_area",
+    "name": "Redwood Canyon Public Golf Course Access"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

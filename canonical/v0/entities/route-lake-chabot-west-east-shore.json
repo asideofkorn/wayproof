@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-lake-chabot-west-east-shore",
+    "kind": "route",
+    "name": "Lake Chabot West Shore and East Shore Trails"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
