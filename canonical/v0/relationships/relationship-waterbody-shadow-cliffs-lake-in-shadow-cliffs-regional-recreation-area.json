@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-shadow-cliffs-lake-water-quality-20260922"
+    ],
+    "object_id": "park-shadow-cliffs-regional-recreation-area",
+    "predicate": "located_in",
+    "relationship_id": "relationship-waterbody-shadow-cliffs-lake-in-shadow-cliffs-regional-recreation-area",
+    "subject_id": "waterbody-shadow-cliffs-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

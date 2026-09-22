@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-keller-water-quality-20260922",
+    "evidence_id": "evidence-keller-water-quality-20260922",
+    "notes": "Volatile official status; recheck before water contact or travel.",
+    "observation_id": "observation-ebrpd-current-water-quality-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

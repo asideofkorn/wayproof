@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Lake Temescal.",
+    "entity_id": "waterbody-lake-temescal",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-lake-temescal"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

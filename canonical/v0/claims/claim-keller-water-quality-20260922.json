@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-keller-water-quality-20260922",
+    "evidence_ids": [
+      "evidence-keller-water-quality-20260922"
+    ],
+    "predicate": "water_quality_status",
+    "spatial_scope_ids": [
+      "scope-beach-keller"
+    ],
+    "subject_id": "beach-keller",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "as_of_retrieval": "2026-09-22",
+      "status": "water_advisory",
+      "volatile": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

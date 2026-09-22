@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The monitored water-quality location at Martinez Shoreline.",
+    "entity_id": "waterbody-martinez-shoreline",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-martinez-shoreline"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-crown-water-quality-20260922"
+    ],
+    "object_id": "park-robert-w-crown-memorial-state-beach",
+    "predicate": "located_in",
+    "relationship_id": "relationship-beach-crown-in-robert-w-crown-memorial-state-beach",
+    "subject_id": "beach-crown",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

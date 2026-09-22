@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-tilden-lake-anza-water-quality-20260922"
+    ],
+    "object_id": "park-charles-lee-tilden-regional-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-waterbody-tilden-lake-anza-in-charles-lee-tilden-regional-park",
+    "subject_id": "waterbody-tilden-lake-anza",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

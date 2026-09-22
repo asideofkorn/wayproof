@@ -1,0 +1,441 @@
+{
+  "artifact_format_version": 1,
+  "schema_version": 0,
+  "change_set_id": "wp-20260922-ebrpd-water-status-matrix",
+  "status": "VALIDATED",
+  "summary": "Materialize the current EBRPD water-quality status matrix by monitored location.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-big-break-shoreline-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-big-break-shoreline-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-reservoir-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-contra-loma-reservoir-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-crown-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-crown-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-keller-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-keller-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-lake-chabot-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-temescal-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-lake-temescal-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-martinez-shoreline-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-martinez-shoreline-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-shadow-cliffs-arroyo-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-shadow-cliffs-arroyo-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-shadow-cliffs-lake-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-shadow-cliffs-lake-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-lake-anza-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-tilden-lake-anza-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "beach-crown",
+      "path": "canonical/v0/entities/beach-crown.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "beach-keller",
+      "path": "canonical/v0/entities/beach-keller.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "reservoir-lake-chabot",
+      "path": "canonical/v0/entities/reservoir-lake-chabot.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-big-break-shoreline",
+      "path": "canonical/v0/entities/waterbody-big-break-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-lake-temescal",
+      "path": "canonical/v0/entities/waterbody-lake-temescal.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-martinez-shoreline",
+      "path": "canonical/v0/entities/waterbody-martinez-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-shadow-cliffs-arroyo",
+      "path": "canonical/v0/entities/waterbody-shadow-cliffs-arroyo.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-shadow-cliffs-lake",
+      "path": "canonical/v0/entities/waterbody-shadow-cliffs-lake.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-tilden-lake-anza",
+      "path": "canonical/v0/entities/waterbody-tilden-lake-anza.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-big-break-shoreline-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-big-break-shoreline-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-reservoir-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-contra-loma-reservoir-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-crown-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-crown-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-keller-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-keller-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-temescal-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-lake-temescal-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-martinez-shoreline-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-martinez-shoreline-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-shadow-cliffs-arroyo-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-shadow-cliffs-arroyo-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-shadow-cliffs-lake-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-shadow-cliffs-lake-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-lake-anza-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-tilden-lake-anza-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-current-water-quality-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-current-water-quality-20260922.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-beach-crown-in-robert-w-crown-memorial-state-beach",
+      "path": "canonical/v0/relationships/relationship-beach-crown-in-robert-w-crown-memorial-state-beach.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-beach-keller-in-miller-knox-regional-shoreline",
+      "path": "canonical/v0/relationships/relationship-beach-keller-in-miller-knox-regional-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reservoir-lake-chabot-in-lake-chabot-regional-park",
+      "path": "canonical/v0/relationships/relationship-reservoir-lake-chabot-in-lake-chabot-regional-park.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-big-break-shoreline-in-big-break-regional-shoreline",
+      "path": "canonical/v0/relationships/relationship-waterbody-big-break-shoreline-in-big-break-regional-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-lake-temescal-in-temescal-regional-recreation-area",
+      "path": "canonical/v0/relationships/relationship-waterbody-lake-temescal-in-temescal-regional-recreation-area.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-martinez-shoreline-in-ted-and-kathy-radke-martinez-regional-shoreline",
+      "path": "canonical/v0/relationships/relationship-waterbody-martinez-shoreline-in-ted-and-kathy-radke-martinez-regional-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-shadow-cliffs-arroyo-in-shadow-cliffs-regional-recreation-area",
+      "path": "canonical/v0/relationships/relationship-waterbody-shadow-cliffs-arroyo-in-shadow-cliffs-regional-recreation-area.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-shadow-cliffs-lake-in-shadow-cliffs-regional-recreation-area",
+      "path": "canonical/v0/relationships/relationship-waterbody-shadow-cliffs-lake-in-shadow-cliffs-regional-recreation-area.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-waterbody-tilden-lake-anza-in-charles-lee-tilden-regional-park",
+      "path": "canonical/v0/relationships/relationship-waterbody-tilden-lake-anza-in-charles-lee-tilden-regional-park.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-beach-crown",
+      "path": "canonical/v0/spatial_scopes/scope-beach-crown.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-beach-keller",
+      "path": "canonical/v0/spatial_scopes/scope-beach-keller.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-reservoir-lake-chabot",
+      "path": "canonical/v0/spatial_scopes/scope-reservoir-lake-chabot.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-big-break-shoreline",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-big-break-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-lake-temescal",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-lake-temescal.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-martinez-shoreline",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-martinez-shoreline.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-shadow-cliffs-arroyo",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-shadow-cliffs-arroyo.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-shadow-cliffs-lake",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-shadow-cliffs-lake.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-tilden-lake-anza",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-tilden-lake-anza.json",
+      "reason": "Materialize a distinct monitored water location or its volatile official status.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ]
+}
