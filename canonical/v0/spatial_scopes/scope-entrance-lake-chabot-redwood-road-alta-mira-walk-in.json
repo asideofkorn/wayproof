@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Redwood Road Walk-In Entrance at Alta Mira.",
+    "entity_id": "entrance-lake-chabot-redwood-road-alta-mira-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-lake-chabot-redwood-road-alta-mira-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-reinhardt-redwood-skyline-roberts-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-reinhardt-redwood-skyline-roberts-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-reinhardt-redwood-skyline-roberts"
+    ],
+    "subject_id": "entrance-reinhardt-redwood-skyline-roberts",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8128918712904,
+      "longitude": -122.175712696284
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

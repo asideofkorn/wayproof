@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-reinhardt-redwood-equestrian-arena-walk-in",
+    "kind": "entrance",
+    "name": "Reinhardt Redwood Equestrian Arena Walk-In Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

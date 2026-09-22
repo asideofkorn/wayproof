@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Redwood Canyon Public Golf Course Access.",
+    "entity_id": "staging-lake-chabot-redwood-canyon-golf-course",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-lake-chabot-redwood-canyon-golf-course"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

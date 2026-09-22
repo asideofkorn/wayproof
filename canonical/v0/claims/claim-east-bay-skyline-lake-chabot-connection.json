@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-bay-skyline-lake-chabot-connection",
+    "evidence_ids": [
+      "evidence-east-bay-skyline-lake-chabot-connection"
+    ],
+    "predicate": "park_connection",
+    "spatial_scope_ids": [],
+    "subject_id": "route-east-bay-skyline-national-recreation-trail",
+    "temporal_scope": null,
+    "value": {
+      "connection_type": "accessible_from_park_trails",
+      "park_id": "park-lake-chabot-regional-park"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,1386 @@
+{
+  "artifact_format_version": 1,
+  "schema_version": 0,
+  "change_set_id": "wp-20260922-chabot-redwood-access-rules",
+  "status": "VALIDATED",
+  "summary": "Deepen Lake Chabot and Reinhardt Redwood planning knowledge.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-bay-area-ridge-trail-profile",
+      "path": "canonical/v0/claims/claim-bay-area-ridge-trail-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-east-bay-skyline-lake-chabot-connection",
+      "path": "canonical/v0/claims/claim-east-bay-skyline-lake-chabot-connection.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-east-bay-skyline-reinhardt-redwood-connection",
+      "path": "canonical/v0/claims/claim-east-bay-skyline-reinhardt-redwood-connection.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-crest-avenue-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-crest-avenue-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-fairmont-drive-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-fairmont-drive-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-lake-chabot-road-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-lake-chabot-road-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-lake-chabot-road-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-lake-chabot-road-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-reinhardt-redwood-equestrian-arena-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-reinhardt-redwood-equestrian-arena-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-reinhardt-redwood-redwood-road-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-reinhardt-redwood-redwood-road-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-reinhardt-redwood-skyline-roberts-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-reinhardt-redwood-skyline-roberts-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-bicycle-loop-profile",
+      "path": "canonical/v0/claims/claim-lake-chabot-bicycle-loop-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-blue-green-algae-caution-20260922",
+      "path": "canonical/v0/claims/claim-lake-chabot-blue-green-algae-caution-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-fishing-rules",
+      "path": "canonical/v0/claims/claim-lake-chabot-fishing-rules.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-marina-accessible-water-sanitation",
+      "path": "canonical/v0/claims/claim-lake-chabot-marina-accessible-water-sanitation.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-water-contact-rules",
+      "path": "canonical/v0/claims/claim-lake-chabot-water-contact-rules.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-lake-chabot-west-east-shore-profile",
+      "path": "canonical/v0/claims/claim-lake-chabot-west-east-shore-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-accessibility",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-accessibility.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-fishing-prohibited",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-fishing-prohibited.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-golden-spike-closure-2026",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-golden-spike-closure-2026.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-piedmont-stables-boil-water-20260922",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-piedmont-stables-boil-water-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-stream-trail-closures-2026",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-stream-trail-closures-2026.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-lake-chabot-chabot-ebmud-access-profile",
+      "path": "canonical/v0/claims/claim-staging-lake-chabot-chabot-ebmud-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-lake-chabot-fairmont-ridge-access-profile",
+      "path": "canonical/v0/claims/claim-staging-lake-chabot-fairmont-ridge-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-lake-chabot-proctor-access-profile",
+      "path": "canonical/v0/claims/claim-staging-lake-chabot-proctor-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-lake-chabot-redwood-canyon-golf-course-access-profile",
+      "path": "canonical/v0/claims/claim-staging-lake-chabot-redwood-canyon-golf-course-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-canyon-meadow-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-canyon-meadow-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-moon-gate-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-moon-gate-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-piedmont-stables-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-piedmont-stables-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-pinehurst-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-pinehurst-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-redwood-bowl-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-redwood-bowl-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-skyline-gate-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-skyline-gate-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-skyline-trudeau-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-skyline-trudeau-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-waterloo-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-waterloo-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-reinhardt-redwood-wayside-access-profile",
+      "path": "canonical/v0/claims/claim-staging-reinhardt-redwood-wayside-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-crest-avenue-walk-in",
+      "path": "canonical/v0/entities/entrance-lake-chabot-crest-avenue-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-fairmont-drive-walk-in",
+      "path": "canonical/v0/entities/entrance-lake-chabot-fairmont-drive-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-lake-chabot-road-walk-in",
+      "path": "canonical/v0/entities/entrance-lake-chabot-lake-chabot-road-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-lake-chabot-road",
+      "path": "canonical/v0/entities/entrance-lake-chabot-lake-chabot-road.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-old-lake-chabot-road-walk-in",
+      "path": "canonical/v0/entities/entrance-lake-chabot-old-lake-chabot-road-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-lake-chabot-redwood-road-alta-mira-walk-in",
+      "path": "canonical/v0/entities/entrance-lake-chabot-redwood-road-alta-mira-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-reinhardt-redwood-equestrian-arena-walk-in",
+      "path": "canonical/v0/entities/entrance-reinhardt-redwood-equestrian-arena-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-reinhardt-redwood-monteiro-trail-walk-in",
+      "path": "canonical/v0/entities/entrance-reinhardt-redwood-monteiro-trail-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-reinhardt-redwood-redwood-road",
+      "path": "canonical/v0/entities/entrance-reinhardt-redwood-redwood-road.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-reinhardt-redwood-skyline-roberts",
+      "path": "canonical/v0/entities/entrance-reinhardt-redwood-skyline-roberts.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-bay-area-ridge-trail",
+      "path": "canonical/v0/entities/route-bay-area-ridge-trail.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-lake-chabot-bicycle-loop",
+      "path": "canonical/v0/entities/route-lake-chabot-bicycle-loop.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-lake-chabot-west-east-shore",
+      "path": "canonical/v0/entities/route-lake-chabot-west-east-shore.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-lake-chabot-chabot-ebmud",
+      "path": "canonical/v0/entities/staging-lake-chabot-chabot-ebmud.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-lake-chabot-fairmont-ridge",
+      "path": "canonical/v0/entities/staging-lake-chabot-fairmont-ridge.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-lake-chabot-proctor",
+      "path": "canonical/v0/entities/staging-lake-chabot-proctor.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-lake-chabot-redwood-canyon-golf-course",
+      "path": "canonical/v0/entities/staging-lake-chabot-redwood-canyon-golf-course.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-canyon-meadow",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-canyon-meadow.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-moon-gate",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-moon-gate.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-piedmont-stables",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-piedmont-stables.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-pinehurst",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-pinehurst.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-redwood-bowl",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-redwood-bowl.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-skyline-gate",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-skyline-gate.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-skyline-trudeau",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-skyline-trudeau.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-waterloo",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-waterloo.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-reinhardt-redwood-wayside",
+      "path": "canonical/v0/entities/staging-reinhardt-redwood-wayside.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-bay-area-ridge-trail-profile",
+      "path": "canonical/v0/evidence/evidence-bay-area-ridge-trail-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-east-bay-skyline-lake-chabot-connection",
+      "path": "canonical/v0/evidence/evidence-east-bay-skyline-lake-chabot-connection.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-east-bay-skyline-reinhardt-redwood-connection",
+      "path": "canonical/v0/evidence/evidence-east-bay-skyline-reinhardt-redwood-connection.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-crest-avenue-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-crest-avenue-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-fairmont-drive-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-fairmont-drive-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-lake-chabot-road-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-lake-chabot-road-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-lake-chabot-road-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-lake-chabot-road-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-old-lake-chabot-road-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-lake-chabot-redwood-road-alta-mira-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-reinhardt-redwood-equestrian-arena-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-reinhardt-redwood-equestrian-arena-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-reinhardt-redwood-redwood-road-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-reinhardt-redwood-redwood-road-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-reinhardt-redwood-skyline-roberts-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-reinhardt-redwood-skyline-roberts-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-bicycle-loop-profile",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-bicycle-loop-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-blue-green-algae-caution-20260922",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-blue-green-algae-caution-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-fishing-rules",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-fishing-rules.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-marina-accessible-water-sanitation",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-marina-accessible-water-sanitation.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-water-contact-rules",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-water-contact-rules.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-lake-chabot-west-east-shore-profile",
+      "path": "canonical/v0/evidence/evidence-lake-chabot-west-east-shore-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-accessibility",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-accessibility.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-fishing-prohibited",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-fishing-prohibited.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-golden-spike-closure-2026",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-golden-spike-closure-2026.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-piedmont-stables-boil-water-20260922",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-piedmont-stables-boil-water-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-stream-trail-closures-2026",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-stream-trail-closures-2026.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-lake-chabot-chabot-ebmud-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-lake-chabot-chabot-ebmud-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-lake-chabot-fairmont-ridge-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-lake-chabot-fairmont-ridge-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-lake-chabot-proctor-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-lake-chabot-proctor-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-lake-chabot-redwood-canyon-golf-course-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-lake-chabot-redwood-canyon-golf-course-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-canyon-meadow-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-canyon-meadow-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-moon-gate-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-moon-gate-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-piedmont-stables-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-piedmont-stables-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-pinehurst-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-pinehurst-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-redwood-bowl-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-redwood-bowl-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-skyline-gate-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-skyline-gate-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-skyline-trudeau-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-skyline-trudeau-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-waterloo-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-waterloo-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-reinhardt-redwood-wayside-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-reinhardt-redwood-wayside-access-profile.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-lake-chabot-access-rules-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-lake-chabot-access-rules-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-reinhardt-redwood-access-rules-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-reinhardt-redwood-access-rules-20260922.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-bay-area-ridge-trail-traverses-dr-aurelia-reinhardt-redwood-regional-park",
+      "path": "canonical/v0/relationships/relationship-bay-area-ridge-trail-traverses-dr-aurelia-reinhardt-redwood-regional-park.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-east-bay-skyline-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-east-bay-skyline-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-east-bay-skyline-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-east-bay-skyline-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-crest-avenue-walk-in-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-crest-avenue-walk-in-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-fairmont-drive-walk-in-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-fairmont-drive-walk-in-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-lake-chabot-road-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-lake-chabot-road-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-lake-chabot-road-walk-in-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-lake-chabot-road-walk-in-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-old-lake-chabot-road-walk-in-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-old-lake-chabot-road-walk-in-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-lake-chabot-redwood-road-alta-mira-walk-in-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-entrance-lake-chabot-redwood-road-alta-mira-walk-in-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-reinhardt-redwood-equestrian-arena-walk-in-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-entrance-reinhardt-redwood-equestrian-arena-walk-in-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-reinhardt-redwood-monteiro-trail-walk-in-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-entrance-reinhardt-redwood-monteiro-trail-walk-in-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-reinhardt-redwood-redwood-road-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-entrance-reinhardt-redwood-redwood-road-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-reinhardt-redwood-skyline-roberts-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-entrance-reinhardt-redwood-skyline-roberts-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-lake-chabot-bicycle-loop-traverses-lake-chabot-regional-park",
+      "path": "canonical/v0/relationships/relationship-lake-chabot-bicycle-loop-traverses-lake-chabot-regional-park.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-lake-chabot-west-east-shore-traverses-lake-chabot-regional-park",
+      "path": "canonical/v0/relationships/relationship-lake-chabot-west-east-shore-traverses-lake-chabot-regional-park.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-lake-chabot-chabot-ebmud-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-staging-lake-chabot-chabot-ebmud-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-lake-chabot-fairmont-ridge-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-staging-lake-chabot-fairmont-ridge-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-lake-chabot-proctor-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-staging-lake-chabot-proctor-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-lake-chabot-redwood-canyon-golf-course-accesses-lake-chabot",
+      "path": "canonical/v0/relationships/relationship-staging-lake-chabot-redwood-canyon-golf-course-accesses-lake-chabot.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-canyon-meadow-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-canyon-meadow-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-moon-gate-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-moon-gate-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-piedmont-stables-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-piedmont-stables-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-pinehurst-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-pinehurst-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-redwood-bowl-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-redwood-bowl-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-skyline-gate-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-skyline-gate-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-skyline-trudeau-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-skyline-trudeau-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-waterloo-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-waterloo-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-reinhardt-redwood-wayside-accesses-reinhardt-redwood",
+      "path": "canonical/v0/relationships/relationship-staging-reinhardt-redwood-wayside-accesses-reinhardt-redwood.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-crest-avenue-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-crest-avenue-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-fairmont-drive-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-fairmont-drive-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-lake-chabot-road-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-lake-chabot-road-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-lake-chabot-road",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-lake-chabot-road.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-old-lake-chabot-road-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-old-lake-chabot-road-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-lake-chabot-redwood-road-alta-mira-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-lake-chabot-redwood-road-alta-mira-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-reinhardt-redwood-equestrian-arena-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-reinhardt-redwood-equestrian-arena-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-reinhardt-redwood-monteiro-trail-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-reinhardt-redwood-monteiro-trail-walk-in.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-reinhardt-redwood-redwood-road",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-reinhardt-redwood-redwood-road.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-reinhardt-redwood-skyline-roberts",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-reinhardt-redwood-skyline-roberts.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-lake-chabot-chabot-ebmud",
+      "path": "canonical/v0/spatial_scopes/scope-staging-lake-chabot-chabot-ebmud.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-lake-chabot-fairmont-ridge",
+      "path": "canonical/v0/spatial_scopes/scope-staging-lake-chabot-fairmont-ridge.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-lake-chabot-proctor",
+      "path": "canonical/v0/spatial_scopes/scope-staging-lake-chabot-proctor.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-lake-chabot-redwood-canyon-golf-course",
+      "path": "canonical/v0/spatial_scopes/scope-staging-lake-chabot-redwood-canyon-golf-course.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-canyon-meadow",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-canyon-meadow.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-moon-gate",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-moon-gate.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-piedmont-stables",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-piedmont-stables.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-pinehurst",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-pinehurst.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-redwood-bowl",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-redwood-bowl.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-skyline-gate",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-skyline-gate.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-skyline-trudeau",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-skyline-trudeau.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-waterloo",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-waterloo.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-reinhardt-redwood-wayside",
+      "path": "canonical/v0/spatial_scopes/scope-staging-reinhardt-redwood-wayside.json",
+      "reason": "Deepen official access, route, facility, recreation-rule, or live-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-fishing-rules",
+    "evidence_ids": [
+      "evidence-lake-chabot-fishing-rules"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-lake-chabot-regional-park"
+    ],
+    "subject_id": "park-lake-chabot-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "california_fishing_license_required": true,
+      "district_daily_fishing_permit_required": true,
+      "fish_cleaning_location": "designated cleaning station near parking lot",
+      "live_fish_bait_allowed": false,
+      "minimum_age_for_license_and_district_permit": 16
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

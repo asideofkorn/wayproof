@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-wayside-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-wayside-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-wayside"
+    ],
+    "subject_id": "staging-reinhardt-redwood-wayside",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8043532268964,
+      "longitude": -122.145900127786
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

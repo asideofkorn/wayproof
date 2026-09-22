@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-golden-spike-closure-2026",
+    "evidence_ids": [
+      "evidence-reinhardt-redwood-golden-spike-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [
+      "scope-dr-aurelia-reinhardt-redwood-regional-park"
+    ],
+    "subject_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-10-12",
+      "starts_on": "2026-09-28"
+    },
+    "value": {
+      "reason": "FEMA-funded projects",
+      "segment": "small portion of Golden Spike Trail accessed from Monteiro Trail",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

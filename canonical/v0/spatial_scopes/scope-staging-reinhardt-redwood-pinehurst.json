@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Pinehurst Staging Area.",
+    "entity_id": "staging-reinhardt-redwood-pinehurst",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-reinhardt-redwood-pinehurst"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

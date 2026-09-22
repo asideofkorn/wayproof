@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-waterloo-access-profile"
+    ],
+    "object_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-staging-reinhardt-redwood-waterloo-accesses-reinhardt-redwood",
+    "subject_id": "staging-reinhardt-redwood-waterloo",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

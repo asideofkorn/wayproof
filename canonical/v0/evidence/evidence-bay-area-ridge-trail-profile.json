@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bay-area-ridge-trail-profile",
+    "evidence_id": "evidence-bay-area-ridge-trail-profile",
+    "notes": "Official park route guidance.",
+    "observation_id": "observation-ebrpd-reinhardt-redwood-access-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

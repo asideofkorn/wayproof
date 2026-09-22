@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-lake-chabot-fairmont-ridge-access-profile",
+    "evidence_ids": [
+      "evidence-staging-lake-chabot-fairmont-ridge-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-lake-chabot-fairmont-ridge"
+    ],
+    "subject_id": "staging-lake-chabot-fairmont-ridge",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.7133377475833,
+      "longitude": -122.108603885343
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

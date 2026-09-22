@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-waterloo-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-waterloo-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-waterloo"
+    ],
+    "subject_id": "staging-reinhardt-redwood-waterloo",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8235213209444,
+      "longitude": -122.186943592014
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

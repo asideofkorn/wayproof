@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Proctor Staging Area.",
+    "entity_id": "staging-lake-chabot-proctor",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-lake-chabot-proctor"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

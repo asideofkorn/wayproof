@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-reinhardt-redwood-monteiro-trail-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-reinhardt-redwood-monteiro-trail-walk-in"
+    ],
+    "subject_id": "entrance-reinhardt-redwood-monteiro-trail-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.8065591349313,
+      "longitude": -122.166912004673
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

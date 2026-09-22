@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-bicycle-loop-profile",
+    "evidence_ids": [
+      "evidence-lake-chabot-bicycle-loop-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "route-lake-chabot-bicycle-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles_via_honker_bay": 14.41,
+      "distance_miles_via_live_oak": 12.42
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

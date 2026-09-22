@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Piedmont Stables Staging Area.",
+    "entity_id": "staging-reinhardt-redwood-piedmont-stables",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-reinhardt-redwood-piedmont-stables"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

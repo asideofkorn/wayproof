@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bay-area-ridge-trail-profile",
+    "evidence_ids": [
+      "evidence-bay-area-ridge-trail-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "route-bay-area-ridge-trail",
+    "temporal_scope": null,
+    "value": {
+      "traverses_park": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

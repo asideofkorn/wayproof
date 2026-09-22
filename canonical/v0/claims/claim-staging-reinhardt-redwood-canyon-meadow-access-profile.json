@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-canyon-meadow-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-canyon-meadow-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-canyon-meadow"
+    ],
+    "subject_id": "staging-reinhardt-redwood-canyon-meadow",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8064916437958,
+      "longitude": -122.147661151672
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

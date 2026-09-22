@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-lake-chabot-crest-avenue-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-lake-chabot-crest-avenue-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-lake-chabot-crest-avenue-walk-in"
+    ],
+    "subject_id": "entrance-lake-chabot-crest-avenue-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.7097511307618,
+      "longitude": -122.106339984681
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-staging-lake-chabot-fairmont-ridge-access-profile"
+    ],
+    "object_id": "park-lake-chabot-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-staging-lake-chabot-fairmont-ridge-accesses-lake-chabot",
+    "subject_id": "staging-lake-chabot-fairmont-ridge",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

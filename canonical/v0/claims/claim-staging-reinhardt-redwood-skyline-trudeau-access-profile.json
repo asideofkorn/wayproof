@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-reinhardt-redwood-skyline-trudeau-access-profile",
+    "evidence_ids": [
+      "evidence-staging-reinhardt-redwood-skyline-trudeau-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-reinhardt-redwood-skyline-trudeau"
+    ],
+    "subject_id": "staging-reinhardt-redwood-skyline-trudeau",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8034094453275,
+      "longitude": -122.177206904838
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

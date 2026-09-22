@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-entrance-lake-chabot-fairmont-drive-walk-in-access-profile"
+    ],
+    "object_id": "park-lake-chabot-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-entrance-lake-chabot-fairmont-drive-walk-in-accesses-lake-chabot",
+    "subject_id": "entrance-lake-chabot-fairmont-drive-walk-in",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

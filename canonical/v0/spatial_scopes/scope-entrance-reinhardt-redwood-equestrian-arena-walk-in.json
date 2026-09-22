@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Equestrian Arena Walk-In Entrance.",
+    "entity_id": "entrance-reinhardt-redwood-equestrian-arena-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-reinhardt-redwood-equestrian-arena-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

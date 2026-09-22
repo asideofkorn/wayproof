@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-piedmont-stables-boil-water-20260922",
+    "evidence_ids": [
+      "evidence-reinhardt-redwood-piedmont-stables-boil-water-20260922"
+    ],
+    "predicate": "water_system_status",
+    "spatial_scope_ids": [
+      "scope-dr-aurelia-reinhardt-redwood-regional-park"
+    ],
+    "subject_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "location": "Piedmont Stables",
+      "source_updated_on": "2026-09-22",
+      "status": "boil_water_advisory"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

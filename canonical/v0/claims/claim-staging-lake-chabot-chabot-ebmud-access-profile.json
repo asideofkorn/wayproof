@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-lake-chabot-chabot-ebmud-access-profile",
+    "evidence_ids": [
+      "evidence-staging-lake-chabot-chabot-ebmud-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-lake-chabot-chabot-ebmud"
+    ],
+    "subject_id": "staging-lake-chabot-chabot-ebmud",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.7378051345929,
+      "longitude": -122.075673983239
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

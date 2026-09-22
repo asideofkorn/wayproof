@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Reinhardt Redwood Skyline Boulevard Park Entrance at Roberts.",
+    "entity_id": "entrance-reinhardt-redwood-skyline-roberts",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-reinhardt-redwood-skyline-roberts"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

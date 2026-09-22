@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-reinhardt-redwood-wayside",
+    "kind": "staging_area",
+    "name": "Reinhardt Redwood Wayside Staging Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

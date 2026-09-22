@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-chabot-water-contact-rules",
+    "evidence_ids": [
+      "evidence-lake-chabot-water-contact-rules"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-lake-chabot-regional-park"
+    ],
+    "subject_id": "park-lake-chabot-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "float_tube_body_contact_prevention_required": true,
+      "reason": "standby emergency water supply",
+      "swimming_permitted": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

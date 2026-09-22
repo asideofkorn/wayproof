@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-lake-chabot-bicycle-loop",
+    "kind": "route",
+    "name": "Lake Chabot Bicycle Loop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

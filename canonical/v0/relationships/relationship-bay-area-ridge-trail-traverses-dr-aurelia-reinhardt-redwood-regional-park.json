@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-bay-area-ridge-trail-profile"
+    ],
+    "object_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-bay-area-ridge-trail-traverses-dr-aurelia-reinhardt-redwood-regional-park",
+    "subject_id": "route-bay-area-ridge-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

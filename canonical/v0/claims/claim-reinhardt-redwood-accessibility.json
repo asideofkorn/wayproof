@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-reinhardt-redwood-accessibility",
+    "evidence_ids": [
+      "evidence-reinhardt-redwood-accessibility"
+    ],
+    "predicate": "accessibility_profile",
+    "spatial_scope_ids": [
+      "scope-dr-aurelia-reinhardt-redwood-regional-park"
+    ],
+    "subject_id": "park-dr-aurelia-reinhardt-redwood-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "some_picnic_sites_accessible": true,
+      "wheelchair_accessible_staging_areas": [
+        "Canyon Meadow Staging Area",
+        "Skyline Gate Staging Area"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
