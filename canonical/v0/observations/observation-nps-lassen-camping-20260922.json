@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes a campground collection, site counts, and fees. Its reservation summary says reservations are required except at Juniper Lake and Southwest Walk-In, while its detailed first-come, first-served section also lists Warner Valley. Opening dates, road access, and operations remain subject to weather, road status, and public safety.",
+    "observation_id": "observation-nps-lassen-camping-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

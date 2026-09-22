@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-lassen-southwest",
+    "kind": "entrance",
+    "name": "Southwest Entrance / Kohm Yah-mah-nee"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

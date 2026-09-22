@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-permit",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Obtain the online Lassen wilderness permit before an overnight backcountry trip and carry the confirmation permit.",
+    "rule_id": "rule-lassen-overnight-wilderness-permit",
+    "spatial_scope_ids": [
+      "scope-lassen-wilderness"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

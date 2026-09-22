@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lassen managed wilderness and backcountry",
+    "entity_id": "land-lassen-volcanic-wilderness",
+    "kind": "land_unit",
+    "scope_id": "scope-lassen-wilderness"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

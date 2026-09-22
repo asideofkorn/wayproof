@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-permit-process",
+    "evidence_ids": [
+      "evidence-lassen-wilderness-permit-process"
+    ],
+    "predicate": "wilderness_permit_process",
+    "spatial_scope_ids": [
+      "scope-lassen-wilderness"
+    ],
+    "subject_id": "land-lassen-volcanic-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "channel": "Recreation.gov only",
+      "confirmation_email_is_permit": true,
+      "maximum_advance_days": 90,
+      "physical_pickup_required": false,
+      "quota": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

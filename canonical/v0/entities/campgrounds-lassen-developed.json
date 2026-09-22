@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campgrounds-lassen-developed",
+    "kind": "campground_collection",
+    "name": "Lassen Volcanic developed campgrounds"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

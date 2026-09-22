@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-two-main-entrances",
+    "evidence_id": "evidence-lassen-two-main-entrances",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-directions-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

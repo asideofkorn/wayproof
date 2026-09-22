@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-campground-site-details",
+    "question": "What are the complete current site-level dimensions, accessibility attributes, vehicle limits, and amenity placements?",
+    "reason": "Individual campground and site-level operational detail is intentionally deferred to a later source-backed batch.",
+    "related_ids": [
+      "campgrounds-lassen-developed"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

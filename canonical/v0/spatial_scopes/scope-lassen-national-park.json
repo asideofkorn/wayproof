@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lassen Volcanic National Park",
+    "entity_id": "park-lassen-volcanic-national-park",
+    "kind": "land_unit",
+    "scope_id": "scope-lassen-national-park"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

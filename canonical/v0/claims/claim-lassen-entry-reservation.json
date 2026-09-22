@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-entry-reservation",
+    "evidence_ids": [
+      "evidence-lassen-entry-reservation"
+    ],
+    "predicate": "entry_reservation_required",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

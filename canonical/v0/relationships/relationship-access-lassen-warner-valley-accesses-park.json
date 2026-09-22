@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lassen-remote-road-access"
+    ],
+    "object_id": "park-lassen-volcanic-national-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-access-lassen-warner-valley-accesses-park",
+    "subject_id": "access-lassen-warner-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

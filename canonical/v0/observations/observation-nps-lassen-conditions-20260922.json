@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The current-conditions page is the operational source for alerts, roads, trails, fire and smoke, snow, facilities, and closures.",
+    "observation_id": "observation-nps-lassen-conditions-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-food-storage",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Carry and use an IBC-certified bear-resistant container for food, trash, toiletries, and scented items; hanging is prohibited.",
+    "rule_id": "rule-lassen-wilderness-bear-canister",
+    "spatial_scope_ids": [
+      "scope-lassen-wilderness"
+    ],
+    "temporal_scope": {
+      "ends_on": "2026-11-30",
+      "starts_on": "2026-04-16"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

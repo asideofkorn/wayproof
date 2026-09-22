@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-campground-live-operations",
+    "question": "Which campgrounds and sites will actually be open and available for the trip?",
+    "reason": "Opening dates, road access, potable water, fees, reservation rules, and live inventory are dynamic and require NPS and Recreation.gov rechecks.",
+    "related_ids": [
+      "claim-lassen-campground-operations-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

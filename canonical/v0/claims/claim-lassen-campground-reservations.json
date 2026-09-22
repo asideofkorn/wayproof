@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-campground-reservations",
+    "evidence_ids": [
+      "evidence-lassen-campground-reservations"
+    ],
+    "predicate": "reservation_policy",
+    "spatial_scope_ids": [
+      "scope-lassen-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-lassen-developed",
+    "temporal_scope": null,
+    "value": {
+      "channel": "Recreation.gov",
+      "required_except": [
+        "Juniper Lake",
+        "Southwest Walk-In",
+        "Warner Valley"
+      ],
+      "source_page_conflict": "The page's reservation summary omits Warner Valley, but its detailed first-come, first-served section includes Warner Valley.",
+      "warning": "connectivity is often unavailable in the park; arrange before arrival"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-wilderness-zone-details",
+    "question": "Which exact camping exclusions and zone-specific constraints apply to a chosen itinerary?",
+    "reason": "This foundation covers the permit and food-storage gates but intentionally defers complete zone geometry and itinerary-specific camping exclusions.",
+    "related_ids": [
+      "land-lassen-volcanic-wilderness"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

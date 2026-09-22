@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-lassen-butte-lake",
+    "kind": "campground",
+    "name": "Butte Lake Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

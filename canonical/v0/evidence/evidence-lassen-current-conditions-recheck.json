@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-current-conditions-recheck",
+    "evidence_id": "evidence-lassen-current-conditions-recheck",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-conditions-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

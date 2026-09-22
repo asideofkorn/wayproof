@@ -1,0 +1,936 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-lassen-nps-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-lassen-butte-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "access-lassen-butte-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-lassen-juniper-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "access-lassen-juniper-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-lassen-warner-valley.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "access-lassen-warner-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-butte-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-butte-lake-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-butte-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-butte-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-juniper-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-juniper-lake-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-juniper-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-juniper-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-lost-creek-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-lost-creek-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-manzanita-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-manzanita-lake-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-manzanita-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-manzanita-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-southwest-walk-in.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-southwest-walk-in",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-summit-lake-north.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-summit-lake-north",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-summit-lake-south.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-summit-lake-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-lassen-warner-valley.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campground-lassen-warner-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campgrounds-lassen-developed.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "campgrounds-lassen-developed",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-lassen-northwest.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "entrance-lassen-northwest",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-lassen-southwest.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "entrance-lassen-southwest",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/land-lassen-volcanic-wilderness.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "land-lassen-volcanic-wilderness",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-lassen-volcanic-national-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "park-lassen-volcanic-national-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-lassen-developed-campgrounds.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "scope-lassen-developed-campgrounds",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-lassen-national-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "scope-lassen-national-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-lassen-wilderness.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "scope-lassen-wilderness",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-camping.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-camping",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-compendium.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-compendium",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-conditions.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-conditions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-directions.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-directions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-fees.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-fees",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-getting-around.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-getting-around",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-permits.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-permits",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-significance.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-significance",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-wilderness.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-nps-lassen-wilderness",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreationgov-lassen-wilderness.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "source-recreationgov-lassen-wilderness",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-camping-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-camping-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-compendium-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-compendium-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-conditions-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-conditions-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-directions-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-directions-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-fees-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-fees-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-getting-around-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-getting-around-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-permits-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-permits-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-significance-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-significance-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-wilderness-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-nps-lassen-wilderness-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-lassen-wilderness-20260922.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "observation-recreationgov-lassen-wilderness-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-campground-collection.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-campground-collection",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-campground-food-storage.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-campground-food-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-campground-operations-recheck.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-campground-operations-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-campground-reservations.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-campground-reservations",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-current-conditions-recheck.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-current-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-entrance-fees-2026.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-entrance-fees-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-entry-reservation.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-entry-reservation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-no-public-transportation.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-no-public-transportation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-park-identity.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-park-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-remote-road-access.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-remote-road-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-seasonal-road-access.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-seasonal-road-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-two-main-entrances.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-two-main-entrances",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-wilderness-food-storage.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-wilderness-food-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-wilderness-permit-fees.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-wilderness-permit-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-wilderness-permit-process.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-wilderness-permit-process",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-wilderness-permit.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "evidence-lassen-wilderness-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-campground-collection.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-campground-collection",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-campground-food-storage.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-campground-food-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-campground-operations-recheck.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-campground-operations-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-campground-reservations.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-campground-reservations",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-current-conditions-recheck.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-current-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-entrance-fees-2026.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-entrance-fees-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-entry-reservation.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-entry-reservation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-no-public-transportation.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-no-public-transportation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-park-identity.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-park-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-remote-road-access.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-remote-road-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-seasonal-road-access.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-seasonal-road-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-two-main-entrances.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-two-main-entrances",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-wilderness-food-storage.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-wilderness-food-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-wilderness-permit-fees.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-wilderness-permit-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-wilderness-permit-process.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-wilderness-permit-process",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-wilderness-permit.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "claim-lassen-wilderness-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-lassen-butte-lake-accesses-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-access-lassen-butte-lake-accesses-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-lassen-juniper-lake-accesses-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-access-lassen-juniper-lake-accesses-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-lassen-warner-valley-accesses-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-access-lassen-warner-valley-accesses-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-lassen-northwest-accesses-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-entrance-lassen-northwest-accesses-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-lassen-southwest-accesses-park.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-entrance-lassen-southwest-accesses-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-butte-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-butte-lake-group",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-butte-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-butte-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-juniper-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-juniper-lake-group",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-juniper-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-juniper-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-lost-creek-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-lost-creek-group",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-manzanita-lake-group.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-manzanita-lake-group",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-manzanita-lake.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-manzanita-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-southwest-walk-in.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-southwest-walk-in",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-summit-lake-north.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-summit-lake-north",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-summit-lake-south.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-summit-lake-south",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-campground-collection-contains-warner-valley.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-campground-collection-contains-warner-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-developed-campgrounds.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-contains-developed-campgrounds",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-wilderness.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "relationship-lassen-contains-wilderness",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-lassen-overnight-wilderness-permit.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "rule-lassen-overnight-wilderness-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-lassen-wilderness-bear-canister.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "rule-lassen-wilderness-bear-canister",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-lassen-overnight-wilderness-permit.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "requirement-lassen-overnight-wilderness-permit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-lassen-wilderness-bear-canister.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "requirement-lassen-wilderness-bear-canister",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-campground-live-operations.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-campground-live-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-campground-reservation-policy-conflict.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-campground-reservation-policy-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-campground-site-details.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-campground-site-details",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-current-conditions.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-current-conditions",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-wilderness-zone-details.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "gap-lassen-wilderness-zone-details",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-lassen-pretrip-recheck.json",
+      "reason": "Publish a bounded source-backed Lassen Volcanic National Park planning foundation from current official NPS and linked first-party operational sources.",
+      "record_id": "result-lassen-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add a bounded official-source Lassen Volcanic National Park planning foundation with explicit source conflict, operational rechecks, and deferred-detail gaps."
+}

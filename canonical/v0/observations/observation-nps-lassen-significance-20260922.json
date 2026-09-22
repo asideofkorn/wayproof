@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The park was established in 1916 in northern California and encompasses over 106,000 acres; designated and proposed wilderness lands are managed as wilderness.",
+    "observation_id": "observation-nps-lassen-significance-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-significance"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

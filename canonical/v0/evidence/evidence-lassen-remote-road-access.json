@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-remote-road-access",
+    "evidence_id": "evidence-lassen-remote-road-access",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-directions-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

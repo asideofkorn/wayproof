@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-two-main-entrances",
+    "evidence_ids": [
+      "evidence-lassen-two-main-entrances"
+    ],
+    "predicate": "main_entrances",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null,
+    "value": [
+      "entrance-lassen-northwest",
+      "entrance-lassen-southwest"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

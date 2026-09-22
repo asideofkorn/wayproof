@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-food-storage",
+    "evidence_ids": [
+      "evidence-lassen-wilderness-food-storage"
+    ],
+    "predicate": "wilderness_food_storage",
+    "spatial_scope_ids": [
+      "scope-lassen-wilderness"
+    ],
+    "subject_id": "land-lassen-volcanic-wilderness",
+    "temporal_scope": {
+      "ends_on": "2026-11-30",
+      "starts_on": "2026-04-16"
+    },
+    "value": {
+      "hanging_permitted": false,
+      "items": [
+        "food",
+        "trash",
+        "toiletries",
+        "scented items"
+      ],
+      "required": "IBC-certified bear-resistant container",
+      "season": "April 16 through November 30"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
