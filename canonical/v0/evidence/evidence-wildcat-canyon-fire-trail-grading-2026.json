@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wildcat-canyon-fire-trail-grading-2026",
+    "evidence_id": "evidence-wildcat-canyon-fire-trail-grading-2026",
+    "notes": "Live EBRPD alert; recheck the official alerts page before travel.",
+    "observation_id": "observation-ebrpd-alerts-closures-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

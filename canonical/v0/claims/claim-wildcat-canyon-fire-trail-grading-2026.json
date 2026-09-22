@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wildcat-canyon-fire-trail-grading-2026",
+    "evidence_ids": [
+      "evidence-wildcat-canyon-fire-trail-grading-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-wildcat-canyon-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-10-30",
+      "starts_on": null
+    },
+    "value": {
+      "cause": "annual grading of strategic fire trails",
+      "heavy_equipment": true,
+      "plan_alternative_routes": true,
+      "source_updated_on": "2026-09-22",
+      "status": "brief_closures_possible"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

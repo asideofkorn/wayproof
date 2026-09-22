@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-alameda-creek-unpaved-trail",
+    "kind": "route",
+    "name": "Alameda Creek Unpaved Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

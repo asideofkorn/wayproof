@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-point-pinole-bay-trail-sinkhole-closure-2026",
+    "evidence_ids": [
+      "evidence-point-pinole-bay-trail-sinkhole-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-point-pinole-regional-shoreline",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "cause": "large sinkhole",
+      "reopening_timeline": null,
+      "segment": "Bay Trail east of Atlas Bridge entrance between Union Pacific tracks and the San Francisco Bay Trail corridor",
+      "source_updated_on": "2026-09-22",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

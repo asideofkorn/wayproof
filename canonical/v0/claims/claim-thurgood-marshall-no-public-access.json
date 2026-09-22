@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-thurgood-marshall-no-public-access",
+    "evidence_ids": [
+      "evidence-thurgood-marshall-no-public-access"
+    ],
+    "predicate": "operating_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-thurgood-marshall-regional-park-home-port-chicago-50",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "exception": "occasional public tour events",
+      "status": "closed_no_public_access"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

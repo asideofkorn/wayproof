@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-delta-de-anza-railroad-desrys-closure-2026",
+    "evidence_ids": [
+      "evidence-delta-de-anza-railroad-desrys-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-delta-de-anza-regional-trail",
+    "temporal_scope": {
+      "ends_on": "2026-09-25",
+      "starts_on": "2026-09-14"
+    },
+    "value": {
+      "cause": "pavement work",
+      "segment": "Railroad Avenue to Desrys Boulevard",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

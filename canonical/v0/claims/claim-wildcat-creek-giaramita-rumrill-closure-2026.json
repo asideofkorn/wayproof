@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wildcat-creek-giaramita-rumrill-closure-2026",
+    "evidence_ids": [
+      "evidence-wildcat-creek-giaramita-rumrill-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-wildcat-creek-regional-trail",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "cause": "Contra Costa County Public Works project",
+      "published_window": "May through December 2026",
+      "segment": "Giaramita Street to Rumrill Boulevard",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

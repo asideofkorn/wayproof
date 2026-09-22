@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-briones-crest-intersections-damaged-2026",
+    "evidence_ids": [
+      "evidence-briones-crest-intersections-damaged-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-briones-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "locations": [
+        "Briones Crest Trail / Mott Peak Trail intersection",
+        "Briones Crest Trail / Lagoon Trail intersection"
+      ],
+      "signage": "barricades and cones posted",
+      "source_updated_on": "2026-09-22",
+      "status": "damaged_but_passable_with_care"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

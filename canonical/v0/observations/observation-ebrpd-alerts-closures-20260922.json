@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Alerts and Closures table"
+    ],
+    "content": "The district alerts page published the park, trail, facility, and water conditions represented by the associated claims. Entries with insufficient page context were not promoted.",
+    "observation_id": "observation-ebrpd-alerts-closures-20260922",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-22T18:30:00+00:00",
+    "source_id": "source-ebrpd-alerts-closures"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

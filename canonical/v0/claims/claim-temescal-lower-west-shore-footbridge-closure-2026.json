@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-temescal-lower-west-shore-footbridge-closure-2026",
+    "evidence_ids": [
+      "evidence-temescal-lower-west-shore-footbridge-closure-2026"
+    ],
+    "predicate": "facility_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-temescal-regional-recreation-area",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-10"
+    },
+    "value": {
+      "cause": "refurbishing",
+      "facility": "second wooden footbridge along Lower West Shore Trail",
+      "source_updated_on": "2026-09-22",
+      "status": "closed",
+      "until": "work completed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-anthony-chabot-big-bear-loop-closure-2026",
+    "evidence_ids": [
+      "evidence-anthony-chabot-big-bear-loop-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-anthony-chabot-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-10-30",
+      "starts_on": "2026-10-13"
+    },
+    "value": {
+      "cause": "FEMA-funded projects",
+      "segment": "entire Big Bear Trail loop",
+      "status": "tentatively_closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

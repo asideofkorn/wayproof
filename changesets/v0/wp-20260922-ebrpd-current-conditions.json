@@ -1,0 +1,414 @@
+{
+  "artifact_format_version": 1,
+  "schema_version": 0,
+  "change_set_id": "wp-20260922-ebrpd-current-conditions",
+  "status": "VALIDATED",
+  "summary": "Materialize current EBRPD closures and water disruptions for pre-trip rechecks.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-alameda-creek-unpaved-weekday-closure-2026",
+      "path": "canonical/v0/claims/claim-alameda-creek-unpaved-weekday-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-anthony-chabot-big-bear-loop-closure-2026",
+      "path": "canonical/v0/claims/claim-anthony-chabot-big-bear-loop-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-briones-crest-intersections-damaged-2026",
+      "path": "canonical/v0/claims/claim-briones-crest-intersections-damaged-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-briones-to-las-trampas-downtown-lafayette-closure-2026",
+      "path": "canonical/v0/claims/claim-briones-to-las-trampas-downtown-lafayette-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-deer-valley-no-public-access",
+      "path": "canonical/v0/claims/claim-deer-valley-no-public-access.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-delta-de-anza-railroad-desrys-closure-2026",
+      "path": "canonical/v0/claims/claim-delta-de-anza-railroad-desrys-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-dry-creek-garden-storm-closure",
+      "path": "canonical/v0/claims/claim-dry-creek-garden-storm-closure.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-eckley-pier-water-unavailable-20260922",
+      "path": "canonical/v0/claims/claim-eckley-pier-water-unavailable-20260922.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-iron-horse-walnut-creek-closure-2026",
+      "path": "canonical/v0/claims/claim-iron-horse-walnut-creek-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-leona-canyon-leona-trail-closure-2026",
+      "path": "canonical/v0/claims/claim-leona-canyon-leona-trail-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-marsh-creek-weekday-closure-2026",
+      "path": "canonical/v0/claims/claim-marsh-creek-weekday-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-mlk-shoreline-doolittle-pier-right-dock-closure-2026",
+      "path": "canonical/v0/claims/claim-mlk-shoreline-doolittle-pier-right-dock-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-point-pinole-bay-trail-sinkhole-closure-2026",
+      "path": "canonical/v0/claims/claim-point-pinole-bay-trail-sinkhole-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-round-valley-backpack-camp-no-water-20260922",
+      "path": "canonical/v0/claims/claim-round-valley-backpack-camp-no-water-20260922.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-round-valley-hardy-canyon-closure-2026",
+      "path": "canonical/v0/claims/claim-round-valley-hardy-canyon-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-temescal-lower-west-shore-footbridge-closure-2026",
+      "path": "canonical/v0/claims/claim-temescal-lower-west-shore-footbridge-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-thurgood-marshall-no-public-access",
+      "path": "canonical/v0/claims/claim-thurgood-marshall-no-public-access.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-wildcat-canyon-fire-trail-grading-2026",
+      "path": "canonical/v0/claims/claim-wildcat-canyon-fire-trail-grading-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-wildcat-creek-giaramita-rumrill-closure-2026",
+      "path": "canonical/v0/claims/claim-wildcat-creek-giaramita-rumrill-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-alameda-creek-unpaved-trail",
+      "path": "canonical/v0/entities/route-alameda-creek-unpaved-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-briones-to-las-trampas-trail",
+      "path": "canonical/v0/entities/route-briones-to-las-trampas-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-delta-de-anza-regional-trail",
+      "path": "canonical/v0/entities/route-delta-de-anza-regional-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-iron-horse-regional-trail",
+      "path": "canonical/v0/entities/route-iron-horse-regional-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-marsh-creek-regional-trail",
+      "path": "canonical/v0/entities/route-marsh-creek-regional-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-wildcat-creek-regional-trail",
+      "path": "canonical/v0/entities/route-wildcat-creek-regional-trail.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-alameda-creek-unpaved-weekday-closure-2026",
+      "path": "canonical/v0/evidence/evidence-alameda-creek-unpaved-weekday-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-anthony-chabot-big-bear-loop-closure-2026",
+      "path": "canonical/v0/evidence/evidence-anthony-chabot-big-bear-loop-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-briones-crest-intersections-damaged-2026",
+      "path": "canonical/v0/evidence/evidence-briones-crest-intersections-damaged-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-briones-to-las-trampas-downtown-lafayette-closure-2026",
+      "path": "canonical/v0/evidence/evidence-briones-to-las-trampas-downtown-lafayette-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-deer-valley-no-public-access",
+      "path": "canonical/v0/evidence/evidence-deer-valley-no-public-access.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-delta-de-anza-railroad-desrys-closure-2026",
+      "path": "canonical/v0/evidence/evidence-delta-de-anza-railroad-desrys-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-dry-creek-garden-storm-closure",
+      "path": "canonical/v0/evidence/evidence-dry-creek-garden-storm-closure.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-eckley-pier-water-unavailable-20260922",
+      "path": "canonical/v0/evidence/evidence-eckley-pier-water-unavailable-20260922.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-iron-horse-walnut-creek-closure-2026",
+      "path": "canonical/v0/evidence/evidence-iron-horse-walnut-creek-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-leona-canyon-leona-trail-closure-2026",
+      "path": "canonical/v0/evidence/evidence-leona-canyon-leona-trail-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-marsh-creek-weekday-closure-2026",
+      "path": "canonical/v0/evidence/evidence-marsh-creek-weekday-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-mlk-shoreline-doolittle-pier-right-dock-closure-2026",
+      "path": "canonical/v0/evidence/evidence-mlk-shoreline-doolittle-pier-right-dock-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-point-pinole-bay-trail-sinkhole-closure-2026",
+      "path": "canonical/v0/evidence/evidence-point-pinole-bay-trail-sinkhole-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-round-valley-backpack-camp-no-water-20260922",
+      "path": "canonical/v0/evidence/evidence-round-valley-backpack-camp-no-water-20260922.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-round-valley-hardy-canyon-closure-2026",
+      "path": "canonical/v0/evidence/evidence-round-valley-hardy-canyon-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-temescal-lower-west-shore-footbridge-closure-2026",
+      "path": "canonical/v0/evidence/evidence-temescal-lower-west-shore-footbridge-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-thurgood-marshall-no-public-access",
+      "path": "canonical/v0/evidence/evidence-thurgood-marshall-no-public-access.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-wildcat-canyon-fire-trail-grading-2026",
+      "path": "canonical/v0/evidence/evidence-wildcat-canyon-fire-trail-grading-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-wildcat-creek-giaramita-rumrill-closure-2026",
+      "path": "canonical/v0/evidence/evidence-wildcat-creek-giaramita-rumrill-closure-2026.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-alerts-closures-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-alerts-closures-20260922.json",
+      "reason": "Materialize an unambiguous actionable condition from the district alerts page.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ]
+}

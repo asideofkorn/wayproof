@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-alameda-creek-unpaved-weekday-closure-2026",
+    "evidence_ids": [
+      "evidence-alameda-creek-unpaved-weekday-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-alameda-creek-unpaved-trail",
+    "temporal_scope": {
+      "ends_on": "2026-10-05",
+      "starts_on": "2026-09-21"
+    },
+    "value": {
+      "cause": "maintenance",
+      "outside_work_hours": "open",
+      "segment": "downstream of Union City/Ardenwood Boulevard",
+      "stables_staging_parking": "open",
+      "status": "closed_weekdays_08:00_to_17:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
