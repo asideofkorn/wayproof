@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wayproof Release Batch"
+  short_description: "Validate and publish bounded Wayproof changes"
+  default_prompt: "Use the Wayproof release-batch workflow to test, review, publish, and verify a bounded change."

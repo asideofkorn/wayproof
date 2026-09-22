@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wayproof Source Ingestion"
+  short_description: "Ingest evidence into Wayproof canonical knowledge safely"
+  default_prompt: "Use the Wayproof source-ingestion workflow to add or correct source-backed canonical knowledge."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wayproof Route Modeling"
+  short_description: "Model sourced access and route topology"
+  default_prompt: "Use the Wayproof route-modeling workflow to add or correct access points, routes, segments, and traversals."
