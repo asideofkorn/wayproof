@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes year-round Highway 140 YARTS access, seasonal service on Highways 120 and 41, free Yosemite Valley shuttles, and no public transportation to Hetch Hetchy Valley.",
+    "observation_id": "observation-nps-yosemite-transportation-20260922",
+    "observed_at": "2026-07-02T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-transportation"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

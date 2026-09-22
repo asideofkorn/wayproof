@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-public-transportation",
+    "evidence_ids": [
+      "evidence-yosemite-public-transportation"
+    ],
+    "predicate": "public_transportation",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": {
+      "internal": [
+        "Yosemite Valley shuttle"
+      ],
+      "no_service": [
+        "Hetch Hetchy Valley"
+      ],
+      "seasonal": [
+        "YARTS Highway 120 east",
+        "YARTS Highway 120 west",
+        "YARTS Highway 41"
+      ],
+      "year_round": [
+        "YARTS Highway 140"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

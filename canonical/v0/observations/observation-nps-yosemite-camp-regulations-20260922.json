@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS campground rules require continuous proper food storage, limit ordinary campsites to six people and generally two motor vehicles, and allow camping or vehicle sleeping only in designated campsites. Seasonal fire, pet, quiet-hour, generator, and stay-limit rules also apply.",
+    "observation_id": "observation-nps-yosemite-camp-regulations-20260922",
+    "observed_at": "2025-08-01T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-camp-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

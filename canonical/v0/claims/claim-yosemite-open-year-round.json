@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-open-year-round",
+    "evidence_ids": [
+      "evidence-yosemite-open-year-round"
+    ],
+    "predicate": "operating_hours",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": {
+      "days": "daily",
+      "hours": "24 hours"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

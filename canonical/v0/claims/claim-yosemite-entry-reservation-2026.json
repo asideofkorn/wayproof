@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-reservation-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-reservation-2026"
+    ],
+    "predicate": "entry_reservation_required",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": false
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

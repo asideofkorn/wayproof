@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS states Yosemite has no single address, recommends against relying on GPS, and notes that some roads close roughly November through May because of snow. Public transportation reaches Yosemite Valley and shuttles operate within the park.",
+    "observation_id": "observation-nps-yosemite-directions-20260922",
+    "observed_at": "2025-09-02T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-directions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

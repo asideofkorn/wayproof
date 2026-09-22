@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-food-storage",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-food-storage"
+    ],
+    "predicate": "food_storage",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "land-yosemite-wilderness",
+    "temporal_scope": null,
+    "value": "An allowed bear-resistant food canister is required throughout Yosemite Wilderness."
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

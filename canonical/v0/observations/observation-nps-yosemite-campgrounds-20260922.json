@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS states Yosemite has 13 developed campgrounds, all on reservation systems from April through October; release timing differs by campground and current availability must be checked through Recreation.gov.",
+    "observation_id": "observation-nps-yosemite-campgrounds-20260922",
+    "observed_at": "2026-09-11T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-campgrounds"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

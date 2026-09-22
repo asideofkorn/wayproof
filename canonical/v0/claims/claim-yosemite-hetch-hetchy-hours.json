@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hetch-hetchy-hours",
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-hours"
+    ],
+    "predicate": "operating_hours",
+    "spatial_scope_ids": [
+      "scope-yosemite-hetch-hetchy-entrance"
+    ],
+    "subject_id": "entrance-yosemite-hetch-hetchy",
+    "temporal_scope": null,
+    "value": "Sunrise to sunset for day visitors; permitted backpackers are excepted."
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS requires a permit for every overnight wilderness trip; the permit is limited to its named leader, entry trailhead, dates, and party size and is invalidated by leaving the wilderness except for stated continuous-travel exceptions. Maximum group size is 15, or 8 for cross-country travel over one quarter mile off trail. Pets are prohibited and an allowed bear-resistant canister is required throughout Yosemite Wilderness.",
+    "observation_id": "observation-nps-yosemite-wilderness-regulations-20260922",
+    "observed_at": "2026-06-16T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-wilderness-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

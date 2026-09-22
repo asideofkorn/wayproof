@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies Yosemite as a nearly 1,200-square-mile Sierra Nevada national park, open 24 hours every day; Hetch Hetchy is open only sunrise to sunset except for permitted backpackers.",
+    "observation_id": "observation-nps-yosemite-basic-20260922",
+    "observed_at": "2025-09-22T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-basic"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

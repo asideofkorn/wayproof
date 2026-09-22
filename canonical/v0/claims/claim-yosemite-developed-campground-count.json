@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-developed-campground-count",
+    "evidence_ids": [
+      "evidence-yosemite-developed-campground-count"
+    ],
+    "predicate": "campground_count",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": 13
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

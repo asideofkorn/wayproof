@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campsite-party-limit",
+    "evidence_ids": [
+      "evidence-yosemite-campsite-party-limit"
+    ],
+    "predicate": "people_per_campsite",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": 6
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

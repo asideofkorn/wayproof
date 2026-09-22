@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-vehicle-sleeping",
+    "evidence_ids": [
+      "evidence-yosemite-vehicle-sleeping"
+    ],
+    "predicate": "vehicle_sleeping",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": "Camping or sleeping in a vehicle is permitted only in a designated campsite."
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

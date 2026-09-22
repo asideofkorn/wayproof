@@ -22,12 +22,11 @@ def test_every_published_park_has_official_page_provenance():
     reads = CanonicalReadService(ROOT)
     parks = reads.search_entities(kinds=("park",))
 
-    assert len(parks) == 64
-    uncovered = [
-        park.name for park in parks
-        if not _official_park_claims(reads, park.entity_id)
+    ebrpd_parks = [
+        park for park in parks
+        if _official_park_claims(reads, park.entity_id)
     ]
-    assert uncovered == []
+    assert len(ebrpd_parks) == 64
 
 
 def test_every_official_park_source_is_observed():

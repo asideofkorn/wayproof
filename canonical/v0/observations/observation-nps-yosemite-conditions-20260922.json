@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Yosemite current-conditions page publishes changing road, trail, fire, campground, facility, and area closures and directs visitors to call for the most current road status because the page reflects only planned or long-term closures.",
+    "observation_id": "observation-nps-yosemite-conditions-20260922",
+    "observed_at": "2026-09-18T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

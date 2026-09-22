@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit"
+    ],
+    "predicate": "overnight_wilderness_permit_required",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "land-yosemite-wilderness",
+    "temporal_scope": null,
+    "value": true
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
