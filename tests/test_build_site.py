@@ -245,6 +245,21 @@ def test_deep_campground_records_publish_without_handwritten_pages(site):
     ).exists()
 
 
+def test_group_camps_automatically_join_camping_navigation(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "camping" / "index.json").read_text())
+    names = {item["name"] for item in payload["entities"]}
+
+    assert "Arroyo Flats Group Camp" in names
+    assert "Las Trampas Corral Area Group Camp" in names
+    assert (
+        tmp_path / "knowledge" / "group-camp-garin-arroyo-flats" / "index.html"
+    ).exists()
+    assert (
+        tmp_path / "knowledge" / "group-camp-las-trampas-corral" / "index.html"
+    ).exists()
+
+
 def test_changes_page_exposes_public_changeset_history(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "changes" / "index.json").read_text())

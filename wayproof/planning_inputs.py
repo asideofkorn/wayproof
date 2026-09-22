@@ -105,6 +105,7 @@ CONFLICT_GAP_CATEGORIES = {
     "gap-del-valle-family-site-inventory-conflict": PlanningInputCategory.INVENTORY,
     "gap-del-valle-seasonal-closures-current": PlanningInputCategory.CLOSURE,
     "gap-del-valle-swimming-parking-fee": PlanningInputCategory.COST,
+    "gap-garin-arroyo-flats-minimum-party": PlanningInputCategory.INVENTORY,
 }
 
 

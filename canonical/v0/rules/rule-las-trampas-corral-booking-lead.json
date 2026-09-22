@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-las-trampas-corral-booking-lead","claim_id":"claim-las-trampas-corral-profile","conditions":[],"consequence":"Reserve the Corral Area by phone at least three business days before arrival.","spatial_scope_ids":["scope-las-trampas-corral-group-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}
