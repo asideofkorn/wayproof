@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Inspiration Point Parking Lot.",
+    "entity_id": "staging-tilden-inspiration-point",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-tilden-inspiration-point"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

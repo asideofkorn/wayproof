@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-tilden-golf-course-entrance",
+    "kind": "staging_area",
+    "name": "Tilden Golf Course Entrance Staging Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

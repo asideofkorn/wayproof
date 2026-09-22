@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Attractions",
+      "Other Important Points"
+    ],
+    "content": "The official Tilden GPS page publishes coordinates for attractions, camps, entrances, and other important points.",
+    "observation_id": "observation-ebrpd-tilden-gps-coordinates-20260922",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-22T15:35:00+00:00",
+    "source_id": "source-ebrpd-tilden-gps-coordinates"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

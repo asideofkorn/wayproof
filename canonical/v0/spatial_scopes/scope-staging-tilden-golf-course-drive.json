@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Golf Course Drive Staging Area.",
+    "entity_id": "staging-tilden-golf-course-drive",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-tilden-golf-course-drive"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-nimitz-way-access-profile",
+    "evidence_id": "evidence-tilden-nimitz-way-access-profile",
+    "notes": "Official hiking, biking, and accessibility guidance for Nimitz Way and Inspiration Point.",
+    "observation_id": "observation-ebrpd-tilden-access-conditions-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

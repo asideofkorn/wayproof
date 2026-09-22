@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-entrance-tilden-es-anderson-walk-in-access-profile"
+    ],
+    "object_id": "park-charles-lee-tilden-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-entrance-tilden-es-anderson-walk-in-accesses-tilden",
+    "subject_id": "entrance-tilden-es-anderson-walk-in",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

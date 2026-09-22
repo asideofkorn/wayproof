@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-south-park-big-springs-access-profile",
+    "evidence_ids": [
+      "evidence-staging-tilden-south-park-big-springs-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-south-park-big-springs"
+    ],
+    "subject_id": "staging-tilden-south-park-big-springs",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8903620597694,
+      "longitude": -122.2368382795,
+      "provides_access_to": [
+        "Big Springs Trail"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

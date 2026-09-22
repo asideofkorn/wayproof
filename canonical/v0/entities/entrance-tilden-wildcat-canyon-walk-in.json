@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-tilden-wildcat-canyon-walk-in",
+    "kind": "entrance",
+    "name": "Tilden Wildcat Canyon Road Walk-In Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

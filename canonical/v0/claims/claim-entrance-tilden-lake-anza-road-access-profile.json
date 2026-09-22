@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-tilden-lake-anza-road-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-tilden-lake-anza-road-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-tilden-lake-anza-road"
+    ],
+    "subject_id": "entrance-tilden-lake-anza-road",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8978171368556,
+      "longitude": -122.254772027615,
+      "provides_access_to": [
+        "Lake Anza"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

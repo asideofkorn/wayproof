@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-grizzly-peak-tower-access-profile",
+    "evidence_ids": [
+      "evidence-staging-tilden-grizzly-peak-tower-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-grizzly-peak-tower"
+    ],
+    "subject_id": "staging-tilden-grizzly-peak-tower",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8814878075632,
+      "longitude": -122.231839890456,
+      "provides_access_to": [
+        "Tower Trail"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

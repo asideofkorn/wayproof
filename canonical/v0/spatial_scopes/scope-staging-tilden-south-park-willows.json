@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden South Park Drive Staging Area at Willows.",
+    "entity_id": "staging-tilden-south-park-willows",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-tilden-south-park-willows"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

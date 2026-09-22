@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-tilden-nimitz-way-access-profile"
+    ],
+    "object_id": "park-charles-lee-tilden-regional-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-east-bay-skyline-traverses-tilden",
+    "subject_id": "route-east-bay-skyline-national-recreation-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

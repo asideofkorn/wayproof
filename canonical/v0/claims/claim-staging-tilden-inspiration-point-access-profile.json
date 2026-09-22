@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-inspiration-point-access-profile",
+    "evidence_ids": [
+      "evidence-staging-tilden-inspiration-point-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-inspiration-point"
+    ],
+    "subject_id": "staging-tilden-inspiration-point",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.9054581384691,
+      "longitude": -122.244273026833,
+      "provides_access_to": [
+        "Nimitz Way",
+        "East Bay Skyline National Recreation Trail",
+        "views"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

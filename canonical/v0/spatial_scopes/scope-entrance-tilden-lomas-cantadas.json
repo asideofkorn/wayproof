@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Lomas Cantadas Road Entrance.",
+    "entity_id": "entrance-tilden-lomas-cantadas",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-tilden-lomas-cantadas"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

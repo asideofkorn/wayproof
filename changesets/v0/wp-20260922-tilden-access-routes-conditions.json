@@ -1,0 +1,756 @@
+{
+  "artifact_format_version": 1,
+  "schema_version": 0,
+  "change_set_id": "wp-20260922-tilden-access-routes-conditions",
+  "status": "VALIDATED",
+  "summary": "Deepen Tilden access, route, geospatial, and current-condition knowledge.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-tilden-es-anderson-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-tilden-es-anderson-walk-in-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-tilden-lake-anza-road-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-tilden-lake-anza-road-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-tilden-lomas-cantadas-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-tilden-lomas-cantadas-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-tilden-wildcat-canyon-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-tilden-wildcat-canyon-walk-in-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-brazil-building-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-brazil-building-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-golf-course-drive-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-golf-course-drive-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-golf-course-entrance-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-golf-course-entrance-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-grizzly-peak-tower-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-grizzly-peak-tower-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-inspiration-point-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-inspiration-point-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-merry-go-round-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-merry-go-round-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-south-park-big-springs-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-south-park-big-springs-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-south-park-padre-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-south-park-padre-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-staging-tilden-south-park-willows-access-profile",
+      "path": "canonical/v0/claims/claim-staging-tilden-south-park-willows-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-central-park-drive-weekday-closure-2026",
+      "path": "canonical/v0/claims/claim-tilden-central-park-drive-weekday-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-laurel-canyon-trail-closure-2026",
+      "path": "canonical/v0/claims/claim-tilden-laurel-canyon-trail-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-nimitz-way-access-profile",
+      "path": "canonical/v0/claims/claim-tilden-nimitz-way-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-south-park-drive-newt-closure",
+      "path": "canonical/v0/claims/claim-tilden-south-park-drive-newt-closure.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-tilden-wildcat-gorge-trail-closure-2026",
+      "path": "canonical/v0/claims/claim-tilden-wildcat-gorge-trail-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-tilden-es-anderson-walk-in",
+      "path": "canonical/v0/entities/entrance-tilden-es-anderson-walk-in.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-tilden-lake-anza-road",
+      "path": "canonical/v0/entities/entrance-tilden-lake-anza-road.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-tilden-lomas-cantadas",
+      "path": "canonical/v0/entities/entrance-tilden-lomas-cantadas.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-tilden-wildcat-canyon-walk-in",
+      "path": "canonical/v0/entities/entrance-tilden-wildcat-canyon-walk-in.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-east-bay-skyline-national-recreation-trail",
+      "path": "canonical/v0/entities/route-east-bay-skyline-national-recreation-trail.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-tilden-nimitz-way",
+      "path": "canonical/v0/entities/route-tilden-nimitz-way.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-brazil-building",
+      "path": "canonical/v0/entities/staging-tilden-brazil-building.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-golf-course-drive",
+      "path": "canonical/v0/entities/staging-tilden-golf-course-drive.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-golf-course-entrance",
+      "path": "canonical/v0/entities/staging-tilden-golf-course-entrance.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-grizzly-peak-tower",
+      "path": "canonical/v0/entities/staging-tilden-grizzly-peak-tower.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-inspiration-point",
+      "path": "canonical/v0/entities/staging-tilden-inspiration-point.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-merry-go-round",
+      "path": "canonical/v0/entities/staging-tilden-merry-go-round.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-south-park-big-springs",
+      "path": "canonical/v0/entities/staging-tilden-south-park-big-springs.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-south-park-padre",
+      "path": "canonical/v0/entities/staging-tilden-south-park-padre.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "staging-tilden-south-park-willows",
+      "path": "canonical/v0/entities/staging-tilden-south-park-willows.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-tilden-es-anderson-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-tilden-es-anderson-walk-in-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-tilden-lake-anza-road-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-tilden-lake-anza-road-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-tilden-lomas-cantadas-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-tilden-lomas-cantadas-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-tilden-wildcat-canyon-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-tilden-wildcat-canyon-walk-in-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-brazil-building-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-brazil-building-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-golf-course-drive-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-golf-course-drive-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-golf-course-entrance-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-golf-course-entrance-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-grizzly-peak-tower-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-grizzly-peak-tower-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-inspiration-point-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-inspiration-point-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-merry-go-round-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-merry-go-round-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-south-park-big-springs-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-south-park-big-springs-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-south-park-padre-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-south-park-padre-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-staging-tilden-south-park-willows-access-profile",
+      "path": "canonical/v0/evidence/evidence-staging-tilden-south-park-willows-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-central-park-drive-weekday-closure-2026",
+      "path": "canonical/v0/evidence/evidence-tilden-central-park-drive-weekday-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-laurel-canyon-trail-closure-2026",
+      "path": "canonical/v0/evidence/evidence-tilden-laurel-canyon-trail-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-nimitz-way-access-profile",
+      "path": "canonical/v0/evidence/evidence-tilden-nimitz-way-access-profile.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-south-park-drive-newt-closure",
+      "path": "canonical/v0/evidence/evidence-tilden-south-park-drive-newt-closure.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-tilden-wildcat-gorge-trail-closure-2026",
+      "path": "canonical/v0/evidence/evidence-tilden-wildcat-gorge-trail-closure-2026.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-tilden-access-conditions-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-tilden-access-conditions-20260922.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-tilden-gps-coordinates-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-tilden-gps-coordinates-20260922.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-east-bay-skyline-traverses-tilden",
+      "path": "canonical/v0/relationships/relationship-east-bay-skyline-traverses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-tilden-es-anderson-walk-in-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-entrance-tilden-es-anderson-walk-in-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-tilden-lake-anza-road-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-entrance-tilden-lake-anza-road-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-tilden-lomas-cantadas-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-entrance-tilden-lomas-cantadas-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-tilden-wildcat-canyon-walk-in-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-entrance-tilden-wildcat-canyon-walk-in-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-brazil-building-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-brazil-building-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-golf-course-drive-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-golf-course-drive-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-golf-course-entrance-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-golf-course-entrance-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-grizzly-peak-tower-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-grizzly-peak-tower-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-inspiration-point-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-inspiration-point-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-merry-go-round-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-merry-go-round-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-south-park-big-springs-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-south-park-big-springs-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-south-park-padre-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-south-park-padre-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-staging-tilden-south-park-willows-accesses-tilden",
+      "path": "canonical/v0/relationships/relationship-staging-tilden-south-park-willows-accesses-tilden.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-inspiration-point-accesses-nimitz-way",
+      "path": "canonical/v0/relationships/relationship-tilden-inspiration-point-accesses-nimitz-way.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-tilden-nimitz-way-part-of-east-bay-skyline",
+      "path": "canonical/v0/relationships/relationship-tilden-nimitz-way-part-of-east-bay-skyline.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-ebrpd-tilden-gps-coordinates",
+      "path": "canonical/v0/sources/source-ebrpd-tilden-gps-coordinates.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-tilden-es-anderson-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-tilden-es-anderson-walk-in.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-tilden-lake-anza-road",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-tilden-lake-anza-road.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-tilden-lomas-cantadas",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-tilden-lomas-cantadas.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-tilden-wildcat-canyon-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-tilden-wildcat-canyon-walk-in.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-brazil-building",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-brazil-building.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-golf-course-drive",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-golf-course-drive.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-golf-course-entrance",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-golf-course-entrance.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-grizzly-peak-tower",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-grizzly-peak-tower.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-inspiration-point",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-inspiration-point.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-merry-go-round",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-merry-go-round.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-south-park-big-springs",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-south-park-big-springs.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-south-park-padre",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-south-park-padre.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-staging-tilden-south-park-willows",
+      "path": "canonical/v0/spatial_scopes/scope-staging-tilden-south-park-willows.json",
+      "reason": "Materialize official Tilden access, route, coordinate, or current-condition knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ]
+}
