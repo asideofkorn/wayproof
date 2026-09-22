@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-quarry-alameda-creek-east-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-quarry-alameda-creek-east-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-quarry-alameda-creek-east-walk-in"
+    ],
+    "subject_id": "entrance-quarry-alameda-creek-east-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.5682039954863,
+      "longitude": -121.989825313633
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

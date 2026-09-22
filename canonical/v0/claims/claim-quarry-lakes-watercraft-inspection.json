@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-quarry-lakes-watercraft-inspection",
+    "evidence_ids": [
+      "evidence-quarry-lakes-watercraft-inspection"
+    ],
+    "predicate": "watercraft_rule",
+    "spatial_scope_ids": [
+      "scope-quarry-lakes-regional-recreation-area"
+    ],
+    "subject_id": "park-quarry-lakes-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "mandatory_inspection": true,
+      "purpose": "prevent invasive mussels"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

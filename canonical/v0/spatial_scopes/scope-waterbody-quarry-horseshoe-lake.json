@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Horseshoe Lake at Quarry Lakes Regional Recreation Area.",
+    "entity_id": "waterbody-quarry-horseshoe-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-quarry-horseshoe-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

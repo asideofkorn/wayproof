@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-quarry-lakes-watercraft-inspection",
+    "evidence_id": "evidence-quarry-lakes-watercraft-inspection",
+    "notes": "Official park guidance; current conditions require a pre-trip recheck.",
+    "observation_id": "observation-ebrpd-quarry-lakes-water-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-entrance-quarry-alameda-creek-west-walk-in-access-profile"
+    ],
+    "object_id": "park-quarry-lakes-regional-recreation-area",
+    "predicate": "accesses",
+    "relationship_id": "relationship-entrance-quarry-alameda-creek-west-walk-in-in-quarry-lakes",
+    "subject_id": "entrance-quarry-alameda-creek-west-walk-in",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

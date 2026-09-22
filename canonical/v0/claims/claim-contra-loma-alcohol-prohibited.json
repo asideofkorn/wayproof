@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-alcohol-prohibited",
+    "evidence_ids": [
+      "evidence-contra-loma-alcohol-prohibited"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "activity": "alcohol possession or consumption",
+      "permitted": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

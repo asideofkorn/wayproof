@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-lake-view-trail-profile",
+    "evidence_ids": [
+      "evidence-contra-loma-lake-view-trail-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "route-contra-loma-lake-view-trail",
+    "temporal_scope": null,
+    "value": {
+      "park_id": "park-contra-loma-regional-park"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

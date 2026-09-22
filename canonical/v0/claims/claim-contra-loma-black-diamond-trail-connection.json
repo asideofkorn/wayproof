@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-black-diamond-trail-connection",
+    "evidence_ids": [
+      "evidence-contra-loma-black-diamond-trail-connection"
+    ],
+    "predicate": "route_connection",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "connects_to": "park-black-diamond-mines-regional-preserve"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-contra-loma-black-diamond-trail-connection"
+    ],
+    "object_id": "park-black-diamond-mines-regional-preserve",
+    "predicate": "trail_connects_to",
+    "relationship_id": "relationship-contra-loma-connects-black-diamond",
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

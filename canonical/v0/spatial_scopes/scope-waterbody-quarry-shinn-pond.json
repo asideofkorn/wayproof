@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Shinn Pond at Quarry Lakes Regional Recreation Area.",
+    "entity_id": "waterbody-quarry-shinn-pond",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-quarry-shinn-pond"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

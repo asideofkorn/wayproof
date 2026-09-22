@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-golden-mussel-quarantine-2026",
+    "evidence_ids": [
+      "evidence-contra-loma-golden-mussel-quarantine-2026"
+    ],
+    "predicate": "watercraft_rule",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "boat_bands_cross_lake_valid": false,
+      "quarantine_days_from_other_ebrpd_waterbodies": 30,
+      "same_lake_return_exception": "intact lake-specific boat band",
+      "trigger": "launch at Contra Loma or Del Valle"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

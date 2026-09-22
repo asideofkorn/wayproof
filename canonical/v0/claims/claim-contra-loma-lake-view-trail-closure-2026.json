@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-lake-view-trail-closure-2026",
+    "evidence_ids": [
+      "evidence-contra-loma-lake-view-trail-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "cause": "storm damage",
+      "segment": "Lake View Trail at the cattle pond",
+      "source_updated_on": "2026-09-22",
+      "status": "partially_closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

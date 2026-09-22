@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-swim-lagoon-closed",
+    "evidence_ids": [
+      "evidence-contra-loma-swim-lagoon-closed"
+    ],
+    "predicate": "facility_access_status",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "causes": [
+        "water quality",
+        "maintenance challenges"
+      ],
+      "facility": "Contra Loma Swim Lagoon",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

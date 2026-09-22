@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-facility-quarry-niles-beach-access-profile",
+    "evidence_ids": [
+      "evidence-facility-quarry-niles-beach-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-facility-quarry-niles-beach"
+    ],
+    "subject_id": "facility-quarry-niles-beach",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "facility",
+      "latitude": 37.5798333,
+      "longitude": -122.0042778
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

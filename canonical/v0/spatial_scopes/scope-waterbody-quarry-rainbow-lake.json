@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Rainbow Lake at Quarry Lakes Regional Recreation Area.",
+    "entity_id": "waterbody-quarry-rainbow-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-quarry-rainbow-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

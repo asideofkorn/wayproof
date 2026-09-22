@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-contra-loma-lake-view-trail-profile"
+    ],
+    "object_id": "park-contra-loma-regional-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-contra-loma-lake-view-trail-traverses-park",
+    "subject_id": "route-contra-loma-lake-view-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

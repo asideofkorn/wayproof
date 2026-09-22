@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-quarry-rainbow-lake",
+    "kind": "waterbody",
+    "name": "Rainbow Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-quarry-horseshoe-lake-water-quality-20260922"
+    ],
+    "object_id": "park-quarry-lakes-regional-recreation-area",
+    "predicate": "located_in",
+    "relationship_id": "relationship-quarry-horseshoe-lake-in-quarry-lakes",
+    "subject_id": "waterbody-quarry-horseshoe-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,657 @@
+{
+  "artifact_format_version": 1,
+  "schema_version": 0,
+  "change_set_id": "wp-20260922-contra-loma-quarry-water-rules",
+  "status": "VALIDATED",
+  "summary": "Deepen Contra Loma and Quarry Lakes water-recreation planning knowledge.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-accessible-water-sanitation",
+      "path": "canonical/v0/claims/claim-contra-loma-accessible-water-sanitation.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-alcohol-prohibited",
+      "path": "canonical/v0/claims/claim-contra-loma-alcohol-prohibited.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-black-diamond-trail-connection",
+      "path": "canonical/v0/claims/claim-contra-loma-black-diamond-trail-connection.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-fishing-permit",
+      "path": "canonical/v0/claims/claim-contra-loma-fishing-permit.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-golden-mussel-quarantine-2026",
+      "path": "canonical/v0/claims/claim-contra-loma-golden-mussel-quarantine-2026.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-lake-view-trail-closure-2026",
+      "path": "canonical/v0/claims/claim-contra-loma-lake-view-trail-closure-2026.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-lake-view-trail-profile",
+      "path": "canonical/v0/claims/claim-contra-loma-lake-view-trail-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-swim-lagoon-closed",
+      "path": "canonical/v0/claims/claim-contra-loma-swim-lagoon-closed.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-contra-loma-water-contact-rules",
+      "path": "canonical/v0/claims/claim-contra-loma-water-contact-rules.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-quarry-alameda-creek-east-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-quarry-alameda-creek-east-walk-in-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-entrance-quarry-alameda-creek-west-walk-in-access-profile",
+      "path": "canonical/v0/claims/claim-entrance-quarry-alameda-creek-west-walk-in-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-facility-quarry-ada-fishing-pier-access-profile",
+      "path": "canonical/v0/claims/claim-facility-quarry-ada-fishing-pier-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-facility-quarry-boat-launch-access-profile",
+      "path": "canonical/v0/claims/claim-facility-quarry-boat-launch-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-facility-quarry-niles-beach-access-profile",
+      "path": "canonical/v0/claims/claim-facility-quarry-niles-beach-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-horseshoe-lake-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-quarry-horseshoe-lake-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-lago-los-osos-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-quarry-lago-los-osos-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-lakes-accessibility",
+      "path": "canonical/v0/claims/claim-quarry-lakes-accessibility.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-lakes-watercraft-inspection",
+      "path": "canonical/v0/claims/claim-quarry-lakes-watercraft-inspection.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-rainbow-lake-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-quarry-rainbow-lake-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-quarry-shinn-pond-water-quality-20260922",
+      "path": "canonical/v0/claims/claim-quarry-shinn-pond-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-quarry-alameda-creek-east-walk-in",
+      "path": "canonical/v0/entities/entrance-quarry-alameda-creek-east-walk-in.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "entrance-quarry-alameda-creek-west-walk-in",
+      "path": "canonical/v0/entities/entrance-quarry-alameda-creek-west-walk-in.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-quarry-ada-fishing-pier",
+      "path": "canonical/v0/entities/facility-quarry-ada-fishing-pier.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-quarry-boat-launch",
+      "path": "canonical/v0/entities/facility-quarry-boat-launch.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-quarry-niles-beach",
+      "path": "canonical/v0/entities/facility-quarry-niles-beach.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "route-contra-loma-lake-view-trail",
+      "path": "canonical/v0/entities/route-contra-loma-lake-view-trail.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-quarry-horseshoe-lake",
+      "path": "canonical/v0/entities/waterbody-quarry-horseshoe-lake.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-quarry-lago-los-osos",
+      "path": "canonical/v0/entities/waterbody-quarry-lago-los-osos.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-quarry-rainbow-lake",
+      "path": "canonical/v0/entities/waterbody-quarry-rainbow-lake.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "waterbody-quarry-shinn-pond",
+      "path": "canonical/v0/entities/waterbody-quarry-shinn-pond.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-accessible-water-sanitation",
+      "path": "canonical/v0/evidence/evidence-contra-loma-accessible-water-sanitation.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-alcohol-prohibited",
+      "path": "canonical/v0/evidence/evidence-contra-loma-alcohol-prohibited.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-black-diamond-trail-connection",
+      "path": "canonical/v0/evidence/evidence-contra-loma-black-diamond-trail-connection.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-fishing-permit",
+      "path": "canonical/v0/evidence/evidence-contra-loma-fishing-permit.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-golden-mussel-quarantine-2026",
+      "path": "canonical/v0/evidence/evidence-contra-loma-golden-mussel-quarantine-2026.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-lake-view-trail-closure-2026",
+      "path": "canonical/v0/evidence/evidence-contra-loma-lake-view-trail-closure-2026.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-lake-view-trail-profile",
+      "path": "canonical/v0/evidence/evidence-contra-loma-lake-view-trail-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-swim-lagoon-closed",
+      "path": "canonical/v0/evidence/evidence-contra-loma-swim-lagoon-closed.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-contra-loma-water-contact-rules",
+      "path": "canonical/v0/evidence/evidence-contra-loma-water-contact-rules.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-quarry-alameda-creek-east-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-quarry-alameda-creek-east-walk-in-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-entrance-quarry-alameda-creek-west-walk-in-access-profile",
+      "path": "canonical/v0/evidence/evidence-entrance-quarry-alameda-creek-west-walk-in-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-facility-quarry-ada-fishing-pier-access-profile",
+      "path": "canonical/v0/evidence/evidence-facility-quarry-ada-fishing-pier-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-facility-quarry-boat-launch-access-profile",
+      "path": "canonical/v0/evidence/evidence-facility-quarry-boat-launch-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-facility-quarry-niles-beach-access-profile",
+      "path": "canonical/v0/evidence/evidence-facility-quarry-niles-beach-access-profile.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-horseshoe-lake-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-quarry-horseshoe-lake-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-lago-los-osos-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-quarry-lago-los-osos-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-lakes-accessibility",
+      "path": "canonical/v0/evidence/evidence-quarry-lakes-accessibility.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-lakes-watercraft-inspection",
+      "path": "canonical/v0/evidence/evidence-quarry-lakes-watercraft-inspection.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-rainbow-lake-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-quarry-rainbow-lake-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-quarry-shinn-pond-water-quality-20260922",
+      "path": "canonical/v0/evidence/evidence-quarry-shinn-pond-water-quality-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-contra-loma-water-rules-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-contra-loma-water-rules-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-quarry-lakes-water-rules-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-quarry-lakes-water-rules-20260922.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-contra-loma-connects-black-diamond",
+      "path": "canonical/v0/relationships/relationship-contra-loma-connects-black-diamond.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-contra-loma-lake-view-trail-traverses-park",
+      "path": "canonical/v0/relationships/relationship-contra-loma-lake-view-trail-traverses-park.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-quarry-alameda-creek-east-walk-in-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-entrance-quarry-alameda-creek-east-walk-in-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-entrance-quarry-alameda-creek-west-walk-in-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-entrance-quarry-alameda-creek-west-walk-in-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-facility-quarry-ada-fishing-pier-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-facility-quarry-ada-fishing-pier-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-facility-quarry-boat-launch-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-facility-quarry-boat-launch-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-facility-quarry-niles-beach-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-facility-quarry-niles-beach-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-quarry-horseshoe-lake-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-quarry-horseshoe-lake-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-quarry-lago-los-osos-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-quarry-lago-los-osos-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-quarry-rainbow-lake-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-quarry-rainbow-lake-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-quarry-shinn-pond-in-quarry-lakes",
+      "path": "canonical/v0/relationships/relationship-quarry-shinn-pond-in-quarry-lakes.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-quarry-alameda-creek-east-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-quarry-alameda-creek-east-walk-in.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-entrance-quarry-alameda-creek-west-walk-in",
+      "path": "canonical/v0/spatial_scopes/scope-entrance-quarry-alameda-creek-west-walk-in.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-facility-quarry-ada-fishing-pier",
+      "path": "canonical/v0/spatial_scopes/scope-facility-quarry-ada-fishing-pier.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-facility-quarry-boat-launch",
+      "path": "canonical/v0/spatial_scopes/scope-facility-quarry-boat-launch.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-facility-quarry-niles-beach",
+      "path": "canonical/v0/spatial_scopes/scope-facility-quarry-niles-beach.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-quarry-horseshoe-lake",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-quarry-horseshoe-lake.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-quarry-lago-los-osos",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-quarry-lago-los-osos.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-quarry-rainbow-lake",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-quarry-rainbow-lake.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-waterbody-quarry-shinn-pond",
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-quarry-shinn-pond.json",
+      "reason": "Deepen official water, recreation, access, facility, or route knowledge.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ]
+}
