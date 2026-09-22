@@ -1,11 +1,1 @@
-{
-  "artifact_format_version": 1,
-  "record": {
-    "scope_id": "scope-sunol-backpack-camp",
-    "kind": "backcountry_camp",
-    "entity_id": "camp-ohlone-map-sunol-backpack",
-    "description": "The designated Sunol Backpack Camp area."
-  },
-  "record_type": "spatial_scope",
-  "schema_version": 0
-}
+{"artifact_format_version":1,"record":{"scope_id":"scope-sunol-backpack-camp","kind":"backcountry_camp","entity_id":"camp-ohlone-map-backpack","description":"Sunol Backpack Camp in Sunol Wilderness Regional Preserve."},"record_type":"spatial_scope","schema_version":0}

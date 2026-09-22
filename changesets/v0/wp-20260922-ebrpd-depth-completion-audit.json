@@ -1,0 +1,90 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-ebrpd-depth-completion-audit",
+  "status": "VALIDATED",
+  "summary": "Close final EBRPD park-depth audit gaps and enforce coverage.",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-sunol-backpack-high-valley-use",
+      "path": "canonical/v0/claims/claim-sunol-backpack-high-valley-use.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "REPLACE",
+      "record_type": "entity",
+      "record_id": "camp-ohlone-map-backpack",
+      "path": "canonical/v0/entities/camp-ohlone-map-backpack.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-sunol-backpack-high-valley-use",
+      "path": "canonical/v0/evidence/evidence-sunol-backpack-high-valley-use.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-sunol-backpack-high-valley-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-sunol-backpack-high-valley-20260922.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-sunol-backpack-camp-in-park",
+      "path": "canonical/v0/relationships/relationship-sunol-backpack-camp-in-park.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-sunol-high-valley-group-camp-in-park",
+      "path": "canonical/v0/relationships/relationship-sunol-high-valley-group-camp-in-park.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-sunol-backpack-high-valley-use",
+      "path": "canonical/v0/rules/rule-sunol-backpack-high-valley-use.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "REPLACE",
+      "record_type": "spatial_scope",
+      "record_id": "scope-sunol-backpack-camp",
+      "path": "canonical/v0/spatial_scopes/scope-sunol-backpack-camp.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-sunol-high-valley-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-sunol-high-valley-group-camp.json",
+      "reason": "Close the final orphaned Sunol camp records found by the EBRPD depth audit.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ],
+  "schema_version": 0
+}
