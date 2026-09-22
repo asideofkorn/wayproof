@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-las-trampas-corral-bring-water","claim_id":"claim-las-trampas-corral-profile","conditions":[],"consequence":"Bring all required drinking water; do not depend on the inconsistent park water supply.","spatial_scope_ids":["scope-las-trampas-corral-group-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}

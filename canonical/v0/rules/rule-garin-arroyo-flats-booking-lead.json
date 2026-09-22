@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-garin-arroyo-flats-booking-lead","claim_id":"claim-garin-arroyo-flats-profile","conditions":[],"consequence":"Reserve Arroyo Flats by phone at least three business days before arrival.","spatial_scope_ids":["scope-garin-arroyo-flats-group-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}

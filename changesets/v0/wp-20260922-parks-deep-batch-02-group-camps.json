@@ -1,0 +1,360 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-parks-deep-batch-02-group-camps",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-garin-arroyo-flats-profile",
+      "path": "canonical/v0/claims/claim-garin-arroyo-flats-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-garin-arroyo-flats-reserveamerica-profile",
+      "path": "canonical/v0/claims/claim-garin-arroyo-flats-reserveamerica-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-garin-reserveamerica-inventory",
+      "path": "canonical/v0/claims/claim-garin-reserveamerica-inventory.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-las-trampas-corral-profile",
+      "path": "canonical/v0/claims/claim-las-trampas-corral-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-las-trampas-reserveamerica-terms",
+      "path": "canonical/v0/claims/claim-las-trampas-reserveamerica-terms.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-las-trampas-seasonal-closure-2026-2027",
+      "path": "canonical/v0/claims/claim-las-trampas-seasonal-closure-2026-2027.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-garin-110454",
+      "path": "canonical/v0/entities/facility-reserveamerica-garin-110454.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-las-trampas-110455",
+      "path": "canonical/v0/entities/facility-reserveamerica-las-trampas-110455.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-garin-arroyo-flats",
+      "path": "canonical/v0/entities/group-camp-garin-arroyo-flats.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-las-trampas-corral",
+      "path": "canonical/v0/entities/group-camp-las-trampas-corral.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-garin-arroyo-flats-official-profile",
+      "path": "canonical/v0/evidence/evidence-garin-arroyo-flats-official-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-garin-arroyo-flats-reserveamerica-profile",
+      "path": "canonical/v0/evidence/evidence-garin-arroyo-flats-reserveamerica-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-garin-reserveamerica-inventory",
+      "path": "canonical/v0/evidence/evidence-garin-reserveamerica-inventory.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-las-trampas-corral-official-profile",
+      "path": "canonical/v0/evidence/evidence-las-trampas-corral-official-profile.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-las-trampas-reserveamerica-season",
+      "path": "canonical/v0/evidence/evidence-las-trampas-reserveamerica-season.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-las-trampas-reserveamerica-terms",
+      "path": "canonical/v0/evidence/evidence-las-trampas-reserveamerica-terms.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "gap",
+      "record_id": "gap-garin-arroyo-flats-minimum-party",
+      "path": "canonical/v0/gaps/gap-garin-arroyo-flats-minimum-party.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "gap",
+      "record_id": "gap-las-trampas-corral-booking-product",
+      "path": "canonical/v0/gaps/gap-las-trampas-corral-booking-product.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-garin-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-garin-camping-20260922.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-las-trampas-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-las-trampas-camping-20260922.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-garin-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-garin-20260922.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-garin-arroyo-flats-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-garin-arroyo-flats-20260922.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-las-trampas-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-las-trampas-20260922.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-garin-arroyo-flats-in-park",
+      "path": "canonical/v0/relationships/relationship-garin-arroyo-flats-in-park.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-las-trampas-corral-in-park",
+      "path": "canonical/v0/relationships/relationship-las-trampas-corral-in-park.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110454-books-arroyo-flats",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110454-books-arroyo-flats.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110455-books-las-trampas-corral",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110455-books-las-trampas-corral.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-garin-arroyo-flats-booking-lead",
+      "path": "canonical/v0/rules/rule-garin-arroyo-flats-booking-lead.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-garin-arroyo-flats-hike-in",
+      "path": "canonical/v0/rules/rule-garin-arroyo-flats-hike-in.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-garin-arroyo-flats-parking",
+      "path": "canonical/v0/rules/rule-garin-arroyo-flats-parking.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-garin-arroyo-flats-party-size",
+      "path": "canonical/v0/rules/rule-garin-arroyo-flats-party-size.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-las-trampas-corral-booking-lead",
+      "path": "canonical/v0/rules/rule-las-trampas-corral-booking-lead.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-las-trampas-corral-bring-water",
+      "path": "canonical/v0/rules/rule-las-trampas-corral-bring-water.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-las-trampas-corral-fire-use",
+      "path": "canonical/v0/rules/rule-las-trampas-corral-fire-use.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-garin-arroyo-flats-1154",
+      "path": "canonical/v0/sources/source-reserveamerica-garin-arroyo-flats-1154.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-garin-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-garin-campsites.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-las-trampas-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-las-trampas-campsites.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-garin-arroyo-flats-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-garin-arroyo-flats-group-camp.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-las-trampas-corral-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-las-trampas-corral-group-camp.json",
+      "reason": "Publish source-backed Garin and Las Trampas group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Deepen Garin Arroyo Flats and Las Trampas Corral group-camp knowledge, preserving source conflict and booking gaps."
+}
