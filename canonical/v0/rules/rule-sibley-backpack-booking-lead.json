@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-sibley-backpack-booking-lead","claim_id":"claim-sibley-backpack-camp-official","conditions":[],"consequence":"Reserve Sibley Backpack Camp by phone at least two business days before arrival.","spatial_scope_ids":["scope-sibley-backpack-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}
