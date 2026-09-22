@@ -2,7 +2,7 @@
   "artifact_format_version": 1,
   "record": {
     "artifact_refs": [],
-    "content": "NPS publishes a campground collection, reservation policy, site counts and fees, but states opening and closing dates are subject to weather, road status, and public safety and points visitors to current operating sources.",
+    "content": "NPS publishes a campground collection, site counts, and fees. Its reservation summary says reservations are required except at Juniper Lake and Southwest Walk-In, while its detailed first-come, first-served section also lists Warner Valley. Opening dates, road access, and operations remain subject to weather, road status, and public safety.",
     "observation_id": "observation-nps-lassen-camping-20260922",
     "observed_at": null,
     "observer": "",

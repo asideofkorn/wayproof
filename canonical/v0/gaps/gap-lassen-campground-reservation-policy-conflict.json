@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-campground-reservation-policy-conflict",
+    "question": "Is Warner Valley operating first-come, first-served or by reservation for the trip?",
+    "reason": "The current NPS camping page conflicts internally: its reservation summary omits Warner Valley from the exceptions, while its detailed first-come, first-served section includes Warner Valley. Recheck NPS and Recreation.gov near departure.",
+    "related_ids": [
+      "claim-lassen-campground-reservations"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

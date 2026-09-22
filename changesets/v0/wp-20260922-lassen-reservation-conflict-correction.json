@@ -1,0 +1,53 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-lassen-reservation-conflict-correction",
+  "operations": [
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-camping-20260922.json",
+      "reason": "Preserve the NPS camping page's conflicting reservation statements and avoid incorrectly presenting Warner Valley as reservation-required.",
+      "record_id": "observation-nps-lassen-camping-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-lassen-campground-reservations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-campground-reservation-policy-conflict"
+      ],
+      "path": "canonical/v0/claims/claim-lassen-campground-reservations.json",
+      "reason": "Preserve the NPS camping page's conflicting reservation statements and avoid incorrectly presenting Warner Valley as reservation-required.",
+      "record_id": "claim-lassen-campground-reservations",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-campground-reservations"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-campground-reservation-policy-conflict.json",
+      "reason": "Preserve the NPS camping page's conflicting reservation statements and avoid incorrectly presenting Warner Valley as reservation-required.",
+      "record_id": "gap-lassen-campground-reservation-policy-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-lassen-campground-reservation-policy-conflict"
+      ],
+      "path": "canonical/v0/derived_results/result-lassen-pretrip-recheck.json",
+      "reason": "Preserve the NPS camping page's conflicting reservation statements and avoid incorrectly presenting Warner Valley as reservation-required.",
+      "record_id": "result-lassen-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Correct Lassen campground reservation guidance while preserving the official source's internal Warner Valley conflict as a consumer-visible recheck gap."
+}

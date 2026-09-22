@@ -34,6 +34,19 @@ def lassen_overnight_context():
     )
 
 
+def lassen_campground_context():
+    return PlanningContext(
+        trip_date=date(2026, 9, 30),
+        objectives=(),
+        stages=(TripStage(
+            "lassen-developed-campground", 1, "overnight",
+            ("scope-lassen-national-park", "scope-lassen-developed-campgrounds"),
+        ),),
+        party=PartyContext(("alice", "bob")),
+        activities=ActivityContext(("camping",), {"overnight": True}),
+    )
+
+
 def test_lassen_identity_and_first_party_sources_load():
     records = load_canonical(ROOT)
     entities = records_by_id(records, "entities", "entity_id")
@@ -79,6 +92,21 @@ def test_campground_collection_preserves_membership_and_dynamic_limits():
     }
     assert "live inventory" in gaps["gap-lassen-campground-live-operations"].reason
     assert "intentionally deferred" in gaps["gap-lassen-campground-site-details"].reason
+
+
+def test_campground_reservation_conflict_preserves_warner_valley_uncertainty():
+    records = load_canonical(ROOT)
+    claims = records_by_id(records, "claims", "claim_id")
+    gaps = records_by_id(records, "gaps", "gap_id")
+    policy = claims["claim-lassen-campground-reservations"].value
+
+    assert policy["required_except"] == [
+        "Juniper Lake", "Southwest Walk-In", "Warner Valley",
+    ]
+    assert "summary omits Warner Valley" in policy["source_page_conflict"]
+    assert "conflicts internally" in (
+        gaps["gap-lassen-campground-reservation-policy-conflict"].reason
+    )
 
 
 def test_wilderness_permit_fees_and_food_storage_are_distinct_claims():
@@ -152,6 +180,23 @@ def test_dynamic_operating_topics_project_through_recheck_consumer():
         "source-nps-lassen-conditions",
     )
     assert items["gap-lassen-current-conditions"].answerability is (
+        RecheckAnswerability.UNKNOWN
+    )
+
+
+def test_reservation_conflict_projects_for_campground_recheck_consumer():
+    result = CanonicalReadService(ROOT).pretrip_recheck(
+        lassen_campground_context(), "result-lassen-pretrip-recheck"
+    )
+    items = {item.input_id: item for item in result.items}
+
+    assert items["claim-lassen-campground-reservations"].answerability is (
+        RecheckAnswerability.NEEDS_CURRENT_CHECK
+    )
+    assert items["claim-lassen-campground-reservations"].source_ids == (
+        "source-nps-lassen-camping",
+    )
+    assert items["gap-lassen-campground-reservation-policy-conflict"].answerability is (
         RecheckAnswerability.UNKNOWN
     )
 

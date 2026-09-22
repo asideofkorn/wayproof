@@ -1,15 +1,17 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Lassen access and operations change with snow, wildfire, road work, and facility status; recheck official NPS and linked Recreation.gov sources near departure.",
+    "explanation": "Lassen access and operations change with snow, wildfire, road work, and facility status; campground reservation guidance also conflicts internally. Recheck official NPS and linked Recreation.gov sources near departure.",
     "input_ids": [
       "claim-lassen-current-conditions-recheck",
       "claim-lassen-seasonal-road-access",
       "claim-lassen-entrance-fees-2026",
       "claim-lassen-entry-reservation",
       "claim-lassen-campground-operations-recheck",
+      "claim-lassen-campground-reservations",
       "gap-lassen-current-conditions",
-      "gap-lassen-campground-live-operations"
+      "gap-lassen-campground-live-operations",
+      "gap-lassen-campground-reservation-policy-conflict"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-lassen-pretrip-recheck",
