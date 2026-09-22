@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-pets",
+    "conditions": [
+      {
+        "dimension": "equipment",
+        "operator": "contains",
+        "value": "pet"
+      }
+    ],
+    "consequence": "Do not bring pets into Yosemite Wilderness.",
+    "rule_id": "rule-yosemite-wilderness-no-pets",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

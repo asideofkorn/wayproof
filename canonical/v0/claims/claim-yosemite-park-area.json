@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-park-area",
+    "evidence_ids": [
+      "evidence-yosemite-park-area"
+    ],
+    "predicate": "area_square_miles",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": {
+      "approximate": true,
+      "square_miles": 1200
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

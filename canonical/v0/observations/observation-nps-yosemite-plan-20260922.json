@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS states Yosemite spans nearly 1,200 square miles and that no reservation is required to enter in 2026, while the entrance fee still applies. It advises reservations for lodging, camping, and backpacking and recommends checking current conditions for road status.",
+    "observation_id": "observation-nps-yosemite-plan-20260922",
+    "observed_at": "2026-06-24T00:00:00+00:00",
+    "observer": "NPS",
+    "retrieved_at": "2026-09-22T18:00:00+00:00",
+    "source_id": "source-nps-yosemite-plan"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

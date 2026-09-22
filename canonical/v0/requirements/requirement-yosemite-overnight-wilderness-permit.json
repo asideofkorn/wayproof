@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "A wilderness permit covering the planned overnight Yosemite Wilderness trip.",
+    "requirement_id": "requirement-yosemite-overnight-wilderness-permit",
+    "rule_id": "rule-yosemite-overnight-wilderness-permit"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

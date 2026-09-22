@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-vehicle-sleeping",
+    "conditions": [
+      {
+        "dimension": "activity",
+        "operator": "contains",
+        "value": "vehicle_sleeping"
+      }
+    ],
+    "consequence": "Sleep in a vehicle only in a registered designated campsite.",
+    "rule_id": "rule-yosemite-designated-vehicle-sleeping",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

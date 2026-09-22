@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-nonresident-entrance-fee-2026",
+    "evidence_ids": [
+      "evidence-yosemite-nonresident-entrance-fee-2026"
+    ],
+    "predicate": "nonresident_entrance_fee",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "additional_per_person_usd": 100,
+      "applies_to": "non-US residents age 16 and older",
+      "exceptions": [
+        "Annual Pass",
+        "America the Beautiful Pass"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

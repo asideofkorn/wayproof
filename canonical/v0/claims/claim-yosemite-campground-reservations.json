@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-reservations",
+    "evidence_ids": [
+      "evidence-yosemite-campground-reservations"
+    ],
+    "predicate": "reservation_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "booking_channel": "Recreation.gov",
+      "live_availability": "requires current check",
+      "release_timing": "varies by campground",
+      "required_season": "April through October"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

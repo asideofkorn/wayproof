@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-seasonal-road-access",
+    "evidence_ids": [
+      "evidence-yosemite-seasonal-road-access"
+    ],
+    "predicate": "seasonal_vehicle_access",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": {
+      "requires_current_check": true,
+      "typical_period": "approximately November through May",
+      "winter_closures_possible": [
+        "Tioga Road",
+        "Glacier Point Road",
+        "Mariposa Grove Road"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -58,7 +58,8 @@ def test_every_published_park_has_a_generated_human_page(tmp_path):
 def test_all_camping_entities_have_canonical_context():
     reads = CanonicalReadService(ROOT)
     camping_kinds = {
-        "campground", "campsite", "family_campsite", "group_campsite",
+        "campground", "campground_collection", "campsite", "family_campsite",
+        "group_campsite",
         "cabin_campsite", "backcountry_camp", "equestrian_campsite",
         "equestrian_campsite_area", "equestrian_group_campsite",
     }

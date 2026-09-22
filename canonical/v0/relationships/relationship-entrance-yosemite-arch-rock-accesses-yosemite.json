@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-standard-entrance-fees-2026"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-entrance-yosemite-arch-rock-accesses-yosemite",
+    "subject_id": "entrance-yosemite-arch-rock",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

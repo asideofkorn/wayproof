@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-developed-campground-count",
+    "evidence_id": "evidence-yosemite-developed-campground-count",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-campgrounds-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

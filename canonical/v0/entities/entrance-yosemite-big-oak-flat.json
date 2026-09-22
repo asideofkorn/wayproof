@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-yosemite-big-oak-flat",
+    "kind": "entrance",
+    "name": "Big Oak Flat Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

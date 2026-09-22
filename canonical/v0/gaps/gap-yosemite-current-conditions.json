@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-current-conditions",
+    "question": "What road, trail, fire, campground, facility, and area closures apply to the planned Yosemite trip date?",
+    "reason": "Conditions are dynamic and the NPS page itself requires a current check.",
+    "related_ids": [
+      "park-yosemite-national-park",
+      "source-nps-yosemite-conditions",
+      "claim-yosemite-current-conditions-recheck",
+      "claim-yosemite-seasonal-road-access"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

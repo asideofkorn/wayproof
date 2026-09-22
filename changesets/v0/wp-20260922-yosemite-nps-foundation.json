@@ -1,0 +1,822 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-yosemite-nps-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campgrounds-yosemite-developed.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "campgrounds-yosemite-developed",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-yosemite-arch-rock.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "entrance-yosemite-arch-rock",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-yosemite-big-oak-flat.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "entrance-yosemite-big-oak-flat",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-yosemite-hetch-hetchy.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "entrance-yosemite-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-yosemite-south.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "entrance-yosemite-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-yosemite-tioga-pass.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "entrance-yosemite-tioga-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/land-yosemite-wilderness.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "land-yosemite-wilderness",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-yosemite-national-park.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "park-yosemite-national-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-yosemite-developed-campgrounds.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "scope-yosemite-developed-campgrounds",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-yosemite-hetch-hetchy-entrance.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "scope-yosemite-hetch-hetchy-entrance",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-yosemite-national-park.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "scope-yosemite-national-park",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-yosemite-wilderness.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "scope-yosemite-wilderness",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-basic.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-basic",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-camp-regulations.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-camp-regulations",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-campgrounds.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-campgrounds",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-conditions.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-conditions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-directions.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-directions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-fees.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-fees",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-plan.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-plan",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-transportation.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-transportation",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-wilderness-regulations.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "source-nps-yosemite-wilderness-regulations",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-basic-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-basic-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-camp-regulations-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-camp-regulations-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-campgrounds-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-campgrounds-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-conditions-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-conditions-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-directions-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-directions-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-fees-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-fees-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-plan-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-plan-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-transportation-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-transportation-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wilderness-regulations-20260922.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "observation-nps-yosemite-wilderness-regulations-20260922",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-campground-reservations"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-campground-reservations.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-campground-reservations",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-campsite-party-limit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-campsite-party-limit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-campsite-party-limit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-current-conditions-recheck.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "evidence-yosemite-current-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-developed-campground-count"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-developed-campground-count.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-developed-campground-count",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-entry-reservation-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-entry-reservation-2026.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-entry-reservation-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-hours"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-hours.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-hetch-hetchy-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-nonresident-entrance-fee-2026.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "evidence-yosemite-nonresident-entrance-fee-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-open-year-round"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-open-year-round.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-open-year-round",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-park-area"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-park-area.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-park-area",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-public-transportation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-public-transportation.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-public-transportation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-seasonal-road-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-seasonal-road-access.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-seasonal-road-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-standard-entrance-fees-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-standard-entrance-fees-2026.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-standard-entrance-fees-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-vehicle-sleeping"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-vehicle-sleeping.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-vehicle-sleeping",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-food-definition.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "evidence-yosemite-wilderness-food-definition",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wilderness-food-storage"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-food-storage.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-wilderness-food-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wilderness-group-limit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-group-limit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-wilderness-group-limit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wilderness-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-permit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-wilderness-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-permit-continuous-travel.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "evidence-yosemite-wilderness-permit-continuous-travel",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-permit-identity-constraints.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "evidence-yosemite-wilderness-permit-identity-constraints",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wilderness-pets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wilderness-pets.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "evidence-yosemite-wilderness-pets",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-campground-reservations.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-campground-reservations",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-campsite-party-limit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-campsite-party-limit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-current-conditions-recheck.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "claim-yosemite-current-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-developed-campground-count.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-developed-campground-count",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-entry-reservation-2026.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-entry-reservation-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-hours.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-hetch-hetchy-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-nonresident-entrance-fee-2026.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "claim-yosemite-nonresident-entrance-fee-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-open-year-round.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-open-year-round",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-park-area.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-park-area",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-public-transportation.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-public-transportation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-seasonal-road-access.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-seasonal-road-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-standard-entrance-fees-2026.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-standard-entrance-fees-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-vehicle-sleeping.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-vehicle-sleeping",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-food-definition.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "claim-yosemite-wilderness-food-definition",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-food-storage.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-wilderness-food-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-group-limit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-wilderness-group-limit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-permit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-wilderness-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-permit-continuous-travel.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "claim-yosemite-wilderness-permit-continuous-travel",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-permit-identity-constraints.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "claim-yosemite-wilderness-permit-identity-constraints",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wilderness-pets.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "claim-yosemite-wilderness-pets",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-arch-rock-accesses-yosemite.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-entrance-yosemite-arch-rock-accesses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-big-oak-flat-accesses-yosemite.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-entrance-yosemite-big-oak-flat-accesses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-hetch-hetchy-accesses-yosemite.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-entrance-yosemite-hetch-hetchy-accesses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-south-accesses-yosemite.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-entrance-yosemite-south-accesses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-tioga-pass-accesses-yosemite.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-entrance-yosemite-tioga-pass-accesses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-contains-developed-campgrounds.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-yosemite-contains-developed-campgrounds",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-contains-wilderness.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "relationship-yosemite-contains-wilderness",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-yosemite-designated-vehicle-sleeping.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "rule-yosemite-designated-vehicle-sleeping",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-yosemite-overnight-wilderness-permit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "rule-yosemite-overnight-wilderness-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-yosemite-wilderness-bear-canister.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "rule-yosemite-wilderness-bear-canister",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-yosemite-wilderness-no-pets.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "rule-yosemite-wilderness-no-pets",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-yosemite-overnight-wilderness-permit.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "requirement-yosemite-overnight-wilderness-permit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-yosemite-wilderness-bear-canister.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "requirement-yosemite-wilderness-bear-canister",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-campground-availability.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "gap-yosemite-campground-availability",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-current-conditions.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "gap-yosemite-current-conditions",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-specific-route-topology.json",
+      "reason": "Publish a source-backed Yosemite National Park planning foundation from current official NPS pages.",
+      "record_id": "gap-yosemite-specific-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-yosemite-pretrip-recheck.json",
+      "reason": "Complete the bounded source-backed Yosemite planning foundation.",
+      "record_id": "result-yosemite-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add a source-backed Yosemite planning foundation with actionable wilderness requirements, current-condition rechecks, party-dependent fees, access, camping, and preserved uncertainty."
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit"
+    ],
+    "object_id": "land-yosemite-wilderness",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-contains-wilderness",
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

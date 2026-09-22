@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-specific-route-topology",
+    "question": "Which evidenced entrance, roads, trailhead, and trail segments connect a specific Yosemite objective?",
+    "reason": "This foundation batch does not infer destination access or route membership from park containment or proximity.",
+    "related_ids": [
+      "park-yosemite-national-park"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

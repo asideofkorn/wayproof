@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-standard-entrance-fees-2026",
+    "evidence_ids": [
+      "evidence-yosemite-standard-entrance-fees-2026"
+    ],
+    "predicate": "entrance_fee_options",
+    "spatial_scope_ids": [
+      "scope-yosemite-national-park"
+    ],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "motorcycle_usd": 30,
+      "payment": "cashless",
+      "per_person_usd": 20,
+      "private_vehicle_usd": 35
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
