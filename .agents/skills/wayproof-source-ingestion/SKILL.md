@@ -45,6 +45,26 @@ description: Add, correct, or deepen source-backed Wayproof canonical knowledge 
 7. Give volatile facts temporal scope and make them eligible for contextual
    recheck. Do not overwrite their history with a newer status.
 8. Keep `Rule` and `DerivedResult` semantics separate from source assertions.
+9. Preserve qualifiers in structured values. Do not flatten "nearly," "about,"
+   ranges, seasonal limits, exceptions, or conditional fees into exact or
+   unconditional facts.
+
+## Make rules and rechecks executable
+
+- Inspect the actual `TripIntent`, context, evaluator, and fulfillment vocabulary
+  before authoring rule conditions. Prefer established general inputs such as an
+  overnight hiking intent over destination-specific activity labels.
+- Trace each rule through evaluation with a representative consumer request.
+  Validation and persisted record counts do not prove that a rule can fire.
+- When a rule emits or looks up a requirement, verify that its runtime-derived
+  identifier exactly matches the persisted `Requirement` identifier and that
+  coverage/fulfillment joins resolve it.
+- For volatile conditions, add both the gap/current-condition evidence and the
+  appropriate `DerivedResult` or pre-trip recheck linkage. A recorded gap that no
+  consumer can discover is incomplete.
+- Keep live values out of timeless snapshots when the authoritative source is a
+  current-conditions page. Record what should be rechecked, where, and for which
+  planning questions.
 
 For routes or access topology, switch to
 `../wayproof-route-modeling/SKILL.md` before modeling relationships.
@@ -65,6 +85,18 @@ For routes or access topology, switch to
 - Add focused tests for identity resolution, provenance, answerability, temporal
   and geospatial scope, conflicts, relationships, and consumer behavior.
 - Test the question the new data should answer, not only record counts.
+- Exercise representative intents through the rule evaluator and assert the
+  resulting requirement, applicability, and evidence—not just rule presence.
+- Exercise the recheck/read service and assert that dynamic topics and their
+  authoritative sources are returned to consumers.
+- Verify exact identifier joins between rules, requirements, fulfillment, and
+  coverage records.
+- Build the static site when the batch adds an entity kind or relationship.
+  Confirm the entity appears in the appropriate generated directory and has a
+  working detail page and reference output.
+- Preserve unrelated regression assertions. If a generic coverage test must
+  recognize an already supported entity kind, extend it narrowly; do not remove
+  or relax publisher-, provenance-, or behavior-specific invariants.
 - Run the complete suite and canonical diff verifier described in `AGENTS.md`.
 - Inspect the candidate diff for accidental certainty, duplicated entities,
   flattened history, and unrelated changes.

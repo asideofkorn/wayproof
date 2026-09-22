@@ -44,6 +44,13 @@ referenced supporting material relevant to the task.
   statements distinct from derived results and normative rules.
 - Dynamic conditions require retrieval context and an appropriate pre-trip
   recheck; do not make volatile status timeless.
+- Preserve source precision. Approximate, bounded, qualified, and seasonal
+  values must remain approximate, bounded, qualified, and seasonal in canonical
+  records and consumer output.
+- Reuse the vocabulary and identifiers exercised by domain services. A
+  schema-valid rule that cannot fire for normal `TripIntent` input, or whose
+  generated requirement identifier differs from its persisted requirement, is
+  not complete.
 - Do not invent unresolved representation or infrastructure decisions, including
   new serialization formats, module layouts, enum spellings, or database timing.
 - Apply the source and licensing policy in `DATA_LICENSE.md`. Do not commit
@@ -53,6 +60,12 @@ referenced supporting material relevant to the task.
 
 - Keep each PR bounded to one coherent outcome.
 - Add focused regression tests for changed behavior or new canonical coverage.
+- Verify consumer behavior, not only record existence: exercise rule evaluation,
+  answerability/rechecks, generated directories, detail pages, and identifier
+  joins affected by the batch.
+- Extend generic publication logic for a generally supported entity kind. Do not
+  add destination-specific navigation exceptions, and do not weaken an existing
+  invariant merely to admit new data.
 - Run `python -m pytest -q` with the repository's supported Python 3.14 runtime.
 - For canonical knowledge changes, also run:
   `python scripts/verify_canonical_diff.py --base origin/main --head HEAD`.
