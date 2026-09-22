@@ -22,11 +22,12 @@ def test_every_published_park_has_official_page_provenance():
     reads = CanonicalReadService(ROOT)
     parks = reads.search_entities(kinds=("park",))
 
-    ebrpd_parks = [
-        park for park in parks
-        if _official_park_claims(reads, park.entity_id)
+    assert len(parks) == 64
+    uncovered = [
+        park.name for park in parks
+        if not _official_park_claims(reads, park.entity_id)
     ]
-    assert len(ebrpd_parks) == 64
+    assert uncovered == []
 
 
 def test_every_official_park_source_is_observed():
@@ -57,7 +58,8 @@ def test_every_published_park_has_a_generated_human_page(tmp_path):
 def test_all_camping_entities_have_canonical_context():
     reads = CanonicalReadService(ROOT)
     camping_kinds = {
-        "campground", "campsite", "family_campsite", "group_campsite",
+        "campground", "campground_collection", "campsite", "family_campsite",
+        "group_campsite",
         "cabin_campsite", "backcountry_camp", "equestrian_campsite",
         "equestrian_campsite_area", "equestrian_group_campsite",
     }

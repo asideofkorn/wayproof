@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-food-storage",
+    "conditions": [],
+    "consequence": "Carry and use an allowed bear-resistant food canister for every item NPS defines as food.",
+    "rule_id": "rule-yosemite-wilderness-bear-canister",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

@@ -8,9 +8,9 @@
       "stage_ids": [],
       "starts_on": null
     },
-    "description": "An NPS-allowed bear-resistant food canister sized for the trip's food and scented items.",
+    "description": "An NPS-allowed bear-resistant canister for every item NPS defines as food.",
     "requirement_id": "requirement-yosemite-wilderness-bear-canister",
-    "rule_id": "rule-yosemite-wilderness-food-storage"
+    "rule_id": "rule-yosemite-wilderness-bear-canister"
   },
   "record_type": "requirement",
   "schema_version": 0

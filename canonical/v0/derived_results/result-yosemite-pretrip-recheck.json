@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Yosemite access, transportation, fees, reservations, inventory, and closures can change; recheck official sources near departure.",
+    "input_ids": [
+      "claim-yosemite-entry-reservation-2026",
+      "claim-yosemite-standard-entrance-fees-2026",
+      "claim-yosemite-nonresident-entrance-fee-2026",
+      "claim-yosemite-current-conditions-recheck",
+      "claim-yosemite-seasonal-road-access",
+      "claim-yosemite-public-transportation",
+      "claim-yosemite-campground-reservations",
+      "gap-yosemite-current-conditions",
+      "gap-yosemite-campground-availability"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-yosemite-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "current_road_trail_fire_facility_and_area_closures",
+        "seasonal_road_access",
+        "public_transportation_service",
+        "entry_reservation_policy",
+        "entrance_fees",
+        "campground_reservations_and_live_availability"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

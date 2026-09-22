@@ -47,7 +47,8 @@ DIRECTORIES = {
     "camping": {
         "title": "Camping",
         "description": "Browse campgrounds, developed sites, group camps, equestrian camps, cabins, and backcountry camps.",
-        "kinds": ("campground", "campsite", "family_campsite", "group_campsite",
+        "kinds": ("campground", "campground_collection", "campsite",
+                  "family_campsite", "group_campsite",
                   "cabin_campsite", "backcountry_camp", "equestrian_campsite",
                   "equestrian_campsite_area", "equestrian_group_campsite"),
     },

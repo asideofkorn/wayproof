@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit-continuous-travel",
+    "evidence_id": "evidence-yosemite-wilderness-permit-continuous-travel",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-wilderness-regulations-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

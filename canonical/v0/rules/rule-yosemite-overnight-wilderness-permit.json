@@ -4,9 +4,9 @@
     "claim_id": "claim-yosemite-wilderness-permit",
     "conditions": [
       {
-        "dimension": "activity",
-        "operator": "contains",
-        "value": "overnight_backpacking"
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
       }
     ],
     "consequence": "Obtain and carry a wilderness permit for any overnight Yosemite Wilderness trip.",

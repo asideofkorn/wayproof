@@ -8,7 +8,7 @@
       "stage_ids": [],
       "starts_on": null
     },
-    "description": "A Yosemite Wilderness permit covering the trip leader, entry trailhead, dates, and party size.",
+    "description": "A wilderness permit covering the planned overnight Yosemite Wilderness trip.",
     "requirement_id": "requirement-yosemite-overnight-wilderness-permit",
     "rule_id": "rule-yosemite-overnight-wilderness-permit"
   },

@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-food-definition",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-food-definition"
+    ],
+    "predicate": "food_storage_covered_items",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "land-yosemite-wilderness",
+    "temporal_scope": null,
+    "value": [
+      "food",
+      "drinks including alcohol",
+      "stock food",
+      "trash",
+      "toiletries",
+      "medications",
+      "tobacco"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

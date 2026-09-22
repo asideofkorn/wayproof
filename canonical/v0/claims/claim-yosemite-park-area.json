@@ -11,7 +11,10 @@
     ],
     "subject_id": "park-yosemite-national-park",
     "temporal_scope": null,
-    "value": 1200
+    "value": {
+      "approximate": true,
+      "square_miles": 1200
+    }
   },
   "record_type": "claim",
   "schema_version": 0

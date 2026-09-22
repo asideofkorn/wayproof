@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit-identity-constraints",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit-identity-constraints"
+    ],
+    "predicate": "permit_identity_constraints",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "land-yosemite-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "limited_to": [
+        "trip leader",
+        "entry trailhead",
+        "dates",
+        "number of people"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

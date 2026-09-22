@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit-continuous-travel",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit-continuous-travel"
+    ],
+    "predicate": "permit_continuous_travel",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "land-yosemite-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "exceptions": [
+        "crossing a road by foot or stock while continuing the itinerary",
+        "one night at Tuolumne Meadows or White Wolf Backpackers Campground during an ongoing continuous long-distance permit"
+      ],
+      "exit_invalidates_permit": true,
+      "required": true,
+      "vehicle_or_bus_travel_invalidates_permit": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
