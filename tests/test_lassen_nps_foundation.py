@@ -230,6 +230,6 @@ def test_lassen_changeset_is_validated_and_bounded():
     )
 
     assert change.status is ChangeSetStatus.VALIDATED
-    assert len(change.operations) == 102
+    assert len(change.operations) == 103
     assert all(operation.path.startswith("canonical/v0/")
                for operation in change.operations)
