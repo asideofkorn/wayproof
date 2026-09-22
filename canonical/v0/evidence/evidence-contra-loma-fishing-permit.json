@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-fishing-permit",
+    "evidence_id": "evidence-contra-loma-fishing-permit",
+    "notes": "Official park guidance; current conditions require a pre-trip recheck.",
+    "observation_id": "observation-ebrpd-contra-loma-water-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

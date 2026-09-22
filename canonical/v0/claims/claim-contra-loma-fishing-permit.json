@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-fishing-permit",
+    "evidence_ids": [
+      "evidence-contra-loma-fishing-permit"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "district_daily_fishing_permit_required": true,
+      "purchase_location": "park entry kiosk"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

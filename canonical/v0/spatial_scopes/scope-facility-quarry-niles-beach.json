@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Quarry Lakes Niles Beach.",
+    "entity_id": "facility-quarry-niles-beach",
+    "kind": "facility",
+    "scope_id": "scope-facility-quarry-niles-beach"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

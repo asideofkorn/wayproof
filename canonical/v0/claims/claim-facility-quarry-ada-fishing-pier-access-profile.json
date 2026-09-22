@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-facility-quarry-ada-fishing-pier-access-profile",
+    "evidence_ids": [
+      "evidence-facility-quarry-ada-fishing-pier-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-facility-quarry-ada-fishing-pier"
+    ],
+    "subject_id": "facility-quarry-ada-fishing-pier",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "facility",
+      "latitude": 37.5780556,
+      "longitude": -122.007
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

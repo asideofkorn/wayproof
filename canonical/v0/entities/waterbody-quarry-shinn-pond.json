@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-quarry-shinn-pond",
+    "kind": "waterbody",
+    "name": "Shinn Pond"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

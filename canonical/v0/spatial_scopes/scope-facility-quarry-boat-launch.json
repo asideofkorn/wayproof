@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Quarry Lakes Boat Launch.",
+    "entity_id": "facility-quarry-boat-launch",
+    "kind": "facility",
+    "scope_id": "scope-facility-quarry-boat-launch"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

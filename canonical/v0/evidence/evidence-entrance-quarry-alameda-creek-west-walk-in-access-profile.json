@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-quarry-alameda-creek-west-walk-in-access-profile",
+    "evidence_id": "evidence-entrance-quarry-alameda-creek-west-walk-in-access-profile",
+    "notes": "Official park guidance; current conditions require a pre-trip recheck.",
+    "observation_id": "observation-ebrpd-quarry-lakes-water-rules-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

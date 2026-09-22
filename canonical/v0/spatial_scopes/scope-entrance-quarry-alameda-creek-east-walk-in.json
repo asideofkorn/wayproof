@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Quarry Lakes Alameda Creek Trail Walk-In Entrance East.",
+    "entity_id": "entrance-quarry-alameda-creek-east-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-quarry-alameda-creek-east-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

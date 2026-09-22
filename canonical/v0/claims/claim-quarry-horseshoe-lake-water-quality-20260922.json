@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-quarry-horseshoe-lake-water-quality-20260922",
+    "evidence_ids": [
+      "evidence-quarry-horseshoe-lake-water-quality-20260922"
+    ],
+    "predicate": "water_quality_status",
+    "spatial_scope_ids": [
+      "scope-waterbody-quarry-horseshoe-lake"
+    ],
+    "subject_id": "waterbody-quarry-horseshoe-lake",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "hazard": "blue-green algae",
+      "status": "danger_advisory",
+      "water_contact_rule": "swimming restricted to Niles Swim Beach ropes"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

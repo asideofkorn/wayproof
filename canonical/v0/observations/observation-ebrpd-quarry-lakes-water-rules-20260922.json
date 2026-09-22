@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Current notices",
+      "To Reach The Park",
+      "Park Accessibility",
+      "Attractions"
+    ],
+    "content": "The live official park page publishes the water-body conditions, water-contact rules, recreation requirements, accessibility, access points, and closures represented by the associated claims.",
+    "observation_id": "observation-ebrpd-quarry-lakes-water-rules-20260922",
+    "observed_at": null,
+    "observer": "Wayproof live source review",
+    "retrieved_at": "2026-09-22T20:00:00+00:00",
+    "source_id": "source-ebrpd-quarry-lakes-park-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

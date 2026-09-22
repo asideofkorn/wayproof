@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lago Los Osos at Quarry Lakes Regional Recreation Area.",
+    "entity_id": "waterbody-quarry-lago-los-osos",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-quarry-lago-los-osos"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

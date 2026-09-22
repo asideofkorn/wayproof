@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-facility-quarry-niles-beach-access-profile"
+    ],
+    "object_id": "park-quarry-lakes-regional-recreation-area",
+    "predicate": "located_in",
+    "relationship_id": "relationship-facility-quarry-niles-beach-in-quarry-lakes",
+    "subject_id": "facility-quarry-niles-beach",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Quarry Lakes ADA Fishing Pier.",
+    "entity_id": "facility-quarry-ada-fishing-pier",
+    "kind": "facility",
+    "scope_id": "scope-facility-quarry-ada-fishing-pier"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

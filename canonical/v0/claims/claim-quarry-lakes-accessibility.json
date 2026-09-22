@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-quarry-lakes-accessibility",
+    "evidence_ids": [
+      "evidence-quarry-lakes-accessibility"
+    ],
+    "predicate": "accessibility_profile",
+    "spatial_scope_ids": [
+      "scope-quarry-lakes-regional-recreation-area"
+    ],
+    "subject_id": "park-quarry-lakes-regional-recreation-area",
+    "temporal_scope": null,
+    "value": {
+      "beach_wheelchair": {
+        "assistant_required": true,
+        "availability": "first-come, first-served",
+        "cost": "free",
+        "water_entry_permitted": false
+      },
+      "rock_picnic_area_parking": false,
+      "wheelchair_accessible": [
+        "Horseshoe Lake fishing pier",
+        "Niles Beach facilities",
+        "Ensenada Pavilion area",
+        "Orchard picnic area",
+        "Rock picnic area bathrooms and drinking fountain"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

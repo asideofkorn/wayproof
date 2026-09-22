@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-accessible-water-sanitation",
+    "evidence_ids": [
+      "evidence-contra-loma-accessible-water-sanitation"
+    ],
+    "predicate": "facility_profile",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "south_fishing_dock_access": "paved trail",
+      "wheelchair_accessible": [
+        "restrooms",
+        "drinking fountains",
+        "parking",
+        "south fishing dock"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

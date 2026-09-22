@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-quarry-lago-los-osos",
+    "kind": "waterbody",
+    "name": "Lago Los Osos"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

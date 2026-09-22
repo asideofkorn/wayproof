@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-contra-loma-water-contact-rules",
+    "evidence_ids": [
+      "evidence-contra-loma-water-contact-rules"
+    ],
+    "predicate": "recreation_rule",
+    "spatial_scope_ids": [
+      "scope-contra-loma-regional-park"
+    ],
+    "subject_id": "park-contra-loma-regional-park",
+    "temporal_scope": null,
+    "value": {
+      "dry_kayaks": {
+        "rollovers_or_body_contact_activity_permitted": false
+      },
+      "float_tubes": {
+        "purpose": "eliminate body contact",
+        "waders_or_wetsuit_required": true
+      },
+      "self_bailing_sea_kayaks": {
+        "minimum_clothing": "short wetsuit",
+        "pre_entry_shower_required": true
+      },
+      "windsurfers_and_paddleboarders": {
+        "minimum_clothing": "short wetsuit",
+        "pre_entry_shower_minutes": 2
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
