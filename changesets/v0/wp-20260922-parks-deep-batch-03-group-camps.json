@@ -1,0 +1,468 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260922-parks-deep-batch-03-group-camps",
+  "operations": [
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-coyote-hills-dairy-glen-profile",
+      "path": "canonical/v0/claims/claim-coyote-hills-dairy-glen-profile.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-coyote-hills-dairy-glen-reserveamerica",
+      "path": "canonical/v0/claims/claim-coyote-hills-dairy-glen-reserveamerica.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-fern-dell-parking",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-fern-dell-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-girls-camp-parking",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-girls-camp-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-group-camps-official",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-group-camps-official.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-group-camps-reserveamerica",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-group-camps-reserveamerica.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-seasonal-closure-2026-2027",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-seasonal-closure-2026-2027.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "claim",
+      "record_id": "claim-reinhardt-redwood-trails-end-parking",
+      "path": "canonical/v0/claims/claim-reinhardt-redwood-trails-end-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-coyote-hills-110453",
+      "path": "canonical/v0/entities/facility-reserveamerica-coyote-hills-110453.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "facility-reserveamerica-reinhardt-redwood-110458",
+      "path": "canonical/v0/entities/facility-reserveamerica-reinhardt-redwood-110458.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-coyote-hills-dairy-glen",
+      "path": "canonical/v0/entities/group-camp-coyote-hills-dairy-glen.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-reinhardt-redwood-fern-dell",
+      "path": "canonical/v0/entities/group-camp-reinhardt-redwood-fern-dell.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-reinhardt-redwood-girls-camp",
+      "path": "canonical/v0/entities/group-camp-reinhardt-redwood-girls-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "entity",
+      "record_id": "group-camp-reinhardt-redwood-trails-end",
+      "path": "canonical/v0/entities/group-camp-reinhardt-redwood-trails-end.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-coyote-hills-dairy-glen-official-profile",
+      "path": "canonical/v0/evidence/evidence-coyote-hills-dairy-glen-official-profile.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-coyote-hills-dairy-glen-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-coyote-hills-dairy-glen-reserveamerica.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-fern-dell-parking",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-fern-dell-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-girls-camp-parking",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-girls-camp-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-group-camps-official",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-group-camps-official.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-group-camps-reserveamerica",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-group-camps-reserveamerica.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-seasonal-closure",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-seasonal-closure.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "evidence",
+      "record_id": "evidence-reinhardt-redwood-trails-end-parking",
+      "path": "canonical/v0/evidence/evidence-reinhardt-redwood-trails-end-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "gap",
+      "record_id": "gap-coyote-hills-dairy-glen-booking-product",
+      "path": "canonical/v0/gaps/gap-coyote-hills-dairy-glen-booking-product.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "gap",
+      "record_id": "gap-reinhardt-redwood-group-camp-capacities",
+      "path": "canonical/v0/gaps/gap-reinhardt-redwood-group-camp-capacities.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-coyote-hills-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-coyote-hills-camping-20260922.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-ebrpd-reinhardt-redwood-camping-20260922",
+      "path": "canonical/v0/observations/observation-ebrpd-reinhardt-redwood-camping-20260922.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-coyote-hills-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-coyote-hills-20260922.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "observation",
+      "record_id": "observation-reserveamerica-reinhardt-redwood-20260922",
+      "path": "canonical/v0/observations/observation-reserveamerica-reinhardt-redwood-20260922.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-coyote-hills-dairy-glen-in-park",
+      "path": "canonical/v0/relationships/relationship-coyote-hills-dairy-glen-in-park.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reinhardt-redwood-fern-dell-in-park",
+      "path": "canonical/v0/relationships/relationship-reinhardt-redwood-fern-dell-in-park.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reinhardt-redwood-girls-camp-in-park",
+      "path": "canonical/v0/relationships/relationship-reinhardt-redwood-girls-camp-in-park.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reinhardt-redwood-trails-end-in-park",
+      "path": "canonical/v0/relationships/relationship-reinhardt-redwood-trails-end-in-park.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110453-books-dairy-glen",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110453-books-dairy-glen.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110458-books-fern-dell",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110458-books-fern-dell.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110458-books-girls-camp",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110458-books-girls-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "relationship",
+      "record_id": "relationship-reserveamerica-110458-books-trails-end",
+      "path": "canonical/v0/relationships/relationship-reserveamerica-110458-books-trails-end.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-coyote-hills-dairy-glen-booking-lead",
+      "path": "canonical/v0/rules/rule-coyote-hills-dairy-glen-booking-lead.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-coyote-hills-dairy-glen-capacity",
+      "path": "canonical/v0/rules/rule-coyote-hills-dairy-glen-capacity.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-coyote-hills-dairy-glen-hike-in",
+      "path": "canonical/v0/rules/rule-coyote-hills-dairy-glen-hike-in.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-fern-dell-parking",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-fern-dell-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-girls-camp-parking",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-girls-camp-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-group-camp-booking-lead",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-group-camp-booking-lead.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-no-site-driving",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-no-site-driving.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-stay-limit",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-stay-limit.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "rule",
+      "record_id": "rule-reinhardt-redwood-trails-end-parking",
+      "path": "canonical/v0/rules/rule-reinhardt-redwood-trails-end-parking.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-coyote-hills-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-coyote-hills-campsites.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "source",
+      "record_id": "source-reserveamerica-reinhardt-redwood-campsites",
+      "path": "canonical/v0/sources/source-reserveamerica-reinhardt-redwood-campsites.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-coyote-hills-dairy-glen-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-coyote-hills-dairy-glen-group-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-reinhardt-redwood-fern-dell-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-reinhardt-redwood-fern-dell-group-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-reinhardt-redwood-girls-camp-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-reinhardt-redwood-girls-camp-group-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    },
+    {
+      "action": "ADD",
+      "record_type": "spatial_scope",
+      "record_id": "scope-reinhardt-redwood-trails-end-group-camp",
+      "path": "canonical/v0/spatial_scopes/scope-reinhardt-redwood-trails-end-group-camp.json",
+      "reason": "Publish source-backed Coyote Hills and Reinhardt Redwood group-camp knowledge through the existing canonical lifecycle.",
+      "evidence_refs": [],
+      "knowledge_gap_refs": []
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Deepen Dairy Glen and Reinhardt Redwood group-camp access, parking, season, and booking knowledge while preserving unresolved product and capacity details."
+}
