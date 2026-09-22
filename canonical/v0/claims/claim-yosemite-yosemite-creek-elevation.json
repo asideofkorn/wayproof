@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-yosemite-creek-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-yosemite-creek-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-yosemite-creek"
+    ],
+    "subject_id": "campground-yosemite-yosemite-creek",
+    "temporal_scope": null,
+    "value": 7700
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

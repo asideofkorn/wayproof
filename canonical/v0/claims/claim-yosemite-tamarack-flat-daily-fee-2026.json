@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-tamarack-flat-daily-fee-2026",
+    "evidence_ids": [
+      "evidence-yosemite-tamarack-flat-daily-fee-2026"
+    ],
+    "predicate": "published_daily_fee",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-tamarack-flat"
+    ],
+    "subject_id": "campground-yosemite-tamarack-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "amount_usd": 24,
+      "basis": "per site"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

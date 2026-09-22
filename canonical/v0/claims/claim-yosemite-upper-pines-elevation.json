@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-upper-pines-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-upper-pines-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-upper-pines"
+    ],
+    "subject_id": "campground-yosemite-upper-pines",
+    "temporal_scope": null,
+    "value": 4000
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

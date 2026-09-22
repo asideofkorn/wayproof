@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-camping-limit",
+    "evidence_ids": [
+      "evidence-yosemite-campground-camping-limit"
+    ],
+    "predicate": "camping_stay_limit",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "calendar_year_nights": 30,
+      "maximum_of_seasonal_nights_in_yosemite_valley_or_wawona": 7,
+      "may_1_through_september_15_nights": 14
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-crane-flat-site-inventory-2026"
+    ],
+    "object_id": "campground-yosemite-crane-flat",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-developed-campgrounds-contains-crane-flat",
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

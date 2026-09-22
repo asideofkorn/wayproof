@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-camp-4-operating-dates-2026",
+    "evidence_ids": [
+      "evidence-yosemite-camp-4-operating-dates-2026"
+    ],
+    "predicate": "tentative_operating_dates",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-camp-4"
+    ],
+    "subject_id": "campground-yosemite-camp-4",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "All year"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

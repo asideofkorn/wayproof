@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-wawona-horse-site-inventory-20260922",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-wawona-horse-site-inventory-20260922"
+    ],
+    "predicate": "recreation_gov_site_inventory_snapshot",
+    "spatial_scope_ids": [
+      "scope-yosemite-wawona-horse"
+    ],
+    "subject_id": "equestrian-area-yosemite-wawona-horse",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "facility_id": "10220609",
+      "public_open_records": 2,
+      "status_counts": {
+        "Open": 2
+      },
+      "total_records": 2,
+      "type_counts": {
+        "EQUESTRIAN NONELECTRIC": 2
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

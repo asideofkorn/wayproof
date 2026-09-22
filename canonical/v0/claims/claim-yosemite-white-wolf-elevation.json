@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-white-wolf-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-white-wolf-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-white-wolf"
+    ],
+    "subject_id": "campground-yosemite-white-wolf",
+    "temporal_scope": null,
+    "value": 8000
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

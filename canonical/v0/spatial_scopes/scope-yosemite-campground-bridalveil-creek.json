@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Bridalveil Creek Campground campground area.",
+    "entity_id": "campground-yosemite-bridalveil-creek",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-bridalveil-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

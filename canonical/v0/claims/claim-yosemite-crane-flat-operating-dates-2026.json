@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-crane-flat-operating-dates-2026",
+    "evidence_ids": [
+      "evidence-yosemite-crane-flat-operating-dates-2026"
+    ],
+    "predicate": "tentative_operating_dates",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-crane-flat"
+    ],
+    "subject_id": "campground-yosemite-crane-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "May 21 through October 12"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

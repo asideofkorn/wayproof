@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10004177-profile"
+    ],
+    "object_id": "campground-yosemite-camp-4",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-10004177-part-of-camp-4",
+    "subject_id": "campsite-recreation-yosemite-10004177",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

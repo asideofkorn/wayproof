@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "backcountry-camp-yosemite-may-lake",
+    "kind": "backcountry_camp",
+    "name": "Backcountry Campground near May Lake High Sierra Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

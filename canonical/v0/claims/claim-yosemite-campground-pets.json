@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-pets",
+    "evidence_ids": [
+      "evidence-yosemite-campground-pets"
+    ],
+    "predicate": "pets_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "allowed_in": "all campgrounds except Camp 4 and group campsites",
+      "conditions": [
+        "leashed",
+        "not left unattended while tied"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

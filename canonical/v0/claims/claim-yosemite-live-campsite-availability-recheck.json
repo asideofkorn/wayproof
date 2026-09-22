@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-live-campsite-availability-recheck",
+    "evidence_ids": [
+      "evidence-yosemite-live-campsite-availability-recheck"
+    ],
+    "predicate": "live_campsite_availability",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "booking_channel": "Recreation.gov",
+      "requires_current_check": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-porcupine-flat-operating-dates-2026",
+    "evidence_ids": [
+      "evidence-yosemite-porcupine-flat-operating-dates-2026"
+    ],
+    "predicate": "tentative_operating_dates",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-porcupine-flat"
+    ],
+    "subject_id": "campground-yosemite-porcupine-flat",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "June 23 through October 11"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

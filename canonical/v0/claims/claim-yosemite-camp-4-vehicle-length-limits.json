@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-camp-4-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-camp-4-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-camp-4"
+    ],
+    "subject_id": "campground-yosemite-camp-4",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": null,
+      "maximum_trailer_feet": null,
+      "notes": [
+        "walk-in tent sites only",
+        "pets not allowed"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

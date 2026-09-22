@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-north-pines-operating-dates-2026",
+    "evidence_ids": [
+      "evidence-yosemite-north-pines-operating-dates-2026"
+    ],
+    "predicate": "tentative_operating_dates",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-north-pines"
+    ],
+    "subject_id": "campground-yosemite-north-pines",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": "April 21 through October 26"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

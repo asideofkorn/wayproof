@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.recreation.gov/api/camps/campgrounds/232450/campsites",
+    "publisher": "Recreation.gov",
+    "source_id": "source-recreation-yosemite-lower-pines-campsites"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

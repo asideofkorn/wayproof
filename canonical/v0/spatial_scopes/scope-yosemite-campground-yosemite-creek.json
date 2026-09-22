@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Yosemite Creek Campground campground area.",
+    "entity_id": "campground-yosemite-yosemite-creek",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-yosemite-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

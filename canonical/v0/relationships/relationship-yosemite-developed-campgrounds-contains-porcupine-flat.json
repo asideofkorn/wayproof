@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-porcupine-flat-site-inventory-2026"
+    ],
+    "object_id": "campground-yosemite-porcupine-flat",
+    "predicate": "contains",
+    "relationship_id": "relationship-yosemite-developed-campgrounds-contains-porcupine-flat",
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

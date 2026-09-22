@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published North Pines Campground campground area.",
+    "entity_id": "campground-yosemite-north-pines",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-north-pines"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

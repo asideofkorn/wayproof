@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Hodgdon Meadow Campground campground area.",
+    "entity_id": "campground-yosemite-hodgdon-meadow",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-hodgdon-meadow"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

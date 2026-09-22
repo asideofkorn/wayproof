@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published White Wolf Campground campground area.",
+    "entity_id": "campground-yosemite-white-wolf",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-white-wolf"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

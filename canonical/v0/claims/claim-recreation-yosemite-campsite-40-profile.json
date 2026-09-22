@@ -1,0 +1,71 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-40-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-40-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-wawona"
+    ],
+    "subject_id": "campsite-recreation-yosemite-40",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/40",
+      "campsite_id": "40",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "max_num_people": "6",
+        "pets_allowed": "Yes",
+        "proximity_water": "N/A",
+        "shade": "Yes"
+      },
+      "facility_id": "232446",
+      "latitude": 37.54886172,
+      "longitude": -119.6794385,
+      "loop": "B ",
+      "name": "040",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        },
+        {
+          "maximum_length_feet": 12,
+          "name": "Trailer"
+        },
+        {
+          "maximum_length_feet": 15,
+          "name": "Pickup Camper"
+        },
+        {
+          "maximum_length_feet": 12,
+          "name": "Pop up"
+        },
+        {
+          "maximum_length_feet": null,
+          "name": "Small Tent"
+        },
+        {
+          "maximum_length_feet": 15,
+          "name": "Caravan/Camper Van"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "STANDARD NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

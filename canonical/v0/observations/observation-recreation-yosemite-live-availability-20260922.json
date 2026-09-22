@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov is the current booking and availability surface for Yosemite developed campgrounds; a published site inventory does not establish availability for future trip dates.",
+    "observation_id": "observation-recreation-yosemite-live-availability-20260922",
+    "observed_at": null,
+    "observer": "Recreation.gov",
+    "retrieved_at": "2026-09-22T00:00:00+00:00",
+    "source_id": "source-recreation-yosemite-campground-search"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

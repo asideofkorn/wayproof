@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-porcupine-flat-elevation",
+    "evidence_ids": [
+      "evidence-yosemite-porcupine-flat-elevation"
+    ],
+    "predicate": "elevation_feet",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-porcupine-flat"
+    ],
+    "subject_id": "campground-yosemite-porcupine-flat",
+    "temporal_scope": null,
+    "value": 8100
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

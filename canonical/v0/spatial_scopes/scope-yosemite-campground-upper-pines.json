@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The published Upper Pines Campground campground area.",
+    "entity_id": "campground-yosemite-upper-pines",
+    "kind": "campground",
+    "scope_id": "scope-yosemite-campground-upper-pines"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

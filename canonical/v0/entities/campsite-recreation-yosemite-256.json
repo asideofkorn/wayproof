@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campsite-recreation-yosemite-256",
+    "kind": "campsite",
+    "name": "Upper Pines Campground Site 024"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

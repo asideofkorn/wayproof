@@ -1,0 +1,62 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-yosemite-campsite-603-profile",
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-603-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-north-pines"
+    ],
+    "subject_id": "campsite-recreation-yosemite-603",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/603",
+      "campsite_id": "603",
+      "details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "12:00 PM",
+        "checkout_time": "12:00 PM",
+        "max_num_people": "6",
+        "min_num_people": "1",
+        "pets_allowed": "Yes"
+      },
+      "facility_id": "232449",
+      "latitude": 37.74211013,
+      "longitude": -119.5663624,
+      "loop": "North Pines",
+      "name": "208",
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": 27,
+          "name": "RV"
+        },
+        {
+          "maximum_length_feet": 18,
+          "name": "Trailer"
+        },
+        {
+          "maximum_length_feet": 27,
+          "name": "Pickup Camper"
+        },
+        {
+          "maximum_length_feet": 18,
+          "name": "Pop up"
+        }
+      ],
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-22",
+      "site_type": "RV NONELECTRIC",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-yosemite-campsite-10220611-profile"
+    ],
+    "object_id": "equestrian-area-yosemite-wawona-horse",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-campsite-10220611-part-of-wawona-horse",
+    "subject_id": "campsite-recreation-yosemite-10220611",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

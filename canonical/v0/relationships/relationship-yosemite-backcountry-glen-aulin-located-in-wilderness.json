@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-backcountry-campground-policy"
+    ],
+    "object_id": "land-yosemite-wilderness",
+    "predicate": "located_in",
+    "relationship_id": "relationship-yosemite-backcountry-glen-aulin-located-in-wilderness",
+    "subject_id": "backcountry-camp-yosemite-glen-aulin",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

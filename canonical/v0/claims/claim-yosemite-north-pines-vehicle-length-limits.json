@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-north-pines-vehicle-length-limits",
+    "evidence_ids": [
+      "evidence-yosemite-north-pines-vehicle-length-limits"
+    ],
+    "predicate": "vehicle_length_limits",
+    "spatial_scope_ids": [
+      "scope-yosemite-campground-north-pines"
+    ],
+    "subject_id": "campground-yosemite-north-pines",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "maximum_rv_feet": 40,
+      "maximum_trailer_feet": 35,
+      "notes": []
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
