@@ -1,0 +1,63 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-campground-collection",
+    "evidence_ids": [
+      "evidence-lassen-campground-collection"
+    ],
+    "predicate": "published_campground_inventory",
+    "spatial_scope_ids": [
+      "scope-lassen-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-lassen-developed",
+    "temporal_scope": null,
+    "value": [
+      {
+        "entity_id": "campground-lassen-manzanita-lake",
+        "name": "Manzanita Lake Campground"
+      },
+      {
+        "entity_id": "campground-lassen-manzanita-lake-group",
+        "name": "Manzanita Lake Group Campground"
+      },
+      {
+        "entity_id": "campground-lassen-lost-creek-group",
+        "name": "Lost Creek Group Campground"
+      },
+      {
+        "entity_id": "campground-lassen-summit-lake-north",
+        "name": "Summit Lake North Campground"
+      },
+      {
+        "entity_id": "campground-lassen-summit-lake-south",
+        "name": "Summit Lake South Campground"
+      },
+      {
+        "entity_id": "campground-lassen-southwest-walk-in",
+        "name": "Southwest Walk-In Campground"
+      },
+      {
+        "entity_id": "campground-lassen-butte-lake",
+        "name": "Butte Lake Campground"
+      },
+      {
+        "entity_id": "campground-lassen-butte-lake-group",
+        "name": "Butte Lake Group Campground"
+      },
+      {
+        "entity_id": "campground-lassen-juniper-lake",
+        "name": "Juniper Lake Campground"
+      },
+      {
+        "entity_id": "campground-lassen-juniper-lake-group",
+        "name": "Juniper Lake Group Campground"
+      },
+      {
+        "entity_id": "campground-lassen-warner-valley",
+        "name": "Warner Valley Campground"
+      }
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

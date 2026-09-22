@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-campground-food-storage",
+    "evidence_ids": [
+      "evidence-lassen-campground-food-storage"
+    ],
+    "predicate": "food_storage",
+    "spatial_scope_ids": [
+      "scope-lassen-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-lassen-developed",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-06-08"
+    },
+    "value": {
+      "allowed": [
+        "fully enclosed hard-sided vehicle",
+        "park-provided food locker",
+        "IBC-certified product"
+      ],
+      "locking_park_lockers_prohibited": true,
+      "park_lockers_may_be_shared": true,
+      "when": "not transported, consumed, prepared, or attended within six feet by an awake person"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

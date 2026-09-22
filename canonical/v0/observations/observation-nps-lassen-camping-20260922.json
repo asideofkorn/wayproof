@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes a campground collection, reservation policy, site counts and fees, but states opening and closing dates are subject to weather, road status, and public safety and points visitors to current operating sources.",
+    "observation_id": "observation-nps-lassen-camping-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-camping"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

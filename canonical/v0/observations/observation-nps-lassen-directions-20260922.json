@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Two main entrances serve opposite ends of Lassen Park Highway; three unpaved roads serve Butte Lake, Juniper Lake, and Warner Valley. Snow commonly limits roads approximately November through June.",
+    "observation_id": "observation-nps-lassen-directions-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-directions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

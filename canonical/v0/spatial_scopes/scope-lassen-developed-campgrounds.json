@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Developed park campgrounds",
+    "entity_id": "campgrounds-lassen-developed",
+    "kind": "facility_collection",
+    "scope_id": "scope-lassen-developed-campgrounds"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

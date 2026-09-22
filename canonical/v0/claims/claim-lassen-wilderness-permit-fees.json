@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-permit-fees",
+    "evidence_ids": [
+      "evidence-lassen-wilderness-permit-fees"
+    ],
+    "predicate": "published_wilderness_permit_fees",
+    "spatial_scope_ids": [
+      "scope-lassen-wilderness"
+    ],
+    "subject_id": "land-lassen-volcanic-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "administration_usd_per_permit": 6,
+      "entrance_fee_separate": true,
+      "trip_usd_per_person_age_16_plus": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

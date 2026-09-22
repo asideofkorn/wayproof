@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-lassen-warner-valley",
+    "kind": "campground",
+    "name": "Warner Valley Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

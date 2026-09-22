@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-lassen-manzanita-lake",
+    "kind": "campground",
+    "name": "Manzanita Lake Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

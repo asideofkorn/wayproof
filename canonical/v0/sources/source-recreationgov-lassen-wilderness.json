@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.recreation.gov/permits/4675334",
+    "publisher": "Recreation.gov",
+    "source_id": "source-recreationgov-lassen-wilderness"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

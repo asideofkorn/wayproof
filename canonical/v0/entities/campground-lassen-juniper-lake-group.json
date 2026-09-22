@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-lassen-juniper-lake-group",
+    "kind": "campground",
+    "name": "Juniper Lake Group Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

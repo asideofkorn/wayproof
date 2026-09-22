@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-specific-route-topology",
+    "question": "What exact trail or road traversal connects a selected entrance, campground, and wilderness objective?",
+    "reason": "This foundation does not infer route membership, trailhead connectivity, or traversal from proximity; a later route-specific source batch must model it.",
+    "related_ids": [
+      "park-lassen-volcanic-national-park",
+      "land-lassen-volcanic-wilderness"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

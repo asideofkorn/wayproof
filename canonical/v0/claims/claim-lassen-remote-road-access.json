@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-remote-road-access",
+    "evidence_ids": [
+      "evidence-lassen-remote-road-access"
+    ],
+    "predicate": "remote_road_access",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null,
+    "value": [
+      "access-lassen-butte-lake",
+      "access-lassen-juniper-lake",
+      "access-lassen-warner-valley"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

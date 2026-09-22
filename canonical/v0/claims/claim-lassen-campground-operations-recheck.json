@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-campground-operations-recheck",
+    "evidence_ids": [
+      "evidence-lassen-campground-operations-recheck"
+    ],
+    "predicate": "pretrip_campground_operations_recheck",
+    "spatial_scope_ids": [
+      "scope-lassen-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-lassen-developed",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "opening_and_closing_dates",
+        "road_access",
+        "reservation_requirements",
+        "live_inventory",
+        "fees",
+        "potable_water"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

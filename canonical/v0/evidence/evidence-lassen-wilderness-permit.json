@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-wilderness-permit",
+    "evidence_id": "evidence-lassen-wilderness-permit",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-wilderness-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

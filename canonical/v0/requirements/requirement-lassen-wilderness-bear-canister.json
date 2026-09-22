@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "IBC-certified bear-resistant container used for all regulated items.",
+    "requirement_id": "requirement-lassen-wilderness-bear-canister",
+    "rule_id": "rule-lassen-wilderness-bear-canister"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

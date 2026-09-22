@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Backcountry camping requires an online wilderness permit; permits have no quota and can be reserved up to 90 days before the trip. Approved bear-resistant containers are required April 16 through November 30 and hanging is prohibited.",
+    "observation_id": "observation-nps-lassen-wilderness-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lassen-campground-collection"
+    ],
+    "object_id": "campgrounds-lassen-developed",
+    "predicate": "contains",
+    "relationship_id": "relationship-lassen-contains-developed-campgrounds",
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

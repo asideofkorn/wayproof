@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-seasonal-road-access",
+    "evidence_ids": [
+      "evidence-lassen-seasonal-road-access"
+    ],
+    "predicate": "seasonal_road_access",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null,
+    "value": {
+      "main_road_winter_limits": [
+        "southwest entrance at Kohm Yah-mah-nee",
+        "northwest entrance at Loomis Plaza"
+      ],
+      "remote_roads": "not plowed or maintained in winter and may be gate-closed",
+      "typical_limited_period": "approximately November through June"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

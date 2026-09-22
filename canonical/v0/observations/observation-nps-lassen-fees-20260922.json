@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Seasonal seven-day entrance fees vary by mode: private vehicle $30, motorcycle $25, and person $15 April 16-November 30; each is $10 December 1-April 15. The park is cashless at entrance stations.",
+    "observation_id": "observation-nps-lassen-fees-20260922",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-22T19:00:00+00:00",
+    "source_id": "source-nps-lassen-fees"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

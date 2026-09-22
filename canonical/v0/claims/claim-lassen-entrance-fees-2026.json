@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-entrance-fees-2026",
+    "evidence_ids": [
+      "evidence-lassen-entrance-fees-2026"
+    ],
+    "predicate": "published_entrance_fees",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "apr16_nov30_usd": {
+        "motorcycle": 25,
+        "per_person_age_16_plus": 15,
+        "private_vehicle": 30
+      },
+      "cashless_entrance_stations": true,
+      "dec1_apr15_usd": {
+        "motorcycle": 10,
+        "per_person_age_16_plus": 10,
+        "private_vehicle": 10
+      },
+      "valid_days": 7
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
