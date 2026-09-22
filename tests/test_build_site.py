@@ -281,6 +281,27 @@ def test_more_group_camps_publish_without_handwritten_routes(site):
         assert (tmp_path / "knowledge" / entity_id / "index.html").exists()
 
 
+def test_briones_and_point_pinole_group_camps_publish_automatically(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "camping" / "index.json").read_text())
+    names = {item["name"] for item in payload["entities"]}
+
+    expected = {
+        "Homestead Valley Group Camp",
+        "Maud Whalen Group Camp",
+        "Wee-Ta-Chi Group Camp",
+        "Point Pinole Group Camp",
+    }
+    assert expected <= names
+    for entity_id in (
+        "group-camp-briones-homestead-valley",
+        "group-camp-briones-maud-whalen",
+        "group-camp-briones-wee-ta-chi",
+        "group-camp-point-pinole-overnight",
+    ):
+        assert (tmp_path / "knowledge" / entity_id / "index.html").exists()
+
+
 def test_changes_page_exposes_public_changeset_history(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "changes" / "index.json").read_text())
