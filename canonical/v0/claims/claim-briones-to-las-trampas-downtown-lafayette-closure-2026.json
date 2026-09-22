@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-briones-to-las-trampas-downtown-lafayette-closure-2026",
+    "evidence_ids": [
+      "evidence-briones-to-las-trampas-downtown-lafayette-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-briones-to-las-trampas-trail",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "segment": "Golden Gate Way to Moraga Boulevard in downtown Lafayette",
+      "source_updated_on": "2026-09-22",
+      "status": "closed",
+      "until": "further notice"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-delta-de-anza-regional-trail",
+    "kind": "route",
+    "name": "Delta de Anza Regional Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

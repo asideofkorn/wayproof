@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-marsh-creek-regional-trail",
+    "kind": "route",
+    "name": "Marsh Creek Regional Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

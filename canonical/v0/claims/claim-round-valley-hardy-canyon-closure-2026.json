@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-round-valley-hardy-canyon-closure-2026",
+    "evidence_ids": [
+      "evidence-round-valley-hardy-canyon-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-round-valley-regional-preserve",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "cause": "storm damage",
+      "segment": "Hardy Canyon Trail",
+      "source_updated_on": "2026-09-22",
+      "status": "closed",
+      "until": "further notice"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

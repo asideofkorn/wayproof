@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mlk-shoreline-doolittle-pier-right-dock-closure-2026",
+    "evidence_ids": [
+      "evidence-mlk-shoreline-doolittle-pier-right-dock-closure-2026"
+    ],
+    "predicate": "facility_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-martin-luther-king-jr-regional-shoreline",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "cause": "pilings need replacement",
+      "facility": "right dock, south side of Doolittle fishing pier",
+      "source_updated_on": "2026-09-22",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

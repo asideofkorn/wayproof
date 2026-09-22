@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-marsh-creek-weekday-closure-2026",
+    "evidence_id": "evidence-marsh-creek-weekday-closure-2026",
+    "notes": "Live EBRPD alert; recheck the official alerts page before travel.",
+    "observation_id": "observation-ebrpd-alerts-closures-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

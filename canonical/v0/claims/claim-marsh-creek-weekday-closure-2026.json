@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-marsh-creek-weekday-closure-2026",
+    "evidence_ids": [
+      "evidence-marsh-creek-weekday-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-marsh-creek-regional-trail",
+    "temporal_scope": {
+      "ends_on": "2026-09-22",
+      "starts_on": "2026-08-17"
+    },
+    "value": {
+      "cause": "pavement work",
+      "segment": "Creekside Park in Brentwood to East Cypress Road in Oakley",
+      "status": "closed_select_weekdays",
+      "weekends": "scheduled open"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

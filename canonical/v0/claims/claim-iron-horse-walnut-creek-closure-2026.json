@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-iron-horse-walnut-creek-closure-2026",
+    "evidence_ids": [
+      "evidence-iron-horse-walnut-creek-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [],
+    "subject_id": "route-iron-horse-regional-trail",
+    "temporal_scope": {
+      "ends_on": "2026-10-12",
+      "starts_on": "2026-10-05"
+    },
+    "value": {
+      "cause": "vegetation management and wildlife enhancement work",
+      "segment": "Mt Diablo Boulevard to Civic Park in Walnut Creek",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

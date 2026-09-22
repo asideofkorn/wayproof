@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-deer-valley-no-public-access",
+    "evidence_ids": [
+      "evidence-deer-valley-no-public-access"
+    ],
+    "predicate": "operating_status",
+    "spatial_scope_ids": [],
+    "subject_id": "park-deer-valley-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": null
+    },
+    "value": {
+      "future_work": "new trails and habitat restoration anticipated in 2027 pending permit approvals",
+      "status": "not_open_to_public"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
