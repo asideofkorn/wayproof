@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-coyote-hills-dairy-glen-booking-lead","claim_id":"claim-coyote-hills-dairy-glen-profile","conditions":[],"consequence":"Reserve Dairy Glen by phone at least three business days before arrival.","spatial_scope_ids":["scope-coyote-hills-dairy-glen-group-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}

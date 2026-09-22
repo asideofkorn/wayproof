@@ -260,6 +260,27 @@ def test_group_camps_automatically_join_camping_navigation(site):
     ).exists()
 
 
+def test_more_group_camps_publish_without_handwritten_routes(site):
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "camping" / "index.json").read_text())
+    names = {item["name"] for item in payload["entities"]}
+
+    expected = {
+        "Dairy Glen Group Camp",
+        "Trails End Group Camp",
+        "Fern Dell Group Camp",
+        "Girls Camp Group Camp",
+    }
+    assert expected <= names
+    for entity_id in (
+        "group-camp-coyote-hills-dairy-glen",
+        "group-camp-reinhardt-redwood-trails-end",
+        "group-camp-reinhardt-redwood-fern-dell",
+        "group-camp-reinhardt-redwood-girls-camp",
+    ):
+        assert (tmp_path / "knowledge" / entity_id / "index.html").exists()
+
+
 def test_changes_page_exposes_public_changeset_history(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "changes" / "index.json").read_text())

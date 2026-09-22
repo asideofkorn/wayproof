@@ -1,0 +1,1 @@
+{"artifact_format_version":1,"record":{"rule_id":"rule-coyote-hills-dairy-glen-capacity","claim_id":"claim-coyote-hills-dairy-glen-profile","conditions":[],"consequence":"Limit the Dairy Glen group to 50 people.","spatial_scope_ids":["scope-coyote-hills-dairy-glen-group-camp"],"temporal_scope":null},"record_type":"rule","schema_version":0}
