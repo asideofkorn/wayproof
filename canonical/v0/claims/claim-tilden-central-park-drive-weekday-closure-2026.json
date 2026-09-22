@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-central-park-drive-weekday-closure-2026",
+    "evidence_ids": [
+      "evidence-tilden-central-park-drive-weekday-closure-2026"
+    ],
+    "predicate": "road_access_status",
+    "spatial_scope_ids": [
+      "scope-charles-lee-tilden-regional-park"
+    ],
+    "subject_id": "park-charles-lee-tilden-regional-park",
+    "temporal_scope": {
+      "ends_on": "2026-09-25",
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "detours": [
+        "vehicles",
+        "cyclists",
+        "hikers"
+      ],
+      "facilities_at_both_ends": "open",
+      "reason": "fuels management work",
+      "segment": "between Merry-Go-Round and Meadows Picnic Area",
+      "status": "closed_weekdays",
+      "weekends": "open"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

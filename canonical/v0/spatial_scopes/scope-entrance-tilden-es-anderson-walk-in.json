@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden ES Anderson Walk-In Entrance.",
+    "entity_id": "entrance-tilden-es-anderson-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-tilden-es-anderson-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-laurel-canyon-trail-closure-2026",
+    "evidence_ids": [
+      "evidence-tilden-laurel-canyon-trail-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [
+      "scope-charles-lee-tilden-regional-park"
+    ],
+    "subject_id": "park-charles-lee-tilden-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "reason": "storm damage",
+      "segment": "upper 0.43 miles of Laurel Canyon Trail",
+      "source_updated_on": "2026-09-22",
+      "status": "closed",
+      "until": "further notice"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

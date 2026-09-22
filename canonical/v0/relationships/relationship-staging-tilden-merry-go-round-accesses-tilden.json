@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-staging-tilden-merry-go-round-access-profile"
+    ],
+    "object_id": "park-charles-lee-tilden-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-staging-tilden-merry-go-round-accesses-tilden",
+    "subject_id": "staging-tilden-merry-go-round",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

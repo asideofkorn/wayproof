@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-brazil-building-access-profile",
+    "evidence_ids": [
+      "evidence-staging-tilden-brazil-building-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-brazil-building"
+    ],
+    "subject_id": "staging-tilden-brazil-building",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.893569200261,
+      "longitude": -122.245477349538,
+      "provides_access_to": [
+        "Brazilian Room",
+        "Regional Parks Botanic Garden"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

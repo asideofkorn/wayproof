@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-tilden-nimitz-way-access-profile"
+    ],
+    "object_id": "route-east-bay-skyline-national-recreation-trail",
+    "predicate": "part_of",
+    "relationship_id": "relationship-tilden-nimitz-way-part-of-east-bay-skyline",
+    "subject_id": "route-tilden-nimitz-way",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-staging-tilden-inspiration-point-access-profile"
+    ],
+    "object_id": "park-charles-lee-tilden-regional-park",
+    "predicate": "accesses",
+    "relationship_id": "relationship-staging-tilden-inspiration-point-accesses-tilden",
+    "subject_id": "staging-tilden-inspiration-point",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

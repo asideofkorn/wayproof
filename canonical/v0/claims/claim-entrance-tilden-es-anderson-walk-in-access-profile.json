@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-tilden-es-anderson-walk-in-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-tilden-es-anderson-walk-in-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-tilden-es-anderson-walk-in"
+    ],
+    "subject_id": "entrance-tilden-es-anderson-walk-in",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "walk-in",
+      "latitude": 37.8982151386868,
+      "longitude": -122.247115651389,
+      "provides_access_to": [
+        "ES Anderson Equestrian Camp",
+        "Tilden Nature Area"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-tilden-brazil-building",
+    "kind": "staging_area",
+    "name": "Tilden Brazil Building Staging Area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

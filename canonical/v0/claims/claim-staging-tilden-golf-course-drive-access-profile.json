@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-golf-course-drive-access-profile",
+    "evidence_ids": [
+      "evidence-staging-tilden-golf-course-drive-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-golf-course-drive"
+    ],
+    "subject_id": "staging-tilden-golf-course-drive",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.8833471680603,
+      "longitude": -122.245362183777,
+      "provides_access_to": [
+        "Tilden Park Golf Course",
+        "trails"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

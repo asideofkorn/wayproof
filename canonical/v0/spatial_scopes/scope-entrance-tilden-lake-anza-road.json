@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Lake Anza Road Entrance.",
+    "entity_id": "entrance-tilden-lake-anza-road",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-tilden-lake-anza-road"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

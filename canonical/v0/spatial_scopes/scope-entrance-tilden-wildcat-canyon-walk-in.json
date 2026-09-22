@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Wildcat Canyon Road Walk-In Entrance.",
+    "entity_id": "entrance-tilden-wildcat-canyon-walk-in",
+    "kind": "entrance",
+    "scope_id": "scope-entrance-tilden-wildcat-canyon-walk-in"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

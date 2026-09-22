@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-tilden-inspiration-point",
+    "kind": "staging_area",
+    "name": "Tilden Inspiration Point Parking Lot"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

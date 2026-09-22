@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "staging-tilden-south-park-willows",
+    "kind": "staging_area",
+    "name": "Tilden South Park Drive Staging Area at Willows"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

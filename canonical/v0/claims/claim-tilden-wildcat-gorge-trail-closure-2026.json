@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-wildcat-gorge-trail-closure-2026",
+    "evidence_ids": [
+      "evidence-tilden-wildcat-gorge-trail-closure-2026"
+    ],
+    "predicate": "trail_access_status",
+    "spatial_scope_ids": [
+      "scope-charles-lee-tilden-regional-park"
+    ],
+    "subject_id": "park-charles-lee-tilden-regional-park",
+    "temporal_scope": {
+      "ends_on": null,
+      "starts_on": "2026-09-22"
+    },
+    "value": {
+      "planned_reopening": "January 2027",
+      "reason": "Wildcat Creek restoration",
+      "segment": "Wildcat Gorge Trail near Brook Road",
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

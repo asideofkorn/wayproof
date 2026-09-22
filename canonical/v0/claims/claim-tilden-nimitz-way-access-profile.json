@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tilden-nimitz-way-access-profile",
+    "evidence_ids": [
+      "evidence-tilden-nimitz-way-access-profile"
+    ],
+    "predicate": "route_access_profile",
+    "spatial_scope_ids": [
+      "scope-staging-tilden-inspiration-point"
+    ],
+    "subject_id": "route-tilden-nimitz-way",
+    "temporal_scope": null,
+    "value": {
+      "best_parking": "Tilden Inspiration Point Parking Lot",
+      "dogs_must_be_leashed": true,
+      "drinking_water_at_staging": false,
+      "surface": "paved",
+      "uses": [
+        "hiking",
+        "bicycling",
+        "equestrian"
+      ],
+      "wheelchair_accessible": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

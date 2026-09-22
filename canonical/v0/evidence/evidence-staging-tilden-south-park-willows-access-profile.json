@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-staging-tilden-south-park-willows-access-profile",
+    "evidence_id": "evidence-staging-tilden-south-park-willows-access-profile",
+    "notes": "Official Tilden access listing and linked map coordinate; destination mapping comes from the park's To Reach The Park guidance.",
+    "observation_id": "observation-ebrpd-tilden-gps-coordinates-20260922",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

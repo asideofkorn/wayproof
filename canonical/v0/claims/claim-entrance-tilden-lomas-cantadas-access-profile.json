@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-entrance-tilden-lomas-cantadas-access-profile",
+    "evidence_ids": [
+      "evidence-entrance-tilden-lomas-cantadas-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-entrance-tilden-lomas-cantadas"
+    ],
+    "subject_id": "entrance-tilden-lomas-cantadas",
+    "temporal_scope": null,
+    "value": {
+      "access_mode": "vehicle",
+      "latitude": 37.879848538187,
+      "longitude": -122.221638995504,
+      "provides_access_to": [
+        "Steam Trains",
+        "Vollmer Peak"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The official mapped location for Tilden Merry-Go-Round Staging Area.",
+    "entity_id": "staging-tilden-merry-go-round",
+    "kind": "staging_area",
+    "scope_id": "scope-staging-tilden-merry-go-round"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
