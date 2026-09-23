@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-boiling-springs-lake-trail-profile"
+    ],
+    "object_id": "waterbody-boiling-springs-lake",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-boiling-springs-lake-trail-ends-at-waterbody-boiling-springs-lake",
+    "subject_id": "route-boiling-springs-lake-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

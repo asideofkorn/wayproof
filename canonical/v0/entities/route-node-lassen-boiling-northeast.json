@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-lassen-boiling-northeast",
+    "kind": "route_node",
+    "name": "Boiling Springs Lake northeast junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

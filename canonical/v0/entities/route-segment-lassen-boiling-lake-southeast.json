@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-boiling-lake-southeast",
+    "kind": "route_segment",
+    "name": "Boiling Springs Lake to southeast junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

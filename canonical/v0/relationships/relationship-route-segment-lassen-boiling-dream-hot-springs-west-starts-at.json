@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lassen-boiling-dream-hot-springs-west"
+    ],
+    "object_id": "route-node-lassen-dream-devils-junction",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-lassen-boiling-dream-hot-springs-west-starts-at",
+    "subject_id": "route-segment-lassen-boiling-dream-hot-springs-west",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

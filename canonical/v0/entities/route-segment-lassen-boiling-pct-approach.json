@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-boiling-pct-approach",
+    "kind": "route_segment",
+    "name": "PCT to Boiling Springs approach split"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

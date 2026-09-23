@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-lassen-pct-hot-springs",
+    "kind": "route_node",
+    "name": "PCT and Hot Springs Creek junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
