@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0",
+    "publisher": "National Park Service",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

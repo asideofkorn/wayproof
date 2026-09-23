@@ -14,6 +14,7 @@ from .planning_inputs import PlanningInputProjection, project_planning_inputs
 from .readiness import TripReadiness, evaluate_trip_readiness
 from .recheck import PretripRecheck, evaluate_pretrip_recheck
 from .requirements import RequirementEvaluation, evaluate_requirements
+from .route_geometry import RouteGeometryService
 from .schema import (ChangeAction, Claim, Entity, Evidence, Fulfillment,
                      KnowledgeGap, Observation, PlanningContext, Relationship,
                      Source, SpatialScope, TripIntent)
@@ -185,3 +186,7 @@ class CanonicalReadService:
                         result_id: str = "result-del-valle-pretrip-recheck"
                         ) -> PretripRecheck:
         return evaluate_pretrip_recheck(self._records, context, result_id)
+
+    def route_geometry(self, route_id: str, as_of: date) -> dict | None:
+        """Project reviewed source geometry through canonical route topology."""
+        return RouteGeometryService(self._root, self).route(route_id, as_of)

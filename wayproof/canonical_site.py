@@ -222,7 +222,9 @@ def _claim_bundle(reads: CanonicalReadService, claim) -> dict:
     }
 
 
-def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
+def entity_payload(reads: CanonicalReadService, entity_id: str,
+                   route_geometry: dict | None = None,
+                   geometry_url: str | None = None) -> dict:
     """Build one transport-neutral entity view exclusively through read APIs."""
     entity = reads.entity(entity_id)
     claims = []
@@ -244,7 +246,64 @@ def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
         "relationships": reads.relationships_for(entity_id),
         "knowledge_gaps": tuple(gaps_by_id.values()),
         "history": history,
+        "route_geometry": route_geometry,
+        "route_geometry_url": geometry_url,
     })
+
+
+def _route_map_html(geometry: dict, geometry_url: str) -> str:
+    """Render a dependency-free overview from generated route GeoJSON."""
+    features = geometry["features"]
+    points = [point for feature in features
+              for point in feature["geometry"]["coordinates"]]
+    longitudes = [point[0] for point in points]
+    latitudes = [point[1] for point in points]
+    min_x, max_x = min(longitudes), max(longitudes)
+    min_y, max_y = min(latitudes), max(latitudes)
+    width, height, padding = 760.0, 420.0, 34.0
+    scale = min(
+        (width - 2 * padding) / max(max_x - min_x, 1e-9),
+        (height - 2 * padding) / max(max_y - min_y, 1e-9),
+    )
+    used_width = (max_x - min_x) * scale
+    used_height = (max_y - min_y) * scale
+    offset_x = (width - used_width) / 2
+    offset_y = (height - used_height) / 2
+
+    def project(point: list[float]) -> tuple[float, float]:
+        return (offset_x + (point[0] - min_x) * scale,
+                offset_y + (max_y - point[1]) * scale)
+
+    paths = []
+    for feature in features:
+        coordinates = feature["geometry"]["coordinates"]
+        path = " ".join(
+            ("M" if index == 0 else "L") + f" {x:.2f} {y:.2f}"
+            for index, (x, y) in enumerate(map(project, coordinates))
+        )
+        properties = feature["properties"]
+        paths.append(
+            f'<path d="{path}"><title>Segment {properties["sequence"]}: '
+            f'{_e(properties["distance_miles"])} miles</title></path>'
+        )
+    start_x, start_y = project(points[0])
+    end_x, end_y = project(points[-1])
+    total = geometry["wayproof"]["distance_miles"]
+    return (
+        '<section id="route-map" class="route-map"><h2>Route map</h2>'
+        '<p>This overview is built from a reviewed, versioned source snapshot. '
+        'It is planning evidence, not navigation-grade mapping.</p>'
+        f'<svg viewBox="0 0 {width:.0f} {height:.0f}" role="img" '
+        'aria-label="Evidence-backed route overview">'
+        '<g class="route-lines">' + "".join(paths) + '</g>'
+        f'<circle class="route-start" cx="{start_x:.2f}" cy="{start_y:.2f}" r="7"/>'
+        f'<circle class="route-end" cx="{end_x:.2f}" cy="{end_y:.2f}" r="8"/>'
+        '</svg><div class="route-map-legend">'
+        f'<span><i class="start-dot"></i>Start</span><span><i class="end-dot"></i>Destination</span>'
+        f'<span>{_e(round(total, 2))} miles one way</span></div>'
+        f'<p class="meta"><a href="{_e(geometry_url)}">Download generated GeoJSON</a> · '
+        f'{len(features)} canonical segments · source geometry accuracy not reported</p></section>'
+    )
 
 
 def del_valle_destination_payload(reads: CanonicalReadService,
@@ -644,10 +703,15 @@ def render_entity_html(payload: dict, site_url: str,
         f'{"" if len(payload["relationships"]) == 1 else "s"}, and explicit uncertainty.</p>',
         '</header>',
         '<ul class="section-nav" aria-label="On this page">'
-        '<li><a href="#plan">Plan</a></li><li><a href="#explore">Explore</a></li>'
+        + ('<li><a href="#route-map">Map</a></li>' if payload["route_geometry"] else '')
+        + '<li><a href="#plan">Plan</a></li><li><a href="#explore">Explore</a></li>'
         '<li><a href="#before-you-go">Before you go</a></li>'
         '<li><a href="#evidence">Evidence</a></li></ul>',
     ]
+    if payload["route_geometry"]:
+        body.append(_route_map_html(
+            payload["route_geometry"], payload["route_geometry_url"]
+        ))
     if summary:
         body.append('<section aria-labelledby="at-a-glance"><h2 id="at-a-glance">At a glance</h2>'
                     '<div class="summary-grid">')
@@ -961,7 +1025,17 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     knowledge_dir = output_dir / "knowledge"
     knowledge_dir.mkdir(parents=True, exist_ok=True)
     for entity in entities:
-        payload = entity_payload(reads, entity["entity_id"])
+        geometry = (reads.route_geometry(entity["entity_id"], as_of)
+                    if entity["kind"] == "route" else None)
+        geometry_url = None
+        if geometry:
+            geometry_url = f'/geometry/routes/{entity["entity_id"]}.geojson'
+            geometry_path = output_dir / geometry_url.removeprefix("/")
+            geometry_path.parent.mkdir(parents=True, exist_ok=True)
+            geometry_path.write_text(_json(geometry), encoding="utf-8")
+        payload = entity_payload(
+            reads, entity["entity_id"], geometry, geometry_url
+        )
         page_dir = knowledge_dir / entity["entity_id"]
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / "index.html").write_text(

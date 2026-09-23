@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-segment-cinder-trailhead-nobles-junction",
     "evidence_ids": [
-      "evidence-cinder-trailhead-nobles-junction"
+      "evidence-cinder-trailhead-nobles-junction",
+      "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry"
     ],
     "predicate": "official_dataset_route_segment",
     "spatial_scope_ids": [
@@ -21,6 +22,15 @@
       "end_coordinate": {
         "latitude": 40.5600241,
         "longitude": -121.3069839
+      },
+      "geometry_snapshot": {
+        "feature_id": "{F278D5AC-344D-4BB8-B2F3-3451B9FCF776}",
+        "media_type": "application/geo+json",
+        "navigation_grade": false,
+        "normalized_coordinate_reference_system": "EPSG:4326",
+        "path": "geometry/v0/snapshots/nps-lavo-cinder-cone-approach-20260923.geojson",
+        "sha256": "50d218a1cec59453ce4e12aa84a9a0f9768914c10faa715e307b32db764c4b6a",
+        "source_coordinate_reference_system": "EPSG:4269"
       },
       "operational_status_requires_current_check": true,
       "route_role": "official_mainline",

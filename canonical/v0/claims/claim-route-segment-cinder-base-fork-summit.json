@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-segment-cinder-base-fork-summit",
     "evidence_ids": [
-      "evidence-cinder-base-fork-summit"
+      "evidence-cinder-base-fork-summit",
+      "evidence-route-segment-cinder-base-fork-summit-nps-geometry"
     ],
     "predicate": "official_dataset_route_segment",
     "spatial_scope_ids": [
@@ -21,6 +22,15 @@
       "end_coordinate": {
         "latitude": 40.5482623,
         "longitude": -121.321298
+      },
+      "geometry_snapshot": {
+        "feature_id": "{620A4923-7C20-446B-B8B4-3D05C5F6EFA4}",
+        "media_type": "application/geo+json",
+        "navigation_grade": false,
+        "normalized_coordinate_reference_system": "EPSG:4326",
+        "path": "geometry/v0/snapshots/nps-lavo-cinder-cone-approach-20260923.geojson",
+        "sha256": "50d218a1cec59453ce4e12aa84a9a0f9768914c10faa715e307b32db764c4b6a",
+        "source_coordinate_reference_system": "EPSG:4269"
       },
       "operational_status_requires_current_check": true,
       "route_role": "official_mainline",

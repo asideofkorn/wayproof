@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-segment-cinder-nobles-junction-base-fork",
     "evidence_ids": [
-      "evidence-cinder-nobles-junction-base-fork"
+      "evidence-cinder-nobles-junction-base-fork",
+      "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry"
     ],
     "predicate": "official_dataset_route_segment",
     "spatial_scope_ids": [
@@ -21,6 +22,15 @@
       "end_coordinate": {
         "latitude": 40.5525129,
         "longitude": -121.3190095
+      },
+      "geometry_snapshot": {
+        "feature_id": "{02F2A299-CEE6-421E-A859-4FA49B107830}",
+        "media_type": "application/geo+json",
+        "navigation_grade": false,
+        "normalized_coordinate_reference_system": "EPSG:4326",
+        "path": "geometry/v0/snapshots/nps-lavo-cinder-cone-approach-20260923.geojson",
+        "sha256": "50d218a1cec59453ce4e12aa84a9a0f9768914c10faa715e307b32db764c4b6a",
+        "source_coordinate_reference_system": "EPSG:4269"
       },
       "operational_status_requires_current_check": true,
       "route_role": "official_mainline",

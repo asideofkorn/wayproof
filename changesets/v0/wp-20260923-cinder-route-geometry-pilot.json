@@ -1,0 +1,101 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-cinder-route-geometry-pilot",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry",
+        "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry",
+        "evidence-route-segment-cinder-base-fork-summit-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-public-trails-feature-service.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "source-nps-public-trails-feature-service",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry",
+        "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry",
+        "evidence-route-segment-cinder-base-fork-summit-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-cinder-cone-20260923.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "observation-nps-public-trails-cinder-cone-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-base-fork-summit-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-cinder-base-fork-summit-nps-geometry.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "evidence-route-segment-cinder-base-fork-summit-nps-geometry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-trailhead-nobles-junction-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-trailhead-nobles-junction.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "claim-route-segment-cinder-trailhead-nobles-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-nobles-junction-base-fork-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-nobles-junction-base-fork.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "claim-route-segment-cinder-nobles-junction-base-fork",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-segment-cinder-base-fork-summit-nps-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-base-fork-summit.json",
+      "reason": "Reference the reviewed NPS source-geometry snapshot for the published Cinder Cone approach so consumers can reproduce its map without live network access.",
+      "record_id": "claim-route-segment-cinder-base-fork-summit",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish the reviewed Cinder Cone route-geometry snapshot references for reproducible maps."
+}
