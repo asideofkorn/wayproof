@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-cinder-trailhead-nobles-junction",
+    "evidence_ids": [
+      "evidence-cinder-trailhead-nobles-junction"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-cinder-cone-trail"
+    ],
+    "subject_id": "route-segment-cinder-trailhead-nobles-junction",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "cf935092-79f2-4a53-b21b-c53e5be92029",
+      "dataset_feature_name": "Nobles Emigrant Trail",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.38508471,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 40.5600241,
+        "longitude": -121.3069839
+      },
+      "operational_status_requires_current_check": true,
+      "route_role": "official_mainline",
+      "source_data_description": "NPS Trails 11/2019",
+      "source_load_date": "2019-12-10T07:53:56.000",
+      "source_mode_attributes": {
+        "bicycle": "No",
+        "hiker_pedestrian": "Yes",
+        "pack_saddle": "Yes"
+      },
+      "source_originator": "National Park Service",
+      "start_coordinate": {
+        "latitude": 40.5638179,
+        "longitude": -121.3022149
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official USGS Topo Vector trail layer connects the NPS Cinder Cone trailhead coordinate to the cone base with one Nobles Emigrant Trail feature and one Butte Lake To Snag Lake Trail feature, then connects the base to the summit approach with one Cinder Cone Trail feature. Twenty-two additional Cinder Cone Trail features form branched rim, crater, and other-side topology whose visitor roles are not uniquely named in the dataset. Dataset publication warns that temporal changes may have occurred.",
+    "observation_id": "observation-usgs-topo-vector-cinder-cone-trails-20250729-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T16:00:00+00:00",
+    "source_id": "source-usgs-topo-vector-prospect-peak-20250729"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

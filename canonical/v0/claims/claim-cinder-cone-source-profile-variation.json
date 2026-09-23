@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cinder-cone-source-profile-variation",
+    "evidence_ids": [
+      "evidence-cinder-cone-source-profile-variation",
+      "evidence-cinder-cone-source-profile-variation-nps"
+    ],
+    "predicate": "source_profile_variation",
+    "spatial_scope_ids": [
+      "scope-route-cinder-cone-trail"
+    ],
+    "subject_id": "route-cinder-cone-trail",
+    "temporal_scope": null,
+    "value": {
+      "dataset_approach_to_base_miles": 1.24854719,
+      "dataset_out_and_back_miles": 3.1659347,
+      "dataset_trailhead_to_summit_approach_miles": 1.58296735,
+      "nps_published_base_one_way_miles": 1.2,
+      "nps_published_summit_round_trip_miles": 4,
+      "resolution": "preserve both; do not infer which rim or crater circulation accounts for the difference"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

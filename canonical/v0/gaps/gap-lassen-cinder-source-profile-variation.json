@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-cinder-source-profile-variation",
+    "question": "Why does the official four-mile summit round trip exceed twice the selected official dataset approach distance?",
+    "reason": "NPS publishes a four-mile summit round trip, while the three selected official vector features total 1.58296735 miles one way. The difference may reflect rounding or additional rim/crater circulation, but the sources do not state how it is allocated. Consumers should preserve both profiles rather than force equality.",
+    "related_ids": [
+      "route-cinder-cone-trail",
+      "claim-cinder-cone-source-profile-variation"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

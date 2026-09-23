@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cinder-cone-route-detail",
+    "evidence_ids": [
+      "evidence-cinder-cone-route-detail"
+    ],
+    "predicate": "published_route_description",
+    "spatial_scope_ids": [
+      "scope-route-cinder-cone-trail"
+    ],
+    "subject_id": "route-cinder-cone-trail",
+    "temporal_scope": null,
+    "value": {
+      "base_fork_miles_from_trailhead": 1.2,
+      "base_round_trip_miles": 2.4,
+      "crater_trail_is_additional": true,
+      "route_to_summit": "take the left/south trail at the base fork and continue to the top",
+      "summit_round_trip_miles": 4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

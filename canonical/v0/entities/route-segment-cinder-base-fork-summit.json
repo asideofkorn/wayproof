@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-cinder-base-fork-summit",
+    "kind": "route_segment",
+    "name": "Cinder Cone base fork to summit approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

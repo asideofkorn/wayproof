@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cinder-cone-official-trailhead-coordinate",
+    "evidence_id": "evidence-cinder-cone-official-trailhead-coordinate",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-cinder-cone-map-20210331-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://prd-tnm.s3.amazonaws.com/StagedProducts/TopoMapVector/CA/GPKG/VECTOR_Prospect_Peak_CA_7_5_Min_GPKG.zip",
+    "publisher": "U.S. Geological Survey",
+    "source_id": "source-usgs-topo-vector-prospect-peak-20250729"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

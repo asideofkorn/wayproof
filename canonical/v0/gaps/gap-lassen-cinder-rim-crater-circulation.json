@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-cinder-rim-crater-circulation",
+    "question": "Which exact Cinder Cone vector branches represent the recommended summit circulation, rim paths, and separate crater descent?",
+    "reason": "The official dataset preserves 22 additional Cinder Cone Trail features beyond the selected trailhead-to-summit approach. They form nested and parallel rim, crater, and other-side branches, but neither the feature attributes nor the NPS prose uniquely assigns every atomic feature to a visitor role. Wayproof preserves the complete approach and does not guess the remaining circuit.",
+    "related_ids": [
+      "route-cinder-cone-trail",
+      "peak-cinder-cone",
+      "claim-cinder-cone-source-profile-variation"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

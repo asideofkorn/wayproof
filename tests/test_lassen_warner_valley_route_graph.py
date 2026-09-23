@@ -88,7 +88,10 @@ def test_remaining_lassen_topology_gap_is_narrowed_not_erased():
 
     assert "ordered, bidirectional Warner Valley topology" in gap.reason
     assert "atomic leg distances remain unknown" in gap.reason
-    assert "route-cinder-cone-trail" in gap.related_ids
+    assert "route-cinder-cone-trail" not in gap.related_ids
+    assert "route-cinder-cone-trail" in gaps[
+        "gap-lassen-cinder-rim-crater-circulation"
+    ].related_ids
 
 
 def test_warner_valley_graph_is_one_validated_changeset():
