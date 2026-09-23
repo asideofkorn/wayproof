@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-west-approach-0",
+      "evidence-whitney-west-approach-1"
+    ],
+    "object_id": "route-high-sierra-trail",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-whitney-approached-high-sierra",
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

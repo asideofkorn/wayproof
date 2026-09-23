@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.peakbagger.com/peak.aspx?pid=2829",
+    "publisher": "Peakbagger.com",
+    "source_id": "source-peakbagger-mount-whitney"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

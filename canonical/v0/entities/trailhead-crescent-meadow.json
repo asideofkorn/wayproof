@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-crescent-meadow",
+    "kind": "trailhead",
+    "name": "Crescent Meadow Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The USGS state high-point table identifies Mount Whitney in Inyo–Tulare as California's highest point and publishes an elevation of 14,494 feet.",
+    "observation_id": "observation-usgs-highest-lowest-elevations-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T01:00:00+00:00",
+    "source_id": "source-usgs-highest-lowest-elevations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

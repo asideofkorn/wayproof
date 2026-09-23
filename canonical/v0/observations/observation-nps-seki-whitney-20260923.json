@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies Mount Whitney as the tallest peak in the lower 48, on the Sequoia National Park–Inyo National Forest boundary. It publishes a 14,505-foot NAVD88 summit elevation, the 10.7-mile Whitney Portal approach, seasonal equipment qualification, and a roughly 60-mile west-side High Sierra Trail approach.",
+    "observation_id": "observation-nps-seki-whitney-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T01:00:00+00:00",
+    "source_id": "source-nps-seki-whitney"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

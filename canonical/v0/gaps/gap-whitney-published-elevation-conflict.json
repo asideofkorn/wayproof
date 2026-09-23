@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-whitney-published-elevation-conflict",
+    "question": "Which published Mount Whitney elevation should a consumer display?",
+    "reason": "Current NPS, USGS, and a 2026 Peakbagger-reported GNSS measurement publish materially different elevations with different methods and contexts; preserve each value and its provenance rather than silently selecting one.",
+    "related_ids": [
+      "claim-whitney-nps-elevation",
+      "claim-whitney-usgs-elevation",
+      "claim-whitney-peakbagger-measurement"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

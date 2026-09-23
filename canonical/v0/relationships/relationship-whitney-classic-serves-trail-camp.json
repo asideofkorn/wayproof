@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-west-approach-0",
+      "evidence-whitney-west-approach-1"
+    ],
+    "object_id": "camp-mount-whitney-trail",
+    "predicate": "serves",
+    "relationship_id": "relationship-whitney-classic-serves-trail-camp",
+    "subject_id": "route-mount-whitney-classic",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes the High Sierra Trail as a west-side Mount Whitney approach: 49 miles to the JMT junction plus about 13 miles to the summit, with a High Sierra Trail wilderness permit required and a detailed sequence including Guitar Lake, the summit, Trail Camp, Outpost Camp, and Whitney Portal.",
+    "observation_id": "observation-nps-seki-high-sierra-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T01:00:00+00:00",
+    "source_id": "source-nps-seki-high-sierra-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

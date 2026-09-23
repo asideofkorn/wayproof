@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-current-conditions-recheck",
+    "evidence_ids": [
+      "evidence-whitney-current-conditions-recheck-2"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "trail_and_road_access",
+        "snow_and_ice",
+        "water",
+        "closures",
+        "weather_and_exposure"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

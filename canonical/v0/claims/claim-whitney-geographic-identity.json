@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-geographic-identity",
+    "evidence_ids": [
+      "evidence-whitney-geographic-identity-0",
+      "evidence-whitney-geographic-identity-3"
+    ],
+    "predicate": "geographic_identity",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "county_boundary": [
+        "Inyo County",
+        "Tulare County"
+      ],
+      "highest_point_of": [
+        "California",
+        "Sierra Nevada",
+        "contiguous United States"
+      ],
+      "land_boundary": [
+        "Sequoia National Park",
+        "Inyo National Forest"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

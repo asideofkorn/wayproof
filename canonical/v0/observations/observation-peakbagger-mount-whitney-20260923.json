@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Peakbagger reports 14,500.7 feet NAVD88 from a May 9, 2026 differential-GNSS observation, WGS84 coordinates 36.57861, -118.291999, prominence 10,081 feet, isolation 1,646.42 miles, and the historical alternate name Fishermans Peak.",
+    "observation_id": "observation-peakbagger-mount-whitney-20260923",
+    "observed_at": "2026-05-09T00:00:00+00:00",
+    "observer": "",
+    "retrieved_at": "2026-09-23T01:00:00+00:00",
+    "source_id": "source-peakbagger-mount-whitney"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
