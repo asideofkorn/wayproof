@@ -19,11 +19,30 @@ Read `references/topology-patterns.md`, the route/access sections of
 
 - Resolve existing places, access points, routes, segments, facilities, and
   aliases first.
+- Before claiming route depth or completeness, inspect available official maps,
+  map PDFs, trail guides, elevation profiles, and detailed route descriptions.
+  Record a disposition when an applicable map or guide is deferred.
 - Inspect source-backed endpoint, route-membership, `approached_via`, and
   traversal relationships.
 - Exercise the read or traversal service from both requested endpoints. A list
   of individually valid segments may still be disconnected.
 - Distinguish incomplete topology from an invalid route assertion.
+
+## Match assertions to map evidence
+
+- A printed mileage label or explicit route description can support distance;
+  do not calculate canonical trail mileage from map scale or drawn geometry.
+- A clearly drawn, labeled connection can support topology, but visual proximity
+  alone cannot support access, membership, or traversal.
+- A geospatial PDF, official coordinate, or inspected image metadata can support
+  geometry at its stated precision; it does not prove a route connection.
+- Treat a user-dropped or estimated pin as approximate evidence and preserve its
+  reporter and observation context. Do not silently upgrade it to an official
+  location.
+- Record the map title, publisher, edition or effective date when available,
+  page or panel, and retrieval context so later map revisions can be compared.
+- Keep winter, summer, stock, bicycle, water, and other mode- or season-specific
+  routes distinct unless evidence explicitly establishes shared segments.
 
 ## Model the graph
 
@@ -52,3 +71,9 @@ Read `references/topology-patterns.md`, the route/access sections of
   facilities along the route.
 - Inspect generated route and related-place pages to ensure the graph is useful
   to consumers rather than merely schema-valid.
+
+Before describing a promised route scope as route-complete, answer its relevant
+planning questions: where travelers enter, how endpoints connect, whether each
+supported direction traverses, which alternatives and spurs exist, what their
+distance costs are, and how route-connected water, toilets, camps, parking, and
+other requirements are reached. Preserve unanswered questions as explicit gaps.
