@@ -164,10 +164,24 @@ def _e(value: Any) -> str:
 
 def render_primary_nav() -> str:
     """Render the shared, stable navigation used by every public page."""
-    links = "\n".join(
-        f'<a href="{_e(path)}">{_e(label)}</a>' for label, path in PRIMARY_NAV
+    links = "".join(
+        f'<a href="{_e(path)}">{_e(label)}</a>' for label, path in PRIMARY_NAV[1:]
     )
-    return f'<nav aria-label="Primary">\n{links}\n</nav>'
+    return ('<nav class="site-nav" aria-label="Primary">'
+            '<a class="site-brand" href="/" aria-label="Wayproof home">Wayproof</a>'
+            f'<div class="site-links">{links}</div></nav>')
+
+
+def render_site_footer() -> str:
+    return (
+        '<footer class="site-footer"><div><strong>Wayproof</strong>'
+        '<p>Source-backed outdoor planning with uncertainty left visible.</p></div>'
+        '<div class="footer-links"><a href="/search/">Search</a>'
+        '<a href="/changes/">Published changes</a>'
+        '<a href="https://github.com/asideofkorn/wayproof">GitHub</a></div>'
+        '<p class="meta footer-note">Planning aid, not a booking or safety guarantee. '
+        'Confirm volatile conditions with the linked official source.</p></footer>'
+    )
 
 
 def _page(title: str, description: str, canonical: str, body: str) -> str:
@@ -183,6 +197,7 @@ def _page(title: str, description: str, canonical: str, body: str) -> str:
 </head>
 <body>
 {body}
+{render_site_footer()}
 </body>
 </html>
 """
@@ -562,8 +577,6 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     body.append(f'<aside class="technical-links"><strong>Reference formats</strong><p>'
                 f'<a href="/knowledge/{_e(entity["entity_id"])}/">Canonical record</a> · '
                 f'<a href="{DEL_VALLE_PATH}index.json">JSON</a></p></aside>')
-    body.append('<footer><p class="meta">Wayproof is a planning aid, not a booking or '
-                'safety guarantee. Follow linked official sources before acting.</p></footer>')
     return _page(
         'Plan Del Valle Regional Park — Wayproof',
         'Evidence-backed Del Valle access, camping, lake conditions, and Ohlone Trail planning.',
@@ -603,9 +616,7 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
                     f'<p>{_e(result["explanation"])}</p></article>')
     body.append(f'</section><aside class="technical-links"><strong>Reference formats</strong>'
                 f'<p><a href="/knowledge/{OHLONE_ID}/">Canonical record</a> · '
-                f'<a href="{OHLONE_PATH}index.json">JSON</a></p></aside>'
-                '<footer><p class="meta">Wayproof is a planning aid. '
-                'Confirm current conditions with the linked official sources.</p></footer>')
+                f'<a href="{OHLONE_PATH}index.json">JSON</a></p></aside>')
     return _page('Plan the Ohlone Wilderness Trail — Wayproof',
                  'Evidence-backed Ohlone Trail permits, camps, water, access, and route choices.',
                  f'{site_url}{OHLONE_PATH}', "\n".join(body))
@@ -761,7 +772,7 @@ def render_search_html(entities: Iterable[dict], site_url: str,
     preferred_paths = preferred_paths or {}
     kinds = sorted({item["kind"] for item in entities})
     rows = "".join(
-        f'<li data-search="{_e((item["name"] + " " + item["entity_id"]).casefold())}" '
+        f'<li class="result-card" data-search="{_e((item["name"] + " " + item["entity_id"]).casefold())}" '
         f'data-kind="{_e(item["kind"])}">'
         f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
         f'{_e(item["name"])}</a> '
@@ -771,13 +782,16 @@ def render_search_html(entities: Iterable[dict], site_url: str,
     options = ''.join(f'<option value="{_e(kind)}">{_e(kind)}</option>' for kind in kinds)
     body = f"""
 {render_primary_nav()}
-<h1>Canonical search</h1>
-<p class="subtitle">Search {len(entities)} published entities. Results link to the
-same canonical read service used for provenance and history.</p>
-<p><label>Search <input id="entity-search" type="search" placeholder="Del Valle or Ohlone"></label>
-<label>Type <select id="entity-kind"><option value="">All types</option>{options}</select></label></p>
+<header class="page-header"><span class="eyebrow">Explore the knowledge base</span>
+<h1>Find a place, route, or campsite</h1>
+<p class="subtitle">Search {len(entities)} published entities. Every result opens a page
+that separates supported facts, open questions, sources, and history.</p></header>
+<div class="search-controls"><label for="entity-search">Search by name</label>
+<input id="entity-search" type="search" placeholder="Try Mount Whitney or Del Valle">
+<label for="entity-kind">Narrow by type</label>
+<select id="entity-kind"><option value="">All types</option>{options}</select></div>
 <p id="result-count" class="meta">{len(entities)} results</p>
-<ul id="entity-results" class="plain">{rows}</ul>
+<ul id="entity-results" class="result-grid">{rows}</ul>
 <noscript><p>All entities are listed above; browser filtering requires JavaScript.</p></noscript>
 <script>
 const query = document.getElementById('entity-search');
@@ -811,28 +825,49 @@ def render_directory_html(key: str, entities: Iterable[dict], site_url: str,
     spec = DIRECTORIES[key]
     entities = list(entities)
     preferred_paths = preferred_paths or {}
-    groups: dict[str, list[dict]] = {}
-    for entity in entities:
-        groups.setdefault(entity["kind"], []).append(entity)
-    sections = []
-    for kind, items in sorted(groups.items()):
-        rows = "".join(
-            '<li class="card">'
-            f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
-            f'<strong>{_e(item["name"])}</strong></a>'
-            f'<div class="meta">{_e(_human_label(item["kind"]))}</div></li>'
-            for item in items
-        )
-        sections.append(
-            f'<section><h2>{_e(_human_label(kind))} ({len(items)})</h2>'
-            f'<ul class="plain">{rows}</ul></section>'
-        )
+    kinds = sorted({item["kind"] for item in entities})
+    options = ''.join(f'<option value="{_e(kind)}">{_e(_human_label(kind))}</option>'
+                      for kind in kinds)
+    rows = "".join(
+        '<li class="directory-card" '
+        f'data-search="{_e((item["name"] + " " + item["entity_id"]).casefold())}" '
+        f'data-kind="{_e(item["kind"])}">'
+        f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
+        f'<strong>{_e(item["name"])}</strong></a>'
+        f'<span class="meta">{_e(_human_label(item["kind"]))}</span></li>'
+        for item in entities
+    )
     body = (
         render_primary_nav()
-        + f'<header class="page-header"><h1>{_e(spec["title"])}</h1>'
+        + f'<header class="page-header"><span class="eyebrow">Browse Wayproof</span>'
+        + f'<h1>{_e(spec["title"])}</h1>'
         + f'<p class="tagline">{_e(spec["description"])}</p>'
         + f'<p class="meta">{len(entities)} published records</p></header>'
-        + "".join(sections)
+        + '<div class="directory-controls">'
+        + f'<label for="directory-search">Filter { _e(spec["title"].lower()) }</label>'
+        + '<input id="directory-search" type="search" placeholder="Type a name">'
+        + '<label for="directory-kind">Type</label>'
+        + f'<select id="directory-kind"><option value="">All types</option>{options}</select></div>'
+        + f'<p id="directory-count" class="meta">{len(entities)} results</p>'
+        + f'<ul id="directory-results" class="directory-grid">{rows}</ul>'
+        + '''<script>
+const directoryQuery = document.getElementById('directory-search');
+const directoryKind = document.getElementById('directory-kind');
+const directoryRows = [...document.querySelectorAll('#directory-results li')];
+function filterDirectory() {
+  const needle = directoryQuery.value.trim().toLocaleLowerCase();
+  let visible = 0;
+  for (const row of directoryRows) {
+    const show = (!needle || row.dataset.search.includes(needle)) &&
+                 (!directoryKind.value || row.dataset.kind === directoryKind.value);
+    row.hidden = !show;
+    if (show) visible += 1;
+  }
+  document.getElementById('directory-count').textContent = `${visible} results`;
+}
+directoryQuery.addEventListener('input', filterDirectory);
+directoryKind.addEventListener('change', filterDirectory);
+</script>'''
     )
     return _page(
         f'{spec["title"]} — Wayproof', spec["description"],
@@ -859,19 +894,20 @@ def render_changes_html(entries: Iterable[dict], site_url: str) -> str:
             for item in operations
         )
         articles.append(
-            '<article class="card">'
-            f'<h2><code>{_e(change_set_id)}</code></h2>'
+            '<article class="change-card">'
+            f'<p class="eyebrow">Published ChangeSet</p><h2><code>{_e(change_set_id)}</code></h2>'
             f'<p>{_e(group["summary"])}</p>'
             f'<details><summary>{len(operations)} published operations</summary>'
             f'<ul>{rows}</ul></details></article>'
         )
     body = (
         render_primary_nav()
-        + '<header class="page-header"><h1>Published changes</h1>'
+        + '<header class="page-header"><span class="eyebrow">Public history</span>'
+        + '<h1>What changed, and why</h1>'
         + '<p class="tagline">See when canonical knowledge was added, replaced, or removed. '
           'Current snapshots stay concise while ChangeSets preserve the public history.</p>'
         + f'<p class="meta">{len(grouped)} published ChangeSets</p></header>'
-        + "".join(articles)
+        + '<div class="change-list">' + "".join(articles) + '</div>'
     )
     return _page(
         'Published changes — Wayproof',
