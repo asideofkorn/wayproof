@@ -30,6 +30,14 @@ description: Add, correct, or deepen source-backed Wayproof canonical knowledge 
   policy permits redistribution.
 - If an event date is absent, keep it absent. Retrieval time may establish when
   Wayproof saw a statement, but not when the real-world condition began.
+- Compare overview text, tables, FAQs, accordions, and linked detail pages. A
+  publisher can contradict itself within one page or across its own pages. Do
+  not resolve that conflict silently: preserve the competing statements, record
+  the conflict explicitly, and require a recheck when it affects planning.
+- Keep a source-disposition ledger while researching. Mark each relevant source
+  or linked page as `ingested`, `already represented`, `deferred with gap`,
+  `excluded as irrelevant`, `excluded for access/licensing`, or `conflicting and
+  preserved`. Include material dispositions in the PR description.
 
 ## Model the evidence
 
@@ -62,6 +70,10 @@ description: Add, correct, or deepen source-backed Wayproof canonical knowledge 
 - For volatile conditions, add both the gap/current-condition evidence and the
   appropriate `DerivedResult` or pre-trip recheck linkage. A recorded gap that no
   consumer can discover is incomplete.
+- Exercise each recheck with a representative context containing the applicable
+  spatial scope. Park-wide, wilderness, campground, route, and access contexts
+  are not interchangeable; a correct scope filter can otherwise hide an
+  untested consumer gap.
 - Keep live values out of timeless snapshots when the authoritative source is a
   current-conditions page. Record what should be rechecked, where, and for which
   planning questions.
@@ -74,6 +86,10 @@ For routes or access topology, switch to
 - Use the existing schema, serializer, storage adapter, and write service. Do not
   hand-author canonical JSON or permanent ChangeSet JSON.
 - Build a typed DRAFT ChangeSet, validate it, and prepare a detached candidate.
+- An unmerged canonical PR must contain exactly one new ChangeSet. If review or
+  testing finds a mistake, regenerate the original candidate and ChangeSet
+  rather than stacking correction ChangeSets in the same PR. Follow-up
+  ChangeSets represent corrections to knowledge already published on `main`.
 - Ensure each canonical diff path is authorized by exactly one typed operation.
 - Do not add schema branches for one destination. Represent unsupported detail
   as a gap unless implementation evidence justifies a general schema change.
@@ -100,4 +116,14 @@ For routes or access topology, switch to
 - Run the complete suite and canonical diff verifier described in `AGENTS.md`.
 - Inspect the candidate diff for accidental certainty, duplicated entities,
   flattened history, and unrelated changes.
+- State the delivered coverage level precisely:
+  - `foundation`: durable identity, primary access, principal rules and
+    collections, rechecks, and explicit gaps;
+  - `deep inventory`: individual facilities or sites and their sourced
+    operational attributes;
+  - `route-complete`: evidenced topology, directionality, and traversal for the
+    promised route scope;
+  - `source-complete`: every relevant discovered first-party source has a
+    recorded disposition.
+  Never use “complete” without naming which bounded level is complete.
 - Follow `../wayproof-release-batch/SKILL.md` for PR and publication work.
