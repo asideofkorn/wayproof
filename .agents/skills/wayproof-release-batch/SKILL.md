@@ -23,7 +23,10 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   edited.
 - Run focused tests while iterating, then `python -m pytest -q`.
 - For canonical changes, run
-  `python scripts/verify_canonical_diff.py --base origin/main --head HEAD`.
+  `python scripts/verify_canonical_diff.py --base origin/main` on the final
+  committed candidate. First refresh from current `main`, then inspect
+  `git diff --name-status origin/main...HEAD`. Do not treat a check against
+  `HEAD` as covering relevant uncommitted files.
 - Build or exercise the website when read models, canonical data, rendering, or
   navigation changed.
 - For each newly introduced entity kind, confirm whether it belongs in an
@@ -49,6 +52,10 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
 4. If checks fail, repair them on the same branch; do not merge around failure.
 5. Merge only when the user authorized merge or an autonomous series of passing
    batches.
+6. If GitHub registers the new PR head SHA but does not enqueue a check, inspect
+   the workflow and run queue before taking action. A no-content trigger commit
+   is acceptable only after confirming that the corrected head has no run; do
+   not rerun an obsolete failing SHA and call it current verification.
 
 ## Verify publication
 

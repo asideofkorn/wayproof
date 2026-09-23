@@ -40,6 +40,10 @@ referenced supporting material relevant to the task.
 - Preserve conflict, uncertainty, provenance, temporal scope, geospatial scope,
   and superseded historical evidence. Do not replace an unknown event date with
   a retrieval date.
+- Check summaries, tables, FAQs, expandable sections, and linked detail pages
+  for internal disagreement. If one authoritative source conflicts with itself,
+  preserve both statements and expose the conflict as a consumer-visible gap or
+  recheck; never silently select one statement.
 - Decompose composite prose into atomic observations and claims. Keep source
   statements distinct from derived results and normative rules.
 - Dynamic conditions require retrieval context and an appropriate pre-trip
@@ -59,6 +63,9 @@ referenced supporting material relevant to the task.
 ## Change and verification rules
 
 - Keep each PR bounded to one coherent outcome.
+- A canonical-data PR introduces exactly one new ChangeSet. Corrections made
+  before merge belong in that original ChangeSet; create a follow-up ChangeSet
+  only after the earlier one has been published on `main`.
 - Add focused regression tests for changed behavior or new canonical coverage.
 - Verify consumer behavior, not only record existence: exercise rule evaluation,
   answerability/rechecks, generated directories, detail pages, and identifier
@@ -68,7 +75,10 @@ referenced supporting material relevant to the task.
   invariant merely to admit new data.
 - Run `python -m pytest -q` with the repository's supported Python 3.14 runtime.
 - For canonical knowledge changes, also run:
-  `python scripts/verify_canonical_diff.py --base origin/main --head HEAD`.
+  `python scripts/verify_canonical_diff.py --base origin/main`.
+  Run it on the final committed candidate after refreshing from current `main`,
+  and inspect `git diff --name-status origin/main...HEAD`; relevant uncommitted
+  canonical changes are not covered by a `HEAD` comparison.
 - Documentation, tests, and rendering changes do not require a ChangeSet when
   canonical knowledge is untouched.
 - Merge only after required checks pass. After a knowledge or publishing change,
