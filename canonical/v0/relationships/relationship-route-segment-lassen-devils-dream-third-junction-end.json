@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-lassen-devils-dream-third-junction-1",
+      "evidence-route-segment-lassen-devils-dream-third-junction-2"
+    ],
+    "object_id": "route-node-lassen-devils-third-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-lassen-devils-dream-third-junction-end",
+    "subject_id": "route-segment-lassen-devils-dream-third-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

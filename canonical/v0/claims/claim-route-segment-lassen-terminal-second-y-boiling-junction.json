@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-terminal-second-y-boiling-junction",
+    "evidence_ids": [
+      "evidence-route-segment-lassen-terminal-second-y-boiling-junction-1",
+      "evidence-route-segment-lassen-terminal-second-y-boiling-junction-2"
+    ],
+    "predicate": "described_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-segment-lassen-terminal-second-y-boiling-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "route_role": "official_mainline"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

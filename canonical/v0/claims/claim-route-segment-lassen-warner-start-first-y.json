@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-warner-start-first-y",
+    "evidence_ids": [
+      "evidence-route-segment-lassen-warner-start-first-y-1",
+      "evidence-route-segment-lassen-warner-start-first-y-2",
+      "evidence-route-segment-lassen-warner-start-first-y-3"
+    ],
+    "predicate": "described_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-devils-kitchen-trail",
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-segment-lassen-warner-start-first-y",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "route_role": "official_mainline"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

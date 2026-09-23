@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-devils-first-intersection-milepoint",
+    "evidence_ids": [
+      "evidence-lassen-devils-first-intersection-milepoint"
+    ],
+    "predicate": "published_route_milepoint",
+    "spatial_scope_ids": [
+      "scope-route-devils-kitchen-trail"
+    ],
+    "subject_id": "route-node-lassen-warner-first-y",
+    "temporal_scope": null,
+    "value": {
+      "cumulative_miles_from_trailhead": 0.4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

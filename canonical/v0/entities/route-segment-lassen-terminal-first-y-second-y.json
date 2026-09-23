@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-terminal-first-y-second-y",
+    "kind": "route_segment",
+    "name": "First junction to Terminal route 0.9-mile junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-terminal-second-y-boiling-junction",
+    "kind": "route_segment",
+    "name": "0.9-mile junction to junction southeast of Boiling Springs Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-terminal-pct-rejoin-divergence",
+    "evidence_id": "evidence-route-segment-lassen-terminal-pct-rejoin-divergence-1",
+    "notes": "The route description supplies ordered junctions; the brochure map corroborates the network connection without supplying atomic mileage.",
+    "observation_id": "observation-nps-lassen-brochure-map-2015-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

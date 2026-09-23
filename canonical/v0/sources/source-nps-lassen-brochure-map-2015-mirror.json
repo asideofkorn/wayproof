@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://commons.wikimedia.org/wiki/File:NPS_lassen-volcanic-map.pdf",
+    "publisher": "U.S. National Park Service; public-domain map hosted by Wikimedia Commons",
+    "source_id": "source-nps-lassen-brochure-map-2015-mirror"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

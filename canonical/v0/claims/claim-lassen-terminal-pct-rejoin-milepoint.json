@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-terminal-pct-rejoin-milepoint",
+    "evidence_ids": [
+      "evidence-lassen-terminal-pct-rejoin-milepoint"
+    ],
+    "predicate": "published_route_milepoint",
+    "spatial_scope_ids": [
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-node-lassen-terminal-pct-rejoin",
+    "temporal_scope": null,
+    "value": {
+      "cumulative_miles_from_trailhead": 2.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
