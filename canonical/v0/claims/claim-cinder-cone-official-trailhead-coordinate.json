@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cinder-cone-official-trailhead-coordinate",
+    "evidence_ids": [
+      "evidence-cinder-cone-official-trailhead-coordinate"
+    ],
+    "predicate": "official_mapped_coordinate",
+    "spatial_scope_ids": [
+      "scope-route-cinder-cone-trail"
+    ],
+    "subject_id": "trailhead-cinder-cone-butte-lake",
+    "temporal_scope": null,
+    "value": {
+      "alternate_name": "Butte Lake West Trailhead",
+      "latitude": 40.563788,
+      "longitude": -121.30221,
+      "map_id": "40993263-b62b-4118-94c1-983fd352e367",
+      "parking_is_separate_mapped_entity": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

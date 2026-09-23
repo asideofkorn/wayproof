@@ -82,7 +82,11 @@ def test_remaining_lassen_gap_excludes_boiling_springs_route():
 
     assert "route-boiling-springs-lake-trail" not in gap.related_ids
     assert "atomic shared approach plus around-lake network" in gap.reason
-    assert "route-cinder-cone-trail" in gap.related_ids
+    assert "route-cinder-cone-trail" not in gap.related_ids
+    assert any(
+        item.gap_id == "gap-lassen-cinder-rim-crater-circulation"
+        for item in records.gaps
+    )
 
 
 def test_boiling_springs_graph_is_one_validated_changeset():

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.nps.gov/maps/builder/configs/40993263-b62b-4118-94c1-983fd352e367.jsonp",
+    "publisher": "National Park Service",
+    "source_id": "source-nps-lassen-cinder-cone-map-20210331"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

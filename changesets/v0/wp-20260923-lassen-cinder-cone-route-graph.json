@@ -1,0 +1,786 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-cinder-cone-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-cinder-nobles-butte-junction.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "route-node-cinder-nobles-butte-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-cinder-base-fork.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "route-node-cinder-base-fork",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-cinder-trailhead-nobles-junction.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "route-segment-cinder-trailhead-nobles-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-cinder-nobles-junction-base-fork.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "route-segment-cinder-nobles-junction-base-fork",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-cinder-base-fork-summit.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "route-segment-cinder-base-fork-summit",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/sources/source-usgs-topo-vector-prospect-peak-20250729.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "source-usgs-topo-vector-prospect-peak-20250729",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/sources/source-nps-lassen-cinder-cone-map-20210331.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "source-nps-lassen-cinder-cone-map-20210331",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/sources/source-nps-lassen-cinder-cone-place.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "source-nps-lassen-cinder-cone-place",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-usgs-topo-vector-cinder-cone-trails-20250729-20260923.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "observation-usgs-topo-vector-cinder-cone-trails-20250729-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-nps-lassen-cinder-cone-map-20210331-20260923.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "observation-nps-lassen-cinder-cone-map-20210331-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-nps-lassen-cinder-cone-place-20260923.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "observation-nps-lassen-cinder-cone-place-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-trailhead-nobles-junction.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-trailhead-nobles-junction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-nobles-junction-base-fork.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-nobles-junction-base-fork",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-base-fork-summit.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-base-fork-summit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-cone-official-trailhead-coordinate.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-cone-official-trailhead-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-cone-route-detail.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-cone-route-detail",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-cone-source-profile-variation.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-cone-source-profile-variation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-cinder-cone-source-profile-variation-nps.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "evidence-cinder-cone-source-profile-variation-nps",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-trailhead-nobles-junction.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-route-segment-cinder-trailhead-nobles-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-nobles-junction-base-fork.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-route-segment-cinder-nobles-junction-base-fork",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-cinder-base-fork-summit.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-route-segment-cinder-base-fork-summit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-cinder-cone-official-trailhead-coordinate.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-cinder-cone-official-trailhead-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-cinder-cone-route-detail.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-cinder-cone-route-detail",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-cinder-cone-source-profile-variation.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "claim-cinder-cone-source-profile-variation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-trailhead-nobles-junction-starts-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-trailhead-nobles-junction-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-trailhead-nobles-junction-ends-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-trailhead-nobles-junction-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-trailhead-nobles-junction-part-of.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-trailhead-nobles-junction-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-nobles-junction-base-fork-starts-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-nobles-junction-base-fork-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-nobles-junction-base-fork-ends-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-nobles-junction-base-fork-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-nobles-junction-base-fork-part-of.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-nobles-junction-base-fork-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-base-fork-summit-starts-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-base-fork-summit-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-base-fork-summit-ends-at.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-base-fork-summit-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-cinder-base-fork-summit-part-of.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-segment-cinder-base-fork-summit-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-cinder-cone-trail-ends-at-peak-cinder-cone.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "relationship-route-cinder-cone-trail-ends-at-peak-cinder-cone",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-cinder-rim-crater-circulation.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "gap-lassen-cinder-rim-crater-circulation",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-cinder-source-profile-variation.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "gap-lassen-cinder-source-profile-variation",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-cinder-trailhead-nobles-junction",
+        "evidence-cinder-nobles-junction-base-fork",
+        "evidence-cinder-base-fork-summit",
+        "evidence-cinder-cone-official-trailhead-coordinate",
+        "evidence-cinder-cone-route-detail",
+        "evidence-cinder-cone-source-profile-variation",
+        "evidence-cinder-cone-source-profile-variation-nps"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-cinder-rim-crater-circulation",
+        "gap-lassen-cinder-source-profile-variation",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish the official distance-bearing Butte Lake-to-Cinder Cone summit approach while preserving unresolved rim and crater branch roles.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the exact official Cinder Cone summit approach with trailhead geometry and explicit rim/crater uncertainty."
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes a 2.4-mile round trip to the cone base and a four-mile round trip to the summit. At 1.2 miles the trail reaches a fork at the base; hikers take the left/south trail, circle toward the south side, and continue to the top. An additional separate trail continues into the crater. The trailhead is near the Butte Lake boat ramp, and current access and trail conditions require recheck.",
+    "observation_id": "observation-nps-lassen-cinder-cone-place-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T16:00:00+00:00",
+    "source_id": "source-nps-lassen-cinder-cone-place"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-cinder-base-fork",
+    "kind": "route_node",
+    "name": "Cinder Cone base fork"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

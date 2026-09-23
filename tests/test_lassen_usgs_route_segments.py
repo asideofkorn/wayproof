@@ -96,7 +96,12 @@ def test_remaining_gap_excludes_completed_summit_routes():
 
     assert "route-lassen-peak-trail" not in gap.related_ids
     assert "route-brokeoff-mountain-trail" not in gap.related_ids
-    assert "route-cinder-cone-trail" in gap.related_ids
+    assert "route-cinder-cone-trail" not in gap.related_ids
+    cinder_gap = next(
+        item for item in records.gaps
+        if item.gap_id == "gap-lassen-cinder-rim-crater-circulation"
+    )
+    assert "route-cinder-cone-trail" in cinder_gap.related_ids
     assert "complete, bidirectional, distance-bearing" in gap.reason
 
 

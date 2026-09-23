@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-cinder-nobles-junction-base-fork"
+    ],
+    "object_id": "route-node-cinder-base-fork",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-cinder-nobles-junction-base-fork-ends-at",
+    "subject_id": "route-segment-cinder-nobles-junction-base-fork",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
