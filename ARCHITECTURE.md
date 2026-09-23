@@ -15,6 +15,14 @@ The canonical website now exercises the shared read boundary at publication
 scale; the remaining hybrid boundary is primarily the legacy CLI and the
 not-yet-implemented constrained MCP proposal adapter.
 
+## Architecture decision records
+
+Focused implementation decisions that refine this architecture are recorded in
+`docs/adr/`. [ADR 0001](docs/adr/0001-versioned-source-geometry-for-route-maps.md)
+selects bounded, versioned public-source geometry snapshots and build-generated
+route GeoJSON while retaining Schema v0's geometry-neutral spatial scopes and
+the controlled ChangeSet publication boundary.
+
 ## Architectural principles
 
 1. Storage is not the write API.
