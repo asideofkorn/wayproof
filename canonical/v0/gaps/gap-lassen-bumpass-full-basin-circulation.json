@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-bumpass-full-basin-circulation",
+    "question": "What exact boardwalk circulation and Kings Creek alternative should a complete Bumpass Hell visitor traversal use?",
+    "reason": "The official dataset supports a connected 1.29564925-mile approach from the Bumpass Hell parking area to the basin entry. Separate boardwalk branches and a trail continuing east share the basin endpoint, while NPS describes a second overlook and a Kings Creek alternative without an unambiguous atomic visitor path in this batch. The published three-mile round-trip profile may include basin circulation not represented by the two approach features, so Wayproof does not force their values to match.",
+    "related_ids": [
+      "route-bumpass-hell-trail",
+      "hydrothermal-area-bumpass-hell",
+      "claim-bumpass-hell-basin-route-description"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

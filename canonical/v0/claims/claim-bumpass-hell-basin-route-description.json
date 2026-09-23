@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bumpass-hell-basin-route-description",
+    "evidence_ids": [
+      "evidence-bumpass-hell-basin-route-description"
+    ],
+    "predicate": "published_route_description",
+    "spatial_scope_ids": [
+      "scope-route-bumpass-hell-trail"
+    ],
+    "subject_id": "route-bumpass-hell-trail",
+    "temporal_scope": null,
+    "value": {
+      "basin_boardwalk": true,
+      "kings_creek_access_alternative": true,
+      "most_hikers_return_from_second_overlook": true,
+      "second_basin_overlook_route": true,
+      "usual_destination": "hydrothermal-area-bumpass-hell",
+      "usual_start": "trailhead-bumpass-hell"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

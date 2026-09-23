@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-bumpass-basin-approach-junction",
+    "kind": "route_node",
+    "name": "Bumpass Hell basin approach junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

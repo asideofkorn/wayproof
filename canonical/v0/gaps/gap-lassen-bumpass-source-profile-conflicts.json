@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lassen-bumpass-source-profile-conflicts",
+    "question": "Which Bumpass Hell access distance, duration, descent, and surface description should a traveler rely on?",
+    "reason": "The current NPS page publishes internally different values or descriptions for distance from the Southwest Entrance, duration, descent, and trail surface. Wayproof preserves those variations rather than silently selecting one.",
+    "related_ids": [
+      "route-bumpass-hell-trail",
+      "claim-bumpass-hell-source-profile-variations"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

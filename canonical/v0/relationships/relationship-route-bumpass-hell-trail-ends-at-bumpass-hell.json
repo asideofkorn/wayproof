@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-bumpass-hell-basin-route-description"
+    ],
+    "object_id": "hydrothermal-area-bumpass-hell",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-bumpass-hell-trail-ends-at-bumpass-hell",
+    "subject_id": "route-bumpass-hell-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
