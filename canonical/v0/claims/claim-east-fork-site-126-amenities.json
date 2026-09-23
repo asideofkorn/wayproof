@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-amenities",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-amenities"
+    ],
+    "predicate": "site_amenities",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "beside_restroom": true,
+      "beside_water_spigot": true,
+      "campfire_allowed": true,
+      "food_locker": true,
+      "pets_allowed": true,
+      "site_class": "single"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

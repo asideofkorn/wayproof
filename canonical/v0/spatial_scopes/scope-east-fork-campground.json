@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "East Fork Campground in Inyo National Forest",
+    "entity_id": "campground-east-fork-inyo",
+    "kind": "facility",
+    "scope_id": "scope-east-fork-campground"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

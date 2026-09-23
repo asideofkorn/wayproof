@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The campsite API identifies campsite 62213 (legacy 18717) at 37.4890270000001,-118.719946. It reports tent 45, RV 30, trailer 30; six people; gravel back-in driveway length 40; and conflicting fields for checkout, vehicle count, and maximum vehicle length.",
+    "observation_id": "observation-recreation-east-fork-site-126-api-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T18:00:00+00:00",
+    "source_id": "source-recreation-east-fork-site-126-api"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

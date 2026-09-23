@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-profile",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-profile",
+      "evidence-east-fork-site-126-public-page"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "accessible": false,
+      "booking_url": "https://www.recreation.gov/camping/campsites/62213",
+      "campsite_id": "62213",
+      "details": [
+        "15 ft site will fit small RV or trailer",
+        "Site is next to restroom and water spigot"
+      ],
+      "latitude": 37.4890270000001,
+      "legacy_id": "18717",
+      "listed_capacity": 6,
+      "longitude": -118.719946,
+      "loop": "EAST",
+      "record_status": "Open",
+      "reserve_type": "Site-Specific",
+      "site": "126",
+      "site_type": "STANDARD NONELECTRIC",
+      "use_type": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

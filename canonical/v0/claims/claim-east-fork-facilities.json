@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-facilities",
+    "evidence_ids": [
+      "evidence-east-fork-facilities"
+    ],
+    "predicate": "facilities",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "bear_lockers": true,
+      "electrical_hookups": false,
+      "firewood_for_sale": true,
+      "flush_toilets": true,
+      "picnic_tables": true,
+      "potable_water": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-vehicle-fields",
+    "evidence_id": "evidence-east-fork-site-126-vehicle-fields",
+    "notes": "",
+    "observation_id": "observation-recreation-east-fork-site-126-api-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

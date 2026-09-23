@@ -57,6 +57,7 @@ PREDICATE_CATEGORIES = {
         PlanningInputCategory.COST, PlanningInputCategory.INVENTORY,
     ),
     "reserveamerica_site_profile": (PlanningInputCategory.INVENTORY,),
+    "recreation_gov_site_profile": (PlanningInputCategory.INVENTORY,),
     "backpacking_reservation_window": (PlanningInputCategory.DEADLINE,),
     "group_camping_reservation": (PlanningInputCategory.DEADLINE,),
     "no_show_deadlines": (PlanningInputCategory.DEADLINE,),
@@ -92,6 +93,7 @@ PREDICATE_ACTIVITIES = {
     "reservable_picnic_inventory": {"picnicking"},
     "reserveamerica_campsite_inventory": {"backpacking", "camping"},
     "reserveamerica_site_profile": {"backpacking", "camping"},
+    "recreation_gov_site_profile": {"backpacking", "camping"},
     "site_inventory": {"camping"},
     "backpacking_reservation_window": {"backpacking"},
     "group_camping_reservation": {"camping"},
@@ -144,7 +146,7 @@ def _relevant_entity_ids(records: CanonicalRecords,
     forward = {
         "accepts_reservations_for", "accesses", "applies_at", "contained_by",
         "day_use_governed_by", "lists_site", "located_in",
-        "overnight_governed_by", "provides_access_to", "provides_service_at",
+        "overnight_governed_by", "part_of", "provides_access_to", "provides_service_at",
     }
     reverse = {
         "accepts_reservations_for", "contained_by", "located_in", "manages",

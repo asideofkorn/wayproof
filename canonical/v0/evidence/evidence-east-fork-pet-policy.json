@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-pet-policy",
+    "evidence_id": "evidence-east-fork-pet-policy",
+    "notes": "",
+    "observation_id": "observation-recreation-east-fork-overview-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

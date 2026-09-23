@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-vehicle-fields",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-vehicle-fields"
+    ],
+    "predicate": "vehicle_limits",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "campground_general_maximum_rv_feet": 35,
+      "maximum_vehicle_length_attribute_feet": 45,
+      "maximum_vehicle_length_site_details_feet": 29,
+      "maximum_vehicles_attribute": 2,
+      "maximum_vehicles_site_details": 1,
+      "permitted_rv_maximum_feet": 30,
+      "permitted_trailer_maximum_feet": 30,
+      "site_notice_fit_feet": 15
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

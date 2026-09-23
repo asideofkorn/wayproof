@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-east-fork-facilities"
+    ],
+    "object_id": "campground-east-fork-inyo",
+    "predicate": "manages",
+    "relationship_id": "relationship-east-fork-managed-by-inyo",
+    "subject_id": "agency-inyo-national-forest",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

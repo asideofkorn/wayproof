@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-operating-status-20260923",
+    "evidence_id": "evidence-east-fork-operating-status-20260923",
+    "notes": "",
+    "observation_id": "observation-usfs-east-fork-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

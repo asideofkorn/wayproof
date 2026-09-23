@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-site-126-checkout-conflict",
+    "question": "What checkout time controls Site 126?",
+    "reason": "The same Recreation.gov API response exposes 11 a.m. and 1 p.m.; the campground no-show policy separately uses noon.",
+    "related_ids": [
+      "claim-east-fork-site-126-arrival-departure"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

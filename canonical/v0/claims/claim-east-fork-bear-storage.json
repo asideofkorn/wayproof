@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-bear-storage",
+    "evidence_ids": [
+      "evidence-east-fork-bear-storage"
+    ],
+    "predicate": "food_storage",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "active_bear_area": true,
+      "bear_box_inches": {
+        "depth": 30,
+        "height": 36,
+        "width": 48
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

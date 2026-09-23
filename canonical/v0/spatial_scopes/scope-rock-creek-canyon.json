@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Rock Creek Canyon around East Fork Campground",
+    "entity_id": "place-rock-creek-canyon",
+    "kind": "area",
+    "scope_id": "scope-rock-creek-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

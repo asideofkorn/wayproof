@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-rock-creek-canyon",
+    "kind": "canyon",
+    "name": "Rock Creek Canyon"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

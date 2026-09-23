@@ -202,7 +202,7 @@ def evaluate_operational_inputs(
     inventory_items = []
     for item in grouped[PlanningInputCategory.INVENTORY]:
         capacity = None
-        if item.predicate == "reserveamerica_site_profile" and isinstance(
+        if item.predicate in {"reserveamerica_site_profile", "recreation_gov_site_profile"} and isinstance(
             item.value, dict
         ):
             value = item.value.get("listed_capacity")

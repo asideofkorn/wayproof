@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-driveway",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-driveway"
+    ],
+    "predicate": "driveway_profile",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "approach": "back-in",
+      "length_feet": 40,
+      "surface": "gravel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

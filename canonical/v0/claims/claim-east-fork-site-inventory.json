@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-inventory",
+    "evidence_ids": [
+      "evidence-east-fork-site-inventory"
+    ],
+    "predicate": "site_inventory",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "sites": 133
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

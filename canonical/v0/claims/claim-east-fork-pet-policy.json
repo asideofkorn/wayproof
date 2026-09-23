@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-pet-policy",
+    "evidence_ids": [
+      "evidence-east-fork-pet-policy"
+    ],
+    "predicate": "pet_policy",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "leash_required": true,
+      "maximum_pets": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

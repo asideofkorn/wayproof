@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "Valid reservation covering the party and stay at East Fork Campground Site 126.",
+    "requirement_id": "requirement-east-fork-site-126-reservation",
+    "rule_id": "rule-east-fork-site-126-reservation"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}
