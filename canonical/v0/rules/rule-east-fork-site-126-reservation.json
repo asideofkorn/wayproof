@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-profile",
+    "conditions": [
+      {
+        "dimension": "trip_stage",
+        "operator": "equals",
+        "value": "campground_stay"
+      }
+    ],
+    "consequence": "Hold a valid site-specific reservation before occupying East Fork Campground Site 126.",
+    "rule_id": "rule-east-fork-site-126-reservation",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

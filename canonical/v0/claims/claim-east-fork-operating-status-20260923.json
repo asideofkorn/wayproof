@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-operating-status-20260923",
+    "evidence_ids": [
+      "evidence-east-fork-operating-status-20260923"
+    ],
+    "predicate": "operating_status",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "as_of": "2026-09-23",
+      "opening_and_closing": "weather dependent",
+      "published_peak_season_2026": {
+        "ends_on": "2026-10-03",
+        "starts_on": "2026-05-15"
+      },
+      "status": "open"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

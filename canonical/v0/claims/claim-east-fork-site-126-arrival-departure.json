@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-arrival-departure",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-arrival-departure"
+    ],
+    "predicate": "arrival_departure_times",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "campground_no_show_hold_until": "12:00 next day",
+      "check_in": "14:00",
+      "checkout_attribute": "13:00",
+      "checkout_site_details": "11:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

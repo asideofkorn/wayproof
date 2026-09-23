@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Recreation.gov Site 126 in East Fork Campground's EAST loop",
+    "entity_id": "campsite-east-fork-126",
+    "kind": "facility",
+    "scope_id": "scope-east-fork-campsite-126"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

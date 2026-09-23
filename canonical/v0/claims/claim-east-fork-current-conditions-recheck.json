@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-current-conditions-recheck",
+    "evidence_ids": [
+      "evidence-east-fork-current-conditions-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground",
+      "scope-rock-creek-canyon"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "campground_open_status",
+        "Rock_Creek_Road_access",
+        "weather",
+        "fire_restrictions",
+        "water_and_restroom_service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

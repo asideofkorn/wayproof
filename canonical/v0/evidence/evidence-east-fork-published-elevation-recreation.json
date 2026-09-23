@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-published-elevation-recreation",
+    "evidence_id": "evidence-east-fork-published-elevation-recreation",
+    "notes": "",
+    "observation_id": "observation-recreation-east-fork-overview-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

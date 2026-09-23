@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-site-126-vehicle-conflict",
+    "question": "Which vehicle count and length limit controls Site 126?",
+    "reason": "The public API fields conflict across site details, attributes, equipment limits, and the campground-wide recommendation.",
+    "related_ids": [
+      "claim-east-fork-site-126-vehicle-fields"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Recheck official Forest Service and Recreation.gov operational sources shortly before travel; the reservation itself remains private runtime fulfillment evidence.",
+    "input_ids": [
+      "claim-east-fork-operating-status-20260923",
+      "claim-east-fork-fire-restrictions-2026",
+      "claim-east-fork-current-conditions-recheck",
+      "gap-east-fork-trip-date-operations",
+      "gap-east-fork-trip-date-fire",
+      "gap-east-fork-site-126-checkout-conflict",
+      "gap-east-fork-site-126-vehicle-conflict"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-east-fork-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "campground_and_site_open_status",
+        "Rock_Creek_Road_and_weather",
+        "fire_restrictions",
+        "potable_water_and_restroom_service",
+        "conflicting_site_checkout_and_vehicle_fields"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

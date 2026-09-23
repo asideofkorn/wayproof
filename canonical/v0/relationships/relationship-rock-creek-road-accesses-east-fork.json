@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-east-fork-directions-usfs"
+    ],
+    "object_id": "campground-east-fork-inyo",
+    "predicate": "accesses",
+    "relationship_id": "relationship-rock-creek-road-accesses-east-fork",
+    "subject_id": "road-rock-creek-inyo",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

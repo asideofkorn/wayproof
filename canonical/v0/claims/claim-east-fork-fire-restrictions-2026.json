@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-fire-restrictions-2026",
+    "evidence_ids": [
+      "evidence-east-fork-fire-restrictions-2026"
+    ],
+    "predicate": "fire_restrictions",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-06-22"
+    },
+    "value": {
+      "east_fork_developed_site_exception": true,
+      "effective_ends_on": "2026-12-31",
+      "effective_starts_on": "2026-06-22",
+      "fire_and_charcoal": "only in provided developed-site structures",
+      "lpg_with_shutoff": "allowed with valid California campfire permit",
+      "order": "05-04-50-26-23",
+      "stage": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

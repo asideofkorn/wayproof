@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-directions-usfs",
+    "evidence_ids": [
+      "evidence-east-fork-directions-usfs"
+    ],
+    "predicate": "directions",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground",
+      "scope-rock-creek-canyon"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles_approximate": 5,
+      "from": "Tom's Place / US 395",
+      "road": "Rock Creek Road",
+      "turn": "left into campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

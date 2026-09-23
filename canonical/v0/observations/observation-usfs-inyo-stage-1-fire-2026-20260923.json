@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Forest Order 05-04-50-26-23 establishes Stage 1 fire restrictions June 22 through December 31, 2026. East Fork is named in Exhibit A as a developed recreation-site exception for fires and charcoal in provided structures; LPG devices with shutoff valves remain allowed with a valid California campfire permit.",
+    "observation_id": "observation-usfs-inyo-stage-1-fire-2026-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T18:00:00+00:00",
+    "source_id": "source-usfs-inyo-stage-1-fire-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

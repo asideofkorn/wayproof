@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-reservation-window",
+    "evidence_ids": [
+      "evidence-east-fork-reservation-window"
+    ],
+    "predicate": "reservation_window",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "maximum_advance_months": 6,
+      "maximum_stay_nights": 14,
+      "minimum_stay_nights": 1,
+      "some_sites_first_come_first_served": true,
+      "some_sites_reservable": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

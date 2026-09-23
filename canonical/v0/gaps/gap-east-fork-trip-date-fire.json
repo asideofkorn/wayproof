@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-trip-date-fire",
+    "question": "What fire restrictions and allowed devices will apply at departure and during the stay?",
+    "reason": "The dated order covers the trip but incident conditions and forest orders can change; recheck official alerts.",
+    "related_ids": [
+      "claim-east-fork-fire-restrictions-2026",
+      "claim-east-fork-current-conditions-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-fees",
+    "evidence_ids": [
+      "evidence-east-fork-fees"
+    ],
+    "predicate": "fees",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null,
+    "value": {
+      "access_and_senior_pass_discount": "50 percent",
+      "campsite_usd_per_night": 35,
+      "extra_vehicle_usd_per_night": 10
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

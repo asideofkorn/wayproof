@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Inyo National Forest alerts page is the current operational source for forest orders, fire restrictions, closures, and access notices.",
+    "observation_id": "observation-usfs-inyo-alerts-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T18:00:00+00:00",
+    "source_id": "source-usfs-inyo-alerts"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

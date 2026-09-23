@@ -1,0 +1,711 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-east-fork-trip-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-east-fork-inyo.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "campground-east-fork-inyo",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campsite-east-fork-126.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "campsite-east-fork-126",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-rock-creek-canyon.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "place-rock-creek-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterway-rock-creek-inyo.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "waterway-rock-creek-inyo",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/road-rock-creek-inyo.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "road-rock-creek-inyo",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-east-fork-campground.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "scope-east-fork-campground",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-east-fork-campsite-126.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "scope-east-fork-campsite-126",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-rock-creek-canyon.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "scope-rock-creek-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-east-fork-overview.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-recreation-east-fork-overview",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-east-fork-api.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-recreation-east-fork-api",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-east-fork-site-126.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-recreation-east-fork-site-126",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-east-fork-site-126-api.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-recreation-east-fork-site-126-api",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-east-fork.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-usfs-east-fork",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-inyo-alerts.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-usfs-inyo-alerts",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-inyo-stage-1-fire-2026.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "source-usfs-inyo-stage-1-fire-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-east-fork-overview-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-recreation-east-fork-overview-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-east-fork-api-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-recreation-east-fork-api-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-east-fork-site-126-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-recreation-east-fork-site-126-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-east-fork-site-126-api-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-recreation-east-fork-site-126-api-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-east-fork-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-usfs-east-fork-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-inyo-alerts-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-usfs-inyo-alerts-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-inyo-stage-1-fire-2026-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "observation-usfs-inyo-stage-1-fire-2026-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-recreation-profile.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-recreation-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-inventory.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-facilities.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-facilities",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-fees.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-reservation-window.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-reservation-window",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-quiet-hours.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-quiet-hours",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-bear-storage.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-bear-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-pet-policy.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-pet-policy",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-published-elevation-recreation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-published-elevation-recreation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-published-elevation-usfs.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-published-elevation-usfs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-directions-recreation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-directions-recreation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-directions-usfs.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-directions-usfs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-operating-status-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-operating-status-20260923",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-profile.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-equipment.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-equipment",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-amenities.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-amenities",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-driveway.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-driveway",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-arrival-departure.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-arrival-departure",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-vehicle-fields.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-vehicle-fields",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-fire-restrictions-2026.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-fire-restrictions-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-current-conditions-recheck.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-current-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-east-fork-site-126-public-page.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "evidence-east-fork-site-126-public-page",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-recreation-profile.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-recreation-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-inventory.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-facilities.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-facilities",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-fees.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-reservation-window.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-reservation-window",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-quiet-hours.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-quiet-hours",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-bear-storage.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-bear-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-pet-policy.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-pet-policy",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-published-elevation-recreation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-published-elevation-recreation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-published-elevation-usfs.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-published-elevation-usfs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-directions-recreation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-directions-recreation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-directions-usfs.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-directions-usfs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-operating-status-20260923.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-operating-status-20260923",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-profile.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-equipment.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-equipment",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-amenities.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-amenities",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-driveway.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-driveway",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-arrival-departure.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-arrival-departure",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-site-126-vehicle-fields.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-site-126-vehicle-fields",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-fire-restrictions-2026.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-fire-restrictions-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-east-fork-current-conditions-recheck.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "claim-east-fork-current-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-site-126-part-of-campground.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "relationship-east-fork-site-126-part-of-campground",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-managed-by-inyo.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "relationship-east-fork-managed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-located-in-rock-creek-canyon.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "relationship-east-fork-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-adjacent-rock-creek.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "relationship-east-fork-adjacent-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-east-fork.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "relationship-rock-creek-road-accesses-east-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-east-fork-site-126-reservation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "rule-east-fork-site-126-reservation",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-east-fork-site-126-reservation.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "requirement-east-fork-site-126-reservation",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-east-fork-site-126-checkout-conflict.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "gap-east-fork-site-126-checkout-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-east-fork-site-126-vehicle-conflict.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "gap-east-fork-site-126-vehicle-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-east-fork-elevation-conflict.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "gap-east-fork-elevation-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-east-fork-trip-date-operations.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "gap-east-fork-trip-date-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-east-fork-trip-date-fire.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "gap-east-fork-trip-date-fire",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-east-fork-pretrip-recheck.json",
+      "reason": "Publish the source-backed East Fork Campground and Site 126 planning foundation without publishing a traveler's reservation.",
+      "record_id": "result-east-fork-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add East Fork Campground, complete public Site 126 details, nearby Rock Creek context, reservation readiness, source conflicts, and pre-trip rechecks without publishing private booking data."
+}

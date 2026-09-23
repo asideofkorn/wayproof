@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterway-rock-creek-inyo",
+    "kind": "waterway",
+    "name": "Rock Creek"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

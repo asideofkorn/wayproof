@@ -89,9 +89,17 @@ def _route_access_candidates(reads: IntentReads, route: Entity, predicate: str) 
 
 
 def _scopes(reads: IntentReads, entity: Entity) -> tuple[str, ...]:
+    related_entities = {entity.entity_id}
+    related_entities.update(
+        item.object_id for item in reads.relationships_for(entity.entity_id)
+        if item.subject_id == entity.entity_id and item.predicate == "part_of"
+    )
     return tuple(sorted({
         *(item.scope_id for item in reads.spatial_scopes_for(entity.entity_id)),
-        *(scope_id for claim in reads.claims_for(entity.entity_id)
+        *(item.scope_id for related_id in related_entities
+          for item in reads.spatial_scopes_for(related_id)),
+        *(scope_id for related_id in related_entities
+          for claim in reads.claims_for(related_id)
           for scope_id in claim.spatial_scope_ids),
     }))
 

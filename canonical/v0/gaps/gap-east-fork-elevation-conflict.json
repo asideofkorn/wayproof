@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-elevation-conflict",
+    "question": "Which published elevation should be used for East Fork Campground?",
+    "reason": "Recreation.gov publishes 8,900 feet while the Forest Service publishes 9,000 feet; both remain visible.",
+    "related_ids": [
+      "claim-east-fork-published-elevation-recreation",
+      "claim-east-fork-published-elevation-usfs"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Forest Service page, updated September 17, 2026, lists East Fork open with 133 sites, flush toilets, potable water, picnic tables, no electrical hookups, bear lockers, $35 fee, $10 extra vehicle, 14-day limit, 10 p.m.-6 a.m. quiet hours, maximum RV length 35 feet, 9,000-foot elevation, and weather-dependent operations.",
+    "observation_id": "observation-usfs-east-fork-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T18:00:00+00:00",
+    "source_id": "source-usfs-east-fork"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

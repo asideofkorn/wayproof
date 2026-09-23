@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-trip-date-operations",
+    "question": "Will East Fork, Site 126, Rock Creek Road, water, and restrooms remain operational for the entire planned stay?",
+    "reason": "The September 23 status is a snapshot, closures are weather dependent, and the published peak season ends during the planned stay.",
+    "related_ids": [
+      "claim-east-fork-operating-status-20260923",
+      "claim-east-fork-current-conditions-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

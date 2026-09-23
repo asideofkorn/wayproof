@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-east-fork-site-126-equipment",
+    "evidence_ids": [
+      "evidence-east-fork-site-126-equipment"
+    ],
+    "predicate": "permitted_equipment",
+    "spatial_scope_ids": [
+      "scope-east-fork-campsite-126"
+    ],
+    "subject_id": "campsite-east-fork-126",
+    "temporal_scope": {
+      "ends_on": "2026-09-23",
+      "starts_on": "2026-09-23"
+    },
+    "value": {
+      "rv_maximum": 30,
+      "tent_maximum": 45,
+      "trailer_maximum": 30,
+      "units_as_published": "feet"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

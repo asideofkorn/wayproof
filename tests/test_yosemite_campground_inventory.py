@@ -64,7 +64,8 @@ def test_all_13_developed_campgrounds_have_profiles_and_collection_edges():
 def test_every_currently_open_recreation_site_has_one_profile_and_parent():
     records = load_canonical(ROOT)
     profiles = [item for item in records.claims
-                if item.predicate == "recreation_gov_site_profile"]
+                if item.predicate == "recreation_gov_site_profile"
+                and item.subject_id.startswith("campsite-recreation-yosemite-")]
     relationships = by_id(records, "relationships", "relationship_id")
 
     assert len(profiles) == 1435
@@ -98,7 +99,8 @@ def test_booking_snapshot_disagreement_is_preserved_not_flattened():
 
 def test_site_profiles_keep_coordinates_equipment_accessibility_and_details():
     profiles = [item for item in load_canonical(ROOT).claims
-                if item.predicate == "recreation_gov_site_profile"]
+                if item.predicate == "recreation_gov_site_profile"
+                and item.subject_id.startswith("campsite-recreation-yosemite-")]
     assert any(item.value["accessible"] for item in profiles)
     assert any(item.value["latitude"] and item.value["longitude"] for item in profiles)
     assert any(item.value["permitted_equipment"] for item in profiles)
@@ -114,6 +116,7 @@ def test_horse_and_backcountry_camping_are_not_lost_in_developed_inventory():
 
     horse_profiles = [item for item in records.claims
                       if item.predicate == "recreation_gov_site_profile"
+                      and item.subject_id.startswith("campsite-recreation-yosemite-")
                       and entities[item.subject_id].kind == "equestrian_campsite"]
     assert len(horse_profiles) == 9
     assert len([item for item in entities.values()

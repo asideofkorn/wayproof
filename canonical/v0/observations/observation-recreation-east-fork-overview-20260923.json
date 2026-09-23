@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "East Fork Campground has four loops, some creekside sites, firewood sales, bear lockers, a 14-night limit, a six-month booking window, a $35 published nightly fee, and weather-dependent operations; Recreation.gov gives 8,900 feet, six miles from Tom's Place, and campground contact 760-935-4825.",
+    "observation_id": "observation-recreation-east-fork-overview-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T18:00:00+00:00",
+    "source_id": "source-recreation-east-fork-overview"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
