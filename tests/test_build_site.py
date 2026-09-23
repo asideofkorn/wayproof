@@ -95,10 +95,61 @@ def test_del_valle_canonical_page_exposes_claims_sources_gaps_and_history(site):
     assert payload["claims"]
     assert any(bundle["sources"] for bundle in payload["claims"])
     assert payload["history"]
-    assert "Published claims" in page
-    assert "Evidence and sources" in page
-    assert "Published history" in page
-    assert "Known gaps" in page
+    assert "Plan a visit" in page
+    assert "Explore related places" in page
+    assert "Before you go" in page
+    assert "Sources, evidence, and history" in page
+    assert "Published ChangeSet history" in page
+
+
+def test_generic_entity_pages_use_the_human_planning_hierarchy(site):
+    tmp_path, _ = site
+    representatives = {
+        "peak-mount-whitney": ("Mount Whitney", "Routes and geography"),
+        "park-lassen-volcanic-national-park": ("Lassen Volcanic National Park", "Getting there"),
+        "park-yosemite-national-park": ("Yosemite National Park", "Requirements and current conditions"),
+        "campground-yosemite-upper-pines": ("Upper Pines Campground", "Facilities and services"),
+    }
+    for entity_id, (name, expected_group) in representatives.items():
+        page = (tmp_path / "knowledge" / entity_id / "index.html").read_text()
+        assert name in page
+        assert "Plan a visit" in page
+        assert "Explore related places" in page
+        assert "Before you go" in page
+        assert "Sources, evidence, and history" in page
+        assert expected_group in page
+
+
+def test_relationships_show_human_names_instead_of_only_record_ids(site):
+    tmp_path, _ = site
+    page = (tmp_path / "knowledge" / "peak-mount-whitney" / "index.html").read_text()
+
+    assert "Sequoia National Park" in page
+    assert "High Sierra Trail" in page
+    assert "Access and approaches" in page
+    assert "Land and management" in page
+
+
+def test_claim_linked_gaps_surface_on_the_entity_page(site):
+    tmp_path, _ = site
+    payload = json.loads(
+        (tmp_path / "knowledge" / "peak-mount-whitney.json").read_text()
+    )
+    page = (tmp_path / "knowledge" / "peak-mount-whitney" / "index.html").read_text()
+
+    gap_ids = {item["gap_id"] for item in payload["knowledge_gaps"]}
+    assert "gap-whitney-published-elevation-conflict" in gap_ids
+    assert "gap-whitney-current-conditions" in gap_ids
+    assert "Which published Mount Whitney elevation should a consumer display?" in page
+
+
+def test_large_related_inventories_are_progressively_disclosed(site):
+    tmp_path, _ = site
+    page = (tmp_path / "knowledge" / "campground-yosemite-upper-pines" /
+            "index.html").read_text()
+
+    assert 'class="related-more"' in page
+    assert "Show 227 more" in page
 
 
 def test_ohlone_search_opens_trail_page_with_canonical_detail_link(site):

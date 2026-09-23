@@ -211,9 +211,13 @@ def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
     """Build one transport-neutral entity view exclusively through read APIs."""
     entity = reads.entity(entity_id)
     claims = []
+    gaps_by_id = {item.gap_id: item for item in reads.knowledge_gaps_for(entity_id)}
     history = list(reads.changes(record_id=entity_id))
     for claim in reads.claims_for(entity_id):
         claims.append(_claim_bundle(reads, claim))
+        gaps_by_id.update(
+            (item.gap_id, item) for item in reads.knowledge_gaps_for(claim.claim_id)
+        )
         history.extend(reads.changes(record_id=claim.claim_id, record_type="claim"))
     return _plain({
         "type": "canonical_entity",
@@ -223,7 +227,7 @@ def entity_payload(reads: CanonicalReadService, entity_id: str) -> dict:
         ),
         "claims": claims,
         "relationships": reads.relationships_for(entity_id),
-        "knowledge_gaps": reads.knowledge_gaps_for(entity_id),
+        "knowledge_gaps": tuple(gaps_by_id.values()),
         "history": history,
     })
 
@@ -312,7 +316,6 @@ def ohlone_trail_payload(reads: CanonicalReadService) -> dict:
 
 def _claim_html(bundle: dict) -> str:
     claim = bundle["claim"]
-    value = _e(json.dumps(claim["value"], ensure_ascii=False, sort_keys=True))
     sources = []
     observations = {item["source_id"]: item for item in bundle["observations"]}
     for source in bundle["sources"]:
@@ -322,10 +325,9 @@ def _claim_html(bundle: dict) -> str:
         sources.append(f'<li>{_source_label(source)}{date_text}</li>')
     source_html = "".join(sources) or "<li>No source is attached.</li>"
     return (
-        '<article class="card">'
-        f'<h3>{_e(claim["predicate"].replace("_", " "))}</h3>'
-        f'<p><code>{value}</code></p>'
-        f'<p class="meta">Claim <code>{_e(claim["claim_id"])}</code></p>'
+        '<article class="fact-row">'
+        f'<h4>{_e(_human_label(claim["predicate"]))}</h4>'
+        f'{_human_value(claim["value"])}'
         f'<details><summary>Evidence and sources ({len(bundle["evidence"])})</summary>'
         f'<ul>{source_html}</ul></details>'
         '</article>'
@@ -348,6 +350,58 @@ def _human_label(value: str) -> str:
         "published_daily_parking_permit_policy": "College parking permit",
     }
     return labels.get(value, value.replace("_", " ").strip().capitalize())
+
+
+def _claim_section(predicate: str) -> str:
+    """Place canonical predicates into a small, stable human hierarchy."""
+    if any(token in predicate for token in (
+        "permit", "reservation", "fee", "status", "condition", "advisory",
+        "availability", "hours", "restriction", "allowed", "required", "policy",
+    )):
+        return "Requirements and current conditions"
+    if any(token in predicate for token in (
+        "access", "address", "parking", "entrance", "gateway", "transport",
+    )):
+        return "Getting there"
+    if any(token in predicate for token in (
+        "route", "trail", "approach", "distance", "corridor", "elevation",
+        "topographic", "geographic",
+    )):
+        return "Routes and geography"
+    if any(token in predicate for token in (
+        "camp", "site", "facility", "restroom", "water", "boat", "swim",
+        "dog", "fire", "generator", "connectivity",
+    )):
+        return "Facilities and services"
+    return "More planning facts"
+
+
+def _relationship_section(predicate: str) -> str:
+    if any(token in predicate for token in (
+        "access", "entrance", "gateway", "starts", "approach", "uses_corridor",
+    )):
+        return "Access and approaches"
+    if any(token in predicate for token in (
+        "contain", "located", "serves", "facility", "camp", "books",
+    )):
+        return "Places and facilities"
+    if any(token in predicate for token in (
+        "manage", "boundary", "jurisdiction", "part_of",
+    )):
+        return "Land and management"
+    return "Routes and related places"
+
+
+def _short_fact(bundle: dict) -> bool:
+    """Select compact facts for the overview without inventing priority data."""
+    claim = bundle["claim"]
+    predicate = claim["predicate"]
+    value = claim["value"]
+    preferred = any(token in predicate for token in (
+        "status", "elevation", "distance", "address", "capacity", "identity",
+        "reservation_window", "gate_hours",
+    ))
+    return preferred and len(json.dumps(value, ensure_ascii=False)) <= 500
 
 
 def _human_value(value: Any) -> str:
@@ -557,46 +611,126 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
                  f'{site_url}{OHLONE_PATH}', "\n".join(body))
 
 
-def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str:
+def render_entity_html(payload: dict, site_url: str,
+                       entities_by_id: dict[str, dict]) -> str:
     entity = payload["entity"]
     claims = payload["claims"]
     gaps = payload["knowledge_gaps"]
-    answer = (
-        f'{len(claims)} evidence-backed claim(s) are published for this entity.'
-        if claims else
-        'No direct claim is published for this entity. That absence is not confirmation.'
-    )
+    claim_groups: dict[str, list[dict]] = {}
+    for bundle in claims:
+        claim_groups.setdefault(_claim_section(bundle["claim"]["predicate"]), []).append(bundle)
+    summary = [bundle for bundle in claims if _short_fact(bundle)][:4]
+    relationship_groups: dict[str, list[dict]] = {}
+    for relationship in payload["relationships"]:
+        relationship_groups.setdefault(
+            _relationship_section(relationship["predicate"]), []).append(relationship)
     body = [
         render_primary_nav(),
-        f'<h1>{_e(entity["name"])}</h1>',
-        f'<p class="subtitle"><span class="pill">{_e(entity["kind"])}</span> '
-        f'<code>{_e(entity["entity_id"])}</code></p>',
-        f'<section><h2>Answerability</h2><p>{_e(answer)}</p></section>',
+        '<header class="page-header">', f'<h1>{_e(entity["name"])}</h1>',
+        f'<p class="subtitle"><span class="eyebrow">{_e(_human_label(entity["kind"]))}</span></p>',
+        f'<p class="tagline">Plan with {len(claims)} source-backed fact'
+        f'{"" if len(claims) == 1 else "s"}, {len(payload["relationships"])} related record'
+        f'{"" if len(payload["relationships"]) == 1 else "s"}, and explicit uncertainty.</p>',
+        '</header>',
+        '<ul class="section-nav" aria-label="On this page">'
+        '<li><a href="#plan">Plan</a></li><li><a href="#explore">Explore</a></li>'
+        '<li><a href="#before-you-go">Before you go</a></li>'
+        '<li><a href="#evidence">Evidence</a></li></ul>',
     ]
+    if summary:
+        body.append('<section aria-labelledby="at-a-glance"><h2 id="at-a-glance">At a glance</h2>'
+                    '<div class="summary-grid">')
+        for bundle in summary:
+            claim = bundle["claim"]
+            body.append('<div class="summary-item">'
+                        f'<strong>{_e(_human_label(claim["predicate"]))}</strong>'
+                        f'{_human_value(claim["value"])}</div>')
+        body.append('</div></section>')
+    body.append('<section id="plan"><h2>Plan a visit</h2>')
     if claims:
-        body.append(f'<section><h2>Published claims ({len(claims)})</h2>')
-        body.extend(_claim_html(bundle) for bundle in claims)
-        body.append('</section>')
-    if payload["relationships"]:
-        body.append('<section><h2>Relationships</h2><ul>')
-        for item in payload["relationships"]:
-            other = (item["object_id"] if item["subject_id"] == entity["entity_id"]
-                     else item["subject_id"])
-            label = (f'<a href="/knowledge/{_e(other)}/">{_e(other)}</a>'
-                     if other in known_ids else f'<code>{_e(other)}</code>')
-            body.append(f'<li>{_e(item["predicate"].replace("_", " "))}: {label}</li>')
-        body.append('</ul></section>')
-    body.append('<section><h2>Known gaps</h2>')
+        for title in (
+            "Requirements and current conditions", "Getting there",
+            "Routes and geography", "Facilities and services", "More planning facts",
+        ):
+            bundles = claim_groups.get(title, [])
+            if bundles:
+                body.append(f'<section class="planning-group"><h3>{_e(title)}</h3>'
+                            '<div class="fact-list">')
+                body.extend(_claim_html(bundle) for bundle in bundles)
+                body.append('</div></section>')
+    else:
+        body.append('<div class="notice notice-unknown"><p>No direct planning facts are '
+                    'published yet. That absence is not confirmation.</p></div>')
+    body.append('</section>')
+    body.append('<section id="explore"><h2>Explore related places</h2>')
+    if relationship_groups:
+        for title in ("Access and approaches", "Places and facilities",
+                      "Land and management", "Routes and related places"):
+            items = relationship_groups.get(title, [])
+            if not items:
+                continue
+            body.append(f'<h3>{_e(title)} <span class="meta">({len(items)})</span></h3>')
+            visible_items = items[:8]
+            remaining_items = items[8:]
+            body.append('<ul class="related-list">')
+            for item in visible_items:
+                other = (item["object_id"] if item["subject_id"] == entity["entity_id"]
+                         else item["subject_id"])
+                related = entities_by_id.get(other)
+                label = related["name"] if related else other
+                link = (f'<a href="/knowledge/{_e(other)}/">{_e(label)}</a>'
+                        if related else f'<span>{_e(label)}</span>')
+                direction = ("From this record" if item["subject_id"] == entity["entity_id"]
+                             else "To this record")
+                body.append('<li class="related-card">'
+                            f'<span class="relationship-label">{_e(_human_label(item["predicate"]))}</span>'
+                            f'{link}<span class="meta">{_e(direction)}</span></li>')
+            body.append('</ul>')
+            if remaining_items:
+                body.append(f'<details class="related-more"><summary>Show {len(remaining_items)} more</summary>'
+                            '<ul class="related-list">')
+                for item in remaining_items:
+                    other = (item["object_id"] if item["subject_id"] == entity["entity_id"]
+                             else item["subject_id"])
+                    related = entities_by_id.get(other)
+                    label = related["name"] if related else other
+                    link = (f'<a href="/knowledge/{_e(other)}/">{_e(label)}</a>'
+                            if related else f'<span>{_e(label)}</span>')
+                    direction = ("From this record" if item["subject_id"] == entity["entity_id"]
+                                 else "To this record")
+                    body.append('<li class="related-card">'
+                                f'<span class="relationship-label">{_e(_human_label(item["predicate"]))}</span>'
+                                f'{link}<span class="meta">{_e(direction)}</span></li>')
+                body.append('</ul></details>')
+    else:
+        body.append('<p>No related canonical records are published yet.</p>')
+    body.append('</section>')
+    body.append('<section id="before-you-go"><h2>Before you go</h2>')
     if gaps:
-        body.append('<ul>' + ''.join(
-            f'<li>{_e(item["question"])}'
-            f'{" — " + _e(item["reason"]) if item.get("reason") else ""}</li>'
-            for item in gaps) + '</ul>')
+        body.append('<p>These open questions need confirmation; Wayproof does not fill them '
+                    'with guesses.</p>')
+        body.extend('<article class="notice notice-unknown">'
+                    f'<h3>{_e(item["question"])}</h3>'
+                    f'{"<p>" + _e(item["reason"]) + "</p>" if item.get("reason") else ""}'
+                    '</article>' for item in gaps)
     else:
         body.append('<p>No explicit knowledge gap is linked to this entity. That does not '
                     'mean the record is complete.</p>')
     body.append('</section>')
-    body.append('<section><h2>Published history</h2>')
+    body.append('<section id="evidence"><h2>Sources, evidence, and history</h2>'
+                '<p>Planning facts above are readable first. Open these records when you need '
+                'to audit a source or see when knowledge changed.</p>')
+    if claims:
+        body.append(f'<details><summary>Evidence for {len(claims)} published claim'
+                    f'{"" if len(claims) == 1 else "s"}</summary><ul class="evidence-list">')
+        for bundle in claims:
+            source_items = ''.join(f'<li>{_source_label(source)}</li>'
+                                   for source in bundle["sources"])
+            body.append('<li><strong>'
+                        f'{_e(_human_label(bundle["claim"]["predicate"]))}</strong>'
+                        f'<ul>{source_items or "<li>No source is attached.</li>"}</ul></li>')
+        body.append('</ul></details>')
+    body.append('<details><summary>Published ChangeSet history</summary>')
     if payload["history"]:
         body.append('<ul>' + ''.join(
             f'<li><code>{_e(item["change_set_id"])}</code> — '
@@ -605,9 +739,11 @@ def render_entity_html(payload: dict, site_url: str, known_ids: set[str]) -> str
             for item in payload["history"]) + '</ul>')
     else:
         body.append('<p>No matching published ChangeSet operation was found.</p>')
-    body.append('</section>')
+    body.append('</details></section>')
     body.append(
-        f'<p class="meta"><a href="/knowledge/{_e(entity["entity_id"])}.json">JSON</a> · '
+        f'<aside class="technical-links"><strong>Reference formats</strong><p>'
+        f'<a href="/knowledge/{_e(entity["entity_id"])}.json">JSON</a> · '
+        f'<code>{_e(entity["entity_id"])}</code></p></aside><p class="meta">'
         'Canonical data is historical evidence, not a guarantee of current conditions. '
         'Recheck volatile facts before travel.</p>'
     )
@@ -748,7 +884,7 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
                          site_url: str, as_of: date) -> dict:
     """Write canonical search and detail pages into an existing site artifact."""
     entities = tuple(_plain(item) for item in reads.search_entities())
-    known_ids = {item["entity_id"] for item in entities}
+    entities_by_id = {item["entity_id"]: item for item in entities}
     preferred_paths = {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
@@ -793,7 +929,7 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         page_dir = knowledge_dir / entity["entity_id"]
         page_dir.mkdir(parents=True, exist_ok=True)
         (page_dir / "index.html").write_text(
-            render_entity_html(payload, site_url, known_ids), encoding="utf-8")
+            render_entity_html(payload, site_url, entities_by_id), encoding="utf-8")
         (knowledge_dir / f'{entity["entity_id"]}.json').write_text(
             _json(payload), encoding="utf-8")
 
