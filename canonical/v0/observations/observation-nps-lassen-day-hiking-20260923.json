@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies featured trails, describes the May-October hiking season, states that snow can persist into June or July, and prohibits pets on trails.",
+    "observation_id": "observation-nps-lassen-day-hiking-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-day-hiking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

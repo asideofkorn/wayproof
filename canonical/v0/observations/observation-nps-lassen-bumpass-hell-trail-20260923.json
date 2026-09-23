@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Bumpass Hell Trail starts at Bumpass Hell parking seven miles from the Southwest Entrance; it is a three-mile round trip taking about two hours and is generally available only in late summer and fall. Parking is limited.",
+    "observation_id": "observation-nps-lassen-bumpass-hell-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-bumpass-hell-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

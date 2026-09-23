@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Boiling Springs Lake Trail starts at the parking area west of Warner Valley Campground; it is a three-mile round trip taking about two hours with an easy 200-foot climb.",
+    "observation_id": "observation-nps-lassen-boiling-springs-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-boiling-springs-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

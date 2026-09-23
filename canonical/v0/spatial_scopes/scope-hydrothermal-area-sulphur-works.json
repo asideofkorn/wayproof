@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Sulphur Works",
+    "entity_id": "hydrothermal-area-sulphur-works",
+    "kind": "entity",
+    "scope_id": "scope-hydrothermal-area-sulphur-works"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

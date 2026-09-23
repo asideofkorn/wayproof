@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cinder-cone-trail-profile",
+    "evidence_ids": [
+      "evidence-cinder-cone-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-cinder-cone-trail"
+    ],
+    "subject_id": "route-cinder-cone-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_change_ft": 846,
+      "elevation_range_ft": [
+        6061,
+        6907
+      ],
+      "round_trip_miles": 4,
+      "round_trip_time_hours": 3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

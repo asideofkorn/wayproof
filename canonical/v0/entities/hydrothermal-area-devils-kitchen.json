@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "hydrothermal-area-devils-kitchen",
+    "kind": "hydrothermal_area",
+    "name": "Devils Kitchen"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-brokeoff-mountain-trail-profile",
+    "evidence_ids": [
+      "evidence-brokeoff-mountain-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-brokeoff-mountain-trail"
+    ],
+    "subject_id": "route-brokeoff-mountain-trail",
+    "temporal_scope": null,
+    "value": {
+      "round_trip_miles": 7.4,
+      "round_trip_time_hours": 6,
+      "start_elevation_ft": 6635,
+      "summit_elevation_ft": 9235,
+      "terrain": [
+        "rocky",
+        "forested",
+        "alpine"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

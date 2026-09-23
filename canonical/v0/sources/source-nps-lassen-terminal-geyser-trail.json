@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.nps.gov/lavo/planyourvisit/hiking_terminal_geyser.htm",
+    "publisher": "National Park Service",
+    "source_id": "source-nps-lassen-terminal-geyser-trail"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

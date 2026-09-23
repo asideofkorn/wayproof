@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lassen Peak",
+    "entity_id": "peak-lassen-peak",
+    "kind": "entity",
+    "scope_id": "scope-peak-lassen-peak"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

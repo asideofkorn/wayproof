@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-devils-kitchen-trail-profile",
+    "evidence_ids": [
+      "evidence-devils-kitchen-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-devils-kitchen-trail"
+    ],
+    "subject_id": "route-devils-kitchen-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_change_ft": 440,
+      "elevation_range_ft": [
+        5640,
+        6040
+      ],
+      "high_point_ft": 6080,
+      "round_trip_miles": 4.2,
+      "round_trip_time_hours": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

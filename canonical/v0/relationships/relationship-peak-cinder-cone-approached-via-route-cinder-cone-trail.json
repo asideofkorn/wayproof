@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-cinder-cone-trail-profile"
+    ],
+    "object_id": "route-cinder-cone-trail",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-peak-cinder-cone-approached-via-route-cinder-cone-trail",
+    "subject_id": "peak-cinder-cone",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

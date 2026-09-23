@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bumpass-hell-trail-profile",
+    "evidence_ids": [
+      "evidence-bumpass-hell-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-bumpass-hell-trail"
+    ],
+    "subject_id": "route-bumpass-hell-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_range_ft": [
+        8200,
+        8400
+      ],
+      "parking": "limited and often full mid-morning to early afternoon",
+      "round_trip_miles": 3,
+      "round_trip_time_hours": 2,
+      "typical_season": "approximately late July through October"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

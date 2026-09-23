@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-boiling-springs-lake-trail-profile",
+    "evidence_ids": [
+      "evidence-boiling-springs-lake-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-boiling-springs-lake-trail"
+    ],
+    "subject_id": "route-boiling-springs-lake-trail",
+    "temporal_scope": null,
+    "value": {
+      "climb_ft": 200,
+      "difficulty_description": "easy",
+      "elevation_ft": 5800,
+      "round_trip_miles": 3,
+      "round_trip_time_hours": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-devils-kitchen-trail-profile"
+    ],
+    "object_id": "trailhead-warner-valley",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-devils-kitchen-trail-starts-at-trailhead-warner-valley",
+    "subject_id": "route-devils-kitchen-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

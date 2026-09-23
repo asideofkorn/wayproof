@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-boiling-springs-lake-trail-profile"
+    ],
+    "object_id": "waterbody-boiling-springs-lake",
+    "predicate": "contains",
+    "relationship_id": "relationship-lassen-contains-waterbody-boiling-springs-lake",
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

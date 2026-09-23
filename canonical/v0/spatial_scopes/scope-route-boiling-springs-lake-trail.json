@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Boiling Springs Lake Trail",
+    "entity_id": "route-boiling-springs-lake-trail",
+    "kind": "route",
+    "scope_id": "scope-route-boiling-springs-lake-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Cinder Cone Trail",
+    "entity_id": "route-cinder-cone-trail",
+    "kind": "route",
+    "scope_id": "scope-route-cinder-cone-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Bumpass Hell Trail",
+    "entity_id": "route-bumpass-hell-trail",
+    "kind": "route",
+    "scope_id": "scope-route-bumpass-hell-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

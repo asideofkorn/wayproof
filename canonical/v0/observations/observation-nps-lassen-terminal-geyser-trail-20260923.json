@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Terminal Geyser Trail starts at Warner Valley Trailhead; it is a 5.8-mile round trip taking two and a half to three hours with 610 feet of elevation change and follows portions of the PCT through signed junctions.",
+    "observation_id": "observation-nps-lassen-terminal-geyser-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-terminal-geyser-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

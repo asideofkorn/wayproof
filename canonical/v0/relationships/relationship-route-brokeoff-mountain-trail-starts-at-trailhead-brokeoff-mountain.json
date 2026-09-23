@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-brokeoff-mountain-trail-profile"
+    ],
+    "object_id": "trailhead-brokeoff-mountain",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-brokeoff-mountain-trail-starts-at-trailhead-brokeoff-mountain",
+    "subject_id": "route-brokeoff-mountain-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

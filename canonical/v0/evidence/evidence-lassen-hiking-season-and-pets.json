@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-hiking-season-and-pets",
+    "evidence_id": "evidence-lassen-hiking-season-and-pets",
+    "notes": "",
+    "observation_id": "observation-nps-lassen-day-hiking-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

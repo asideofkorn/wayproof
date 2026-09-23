@@ -1,0 +1,1044 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-destinations-route-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-lassen-peak.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "peak-lassen-peak",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-brokeoff-mountain.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "peak-brokeoff-mountain",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-cinder-cone.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "peak-cinder-cone",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/hydrothermal-area-bumpass-hell.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "hydrothermal-area-bumpass-hell",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/hydrothermal-area-devils-kitchen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "hydrothermal-area-devils-kitchen",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-boiling-springs-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "waterbody-boiling-springs-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/hydrothermal-feature-terminal-geyser.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "hydrothermal-feature-terminal-geyser",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/hydrothermal-area-sulphur-works.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "hydrothermal-area-sulphur-works",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-lassen-peak.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-lassen-peak",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-brokeoff-mountain.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-brokeoff-mountain",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-cinder-cone-butte-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-cinder-cone-butte-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-bumpass-hell.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-bumpass-hell",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-warner-valley.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-warner-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-boiling-springs-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-boiling-springs-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-sulphur-works.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "trailhead-sulphur-works",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lassen-peak-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-lassen-peak-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-brokeoff-mountain-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-brokeoff-mountain-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-cinder-cone-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-cinder-cone-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-bumpass-hell-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-bumpass-hell-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-devils-kitchen-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-devils-kitchen-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-boiling-springs-lake-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-boiling-springs-lake-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-terminal-geyser-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "route-terminal-geyser-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-lassen-peak.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-peak-lassen-peak",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-brokeoff-mountain.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-peak-brokeoff-mountain",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-cinder-cone.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-peak-cinder-cone",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-hydrothermal-area-bumpass-hell.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-hydrothermal-area-bumpass-hell",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-hydrothermal-area-devils-kitchen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-hydrothermal-area-devils-kitchen",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-boiling-springs-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-waterbody-boiling-springs-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-hydrothermal-feature-terminal-geyser.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-hydrothermal-feature-terminal-geyser",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-hydrothermal-area-sulphur-works.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-hydrothermal-area-sulphur-works",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-lassen-peak-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-lassen-peak-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-brokeoff-mountain-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-brokeoff-mountain-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-cinder-cone-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-cinder-cone-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-bumpass-hell-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-bumpass-hell-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-devils-kitchen-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-devils-kitchen-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-boiling-springs-lake-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-boiling-springs-lake-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-terminal-geyser-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "scope-route-terminal-geyser-trail",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-day-hiking.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-day-hiking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-places.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-places",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-hydrothermal.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-hydrothermal",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-trail-conditions.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-trail-conditions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-peak-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-peak-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-brokeoff-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-brokeoff-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-cinder-cone-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-cinder-cone-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-bumpass-hell-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-bumpass-hell-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-devils-kitchen-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-devils-kitchen-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-boiling-springs-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-boiling-springs-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-terminal-geyser-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "source-nps-lassen-terminal-geyser-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-day-hiking-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-day-hiking-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-places-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-places-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-hydrothermal-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-hydrothermal-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-trail-conditions-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-trail-conditions-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-peak-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-peak-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-brokeoff-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-brokeoff-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-cinder-cone-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-cinder-cone-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-bumpass-hell-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-bumpass-hell-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-devils-kitchen-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-devils-kitchen-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-boiling-springs-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-boiling-springs-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-terminal-geyser-trail-20260923.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "observation-nps-lassen-terminal-geyser-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-hiking-season-and-pets.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-lassen-hiking-season-and-pets",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-hydrothermal-safety.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-lassen-hydrothermal-safety",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-trail-conditions-recheck.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-lassen-trail-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-peak-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-lassen-peak-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-brokeoff-mountain-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-brokeoff-mountain-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-cinder-cone-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-cinder-cone-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-bumpass-hell-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-bumpass-hell-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-devils-kitchen-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-devils-kitchen-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-boiling-springs-lake-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-boiling-springs-lake-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-terminal-geyser-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-terminal-geyser-trail-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sulphur-works-access.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "evidence-sulphur-works-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-hiking-season-and-pets.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-lassen-hiking-season-and-pets",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-hydrothermal-safety.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-lassen-hydrothermal-safety",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-trail-conditions-recheck.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-lassen-trail-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-peak-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-lassen-peak-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-brokeoff-mountain-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-brokeoff-mountain-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-cinder-cone-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-cinder-cone-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-bumpass-hell-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-bumpass-hell-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-devils-kitchen-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-devils-kitchen-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-boiling-springs-lake-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-boiling-springs-lake-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-terminal-geyser-trail-profile.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-terminal-geyser-trail-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sulphur-works-access.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "claim-sulphur-works-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-peak-lassen-peak.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-peak-lassen-peak",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-peak-brokeoff-mountain.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-peak-brokeoff-mountain",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-peak-cinder-cone.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-peak-cinder-cone",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-hydrothermal-area-bumpass-hell.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-hydrothermal-area-bumpass-hell",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-hydrothermal-area-devils-kitchen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-hydrothermal-area-devils-kitchen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-waterbody-boiling-springs-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-waterbody-boiling-springs-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-hydrothermal-feature-terminal-geyser.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-hydrothermal-feature-terminal-geyser",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lassen-contains-hydrothermal-area-sulphur-works.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-lassen-contains-hydrothermal-area-sulphur-works",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-lassen-peak-approached-via-route-lassen-peak-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-peak-lassen-peak-approached-via-route-lassen-peak-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lassen-peak-trail-starts-at-trailhead-lassen-peak.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-lassen-peak-trail-starts-at-trailhead-lassen-peak",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lassen-peak-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-lassen-peak-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-brokeoff-mountain-approached-via-route-brokeoff-mountain-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-peak-brokeoff-mountain-approached-via-route-brokeoff-mountain-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-brokeoff-mountain-trail-starts-at-trailhead-brokeoff-mountain.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-brokeoff-mountain-trail-starts-at-trailhead-brokeoff-mountain",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-brokeoff-mountain-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-brokeoff-mountain-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-cinder-cone-approached-via-route-cinder-cone-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-peak-cinder-cone-approached-via-route-cinder-cone-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-cinder-cone-trail-starts-at-trailhead-cinder-cone-butte-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-cinder-cone-trail-starts-at-trailhead-cinder-cone-butte-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-cinder-cone-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-cinder-cone-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hydrothermal-area-bumpass-hell-approached-via-route-bumpass-hell-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-hydrothermal-area-bumpass-hell-approached-via-route-bumpass-hell-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-bumpass-hell-trail-starts-at-trailhead-bumpass-hell.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-bumpass-hell-trail-starts-at-trailhead-bumpass-hell",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-bumpass-hell-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-bumpass-hell-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hydrothermal-area-devils-kitchen-approached-via-route-devils-kitchen-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-hydrothermal-area-devils-kitchen-approached-via-route-devils-kitchen-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-devils-kitchen-trail-starts-at-trailhead-warner-valley.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-devils-kitchen-trail-starts-at-trailhead-warner-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-devils-kitchen-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-devils-kitchen-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-waterbody-boiling-springs-lake-approached-via-route-boiling-springs-lake-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-waterbody-boiling-springs-lake-approached-via-route-boiling-springs-lake-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-boiling-springs-lake-trail-starts-at-trailhead-boiling-springs-lake.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-boiling-springs-lake-trail-starts-at-trailhead-boiling-springs-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-boiling-springs-lake-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-boiling-springs-lake-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hydrothermal-feature-terminal-geyser-approached-via-route-terminal-geyser-trail.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-hydrothermal-feature-terminal-geyser-approached-via-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-terminal-geyser-trail-starts-at-trailhead-warner-valley.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-terminal-geyser-trail-starts-at-trailhead-warner-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-terminal-geyser-trail-traverses-lassen.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-route-terminal-geyser-trail-traverses-lassen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-sulphur-works-accesses-feature.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-trailhead-sulphur-works-accesses-feature",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-cinder-cone-connected-butte-lake-access.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-trailhead-cinder-cone-connected-butte-lake-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-warner-valley-connected-remote-access.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "relationship-trailhead-warner-valley-connected-remote-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-lassen-pretrip-recheck.json",
+      "reason": "Publish official-source Lassen destination identities, named hiking routes, evidenced starts, route profiles, and route-condition rechecks without inventing segment topology.",
+      "record_id": "result-lassen-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Lassen destinations, named hiking routes, evidenced trailheads, route profiles, and route-condition rechecks while preserving the remaining segment-topology gap."
+}

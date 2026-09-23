@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS organizes Lassen into the Park Highway, Manzanita Lake, Southwest, Butte Lake, Warner Valley, and Juniper Lake areas and identifies the major destinations served by each area.",
+    "observation_id": "observation-nps-lassen-places-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-places"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

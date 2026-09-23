@@ -130,8 +130,15 @@ def resolve_trip_intent(reads: IntentReads, intent: TripIntent) -> IntentResolut
                  else IntentResolutionState.UNKNOWN)
         return IntentResolution(state, intent, tuple(objectives), issues=tuple(issues))
 
-    route_sets = [_route_candidates(reads, item) for item in objectives
-                  if item.kind in ROUTE_REQUIRED_KINDS]
+    route_sets = []
+    for item in objectives:
+        candidates = _route_candidates(reads, item)
+        # An explicit approached_via relationship makes route resolution useful
+        # for any visit objective, not only peaks and route entities.  This lets
+        # sourced destinations such as lakes or hydrothermal areas participate
+        # without teaching the resolver destination-specific kinds.
+        if item.kind in ROUTE_REQUIRED_KINDS or candidates:
+            route_sets.append(candidates)
     shared_routes = set.intersection(*route_sets) if route_sets else set()
     route = None
     if intent.route_query:
