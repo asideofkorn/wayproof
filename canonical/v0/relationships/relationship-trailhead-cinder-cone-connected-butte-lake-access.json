@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-cinder-cone-trail-profile"
+    ],
+    "object_id": "access-lassen-butte-lake",
+    "predicate": "located_within",
+    "relationship_id": "relationship-trailhead-cinder-cone-connected-butte-lake-access",
+    "subject_id": "trailhead-cinder-cone-butte-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

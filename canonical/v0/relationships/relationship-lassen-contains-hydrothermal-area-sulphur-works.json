@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-sulphur-works-access"
+    ],
+    "object_id": "hydrothermal-area-sulphur-works",
+    "predicate": "contains",
+    "relationship_id": "relationship-lassen-contains-hydrothermal-area-sulphur-works",
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lassen-peak-trail-profile"
+    ],
+    "object_id": "route-lassen-peak-trail",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-peak-lassen-peak-approached-via-route-lassen-peak-trail",
+    "subject_id": "peak-lassen-peak",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

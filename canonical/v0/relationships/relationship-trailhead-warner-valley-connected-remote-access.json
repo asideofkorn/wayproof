@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-devils-kitchen-trail-profile",
+      "evidence-terminal-geyser-trail-profile"
+    ],
+    "object_id": "access-lassen-warner-valley",
+    "predicate": "located_within",
+    "relationship_id": "relationship-trailhead-warner-valley-connected-remote-access",
+    "subject_id": "trailhead-warner-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

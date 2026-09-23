@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-peak-trail-profile",
+    "evidence_ids": [
+      "evidence-lassen-peak-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-lassen-peak-trail"
+    ],
+    "subject_id": "route-lassen-peak-trail",
+    "temporal_scope": null,
+    "value": {
+      "difficulty": "strenuous",
+      "elevation_gain_ft": 1957,
+      "round_trip_miles": 5,
+      "round_trip_time_hours": "4 to 5",
+      "start_elevation_ft": 8500,
+      "surface": "packed dirt with some loose rock"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

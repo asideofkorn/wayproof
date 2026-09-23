@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-terminal-geyser-trail",
+    "kind": "route",
+    "name": "Terminal Geyser Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

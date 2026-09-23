@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-brokeoff-mountain",
+    "kind": "peak",
+    "name": "Brokeoff Mountain"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

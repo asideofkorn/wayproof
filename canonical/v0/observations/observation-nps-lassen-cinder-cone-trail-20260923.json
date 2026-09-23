@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Cinder Cone Trail starts at the Butte Lake parking area; it is a four-mile round trip taking about three hours with 846 feet of elevation change. The trailhead is southwest of the Butte Lake boat ramp.",
+    "observation_id": "observation-nps-lassen-cinder-cone-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-cinder-cone-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

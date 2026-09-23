@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Lassen Peak Trail starts at Lassen Peak Trailhead; it is a strenuous five-mile round trip taking four to five hours, starting near 8,500 feet and gaining 1,957 feet. Snow, weather, altitude, and lightning require trip-specific checks.",
+    "observation_id": "observation-nps-lassen-peak-trail-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-peak-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-trail-conditions-recheck",
+    "evidence_ids": [
+      "evidence-lassen-trail-conditions-recheck"
+    ],
+    "predicate": "pretrip_trail_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-lassen-peak-trail",
+      "scope-route-brokeoff-mountain-trail",
+      "scope-route-cinder-cone-trail",
+      "scope-route-bumpass-hell-trail",
+      "scope-route-devils-kitchen-trail",
+      "scope-route-boiling-springs-lake-trail",
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "trail_status",
+        "road_access",
+        "snow",
+        "bridges",
+        "burned_area_hazards",
+        "parking_limits"
+      ],
+      "warning": "trail status alone does not establish road or park-wide access"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

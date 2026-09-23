@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Boiling Springs Lake",
+    "entity_id": "waterbody-boiling-springs-lake",
+    "kind": "entity",
+    "scope_id": "scope-waterbody-boiling-springs-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

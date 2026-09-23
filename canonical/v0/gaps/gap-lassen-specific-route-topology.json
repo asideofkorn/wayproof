@@ -2,11 +2,17 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-lassen-specific-route-topology",
-    "question": "What exact trail or road traversal connects a selected entrance, campground, and wilderness objective?",
-    "reason": "This foundation does not infer route membership, trailhead connectivity, or traversal from proximity; a later route-specific source batch must model it.",
+    "question": "What exact segment traversal connects each published Lassen trailhead and destination, including shared junctions and alternatives?",
+    "reason": "Official NPS pages now support named objectives, route choices, starts, and round-trip profiles. They do not publish a complete atomic segment graph or one-way distance for every leg, so Wayproof does not divide round-trip mileage or manufacture shared junction topology.",
     "related_ids": [
-      "park-lassen-volcanic-national-park",
-      "land-lassen-volcanic-wilderness"
+      "claim-lassen-trail-conditions-recheck",
+      "route-lassen-peak-trail",
+      "route-brokeoff-mountain-trail",
+      "route-cinder-cone-trail",
+      "route-bumpass-hell-trail",
+      "route-devils-kitchen-trail",
+      "route-boiling-springs-lake-trail",
+      "route-terminal-geyser-trail"
     ]
   },
   "record_type": "gap",

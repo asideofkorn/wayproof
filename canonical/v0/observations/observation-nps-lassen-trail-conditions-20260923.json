@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes dated, area-specific trail status, mileage, difficulty, parking notes, snow, bridge, and Dixie Fire impacts and warns that trail status does not establish road or park-wide access.",
+    "observation_id": "observation-nps-lassen-trail-conditions-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T03:30:00+00:00",
+    "source_id": "source-nps-lassen-trail-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

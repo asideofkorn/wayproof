@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "hydrothermal-feature-terminal-geyser",
+    "kind": "hydrothermal_area",
+    "name": "Terminal Geyser"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

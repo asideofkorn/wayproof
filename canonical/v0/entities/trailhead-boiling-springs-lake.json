@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-boiling-springs-lake",
+    "kind": "trailhead",
+    "name": "Boiling Springs Lake parking area"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

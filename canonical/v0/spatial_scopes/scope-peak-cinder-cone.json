@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Cinder Cone",
+    "entity_id": "peak-cinder-cone",
+    "kind": "entity",
+    "scope_id": "scope-peak-cinder-cone"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

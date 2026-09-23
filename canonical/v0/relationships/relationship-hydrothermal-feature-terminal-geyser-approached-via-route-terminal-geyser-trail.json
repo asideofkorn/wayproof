@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-terminal-geyser-trail-profile"
+    ],
+    "object_id": "route-terminal-geyser-trail",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-hydrothermal-feature-terminal-geyser-approached-via-route-terminal-geyser-trail",
+    "subject_id": "hydrothermal-feature-terminal-geyser",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

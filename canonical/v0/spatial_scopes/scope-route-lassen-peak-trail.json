@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lassen Peak Trail",
+    "entity_id": "route-lassen-peak-trail",
+    "kind": "route",
+    "scope_id": "scope-route-lassen-peak-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

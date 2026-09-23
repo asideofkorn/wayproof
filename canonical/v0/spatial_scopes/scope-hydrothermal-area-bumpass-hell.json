@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Bumpass Hell",
+    "entity_id": "hydrothermal-area-bumpass-hell",
+    "kind": "entity",
+    "scope_id": "scope-hydrothermal-area-bumpass-hell"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

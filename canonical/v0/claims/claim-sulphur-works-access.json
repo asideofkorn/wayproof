@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sulphur-works-access",
+    "evidence_ids": [
+      "evidence-sulphur-works-access"
+    ],
+    "predicate": "published_access",
+    "spatial_scope_ids": [
+      "scope-hydrothermal-area-sulphur-works"
+    ],
+    "subject_id": "hydrothermal-area-sulphur-works",
+    "temporal_scope": null,
+    "value": {
+      "location": "one mile north of Southwest Entrance",
+      "mode": "sidewalk",
+      "parking": "adjacent parking area"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

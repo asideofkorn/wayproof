@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-terminal-geyser-trail-profile",
+    "evidence_ids": [
+      "evidence-terminal-geyser-trail-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-terminal-geyser-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_change_ft": 610,
+      "elevation_range_ft": [
+        5640,
+        5840
+      ],
+      "high_point_ft": 6250,
+      "round_trip_miles": 5.8,
+      "round_trip_time_hours": "2.5 to 3",
+      "uses_pacific_crest_trail": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

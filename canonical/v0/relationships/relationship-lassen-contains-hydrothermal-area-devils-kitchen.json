@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-devils-kitchen-trail-profile"
+    ],
+    "object_id": "hydrothermal-area-devils-kitchen",
+    "predicate": "contains",
+    "relationship_id": "relationship-lassen-contains-hydrothermal-area-devils-kitchen",
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

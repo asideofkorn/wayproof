@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-devils-kitchen-trail",
+    "kind": "route",
+    "name": "Devils Kitchen Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

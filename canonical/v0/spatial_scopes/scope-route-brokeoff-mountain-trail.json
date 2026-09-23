@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Brokeoff Mountain Trail",
+    "entity_id": "route-brokeoff-mountain-trail",
+    "kind": "route",
+    "scope_id": "scope-route-brokeoff-mountain-trail"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

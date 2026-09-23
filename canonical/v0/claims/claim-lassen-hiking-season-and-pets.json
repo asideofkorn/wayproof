@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-hiking-season-and-pets",
+    "evidence_ids": [
+      "evidence-lassen-hiking-season-and-pets"
+    ],
+    "predicate": "day_hiking_operating_context",
+    "spatial_scope_ids": [
+      "scope-lassen-national-park"
+    ],
+    "subject_id": "park-lassen-volcanic-national-park",
+    "temporal_scope": null,
+    "value": {
+      "pets_on_trails": false,
+      "snow_may_persist": "June or sometimes July",
+      "typical_hiking_season": "May through October"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
