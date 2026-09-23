@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-peak-trailhead-summit",
+    "evidence_id": "evidence-route-segment-lassen-peak-trailhead-summit",
+    "notes": "",
+    "observation_id": "observation-usgs-topo-vector-lassen-trails-20250729-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

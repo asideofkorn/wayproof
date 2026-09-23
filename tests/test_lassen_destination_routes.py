@@ -52,7 +52,7 @@ def test_every_published_route_has_an_evidenced_objective_and_start():
         assert starts[0].evidence_ids
 
 
-def test_profiles_preserve_round_trip_precision_without_inventing_one_way_legs():
+def test_profiles_preserve_round_trip_precision_while_topology_gap_narrows():
     records = load_canonical(ROOT)
     claims = by_id(records, "claims", "claim_id")
     gaps = by_id(records, "gaps", "gap_id")
@@ -66,8 +66,9 @@ def test_profiles_preserve_round_trip_precision_without_inventing_one_way_legs()
         "2.5 to 3"
     )
     reason = gaps["gap-lassen-specific-route-topology"].reason
-    assert "do not publish a complete atomic segment graph" in reason
-    assert "does not divide round-trip mileage" in reason
+    assert "Lassen Peak and Brokeoff Mountain" in reason
+    assert "branched-route reconciliation" not in reason
+    assert "Bumpass Hell, Cinder Cone" in reason
 
 
 def test_peak_and_non_peak_objectives_resolve_their_sourced_route_and_entry():

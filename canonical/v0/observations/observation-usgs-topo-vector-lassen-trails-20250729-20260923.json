@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The USGS Topo Map Vector Data product 25034 Lassen Peak CA, published 2025-07-29 in EPSG:4269, includes NPS-originated recreational-trail features. Feature 156823fe-597b-42f7-85ad-d3d73e6754a7 is named Lassen Peak Trail, runs from (-121.5057222, 40.4748484) to (-121.5049354, 40.4881397), and has lengthmiles 2.51712045. Feature c128bf58-c8ed-4821-9955-5fba72c87998 is named Brokeoff Mountain Trail, runs from (-121.5361309, 40.4309029) to (-121.5595943, 40.4456411), and has lengthmiles 3.60834485. Both features identify National Park Service as source originator and NPS Trails 11/2019 as the source-data description; the dataset warns that temporal changes may have occurred.",
+    "observation_id": "observation-usgs-topo-vector-lassen-trails-20250729-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T20:00:00+00:00",
+    "source_id": "source-usgs-topo-vector-lassen-peak-20250729"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

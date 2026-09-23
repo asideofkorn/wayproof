@@ -74,6 +74,7 @@ def _segment_description(reads: TraversalReads, segment_id: str, trip_date: date
         if item.predicate in {
             "printed_atomic_route_distance_miles", "mapped_route_connector",
             "described_route_connector", "printed_route_distance_miles",
+            "official_dataset_route_segment",
         }
         and _effective(item.temporal_scope, trip_date)
     )
@@ -130,7 +131,7 @@ def resolve_traversal(
 
     atomic_predicates = {
         "printed_atomic_route_distance_miles", "mapped_route_connector",
-        "described_route_connector",
+        "described_route_connector", "official_dataset_route_segment",
     }
     atomic = {
         segment_id: description

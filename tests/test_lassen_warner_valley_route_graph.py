@@ -87,7 +87,7 @@ def test_remaining_lassen_topology_gap_is_narrowed_not_erased():
     gap = gaps["gap-lassen-specific-route-topology"]
 
     assert "ordered, bidirectional Warner Valley topology" in gap.reason
-    assert "Atomic leg distances remain unknown" in gap.reason
+    assert "atomic leg distances remain unknown" in gap.reason
     assert "route-cinder-cone-trail" in gap.related_ids
 
 

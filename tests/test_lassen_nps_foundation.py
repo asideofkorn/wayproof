@@ -73,7 +73,7 @@ def test_access_edges_are_explicit_and_evidenced_without_invented_traversal():
         "access-lassen-warner-valley",
     }
     assert all(item.evidence_ids for item in access)
-    assert "do not publish a complete atomic segment graph" in (
+    assert "still require route-specific reconciliation" in (
         gaps["gap-lassen-specific-route-topology"].reason
     )
 
