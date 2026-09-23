@@ -69,7 +69,8 @@ def test_profiles_preserve_round_trip_precision_while_topology_gap_narrows():
     assert "Lassen Peak and Brokeoff Mountain" in reason
     assert "branched-route reconciliation" not in reason
     assert "parking-to-basin-entry graph for Bumpass Hell" in reason
-    assert "Cinder Cone, Boiling Springs Lake" in reason
+    assert "around-lake network for Boiling Springs Lake" in reason
+    assert "Cinder Cone" in reason
 
 
 def test_peak_and_non_peak_objectives_resolve_their_sourced_route_and_entry():

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lassen-boiling-pct-link"
+    ],
+    "object_id": "route-node-lassen-terminal-pct-rejoin",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-lassen-boiling-pct-link-ends-at",
+    "subject_id": "route-segment-lassen-boiling-pct-link",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

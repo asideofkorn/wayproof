@@ -1,0 +1,1929 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-boiling-springs-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-lassen-hot-springs-west.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-node-lassen-hot-springs-west",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-lassen-pct-hot-springs.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-node-lassen-pct-hot-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-lassen-boiling-approach-split.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-node-lassen-boiling-approach-split",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-lassen-boiling-north-junction.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-node-lassen-boiling-north-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-lassen-boiling-northeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-node-lassen-boiling-northeast",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-trailhead-dream.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-trailhead-dream",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-dream-hot-springs-west.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-dream-hot-springs-west",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-hot-springs-west-pct.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-hot-springs-west-pct",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-pct-link.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-pct-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-pct-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-pct-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-west-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-west-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-lake-southeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-lake-southeast",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-southeast-northeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-southeast-northeast",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-northeast-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-northeast-north",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-north-lake.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-north-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-pct-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-pct-north",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-boiling-north-connector.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "route-segment-lassen-boiling-north-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-usgs-topo-vector-boiling-springs-trails-20250729-20260923.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "observation-usgs-topo-vector-boiling-springs-trails-20250729-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-trailhead-dream.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-trailhead-dream",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-dream-hot-springs-west.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-dream-hot-springs-west",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-hot-springs-west-pct.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-hot-springs-west-pct",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-pct-link.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-pct-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-pct-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-pct-approach",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-west-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-west-approach",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-lake-southeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-lake-southeast",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-southeast-northeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-southeast-northeast",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-northeast-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-northeast-north",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-north-lake.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-north-lake",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-pct-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-pct-north",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-lassen-boiling-north-connector.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "evidence-lassen-boiling-north-connector",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-trailhead-dream.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-trailhead-dream",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-dream-hot-springs-west.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-dream-hot-springs-west",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-hot-springs-west-pct.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-hot-springs-west-pct",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-pct-link.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-pct-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-pct-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-pct-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-west-approach.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-west-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-lake-southeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-lake-southeast",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-southeast-northeast.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-southeast-northeast",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-northeast-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-northeast-north",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-north-lake.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-north-lake",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-pct-north.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-pct-north",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-boiling-north-connector.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "claim-route-segment-lassen-boiling-north-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-trailhead-dream-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-trailhead-dream-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-trailhead-dream-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-trailhead-dream-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-trailhead-dream-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-trailhead-dream-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-dream-hot-springs-west-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-dream-hot-springs-west-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-dream-hot-springs-west-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-dream-hot-springs-west-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-dream-hot-springs-west-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-dream-hot-springs-west-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-hot-springs-west-pct-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-hot-springs-west-pct-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-hot-springs-west-pct-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-hot-springs-west-pct-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-hot-springs-west-pct-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-hot-springs-west-pct-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-link-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-link-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-link-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-link-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-approach-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-approach-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-approach-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-approach-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-approach-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-approach-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-west-approach-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-west-approach-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-west-approach-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-west-approach-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-west-approach-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-west-approach-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-lake-southeast-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-lake-southeast-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-lake-southeast-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-lake-southeast-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-lake-southeast-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-lake-southeast-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-southeast-northeast-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-southeast-northeast-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-southeast-northeast-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-southeast-northeast-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-southeast-northeast-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-southeast-northeast-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-northeast-north-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-northeast-north-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-northeast-north-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-northeast-north-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-northeast-north-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-northeast-north-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-lake-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-lake-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-lake-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-lake-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-lake-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-north-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-north-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-north-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-north-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-pct-north-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-pct-north-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-connector-starts-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-connector-ends-at.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-boiling-north-connector-part-of.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-segment-lassen-boiling-north-connector-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-boiling-springs-lake-trail-ends-at-waterbody-boiling-springs-lake.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "relationship-route-boiling-springs-lake-trail-ends-at-waterbody-boiling-springs-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-lassen-boiling-trailhead-dream",
+        "evidence-lassen-boiling-dream-hot-springs-west",
+        "evidence-lassen-boiling-hot-springs-west-pct",
+        "evidence-lassen-boiling-pct-link",
+        "evidence-lassen-boiling-pct-approach",
+        "evidence-lassen-boiling-west-approach",
+        "evidence-lassen-boiling-lake-southeast",
+        "evidence-lassen-boiling-southeast-northeast",
+        "evidence-lassen-boiling-northeast-north",
+        "evidence-lassen-boiling-north-lake",
+        "evidence-lassen-boiling-pct-north",
+        "evidence-lassen-boiling-north-connector"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish the official distance-bearing Warner Valley approach and Boiling Springs Lake circuit without flattening its shared and parallel branches.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the exact official Boiling Springs Lake approach and circuit graph while preserving shared and parallel topology."
+}

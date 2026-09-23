@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-boiling-hot-springs-west-pct",
+    "kind": "route_segment",
+    "name": "Hot Springs Creek west junction to PCT junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

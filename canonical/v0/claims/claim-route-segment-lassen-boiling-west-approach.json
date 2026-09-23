@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-boiling-west-approach",
+    "evidence_ids": [
+      "evidence-lassen-boiling-west-approach"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-boiling-springs-lake-trail"
+    ],
+    "subject_id": "route-segment-lassen-boiling-west-approach",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "d0ca7a44-9773-4286-9921-cc664f3a72a5",
+      "dataset_feature_name": "Boiling Springs Lake Trail",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.23998938,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 40.4366966,
+        "longitude": -121.3987323
+      },
+      "operational_status_requires_current_check": true,
+      "route_role": "official_mainline",
+      "source_data_description": "NPS Trails 11/2019",
+      "source_load_date": "2019-12-10T07:53:56.000",
+      "source_mode_attributes": {
+        "bicycle": "No",
+        "hiker_pedestrian": "Yes",
+        "pack_saddle": "Yes"
+      },
+      "source_originator": "National Park Service",
+      "start_coordinate": {
+        "latitude": 40.4394708,
+        "longitude": -121.4007334
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

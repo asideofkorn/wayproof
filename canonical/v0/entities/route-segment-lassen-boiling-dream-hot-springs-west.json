@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-boiling-dream-hot-springs-west",
+    "kind": "route_segment",
+    "name": "Dream Lake junction to Hot Springs Creek west junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

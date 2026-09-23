@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official USGS Topo Vector trail layer preserves a connected Warner Valley approach to Boiling Springs Lake and an around-lake network as twelve atomic NPS trail features. Feature names change along the shared approach, and the lake network contains parallel branches, so the features are retained rather than collapsed into a single inferred line. Dataset publication warns that temporal changes may have occurred and current NPS conditions remain necessary.",
+    "observation_id": "observation-usgs-topo-vector-boiling-springs-trails-20250729-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T15:00:00+00:00",
+    "source_id": "source-usgs-topo-vector-lassen-peak-20250729"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

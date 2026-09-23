@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-boiling-pct-link",
+    "kind": "route_segment",
+    "name": "PCT junction link"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
