@@ -3,11 +3,9 @@
   "record": {
     "gap_id": "gap-lassen-specific-route-topology",
     "question": "What exact segment traversal connects each remaining published Lassen trailhead and destination, including shared junctions and alternatives?",
-    "reason": "Wayproof now publishes an ordered, bidirectional Warner Valley topology for Devils Kitchen and Terminal Geyser with explicit NPS milepoints. Atomic leg distances remain unknown where the sources print only cumulative positions; Wayproof does not divide round-trip mileage and those routes do not publish a complete atomic segment graph with mileage. The other named Lassen routes still lack complete evidenced segment graphs.",
+    "reason": "Wayproof now publishes complete, bidirectional, distance-bearing USGS/NPS segment graphs from trailhead to summit for Lassen Peak and Brokeoff Mountain. It also publishes ordered, bidirectional Warner Valley topology for Devils Kitchen and Terminal Geyser, but atomic leg distances remain unknown where the route descriptions print only cumulative positions. Bumpass Hell, Cinder Cone, Boiling Springs Lake, and the shared Warner Valley corridors still require route-specific reconciliation of official branches, shared segments, junctions, and destination endpoints before their dataset features can be promoted as a complete visitor traversal.",
     "related_ids": [
       "claim-lassen-trail-conditions-recheck",
-      "route-lassen-peak-trail",
-      "route-brokeoff-mountain-trail",
       "route-cinder-cone-trail",
       "route-bumpass-hell-trail",
       "route-boiling-springs-lake-trail",

@@ -1,0 +1,247 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-usgs-route-segments",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-lassen-peak-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "route-segment-lassen-peak-trailhead-summit",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-brokeoff-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "route-segment-brokeoff-trailhead-summit",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/sources/source-usgs-topo-vector-lassen-peak-20250729.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "source-usgs-topo-vector-lassen-peak-20250729",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-usgs-topo-vector-lassen-trails-20250729-20260923.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "observation-usgs-topo-vector-lassen-trails-20250729-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-peak-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "evidence-route-segment-lassen-peak-trailhead-summit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-route-segment-brokeoff-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "evidence-route-segment-brokeoff-trailhead-summit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-peak-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "claim-route-segment-lassen-peak-trailhead-summit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-brokeoff-trailhead-summit.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "claim-route-segment-brokeoff-trailhead-summit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-peak-trailhead-summit-starts-at.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-lassen-peak-trailhead-summit-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-peak-trailhead-summit-ends-at.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-lassen-peak-trailhead-summit-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-peak-trailhead-summit-part-of.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-lassen-peak-trailhead-summit-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-lassen-peak-trail-ends-at-peak-lassen-peak.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-lassen-peak-trail-ends-at-peak-lassen-peak",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-brokeoff-trailhead-summit-starts-at.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-brokeoff-trailhead-summit-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-brokeoff-trailhead-summit-ends-at.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-brokeoff-trailhead-summit-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-brokeoff-trailhead-summit-part-of.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-segment-brokeoff-trailhead-summit-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-brokeoff-mountain-trail-ends-at-peak-brokeoff-mountain.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "relationship-route-brokeoff-mountain-trail-ends-at-peak-brokeoff-mountain",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-segment-lassen-peak-trailhead-summit",
+        "evidence-route-segment-brokeoff-trailhead-summit"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish official USGS/NPS physical trail-segment topology and source-field distance for the unbranched Lassen Peak and Brokeoff Mountain routes.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official USGS/NPS source-field distances and complete bidirectional segment graphs for Lassen Peak Trail and Brokeoff Mountain Trail while preserving the branched-route reconciliation gap."
+}

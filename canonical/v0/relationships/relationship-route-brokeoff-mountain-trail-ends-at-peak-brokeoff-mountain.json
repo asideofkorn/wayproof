@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-brokeoff-trailhead-summit"
+    ],
+    "object_id": "peak-brokeoff-mountain",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-brokeoff-mountain-trail-ends-at-peak-brokeoff-mountain",
+    "subject_id": "route-brokeoff-mountain-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
