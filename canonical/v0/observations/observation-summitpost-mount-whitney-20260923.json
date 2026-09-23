@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The community-authored SummitPost page catalogs the Whitney Trail, Mountaineer's Route, East Face, East Buttress, North Slope, and additional technical routes. Its operational permit prose includes historical and superseded instructions, so this observation supports route discovery only.",
+    "observation_id": "observation-summitpost-mount-whitney-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T01:00:00+00:00",
+    "source_id": "source-summitpost-mount-whitney"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

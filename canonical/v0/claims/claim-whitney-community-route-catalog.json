@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-community-route-catalog",
+    "evidence_ids": [
+      "evidence-whitney-community-route-catalog-5"
+    ],
+    "predicate": "community_route_catalog",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "operational_guidance_authoritative": false,
+      "planning_use": "route discovery only",
+      "routes": [
+        "Whitney Trail",
+        "Mountaineer's Route",
+        "East Face",
+        "East Buttress",
+        "North Slope"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

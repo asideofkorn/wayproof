@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-geographic-identity-0",
+      "evidence-whitney-geographic-identity-3"
+    ],
+    "object_id": "park-sequoia-national-park",
+    "predicate": "lies_on_boundary_of",
+    "relationship_id": "relationship-whitney-boundary-sequoia",
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

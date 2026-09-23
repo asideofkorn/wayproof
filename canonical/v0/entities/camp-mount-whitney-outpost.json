@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-mount-whitney-outpost",
+    "kind": "backcountry_camp",
+    "name": "Outpost Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

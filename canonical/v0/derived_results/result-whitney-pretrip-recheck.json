@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Whitney access and alpine conditions can change rapidly; consult current authoritative sources near departure.",
+    "input_ids": [
+      "claim-whitney-current-conditions-recheck",
+      "gap-whitney-current-conditions"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-whitney-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "trail_and_road_access",
+        "snow_and_ice",
+        "water",
+        "closures",
+        "weather_and_exposure"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

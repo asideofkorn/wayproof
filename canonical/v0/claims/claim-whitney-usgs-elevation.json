@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-usgs-elevation",
+    "evidence_ids": [
+      "evidence-whitney-usgs-elevation-3"
+    ],
+    "predicate": "published_summit_elevation",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "feet": 14494,
+      "publication_context": "state high-point table",
+      "publisher": "U.S. Geological Survey"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

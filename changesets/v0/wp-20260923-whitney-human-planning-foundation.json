@@ -1,0 +1,522 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-whitney-human-planning-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/park-sequoia-national-park.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "park-sequoia-national-park",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-high-sierra-trail.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "route-high-sierra-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mount-whitney-mountaineers.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "route-mount-whitney-mountaineers",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mount-whitney-east-face.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "route-mount-whitney-east-face",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mount-whitney-east-buttress.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "route-mount-whitney-east-buttress",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-crescent-meadow.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "trailhead-crescent-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-mount-whitney-outpost.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "camp-mount-whitney-outpost",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-mount-whitney-trail.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "camp-mount-whitney-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-mount-whitney.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "scope-peak-mount-whitney",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-seki-whitney.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-nps-seki-whitney",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-seki-high-sierra-trail.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-nps-seki-high-sierra-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-seki-trail-conditions.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-nps-seki-trail-conditions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-highest-lowest-elevations.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-usgs-highest-lowest-elevations",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-peakbagger-mount-whitney.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-peakbagger-mount-whitney",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-mount-whitney.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "source-summitpost-mount-whitney",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-seki-whitney-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-nps-seki-whitney-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-seki-high-sierra-trail-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-nps-seki-high-sierra-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-seki-trail-conditions-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-nps-seki-trail-conditions-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-highest-lowest-elevations-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-usgs-highest-lowest-elevations-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-peakbagger-mount-whitney-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-peakbagger-mount-whitney-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-mount-whitney-20260923.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "observation-summitpost-mount-whitney-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-geographic-identity-0.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-geographic-identity-0",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-geographic-identity-3.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-geographic-identity-3",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-nps-elevation-0.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-nps-elevation-0",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-usgs-elevation-3.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-usgs-elevation-3",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-peakbagger-measurement-4.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-peakbagger-measurement-4",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-topographic-profile-4.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-topographic-profile-4",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-east-approach-0.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-east-approach-0",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-west-approach-0.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-west-approach-0",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-west-approach-1.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-west-approach-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-community-route-catalog-5.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-community-route-catalog-5",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-whitney-current-conditions-recheck-2.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "evidence-whitney-current-conditions-recheck-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-geographic-identity.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-geographic-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-nps-elevation.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-nps-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-usgs-elevation.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-usgs-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-peakbagger-measurement.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-peakbagger-measurement",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-topographic-profile.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-topographic-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-east-approach.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-east-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-west-approach.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-west-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-community-route-catalog.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-community-route-catalog",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-whitney-current-conditions-recheck.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "claim-whitney-current-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-boundary-sequoia.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-boundary-sequoia",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-boundary-inyo.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-boundary-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-high-sierra.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-approached-high-sierra",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-mountaineers.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-approached-mountaineers",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-east-face.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-approached-east-face",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-approached-east-buttress.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-approached-east-buttress",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-high-sierra-starts-crescent.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-high-sierra-starts-crescent",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mountaineers-uses-north-fork.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-mountaineers-uses-north-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-face-uses-north-fork.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-east-face-uses-north-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-buttress-uses-north-fork.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-east-buttress-uses-north-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-classic-serves-outpost.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-classic-serves-outpost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-whitney-classic-serves-trail-camp.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "relationship-whitney-classic-serves-trail-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-whitney-published-elevation-conflict.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "gap-whitney-published-elevation-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-whitney-technical-route-topology.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "gap-whitney-technical-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-whitney-current-conditions.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "gap-whitney-current-conditions",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-whitney-pretrip-recheck.json",
+      "reason": "Publish a human-useful Mount Whitney identity, approach, source-conflict, and recheck foundation.",
+      "record_id": "result-whitney-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add a source-backed Mount Whitney human-planning foundation with direct peak facts, approach choices, explicit elevation conflict, and current-condition rechecks."
+}

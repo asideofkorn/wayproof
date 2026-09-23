@@ -26,14 +26,19 @@ def issue_codes(result):
     return {item.code for item in result.issues}
 
 
-def test_whitney_requires_a_route_choice_when_two_are_sourced(reads):
+def test_whitney_requires_a_route_choice_when_multiple_are_sourced(reads):
     result = reads.resolve_intent(intent("Mount Whitney"))
 
     assert result.state is IntentResolutionState.AMBIGUOUS
     assert result.context is None
     assert result.issues[0].code == "route_ambiguous"
     assert set(result.issues[0].candidates) == {
-        "route-mount-whitney-classic", "route-north-fork-lone-pine",
+        "route-high-sierra-trail",
+        "route-mount-whitney-classic",
+        "route-mount-whitney-east-buttress",
+        "route-mount-whitney-east-face",
+        "route-mount-whitney-mountaineers",
+        "route-north-fork-lone-pine",
     }
 
 

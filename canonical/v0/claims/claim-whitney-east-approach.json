@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-east-approach",
+    "evidence_ids": [
+      "evidence-whitney-east-approach-0"
+    ],
+    "predicate": "east_side_approach_summary",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "mid_july_early_october": "technical climbing equipment usually not necessary",
+      "one_way_miles": 10.7,
+      "route": "Classic Mount Whitney Trail",
+      "spring_early_summer": "ice axe and crampons needed",
+      "starts_at": "Whitney Portal",
+      "trailhead_elevation_ft": 8360
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

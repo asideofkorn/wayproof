@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-peakbagger-measurement",
+    "evidence_ids": [
+      "evidence-whitney-peakbagger-measurement-4"
+    ],
+    "predicate": "reported_summit_measurement",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "feet": 14500.7,
+      "measured_on": "2026-05-09",
+      "meters": 4419.8,
+      "method": "differential GNSS",
+      "reported_error_ft": 0.04,
+      "vertical_datum": "NAVD88"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

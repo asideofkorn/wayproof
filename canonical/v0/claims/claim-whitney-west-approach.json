@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-west-approach",
+    "evidence_ids": [
+      "evidence-whitney-west-approach-0",
+      "evidence-whitney-west-approach-1"
+    ],
+    "predicate": "west_side_approach_summary",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "approximate_one_way_miles": 60,
+      "minimum_days_one_way": 6,
+      "permit": "Sequoia and Kings Canyon wilderness permit",
+      "route": "High Sierra Trail",
+      "starts_at": "Crescent Meadow"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

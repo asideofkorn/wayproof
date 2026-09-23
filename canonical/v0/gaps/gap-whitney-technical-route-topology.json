@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-whitney-technical-route-topology",
+    "question": "What exact sourced traversal, grade, seasonal condition, and permit scope applies to each technical Whitney route?",
+    "reason": "SummitPost establishes a useful community route catalog, but current authoritative topology and operational guidance for the technical routes have not yet been ingested.",
+    "related_ids": [
+      "claim-whitney-community-route-catalog"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

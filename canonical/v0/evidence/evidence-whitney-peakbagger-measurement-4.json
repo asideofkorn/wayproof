@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-peakbagger-measurement",
+    "evidence_id": "evidence-whitney-peakbagger-measurement-4",
+    "notes": "",
+    "observation_id": "observation-peakbagger-mount-whitney-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

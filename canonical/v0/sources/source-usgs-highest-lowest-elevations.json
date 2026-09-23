@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.usgs.gov/educational-resources/highest-and-lowest-elevations",
+    "publisher": "U.S. Geological Survey",
+    "source_id": "source-usgs-highest-lowest-elevations"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

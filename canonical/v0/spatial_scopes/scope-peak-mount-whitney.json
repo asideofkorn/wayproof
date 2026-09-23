@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mount Whitney summit and approaches",
+    "entity_id": "peak-mount-whitney",
+    "kind": "peak",
+    "scope_id": "scope-peak-mount-whitney"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

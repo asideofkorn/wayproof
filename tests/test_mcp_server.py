@@ -113,7 +113,12 @@ def test_intent_parser_and_tool_preserve_ambiguity(tools):
     assert result["state"] == "ambiguous"
     assert result["context"] is None
     assert result["issues"][0]["candidates"] == [
-        "route-mount-whitney-classic", "route-north-fork-lone-pine",
+        "route-high-sierra-trail",
+        "route-mount-whitney-classic",
+        "route-mount-whitney-east-buttress",
+        "route-mount-whitney-east-face",
+        "route-mount-whitney-mountaineers",
+        "route-north-fork-lone-pine",
     ]
 
 

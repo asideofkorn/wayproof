@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-whitney-current-conditions",
+    "question": "What trail, road, snow, water, closure, and weather conditions apply near departure?",
+    "reason": "These conditions are volatile and require current NPS, Forest Service, road, and weather checks near departure.",
+    "related_ids": [
+      "claim-whitney-current-conditions-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

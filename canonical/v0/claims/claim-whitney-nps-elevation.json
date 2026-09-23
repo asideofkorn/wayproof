@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-whitney-nps-elevation",
+    "evidence_ids": [
+      "evidence-whitney-nps-elevation-0"
+    ],
+    "predicate": "published_summit_elevation",
+    "spatial_scope_ids": [
+      "scope-peak-mount-whitney"
+    ],
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null,
+    "value": {
+      "feet": 14505,
+      "meters": 4421,
+      "publisher": "National Park Service",
+      "vertical_datum": "NAVD88"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

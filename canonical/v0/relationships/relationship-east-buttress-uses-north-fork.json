@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-community-route-catalog-5"
+    ],
+    "object_id": "route-north-fork-lone-pine",
+    "predicate": "uses_approach_corridor",
+    "relationship_id": "relationship-east-buttress-uses-north-fork",
+    "subject_id": "route-mount-whitney-east-buttress",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-whitney-community-route-catalog-5"
+    ],
+    "object_id": "route-mount-whitney-mountaineers",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-whitney-approached-mountaineers",
+    "subject_id": "peak-mount-whitney",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
