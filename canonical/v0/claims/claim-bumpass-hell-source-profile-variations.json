@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bumpass-hell-source-profile-variations",
+    "evidence_ids": [
+      "evidence-bumpass-hell-source-profile-variations"
+    ],
+    "predicate": "source_page_profile_variations",
+    "spatial_scope_ids": [
+      "scope-route-bumpass-hell-trail"
+    ],
+    "subject_id": "route-bumpass-hell-trail",
+    "temporal_scope": null,
+    "value": {
+      "descent_feet": [
+        200,
+        300
+      ],
+      "duration_minutes": [
+        90,
+        120
+      ],
+      "southwest_entrance_distance_miles": [
+        7,
+        8
+      ],
+      "surface_descriptions": [
+        "packed gravel",
+        "hardpacked dirt and rock"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

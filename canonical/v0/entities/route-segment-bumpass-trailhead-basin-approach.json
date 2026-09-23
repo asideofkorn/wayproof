@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-bumpass-trailhead-basin-approach",
+    "kind": "route_segment",
+    "name": "Bumpass Hell trailhead to basin approach junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

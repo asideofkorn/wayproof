@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-bumpass-trailhead-basin-approach"
+    ],
+    "object_id": "trailhead-bumpass-hell",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-bumpass-trailhead-basin-approach-starts-at",
+    "subject_id": "route-segment-bumpass-trailhead-basin-approach",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,423 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-bumpass-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-node-bumpass-basin-approach-junction.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "route-node-bumpass-basin-approach-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-bumpass-trailhead-basin-approach.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "route-segment-bumpass-trailhead-basin-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/entities/route-segment-bumpass-basin-approach-entry.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "route-segment-bumpass-basin-approach-entry",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-usgs-topo-vector-bumpass-trails-20250729-20260923.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "observation-usgs-topo-vector-bumpass-trails-20250729-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/observations/observation-nps-lassen-bumpass-hell-detail-20260923.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "observation-nps-lassen-bumpass-hell-detail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-route-segment-bumpass-trailhead-basin-approach.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "evidence-route-segment-bumpass-trailhead-basin-approach",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-route-segment-bumpass-basin-approach-entry.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "evidence-route-segment-bumpass-basin-approach-entry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-bumpass-hell-basin-route-description.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "evidence-bumpass-hell-basin-route-description",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/evidence/evidence-bumpass-hell-source-profile-variations.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "evidence-bumpass-hell-source-profile-variations",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-bumpass-trailhead-basin-approach.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "claim-route-segment-bumpass-trailhead-basin-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-route-segment-bumpass-basin-approach-entry.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "claim-route-segment-bumpass-basin-approach-entry",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-bumpass-hell-basin-route-description.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "claim-bumpass-hell-basin-route-description",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/claims/claim-bumpass-hell-source-profile-variations.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "claim-bumpass-hell-source-profile-variations",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-trailhead-basin-approach-starts-at.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-trailhead-basin-approach-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-trailhead-basin-approach-ends-at.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-trailhead-basin-approach-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-trailhead-basin-approach-part-of.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-trailhead-basin-approach-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-basin-approach-entry-starts-at.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-basin-approach-entry-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-basin-approach-entry-ends-at.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-basin-approach-entry-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-segment-bumpass-basin-approach-entry-part-of.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-segment-bumpass-basin-approach-entry-part-of",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/relationships/relationship-route-bumpass-hell-trail-ends-at-bumpass-hell.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "relationship-route-bumpass-hell-trail-ends-at-bumpass-hell",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-bumpass-full-basin-circulation.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "gap-lassen-bumpass-full-basin-circulation",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-bumpass-source-profile-conflicts.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "gap-lassen-bumpass-source-profile-conflicts",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-segment-bumpass-trailhead-basin-approach",
+        "evidence-route-segment-bumpass-basin-approach-entry",
+        "evidence-bumpass-hell-basin-route-description",
+        "evidence-bumpass-hell-source-profile-variations"
+      ],
+      "knowledge_gap_refs": [
+        "gap-lassen-bumpass-full-basin-circulation",
+        "gap-lassen-bumpass-source-profile-conflicts",
+        "gap-lassen-specific-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish the official distance-bearing Bumpass Hell parking-to-basin approach, while preserving boardwalk, alternate-route, and source-profile uncertainty.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the official distance-bearing Bumpass Hell parking-to-basin approach, preserve source-page profile conflicts, and defer boardwalk and alternate-route choices explicitly."
+}
