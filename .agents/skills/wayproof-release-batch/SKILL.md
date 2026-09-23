@@ -34,6 +34,10 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   entities populate automatically; never patch a single destination into nav.
 - Run at least one end-to-end consumer assertion for each changed rule or
   recheck. Confirm runtime and persisted identifiers join exactly.
+- For destination and route batches, exercise the practical questions promised
+  by the stated coverage level: entry and parking, route reachability and
+  directionality, alternatives and spurs, route-connected facilities, booking
+  or permit requirements, and applicable pre-trip rechecks.
 - Treat source fidelity as behavior: check that approximations, ranges,
   exceptions, time bounds, and dynamic status remain visible after serialization
   and publication.
@@ -62,6 +66,9 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
 - Confirm the merge commit is on `main` and the main-branch tests pass.
 - For website-affecting changes, confirm Pages succeeds and sample representative
   live HTML and JSON URLs.
+- When a batch adds, supersedes, or preserves time-varying knowledge, verify that
+  consumers can discover the supporting evidence and historical ChangeSet
+  without forcing current snapshots to duplicate the full change history.
 - Verify new entity kinds populate generated navigation and directories without
   hand-maintained catalogs.
 - Confirm no unintended open PRs and preserve pre-existing unrelated changes.
