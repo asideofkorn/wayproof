@@ -34,7 +34,10 @@ a { color: #145f9c; text-underline-offset: .16em; }
 h1 { margin: 0 0 .4rem; font-size: clamp(2rem, 5vw, 2.7rem); line-height:1.08; letter-spacing:-.025em; }
 h2 { margin-top: 3rem; font-size: 1.45rem; line-height:1.2; }
 h3 { margin-top: 1.5rem; font-size: 1.08rem; line-height:1.3; }
+h4 { margin-top: 1.2rem; font-size: 1.02rem; line-height:1.3; }
 .tagline, .subtitle { color: var(--muted); margin-top: 0; font-size:1.08rem; max-width:65ch; }
+.eyebrow { font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); }
+body > nav[aria-label="Primary"] { display:flex; flex-wrap:wrap; gap:.45rem 1rem; padding:0 0 1rem; margin:0 0 2rem; border-bottom:1px solid var(--border); font-size:.92rem; }
 nav.crumbs { display:flex; flex-wrap:wrap; gap:.35rem .55rem; font-size: 0.85rem; margin-bottom: 2rem; }
 nav.crumbs a { margin-right: 0.35rem; }
 .lede { font-size: 1.05rem; }
@@ -51,9 +54,19 @@ nav.crumbs a { margin-right: 0.35rem; }
 .fact-list { border-top:1px solid var(--border); }
 .fact-row { padding:1rem 0; border-bottom:1px solid var(--border); }
 .fact-row h3 { margin:0 0 .35rem; }
+.fact-row h4 { margin:0 0 .35rem; }
 .fact-row dl { display:grid; grid-template-columns:minmax(10rem, 1fr) 2fr; gap:.3rem 1rem; margin:.5rem 0; }
 .fact-row dd { margin:0; }
 .fact-row details { margin-top:.6rem; color:var(--muted); font-size:.92rem; }
+.planning-group { margin-top:2rem; }
+.planning-group > h3 { font-size:1.15rem; margin-bottom:.7rem; }
+.related-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; list-style:none; padding:0; }
+.related-card { display:flex; flex-direction:column; gap:.2rem; border:1px solid var(--border); border-radius:10px; padding:.85rem 1rem; }
+.relationship-label { color:var(--muted); font-size:.8rem; font-weight:650; text-transform:uppercase; letter-spacing:.035em; }
+.related-more { margin-top:.8rem; }
+.related-more > summary { color:var(--muted); cursor:pointer; }
+.related-more[open] > .related-list { margin-top:.8rem; }
+.evidence-list > li { margin-bottom:1rem; }
 .technical-links { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); }
 .card { border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 0.75rem; }
 .card h3 { margin-top: 0; }
@@ -99,6 +112,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid #ddd;
   .summary-grid { grid-template-columns:1fr; }
   .fact-row dl { grid-template-columns:1fr; gap:.1rem; }
   .fact-row dt { color:var(--muted); }
+  .related-list { grid-template-columns:1fr; }
 }
 """
 
