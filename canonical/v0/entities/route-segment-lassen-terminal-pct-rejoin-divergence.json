@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-terminal-pct-rejoin-divergence",
+    "kind": "route_segment",
+    "name": "PCT rejoin to Terminal Geyser divergence"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

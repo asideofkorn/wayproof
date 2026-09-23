@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-terminal-pct-divergence-milepoint",
+    "evidence_ids": [
+      "evidence-lassen-terminal-pct-divergence-milepoint"
+    ],
+    "predicate": "published_route_milepoint",
+    "spatial_scope_ids": [
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-node-lassen-terminal-pct-divergence",
+    "temporal_scope": null,
+    "value": {
+      "distance_feet_from_previous_junction": 25,
+      "qualifier": "about"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

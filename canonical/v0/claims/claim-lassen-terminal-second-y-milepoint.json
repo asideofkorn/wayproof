@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lassen-terminal-second-y-milepoint",
+    "evidence_ids": [
+      "evidence-lassen-terminal-second-y-milepoint"
+    ],
+    "predicate": "published_route_milepoint",
+    "spatial_scope_ids": [
+      "scope-route-terminal-geyser-trail"
+    ],
+    "subject_id": "route-node-lassen-terminal-y-0-9",
+    "temporal_scope": null,
+    "value": {
+      "cumulative_miles_from_trailhead": 0.9
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

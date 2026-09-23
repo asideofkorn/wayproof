@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-lassen-devils-third-junction-destination-1",
+      "evidence-route-segment-lassen-devils-third-junction-destination-2"
+    ],
+    "object_id": "route-devils-kitchen-trail",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-lassen-devils-third-junction-destination-part-of-route-devils-kitchen-trail",
+    "subject_id": "route-segment-lassen-devils-third-junction-destination",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "https://www.nps.gov/lavo/planyourvisit/maps.htm",
+      "https://www.nps.gov/lavo/planyourvisit/park-brochure.htm"
+    ],
+    "content": "The NPS brochure map depicts the Warner Valley trail network, including the Pacific Crest Trail, Drakesbad, Devils Kitchen, Dream Lake, Boiling Springs Lake, Terminal Geyser, and the connecting trail junction pattern. The map does not print atomic mileage for these connectors.",
+    "observation_id": "observation-nps-lassen-brochure-map-2015-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T07:30:00+00:00",
+    "source_id": "source-nps-lassen-brochure-map-2015-mirror"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

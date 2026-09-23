@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lassen-devils-dream-third-junction",
+    "kind": "route_segment",
+    "name": "Dream Lake Basin junction to Devils Kitchen third junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

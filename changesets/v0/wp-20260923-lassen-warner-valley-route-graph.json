@@ -1,0 +1,810 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-lassen-warner-valley-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-lassen-brochure-map-2015-mirror.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "source-nps-lassen-brochure-map-2015-mirror",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-brochure-map-2015-20260923.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "observation-nps-lassen-brochure-map-2015-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-devils-kitchen-trail-20260923.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "observation-nps-lassen-devils-kitchen-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-lassen-terminal-geyser-trail-20260923.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "observation-nps-lassen-terminal-geyser-trail-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-warner-first-y.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-warner-first-y",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-dream-devils-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-dream-devils-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-devils-third-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-devils-third-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-terminal-y-0-9.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-terminal-y-0-9",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-boiling-springs-southeast.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-boiling-springs-southeast",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-terminal-pct-rejoin.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-terminal-pct-rejoin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lassen-terminal-pct-divergence.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-node-lassen-terminal-pct-divergence",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-warner-start-first-y.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-warner-start-first-y",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-warner-start-first-y-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-warner-start-first-y-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-warner-start-first-y-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-warner-start-first-y-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-warner-start-first-y-3.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-warner-start-first-y-3",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-warner-start-first-y.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-warner-start-first-y",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-warner-start-first-y-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-warner-start-first-y-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-warner-start-first-y-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-warner-start-first-y-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-warner-start-first-y-part-of-route-devils-kitchen-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-warner-start-first-y-part-of-route-devils-kitchen-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-warner-start-first-y-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-warner-start-first-y-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-devils-first-y-dream-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-devils-first-y-dream-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-first-y-dream-junction-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-first-y-dream-junction-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-first-y-dream-junction-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-first-y-dream-junction-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-devils-first-y-dream-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-devils-first-y-dream-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-first-y-dream-junction-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-first-y-dream-junction-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-first-y-dream-junction-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-first-y-dream-junction-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-first-y-dream-junction-part-of-route-devils-kitchen-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-first-y-dream-junction-part-of-route-devils-kitchen-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-devils-dream-third-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-devils-dream-third-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-dream-third-junction-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-dream-third-junction-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-dream-third-junction-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-dream-third-junction-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-devils-dream-third-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-devils-dream-third-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-dream-third-junction-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-dream-third-junction-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-dream-third-junction-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-dream-third-junction-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-dream-third-junction-part-of-route-devils-kitchen-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-dream-third-junction-part-of-route-devils-kitchen-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-devils-third-junction-destination.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-devils-third-junction-destination",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-third-junction-destination-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-third-junction-destination-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-devils-third-junction-destination-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-devils-third-junction-destination-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-devils-third-junction-destination.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-devils-third-junction-destination",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-third-junction-destination-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-third-junction-destination-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-third-junction-destination-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-third-junction-destination-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-devils-third-junction-destination-part-of-route-devils-kitchen-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-devils-third-junction-destination-part-of-route-devils-kitchen-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-terminal-first-y-second-y.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-terminal-first-y-second-y",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-first-y-second-y-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-first-y-second-y-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-first-y-second-y-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-first-y-second-y-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-terminal-first-y-second-y.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-terminal-first-y-second-y",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-first-y-second-y-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-first-y-second-y-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-first-y-second-y-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-first-y-second-y-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-first-y-second-y-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-first-y-second-y-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-terminal-second-y-boiling-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-terminal-second-y-boiling-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-second-y-boiling-junction-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-second-y-boiling-junction-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-second-y-boiling-junction-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-second-y-boiling-junction-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-terminal-second-y-boiling-junction.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-terminal-second-y-boiling-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-second-y-boiling-junction-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-second-y-boiling-junction-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-second-y-boiling-junction-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-second-y-boiling-junction-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-second-y-boiling-junction-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-second-y-boiling-junction-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-terminal-boiling-junction-pct-rejoin.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-terminal-boiling-junction-pct-rejoin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-boiling-junction-pct-rejoin-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-boiling-junction-pct-rejoin-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-boiling-junction-pct-rejoin-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-boiling-junction-pct-rejoin-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-terminal-boiling-junction-pct-rejoin.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-terminal-boiling-junction-pct-rejoin",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-boiling-junction-pct-rejoin-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-terminal-pct-rejoin-divergence.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-terminal-pct-rejoin-divergence",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-pct-rejoin-divergence-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-pct-rejoin-divergence-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-pct-rejoin-divergence-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-pct-rejoin-divergence-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-terminal-pct-rejoin-divergence.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-terminal-pct-rejoin-divergence",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-pct-rejoin-divergence-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-pct-rejoin-divergence-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-pct-rejoin-divergence-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-pct-rejoin-divergence-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-pct-rejoin-divergence-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-pct-rejoin-divergence-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lassen-terminal-divergence-destination.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "route-segment-lassen-terminal-divergence-destination",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-divergence-destination-1.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-divergence-destination-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lassen-terminal-divergence-destination-2.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-route-segment-lassen-terminal-divergence-destination-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lassen-terminal-divergence-destination.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-route-segment-lassen-terminal-divergence-destination",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-divergence-destination-start.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-divergence-destination-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-divergence-destination-end.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-divergence-destination-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lassen-terminal-divergence-destination-part-of-route-terminal-geyser-trail.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-segment-lassen-terminal-divergence-destination-part-of-route-terminal-geyser-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-devils-first-intersection-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-lassen-devils-first-intersection-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-devils-first-intersection-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-lassen-devils-first-intersection-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-devils-dream-junction-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-lassen-devils-dream-junction-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-devils-dream-junction-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-lassen-devils-dream-junction-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-terminal-second-y-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-lassen-terminal-second-y-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-terminal-second-y-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-lassen-terminal-second-y-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-terminal-pct-rejoin-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-lassen-terminal-pct-rejoin-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-terminal-pct-rejoin-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-lassen-terminal-pct-rejoin-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lassen-terminal-pct-divergence-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "evidence-lassen-terminal-pct-divergence-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lassen-terminal-pct-divergence-milepoint.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "claim-lassen-terminal-pct-divergence-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-devils-kitchen-trail-ends-at-devils-kitchen.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-devils-kitchen-trail-ends-at-devils-kitchen",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-terminal-geyser-trail-ends-at-terminal-geyser.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "relationship-route-terminal-geyser-trail-ends-at-terminal-geyser",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lassen-specific-route-topology.json",
+      "reason": "Publish an evidence-bounded Warner Valley segment graph for Devils Kitchen and Terminal Geyser while preserving unprinted leg distances as unknown.",
+      "record_id": "gap-lassen-specific-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the shared Warner Valley segment topology for Devils Kitchen and Terminal Geyser, preserve printed cumulative milepoints, and narrow the remaining Lassen route-topology gap."
+}

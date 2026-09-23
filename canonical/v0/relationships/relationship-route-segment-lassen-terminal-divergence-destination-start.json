@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-lassen-terminal-divergence-destination-1",
+      "evidence-route-segment-lassen-terminal-divergence-destination-2"
+    ],
+    "object_id": "route-node-lassen-terminal-pct-divergence",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-lassen-terminal-divergence-destination-start",
+    "subject_id": "route-segment-lassen-terminal-divergence-destination",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

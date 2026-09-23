@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-lassen-devils-dream-third-junction",
+    "evidence_ids": [
+      "evidence-route-segment-lassen-devils-dream-third-junction-1",
+      "evidence-route-segment-lassen-devils-dream-third-junction-2"
+    ],
+    "predicate": "described_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-devils-kitchen-trail"
+    ],
+    "subject_id": "route-segment-lassen-devils-dream-third-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "route_role": "official_mainline"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-lassen-terminal-first-y-second-y-1",
+      "evidence-route-segment-lassen-terminal-first-y-second-y-2"
+    ],
+    "object_id": "route-node-lassen-warner-first-y",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-lassen-terminal-first-y-second-y-start",
+    "subject_id": "route-segment-lassen-terminal-first-y-second-y",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

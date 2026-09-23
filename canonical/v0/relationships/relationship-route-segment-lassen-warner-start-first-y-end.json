@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-lassen-warner-start-first-y-1",
+      "evidence-route-segment-lassen-warner-start-first-y-2",
+      "evidence-route-segment-lassen-warner-start-first-y-3"
+    ],
+    "object_id": "route-node-lassen-warner-first-y",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-lassen-warner-start-first-y-end",
+    "subject_id": "route-segment-lassen-warner-start-first-y",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
