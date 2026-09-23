@@ -49,9 +49,12 @@ def test_build_writes_index_and_cname(site):
     assert stats["knowledge_gaps"] > 0
 
     index_html = (tmp_path / "index.html").read_text()
-    assert f"({stats['knowledge_gaps']} open)" in index_html
-    assert "Canonical knowledge gaps" in index_html
+    assert f"<strong>{stats['knowledge_gaps']}</strong> explicit open questions" in index_html
+    assert "Questions that remain open" in index_html
     assert 'href="/destinations/del-valle/"' in index_html
+    assert "Know what applies before you go." in index_html
+    assert "Browse the planning graph" in index_html
+    assert "A fact is useful only when its limits are visible." in index_html
 
 
 def test_build_publishes_no_legacy_trailhead_pages(site):
@@ -263,6 +266,42 @@ def test_primary_navigation_connects_every_public_page_type(site):
             link for link in expected_links if link in html
         )
         assert not missing, f"{page.relative_to(tmp_path)} lacks {sorted(missing)}"
+
+
+def test_every_canonical_page_uses_the_shared_site_shell(site):
+    tmp_path, _ = site
+    for page in (
+        tmp_path / "search" / "index.html",
+        tmp_path / "parks" / "index.html",
+        tmp_path / "changes" / "index.html",
+        tmp_path / "knowledge" / "peak-mount-whitney" / "index.html",
+    ):
+        html = page.read_text()
+        assert 'class="site-nav"' in html
+        assert 'class="site-brand"' in html
+        assert 'class="site-footer"' in html
+
+
+def test_search_and_directories_have_task_focused_filters(site):
+    tmp_path, _ = site
+    search = (tmp_path / "search" / "index.html").read_text()
+    parks = (tmp_path / "parks" / "index.html").read_text()
+
+    assert "Find a place, route, or campsite" in search
+    assert 'class="search-controls"' in search
+    assert 'class="result-grid"' in search
+    assert 'id="directory-search"' in parks
+    assert 'id="directory-kind"' in parks
+    assert 'class="directory-grid"' in parks
+
+
+def test_changes_page_uses_readable_history_cards(site):
+    tmp_path, _ = site
+    page = (tmp_path / "changes" / "index.html").read_text()
+
+    assert "What changed, and why" in page
+    assert 'class="change-list"' in page
+    assert 'class="change-card"' in page
 
 
 def test_directories_are_automatically_populated_from_canonical_kinds(site):

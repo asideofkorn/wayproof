@@ -49,7 +49,11 @@ def _render_gaps_html(gaps) -> str:
             f'<div class="meta"><code>{html.escape(gap.gap_id)}</code> · {links}</div>'
             "</li>"
         )
-    return f'<ul class="plain" style="list-style:none;padding:0">{"".join(items)}</ul>'
+    visible = "".join(items[:6])
+    remaining = "".join(items[6:])
+    more = (f'<details><summary>Show {len(items) - 6} more open questions</summary>'
+            f'<ul class="gap-grid">{remaining}</ul></details>' if remaining else "")
+    return f'<ul class="gap-grid">{visible}</ul>{more}'
 
 
 LANDING_TEMPLATE = """<!doctype html>
@@ -57,52 +61,71 @@ LANDING_TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wayproof -- Source-Backed Permit &amp; Access Logistics for the Sierra Nevada</title>
-<meta name="description" content="Which permit governs your objective, when reservations
-open, what it costs, and what source says so. Sierra Nevada first, open source, every
-fact dated.">
+<title>Wayproof &mdash; Source-Backed Outdoor Planning</title>
+<meta name="description" content="Source-backed outdoor planning for permits, access,
+routes, camps, facilities, and current-condition rechecks. Every answer traceable.">
 <link rel="canonical" href="{site}/">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<h1>Wayproof</h1>
-<p class="tagline">Open-source, source-backed logistics for hiking, trail running,
-backpacking, and mountaineering. Sierra Nevada first, designed to expand to
-U.S. public lands.</p>
-
-<p class="lede">Which permit governs your objective, when its reservations open,
-what it costs, and which source says so &mdash; every fact dated, and the
-uncertain ones labelled rather than guessed.</p>
-
 {primary_nav}
 
+<header class="home-hero">
+  <span class="eyebrow">Plan from evidence, not folklore</span>
+  <h1>Know what applies before you go.</h1>
+  <p class="tagline">Wayproof connects outdoor objectives to permits, access,
+  routes, camps, facilities, and current-condition rechecks&mdash;with every
+  answer traceable to a source.</p>
+  <div class="hero-actions"><a class="button primary" href="/search/">Search Wayproof</a>
+  <a class="button" href="/parks/">Browse places</a></div>
+  <div class="trust-strip"><span><strong>{canonical_entity_count}</strong> published records</span>
+  <span><strong>{gap_count}</strong> explicit open questions</span>
+  <span><strong>Public</strong> ChangeSet history</span></div>
+</header>
+
 <section>
-  <h2>Search canonical knowledge</h2>
-  <p>Search {canonical_entity_count} published places, routes, campsites, water
-  sources, and other entities. Each detail page distinguishes supported claims,
-  known gaps, source evidence, and published ChangeSet history.</p>
-  <p><a href="/search/">Search canonical knowledge &rarr;</a></p>
-  <p><a href="/parks/">Browse parks and preserves &rarr;</a></p>
-  <p><a href="/trails/">Browse trails and routes &rarr;</a></p>
-  <p><a href="/camping/">Browse camping &rarr;</a></p>
-  <p><a href="/peaks/">Browse peaks &rarr;</a></p>
-  <p><a href="/destinations/del-valle/">Plan Del Valle Regional Park &rarr;</a></p>
-  <p><a href="/trails/ohlone-wilderness/">Plan the Ohlone Wilderness Trail &rarr;</a></p>
+  <span class="eyebrow">Start with your objective</span>
+  <h2>Browse the planning graph</h2>
+  <div class="browse-grid">
+    <a class="browse-card" href="/parks/"><strong>Parks &amp; preserves</strong><span>Find access, rules, facilities, and connected routes.</span></a>
+    <a class="browse-card" href="/trails/"><strong>Trails &amp; routes</strong><span>Compare corridors, trailheads, camps, and route choices.</span></a>
+    <a class="browse-card" href="/camping/"><strong>Camping</strong><span>Explore campgrounds, group camps, cabins, and individual sites.</span></a>
+    <a class="browse-card" href="/peaks/"><strong>Peaks</strong><span>Connect summits to approaches, permits, and current checks.</span></a>
+  </div>
 </section>
 
 <section>
-  <h2>Canonical knowledge gaps ({gap_count} open)</h2>
-  <p>These questions are published canonical gaps, not inferred from missing
-  fields or copied from the legacy research corpus.</p>
+  <span class="eyebrow">How Wayproof answers</span>
+  <h2>A fact is useful only when its limits are visible.</h2>
+  <div class="principle-grid">
+    <article><strong>1. Start with the source</strong><p>Official and attributed community sources remain distinct.</p></article>
+    <article><strong>2. Preserve disagreement</strong><p>Conflicting values stay attached to their methods and provenance.</p></article>
+    <article><strong>3. Recheck what changes</strong><p>Conditions, closures, water, and access are marked for confirmation.</p></article>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Planning guides</span>
+  <h2>See the model in practice</h2>
+  <div class="featured-grid">
+    <a class="featured-card" href="/destinations/del-valle/"><span class="meta">Destination guide</span><strong>Del Valle Regional Park</strong><span>Camping, lake recreation, access, and current checks.</span></a>
+    <a class="featured-card" href="/trails/ohlone-wilderness/"><span class="meta">Trail guide</span><strong>Ohlone Wilderness Trail</strong><span>Endpoints, parking, camps, water, and route alternatives.</span></a>
+    <a class="featured-card" href="/knowledge/peak-mount-whitney/"><span class="meta">Peak record</span><strong>Mount Whitney</strong><span>Approaches, elevation evidence, route choices, and uncertainty.</span></a>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">Research queue</span>
+  <h2>Questions that remain open</h2>
+  <p>These are explicit canonical gaps&mdash;not missing fields quietly treated as answers.</p>
   {gaps_html}
 </section>
 
-<footer>
-  <p>Built from <a href="https://github.com/{repo}">{repo}</a>'s own dataset.</p>
-  <p><a href="https://github.com/{repo}#readme">About and documentation</a> ·
-  <a href="https://github.com/{repo}/issues/new?template=data_report.md&labels=data">Submit a report</a></p>
-  <p class="meta">Planning aid, not a booking guarantee -- verify the current rule at
-  the official source before acting on any date here.</p>
+<footer class="site-footer"><div><strong>Wayproof</strong>
+  <p>Built openly from <a href="https://github.com/{repo}">{repo}</a>.</p></div>
+  <div class="footer-links"><a href="/changes/">Published changes</a>
+  <a href="https://github.com/{repo}/issues/new?template=data_report.md&amp;labels=data">Submit a report</a></div>
+  <p class="meta footer-note">Planning aid, not a booking or safety guarantee. Verify volatile facts at the linked official source.</p>
 </footer>
 </body>
 </html>
