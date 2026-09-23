@@ -103,6 +103,17 @@ input[type="search"]:focus, select:focus { outline:3px solid color-mix(in srgb, 
 .change-card h2 { margin:.15rem 0 .6rem; font-size:1.08rem; overflow-wrap:anywhere; }
 .change-card p { margin:.35rem 0; }
 .technical-links { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); }
+.route-map { margin-top:2.25rem; }
+.route-map svg { display:block; width:100%; height:auto; box-sizing:border-box; margin:1rem 0 .65rem; padding:.45rem; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.route-lines path { fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+.route-lines path:nth-child(even) { stroke:#287ea0; }
+.route-start { fill:#fff; stroke:var(--accent); stroke-width:4; vector-effect:non-scaling-stroke; }
+.route-end { fill:#b6462f; stroke:#fff; stroke-width:3; vector-effect:non-scaling-stroke; }
+.route-map-legend { display:flex; flex-wrap:wrap; gap:.6rem 1.2rem; align-items:center; color:var(--muted); font-size:.9rem; }
+.route-map-legend span { display:inline-flex; align-items:center; gap:.35rem; }
+.route-map-legend i { display:inline-block; width:.65rem; height:.65rem; border-radius:50%; }
+.start-dot { background:#fff; border:2px solid var(--accent); }
+.end-dot { background:#b6462f; border:2px solid #fff; box-shadow:0 0 0 1px #b6462f; }
 .card { border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem; margin-bottom: 0.75rem; }
 .card h3 { margin-top: 0; }
 .meta { font-size: 0.85rem; color: var(--muted); }

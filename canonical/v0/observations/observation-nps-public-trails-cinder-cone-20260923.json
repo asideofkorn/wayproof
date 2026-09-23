@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-lavo-cinder-cone-approach-20260923.geojson",
+      "sha256:50d218a1cec59453ce4e12aa84a9a0f9768914c10faa715e307b32db764c4b6a"
+    ],
+    "content": "The NPS Public Trails FeatureServer returned one exact endpoint-matched public trail LineString for each of the three already-published Cinder Cone summit approach segments. All three are identified as existing trails. Mapping method, map source, source date, and XY accuracy are unknown for these features; the geometry is planning evidence and is not represented as navigation-grade.",
+    "observation_id": "observation-nps-public-trails-cinder-cone-20260923",
+    "observed_at": null,
+    "observer": "Wayproof official geometry service review",
+    "retrieved_at": "2026-09-23T17:30:00+00:00",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

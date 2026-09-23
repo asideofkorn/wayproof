@@ -123,6 +123,24 @@ def test_generic_entity_pages_use_the_human_planning_hierarchy(site):
         assert expected_group in page
 
 
+def test_cinder_cone_route_publishes_a_reproducible_human_map(site):
+    tmp_path, _ = site
+    entity_id = "route-cinder-cone-trail"
+    page = (tmp_path / "knowledge" / entity_id / "index.html").read_text()
+    payload = json.loads((tmp_path / "knowledge" / f"{entity_id}.json").read_text())
+    geometry_path = tmp_path / "geometry" / "routes" / f"{entity_id}.geojson"
+    geometry = json.loads(geometry_path.read_text())
+
+    assert "Route map" in page
+    assert '<svg viewBox="0 0 760 420"' in page
+    assert "planning evidence, not navigation-grade mapping" in page
+    assert f'/geometry/routes/{entity_id}.geojson' in page
+    assert payload["route_geometry_url"] == f"/geometry/routes/{entity_id}.geojson"
+    assert payload["route_geometry"] == geometry
+    assert len(geometry["features"]) == 3
+    assert geometry["wayproof"]["navigation_grade"] is False
+
+
 def test_relationships_show_human_names_instead_of_only_record_ids(site):
     tmp_path, _ = site
     page = (tmp_path / "knowledge" / "peak-mount-whitney" / "index.html").read_text()
