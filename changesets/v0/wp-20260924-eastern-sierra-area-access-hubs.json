@@ -1,0 +1,288 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-eastern-sierra-area-access-hubs",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-lundy-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "place-lundy-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-lundy-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "scope-place-lundy-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lundy-canyon-area-identity.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "evidence-lundy-canyon-area-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lundy-canyon-area-identity.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "claim-lundy-canyon-area-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-route-located-in-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-lundy-route-located-in-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-trailhead-located-in-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-lundy-trailhead-located-in-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-lundy-canyon-place.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-inyo-manages-lundy-canyon-place",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-little-lakes-valley-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-little-lakes-valley-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mono-pass-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-mono-pass-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-morgan-pass-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-morgan-pass-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-tamarack-lakes-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-tamarack-lakes-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-hilton-lakes-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-hilton-lakes-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-upper-rock-creek-canyon-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-upper-rock-creek-canyon-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mosquito-flat-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-mosquito-flat-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-tamarack-lakes-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-tamarack-lakes-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-hilton-lakes-rock-creek-located-in-rock-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-hilton-lakes-rock-creek-located-in-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-trailhead-located-at-lake.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-convict-trailhead-located-at-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-canyon-route-located-at-lake.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-convict-canyon-route-located-at-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-lake-george-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-lake-george-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-coldwater-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-coldwater-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-horseshoe-lake-mammoth-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-horseshoe-lake-mammoth-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-crystal-lake-mammoth-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-crystal-lake-mammoth-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-heart-lake-mammoth-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-heart-lake-mammoth-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mcleod-lake-located-in-mammoth-lakes-basin.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-mcleod-lake-located-in-mammoth-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-sabrina-basin-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-sabrina-basin-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-north-lake-bishop-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-north-lake-bishop-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-south-lake-bishop-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-trailhead-south-lake-bishop-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-sabrina-blue-lake-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-sabrina-blue-lake-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-piute-pass-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-piute-pass-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lamarck-lakes-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-lamarck-lakes-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-treasure-lakes-located-in-bishop-creek-canyon.json",
+      "reason": "Make Eastern Sierra canyon and basin pages navigable hubs for their sourced routes and access points.",
+      "record_id": "relationship-route-treasure-lakes-located-in-bishop-creek-canyon",
+      "record_type": "relationship"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Connect Rock Creek, Convict, Lundy, Mammoth Lakes Basin, and Bishop Creek area pages to their sourced routes, trailheads, and managers."
+}

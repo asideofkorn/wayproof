@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lundy-canyon-area-identity",
+    "evidence_id": "evidence-lundy-canyon-area-identity",
+    "notes": "",
+    "observation_id": "observation-usfs-mono-basin-day-hikes-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

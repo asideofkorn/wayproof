@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lundy-canyon-area-identity"
+    ],
+    "object_id": "place-lundy-canyon",
+    "predicate": "located_in",
+    "relationship_id": "relationship-lundy-trailhead-located-in-canyon",
+    "subject_id": "trailhead-lundy-canyon",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

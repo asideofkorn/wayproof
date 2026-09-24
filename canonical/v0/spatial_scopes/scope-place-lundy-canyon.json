@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lundy Canyon day-hike area",
+    "entity_id": "place-lundy-canyon",
+    "kind": "area",
+    "scope_id": "scope-place-lundy-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

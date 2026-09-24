@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-rock-creek-corridor-map-inventory"
+    ],
+    "object_id": "place-rock-creek-canyon",
+    "predicate": "located_in",
+    "relationship_id": "relationship-route-little-lakes-valley-located-in-rock-creek-canyon",
+    "subject_id": "route-little-lakes-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
