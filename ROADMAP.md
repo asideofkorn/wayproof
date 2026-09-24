@@ -114,6 +114,16 @@ the same service layer.
   output only as the underlying M1 services expand.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
+- Add generated interactive map views over the canonical read service for
+  campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
+  Selectable features should link to canonical detail pages and preserve the
+  distinction between approximate points, official coordinates, reviewed
+  reference geometry, and navigation-grade geometry. Use an
+  OpenStreetMap-compatible basemap with the required attribution and licensing;
+  do not create a parallel map catalog or infer route connections from spatial
+  proximity. Choose the rendering library, production tile provider, satellite
+  imagery policy, and hosting strategy only when implementation evidence
+  requires those decisions.
 - Consider a generated read index only if measured query or startup needs
   justify it; canonical Git-backed knowledge remains the source of truth.
 
