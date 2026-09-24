@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-convict-lake-loop-05",
+    "evidence_id": "evidence-route-segment-convict-lake-loop-05",
+    "notes": "",
+    "observation_id": "observation-usgs-eastern-sierra-foliage-routes-20260924",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

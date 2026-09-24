@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-convict-lake-loop-05"
+    ],
+    "object_id": "route-node-convict-lake-loop-south",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-convict-lake-loop-05-ends-at",
+    "subject_id": "route-segment-convict-lake-loop-05",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

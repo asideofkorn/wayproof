@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "The named Convict Lake Loop shore trail",
+    "entity_id": "route-convict-lake-loop",
+    "kind": "route",
+    "scope_id": "scope-route-convict-lake-loop"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-lake-loop-published-profile",
+    "evidence_ids": [
+      "evidence-convict-lake-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-convict-lake-loop"
+    ],
+    "subject_id": "route-convict-lake-loop",
+    "temporal_scope": null,
+    "value": {
+      "round_trip_miles": 2,
+      "route_description": "hike around Convict Lake",
+      "view_context": "lake and Mount Morrison"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

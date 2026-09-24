@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The out-and-back value doubles the selected official dataset distance and does not add a duration estimate.",
+    "input_ids": [
+      "claim-route-heart-lake-mammoth-dataset-profile"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-heart-lake-mammoth-ten-mile-day-hike-fit",
+    "value": {
+      "current_conditions_required": true,
+      "fits_distance_limit": true,
+      "full_out_and_back_miles": 2.1022931,
+      "route_id": "route-heart-lake-mammoth",
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

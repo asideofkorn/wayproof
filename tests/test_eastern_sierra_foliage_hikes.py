@@ -63,7 +63,7 @@ def test_unknown_details_are_gaps_not_invented_route_segments():
     assert "exceeds" in gaps["gap-lundy-canyon-sub-ten-turnaround"].reason
     assert not any(
         item.kind == "route_segment" and any(
-            word in item.entity_id for word in ("mcgee", "convict", "lundy", "virginia")
+            word in item.entity_id for word in ("mcgee", "lundy", "virginia")
         ) for item in entities.values()
     )
 

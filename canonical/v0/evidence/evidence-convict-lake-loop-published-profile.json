@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-lake-loop-published-profile",
+    "evidence_id": "evidence-convict-lake-loop-published-profile",
+    "notes": "",
+    "observation_id": "observation-usfs-convict-lake-two-mile-hike-20260924",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
