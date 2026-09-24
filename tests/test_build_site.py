@@ -293,10 +293,14 @@ def test_search_and_directories_have_task_focused_filters(site):
     assert 'type="submit">Search</button>' in search
     assert 'aria-live="polite"' in search
     assert 'id="no-results"' in search
+    assert "const hasCriteria = Boolean(needle || kind.value)" in search
+    assert "const show = hasCriteria" in search
+    assert "Enter a name or choose a type to search." in search
     assert "event.key === 'Enter'" in search
     assert "form.requestSubmit()" in search
     assert "form.addEventListener('submit'" in search
     assert 'class="result-grid"' in search
+    assert "[hidden] { display:none !important; }" in (tmp_path / "style.css").read_text()
     assert 'id="directory-search"' in parks
     assert 'id="directory-kind"' in parks
     assert 'class="directory-grid"' in parks
