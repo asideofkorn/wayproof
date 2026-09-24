@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-tamarack-lakes-rock-creek-profile",
     "evidence_ids": [
-      "evidence-route-tamarack-lakes-rock-creek-profile"
+      "evidence-route-tamarack-lakes-rock-creek-profile",
+      "evidence-route-tamarack-lakes-rock-creek-3dep-profile"
     ],
     "predicate": "route_profile",
     "spatial_scope_ids": [
@@ -16,7 +17,19 @@
       "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
       "map_role": "principal Rock Creek hiking route",
       "name": "Tamarack Lakes Trail",
-      "one_way_distance_miles_from_source_features": 5.19126423
+      "one_way_distance_miles_from_source_features": 5.19126423,
+      "sampled_elevation_profile": {
+        "approximate_cumulative_gain_ft": 2200,
+        "approximate_cumulative_loss_ft": 330,
+        "end_elevation_ft": 11574,
+        "gain_loss_method": "sum of consecutive USGS 3DEP samples along reviewed route geometry",
+        "maximum_elevation_ft": 11643,
+        "minimum_elevation_ft": 9707,
+        "precision": "approximate",
+        "sample_count": 85,
+        "sample_spacing_meters": 100,
+        "start_elevation_ft": 9707
+      }
     }
   },
   "record_type": "claim",

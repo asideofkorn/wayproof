@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Summit scope for Bear Creek Spire",
+    "entity_id": "peak-bear-creek-spire",
+    "kind": "peak",
+    "scope_id": "scope-peak-bear-creek-spire"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

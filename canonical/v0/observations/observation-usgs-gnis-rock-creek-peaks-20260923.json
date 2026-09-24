@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "data/source/gnis_sierra_summits.txt"
+    ],
+    "content": "The GNIS domestic names extract identifies Mount Morgan at 37.4051772,-118.7329467, Mount Starr at 37.4290273,-118.7651963, Mount Dade at 37.3819133,-118.7794894, Mount Abbot at 37.3863529,-118.7848306, and Bear Creek Spire at 37.3680534,-118.7676077.",
+    "observation_id": "observation-usgs-gnis-rock-creek-peaks-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:30:00+00:00",
+    "source_id": "source-usgs-gnis-rock-creek-peaks"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

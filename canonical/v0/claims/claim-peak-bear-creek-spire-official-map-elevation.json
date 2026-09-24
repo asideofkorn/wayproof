@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-bear-creek-spire-official-map-elevation",
+    "evidence_ids": [
+      "evidence-peak-bear-creek-spire-official-map-elevation"
+    ],
+    "predicate": "published_map_elevation",
+    "spatial_scope_ids": [
+      "scope-peak-bear-creek-spire"
+    ],
+    "subject_id": "peak-bear-creek-spire",
+    "temporal_scope": null,
+    "value": {
+      "elevation_ft": 13713,
+      "map": "Rock Creek Area Trails",
+      "precision": "as labeled on official map"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

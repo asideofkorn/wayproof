@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-palisade-rock-creek-booking-profile",
+    "evidence_ids": [
+      "evidence-campground-palisade-rock-creek-booking-profile"
+    ],
+    "predicate": "campground_booking_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-palisade-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "booking_facility_id": "234663",
+      "booking_name": "Palisades Group Campground",
+      "coordinates_wgs84": {
+        "latitude": 37.4833333,
+        "longitude": -118.7166667
+      },
+      "facilities": {
+        "campfire_rings": true,
+        "tables": 5
+      },
+      "maximum_consecutive_stay_nights": 14,
+      "overflow_group_capacity_maximum": 25,
+      "parking": "limited; follow host or bulletin-board instructions for additional vehicles",
+      "published_elevation_text": "8.800 feet",
+      "setting": "shaded private loop adjacent to Rock Creek",
+      "site_type": "group campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

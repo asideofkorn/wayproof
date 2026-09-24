@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-hilton-lakes-rock-creek-profile",
     "evidence_ids": [
-      "evidence-route-hilton-lakes-rock-creek-profile"
+      "evidence-route-hilton-lakes-rock-creek-profile",
+      "evidence-route-hilton-lakes-rock-creek-3dep-profile"
     ],
     "predicate": "route_profile",
     "spatial_scope_ids": [
@@ -16,7 +17,19 @@
       "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
       "map_role": "principal Rock Creek hiking route",
       "name": "Hilton Lakes Trail",
-      "one_way_distance_miles_from_source_features": 4.08534229
+      "one_way_distance_miles_from_source_features": 4.08534229,
+      "sampled_elevation_profile": {
+        "approximate_cumulative_gain_ft": 770,
+        "approximate_cumulative_loss_ft": 530,
+        "end_elevation_ft": 10107,
+        "gain_loss_method": "sum of consecutive USGS 3DEP samples along reviewed route geometry",
+        "maximum_elevation_ft": 10377,
+        "minimum_elevation_ft": 9842,
+        "precision": "approximate",
+        "sample_count": 67,
+        "sample_spacing_meters": 100,
+        "start_elevation_ft": 9862
+      }
     }
   },
   "record_type": "claim",

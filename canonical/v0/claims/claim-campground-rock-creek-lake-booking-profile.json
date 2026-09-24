@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-rock-creek-lake-booking-profile",
+    "evidence_ids": [
+      "evidence-campground-rock-creek-lake-booking-profile"
+    ],
+    "predicate": "campground_booking_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-rock-creek-lake",
+    "temporal_scope": null,
+    "value": {
+      "boating": "power boats limited to electric motors",
+      "booking_facility_id": "233907",
+      "coordinates_wgs84": {
+        "latitude": 37.4538222,
+        "longitude": -118.7390139
+      },
+      "food_storage": "bear-proof lockers provided; food must be secured",
+      "maximum_consecutive_stay_nights": 14,
+      "onsite_or_nearby_facilities": [
+        "boat rentals",
+        "educational programs",
+        "groceries",
+        "showers",
+        "firewood for a fee"
+      ],
+      "pets": {
+        "leash_required": true,
+        "maximum": 2
+      },
+      "published_elevation_ft": 9600,
+      "site_setting": "well-spaced lakeshore sites, including tent-only walk-in sites",
+      "trail_access": "Tamarack Trail begins in the campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Rock Creek Area Trails, one-page map"
+    ],
+    "content": "The official Rock Creek Area Trails map labels Mount Morgan at 13,748 feet, Mount Starr at 12,835 feet, Mount Dade at 13,600 feet, Mount Abbot at 13,704 feet, and Bear Creek Spire at 13,713 feet. The mapped maintained routes pass near these peaks but the map does not depict a maintained trail reaching their summits.",
+    "observation_id": "observation-usfs-rock-creek-map-peaks-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:30:00+00:00",
+    "source_id": "source-usfs-rock-creek-area-trails-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

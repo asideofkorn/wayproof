@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-abbot-gnis-coordinate",
+    "evidence_id": "evidence-peak-mount-abbot-gnis-coordinate",
+    "notes": "",
+    "observation_id": "observation-usgs-gnis-rock-creek-peaks-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

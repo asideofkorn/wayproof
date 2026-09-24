@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov identifies Rock Creek Lake campground at 37.4538222,-118.7390139 and 9,600 feet. It describes lakeshore sites including tent-only walk-ins, nearby boat rentals, groceries and showers, on-site firewood, bear-proof lockers, electric-motor-only boating, and the Tamarack Trail beginning in the campground. Notices limit pets to two on leash and require food security.",
+    "observation_id": "observation-recreation-rock-creek-lake-api-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:15:00+00:00",
+    "source_id": "source-recreation-rock-creek-lake-api"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

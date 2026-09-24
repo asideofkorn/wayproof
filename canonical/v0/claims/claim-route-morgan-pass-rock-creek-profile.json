@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-morgan-pass-rock-creek-profile",
     "evidence_ids": [
-      "evidence-route-morgan-pass-rock-creek-profile"
+      "evidence-route-morgan-pass-rock-creek-profile",
+      "evidence-route-morgan-pass-rock-creek-3dep-profile"
     ],
     "predicate": "route_profile",
     "spatial_scope_ids": [
@@ -16,7 +17,19 @@
       "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
       "map_role": "principal Rock Creek hiking route",
       "name": "Morgan Pass Trail from Mosquito Flat",
-      "one_way_distance_miles_from_source_features": 5.48061415
+      "one_way_distance_miles_from_source_features": 5.48061415,
+      "sampled_elevation_profile": {
+        "approximate_cumulative_gain_ft": 1140,
+        "approximate_cumulative_loss_ft": 810,
+        "end_elevation_ft": 10548,
+        "gain_loss_method": "sum of consecutive USGS 3DEP samples along reviewed route geometry",
+        "maximum_elevation_ft": 11107,
+        "minimum_elevation_ft": 10224,
+        "precision": "approximate",
+        "sample_count": 90,
+        "sample_spacing_meters": 100,
+        "start_elevation_ft": 10224
+      }
     }
   },
   "record_type": "claim",

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-dade-gnis-coordinate",
+    "evidence_ids": [
+      "evidence-peak-mount-dade-gnis-coordinate"
+    ],
+    "predicate": "official_named_feature_coordinate",
+    "spatial_scope_ids": [
+      "scope-peak-mount-dade"
+    ],
+    "subject_id": "peak-mount-dade",
+    "temporal_scope": null,
+    "value": {
+      "coordinates_wgs84": {
+        "latitude": 37.3819133,
+        "longitude": -118.7794894
+      },
+      "source_system": "GNIS"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

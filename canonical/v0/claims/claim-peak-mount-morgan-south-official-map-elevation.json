@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-morgan-south-official-map-elevation",
+    "evidence_ids": [
+      "evidence-peak-mount-morgan-south-official-map-elevation"
+    ],
+    "predicate": "published_map_elevation",
+    "spatial_scope_ids": [
+      "scope-peak-mount-morgan-south"
+    ],
+    "subject_id": "peak-mount-morgan-south",
+    "temporal_scope": null,
+    "value": {
+      "elevation_ft": 13748,
+      "map": "Rock Creek Area Trails",
+      "precision": "as labeled on official map"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

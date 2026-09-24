@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Summit scope for Mount Dade",
+    "entity_id": "peak-mount-dade",
+    "kind": "peak",
+    "scope_id": "scope-peak-mount-dade"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
