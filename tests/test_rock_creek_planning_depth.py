@@ -79,10 +79,8 @@ def test_official_peak_identity_only_adds_evidenced_planning_grade_approaches():
     assert set(gaps["gap-rock-creek-peak-summit-access"].related_ids) == set(PEAKS)
 
 
-def test_generated_site_adds_peaks_and_keeps_route_profile_qualifiers(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_site_adds_peaks_and_keeps_route_profile_qualifiers(generated_site):
+    tmp_path, _ = generated_site
     peaks = json.loads((tmp_path / "peaks" / "index.json").read_text())
     assert PEAKS.keys() <= {item["entity_id"] for item in peaks["entities"]}
     route_page = (tmp_path / "knowledge" / "route-little-lakes-valley" / "index.html").read_text()

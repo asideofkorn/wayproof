@@ -201,10 +201,8 @@ def test_reservation_conflict_projects_for_campground_recheck_consumer():
     )
 
 
-def test_lassen_generated_navigation_and_detail_pages(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_lassen_generated_navigation_and_detail_pages(generated_site):
+    tmp_path, _ = generated_site
     parks = json.loads((tmp_path / "parks" / "index.json").read_text())
     camping = json.loads((tmp_path / "camping" / "index.json").read_text())
 

@@ -174,10 +174,8 @@ def test_dynamic_status_projects_through_the_consumer_recheck_service():
     )
 
 
-def test_yosemite_park_and_camping_collection_are_generated(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_yosemite_park_and_camping_collection_are_generated(generated_site):
+    tmp_path, _ = generated_site
     parks = json.loads((tmp_path / "parks" / "index.json").read_text())
     camping = json.loads((tmp_path / "camping" / "index.json").read_text())
 

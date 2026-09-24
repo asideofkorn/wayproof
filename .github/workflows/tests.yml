@@ -5,8 +5,36 @@ on:
     branches: [main]
   pull_request:
 
+concurrency:
+  group: tests-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test:
+  test-shard:
+    name: test / ${{ matrix.group }}
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [core, planning, regional-ebrpd, regional-sierra, site]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Verify test partition
+        run: python scripts/test_groups.py --check
+      - name: Run ${{ matrix.group }} tests
+        run: python scripts/test_groups.py --group "${{ matrix.group }}"
+
+  canonical-publication:
+    name: canonical publication boundary
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,12 +44,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.14"
+          cache: pip
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt pytest
-      - name: Run tests
-        run: python -m pytest tests/ -v
+          pip install -r requirements.txt
       - name: Verify canonical publication boundary
         if: github.event_name == 'pull_request'
         run: python scripts/verify_canonical_diff.py --base origin/${{ github.base_ref }}
@@ -32,3 +59,17 @@ jobs:
       # most rows is to add unchecked data. Read it in the log.
       - name: Scorecard (planning-question coverage)
         run: python scripts/scorecard.py
+
+  test:
+    name: test
+    if: always()
+    needs: [test-shard, canonical-publication]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require every test module and publication check
+        env:
+          SHARDS: ${{ needs.test-shard.result }}
+          PUBLICATION: ${{ needs.canonical-publication.result }}
+        run: |
+          test "$SHARDS" = "success"
+          test "$PUBLICATION" = "success"

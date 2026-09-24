@@ -109,10 +109,8 @@ def test_five_peaks_publish_planning_context_not_navigation_tracks():
     assert "navigation-grade geometry" in gaps["gap-rock-creek-peak-summit-access"].reason
 
 
-def test_generated_pages_surface_new_route_spurs_and_peak_context(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_pages_surface_new_route_spurs_and_peak_context(generated_site):
+    tmp_path, _ = generated_site
     route_page = (tmp_path / "knowledge" / "route-upper-rock-creek-canyon" / "index.html").read_text()
     spur_page = (tmp_path / "knowledge" / "route-gem-lakes-spur" / "index.html").read_text()
     peak_page = (tmp_path / "knowledge" / "peak-mount-abbot" / "index.html").read_text()
