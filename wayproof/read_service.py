@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any, Iterable, Optional, Tuple
 
 from .canonical_storage import RECORD_SPECS, load_canonical, load_changeset
+from .hike_comparison import HikeComparison, compare_hikes
 from .intent import IntentResolution, resolve_trip_intent
 from .planning import TripPlan, plan_trip
 from .planning_inputs import PlanningInputProjection, project_planning_inputs
@@ -104,6 +105,16 @@ class CanonicalReadService:
                  or needle in item.entity_id.casefold())
         )
         return tuple(sorted(matches, key=lambda item: (item.name.casefold(), item.entity_id)))
+
+    def compare_hikes(
+        self,
+        route_ids: Iterable[str],
+        maximum_round_trip_miles: float,
+    ) -> HikeComparison:
+        """Compare an explicit route set against a distance cap."""
+        return compare_hikes(
+            self._records, tuple(route_ids), maximum_round_trip_miles,
+        )
 
     def claims_for(self, subject_id: str) -> Tuple[Claim, ...]:
         """Return claims whose subject is the requested canonical record."""
