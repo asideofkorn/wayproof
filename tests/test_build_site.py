@@ -37,6 +37,33 @@ def test_build_writes_index_and_cname(site):
     assert "Know what applies before you go." in index_html
     assert "Browse the planning graph" in index_html
     assert "A fact is useful only when its limits are visible." in index_html
+    assert 'href="/how-it-works/"' in index_html
+
+
+def test_how_wayproof_works_explains_the_model_and_comparison(site):
+    tmp_path, _ = site
+    page = (tmp_path / "how-it-works" / "index.html").read_text()
+
+    for text in (
+        "From sources to decisions",
+        "Source",
+        "Observation",
+        "Evidence",
+        "Claim",
+        "Proximity is not access.",
+        "Traditional wiki",
+        "Basic knowledge graph",
+        "Wayproof claims model",
+        "Two kinds of history",
+        "Agents can propose knowledge. They cannot publish it directly.",
+    ):
+        assert text in page
+    assert 'href="/knowledge/campsite-east-fork-126/"' in page
+    assert 'class="comparison-table"' in page
+    assert 'class="model-flow' in page
+    assert "https://wayproof.dev/how-it-works/" in (
+        tmp_path / "sitemap.xml"
+    ).read_text()
 
 
 def test_build_publishes_no_legacy_trailhead_pages(site):
@@ -249,6 +276,7 @@ def test_primary_navigation_connects_every_public_page_type(site):
         tmp_path / "camping" / "index.html",
         tmp_path / "peaks" / "index.html",
         tmp_path / "changes" / "index.html",
+        tmp_path / "how-it-works" / "index.html",
     )
     expected_links = {
         'href="/"',
@@ -258,6 +286,7 @@ def test_primary_navigation_connects_every_public_page_type(site):
         'href="/camping/"',
         'href="/peaks/"',
         'href="/changes/"',
+        'href="/how-it-works/"',
     }
 
     for page in pages:
@@ -274,6 +303,7 @@ def test_every_canonical_page_uses_the_shared_site_shell(site):
         tmp_path / "search" / "index.html",
         tmp_path / "parks" / "index.html",
         tmp_path / "changes" / "index.html",
+        tmp_path / "how-it-works" / "index.html",
         tmp_path / "knowledge" / "peak-mount-whitney" / "index.html",
     ):
         html = page.read_text()
