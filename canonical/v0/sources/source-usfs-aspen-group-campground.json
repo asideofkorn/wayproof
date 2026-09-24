@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/r05/inyo/recreation/aspen-group-campground",
+    "publisher": "U.S. Forest Service, Inyo National Forest",
+    "source_id": "source-usfs-aspen-group-campground"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo National Forest describes Rock Creek Lake Group Campground as a reservation-only walk-in group site overlooking Rock Creek Lake for up to 25 people. It provides flush toilets, potable water, picnic tables, bear boxes, and no electrical hookups, with a maximum 14-day stay.",
+    "observation_id": "observation-usfs-rock-creek-lake-group-campground-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T00:30:00+00:00",
+    "source_id": "source-usfs-rock-creek-lake-group-campground"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-aspen-group-rock-creek-usfs-profile",
+    "evidence_id": "evidence-campground-aspen-group-rock-creek-usfs-profile",
+    "notes": "",
+    "observation_id": "observation-usfs-aspen-group-campground-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

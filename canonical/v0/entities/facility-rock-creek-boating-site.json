@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-rock-creek-boating-site",
+    "kind": "boating_site",
+    "name": "Rock Creek Boating Site"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

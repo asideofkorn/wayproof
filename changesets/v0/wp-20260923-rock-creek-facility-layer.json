@@ -1,0 +1,205 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-rock-creek-facility-layer",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-aspen-group-rock-creek-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-aspen-group-rock-creek.json",
+      "reason": "Add the official Rock Creek facility identity",
+      "record_id": "campground-aspen-group-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-aspen-group-campground.json",
+      "reason": "Register the official Forest Service facility page",
+      "record_id": "source-usfs-aspen-group-campground",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-aspen-group-campground-20260923.json",
+      "reason": "Preserve the published facility profile",
+      "record_id": "observation-usfs-aspen-group-campground-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-aspen-group-rock-creek-usfs-profile.json",
+      "reason": "Link the official observation to the facility profile",
+      "record_id": "evidence-campground-aspen-group-rock-creek-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-aspen-group-rock-creek-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-aspen-group-rock-creek-usfs-profile.json",
+      "reason": "Publish source-backed access, capacity, and facility details",
+      "record_id": "claim-campground-aspen-group-rock-creek-usfs-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-mosquito-flat-backpacker-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-mosquito-flat-backpacker.json",
+      "reason": "Add the official Rock Creek facility identity",
+      "record_id": "campground-mosquito-flat-backpacker",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-mosquito-flat-backpacker-campground.json",
+      "reason": "Register the official Forest Service facility page",
+      "record_id": "source-usfs-mosquito-flat-backpacker-campground",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-mosquito-flat-backpacker-campground-20260923.json",
+      "reason": "Preserve the published facility profile",
+      "record_id": "observation-usfs-mosquito-flat-backpacker-campground-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-mosquito-flat-backpacker-usfs-profile.json",
+      "reason": "Link the official observation to the facility profile",
+      "record_id": "evidence-campground-mosquito-flat-backpacker-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-mosquito-flat-backpacker-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-mosquito-flat-backpacker-usfs-profile.json",
+      "reason": "Publish source-backed access, capacity, and facility details",
+      "record_id": "claim-campground-mosquito-flat-backpacker-usfs-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-rock-creek-lake-group-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-rock-creek-lake-group.json",
+      "reason": "Add the official Rock Creek facility identity",
+      "record_id": "campground-rock-creek-lake-group",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-rock-creek-lake-group-campground.json",
+      "reason": "Register the official Forest Service facility page",
+      "record_id": "source-usfs-rock-creek-lake-group-campground",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-lake-group-campground-20260923.json",
+      "reason": "Preserve the published facility profile",
+      "record_id": "observation-usfs-rock-creek-lake-group-campground-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-rock-creek-lake-group-usfs-profile.json",
+      "reason": "Link the official observation to the facility profile",
+      "record_id": "evidence-campground-rock-creek-lake-group-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-rock-creek-lake-group-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-rock-creek-lake-group-usfs-profile.json",
+      "reason": "Publish source-backed access, capacity, and facility details",
+      "record_id": "claim-campground-rock-creek-lake-group-usfs-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-rock-creek-boating-site-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-rock-creek-boating-site.json",
+      "reason": "Add the official Rock Creek facility identity",
+      "record_id": "facility-rock-creek-boating-site",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-rock-creek-boating-site.json",
+      "reason": "Register the official Forest Service facility page",
+      "record_id": "source-usfs-rock-creek-boating-site",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-boating-site-20260923.json",
+      "reason": "Preserve the published facility profile",
+      "record_id": "observation-usfs-rock-creek-boating-site-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-rock-creek-boating-site-usfs-profile.json",
+      "reason": "Link the official observation to the facility profile",
+      "record_id": "evidence-facility-rock-creek-boating-site-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-rock-creek-boating-site-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-rock-creek-boating-site-usfs-profile.json",
+      "reason": "Publish source-backed access, capacity, and facility details",
+      "record_id": "claim-facility-rock-creek-boating-site-usfs-profile",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add four official Rock Creek camping and boating facilities"
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo National Forest describes the Rock Creek Boating Site as a day-use launch for small trailers and car-top boats at Rock Creek Lake. The lake has a 5 mph speed limit. The site has flush toilets but no potable water, and fish cleaning in the lake is prohibited.",
+    "observation_id": "observation-usfs-rock-creek-boating-site-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T00:30:00+00:00",
+    "source_id": "source-usfs-rock-creek-boating-site"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
