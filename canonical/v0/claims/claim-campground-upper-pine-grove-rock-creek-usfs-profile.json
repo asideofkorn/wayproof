@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-upper-pine-grove-rock-creek-usfs-profile",
+    "evidence_ids": [
+      "evidence-campground-upper-pine-grove-rock-creek-usfs-profile"
+    ],
+    "predicate": "campground_operating_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-upper-pine-grove-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "accessibility_note": "some sites are flat for easier accessibility",
+      "coordinates_wgs84": {
+        "latitude": 37.4691,
+        "longitude": -118.7254
+      },
+      "facilities": {
+        "bear_boxes": true,
+        "electrical_hookups": false,
+        "picnic_tables": true,
+        "potable_water": true,
+        "vault_toilets": true
+      },
+      "food_storage": "food must be secured when unattended and overnight; provided bear boxes must be used",
+      "maximum_stay_nights": 14,
+      "operating_model": "first come, first served; self-register at campground",
+      "pets": "dogs must be leashed in developed recreation sites",
+      "published_elevation_ft": 9400,
+      "setting": "along Rock Creek in tall Jeffrey pines",
+      "site_count": 9
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
