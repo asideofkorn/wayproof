@@ -31,6 +31,7 @@ body {
   max-width: 800px; margin: 0 auto; padding: 2rem 1.25rem 5rem;
   font-size: 17px; line-height: 1.62; color: #17201c; background: #fff;
 }
+[hidden] { display:none !important; }
 a { color: #145f9c; text-underline-offset: .16em; }
 a:hover { text-decoration-thickness:2px; }
 h1 { margin: 0 0 .4rem; font-size: clamp(2rem, 5vw, 2.7rem); line-height:1.08; letter-spacing:-.025em; }

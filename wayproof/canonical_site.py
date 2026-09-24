@@ -856,7 +856,7 @@ that separates supported facts, open questions, sources, and history.</p></heade
 <label for="entity-kind">Narrow by type</label>
 <select id="entity-kind" name="kind"><option value="">All types</option>{options}</select>
 <button class="button primary search-submit" type="submit">Search</button></form>
-<p id="result-count" class="meta" role="status" aria-live="polite" tabindex="-1">{len(entities)} results</p>
+<p id="result-count" class="meta" role="status" aria-live="polite" tabindex="-1">Enter a name or choose a type to search.</p>
 <p id="no-results" class="notice notice-unknown" hidden>No matching places, routes, or campsites. Try a shorter name or select a different type.</p>
 <ul id="entity-results" class="result-grid">{rows}</ul>
 <noscript><p>All entities are listed above; browser filtering requires JavaScript.</p></noscript>
@@ -869,15 +869,18 @@ const empty = document.getElementById('no-results');
 const rows = [...document.querySelectorAll('#entity-results li')];
 function filterEntities() {{
   const needle = query.value.trim().toLocaleLowerCase();
+  const hasCriteria = Boolean(needle || kind.value);
   let visible = 0;
   for (const row of rows) {{
-    const show = (!needle || row.dataset.search.includes(needle)) &&
+    const show = hasCriteria && (!needle || row.dataset.search.includes(needle)) &&
                  (!kind.value || row.dataset.kind === kind.value);
     row.hidden = !show;
     if (show) visible += 1;
   }}
-  count.textContent = `${{visible}} ${{visible === 1 ? 'result' : 'results'}}`;
-  empty.hidden = visible !== 0;
+  count.textContent = hasCriteria
+    ? `${{visible}} ${{visible === 1 ? 'result' : 'results'}}`
+    : 'Enter a name or choose a type to search.';
+  empty.hidden = !hasCriteria || visible !== 0;
   return visible;
 }}
 query.addEventListener('input', filterEntities);
