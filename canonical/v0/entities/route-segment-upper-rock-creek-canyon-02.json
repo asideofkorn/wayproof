@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-upper-rock-creek-canyon-02",
+    "kind": "route_segment",
+    "name": "Upper Rock Creek Canyon segment 2"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

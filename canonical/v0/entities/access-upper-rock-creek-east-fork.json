@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-upper-rock-creek-east-fork",
+    "kind": "trail_access",
+    "name": "Upper Rock Creek trail access near East Fork Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

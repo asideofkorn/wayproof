@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-gem-lakes-spur"
+    ],
+    "object_id": "route-little-lakes-valley",
+    "predicate": "branches_from",
+    "relationship_id": "relationship-route-gem-lakes-spur-branches-from-little-lakes",
+    "subject_id": "route-gem-lakes-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

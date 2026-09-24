@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-upper-rock-creek-canyon-official-profile",
+    "evidence_ids": [
+      "evidence-route-upper-rock-creek-canyon-official-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-upper-rock-creek-canyon"
+    ],
+    "subject_id": "route-upper-rock-creek-canyon",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "continues_as": "route-tamarack-lakes-rock-creek",
+      "natural_water_requires_treatment": true,
+      "north_end": "near East Fork Campground",
+      "parking": [
+        "East Fork Campground vicinity",
+        "Rock Creek Lake parking lot"
+      ],
+      "south_end": "south end of Rock Creek Lake",
+      "trail_type": "standard terra trail"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-upper-rock-creek-canyon-02"
+    ],
+    "object_id": "route-node-upper-rock-creek-canyon-01",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-upper-rock-creek-canyon-02-starts-at",
+    "subject_id": "route-segment-upper-rock-creek-canyon-02",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-morgan-south-summit-approach-profile",
+    "evidence_id": "evidence-peak-mount-morgan-south-summit-approach-profile",
+    "notes": "",
+    "observation_id": "observation-summitpost-mount-morgan-south-20260924",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

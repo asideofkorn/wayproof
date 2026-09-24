@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-gem-lakes-spur"
+    ],
+    "object_id": "waterbody-gem-lakes-rock-creek",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-gem-lakes-spur-ends-at",
+    "subject_id": "route-gem-lakes-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

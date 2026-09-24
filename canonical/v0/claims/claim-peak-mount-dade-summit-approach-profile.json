@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-dade-summit-approach-profile",
+    "evidence_ids": [
+      "evidence-peak-mount-dade-summit-approach-profile"
+    ],
+    "predicate": "summit_approach_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "peak-mount-dade",
+    "temporal_scope": null,
+    "value": {
+      "condition_dependencies": [
+        "snow or ice may persist",
+        "couloir conditions"
+      ],
+      "current_conditions_required": true,
+      "difficulty": "class 2 on the described standard line",
+      "maintained_approach": "Little Lakes Valley trail",
+      "navigation_grade": false,
+      "off_trail_continuation": "south slope or Hourglass Couloir",
+      "primary_trailhead": "Mosquito Flat",
+      "source_tier": "third_party_reference_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

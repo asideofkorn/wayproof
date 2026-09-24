@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-peak-bear-creek-spire-summit-approach-profile"
+    ],
+    "object_id": "route-little-lakes-valley",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-peak-bear-creek-spire-approached-via-route-little-lakes-valley",
+    "subject_id": "peak-bear-creek-spire",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

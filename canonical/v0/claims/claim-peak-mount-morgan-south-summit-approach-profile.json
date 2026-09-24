@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-morgan-south-summit-approach-profile",
+    "evidence_ids": [
+      "evidence-peak-mount-morgan-south-summit-approach-profile"
+    ],
+    "predicate": "summit_approach_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "peak-mount-morgan-south",
+    "temporal_scope": null,
+    "value": {
+      "condition_dependencies": [
+        "loose rock",
+        "route finding",
+        "exposure varies by line"
+      ],
+      "current_conditions_required": true,
+      "difficulty": "class 1 to class 2 depending line and report",
+      "maintained_approach": "trail toward Francis Lake",
+      "navigation_grade": false,
+      "off_trail_continuation": "loose drainage and ridge",
+      "primary_trailhead": "Rock Creek Lake",
+      "source_tier": "third_party_reference_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-gem-lakes-spur"
+    ],
+    "object_id": "route-node-little-lakes-gem-junction",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-gem-lakes-spur-starts-at",
+    "subject_id": "route-segment-gem-lakes-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

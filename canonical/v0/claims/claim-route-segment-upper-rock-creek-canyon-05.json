@@ -1,0 +1,45 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-upper-rock-creek-canyon-05",
+    "evidence_ids": [
+      "evidence-route-segment-upper-rock-creek-canyon-05"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-upper-rock-creek-canyon"
+    ],
+    "subject_id": "route-segment-upper-rock-creek-canyon-05",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "{1A764789-E62E-4CEA-A1F4-40B2AB50BF99}",
+      "dataset_feature_name": "UPPER ROCK CREEK CANYON",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.00201986,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.46854413767443,
+        "longitude": -118.7247143844894
+      },
+      "geometry_snapshot": {
+        "feature_id": "{1A764789-E62E-4CEA-A1F4-40B2AB50BF99}",
+        "path": "geometry/v0/snapshots/usgs-rock-creek-route-extensions-20260924.geojson",
+        "sha256": "3eb86c55a257e822f85226319612b375e7440019d56be5231b030415f138b471"
+      },
+      "route_role": "official_mainline",
+      "source_data_description": "USFS Trails Update 03/2026",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "2773",
+      "source_load_date": 1777310283000,
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.46855289809105,
+        "longitude": -118.72473565532266
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

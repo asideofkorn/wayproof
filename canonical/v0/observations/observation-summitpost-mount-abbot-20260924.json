@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The community route reference describes Mono Pass Trail toward Ruby Lake, then cross-country travel toward Mills Lake and the Northeast Couloir; the route is class 3 with steep snow, rockfall, and seasonal axe or crampon considerations.",
+    "observation_id": "observation-summitpost-mount-abbot-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T02:00:00+00:00",
+    "source_id": "source-summitpost-mount-abbot-northeast-couloir"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

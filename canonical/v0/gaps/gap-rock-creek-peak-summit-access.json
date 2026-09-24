@@ -2,8 +2,8 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-rock-creek-peak-summit-access",
-    "question": "Which evidenced approach, maintained-trail endpoint, off-trail continuation, and technical classification apply to each nearby Rock Creek summit?",
-    "reason": "The official map and GNIS establish identities, coordinates, elevations, and nearby mapped trails. They do not establish that a maintained trail reaches any summit, and proximity is not route access. Summit approaches and technical grades remain intentionally unmodeled pending route-specific sources.",
+    "question": "What current conditions, route-specific geometry, and navigation-grade line apply to each Rock Creek summit approach?",
+    "reason": "Third-party references now establish planning-level approach corridors and technical character. They do not provide authoritative current conditions or navigation-grade geometry, and the modeled trail relationships stop before off-trail summit terrain.",
     "related_ids": [
       "peak-mount-morgan-south",
       "peak-mount-starr-rock-creek",
