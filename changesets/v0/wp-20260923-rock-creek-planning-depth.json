@@ -1,0 +1,582 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-rock-creek-planning-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-3dep-rock-creek-20260923.json",
+      "reason": "Register the official elevation service used for bounded route profiles",
+      "record_id": "source-usgs-3dep-rock-creek-20260923",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-3dep-rock-creek-route-profiles-20260923.json",
+      "reason": "Preserve the route-profile sampling method and precision",
+      "record_id": "observation-usgs-3dep-rock-creek-route-profiles-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-hilton-lakes-rock-creek-3dep-profile.json",
+      "reason": "Link the official elevation samples to the existing route profile",
+      "record_id": "evidence-route-hilton-lakes-rock-creek-3dep-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-hilton-lakes-rock-creek-3dep-profile"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-route-time-and-difficulty"
+      ],
+      "path": "canonical/v0/claims/claim-route-hilton-lakes-rock-creek-profile.json",
+      "reason": "Add an explicitly approximate elevation profile without changing route topology",
+      "record_id": "claim-route-hilton-lakes-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-little-lakes-valley-3dep-profile.json",
+      "reason": "Link the official elevation samples to the existing route profile",
+      "record_id": "evidence-route-little-lakes-valley-3dep-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-little-lakes-valley-3dep-profile"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-route-time-and-difficulty"
+      ],
+      "path": "canonical/v0/claims/claim-route-little-lakes-valley-profile.json",
+      "reason": "Add an explicitly approximate elevation profile without changing route topology",
+      "record_id": "claim-route-little-lakes-valley-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-mono-pass-rock-creek-3dep-profile.json",
+      "reason": "Link the official elevation samples to the existing route profile",
+      "record_id": "evidence-route-mono-pass-rock-creek-3dep-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-mono-pass-rock-creek-3dep-profile"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-route-time-and-difficulty"
+      ],
+      "path": "canonical/v0/claims/claim-route-mono-pass-rock-creek-profile.json",
+      "reason": "Add an explicitly approximate elevation profile without changing route topology",
+      "record_id": "claim-route-mono-pass-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-morgan-pass-rock-creek-3dep-profile.json",
+      "reason": "Link the official elevation samples to the existing route profile",
+      "record_id": "evidence-route-morgan-pass-rock-creek-3dep-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-morgan-pass-rock-creek-3dep-profile"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-route-time-and-difficulty"
+      ],
+      "path": "canonical/v0/claims/claim-route-morgan-pass-rock-creek-profile.json",
+      "reason": "Add an explicitly approximate elevation profile without changing route topology",
+      "record_id": "claim-route-morgan-pass-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-tamarack-lakes-rock-creek-3dep-profile.json",
+      "reason": "Link the official elevation samples to the existing route profile",
+      "record_id": "evidence-route-tamarack-lakes-rock-creek-3dep-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [
+        "evidence-route-tamarack-lakes-rock-creek-3dep-profile"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-route-time-and-difficulty"
+      ],
+      "path": "canonical/v0/claims/claim-route-tamarack-lakes-rock-creek-profile.json",
+      "reason": "Add an explicitly approximate elevation profile without changing route topology",
+      "record_id": "claim-route-tamarack-lakes-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-route-time-and-difficulty.json",
+      "reason": "Keep duration and difficulty unknown instead of inferring them from geometry",
+      "record_id": "gap-rock-creek-route-time-and-difficulty",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-rock-creek-lake-api.json",
+      "reason": "Register the official booking-system campground record",
+      "record_id": "source-recreation-rock-creek-lake-api",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-rock-creek-lake-api-20260923.json",
+      "reason": "Preserve the campground facts exposed by Recreation.gov",
+      "record_id": "observation-recreation-rock-creek-lake-api-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-rock-creek-lake-booking-profile.json",
+      "reason": "Link the booking-system observation to the campground profile",
+      "record_id": "evidence-campground-rock-creek-lake-booking-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-rock-creek-lake-booking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-rock-creek-lake-booking-profile.json",
+      "reason": "Publish source-backed campground facilities and constraints",
+      "record_id": "claim-campground-rock-creek-lake-booking-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-recreation-palisades-group-api.json",
+      "reason": "Register the official booking-system campground record",
+      "record_id": "source-recreation-palisades-group-api",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreation-palisades-group-api-20260923.json",
+      "reason": "Preserve the campground facts exposed by Recreation.gov",
+      "record_id": "observation-recreation-palisades-group-api-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-palisade-rock-creek-booking-profile.json",
+      "reason": "Link the booking-system observation to the campground profile",
+      "record_id": "evidence-campground-palisade-rock-creek-booking-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-palisade-rock-creek-booking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-palisade-rock-creek-booking-profile.json",
+      "reason": "Publish source-backed campground facilities and constraints",
+      "record_id": "claim-campground-palisade-rock-creek-booking-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-nonreservable-campground-depth.json",
+      "reason": "Expose the remaining campground-depth limit",
+      "record_id": "gap-rock-creek-nonreservable-campground-depth",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-gnis-rock-creek-peaks.json",
+      "reason": "Register the official geographic-names source for nearby peaks",
+      "record_id": "source-usgs-gnis-rock-creek-peaks",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-gnis-rock-creek-peaks-20260923.json",
+      "reason": "Preserve official peak identities and coordinates",
+      "record_id": "observation-usgs-gnis-rock-creek-peaks-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-map-peaks-20260923.json",
+      "reason": "Preserve the official map's peak labels, elevations, and topology limit",
+      "record_id": "observation-usfs-rock-creek-map-peaks-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-morgan-south-gnis-coordinate",
+        "evidence-peak-mount-morgan-south-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-peak-summit-access"
+      ],
+      "path": "canonical/v0/entities/peak-mount-morgan-south.json",
+      "reason": "Add an officially named Rock Creek peak",
+      "record_id": "peak-mount-morgan-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-mount-morgan-south.json",
+      "reason": "Add the peak scope used by its coordinate and elevation claims",
+      "record_id": "scope-peak-mount-morgan-south",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-morgan-south-gnis-coordinate.json",
+      "reason": "Link the GNIS observation to the peak coordinate",
+      "record_id": "evidence-peak-mount-morgan-south-gnis-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-morgan-south-official-map-elevation.json",
+      "reason": "Link the official map observation to the labeled elevation",
+      "record_id": "evidence-peak-mount-morgan-south-official-map-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-morgan-south-gnis-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-morgan-south-gnis-coordinate.json",
+      "reason": "Publish the official named-feature coordinate",
+      "record_id": "claim-peak-mount-morgan-south-gnis-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-morgan-south-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-morgan-south-official-map-elevation.json",
+      "reason": "Publish the official map's labeled elevation",
+      "record_id": "claim-peak-mount-morgan-south-official-map-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-starr-rock-creek-gnis-coordinate",
+        "evidence-peak-mount-starr-rock-creek-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-peak-summit-access"
+      ],
+      "path": "canonical/v0/entities/peak-mount-starr-rock-creek.json",
+      "reason": "Add an officially named Rock Creek peak",
+      "record_id": "peak-mount-starr-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-mount-starr-rock-creek.json",
+      "reason": "Add the peak scope used by its coordinate and elevation claims",
+      "record_id": "scope-peak-mount-starr-rock-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-starr-rock-creek-gnis-coordinate.json",
+      "reason": "Link the GNIS observation to the peak coordinate",
+      "record_id": "evidence-peak-mount-starr-rock-creek-gnis-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-starr-rock-creek-official-map-elevation.json",
+      "reason": "Link the official map observation to the labeled elevation",
+      "record_id": "evidence-peak-mount-starr-rock-creek-official-map-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-starr-rock-creek-gnis-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-starr-rock-creek-gnis-coordinate.json",
+      "reason": "Publish the official named-feature coordinate",
+      "record_id": "claim-peak-mount-starr-rock-creek-gnis-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-starr-rock-creek-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-starr-rock-creek-official-map-elevation.json",
+      "reason": "Publish the official map's labeled elevation",
+      "record_id": "claim-peak-mount-starr-rock-creek-official-map-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-dade-gnis-coordinate",
+        "evidence-peak-mount-dade-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-peak-summit-access"
+      ],
+      "path": "canonical/v0/entities/peak-mount-dade.json",
+      "reason": "Add an officially named Rock Creek peak",
+      "record_id": "peak-mount-dade",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-mount-dade.json",
+      "reason": "Add the peak scope used by its coordinate and elevation claims",
+      "record_id": "scope-peak-mount-dade",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-dade-gnis-coordinate.json",
+      "reason": "Link the GNIS observation to the peak coordinate",
+      "record_id": "evidence-peak-mount-dade-gnis-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-dade-official-map-elevation.json",
+      "reason": "Link the official map observation to the labeled elevation",
+      "record_id": "evidence-peak-mount-dade-official-map-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-dade-gnis-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-dade-gnis-coordinate.json",
+      "reason": "Publish the official named-feature coordinate",
+      "record_id": "claim-peak-mount-dade-gnis-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-dade-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-dade-official-map-elevation.json",
+      "reason": "Publish the official map's labeled elevation",
+      "record_id": "claim-peak-mount-dade-official-map-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-abbot-gnis-coordinate",
+        "evidence-peak-mount-abbot-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-peak-summit-access"
+      ],
+      "path": "canonical/v0/entities/peak-mount-abbot.json",
+      "reason": "Add an officially named Rock Creek peak",
+      "record_id": "peak-mount-abbot",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-mount-abbot.json",
+      "reason": "Add the peak scope used by its coordinate and elevation claims",
+      "record_id": "scope-peak-mount-abbot",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-abbot-gnis-coordinate.json",
+      "reason": "Link the GNIS observation to the peak coordinate",
+      "record_id": "evidence-peak-mount-abbot-gnis-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-abbot-official-map-elevation.json",
+      "reason": "Link the official map observation to the labeled elevation",
+      "record_id": "evidence-peak-mount-abbot-official-map-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-abbot-gnis-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-abbot-gnis-coordinate.json",
+      "reason": "Publish the official named-feature coordinate",
+      "record_id": "claim-peak-mount-abbot-gnis-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-mount-abbot-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-abbot-official-map-elevation.json",
+      "reason": "Publish the official map's labeled elevation",
+      "record_id": "claim-peak-mount-abbot-official-map-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-bear-creek-spire-gnis-coordinate",
+        "evidence-peak-bear-creek-spire-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [
+        "gap-rock-creek-peak-summit-access"
+      ],
+      "path": "canonical/v0/entities/peak-bear-creek-spire.json",
+      "reason": "Add an officially named Rock Creek peak",
+      "record_id": "peak-bear-creek-spire",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-peak-bear-creek-spire.json",
+      "reason": "Add the peak scope used by its coordinate and elevation claims",
+      "record_id": "scope-peak-bear-creek-spire",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-bear-creek-spire-gnis-coordinate.json",
+      "reason": "Link the GNIS observation to the peak coordinate",
+      "record_id": "evidence-peak-bear-creek-spire-gnis-coordinate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-bear-creek-spire-official-map-elevation.json",
+      "reason": "Link the official map observation to the labeled elevation",
+      "record_id": "evidence-peak-bear-creek-spire-official-map-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-bear-creek-spire-gnis-coordinate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-bear-creek-spire-gnis-coordinate.json",
+      "reason": "Publish the official named-feature coordinate",
+      "record_id": "claim-peak-bear-creek-spire-gnis-coordinate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-bear-creek-spire-official-map-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-bear-creek-spire-official-map-elevation.json",
+      "reason": "Publish the official map's labeled elevation",
+      "record_id": "claim-peak-bear-creek-spire-official-map-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-peak-summit-access.json",
+      "reason": "Prevent mapped proximity from becoming an invented summit route",
+      "record_id": "gap-rock-creek-peak-summit-access",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Deepen Rock Creek route profiles and campground logistics, and add five nearby official peak identities without inventing summit access"
+}

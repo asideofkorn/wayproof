@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-bear-creek-spire-gnis-coordinate",
+    "evidence_ids": [
+      "evidence-peak-bear-creek-spire-gnis-coordinate"
+    ],
+    "predicate": "official_named_feature_coordinate",
+    "spatial_scope_ids": [
+      "scope-peak-bear-creek-spire"
+    ],
+    "subject_id": "peak-bear-creek-spire",
+    "temporal_scope": null,
+    "value": {
+      "coordinates_wgs84": {
+        "latitude": 37.3680534,
+        "longitude": -118.7676077
+      },
+      "source_system": "GNIS"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-rock-creek-route-time-and-difficulty",
+    "question": "What authoritative source establishes typical duration and a consistent difficulty or technical grade for each Rock Creek route?",
+    "reason": "The reviewed official sources establish route identity, geometry, distance, mapped context, and an approximate 3DEP elevation profile. They do not publish a consistent duration or difficulty classification, so Wayproof does not derive one from distance and gain alone.",
+    "related_ids": [
+      "route-hilton-lakes-rock-creek",
+      "route-little-lakes-valley",
+      "route-mono-pass-rock-creek",
+      "route-morgan-pass-rock-creek",
+      "route-tamarack-lakes-rock-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-mount-starr-rock-creek",
+    "kind": "peak",
+    "name": "Mount Starr"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

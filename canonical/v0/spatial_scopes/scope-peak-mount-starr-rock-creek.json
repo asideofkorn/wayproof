@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Summit scope for Mount Starr",
+    "entity_id": "peak-mount-starr-rock-creek",
+    "kind": "peak",
+    "scope_id": "scope-peak-mount-starr-rock-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

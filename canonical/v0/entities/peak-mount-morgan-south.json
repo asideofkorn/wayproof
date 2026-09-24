@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-mount-morgan-south",
+    "kind": "peak",
+    "name": "Mount Morgan"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-rock-creek-nonreservable-campground-depth",
+    "question": "What are the source-published facilities, capacities, and operating models for Pine Grove, Upper Pine Grove, and Tamarack campgrounds?",
+    "reason": "The reviewed official trail map establishes these campground identities and locations, but the source set used for this batch does not establish detailed facility inventories or booking behavior.",
+    "related_ids": [
+      "campground-pine-grove-rock-creek",
+      "campground-upper-pine-grove-rock-creek",
+      "campground-tamarack-rock-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

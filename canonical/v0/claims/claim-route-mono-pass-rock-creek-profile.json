@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-route-mono-pass-rock-creek-profile",
     "evidence_ids": [
-      "evidence-route-mono-pass-rock-creek-profile"
+      "evidence-route-mono-pass-rock-creek-profile",
+      "evidence-route-mono-pass-rock-creek-3dep-profile"
     ],
     "predicate": "route_profile",
     "spatial_scope_ids": [
@@ -16,7 +17,19 @@
       "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
       "map_role": "principal Rock Creek hiking route",
       "name": "Mono Pass Trail from Mosquito Flat",
-      "one_way_distance_miles_from_source_features": 3.32465708
+      "one_way_distance_miles_from_source_features": 3.32465708,
+      "sampled_elevation_profile": {
+        "approximate_cumulative_gain_ft": 1820,
+        "approximate_cumulative_loss_ft": 10,
+        "end_elevation_ft": 12042,
+        "gain_loss_method": "sum of consecutive USGS 3DEP samples along reviewed route geometry",
+        "maximum_elevation_ft": 12042,
+        "minimum_elevation_ft": 10224,
+        "precision": "approximate",
+        "sample_count": 55,
+        "sample_spacing_meters": 100,
+        "start_elevation_ft": 10224
+      }
     }
   },
   "record_type": "claim",

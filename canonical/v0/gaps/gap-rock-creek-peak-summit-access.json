@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-rock-creek-peak-summit-access",
+    "question": "Which evidenced approach, maintained-trail endpoint, off-trail continuation, and technical classification apply to each nearby Rock Creek summit?",
+    "reason": "The official map and GNIS establish identities, coordinates, elevations, and nearby mapped trails. They do not establish that a maintained trail reaches any summit, and proximity is not route access. Summit approaches and technical grades remain intentionally unmodeled pending route-specific sources.",
+    "related_ids": [
+      "peak-mount-morgan-south",
+      "peak-mount-starr-rock-creek",
+      "peak-mount-dade",
+      "peak-mount-abbot",
+      "peak-bear-creek-spire"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

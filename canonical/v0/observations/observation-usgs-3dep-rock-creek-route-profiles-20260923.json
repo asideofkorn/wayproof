@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/usgs-rock-creek-principal-routes-20260923.geojson"
+    ],
+    "content": "Wayproof sampled each reviewed Rock Creek route geometry at approximately 100-meter intervals against the USGS 3DEP elevation service. Cumulative gain and loss are sums between samples and are approximate rather than surveyed or source-published trail values.",
+    "observation_id": "observation-usgs-3dep-rock-creek-route-profiles-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usgs-3dep-rock-creek-20260923"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

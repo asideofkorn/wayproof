@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/getSamples",
+    "publisher": "U.S. Geological Survey, 3D Elevation Program",
+    "source_id": "source-usgs-3dep-rock-creek-20260923"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

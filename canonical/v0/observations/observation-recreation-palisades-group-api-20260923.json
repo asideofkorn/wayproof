@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov publishes the booking identity Palisades Group Campground at 37.4833333,-118.7166667. It describes a shaded private loop beside Rock Creek with five tables and campfire rings, use as overflow for groups of 25 or fewer when Rock Creek Lake Group is unavailable, limited parking, bear-aware food storage, and a 14-night maximum consecutive stay.",
+    "observation_id": "observation-recreation-palisades-group-api-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:15:00+00:00",
+    "source_id": "source-recreation-palisades-group-api"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

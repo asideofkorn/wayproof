@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Summit scope for Mount Morgan",
+    "entity_id": "peak-mount-morgan-south",
+    "kind": "peak",
+    "scope_id": "scope-peak-mount-morgan-south"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

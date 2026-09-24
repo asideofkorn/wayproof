@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Summit scope for Mount Abbot",
+    "entity_id": "peak-mount-abbot",
+    "kind": "peak",
+    "scope_id": "scope-peak-mount-abbot"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
