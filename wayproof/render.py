@@ -65,6 +65,32 @@ nav.crumbs a { margin-right: 0.35rem; }
 .principle-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
 .principle-grid article { padding:1rem; border-top:3px solid var(--accent); background:var(--surface); border-radius:0 0 10px 10px; }
 .principle-grid p { color:var(--muted); font-size:.92rem; }
+.model-hero h1 { max-width:17ch; }
+.answer-example { margin-top:1.3rem; padding:1.2rem 1.3rem; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.answer-example h3 { margin:.2rem 0 .5rem; font-size:1.25rem; }
+.model-flow { display:flex; align-items:stretch; gap:.45rem; margin:1.4rem 0; }
+.model-flow > div { flex:1; display:flex; flex-direction:column; gap:.25rem; min-width:0; padding:.85rem; border:1px solid var(--border); border-radius:10px; background:var(--surface); }
+.model-flow > div span { color:var(--muted); font-size:.82rem; line-height:1.35; }
+.model-flow > b { align-self:center; color:var(--accent); font-size:1.25rem; }
+.model-note { padding:.85rem 1rem; border-left:4px solid var(--accent); background:var(--accent-soft); border-radius:0 8px 8px 0; }
+.relationship-map { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:1rem; margin:1.4rem 0; padding:1.2rem; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.relationship-column { display:flex; flex-direction:column; align-items:center; gap:.4rem; text-align:center; }
+.relationship-column strong { width:100%; box-sizing:border-box; padding:.55rem; border:1px solid var(--border); border-radius:8px; background:var(--surface-raised); }
+.relationship-column span, .relationship-bridge { color:var(--muted); font-size:.85rem; }
+.relationship-branch { grid-column:3; display:flex; flex-wrap:wrap; justify-content:center; gap:.45rem 1rem; color:var(--muted); font-size:.85rem; }
+.comparison-table { overflow-x:auto; margin:1.2rem 0; border:1px solid var(--border); border-radius:10px; }
+.comparison-hint { display:none; color:var(--muted); font-size:.86rem; margin:.5rem 0 -.65rem; }
+.comparison-table table { min-width:760px; margin:0; }
+.comparison-table thead { background:var(--surface); }
+.comparison-table th, .comparison-table td { padding:.65rem .75rem; }
+.comparison-table tbody th { width:8.5rem; }
+.history-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; }
+.history-grid article { padding:1rem; border:1px solid var(--border); border-radius:10px; background:var(--surface); }
+.history-grid p { margin:.35rem 0 0; color:var(--muted); }
+.state-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; }
+.state-list div { padding:.85rem 1rem; border-left:4px solid var(--accent); background:var(--surface); border-radius:0 8px 8px 0; }
+.state-list dt { font-weight:700; }
+.state-list dd { margin:.2rem 0 0; color:var(--muted); }
 .featured-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .gap-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; list-style:none; padding:0; }
 .gap-grid .card { margin:0; }
@@ -160,6 +186,7 @@ footer:not(.site-footer) { margin-top:3.5rem; padding-top:1rem; border-top:1px s
 }
 @media (max-width: 640px) {
   body { font-size:16.5px; padding:1.25rem 1rem 4rem; }
+  .comparison-hint { display:block; }
   .site-nav { align-items:flex-start; margin-bottom:2rem; }
   .site-links { gap:.25rem .7rem; }
   .summary-grid { grid-template-columns:1fr; }
@@ -168,6 +195,12 @@ footer:not(.site-footer) { margin-top:3.5rem; padding-top:1rem; border-top:1px s
   .related-list { grid-template-columns:1fr; }
   .result-grid, .directory-grid { grid-template-columns:1fr; }
   .browse-grid, .featured-grid, .principle-grid, .gap-grid { grid-template-columns:1fr; }
+  .model-flow { flex-direction:column; }
+  .model-flow > b { transform:rotate(90deg); }
+  .relationship-map { grid-template-columns:1fr; }
+  .relationship-bridge { transform:rotate(90deg); justify-self:center; }
+  .relationship-branch { grid-column:1; }
+  .history-grid, .state-list { grid-template-columns:1fr; }
   .search-controls, .directory-controls { grid-template-columns:1fr; gap:.3rem; }
   .search-submit { grid-column:1; width:100%; margin-top:.45rem; }
   .search-controls select, .directory-controls select { margin-bottom:.45rem; }

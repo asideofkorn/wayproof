@@ -30,6 +30,7 @@ PRIMARY_NAV = (
     ("Trails", "/trails/"),
     ("Camping", "/camping/"),
     ("Peaks", "/peaks/"),
+    ("How it works", "/how-it-works/"),
     ("Changes", "/changes/"),
     ("Search", "/search/"),
 )
@@ -177,6 +178,7 @@ def render_site_footer() -> str:
         '<footer class="site-footer"><div><strong>Wayproof</strong>'
         '<p>Source-backed outdoor planning with uncertainty left visible.</p></div>'
         '<div class="footer-links"><a href="/search/">Search</a>'
+        '<a href="/how-it-works/">How it works</a>'
         '<a href="/changes/">Published changes</a>'
         '<a href="https://github.com/asideofkorn/wayproof">GitHub</a></div>'
         '<p class="meta footer-note">Planning aid, not a booking or safety guarantee. '
