@@ -8,36 +8,18 @@ Run with:  python -m pytest tests/test_build_site.py
 
 from __future__ import annotations
 
-import importlib.util
 import json
 import os
-import sys
 
 import pytest
+from scripts import build_site
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, ROOT)
-
-_spec = importlib.util.spec_from_file_location(
-    "build_site", os.path.join(ROOT, "scripts", "build_site.py")
-)
-build_site = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(build_site)
-
-
-def _build(tmp_path):
-    original_cwd = os.getcwd()
-    os.chdir(ROOT)
-    try:
-        return build_site.build(tmp_path)
-    finally:
-        os.chdir(original_cwd)
 
 
 @pytest.fixture(scope="module")
-def site(tmp_path_factory):
-    output = tmp_path_factory.mktemp("site")
-    return output, _build(output)
+def site(generated_site):
+    return generated_site
 
 
 def test_build_writes_index_and_cname(site):

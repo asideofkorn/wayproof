@@ -42,10 +42,8 @@ def test_tamarack_remains_an_explicit_identity_gap():
     assert "claim-campground-tamarack-rock-creek-usfs-profile" not in claims
 
 
-def test_generated_pages_show_profiles_and_gap(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_pages_show_profiles_and_gap(generated_site):
+    tmp_path, _ = generated_site
     pine_page = (tmp_path / "knowledge" / "campground-pine-grove-rock-creek" / "index.html").read_text()
     assert "first come, first served" in pine_page
     assert "Maximum rv length ft</dt><dd>15" in pine_page

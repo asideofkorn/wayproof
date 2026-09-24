@@ -74,6 +74,15 @@ referenced supporting material relevant to the task.
   add destination-specific navigation exceptions, and do not weaken an existing
   invariant merely to admit new data.
 - Run `python -m pytest -q` with the repository's supported Python 3.14 runtime.
+- During iteration, run the affected CI module with
+  `python scripts/test_groups.py --group <group>`. The five exhaustive groups
+  are `core`, `planning`, `regional-ebrpd`, `regional-sierra`, and `site`;
+  `python scripts/test_groups.py --check` verifies that every test module is
+  assigned exactly once. A new planning, regional, or site-building test module
+  must be classified in `scripts/test_groups.py`; otherwise it deliberately
+  defaults to `core` so CI cannot omit it. Tests that inspect generated website
+  output must use the session-scoped `generated_site` fixture instead of
+  rebuilding the site themselves.
 - For canonical knowledge changes, also run:
   `python scripts/verify_canonical_diff.py --base origin/main`.
   Run it on the final committed candidate after refreshing from current `main`,

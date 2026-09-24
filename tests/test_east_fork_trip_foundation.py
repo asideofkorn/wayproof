@@ -121,10 +121,8 @@ def test_trip_recheck_exposes_dated_status_and_unknowns():
     assert items["gap-east-fork-trip-date-operations"].answerability is RecheckAnswerability.UNKNOWN
 
 
-def test_generated_site_contains_east_fork_campground_and_site(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_site_contains_east_fork_campground_and_site(generated_site):
+    tmp_path, _ = generated_site
     camping = json.loads((tmp_path / "camping" / "index.json").read_text())
     ids = {item["entity_id"] for item in camping["entities"]}
     assert "campground-east-fork-inyo" in ids

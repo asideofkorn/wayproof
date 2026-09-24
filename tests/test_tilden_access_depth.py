@@ -3,7 +3,6 @@
 import json
 from pathlib import Path
 
-from scripts import build_site
 from wayproof.read_service import CanonicalReadService
 
 
@@ -62,8 +61,8 @@ def test_tilden_live_disruptions_are_separate_recheckable_claims():
         assert provenance.sources[0].locator == "https://www.ebparks.org/parks/tilden"
 
 
-def test_new_access_and_route_entities_publish_without_handwritten_pages(tmp_path):
-    build_site.build(tmp_path)
+def test_new_access_and_route_entities_publish_without_handwritten_pages(generated_site):
+    tmp_path, _ = generated_site
     search = json.loads((tmp_path / "search" / "index.json").read_text())
     published = {entity["entity_id"] for entity in search["entities"]}
 

@@ -42,10 +42,8 @@ def test_every_official_park_source_is_observed():
     assert official_sources <= observed_sources
 
 
-def test_every_published_park_has_a_generated_human_page(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_every_published_park_has_a_generated_human_page(generated_site):
+    tmp_path, _ = generated_site
     directory = json.loads((tmp_path / "parks" / "index.json").read_text())
     published_ids = {item["entity_id"] for item in directory["entities"]}
     reads = CanonicalReadService(ROOT)

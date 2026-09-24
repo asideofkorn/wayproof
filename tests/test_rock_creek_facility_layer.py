@@ -36,9 +36,8 @@ def test_boating_profile_preserves_water_and_speed_constraints():
     assert boating["fish_cleaning_in_lake"] is False
 
 
-def test_generated_facility_pages_expose_planning_details(tmp_path):
-    from scripts import build_site
-    build_site.build(tmp_path)
+def test_generated_facility_pages_expose_planning_details(generated_site):
+    tmp_path, _ = generated_site
     backpacker = (tmp_path / "knowledge" / "campground-mosquito-flat-backpacker" / "index.html").read_text()
     boating = (tmp_path / "knowledge" / "facility-rock-creek-boating-site" / "index.html").read_text()
     assert "valid wilderness permit" in backpacker

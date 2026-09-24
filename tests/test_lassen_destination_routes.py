@@ -110,10 +110,8 @@ def test_route_conditions_are_discoverable_through_pretrip_recheck():
     )
 
 
-def test_generated_site_discovers_lassen_peaks_routes_and_destination_pages(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_site_discovers_lassen_peaks_routes_and_destination_pages(generated_site):
+    tmp_path, _ = generated_site
     peaks = json.loads((tmp_path / "peaks" / "index.json").read_text())
     trails = json.loads((tmp_path / "trails" / "index.json").read_text())
 

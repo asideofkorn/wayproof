@@ -58,10 +58,8 @@ def test_whitney_conditions_project_to_peak_context():
     assert items["gap-whitney-current-conditions"].answerability is RecheckAnswerability.UNKNOWN
 
 
-def test_whitney_entities_publish_to_generic_directories_and_details(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_whitney_entities_publish_to_generic_directories_and_details(generated_site):
+    tmp_path, _ = generated_site
     peaks = json.loads((tmp_path / "peaks" / "index.json").read_text())
     parks = json.loads((tmp_path / "parks" / "index.json").read_text())
     trails = json.loads((tmp_path / "trails" / "index.json").read_text())

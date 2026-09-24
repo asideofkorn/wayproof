@@ -150,10 +150,8 @@ def test_live_site_selection_remains_a_consumer_visible_recheck():
     assert gap.answerability is RecheckAnswerability.UNKNOWN
 
 
-def test_generated_camping_directory_contains_campgrounds_and_sites(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_camping_directory_contains_campgrounds_and_sites(generated_site):
+    tmp_path, _ = generated_site
     camping = json.loads((tmp_path / "camping" / "index.json").read_text())
     ids = {item["entity_id"] for item in camping["entities"]}
 

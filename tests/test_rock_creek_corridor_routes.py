@@ -149,10 +149,8 @@ def test_pretrip_recheck_returns_current_access_gap_and_official_sources():
     assert items["gap-rock-creek-live-access-and-trailhead-operations"].answerability is RecheckAnswerability.UNKNOWN
 
 
-def test_generated_site_has_corridor_entities_and_route_maps(tmp_path):
-    from scripts import build_site
-
-    build_site.build(tmp_path)
+def test_generated_site_has_corridor_entities_and_route_maps(generated_site):
+    tmp_path, _ = generated_site
     routes = json.loads((tmp_path / "trails" / "index.json").read_text())
     ids = {item["entity_id"] for item in routes["entities"]}
     assert ROUTES.keys() <= ids
