@@ -293,6 +293,8 @@ def test_search_and_directories_have_task_focused_filters(site):
     assert 'type="submit">Search</button>' in search
     assert 'aria-live="polite"' in search
     assert 'id="no-results"' in search
+    assert "event.key === 'Enter'" in search
+    assert "form.requestSubmit()" in search
     assert "form.addEventListener('submit'" in search
     assert 'class="result-grid"' in search
     assert 'id="directory-search"' in parks
