@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-twenty-lakes-basin",
+    "kind": "basin",
+    "name": "20 Lakes Basin"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/fseprd1123019.pdf",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-john-muir-drainages-order"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

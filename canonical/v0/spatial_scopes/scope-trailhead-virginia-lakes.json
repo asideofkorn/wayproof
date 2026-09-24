@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Virginia Lakes Trailhead",
+    "entity_id": "trailhead-virginia-lakes",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-virginia-lakes"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

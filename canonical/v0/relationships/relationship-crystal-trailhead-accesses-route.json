@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mammoth-lakes-basin-route-map"
+    ],
+    "object_id": "route-crystal-lake-mammoth",
+    "predicate": "accesses",
+    "relationship_id": "relationship-crystal-trailhead-accesses-route",
+    "subject_id": "trailhead-lake-george",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

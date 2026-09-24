@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lundy Canyon Trailhead",
+    "entity_id": "trailhead-lundy-canyon",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-lundy-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

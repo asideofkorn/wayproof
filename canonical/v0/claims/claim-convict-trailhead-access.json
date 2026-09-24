@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-trailhead-access",
+    "evidence_ids": [
+      "evidence-convict-trailhead-access"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-convict-lake"
+    ],
+    "subject_id": "trailhead-convict-lake",
+    "temporal_scope": null,
+    "value": {
+      "from": "US 395 Convict Lake exit",
+      "overflow_parking": "south end of resort",
+      "parking": true,
+      "road_distance_miles": 2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

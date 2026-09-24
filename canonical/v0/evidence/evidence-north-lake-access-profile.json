@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-north-lake-access-profile",
+    "evidence_id": "evidence-north-lake-access-profile",
+    "notes": "",
+    "observation_id": "observation-usfs-bishop-creek-wilderness-hiking-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

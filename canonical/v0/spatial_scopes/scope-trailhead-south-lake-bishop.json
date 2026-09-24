@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "South Lake Trailhead",
+    "entity_id": "trailhead-south-lake-bishop",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-south-lake-bishop"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

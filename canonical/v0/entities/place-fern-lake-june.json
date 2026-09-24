@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-fern-lake-june",
+    "kind": "waterbody",
+    "name": "Fern Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

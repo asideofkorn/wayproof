@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mammoth Lakes Basin",
+    "entity_id": "place-mammoth-lakes-basin",
+    "kind": "area",
+    "scope_id": "scope-place-mammoth-lakes-basin"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

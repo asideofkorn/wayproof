@@ -1,0 +1,1647 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-eastern-sierra-foliage-hikes",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mcgee-creek-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-mcgee-creek-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mcgee-creek.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-mcgee-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mcgee-creek.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-mcgee-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-convict-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-convict-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-convict-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-convict-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-convict-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-convict-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mildred-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-mildred-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-dorothy-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-dorothy-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-parker-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-parker-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-parker-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-parker-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-parker-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-parker-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-yost-fern.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-yost-fern",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-fern-lake-june.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-fern-lake-june",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-yost-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-yost-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-fern-lake-june.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-fern-lake-june",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-yost-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-yost-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-lundy-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-lundy-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lundy-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-lundy-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-twenty-lakes-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-twenty-lakes-basin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mammoth-lakes-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-mammoth-lakes-basin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-lake-george.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-lake-george",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-crystal-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-crystal-lake-mammoth",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-crystal-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-crystal-lake-mammoth",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-coldwater.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-coldwater",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-heart-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-heart-lake-mammoth",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-heart-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-heart-lake-mammoth",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-horseshoe-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-horseshoe-lake-mammoth",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mcleod-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-mcleod-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mcleod-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-mcleod-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-bishop-creek-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-bishop-creek-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-sabrina-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-sabrina-basin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-sabrina-blue-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-sabrina-blue-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-blue-lake-sabrina.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "place-blue-lake-sabrina",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-north-lake-bishop.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-north-lake-bishop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-piute-pass.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-piute-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lamarck-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-lamarck-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-south-lake-bishop.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-south-lake-bishop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-treasure-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-treasure-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-virginia-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "trailhead-virginia-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-virginia-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "route-virginia-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/wilderness-hoover.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "wilderness-hoover",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/wilderness-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "wilderness-ansel-adams",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/agency-humboldt-toiyabe-national-forest.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "agency-humboldt-toiyabe-national-forest",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-mcgee-creek-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-place-mcgee-creek-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-mcgee-creek.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-mcgee-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-mcgee-creek.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-mcgee-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-convict-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-convict-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-convict-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-convict-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-parker-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-parker-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-parker-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-parker-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-yost-fern.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-yost-fern",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-fern-lake-june.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-fern-lake-june",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-yost-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-yost-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-lundy-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-lundy-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-lundy-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-lundy-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-twenty-lakes-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-place-twenty-lakes-basin",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-mammoth-lakes-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-place-mammoth-lakes-basin",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-lake-george.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-lake-george",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-crystal-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-crystal-lake-mammoth",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-coldwater.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-coldwater",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-heart-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-heart-lake-mammoth",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-horseshoe-lake-mammoth.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-horseshoe-lake-mammoth",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-mcleod-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-mcleod-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-bishop-creek-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-place-bishop-creek-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-sabrina-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-sabrina-basin",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-sabrina-blue-lake.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-sabrina-blue-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-north-lake-bishop.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-north-lake-bishop",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-piute-pass.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-piute-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-lamarck-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-lamarck-lakes",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-south-lake-bishop.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-south-lake-bishop",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-treasure-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-treasure-lakes",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-virginia-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-trailhead-virginia-lakes",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-virginia-lakes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-route-virginia-lakes",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-wilderness-hoover.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-wilderness-hoover",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-wilderness-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "scope-wilderness-ansel-adams",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-mcgee-wildflower-hot-spots.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-mcgee-wildflower-hot-spots",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-convict-wilderness-hiking.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-convict-wilderness-hiking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-mono-basin-day-hikes.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-mono-basin-day-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-mammoth-lakes-area-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-mammoth-lakes-area-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-bishop-creek-wilderness-hiking.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-bishop-creek-wilderness-hiking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-sabrina-north-lake-trails-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-sabrina-north-lake-trails-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-south-lake-area-trails-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-south-lake-area-trails-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-hoover-wilderness.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-hoover-wilderness",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-june-lakes-area-trails-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-june-lakes-area-trails-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-john-muir-drainages-order.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "source-usfs-john-muir-drainages-order",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-mcgee-wildflower-hot-spots-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-mcgee-wildflower-hot-spots-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-convict-wilderness-hiking-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-convict-wilderness-hiking-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-mono-basin-day-hikes-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-mono-basin-day-hikes-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-mammoth-lakes-area-map-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-mammoth-lakes-area-map-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-bishop-creek-wilderness-hiking-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-bishop-creek-wilderness-hiking-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-sabrina-north-lake-trails-map-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-sabrina-north-lake-trails-map-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-south-lake-area-trails-map-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-south-lake-area-trails-map-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-hoover-wilderness-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-hoover-wilderness-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-june-lakes-area-trails-map-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-june-lakes-area-trails-map-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-john-muir-drainages-order-20260923.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "observation-usfs-john-muir-drainages-order-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mcgee-creek-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-mcgee-creek-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-canyon-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-convict-canyon-route-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-trailhead-access.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-convict-trailhead-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-parker-lake-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-parker-lake-route-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yost-fern-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-yost-fern-route-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lundy-canyon-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-lundy-canyon-route-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mammoth-lakes-basin-route-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-mammoth-lakes-basin-route-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sabrina-basin-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-sabrina-basin-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-north-lake-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-north-lake-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-bishop-creek-route-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-bishop-creek-route-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-virginia-lakes-management.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-virginia-lakes-management",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lundy-hoover-management.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-lundy-hoover-management",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-june-lakes-wilderness-context.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-june-lakes-wilderness-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mcgee-convict-wilderness-context.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "evidence-mcgee-convict-wilderness-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mcgee-creek-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-mcgee-creek-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-convict-canyon-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-convict-canyon-route-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-convict-trailhead-access.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-convict-trailhead-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-parker-lake-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-parker-lake-route-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yost-fern-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-yost-fern-route-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lundy-canyon-route-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-lundy-canyon-route-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mammoth-lakes-basin-route-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-mammoth-lakes-basin-route-map",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sabrina-basin-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-sabrina-basin-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-north-lake-access-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-north-lake-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-bishop-creek-route-map.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-bishop-creek-route-map",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-virginia-lakes-management.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-virginia-lakes-management",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lundy-hoover-management.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-lundy-hoover-management",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-june-lakes-wilderness-context.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-june-lakes-wilderness-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mcgee-convict-wilderness-context.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "claim-mcgee-convict-wilderness-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-mcgee-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-convict-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parker-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-parker-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-fern-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-fern-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yost-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-yost-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-lundy-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-crystal-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-crystal-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-heart-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-heart-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcleod-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-mcleod-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sabrina-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-sabrina-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-piute-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-piute-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lamarck-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-lamarck-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-treasure-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-treasure-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-virginia-trailhead-accesses-route.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-virginia-trailhead-accesses-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-convict-mildred-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-convict-mildred-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-convict-dorothy-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-convict-dorothy-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-parker-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-parker-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-fern-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-fern-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-yost-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-yost-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lundy-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-lundy-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-crystal-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-crystal-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-heart-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-heart-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mcleod-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-mcleod-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-sabrina-blue-ends-at.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-route-sabrina-blue-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-located-in-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-mcgee-located-in-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-traverses-hoover.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-lundy-traverses-hoover",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-virginia-traverses-hoover.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-virginia-traverses-hoover",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-humboldt-manages-virginia.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-humboldt-manages-virginia",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-lundy.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-lundy",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-ansel-adams",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-mcgee-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-convict-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sabrina-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-sabrina-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-piute-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-piute-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lamarck-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-lamarck-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-treasure-route-traverses-john-muir.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-treasure-route-traverses-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parker-route-traverses-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-parker-route-traverses-ansel-adams",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-fern-route-traverses-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-fern-route-traverses-ansel-adams",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yost-route-traverses-ansel-adams.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-yost-route-traverses-ansel-adams",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-mcgee-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-mcgee-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-convict-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-convict-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-parker-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-parker-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-yost-fern-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-yost-fern-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-lundy-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-lundy-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-mammoth-basin.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-mammoth-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-lake-george-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-lake-george-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-coldwater-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-coldwater-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-horseshoe-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-horseshoe-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-bishop-canyon.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-bishop-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-sabrina-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-sabrina-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-north-lake-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-north-lake-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-south-lake-trailhead.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "relationship-inyo-manages-south-lake-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-mcgee-creek-day-hike-distance.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-mcgee-creek-day-hike-distance",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-mammoth-lakes-basin-route-distances.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-mammoth-lakes-basin-route-distances",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-bishop-creek-day-hike-distances.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-bishop-creek-day-hike-distances",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lundy-canyon-sub-ten-turnaround.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-lundy-canyon-sub-ten-turnaround",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-virginia-lakes-day-hike-profile.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-virginia-lakes-day-hike-profile",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-foliage-trip-current-conditions.json",
+      "reason": "Publish a source-backed access and route foundation for Eastern Sierra fall-foliage day-hike alternatives near East Fork Campground.",
+      "record_id": "gap-foliage-trip-current-conditions",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add source-backed Eastern Sierra foliage-hike trailheads, managing areas, route associations, published distances and hazards, plus explicit research and pre-trip gaps."
+}

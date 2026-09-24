@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "McGee Creek Trailhead",
+    "entity_id": "trailhead-mcgee-creek",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-mcgee-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

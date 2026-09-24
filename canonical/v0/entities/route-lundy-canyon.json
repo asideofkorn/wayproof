@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-lundy-canyon",
+    "kind": "route",
+    "name": "Lundy Canyon Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-virginia-lakes",
+    "kind": "route",
+    "name": "Virginia Lakes Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

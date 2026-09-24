@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-parker-lake-route-profile"
+    ],
+    "object_id": "place-parker-lake",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-parker-ends-at",
+    "subject_id": "route-parker-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

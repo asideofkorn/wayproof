@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Bishop Creek Canyon",
+    "entity_id": "place-bishop-creek-canyon",
+    "kind": "area",
+    "scope_id": "scope-place-bishop-creek-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

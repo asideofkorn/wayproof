@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Mono Basin day-hike guide maps Parker Lake, Yost and Fern Lakes, and Lundy Canyon. Parker Lake is 1.8 miles one way. The Yost/Fern route splits 1.5 miles from its trailhead; Fern Lake is another 0.7 mile and Yost Lake another 2.3 miles. Lundy Canyon reaches 20 Lakes Basin in 5.4 miles one way; its bottom two-thirds are easier and its upper third climbs steep switchbacks. The guide publishes road and parking directions for each trailhead.",
+    "observation_id": "observation-usfs-mono-basin-day-hikes-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-mono-basin-day-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

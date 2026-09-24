@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Bishop Creek guide locates Sabrina Basin day-use parking at the end of Highway 168 and describes the main trail to Blue Lake. It locates Piute Pass hiker parking by North Lake near the pack station, with the trailhead about half a mile farther in North Lake Campground, where hikers may not park. The Piute Pass trail begins through lodgepole pine and quaking aspens.",
+    "observation_id": "observation-usfs-bishop-creek-wilderness-hiking-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-bishop-creek-wilderness-hiking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

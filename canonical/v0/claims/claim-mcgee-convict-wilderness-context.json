@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mcgee-convict-wilderness-context",
+    "evidence_ids": [
+      "evidence-mcgee-convict-wilderness-context"
+    ],
+    "predicate": "drainage_context",
+    "spatial_scope_ids": [],
+    "subject_id": "wilderness-john-muir",
+    "temporal_scope": null,
+    "value": {
+      "drainages": [
+        "McGee Creek",
+        "Convict Creek"
+      ],
+      "managing_unit": "Inyo National Forest"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

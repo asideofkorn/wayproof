@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bishop-creek-route-map",
+    "evidence_id": "evidence-bishop-creek-route-map",
+    "notes": "",
+    "observation_id": "observation-usfs-south-lake-area-trails-map-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

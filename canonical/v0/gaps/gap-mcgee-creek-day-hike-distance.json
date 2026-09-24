@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-mcgee-creek-day-hike-distance",
+    "question": "What evidenced turnaround keeps a McGee Creek foliage day hike within ten miles round trip?",
+    "reason": "The official source supports access and setting but does not publish a bounded day-hike destination distance.",
+    "related_ids": [
+      "route-mcgee-creek",
+      "trailhead-mcgee-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Piute Pass Trail",
+    "entity_id": "route-piute-pass",
+    "kind": "route",
+    "scope_id": "scope-route-piute-pass"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

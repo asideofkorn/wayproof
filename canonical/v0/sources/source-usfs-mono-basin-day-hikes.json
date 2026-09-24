@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/media/123306",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-mono-basin-day-hikes"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

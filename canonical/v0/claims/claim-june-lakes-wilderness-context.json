@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-june-lakes-wilderness-context",
+    "evidence_ids": [
+      "evidence-june-lakes-wilderness-context"
+    ],
+    "predicate": "land_unit_context",
+    "spatial_scope_ids": [
+      "scope-trailhead-yost-fern"
+    ],
+    "subject_id": "trailhead-yost-fern",
+    "temporal_scope": null,
+    "value": {
+      "managing_unit": "Inyo National Forest",
+      "mapped_routes": [
+        "Parker Lake",
+        "Yost Lake",
+        "Fern Lake"
+      ],
+      "wilderness": "Ansel Adams Wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

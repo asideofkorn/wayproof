@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mcgee-creek-access-profile",
+    "evidence_id": "evidence-mcgee-creek-access-profile",
+    "notes": "",
+    "observation_id": "observation-usfs-mcgee-wildflower-hot-spots-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

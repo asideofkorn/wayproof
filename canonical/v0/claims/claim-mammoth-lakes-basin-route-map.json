@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mammoth-lakes-basin-route-map",
+    "evidence_ids": [
+      "evidence-mammoth-lakes-basin-route-map"
+    ],
+    "predicate": "mapped_day_hike_access",
+    "spatial_scope_ids": [
+      "scope-place-mammoth-lakes-basin"
+    ],
+    "subject_id": "place-mammoth-lakes-basin",
+    "temporal_scope": null,
+    "value": {
+      "Coldwater Trailhead": "Heart Lake and Duck Pass routes",
+      "Horseshoe Lake Trailhead": "McLeod Lake and Mammoth Pass routes",
+      "Lake George Trailhead": "Crystal Lake Trail"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

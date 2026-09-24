@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mcgee-convict-wilderness-context"
+    ],
+    "object_id": "wilderness-john-muir",
+    "predicate": "traverses",
+    "relationship_id": "relationship-mcgee-route-traverses-john-muir",
+    "subject_id": "route-mcgee-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

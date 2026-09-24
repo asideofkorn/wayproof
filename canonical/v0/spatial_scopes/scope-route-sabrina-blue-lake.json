@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Sabrina Basin Trail to Blue Lake",
+    "entity_id": "route-sabrina-blue-lake",
+    "kind": "route",
+    "scope_id": "scope-route-sabrina-blue-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "20 Lakes Basin",
+    "entity_id": "place-twenty-lakes-basin",
+    "kind": "area",
+    "scope_id": "scope-place-twenty-lakes-basin"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

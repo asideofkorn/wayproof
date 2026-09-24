@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lundy-canyon-route-profile",
+    "evidence_ids": [
+      "evidence-lundy-canyon-route-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-lundy-canyon"
+    ],
+    "subject_id": "route-lundy-canyon",
+    "temporal_scope": null,
+    "value": {
+      "destination": "20 Lakes Basin",
+      "lower_fraction": "bottom two-thirds are easier",
+      "one_way_miles": 5.4,
+      "upper_fraction": "upper third uses steep switchbacks"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

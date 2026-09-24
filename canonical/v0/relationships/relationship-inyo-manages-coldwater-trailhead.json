@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mammoth-lakes-basin-route-map"
+    ],
+    "object_id": "trailhead-coldwater",
+    "predicate": "manages",
+    "relationship_id": "relationship-inyo-manages-coldwater-trailhead",
+    "subject_id": "agency-inyo-national-forest",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

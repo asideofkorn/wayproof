@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-virginia-lakes-management",
+    "evidence_ids": [
+      "evidence-virginia-lakes-management"
+    ],
+    "predicate": "management_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-virginia-lakes"
+    ],
+    "subject_id": "trailhead-virginia-lakes",
+    "temporal_scope": null,
+    "value": {
+      "managing_unit": "Humboldt-Toiyabe National Forest",
+      "quota_trailhead": true,
+      "wilderness": "Hoover Wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

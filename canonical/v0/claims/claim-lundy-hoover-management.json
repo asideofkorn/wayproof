@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lundy-hoover-management",
+    "evidence_ids": [
+      "evidence-lundy-hoover-management"
+    ],
+    "predicate": "management_profile",
+    "spatial_scope_ids": [
+      "scope-route-lundy-canyon"
+    ],
+    "subject_id": "route-lundy-canyon",
+    "temporal_scope": null,
+    "value": {
+      "applies_south_of": "Virginia Lakes drainage",
+      "managing_unit": "Inyo National Forest",
+      "wilderness": "Hoover Wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

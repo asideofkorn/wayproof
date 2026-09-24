@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lundy-canyon-sub-ten-turnaround",
+    "question": "Which evidenced lower-canyon turnaround keeps Lundy Canyon below ten miles round trip?",
+    "reason": "The published 20 Lakes Basin destination is 5.4 miles one way and exceeds the stated ten-mile round-trip maximum.",
+    "related_ids": [
+      "route-lundy-canyon"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

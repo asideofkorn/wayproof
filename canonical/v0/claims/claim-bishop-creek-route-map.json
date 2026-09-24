@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bishop-creek-route-map",
+    "evidence_ids": [
+      "evidence-bishop-creek-route-map"
+    ],
+    "predicate": "mapped_day_hike_access",
+    "spatial_scope_ids": [
+      "scope-place-bishop-creek-canyon"
+    ],
+    "subject_id": "place-bishop-creek-canyon",
+    "temporal_scope": null,
+    "value": {
+      "North Lake Trailhead": [
+        "Piute Pass",
+        "Lamarck Lakes"
+      ],
+      "Sabrina Basin Trailhead": [
+        "Blue Lake"
+      ],
+      "South Lake Trailhead": [
+        "Bishop Pass",
+        "Treasure Lakes",
+        "Chocolate Lakes",
+        "Tyee Lakes",
+        "Green and Baker Lakes"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

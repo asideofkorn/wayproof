@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-virginia-lakes-management"
+    ],
+    "object_id": "wilderness-hoover",
+    "predicate": "traverses",
+    "relationship_id": "relationship-virginia-traverses-hoover",
+    "subject_id": "route-virginia-lakes",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

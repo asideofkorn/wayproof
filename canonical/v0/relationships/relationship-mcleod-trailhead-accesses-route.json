@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mammoth-lakes-basin-route-map"
+    ],
+    "object_id": "route-mcleod-lake",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mcleod-trailhead-accesses-route",
+    "subject_id": "trailhead-horseshoe-lake-mammoth",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

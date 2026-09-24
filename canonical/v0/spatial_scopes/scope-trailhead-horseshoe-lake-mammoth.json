@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Horseshoe Lake Trailhead",
+    "entity_id": "trailhead-horseshoe-lake-mammoth",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-horseshoe-lake-mammoth"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

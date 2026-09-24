@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/media/123390",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-convict-wilderness-hiking"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
