@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Recreation.gov East Fork campsite API returned 134 records: 133 numbered public campsites (001 through 0133) and one hidden management record named XXX. The numbered records contain site type, reservation status, coordinates, equipment limits, site details, amenities, notices, and published attributes.",
+    "observation_id": "observation-recreation-east-fork-campsites-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T15:00:00+00:00",
+    "source_id": "source-recreation-east-fork-campsites-api"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

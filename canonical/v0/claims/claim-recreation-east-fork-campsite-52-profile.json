@@ -1,0 +1,179 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-east-fork-campsite-52-profile",
+    "evidence_ids": [
+      "evidence-recreation-east-fork-campsite-52-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campsite-east-fork-52",
+    "temporal_scope": {
+      "ends_on": "2026-09-24",
+      "starts_on": "2026-09-24"
+    },
+    "value": {
+      "accessible": false,
+      "amenities": [
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "489.880004882813"
+        },
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "710.450012207031"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": null,
+          "name": "Food Storage Locker",
+          "value": "Food Storage Locker"
+        }
+      ],
+      "booking_url": "https://www.recreation.gov/camping/campsites/62380",
+      "campsite_id": "62380",
+      "equipment_details": {
+        "driveway_surface": "Gravel",
+        "max_num_vehicles": "1",
+        "max_vehicle_length": "0"
+      },
+      "facility_id": "232396",
+      "latitude": 37.4850340000001,
+      "legacy_id": "18691",
+      "longitude": -118.720823,
+      "loop": "EAST",
+      "name": "052",
+      "notices": [
+        "Truck camper, car or tent only.",
+        "Site is a step down"
+      ],
+      "permitted_equipment": [
+        {
+          "maximum_length_feet": null,
+          "name": "Tent"
+        }
+      ],
+      "published_attributes": [
+        {
+          "code": "campsite_reserve_type",
+          "name": "Site Reserve Type",
+          "value": "Site-Specific"
+        },
+        {
+          "code": "max_vehicle_length",
+          "name": "Max Vehicle Length",
+          "value": "0"
+        },
+        {
+          "code": "min_num_people",
+          "name": "Min Num of People",
+          "value": "1"
+        },
+        {
+          "code": "shade",
+          "name": "Shade",
+          "value": "Full"
+        },
+        {
+          "code": "checkout_time",
+          "name": "Checkout Time",
+          "value": "1:00 PM"
+        },
+        {
+          "code": "capacity_rating",
+          "name": "Capacity/Size Rating",
+          "value": "Single"
+        },
+        {
+          "code": "checkin_time",
+          "name": "Checkin Time",
+          "value": "2:00 PM"
+        },
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "489.880004882813"
+        },
+        {
+          "code": "driveway_surface",
+          "name": "Driveway Surface",
+          "value": "Gravel"
+        },
+        {
+          "code": "max_num_vehicles",
+          "name": "Max Num of Vehicles",
+          "value": "1"
+        },
+        {
+          "code": "max_num_people",
+          "name": "Max Num of People",
+          "value": "6"
+        },
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "710.450012207031"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "489.880004882813"
+        },
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "710.450012207031"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": null,
+          "name": "Food Storage Locker",
+          "value": "Food Storage Locker"
+        }
+      ],
+      "record_status": "Not Reservable",
+      "reserve_type": "Site-Specific",
+      "retrieved_on": "2026-09-24",
+      "site_details": {
+        "campfire_allowed": "Yes",
+        "capacity_rating": "Single",
+        "checkin_time": "2:00 PM",
+        "checkout_time": "11:00 AM",
+        "max_num_people": "6",
+        "min_num_people": "1",
+        "pets_allowed": "Yes",
+        "shade": "Full"
+      },
+      "site_type": "TENT ONLY NONELECTRIC",
+      "supplemental_camping": [
+        {
+          "description": "In addition to the total vehicle(s) allowed at the campsite you have selected, this fee allows access for one additional vehicle at the facility. If the campsite allows more than one extra vehicle, each vehicle is charged. Use 'quantity' to reserve the total number of additional vehicles needed per day (for Day Use sites) or night (for overnight stays). Parking may be near your campsite or in the extra vehicle parking area identified by the facility. Please read the facility information closely as there may be additional fees.",
+          "name": "Extra Vehicle Fee Per Night",
+          "price": "10.00",
+          "quantity": 1,
+          "type": "Single"
+        }
+      ],
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

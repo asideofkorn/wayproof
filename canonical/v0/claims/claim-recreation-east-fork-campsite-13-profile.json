@@ -1,0 +1,87 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-east-fork-campsite-13-profile",
+    "evidence_ids": [
+      "evidence-recreation-east-fork-campsite-13-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campsite-east-fork-13",
+    "temporal_scope": {
+      "ends_on": "2026-09-24",
+      "starts_on": "2026-09-24"
+    },
+    "value": {
+      "accessible": false,
+      "amenities": [
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "386.899993896484"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "182.690002441406"
+        }
+      ],
+      "booking_url": "https://www.recreation.gov/camping/campsites/62689",
+      "campsite_id": "62689",
+      "equipment_details": {},
+      "facility_id": "232396",
+      "latitude": 37.4906350000001,
+      "legacy_id": "258644",
+      "longitude": -118.720179,
+      "loop": "EAST",
+      "name": "013",
+      "notices": [],
+      "permitted_equipment": [],
+      "published_attributes": [
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "386.899993896484"
+        },
+        {
+          "code": "checkin_time",
+          "name": "Checkin Time",
+          "value": "0:00 AM"
+        },
+        {
+          "code": "checkout_time",
+          "name": "Checkout Time",
+          "value": "0:00 AM"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "182.690002441406"
+        }
+      ],
+      "record_status": "Not Reservable",
+      "reserve_type": "Non Site-Specific",
+      "retrieved_on": "2026-09-24",
+      "site_details": {
+        "checkin_time": "0:00 AM",
+        "checkout_time": "0:00 AM"
+      },
+      "site_type": "MANAGEMENT",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

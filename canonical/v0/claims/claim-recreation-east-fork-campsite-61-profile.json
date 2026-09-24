@@ -1,0 +1,87 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-recreation-east-fork-campsite-61-profile",
+    "evidence_ids": [
+      "evidence-recreation-east-fork-campsite-61-profile"
+    ],
+    "predicate": "recreation_gov_site_profile",
+    "spatial_scope_ids": [
+      "scope-east-fork-campground"
+    ],
+    "subject_id": "campsite-east-fork-61",
+    "temporal_scope": {
+      "ends_on": "2026-09-24",
+      "starts_on": "2026-09-24"
+    },
+    "value": {
+      "accessible": false,
+      "amenities": [
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "701.256103515625"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "620.439514160156"
+        }
+      ],
+      "booking_url": "https://www.recreation.gov/camping/campsites/62701",
+      "campsite_id": "62701",
+      "equipment_details": {},
+      "facility_id": "232396",
+      "latitude": 37.484432,
+      "legacy_id": "258666",
+      "longitude": -118.719825,
+      "loop": "EAST",
+      "name": "061",
+      "notices": [],
+      "permitted_equipment": [],
+      "published_attributes": [
+        {
+          "code": "map_y",
+          "name": "Map Y Coordinate",
+          "value": "701.256103515625"
+        },
+        {
+          "code": "checkin_time",
+          "name": "Checkin Time",
+          "value": "0:00 AM"
+        },
+        {
+          "code": "is_on_map",
+          "name": "Placed on Map",
+          "value": "1"
+        },
+        {
+          "code": "map_x",
+          "name": "Map X Coordinate",
+          "value": "620.439514160156"
+        },
+        {
+          "code": "checkout_time",
+          "name": "Checkout Time",
+          "value": "0:00 AM"
+        }
+      ],
+      "record_status": "Not Reservable",
+      "reserve_type": "Non Site-Specific",
+      "retrieved_on": "2026-09-24",
+      "site_details": {
+        "checkin_time": "0:00 AM",
+        "checkout_time": "0:00 AM"
+      },
+      "site_type": "MANAGEMENT",
+      "type_of_use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-recreation-east-fork-campsite-56-profile"
+    ],
+    "object_id": "campground-east-fork-inyo",
+    "predicate": "part_of",
+    "relationship_id": "relationship-east-fork-site-56-part-of-campground",
+    "subject_id": "campsite-east-fork-56",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
