@@ -1,0 +1,1089 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-eastern-sierra-foliage-route-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-convict-lake-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-east.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-east",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-south.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-parker-lake-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-parker-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-parker-lake-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-parker-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-parker-lake-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-parker-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-parker-lake-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-parker-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-parker-lake-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-parker-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-parker-lake-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-parker-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-parker-lake-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-parker-lake-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-parker-lake-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-parker-lake-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-parker-lake-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-parker-lake-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-heart-lake-mammoth-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-heart-lake-mammoth-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-heart-lake-mammoth-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-heart-lake-mammoth-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-heart-lake-mammoth-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-heart-lake-mammoth-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-heart-lake-mammoth-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-heart-lake-mammoth-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-heart-lake-mammoth-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-heart-lake-mammoth-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-heart-lake-mammoth-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-heart-lake-mammoth-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-heart-lake-mammoth-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-heart-lake-mammoth-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-convict-lake-loop-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-convict-lake-loop-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-convict-lake-loop-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-convict-lake-loop-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-node-convict-lake-loop-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "route-segment-convict-lake-loop-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "scope-route-convict-lake-loop",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-national-digital-trails-eastern-sierra-20260924.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "source-usgs-national-digital-trails-eastern-sierra-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-eastern-sierra-foliage-routes-20260924.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "observation-usgs-eastern-sierra-foliage-routes-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-convict-lake-two-mile-hike-20260924.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "observation-usfs-convict-lake-two-mile-hike-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-parker-lake-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-parker-lake-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-parker-lake-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-parker-lake-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-parker-lake-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-parker-lake-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-parker-lake-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-parker-lake-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-parker-lake-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-parker-lake-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-parker-lake-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-parker-lake-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-heart-lake-mammoth-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-heart-lake-mammoth-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-heart-lake-mammoth-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-heart-lake-mammoth-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-heart-lake-mammoth-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-heart-lake-mammoth-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-heart-lake-mammoth-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-heart-lake-mammoth-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-heart-lake-mammoth-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-heart-lake-mammoth-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-convict-lake-loop-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-convict-lake-loop-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-convict-lake-loop-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-convict-lake-loop-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-segment-convict-lake-loop-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-convict-lake-loop-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-route-convict-lake-loop-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-lake-loop-published-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "evidence-convict-lake-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-parker-lake-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-parker-lake-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-parker-lake-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-parker-lake-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-parker-lake-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-parker-lake-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-parker-lake-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-parker-lake-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-parker-lake-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-parker-lake-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-parker-lake-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-parker-lake-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-heart-lake-mammoth-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-heart-lake-mammoth-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-heart-lake-mammoth-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-heart-lake-mammoth-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-heart-lake-mammoth-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-heart-lake-mammoth-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-heart-lake-mammoth-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-heart-lake-mammoth-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-heart-lake-mammoth-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-heart-lake-mammoth-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-01.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-convict-lake-loop-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-02.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-convict-lake-loop-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-03.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-convict-lake-loop-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-04.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-convict-lake-loop-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-05.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-segment-convict-lake-loop-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-convict-lake-loop-dataset-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-route-convict-lake-loop-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-convict-lake-loop-published-profile.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "claim-convict-lake-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-01-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-01-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-01-part-of-route-parker-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-01-part-of-route-parker-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-02-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-02-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-02-part-of-route-parker-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-02-part-of-route-parker-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-03-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-03-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-03-part-of-route-parker-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-03-part-of-route-parker-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-04-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-04-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-04-part-of-route-parker-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-04-part-of-route-parker-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-05-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-05-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-parker-lake-05-part-of-route-parker-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-parker-lake-05-part-of-route-parker-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-parker-lake-starts-at-dataset-entry.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-parker-lake-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-01-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-01-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-01-part-of-route-heart-lake-mammoth.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-01-part-of-route-heart-lake-mammoth",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-02-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-02-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-02-part-of-route-heart-lake-mammoth.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-02-part-of-route-heart-lake-mammoth",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-03-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-03-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-03-part-of-route-heart-lake-mammoth.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-03-part-of-route-heart-lake-mammoth",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-04-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-04-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-heart-lake-mammoth-04-part-of-route-heart-lake-mammoth.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-heart-lake-mammoth-04-part-of-route-heart-lake-mammoth",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-heart-lake-mammoth-starts-at-dataset-entry.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-heart-lake-mammoth-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-01-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-01-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-01-part-of-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-01-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-02-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-02-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-02-part-of-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-02-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-03-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-03-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-03-part-of-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-03-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-04-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-04-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-04-part-of-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-04-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-05-starts-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-05-ends-at.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-05-part-of-route-convict-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-segment-convict-lake-loop-05-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-convict-lake-loop-starts-at-dataset-entry.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-convict-lake-loop-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-convict-lake-loop-ends-at-dataset-exit.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-route-convict-lake-loop-ends-at-dataset-exit",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-trailhead-accesses-lake-loop.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-convict-trailhead-accesses-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-lake-loop-located-at-convict-lake.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "relationship-convict-lake-loop-located-at-convict-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-convict-lake-loop-dataset-closure.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "gap-convict-lake-loop-dataset-closure",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-parker-lake-ten-mile-day-hike-fit.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "result-route-parker-lake-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-heart-lake-mammoth-ten-mile-day-hike-fit.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "result-route-heart-lake-mammoth-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-convict-lake-loop-ten-mile-day-hike-fit.json",
+      "reason": "Add official geometry and distance-bearing topology for priority Eastern Sierra foliage hikes.",
+      "record_id": "result-route-convict-lake-loop-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add route-complete official topology for Parker and Heart Lakes, a sourced two-mile Convict Lake choice, and an explicit unclosed shore-trail topology gap."
+}

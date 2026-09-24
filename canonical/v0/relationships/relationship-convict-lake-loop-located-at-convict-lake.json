@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-convict-lake-loop-published-profile"
+    ],
+    "object_id": "place-convict-lake",
+    "predicate": "located_in",
+    "relationship_id": "relationship-convict-lake-loop-located-at-convict-lake",
+    "subject_id": "route-convict-lake-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

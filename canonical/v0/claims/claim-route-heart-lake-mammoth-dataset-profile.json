@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-heart-lake-mammoth-dataset-profile",
+    "evidence_ids": [
+      "evidence-route-heart-lake-mammoth-dataset-profile"
+    ],
+    "predicate": "dataset_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-heart-lake-mammoth"
+    ],
+    "subject_id": "route-heart-lake-mammoth",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of selected USGS source-field lengthmiles values",
+      "geometry_snapshot": {
+        "path": "geometry/v0/snapshots/usgs-eastern-sierra-foliage-routes-20260924.geojson",
+        "sha256": "b5f952648b55904717bd3279ec70ef0d6b8d590049a061ef4a16969428bb4c9f"
+      },
+      "one_way_distance_miles": 1.05114655
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

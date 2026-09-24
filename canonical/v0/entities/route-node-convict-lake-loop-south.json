@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-convict-lake-loop-south",
+    "kind": "route_node",
+    "name": "Convict Lake Loop south endpoint"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Inyo visitor guide recommends a two-mile hike around Convict Lake for views of the lake against Mount Morrison.",
+    "observation_id": "observation-usfs-convict-lake-two-mile-hike-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T07:30:00+00:00",
+    "source_id": "source-usfs-inyo-visitor-guide-2021"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
