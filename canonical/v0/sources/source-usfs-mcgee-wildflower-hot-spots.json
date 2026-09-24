@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/Wildflower%20Hot%20Spots.pdf",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-mcgee-wildflower-hot-spots"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

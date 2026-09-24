@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mammoth-lakes-basin-route-map"
+    ],
+    "object_id": "place-heart-lake-mammoth",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-heart-ends-at",
+    "subject_id": "route-heart-lake-mammoth",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

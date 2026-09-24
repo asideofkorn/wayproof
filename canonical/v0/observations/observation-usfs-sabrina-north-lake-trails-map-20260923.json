@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official Sabrina and North Lake area map depicts the Sabrina Basin route to Blue Lake and the North Lake approaches to Piute Pass and Lamarck Lakes.",
+    "observation_id": "observation-usfs-sabrina-north-lake-trails-map-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-sabrina-north-lake-trails-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

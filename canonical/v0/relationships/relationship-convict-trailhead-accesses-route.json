@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-convict-trailhead-access"
+    ],
+    "object_id": "route-convict-canyon",
+    "predicate": "accesses",
+    "relationship_id": "relationship-convict-trailhead-accesses-route",
+    "subject_id": "trailhead-convict-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

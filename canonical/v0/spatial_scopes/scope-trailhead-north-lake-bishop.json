@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "North Lake Trailhead",
+    "entity_id": "trailhead-north-lake-bishop",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-north-lake-bishop"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

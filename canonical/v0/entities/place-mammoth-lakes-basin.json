@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-mammoth-lakes-basin",
+    "kind": "basin",
+    "name": "Mammoth Lakes Basin"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

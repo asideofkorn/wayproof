@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lake George Trailhead",
+    "entity_id": "trailhead-lake-george",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-lake-george"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

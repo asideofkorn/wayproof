@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Convict Canyon Trail",
+    "entity_id": "route-convict-canyon",
+    "kind": "route",
+    "scope_id": "scope-route-convict-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

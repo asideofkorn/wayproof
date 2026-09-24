@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-foliage-trip-current-conditions",
+    "question": "Which candidate trailheads, roads, restrooms, and seasonal services will be open for the planned trip?",
+    "reason": "Access and developed facilities are seasonal and condition-dependent; recheck current Forest Service alerts and local trailhead status shortly before departure.",
+    "related_ids": [
+      "route-mcgee-creek",
+      "route-convict-canyon",
+      "route-parker-lake",
+      "route-fern-lake-june",
+      "route-yost-lake",
+      "route-lundy-canyon",
+      "route-crystal-lake-mammoth",
+      "route-heart-lake-mammoth",
+      "route-mcleod-lake",
+      "route-sabrina-blue-lake",
+      "route-piute-pass",
+      "route-lamarck-lakes",
+      "route-treasure-lakes",
+      "route-virginia-lakes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

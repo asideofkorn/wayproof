@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Coldwater Trailhead",
+    "entity_id": "trailhead-coldwater",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-coldwater"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

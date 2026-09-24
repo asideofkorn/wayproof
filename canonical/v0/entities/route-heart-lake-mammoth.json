@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-heart-lake-mammoth",
+    "kind": "route",
+    "name": "Heart Lake Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

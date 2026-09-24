@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "wilderness-ansel-adams",
+    "kind": "wilderness",
+    "name": "Ansel Adams Wilderness"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

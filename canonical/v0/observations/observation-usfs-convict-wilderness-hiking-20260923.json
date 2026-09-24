@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Convict Lake trailhead is about seven miles south of Mammoth Lakes. The route follows Convict Lake's north shore into a rugged canyon. A hazardous stream crossing occurs within three miles; Mildred Lake is five miles one way and Dorothy Lake six miles one way. Trailhead and overflow parking directions are published, and overnight wilderness stays require a permit.",
+    "observation_id": "observation-usfs-convict-wilderness-hiking-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-convict-wilderness-hiking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

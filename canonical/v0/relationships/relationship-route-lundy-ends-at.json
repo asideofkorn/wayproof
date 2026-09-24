@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lundy-canyon-route-profile"
+    ],
+    "object_id": "place-twenty-lakes-basin",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-lundy-ends-at",
+    "subject_id": "route-lundy-canyon",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

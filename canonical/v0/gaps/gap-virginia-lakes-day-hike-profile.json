@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-virginia-lakes-day-hike-profile",
+    "question": "What exact Virginia Lakes route, distance, parking, restroom, and potable-water profile should a day hiker use?",
+    "reason": "The official wilderness page confirms trailhead identity, quota status, and management but not the complete day-use facility and route profile.",
+    "related_ids": [
+      "trailhead-virginia-lakes",
+      "route-virginia-lakes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Ansel Adams Wilderness",
+    "entity_id": "wilderness-ansel-adams",
+    "kind": "area",
+    "scope_id": "scope-wilderness-ansel-adams"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

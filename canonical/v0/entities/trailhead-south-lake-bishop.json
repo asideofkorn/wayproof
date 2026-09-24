@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-south-lake-bishop",
+    "kind": "trailhead",
+    "name": "South Lake Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

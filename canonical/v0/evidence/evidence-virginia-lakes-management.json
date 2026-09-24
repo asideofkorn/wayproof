@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-virginia-lakes-management",
+    "evidence_id": "evidence-virginia-lakes-management",
+    "notes": "",
+    "observation_id": "observation-usfs-hoover-wilderness-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

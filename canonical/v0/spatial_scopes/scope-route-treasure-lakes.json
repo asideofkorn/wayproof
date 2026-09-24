@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Treasure Lakes Trail",
+    "entity_id": "route-treasure-lakes",
+    "kind": "route",
+    "scope_id": "scope-route-treasure-lakes"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

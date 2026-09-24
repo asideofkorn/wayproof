@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official Mammoth Lakes area map depicts Lake George and Crystal Lake Trail, Coldwater/Duck Pass trailhead with Heart and Emerald Lakes, and Horseshoe Lake/Mammoth Pass trailhead with McLeod Lake. It also distinguishes mapped trailheads, campgrounds, picnic areas, and restroom symbols, including locations explicitly marked as having no restroom.",
+    "observation_id": "observation-usfs-mammoth-lakes-area-map-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-mammoth-lakes-area-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

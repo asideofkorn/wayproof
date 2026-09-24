@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Yost and Fern Lakes Trailhead",
+    "entity_id": "trailhead-yost-fern",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-yost-fern"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

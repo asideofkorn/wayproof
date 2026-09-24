@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-north-lake-access-profile",
+    "evidence_ids": [
+      "evidence-north-lake-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-north-lake-bishop"
+    ],
+    "subject_id": "trailhead-north-lake-bishop",
+    "temporal_scope": null,
+    "value": {
+      "campground_parking_for_hikers": false,
+      "hiker_parking": "by North Lake near pack station",
+      "published_elevation_ft": 9320,
+      "trailhead_distance_from_parking_miles": 0.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Crystal Lake Trail",
+    "entity_id": "route-crystal-lake-mammoth",
+    "kind": "route",
+    "scope_id": "scope-route-crystal-lake-mammoth"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

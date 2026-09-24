@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sabrina-basin-access-profile",
+    "evidence_ids": [
+      "evidence-sabrina-basin-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-sabrina-basin"
+    ],
+    "subject_id": "trailhead-sabrina-basin",
+    "temporal_scope": null,
+    "value": {
+      "day_use_parking": "at road end",
+      "published_elevation_ft": 9040,
+      "road": "Highway 168",
+      "route_destination": "Blue Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-blue-lake-sabrina",
+    "kind": "waterbody",
+    "name": "Blue Lake in Sabrina Basin"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

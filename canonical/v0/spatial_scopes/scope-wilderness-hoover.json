@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Hoover Wilderness",
+    "entity_id": "wilderness-hoover",
+    "kind": "area",
+    "scope_id": "scope-wilderness-hoover"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

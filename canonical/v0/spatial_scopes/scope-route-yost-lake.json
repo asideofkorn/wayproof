@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Yost Lake Trail",
+    "entity_id": "route-yost-lake",
+    "kind": "route",
+    "scope_id": "scope-route-yost-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

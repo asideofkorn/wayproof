@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yost-fern-route-profile",
+    "evidence_ids": [
+      "evidence-yost-fern-route-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-yost-fern"
+    ],
+    "subject_id": "trailhead-yost-fern",
+    "temporal_scope": null,
+    "value": {
+      "fern_beyond_fork_miles": 0.7,
+      "fern_total_one_way_miles": 2.2,
+      "shared_distance_to_fork_miles": 1.5,
+      "yost_beyond_fork_miles": 2.3,
+      "yost_total_one_way_miles": 3.8
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

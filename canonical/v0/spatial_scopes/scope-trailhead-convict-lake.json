@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Convict Lake Trailhead",
+    "entity_id": "trailhead-convict-lake",
+    "kind": "facility",
+    "scope_id": "scope-trailhead-convict-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

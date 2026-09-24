@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Forest Service identifies Virginia Lakes as a quota trailhead in Hoover Wilderness. Humboldt-Toiyabe National Forest manages the Virginia Lakes drainage, while Inyo National Forest manages the southern Hoover Wilderness from south of that drainage through Lundy Canyon and 20 Lakes Basin.",
+    "observation_id": "observation-usfs-hoover-wilderness-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-hoover-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

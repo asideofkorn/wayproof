@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official South Lake area map depicts the South Lake trailhead network, including Bishop Pass, Treasure Lakes, Chocolate Lakes, Tyee Lakes, and Green/Baker Lakes routes.",
+    "observation_id": "observation-usfs-south-lake-area-trails-map-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-south-lake-area-trails-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

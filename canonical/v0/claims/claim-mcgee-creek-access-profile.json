@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mcgee-creek-access-profile",
+    "evidence_ids": [
+      "evidence-mcgee-creek-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-mcgee-creek"
+    ],
+    "subject_id": "trailhead-mcgee-creek",
+    "temporal_scope": null,
+    "value": {
+      "access_from": "US 395 McGee Creek exit",
+      "published_elevation_ft": 7800,
+      "restroom": true,
+      "road_end_parking": "paved",
+      "setting": [
+        "riparian",
+        "aspen",
+        "glacial_canyon"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

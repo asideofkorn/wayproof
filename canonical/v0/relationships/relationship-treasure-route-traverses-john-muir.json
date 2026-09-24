@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-bishop-creek-route-map"
+    ],
+    "object_id": "wilderness-john-muir",
+    "predicate": "traverses",
+    "relationship_id": "relationship-treasure-route-traverses-john-muir",
+    "subject_id": "route-treasure-lakes",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/r04/humboldt-toiyabe/permits/hoover-wilderness",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-hoover-wilderness"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

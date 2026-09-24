@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-parker-lake-route-profile",
+    "evidence_ids": [
+      "evidence-parker-lake-route-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-parker-lake"
+    ],
+    "subject_id": "route-parker-lake",
+    "temporal_scope": null,
+    "value": {
+      "destination": "Parker Lake",
+      "one_way_miles": 1.8,
+      "published_rating": "easiest",
+      "round_trip_miles": 3.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The McGee Creek wildflower site is reached from the McGee Creek exit on US 395, about six miles north of Tom's Place or eight miles south of Highway 203. The road continues to a paved parking lot and restrooms at the road end; the trailhead is about 7,800 feet and the canyon includes riparian and aspen habitat.",
+    "observation_id": "observation-usfs-mcgee-wildflower-hot-spots-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:00:00+00:00",
+    "source_id": "source-usfs-mcgee-wildflower-hot-spots"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-june-lakes-wilderness-context"
+    ],
+    "object_id": "trailhead-parker-lake",
+    "predicate": "manages",
+    "relationship_id": "relationship-inyo-manages-parker-trailhead",
+    "subject_id": "agency-inyo-national-forest",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

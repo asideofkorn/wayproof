@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-canyon-route-profile",
+    "evidence_ids": [
+      "evidence-convict-canyon-route-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-convict-canyon"
+    ],
+    "subject_id": "route-convict-canyon",
+    "temporal_scope": null,
+    "value": {
+      "alignment": "north shore of Convict Lake into Convict Canyon",
+      "destinations_one_way_miles": {
+        "Dorothy Lake": 6,
+        "Mildred Lake": 5
+      },
+      "hazardous_stream_crossing_within_miles": 3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
