@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lundy-canyon-area-identity",
+    "evidence_ids": [
+      "evidence-lundy-canyon-area-identity"
+    ],
+    "predicate": "area_profile",
+    "spatial_scope_ids": [
+      "scope-place-lundy-canyon"
+    ],
+    "subject_id": "place-lundy-canyon",
+    "temporal_scope": null,
+    "value": {
+      "destination": "place-twenty-lakes-basin",
+      "managing_unit": "agency-inyo-national-forest",
+      "principal_route": "route-lundy-canyon"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
