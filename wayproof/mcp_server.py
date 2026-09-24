@@ -169,6 +169,18 @@ class WayproofReadTools:
             "knowledge_gaps": self.reads.knowledge_gaps_for(entity_id),
         })
 
+    def compare_hikes(
+        self,
+        route_ids: list[str],
+        maximum_round_trip_miles: float,
+    ) -> dict:
+        """Compare explicitly selected hiking routes against a round-trip distance cap."""
+        if not route_ids:
+            raise ValueError("at least one route_id is required")
+        return _plain(self.reads.compare_hikes(
+            route_ids, float(maximum_round_trip_miles),
+        ))
+
     def explain_claim(self, claim_id: str) -> dict:
         """Trace a claim through supporting evidence, observations, and sources."""
         return _plain(self.reads.explain_claim(claim_id))
@@ -236,6 +248,7 @@ def create_server(root: Path | str = Path(".")) -> MCPServer:
     server.tool(name="search_entities")(tools.search_entities)
     server.tool(name="get_record")(tools.get_record)
     server.tool(name="get_entity")(tools.get_entity)
+    server.tool(name="compare_hikes")(tools.compare_hikes)
     server.tool(name="explain_claim")(tools.explain_claim)
     server.tool(name="get_changes")(tools.get_changes)
     server.tool(name="list_knowledge_gaps")(tools.list_knowledge_gaps)

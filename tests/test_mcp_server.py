@@ -169,7 +169,7 @@ def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
                 "search_entities", "get_record", "get_entity", "explain_claim",
                 "get_changes", "list_knowledge_gaps", "evaluate_requirements",
                 "evaluate_readiness", "pretrip_recheck", "resolve_trip_intent",
-                "plan_trip",
+                "plan_trip", "compare_hikes",
             }
             assert not names.intersection({"propose", "approve", "promote", "publish"})
             assert all(item.description for item in discovered.tools)
