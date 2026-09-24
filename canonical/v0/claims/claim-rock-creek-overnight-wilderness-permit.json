@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-overnight-wilderness-permit",
+    "evidence_ids": [
+      "evidence-rock-creek-overnight-wilderness-permit"
+    ],
+    "predicate": "overnight_wilderness_permit_required",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley",
+      "scope-route-mono-pass-rock-creek",
+      "scope-route-morgan-pass-rock-creek",
+      "scope-route-tamarack-lakes-rock-creek",
+      "scope-route-hilton-lakes-rock-creek"
+    ],
+    "subject_id": "permit-inyo-overnight-wilderness",
+    "temporal_scope": null,
+    "value": {
+      "applies_to": "overnight trips entering John Muir Wilderness from the Rock Creek routes",
+      "required_year_round": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

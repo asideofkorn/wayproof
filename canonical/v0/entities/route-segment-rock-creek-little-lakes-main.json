@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-rock-creek-little-lakes-main",
+    "kind": "route_segment",
+    "name": "Little Lakes Valley segment"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

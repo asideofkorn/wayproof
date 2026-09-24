@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "Approved animal-resistant food-storage container covering regulated overnight travel.",
+    "requirement_id": "requirement-little-lakes-bear-container",
+    "rule_id": "rule-little-lakes-bear-container"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

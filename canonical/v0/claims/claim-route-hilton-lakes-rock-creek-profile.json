@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-hilton-lakes-rock-creek-profile",
+    "evidence_ids": [
+      "evidence-route-hilton-lakes-rock-creek-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-hilton-lakes-rock-creek"
+    ],
+    "subject_id": "route-hilton-lakes-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
+      "map_role": "principal Rock Creek hiking route",
+      "name": "Hilton Lakes Trail",
+      "one_way_distance_miles_from_source_features": 4.08534229
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-rock-creek-little-lakes-intermediate-mileages",
+    "question": "What are the source-published segment mileages between each named Little Lakes Valley lake?",
+    "reason": "The official map establishes the named lakes along the corridor, but the reviewed USGS service publishes the valley as one 3.104216-mile feature. Wayproof does not cut it at inferred positions.",
+    "related_ids": [
+      "route-little-lakes-valley",
+      "route-segment-rock-creek-little-lakes-main"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

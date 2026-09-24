@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-corridor-map-inventory",
+    "evidence_ids": [
+      "evidence-rock-creek-corridor-map-inventory"
+    ],
+    "predicate": "mapped_recreation_inventory",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "place-rock-creek-canyon",
+    "temporal_scope": null,
+    "value": {
+      "campgrounds": [
+        "campground-palisade-rock-creek",
+        "campground-pine-grove-rock-creek",
+        "campground-upper-pine-grove-rock-creek",
+        "campground-rock-creek-lake",
+        "campground-tamarack-rock-creek",
+        "campground-east-fork-inyo"
+      ],
+      "road": "road-rock-creek-inyo",
+      "trailheads": [
+        "trailhead-mosquito-flat",
+        "trailhead-tamarack-lakes-rock-creek",
+        "trailhead-hilton-lakes-rock-creek"
+      ],
+      "wilderness": "wilderness-john-muir"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

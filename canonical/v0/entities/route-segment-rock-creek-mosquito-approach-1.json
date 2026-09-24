@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-rock-creek-mosquito-approach-1",
+    "kind": "route_segment",
+    "name": "Mono Pass segment"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

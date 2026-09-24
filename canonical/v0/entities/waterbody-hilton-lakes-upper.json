@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-hilton-lakes-upper",
+    "kind": "lake",
+    "name": "Upper Hilton Lakes"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

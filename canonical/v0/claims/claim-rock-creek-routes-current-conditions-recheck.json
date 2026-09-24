@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-routes-current-conditions-recheck",
+    "evidence_ids": [
+      "evidence-rock-creek-routes-current-conditions-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor",
+      "scope-route-little-lakes-valley",
+      "scope-route-mono-pass-rock-creek",
+      "scope-route-morgan-pass-rock-creek",
+      "scope-route-tamarack-lakes-rock-creek",
+      "scope-route-hilton-lakes-rock-creek"
+    ],
+    "subject_id": "place-rock-creek-canyon",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "Rock_Creek_Road_access",
+        "trail_conditions",
+        "weather_and_early_snow",
+        "fire_restrictions",
+        "trailhead_parking_and_facilities"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

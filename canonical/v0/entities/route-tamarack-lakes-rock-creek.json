@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-tamarack-lakes-rock-creek",
+    "kind": "route",
+    "name": "Tamarack Lakes Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

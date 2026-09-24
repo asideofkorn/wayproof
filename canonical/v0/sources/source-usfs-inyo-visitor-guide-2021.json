@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/inyo/Visitor%20Guide%202021.pdf",
+    "publisher": "USDA Forest Service, Inyo National Forest",
+    "source_id": "source-usfs-inyo-visitor-guide-2021"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

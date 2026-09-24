@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-rock-creek-tamarack-08",
+    "evidence_id": "evidence-route-segment-rock-creek-tamarack-08",
+    "notes": "",
+    "observation_id": "observation-usgs-rock-creek-principal-routes-20260923",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

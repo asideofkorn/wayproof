@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-chickenfoot-lake-rock-creek",
+    "kind": "lake",
+    "name": "Chickenfoot Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

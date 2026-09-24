@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-little-lakes-valley-profile",
+    "evidence_ids": [
+      "evidence-route-little-lakes-valley-profile"
+    ],
+    "predicate": "route_profile",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley"
+    ],
+    "subject_id": "route-little-lakes-valley",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of reviewed USGS source-field lengthmiles values",
+      "map_role": "principal Rock Creek hiking route",
+      "name": "Little Lakes Valley Trail",
+      "one_way_distance_miles_from_source_features": 3.60003589
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

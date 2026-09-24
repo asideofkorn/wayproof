@@ -1,0 +1,50 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-rock-creek-morgan-pass-link",
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-morgan-pass-link"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-morgan-pass-rock-creek"
+    ],
+    "subject_id": "route-segment-rock-creek-morgan-pass-link",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "{4906AB08-A650-40B1-9A17-7E928EB568C7}",
+      "dataset_feature_name": "MORGAN PASS",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.008770420000000001,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.391287069044324,
+        "longitude": -118.75094223132368
+      },
+      "geometry_snapshot": {
+        "feature_id": "{4906AB08-A650-40B1-9A17-7E928EB568C7}",
+        "path": "geometry/v0/snapshots/usgs-rock-creek-principal-routes-20260923.geojson",
+        "sha256": "cbbaa853ee6d4ad8a8d995ab91270b7154a5fe3643ac1cb666d43f53c59b600a"
+      },
+      "operational_status_requires_current_check": true,
+      "route_role": "official_mainline",
+      "source_data_description": "USFS Trails Update 03/2026",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "2827",
+      "source_load_date": 1777310283000,
+      "source_mode_attributes": {
+        "hiker_pedestrian": null,
+        "pack_saddle": null
+      },
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.39136930029423,
+        "longitude": -118.75105991465682
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

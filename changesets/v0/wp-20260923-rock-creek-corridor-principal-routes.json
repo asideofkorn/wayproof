@@ -1,0 +1,2637 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-rock-creek-corridor-principal-routes",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-little-lakes-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-mono-pass-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-morgan-pass-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-tamarack-lakes-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-hilton-lakes-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-palisade-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "campground-palisade-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "campground-pine-grove-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-upper-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "campground-upper-pine-grove-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-rock-creek-lake.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "campground-rock-creek-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-tamarack-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "campground-tamarack-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mosquito-flat.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "trailhead-mosquito-flat",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "trailhead-tamarack-lakes-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "trailhead-hilton-lakes-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-mack-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-mack-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-marsh-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-marsh-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-heart-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-heart-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-box-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-box-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-long-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-long-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-chickenfoot-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-chickenfoot-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-gem-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-gem-lakes-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-buck-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-buck-lake-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-hilton-lakes-upper.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "waterbody-hilton-lakes-upper",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/pass-mono-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "pass-mono-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/pass-morgan-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "pass-morgan-rock-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-mosquito-approach-1.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-mosquito-approach-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-mosquito-approach-2.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-mosquito-approach-2",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-mosquito-junction-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-mosquito-junction-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-little-lakes-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-little-lakes-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-mono-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-mono-pass-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-mono-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-mono-pass-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-morgan-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-morgan-pass-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-morgan-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-morgan-pass-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-morgan-pass-south-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-morgan-pass-south-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-tamarack-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-tamarack-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-rock-creek-hilton-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-segment-rock-creek-hilton-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-little-lakes-south-junction.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-little-lakes-south-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-hilton-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-hilton-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-mono-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-mono-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-morgan-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-morgan-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-morgan-south.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-morgan-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-mosquito-approach-1.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-mosquito-approach-1",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-mosquito-approach-2.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-mosquito-approach-2",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-mosquito-branch.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-mosquito-branch",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-rock-creek-tamarack-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "route-node-rock-creek-tamarack-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-rock-creek-corridor.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-rock-creek-corridor",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-route-little-lakes-valley",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-route-mono-pass-rock-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-route-morgan-pass-rock-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-route-tamarack-lakes-rock-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "scope-route-hilton-lakes-rock-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-rock-creek-area-trails-map.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "source-usfs-rock-creek-area-trails-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-rock-creek-wilderness-hiking-guide.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "source-usfs-rock-creek-wilderness-hiking-guide",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-national-digital-trails-rock-creek-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "source-usgs-national-digital-trails-rock-creek-20260923",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-inyo-visitor-guide-2021.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "source-usfs-inyo-visitor-guide-2021",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-map-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-usfs-rock-creek-map-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-guide-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-usfs-rock-creek-guide-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-rock-creek-principal-routes-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-usgs-rock-creek-principal-routes-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-rock-creek-visitor-guide-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-usfs-rock-creek-visitor-guide-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-inyo-rock-creek-permits-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-recreationgov-inyo-rock-creek-permits-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-recreationgov-little-lakes-bear-storage-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-recreationgov-little-lakes-bear-storage-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-inyo-rock-creek-alerts-20260923.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "observation-usfs-inyo-rock-creek-alerts-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-corridor-map-inventory.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-rock-creek-corridor-map-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mosquito-flat-access-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-mosquito-flat-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-wilderness-practices.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-rock-creek-wilderness-practices",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-overnight-wilderness-permit.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-rock-creek-overnight-wilderness-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-little-lakes-valley-bear-container.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-little-lakes-valley-bear-container",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-routes-current-conditions-recheck.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-rock-creek-routes-current-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-little-lakes-valley-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-little-lakes-valley-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-mono-pass-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-mono-pass-rock-creek-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-morgan-pass-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-morgan-pass-rock-creek-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-tamarack-lakes-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-tamarack-lakes-rock-creek-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-hilton-lakes-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-hilton-lakes-rock-creek-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-mosquito-approach-1.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-mosquito-approach-1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-mosquito-approach-2.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-mosquito-approach-2",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-mosquito-junction-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-mosquito-junction-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-little-lakes-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-little-lakes-main",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-mono-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-mono-pass-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-mono-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-mono-pass-main",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-morgan-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-morgan-pass-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-morgan-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-morgan-pass-main",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-morgan-pass-south-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-morgan-pass-south-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-06",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-07",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-tamarack-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-tamarack-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-06",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-07",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-rock-creek-hilton-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "evidence-route-segment-rock-creek-hilton-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-corridor-map-inventory.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-rock-creek-corridor-map-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mosquito-flat-access-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-mosquito-flat-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-wilderness-practices.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-rock-creek-wilderness-practices",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-overnight-wilderness-permit.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-rock-creek-overnight-wilderness-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-little-lakes-valley-bear-container.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-little-lakes-valley-bear-container",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-routes-current-conditions-recheck.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-rock-creek-routes-current-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-little-lakes-valley-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-little-lakes-valley-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-mono-pass-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-mono-pass-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-morgan-pass-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-morgan-pass-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-tamarack-lakes-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-tamarack-lakes-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-hilton-lakes-rock-creek-profile.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-hilton-lakes-rock-creek-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-mosquito-approach-1.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-mosquito-approach-1",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-mosquito-approach-2.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-mosquito-approach-2",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-mosquito-junction-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-mosquito-junction-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-little-lakes-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-little-lakes-main",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-mono-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-mono-pass-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-mono-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-mono-pass-main",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-morgan-pass-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-morgan-pass-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-morgan-pass-main.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-morgan-pass-main",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-morgan-pass-south-link.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-morgan-pass-south-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-tamarack-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-tamarack-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-01.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-02.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-03.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-04.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-05.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-06.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-07.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-rock-creek-hilton-08.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "claim-route-segment-rock-creek-hilton-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-little-lakes-valley-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-little-lakes-valley-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-little-lakes-valley-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-little-lakes-valley-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-little-lakes-valley-located-in-john-muir.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-little-lakes-valley-located-in-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-little-lakes-valley-overnight-governed-by-inyo.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-little-lakes-valley-overnight-governed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mono-pass-rock-creek-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-mono-pass-rock-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mono-pass-rock-creek-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-mono-pass-rock-creek-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mono-pass-rock-creek-located-in-john-muir.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-mono-pass-rock-creek-located-in-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mono-pass-rock-creek-overnight-governed-by-inyo.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-mono-pass-rock-creek-overnight-governed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-morgan-pass-rock-creek-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-morgan-pass-rock-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-morgan-pass-rock-creek-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-morgan-pass-rock-creek-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-morgan-pass-rock-creek-located-in-john-muir.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-morgan-pass-rock-creek-located-in-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-morgan-pass-rock-creek-overnight-governed-by-inyo.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-morgan-pass-rock-creek-overnight-governed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-tamarack-lakes-rock-creek-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-tamarack-lakes-rock-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-tamarack-lakes-rock-creek-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-tamarack-lakes-rock-creek-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-tamarack-lakes-rock-creek-located-in-john-muir.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-tamarack-lakes-rock-creek-located-in-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-tamarack-lakes-rock-creek-overnight-governed-by-inyo.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-tamarack-lakes-rock-creek-overnight-governed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-hilton-lakes-rock-creek-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-hilton-lakes-rock-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-hilton-lakes-rock-creek-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-hilton-lakes-rock-creek-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-hilton-lakes-rock-creek-located-in-john-muir.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-hilton-lakes-rock-creek-located-in-john-muir",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-hilton-lakes-rock-creek-overnight-governed-by-inyo.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-hilton-lakes-rock-creek-overnight-governed-by-inyo",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-1-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-1-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-1-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-1-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-1-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-2-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-2-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-2-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-2-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-junction-link-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-junction-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-junction-link-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-junction-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mosquito-junction-link-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-little-lakes-main-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-little-lakes-main-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-little-lakes-main-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-little-lakes-main-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-little-lakes-main-part-of-route-little-lakes-valley.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-little-lakes-main-part-of-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-little-lakes-main-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-little-lakes-main-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-link-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-link-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-link-part-of-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-link-part-of-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-main-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-main-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-main-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-main-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-mono-pass-main-part-of-route-mono-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-mono-pass-main-part-of-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-link-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-link-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-link-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-link-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-main-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-main-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-main-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-main-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-main-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-main-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-south-link-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-south-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-south-link-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-south-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-morgan-pass-south-link-part-of-route-morgan-pass-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-morgan-pass-south-link-part-of-route-morgan-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-01-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-01-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-01-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-01-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-02-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-02-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-02-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-02-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-03-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-03-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-03-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-03-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-04-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-04-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-04-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-04-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-05-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-05-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-05-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-05-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-06-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-06-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-06-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-06-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-06-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-06-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-07-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-07-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-07-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-07-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-07-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-07-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-08-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-08-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-08-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-08-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-tamarack-08-part-of-route-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-tamarack-08-part-of-route-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-01-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-01-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-01-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-01-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-02-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-02-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-02-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-02-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-03-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-03-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-03-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-03-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-04-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-04-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-04-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-04-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-05-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-05-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-05-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-05-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-06-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-06-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-06-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-06-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-06-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-06-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-07-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-07-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-07-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-07-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-07-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-07-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-08-starts-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-08-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-08-ends-at.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-08-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-rock-creek-hilton-08-part-of-route-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-route-segment-rock-creek-hilton-08-part-of-route-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-campground-palisade-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-campground-palisade-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-campground-palisade-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-campground-palisade-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-campground-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-campground-pine-grove-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-campground-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-campground-pine-grove-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-campground-upper-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-campground-upper-pine-grove-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-campground-upper-pine-grove-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-campground-upper-pine-grove-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-campground-rock-creek-lake.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-campground-rock-creek-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-campground-rock-creek-lake.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-campground-rock-creek-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-campground-tamarack-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-campground-tamarack-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-campground-tamarack-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-campground-tamarack-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-trailhead-mosquito-flat.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-trailhead-mosquito-flat",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-trailhead-mosquito-flat.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-trailhead-mosquito-flat",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-trailhead-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-trailhead-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-trailhead-tamarack-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-trailhead-tamarack-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-trailhead-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-rock-creek-road-accesses-trailhead-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-inyo-manages-trailhead-hilton-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-inyo-manages-trailhead-hilton-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-mack-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-mack-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-marsh-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-marsh-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-heart-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-heart-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-box-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-box-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-long-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-long-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-chickenfoot-lake-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-chickenfoot-lake-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-lakes-main-provides-access-to-waterbody-gem-lakes-rock-creek.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "relationship-little-lakes-main-provides-access-to-waterbody-gem-lakes-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-rock-creek-overnight-wilderness-permit.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "rule-rock-creek-overnight-wilderness-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-little-lakes-bear-container.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "rule-little-lakes-bear-container",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-rock-creek-overnight-wilderness-permit.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "requirement-rock-creek-overnight-wilderness-permit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-little-lakes-bear-container.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "requirement-little-lakes-bear-container",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-little-lakes-intermediate-mileages.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "gap-rock-creek-little-lakes-intermediate-mileages",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-live-access-and-trailhead-operations.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "gap-rock-creek-live-access-and-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-gem-chickenfoot-spur-connectors.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "gap-rock-creek-gem-chickenfoot-spur-connectors",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-rock-creek-pretrip-recheck.json",
+      "reason": "Publish the official Rock Creek corridor, principal distance-bearing hiking topology, reviewed geometry, and Mosquito Flat overnight-permit boundary.",
+      "record_id": "result-rock-creek-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the Rock Creek developed corridor, five principal bidirectional hiking routes with reviewed GeoJSON, Mosquito Flat access, overnight permit and food-storage requirements, and explicit unresolved spur/current-condition gaps."
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "High-elevation Rock Creek access and services can change rapidly; recheck official Inyo conditions and permit documents shortly before departure.",
+    "input_ids": [
+      "claim-rock-creek-routes-current-conditions-recheck",
+      "claim-rock-creek-overnight-wilderness-permit",
+      "claim-little-lakes-valley-bear-container",
+      "gap-rock-creek-live-access-and-trailhead-operations"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-rock-creek-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "road_and_trailhead_access",
+        "trail_and_weather_conditions",
+        "early_snow",
+        "fire_restrictions",
+        "parking_water_and_restrooms",
+        "permit_and_food_storage_documents"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

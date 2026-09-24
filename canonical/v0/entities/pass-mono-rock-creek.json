@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "pass-mono-rock-creek",
+    "kind": "mountain_pass",
+    "name": "Mono Pass"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

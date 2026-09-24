@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-rock-creek-corridor-map-inventory"
+    ],
+    "object_id": "waterbody-marsh-lake-rock-creek",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-little-lakes-main-provides-access-to-waterbody-marsh-lake-rock-creek",
+    "subject_id": "route-segment-rock-creek-little-lakes-main",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

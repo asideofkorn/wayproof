@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Hilton Lakes Trail",
+    "entity_id": "route-hilton-lakes-rock-creek",
+    "kind": "route",
+    "scope_id": "scope-route-hilton-lakes-rock-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
