@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/usgs-rock-creek-route-extensions-20260924.geojson",
+      "3eb86c55a257e822f85226319612b375e7440019d56be5231b030415f138b471"
+    ],
+    "content": "A bounded National Digital Trails result contains nine contiguous Upper Rock Creek Canyon features plus named Chickenfoot Lake and Gem Lakes spurs. Eleven reviewed features and source-field lengths are retained without proximity snapping or inferred mainline cuts.",
+    "observation_id": "observation-usgs-rock-creek-route-extensions-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T02:00:00+00:00",
+    "source_id": "source-usgs-national-digital-trails-rock-creek-extensions-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

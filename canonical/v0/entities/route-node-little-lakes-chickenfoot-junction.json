@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-little-lakes-chickenfoot-junction",
+    "kind": "route_node",
+    "name": "Chickenfoot Lake spur junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

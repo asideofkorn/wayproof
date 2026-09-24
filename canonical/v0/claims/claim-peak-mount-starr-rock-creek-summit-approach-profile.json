@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-starr-rock-creek-summit-approach-profile",
+    "evidence_ids": [
+      "evidence-peak-mount-starr-rock-creek-summit-approach-profile"
+    ],
+    "predicate": "summit_approach_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "peak-mount-starr-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "condition_dependencies": [
+        "exposure",
+        "scrambling",
+        "route finding"
+      ],
+      "current_conditions_required": true,
+      "difficulty": "class 2 to class 3",
+      "maintained_approach": "Mono Pass Trail",
+      "navigation_grade": false,
+      "off_trail_continuation": "summit ridge",
+      "primary_trailhead": "Mosquito Flat",
+      "source_tier": "third_party_reference_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

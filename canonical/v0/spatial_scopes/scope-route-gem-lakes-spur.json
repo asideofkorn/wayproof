@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Named spur to Gem Lakes",
+    "entity_id": "route-gem-lakes-spur",
+    "kind": "route",
+    "scope_id": "scope-route-gem-lakes-spur"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

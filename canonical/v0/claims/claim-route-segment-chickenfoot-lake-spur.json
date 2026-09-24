@@ -1,0 +1,45 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-chickenfoot-lake-spur",
+    "evidence_ids": [
+      "evidence-route-segment-chickenfoot-lake-spur"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-chickenfoot-lake-spur"
+    ],
+    "subject_id": "route-segment-chickenfoot-lake-spur",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "{C297D7C0-E296-46F8-B9E3-36D3A65ECDDD}",
+      "dataset_feature_name": "CHICKENFOOT LAKE",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.24964325,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.39799487424227,
+        "longitude": -118.75324217507011
+      },
+      "geometry_snapshot": {
+        "feature_id": "{C297D7C0-E296-46F8-B9E3-36D3A65ECDDD}",
+        "path": "geometry/v0/snapshots/usgs-rock-creek-route-extensions-20260924.geojson",
+        "sha256": "3eb86c55a257e822f85226319612b375e7440019d56be5231b030415f138b471"
+      },
+      "route_role": "official_mainline",
+      "source_data_description": "USFS Trails Update 03/2026",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "6532",
+      "source_load_date": 1777310283000,
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.395501527371096,
+        "longitude": -118.75488882715086
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-chickenfoot-lake-spur",
+    "kind": "route",
+    "name": "Chickenfoot Lake Spur"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

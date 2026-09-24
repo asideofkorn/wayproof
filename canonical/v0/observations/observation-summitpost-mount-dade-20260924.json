@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The community route reference describes a Mosquito Flat and Little Lakes Valley approach to a south-slope or Hourglass Couloir continuation, commonly class 2, with snow or ice possible in the couloir.",
+    "observation_id": "observation-summitpost-mount-dade-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T02:00:00+00:00",
+    "source_id": "source-summitpost-mount-dade"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

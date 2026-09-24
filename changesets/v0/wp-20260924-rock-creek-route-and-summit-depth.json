@@ -1,0 +1,1197 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-rock-creek-route-and-summit-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-upper-rock-creek-canyon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-upper-rock-creek-east-fork.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "access-upper-rock-creek-east-fork",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-lake-south-end.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-lake-south-end",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-chickenfoot-lake-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-gem-lakes-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-little-lakes-chickenfoot-junction.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-little-lakes-chickenfoot-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-little-lakes-gem-junction.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-little-lakes-gem-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-01.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-01.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-02.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-02.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-03.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-03.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-04.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-04.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-05.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-05.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-06.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-06.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-07.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-07.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-08.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-upper-rock-creek-canyon-08.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-node-upper-rock-creek-canyon-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-upper-rock-creek-canyon-09.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-upper-rock-creek-canyon-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-chickenfoot-lake-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "route-segment-gem-lakes-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "scope-route-upper-rock-creek-canyon",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "scope-route-chickenfoot-lake-spur",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "scope-route-gem-lakes-spur",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-upper-rock-creek-canyon-trail.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-usfs-upper-rock-creek-canyon-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-national-digital-trails-rock-creek-extensions-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-usgs-national-digital-trails-rock-creek-extensions-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-mount-morgan-south.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-summitpost-mount-morgan-south",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-mount-starr.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-summitpost-mount-starr",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-mount-dade.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-summitpost-mount-dade",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-mount-abbot-northeast-couloir.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-summitpost-mount-abbot-northeast-couloir",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-summitpost-bear-creek-spire-ulrichs.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "source-summitpost-bear-creek-spire-ulrichs",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-upper-rock-creek-canyon-trail-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-usfs-upper-rock-creek-canyon-trail-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-rock-creek-route-extensions-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-usgs-rock-creek-route-extensions-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-mount-morgan-south-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-summitpost-mount-morgan-south-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-mount-starr-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-summitpost-mount-starr-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-mount-dade-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-summitpost-mount-dade-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-mount-abbot-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-summitpost-mount-abbot-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-summitpost-bear-creek-spire-20260924.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "observation-summitpost-bear-creek-spire-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-upper-rock-creek-canyon-official-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-upper-rock-creek-canyon-official-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-upper-rock-creek-canyon-dataset-distance.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-upper-rock-creek-canyon-dataset-distance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-01.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-02.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-03.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-04.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-05.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-06.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-06",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-07.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-07",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-08.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-upper-rock-creek-canyon-09.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-upper-rock-creek-canyon-09",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-chickenfoot-lake-spur",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-chickenfoot-lake-spur-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-chickenfoot-lake-spur-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-segment-gem-lakes-spur",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-gem-lakes-spur-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-route-gem-lakes-spur-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-morgan-south-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-peak-mount-morgan-south-summit-approach-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-starr-rock-creek-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-peak-mount-starr-rock-creek-summit-approach-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-dade-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-peak-mount-dade-summit-approach-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-mount-abbot-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-peak-mount-abbot-summit-approach-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-bear-creek-spire-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "evidence-peak-bear-creek-spire-summit-approach-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-upper-rock-creek-canyon-official-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-upper-rock-creek-canyon-official-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-upper-rock-creek-canyon-dataset-distance.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-upper-rock-creek-canyon-dataset-distance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-01.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-02.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-03.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-04.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-05.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-06.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-07.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-08.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-upper-rock-creek-canyon-09.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-upper-rock-creek-canyon-09",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-chickenfoot-lake-spur",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-chickenfoot-lake-spur-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-chickenfoot-lake-spur-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-segment-gem-lakes-spur",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-gem-lakes-spur-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-route-gem-lakes-spur-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-morgan-south-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-peak-mount-morgan-south-summit-approach-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-starr-rock-creek-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-peak-mount-starr-rock-creek-summit-approach-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-dade-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-peak-mount-dade-summit-approach-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-mount-abbot-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-peak-mount-abbot-summit-approach-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-bear-creek-spire-summit-approach-profile.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "claim-peak-bear-creek-spire-summit-approach-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-upper-rock-creek-canyon-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-upper-rock-creek-canyon-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-upper-rock-creek-canyon-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-upper-rock-creek-canyon-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-upper-rock-creek-canyon-continues-as-tamarack.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-upper-rock-creek-canyon-continues-as-tamarack",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-campground-provides-upper-rock-creek-access.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-east-fork-campground-provides-upper-rock-creek-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-01-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-01-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-01-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-01-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-02-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-02-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-02-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-02-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-03-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-03-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-03-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-03-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-04-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-04-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-04-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-04-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-05-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-05-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-05-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-05-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-06-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-06-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-06-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-06-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-06-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-06-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-07-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-07-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-07-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-07-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-07-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-07-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-08-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-08-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-08-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-08-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-08-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-08-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-09-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-09-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-09-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-09-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-upper-rock-creek-canyon-09-part-of-route-upper-rock-creek-canyon.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-upper-rock-creek-canyon-09-part-of-route-upper-rock-creek-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-chickenfoot-lake-spur-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-chickenfoot-lake-spur-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-chickenfoot-lake-spur-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-chickenfoot-lake-spur-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-chickenfoot-lake-spur-part-of-route-chickenfoot-lake-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-chickenfoot-lake-spur-part-of-route-chickenfoot-lake-spur",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-chickenfoot-lake-spur-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-chickenfoot-lake-spur-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-chickenfoot-lake-spur-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-chickenfoot-lake-spur-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-chickenfoot-lake-spur-branches-from-little-lakes.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-chickenfoot-lake-spur-branches-from-little-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-gem-lakes-spur-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-gem-lakes-spur-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-gem-lakes-spur-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-gem-lakes-spur-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-gem-lakes-spur-part-of-route-gem-lakes-spur.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-segment-gem-lakes-spur-part-of-route-gem-lakes-spur",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-gem-lakes-spur-starts-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-gem-lakes-spur-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-gem-lakes-spur-ends-at.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-gem-lakes-spur-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-gem-lakes-spur-branches-from-little-lakes.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-route-gem-lakes-spur-branches-from-little-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-mount-starr-rock-creek-approached-via-route-mono-pass-rock-creek.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-peak-mount-starr-rock-creek-approached-via-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-mount-dade-approached-via-route-little-lakes-valley.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-peak-mount-dade-approached-via-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-mount-abbot-approached-via-route-mono-pass-rock-creek.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-peak-mount-abbot-approached-via-route-mono-pass-rock-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-bear-creek-spire-approached-via-route-little-lakes-valley.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "relationship-peak-bear-creek-spire-approached-via-route-little-lakes-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-gem-chickenfoot-spur-connectors.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "gap-rock-creek-gem-chickenfoot-spur-connectors",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-peak-summit-access.json",
+      "reason": "Add source-backed Upper Rock Creek topology, measured Little Lakes spurs, and planning-grade summit approaches.",
+      "record_id": "gap-rock-creek-peak-summit-access",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add the nine-segment Upper Rock Creek Canyon graph, source-measured Chickenfoot and Gem spurs without inferred mainline cuts, and qualified summit approach profiles for five nearby peaks."
+}

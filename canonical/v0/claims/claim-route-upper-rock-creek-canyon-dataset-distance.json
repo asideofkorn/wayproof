@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-upper-rock-creek-canyon-dataset-distance",
+    "evidence_ids": [
+      "evidence-route-upper-rock-creek-canyon-dataset-distance"
+    ],
+    "predicate": "dataset_route_distance",
+    "spatial_scope_ids": [
+      "scope-route-upper-rock-creek-canyon"
+    ],
+    "subject_id": "route-upper-rock-creek-canyon",
+    "temporal_scope": null,
+    "value": {
+      "distance_basis": "sum of nine reviewed USGS source-field lengthmiles values",
+      "distance_status": "known",
+      "geometry_snapshot": {
+        "path": "geometry/v0/snapshots/usgs-rock-creek-route-extensions-20260924.geojson",
+        "sha256": "3eb86c55a257e822f85226319612b375e7440019d56be5231b030415f138b471"
+      },
+      "one_way_distance_miles": 4.19867235
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Named spur to Chickenfoot Lake",
+    "entity_id": "route-chickenfoot-lake-spur",
+    "kind": "route",
+    "scope_id": "scope-route-chickenfoot-lake-spur"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

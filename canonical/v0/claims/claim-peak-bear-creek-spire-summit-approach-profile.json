@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-bear-creek-spire-summit-approach-profile",
+    "evidence_ids": [
+      "evidence-peak-bear-creek-spire-summit-approach-profile"
+    ],
+    "predicate": "summit_approach_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "peak-bear-creek-spire",
+    "temporal_scope": null,
+    "value": {
+      "condition_dependencies": [
+        "snow conditions",
+        "ice axe or crampons may be needed",
+        "exposure"
+      ],
+      "current_conditions_required": true,
+      "difficulty": "class 3 to class 4 upper terrain",
+      "maintained_approach": "Little Lakes Valley past Long and Gem Lakes",
+      "navigation_grade": false,
+      "off_trail_continuation": "Dade Lake, Cox Col, and Ulrichs Route",
+      "primary_trailhead": "Mosquito Flat",
+      "source_tier": "third_party_reference_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

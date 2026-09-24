@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-peak-mount-dade-summit-approach-profile"
+    ],
+    "object_id": "route-little-lakes-valley",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-peak-mount-dade-approached-via-route-little-lakes-valley",
+    "subject_id": "peak-mount-dade",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

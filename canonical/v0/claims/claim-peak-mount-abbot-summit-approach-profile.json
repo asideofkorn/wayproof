@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-peak-mount-abbot-summit-approach-profile",
+    "evidence_ids": [
+      "evidence-peak-mount-abbot-summit-approach-profile"
+    ],
+    "predicate": "summit_approach_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "peak-mount-abbot",
+    "temporal_scope": null,
+    "value": {
+      "condition_dependencies": [
+        "steep snow",
+        "rockfall",
+        "ice axe or crampons may be needed"
+      ],
+      "current_conditions_required": true,
+      "difficulty": "class 3",
+      "maintained_approach": "Mono Pass Trail toward Ruby Lake",
+      "navigation_grade": false,
+      "off_trail_continuation": "cross-country toward Mills Lake and Northeast Couloir",
+      "primary_trailhead": "Mosquito Flat",
+      "source_tier": "third_party_reference_only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

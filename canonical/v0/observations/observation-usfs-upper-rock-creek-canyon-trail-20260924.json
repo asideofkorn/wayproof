@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official trail page places the north end near East Fork Campground and the south end at Rock Creek Lake, says the Tamarack Lakes trail continues into wilderness, identifies campground or lake parking, describes a standard terra trail, and requires treatment of natural water.",
+    "observation_id": "observation-usfs-upper-rock-creek-canyon-trail-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T02:00:00+00:00",
+    "source_id": "source-usfs-upper-rock-creek-canyon-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

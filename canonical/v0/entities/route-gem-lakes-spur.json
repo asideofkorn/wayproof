@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-gem-lakes-spur",
+    "kind": "route",
+    "name": "Gem Lakes Spur"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

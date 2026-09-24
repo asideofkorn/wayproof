@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/r05/inyo/recreation/trails/upper-rock-creek-canyon-trail",
+    "publisher": "USDA Forest Service, Inyo National Forest",
+    "source_id": "source-usfs-upper-rock-creek-canyon-trail"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

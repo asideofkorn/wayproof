@@ -2,12 +2,12 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-rock-creek-gem-chickenfoot-spur-connectors",
-    "question": "What exact source-backed connectors and distances lead from the Little Lakes mainline to Chickenfoot Lake and Gem Lakes?",
-    "reason": "The map shows these destinations and the service has named spur features, but their connections do not share exact endpoints with the retained mainline feature; a later reconciliation must preserve the gap rather than snap by proximity.",
+    "question": "At what source-published mileage does each named Chickenfoot and Gem spur leave the Little Lakes mainline?",
+    "reason": "Official sources establish the spur identities and lengths, but the spur and mainline features do not share exact endpoints and no source publishes their mileage positions along the unsplit 3.104216-mile mainline. The graph therefore preserves branches_from context without proximity-snapping a traversable junction.",
     "related_ids": [
       "route-little-lakes-valley",
-      "waterbody-chickenfoot-lake-rock-creek",
-      "waterbody-gem-lakes-rock-creek"
+      "route-chickenfoot-lake-spur",
+      "route-gem-lakes-spur"
     ]
   },
   "record_type": "gap",

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Upper Rock Creek Canyon from East Fork vicinity to south Rock Creek Lake",
+    "entity_id": "route-upper-rock-creek-canyon",
+    "kind": "route",
+    "scope_id": "scope-route-upper-rock-creek-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

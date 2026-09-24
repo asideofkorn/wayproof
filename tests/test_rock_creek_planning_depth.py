@@ -58,7 +58,7 @@ def test_booking_profiles_deepen_two_campgrounds_and_preserve_source_precision()
     assert palisades["published_elevation_text"] == "8.800 feet"
 
 
-def test_official_peak_identity_does_not_manufacture_summit_access():
+def test_official_peak_identity_only_adds_evidenced_planning_grade_approaches():
     records = load_canonical(ROOT)
     entities = indexed(records, "entities", "entity_id")
     claims = indexed(records, "claims", "claim_id")
@@ -70,9 +70,12 @@ def test_official_peak_identity_does_not_manufacture_summit_access():
         assert claims[f"claim-{peak_id}-official-map-elevation"].value["elevation_ft"] == elevation
         assert claims[f"claim-{peak_id}-gnis-coordinate"].value["source_system"] == "GNIS"
         assert not any(
-            item.subject_id == peak_id and item.predicate in {"approached_via", "starts_at", "traverses"}
+            item.subject_id == peak_id and item.predicate in {"starts_at", "traverses"}
             for item in relationships
         )
+        profile = claims[f"claim-{peak_id}-summit-approach-profile"].value
+        assert profile["navigation_grade"] is False
+        assert profile["off_trail_continuation"]
     assert set(gaps["gap-rock-creek-peak-summit-access"].related_ids) == set(PEAKS)
 
 
@@ -87,7 +90,8 @@ def test_generated_site_adds_peaks_and_keeps_route_profile_qualifiers(tmp_path):
     assert "Precision</dt><dd>approximate" in route_page
     peak_page = (tmp_path / "knowledge" / "peak-mount-dade" / "index.html").read_text()
     assert "13600" in peak_page
-    assert "Summit approaches and technical grades remain intentionally unmodeled" in peak_page
+    assert "south slope or Hourglass Couloir" in peak_page
+    assert "Navigation grade</dt><dd>No" in peak_page
 
 
 def test_one_validated_changeset_accounts_for_additions_and_replacements():
