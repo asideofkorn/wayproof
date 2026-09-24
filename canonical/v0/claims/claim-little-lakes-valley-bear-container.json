@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-little-lakes-valley-bear-container",
+    "evidence_ids": [
+      "evidence-little-lakes-valley-bear-container"
+    ],
+    "predicate": "bear_resistant_food_storage",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley",
+      "scope-route-mono-pass-rock-creek"
+    ],
+    "subject_id": "route-little-lakes-valley",
+    "temporal_scope": null,
+    "value": {
+      "approved_animal_resistant_container": true,
+      "area": "Little Lakes Valley through the crest of Mono Pass",
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

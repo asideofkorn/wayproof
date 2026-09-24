@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-mosquito-approach-2"
+    ],
+    "object_id": "route-little-lakes-valley",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-rock-creek-mosquito-approach-2-part-of-route-little-lakes-valley",
+    "subject_id": "route-segment-rock-creek-mosquito-approach-2",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

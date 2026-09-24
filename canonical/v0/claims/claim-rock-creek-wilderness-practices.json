@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-wilderness-practices",
+    "evidence_ids": [
+      "evidence-rock-creek-wilderness-practices"
+    ],
+    "predicate": "wilderness_travel_practices",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley",
+      "scope-route-mono-pass-rock-creek",
+      "scope-route-morgan-pass-rock-creek",
+      "scope-route-tamarack-lakes-rock-creek",
+      "scope-route-hilton-lakes-rock-creek"
+    ],
+    "subject_id": "wilderness-john-muir",
+    "temporal_scope": null,
+    "value": {
+      "goat_closure": {
+        "area": "south end of Little Lakes Valley including Treasure Lakes, Morgan Pass, and Morgan Lakes",
+        "closed_to": "goats"
+      },
+      "pack_stock_right_of_way": true,
+      "treat_surface_water": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-tamarack-rock-creek",
+    "kind": "campground",
+    "name": "Tamarack Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

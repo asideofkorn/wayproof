@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-hilton-07"
+    ],
+    "object_id": "route-node-rock-creek-hilton-07",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-rock-creek-hilton-07-ends-at",
+    "subject_id": "route-segment-rock-creek-hilton-07",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

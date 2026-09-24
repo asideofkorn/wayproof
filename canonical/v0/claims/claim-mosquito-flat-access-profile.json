@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mosquito-flat-access-profile",
+    "evidence_ids": [
+      "evidence-mosquito-flat-access-profile"
+    ],
+    "predicate": "trailhead_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "trailhead-mosquito-flat",
+    "temporal_scope": null,
+    "value": {
+      "approximate_elevation_feet": 10300,
+      "principal_routes": [
+        "route-little-lakes-valley",
+        "route-mono-pass-rock-creek",
+        "route-morgan-pass-rock-creek"
+      ],
+      "road_end_access": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

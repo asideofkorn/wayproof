@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mono Pass Trail from Mosquito Flat",
+    "entity_id": "route-mono-pass-rock-creek",
+    "kind": "route",
+    "scope_id": "scope-route-mono-pass-rock-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

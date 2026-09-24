@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Morgan Pass Trail from Mosquito Flat",
+    "entity_id": "route-morgan-pass-rock-creek",
+    "kind": "route",
+    "scope_id": "scope-route-morgan-pass-rock-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

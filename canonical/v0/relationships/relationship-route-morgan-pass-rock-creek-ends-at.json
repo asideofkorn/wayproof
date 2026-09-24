@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-morgan-pass-rock-creek-profile"
+    ],
+    "object_id": "pass-morgan-rock-creek",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-morgan-pass-rock-creek-ends-at",
+    "subject_id": "route-morgan-pass-rock-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

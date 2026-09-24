@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-little-lakes-valley-profile"
+    ],
+    "object_id": "route-node-little-lakes-south-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-little-lakes-valley-ends-at",
+    "subject_id": "route-little-lakes-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

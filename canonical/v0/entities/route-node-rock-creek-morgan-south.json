@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-rock-creek-morgan-south",
+    "kind": "route_node",
+    "name": "Rock Creek Morgan South"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-mono-pass-main"
+    ],
+    "object_id": "route-node-rock-creek-mono-main",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-segment-rock-creek-mono-pass-main-starts-at",
+    "subject_id": "route-segment-rock-creek-mono-pass-main",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

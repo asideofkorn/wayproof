@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Wilderness Hiking: Rock Creek Canyon"
+    ],
+    "content": "The official wilderness hiking guide describes access from Rock Creek Canyon to Mosquito Flat, Little Lakes Valley, Mono Pass, and Tamarack Lakes; identifies a goat closure at the south end of Little Lakes Valley including Treasure Lakes, Morgan Pass, and Morgan Lakes; recommends treating surface water; and states that pack stock have right of way.",
+    "observation_id": "observation-usfs-rock-creek-guide-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T21:00:00+00:00",
+    "source_id": "source-usfs-rock-creek-wilderness-hiking-guide"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

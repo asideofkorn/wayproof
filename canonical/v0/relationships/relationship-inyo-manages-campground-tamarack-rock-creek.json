@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-rock-creek-corridor-map-inventory"
+    ],
+    "object_id": "campground-tamarack-rock-creek",
+    "predicate": "manages",
+    "relationship_id": "relationship-inyo-manages-campground-tamarack-rock-creek",
+    "subject_id": "agency-inyo-national-forest",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

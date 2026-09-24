@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "pass-morgan-rock-creek",
+    "kind": "mountain_pass",
+    "name": "Morgan Pass"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

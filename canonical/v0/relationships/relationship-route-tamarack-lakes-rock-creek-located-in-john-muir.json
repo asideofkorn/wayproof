@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-tamarack-lakes-rock-creek-profile"
+    ],
+    "object_id": "wilderness-john-muir",
+    "predicate": "located_in",
+    "relationship_id": "relationship-route-tamarack-lakes-rock-creek-located-in-john-muir",
+    "subject_id": "route-tamarack-lakes-rock-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

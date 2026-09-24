@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-little-lakes-valley",
+    "kind": "route",
+    "name": "Little Lakes Valley Trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

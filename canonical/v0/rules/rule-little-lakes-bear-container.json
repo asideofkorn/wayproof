@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-little-lakes-valley-bear-container",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Carry and use an approved animal-resistant food-storage container for overnight travel in Little Lakes Valley through Mono Pass.",
+    "rule_id": "rule-little-lakes-bear-container",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley",
+      "scope-route-mono-pass-rock-creek"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

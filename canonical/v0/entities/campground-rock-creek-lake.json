@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-rock-creek-lake",
+    "kind": "campground",
+    "name": "Rock Creek Lake Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

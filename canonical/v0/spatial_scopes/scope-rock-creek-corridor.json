@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Rock Creek Road developed corridor through Mosquito Flat",
+    "entity_id": "place-rock-creek-canyon",
+    "kind": "area",
+    "scope_id": "scope-rock-creek-corridor"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

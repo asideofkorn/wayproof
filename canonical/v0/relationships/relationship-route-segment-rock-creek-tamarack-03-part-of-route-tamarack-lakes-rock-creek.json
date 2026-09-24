@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-tamarack-03"
+    ],
+    "object_id": "route-tamarack-lakes-rock-creek",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-rock-creek-tamarack-03-part-of-route-tamarack-lakes-rock-creek",
+    "subject_id": "route-segment-rock-creek-tamarack-03",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

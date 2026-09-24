@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-hilton-lakes-rock-creek-profile"
+    ],
+    "object_id": "waterbody-hilton-lakes-upper",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-hilton-lakes-rock-creek-ends-at",
+    "subject_id": "route-hilton-lakes-rock-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

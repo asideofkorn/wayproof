@@ -1,0 +1,50 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-rock-creek-tamarack-02",
+    "evidence_ids": [
+      "evidence-route-segment-rock-creek-tamarack-02"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-tamarack-lakes-rock-creek"
+    ],
+    "subject_id": "route-segment-rock-creek-tamarack-02",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4269",
+      "dataset_feature_id": "{BDB8831C-AD92-4D72-80AE-F0A9AE1B7687}",
+      "dataset_feature_name": "TAMARACK LAKES",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.6335221900000001,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.45191826686687,
+        "longitude": -118.72025925012127
+      },
+      "geometry_snapshot": {
+        "feature_id": "{BDB8831C-AD92-4D72-80AE-F0A9AE1B7687}",
+        "path": "geometry/v0/snapshots/usgs-rock-creek-principal-routes-20260923.geojson",
+        "sha256": "cbbaa853ee6d4ad8a8d995ab91270b7154a5fe3643ac1cb666d43f53c59b600a"
+      },
+      "operational_status_requires_current_check": true,
+      "route_role": "official_mainline",
+      "source_data_description": "USFS Trails Update 03/2026",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "6413",
+      "source_load_date": 1777310283000,
+      "source_mode_attributes": {
+        "hiker_pedestrian": null,
+        "pack_saddle": null
+      },
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.45084769082689,
+        "longitude": -118.72986103239805
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
