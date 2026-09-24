@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The out-and-back distance is twice the source-feature one-way distance. This is a planning comparison, not a published duration or difficulty rating.",
+    "input_ids": [
+      "claim-route-upper-rock-creek-canyon-dataset-distance"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-upper-rock-creek-canyon-ten-mile-day-hike-fit",
+    "value": {
+      "current_conditions_required": true,
+      "duration_status": "unknown",
+      "fits_distance_limit": true,
+      "full_out_and_back_miles": 8.3973447,
+      "route_id": "route-upper-rock-creek-canyon",
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

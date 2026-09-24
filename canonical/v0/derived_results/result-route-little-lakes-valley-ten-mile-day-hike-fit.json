@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The out-and-back distance is twice the source-feature one-way distance. This is a planning comparison, not a published duration or difficulty rating.",
+    "input_ids": [
+      "claim-route-little-lakes-valley-profile"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-little-lakes-valley-ten-mile-day-hike-fit",
+    "value": {
+      "current_conditions_required": true,
+      "duration_status": "unknown",
+      "fits_distance_limit": true,
+      "full_out_and_back_miles": 7.20007178,
+      "route_id": "route-little-lakes-valley",
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-rock-creek-tamarack-day-hike-context"
+    ],
+    "object_id": "trailhead-tamarack-lakes-rock-creek",
+    "predicate": "accesses",
+    "relationship_id": "relationship-rock-creek-road-accesses-tamarack-trailhead",
+    "subject_id": "road-rock-creek-inyo",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

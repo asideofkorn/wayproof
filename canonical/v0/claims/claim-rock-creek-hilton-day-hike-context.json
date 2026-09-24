@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-hilton-day-hike-context",
+    "evidence_ids": [
+      "evidence-rock-creek-hilton-day-hike-context"
+    ],
+    "predicate": "official_day_hike_context",
+    "spatial_scope_ids": [
+      "scope-route-hilton-lakes-rock-creek",
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "route-hilton-lakes-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "trail_character": "forest of whitebark and lodgepole pine leading into the Hilton and Davis Lakes basin",
+      "trailhead": "trailhead-hilton-lakes-rock-creek",
+      "trailhead_elevation_ft": 9600,
+      "trailhead_parking": "below Rock Creek Pack Station on the road to Mosquito Flat"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
