@@ -1,0 +1,75 @@
+{
+  "schema": "wayproof-trip-input-bundle-v0",
+  "trip": {
+    "name": "East Fork fall foliage trip",
+    "starts_on": "2026-09-30",
+    "ends_on": "2026-10-04",
+    "travel_context": {
+      "origin": "Oakland, California",
+      "outbound": "Drive in the morning via Tioga Pass",
+      "return": "Drive to Oakland on Sunday via Tioga Pass"
+    }
+  },
+  "plan_trip": {
+    "intent": {
+      "objective_queries": [
+        "East Fork Campground Site 126"
+      ],
+      "trip_date": "2026-09-30",
+      "party": {
+        "participant_ids": [
+          "traveler-1",
+          "traveler-2"
+        ]
+      },
+      "activities": {
+        "activities": [
+          "camping",
+          "hiking"
+        ],
+        "attributes": {
+          "overnight": true,
+          "tent_camping": true
+        }
+      }
+    },
+    "fulfillments": [
+      {
+        "fulfillment_id": "private-east-fork-booking",
+        "requirement_id": "requirement-east-fork-site-126-reservation",
+        "kind": "private_reservation_confirmation",
+        "evidence_ids": [],
+        "coverage": {
+          "participant_ids": [
+            "traveler-1",
+            "traveler-2"
+          ],
+          "stage_ids": [
+            "objective-1"
+          ],
+          "starts_on": "2026-09-30",
+          "ends_on": "2026-10-04"
+        }
+      }
+    ],
+    "as_of_date": "2026-09-23"
+  },
+  "compare_hikes": {
+    "maximum_round_trip_miles": 10,
+    "goal": "See fall foliage, primarily in the Rock Creek drainage and nearby areas",
+    "route_ids": [
+      "route-little-lakes-valley",
+      "route-hilton-lakes-rock-creek",
+      "route-parker-lake",
+      "route-heart-lake-mammoth",
+      "route-convict-lake-loop",
+      "route-mcgee-creek",
+      "route-lundy-canyon",
+      "route-tamarack-lakes-rock-creek"
+    ]
+  },
+  "deferred": {
+    "pretrip_rechecks": true,
+    "reason": "The traveler asked to hold off on current-condition rechecks while building the trip."
+  }
+}
