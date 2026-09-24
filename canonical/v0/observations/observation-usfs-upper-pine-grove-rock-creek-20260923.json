@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Inyo National Forest page describes Upper Pine Grove as a 9-site campground along Rock Creek in tall Jeffrey pines, with some flatter sites for easier accessibility. It is first-come, first-served with self-registration; limits stays to 14 days; provides vault toilets, bear boxes, potable water, and picnic tables; has no electrical hookups; and publishes coordinates 37.4691,-118.7254 and elevation 9,400 feet.",
+    "observation_id": "observation-usfs-upper-pine-grove-rock-creek-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:55:00+00:00",
+    "source_id": "source-usfs-upper-pine-grove-rock-creek"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

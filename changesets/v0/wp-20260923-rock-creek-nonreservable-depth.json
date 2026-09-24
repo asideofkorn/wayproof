@@ -1,0 +1,94 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260923-rock-creek-nonreservable-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-pine-grove-rock-creek.json",
+      "reason": "Register the official Forest Service campground page",
+      "record_id": "source-usfs-pine-grove-rock-creek",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-pine-grove-rock-creek-20260923.json",
+      "reason": "Preserve the published campground profile",
+      "record_id": "observation-usfs-pine-grove-rock-creek-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-pine-grove-rock-creek-usfs-profile.json",
+      "reason": "Link the official page observation to the campground profile",
+      "record_id": "evidence-campground-pine-grove-rock-creek-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-pine-grove-rock-creek-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-pine-grove-rock-creek-usfs-profile.json",
+      "reason": "Publish source-backed campground capacity, facilities, and operating model",
+      "record_id": "claim-campground-pine-grove-rock-creek-usfs-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-upper-pine-grove-rock-creek.json",
+      "reason": "Register the official Forest Service campground page",
+      "record_id": "source-usfs-upper-pine-grove-rock-creek",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-upper-pine-grove-rock-creek-20260923.json",
+      "reason": "Preserve the published campground profile",
+      "record_id": "observation-usfs-upper-pine-grove-rock-creek-20260923",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-campground-upper-pine-grove-rock-creek-usfs-profile.json",
+      "reason": "Link the official page observation to the campground profile",
+      "record_id": "evidence-campground-upper-pine-grove-rock-creek-usfs-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-campground-upper-pine-grove-rock-creek-usfs-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-campground-upper-pine-grove-rock-creek-usfs-profile.json",
+      "reason": "Publish source-backed campground capacity, facilities, and operating model",
+      "record_id": "claim-campground-upper-pine-grove-rock-creek-usfs-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-rock-creek-nonreservable-campground-depth.json",
+      "reason": "Narrow the gap after resolving Pine Grove and Upper Pine Grove from official pages",
+      "record_id": "gap-rock-creek-nonreservable-campground-depth",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Deepen Pine Grove and Upper Pine Grove campground planning data while preserving the unresolved Tamarack identity"
+}

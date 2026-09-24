@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Inyo National Forest page describes Pine Grove as a small, quiet 10-site campground below Rock Creek. It is first-come, first-served with self-registration; limits RVs to 15 feet and stays to 14 days; provides bear boxes, potable water, and picnic tables; has no electrical hookups; and publishes coordinates 37.4706,-118.7243 and elevation 9,300 feet.",
+    "observation_id": "observation-usfs-pine-grove-rock-creek-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-23T23:55:00+00:00",
+    "source_id": "source-usfs-pine-grove-rock-creek"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
