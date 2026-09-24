@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-east-fork-site-120-published-field-conflict",
+    "question": "Which published values should a camper rely on for East Fork site 120?",
+    "reason": "The Recreation.gov API disagrees with itself across its structured detail maps and published attribute list for: equipment_details.max_num_vehicles, equipment_details.max_vehicle_length, site_details.checkout_time, site_details.shade. Both representations remain visible in the dated site profile.",
+    "related_ids": [
+      "claim-recreation-east-fork-campsite-120-profile"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

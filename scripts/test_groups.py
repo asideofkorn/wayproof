@@ -14,6 +14,7 @@ TESTS = ROOT / "tests"
 
 SITE = {
     "test_build_site.py",
+    "test_east_fork_campsite_inventory.py",
     "test_east_fork_trip_foundation.py",
     "test_ebrpd_depth_completion.py",
     "test_lassen_destination_routes.py",
