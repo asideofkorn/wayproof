@@ -850,16 +850,22 @@ def render_search_html(entities: Iterable[dict], site_url: str,
 <h1>Find a place, route, or campsite</h1>
 <p class="subtitle">Search {len(entities)} published entities. Every result opens a page
 that separates supported facts, open questions, sources, and history.</p></header>
-<div class="search-controls"><label for="entity-search">Search by name</label>
-<input id="entity-search" type="search" placeholder="Try Mount Whitney or Del Valle">
+<form id="entity-search-form" class="search-controls" action="/search/" method="get">
+<label for="entity-search">Search by name</label>
+<input id="entity-search" name="q" type="search" placeholder="Try Mount Whitney or Del Valle">
 <label for="entity-kind">Narrow by type</label>
-<select id="entity-kind"><option value="">All types</option>{options}</select></div>
-<p id="result-count" class="meta">{len(entities)} results</p>
+<select id="entity-kind" name="kind"><option value="">All types</option>{options}</select>
+<button class="button primary search-submit" type="submit">Search</button></form>
+<p id="result-count" class="meta" role="status" aria-live="polite" tabindex="-1">{len(entities)} results</p>
+<p id="no-results" class="notice notice-unknown" hidden>No matching places, routes, or campsites. Try a shorter name or select a different type.</p>
 <ul id="entity-results" class="result-grid">{rows}</ul>
 <noscript><p>All entities are listed above; browser filtering requires JavaScript.</p></noscript>
 <script>
 const query = document.getElementById('entity-search');
 const kind = document.getElementById('entity-kind');
+const form = document.getElementById('entity-search-form');
+const count = document.getElementById('result-count');
+const empty = document.getElementById('no-results');
 const rows = [...document.querySelectorAll('#entity-results li')];
 function filterEntities() {{
   const needle = query.value.trim().toLocaleLowerCase();
@@ -870,10 +876,29 @@ function filterEntities() {{
     row.hidden = !show;
     if (show) visible += 1;
   }}
-  document.getElementById('result-count').textContent = `${{visible}} results`;
+  count.textContent = `${{visible}} ${{visible === 1 ? 'result' : 'results'}}`;
+  empty.hidden = visible !== 0;
+  return visible;
 }}
 query.addEventListener('input', filterEntities);
 kind.addEventListener('change', filterEntities);
+form.addEventListener('submit', event => {{
+  event.preventDefault();
+  filterEntities();
+  const params = new URLSearchParams();
+  if (query.value.trim()) params.set('q', query.value.trim());
+  if (kind.value) params.set('kind', kind.value);
+  const suffix = params.toString();
+  history.replaceState(null, '', suffix ? `/search/?${{suffix}}` : '/search/');
+  query.blur();
+  count.focus();
+}});
+const initial = new URLSearchParams(location.search);
+query.value = initial.get('q') || '';
+if ([...kind.options].some(option => option.value === initial.get('kind'))) {{
+  kind.value = initial.get('kind') || '';
+}}
+filterEntities();
 </script>
 """
     return _page(

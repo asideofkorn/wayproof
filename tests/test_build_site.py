@@ -289,6 +289,11 @@ def test_search_and_directories_have_task_focused_filters(site):
 
     assert "Find a place, route, or campsite" in search
     assert 'class="search-controls"' in search
+    assert 'id="entity-search-form"' in search
+    assert 'type="submit">Search</button>' in search
+    assert 'aria-live="polite"' in search
+    assert 'id="no-results"' in search
+    assert "form.addEventListener('submit'" in search
     assert 'class="result-grid"' in search
     assert 'id="directory-search"' in parks
     assert 'id="directory-kind"' in parks
