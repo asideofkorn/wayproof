@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-rock-creek-lake-group-usfs-profile",
+    "evidence_ids": [
+      "evidence-campground-rock-creek-lake-group-usfs-profile"
+    ],
+    "predicate": "facility_operating_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-rock-creek-lake-group",
+    "temporal_scope": null,
+    "value": {
+      "booking_facility_id": "232239",
+      "booking_model": "reservation required via Recreation.gov",
+      "coordinates_wgs84": {
+        "latitude": 37.4547,
+        "longitude": -118.7393
+      },
+      "facilities": {
+        "bear_boxes": true,
+        "electrical_hookups": false,
+        "flush_toilets": true,
+        "picnic_tables": true,
+        "potable_water": true
+      },
+      "maximum_group_size": 25,
+      "maximum_stay_nights": 14,
+      "published_elevation_ft": 9700,
+      "site_type": "walk-in group campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

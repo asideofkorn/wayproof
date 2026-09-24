@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "campground-aspen-group-rock-creek",
+    "kind": "campground",
+    "name": "Aspen Group Campground"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

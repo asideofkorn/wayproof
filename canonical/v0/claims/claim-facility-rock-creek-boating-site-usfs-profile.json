@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-facility-rock-creek-boating-site-usfs-profile",
+    "evidence_ids": [
+      "evidence-facility-rock-creek-boating-site-usfs-profile"
+    ],
+    "predicate": "facility_operating_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "facility-rock-creek-boating-site",
+    "temporal_scope": null,
+    "value": {
+      "coordinates_wgs84": {
+        "latitude": 37.456147,
+        "longitude": -118.738039
+      },
+      "facilities": {
+        "flush_toilets": true,
+        "potable_water": false
+      },
+      "fee": "none",
+      "fish_cleaning_in_lake": false,
+      "lake_speed_limit_mph": 5,
+      "published_elevation_ft": 9600,
+      "supported_watercraft": "small trailers and car-top boats",
+      "use": "day use boat launch"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

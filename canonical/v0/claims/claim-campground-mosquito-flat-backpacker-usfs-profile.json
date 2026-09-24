@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-mosquito-flat-backpacker-usfs-profile",
+    "evidence_ids": [
+      "evidence-campground-mosquito-flat-backpacker-usfs-profile"
+    ],
+    "predicate": "facility_operating_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-mosquito-flat-backpacker",
+    "temporal_scope": null,
+    "value": {
+      "coordinates_wgs84": {
+        "latitude": 37.4345,
+        "longitude": -118.7471
+      },
+      "eligibility": "valid wilderness permit for the following day for Mono Pass or Little Lakes Valley",
+      "facilities": {
+        "bear_boxes": true,
+        "electrical_hookups": false,
+        "picnic_tables": true,
+        "vault_toilets": true
+      },
+      "fee": "none",
+      "maximum_stay_nights": 1,
+      "operating_model": "first come, first served; no reservation",
+      "published_elevation_ft": 10100,
+      "site_count": 10,
+      "site_type": "pre-trip backpacker campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

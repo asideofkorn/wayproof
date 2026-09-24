@@ -1,0 +1,37 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-campground-aspen-group-rock-creek-usfs-profile",
+    "evidence_ids": [
+      "evidence-campground-aspen-group-rock-creek-usfs-profile"
+    ],
+    "predicate": "facility_operating_profile",
+    "spatial_scope_ids": [
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "campground-aspen-group-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "booking_facility_id": "233101",
+      "booking_model": "reservation required via Recreation.gov",
+      "coordinates_wgs84": {
+        "latitude": 37.52361,
+        "longitude": -118.71194
+      },
+      "facilities": {
+        "electrical_hookups": false,
+        "flush_toilets": true,
+        "food_storage_lockers": true,
+        "picnic_tables": true,
+        "potable_water": true
+      },
+      "maximum_group_size": 25,
+      "maximum_stay_nights": 14,
+      "maximum_trailers_or_rvs": 5,
+      "published_elevation_ft": 8100,
+      "site_type": "group campground"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo National Forest describes Aspen Group Campground as a secluded creek-side group camp in Rock Creek Canyon at 8,100 feet, reservable on Recreation.gov for up to 25 guests, with a maximum of five trailers or RVs, flush toilets, potable water, picnic tables, food-storage lockers, and no electrical hookups.",
+    "observation_id": "observation-usfs-aspen-group-campground-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T00:30:00+00:00",
+    "source_id": "source-usfs-aspen-group-campground"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

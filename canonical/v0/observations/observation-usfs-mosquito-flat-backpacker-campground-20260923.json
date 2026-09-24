@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo National Forest describes Mosquito Flat Backpacker Campground as a 10-site, short walk-in campground for one night before a backpacking trip. It is free and first-come, first-served, and requires a wilderness permit for the following day for Mono Pass or Little Lakes Valley. It has vault toilets, picnic tables, bear boxes, and no electrical hookups.",
+    "observation_id": "observation-usfs-mosquito-flat-backpacker-campground-20260923",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T00:30:00+00:00",
+    "source_id": "source-usfs-mosquito-flat-backpacker-campground"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
