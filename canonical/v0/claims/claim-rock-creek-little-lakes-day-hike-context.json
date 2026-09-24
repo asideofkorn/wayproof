@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-little-lakes-day-hike-context",
+    "evidence_ids": [
+      "evidence-rock-creek-little-lakes-day-hike-context"
+    ],
+    "predicate": "official_day_hike_context",
+    "spatial_scope_ids": [
+      "scope-route-little-lakes-valley",
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "route-little-lakes-valley",
+    "temporal_scope": null,
+    "value": {
+      "continuation": "Morgan Pass",
+      "trail_character": "glacial valley with a chain of lakes; popular with beginning hikers and anglers",
+      "trailhead": "trailhead-mosquito-flat",
+      "trailhead_elevation_ft": 10300
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

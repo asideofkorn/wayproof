@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-upper-rock-creek-canyon-official-profile"
+    ],
+    "object_id": "route-upper-rock-creek-canyon",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-east-fork-near-upper-rock-creek-day-hike-access",
+    "subject_id": "campground-east-fork-inyo",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

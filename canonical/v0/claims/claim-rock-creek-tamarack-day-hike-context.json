@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rock-creek-tamarack-day-hike-context",
+    "evidence_ids": [
+      "evidence-rock-creek-tamarack-day-hike-context"
+    ],
+    "predicate": "official_day_hike_context",
+    "spatial_scope_ids": [
+      "scope-route-tamarack-lakes-rock-creek",
+      "scope-rock-creek-corridor"
+    ],
+    "subject_id": "route-tamarack-lakes-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "parking_options": [
+        {
+          "elevation_ft": 9600,
+          "location": "east side of Rock Creek Lake"
+        },
+        {
+          "elevation_ft": 9300,
+          "location": "Pine Grove Campground"
+        }
+      ],
+      "trail_character": "steep initially, level near intermediate lakes, then a final climb to Tamarack and Buck Lakes",
+      "trailhead": "trailhead-tamarack-lakes-rock-creek"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

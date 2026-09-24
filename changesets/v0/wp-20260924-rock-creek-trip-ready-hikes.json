@@ -1,0 +1,135 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-rock-creek-trip-ready-hikes",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-little-lakes-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "evidence-rock-creek-little-lakes-day-hike-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-hilton-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "evidence-rock-creek-hilton-day-hike-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rock-creek-tamarack-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "evidence-rock-creek-tamarack-day-hike-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-little-lakes-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "claim-rock-creek-little-lakes-day-hike-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-hilton-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "claim-rock-creek-hilton-day-hike-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rock-creek-tamarack-day-hike-context.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "claim-rock-creek-tamarack-day-hike-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-east-fork-near-upper-rock-creek-day-hike-access.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "relationship-east-fork-near-upper-rock-creek-day-hike-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-mosquito-flat.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "relationship-rock-creek-road-accesses-mosquito-flat",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-hilton-trailhead.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "relationship-rock-creek-road-accesses-hilton-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rock-creek-road-accesses-tamarack-trailhead.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "relationship-rock-creek-road-accesses-tamarack-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-little-lakes-valley-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "result-route-little-lakes-valley-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-hilton-lakes-rock-creek-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "result-route-hilton-lakes-rock-creek-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-tamarack-lakes-rock-creek-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "result-route-tamarack-lakes-rock-creek-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-upper-rock-creek-canyon-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed trail character, access context, and distance-derived ten-mile day-hike fit for the East Fork trip.",
+      "record_id": "result-route-upper-rock-creek-canyon-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Make the principal Rock Creek hikes trip-ready with official trail and parking context, explicit access joins, and evidence-traceable ten-mile distance comparisons."
+}
