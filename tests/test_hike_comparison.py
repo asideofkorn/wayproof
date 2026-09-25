@@ -34,7 +34,7 @@ def test_east_fork_hike_candidates_compare_against_ten_mile_cap():
     assert by_id["route-tamarack-lakes-rock-creek"].distance_fit is DistanceFit.EXCEEDS
     assert by_id["route-mcgee-creek-beaver-pond"].distance_fit is DistanceFit.FITS
     assert by_id["route-mcgee-creek"].distance_fit is DistanceFit.EXCEEDS
-    assert by_id["route-lundy-canyon-waterfall-beaver-dam"].distance_fit is DistanceFit.UNKNOWN
+    assert by_id["route-lundy-canyon-waterfall-beaver-dam"].distance_fit is DistanceFit.FITS
     assert by_id["route-lundy-canyon"].distance_fit is DistanceFit.EXCEEDS
     assert by_id["route-parker-lake"].distance_claim_ids == ("claim-parker-lake-route-profile",)
     assert "gap-mcgee-creek-day-hike-distance" in by_id["route-mcgee-creek"].knowledge_gap_ids

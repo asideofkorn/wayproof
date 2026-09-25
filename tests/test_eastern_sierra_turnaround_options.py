@@ -42,6 +42,7 @@ def test_lundy_turnaround_preserves_published_approximation_and_extension():
     value = claims["claim-route-lundy-canyon-waterfall-beaver-dam-profile"].value
 
     assert value["published_distance_miles"] == 3
+    assert value["round_trip_miles"] == 3
     assert value["distance_precision"] == "about"
     assert value["route_shape"] == "out_and_back"
     assert value["features"] == ["waterfall", "beaver dam"]
@@ -56,8 +57,27 @@ def test_turnarounds_are_evidenced_routes_but_unproven_junctions_remain_gaps():
     accessed = {(item.subject_id, item.object_id) for item in relationships if item.predicate == "accesses"}
     assert ("trailhead-mcgee-creek", "route-mcgee-creek-beaver-pond") in accessed
     assert ("trailhead-lundy-canyon", "route-lundy-canyon-waterfall-beaver-dam") in accessed
-    assert "does not publish a coordinate" in gaps["gap-mcgee-creek-day-hike-distance"].reason
+    assert "0.97791982-mile prefix" in gaps["gap-mcgee-creek-day-hike-distance"].reason
     assert "does not publish an exact turnaround" in gaps["gap-lundy-canyon-sub-ten-turnaround"].reason
+
+
+def test_mcgee_short_route_reuses_only_the_proven_dataset_prefix():
+    records = load_canonical(ROOT)
+    claims = indexed(records, "claims", "claim_id")
+    profile = claims["claim-route-mcgee-creek-beaver-pond-dataset-prefix"].value
+    assert profile["connected_prefix_segment_ids"] == [
+        f"route-segment-mcgee-pass-{index:02d}" for index in range(1, 7)
+    ]
+    assert profile["connected_prefix_distance_miles"] == 0.97791982
+    assert profile["unresolved_source_feature_id"] == "{F7E76514-1AD3-4846-AA9D-C28FDCCC2F86}"
+    assert profile["topology_status"] == "partial_destination_within_unsplit_source_feature"
+
+    members = {
+        item.subject_id for item in records.relationships
+        if item.predicate == "shared_prefix_of"
+        and item.object_id == "route-mcgee-creek-beaver-pond"
+    }
+    assert members == set(profile["connected_prefix_segment_ids"])
 
 
 def test_site_publishes_full_and_turnaround_routes(generated_site):
@@ -78,4 +98,13 @@ def test_one_validated_changeset_accounts_for_batch():
     change = load_changeset(ROOT / "changesets/v0/wp-20260925-eastern-sierra-turnaround-options.json")
     assert change.status is ChangeSetStatus.VALIDATED
     assert {item.action for item in change.operations} == {ChangeAction.ADD, ChangeAction.REPLACE}
+    assert len(change.operations) == len({item.path for item in change.operations})
+
+
+def test_followup_changeset_accounts_for_distance_and_topology_depth():
+    change = load_changeset(ROOT / "changesets/v0/wp-20260925-lundy-mcgee-convict-depth.json")
+    assert change.status is ChangeSetStatus.VALIDATED
+    assert {item.action for item in change.operations} == {
+        ChangeAction.ADD, ChangeAction.REPLACE, ChangeAction.REMOVE,
+    }
     assert len(change.operations) == len({item.path for item in change.operations})

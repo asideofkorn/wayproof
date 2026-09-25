@@ -56,7 +56,10 @@ def test_unknown_details_are_gaps_not_invented_route_segments():
     gaps = indexed(records, "gaps", "gap_id")
     entities = indexed(records, "entities", "entity_id")
 
-    assert "does not publish" in gaps["gap-mcgee-creek-day-hike-distance"].reason
+    assert (
+        "Neither source publishes a pond coordinate or feature identifier"
+        in gaps["gap-mcgee-creek-day-hike-distance"].reason
+    )
     assert "does not infer distances" in gaps[
         "gap-mammoth-lakes-basin-route-distances"
     ].reason

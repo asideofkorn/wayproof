@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-mcgee-creek-beaver-pond-dataset-prefix",
+    "evidence_ids": [
+      "evidence-route-mcgee-creek-beaver-pond-dataset-prefix"
+    ],
+    "predicate": "dataset_route_partial_topology",
+    "spatial_scope_ids": [
+      "scope-route-mcgee-creek-beaver-pond"
+    ],
+    "subject_id": "route-mcgee-creek-beaver-pond",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "connected_prefix_distance_miles": 0.97791982,
+      "connected_prefix_segment_ids": [
+        "route-segment-mcgee-pass-01",
+        "route-segment-mcgee-pass-02",
+        "route-segment-mcgee-pass-03",
+        "route-segment-mcgee-pass-04",
+        "route-segment-mcgee-pass-05",
+        "route-segment-mcgee-pass-06"
+      ],
+      "destination_distance_one_way_miles": 3,
+      "destination_distance_precision": "published rounded value",
+      "remaining_distance_after_connected_prefix_miles": 2.02208018,
+      "topology_status": "partial_destination_within_unsplit_source_feature",
+      "unresolved_source_feature_id": "{F7E76514-1AD3-4846-AA9D-C28FDCCC2F86}"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

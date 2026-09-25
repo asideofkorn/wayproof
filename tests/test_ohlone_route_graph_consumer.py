@@ -140,6 +140,7 @@ def test_two_connectors_disclose_that_the_map_prints_no_distance(snapshot):
     connectors = [
         item for item in snapshot.claims
         if item.predicate == "mapped_route_connector"
+        and item.subject_id.startswith("route-leg-ohlone-mainline-connector-")
     ]
     assert len(connectors) == 2
     assert {item.value["distance_status"] for item in connectors} == {

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-mcgee-pass-02"
+    ],
+    "object_id": "route-mcgee-creek-beaver-pond",
+    "predicate": "shared_prefix_of",
+    "relationship_id": "relationship-route-segment-mcgee-pass-02-shared-prefix-of-mcgee-beaver-pond",
+    "subject_id": "route-segment-mcgee-pass-02",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

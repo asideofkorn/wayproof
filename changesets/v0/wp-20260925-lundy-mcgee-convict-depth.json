@@ -1,0 +1,189 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-lundy-mcgee-convict-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "route-segment-convict-lake-loop-east-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-mcgee-short-route-prefix-20260925.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "observation-usgs-mcgee-short-route-prefix-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-convict-lake-loop-map-20260925.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "observation-usfs-convict-lake-loop-map-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-mcgee-creek-beaver-pond-dataset-prefix.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "evidence-route-mcgee-creek-beaver-pond-dataset-prefix",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "evidence-route-segment-convict-lake-loop-east-connector",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-lundy-canyon-waterfall-beaver-dam-profile.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "claim-route-lundy-canyon-waterfall-beaver-dam-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-mcgee-creek-beaver-pond-dataset-prefix.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "claim-route-mcgee-creek-beaver-pond-dataset-prefix",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "claim-route-segment-convict-lake-loop-east-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-01-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-01-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-02-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-02-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-03-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-03-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-04-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-04-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-05-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-05-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-06-shared-prefix-of-mcgee-beaver-pond.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-mcgee-pass-06-shared-prefix-of-mcgee-beaver-pond",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-starts-at.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-ends-at.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-part-of-route-convict-lake-loop.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-mcgee-creek-day-hike-distance.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "gap-mcgee-creek-day-hike-distance",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-lundy-canyon-waterfall-beaver-dam-ten-mile-fit.json",
+      "reason": "Close Lundy's distance answer and add evidence-bounded McGee and Convict topology.",
+      "record_id": "result-route-lundy-canyon-waterfall-beaver-dam-ten-mile-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-convict-lake-loop-dataset-closure.json",
+      "reason": "The official Forest Service map supplies the missing route relationship; its distance and reusable geometry remain explicitly unknown.",
+      "record_id": "gap-convict-lake-loop-dataset-closure",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Resolve Lundy's bounded distance answer, expose McGee's connected prefix, and close Convict Lake Loop topology from an official map."
+}
