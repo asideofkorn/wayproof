@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-parker-lake-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-parker-lake-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-parker-lake",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-parker-lake",
+        "path": "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+        "sha256": "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+      },
+      "latitude": 37.852948730598385,
+      "longitude": -119.13461999660952,
+      "navigation_grade": false,
+      "provenance": "reviewed_usgs_route_endpoint",
+      "source_feature_id": "{1B40EDAF-4E02-474B-9F7B-483B78F5905F}",
+      "source_ids": [
+        "source-usgs-national-digital-trails-eastern-sierra-20260924"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

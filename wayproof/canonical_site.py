@@ -193,7 +193,7 @@ MAP_LAYERS = {
     "boundaries": ("park", "national_park", "wilderness"),
     "routes": ("route", "trail", "route_segment"),
     "peaks": ("peak", "pass"),
-    "access": ("trailhead", "entrance", "walk_in_entrance", "staging_area"),
+    "access": ("trailhead", "trail_access", "entrance", "walk_in_entrance", "staging_area"),
     "camping": ("campground", "campground_collection", "campsite",
                 "family_campsite", "group_campsite", "cabin_campsite",
                 "backcountry_camp", "equestrian_campsite",

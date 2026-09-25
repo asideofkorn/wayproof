@@ -1,0 +1,324 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-eastern-sierra-trailhead-map-points",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-recreation-opportunities-eastern-sierra-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "source-usfs-recreation-opportunities-eastern-sierra-20260925",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-osm-nominatim-eastern-sierra-trailheads-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "source-osm-nominatim-eastern-sierra-trailheads-20260925",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "observation-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "observation-usfs-eastern-sierra-trailhead-points-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-osm-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "observation-osm-eastern-sierra-trailhead-points-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-upper-rock-creek-east-fork-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-access-upper-rock-creek-east-fork-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-convict-lake-map-point-usfs-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-convict-lake-map-point-usfs-eastern-sierra-trailhead-points-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-hilton-lakes-rock-creek-map-point-usfs-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-hilton-lakes-rock-creek-map-point-usfs-eastern-sierra-trailhead-points-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-lundy-canyon-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-lundy-canyon-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-lundy-canyon-map-point-osm-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-lundy-canyon-map-point-osm-eastern-sierra-trailhead-points-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mcgee-creek-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-mcgee-creek-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mosquito-flat-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-mosquito-flat-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-north-lake-bishop-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-north-lake-bishop-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-parker-lake-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-parker-lake-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-sabrina-basin-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-sabrina-basin-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-south-lake-bishop-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-south-lake-bishop-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-tamarack-lakes-rock-creek-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-tamarack-lakes-rock-creek-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-virginia-lakes-map-point-osm-eastern-sierra-trailhead-points-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-virginia-lakes-map-point-osm-eastern-sierra-trailhead-points-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-yost-fern-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "evidence-trailhead-yost-fern-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-upper-rock-creek-east-fork-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-access-upper-rock-creek-east-fork-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-convict-lake-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-convict-lake-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-hilton-lakes-rock-creek-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-hilton-lakes-rock-creek-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-lundy-canyon-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-lundy-canyon-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mcgee-creek-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-mcgee-creek-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mosquito-flat-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-mosquito-flat-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-north-lake-bishop-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-north-lake-bishop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-parker-lake-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-parker-lake-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-sabrina-basin-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-sabrina-basin-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-south-lake-bishop-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-south-lake-bishop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-tamarack-lakes-rock-creek-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-tamarack-lakes-rock-creek-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-virginia-lakes-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-virginia-lakes-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-yost-fern-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "claim-trailhead-yost-fern-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-trailhead-horseshoe-lake-mammoth-map-point.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "gap-trailhead-horseshoe-lake-mammoth-map-point",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-hilton-lakes-trailhead-route-connector.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "gap-hilton-lakes-trailhead-route-connector",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-convict-lake-trailhead-loop-connector.json",
+      "reason": "Publish reviewed East Side access points without inferring access from proximity.",
+      "record_id": "gap-convict-lake-trailhead-loop-connector",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish 13 evidenced East Side trail access points and preserve three unresolved connector or identity questions."
+}
