@@ -212,6 +212,52 @@ def test_interactive_map_asset_is_lazy_and_links_canonical_segments(site):
     assert 'map.on("click", "wayproof-route"' in script
 
 
+def test_explore_map_is_generated_from_canonical_geometry(site):
+    tmp_path, _ = site
+    page = (tmp_path / "map" / "index.html").read_text()
+    payload = json.loads((tmp_path / "map" / "features.geojson").read_text())
+
+    assert 'data-explore-map' in page
+    assert 'data-map-layer="routes"' in page
+    assert 'data-map-layer="camping"' in page
+    assert 'data-map-layer="camping"  >' in page
+    assert 'data-map-layer="boundaries"  disabled>' in page
+    assert 'data-map-expand aria-expanded="false"' in page
+    assert 'href="/map/features.geojson"' in page
+    assert 'src="/assets/explore-map.js?v=20260925-1"' in page
+    assert payload["wayproof"]["generated_from"] == "CanonicalReadService"
+    assert payload["wayproof"]["navigation_grade"] is False
+    assert any(item["properties"]["entity_id"] == "route-cinder-cone-trail"
+               and item["properties"]["layer"] == "routes"
+               for item in payload["features"])
+    assert any(item["properties"]["entity_id"] == "campground-east-fork-inyo"
+               and item["geometry"]["type"] == "Point"
+               for item in payload["features"])
+    assert all(item["geometry"]["type"] in {"Polygon", "MultiPolygon"}
+               for item in payload["features"]
+               if item["properties"]["layer"] == "boundaries")
+
+
+def test_explore_map_assets_support_layers_selection_and_mobile_expansion(site):
+    tmp_path, _ = site
+    script = (tmp_path / "assets" / "explore-map.js").read_text()
+    stylesheet = (tmp_path / "style.css").read_text()
+
+    assert "queryRenderedFeatures" in script
+    assert "data-map-layer" in script
+    assert "is-expanded" in script
+    assert "Close full screen" in script
+    assert ".explore-map-shell.is-expanded" in stylesheet
+    assert "env(safe-area-inset-top)" in stylesheet
+
+
+def test_primary_navigation_links_the_explore_map(site):
+    tmp_path, _ = site
+    for path in (tmp_path / "index.html", tmp_path / "search" / "index.html",
+                 tmp_path / "knowledge" / "peak-mount-whitney" / "index.html"):
+        assert '<a href="/map/">Map</a>' in path.read_text()
+
+
 def test_relationships_show_human_names_instead_of_only_record_ids(site):
     tmp_path, _ = site
     page = (tmp_path / "knowledge" / "peak-mount-whitney" / "index.html").read_text()
