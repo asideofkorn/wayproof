@@ -60,11 +60,17 @@ def test_unknown_details_are_gaps_not_invented_route_segments():
     assert "does not infer distances" in gaps[
         "gap-mammoth-lakes-basin-route-distances"
     ].reason
-    assert "exceeds" in gaps["gap-lundy-canyon-sub-ten-turnaround"].reason
+    assert "does not publish an exact turnaround" in gaps[
+        "gap-lundy-canyon-sub-ten-turnaround"
+    ].reason
     assert not any(
         item.kind == "route_segment" and any(
-            word in item.entity_id for word in ("mcgee", "lundy", "virginia")
+            word in item.entity_id for word in ("lundy", "virginia")
         ) for item in entities.values()
+    )
+    assert any(
+        item.kind == "route_segment" and "mcgee-pass" in item.entity_id
+        for item in entities.values()
     )
 
 

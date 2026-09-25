@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-mcgee-pass-04",
+    "evidence_ids": [
+      "evidence-route-segment-mcgee-pass-04"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-mcgee-creek"
+    ],
+    "subject_id": "route-segment-mcgee-pass-04",
+    "temporal_scope": null,
+    "value": {
+      "dataset_feature_id": "{BF32211A-C401-4D4B-9843-4D5A7BA6124D}",
+      "dataset_feature_name": "MCGEE PASS",
+      "distance_miles": 0.22758622,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.548580251683994,
+        "longitude": -118.81481735327453
+      },
+      "geometry_snapshot": {
+        "feature_id": "{BF32211A-C401-4D4B-9843-4D5A7BA6124D}",
+        "path": "geometry/v0/snapshots/usgs-mcgee-lundy-routes-20260925.geojson",
+        "sha256": "5358db1bac85e9aa2db4dca13afcdae6ffb354e305c3a76976276eb95de642fc"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "6102",
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.54891610825281,
+        "longitude": -118.81076000680721
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

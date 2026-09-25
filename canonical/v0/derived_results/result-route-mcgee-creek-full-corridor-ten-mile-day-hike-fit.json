@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The complete retained dataset corridor is preserved for longer and future trips; the trip-specific ten-mile limit does not truncate canonical geometry.",
+    "input_ids": [
+      "claim-route-mcgee-creek-dataset-profile"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-mcgee-creek-full-corridor-ten-mile-day-hike-fit",
+    "value": {
+      "current_conditions_required": true,
+      "fits_distance_limit": false,
+      "full_out_and_back_miles": 28.50729538,
+      "route_id": "route-mcgee-creek",
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

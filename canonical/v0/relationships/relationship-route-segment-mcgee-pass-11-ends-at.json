@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-mcgee-pass-11"
+    ],
+    "object_id": "route-node-mcgee-pass-11",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-mcgee-pass-11-ends-at",
+    "subject_id": "route-segment-mcgee-pass-11",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

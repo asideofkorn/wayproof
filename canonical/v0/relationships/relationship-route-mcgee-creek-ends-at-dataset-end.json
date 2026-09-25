@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-mcgee-creek-dataset-profile"
+    ],
+    "object_id": "route-node-mcgee-pass-dataset-end",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-mcgee-creek-ends-at-dataset-end",
+    "subject_id": "route-mcgee-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

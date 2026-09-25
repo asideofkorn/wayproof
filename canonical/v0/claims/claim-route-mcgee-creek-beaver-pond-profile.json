@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-mcgee-creek-beaver-pond-profile",
+    "evidence_ids": [
+      "evidence-route-mcgee-creek-beaver-pond-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-mcgee-creek-beaver-pond"
+    ],
+    "subject_id": "route-mcgee-creek-beaver-pond",
+    "temporal_scope": null,
+    "value": {
+      "destination": "active beaver pond",
+      "distance_precision": "published rounded value",
+      "one_way_miles": 3,
+      "route_shape": "out_and_back",
+      "setting": "aspen groves along McGee Creek"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

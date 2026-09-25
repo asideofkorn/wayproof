@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-lundy-lower-dataset-end",
+    "kind": "route_node",
+    "name": "Lower Lundy Canyon dataset endpoint"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

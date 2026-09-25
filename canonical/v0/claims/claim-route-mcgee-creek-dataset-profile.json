@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-mcgee-creek-dataset-profile",
+    "evidence_ids": [
+      "evidence-route-mcgee-creek-dataset-profile"
+    ],
+    "predicate": "dataset_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-mcgee-creek"
+    ],
+    "subject_id": "route-mcgee-creek",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of selected USGS source-field lengthmiles values",
+      "extent": "McGee Creek trailhead corridor to the dataset corridor endpoint toward McGee Pass",
+      "geometry_snapshot": {
+        "path": "geometry/v0/snapshots/usgs-mcgee-lundy-routes-20260925.geojson",
+        "sha256": "5358db1bac85e9aa2db4dca13afcdae6ffb354e305c3a76976276eb95de642fc"
+      },
+      "one_way_distance_miles": 14.25364769
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

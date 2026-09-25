@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Approximate three-mile Lundy waterfall and beaver-dam outing",
+    "entity_id": "route-lundy-canyon-waterfall-beaver-dam",
+    "kind": "route",
+    "scope_id": "scope-route-lundy-canyon-waterfall-beaver-dam"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Three-mile McGee Creek beaver-pond foliage outing",
+    "entity_id": "route-mcgee-creek-beaver-pond",
+    "kind": "route",
+    "scope_id": "scope-route-mcgee-creek-beaver-pond"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

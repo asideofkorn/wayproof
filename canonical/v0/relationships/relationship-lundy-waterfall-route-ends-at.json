@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-lundy-canyon-waterfall-beaver-dam-profile"
+    ],
+    "object_id": "place-lundy-canyon-waterfall-beaver-dam",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-lundy-waterfall-route-ends-at",
+    "subject_id": "route-lundy-canyon-waterfall-beaver-dam",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

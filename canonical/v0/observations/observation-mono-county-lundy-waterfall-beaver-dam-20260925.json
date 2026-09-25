@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Mono County Tourism describes Lundy Canyon Trail as about three miles and as an out-and-back canyon outing featuring a waterfall and beaver dam; it separately notes that hikers may extend toward Lake Helen, 20 Lakes Basin, and Saddlebag Lake.",
+    "observation_id": "observation-mono-county-lundy-waterfall-beaver-dam-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T02:30:00+00:00",
+    "source_id": "source-mono-county-lundy-canyon-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
