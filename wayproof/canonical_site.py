@@ -25,8 +25,10 @@ DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
 ROUTE_MAP_ASSET_VERSION = "20260925-1"
+EXPLORE_MAP_ASSET_VERSION = "20260925-1"
 PRIMARY_NAV = (
     ("Home", "/"),
+    ("Map", "/map/"),
     ("Parks", "/parks/"),
     ("Trails", "/trails/"),
     ("Camping", "/camping/"),
@@ -178,13 +180,143 @@ def render_site_footer() -> str:
     return (
         '<footer class="site-footer"><div><strong>Wayproof</strong>'
         '<p>Source-backed outdoor planning with uncertainty left visible.</p></div>'
-        '<div class="footer-links"><a href="/search/">Search</a>'
+        '<div class="footer-links"><a href="/map/">Map</a><a href="/search/">Search</a>'
         '<a href="/how-it-works/">How it works</a>'
         '<a href="/changes/">Published changes</a>'
         '<a href="https://github.com/asideofkorn/wayproof">GitHub</a></div>'
         '<p class="meta footer-note">Planning aid, not a booking or safety guarantee. '
         'Confirm volatile conditions with the linked official source.</p></footer>'
     )
+
+
+MAP_LAYERS = {
+    "boundaries": ("park", "national_park", "wilderness"),
+    "routes": ("route", "trail", "route_segment"),
+    "peaks": ("peak", "pass"),
+    "access": ("trailhead", "entrance", "walk_in_entrance", "staging_area"),
+    "camping": ("campground", "campground_collection", "campsite",
+                "family_campsite", "group_campsite", "cabin_campsite",
+                "backcountry_camp", "equestrian_campsite",
+                "equestrian_campsite_area", "equestrian_group_campsite"),
+    "facilities": ("parking", "water_source", "restroom", "facility", "waterbody"),
+}
+
+
+def _map_layer(kind: str) -> str | None:
+    return next((layer for layer, kinds in MAP_LAYERS.items() if kind in kinds), None)
+
+
+def _coordinate_geometry(value: Any) -> dict | None:
+    if not isinstance(value, dict):
+        return None
+    candidate = value.get("geometry")
+    if isinstance(candidate, dict) and candidate.get("type") in {
+        "Point", "LineString", "MultiLineString", "Polygon", "MultiPolygon"
+    } and candidate.get("coordinates"):
+        return candidate
+    latitude, longitude = value.get("latitude"), value.get("longitude")
+    if (isinstance(latitude, (int, float)) and isinstance(longitude, (int, float))
+            and -90 <= latitude <= 90 and -180 <= longitude <= 180):
+        return {"type": "Point", "coordinates": [longitude, latitude]}
+    return None
+
+
+def explore_map_payload(reads: CanonicalReadService, entities: Iterable[dict],
+                        as_of: date) -> dict:
+    """Project only evidenced canonical geometry into the public map."""
+    features = []
+    for entity in entities:
+        layer = _map_layer(entity["kind"])
+        if not layer:
+            continue
+        for claim in reads.claims_for(entity["entity_id"]):
+            geometry = _coordinate_geometry(claim.value)
+            if not geometry:
+                continue
+            geometry_type = geometry["type"]
+            if layer == "boundaries" and geometry_type not in {"Polygon", "MultiPolygon"}:
+                continue
+            feature_layer = (
+                "boundaries" if geometry_type in {"Polygon", "MultiPolygon"}
+                and entity["kind"] in MAP_LAYERS["boundaries"] else layer
+            )
+            features.append({
+                "type": "Feature",
+                "id": claim.claim_id,
+                "properties": {
+                    "entity_id": entity["entity_id"],
+                    "name": entity["name"],
+                    "kind": entity["kind"],
+                    "layer": feature_layer,
+                    "evidence_status": "evidence-backed claim",
+                    "claim_id": claim.claim_id,
+                    "predicate": claim.predicate,
+                    "url": f'/knowledge/{entity["entity_id"]}/',
+                },
+                "geometry": geometry,
+            })
+        if entity["kind"] == "route":
+            route = reads.route_geometry(entity["entity_id"], as_of)
+            if route:
+                for index, feature in enumerate(route["features"]):
+                    properties = dict(feature.get("properties", {}))
+                    properties.update({
+                        "entity_id": entity["entity_id"], "name": entity["name"],
+                        "kind": "route", "layer": "routes",
+                        "evidence_status": "reviewed, versioned source geometry",
+                        "url": f'/knowledge/{entity["entity_id"]}/',
+                    })
+                    features.append({"type": "Feature",
+                                     "id": f'{entity["entity_id"]}-{index}',
+                                     "properties": properties,
+                                     "geometry": feature["geometry"]})
+    return {
+        "type": "FeatureCollection",
+        "features": features,
+        "wayproof": {
+            "generated_from": "CanonicalReadService",
+            "as_of": as_of.isoformat(),
+            "feature_count": len(features),
+            "boundary_policy": "Only source-backed polygon geometry is shown.",
+            "navigation_grade": False,
+        },
+    }
+
+
+def render_explore_map_html(payload: dict, site_url: str) -> str:
+    counts = {layer: 0 for layer in MAP_LAYERS}
+    for feature in payload["features"]:
+        counts[feature["properties"]["layer"]] += 1
+    controls = "".join(
+        f'<label><input type="checkbox" data-map-layer="{_e(layer)}" '
+        f'{"checked" if count and layer != "camping" else ""} '
+        f'{"disabled" if not count else ""}> '
+        f'{_e(layer.title())} <span>{count}</span></label>'
+        for layer, count in counts.items()
+    )
+    body = f'''{render_primary_nav()}
+<header class="page-header"><span class="eyebrow">Explore Wayproof</span>
+<h1>Map the published planning graph</h1>
+<p class="subtitle">Browse source-backed routes, places, access, camping, and facilities.
+Missing geometry stays missing; proximity is not treated as access.</p></header>
+<main class="explore-map-shell" data-explore-map data-geometry-url="/map/features.geojson">
+<div class="explore-map-toolbar"><div class="route-map-controls" role="group" aria-label="Basemap layer">
+<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>
+<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>
+<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button></div>
+<button class="button map-expand" type="button" data-map-expand aria-expanded="false">Full screen</button></div>
+<div class="explore-map-layout"><aside class="map-layer-panel" aria-label="Map layers"><strong>Layers</strong>{controls}</aside>
+<div class="explore-map-canvas" data-map-canvas aria-label="Interactive map of published Wayproof geometry"></div>
+<aside class="map-selection" data-map-selection aria-live="polite"><strong>Select a feature</strong>
+<p>Tap or click a route, place, or facility to inspect it.</p></aside></div>
+<p class="meta" data-map-status>Interactive map loads when scrolled into view.</p>
+<p class="meta">{len(payload["features"])} published geometry features · planning evidence, not navigation-grade mapping ·
+<a href="/map/features.geojson">Download GeoJSON</a></p></main>
+<script type="module" src="/assets/explore-map.js?v={EXPLORE_MAP_ASSET_VERSION}"></script>'''
+    return _page("Explore Map — Wayproof",
+                 "Explore source-backed routes, places, access, camping, and facilities.",
+                 f"{site_url}/map/", body,
+                 '<link rel="stylesheet" href="/assets/vendor/maplibre/maplibre-gl.css">')
 
 
 def _page(title: str, description: str, canonical: str, body: str,
@@ -1008,6 +1140,12 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     entities = tuple(_plain(item) for item in reads.search_entities())
     entities_by_id = {item["entity_id"]: item for item in entities}
     preferred_paths = {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}
+    map_dir = output_dir / "map"
+    map_dir.mkdir(parents=True, exist_ok=True)
+    map_payload = explore_map_payload(reads, entities, as_of)
+    (map_dir / "features.geojson").write_text(_json(map_payload), encoding="utf-8")
+    (map_dir / "index.html").write_text(
+        render_explore_map_html(map_payload, site_url), encoding="utf-8")
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
     (search_dir / "index.html").write_text(render_search_html(
@@ -1017,7 +1155,7 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         "type": "canonical_entity_index", "count": len(entities), "entities": entities,
     }), encoding="utf-8")
 
-    directory_urls = []
+    directory_urls = [f"{site_url}/map/"]
     for key, spec in DIRECTORIES.items():
         directory_entities = tuple(
             item for item in entities if item["kind"] in spec["kinds"]
