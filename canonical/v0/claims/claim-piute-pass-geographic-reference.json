@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-piute-pass-geographic-reference",
+    "evidence_ids": [
+      "evidence-piute-pass-geographic-reference"
+    ],
+    "predicate": "geographic_reference",
+    "spatial_scope_ids": [
+      "scope-place-piute-pass"
+    ],
+    "subject_id": "place-piute-pass",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "geometry_role": "named_feature_reference_point",
+      "latitude": 37.239106260609425,
+      "longitude": -118.68401506287091,
+      "source_feature_class": "Gap",
+      "source_feature_id": 264832
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

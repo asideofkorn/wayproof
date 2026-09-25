@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-blue-lake-sabrina-geographic-reference",
+    "evidence_ids": [
+      "evidence-blue-lake-sabrina-geographic-reference"
+    ],
+    "predicate": "geographic_reference",
+    "spatial_scope_ids": [
+      "scope-route-sabrina-blue-lake"
+    ],
+    "subject_id": "place-blue-lake-sabrina",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "geometry_role": "named_feature_reference_point",
+      "latitude": 37.18424034601662,
+      "longitude": -118.6196119484755,
+      "source_feature_class": "Lake",
+      "source_feature_id": 257249
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-piute-pass-02",
+    "kind": "route_node",
+    "name": "North Lake to Piute Pass node 2"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

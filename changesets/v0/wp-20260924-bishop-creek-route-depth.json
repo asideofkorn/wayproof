@@ -1,0 +1,639 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-bishop-creek-route-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-piute-pass.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "place-piute-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-north-lake-hiker-parking.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "access-north-lake-hiker-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-sabrina-blue-lake-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-sabrina-blue-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-sabrina-blue-lake-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-node-sabrina-blue-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-sabrina-blue-lake-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-sabrina-blue-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-sabrina-blue-lake-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-node-sabrina-blue-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-sabrina-blue-lake-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-sabrina-blue-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-sabrina-blue-lake-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-node-sabrina-blue-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-sabrina-blue-lake-04.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-sabrina-blue-lake-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-piute-pass-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-piute-pass-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-piute-pass-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-node-piute-pass-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-piute-pass-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-piute-pass-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-piute-pass-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-node-piute-pass-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-piute-pass-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "route-segment-piute-pass-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-piute-pass.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "scope-place-piute-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-access-north-lake-hiker-parking.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "scope-access-north-lake-hiker-parking",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-sabrina-north-lake-trails-map.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "source-usfs-sabrina-north-lake-trails-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-geographic-names-bishop-creek-20260924.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "source-usgs-geographic-names-bishop-creek-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-bishop-creek-routes-20260924.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "observation-usgs-bishop-creek-routes-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-geographic-names-bishop-creek-20260924.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "observation-usgs-geographic-names-bishop-creek-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-blue-lake-sabrina-geographic-reference.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-blue-lake-sabrina-geographic-reference",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-piute-pass-geographic-reference.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-piute-pass-geographic-reference",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-sabrina-blue-lake-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-sabrina-blue-lake-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-sabrina-blue-lake-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-sabrina-blue-lake-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-sabrina-blue-lake-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-sabrina-blue-lake-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-sabrina-blue-lake-04.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-sabrina-blue-lake-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-sabrina-blue-lake-dataset-profile.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-sabrina-blue-lake-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-piute-pass-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-piute-pass-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-piute-pass-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-piute-pass-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-piute-pass-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-segment-piute-pass-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-piute-pass-dataset-profile.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "evidence-route-piute-pass-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-blue-lake-sabrina-geographic-reference.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-blue-lake-sabrina-geographic-reference",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-piute-pass-geographic-reference.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-piute-pass-geographic-reference",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-sabrina-blue-lake-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-sabrina-blue-lake-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-sabrina-blue-lake-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-sabrina-blue-lake-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-sabrina-blue-lake-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-sabrina-blue-lake-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-sabrina-blue-lake-04.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-sabrina-blue-lake-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-sabrina-blue-lake-dataset-profile.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-sabrina-blue-lake-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-piute-pass-01.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-piute-pass-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-piute-pass-02.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-piute-pass-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-piute-pass-03.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-segment-piute-pass-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-piute-pass-dataset-profile.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "claim-route-piute-pass-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-01-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-01-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-01-part-of-sabrina-blue-lake.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-01-part-of-sabrina-blue-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-02-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-02-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-02-part-of-sabrina-blue-lake.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-02-part-of-sabrina-blue-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-03-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-03-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-03-part-of-sabrina-blue-lake.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-03-part-of-sabrina-blue-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-04-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-04-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-sabrina-blue-lake-04-part-of-sabrina-blue-lake.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-sabrina-blue-lake-04-part-of-sabrina-blue-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-sabrina-blue-lake-starts-at-dataset-entry.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-sabrina-blue-lake-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-01-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-01-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-01-part-of-piute-pass.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-01-part-of-piute-pass",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-02-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-02-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-02-part-of-piute-pass.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-02-part-of-piute-pass",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-03-starts-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-03-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-03-part-of-piute-pass.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-segment-piute-pass-03-part-of-piute-pass",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-piute-pass-starts-at-dataset-entry.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-piute-pass-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-piute-pass-ends-at.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-route-piute-pass-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-lake-hiker-parking-provides-access.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "relationship-north-lake-hiker-parking-provides-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-bishop-creek-day-hike-distances.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "gap-bishop-creek-day-hike-distances",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-sabrina-blue-lake-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "result-route-sabrina-blue-lake-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-piute-pass-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed Blue Lake and Piute Pass topology, geometry, and trip-distance implications.",
+      "record_id": "result-route-piute-pass-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add connected Blue Lake and Piute Pass route geometry, retain the North Lake parking approach, and narrow the unresolved Bishop Creek distance gap."
+}

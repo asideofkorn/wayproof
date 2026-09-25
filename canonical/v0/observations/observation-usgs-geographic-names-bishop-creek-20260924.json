@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The bounded USGS Geographic Names service identifies Blue Lake in Inyo County as feature 257249 at 37.184240346016622, -118.61961194847549 and Piute Pass as feature 264832 at 37.239106260609425, -118.68401506287091. GNIS points identify named features rather than lake boundaries or survey-grade trail junctions.",
+    "observation_id": "observation-usgs-geographic-names-bishop-creek-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T22:00:00+00:00",
+    "source_id": "source-usgs-geographic-names-bishop-creek-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

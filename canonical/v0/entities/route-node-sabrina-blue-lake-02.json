@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-sabrina-blue-lake-02",
+    "kind": "route_node",
+    "name": "Sabrina Basin to Blue Lake node 2"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

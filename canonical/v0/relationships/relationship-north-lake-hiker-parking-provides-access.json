@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-north-lake-access-profile"
+    ],
+    "object_id": "trailhead-north-lake-bishop",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-north-lake-hiker-parking-provides-access",
+    "subject_id": "access-north-lake-hiker-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

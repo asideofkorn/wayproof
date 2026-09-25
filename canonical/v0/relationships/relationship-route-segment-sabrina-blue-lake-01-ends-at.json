@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-sabrina-blue-lake-01"
+    ],
+    "object_id": "route-node-sabrina-blue-lake-01",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-sabrina-blue-lake-01-ends-at",
+    "subject_id": "route-segment-sabrina-blue-lake-01",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

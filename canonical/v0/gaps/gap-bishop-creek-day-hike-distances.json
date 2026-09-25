@@ -2,11 +2,9 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-bishop-creek-day-hike-distances",
-    "question": "Which Blue Lake, Piute/Lamarck, and Treasure Lakes turnarounds fit a ten-mile day-hike limit?",
-    "reason": "The official guides establish trailhead and route associations but the reviewed sources do not publish all required destination distances.",
+    "question": "Which Lamarck Lakes and Treasure Lakes turnarounds fit a ten-mile day-hike limit?",
+    "reason": "Blue Lake and Piute Pass now have bounded route geometry and distance results; the reviewed sources still do not establish complete destination distances for Lamarck Lakes and Treasure Lakes.",
     "related_ids": [
-      "route-sabrina-blue-lake",
-      "route-piute-pass",
       "route-lamarck-lakes",
       "route-treasure-lakes"
     ]
