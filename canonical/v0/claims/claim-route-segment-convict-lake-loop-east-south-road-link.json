@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-convict-lake-loop-east-south-road-link",
+    "evidence_ids": [
+      "evidence-route-segment-convict-lake-loop-east-south-road-link"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-convict-lake-loop"
+    ],
+    "subject_id": "route-segment-convict-lake-loop-east-south-road-link",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "unknown",
+      "geometry_status": "official_map_depiction_without_reusable_line_geometry",
+      "map_context": [
+        "south road cul-de-sac",
+        "boat ramp",
+        "trailhead parking"
+      ],
+      "route_role": "east_shore_south_road_connection",
+      "sequence": 1,
+      "surface": "road"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

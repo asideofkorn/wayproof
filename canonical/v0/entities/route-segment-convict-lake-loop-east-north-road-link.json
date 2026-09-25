@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-convict-lake-loop-east-north-road-link",
+    "kind": "route_segment",
+    "name": "Convict Lake Loop north trailhead road link"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

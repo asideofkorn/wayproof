@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-convict-lake-loop-east-shore-trail",
+    "evidence_id": "evidence-route-segment-convict-lake-loop-east-shore-trail",
+    "notes": "",
+    "observation_id": "observation-usfs-convict-lake-loop-map-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

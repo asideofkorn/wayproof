@@ -31,37 +31,48 @@ def test_foliage_choices_fit_trip_distance_cap_without_duration_invention():
         assert "duration" not in result.value
 
 
-def test_convict_loop_preserves_map_backed_closure_without_invented_distance():
+def test_convict_loop_preserves_mixed_surface_closure_without_invented_distance():
     records = load_canonical(ROOT)
     claims = keyed(records.claims, "claim_id")
     gaps = keyed(records.gaps, "gap_id")
     assert claims["claim-convict-lake-loop-published-profile"].value["round_trip_miles"] == 2
-    connector = claims["claim-route-segment-convict-lake-loop-east-connector"].value
-    assert connector["distance_status"] == "unknown"
-    assert connector["geometry_status"] == "official_map_depiction_without_reusable_line_geometry"
-    assert connector["route_role"] == "east_shore_closure"
+    segment_ids = (
+        "route-segment-convict-lake-loop-east-south-road-link",
+        "route-segment-convict-lake-loop-east-shore-trail",
+        "route-segment-convict-lake-loop-east-north-road-link",
+    )
+    connectors = [claims[f"claim-{segment_id}"].value for segment_id in segment_ids]
+    assert [item["surface"] for item in connectors] == ["road", "trail", "road"]
+    assert [item["sequence"] for item in connectors] == [1, 2, 3]
+    assert all(item["distance_status"] == "unknown" for item in connectors)
+    assert all(
+        item["geometry_status"]
+        == "official_map_depiction_without_reusable_line_geometry"
+        for item in connectors
+    )
     assert "gap-convict-lake-loop-dataset-closure" not in gaps
 
-    edges = {
-        (item.subject_id, item.predicate, item.object_id)
-        for item in records.relationships
-        if item.subject_id == "route-segment-convict-lake-loop-east-connector"
-    }
-    assert edges == {
-        (
-            "route-segment-convict-lake-loop-east-connector",
-            "starts_at",
+    endpoints = {}
+    for segment_id in segment_ids:
+        edges = {
+            item.predicate: item.object_id
+            for item in records.relationships
+            if item.subject_id == segment_id
+        }
+        assert edges["part_of"] == "route-convict-lake-loop"
+        endpoints[segment_id] = (edges["starts_at"], edges["ends_at"])
+    assert endpoints == {
+        segment_ids[0]: (
             "route-node-convict-lake-loop-south",
+            "route-node-convict-lake-loop-east-south-road-trail-junction",
         ),
-        (
-            "route-segment-convict-lake-loop-east-connector",
-            "ends_at",
+        segment_ids[1]: (
+            "route-node-convict-lake-loop-east-south-road-trail-junction",
+            "route-node-convict-lake-loop-east-north-trail-road-junction",
+        ),
+        segment_ids[2]: (
+            "route-node-convict-lake-loop-east-north-trail-road-junction",
             "route-node-convict-lake-loop-east",
-        ),
-        (
-            "route-segment-convict-lake-loop-east-connector",
-            "part_of",
-            "route-convict-lake-loop",
         ),
     }
 
@@ -73,3 +84,6 @@ def test_foliage_route_depth_publishes_to_human_pages(generated_site):
     assert "1.84699256" in parker
     assert "U.S. Geological Survey / U.S. Forest Service" in parker
     assert "Mount Morrison" in convict
+    assert "south cul-de-sac road link" in convict
+    assert "east-side lakeshore trail" in convict
+    assert "north trailhead road link" in convict

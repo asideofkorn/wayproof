@@ -1,9 +1,9 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "entity_id": "route-segment-convict-lake-loop-east-connector",
+    "entity_id": "route-segment-convict-lake-loop-east-south-road-link",
     "kind": "route_segment",
-    "name": "Convict Lake Loop east-shore trailhead connector"
+    "name": "Convict Lake Loop south cul-de-sac road link"
   },
   "record_type": "entity",
   "schema_version": 0

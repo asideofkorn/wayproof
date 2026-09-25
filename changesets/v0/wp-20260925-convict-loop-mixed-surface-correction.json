@@ -1,0 +1,252 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-convict-loop-mixed-surface-correction",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-east-south-road-trail-junction.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-node-convict-lake-loop-east-south-road-trail-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-convict-lake-loop-east-north-trail-road-junction.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-node-convict-lake-loop-east-north-trail-road-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-east-south-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-segment-convict-lake-loop-east-south-road-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-east-shore-trail.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-segment-convict-lake-loop-east-shore-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-east-north-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-segment-convict-lake-loop-east-north-road-link",
+      "record_type": "entity"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-convict-lake-loop-map-20260925.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "observation-usfs-convict-lake-loop-map-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-east-south-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "evidence-route-segment-convict-lake-loop-east-south-road-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-east-shore-trail.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "evidence-route-segment-convict-lake-loop-east-shore-trail",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-east-north-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "evidence-route-segment-convict-lake-loop-east-north-road-link",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-east-south-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "claim-route-segment-convict-lake-loop-east-south-road-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-east-shore-trail.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "claim-route-segment-convict-lake-loop-east-shore-trail",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-east-north-road-link.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "claim-route-segment-convict-lake-loop-east-north-road-link",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-south-road-link-starts-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-south-road-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-south-road-link-ends-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-south-road-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-south-road-link-part-of-route-convict-lake-loop.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-south-road-link-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-shore-trail-starts-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-shore-trail-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-shore-trail-ends-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-shore-trail-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-shore-trail-part-of-route-convict-lake-loop.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-shore-trail-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-north-road-link-starts-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-north-road-link-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-north-road-link-ends-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-north-road-link-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-north-road-link-part-of-route-convict-lake-loop.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-north-road-link-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "route-segment-convict-lake-loop-east-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "evidence-route-segment-convict-lake-loop-east-connector",
+      "record_type": "evidence"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-lake-loop-east-connector.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "claim-route-segment-convict-lake-loop-east-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-starts-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-ends-at.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-convict-lake-loop-east-connector-part-of-route-convict-lake-loop.json",
+      "reason": "Replace the coarse Convict Lake east-shore connector with the mapped road-trail-road sequence.",
+      "record_id": "relationship-route-segment-convict-lake-loop-east-connector-part-of-route-convict-lake-loop",
+      "record_type": "relationship"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Replace Convict Lake Loop's coarse east connector with an evidence-bounded road-trail-road sequence."
+}

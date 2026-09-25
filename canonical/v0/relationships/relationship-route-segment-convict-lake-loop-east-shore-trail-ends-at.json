@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-convict-lake-loop-east-shore-trail"
+    ],
+    "object_id": "route-node-convict-lake-loop-east-north-trail-road-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-convict-lake-loop-east-shore-trail-ends-at",
+    "subject_id": "route-segment-convict-lake-loop-east-shore-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

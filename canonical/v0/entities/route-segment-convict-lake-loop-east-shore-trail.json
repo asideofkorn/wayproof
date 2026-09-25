@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-convict-lake-loop-east-shore-trail",
+    "kind": "route_segment",
+    "name": "Convict Lake Loop east-side lakeshore trail"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

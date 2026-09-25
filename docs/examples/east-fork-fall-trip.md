@@ -33,10 +33,12 @@ value, while retaining an explicit gap for the exact waterfall/beaver-dam
 turnaround location. The McGee beaver-pond option publishes its connected
 0.97791982-mile dataset prefix and identifies the source feature containing the
 remaining destination, without splitting that feature at an invented point.
-The Convict Lake Loop now records the official-map east-shore closure through
-the trailhead and boat-ramp area as a distinct connector whose reusable geometry
-and segment mileage remain unknown. Those bounded partial answers keep useful
-planning facts without overstating map precision.
+The Convict Lake Loop now records the official-map east-shore closure as three
+ordered mixed-surface legs: road from the south trail endpoint and cul-de-sac,
+east-side lakeshore trail, then road through the boat-ramp and trailhead-parking
+area to the north trail endpoint. Their reusable geometry and individual
+mileages remain unknown. Those bounded partial answers keep useful planning
+facts without overstating map precision.
 
 The public example uses anonymous participant IDs and contains no reservation
 number or private confirmation evidence. The runtime fulfillment records that
