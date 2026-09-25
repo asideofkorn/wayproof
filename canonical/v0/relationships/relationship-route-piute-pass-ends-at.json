@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-piute-pass-geographic-reference"
+    ],
+    "object_id": "place-piute-pass",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-piute-pass-ends-at",
+    "subject_id": "route-piute-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

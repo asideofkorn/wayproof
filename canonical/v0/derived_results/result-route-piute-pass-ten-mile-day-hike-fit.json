@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The official guide places hiker parking about one-half mile from the trailhead, so the parking-inclusive out-and-back adds one mile to the selected dataset trail distance.",
+    "input_ids": [
+      "claim-route-piute-pass-dataset-profile",
+      "claim-north-lake-access-profile"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-piute-pass-ten-mile-day-hike-fit",
+    "value": {
+      "current_conditions_required": true,
+      "parking_approach_round_trip_miles": 1.0,
+      "parking_inclusive_fits_distance_limit": false,
+      "parking_inclusive_out_and_back_miles": 10.47130102,
+      "route_id": "route-piute-pass",
+      "trail_only_fits_distance_limit": true,
+      "trail_out_and_back_miles": 9.47130102,
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

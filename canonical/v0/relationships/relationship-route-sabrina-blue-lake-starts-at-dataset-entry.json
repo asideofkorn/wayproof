@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-sabrina-blue-lake-dataset-profile"
+    ],
+    "object_id": "trailhead-sabrina-basin",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-sabrina-blue-lake-starts-at-dataset-entry",
+    "subject_id": "route-sabrina-blue-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

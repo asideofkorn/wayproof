@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-piute-pass-geographic-reference",
+    "evidence_id": "evidence-piute-pass-geographic-reference",
+    "notes": "",
+    "observation_id": "observation-usgs-geographic-names-bishop-creek-20260924",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

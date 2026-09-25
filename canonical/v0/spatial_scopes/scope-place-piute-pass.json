@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Piute Pass",
+    "entity_id": "place-piute-pass",
+    "kind": "pass",
+    "scope_id": "scope-place-piute-pass"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

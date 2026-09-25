@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Hiker parking by North Lake near the pack station",
+    "entity_id": "access-north-lake-hiker-parking",
+    "kind": "parking",
+    "scope_id": "scope-access-north-lake-hiker-parking"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
