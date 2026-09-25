@@ -39,6 +39,34 @@ def test_trip_bundle_drives_existing_plan_and_comparison_services():
     assert {item["distance_fit"] for item in comparison["candidates"]} == {
         "fits", "unknown", "exceeds",
     }
+    by_fit = {
+        state: [item for item in comparison["candidates"] if item["distance_fit"] == state]
+        for state in ("fits", "unknown", "exceeds")
+    }
+    assert {state: len(items) for state, items in by_fit.items()} == {
+        "fits": 11,
+        "unknown": 3,
+        "exceeds": 3,
+    }
+    assert {
+        item["route_id"] for item in comparison["candidates"]
+    } >= {
+        "route-upper-rock-creek-canyon",
+        "route-fern-lake-june",
+        "route-yost-lake",
+        "route-sabrina-blue-lake",
+        "route-piute-pass",
+        "route-lamarck-lakes",
+        "route-treasure-lakes",
+    }
+    assert next(
+        item for item in comparison["candidates"]
+        if item["route_id"] == "route-upper-rock-creek-canyon"
+    )["knowledge_gap_ids"] == []
+    assert "gap-lundy-canyon-sub-ten-turnaround" in next(
+        item for item in comparison["candidates"]
+        if item["route_id"] == "route-lundy-canyon-waterfall-beaver-dam"
+    )["knowledge_gap_ids"]
 
 
 def test_trip_bundle_keeps_private_and_unsourced_material_out_of_canonical():
