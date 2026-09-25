@@ -25,7 +25,7 @@ DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
 ROUTE_MAP_ASSET_VERSION = "20260925-1"
-EXPLORE_MAP_ASSET_VERSION = "20260925-1"
+EXPLORE_MAP_ASSET_VERSION = "20260925-2"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Map", "/map/"),

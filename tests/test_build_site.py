@@ -224,7 +224,7 @@ def test_explore_map_is_generated_from_canonical_geometry(site):
     assert 'data-map-layer="boundaries"  disabled>' in page
     assert 'data-map-expand aria-expanded="false"' in page
     assert 'href="/map/features.geojson"' in page
-    assert 'src="/assets/explore-map.js?v=20260925-1"' in page
+    assert 'src="/assets/explore-map.js?v=20260925-2"' in page
     assert payload["wayproof"]["generated_from"] == "CanonicalReadService"
     assert payload["wayproof"]["navigation_grade"] is False
     assert any(item["properties"]["entity_id"] == "route-cinder-cone-trail"
@@ -245,6 +245,10 @@ def test_explore_map_assets_support_layers_selection_and_mobile_expansion(site):
 
     assert "queryRenderedFeatures" in script
     assert "data-map-layer" in script
+    assert '"geometry-type"' in script
+    assert 'id: "wp-routes-casing"' in script
+    assert '"line-cap": "round"' in script
+    assert '"line-join": "round"' in script
     assert "is-expanded" in script
     assert "Close full screen" in script
     assert ".explore-map-shell.is-expanded" in stylesheet

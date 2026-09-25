@@ -59,12 +59,22 @@ async function loadExploreMap(container) {
     map.on("load", () => {
       map.addSource("wayproof", { type: "geojson", data });
       for (const layer of Object.keys(COLORS)) {
-        const filter = ["==", ["get", "layer"], layer];
+        const layerFilter = ["==", ["get", "layer"], layer];
+        const polygonFilter = ["all", layerFilter, ["==", ["geometry-type"], "Polygon"]];
+        const lineFilter = ["all", layerFilter, ["==", ["geometry-type"], "LineString"]];
+        const pointFilter = ["all", layerFilter, ["==", ["geometry-type"], "Point"]];
         const checked = container.querySelector(`[data-map-layer="${layer}"]`).checked;
         const layout = { visibility: checked ? "visible" : "none" };
-        map.addLayer({ id: `wp-${layer}-fill`, type: "fill", source: "wayproof", filter, paint: { "fill-color": COLORS[layer], "fill-opacity": 0.2 }, layout });
-        map.addLayer({ id: `wp-${layer}-line`, type: "line", source: "wayproof", filter, paint: { "line-color": COLORS[layer], "line-width": layer === "routes" ? 4 : 2 }, layout });
-        map.addLayer({ id: `wp-${layer}-point`, type: "circle", source: "wayproof", filter, paint: { "circle-color": COLORS[layer], "circle-radius": layer === "camping" ? 4 : 6, "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 }, layout });
+        map.addLayer({ id: `wp-${layer}-fill`, type: "fill", source: "wayproof", filter: polygonFilter, paint: { "fill-color": COLORS[layer], "fill-opacity": 0.2 }, layout });
+        if (layer === "routes") {
+          map.addLayer({ id: "wp-routes-casing", type: "line", source: "wayproof", filter: lineFilter,
+            layout: { ...layout, "line-cap": "round", "line-join": "round" },
+            paint: { "line-color": "#0b1b18", "line-width": 8, "line-opacity": 0.82 } });
+        }
+        map.addLayer({ id: `wp-${layer}-line`, type: "line", source: "wayproof", filter: lineFilter,
+          layout: { ...layout, "line-cap": "round", "line-join": "round" },
+          paint: { "line-color": COLORS[layer], "line-width": layer === "routes" ? 5 : 2 } });
+        map.addLayer({ id: `wp-${layer}-point`, type: "circle", source: "wayproof", filter: pointFilter, paint: { "circle-color": COLORS[layer], "circle-radius": layer === "camping" ? 4 : 6, "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 }, layout });
       }
       const points = data.features.flatMap(feature => coordinates(feature.geometry));
       if (points.length) {
@@ -84,6 +94,7 @@ async function loadExploreMap(container) {
     });
     for (const checkbox of container.querySelectorAll("[data-map-layer]")) checkbox.addEventListener("change", () => {
       for (const suffix of ["fill", "line", "point"]) map.setLayoutProperty(`wp-${checkbox.dataset.mapLayer}-${suffix}`, "visibility", checkbox.checked ? "visible" : "none");
+      if (checkbox.dataset.mapLayer === "routes") map.setLayoutProperty("wp-routes-casing", "visibility", checkbox.checked ? "visible" : "none");
     });
     const expand = container.querySelector("[data-map-expand]");
     expand.addEventListener("click", () => {
