@@ -24,6 +24,7 @@ DEL_VALLE_ID = "park-del-valle-regional-park"
 DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
+INTERACTIVE_MAP_PILOT_ROUTE_ID = "route-cinder-cone-trail"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Parks", "/parks/"),
@@ -186,7 +187,8 @@ def render_site_footer() -> str:
     )
 
 
-def _page(title: str, description: str, canonical: str, body: str) -> str:
+def _page(title: str, description: str, canonical: str, body: str,
+          head_extra: str = "") -> str:
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -196,6 +198,7 @@ def _page(title: str, description: str, canonical: str, body: str) -> str:
 <meta name="description" content="{_e(description)}">
 <link rel="canonical" href="{_e(canonical)}">
 <link rel="stylesheet" href="/style.css">
+{head_extra}
 </head>
 <body>
 {body}
@@ -253,7 +256,8 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
     })
 
 
-def _route_map_html(geometry: dict, geometry_url: str) -> str:
+def _route_map_html(geometry: dict, geometry_url: str,
+                    interactive: bool = False) -> str:
     """Render a dependency-free overview from generated route GeoJSON."""
     features = geometry["features"]
     points = [point for feature in features
@@ -291,20 +295,45 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
     start_x, start_y = project(points[0])
     end_x, end_y = project(points[-1])
     total = geometry["wayproof"]["distance_miles"]
-    return (
-        '<section id="route-map" class="route-map"><h2>Route map</h2>'
-        '<p>This overview is built from a reviewed, versioned source snapshot. '
-        'It is planning evidence, not navigation-grade mapping.</p>'
+    svg = (
         f'<svg viewBox="0 0 {width:.0f} {height:.0f}" role="img" '
         'aria-label="Evidence-backed route overview">'
         '<g class="route-lines">' + "".join(paths) + '</g>'
         f'<circle class="route-start" cx="{start_x:.2f}" cy="{start_y:.2f}" r="7"/>'
         f'<circle class="route-end" cx="{end_x:.2f}" cy="{end_y:.2f}" r="8"/>'
-        '</svg><div class="route-map-legend">'
+        '</svg>'
+    )
+    interactive_map = ""
+    fallback = svg
+    script = ""
+    if interactive:
+        interactive_map = (
+            '<div class="interactive-route-map" data-interactive-route-map '
+            f'data-geometry-url="{_e(geometry_url)}">'
+            '<div class="route-map-controls" role="group" aria-label="Basemap layer">'
+            '<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>'
+            '<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>'
+            '<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button>'
+            '</div><div class="route-map-canvas" data-map-canvas '
+            'aria-label="Interactive evidence-backed route map"></div>'
+            '<p class="meta route-map-status" data-map-status aria-live="polite">'
+            'Loading interactive map…</p></div>'
+        )
+        fallback = (
+            '<details class="route-map-fallback" open>'
+            '<summary>Simplified route diagram</summary>' + svg + '</details>'
+        )
+        script = '<script type="module" src="/assets/route-map.js"></script>'
+    return (
+        '<section id="route-map" class="route-map"><h2>Route map</h2>'
+        '<p>This overview is built from a reviewed, versioned source snapshot. '
+        'It is planning evidence, not navigation-grade mapping.</p>'
+        + interactive_map + fallback + '<div class="route-map-legend">'
         f'<span><i class="start-dot"></i>Start</span><span><i class="end-dot"></i>Destination</span>'
         f'<span>{_e(round(total, 2))} miles one way</span></div>'
         f'<p class="meta"><a href="{_e(geometry_url)}">Download generated GeoJSON</a> · '
-        f'{len(features)} canonical segments · source geometry accuracy not reported</p></section>'
+        f'{len(features)} canonical segments · source geometry accuracy not reported</p>'
+        + script + '</section>'
     )
 
 
@@ -712,7 +741,8 @@ def render_entity_html(payload: dict, site_url: str,
     ]
     if payload["route_geometry"]:
         body.append(_route_map_html(
-            payload["route_geometry"], payload["route_geometry_url"]
+            payload["route_geometry"], payload["route_geometry_url"],
+            interactive=entity["entity_id"] == INTERACTIVE_MAP_PILOT_ROUTE_ID,
         ))
     if summary:
         body.append('<section aria-labelledby="at-a-glance"><h2 id="at-a-glance">At a glance</h2>'
@@ -824,11 +854,16 @@ def render_entity_html(payload: dict, site_url: str,
         'Canonical data is historical evidence, not a guarantee of current conditions. '
         'Recheck volatile facts before travel.</p>'
     )
+    head_extra = (
+        '<link rel="stylesheet" href="/assets/vendor/maplibre/maplibre-gl.css">'
+        if entity["entity_id"] == INTERACTIVE_MAP_PILOT_ROUTE_ID else ""
+    )
     return _page(
         f'{entity["name"]} — Wayproof',
         f'Canonical claims, sources, gaps, and history for {entity["name"]}.',
         f'{site_url}/knowledge/{entity["entity_id"]}/',
         "\n".join(body),
+        head_extra=head_extra,
     )
 
 

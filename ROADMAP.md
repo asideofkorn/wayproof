@@ -188,6 +188,140 @@ MVP's trust model is durable.
 domain write boundary, weakening provenance, or changing the meaning of
 answerability and coverage.
 
+## M5 — Offline Wayproof PWA
+
+**Status: planned.** This milestone extends the generated website into an
+installable, verifiably offline consumer of the same canonical read and
+planning services. It does not create a second knowledge store or make browser
+storage, volatile conditions, GPS accuracy, or navigation safety appear more
+certain than they are.
+
+**Outcome:** a person can install Wayproof, download the complete public
+knowledge library, browse and search it without connectivity, build a bounded
+trip plan locally, and later view foreground GPS position against downloaded
+route geometry.
+
+### PWA-1 — Installable application shell
+
+- Add the web-app manifest, icons, standalone display, service worker, and
+  offline fallback.
+- Show installation and connectivity state without making connectivity a
+  prerequisite for launching the downloaded application shell.
+
+**Gate:** an installed Wayproof shell launches in airplane mode rather than
+returning a browser network error.
+
+### PWA-2 — Complete offline knowledge library
+
+- Offer one explicit download for all public Wayproof pages, canonical read
+  projections, claims, provenance, search data, and route GeoJSON.
+- Generate a versioned, content-addressed offline manifest and show download
+  size, progress, version, completion, and last-update time.
+- Exclude external webpages, large source artifacts, photographs, satellite
+  imagery, and third-party map tiles from the initial whole-library download.
+
+**Gate:** after one verified download, every Wayproof page type, public claim,
+source reference, search result, and included route geometry remains available
+in airplane mode.
+
+### PWA-3 — Updates, integrity, and recovery
+
+- Update only changed assets, remove obsolete assets, and safely recover from
+  interrupted downloads.
+- Request persistent browser storage where supported, but do not equate PWA
+  installation or a persistence request with guaranteed retention.
+- Detect missing or reclaimed content and provide explicit `ready`,
+  `downloading`, `update available`, `incomplete`, and `repair required`
+  states plus update, repair, and removal controls.
+
+**Gate:** Wayproof never reports offline readiness without verifying the
+required manifest, and can repair an intentionally interrupted or damaged
+offline library.
+
+### PWA-4 — Offline structured trip planning
+
+- Store trips and their dates, party, objectives, activities, equipment,
+  stages, and limits locally on the device.
+- Run route traversal, applicability, requirements, fulfillment coverage,
+  conflicts, answerability, candidate-itinerary construction, and recheck-list
+  generation against downloaded knowledge.
+- Keep the deterministic planning core independent of MCP, the PWA interface,
+  and any language model so every consumer applies the same domain semantics.
+- Do not claim to perform a current recheck while offline.
+
+**Gate:** the same bounded trip produces materially equivalent planning,
+readiness, gap, and recheck results through the online service and the offline
+planning core.
+
+### PWA-5 — Offline route maps
+
+- Render downloaded route and segment GeoJSON together with trailheads,
+  campsites, water, toilets, parking, junctions, peaks, and other
+  route-connected facilities.
+- Link selectable features to canonical records and preserve geometry source,
+  review state, and fitness-for-use distinctions.
+- Remain usable without a basemap. Evaluate separately licensed regional
+  basemap packages rather than bulk-caching public OpenStreetMap tile servers.
+
+**Gate:** a downloaded route and its evidenced planning features are
+inspectable in airplane mode without inferring connections from proximity.
+
+### PWA-6 — Foreground GPS positioning
+
+- With explicit permission, show device position and accuracy against
+  downloaded geometry and calculate nearest segment, distance off-route,
+  along-route progress, and nearby facilities locally.
+- Keep live location on the device and display stale-position, poor-accuracy,
+  and off-route states explicitly.
+- Initially exclude background track recording, turn-by-turn navigation,
+  automatic rerouting, and emergency-navigation guarantees.
+
+**Gate:** field tests demonstrate understandable foreground positioning and
+uncertainty while the phone is offline.
+
+### PWA-7 — Field validation
+
+- Exercise installation, airplane-mode use, interrupted updates, storage
+  reclamation, repair, battery consumption, GPS behavior, and map performance
+  on supported iPhone and Android devices.
+- Complete representative no-service trips and record failures or ambiguity as
+  product gaps rather than silently weakening readiness guarantees.
+
+**Exit criteria:** Wayproof can verify that its complete public planning
+library is available offline, disclose when it is incomplete or outdated, run
+the shared structured planner locally, and show foreground device position
+against downloaded route geometry without transmitting that position.
+
+## Later horizon — Native iOS application and local agent
+
+**Status: considered, not committed.** A native iOS client may follow the PWA
+only after the shared offline planning core and field contracts are proven.
+
+- Reuse the canonical read projections, evidence semantics, geometry
+  identifiers, and deterministic planning core rather than creating a native
+  planning implementation with different answers.
+- Use native storage, maps, background behavior, and device integration where
+  they provide measured value beyond the PWA.
+- Consider an Apple-supported on-device language model on compatible devices as
+  a conversational layer that calls local Wayproof planning tools.
+- Keep prompts, plans, and location local by default; do not allow the model to
+  directly author or promote canonical knowledge.
+- Treat background tracking, native navigation, notifications, and any health
+  or emergency integration as separate safety and privacy decisions.
+
+The intended sequence is:
+
+```text
+installable PWA
+  -> complete and repairable offline library
+  -> offline structured planning
+  -> offline route maps
+  -> foreground GPS
+  -> field validation
+  -> later native iOS client
+  -> later fully local conversational agent
+```
+
 ## MVP sequencing
 
 The implementation order is deliberately:

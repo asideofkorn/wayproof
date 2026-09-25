@@ -150,6 +150,43 @@ def test_cinder_cone_route_publishes_a_reproducible_human_map(site):
     assert geometry["wayproof"]["navigation_grade"] is False
 
 
+def test_cinder_cone_route_adds_the_interactive_map_pilot(site):
+    tmp_path, _ = site
+    page = (
+        tmp_path / "knowledge" / "route-cinder-cone-trail" / "index.html"
+    ).read_text()
+
+    assert 'data-interactive-route-map' in page
+    assert 'data-geometry-url="/geometry/routes/route-cinder-cone-trail.geojson"' in page
+    assert 'data-basemap="topo" aria-pressed="true"' in page
+    assert 'data-basemap="aerial" aria-pressed="false"' in page
+    assert 'data-basemap="aerial-labels" aria-pressed="false"' in page
+    assert 'class="route-map-fallback" open' in page
+    assert 'src="/assets/route-map.js"' in page
+    assert 'href="/assets/vendor/maplibre/maplibre-gl.css"' in page
+
+    for asset in (
+        "route-map.js",
+        "vendor/maplibre/maplibre-gl.css",
+        "vendor/maplibre/maplibre-gl.mjs",
+        "vendor/maplibre/maplibre-gl-shared.mjs",
+        "vendor/maplibre/maplibre-gl-worker.mjs",
+        "vendor/maplibre/LICENSE.txt",
+    ):
+        assert (tmp_path / "assets" / asset).is_file()
+
+
+def test_interactive_map_remains_bounded_to_the_pilot_route(site):
+    tmp_path, _ = site
+    page = (
+        tmp_path / "knowledge" / "route-little-lakes-valley" / "index.html"
+    ).read_text()
+
+    assert "Route map" in page
+    assert "data-interactive-route-map" not in page
+    assert 'src="/assets/route-map.js"' not in page
+
+
 def test_relationships_show_human_names_instead_of_only_record_ids(site):
     tmp_path, _ = site
     page = (tmp_path / "knowledge" / "peak-mount-whitney" / "index.html").read_text()

@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import html
+import shutil
 import sys
 from pathlib import Path
 
@@ -206,7 +207,7 @@ preserves uncertainty, and produces traceable outdoor-planning answers.">
   <h2>Places connect only when evidence supports the edge.</h2>
   <div class="relationship-map" role="img" aria-label="A park contains a campground and has a trailhead; the campground contains campsites; the trailhead starts a route composed of segments that reach peaks and pass facilities">
     <div class="relationship-column"><strong>Park or preserve</strong><span>contains &darr;</span><strong>Campground</strong><span>contains &darr;</span><strong>Campsite</strong></div>
-    <div class="relationship-bridge" aria-hidden="true">has access &rarr;</div>
+    <div class="relationship-bridge" aria-hidden="true"><span>has access</span><b>&rarr;</b></div>
     <div class="relationship-column"><strong>Trailhead</strong><span>starts &darr;</span><strong>Route</strong><span>composed of &darr;</span><strong>Segments</strong></div>
     <div class="relationship-branch"><span>reaches &rarr; <strong>Peak</strong></span><span>passes &rarr; <strong>Water or camp</strong></span></div>
   </div>
@@ -301,6 +302,7 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
 
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "style.css").write_text(STYLESHEET)
+    shutil.copytree(Path("web_assets"), output_dir / "assets", dirs_exist_ok=True)
     # Baked into the deployed artifact (not just set in repo Settings) so the
     # custom domain survives every GitHub Actions Pages deployment.
     (output_dir / "CNAME").write_text("wayproof.dev\n")
