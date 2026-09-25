@@ -2,11 +2,12 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-mcgee-creek-day-hike-distance",
-    "question": "What evidenced turnaround keeps a McGee Creek foliage day hike within ten miles round trip?",
-    "reason": "The official source supports access and setting but does not publish a bounded day-hike destination distance.",
+    "question": "Where does the published three-mile McGee Creek beaver-pond turnaround join the retained dataset mainline?",
+    "reason": "The published turnaround distance resolves the bounded day-hike option, but the source does not publish a coordinate or dataset feature identifier for the pond; Wayproof does not split or snap the official mainline by proximity.",
     "related_ids": [
       "route-mcgee-creek",
-      "trailhead-mcgee-creek"
+      "route-mcgee-creek-beaver-pond",
+      "place-mcgee-creek-beaver-pond"
     ]
   },
   "record_type": "gap",

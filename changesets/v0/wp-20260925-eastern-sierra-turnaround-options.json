@@ -1,0 +1,1287 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-eastern-sierra-turnaround-options",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mcgee-creek-beaver-pond.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-mcgee-creek-beaver-pond",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mcgee-creek-beaver-pond.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "place-mcgee-creek-beaver-pond",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lundy-canyon-waterfall-beaver-dam.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-lundy-canyon-waterfall-beaver-dam",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-lundy-canyon-waterfall-beaver-dam.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "place-lundy-canyon-waterfall-beaver-dam",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-dataset-end.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-dataset-end",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lundy-lower-dataset-end.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-lundy-lower-dataset-end",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-01.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-01.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-02.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-02.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-03.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-03.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-04.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-04.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-05.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-05.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-06.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-06.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-07.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-07.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-08.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-08.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-09.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-09.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-10.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-10.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-11.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-11",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-11.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-11",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-12.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-12",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-12.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-12",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-13.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-13",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-13.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-13",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-14.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-14",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-14.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-14",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-mcgee-pass-15.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-node-mcgee-pass-15",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-15.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-15",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-mcgee-pass-16.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "route-segment-mcgee-pass-16",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-mcgee-creek-beaver-pond.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "scope-route-mcgee-creek-beaver-pond",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-lundy-canyon-waterfall-beaver-dam.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "scope-route-lundy-canyon-waterfall-beaver-dam",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-mono-county-mcgee-fall-color-map.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "source-mono-county-mcgee-fall-color-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-mono-county-lundy-canyon-trail.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "source-mono-county-lundy-canyon-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-mcgee-lundy-routes-20260925.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "observation-usgs-mcgee-lundy-routes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-mono-county-mcgee-beaver-pond-20260925.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "observation-mono-county-mcgee-beaver-pond-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-mono-county-lundy-waterfall-beaver-dam-20260925.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "observation-mono-county-lundy-waterfall-beaver-dam-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-01.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-02.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-03.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-04.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-05.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-06.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-06",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-07.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-07",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-08.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-08",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-09.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-09",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-10.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-10",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-11.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-11",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-12.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-12",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-13.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-13",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-14.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-14",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-15.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-15",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-mcgee-pass-16.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-segment-mcgee-pass-16",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-mcgee-creek-dataset-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-mcgee-creek-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-mcgee-creek-beaver-pond-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-mcgee-creek-beaver-pond-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-lundy-canyon-waterfall-beaver-dam-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "evidence-route-lundy-canyon-waterfall-beaver-dam-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-01.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-02.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-03.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-04.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-05.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-06.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-07.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-08.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-09.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-09",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-10.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-10",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-11.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-11",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-12.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-12",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-13.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-13",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-14.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-14",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-15.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-15",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-mcgee-pass-16.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-segment-mcgee-pass-16",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-mcgee-creek-dataset-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-mcgee-creek-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-mcgee-creek-beaver-pond-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-mcgee-creek-beaver-pond-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-lundy-canyon-waterfall-beaver-dam-profile.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "claim-route-lundy-canyon-waterfall-beaver-dam-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-01-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-01-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-01-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-01-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-02-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-02-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-02-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-02-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-03-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-03-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-03-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-03-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-04-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-04-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-04-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-04-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-05-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-05-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-05-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-05-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-06-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-06-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-06-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-06-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-06-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-06-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-07-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-07-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-07-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-07-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-07-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-07-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-08-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-08-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-08-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-08-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-08-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-08-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-09-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-09-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-09-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-09-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-09-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-09-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-10-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-10-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-10-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-10-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-10-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-10-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-11-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-11-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-11-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-11-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-11-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-11-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-12-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-12-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-12-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-12-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-12-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-12-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-13-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-13-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-13-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-13-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-13-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-13-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-14-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-14-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-14-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-14-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-14-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-14-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-15-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-15-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-15-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-15-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-15-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-15-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-16-starts-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-16-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-16-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-16-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-mcgee-pass-16-part-of-mcgee-creek.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-segment-mcgee-pass-16-part-of-mcgee-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mcgee-creek-starts-at-trailhead.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-mcgee-creek-starts-at-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-mcgee-creek-ends-at-dataset-end.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-route-mcgee-creek-ends-at-dataset-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-trailhead-accesses-beaver-pond-route.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-mcgee-trailhead-accesses-beaver-pond-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-beaver-pond-route-part-of-corridor.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-mcgee-beaver-pond-route-part-of-corridor",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgee-beaver-pond-route-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-mcgee-beaver-pond-route-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-trailhead-accesses-waterfall-route.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-lundy-trailhead-accesses-waterfall-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-waterfall-route-part-of-canyon.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-lundy-waterfall-route-part-of-canyon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lundy-waterfall-route-ends-at.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "relationship-lundy-waterfall-route-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-mcgee-creek-day-hike-distance.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "gap-mcgee-creek-day-hike-distance",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lundy-canyon-sub-ten-turnaround.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "gap-lundy-canyon-sub-ten-turnaround",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-mcgee-creek-beaver-pond-ten-mile-day-hike-fit.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "result-route-mcgee-creek-beaver-pond-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-mcgee-creek-full-corridor-ten-mile-day-hike-fit.json",
+      "reason": "Add full-corridor route depth and evidence-bounded foliage turnaround options for McGee Creek and Lundy Canyon.",
+      "record_id": "result-route-mcgee-creek-full-corridor-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add complete McGee corridor geometry and distinct McGee and Lundy foliage turnaround options while preserving exact-junction uncertainty."
+}

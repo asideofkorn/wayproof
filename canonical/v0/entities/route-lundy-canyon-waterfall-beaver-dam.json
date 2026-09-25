@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-lundy-canyon-waterfall-beaver-dam",
+    "kind": "route",
+    "name": "Lundy Canyon Waterfall and Beaver Dam Outing"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

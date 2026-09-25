@@ -2,10 +2,12 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-lundy-canyon-sub-ten-turnaround",
-    "question": "Which evidenced lower-canyon turnaround keeps Lundy Canyon below ten miles round trip?",
-    "reason": "The published 20 Lakes Basin destination is 5.4 miles one way and exceeds the stated ten-mile round-trip maximum.",
+    "question": "What exact segment endpoint represents the Lundy Canyon waterfall and beaver-dam turnaround?",
+    "reason": "The county source supports an approximately three-mile outing and named features, but does not publish an exact turnaround coordinate or segment-level mileage; the option remains distinct from the full 5.4-mile one-way continuation.",
     "related_ids": [
-      "route-lundy-canyon"
+      "route-lundy-canyon",
+      "route-lundy-canyon-waterfall-beaver-dam",
+      "place-lundy-canyon-waterfall-beaver-dam"
     ]
   },
   "record_type": "gap",

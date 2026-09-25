@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-mcgee-pass-01",
+    "kind": "route_node",
+    "name": "McGee Pass dataset node 1"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

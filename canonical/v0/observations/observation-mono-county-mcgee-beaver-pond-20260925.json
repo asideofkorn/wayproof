@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Eastern Sierra fall-color map describes a steady three-mile climb along McGee Creek through aspen groves to an active beaver pond suitable as a lunch stop.",
+    "observation_id": "observation-mono-county-mcgee-beaver-pond-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T02:30:00+00:00",
+    "source_id": "source-mono-county-mcgee-fall-color-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

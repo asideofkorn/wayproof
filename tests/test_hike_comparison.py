@@ -21,7 +21,9 @@ def test_east_fork_hike_candidates_compare_against_ten_mile_cap():
         "route-parker-lake",
         "route-heart-lake-mammoth",
         "route-convict-lake-loop",
+        "route-mcgee-creek-beaver-pond",
         "route-mcgee-creek",
+        "route-lundy-canyon-waterfall-beaver-dam",
         "route-lundy-canyon",
     ), 10)
     by_id = {item.route_id: item for item in comparison.candidates}
@@ -30,7 +32,9 @@ def test_east_fork_hike_candidates_compare_against_ten_mile_cap():
     assert by_id["route-parker-lake"].distance_fit is DistanceFit.FITS
     assert by_id["route-little-lakes-valley"].distance_fit is DistanceFit.FITS
     assert by_id["route-tamarack-lakes-rock-creek"].distance_fit is DistanceFit.EXCEEDS
-    assert by_id["route-mcgee-creek"].distance_fit is DistanceFit.UNKNOWN
+    assert by_id["route-mcgee-creek-beaver-pond"].distance_fit is DistanceFit.FITS
+    assert by_id["route-mcgee-creek"].distance_fit is DistanceFit.EXCEEDS
+    assert by_id["route-lundy-canyon-waterfall-beaver-dam"].distance_fit is DistanceFit.UNKNOWN
     assert by_id["route-lundy-canyon"].distance_fit is DistanceFit.EXCEEDS
     assert by_id["route-parker-lake"].distance_claim_ids == ("claim-parker-lake-route-profile",)
     assert "gap-mcgee-creek-day-hike-distance" in by_id["route-mcgee-creek"].knowledge_gap_ids
@@ -43,7 +47,7 @@ def test_comparison_orders_fit_then_unknown_then_exceeds():
         "route-tamarack-lakes-rock-creek", "route-mcgee-creek", "route-parker-lake",
     ), 10)
     assert [item.distance_fit for item in comparison.candidates] == [
-        DistanceFit.FITS, DistanceFit.UNKNOWN, DistanceFit.EXCEEDS,
+        DistanceFit.FITS, DistanceFit.EXCEEDS, DistanceFit.EXCEEDS,
     ]
 
 
@@ -63,4 +67,4 @@ def test_mcp_compare_hikes_exposes_plain_provenance_and_gaps():
     assert result["maximum_round_trip_miles"] == 10
     assert result["candidates"][0]["distance_fit"] == "fits"
     assert result["candidates"][0]["distance_claim_ids"]
-    assert result["candidates"][1]["distance_fit"] == "unknown"
+    assert result["candidates"][1]["distance_fit"] == "exceeds"

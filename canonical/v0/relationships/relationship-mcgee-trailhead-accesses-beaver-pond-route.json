@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-mcgee-creek-beaver-pond-profile"
+    ],
+    "object_id": "route-mcgee-creek-beaver-pond",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mcgee-trailhead-accesses-beaver-pond-route",
+    "subject_id": "trailhead-mcgee-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

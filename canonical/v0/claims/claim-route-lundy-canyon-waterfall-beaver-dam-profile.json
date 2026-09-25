@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-lundy-canyon-waterfall-beaver-dam-profile",
+    "evidence_ids": [
+      "evidence-route-lundy-canyon-waterfall-beaver-dam-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-lundy-canyon-waterfall-beaver-dam"
+    ],
+    "subject_id": "route-lundy-canyon-waterfall-beaver-dam",
+    "temporal_scope": null,
+    "value": {
+      "distance_precision": "about",
+      "extension_destinations": [
+        "Lake Helen",
+        "20 Lakes Basin",
+        "Saddlebag Lake"
+      ],
+      "features": [
+        "waterfall",
+        "beaver dam"
+      ],
+      "published_distance_miles": 3,
+      "route_shape": "out_and_back"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

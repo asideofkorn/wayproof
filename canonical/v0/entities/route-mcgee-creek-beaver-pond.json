@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-mcgee-creek-beaver-pond",
+    "kind": "route",
+    "name": "McGee Creek to Beaver Pond"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
