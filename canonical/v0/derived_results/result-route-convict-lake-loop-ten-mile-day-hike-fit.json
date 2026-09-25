@@ -1,15 +1,18 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "The official visitor guide publishes a two-mile hike around the lake; the dataset shore-trail endpoints remain visibly unclosed.",
+    "explanation": "Both the guide's two-mile description and the approximately 2.5-mile complete reviewed geometry fit the trip's ten-mile limit; the discrepancy remains visible.",
     "input_ids": [
-      "claim-convict-lake-loop-published-profile"
+      "claim-convict-lake-loop-published-profile",
+      "claim-convict-lake-loop-ordered-geometry"
     ],
     "kind": "distance_limit_fit",
     "result_id": "result-route-convict-lake-loop-ten-mile-day-hike-fit",
     "value": {
       "current_conditions_required": true,
+      "distance_conflict_visible": true,
       "fits_distance_limit": true,
+      "geometry_derived_loop_miles": 2.49882557,
       "published_round_trip_miles": 2,
       "route_id": "route-convict-lake-loop",
       "trip_distance_limit_miles": 10

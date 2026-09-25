@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-lake-loop-ordered-geometry",
+    "evidence_ids": [
+      "evidence-convict-lake-loop-ordered-geometry"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-route-convict-lake-loop"
+    ],
+    "subject_id": "route-convict-lake-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 2.49882557,
+      "distance_status": "mixed_source_published_and_geometry_derived",
+      "route_shape": "loop",
+      "segment_ids": [
+        "route-segment-convict-lake-loop-01",
+        "route-segment-convict-lake-loop-02",
+        "route-segment-convict-lake-loop-03",
+        "route-segment-convict-lake-loop-04",
+        "route-segment-convict-lake-loop-05",
+        "route-segment-convict-lake-loop-east-south-road-link",
+        "route-segment-convict-lake-loop-east-shore-trail",
+        "route-segment-convict-lake-loop-east-north-road-link"
+      ],
+      "start_node_id": "route-node-convict-lake-loop-east"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

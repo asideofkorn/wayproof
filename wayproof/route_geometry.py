@@ -8,7 +8,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from .traversal import TraversalState, resolve_traversal
+from .traversal import TraversalLeg, TraversalState, resolve_traversal
 
 
 class RouteGeometryError(ValueError):
@@ -83,18 +83,99 @@ class RouteGeometryService:
         )
         if not has_geometry:
             return None
-        entry_id, exit_id = self._route_endpoints(route_id)
-        traversal = resolve_traversal(
-            self._reads, route, self._reads.entity(entry_id),
-            self._reads.entity(exit_id), as_of,
+        sequence_claims = tuple(
+            claim for claim in self._reads.claims_for(route_id)
+            if claim.predicate == "ordered_route_geometry"
         )
-        if traversal.state is not TraversalState.COMPLETE:
-            raise RouteGeometryError(
-                f"route traversal is {traversal.state.value}; geometry cannot be projected"
+        route_shape = None
+        if sequence_claims:
+            if len(sequence_claims) != 1:
+                raise RouteGeometryError("route has multiple ordered geometry claims")
+            sequence = sequence_claims[0].value
+            segment_ids = tuple(sequence.get("segment_ids", ()))
+            entry_id = sequence.get("start_node_id", "")
+            route_shape = sequence.get("route_shape")
+            if not segment_ids or not entry_id:
+                raise RouteGeometryError(
+                    "ordered route geometry requires segment_ids and start_node_id"
+                )
+            if not set(segment_ids).issubset(member_segments):
+                raise RouteGeometryError(
+                    "ordered route geometry contains a segment outside the route"
+                )
+            legs = []
+            current_node = entry_id
+            for index, segment_id in enumerate(segment_ids, start=1):
+                relationships = tuple(
+                    item for item in self._reads.relationships_for(segment_id)
+                    if item.subject_id == segment_id
+                )
+                starts = tuple(
+                    item.object_id for item in relationships if item.predicate == "starts_at"
+                )
+                ends = tuple(
+                    item.object_id for item in relationships if item.predicate == "ends_at"
+                )
+                if len(starts) != 1 or len(ends) != 1:
+                    raise RouteGeometryError(
+                        f"ordered segment {segment_id} requires one start and one end"
+                    )
+                if current_node == starts[0]:
+                    next_node = ends[0]
+                elif current_node == ends[0]:
+                    next_node = starts[0]
+                else:
+                    raise RouteGeometryError(
+                        f"ordered segment {segment_id} does not connect to {current_node}"
+                    )
+                topology_claims = tuple(
+                    claim for claim in self._reads.claims_for(segment_id)
+                    if isinstance(claim.value, dict)
+                    and claim.value.get("geometry_snapshot")
+                )
+                if len(topology_claims) != 1:
+                    raise RouteGeometryError(
+                        f"ordered segment {segment_id} requires one geometry claim"
+                    )
+                value = topology_claims[0].value
+                legs.append(TraversalLeg(
+                    index,
+                    segment_id,
+                    current_node,
+                    next_node,
+                    value.get("distance_miles"),
+                    value.get(
+                        "distance_status",
+                        "known" if value.get("distance_miles") is not None else "unknown",
+                    ),
+                ))
+                current_node = next_node
+            exit_id = current_node
+            if route_shape == "loop" and exit_id != entry_id:
+                raise RouteGeometryError("ordered loop geometry does not return to its start")
+            geometry_legs = tuple(legs)
+            total_known_distance = round(
+                sum(item.distance_miles or 0.0 for item in geometry_legs), 10
             )
+            distance_complete = all(
+                item.distance_miles is not None for item in geometry_legs
+            )
+        else:
+            entry_id, exit_id = self._route_endpoints(route_id)
+            traversal = resolve_traversal(
+                self._reads, route, self._reads.entity(entry_id),
+                self._reads.entity(exit_id), as_of,
+            )
+            if traversal.state is not TraversalState.COMPLETE:
+                raise RouteGeometryError(
+                    f"route traversal is {traversal.state.value}; geometry cannot be projected"
+                )
+            geometry_legs = traversal.legs
+            total_known_distance = traversal.total_known_distance_miles
+            distance_complete = traversal.distance_complete
 
         output = []
-        for leg in traversal.legs:
+        for leg in geometry_legs:
             claims = tuple(
                 item for item in self._reads.claims_for(leg.segment_id)
                 if isinstance(item.value, dict) and item.value.get("geometry_snapshot")
@@ -172,16 +253,26 @@ class RouteGeometryService:
                 right["geometry"]["coordinates"][0],
             ):
                 raise RouteGeometryError("generated route geometry is disconnected")
-        return {
+        if route_shape == "loop" and output and not _close(
+            output[-1]["geometry"]["coordinates"][-1],
+            output[0]["geometry"]["coordinates"][0],
+        ):
+            raise RouteGeometryError(
+                "generated loop geometry does not return to its start"
+            )
+        result = {
             "type": "FeatureCollection",
             "wayproof": {
                 "route_id": route_id,
                 "entry_id": entry_id,
                 "exit_id": exit_id,
-                "distance_miles": traversal.total_known_distance_miles,
-                "distance_complete": traversal.distance_complete,
+                "distance_miles": total_known_distance,
+                "distance_complete": distance_complete,
                 "geometry_status": "reviewed_source_snapshot",
                 "navigation_grade": False,
             },
             "features": output,
         }
+        if route_shape:
+            result["wayproof"]["route_shape"] = route_shape
+        return result

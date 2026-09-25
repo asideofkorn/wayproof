@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/usgs-convict-lake-loop-closure-20260925.geojson"
+    ],
+    "content": "The July 2026 USGS Transportation service returns the Convict Lake Road and Boat Launch road features plus a paved 0.34564349-mile CONVICT LAKE VIS trail. Their geometry matches the road-trail-road loop closure depicted by the official Forest Service hiking map. The south road feature intersects the paved trail endpoint within 0.4 meter; the north road and retained trail endpoints match within approximately 1.4 meters.",
+    "observation_id": "observation-usgs-convict-loop-closure-geometry-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T11:00:00+00:00",
+    "source_id": "source-usgs-national-map-transportation-convict-20260925"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
