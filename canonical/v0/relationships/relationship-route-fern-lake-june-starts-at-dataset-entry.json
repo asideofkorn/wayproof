@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-fern-lake-june-dataset-profile"
+    ],
+    "object_id": "trailhead-yost-fern",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-route-fern-lake-june-starts-at-dataset-entry",
+    "subject_id": "route-fern-lake-june",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

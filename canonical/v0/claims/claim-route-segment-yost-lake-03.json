@@ -1,0 +1,44 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-yost-lake-03",
+    "evidence_ids": [
+      "evidence-route-segment-yost-lake-03"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-yost-lake"
+    ],
+    "subject_id": "route-segment-yost-lake-03",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "dataset_feature_id": "{F722E944-8504-41A9-A78C-1FE923867A83}",
+      "dataset_feature_name": "YOST MEADOW LOOP",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.18272396,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.74783365377253,
+        "longitude": -119.09527881775203
+      },
+      "geometry_snapshot": {
+        "feature_id": "{F722E944-8504-41A9-A78C-1FE923867A83}",
+        "path": "geometry/v0/snapshots/usgs-june-lake-yost-fern-routes-20260924.geojson",
+        "sha256": "f30e94212d25790e766c88b6a5914779bf381c3d19ef7a3e79a1ecdbfe10170b"
+      },
+      "corridor_role": "destination_branch", "route_role": "official_mainline",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "2862",
+      "source_load_date": 1777310283000,
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.749935231959334,
+        "longitude": -119.0971766828856
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

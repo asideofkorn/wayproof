@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/usgs-june-lake-yost-fern-routes-20260924.geojson",
+      "f30e94212d25790e766c88b6a5914779bf381c3d19ef7a3e79a1ecdbfe10170b"
+    ],
+    "content": "Ten selected public-domain trail features form a connected Yost/Fern network: two shared features lead from the retained dataset entry to the branch, four continue to Fern Lake, and four continue to Yost Lake. The retained source-field distances do not fully agree with the separately published USFS hiking-guide distances.",
+    "observation_id": "observation-usgs-june-lake-yost-fern-routes-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T21:00:00+00:00",
+    "source_id": "source-usgs-national-digital-trails-eastern-sierra-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

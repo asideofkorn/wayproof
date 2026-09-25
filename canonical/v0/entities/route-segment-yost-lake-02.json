@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yost-lake-02",
+    "kind": "route_segment",
+    "name": "Yost Lake branch segment 2"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

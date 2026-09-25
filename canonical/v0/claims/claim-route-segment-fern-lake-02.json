@@ -1,0 +1,44 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-fern-lake-02",
+    "evidence_ids": [
+      "evidence-route-segment-fern-lake-02"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-route-fern-lake-june"
+    ],
+    "subject_id": "route-segment-fern-lake-02",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "dataset_feature_id": "{575C76F4-327E-416D-800F-204B8C948846}",
+      "dataset_feature_name": "FERN LAKE",
+      "dataset_field": "lengthmiles",
+      "distance_miles": 0.41641016,
+      "distance_status": "known",
+      "end_coordinate": {
+        "latitude": 37.749934558112535,
+        "longitude": -119.11017331731131
+      },
+      "geometry_snapshot": {
+        "feature_id": "{575C76F4-327E-416D-800F-204B8C948846}",
+        "path": "geometry/v0/snapshots/usgs-june-lake-yost-fern-routes-20260924.geojson",
+        "sha256": "f30e94212d25790e766c88b6a5914779bf381c3d19ef7a3e79a1ecdbfe10170b"
+      },
+      "corridor_role": "destination_branch", "route_role": "official_mainline",
+      "source_dataset_id": "{8CC4DB36-D0BE-4189-88C7-64C3569EB754}",
+      "source_edit_date": 1774742400000,
+      "source_feature_id": "3017",
+      "source_load_date": 1777310283000,
+      "source_originator": "U.S. Forest Service",
+      "start_coordinate": {
+        "latitude": 37.75518889405645,
+        "longitude": -119.10970322303906
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

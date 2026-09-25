@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-fern-lake-03",
+    "kind": "route_segment",
+    "name": "Fern Lake branch segment 3"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

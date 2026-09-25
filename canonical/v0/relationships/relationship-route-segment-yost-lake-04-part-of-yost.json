@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-yost-lake-04"
+    ],
+    "object_id": "route-yost-lake",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-yost-lake-04-part-of-yost",
+    "subject_id": "route-segment-yost-lake-04",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

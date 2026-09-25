@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-yost-fern-fork",
+    "kind": "route_node",
+    "name": "Yost and Fern Lakes route fork"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

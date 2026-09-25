@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-yost-fern-shared-01",
+    "kind": "route_node",
+    "name": "Yost and Fern shared-route node 1"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

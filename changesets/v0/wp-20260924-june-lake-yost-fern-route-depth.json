@@ -1,0 +1,783 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260924-june-lake-yost-fern-route-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yost-fern-fork.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-yost-fern-fork",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yost-fern-shared-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-yost-fern-shared-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-fern-shared-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-fern-shared-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-fern-shared-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-fern-shared-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-fern-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-fern-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-fern-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-fern-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-fern-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-fern-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-fern-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-fern-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-fern-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-fern-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-fern-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-fern-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-fern-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-fern-lake-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yost-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-yost-lake-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yost-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-yost-lake-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yost-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-node-yost-lake-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yost-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "route-segment-yost-lake-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-june-lake-yost-fern-routes-20260924.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "observation-usgs-june-lake-yost-fern-routes-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-fern-shared-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-fern-shared-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-fern-shared-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-fern-shared-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-fern-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-fern-lake-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-fern-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-fern-lake-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-fern-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-fern-lake-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-fern-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-fern-lake-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-fern-lake-june-dataset-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-fern-lake-june-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-lake-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-lake-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-lake-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-yost-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-segment-yost-lake-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-yost-lake-dataset-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-yost-lake-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-fern-lake-june-published-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-fern-lake-june-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-yost-lake-published-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "evidence-route-yost-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-fern-shared-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-fern-shared-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-fern-shared-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-fern-shared-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-fern-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-fern-lake-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-fern-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-fern-lake-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-fern-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-fern-lake-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-fern-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-fern-lake-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-fern-lake-june-dataset-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-fern-lake-june-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-lake-01.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-lake-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-lake-02.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-lake-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-lake-03.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-lake-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-yost-lake-04.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-segment-yost-lake-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-yost-lake-dataset-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-yost-lake-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-fern-lake-june-published-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-fern-lake-june-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-yost-lake-published-profile.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "claim-route-yost-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-01-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-01-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-01-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-01-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-01-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-01-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-02-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-02-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-02-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-02-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-fern-shared-02-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-fern-shared-02-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-01-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-01-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-01-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-01-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-02-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-02-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-02-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-02-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-03-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-03-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-03-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-03-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-04-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-04-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-fern-lake-04-part-of-fern.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-fern-lake-04-part-of-fern",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-fern-lake-june-starts-at-dataset-entry.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-fern-lake-june-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-fern-lake-june-passes-fork.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-fern-lake-june-passes-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-01-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-01-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-01-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-01-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-02-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-02-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-02-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-02-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-03-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-03-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-03-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-03-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-04-starts-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-04-ends-at.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-yost-lake-04-part-of-yost.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-segment-yost-lake-04-part-of-yost",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-yost-lake-starts-at-dataset-entry.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-yost-lake-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-yost-lake-passes-fork.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "relationship-route-yost-lake-passes-fork",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yost-fern-dataset-distance-disagreement.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "gap-yost-fern-dataset-distance-disagreement",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-fern-lake-june-ten-mile-day-hike-fit.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "result-route-fern-lake-june-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-yost-lake-ten-mile-day-hike-fit.json",
+      "reason": "Add shared-corridor and branch topology for the Yost and Fern Lake alternatives.",
+      "record_id": "result-route-yost-lake-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add a shared Yost/Fern route corridor, evidenced destination branches, official published hike distances, map geometry, and an explicit source-distance disagreement."
+}
