@@ -24,7 +24,6 @@ DEL_VALLE_ID = "park-del-valle-regional-park"
 DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
-INTERACTIVE_MAP_PILOT_ROUTE_ID = "route-cinder-cone-trail"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Parks", "/parks/"),
@@ -256,8 +255,7 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
     })
 
 
-def _route_map_html(geometry: dict, geometry_url: str,
-                    interactive: bool = False) -> str:
+def _route_map_html(geometry: dict, geometry_url: str) -> str:
     """Render a dependency-free overview from generated route GeoJSON."""
     features = geometry["features"]
     points = [point for feature in features
@@ -303,27 +301,23 @@ def _route_map_html(geometry: dict, geometry_url: str,
         f'<circle class="route-end" cx="{end_x:.2f}" cy="{end_y:.2f}" r="8"/>'
         '</svg>'
     )
-    interactive_map = ""
-    fallback = svg
-    script = ""
-    if interactive:
-        interactive_map = (
-            '<div class="interactive-route-map" data-interactive-route-map '
-            f'data-geometry-url="{_e(geometry_url)}">'
-            '<div class="route-map-controls" role="group" aria-label="Basemap layer">'
-            '<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>'
-            '<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>'
-            '<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button>'
-            '</div><div class="route-map-canvas" data-map-canvas '
-            'aria-label="Interactive evidence-backed route map"></div>'
-            '<p class="meta route-map-status" data-map-status aria-live="polite">'
-            'Loading interactive map…</p></div>'
-        )
-        fallback = (
-            '<details class="route-map-fallback" open>'
-            '<summary>Simplified route diagram</summary>' + svg + '</details>'
-        )
-        script = '<script type="module" src="/assets/route-map.js"></script>'
+    interactive_map = (
+        '<div class="interactive-route-map" data-interactive-route-map '
+        f'data-geometry-url="{_e(geometry_url)}">'
+        '<div class="route-map-controls" role="group" aria-label="Basemap layer">'
+        '<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>'
+        '<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>'
+        '<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button>'
+        '</div><div class="route-map-canvas" data-map-canvas '
+        'aria-label="Interactive evidence-backed route map"></div>'
+        '<p class="meta route-map-status" data-map-status aria-live="polite">'
+        'Interactive map loads when scrolled into view.</p></div>'
+    )
+    fallback = (
+        '<details class="route-map-fallback" open>'
+        '<summary>Simplified route diagram</summary>' + svg + '</details>'
+    )
+    script = '<script type="module" src="/assets/route-map.js"></script>'
     return (
         '<section id="route-map" class="route-map"><h2>Route map</h2>'
         '<p>This overview is built from a reviewed, versioned source snapshot. '
@@ -742,7 +736,6 @@ def render_entity_html(payload: dict, site_url: str,
     if payload["route_geometry"]:
         body.append(_route_map_html(
             payload["route_geometry"], payload["route_geometry_url"],
-            interactive=entity["entity_id"] == INTERACTIVE_MAP_PILOT_ROUTE_ID,
         ))
     if summary:
         body.append('<section aria-labelledby="at-a-glance"><h2 id="at-a-glance">At a glance</h2>'
@@ -856,7 +849,7 @@ def render_entity_html(payload: dict, site_url: str,
     )
     head_extra = (
         '<link rel="stylesheet" href="/assets/vendor/maplibre/maplibre-gl.css">'
-        if entity["entity_id"] == INTERACTIVE_MAP_PILOT_ROUTE_ID else ""
+        if payload["route_geometry"] else ""
     )
     return _page(
         f'{entity["name"]} — Wayproof',
