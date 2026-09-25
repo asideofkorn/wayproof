@@ -13,7 +13,25 @@ existing read operations instead of creating a second planning model:
 The bundle retains user-supplied travel context for presentation but does not
 claim that Wayproof has computed or sourced the Oakland–Tioga Pass drive. The
 fall-foliage goal is likewise a preference, not a canonical foliage ranking.
-The current comparison deliberately sorts only by sourced distance fit.
+The current comparison deliberately sorts only by sourced distance fit. It now
+includes the route-depth batches added after the original trip bundle: Upper
+Rock Creek Canyon, the Yost and Fern branches, and the Sabrina/North Lake
+options. This makes the example an audit of the currently published trip corpus
+rather than a frozen list from the first planning pass.
+
+At the ten-mile round-trip threshold, the published corpus currently yields:
+
+- eleven routes with a sourced distance that fits;
+- three routes whose distance remains unknown; and
+- three longer routes retained for comparison because the traveler may hike
+  farther alone.
+
+`Fits` describes distance only. It does not erase a route's topology gap,
+source disagreement, seasonal-access uncertainty, or current-condition check.
+In particular, the short Lundy option and the Lamarck and Treasure Lakes routes
+remain distance-unknown, while the McGee beaver-pond option and Convict Lake
+Loop retain explicit topology gaps. Those are honest partial answers rather
+than reasons to omit the choices.
 
 The public example uses anonymous participant IDs and contains no reservation
 number or private confirmation evidence. The runtime fulfillment records that
