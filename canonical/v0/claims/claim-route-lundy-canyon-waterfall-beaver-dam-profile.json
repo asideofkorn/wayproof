@@ -23,6 +23,7 @@
         "beaver dam"
       ],
       "published_distance_miles": 3,
+      "round_trip_miles": 3,
       "route_shape": "out_and_back"
     }
   },

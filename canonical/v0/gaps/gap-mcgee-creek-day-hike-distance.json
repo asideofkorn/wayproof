@@ -2,12 +2,13 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-mcgee-creek-day-hike-distance",
-    "question": "Where does the published three-mile McGee Creek beaver-pond turnaround join the retained dataset mainline?",
-    "reason": "The published turnaround distance resolves the bounded day-hike option, but the source does not publish a coordinate or dataset feature identifier for the pond; Wayproof does not split or snap the official mainline by proximity.",
+    "question": "Where within the retained 2.845-mile source feature does the published McGee Creek beaver-pond turnaround occur?",
+    "reason": "The official dataset now establishes a connected 0.97791982-mile prefix, but the published three-mile beaver-pond destination lies within the next unsplit source feature. Neither source publishes a pond coordinate or feature identifier, so Wayproof retains partial topology instead of manufacturing a split point.",
     "related_ids": [
       "route-mcgee-creek",
       "route-mcgee-creek-beaver-pond",
-      "place-mcgee-creek-beaver-pond"
+      "place-mcgee-creek-beaver-pond",
+      "route-segment-mcgee-pass-07"
     ]
   },
   "record_type": "gap",

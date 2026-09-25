@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The official tourism source describes the entire out-and-back outing as about three miles; this answers distance fit without locating an exact turnaround coordinate.",
+    "input_ids": [
+      "claim-route-lundy-canyon-waterfall-beaver-dam-profile"
+    ],
+    "kind": "distance_limit_fit",
+    "result_id": "result-route-lundy-canyon-waterfall-beaver-dam-ten-mile-fit",
+    "value": {
+      "current_conditions_required": true,
+      "distance_precision": "about",
+      "exact_turnaround_location_known": false,
+      "fits_distance_limit": true,
+      "published_round_trip_miles": 3,
+      "route_id": "route-lundy-canyon-waterfall-beaver-dam",
+      "trip_distance_limit_miles": 10
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

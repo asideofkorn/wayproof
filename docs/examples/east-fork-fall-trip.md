@@ -21,16 +21,22 @@ rather than a frozen list from the first planning pass.
 
 At the ten-mile round-trip threshold, the published corpus currently yields:
 
-- thirteen routes with a sourced distance that fits;
-- one route whose distance remains unknown; and
+- fourteen routes with a sourced distance that fits;
+- no routes whose overall distance remains unknown; and
 - three longer routes retained for comparison because the traveler may hike
   farther alone.
 
 `Fits` describes distance only. It does not erase a route's topology gap,
 source disagreement, seasonal-access uncertainty, or current-condition check.
-In particular, the short Lundy option remains distance-unknown, while the McGee
-beaver-pond option and Convict Lake Loop retain explicit topology gaps. Those
-are honest partial answers rather than reasons to omit the choices.
+The short Lundy option now uses the source's qualified three-mile round-trip
+value, while retaining an explicit gap for the exact waterfall/beaver-dam
+turnaround location. The McGee beaver-pond option publishes its connected
+0.97791982-mile dataset prefix and identifies the source feature containing the
+remaining destination, without splitting that feature at an invented point.
+The Convict Lake Loop now records the official-map east-shore closure through
+the trailhead and boat-ramp area as a distinct connector whose reusable geometry
+and segment mileage remain unknown. Those bounded partial answers keep useful
+planning facts without overstating map precision.
 
 The public example uses anonymous participant IDs and contains no reservation
 number or private confirmation evidence. The runtime fulfillment records that

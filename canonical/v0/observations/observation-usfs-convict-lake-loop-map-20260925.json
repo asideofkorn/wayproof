@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official Forest Service Convict Lake hiking map depicts a continuous dotted hiking route around the lake. On the east side it connects the retained north-shore and south-shore trail endpoints through the trailhead and boat-ramp area. The map does not publish a mileage or reusable line geometry for that connector.",
+    "observation_id": "observation-usfs-convict-lake-loop-map-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T09:00:00+00:00",
+    "source_id": "source-usfs-convict-wilderness-hiking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

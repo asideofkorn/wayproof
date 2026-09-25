@@ -31,12 +31,39 @@ def test_foliage_choices_fit_trip_distance_cap_without_duration_invention():
         assert "duration" not in result.value
 
 
-def test_convict_loop_keeps_dataset_closure_unknown():
+def test_convict_loop_preserves_map_backed_closure_without_invented_distance():
     records = load_canonical(ROOT)
     claims = keyed(records.claims, "claim_id")
     gaps = keyed(records.gaps, "gap_id")
     assert claims["claim-convict-lake-loop-published-profile"].value["round_trip_miles"] == 2
-    assert "do not share a final endpoint" in gaps["gap-convict-lake-loop-dataset-closure"].reason
+    connector = claims["claim-route-segment-convict-lake-loop-east-connector"].value
+    assert connector["distance_status"] == "unknown"
+    assert connector["geometry_status"] == "official_map_depiction_without_reusable_line_geometry"
+    assert connector["route_role"] == "east_shore_closure"
+    assert "gap-convict-lake-loop-dataset-closure" not in gaps
+
+    edges = {
+        (item.subject_id, item.predicate, item.object_id)
+        for item in records.relationships
+        if item.subject_id == "route-segment-convict-lake-loop-east-connector"
+    }
+    assert edges == {
+        (
+            "route-segment-convict-lake-loop-east-connector",
+            "starts_at",
+            "route-node-convict-lake-loop-south",
+        ),
+        (
+            "route-segment-convict-lake-loop-east-connector",
+            "ends_at",
+            "route-node-convict-lake-loop-east",
+        ),
+        (
+            "route-segment-convict-lake-loop-east-connector",
+            "part_of",
+            "route-convict-lake-loop",
+        ),
+    }
 
 
 def test_foliage_route_depth_publishes_to_human_pages(generated_site):

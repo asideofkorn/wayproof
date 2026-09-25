@@ -37,15 +37,15 @@ def test_trip_bundle_drives_existing_plan_and_comparison_services():
     assert reservation["status"] == "complete"
     assert comparison["maximum_round_trip_miles"] == 10
     assert {item["distance_fit"] for item in comparison["candidates"]} == {
-        "fits", "unknown", "exceeds",
+        "fits", "exceeds",
     }
     by_fit = {
         state: [item for item in comparison["candidates"] if item["distance_fit"] == state]
         for state in ("fits", "unknown", "exceeds")
     }
     assert {state: len(items) for state, items in by_fit.items()} == {
-        "fits": 13,
-        "unknown": 1,
+        "fits": 14,
+        "unknown": 0,
         "exceeds": 3,
     }
     assert {
