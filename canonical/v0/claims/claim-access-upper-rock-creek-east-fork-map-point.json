@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-access-upper-rock-creek-east-fork-map-point",
+    "evidence_ids": [
+      "evidence-access-upper-rock-creek-east-fork-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "access-upper-rock-creek-east-fork",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "access-upper-rock-creek-east-fork",
+        "path": "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+        "sha256": "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+      },
+      "latitude": 37.49270500638693,
+      "longitude": -118.71750136887556,
+      "navigation_grade": false,
+      "provenance": "reviewed_usgs_route_endpoint",
+      "source_feature_id": "{BD9384D8-3127-4D1D-B15C-3DC2412B3D5C}",
+      "source_ids": [
+        "source-usgs-national-digital-trails-eastern-sierra-20260924"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

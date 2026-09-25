@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+      "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+    ],
+    "content": "Reviewed National Digital Trails features place evidenced route endpoints at the Parker Lake, McGee Creek, Tamarack Lakes, Mosquito Flat, North Lake, Sabrina Basin, South Lake, Yost/Fern, Upper Rock Creek/East Fork, and Lundy Canyon access identities. The Lundy endpoint is independently corroborated by a named OpenStreetMap trailhead point approximately ten meters away.",
+    "observation_id": "observation-usgs-eastern-sierra-trailhead-endpoints-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T13:00:00+00:00",
+    "source_id": "source-usgs-national-digital-trails-eastern-sierra-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

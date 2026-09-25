@@ -1,0 +1,256 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -118.71750136887556,
+          37.49270500638693
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "access-upper-rock-creek-east-fork",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-upper-rock-creek-canyon",
+        "source_feature_id": "{BD9384D8-3127-4D1D-B15C-3DC2412B3D5C}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.852744,
+          37.59512
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-convict-lake",
+        "provenance": "official_usfs_recreation_point",
+        "source_feature_id": "USFS recreation area 21340",
+        "source_ids": [
+          "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.7376,
+          37.4566
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-hilton-lakes-rock-creek",
+        "provenance": "official_usfs_recreation_point",
+        "source_feature_id": "USFS recreation area 83267",
+        "source_ids": [
+          "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.26182901097219,
+          38.02253187987994
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-lundy-canyon",
+        "provenance": "reviewed_usgs_route_endpoint_corroborated_by_osm",
+        "source_feature_id": "{5B21FCE1-DB4A-4F9B-9A35-0D8E6F262D22}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924",
+          "source-osm-nominatim-eastern-sierra-trailheads-20260925"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.802599874441,
+          37.55101794965568
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-mcgee-creek",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-mcgee-creek",
+        "source_feature_id": "{3F2DFBCB-6A5E-46D8-94A9-3BBF48627E3F}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.74716727403785,
+          37.43517256793456
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-mosquito-flat",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-little-lakes-valley",
+        "source_feature_id": "{3641DF33-6BC5-4367-9CC8-2ACEBF3F4B06}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.62748197439943,
+          37.22732132855004
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-north-lake-bishop",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-piute-pass",
+        "source_feature_id": "{C72B1C66-6B1C-40E3-A59D-E2AA1735184D}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.13461999660952,
+          37.852948730598385
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-parker-lake",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-parker-lake",
+        "source_feature_id": "{1B40EDAF-4E02-474B-9F7B-483B78F5905F}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.61004803668888,
+          37.21366032842563
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-sabrina-basin",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-sabrina-blue-lake",
+        "source_feature_id": "{45370059-EF96-45D5-B604-31AEF96807FC}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.56582613496069,
+          37.1693299188176
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-south-lake-bishop",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-treasure-lakes",
+        "source_feature_id": "{A186567E-F41B-4E9B-B30E-51FAC507D3F6}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -118.73446831364089,
+          37.45274314499062
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-tamarack-lakes-rock-creek",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-tamarack-lakes-rock-creek",
+        "source_feature_id": "{26BA48D2-117F-4FCC-B9DA-98BD24C412AC}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.2631632,
+          38.0479559
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-virginia-lakes",
+        "provenance": "openstreetmap_named_trailhead_point",
+        "source_feature_id": "OpenStreetMap node 8569451796",
+        "source_ids": [
+          "source-osm-nominatim-eastern-sierra-trailheads-20260925"
+        ]
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.11332825146656,
+          37.76178296524957
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "entity_id": "trailhead-yost-fern",
+        "provenance": "reviewed_usgs_route_endpoint",
+        "route_id": "route-yost-lake",
+        "source_feature_id": "{5C45A880-E365-468D-B642-2DBB0DDD818B}",
+        "source_ids": [
+          "source-usgs-national-digital-trails-eastern-sierra-20260924"
+        ]
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection",
+  "wayproof": {
+    "coordinate_reference_system": "EPSG:4326",
+    "feature_count": 13,
+    "license_note": "USGS and USFS features are public domain. OpenStreetMap points are ODbL 1.0 and require attribution.",
+    "retrieved_at": "2026-09-25T13:00:00+00:00",
+    "topology_policy": "Points project already evidenced access identities; geometry alone created no access relationship."
+  }
+}

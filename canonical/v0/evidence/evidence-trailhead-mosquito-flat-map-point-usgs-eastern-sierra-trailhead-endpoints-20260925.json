@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-mosquito-flat-map-point",
+    "evidence_id": "evidence-trailhead-mosquito-flat-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+    "notes": "",
+    "observation_id": "observation-usgs-eastern-sierra-trailhead-endpoints-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

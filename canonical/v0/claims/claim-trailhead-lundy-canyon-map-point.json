@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-lundy-canyon-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-lundy-canyon-map-point-usgs-eastern-sierra-trailhead-endpoints-20260925",
+      "evidence-trailhead-lundy-canyon-map-point-osm-eastern-sierra-trailhead-points-20260925"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-lundy-canyon",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-lundy-canyon",
+        "path": "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+        "sha256": "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+      },
+      "latitude": 38.02253187987994,
+      "longitude": -119.26182901097219,
+      "navigation_grade": false,
+      "provenance": "reviewed_usgs_route_endpoint_corroborated_by_osm",
+      "source_feature_id": "{5B21FCE1-DB4A-4F9B-9A35-0D8E6F262D22}",
+      "source_ids": [
+        "source-usgs-national-digital-trails-eastern-sierra-20260924",
+        "source-osm-nominatim-eastern-sierra-trailheads-20260925"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

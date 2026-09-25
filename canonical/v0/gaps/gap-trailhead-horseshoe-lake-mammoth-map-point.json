@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-trailhead-horseshoe-lake-mammoth-map-point",
+    "question": "What authoritative point identifies the Horseshoe Lake Trailhead used for the McLeod Lake route?",
+    "reason": "The official area map and route relationship establish the access identity, while the reviewed National Digital Trails extract has several nearby endpoints and does not label one as the trailhead. Wayproof does not select one by proximity.",
+    "related_ids": [
+      "trailhead-horseshoe-lake-mammoth",
+      "route-mcleod-lake"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

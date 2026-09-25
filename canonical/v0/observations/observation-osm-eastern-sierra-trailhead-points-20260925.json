@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+      "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+    ],
+    "content": "OpenStreetMap Nominatim returned named highway=trailhead nodes for Lundy Canyon Trailhead (node 3979042564) and Virginia Lakes Trailhead (node 8569451796). These community-mapped points are retained with ODbL provenance and are not represented as agency-published locations.",
+    "observation_id": "observation-osm-eastern-sierra-trailhead-points-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T13:00:00+00:00",
+    "source_id": "source-osm-nominatim-eastern-sierra-trailheads-20260925"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

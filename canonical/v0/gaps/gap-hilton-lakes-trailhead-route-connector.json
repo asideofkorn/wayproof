@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-hilton-lakes-trailhead-route-connector",
+    "question": "What pedestrian connector joins the official Hilton Lakes Trailhead point to the reviewed route geometry endpoint?",
+    "reason": "The official Forest Service recreation point and the National Digital Trails route endpoint differ by roughly a quarter mile. The route relationship is sourced, but the intervening connector has not been identified as a canonical segment.",
+    "related_ids": [
+      "trailhead-hilton-lakes-rock-creek",
+      "route-hilton-lakes-rock-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

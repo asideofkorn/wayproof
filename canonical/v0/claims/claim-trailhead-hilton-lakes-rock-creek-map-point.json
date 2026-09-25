@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-hilton-lakes-rock-creek-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-hilton-lakes-rock-creek-map-point-usfs-eastern-sierra-trailhead-points-20260925"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-hilton-lakes-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-hilton-lakes-rock-creek",
+        "path": "geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson",
+        "sha256": "ea8e63ced14acdff52ace60f067deef10538830e224e1e853be069f8aba74968"
+      },
+      "latitude": 37.4566,
+      "longitude": -118.7376,
+      "navigation_grade": false,
+      "provenance": "official_usfs_recreation_point",
+      "source_feature_id": "USFS recreation area 83267",
+      "source_ids": [
+        "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

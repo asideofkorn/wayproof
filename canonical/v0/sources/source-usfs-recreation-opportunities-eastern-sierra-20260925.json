@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+    "publisher": "USDA Forest Service",
+    "source_id": "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
