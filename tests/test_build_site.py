@@ -163,7 +163,7 @@ def test_route_geometry_adds_the_interactive_map(site):
     assert 'data-basemap="aerial-labels" aria-pressed="false"' in page
     assert "Interactive map loads when scrolled into view." in page
     assert 'class="route-map-fallback" open' in page
-    assert 'src="/assets/route-map.js"' in page
+    assert 'src="/assets/route-map.js?v=20260925-1"' in page
     assert 'href="/assets/vendor/maplibre/maplibre-gl.css"' in page
 
     for asset in (
@@ -184,7 +184,7 @@ def test_interactive_map_is_available_for_every_route_with_geometry(site):
         page = (tmp_path / "knowledge" / route_id / "index.html").read_text()
         assert 'data-interactive-route-map' in page
         assert f'data-geometry-url="/geometry/routes/{route_id}.geojson"' in page
-        assert 'src="/assets/route-map.js"' in page
+        assert 'src="/assets/route-map.js?v=20260925-1"' in page
         assert 'href="/assets/vendor/maplibre/maplibre-gl.css"' in page
 
 
@@ -195,7 +195,7 @@ def test_route_without_geometry_does_not_load_map_assets(site):
     ).read_text()
 
     assert "data-interactive-route-map" not in page
-    assert 'src="/assets/route-map.js"' not in page
+    assert 'src="/assets/route-map.js' not in page
     assert 'href="/assets/vendor/maplibre/maplibre-gl.css"' not in page
 
 

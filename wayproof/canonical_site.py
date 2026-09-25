@@ -24,6 +24,7 @@ DEL_VALLE_ID = "park-del-valle-regional-park"
 DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
+ROUTE_MAP_ASSET_VERSION = "20260925-1"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Parks", "/parks/"),
@@ -317,7 +318,10 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
         '<details class="route-map-fallback" open>'
         '<summary>Simplified route diagram</summary>' + svg + '</details>'
     )
-    script = '<script type="module" src="/assets/route-map.js"></script>'
+    script = (
+        '<script type="module" '
+        f'src="/assets/route-map.js?v={ROUTE_MAP_ASSET_VERSION}"></script>'
+    )
     return (
         '<section id="route-map" class="route-map"><h2>Route map</h2>'
         '<p>This overview is built from a reviewed, versioned source snapshot. '
