@@ -143,6 +143,9 @@ input[type="search"]:focus, select:focus { outline:3px solid color-mix(in srgb, 
 .route-map-status { margin:.45rem 0 0; }
 .route-map-fallback { margin:.75rem 0; }
 .route-map-fallback summary { cursor:pointer; color:var(--link); }
+.route-map .maplibregl-popup-content { background:var(--surface-raised); color:var(--text); border:1px solid var(--border); border-radius:8px; }
+.route-map .maplibregl-popup-content a { overflow-wrap:anywhere; }
+.route-map .maplibregl-popup-tip { border-top-color:var(--surface-raised); border-bottom-color:var(--surface-raised); }
 .route-map svg { display:block; width:100%; height:auto; box-sizing:border-box; margin:1rem 0 .65rem; padding:.45rem; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
 .route-lines path { fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
 .route-lines path:nth-child(even) { stroke:#287ea0; }

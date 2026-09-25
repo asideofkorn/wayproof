@@ -1,5 +1,3 @@
-import maplibregl from "/assets/vendor/maplibre/maplibre-gl.mjs";
-
 const BASEMAPS = {
   topo: {
     label: "Topo",
@@ -48,7 +46,21 @@ function setStatus(container, message) {
 async function enhanceRouteMap(container) {
   const mapElement = container.querySelector("[data-map-canvas]");
   const geometryUrl = container.dataset.geometryUrl;
-  if (!mapElement || !geometryUrl || !maplibregl.supported()) {
+  if (!mapElement || !geometryUrl) {
+    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+    return;
+  }
+
+  let maplibregl;
+  try {
+    ({ default: maplibregl } = await import(
+      "/assets/vendor/maplibre/maplibre-gl.mjs"
+    ));
+  } catch (error) {
+    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+    return;
+  }
+  if (!maplibregl.supported()) {
     setStatus(container, "Interactive map unavailable; simplified diagram shown.");
     return;
   }
@@ -124,6 +136,7 @@ async function enhanceRouteMap(container) {
         "line-opacity": 0.82,
       },
     });
+
     map.addLayer({
       id: "wayproof-route",
       type: "line",
@@ -132,6 +145,29 @@ async function enhanceRouteMap(container) {
         "line-color": "#27a78d",
         "line-width": 5,
       },
+    });
+    map.on("click", "wayproof-route", (event) => {
+      const feature = event.features && event.features[0];
+      const segmentId = feature && feature.properties.segment_id;
+      if (!segmentId) return;
+
+      const content = document.createElement("div");
+      const heading = document.createElement("strong");
+      heading.textContent = "Canonical route segment";
+      const link = document.createElement("a");
+      link.href = `/knowledge/${encodeURIComponent(segmentId)}/`;
+      link.textContent = segmentId;
+      content.append(heading, document.createElement("br"), link);
+      new maplibregl.Popup()
+        .setLngLat(event.lngLat)
+        .setDOMContent(content)
+        .addTo(map);
+    });
+    map.on("mouseenter", "wayproof-route", () => {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", "wayproof-route", () => {
+      map.getCanvas().style.cursor = "";
     });
     map.addSource("wayproof-endpoints", {
       type: "geojson",
@@ -190,6 +226,16 @@ async function enhanceRouteMap(container) {
   }
 }
 
-for (const container of document.querySelectorAll("[data-interactive-route-map]")) {
-  enhanceRouteMap(container);
+const maps = document.querySelectorAll("[data-interactive-route-map]");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      enhanceRouteMap(entry.target);
+    }
+  }, { rootMargin: "240px" });
+  for (const container of maps) observer.observe(container);
+} else {
+  for (const container of maps) enhanceRouteMap(container);
 }
