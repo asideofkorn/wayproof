@@ -14,7 +14,9 @@ from wayproof.publication import verify_publication
 
 def changed_paths(base: str, head: str):
     output = subprocess.check_output(
-        ["git", "diff", "--name-status", f"{base}...{head}"], text=True)
+        ["git", "diff", "--no-renames", "--name-status", f"{base}...{head}"],
+        text=True,
+    )
     result = []
     for line in output.splitlines():
         status, path = line.split("\t", 1)

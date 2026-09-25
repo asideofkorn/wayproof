@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-convict-lake-loop-east-north-trail-road-junction",
+    "kind": "route_node",
+    "name": "Convict Lake Loop east-side north trail-road junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-convict-lake-loop-east-south-road-link"
+    ],
+    "object_id": "route-convict-lake-loop",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-convict-lake-loop-east-south-road-link-part-of-route-convict-lake-loop",
+    "subject_id": "route-segment-convict-lake-loop-east-south-road-link",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
