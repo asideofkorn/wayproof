@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/usgs-padus-national-park-fee-boundaries-20260924.geojson"
+    ],
+    "content": "USGS PAD-US reports the selected NPS fee-manager polygons and identifies their NPS source records.",
+    "observation_id": "observation-managed-land-boundaries-national-20260924",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-24T22:00:00+00:00",
+    "source_id": "source-usgs-padus-fee-manager-boundaries-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

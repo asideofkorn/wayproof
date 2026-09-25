@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wilderness-hoover-boundary-geometry-20260924",
+    "evidence_ids": [
+      "evidence-wilderness-hoover-boundary-geometry-20260924"
+    ],
+    "predicate": "managed_land_boundary_geometry",
+    "spatial_scope_ids": [],
+    "subject_id": "wilderness-hoover",
+    "temporal_scope": null,
+    "value": {
+      "boundary_geometry_snapshot": {
+        "feature_ids": [
+          "padus-management:247338",
+          "padus-management:341354"
+        ],
+        "path": "geometry/v0/snapshots/usgs-padus-wilderness-boundaries-20260924.geojson",
+        "sha256": "da72c0ff13093cf3505bc64a8f780b22ecb9f1758698491ba80e50b981765902"
+      },
+      "boundary_type": "designated_wilderness_management_area",
+      "coordinate_precision_decimal_degrees": 5,
+      "coordinate_reference_system": "EPSG:4326",
+      "navigation_grade": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

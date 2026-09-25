@@ -79,6 +79,21 @@ source-complete merely because its overview page was ingested.
    ranges, seasonal limits, exceptions, or conditional fees into exact or
    unconditional facts.
 
+For every newly ingested managed-land entity (`park`, `national_park`,
+`wilderness`, or a preserve-equivalent park kind), also do one of the
+following:
+
+- attach a reviewed `boundary_geometry_snapshot` claim sourced from the land
+  manager or an appropriate public protected-lands dataset; or
+- add an explicit, entity-linked knowledge gap stating that authoritative
+  boundary geometry has not yet been matched.
+
+Never trace a boundary from a screenshot or basemap. Keep parkland, landbank,
+ownership, legislated-boundary, and designated-wilderness semantics distinct
+when the source distinguishes them. Geometry supports display and spatial
+projection only; overlap does not manufacture containment, access, or route
+membership.
+
 For firsthand or user-supplied evidence, preserve the observation date,
 reporter, activity context, and coordinate precision. Image metadata may support
 time or location only when it is present and inspected. Distinguish an official

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-park-vasco-caves-regional-preserve-boundary-geometry-20260924",
+    "evidence_ids": [
+      "evidence-park-vasco-caves-regional-preserve-boundary-geometry-20260924"
+    ],
+    "predicate": "managed_land_boundary_geometry",
+    "spatial_scope_ids": [],
+    "subject_id": "park-vasco-caves-regional-preserve",
+    "temporal_scope": null,
+    "value": {
+      "boundary_geometry_snapshot": {
+        "feature_ids": [
+          "ebrpd:129"
+        ],
+        "path": "geometry/v0/snapshots/ebrpd-managed-land-boundaries-20260924.geojson",
+        "sha256": "4e6558956f4f397816d719ff87554289e08dd495314b2d57c83d1634f083e3e5"
+      },
+      "boundary_type": "managed_land_status_polygons",
+      "coordinate_precision_decimal_degrees": 5,
+      "coordinate_reference_system": "EPSG:4326",
+      "navigation_grade": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Management_Areas/FeatureServer/0",
+    "publisher": "U.S. Geological Survey",
+    "source_id": "source-usgs-padus-management-boundaries-20260924"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

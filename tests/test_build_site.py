@@ -221,7 +221,7 @@ def test_explore_map_is_generated_from_canonical_geometry(site):
     assert 'data-map-layer="routes"' in page
     assert 'data-map-layer="camping"' in page
     assert 'data-map-layer="camping"  >' in page
-    assert 'data-map-layer="boundaries"  disabled>' in page
+    assert 'data-map-layer="boundaries" checked' in page
     assert 'data-map-expand aria-expanded="false"' in page
     assert 'href="/map/features.geojson"' in page
     assert 'src="/assets/explore-map.js?v=20260925-2"' in page
@@ -236,6 +236,11 @@ def test_explore_map_is_generated_from_canonical_geometry(site):
     assert all(item["geometry"]["type"] in {"Polygon", "MultiPolygon"}
                for item in payload["features"]
                if item["properties"]["layer"] == "boundaries")
+    boundaries = [item for item in payload["features"]
+                  if item["properties"]["layer"] == "boundaries"]
+    assert len(boundaries) == 73
+    assert any(item["properties"]["entity_id"] == "park-del-valle-regional-park"
+               for item in boundaries)
 
 
 def test_explore_map_assets_support_layers_selection_and_mobile_expansion(site):

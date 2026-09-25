@@ -318,3 +318,19 @@ Volcanic National Park:
 Success means the pilot reduces manual geometry work without reducing
 Wayproof's evidence standard. It does not mean every Warner Valley trail line
 has been promoted into a complete visitor route.
+
+## 2026-09-24 managed-land extension
+
+The same decision now governs park, preserve-equivalent, national-park, and
+wilderness polygons. A canonical boundary claim selects one or more features
+from a reviewed EBRPD or USGS PAD-US snapshot. The read service assembles those
+features for the generated geographic explorer while retaining source feature
+attributes that distinguish parkland from landbank, NPS fee-manager polygons
+from legislated boundaries, and separately managed pieces of one designated
+wilderness.
+
+Managed-land ingestion must publish a reviewed boundary claim or an explicit
+entity-linked boundary gap. Display geometry may be deterministically
+simplified with the tolerance recorded in snapshot metadata. It remains
+planning context rather than legal, survey, or navigation-grade geometry, and
+overlap cannot create containment, access, or route-membership relationships.

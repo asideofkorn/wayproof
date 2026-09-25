@@ -10,6 +10,7 @@ from typing import Any, Iterable, Optional, Tuple
 from .canonical_storage import RECORD_SPECS, load_canonical, load_changeset
 from .hike_comparison import HikeComparison, compare_hikes
 from .intent import IntentResolution, resolve_trip_intent
+from .managed_land_geometry import ManagedLandGeometryService
 from .planning import TripPlan, plan_trip
 from .planning_inputs import PlanningInputProjection, project_planning_inputs
 from .readiness import TripReadiness, evaluate_trip_readiness
@@ -201,3 +202,7 @@ class CanonicalReadService:
     def route_geometry(self, route_id: str, as_of: date) -> dict | None:
         """Project reviewed source geometry through canonical route topology."""
         return RouteGeometryService(self._root, self).route(route_id, as_of)
+
+    def managed_land_geometry(self, entity_id: str) -> dict | None:
+        """Return reviewed boundary geometry for one managed-land entity."""
+        return ManagedLandGeometryService(self._root, self).boundary(entity_id)
