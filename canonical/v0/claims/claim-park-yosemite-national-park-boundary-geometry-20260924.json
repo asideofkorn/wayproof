@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-park-yosemite-national-park-boundary-geometry-20260924",
+    "evidence_ids": [
+      "evidence-park-yosemite-national-park-boundary-geometry-20260924"
+    ],
+    "predicate": "managed_land_boundary_geometry",
+    "spatial_scope_ids": [],
+    "subject_id": "park-yosemite-national-park",
+    "temporal_scope": null,
+    "value": {
+      "boundary_geometry_snapshot": {
+        "feature_ids": [
+          "padus-fee:3484"
+        ],
+        "path": "geometry/v0/snapshots/usgs-padus-national-park-fee-boundaries-20260924.geojson",
+        "sha256": "cd21b66680daacab1845cb19290fb9a82ea84e4059cc5cda69638d5e38f0dc48"
+      },
+      "boundary_type": "nps_fee_manager_boundary",
+      "coordinate_precision_decimal_degrees": 5,
+      "coordinate_reference_system": "EPSG:4326",
+      "navigation_grade": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

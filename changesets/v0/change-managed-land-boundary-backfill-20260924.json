@@ -1,0 +1,1523 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "change-managed-land-boundary-backfill-20260924",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-ebrpd-managed-land-boundaries-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "source-ebrpd-managed-land-boundaries-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-padus-fee-manager-boundaries-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "source-usgs-padus-fee-manager-boundaries-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usgs-padus-management-boundaries-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "source-usgs-padus-management-boundaries-20260924",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-managed-land-boundaries-ebrpd-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "observation-managed-land-boundaries-ebrpd-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-managed-land-boundaries-national-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "observation-managed-land-boundaries-national-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-managed-land-boundaries-wilderness-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "observation-managed-land-boundaries-wilderness-20260924",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-land-lassen-volcanic-wilderness-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-land-lassen-volcanic-wilderness-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-land-yosemite-wilderness-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-land-yosemite-wilderness-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-anthony-chabot-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-anthony-chabot-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-antioch-oakley-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-antioch-oakley-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-ardenwood-historic-farm-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-ardenwood-historic-farm-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-bay-point-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-bay-point-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-big-break-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-big-break-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-bishop-ranch-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-bishop-ranch-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-black-diamond-mines-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-black-diamond-mines-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-briones-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-briones-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-brooks-island-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-brooks-island-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-browns-island-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-browns-island-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-brushy-peak-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-brushy-peak-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-carquinez-strait-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-carquinez-strait-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-castle-rock-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-castle-rock-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-charles-lee-tilden-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-charles-lee-tilden-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-claremont-canyon-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-claremont-canyon-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-contra-loma-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-contra-loma-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-coyote-hills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-coyote-hills-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-crockett-hills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-crockett-hills-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-cull-canyon-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-cull-canyon-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-deer-valley-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-deer-valley-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-del-valle-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-del-valle-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-diablo-foothills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-diablo-foothills-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-don-castro-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-don-castro-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-dr-aurelia-reinhardt-redwood-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-dr-aurelia-reinhardt-redwood-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-dry-creek-pioneer-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-dry-creek-pioneer-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-dublin-hills-regional-open-space-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-dublin-hills-regional-open-space-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-dumbarton-quarry-campground-on-the-bay-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-dumbarton-quarry-campground-on-the-bay-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-five-canyons-open-space-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-five-canyons-open-space-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-garin-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-garin-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-hayward-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-hayward-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-huckleberry-botanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-huckleberry-botanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-judge-john-sutter-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-judge-john-sutter-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-kennedy-grove-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-kennedy-grove-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-lake-chabot-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-lake-chabot-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-las-trampas-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-las-trampas-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-lassen-volcanic-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-lassen-volcanic-national-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-leona-canyon-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-leona-canyon-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-little-hills-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-little-hills-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-martin-luther-king-jr-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-martin-luther-king-jr-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-mclaughlin-eastshore-state-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-mclaughlin-eastshore-state-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-miller-knox-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-miller-knox-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-mission-peak-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-mission-peak-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-morgan-territory-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-morgan-territory-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-ohlone-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-ohlone-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-oyster-bay-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-oyster-bay-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-pleasanton-ridge-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-pleasanton-ridge-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-point-isabel-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-point-isabel-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-point-pinole-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-point-pinole-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-quarry-lakes-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-quarry-lakes-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-robert-w-crown-memorial-state-beach-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-robert-w-crown-memorial-state-beach-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-roberts-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-roberts-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-round-valley-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-round-valley-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sequoia-kings-canyon-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sequoia-kings-canyon-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sequoia-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sequoia-national-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-shadow-cliffs-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-shadow-cliffs-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sibley-volcanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sibley-volcanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sobrante-ridge-botanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sobrante-ridge-botanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sunol-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sunol-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-sycamore-valley-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-sycamore-valley-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-ted-and-kathy-radke-martinez-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-ted-and-kathy-radke-martinez-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-temescal-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-temescal-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-thurgood-marshall-regional-park-home-port-chicago-50-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-thurgood-marshall-regional-park-home-port-chicago-50-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-tilden-nature-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-tilden-nature-area-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-vargas-plateau-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-vargas-plateau-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-vasco-caves-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-vasco-caves-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-waterbird-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-waterbird-regional-preserve-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-wildcat-canyon-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-wildcat-canyon-regional-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-park-yosemite-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-park-yosemite-national-park-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wilderness-ansel-adams-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-wilderness-ansel-adams-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wilderness-hoover-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-wilderness-hoover-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wilderness-john-muir-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "evidence-wilderness-john-muir-boundary-geometry-20260924",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-land-lassen-volcanic-wilderness-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-land-lassen-volcanic-wilderness-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-land-lassen-volcanic-wilderness-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-land-yosemite-wilderness-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-land-yosemite-wilderness-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-land-yosemite-wilderness-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-anthony-chabot-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-anthony-chabot-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-anthony-chabot-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-antioch-oakley-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-antioch-oakley-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-antioch-oakley-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-ardenwood-historic-farm-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-ardenwood-historic-farm-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-ardenwood-historic-farm-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-bay-point-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-bay-point-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-bay-point-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-big-break-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-big-break-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-big-break-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-bishop-ranch-open-space-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-bishop-ranch-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-bishop-ranch-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-black-diamond-mines-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-black-diamond-mines-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-black-diamond-mines-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-briones-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-briones-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-briones-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-brooks-island-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-brooks-island-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-brooks-island-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-browns-island-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-browns-island-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-browns-island-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-brushy-peak-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-brushy-peak-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-brushy-peak-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-carquinez-strait-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-carquinez-strait-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-carquinez-strait-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-castle-rock-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-castle-rock-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-castle-rock-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-charles-lee-tilden-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-charles-lee-tilden-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-charles-lee-tilden-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-claremont-canyon-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-claremont-canyon-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-claremont-canyon-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-contra-loma-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-contra-loma-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-contra-loma-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-coyote-hills-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-coyote-hills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-coyote-hills-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-crockett-hills-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-crockett-hills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-crockett-hills-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-cull-canyon-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-cull-canyon-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-cull-canyon-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-deer-valley-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-deer-valley-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-deer-valley-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-del-valle-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-del-valle-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-del-valle-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-diablo-foothills-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-diablo-foothills-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-diablo-foothills-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-don-castro-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-don-castro-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-don-castro-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-dr-aurelia-reinhardt-redwood-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-dr-aurelia-reinhardt-redwood-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-dr-aurelia-reinhardt-redwood-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-dry-creek-pioneer-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-dry-creek-pioneer-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-dry-creek-pioneer-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-dublin-hills-regional-open-space-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-dublin-hills-regional-open-space-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-dublin-hills-regional-open-space-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-dumbarton-quarry-campground-on-the-bay-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-dumbarton-quarry-campground-on-the-bay-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-dumbarton-quarry-campground-on-the-bay-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-five-canyons-open-space-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-five-canyons-open-space-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-five-canyons-open-space-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-garin-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-garin-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-garin-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-hayward-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-hayward-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-hayward-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-huckleberry-botanic-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-huckleberry-botanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-huckleberry-botanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-judge-john-sutter-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-judge-john-sutter-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-judge-john-sutter-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-kennedy-grove-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-kennedy-grove-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-kennedy-grove-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-lake-chabot-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-lake-chabot-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-lake-chabot-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-las-trampas-wilderness-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-las-trampas-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-las-trampas-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-lassen-volcanic-national-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-lassen-volcanic-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-lassen-volcanic-national-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-leona-canyon-open-space-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-leona-canyon-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-leona-canyon-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-little-hills-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-little-hills-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-little-hills-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-martin-luther-king-jr-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-martin-luther-king-jr-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-martin-luther-king-jr-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-mclaughlin-eastshore-state-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-mclaughlin-eastshore-state-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-mclaughlin-eastshore-state-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-miller-knox-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-miller-knox-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-miller-knox-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-mission-peak-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-mission-peak-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-mission-peak-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-morgan-territory-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-morgan-territory-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-morgan-territory-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-ohlone-wilderness-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-ohlone-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-ohlone-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-oyster-bay-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-oyster-bay-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-oyster-bay-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-pleasanton-ridge-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-pleasanton-ridge-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-pleasanton-ridge-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-point-isabel-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-point-isabel-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-point-isabel-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-point-pinole-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-point-pinole-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-point-pinole-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-quarry-lakes-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-quarry-lakes-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-quarry-lakes-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-robert-w-crown-memorial-state-beach-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-robert-w-crown-memorial-state-beach-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-robert-w-crown-memorial-state-beach-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-roberts-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-roberts-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-roberts-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-round-valley-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-round-valley-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-round-valley-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sequoia-kings-canyon-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sequoia-kings-canyon-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sequoia-kings-canyon-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sequoia-national-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sequoia-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sequoia-national-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-shadow-cliffs-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-shadow-cliffs-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-shadow-cliffs-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sibley-volcanic-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sibley-volcanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sibley-volcanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sobrante-ridge-botanic-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sobrante-ridge-botanic-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sobrante-ridge-botanic-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sunol-wilderness-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sunol-wilderness-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sunol-wilderness-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-sycamore-valley-open-space-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-sycamore-valley-open-space-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-sycamore-valley-open-space-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-ted-and-kathy-radke-martinez-regional-shoreline-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-ted-and-kathy-radke-martinez-regional-shoreline-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-ted-and-kathy-radke-martinez-regional-shoreline-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-temescal-regional-recreation-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-temescal-regional-recreation-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-temescal-regional-recreation-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-thurgood-marshall-regional-park-home-port-chicago-50-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-thurgood-marshall-regional-park-home-port-chicago-50-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-thurgood-marshall-regional-park-home-port-chicago-50-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-tilden-nature-area-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-tilden-nature-area-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-tilden-nature-area-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-vargas-plateau-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-vargas-plateau-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-vargas-plateau-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-vasco-caves-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-vasco-caves-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-vasco-caves-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-waterbird-regional-preserve-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-waterbird-regional-preserve-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-waterbird-regional-preserve-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-wildcat-canyon-regional-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-wildcat-canyon-regional-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-wildcat-canyon-regional-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-park-yosemite-national-park-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-park-yosemite-national-park-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-park-yosemite-national-park-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wilderness-ansel-adams-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wilderness-ansel-adams-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-wilderness-ansel-adams-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wilderness-hoover-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wilderness-hoover-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-wilderness-hoover-boundary-geometry-20260924",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wilderness-john-muir-boundary-geometry-20260924"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wilderness-john-muir-boundary-geometry-20260924.json",
+      "reason": "Backfill reviewed managed-land boundary geometry",
+      "record_id": "claim-wilderness-john-muir-boundary-geometry-20260924",
+      "record_type": "claim"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Backfill reviewed boundary geometry for every published park, national park, and wilderness entity"
+}

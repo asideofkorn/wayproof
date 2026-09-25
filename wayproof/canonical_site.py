@@ -229,6 +229,20 @@ def explore_map_payload(reads: CanonicalReadService, entities: Iterable[dict],
         layer = _map_layer(entity["kind"])
         if not layer:
             continue
+        if layer == "boundaries":
+            boundary = reads.managed_land_geometry(entity["entity_id"])
+            if boundary:
+                properties = dict(boundary["properties"])
+                properties.update({
+                    "name": entity["name"], "kind": entity["kind"],
+                    "layer": "boundaries",
+                    "evidence_status": "reviewed, versioned source geometry",
+                    "url": f'/knowledge/{entity["entity_id"]}/',
+                })
+                features.append({
+                    "type": "Feature", "id": properties["claim_id"],
+                    "properties": properties, "geometry": boundary["geometry"],
+                })
         for claim in reads.claims_for(entity["entity_id"]):
             geometry = _coordinate_geometry(claim.value)
             if not geometry:

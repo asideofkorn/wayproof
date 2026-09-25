@@ -26,6 +26,9 @@ selects self-hosted MapLibre GL JS with initial USGS topo and aerial raster
 basemaps, while keeping basemap context separate from Wayproof geometry
 evidence. Its production amendment removes the contextless schematic while
 retaining textual route facts, map-status messaging, and downloadable GeoJSON.
+The same immutable-snapshot safeguards apply to managed-land polygons:
+canonical claims select reviewed source features, while the read service
+assembles display geometry without treating visual overlap as a relationship.
 
 ## Architectural principles
 
