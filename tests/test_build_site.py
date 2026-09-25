@@ -205,6 +205,8 @@ def test_interactive_map_asset_is_lazy_and_links_canonical_segments(site):
 
     assert "IntersectionObserver" in script
     assert "await import(" in script
+    assert "{ default: maplibregl }" not in script
+    assert "maplibregl.supported" not in script
     assert "encodeURIComponent(segmentId)" in script
     assert 'map.on("click", "wayproof-route"' in script
 

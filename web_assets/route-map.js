@@ -53,14 +53,8 @@ async function enhanceRouteMap(container) {
 
   let maplibregl;
   try {
-    ({ default: maplibregl } = await import(
-      "/assets/vendor/maplibre/maplibre-gl.mjs"
-    ));
+    maplibregl = await import("/assets/vendor/maplibre/maplibre-gl.mjs");
   } catch (error) {
-    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
-    return;
-  }
-  if (!maplibregl.supported()) {
     setStatus(container, "Interactive map unavailable; simplified diagram shown.");
     return;
   }
