@@ -31,7 +31,7 @@ def test_foliage_choices_fit_trip_distance_cap_without_duration_invention():
         assert "duration" not in result.value
 
 
-def test_convict_loop_preserves_mixed_surface_closure_without_invented_distance():
+def test_convict_loop_has_evidence_bounded_mixed_surface_closure():
     records = load_canonical(ROOT)
     claims = keyed(records.claims, "claim_id")
     gaps = keyed(records.gaps, "gap_id")
@@ -42,15 +42,15 @@ def test_convict_loop_preserves_mixed_surface_closure_without_invented_distance(
         "route-segment-convict-lake-loop-east-north-road-link",
     )
     connectors = [claims[f"claim-{segment_id}"].value for segment_id in segment_ids]
-    assert [item["surface"] for item in connectors] == ["road", "trail", "road"]
-    assert [item["sequence"] for item in connectors] == [1, 2, 3]
-    assert all(item["distance_status"] == "unknown" for item in connectors)
-    assert all(
-        item["geometry_status"]
-        == "official_map_depiction_without_reusable_line_geometry"
-        for item in connectors
-    )
+    assert [item["surface"] for item in connectors] == ["road", "paved_trail", "road"]
+    assert [item["distance_status"] for item in connectors] == [
+        "geometry_derived",
+        "source_published_dataset_length",
+        "geometry_derived",
+    ]
+    assert all(item["geometry_snapshot"] for item in connectors)
     assert "gap-convict-lake-loop-dataset-closure" not in gaps
+    assert "gap-convict-lake-loop-distance-reconciliation" in gaps
 
     endpoints = {}
     for segment_id in segment_ids:
@@ -76,6 +76,18 @@ def test_convict_loop_preserves_mixed_surface_closure_without_invented_distance(
         ),
     }
 
+    geometry = CanonicalReadService(ROOT).route_geometry(
+        "route-convict-lake-loop", date(2026, 10, 1)
+    )
+    assert geometry["wayproof"]["route_shape"] == "loop"
+    assert geometry["wayproof"]["entry_id"] == geometry["wayproof"]["exit_id"]
+    assert len(geometry["features"]) == 8
+    assert geometry["wayproof"]["distance_miles"] == 2.49882557
+    assert (
+        geometry["features"][0]["geometry"]["coordinates"][0]
+        == geometry["features"][-1]["geometry"]["coordinates"][-1]
+    )
+
 
 def test_foliage_route_depth_publishes_to_human_pages(generated_site):
     site_root, _ = generated_site
@@ -87,3 +99,5 @@ def test_foliage_route_depth_publishes_to_human_pages(generated_site):
     assert "south cul-de-sac road link" in convict
     assert "east-side lakeshore trail" in convict
     assert "north trailhead road link" in convict
+    assert "Start / finish" in convict
+    assert "2.5 miles mapped loop" in convict

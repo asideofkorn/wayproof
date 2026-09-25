@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-segment-convict-lake-loop-east-north-road-link",
+    "evidence_id": "evidence-route-segment-convict-lake-loop-east-north-road-link-transportation-geometry",
+    "notes": "",
+    "observation_id": "observation-usgs-convict-loop-closure-geometry-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

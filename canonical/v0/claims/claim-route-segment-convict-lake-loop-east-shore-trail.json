@@ -3,25 +3,35 @@
   "record": {
     "claim_id": "claim-route-segment-convict-lake-loop-east-shore-trail",
     "evidence_ids": [
-      "evidence-route-segment-convict-lake-loop-east-shore-trail"
+      "evidence-route-segment-convict-lake-loop-east-shore-trail",
+      "evidence-route-segment-convict-lake-loop-east-shore-trail-transportation-geometry"
     ],
-    "predicate": "mapped_route_connector",
+    "predicate": "official_dataset_route_segment",
     "spatial_scope_ids": [
       "scope-route-convict-lake-loop"
     ],
     "subject_id": "route-segment-convict-lake-loop-east-shore-trail",
     "temporal_scope": null,
     "value": {
-      "distance_status": "unknown",
-      "geometry_status": "official_map_depiction_without_reusable_line_geometry",
-      "map_context": [
-        "south road cul-de-sac",
-        "boat ramp",
-        "trailhead parking"
-      ],
+      "distance_miles": 0.3459521,
+      "distance_status": "source_published_dataset_length",
+      "end_coordinate": {
+        "latitude": 37.59462220472,
+        "longitude": -118.85175619577528
+      },
+      "geometry_snapshot": {
+        "feature_id": "route-segment-convict-lake-loop-east-shore-trail",
+        "path": "geometry/v0/snapshots/usgs-convict-lake-loop-closure-20260925.geojson",
+        "sha256": "f1dadc4b81c810fa88cd0b5104248a4cf3288f5ef34b0a1245b0310bce25ad5e"
+      },
       "route_role": "east_shore_lakeshore_trail",
-      "sequence": 2,
-      "surface": "trail"
+      "source_feature_id": "{03B23C3E-B3C4-4466-88C4-D794CF42ACA4}",
+      "source_feature_name": "CONVICT LAKE VIS",
+      "start_coordinate": {
+        "latitude": 37.59027930167576,
+        "longitude": -118.85298200177768
+      },
+      "surface": "paved_trail"
     }
   },
   "record_type": "claim",

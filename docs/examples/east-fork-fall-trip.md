@@ -35,10 +35,11 @@ turnaround location. The McGee beaver-pond option publishes its connected
 remaining destination, without splitting that feature at an invented point.
 The Convict Lake Loop now records the official-map east-shore closure as three
 ordered mixed-surface legs: road from the south trail endpoint and cul-de-sac,
-east-side lakeshore trail, then road through the boat-ramp and trailhead-parking
-area to the north trail endpoint. Their reusable geometry and individual
-mileages remain unknown. Those bounded partial answers keep useful planning
-facts without overstating map precision.
+the paved east-side lakeshore trail, then road through the boat-ramp and
+trailhead-parking area to the north trail endpoint. Reviewed USGS road and trail
+geometry now closes the mapped loop at about 2.50 miles. The Forest Service
+visitor guide separately calls it a two-mile hike; Wayproof preserves that
+discrepancy as a knowledge gap rather than silently choosing one value.
 
 The public example uses anonymous participant IDs and contains no reservation
 number or private confirmation evidence. The runtime fulfillment records that

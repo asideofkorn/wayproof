@@ -3,24 +3,33 @@
   "record": {
     "claim_id": "claim-route-segment-convict-lake-loop-east-north-road-link",
     "evidence_ids": [
-      "evidence-route-segment-convict-lake-loop-east-north-road-link"
+      "evidence-route-segment-convict-lake-loop-east-north-road-link",
+      "evidence-route-segment-convict-lake-loop-east-north-road-link-transportation-geometry"
     ],
-    "predicate": "mapped_route_connector",
+    "predicate": "official_dataset_route_segment",
     "spatial_scope_ids": [
       "scope-route-convict-lake-loop"
     ],
     "subject_id": "route-segment-convict-lake-loop-east-north-road-link",
     "temporal_scope": null,
     "value": {
-      "distance_status": "unknown",
-      "geometry_status": "official_map_depiction_without_reusable_line_geometry",
-      "map_context": [
-        "south road cul-de-sac",
-        "boat ramp",
-        "trailhead parking"
-      ],
+      "distance_derivation": "reviewed source geometry measured geodesically",
+      "distance_miles": 0.06898757,
+      "distance_status": "geometry_derived",
+      "end_coordinate": {
+        "latitude": 37.5950547846918,
+        "longitude": -118.85276363557385
+      },
+      "geometry_snapshot": {
+        "feature_id": "route-segment-convict-lake-loop-east-north-road-link",
+        "path": "geometry/v0/snapshots/usgs-convict-lake-loop-closure-20260925.geojson",
+        "sha256": "f1dadc4b81c810fa88cd0b5104248a4cf3288f5ef34b0a1245b0310bce25ad5e"
+      },
       "route_role": "east_shore_north_road_connection",
-      "sequence": 3,
+      "start_coordinate": {
+        "latitude": 37.59462220472,
+        "longitude": -118.85175619577528
+      },
       "surface": "road"
     }
   },

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-convict-lake-loop-ordered-geometry",
+    "evidence_id": "evidence-convict-lake-loop-ordered-geometry",
+    "notes": "",
+    "observation_id": "observation-usgs-convict-loop-closure-geometry-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

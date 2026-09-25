@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "The reviewed complete-loop geometry totals approximately 2.5 miles. The visitor guide's two-mile wording remains a distinct published claim and is not overwritten.",
+    "input_ids": [
+      "claim-convict-lake-loop-ordered-geometry",
+      "claim-convict-lake-loop-published-profile"
+    ],
+    "kind": "geometry_measured_route_distance",
+    "result_id": "result-route-convict-lake-loop-geometry-distance",
+    "value": {
+      "distance_difference_miles": 0.49851696,
+      "distance_miles": 2.49882557,
+      "interpretation": "geometry-derived complete loop is approximately 2.5 miles",
+      "published_visitor_guide_miles": 2,
+      "route_id": "route-convict-lake-loop",
+      "route_shape": "loop"
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

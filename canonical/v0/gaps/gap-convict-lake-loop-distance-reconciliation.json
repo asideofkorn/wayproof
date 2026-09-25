@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-convict-lake-loop-distance-reconciliation",
+    "question": "Why does the visitor guide describe a two-mile loop while reviewed source geometry totals approximately 2.5 miles?",
+    "reason": "Wayproof preserves both values. The small south cul-de-sac offers two nearly equal mapped road arms; the displayed geometry uses the shorter arm, but that choice accounts for only a few feet and does not explain the roughly half-mile source discrepancy.",
+    "related_ids": [
+      "route-convict-lake-loop",
+      "claim-convict-lake-loop-published-profile",
+      "claim-convict-lake-loop-ordered-geometry",
+      "route-segment-convict-lake-loop-east-south-road-link"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
