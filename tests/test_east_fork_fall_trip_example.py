@@ -44,8 +44,8 @@ def test_trip_bundle_drives_existing_plan_and_comparison_services():
         for state in ("fits", "unknown", "exceeds")
     }
     assert {state: len(items) for state, items in by_fit.items()} == {
-        "fits": 11,
-        "unknown": 3,
+        "fits": 13,
+        "unknown": 1,
         "exceeds": 3,
     }
     assert {

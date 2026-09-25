@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-treasure-lakes-bishop-creek-geographic-reference",
+    "evidence_ids": [
+      "evidence-treasure-lakes-bishop-creek-geographic-reference"
+    ],
+    "predicate": "geographic_reference",
+    "spatial_scope_ids": [
+      "scope-place-treasure-lakes-bishop-creek"
+    ],
+    "subject_id": "place-treasure-lakes-bishop-creek",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "geometry_role": "named_feature_reference_point",
+      "latitude": 37.142536635570956,
+      "longitude": -118.57273519703854,
+      "source_feature_class": "Lake",
+      "source_feature_id": 268392,
+      "source_feature_name": "Treasure Lakes"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
