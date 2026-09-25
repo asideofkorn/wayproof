@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-hilton-lakes-trailhead-operations",
+    "question": "What parking capacity, overflow arrangement, toilet availability, and potable-water service apply at Hilton Lakes Trailhead?",
+    "reason": "The official route map establishes the paved approach and route relationship but does not publish these operating details.",
+    "related_ids": [
+      "trailhead-hilton-lakes-rock-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

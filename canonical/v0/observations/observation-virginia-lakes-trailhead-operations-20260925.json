@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Favorite Local Trails Around Virginia Lakes"
+    ],
+    "content": "Mono County directs visitors six miles on Virginia Lakes Road to the signed trailhead, to park, and to find the trailhead sign behind brick bathrooms. The guide does not publish a stall count, overflow arrangement, road surface, or potable-water service.",
+    "observation_id": "observation-virginia-lakes-trailhead-operations-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T22:00:00+00:00",
+    "source_id": "source-mono-county-virginia-lakes-trails"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

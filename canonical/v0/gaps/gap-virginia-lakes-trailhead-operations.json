@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-virginia-lakes-trailhead-operations",
+    "question": "What parking capacity, overflow arrangement, bathroom type, potable-water service, and road surface apply at Virginia Lakes Trailhead?",
+    "reason": "The county guide establishes parking, brick bathrooms, and the route start behind them but does not publish these remaining details.",
+    "related_ids": [
+      "trailhead-virginia-lakes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

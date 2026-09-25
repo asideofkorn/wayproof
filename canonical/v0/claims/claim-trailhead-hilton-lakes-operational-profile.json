@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-hilton-lakes-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-hilton-lakes-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-hilton-lakes-rock-creek",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "unknown",
+        "status": "unknown"
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "surface": "paved"
+      },
+      "route_connector": {
+        "description": "Official map depicts the Hilton Creek Lakes route meeting the trailhead.",
+        "exact_geometry": "unresolved",
+        "status": "depicted"
+      },
+      "toilets": {
+        "status": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

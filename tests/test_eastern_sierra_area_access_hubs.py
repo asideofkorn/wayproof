@@ -39,3 +39,45 @@ def test_area_hubs_render_related_routes_and_trailheads(generated_site):
         page = (site_root / "knowledge" / area_id / "index.html").read_text()
         for name in names:
             assert name in page
+
+
+def test_priority_trailheads_publish_evidence_bounded_operational_profiles():
+    records = load_canonical(ROOT)
+    claims = {claim.subject_id: claim for claim in records.claims
+              if claim.predicate == "trailhead_operational_profile"}
+
+    expected = {
+        "trailhead-hilton-lakes-rock-creek",
+        "trailhead-convict-lake",
+        "trailhead-horseshoe-lake-mammoth",
+        "trailhead-virginia-lakes",
+        "trailhead-lundy-canyon",
+        "trailhead-yost-fern",
+    }
+    assert expected <= claims.keys()
+    assert claims["trailhead-convict-lake"].value["parking"]["overflow"] == (
+        "south end of Convict Lake Resort"
+    )
+    assert claims["trailhead-lundy-canyon"].value["road_access"]["surface"] == (
+        "dirt on final approach beyond Lundy Lake"
+    )
+    assert claims["trailhead-virginia-lakes"].value["toilets"]["description"] == (
+        "brick bathrooms"
+    )
+    assert claims["trailhead-horseshoe-lake-mammoth"].value["toilets"]["present"]
+    assert all(claims[item].value["potable_water"]["status"] == "unknown"
+               for item in expected)
+
+
+def test_priority_trailhead_pages_render_operational_profiles(generated_site):
+    site_root, _ = generated_site
+    for entity_id in (
+        "trailhead-hilton-lakes-rock-creek",
+        "trailhead-convict-lake",
+        "trailhead-horseshoe-lake-mammoth",
+        "trailhead-virginia-lakes",
+        "trailhead-lundy-canyon",
+        "trailhead-yost-fern",
+    ):
+        page = (site_root / "knowledge" / entity_id / "index.html").read_text()
+        assert "Trailhead operational profile" in page

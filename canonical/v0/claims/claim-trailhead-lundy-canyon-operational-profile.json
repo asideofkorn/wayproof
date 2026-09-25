@@ -1,0 +1,37 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-lundy-canyon-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-lundy-canyon-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-lundy-canyon",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "extra parking approximately one mile down-canyon",
+        "present": true
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "distance_from_lundy_lake_miles": 2,
+        "surface": "dirt on final approach beyond Lundy Lake"
+      },
+      "route_connector": {
+        "description": "Official guide depicts the Lundy Canyon route beginning at trailhead parking.",
+        "exact_geometry": "schematic",
+        "status": "depicted"
+      },
+      "toilets": {
+        "status": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

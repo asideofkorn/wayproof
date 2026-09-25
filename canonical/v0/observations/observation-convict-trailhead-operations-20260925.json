@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Wilderness Hiking: Convict Lake, pages 1-2"
+    ],
+    "content": "The Forest Service guide directs drivers two miles west from US 395, then right toward the trailhead parking area. It identifies overflow parking at the south end of the resort. Its map depicts the trail leaving the parking area and continuing around the north shore on a paved-road approach. It does not publish parking capacity, restroom details, or potable-water service for the trailhead.",
+    "observation_id": "observation-convict-trailhead-operations-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T22:00:00+00:00",
+    "source_id": "source-usfs-convict-wilderness-hiking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

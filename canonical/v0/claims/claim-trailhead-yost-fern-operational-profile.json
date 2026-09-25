@@ -1,0 +1,37 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-yost-fern-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-yost-fern-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-yost-fern",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "unknown",
+        "status": "unknown"
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "location": "approximately one mile south of Silver Lake on Highway 158",
+        "surface": "paved"
+      },
+      "route_connector": {
+        "description": "Official guide depicts the shared Yost/Fern route beginning at the trailhead.",
+        "exact_geometry": "schematic",
+        "status": "depicted"
+      },
+      "toilets": {
+        "status": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

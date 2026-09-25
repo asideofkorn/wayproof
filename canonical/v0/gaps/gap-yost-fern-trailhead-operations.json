@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yost-fern-trailhead-operations",
+    "question": "What parking arrangement and capacity, overflow, toilets, and potable-water service apply at Yost and Fern Lakes Trailhead?",
+    "reason": "The official guide establishes the paved-road location and route start but does not publish these operating details.",
+    "related_ids": [
+      "trailhead-yost-fern"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
