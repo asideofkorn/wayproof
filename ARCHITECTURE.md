@@ -21,7 +21,10 @@ Focused implementation decisions that refine this architecture are recorded in
 `docs/adr/`. [ADR 0001](docs/adr/0001-versioned-source-geometry-for-route-maps.md)
 selects bounded, versioned public-source geometry snapshots and build-generated
 route GeoJSON while retaining Schema v0's geometry-neutral spatial scopes and
-the controlled ChangeSet publication boundary.
+the controlled ChangeSet publication boundary. [ADR 0002](docs/adr/0002-interactive-map-rendering-and-basemap-sources.md)
+selects self-hosted MapLibre GL JS with initial USGS topo and aerial raster
+basemaps, while keeping basemap context separate from Wayproof geometry
+evidence and preserving the dependency-free schematic fallback.
 
 ## Architectural principles
 
