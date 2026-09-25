@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-upper-lamarck-lake-geographic-reference",
+    "evidence_ids": [
+      "evidence-upper-lamarck-lake-geographic-reference"
+    ],
+    "predicate": "geographic_reference",
+    "spatial_scope_ids": [
+      "scope-place-upper-lamarck-lake"
+    ],
+    "subject_id": "place-upper-lamarck-lake",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "geometry_role": "named_feature_reference_point",
+      "latitude": 37.210308065833495,
+      "longitude": -118.65094909325705,
+      "source_feature_class": "Lake",
+      "source_feature_id": 268621,
+      "source_feature_name": "Upper Lamarck Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

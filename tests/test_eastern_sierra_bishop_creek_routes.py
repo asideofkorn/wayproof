@@ -86,11 +86,10 @@ def test_site_publishes_both_interactive_route_maps(generated_site):
         assert "Download generated GeoJSON" in page
 
 
-def test_batch_narrows_but_does_not_erase_unresolved_bishop_creek_work():
+def test_original_batch_preserves_its_scope_after_followup_closes_gap():
     records = load_canonical(ROOT)
     gaps = indexed(records, "gaps", "gap_id")
-    gap = gaps["gap-bishop-creek-day-hike-distances"]
-    assert gap.related_ids == ("route-lamarck-lakes", "route-treasure-lakes")
+    assert "gap-bishop-creek-day-hike-distances" not in gaps
 
     change = load_changeset(ROOT / "changesets/v0/wp-20260924-bishop-creek-route-depth.json")
     assert change.status is ChangeSetStatus.VALIDATED

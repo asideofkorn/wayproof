@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-piute-pass-01"
+    ],
+    "object_id": "route-lamarck-lakes",
+    "predicate": "part_of",
+    "relationship_id": "relationship-route-segment-piute-pass-01-part-of-lamarck-lakes",
+    "subject_id": "route-segment-piute-pass-01",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

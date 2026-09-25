@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-treasure-lakes-bishop-creek-geographic-reference",
+    "evidence_id": "evidence-treasure-lakes-bishop-creek-geographic-reference",
+    "notes": "",
+    "observation_id": "observation-usgs-geographic-names-bishop-lakes-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

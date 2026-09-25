@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-treasure-lakes-03",
+    "kind": "route_segment",
+    "name": "Treasure Lakes segment 3"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

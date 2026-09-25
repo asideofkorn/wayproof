@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lower-lamarck-lake-geographic-reference",
+    "evidence_ids": [
+      "evidence-lower-lamarck-lake-geographic-reference"
+    ],
+    "predicate": "geographic_reference",
+    "spatial_scope_ids": [
+      "scope-place-lower-lamarck-lake"
+    ],
+    "subject_id": "place-lower-lamarck-lake",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "geometry_role": "named_feature_reference_point",
+      "latitude": 37.217194631601274,
+      "longitude": -118.64269546315641,
+      "source_feature_class": "Lake",
+      "source_feature_id": 263027,
+      "source_feature_name": "Lower Lamarck Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

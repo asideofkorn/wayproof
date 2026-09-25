@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-lamarck-lakes-02",
+    "kind": "route_segment",
+    "name": "Lamarck Lakes segment 2"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

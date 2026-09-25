@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-segment-treasure-lakes-02"
+    ],
+    "object_id": "route-node-treasure-lakes-02",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-route-segment-treasure-lakes-02-ends-at",
+    "subject_id": "route-segment-treasure-lakes-02",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

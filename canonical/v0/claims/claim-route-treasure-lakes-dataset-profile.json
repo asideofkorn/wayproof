@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-treasure-lakes-dataset-profile",
+    "evidence_ids": [
+      "evidence-route-treasure-lakes-dataset-profile"
+    ],
+    "predicate": "dataset_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-treasure-lakes"
+    ],
+    "subject_id": "route-treasure-lakes",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of selected USGS source-field lengthmiles values",
+      "geometry_snapshot": {
+        "path": "geometry/v0/snapshots/usgs-bishop-creek-lamarck-treasure-20260925.geojson",
+        "sha256": "0115cb49dce274295bcea333edab310621738d6284ebb75aa76d942e86bb7206"
+      },
+      "one_way_distance_miles": 3.42474871
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

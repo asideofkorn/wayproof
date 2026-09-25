@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Upper Lamarck Lake",
+    "entity_id": "place-upper-lamarck-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-place-upper-lamarck-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

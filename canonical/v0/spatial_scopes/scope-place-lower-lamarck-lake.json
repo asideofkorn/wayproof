@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Lower Lamarck Lake",
+    "entity_id": "place-lower-lamarck-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-place-lower-lamarck-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

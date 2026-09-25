@@ -1,0 +1,801 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-bishop-creek-lamarck-treasure-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-lower-lamarck-lake.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "place-lower-lamarck-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-upper-lamarck-lake.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "place-upper-lamarck-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-treasure-lakes-bishop-creek.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "place-treasure-lakes-bishop-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lamarck-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-lamarck-lakes-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lamarck-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-lamarck-lakes-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lamarck-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-lamarck-lakes-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lamarck-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-lamarck-lakes-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lamarck-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-lamarck-lakes-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lamarck-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-lamarck-lakes-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lamarck-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-lamarck-lakes-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-lamarck-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-lamarck-lakes-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-lamarck-lakes-05.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-lamarck-lakes-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-treasure-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-treasure-lakes-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-treasure-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-treasure-lakes-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-treasure-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-treasure-lakes-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-treasure-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-treasure-lakes-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-treasure-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-treasure-lakes-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-treasure-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-node-treasure-lakes-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-treasure-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "route-segment-treasure-lakes-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-lower-lamarck-lake.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "scope-place-lower-lamarck-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-upper-lamarck-lake.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "scope-place-upper-lamarck-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-treasure-lakes-bishop-creek.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "scope-place-treasure-lakes-bishop-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-bishop-creek-lamarck-treasure-routes-20260925.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "observation-usgs-bishop-creek-lamarck-treasure-routes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-geographic-names-bishop-lakes-20260925.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "observation-usgs-geographic-names-bishop-lakes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lower-lamarck-lake-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-lower-lamarck-lake-geographic-reference",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-upper-lamarck-lake-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-upper-lamarck-lake-geographic-reference",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-treasure-lakes-bishop-creek-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-treasure-lakes-bishop-creek-geographic-reference",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lamarck-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-lamarck-lakes-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lamarck-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-lamarck-lakes-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lamarck-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-lamarck-lakes-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lamarck-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-lamarck-lakes-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-lamarck-lakes-05.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-lamarck-lakes-05",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-lamarck-lakes-dataset-profile.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-lamarck-lakes-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-treasure-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-treasure-lakes-01",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-treasure-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-treasure-lakes-02",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-treasure-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-treasure-lakes-03",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-segment-treasure-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-segment-treasure-lakes-04",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-route-treasure-lakes-dataset-profile.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "evidence-route-treasure-lakes-dataset-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lower-lamarck-lake-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-lower-lamarck-lake-geographic-reference",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-upper-lamarck-lake-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-upper-lamarck-lake-geographic-reference",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-treasure-lakes-bishop-creek-geographic-reference.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-treasure-lakes-bishop-creek-geographic-reference",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lamarck-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-lamarck-lakes-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lamarck-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-lamarck-lakes-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lamarck-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-lamarck-lakes-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lamarck-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-lamarck-lakes-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-lamarck-lakes-05.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-lamarck-lakes-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-lamarck-lakes-dataset-profile.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-lamarck-lakes-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-treasure-lakes-01.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-treasure-lakes-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-treasure-lakes-02.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-treasure-lakes-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-treasure-lakes-03.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-treasure-lakes-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-treasure-lakes-04.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-segment-treasure-lakes-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-treasure-lakes-dataset-profile.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "claim-route-treasure-lakes-dataset-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-piute-pass-01-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-piute-pass-01-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-01-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-01-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-01-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-01-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-02-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-02-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-02-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-02-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-03-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-03-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-03-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-03-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-04-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-04-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-04-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-04-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-05-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-05-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-lamarck-lakes-05-part-of-lamarck-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-lamarck-lakes-05-part-of-lamarck-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lamarck-lakes-starts-at-dataset-entry.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-lamarck-lakes-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lamarck-lakes-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-lamarck-lakes-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-01-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-01-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-01-part-of-treasure-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-01-part-of-treasure-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-02-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-02-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-02-part-of-treasure-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-02-part-of-treasure-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-03-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-03-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-03-part-of-treasure-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-03-part-of-treasure-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-04-starts-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-04-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-segment-treasure-lakes-04-part-of-treasure-lakes.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-segment-treasure-lakes-04-part-of-treasure-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-treasure-lakes-starts-at-dataset-entry.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-treasure-lakes-starts-at-dataset-entry",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-treasure-lakes-ends-at.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-treasure-lakes-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-route-lamarck-lakes-passes-lower-lamarck-lake.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "relationship-route-lamarck-lakes-passes-lower-lamarck-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-lamarck-lakes-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "result-route-lamarck-lakes-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-route-treasure-lakes-ten-mile-day-hike-fit.json",
+      "reason": "Add source-backed Lamarck and Treasure Lakes topology, geometry, and day-hike distance results.",
+      "record_id": "result-route-treasure-lakes-ten-mile-day-hike-fit",
+      "record_type": "derived_result"
+    },
+    {
+      "action": "REMOVE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-bishop-creek-day-hike-distances.json",
+      "reason": "Both named route distances and connected topology are now supported by official map and dataset evidence.",
+      "record_id": "gap-bishop-creek-day-hike-distances",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add connected Lamarck and Treasure Lakes route geometry and close the bounded Bishop Creek distance gap."
+}

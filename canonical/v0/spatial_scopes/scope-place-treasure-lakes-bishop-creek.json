@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Treasure Lakes reached from South Lake",
+    "entity_id": "place-treasure-lakes-bishop-creek",
+    "kind": "waterbody",
+    "scope_id": "scope-place-treasure-lakes-bishop-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
