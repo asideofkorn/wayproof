@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-convict-lake-operational-profile",
+    "evidence_id": "evidence-trailhead-convict-lake-operational-profile",
+    "notes": "",
+    "observation_id": "observation-convict-trailhead-operations-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "Rock Creek Area Trails map"
+    ],
+    "content": "The official Rock Creek Area Trails map depicts the Hilton Creek Lakes route meeting a trailhead beside Rock Creek Lake. The mapped road approach is paved. The map does not publish a parking-space count, overflow arrangement, restroom, or potable-water service for this trailhead.",
+    "observation_id": "observation-rock-creek-hilton-trailhead-operations-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T22:00:00+00:00",
+    "source_id": "source-usfs-rock-creek-area-trails-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

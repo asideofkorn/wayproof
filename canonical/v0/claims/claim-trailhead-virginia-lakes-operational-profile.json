@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-virginia-lakes-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-virginia-lakes-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-virginia-lakes",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "unknown",
+        "present": true
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "distance_on_virginia_lakes_road_miles": 6,
+        "surface": "unknown"
+      },
+      "route_connector": {
+        "description": "Trailhead sign and route start are behind the brick bathrooms from parking.",
+        "exact_geometry": "unresolved",
+        "status": "described"
+      },
+      "toilets": {
+        "description": "brick bathrooms",
+        "present": true,
+        "type": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

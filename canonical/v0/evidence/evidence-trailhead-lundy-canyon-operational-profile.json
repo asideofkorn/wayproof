@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-lundy-canyon-operational-profile",
+    "evidence_id": "evidence-trailhead-lundy-canyon-operational-profile",
+    "notes": "",
+    "observation_id": "observation-mono-basin-trailhead-operations-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

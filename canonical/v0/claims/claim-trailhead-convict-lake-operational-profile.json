@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-convict-lake-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-convict-lake-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [
+      "scope-trailhead-convict-lake"
+    ],
+    "subject_id": "trailhead-convict-lake",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "south end of Convict Lake Resort",
+        "present": true
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "distance_from_us_395_miles": 2,
+        "surface": "paved"
+      },
+      "route_connector": {
+        "description": "Official guide map depicts the trail leaving trailhead parking for the north shore.",
+        "exact_geometry": "schematic",
+        "status": "depicted"
+      },
+      "toilets": {
+        "status": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

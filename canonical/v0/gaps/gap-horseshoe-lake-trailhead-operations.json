@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-horseshoe-lake-trailhead-operations",
+    "question": "What parking capacity, overflow arrangement, restroom type, and potable-water service apply at Horseshoe Lake Trailhead?",
+    "reason": "Official sources establish parking, a paved approach, restrooms, and trail access but do not publish these remaining details.",
+    "related_ids": [
+      "trailhead-horseshoe-lake-mammoth"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

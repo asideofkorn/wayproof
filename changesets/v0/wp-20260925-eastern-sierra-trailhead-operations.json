@@ -1,0 +1,265 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-eastern-sierra-trailhead-operations",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-convict-lake-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-convict-lake-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-convict-lake-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-hilton-lakes-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-hilton-lakes-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-hilton-lakes-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-horseshoe-lake-operational-profile-usfs",
+        "evidence-trailhead-horseshoe-lake-operational-profile-town"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-horseshoe-lake-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-horseshoe-lake-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-lundy-canyon-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-lundy-canyon-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-lundy-canyon-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-virginia-lakes-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-virginia-lakes-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-virginia-lakes-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-yost-fern-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-yost-fern-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "claim-trailhead-yost-fern-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-convict-lake-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-convict-lake-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-hilton-lakes-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-hilton-lakes-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-horseshoe-lake-operational-profile-town.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-horseshoe-lake-operational-profile-town",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-horseshoe-lake-operational-profile-usfs.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-horseshoe-lake-operational-profile-usfs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-lundy-canyon-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-lundy-canyon-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-virginia-lakes-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-virginia-lakes-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-yost-fern-operational-profile.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "evidence-trailhead-yost-fern-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-convict-lake-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-convict-lake-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-hilton-lakes-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-hilton-lakes-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-horseshoe-lake-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-horseshoe-lake-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-lundy-canyon-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-lundy-canyon-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-virginia-lakes-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-virginia-lakes-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yost-fern-trailhead-operations.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "gap-yost-fern-trailhead-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-convict-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-convict-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-horseshoe-lake-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-horseshoe-lake-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-mono-basin-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-mono-basin-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-rock-creek-hilton-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-rock-creek-hilton-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-town-horseshoe-lake-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-town-horseshoe-lake-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-virginia-lakes-trailhead-operations-20260925.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "observation-virginia-lakes-trailhead-operations-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-mono-county-virginia-lakes-trails.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "source-mono-county-virginia-lakes-trails",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-town-mammoth-lakes-walk-bike-ride-2017.json",
+      "reason": "Publish evidence-bounded Eastern Sierra trailhead operational profiles",
+      "record_id": "source-town-mammoth-lakes-walk-bike-ride-2017",
+      "record_type": "source"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish operational profiles for six high-value Eastern Sierra trailheads"
+}

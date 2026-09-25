@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-convict-lake-trailhead-operations",
+    "question": "What parking capacity, toilet availability, and potable-water service apply at Convict Lake Trailhead?",
+    "reason": "The official guide establishes trailhead and overflow parking but does not publish these remaining operating details.",
+    "related_ids": [
+      "trailhead-convict-lake"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-lundy-canyon-trailhead-operations",
+    "question": "What parking capacity, toilet availability, and potable-water service apply at Lundy Canyon Trailhead?",
+    "reason": "The official guide establishes trailhead parking, overflow, and a dirt final approach but does not publish these remaining operating details.",
+    "related_ids": [
+      "trailhead-lundy-canyon"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

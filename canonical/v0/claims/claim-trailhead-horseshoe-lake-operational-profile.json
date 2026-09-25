@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-horseshoe-lake-operational-profile",
+    "evidence_ids": [
+      "evidence-trailhead-horseshoe-lake-operational-profile-usfs",
+      "evidence-trailhead-horseshoe-lake-operational-profile-town"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-horseshoe-lake-mammoth",
+    "temporal_scope": null,
+    "value": {
+      "parking": {
+        "capacity": "unknown",
+        "overflow": "unknown",
+        "present": true
+      },
+      "potable_water": {
+        "status": "unknown"
+      },
+      "road_access": {
+        "surface": "paved"
+      },
+      "route_connector": {
+        "description": "Official map and Town plan depict trail access from the established trailhead and parking lot.",
+        "exact_geometry": "unresolved",
+        "status": "depicted"
+      },
+      "toilets": {
+        "present": true,
+        "type": "unknown"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
