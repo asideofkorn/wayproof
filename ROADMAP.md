@@ -124,6 +124,28 @@ the same service layer.
   proximity. Choose the rendering library, production tile provider, satellite
   imagery policy, and hosting strategy only when implementation evidence
   requires those decisions.
+- Expand those entity maps into a generated layered geographic explorer. It
+  should expose authoritative park, wilderness, preserve, and other managed-land
+  boundaries together with canonical routes, segments, peaks, trailheads,
+  access points, campgrounds, campsites, parking, water, restrooms, and other
+  facilities. Users can independently show or hide each layer; the explorer
+  does not assign or display an internal coverage score.
+- Make map features inspectable without losing spatial context: pointer hover
+  may show a transient name and type, while click or tap opens a persistent
+  card or mobile bottom sheet with canonical facts and a link to the generated
+  entity page. Selecting empty map space, a close control, or Escape dismisses
+  the selection. Overlapping features must produce an explicit chooser rather
+  than an arbitrary inferred association.
+- Support a responsive full-viewport map mode, including safe-area-aware mobile
+  controls, exit back to the embedded page, a separate reset-view action, and
+  preservation of center, zoom, visible layers, and selected feature across the
+  transition. Prefer a dependable CSS viewport mode on iOS while treating the
+  browser Fullscreen API as an optional enhancement.
+- Generate explorer layers and feature links through canonical read services,
+  use authoritative or appropriately licensed boundary geometry, and apply
+  zoom-dependent visibility or clustering where necessary. Geographic overlap
+  remains presentation only and never establishes access, containment, route
+  membership, or traversal.
 - Consider a generated read index only if measured query or startup needs
   justify it; canonical Git-backed knowledge remains the source of truth.
 
@@ -258,6 +280,9 @@ planning core.
 - Render downloaded route and segment GeoJSON together with trailheads,
   campsites, water, toilets, parking, junctions, peaks, and other
   route-connected facilities.
+- Reuse the online geographic explorer's layer controls, feature selection,
+  entity links, full-viewport mode, reset behavior, and preserved map state for
+  downloaded boundaries, routes, peaks, access points, camping, and facilities.
 - Link selectable features to canonical records and preserve geometry source,
   review state, and fitness-for-use distinctions.
 - Remain usable without a basemap. Evaluate separately licensed regional
