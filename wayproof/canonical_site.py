@@ -257,51 +257,9 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
 
 
 def _route_map_html(geometry: dict, geometry_url: str) -> str:
-    """Render a dependency-free overview from generated route GeoJSON."""
+    """Render an interactive map from generated route GeoJSON."""
     features = geometry["features"]
-    points = [point for feature in features
-              for point in feature["geometry"]["coordinates"]]
-    longitudes = [point[0] for point in points]
-    latitudes = [point[1] for point in points]
-    min_x, max_x = min(longitudes), max(longitudes)
-    min_y, max_y = min(latitudes), max(latitudes)
-    width, height, padding = 760.0, 420.0, 34.0
-    scale = min(
-        (width - 2 * padding) / max(max_x - min_x, 1e-9),
-        (height - 2 * padding) / max(max_y - min_y, 1e-9),
-    )
-    used_width = (max_x - min_x) * scale
-    used_height = (max_y - min_y) * scale
-    offset_x = (width - used_width) / 2
-    offset_y = (height - used_height) / 2
-
-    def project(point: list[float]) -> tuple[float, float]:
-        return (offset_x + (point[0] - min_x) * scale,
-                offset_y + (max_y - point[1]) * scale)
-
-    paths = []
-    for feature in features:
-        coordinates = feature["geometry"]["coordinates"]
-        path = " ".join(
-            ("M" if index == 0 else "L") + f" {x:.2f} {y:.2f}"
-            for index, (x, y) in enumerate(map(project, coordinates))
-        )
-        properties = feature["properties"]
-        paths.append(
-            f'<path d="{path}"><title>Segment {properties["sequence"]}: '
-            f'{_e(properties["distance_miles"])} miles</title></path>'
-        )
-    start_x, start_y = project(points[0])
-    end_x, end_y = project(points[-1])
     total = geometry["wayproof"]["distance_miles"]
-    svg = (
-        f'<svg viewBox="0 0 {width:.0f} {height:.0f}" role="img" '
-        'aria-label="Evidence-backed route overview">'
-        '<g class="route-lines">' + "".join(paths) + '</g>'
-        f'<circle class="route-start" cx="{start_x:.2f}" cy="{start_y:.2f}" r="7"/>'
-        f'<circle class="route-end" cx="{end_x:.2f}" cy="{end_y:.2f}" r="8"/>'
-        '</svg>'
-    )
     interactive_map = (
         '<div class="interactive-route-map" data-interactive-route-map '
         f'data-geometry-url="{_e(geometry_url)}">'
@@ -314,10 +272,6 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
         '<p class="meta route-map-status" data-map-status aria-live="polite">'
         'Interactive map loads when scrolled into view.</p></div>'
     )
-    fallback = (
-        '<details class="route-map-fallback" open>'
-        '<summary>Simplified route diagram</summary>' + svg + '</details>'
-    )
     script = (
         '<script type="module" '
         f'src="/assets/route-map.js?v={ROUTE_MAP_ASSET_VERSION}"></script>'
@@ -326,7 +280,7 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
         '<section id="route-map" class="route-map"><h2>Route map</h2>'
         '<p>This overview is built from a reviewed, versioned source snapshot. '
         'It is planning evidence, not navigation-grade mapping.</p>'
-        + interactive_map + fallback + '<div class="route-map-legend">'
+        + interactive_map + '<div class="route-map-legend">'
         f'<span><i class="start-dot"></i>Start</span><span><i class="end-dot"></i>Destination</span>'
         f'<span>{_e(round(total, 2))} miles one way</span></div>'
         f'<p class="meta"><a href="{_e(geometry_url)}">Download generated GeoJSON</a> · '

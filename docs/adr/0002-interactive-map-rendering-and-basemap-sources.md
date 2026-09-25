@@ -2,6 +2,9 @@
 
 - Status: Accepted
 - Date: 2026-09-24
+- Amended: 2026-09-25 — remove the contextless schematic fallback after
+  production evaluation; retain textual route facts, status messaging, and the
+  downloadable GeoJSON when the interactive map is unavailable.
 - Decision owners: Wayproof maintainers
 - Related: `PRODUCT.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `DATA_LICENSE.md`,
   `docs/adr/0001-versioned-source-geometry-for-route-maps.md`
@@ -10,7 +13,7 @@
 
 ADR 0001 established that Wayproof publishes deterministic, route-specific
 GeoJSON from reviewed and versioned source-geometry snapshots. The generated
-website currently renders that geometry as a dependency-free schematic. The
+website initially rendered that geometry as a dependency-free schematic. The
 schematic is fast, accessible, printable, and resilient, but it does not show a
 route in geographic context.
 
@@ -34,8 +37,9 @@ distribution now.
 - Preserve geometry provenance, accuracy, review state, and fitness-for-use.
 - Keep the canonical read projection independent of a particular basemap.
 - Support mobile touch interaction and future foreground GPS positioning.
-- Preserve an accessible, dependency-free fallback for JavaScript failure,
-  map-service outages, printing, and offline use without downloaded tiles.
+- Preserve accessible route facts and downloadable geometry for JavaScript
+  failure, map-service outages, printing, and offline use without downloaded
+  tiles.
 - Avoid silently depending on commercial free-tier quotas or terms.
 - Avoid bulk caching a public tile service as an offline-map strategy.
 
@@ -55,7 +59,9 @@ Disadvantages:
 - limited support for inspecting facility locations; and
 - cannot naturally support map layers or device position later.
 
-The schematic remains the fallback, but is insufficient as the only map.
+The schematic was initially retained as a fallback. Production evaluation found
+that a contextless line did not provide enough planning value to justify its
+page weight, so the amended decision removes it.
 
 ### 2. Leaflet with raster basemaps
 
@@ -144,9 +150,9 @@ a later PWA decision.
 8. Canonical identifiers will link selectable map features to the same detail
    pages and read projections used elsewhere. The map will not maintain a
    separate feature catalog.
-9. The current schematic and textual route information will remain available
-   as the no-JavaScript, loading-failure, map-service-outage, print, and
-   no-basemap fallback.
+9. Textual route information, explicit map-status messaging, and downloadable
+   GeoJSON remain available for loading failure, map-service outage, printing,
+   and use without a basemap. The contextless schematic is not retained.
 10. Map code and aerial tiles will load lazily. Aerial imagery will not be
     requested until selected by the visitor.
 11. The first implementation will use live USGS tiles. It will not bulk-cache
@@ -166,7 +172,7 @@ The first phase will:
 - add Topo, Aerial, and Aerial + labels controls;
 - overlay one existing generated route GeoJSON on the interactive map;
 - fit the initial viewport to the route;
-- preserve the schematic fallback and existing accuracy warning; and
+- preserve the existing accuracy warning and downloadable GeoJSON; and
 - verify focused site-generation behavior plus desktop and mobile rendering.
 
 It will not yet add selectable canonical facilities, maps to every entity type,

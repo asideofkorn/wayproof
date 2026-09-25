@@ -141,7 +141,8 @@ def test_cinder_cone_route_publishes_a_reproducible_human_map(site):
     geometry = json.loads(geometry_path.read_text())
 
     assert "Route map" in page
-    assert '<svg viewBox="0 0 760 420"' in page
+    assert "Simplified route diagram" not in page
+    assert "<svg" not in page
     assert "planning evidence, not navigation-grade mapping" in page
     assert f'/geometry/routes/{entity_id}.geojson' in page
     assert payload["route_geometry_url"] == f"/geometry/routes/{entity_id}.geojson"
@@ -162,7 +163,6 @@ def test_route_geometry_adds_the_interactive_map(site):
     assert 'data-basemap="aerial" aria-pressed="false"' in page
     assert 'data-basemap="aerial-labels" aria-pressed="false"' in page
     assert "Interactive map loads when scrolled into view." in page
-    assert 'class="route-map-fallback" open' in page
     assert 'src="/assets/route-map.js?v=20260925-1"' in page
     assert 'href="/assets/vendor/maplibre/maplibre-gl.css"' in page
 
@@ -207,6 +207,7 @@ def test_interactive_map_asset_is_lazy_and_links_canonical_segments(site):
     assert "await import(" in script
     assert "{ default: maplibregl }" not in script
     assert "maplibregl.supported" not in script
+    assert "Downloadable route GeoJSON remains available below." in script
     assert "encodeURIComponent(segmentId)" in script
     assert 'map.on("click", "wayproof-route"' in script
 

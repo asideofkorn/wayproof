@@ -141,16 +141,9 @@ input[type="search"]:focus, select:focus { outline:3px solid color-mix(in srgb, 
 .route-map-controls button:focus-visible { outline:3px solid color-mix(in srgb, var(--accent) 30%, transparent); outline-offset:2px; }
 .route-map-canvas { height:430px; overflow:hidden; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
 .route-map-status { margin:.45rem 0 0; }
-.route-map-fallback { margin:.75rem 0; }
-.route-map-fallback summary { cursor:pointer; color:var(--link); }
 .route-map .maplibregl-popup-content { background:var(--surface-raised); color:var(--text); border:1px solid var(--border); border-radius:8px; }
 .route-map .maplibregl-popup-content a { overflow-wrap:anywhere; }
 .route-map .maplibregl-popup-tip { border-top-color:var(--surface-raised); border-bottom-color:var(--surface-raised); }
-.route-map svg { display:block; width:100%; height:auto; box-sizing:border-box; margin:1rem 0 .65rem; padding:.45rem; border:1px solid var(--border); border-radius:14px; background:var(--surface); }
-.route-lines path { fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
-.route-lines path:nth-child(even) { stroke:#287ea0; }
-.route-start { fill:#fff; stroke:var(--accent); stroke-width:4; vector-effect:non-scaling-stroke; }
-.route-end { fill:#b6462f; stroke:#fff; stroke-width:3; vector-effect:non-scaling-stroke; }
 .route-map-legend { display:flex; flex-wrap:wrap; gap:.6rem 1.2rem; align-items:center; color:var(--muted); font-size:.9rem; }
 .route-map-legend span { display:inline-flex; align-items:center; gap:.35rem; }
 .route-map-legend i { display:inline-block; width:.65rem; height:.65rem; border-radius:50%; }
