@@ -24,7 +24,8 @@ route GeoJSON while retaining Schema v0's geometry-neutral spatial scopes and
 the controlled ChangeSet publication boundary. [ADR 0002](docs/adr/0002-interactive-map-rendering-and-basemap-sources.md)
 selects self-hosted MapLibre GL JS with initial USGS topo and aerial raster
 basemaps, while keeping basemap context separate from Wayproof geometry
-evidence and preserving the dependency-free schematic fallback.
+evidence. Its production amendment removes the contextless schematic while
+retaining textual route facts, map-status messaging, and downloadable GeoJSON.
 
 ## Architectural principles
 

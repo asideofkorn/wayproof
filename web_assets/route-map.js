@@ -43,11 +43,14 @@ function setStatus(container, message) {
   if (status) status.textContent = message;
 }
 
+const UNAVAILABLE_MESSAGE =
+  "Interactive map unavailable. Downloadable route GeoJSON remains available below.";
+
 async function enhanceRouteMap(container) {
   const mapElement = container.querySelector("[data-map-canvas]");
   const geometryUrl = container.dataset.geometryUrl;
   if (!mapElement || !geometryUrl) {
-    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+    setStatus(container, UNAVAILABLE_MESSAGE);
     return;
   }
 
@@ -55,7 +58,7 @@ async function enhanceRouteMap(container) {
   try {
     maplibregl = await import("/assets/vendor/maplibre/maplibre-gl.mjs");
   } catch (error) {
-    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+    setStatus(container, UNAVAILABLE_MESSAGE);
     return;
   }
 
@@ -65,7 +68,7 @@ async function enhanceRouteMap(container) {
     if (!response.ok) throw new Error(`GeoJSON request failed: ${response.status}`);
     route = await response.json();
   } catch (error) {
-    setStatus(container, "Route data unavailable; simplified diagram shown.");
+    setStatus(container, UNAVAILABLE_MESSAGE);
     return;
   }
 
@@ -105,7 +108,7 @@ async function enhanceRouteMap(container) {
       pitchWithRotate: false,
     });
   } catch (error) {
-    setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+    setStatus(container, UNAVAILABLE_MESSAGE);
     return;
   }
   map.touchZoomRotate.disableRotation();
@@ -115,7 +118,7 @@ async function enhanceRouteMap(container) {
   map.on("load", () => {
     const points = route.features.flatMap((feature) => coordinates(feature.geometry));
     if (!points.length) {
-      setStatus(container, "Route geometry is empty; simplified diagram shown.");
+      setStatus(container, UNAVAILABLE_MESSAGE);
       return;
     }
 
@@ -191,14 +194,12 @@ async function enhanceRouteMap(container) {
     );
     map.fitBounds(bounds, { padding: 44, maxZoom: 15, duration: 0 });
     container.classList.add("map-enhanced");
-    const fallback = container.querySelector(".route-map-fallback");
-    if (fallback) fallback.open = false;
     setStatus(container, "Interactive map ready. Topo layer selected.");
   });
 
   map.on("error", () => {
     if (!container.classList.contains("map-enhanced")) {
-      setStatus(container, "Interactive map unavailable; simplified diagram shown.");
+      setStatus(container, UNAVAILABLE_MESSAGE);
     }
   });
 
