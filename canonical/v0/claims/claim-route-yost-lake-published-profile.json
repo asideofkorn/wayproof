@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-yost-lake-published-profile",
+    "evidence_ids": [
+      "evidence-route-yost-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-yost-lake"
+    ],
+    "subject_id": "route-yost-lake",
+    "temporal_scope": null,
+    "value": {
+      "one_way_miles": 3.8,
+      "route_shape": "out_and_back",
+      "shared_fork_miles": 1.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-yost-lake-dataset-profile",
+    "evidence_ids": [
+      "evidence-route-yost-lake-dataset-profile"
+    ],
+    "predicate": "dataset_route_profile",
+    "spatial_scope_ids": [
+      "scope-route-yost-lake"
+    ],
+    "subject_id": "route-yost-lake",
+    "temporal_scope": null,
+    "value": {
+      "bidirectional": true,
+      "distance_basis": "sum of selected USGS source-field lengthmiles values",
+      "distance_disagreement_preserved": true,
+      "geometry_snapshot": {
+        "path": "geometry/v0/snapshots/usgs-june-lake-yost-fern-routes-20260924.geojson",
+        "sha256": "f30e94212d25790e766c88b6a5914779bf381c3d19ef7a3e79a1ecdbfe10170b"
+      },
+      "one_way_distance_miles": 2.20576586,
+      "published_guide_one_way_miles": 3.8
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

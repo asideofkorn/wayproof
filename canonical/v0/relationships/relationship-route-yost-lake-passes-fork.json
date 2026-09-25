@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-route-yost-lake-dataset-profile"
+    ],
+    "object_id": "route-node-yost-fern-fork",
+    "predicate": "passes",
+    "relationship_id": "relationship-route-yost-lake-passes-fork",
+    "subject_id": "route-yost-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
