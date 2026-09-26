@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-mariposa-grove-winter",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Mariposa Grove winter"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

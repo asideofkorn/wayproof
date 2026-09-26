@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-young-lakes-via-dog-lake",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Young Lakes via Dog Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

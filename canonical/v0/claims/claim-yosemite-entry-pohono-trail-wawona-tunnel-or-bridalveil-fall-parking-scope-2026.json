@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Yosemite Valley Wilderness Center",
+      "notes": "Flush toilet is summer-only.",
+      "official_entry_name": "Pohono Trail (Wawona Tunnel or Bridalveil Fall parking)",
+      "region": "Yosemite Valley",
+      "reservation_window_2026": "April 24 through October 18, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-pohono-trail-taft-point-winter-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-pohono-trail-taft-point-winter-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-pohono-trail-taft-point-winter",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Badger Pass Ranger Station or nearest listed winter permit station",
+      "notes": "Badger Pass; winter ski or snowshoe travel only.",
+      "official_entry_name": "Pohono Trail (Taft Point) winter",
+      "region": "Winter quotas",
+      "reservation_window_2026": "Winter; first-come, first-served allocation",
+      "travel_mode": "winter ski or snowshoe travel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

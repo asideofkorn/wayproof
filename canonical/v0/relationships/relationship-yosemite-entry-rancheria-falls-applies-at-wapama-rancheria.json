@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-rancheria-falls-quota-2026"
+    ],
+    "object_id": "trailhead-wapama-rancheria",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-rancheria-falls-applies-at-wapama-rancheria",
+    "subject_id": "permit-yosemite-entry-rancheria-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

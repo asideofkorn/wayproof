@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-white-wolf-campground-quota-2026"
+    ],
+    "object_id": "trailhead-white-wolf",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-white-wolf-campground-applies-at-white-wolf",
+    "subject_id": "permit-yosemite-entry-white-wolf-campground",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

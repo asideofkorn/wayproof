@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-happy-isles-to-illilouette-no-donohue-pass-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-happy-isles-to-illilouette-no-donohue-pass-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-happy-isles-to-illilouette-no-donohue-pass",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Yosemite Valley Wilderness Center",
+      "notes": "Park at trailhead parking beyond Curry Village; intended for the Illilouette basin.",
+      "official_entry_name": "Happy Isles to Illilouette (no Donohue Pass)",
+      "region": "Yosemite Valley",
+      "reservation_window_2026": "April 24 through October 18, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

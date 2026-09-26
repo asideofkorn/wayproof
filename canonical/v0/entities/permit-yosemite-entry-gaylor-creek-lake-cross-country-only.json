@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-gaylor-creek-lake-cross-country-only",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Gaylor Creek/Lake (cross-country only)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

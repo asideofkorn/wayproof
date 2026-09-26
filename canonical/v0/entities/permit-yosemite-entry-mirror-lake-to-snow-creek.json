@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-mirror-lake-to-snow-creek",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Mirror Lake to Snow Creek"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

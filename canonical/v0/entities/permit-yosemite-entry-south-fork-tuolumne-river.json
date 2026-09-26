@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-south-fork-tuolumne-river",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: South Fork Tuolumne River"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

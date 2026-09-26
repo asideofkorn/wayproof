@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-chilnualna-falls-quota-2026"
+    ],
+    "object_id": "trailhead-chilnualna-falls",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-chilnualna-falls-applies-at-chilnualna-falls",
+    "subject_id": "permit-yosemite-entry-chilnualna-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

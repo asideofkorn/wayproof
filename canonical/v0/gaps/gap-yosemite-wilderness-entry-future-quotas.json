@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-wilderness-entry-future-quotas",
+    "question": "What quotas, reservation seasons, fees, and operating facilities apply for a trip outside the published 2026 season?",
+    "reason": "Quota and seasonal operating details are annual and require a current check for future trip dates.",
+    "related_ids": [
+      "permit-yosemite-overnight-wilderness",
+      "source-nps-yosemite-wilderness-trailhead-information-2026",
+      "source-nps-yosemite-wilderness-permits-2026"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

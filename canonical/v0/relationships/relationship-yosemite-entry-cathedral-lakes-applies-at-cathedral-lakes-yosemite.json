@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-cathedral-lakes-quota-2026"
+    ],
+    "object_id": "trailhead-cathedral-lakes-yosemite",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-cathedral-lakes-applies-at-cathedral-lakes-yosemite",
+    "subject_id": "permit-yosemite-entry-cathedral-lakes",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking-quota-2026"
+    ],
+    "object_id": "trailhead-bridalveil-fall",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking-applies-at-bridalveil-fall",
+    "subject_id": "permit-yosemite-entry-pohono-trail-wawona-tunnel-or-bridalveil-fall-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

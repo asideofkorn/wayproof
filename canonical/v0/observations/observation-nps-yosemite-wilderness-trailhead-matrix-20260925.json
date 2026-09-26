@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes 2026 regional permit-entry names, advance and week-ahead quotas, toilet types, parking notes, Half Dome and Donohue Pass eligibility, winter-only entries, cross-country entries, and food-locker exceptions.",
+    "observation_id": "observation-nps-yosemite-wilderness-trailhead-matrix-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-wilderness-trailhead-information-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

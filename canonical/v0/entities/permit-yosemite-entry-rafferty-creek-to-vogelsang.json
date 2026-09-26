@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-rafferty-creek-to-vogelsang",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Rafferty Creek to Vogelsang"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-ostrander-lost-bear-meadow-quota-2026"
+    ],
+    "object_id": "trailhead-ostrander-lake",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-ostrander-lost-bear-meadow-applies-at-ostrander-lake",
+    "subject_id": "permit-yosemite-entry-ostrander-lost-bear-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

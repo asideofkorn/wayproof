@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-lyell-canyon-donohue-pass-eligible",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Lyell Canyon (Donohue Pass Eligible)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

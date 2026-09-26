@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-horizon-ridge-quota-2026"
+    ],
+    "object_id": "permit-yosemite-overnight-wilderness",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-entry-horizon-ridge-part-of-yosemite-wilderness-permit",
+    "subject_id": "permit-yosemite-entry-horizon-ridge",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

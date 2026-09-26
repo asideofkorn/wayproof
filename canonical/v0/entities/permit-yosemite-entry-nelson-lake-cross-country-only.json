@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-nelson-lake-cross-country-only",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Nelson Lake (cross-country only)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

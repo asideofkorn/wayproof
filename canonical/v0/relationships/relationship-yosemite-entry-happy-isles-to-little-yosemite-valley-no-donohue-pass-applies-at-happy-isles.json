@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass-quota-2026"
+    ],
+    "object_id": "trailhead-happy-isles",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass-applies-at-happy-isles",
+    "subject_id": "permit-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-donohue-pass-exit-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-donohue-pass-exit-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "happy_isles_past_lyv_donohue_eligible": 15,
+      "lyell_canyon_donohue_eligible": 30,
+      "purpose": "Donohue Pass exit",
+      "reservation_only": true,
+      "total": 45
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

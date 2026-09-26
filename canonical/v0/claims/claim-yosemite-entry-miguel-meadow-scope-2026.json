@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-miguel-meadow-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-miguel-meadow-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-miguel-meadow",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Hetch Hetchy Entrance",
+      "notes": "O'Shaughnessy Dam start for Miguel Meadows direction.",
+      "official_entry_name": "Miguel Meadow",
+      "region": "Hetch Hetchy",
+      "reservation_window_2026": "April 24 through October 18, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

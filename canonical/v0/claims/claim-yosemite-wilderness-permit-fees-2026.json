@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit-fees-2026",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit-fees-2026"
+    ],
+    "predicate": "published_wilderness_permit_fees",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "application_usd_per_group": 10,
+      "applies_during_reservation_season": true,
+      "nonrefundable": true,
+      "permit_usd_per_person": 5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

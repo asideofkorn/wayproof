@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-bridalveil-creek-winter",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Bridalveil Creek winter"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

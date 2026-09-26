@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes trailhead parking constraints, the Valley overnight trailhead lot rule, seasonal Tioga and Glacier Point overnight-parking prohibition, and limited transportation context.",
+    "observation_id": "observation-nps-yosemite-wilderness-trailhead-parking-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-trailhead-parking-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-beehive-meadows-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-beehive-meadows-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-beehive-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 21,
+      "total": 35,
+      "week_ahead": 14
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

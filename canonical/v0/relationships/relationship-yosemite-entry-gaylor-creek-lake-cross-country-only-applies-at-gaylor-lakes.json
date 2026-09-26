@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-gaylor-creek-lake-cross-country-only-quota-2026"
+    ],
+    "object_id": "trailhead-gaylor-lakes",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-gaylor-creek-lake-cross-country-only-applies-at-gaylor-lakes",
+    "subject_id": "permit-yosemite-entry-gaylor-creek-lake-cross-country-only",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

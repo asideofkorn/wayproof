@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-lyell-canyon-donohue-pass-eligible-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-lyell-canyon-donohue-pass-eligible-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-lyell-canyon-donohue-pass-eligible",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 18,
+      "total": 30,
+      "week_ahead": 12
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

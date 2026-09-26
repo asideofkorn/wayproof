@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-nelson-lake-cross-country-only-quota-2026"
+    ],
+    "object_id": "permit-yosemite-overnight-wilderness",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-entry-nelson-lake-cross-country-only-part-of-yosemite-wilderness-permit",
+    "subject_id": "permit-yosemite-entry-nelson-lake-cross-country-only",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
