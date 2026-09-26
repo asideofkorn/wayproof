@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-tuolumne-grove-nature-trail-published-profile"
+    ],
+    "object_id": "place-tuolumne-grove",
+    "predicate": "reaches",
+    "relationship_id": "relationship-tuolumne-grove-nature-trail-reaches-1-place-tuolumne-grove",
+    "subject_id": "route-tuolumne-grove-nature-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

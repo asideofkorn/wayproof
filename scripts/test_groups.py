@@ -29,6 +29,7 @@ SITE = {
     "test_yosemite_campground_inventory.py",
     "test_yosemite_glacier_point_depth.py",
     "test_yosemite_hetch_hetchy_depth.py",
+    "test_yosemite_remaining_corridors.py",
     "test_yosemite_nps_foundation.py",
     "test_yosemite_tuolumne_depth.py",
     "test_yosemite_tuolumne_route_depth.py",

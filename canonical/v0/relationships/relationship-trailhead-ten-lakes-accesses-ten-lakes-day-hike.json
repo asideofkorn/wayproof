@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ten-lakes-day-hike-published-profile"
+    ],
+    "object_id": "route-ten-lakes-day-hike",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-ten-lakes-accesses-ten-lakes-day-hike",
+    "subject_id": "trailhead-ten-lakes",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

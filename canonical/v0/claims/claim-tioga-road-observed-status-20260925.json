@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tioga-road-observed-status-20260925",
+    "evidence_ids": [
+      "evidence-tioga-road-observed-status-20260925"
+    ],
+    "predicate": "observed_operational_status",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "place-tioga-road-corridor",
+    "temporal_scope": null,
+    "value": {
+      "as_of": "2026-09-25",
+      "construction_delays": true,
+      "recheck_required": true,
+      "road": "open"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

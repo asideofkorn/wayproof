@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tenaya-lake-facility-profile",
+    "evidence_ids": [
+      "evidence-tenaya-lake-facility-profile"
+    ],
+    "predicate": "visitor_facility_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "waterbody-tenaya-lake",
+    "temporal_scope": null,
+    "value": {
+      "beach_access": true,
+      "kayaking": true,
+      "parking_areas": "several",
+      "picnic_areas": 2,
+      "picnic_tables": true,
+      "swimming": true,
+      "vault_toilets": "at some parking areas",
+      "wheelchair_accessible_picnic_areas": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

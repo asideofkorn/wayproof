@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Crane Flat, the two nearby sequoia groves, White Wolf, and explicitly connected routes",
+    "entity_id": "place-crane-flat-white-wolf",
+    "kind": "place",
+    "scope_id": "scope-crane-flat-white-wolf"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-tenaya-east-beach-parking",
+    "kind": "parking",
+    "name": "Tenaya Lake East Beach Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

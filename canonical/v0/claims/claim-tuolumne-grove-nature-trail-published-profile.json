@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-grove-nature-trail-published-profile",
+    "evidence_ids": [
+      "evidence-tuolumne-grove-nature-trail-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-crane-flat-white-wolf"
+    ],
+    "subject_id": "route-tuolumne-grove-nature-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft_on_return": 500,
+      "grove_nature_loop_miles": 0.5,
+      "objective_entity_ids": [
+        "place-tuolumne-grove"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-tuolumne-grove",
+      "published_time": "1 to 2 hours",
+      "round_trip_miles": 2.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

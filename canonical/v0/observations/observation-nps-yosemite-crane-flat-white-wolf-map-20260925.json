@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official hiking map supplies route descriptions and corroborating profiles for Crane Flat and White Wolf day hikes.",
+    "observation_id": "observation-nps-yosemite-crane-flat-white-wolf-map-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-crane-flat-white-wolf-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

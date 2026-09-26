@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-merced-grove-published-profile"
+    ],
+    "object_id": "route-merced-grove",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-merced-grove-accesses-merced-grove",
+    "subject_id": "trailhead-merced-grove",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

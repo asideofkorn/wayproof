@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-may-lake-day-hike",
+    "kind": "route",
+    "name": "May Lake Day Hike"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

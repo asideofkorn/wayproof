@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-ten-lakes-to-tenaya-lake",
+    "kind": "route",
+    "name": "Ten Lakes to Tenaya Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

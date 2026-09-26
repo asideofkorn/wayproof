@@ -1,0 +1,1679 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-yosemite-remaining-corridors",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-crane-flat-white-wolf-hikes.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "source-nps-yosemite-crane-flat-white-wolf-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-crane-flat-white-wolf-map.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "source-nps-yosemite-crane-flat-white-wolf-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tioga-west-backpacking.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "source-nps-yosemite-tioga-west-backpacking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tuolumne-tioga.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "source-nps-yosemite-tuolumne-tioga",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-auto-touring.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "source-nps-yosemite-auto-touring",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-crane-flat-white-wolf-hikes-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-crane-flat-white-wolf-hikes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-crane-flat-white-wolf-map-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-crane-flat-white-wolf-map-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tioga-west-backpacking-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-tioga-west-backpacking-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-tioga-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-tuolumne-tioga-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tioga-auto-tour-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-tioga-auto-tour-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-west-tioga-conditions-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-yosemite-west-tioga-conditions-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-west-tioga-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "observation-nps-public-pois-west-tioga-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-crane-flat-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "place-crane-flat-white-wolf",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-crane-flat-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "scope-crane-flat-white-wolf",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-tioga-road-corridor.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "place-tioga-road-corridor",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-tioga-road-corridor.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "scope-tioga-road-corridor",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-tuolumne-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-tuolumne-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-merced-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-merced-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-may-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-may-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-lukens-lake-tioga.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-lukens-lake-tioga",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-white-wolf",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-porcupine-creek.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-porcupine-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-ten-lakes.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-ten-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-yosemite-creek.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "trailhead-yosemite-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-tuolumne-grove-parking.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "access-tuolumne-grove-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-tenaya-east-beach-parking.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "access-tenaya-east-beach-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-west-tenaya-lake-parking.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "access-west-tenaya-lake-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-grove-vault-toilet.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-tuolumne-grove-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-may-lake-vault-toilet.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-may-lake-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-porcupine-creek-vault-toilet.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-porcupine-creek-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-ten-lakes-vault-toilet.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-ten-lakes-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tenaya-east-beach-vault-toilet.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-tenaya-east-beach-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-white-wolf-restroom.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "facility-white-wolf-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-tuolumne-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "place-tuolumne-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-merced-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "place-merced-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-may-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "waterbody-may-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-lukens-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "waterbody-lukens-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-harden-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "waterbody-harden-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-north-dome.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "peak-north-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-ten-lakes-basin.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "place-ten-lakes-basin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-tenaya-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "waterbody-tenaya-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/viewpoint-olmsted-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "viewpoint-olmsted-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-tuolumne-grove-nature-trail.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-tuolumne-grove-nature-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-merced-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-merced-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-may-lake-day-hike.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-may-lake-day-hike",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lukens-lake-tioga.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-lukens-lake-tioga",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lukens-lake-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-lukens-lake-white-wolf",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-harden-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-harden-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-north-dome-porcupine-creek.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-north-dome-porcupine-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-ten-lakes-day-hike.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-ten-lakes-day-hike",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-ten-lakes-to-tenaya-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-ten-lakes-to-tenaya-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-grand-canyon-tuolumne-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "route-grand-canyon-tuolumne-white-wolf",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-grove-nature-trail-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-tuolumne-grove-nature-trail-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-grove-nature-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-grove-nature-trail-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-tuolumne-grove-nature-trail-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-merced-grove-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-merced-grove-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-merced-grove-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-merced-grove-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-merced-grove-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-may-lake-day-hike-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-may-lake-day-hike-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-may-lake-day-hike-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-may-lake-day-hike-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lukens-lake-tioga-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-lukens-lake-tioga-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lukens-lake-tioga-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-lukens-lake-tioga-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lukens-lake-white-wolf-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-lukens-lake-white-wolf-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lukens-lake-white-wolf-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-lukens-lake-white-wolf-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-harden-lake-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-harden-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-harden-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-harden-lake-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-harden-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-north-dome-porcupine-creek-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-north-dome-porcupine-creek-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-dome-porcupine-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-north-dome-porcupine-creek-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-north-dome-porcupine-creek-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ten-lakes-day-hike-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-ten-lakes-day-hike-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ten-lakes-day-hike-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-ten-lakes-day-hike-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ten-lakes-to-tenaya-lake-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-ten-lakes-to-tenaya-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-to-tenaya-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ten-lakes-to-tenaya-lake-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-ten-lakes-to-tenaya-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-grand-canyon-tuolumne-white-wolf-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-grand-canyon-tuolumne-white-wolf-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-grand-canyon-tuolumne-white-wolf-published-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-grand-canyon-tuolumne-white-wolf-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-crane-flat-white-wolf-access-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-crane-flat-white-wolf-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-crane-flat-white-wolf-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-crane-flat-white-wolf-access-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-crane-flat-white-wolf-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tioga-road-corridor-access-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-tioga-road-corridor-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-corridor-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tioga-road-corridor-access-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-tioga-road-corridor-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tenaya-lake-facility-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-tenaya-lake-facility-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tenaya-lake-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tenaya-lake-facility-profile.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-tenaya-lake-facility-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tioga-road-observed-status-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-tioga-road-observed-status-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-observed-status-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tioga-road-observed-status-20260925.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-tioga-road-observed-status-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-crane-flat-white-wolf-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-crane-flat-white-wolf-located-in-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-crane-flat-white-wolf-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-corridor-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tioga-road-corridor-located-in-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tioga-road-corridor-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-corridor-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tioga-corridors-contains-crane-flat.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tioga-corridors-contains-crane-flat",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-corridor-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tioga-corridors-contains-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tioga-corridors-contains-white-wolf",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tioga-road-corridor-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tioga-corridors-contains-yosemite-creek.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tioga-corridors-contains-yosemite-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-grove-nature-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tuolumne-grove-nature-trail-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tuolumne-grove-nature-trail-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-grove-nature-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-tuolumne-grove-accesses-tuolumne-grove-nature-trail.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-tuolumne-grove-accesses-tuolumne-grove-nature-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-grove-nature-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tuolumne-grove-nature-trail-reaches-1-place-tuolumne-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tuolumne-grove-nature-trail-reaches-1-place-tuolumne-grove",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-grove-nature-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tuolumne-grove-nature-trail-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-tuolumne-grove-nature-trail-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-merced-grove-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-merced-grove-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-merced-grove-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-merced-grove-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-merced-grove-accesses-merced-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-merced-grove-accesses-merced-grove",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-merced-grove-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-merced-grove-reaches-1-place-merced-grove.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-merced-grove-reaches-1-place-merced-grove",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-merced-grove-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-merced-grove-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-merced-grove-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-may-lake-day-hike-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-may-lake-day-hike-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-may-lake-accesses-may-lake-day-hike.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-may-lake-accesses-may-lake-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-may-lake-day-hike-reaches-1-waterbody-may-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-may-lake-day-hike-reaches-1-waterbody-may-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-may-lake-day-hike-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-may-lake-day-hike-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-tioga-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-tioga-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-lukens-lake-tioga-accesses-lukens-lake-tioga.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-lukens-lake-tioga-accesses-lukens-lake-tioga",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-tioga-reaches-1-waterbody-lukens-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-tioga-reaches-1-waterbody-lukens-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-tioga-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-tioga-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-white-wolf-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-white-wolf-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-white-wolf-accesses-lukens-lake-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-white-wolf-accesses-lukens-lake-white-wolf",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-white-wolf-reaches-1-waterbody-lukens-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-white-wolf-reaches-1-waterbody-lukens-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lukens-lake-white-wolf-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-lukens-lake-white-wolf-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-harden-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-harden-lake-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-harden-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-harden-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-white-wolf-accesses-harden-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-white-wolf-accesses-harden-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-harden-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-harden-lake-reaches-1-waterbody-harden-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-harden-lake-reaches-1-waterbody-harden-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-harden-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-harden-lake-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-harden-lake-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-dome-porcupine-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-dome-porcupine-creek-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-north-dome-porcupine-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-dome-porcupine-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-porcupine-creek-accesses-north-dome-porcupine-creek.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-porcupine-creek-accesses-north-dome-porcupine-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-dome-porcupine-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-dome-porcupine-creek-reaches-1-peak-north-dome.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-north-dome-porcupine-creek-reaches-1-peak-north-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-north-dome-porcupine-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-north-dome-porcupine-creek-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-north-dome-porcupine-creek-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-day-hike-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-day-hike-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-ten-lakes-accesses-ten-lakes-day-hike.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-ten-lakes-accesses-ten-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-day-hike-reaches-1-place-ten-lakes-basin.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-day-hike-reaches-1-place-ten-lakes-basin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-day-hike-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-day-hike-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-to-tenaya-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-to-tenaya-lake-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-to-tenaya-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-to-tenaya-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-ten-lakes-accesses-ten-lakes-to-tenaya-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-ten-lakes-accesses-ten-lakes-to-tenaya-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-to-tenaya-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-to-tenaya-lake-reaches-1-waterbody-tenaya-lake.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-to-tenaya-lake-reaches-1-waterbody-tenaya-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ten-lakes-to-tenaya-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ten-lakes-to-tenaya-lake-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-ten-lakes-to-tenaya-lake-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-grand-canyon-tuolumne-white-wolf-starts-at.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-grand-canyon-tuolumne-white-wolf-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-white-wolf-accesses-grand-canyon-tuolumne-white-wolf.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-trailhead-white-wolf-accesses-grand-canyon-tuolumne-white-wolf",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-grand-canyon-tuolumne-white-wolf-reaches-1-place-tuolumne-meadows.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-grand-canyon-tuolumne-white-wolf-reaches-1-place-tuolumne-meadows",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-grand-canyon-tuolumne-white-wolf-traverses-yosemite.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "relationship-grand-canyon-tuolumne-white-wolf-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-tenaya-east-beach-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-access-tenaya-east-beach-parking-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tenaya-east-beach-parking-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-tenaya-east-beach-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-access-tenaya-east-beach-parking-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-tuolumne-grove-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-access-tuolumne-grove-parking-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tuolumne-grove-parking-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-tuolumne-grove-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-access-tuolumne-grove-parking-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-west-tenaya-lake-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-access-west-tenaya-lake-parking-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-west-tenaya-lake-parking-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-west-tenaya-lake-parking-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-access-west-tenaya-lake-parking-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-may-lake-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-may-lake-vault-toilet-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-may-lake-vault-toilet-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-may-lake-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-may-lake-vault-toilet-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-porcupine-creek-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-porcupine-creek-vault-toilet-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-porcupine-creek-vault-toilet-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-porcupine-creek-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-porcupine-creek-vault-toilet-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-ten-lakes-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-ten-lakes-vault-toilet-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-ten-lakes-vault-toilet-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-ten-lakes-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-ten-lakes-vault-toilet-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tenaya-east-beach-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-tenaya-east-beach-vault-toilet-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tenaya-east-beach-vault-toilet-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tenaya-east-beach-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-tenaya-east-beach-vault-toilet-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-grove-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-tuolumne-grove-vault-toilet-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-grove-vault-toilet-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-grove-vault-toilet-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-tuolumne-grove-vault-toilet-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-white-wolf-restroom-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-facility-white-wolf-restroom-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-white-wolf-restroom-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-white-wolf-restroom-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-facility-white-wolf-restroom-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-merced-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-place-merced-grove-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-merced-grove-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-merced-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-place-merced-grove-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-tuolumne-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-place-tuolumne-grove-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-tuolumne-grove-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-tuolumne-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-place-tuolumne-grove-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-lukens-lake-tioga-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-lukens-lake-tioga-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-lukens-lake-tioga-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-lukens-lake-tioga-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-lukens-lake-tioga-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-may-lake-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-may-lake-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-may-lake-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-may-lake-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-may-lake-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-merced-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-merced-grove-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-merced-grove-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-merced-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-merced-grove-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-porcupine-creek-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-porcupine-creek-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-porcupine-creek-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-porcupine-creek-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-porcupine-creek-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-ten-lakes-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-ten-lakes-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-ten-lakes-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-ten-lakes-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-ten-lakes-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-tuolumne-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-tuolumne-grove-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-tuolumne-grove-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-tuolumne-grove-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-tuolumne-grove-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-white-wolf-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-white-wolf-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-white-wolf-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-white-wolf-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-white-wolf-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-yosemite-creek-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-trailhead-yosemite-creek-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-yosemite-creek-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-yosemite-creek-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-trailhead-yosemite-creek-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-viewpoint-olmsted-point-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "evidence-viewpoint-olmsted-point-west-tioga-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-viewpoint-olmsted-point-west-tioga-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-viewpoint-olmsted-point-west-tioga-map-point.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "claim-viewpoint-olmsted-point-west-tioga-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-west-tioga-route-topology.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "gap-yosemite-west-tioga-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-west-tioga-parking-capacity.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "gap-yosemite-west-tioga-parking-capacity",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-west-tioga-trip-date-operations.json",
+      "reason": "Add reviewed western Yosemite and Tioga Road planning depth.",
+      "record_id": "gap-yosemite-west-tioga-trip-date-operations",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add remaining official-source western Yosemite and Tioga Road routes, access, facilities, reviewed map points, and explicit gaps."
+}

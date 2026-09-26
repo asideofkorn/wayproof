@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lukens-lake-tioga-published-profile",
+    "evidence_ids": [
+      "evidence-lukens-lake-tioga-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-lukens-lake-tioga",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 200,
+      "objective_entity_ids": [
+        "waterbody-lukens-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-lukens-lake-tioga",
+      "published_time": "1 to 2 hours",
+      "round_trip_miles": 1.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

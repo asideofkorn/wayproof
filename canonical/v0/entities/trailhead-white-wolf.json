@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-white-wolf",
+    "kind": "trailhead",
+    "name": "White Wolf Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

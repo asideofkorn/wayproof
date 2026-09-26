@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-grand-canyon-tuolumne-white-wolf-published-profile",
+    "evidence_ids": [
+      "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-crane-flat-white-wolf"
+    ],
+    "subject_id": "route-grand-canyon-tuolumne-white-wolf",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 5350,
+      "initial_descent_ft": 4000,
+      "objective_entity_ids": [
+        "place-tuolumne-meadows"
+      ],
+      "one_way_miles": 30.8,
+      "operational_status_requires_current_check": true,
+      "overnight_permit_required": true,
+      "published_start_entity_id": "trailhead-white-wolf"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

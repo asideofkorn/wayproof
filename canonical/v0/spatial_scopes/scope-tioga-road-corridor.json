@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Tioga Road outside the previously modeled Tuolumne Meadows core and explicitly connected routes",
+    "entity_id": "place-tioga-road-corridor",
+    "kind": "place",
+    "scope_id": "scope-tioga-road-corridor"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

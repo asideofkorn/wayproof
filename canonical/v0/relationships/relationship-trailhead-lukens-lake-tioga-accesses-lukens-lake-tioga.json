@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lukens-lake-tioga-published-profile"
+    ],
+    "object_id": "route-lukens-lake-tioga",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-lukens-lake-tioga-accesses-lukens-lake-tioga",
+    "subject_id": "trailhead-lukens-lake-tioga",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

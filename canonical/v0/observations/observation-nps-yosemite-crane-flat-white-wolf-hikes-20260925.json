@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Crane Flat, grove, White Wolf, and western Tioga Road route starts, mileage, time, elevation, road season, limited services, water planning, and parking constraints.",
+    "observation_id": "observation-nps-yosemite-crane-flat-white-wolf-hikes-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-crane-flat-white-wolf-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

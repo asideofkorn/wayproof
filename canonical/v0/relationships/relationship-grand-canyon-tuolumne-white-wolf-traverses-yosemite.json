@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-grand-canyon-tuolumne-white-wolf-published-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-grand-canyon-tuolumne-white-wolf-traverses-yosemite",
+    "subject_id": "route-grand-canyon-tuolumne-white-wolf",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

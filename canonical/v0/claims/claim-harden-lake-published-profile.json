@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-harden-lake-published-profile",
+    "evidence_ids": [
+      "evidence-harden-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-crane-flat-white-wolf"
+    ],
+    "subject_id": "route-harden-lake",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft_on_return": 390,
+      "objective_entity_ids": [
+        "waterbody-harden-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-white-wolf",
+      "published_time": "2 to 4 hours",
+      "round_trip_miles": 5.8
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

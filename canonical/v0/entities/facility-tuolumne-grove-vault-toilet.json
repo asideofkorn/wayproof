@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-tuolumne-grove-vault-toilet",
+    "kind": "restroom",
+    "name": "Tuolumne Grove Parking Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

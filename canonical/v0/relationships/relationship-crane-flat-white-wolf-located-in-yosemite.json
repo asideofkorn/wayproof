@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-crane-flat-white-wolf-access-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-crane-flat-white-wolf-located-in-yosemite",
+    "subject_id": "place-crane-flat-white-wolf",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

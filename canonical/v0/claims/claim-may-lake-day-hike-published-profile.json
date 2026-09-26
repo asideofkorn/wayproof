@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-may-lake-day-hike-published-profile",
+    "evidence_ids": [
+      "evidence-may-lake-day-hike-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-may-lake-day-hike",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 485,
+      "objective_entity_ids": [
+        "waterbody-may-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-may-lake",
+      "published_time": "1 to 2 hours",
+      "round_trip_miles": 2.4,
+      "trailhead_road_miles_from_tioga": 1.75
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

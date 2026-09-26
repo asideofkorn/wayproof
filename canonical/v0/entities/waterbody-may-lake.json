@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-may-lake",
+    "kind": "lake",
+    "name": "May Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

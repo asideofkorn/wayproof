@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-west-tioga-route-topology",
+    "question": "Which reviewed NPS trail features form each remaining western Yosemite and Tioga Road route?",
+    "reason": "Official sources establish identities and profiles; continuous topology requires a reviewed geometry pass.",
+    "related_ids": [
+      "route-tuolumne-grove-nature-trail",
+      "route-merced-grove",
+      "route-may-lake-day-hike",
+      "route-lukens-lake-tioga",
+      "route-lukens-lake-white-wolf",
+      "route-harden-lake",
+      "route-north-dome-porcupine-creek",
+      "route-ten-lakes-day-hike",
+      "route-ten-lakes-to-tenaya-lake",
+      "route-grand-canyon-tuolumne-white-wolf"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lukens-lake-white-wolf-published-profile"
+    ],
+    "object_id": "route-lukens-lake-white-wolf",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-white-wolf-accesses-lukens-lake-white-wolf",
+    "subject_id": "trailhead-white-wolf",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
