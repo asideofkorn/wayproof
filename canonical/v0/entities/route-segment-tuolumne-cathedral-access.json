@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-cathedral-access",
+    "kind": "route_segment",
+    "name": "Cathedral Lakes trailhead approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

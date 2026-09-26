@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-parsons-meadow-connector",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-parsons-meadow-connector-map"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-parsons-meadow-connector",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "route_role": "official_mainline"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

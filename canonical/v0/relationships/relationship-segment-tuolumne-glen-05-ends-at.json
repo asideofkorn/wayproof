@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-glen-05-map",
+      "evidence-segment-tuolumne-glen-05-dataset"
+    ],
+    "object_id": "route-node-tuolumne-glen-05",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-segment-tuolumne-glen-05-ends-at",
+    "subject_id": "route-segment-tuolumne-glen-05",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

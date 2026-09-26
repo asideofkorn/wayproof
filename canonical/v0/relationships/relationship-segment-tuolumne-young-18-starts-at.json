@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-young-18-map",
+      "evidence-segment-tuolumne-young-18-dataset"
+    ],
+    "object_id": "route-node-tuolumne-young-01",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-young-18-starts-at",
+    "subject_id": "route-segment-tuolumne-young-18",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

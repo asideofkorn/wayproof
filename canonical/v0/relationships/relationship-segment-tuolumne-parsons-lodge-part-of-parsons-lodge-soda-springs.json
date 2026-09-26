@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-parsons-lodge-map",
+      "evidence-segment-tuolumne-parsons-lodge-dataset"
+    ],
+    "object_id": "route-parsons-lodge-soda-springs",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-parsons-lodge-part-of-parsons-lodge-soda-springs",
+    "subject_id": "route-segment-tuolumne-parsons-lodge",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

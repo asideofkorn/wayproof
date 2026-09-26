@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-tuolumne-parsons-02",
+    "kind": "route_node",
+    "name": "Parsons approach south junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

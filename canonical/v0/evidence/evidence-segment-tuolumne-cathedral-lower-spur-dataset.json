@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-cathedral-lower-spur",
+    "evidence_id": "evidence-segment-tuolumne-cathedral-lower-spur-dataset",
+    "notes": "NPS Public Trails feature 22320 supplies reviewed display geometry.",
+    "observation_id": "observation-nps-public-trails-tuolumne-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

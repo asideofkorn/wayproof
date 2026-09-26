@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-glen-03",
+    "kind": "route_segment",
+    "name": "Glen Aulin PCT leg 3"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

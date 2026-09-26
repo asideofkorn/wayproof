@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-parsons-old-tioga",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-parsons-old-tioga-map",
+      "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-parsons-old-tioga",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.877236005956185,
+        "longitude": -119.36625261254073
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-14867",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "14867",
+      "source_feature_name": "Old Tioga Road",
+      "source_geometry_id": "{C72637DD-82D3-400E-BE47-D1B434CB3311}",
+      "start_coordinate": {
+        "latitude": 37.872063929152326,
+        "longitude": -119.3706467446698
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson"
+    ],
+    "content": "Reviewed NPS Public Trails features provide the displayed line geometry and source feature identifiers for nine Tuolumne day-hike graphs selected against the official map.",
+    "observation_id": "observation-nps-public-trails-tuolumne-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

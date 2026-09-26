@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-parking-map",
+      "evidence-segment-tuolumne-dog-parking-dataset"
+    ],
+    "object_id": "route-dog-lake-lembert-dome",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-dog-parking-part-of-dog-lake-lembert-dome",
+    "subject_id": "route-segment-tuolumne-dog-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

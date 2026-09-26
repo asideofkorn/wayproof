@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-pct-01",
+    "kind": "route_segment",
+    "name": "Shared Tuolumne PCT leg 01"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

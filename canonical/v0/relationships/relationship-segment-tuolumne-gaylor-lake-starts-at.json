@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-gaylor-lake-map",
+      "evidence-segment-tuolumne-gaylor-lake-dataset"
+    ],
+    "object_id": "route-node-tuolumne-gaylor-07",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-gaylor-lake-starts-at",
+    "subject_id": "route-segment-tuolumne-gaylor-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

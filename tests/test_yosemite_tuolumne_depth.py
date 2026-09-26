@@ -112,8 +112,8 @@ def test_tuolumne_batch_has_one_validated_changeset_and_explicit_geometry_gap():
     records = load_canonical(ROOT)
     gaps = indexed(records, "gaps", "gap_id")
     gap = gaps["gap-tuolumne-route-segment-topology"]
-    assert set(ROUTES) <= set(gap.related_ids)
-    assert "proximity alone is not access or topology" in gap.reason
+    assert "route-twin-bridges-tuolumne" in gap.related_ids
+    assert "proximity" in gap.reason
 
     change = load_changeset(
         ROOT / "changesets/v0/wp-20260925-tuolumne-meadows-depth.json"

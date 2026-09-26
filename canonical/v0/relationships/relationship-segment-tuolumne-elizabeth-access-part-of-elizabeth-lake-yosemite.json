@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-elizabeth-access-map",
+      "evidence-segment-tuolumne-elizabeth-access-dataset"
+    ],
+    "object_id": "route-elizabeth-lake-yosemite",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-elizabeth-access-part-of-elizabeth-lake-yosemite",
+    "subject_id": "route-segment-tuolumne-elizabeth-access",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

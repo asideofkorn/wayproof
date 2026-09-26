@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-dog-shared",
+    "kind": "route_segment",
+    "name": "Dog Lake shared ascent"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

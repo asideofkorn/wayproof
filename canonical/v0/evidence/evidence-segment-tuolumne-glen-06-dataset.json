@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-glen-06",
+    "evidence_id": "evidence-segment-tuolumne-glen-06-dataset",
+    "notes": "NPS Public Trails feature 17697 supplies reviewed display geometry.",
+    "observation_id": "observation-nps-public-trails-tuolumne-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-cathedral-lower-spur",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-lower-spur-map",
+      "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+    ],
+    "predicate": "printed_atomic_route_distance_miles",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-cathedral-lower-spur",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 0.7,
+      "distance_status": "printed_on_official_map",
+      "end_coordinate": {
+        "latitude": 37.85137732201024,
+        "longitude": -119.4149621845829
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-22320",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "22320",
+      "source_feature_name": null,
+      "source_geometry_id": "{EB866B67-4E0F-4232-84A2-7F67DEFF458C}",
+      "start_coordinate": {
+        "latitude": 37.84620736597855,
+        "longitude": -119.42253246623399
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

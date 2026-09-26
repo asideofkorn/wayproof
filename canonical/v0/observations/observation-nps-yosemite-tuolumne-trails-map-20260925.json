@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official 2024 Tuolumne Meadows Trails map shows the day-hike trail network, junctions, destinations, parking, restrooms, and printed leg mileages. It warns that the map is not for overnight trips and advises asking a ranger about current conditions.",
+    "observation_id": "observation-nps-yosemite-tuolumne-trails-map-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-tuolumne-trails-map-2024"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

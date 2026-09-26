@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-jmt-connector-map"
+    ],
+    "object_id": "route-node-tuolumne-cathedral-02",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-segment-tuolumne-cathedral-jmt-connector-ends-at",
+    "subject_id": "route-segment-tuolumne-cathedral-jmt-connector",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

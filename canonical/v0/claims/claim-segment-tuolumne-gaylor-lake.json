@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-gaylor-lake",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-gaylor-lake-map",
+      "evidence-segment-tuolumne-gaylor-lake-dataset"
+    ],
+    "predicate": "printed_atomic_route_distance_miles",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-gaylor-lake",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 0.6,
+      "distance_status": "printed_on_official_map",
+      "end_coordinate": {
+        "latitude": 37.92033878060569,
+        "longitude": -119.26882935027665
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20557-lake",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20557",
+      "source_feature_name": "Gaylor Lakes Trail",
+      "source_geometry_id": "{5679293D-FD93-434C-AE17-3638D4E52F72}",
+      "start_coordinate": {
+        "latitude": 37.913252903241585,
+        "longitude": -119.26635518796706
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

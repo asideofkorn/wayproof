@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-gaylor-approach-map",
+      "evidence-segment-tuolumne-gaylor-approach-dataset"
+    ],
+    "object_id": "route-gaylor-lakes",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-gaylor-approach-part-of-gaylor-lakes",
+    "subject_id": "route-segment-tuolumne-gaylor-approach",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

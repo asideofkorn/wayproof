@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-parsons-lodge",
+    "kind": "route_segment",
+    "name": "Parsons Memorial Lodge approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

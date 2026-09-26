@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-pothole-access-map"
+    ],
+    "object_id": "trailhead-pothole-dome",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-pothole-access-starts-at",
+    "subject_id": "route-segment-tuolumne-pothole-access",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

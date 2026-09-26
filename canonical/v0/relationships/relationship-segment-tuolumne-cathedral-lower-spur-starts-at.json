@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-lower-spur-map",
+      "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+    ],
+    "object_id": "waterbody-upper-cathedral-lake",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-cathedral-lower-spur-starts-at",
+    "subject_id": "route-segment-tuolumne-cathedral-lower-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

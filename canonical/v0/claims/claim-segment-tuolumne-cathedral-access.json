@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-cathedral-access",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-access-map",
+      "evidence-segment-tuolumne-cathedral-access-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-cathedral-access",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.87263365091298,
+        "longitude": -119.37470605940318
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-22787",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "22787",
+      "source_feature_name": null,
+      "source_geometry_id": "{91FFD051-54D9-4347-8F7E-F619EF5577B6}",
+      "start_coordinate": {
+        "latitude": 37.872050084344906,
+        "longitude": -119.38181746250602
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
