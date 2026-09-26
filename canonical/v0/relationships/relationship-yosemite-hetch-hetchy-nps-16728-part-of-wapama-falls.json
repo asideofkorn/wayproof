@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-16728"
+    ],
+    "object_id": "route-wapama-falls",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-hetch-hetchy-nps-16728-part-of-wapama-falls",
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-16728",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

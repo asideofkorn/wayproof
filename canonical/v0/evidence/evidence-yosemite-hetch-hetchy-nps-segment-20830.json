@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hetch-hetchy-nps-segment-20830",
+    "evidence_id": "evidence-yosemite-hetch-hetchy-nps-segment-20830",
+    "notes": "",
+    "observation_id": "observation-nps-public-trails-hetch-hetchy-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-hetch-hetchy-route-features-20260926.geojson"
+    ],
+    "content": "Reviewed NPS Public Trails features provide exact shared endpoints for the Wapama Falls shoreline chain and Poopenaut Valley Trail selected against the official Hetch Hetchy map.",
+    "observation_id": "observation-nps-public-trails-hetch-hetchy-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

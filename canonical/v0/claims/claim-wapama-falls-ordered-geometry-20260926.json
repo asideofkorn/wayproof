@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wapama-falls-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-wapama-falls-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-wapama-falls",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "published_at_route_level_only",
+      "route_shape": "out_and_back_objective_corridor",
+      "segment_ids": [
+        "route-segment-yosemite-hetch-hetchy-nps-15302",
+        "route-segment-yosemite-hetch-hetchy-nps-20889",
+        "route-segment-yosemite-hetch-hetchy-nps-20767",
+        "route-segment-yosemite-hetch-hetchy-nps-15865",
+        "route-segment-yosemite-hetch-hetchy-nps-22149",
+        "route-segment-yosemite-hetch-hetchy-nps-16728",
+        "route-segment-yosemite-hetch-hetchy-nps-20830",
+        "route-segment-yosemite-hetch-hetchy-nps-16804",
+        "route-segment-yosemite-hetch-hetchy-nps-21750",
+        "route-segment-yosemite-hetch-hetchy-nps-16595",
+        "route-segment-yosemite-hetch-hetchy-nps-15187"
+      ],
+      "start_node_id": "trailhead-wapama-rancheria"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

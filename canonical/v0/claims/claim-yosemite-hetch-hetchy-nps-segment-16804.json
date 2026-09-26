@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hetch-hetchy-nps-segment-16804",
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-16804"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-16804",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.9634284,
+        "longitude": -119.7660939
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-16804",
+        "path": "geometry/v0/snapshots/nps-yose-hetch-hetchy-route-features-20260926.geojson",
+        "sha256": "dc04ac70ffa741abdb75c9ab76ee08ab4657a1505f161ae08588960a0e5d41cd"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "16804",
+      "source_feature_name": null,
+      "source_geometry_id": "{5F13EE2D-DE2E-4372-898E-0465B170C5B8}",
+      "start_coordinate": {
+        "latitude": 37.963352,
+        "longitude": -119.766202
+      },
+      "surface": "Masonry/Stone"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

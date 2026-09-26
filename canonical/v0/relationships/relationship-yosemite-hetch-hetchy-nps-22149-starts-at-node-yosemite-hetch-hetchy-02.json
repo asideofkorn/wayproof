@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-22149"
+    ],
+    "object_id": "route-node-yosemite-hetch-hetchy-02",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-yosemite-hetch-hetchy-nps-22149-starts-at-node-yosemite-hetch-hetchy-02",
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-22149",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

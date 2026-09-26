@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-15302"
+    ],
+    "object_id": "trailhead-wapama-rancheria",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-yosemite-hetch-hetchy-nps-15302-ends-at-trailhead-wapama-rancheria",
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-15302",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

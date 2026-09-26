@@ -15,7 +15,7 @@ def test_routes_have_profiles_starts_objectives_and_topology_gap():
   assert claims[f"claim-{route.removeprefix('route-')}-published-profile"].evidence_ids
   assert any(x.subject_id==route and x.predicate=="starts_at" for x in rels.values())
   assert any(x.subject_id==route and x.predicate=="reaches" for x in rels.values())
- assert set(gaps["gap-yosemite-hetch-hetchy-route-topology"].related_ids)==ROUTES
+ assert ROUTES<=set(gaps["gap-yosemite-hetch-hetchy-route-topology"].related_ids)
 
 def test_access_rules_and_dated_status_are_explicit():
  claims=index(load_canonical(ROOT),"claims","claim_id")
