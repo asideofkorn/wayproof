@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS states that Four Mile Trail begins along Southside Drive and climbs 4.8 miles one way to Glacier Point; it can be reversed or combined with Panorama Trail.",
+    "observation_id": "observation-nps-yosemite-four-mile-trail-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-four-mile-trail-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

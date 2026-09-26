@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-nps-segment-20091",
+    "evidence_ids": [
+      "evidence-yosemite-valley-nps-segment-20091"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-segment-yosemite-valley-nps-20091",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.7259357,
+        "longitude": -119.55152
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20091",
+        "path": "geometry/v0/snapshots/nps-yose-valley-route-features-20260926.geojson",
+        "sha256": "c486dc682fa4984ef8193f095fb4b3545e82910919afeed4e4a735f7cfde7754"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20091",
+      "source_feature_name": "John Muir Trail",
+      "source_geometry_id": "{B92281CC-C712-49D7-B764-C754D469C49D}",
+      "start_coordinate": {
+        "latitude": 37.726209,
+        "longitude": -119.551714
+      },
+      "surface": "Asphalt"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

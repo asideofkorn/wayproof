@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-valley-remaining-route-topology",
+    "question": "Which reviewed NPS trail features and explicitly mapped connectors complete the remaining Yosemite Valley day-hike and wilderness route graphs?",
+    "reason": "The official trail dataset contains disconnected named components, unnamed connectors, and parallel alignments that require route-by-route map review; this batch does not snap nearby endpoints or manufacture membership.",
+    "related_ids": [
+      "route-mirror-lake",
+      "route-yosemite-valley-loop",
+      "route-little-yosemite-valley",
+      "route-snow-creek",
+      "route-eagle-peak-yosemite",
+      "route-el-capitan-yosemite-valley",
+      "route-yosemite-full-north-rim",
+      "route-yosemite-eastern-north-rim",
+      "source-nps-public-trails-feature-service"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

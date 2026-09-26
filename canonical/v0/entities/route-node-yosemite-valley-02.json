@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-yosemite-valley-02",
+    "kind": "route_node",
+    "name": "Yosemite Valley route junction 02"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

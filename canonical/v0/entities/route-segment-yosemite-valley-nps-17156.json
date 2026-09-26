@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-valley-nps-17156",
+    "kind": "route_segment",
+    "name": "John Muir Trail segment 17156"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

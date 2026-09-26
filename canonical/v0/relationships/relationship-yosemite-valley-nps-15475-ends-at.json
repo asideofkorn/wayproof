@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-nps-segment-15475",
+      "evidence-nps-yosemite-falls-trail-route-20260926"
+    ],
+    "object_id": "waterfall-upper-yosemite-fall",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-yosemite-valley-nps-15475-ends-at",
+    "subject_id": "route-segment-yosemite-valley-nps-15475",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
