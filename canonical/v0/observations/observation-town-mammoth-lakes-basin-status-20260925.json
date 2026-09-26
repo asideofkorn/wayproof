@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The Town status page, last updated September 3, 2026, reports Lake Mary Road, the Lakes Basin multi-use paths, and Lakes Basin Road open. It does not report current potable-water or Horseshoe Lake restroom status.",
+    "observation_id": "observation-town-mammoth-lakes-basin-status-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T19:00:00+00:00",
+    "source_id": "source-town-mammoth-lakes-parks-status-20260925"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

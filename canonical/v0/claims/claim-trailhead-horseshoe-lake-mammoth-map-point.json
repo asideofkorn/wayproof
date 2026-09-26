@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-horseshoe-lake-mammoth-map-point",
+    "evidence_ids": [
+      "evidence-horseshoe-lake-trailhead-map-point"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-horseshoe-lake-mammoth",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-horseshoe-lake-mammoth",
+        "path": "geometry/v0/snapshots/eastern-sierra-access-connectors-20260925.geojson",
+        "sha256": "bd479aa6c98a9ee32914499758ff0951e0730b025cc113a937e2a2f53e07c972"
+      },
+      "latitude": 37.613024174490995,
+      "longitude": -119.0213906605332,
+      "navigation_grade": false,
+      "provenance": "official_usfs_recreation_point",
+      "source_feature_id": "USFS recreation area 20494",
+      "source_ids": [
+        "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

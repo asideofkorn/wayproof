@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-convict-hiker-parking-ordered-geometry",
+    "evidence_id": "evidence-convict-hiker-parking-route-geometry",
+    "notes": "",
+    "observation_id": "observation-usgs-convict-hiker-parking-connector-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

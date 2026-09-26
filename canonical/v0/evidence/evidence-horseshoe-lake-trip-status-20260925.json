@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-horseshoe-lake-trip-status-20260925",
+    "evidence_id": "evidence-horseshoe-lake-trip-status-20260925",
+    "notes": "",
+    "observation_id": "observation-town-mammoth-lakes-basin-status-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

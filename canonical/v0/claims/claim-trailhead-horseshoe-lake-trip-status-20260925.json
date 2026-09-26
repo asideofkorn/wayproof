@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-horseshoe-lake-trip-status-20260925",
+    "evidence_ids": [
+      "evidence-horseshoe-lake-trip-status-20260925"
+    ],
+    "predicate": "trip_date_operational_status",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-horseshoe-lake-mammoth",
+    "temporal_scope": {
+      "ends_on": "2026-09-25",
+      "starts_on": "2026-09-03"
+    },
+    "value": {
+      "as_of": "2026-09-03",
+      "lake_mary_road": "open",
+      "lakes_basin_multi_use_paths": "open",
+      "lakes_basin_road": "open",
+      "potable_water_current_status": "not_stated",
+      "restroom_current_status": "not_stated",
+      "retrieved_on": "2026-09-25"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

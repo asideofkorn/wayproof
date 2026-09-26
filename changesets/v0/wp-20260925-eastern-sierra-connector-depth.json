@@ -1,0 +1,289 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-eastern-sierra-connector-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-convict-hiker-parking.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "access-convict-hiker-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-convict-hiker-parking-connector.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "route-convict-hiker-parking-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-convict-hiker-parking-connector.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "route-segment-convict-hiker-parking-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-town-mammoth-lakes-parks-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "source-town-mammoth-lakes-parks-status-20260925",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usgs-convict-hiker-parking-connector-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "observation-usgs-convict-hiker-parking-connector-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-mammoth-pass-trailhead-point-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "observation-usfs-mammoth-pass-trailhead-point-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-town-mammoth-lakes-basin-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "observation-town-mammoth-lakes-basin-status-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-usfs-convict-open-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "observation-usfs-convict-open-status-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-hiker-parking-map-point.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-convict-hiker-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-hiker-parking-connector.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-convict-hiker-parking-connector",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-hiker-parking-route-geometry.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-convict-hiker-parking-route-geometry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-horseshoe-lake-trailhead-map-point.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-horseshoe-lake-trailhead-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-horseshoe-lake-trip-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-horseshoe-lake-trip-status-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-convict-lake-open-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "evidence-convict-lake-open-status-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-convict-hiker-parking-map-point.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-access-convict-hiker-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-segment-convict-hiker-parking-connector.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-route-segment-convict-hiker-parking-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-route-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-route-convict-hiker-parking-ordered-geometry.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-route-convict-hiker-parking-ordered-geometry",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-horseshoe-lake-trailhead-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-horseshoe-lake-mammoth-map-point.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-trailhead-horseshoe-lake-mammoth-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-horseshoe-lake-trip-status-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-horseshoe-lake-trip-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-trailhead-horseshoe-lake-trip-status-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-lake-open-status-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-convict-lake-open-status-20260925.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "claim-trailhead-convict-lake-open-status-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-accesses-loop.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-accesses-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-connector-starts-at.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-connector-ends-at.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-segment-part-of-connector.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-segment-part-of-connector",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-route-starts-at.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-route-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-route-ends-at.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-route-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-convict-hiker-parking-connector"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-convict-hiker-parking-connector-provides-access.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "relationship-convict-hiker-parking-connector-provides-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-trailhead-horseshoe-lake-mammoth-map-point"
+      ],
+      "path": "canonical/v0/gaps/gap-trailhead-horseshoe-lake-mammoth-map-point.json",
+      "reason": "Publish source-bounded access geometry and a dated operational recheck.",
+      "record_id": "gap-trailhead-horseshoe-lake-mammoth-map-point",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish an official Convict hiker-parking connector, the official Mammoth Pass Trailhead point, and dated pre-trip operational status."
+}
