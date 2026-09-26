@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-glacier-point-nps-21957",
+    "kind": "route_segment",
+    "name": "Glacier Point trail segment 21957"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

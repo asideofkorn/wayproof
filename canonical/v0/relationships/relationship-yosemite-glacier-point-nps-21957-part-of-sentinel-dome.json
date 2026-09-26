@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-glacier-point-nps-segment-21957"
+    ],
+    "object_id": "route-sentinel-dome",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-glacier-point-nps-21957-part-of-sentinel-dome",
+    "subject_id": "route-segment-yosemite-glacier-point-nps-21957",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

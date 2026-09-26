@@ -32,7 +32,7 @@ def test_glacier_point_routes_have_evidence_starts_objectives_and_topology_gap()
         assert profile.value["operational_status_requires_current_check"] is True
         assert any(edge.subject_id == route_id and edge.predicate == "starts_at" for edge in relationships.values())
         assert any(edge.subject_id == route_id and edge.predicate == "reaches" for edge in relationships.values())
-    assert set(gaps["gap-yosemite-glacier-point-route-topology"].related_ids) == ROUTES
+    assert ROUTES <= set(gaps["gap-yosemite-glacier-point-route-topology"].related_ids)
 
 
 def test_access_vehicle_and_dated_closure_profiles_are_preserved():

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-yosemite-glacier-point-03",
+    "kind": "route_node",
+    "name": "Glacier Point route junction 03"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
