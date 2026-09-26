@@ -85,13 +85,35 @@ Reprocessing alone must not publish a claim, resolve a gap, create a rule,
 change a planning result, or add a related-place link. Canonical changes still
 use the domain write boundary, validated ChangeSets, and GitHub review/merge.
 
+## Source use and research disposition
+
+When Wayproof uses information, display its source and traceable provenance.
+Privacy-driven redaction must be explicit; it must not conceal the origin of a
+claim or leave an unsupported answer appearing verified.
+
+For ordinary sources, distinguish three dispositions:
+
+- Used: publish the supporting source and provenance through typed Evidence.
+- Reviewed but rejected: record the reason in the relevant research batch or PR.
+- Deferred: leave a gap or research note; reconsideration remains possible.
+
+A one-time instruction to skip an example is a batch-scoped deferral, not a
+permanent denylist. Deferred material remains uningested for that batch;
+this does not prevent a later authorized review.
+
+Exceptional restrictions may be needed for private/access-controlled material,
+a contributor's removal request for their own material, content that cannot
+legally or safely be retained, or a known malicious source barred from automated
+processing. Such restrictions belong in appropriately scoped operational
+privacy/safety records with minimal identifying information, not the public
+evidence catalog. This ADR introduces no repository-wide exclusion registry.
+
 ## Mandatory privacy, safety, and source gates
 
 These are acceptance requirements, not claims of implemented safeguards. No
 social-media processing pipeline may launch until the gates have enforceable
 checks and reviewed operating procedures. Apply [DATA_LICENSE](../../DATA_LICENSE.md)
-and the [source exclusion policy](../source-exclusions.md) in addition to these
-requirements. License compatibility alone is insufficient.
+in addition to these requirements. License compatibility alone is insufficient.
 
 1. **Minimize collection.** Define the planning question and collect only the
    attachment, bounded excerpt, attribution, dates, and location precision
@@ -170,7 +192,10 @@ Synthetic or appropriately licensed fixtures must cover:
 - Repeated/conflicting runs, reposts, changed inputs, and unavailable originals.
 - Rejection of direct Claim-to-run/finding references; every evidence ID resolves
   typed Evidence and an attributed Observation with stable reviewed provenance.
-- Excluded-source matching before retrieval, processing, and publication.
+- Used/rejected/deferred dispositions preserve provenance and batch scope;
+  a one-time deferral does not prohibit future review. Exceptional privacy or
+  safety restrictions are handled operationally without publishing sensitive
+  restriction records.
 - EXIF stripping, faces/plates and sensitive-location handling, bounded OCR,
   contribution versus public-source scope, and permitted provider transfers.
 - Prompt injection in images/comments/OCR that cannot trigger tool use, policy

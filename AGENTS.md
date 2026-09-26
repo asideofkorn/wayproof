@@ -57,9 +57,6 @@ referenced supporting material relevant to the task.
   not complete.
 - Do not invent unresolved representation or infrastructure decisions, including
   new serialization formats, module layouts, enum spellings, or database timing.
-- Check `docs/source-exclusions.md` before source retrieval, processing, and
-  publication. Excluded sources cannot be admitted by a rerun or a new date;
-  behavior-only examples are not ingestion authorization.
 - Apply the source and licensing policy in `DATA_LICENSE.md`. Do not commit
   copyrighted source artifacts merely because they were available for review.
 

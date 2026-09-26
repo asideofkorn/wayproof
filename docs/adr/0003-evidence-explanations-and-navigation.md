@@ -44,7 +44,8 @@ pipeline is required by this decision. Acceptance does not accept
    analyses as independent corroboration. Missing external originals should
    have explicit availability context, not substituted content.
 
-Existing source licensing and exclusion policy applies to every preview.
+Whenever information is used, its source and provenance must be visible and
+traceable. Existing licensing and privacy safeguards apply to every preview.
 Do not mirror media, add embeds, or introduce new analysis fields in this phase.
 Future media displays depend on the separately approved provenance contract.
 

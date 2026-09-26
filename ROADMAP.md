@@ -194,16 +194,17 @@ without granting direct canonical write access.
 - Before media processing launches, implement and test ADR 0004 privacy/safety
   gates: minimization, contribution versus public-source scope, EXIF handling,
   sensitive locations and faces/plates, retention and deletion propagation,
-  permitted processing destinations, and untrusted media/OCR isolation. Enforce
-  the [source exclusion policy](docs/source-exclusions.md) before collection,
-  analysis, and publication. This is independent of M2 evidence UI acceptance.
+  permitted processing destinations, and untrusted media/OCR isolation. This
+  is independent of M2 evidence UI acceptance. Used information must expose
+  source provenance; rejection belongs in its research batch or PR, and
+  deferral leaves a gap/research note rather than a permanent denylist.
 - After separate schema approval, expose media references, author
   clarifications, distinct dates, and reviewed analysis history through shared
   read services without introducing a direct Claim-to-analysis path.
 - Add bounded ingestion and reprocessing only after that contract is reviewed.
   New runs do not overwrite earlier findings or automatically publish claims,
-  resolve gaps, or add destination backlinks. Source exclusions remain in
-  force; reference-only examples are not ingestion fixtures.
+  resolve gaps, or add destination backlinks. Examples skipped for the current
+  batch remain uningested without preventing later authorized review.
   **Gate:** synthetic or appropriately licensed fixtures cover author date
   clarifications, ambiguous photo-list mappings, unknown capture dates and
   locations, repeated analysis, conflicting findings, reposts, and unavailable
