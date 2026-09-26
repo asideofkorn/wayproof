@@ -3,7 +3,8 @@
   "record": {
     "claim_id": "claim-yosemite-public-transportation",
     "evidence_ids": [
-      "evidence-yosemite-public-transportation"
+      "evidence-yosemite-public-transportation",
+      "evidence-yosemite-public-transportation-20260926"
     ],
     "predicate": "public_transportation",
     "spatial_scope_ids": [
@@ -13,17 +14,23 @@
     "temporal_scope": null,
     "value": {
       "internal": [
-        "Yosemite Valley shuttle"
+        "Yosemite Valley shuttle",
+        "Mariposa Grove shuttle",
+        "Badger Pass shuttle",
+        "Glacier Point Tour",
+        "Yosemite Valley-Tuolumne Meadows hikers bus",
+        "Tuolumne Meadows shuttle"
       ],
       "no_service": [
         "Hetch Hetchy Valley"
       ],
-      "seasonal": [
+      "seasonal_regional": [
         "YARTS Highway 120 east",
         "YARTS Highway 120 west",
         "YARTS Highway 41"
       ],
-      "year_round": [
+      "seasonal_service_requires_current_check": true,
+      "year_round_regional": [
         "YARTS Highway 140"
       ]
     }
