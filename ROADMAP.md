@@ -114,6 +114,22 @@ the same service layer.
   output only as the underlying M1 services expand.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
+- Deliver evidence explanations and navigation in phases under proposed
+  [ADR 0003](docs/adr/0003-media-analysis-and-evidence-navigation.md):
+  - First, use existing canonical records to show observation content,
+    attribution, evidence stance and limitations, distinct observation and
+    retrieval dates, and readable gap comparisons. Preserve multiple
+    observations from one source rather than collapsing them by source ID.
+  - Add permanent observation/claim links, generated source pages and reviewed
+    related-place backlinks, plus accessible section and next/previous
+    navigation. Users should understand an observation's relevance before
+    opening its original source.
+  - After the separately reviewed schema extension, expose media references,
+    author clarifications, distinct capture/publication dates, and selected
+    analysis history. Generate all projections through shared read services.
+  **Gate:** users can understand a gap and compare its evidence in place;
+  unknown dates and locations remain explicit, and links never imply current
+  conditions or independent corroboration merely through repetition.
 - Add generated interactive map views over the canonical read service for
   campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
   Selectable features should link to canonical detail pages and preserve the
@@ -170,6 +186,21 @@ without granting direct canonical write access.
 
 - Ingest URLs, issues, artifacts, field reports, GPX, and supported structured
   sources into candidate observations/evidence.
+- Design and separately review the media-provenance and repeatable-analysis
+  extension proposed in [ADR 0003](docs/adr/0003-media-analysis-and-evidence-navigation.md)
+  before changing Schema v0. Keep original source material, attributed author
+  statements, and Wayproof analysis distinct. Support attachment identity and
+  order, explicit comment-to-media mappings, qualified dates and locations,
+  and multiple immutable analysis runs over identified media versions.
+- Add bounded ingestion and reprocessing only after that contract is reviewed.
+  New runs do not overwrite earlier findings or automatically publish claims,
+  resolve gaps, or add destination backlinks. Source exclusions remain in
+  force; reference-only examples are not ingestion fixtures.
+  **Gate:** synthetic or appropriately licensed fixtures cover author date
+  clarifications, ambiguous photo-list mappings, unknown capture dates and
+  locations, repeated analysis, conflicting findings, reposts, and unavailable
+  originals. Validation and consumer tests prove that these cannot silently
+  become current access, fees, passability, or resolved planning answers.
 - Add constrained proposal operations for evidence-bearing records and
   relationships plus ChangeSet validation and explanation. Keep normative rule
   and derived-result authoring outside the initial consumer proposal surface.
