@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/eastern-sierra-access-connectors-20260925.geojson",
+      "bd479aa6c98a9ee32914499758ff0951e0730b025cc113a937e2a2f53e07c972"
+    ],
+    "content": "The National Digital Trails service publishes the named CONVICT HIKER PARKING feature as a 0.44399712-mile unpaved-native trail. Its south endpoint exactly matches the shared endpoint of reviewed Convict Lake Loop segments 2 and 3.",
+    "observation_id": "observation-usgs-convict-hiker-parking-connector-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T19:00:00+00:00",
+    "source_id": "source-usgs-national-digital-trails-eastern-sierra-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

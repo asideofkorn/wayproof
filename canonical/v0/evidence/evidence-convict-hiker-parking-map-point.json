@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-access-convict-hiker-parking-map-point",
+    "evidence_id": "evidence-convict-hiker-parking-map-point",
+    "notes": "",
+    "observation_id": "observation-usgs-convict-hiker-parking-connector-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

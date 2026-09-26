@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-access-convict-hiker-parking-map-point",
+    "evidence_ids": [
+      "evidence-convict-hiker-parking-map-point"
+    ],
+    "predicate": "reviewed_access_point_coordinate",
+    "spatial_scope_ids": [],
+    "subject_id": "access-convict-hiker-parking",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "convict-hiker-parking-connector",
+        "path": "geometry/v0/snapshots/eastern-sierra-access-connectors-20260925.geojson",
+        "sha256": "bd479aa6c98a9ee32914499758ff0951e0730b025cc113a937e2a2f53e07c972"
+      },
+      "latitude": 37.60014790176818,
+      "longitude": -118.85384088423861,
+      "navigation_grade": false,
+      "provenance": "official_usfs_trail_endpoint",
+      "source_feature_id": "{1E376791-F6EC-4A16-8996-31C6975B4A6E}",
+      "source_ids": [
+        "source-usgs-national-digital-trails-eastern-sierra-20260924"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/eastern-sierra-access-connectors-20260925.geojson",
+      "bd479aa6c98a9ee32914499758ff0951e0730b025cc113a937e2a2f53e07c972"
+    ],
+    "content": "The Forest Service Recreation Opportunities service publishes Mammoth Pass Trailhead, recreation area 20494, at Horseshoe Lake.",
+    "observation_id": "observation-usfs-mammoth-pass-trailhead-point-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T19:00:00+00:00",
+    "source_id": "source-usfs-recreation-opportunities-eastern-sierra-20260925"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

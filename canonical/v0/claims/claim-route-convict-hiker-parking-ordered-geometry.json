@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-route-convict-hiker-parking-ordered-geometry",
+    "evidence_ids": [
+      "evidence-convict-hiker-parking-route-geometry"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-route-convict-lake-loop"
+    ],
+    "subject_id": "route-convict-hiker-parking-connector",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 0.44399712,
+      "distance_status": "known",
+      "segment_ids": [
+        "route-segment-convict-hiker-parking-connector"
+      ],
+      "start_node_id": "access-convict-hiker-parking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

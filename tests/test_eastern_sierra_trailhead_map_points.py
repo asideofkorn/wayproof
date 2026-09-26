@@ -11,6 +11,7 @@ MAPPED_ACCESS = {
     "access-upper-rock-creek-east-fork",
     "trailhead-convict-lake",
     "trailhead-hilton-lakes-rock-creek",
+    "trailhead-horseshoe-lake-mammoth",
     "trailhead-lundy-canyon",
     "trailhead-mcgee-creek",
     "trailhead-mosquito-flat",
@@ -41,7 +42,9 @@ def test_access_point_claims_preserve_source_authority_and_gaps():
     assert virginia["source_ids"] == [
         "source-osm-nominatim-eastern-sierra-trailheads-20260925"
     ]
-    assert "gap-trailhead-horseshoe-lake-mammoth-map-point" in gaps
+    horseshoe_gap = gaps["gap-trailhead-horseshoe-lake-mammoth-map-point"]
+    assert "exact pedestrian connector" in horseshoe_gap.question
+    assert "about 55 meters" in horseshoe_gap.reason
     assert "gap-hilton-lakes-trailhead-route-connector" in gaps
     assert "gap-convict-lake-trailhead-loop-connector" in gaps
 
@@ -54,11 +57,17 @@ def test_east_side_access_points_publish_to_global_map(generated_site):
         for item in payload["features"]
         if item["properties"]["layer"] == "access"
     }
+    facilities = {
+        item["properties"]["entity_id"]: item
+        for item in payload["features"]
+        if item["properties"]["layer"] == "facilities"
+    }
 
     assert MAPPED_ACCESS <= access.keys()
     assert all(access[entity_id]["geometry"]["type"] == "Point"
                for entity_id in MAPPED_ACCESS)
-    assert "trailhead-horseshoe-lake-mammoth" not in access
+    assert access["trailhead-horseshoe-lake-mammoth"]["properties"]["kind"] == "trailhead"
+    assert facilities["access-convict-hiker-parking"]["properties"]["kind"] == "parking"
     assert access["access-upper-rock-creek-east-fork"]["properties"]["kind"] == "trail_access"
 
     page = (site_root / "map" / "index.html").read_text()

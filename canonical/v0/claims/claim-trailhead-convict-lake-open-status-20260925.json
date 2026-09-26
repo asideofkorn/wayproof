@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-convict-lake-open-status-20260925",
+    "evidence_ids": [
+      "evidence-convict-lake-open-status-20260925"
+    ],
+    "predicate": "trip_date_operational_status",
+    "spatial_scope_ids": [],
+    "subject_id": "trailhead-convict-lake",
+    "temporal_scope": {
+      "ends_on": "2026-09-25",
+      "starts_on": "2026-09-25"
+    },
+    "value": {
+      "potable_water_current_status": "not_stated",
+      "restroom_current_status": "not_stated",
+      "retrieved_on": "2026-09-25",
+      "trailhead_status": "open"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

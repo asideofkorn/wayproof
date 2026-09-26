@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-convict-hiker-parking",
+    "kind": "parking",
+    "name": "Convict hiker parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
