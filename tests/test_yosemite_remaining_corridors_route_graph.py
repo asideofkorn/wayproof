@@ -60,6 +60,8 @@ def test_snapshot_and_route_pages_publish(generated_site):
         page = (site / "knowledge" / route / "index.html").read_text()
         assert "Interactive map" in page
         assert "Download generated GeoJSON" in page
+        assert "Segment mileage unavailable" in page
+        assert "0.0 miles one way" not in page
 
 
 def test_remaining_topology_gap_names_unsupported_joins():
