@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The official Hetch Hetchy map and route descriptions establish the Wapama shoreline path, Poopenaut Valley path, route starts, and objectives used in this graph.",
+    "observation_id": "observation-nps-hetch-hetchy-map-route-review-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-hetch-hetchy-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

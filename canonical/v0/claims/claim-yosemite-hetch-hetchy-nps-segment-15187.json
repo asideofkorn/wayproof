@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hetch-hetchy-nps-segment-15187",
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-15187"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-15187",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.9637166,
+        "longitude": -119.7653976
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-15187",
+        "path": "geometry/v0/snapshots/nps-yose-hetch-hetchy-route-features-20260926.geojson",
+        "sha256": "dc04ac70ffa741abdb75c9ab76ee08ab4657a1505f161ae08588960a0e5d41cd"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "15187",
+      "source_feature_name": null,
+      "source_geometry_id": "{8FB6B6E9-7C52-4274-B212-4682920027B6}",
+      "start_coordinate": {
+        "latitude": 37.9636571,
+        "longitude": -119.7655228
+      },
+      "surface": "Wood"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

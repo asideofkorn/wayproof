@@ -2,8 +2,8 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-yosemite-hetch-hetchy-route-topology",
-    "question": "Which reviewed NPS trail features form each Hetch Hetchy route and exact access connector?",
-    "reason": "Official sources establish route identities and profiles; continuous topology requires a separate reviewed geometry pass.",
+    "question": "Which reviewed NPS features and explicit connectors complete the remaining Hetch Hetchy routes and exact access paths?",
+    "reason": "Wapama Falls and Poopenaut Valley now have exact-endpoint route graphs. Lookout Point, Rancheria Falls, both Smith Peak approaches, Laurel Lake, and the Lake Vernon/Rancheria loop remain unresolved; unnamed or nearby lines are not joined without route-specific review.",
     "related_ids": [
       "route-hetch-hetchy-lookout-point",
       "route-wapama-falls",
@@ -12,7 +12,8 @@
       "route-smith-peak-entrance",
       "route-poopenaut-valley",
       "route-laurel-lake",
-      "route-lake-vernon-rancheria-loop"
+      "route-lake-vernon-rancheria-loop",
+      "source-nps-public-trails-feature-service"
     ]
   },
   "record_type": "gap",

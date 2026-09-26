@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-poopenaut-valley-ordered-geometry-20260926",
+    "evidence_id": "evidence-poopenaut-valley-ordered-geometry-20260926",
+    "notes": "",
+    "observation_id": "observation-nps-hetch-hetchy-map-route-review-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

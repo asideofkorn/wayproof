@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+    ],
+    "object_id": "trailhead-poopenaut-valley",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-yosemite-hetch-hetchy-nps-22819-ends-at-trailhead-poopenaut-valley",
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-22819",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

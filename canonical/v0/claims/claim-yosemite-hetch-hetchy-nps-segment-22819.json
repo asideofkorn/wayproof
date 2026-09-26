@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-hetch-hetchy-nps-segment-22819",
+    "evidence_ids": [
+      "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-segment-yosemite-hetch-hetchy-nps-22819",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.9102035,
+        "longitude": -119.814626
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-22819",
+        "path": "geometry/v0/snapshots/nps-yose-hetch-hetchy-route-features-20260926.geojson",
+        "sha256": "dc04ac70ffa741abdb75c9ab76ee08ab4657a1505f161ae08588960a0e5d41cd"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "22819",
+      "source_feature_name": "Poopenaut Valley Trail",
+      "source_geometry_id": "{AF1B24ED-3E8B-4D72-8970-346D3AA24E14}",
+      "start_coordinate": {
+        "latitude": 37.9191633,
+        "longitude": -119.8200624
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

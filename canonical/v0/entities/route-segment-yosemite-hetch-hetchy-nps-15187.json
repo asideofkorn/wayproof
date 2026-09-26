@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-hetch-hetchy-nps-15187",
+    "kind": "route_segment",
+    "name": "Hetch Hetchy trail segment 15187"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

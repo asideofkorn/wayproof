@@ -1,0 +1,910 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260926-yosemite-hetch-hetchy-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-hetch-hetchy-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "observation-nps-public-trails-hetch-hetchy-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-hetch-hetchy-map-route-review-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "observation-nps-hetch-hetchy-map-route-review-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-01.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-02.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-15865.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-15865",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-15865.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-15865",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15865"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-15865.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-15865",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15865"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15865-starts-at-node-yosemite-hetch-hetchy-01.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15865-starts-at-node-yosemite-hetch-hetchy-01",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15865"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15865-ends-at-node-yosemite-hetch-hetchy-02.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15865-ends-at-node-yosemite-hetch-hetchy-02",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15865"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15865-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15865-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-03.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-04.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-21750.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-21750",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-21750.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-21750",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-21750"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-21750.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-21750",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-21750"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-21750-starts-at-node-yosemite-hetch-hetchy-03.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-21750-starts-at-node-yosemite-hetch-hetchy-03",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-21750"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-21750-ends-at-node-yosemite-hetch-hetchy-04.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-21750-ends-at-node-yosemite-hetch-hetchy-04",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-21750"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-21750-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-21750-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-05.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-16595.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-16595",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-16595.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-16595",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16595"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-16595.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-16595",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16595"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16595-starts-at-node-yosemite-hetch-hetchy-04.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16595-starts-at-node-yosemite-hetch-hetchy-04",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16595"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16595-ends-at-node-yosemite-hetch-hetchy-05.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16595-ends-at-node-yosemite-hetch-hetchy-05",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16595"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16595-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16595-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-06.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-16804.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-16804",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-16804.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-16804",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16804"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-16804.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-16804",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16804"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16804-starts-at-node-yosemite-hetch-hetchy-06.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16804-starts-at-node-yosemite-hetch-hetchy-06",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16804"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16804-ends-at-node-yosemite-hetch-hetchy-03.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16804-ends-at-node-yosemite-hetch-hetchy-03",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16804"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16804-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16804-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-07.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-08.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-20889.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-20889",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-20889.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-20889",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20889"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-20889.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-20889",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20889"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20889-starts-at-node-yosemite-hetch-hetchy-07.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20889-starts-at-node-yosemite-hetch-hetchy-07",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20889"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20889-ends-at-node-yosemite-hetch-hetchy-08.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20889-ends-at-node-yosemite-hetch-hetchy-08",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20889"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20889-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20889-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-15187.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-15187",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-15187.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-15187",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15187"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-15187.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-15187",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15187"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15187-starts-at-node-yosemite-hetch-hetchy-05.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15187-starts-at-node-yosemite-hetch-hetchy-05",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15187"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15187-ends-at-waterfall-wapama.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15187-ends-at-waterfall-wapama",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15187"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15187-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15187-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-09.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-20830.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-20830",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-20830.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-20830",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20830"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-20830.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-20830",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20830"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20830-starts-at-node-yosemite-hetch-hetchy-09.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20830-starts-at-node-yosemite-hetch-hetchy-09",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20830"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20830-ends-at-node-yosemite-hetch-hetchy-06.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20830-ends-at-node-yosemite-hetch-hetchy-06",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20830"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20830-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20830-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-20767.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-20767",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-20767.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-20767",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20767"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-20767.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-20767",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20767"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20767-starts-at-node-yosemite-hetch-hetchy-07.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20767-starts-at-node-yosemite-hetch-hetchy-07",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20767"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20767-ends-at-node-yosemite-hetch-hetchy-01.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20767-ends-at-node-yosemite-hetch-hetchy-01",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-20767"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-20767-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-20767-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-15302.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-15302",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-15302.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-15302",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15302"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-15302.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-15302",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15302"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15302-starts-at-node-yosemite-hetch-hetchy-08.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15302-starts-at-node-yosemite-hetch-hetchy-08",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15302"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15302-ends-at-trailhead-wapama-rancheria.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15302-ends-at-trailhead-wapama-rancheria",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-15302"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-15302-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-15302-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-22819.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-22819",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-22819.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-22819",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-22819.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-22819",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22819-starts-at-valley-poopenaut.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22819-starts-at-valley-poopenaut",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22819-ends-at-trailhead-poopenaut-valley.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22819-ends-at-trailhead-poopenaut-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22819"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22819-part-of-poopenaut-valley.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22819-part-of-poopenaut-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-hetch-hetchy-10.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-node-yosemite-hetch-hetchy-10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-22149.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-22149",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-22149.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-22149",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22149"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-22149.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-22149",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22149"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22149-starts-at-node-yosemite-hetch-hetchy-02.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22149-starts-at-node-yosemite-hetch-hetchy-02",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22149"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22149-ends-at-node-yosemite-hetch-hetchy-10.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22149-ends-at-node-yosemite-hetch-hetchy-10",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-22149"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-22149-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-22149-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-hetch-hetchy-nps-16728.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "route-segment-yosemite-hetch-hetchy-nps-16728",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-hetch-hetchy-nps-segment-16728.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-yosemite-hetch-hetchy-nps-segment-16728",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16728"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-hetch-hetchy-nps-segment-16728.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-yosemite-hetch-hetchy-nps-segment-16728",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16728"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16728-starts-at-node-yosemite-hetch-hetchy-10.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16728-starts-at-node-yosemite-hetch-hetchy-10",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16728"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16728-ends-at-node-yosemite-hetch-hetchy-09.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16728-ends-at-node-yosemite-hetch-hetchy-09",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-hetch-hetchy-nps-segment-16728"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-hetch-hetchy-nps-16728-part-of-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "relationship-yosemite-hetch-hetchy-nps-16728-part-of-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wapama-falls-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-wapama-falls-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wapama-falls-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-wapama-falls-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-poopenaut-valley-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "evidence-poopenaut-valley-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-poopenaut-valley-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "claim-poopenaut-valley-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-hetch-hetchy-route-topology.json",
+      "reason": "Add reviewed Hetch Hetchy route topology from the official NPS map and trail service.",
+      "record_id": "gap-yosemite-hetch-hetchy-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish reviewed Wapama Falls and Poopenaut Valley route graphs and narrow the remaining Hetch Hetchy topology gap."
+}
