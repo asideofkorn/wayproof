@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-transit-profile"
+    ],
+    "object_id": "trailhead-mirror-lake",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mirror-lake-shuttle-accesses-mirror-lake",
+    "subject_id": "access-mirror-lake-shuttle-stop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,442 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65189006499288,
+          37.71666889734925
+        ],
+        "type": "Point"
+      },
+      "id": "access-bridalveil-fall-parking",
+      "properties": {
+        "feature_id": "access-bridalveil-fall-parking",
+        "kind": "parking",
+        "name": "Bridalveil Fall Parking",
+        "nps_object_id": 20476,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.56999961703644,
+          37.73791289520971
+        ],
+        "type": "Point"
+      },
+      "id": "access-curry-village-east-lot",
+      "properties": {
+        "feature_id": "access-curry-village-east-lot",
+        "kind": "parking",
+        "name": "Curry Village East Lot",
+        "nps_object_id": 22314,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.55979744174385,
+          37.73242065842623
+        ],
+        "type": "Point"
+      },
+      "id": "access-happy-isles-shuttle-stop",
+      "properties": {
+        "feature_id": "access-happy-isles-shuttle-stop",
+        "kind": "transit_stop",
+        "name": "Happy Isles Shuttle Stop",
+        "nps_object_id": 22887,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.59340494174121,
+          37.74564458225493
+        ],
+        "type": "Point"
+      },
+      "id": "access-lower-yosemite-fall-shuttle-stop",
+      "properties": {
+        "feature_id": "access-lower-yosemite-fall-shuttle-stop",
+        "kind": "transit_stop",
+        "name": "Lower Yosemite Fall Shuttle Stop",
+        "nps_object_id": 20385,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.55970805851705,
+          37.73934925908251
+        ],
+        "type": "Point"
+      },
+      "id": "access-mirror-lake-shuttle-stop",
+      "properties": {
+        "feature_id": "access-mirror-lake-shuttle-stop",
+        "kind": "transit_stop",
+        "name": "Mirror Lake Shuttle Stop",
+        "nps_object_id": 22123,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6018587185467,
+          37.740587547174826
+        ],
+        "type": "Point"
+      },
+      "id": "access-yosemite-falls-parking",
+      "properties": {
+        "feature_id": "access-yosemite-falls-parking",
+        "kind": "parking",
+        "name": "Yosemite Falls Parking",
+        "nps_object_id": 20484,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.56651847513244,
+          37.734967669183185
+        ],
+        "type": "Point"
+      },
+      "id": "access-yosemite-valley-trailhead-parking",
+      "properties": {
+        "feature_id": "access-yosemite-valley-trailhead-parking",
+        "kind": "parking",
+        "name": "Valley Trailhead Parking",
+        "nps_object_id": 21305,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65106076285281,
+          37.71662633440474
+        ],
+        "type": "Point"
+      },
+      "id": "facility-bridalveil-fall-restroom",
+      "properties": {
+        "feature_id": "facility-bridalveil-fall-restroom",
+        "kind": "restroom",
+        "name": "Bridalveil Fall Restroom",
+        "nps_object_id": 20081,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60056557566489,
+          37.7434826695387
+        ],
+        "type": "Point"
+      },
+      "id": "facility-camp-4-restroom-east",
+      "properties": {
+        "feature_id": "facility-camp-4-restroom-east",
+        "kind": "restroom",
+        "name": "Camp 4 Restroom East",
+        "nps_object_id": 21569,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.559742850703,
+          37.73213934840377
+        ],
+        "type": "Point"
+      },
+      "id": "facility-happy-isles-restroom",
+      "properties": {
+        "feature_id": "facility-happy-isles-restroom",
+        "kind": "restroom",
+        "name": "Happy Isles Restroom",
+        "nps_object_id": 22597,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.55095240690726,
+          37.74657764038859
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mirror-lake-vault-toilet",
+      "properties": {
+        "feature_id": "facility-mirror-lake-vault-toilet",
+        "kind": "restroom",
+        "name": "Mirror Lake Vault Toilet",
+        "nps_object_id": 22521,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.58444974037626,
+          37.74650828997847
+        ],
+        "type": "Point"
+      },
+      "id": "facility-yosemite-valley-welcome-center",
+      "properties": {
+        "feature_id": "facility-yosemite-valley-welcome-center",
+        "kind": "visitor_center",
+        "name": "Yosemite Valley Welcome Center",
+        "nps_object_id": 21747,
+        "nps_poi_type": "Information",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60181468877518,
+          37.73386758554882
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-four-mile-yosemite-valley",
+      "properties": {
+        "feature_id": "trailhead-four-mile-yosemite-valley",
+        "kind": "trailhead",
+        "name": "Four Mile Trailhead (Yosemite Valley)",
+        "nps_object_id": 21390,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.55779032546229,
+          37.73283137360864
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-happy-isles",
+      "properties": {
+        "feature_id": "trailhead-happy-isles",
+        "kind": "trailhead",
+        "name": "Happy Isles Trailhead",
+        "nps_object_id": 21534,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.55978050454868,
+          37.739523351093645
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-mirror-lake",
+      "properties": {
+        "feature_id": "trailhead-mirror-lake",
+        "kind": "trailhead",
+        "name": "Mirror Lake Trailhead",
+        "nps_object_id": 21188,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.73631438449334,
+          37.71447444309211
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-old-big-oak-flat-road",
+      "properties": {
+        "feature_id": "trailhead-old-big-oak-flat-road",
+        "kind": "trailhead",
+        "name": "Old Big Oak Flat Road Trailhead",
+        "nps_object_id": 22126,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.539376048453,
+          37.75922475140577
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-snow-creek",
+      "properties": {
+        "feature_id": "trailhead-snow-creek",
+        "kind": "trailhead",
+        "name": "Snow Creek Trailhead",
+        "nps_object_id": 22821,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.59005433371276,
+          37.75020366692229
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-valley-loop",
+      "properties": {
+        "feature_id": "trailhead-valley-loop",
+        "kind": "trailhead",
+        "name": "Valley Loop Trailhead",
+        "nps_object_id": 20395,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60325102702224,
+          37.74276863627916
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-yosemite-falls",
+      "properties": {
+        "feature_id": "trailhead-yosemite-falls",
+        "kind": "trailhead",
+        "name": "Yosemite Falls Trailhead",
+        "nps_object_id": 20513,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.64657349914037,
+          37.71679646574227
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-bridalveil-fall",
+      "properties": {
+        "feature_id": "waterfall-bridalveil-fall",
+        "kind": "waterfall",
+        "name": "Bridalveil Fall",
+        "nps_object_id": 21892,
+        "nps_poi_type": "Waterfall",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.59556331759177,
+          37.75001896150957
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-lower-yosemite-fall",
+      "properties": {
+        "feature_id": "waterfall-lower-yosemite-fall",
+        "kind": "waterfall",
+        "name": "Lower Yosemite Fall Footbridge",
+        "nps_object_id": 21711,
+        "nps_poi_type": "Bridge",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.53405308667827,
+          37.72490343756584
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-nevada-fall",
+      "properties": {
+        "feature_id": "waterfall-nevada-fall",
+        "kind": "waterfall",
+        "name": "Nevada Fall",
+        "nps_object_id": 19985,
+        "nps_poi_type": "Waterfall",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.54378749055824,
+          37.72743139810566
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-vernal-fall",
+      "properties": {
+        "feature_id": "waterfall-vernal-fall",
+        "kind": "waterfall",
+        "name": "Vernal Fall",
+        "nps_object_id": 22881,
+        "nps_poi_type": "Waterfall",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

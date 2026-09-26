@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-loop-published-profile"
+    ],
+    "object_id": "waterfall-bridalveil-fall",
+    "predicate": "reaches",
+    "relationship_id": "relationship-yosemite-valley-loop-reaches-1-waterfall-bridalveil-fall",
+    "subject_id": "route-yosemite-valley-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

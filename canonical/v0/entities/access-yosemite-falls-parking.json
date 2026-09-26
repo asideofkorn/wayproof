@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-yosemite-falls-parking",
+    "kind": "parking",
+    "name": "Yosemite Falls Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-valley-parking-capacity",
+    "question": "What are dependable practical capacity and overflow limits for each Yosemite Valley trailhead parking option?",
+    "reason": "NPS publishes where to park and where parking is unavailable, but the reviewed sources do not publish stable capacity or overflow limits.",
+    "related_ids": [
+      "access-yosemite-valley-trailhead-parking",
+      "access-yosemite-falls-parking",
+      "access-curry-village-east-lot",
+      "access-bridalveil-fall-parking"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

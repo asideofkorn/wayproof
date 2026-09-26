@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-el-capitan",
+    "kind": "peak",
+    "name": "El Capitan"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

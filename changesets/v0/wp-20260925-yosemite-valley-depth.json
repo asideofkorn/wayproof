@@ -1,0 +1,2193 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-yosemite-valley-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-valley-hiking-map-2025.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "source-nps-yosemite-valley-hiking-map-2025",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-valley-trails.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "source-nps-yosemite-valley-trails",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-trailhead-parking.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "source-nps-yosemite-trailhead-parking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-half-dome-day-hike.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "source-nps-yosemite-half-dome-day-hike",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-valley-hiking-map-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-valley-hiking-map-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-valley-trails-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-valley-trails-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-valley-trailheads-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-valley-trailheads-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-trailhead-parking-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-trailhead-parking-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-valley-transit-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-valley-transit-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-half-dome-day-hike-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-yosemite-half-dome-day-hike-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-yosemite-valley-20260925.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "observation-nps-public-pois-yosemite-valley-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "place-yosemite-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "scope-yosemite-valley",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-bridalveil-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-lower-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-lower-yosemite-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-valley-loop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-valley-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-four-mile-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-four-mile-yosemite-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mirror-lake.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-mirror-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-yosemite-falls.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-yosemite-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-happy-isles.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-happy-isles",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-snow-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-old-big-oak-flat-road.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "trailhead-old-big-oak-flat-road",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-bridalveil-fall-parking.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-bridalveil-fall-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-yosemite-valley-trailhead-parking.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-yosemite-valley-trailhead-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-yosemite-falls-parking.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-yosemite-falls-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-curry-village-east-lot.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-curry-village-east-lot",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-happy-isles-shuttle-stop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-happy-isles-shuttle-stop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-mirror-lake-shuttle-stop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-mirror-lake-shuttle-stop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-lower-yosemite-fall-shuttle-stop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "access-lower-yosemite-fall-shuttle-stop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-bridalveil-fall-restroom.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "facility-bridalveil-fall-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-happy-isles-restroom.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "facility-happy-isles-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mirror-lake-vault-toilet.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "facility-mirror-lake-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-camp-4-restroom-east.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "facility-camp-4-restroom-east",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-yosemite-valley-welcome-center.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "facility-yosemite-valley-welcome-center",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterfall-bridalveil-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-lower-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterfall-lower-yosemite-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-upper-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterfall-upper-yosemite-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-vernal-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterfall-vernal-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-nevada-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterfall-nevada-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-mirror-lake-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "waterbody-mirror-lake-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-half-dome.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "peak-half-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-eagle-peak-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "peak-eagle-peak-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-el-capitan.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "peak-el-capitan",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-little-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "place-little-yosemite-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-glacier-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "place-glacier-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-bridalveil-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lower-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-lower-yosemite-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-yosemite-valley-loop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-yosemite-valley-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mirror-lake.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-mirror-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-four-mile-trail.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-four-mile-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-upper-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-upper-yosemite-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-vernal-nevada-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-half-dome-day-hike.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-half-dome-day-hike",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-little-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-little-yosemite-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-snow-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-eagle-peak-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-eagle-peak-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-el-capitan-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-el-capitan-yosemite-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-jmt-yosemite-valley-to-tuolumne.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-jmt-yosemite-valley-to-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-yosemite-full-north-rim.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-yosemite-full-north-rim",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-yosemite-eastern-north-rim.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "route-yosemite-eastern-north-rim",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-bridalveil-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-bridalveil-fall-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-bridalveil-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-bridalveil-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-bridalveil-fall-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lower-yosemite-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-lower-yosemite-fall-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lower-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lower-yosemite-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-lower-yosemite-fall-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-loop-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-valley-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-loop-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-valley-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mirror-lake-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-mirror-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mirror-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mirror-lake-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-mirror-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-four-mile-trail-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-four-mile-trail-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-four-mile-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-four-mile-trail-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-four-mile-trail-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-upper-yosemite-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-upper-yosemite-fall-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-upper-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-upper-yosemite-fall-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-upper-yosemite-fall-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-vernal-nevada-falls-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-vernal-nevada-falls-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-vernal-nevada-falls-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-vernal-nevada-falls-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-half-dome-day-hike-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-half-dome-day-hike-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-half-dome-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-half-dome-day-hike-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-half-dome-day-hike-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-little-yosemite-valley-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-little-yosemite-valley-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-little-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-little-yosemite-valley-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-little-yosemite-valley-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-snow-creek-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-snow-creek-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-snow-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-snow-creek-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-snow-creek-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-eagle-peak-yosemite-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-eagle-peak-yosemite-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-eagle-peak-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-eagle-peak-yosemite-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-eagle-peak-yosemite-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-el-capitan-yosemite-valley-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-el-capitan-yosemite-valley-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-el-capitan-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-el-capitan-yosemite-valley-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-el-capitan-yosemite-valley-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-jmt-yosemite-valley-to-tuolumne-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-jmt-yosemite-valley-to-tuolumne-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-jmt-yosemite-valley-to-tuolumne-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-jmt-yosemite-valley-to-tuolumne-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-full-north-rim-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-full-north-rim-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-full-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-full-north-rim-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-full-north-rim-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-eastern-north-rim-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-eastern-north-rim-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-eastern-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-eastern-north-rim-published-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-eastern-north-rim-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-trailhead-parking-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-valley-trailhead-parking-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-trailhead-parking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-trailhead-parking-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-valley-trailhead-parking-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-transit-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-valley-transit-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-transit-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-transit-profile.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-valley-transit-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-happy-isles-mirror-lake-parking-restriction.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-happy-isles-mirror-lake-parking-restriction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-happy-isles-mirror-lake-parking-restriction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-happy-isles-mirror-lake-parking-restriction.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-happy-isles-mirror-lake-parking-restriction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-official-identity.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-yosemite-valley-official-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-official-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-official-identity.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-yosemite-valley-official-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-official-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-located-in-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-valley-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-bridalveil-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-bridalveil-fall-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-bridalveil-fall-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-bridalveil-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-bridalveil-fall-accesses-route-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-bridalveil-fall-accesses-route-bridalveil-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-bridalveil-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-bridalveil-fall-reaches-1-waterfall-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-bridalveil-fall-reaches-1-waterfall-bridalveil-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-bridalveil-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-bridalveil-fall-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-bridalveil-fall-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lower-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lower-yosemite-fall-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-lower-yosemite-fall-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lower-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-lower-yosemite-fall-accesses-route-lower-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-lower-yosemite-fall-accesses-route-lower-yosemite-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lower-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lower-yosemite-fall-reaches-1-waterfall-lower-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-lower-yosemite-fall-reaches-1-waterfall-lower-yosemite-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lower-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lower-yosemite-fall-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-lower-yosemite-fall-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-loop-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-valley-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-lower-yosemite-fall-accesses-route-yosemite-valley-loop.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-lower-yosemite-fall-accesses-route-yosemite-valley-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-loop-reaches-1-waterfall-bridalveil-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-valley-loop-reaches-1-waterfall-bridalveil-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-valley-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mirror-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mirror-lake-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-mirror-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mirror-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mirror-lake-accesses-route-mirror-lake.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-mirror-lake-accesses-route-mirror-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mirror-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mirror-lake-reaches-1-waterbody-mirror-lake-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-mirror-lake-reaches-1-waterbody-mirror-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mirror-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mirror-lake-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-mirror-lake-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-four-mile-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-four-mile-trail-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-four-mile-trail-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-four-mile-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-four-mile-yosemite-valley-accesses-route-four-mile-trail.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-four-mile-yosemite-valley-accesses-route-four-mile-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-four-mile-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-four-mile-trail-reaches-1-place-glacier-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-four-mile-trail-reaches-1-place-glacier-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-four-mile-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-four-mile-trail-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-four-mile-trail-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-upper-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-upper-yosemite-fall-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-upper-yosemite-fall-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-upper-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-yosemite-falls-accesses-route-upper-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-yosemite-falls-accesses-route-upper-yosemite-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-upper-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-upper-yosemite-fall-reaches-1-waterfall-upper-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-upper-yosemite-fall-reaches-1-waterfall-upper-yosemite-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-upper-yosemite-fall-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-upper-yosemite-fall-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-upper-yosemite-fall-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-vernal-nevada-falls-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-vernal-nevada-falls-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-happy-isles-accesses-route-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-happy-isles-accesses-route-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-vernal-nevada-falls-reaches-1-waterfall-vernal-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-vernal-nevada-falls-reaches-1-waterfall-vernal-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-vernal-nevada-falls-reaches-2-waterfall-nevada-fall.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-vernal-nevada-falls-reaches-2-waterfall-nevada-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-vernal-nevada-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-vernal-nevada-falls-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-vernal-nevada-falls-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-half-dome-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-half-dome-day-hike-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-half-dome-day-hike-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-half-dome-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-happy-isles-accesses-route-half-dome-day-hike.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-happy-isles-accesses-route-half-dome-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-half-dome-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-half-dome-day-hike-reaches-1-peak-half-dome.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-half-dome-day-hike-reaches-1-peak-half-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-half-dome-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-half-dome-day-hike-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-half-dome-day-hike-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-little-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-yosemite-valley-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-little-yosemite-valley-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-little-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-happy-isles-accesses-route-little-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-happy-isles-accesses-route-little-yosemite-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-little-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-yosemite-valley-reaches-1-place-little-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-little-yosemite-valley-reaches-1-place-little-yosemite-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-little-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-little-yosemite-valley-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-little-yosemite-valley-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-snow-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-snow-creek-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-snow-creek-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-snow-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mirror-lake-accesses-route-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-mirror-lake-accesses-route-snow-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-snow-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-snow-creek-reaches-1-trailhead-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-snow-creek-reaches-1-trailhead-snow-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-snow-creek-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-snow-creek-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-snow-creek-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-eagle-peak-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-eagle-peak-yosemite-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-eagle-peak-yosemite-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-eagle-peak-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-yosemite-falls-accesses-route-eagle-peak-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-yosemite-falls-accesses-route-eagle-peak-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-eagle-peak-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-eagle-peak-yosemite-reaches-1-peak-eagle-peak-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-eagle-peak-yosemite-reaches-1-peak-eagle-peak-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-eagle-peak-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-eagle-peak-yosemite-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-eagle-peak-yosemite-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-el-capitan-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-el-capitan-yosemite-valley-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-el-capitan-yosemite-valley-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-el-capitan-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-yosemite-falls-accesses-route-el-capitan-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-yosemite-falls-accesses-route-el-capitan-yosemite-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-el-capitan-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-el-capitan-yosemite-valley-reaches-1-peak-el-capitan.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-el-capitan-yosemite-valley-reaches-1-peak-el-capitan",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-el-capitan-yosemite-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-el-capitan-yosemite-valley-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-el-capitan-yosemite-valley-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-jmt-yosemite-valley-to-tuolumne-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-jmt-yosemite-valley-to-tuolumne-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-happy-isles-accesses-route-jmt-yosemite-valley-to-tuolumne.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-happy-isles-accesses-route-jmt-yosemite-valley-to-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-jmt-yosemite-valley-to-tuolumne-reaches-1-place-tuolumne-meadows.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-jmt-yosemite-valley-to-tuolumne-reaches-1-place-tuolumne-meadows",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-jmt-yosemite-valley-to-tuolumne-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-jmt-yosemite-valley-to-tuolumne-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-full-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-full-north-rim-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-full-north-rim-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-full-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-old-big-oak-flat-road-accesses-route-yosemite-full-north-rim.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-old-big-oak-flat-road-accesses-route-yosemite-full-north-rim",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-full-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-full-north-rim-reaches-1-trailhead-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-full-north-rim-reaches-1-trailhead-snow-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-full-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-full-north-rim-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-full-north-rim-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-eastern-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-eastern-north-rim-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-eastern-north-rim-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-eastern-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-yosemite-falls-accesses-route-yosemite-eastern-north-rim.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-trailhead-yosemite-falls-accesses-route-yosemite-eastern-north-rim",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-eastern-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-eastern-north-rim-reaches-1-trailhead-snow-creek.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-eastern-north-rim-reaches-1-trailhead-snow-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-eastern-north-rim-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-eastern-north-rim-traverses-yosemite.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-yosemite-eastern-north-rim-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-trailhead-parking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-valley-trailhead-parking-accesses-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-valley-trailhead-parking-accesses-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-trailhead-parking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-valley-trailhead-parking-accesses-half-dome-day-hike.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-valley-trailhead-parking-accesses-half-dome-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-trailhead-parking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-valley-trailhead-parking-accesses-little-yosemite-valley.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-valley-trailhead-parking-accesses-little-yosemite-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-trailhead-parking-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-valley-trailhead-parking-accesses-jmt-yosemite-valley-to-tuolumne.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-valley-trailhead-parking-accesses-jmt-yosemite-valley-to-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-transit-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-happy-isles-shuttle-accesses-happy-isles.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-happy-isles-shuttle-accesses-happy-isles",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-transit-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mirror-lake-shuttle-accesses-mirror-lake.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-mirror-lake-shuttle-accesses-mirror-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-transit-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lower-yosemite-fall-shuttle-accesses-trailhead.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "relationship-lower-yosemite-fall-shuttle-accesses-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-bridalveil-fall-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-bridalveil-fall-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-bridalveil-fall-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-bridalveil-fall-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-bridalveil-fall-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-curry-village-east-lot-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-curry-village-east-lot-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-curry-village-east-lot-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-curry-village-east-lot-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-curry-village-east-lot-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-happy-isles-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-happy-isles-shuttle-stop-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-happy-isles-shuttle-stop-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-happy-isles-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-happy-isles-shuttle-stop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-lower-yosemite-fall-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-lower-yosemite-fall-shuttle-stop-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-lower-yosemite-fall-shuttle-stop-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-lower-yosemite-fall-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-lower-yosemite-fall-shuttle-stop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-mirror-lake-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-mirror-lake-shuttle-stop-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-mirror-lake-shuttle-stop-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-mirror-lake-shuttle-stop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-mirror-lake-shuttle-stop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-yosemite-falls-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-yosemite-falls-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-yosemite-falls-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-yosemite-falls-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-yosemite-falls-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-yosemite-valley-trailhead-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-access-yosemite-valley-trailhead-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-yosemite-valley-trailhead-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-yosemite-valley-trailhead-parking-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-access-yosemite-valley-trailhead-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-bridalveil-fall-restroom-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-facility-bridalveil-fall-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-bridalveil-fall-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-bridalveil-fall-restroom-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-facility-bridalveil-fall-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-camp-4-restroom-east-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-facility-camp-4-restroom-east-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-camp-4-restroom-east-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-camp-4-restroom-east-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-facility-camp-4-restroom-east-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-happy-isles-restroom-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-facility-happy-isles-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-happy-isles-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-happy-isles-restroom-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-facility-happy-isles-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mirror-lake-vault-toilet-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-facility-mirror-lake-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mirror-lake-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mirror-lake-vault-toilet-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-facility-mirror-lake-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-yosemite-valley-welcome-center-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-facility-yosemite-valley-welcome-center-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-yosemite-valley-welcome-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-yosemite-valley-welcome-center-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-facility-yosemite-valley-welcome-center-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-four-mile-yosemite-valley-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-four-mile-yosemite-valley-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-four-mile-yosemite-valley-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-four-mile-yosemite-valley-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-four-mile-yosemite-valley-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-happy-isles-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-happy-isles-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-happy-isles-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-happy-isles-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-happy-isles-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mirror-lake-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-mirror-lake-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mirror-lake-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mirror-lake-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-mirror-lake-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-old-big-oak-flat-road-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-old-big-oak-flat-road-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-old-big-oak-flat-road-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-old-big-oak-flat-road-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-old-big-oak-flat-road-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-snow-creek-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-snow-creek-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-snow-creek-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-snow-creek-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-snow-creek-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-valley-loop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-valley-loop-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-valley-loop-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-valley-loop-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-valley-loop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-yosemite-falls-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-trailhead-yosemite-falls-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-yosemite-falls-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-yosemite-falls-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-trailhead-yosemite-falls-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-bridalveil-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-waterfall-bridalveil-fall-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-bridalveil-fall-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-bridalveil-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-waterfall-bridalveil-fall-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-lower-yosemite-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-waterfall-lower-yosemite-fall-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-lower-yosemite-fall-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-lower-yosemite-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-waterfall-lower-yosemite-fall-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-nevada-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-waterfall-nevada-fall-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-nevada-fall-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-nevada-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-waterfall-nevada-fall-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-vernal-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "evidence-waterfall-vernal-fall-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-vernal-fall-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-vernal-fall-map-point.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "claim-waterfall-vernal-fall-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-valley-route-segment-topology.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "gap-yosemite-valley-route-segment-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-valley-yosemite-falls-distance-conflict.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "gap-yosemite-valley-yosemite-falls-distance-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-valley-parking-capacity.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "gap-yosemite-valley-parking-capacity",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-valley-trip-date-operations.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "gap-yosemite-valley-trip-date-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-half-dome-day-use-permit-evaluation.json",
+      "reason": "Add reviewed Yosemite Valley planning depth.",
+      "record_id": "gap-half-dome-day-use-permit-evaluation",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Yosemite Valley day-use routes, access, facilities, objectives, transit context, map points, and explicit unresolved gaps."
+}

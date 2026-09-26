@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-mirror-lake-shuttle-stop",
+    "kind": "transit_stop",
+    "name": "Mirror Lake Shuttle Stop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

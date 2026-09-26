@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies Yosemite Valley wilderness trailheads, toilet types, food-locker and parking notes, and explicitly states that parking is unavailable at Happy Isles and Mirror Lake.",
+    "observation_id": "observation-nps-yosemite-valley-trailheads-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-trailhead-info-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

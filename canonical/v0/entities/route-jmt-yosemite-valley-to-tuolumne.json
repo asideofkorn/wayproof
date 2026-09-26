@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-jmt-yosemite-valley-to-tuolumne",
+    "kind": "route",
+    "name": "John Muir Trail: Yosemite Valley to Tuolumne Meadows"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

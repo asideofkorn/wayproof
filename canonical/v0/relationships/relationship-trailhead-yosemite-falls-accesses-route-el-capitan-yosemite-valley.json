@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-el-capitan-yosemite-valley-published-profile"
+    ],
+    "object_id": "route-el-capitan-yosemite-valley",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-yosemite-falls-accesses-route-el-capitan-yosemite-valley",
+    "subject_id": "trailhead-yosemite-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

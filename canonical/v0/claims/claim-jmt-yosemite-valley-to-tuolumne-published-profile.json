@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-jmt-yosemite-valley-to-tuolumne-published-profile",
+    "evidence_ids": [
+      "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-jmt-yosemite-valley-to-tuolumne",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 5900,
+      "objective_entity_ids": [
+        "place-tuolumne-meadows"
+      ],
+      "one_way_miles": 22.0,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-happy-isles"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

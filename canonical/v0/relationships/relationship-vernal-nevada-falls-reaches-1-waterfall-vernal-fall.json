@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-vernal-nevada-falls-published-profile"
+    ],
+    "object_id": "waterfall-vernal-fall",
+    "predicate": "reaches",
+    "relationship_id": "relationship-vernal-nevada-falls-reaches-1-waterfall-vernal-fall",
+    "subject_id": "route-vernal-nevada-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

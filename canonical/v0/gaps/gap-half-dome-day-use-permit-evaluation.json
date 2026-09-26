@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-half-dome-day-use-permit-evaluation",
+    "question": "Does the selected Half Dome date, route, and cable status require and satisfy a Half Dome day-use permit?",
+    "reason": "This route profile identifies the permit topic without adding an incomplete rule; a focused permit batch must model current seasonal applicability, lottery mechanics, and fulfillment coverage.",
+    "related_ids": [
+      "route-half-dome-day-hike",
+      "peak-half-dome",
+      "source-nps-yosemite-half-dome-day-hike"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes the 14-to-16-mile Half Dome day hike, its 4,800 feet of gain, Happy Isles start, parking and early-start walking access, and the separate Half Dome permit topic.",
+    "observation_id": "observation-nps-yosemite-half-dome-day-hike-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-half-dome-day-hike"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

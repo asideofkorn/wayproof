@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-lower-yosemite-fall",
+    "kind": "trailhead",
+    "name": "Lower Yosemite Fall Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

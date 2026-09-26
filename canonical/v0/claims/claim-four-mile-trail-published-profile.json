@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-four-mile-trail-published-profile",
+    "evidence_ids": [
+      "evidence-four-mile-trail-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-four-mile-trail",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 3200,
+      "objective_entity_ids": [
+        "place-glacier-point"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-four-mile-yosemite-valley",
+      "published_time": "6 to 8 hours",
+      "round_trip_miles": 9.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

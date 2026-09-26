@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mirror-lake-published-profile",
+    "evidence_ids": [
+      "evidence-mirror-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-mirror-lake",
+    "temporal_scope": null,
+    "value": {
+      "full_loop_miles": 5.0,
+      "lake_round_trip_miles": 2.0,
+      "objective_entity_ids": [
+        "waterbody-mirror-lake-yosemite"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mirror-lake",
+      "seasonal_note": "lake may be dry in summer and fall"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

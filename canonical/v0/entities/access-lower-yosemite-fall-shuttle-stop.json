@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-lower-yosemite-fall-shuttle-stop",
+    "kind": "transit_stop",
+    "name": "Lower Yosemite Fall Shuttle Stop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

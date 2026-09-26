@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-loop-published-profile",
+    "evidence_ids": [
+      "evidence-yosemite-valley-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-yosemite-valley-loop",
+    "temporal_scope": null,
+    "value": {
+      "full_loop_miles": 13.0,
+      "half_loop_crossing": "El Capitan Bridge",
+      "half_loop_miles": 6.5,
+      "objective_entity_ids": [
+        "waterfall-bridalveil-fall"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-lower-yosemite-fall",
+      "published_time_full": "5 to 7 hours"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-trailhead-parking-profile",
+    "evidence_ids": [
+      "evidence-yosemite-valley-trailhead-parking-profile"
+    ],
+    "predicate": "parking_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "access-yosemite-valley-trailhead-parking",
+    "temporal_scope": null,
+    "value": {
+      "capacity": "not_published",
+      "happy_isles_walking_distance_miles": 0.5,
+      "location": "just beyond Curry Village",
+      "nearby_shuttle": true,
+      "wilderness_permit_overnight_parking": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

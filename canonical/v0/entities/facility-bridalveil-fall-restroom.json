@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-bridalveil-fall-restroom",
+    "kind": "restroom",
+    "name": "Bridalveil Fall Restroom"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

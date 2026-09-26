@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The NPS Yosemite Valley Trails page publishes trailheads, mileage, elevation gain, objectives, and route descriptions for Valley wilderness routes and longer connections.",
+    "observation_id": "observation-nps-yosemite-valley-trails-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-valley-trails"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

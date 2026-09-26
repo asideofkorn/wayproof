@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-jmt-yosemite-valley-to-tuolumne-published-profile"
+    ],
+    "object_id": "route-jmt-yosemite-valley-to-tuolumne",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-happy-isles-accesses-route-jmt-yosemite-valley-to-tuolumne",
+    "subject_id": "trailhead-happy-isles",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

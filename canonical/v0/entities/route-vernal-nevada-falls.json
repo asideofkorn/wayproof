@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-vernal-nevada-falls",
+    "kind": "route",
+    "name": "Vernal and Nevada Falls"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

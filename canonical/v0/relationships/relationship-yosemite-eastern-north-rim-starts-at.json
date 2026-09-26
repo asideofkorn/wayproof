@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-eastern-north-rim-published-profile"
+    ],
+    "object_id": "trailhead-yosemite-falls",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-yosemite-eastern-north-rim-starts-at",
+    "subject_id": "route-yosemite-eastern-north-rim",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-bridalveil-fall",
+    "kind": "route",
+    "name": "Bridalveil Fall"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

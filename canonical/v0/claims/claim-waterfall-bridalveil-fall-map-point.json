@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-waterfall-bridalveil-fall-map-point",
+    "evidence_ids": [
+      "evidence-waterfall-bridalveil-fall-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "waterfall-bridalveil-fall",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "waterfall-bridalveil-fall",
+        "path": "geometry/v0/snapshots/nps-yose-yosemite-valley-pois-20260925.geojson",
+        "sha256": "8229d5b498a67723d04a3a6f6ace2048ddebcaffe3c8e835b7626fa3cf4cb075"
+      },
+      "latitude": 37.71679646574227,
+      "longitude": -119.64657349914037,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "21892",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

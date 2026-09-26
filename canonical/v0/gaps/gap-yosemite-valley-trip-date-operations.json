@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-valley-trip-date-operations",
+    "question": "Which Valley shuttles, trail closures, facility operations, smoke, weather, and parking restrictions apply on the actual visit date?",
+    "reason": "These conditions are volatile and require a contextual current check rather than a timeless claim.",
+    "related_ids": [
+      "place-yosemite-valley",
+      "source-nps-yosemite-conditions",
+      "source-nps-yosemite-transportation"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-full-north-rim-published-profile"
+    ],
+    "object_id": "trailhead-snow-creek",
+    "predicate": "reaches",
+    "relationship_id": "relationship-yosemite-full-north-rim-reaches-1-trailhead-snow-creek",
+    "subject_id": "route-yosemite-full-north-rim",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

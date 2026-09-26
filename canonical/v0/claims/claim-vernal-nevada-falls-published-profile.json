@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-vernal-nevada-falls-published-profile",
+    "evidence_ids": [
+      "evidence-vernal-nevada-falls-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-vernal-nevada-falls",
+    "temporal_scope": null,
+    "value": {
+      "mist_and_jmt_variants": true,
+      "nevada_fall_round_trip_miles_via_mist_trail": 5.4,
+      "objective_entity_ids": [
+        "waterfall-vernal-fall",
+        "waterfall-nevada-fall"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-happy-isles",
+      "vernal_fall_round_trip_miles": 2.4,
+      "vernal_footbridge_round_trip_miles": 1.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
