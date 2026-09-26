@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-valley-nps-15283",
+    "kind": "route_segment",
+    "name": "Four Mile Trail segment 15283"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

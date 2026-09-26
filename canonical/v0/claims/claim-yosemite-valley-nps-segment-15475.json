@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-nps-segment-15475",
+    "evidence_ids": [
+      "evidence-yosemite-valley-nps-segment-15475"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-segment-yosemite-valley-nps-15475",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian|Pack and Saddle",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.7597092,
+        "longitude": -119.599108
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-15475",
+        "path": "geometry/v0/snapshots/nps-yose-valley-route-features-20260926.geojson",
+        "sha256": "c486dc682fa4984ef8193f095fb4b3545e82910919afeed4e4a735f7cfde7754"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "15475",
+      "source_feature_name": "Yosemite Falls Trail",
+      "source_geometry_id": "{A99D6719-7F56-44C0-BB5A-3CCBC8B2FD0F}",
+      "start_coordinate": {
+        "latitude": 37.7427686,
+        "longitude": -119.603251
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

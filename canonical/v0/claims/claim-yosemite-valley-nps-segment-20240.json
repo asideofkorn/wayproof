@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-nps-segment-20240",
+    "evidence_ids": [
+      "evidence-yosemite-valley-nps-segment-20240"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-segment-yosemite-valley-nps-20240",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.7263468,
+        "longitude": -119.5403774
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20240",
+        "path": "geometry/v0/snapshots/nps-yose-valley-route-features-20260926.geojson",
+        "sha256": "c486dc682fa4984ef8193f095fb4b3545e82910919afeed4e4a735f7cfde7754"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20240",
+      "source_feature_name": "Mist Trail",
+      "source_geometry_id": "{8BDB7BC9-8687-44C1-BCE7-D58967ADC1A2}",
+      "start_coordinate": {
+        "latitude": 37.7262279,
+        "longitude": -119.5414748
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Yosemite Valley day-hike distances and identifies the Mist and John Muir trail variants from Happy Isles toward Vernal and Nevada Falls.",
+    "observation_id": "observation-nps-yosemite-valley-day-hikes-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-valley-day-hikes-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

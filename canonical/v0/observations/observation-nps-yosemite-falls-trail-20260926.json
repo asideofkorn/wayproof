@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS states that Yosemite Falls Trail begins behind Camp 4 and reaches the top of Upper Yosemite Fall, with Columbia Rock and Yosemite Point or Eagle Peak extensions.",
+    "observation_id": "observation-nps-yosemite-falls-trail-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-falls-trail-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

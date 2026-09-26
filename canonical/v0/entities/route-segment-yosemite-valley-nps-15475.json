@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-valley-nps-15475",
+    "kind": "route_segment",
+    "name": "Yosemite Falls Trail segment 15475"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

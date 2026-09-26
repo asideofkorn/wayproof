@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-nps-yosemite-four-mile-trail-route-20260926"
+    ],
+    "object_id": "place-glacier-point",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-four-mile-trail-ends-at",
+    "subject_id": "route-four-mile-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

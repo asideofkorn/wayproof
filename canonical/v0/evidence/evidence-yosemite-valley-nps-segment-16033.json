@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-nps-segment-16033",
+    "evidence_id": "evidence-yosemite-valley-nps-segment-16033",
+    "notes": "",
+    "observation_id": "observation-nps-public-trails-yosemite-valley-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

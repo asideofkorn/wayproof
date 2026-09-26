@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-nps-yosemite-vernal-nevada-route-20260926"
+    ],
+    "object_id": "waterfall-nevada-fall",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-vernal-nevada-falls-ends-at",
+    "subject_id": "route-vernal-nevada-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

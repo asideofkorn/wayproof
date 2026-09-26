@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-valley-nps-22642",
+    "kind": "route_segment",
+    "name": "Mist Trail segment 22642"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

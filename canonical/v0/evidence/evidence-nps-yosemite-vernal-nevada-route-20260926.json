@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-vernal-nevada-falls-published-profile",
+    "evidence_id": "evidence-nps-yosemite-vernal-nevada-route-20260926",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-valley-day-hikes-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

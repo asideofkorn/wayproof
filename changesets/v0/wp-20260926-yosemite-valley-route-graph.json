@@ -1,0 +1,1511 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260926-yosemite-valley-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-four-mile-trail-2026.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "source-nps-yosemite-four-mile-trail-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-falls-trail-2026.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "source-nps-yosemite-falls-trail-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-valley-day-hikes-2026.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "source-nps-yosemite-valley-day-hikes-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-yosemite-valley-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "observation-nps-public-trails-yosemite-valley-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-four-mile-trail-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "observation-nps-yosemite-four-mile-trail-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-falls-trail-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "observation-nps-yosemite-falls-trail-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-valley-day-hikes-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "observation-nps-yosemite-valley-day-hikes-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-nps-yosemite-four-mile-trail-route-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-nps-yosemite-four-mile-trail-route-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-nps-yosemite-falls-trail-route-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-nps-yosemite-falls-trail-route-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-nps-yosemite-vernal-nevada-route-20260926.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-nps-yosemite-vernal-nevada-route-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-16033.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-16033",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-16033.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-16033",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16033"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-16033.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-16033",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-01.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16033",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16033-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16033-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16033",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16033-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16033-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16033",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16033-part-of-four-mile-trail.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16033-part-of-four-mile-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-15283.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-15283",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-15283.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-15283",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15283"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-15283.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-15283",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15283",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15283-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15283-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15283",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15283-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15283-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15283",
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15283-part-of-four-mile-trail.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15283-part-of-four-mile-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-15475.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-15475",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-15475.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-15475",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15475"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-15475.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-15475",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15475",
+        "evidence-nps-yosemite-falls-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15475-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15475-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15475",
+        "evidence-nps-yosemite-falls-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15475-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15475-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15475",
+        "evidence-nps-yosemite-falls-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15475-part-of-upper-yosemite-fall.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15475-part-of-upper-yosemite-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-18937.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-18937",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-18937.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-18937",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18937"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-18937.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-18937",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-02.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18937",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18937-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18937-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18937",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18937-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18937-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18937",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18937-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18937-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-15622.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-15622",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-15622.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-15622",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15622"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-15622.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-15622",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-03.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15622",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15622-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15622-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15622",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15622-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15622-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15622",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15622-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15622-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-16589.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-16589",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-16589.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-16589",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16589"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-16589.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-16589",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-04.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16589",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16589-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16589-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16589",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16589-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16589-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16589",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16589-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16589-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-20007.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-20007",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-20007.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-20007",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20007"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-20007.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-20007",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-05.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20007",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20007-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20007-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20007",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20007-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20007-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20007",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20007-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20007-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-20091.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-20091",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-20091.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-20091",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20091"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-20091.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-20091",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-06.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20091",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20091-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20091-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20091",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20091-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20091-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20091",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20091-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20091-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-15046.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-15046",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-15046.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-15046",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15046"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-15046.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-15046",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-07.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15046",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15046-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15046-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15046",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15046-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15046-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-15046",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-15046-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-15046-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-16432.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-16432",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-16432.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-16432",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16432"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-16432.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-16432",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-08.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16432",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16432-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16432-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16432",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16432-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16432-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16432",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16432-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16432-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-20133.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-20133",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-20133.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-20133",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20133"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-20133.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-20133",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-09.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20133",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20133-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20133-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20133",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20133-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20133-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20133",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20133-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20133-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-16205.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-16205",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-16205.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-16205",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16205"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-16205.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-16205",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-10.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16205",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16205-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16205-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16205",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16205-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16205-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16205",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16205-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16205-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-21659.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-21659",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-21659.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-21659",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-21659"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-21659.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-21659",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-11.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-11",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-21659",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-21659-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-21659-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-21659",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-21659-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-21659-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-21659",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-21659-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-21659-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-16450.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-16450",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-16450.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-16450",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16450"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-16450.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-16450",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-12.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-12",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16450",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16450-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16450-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16450",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16450-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16450-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-16450",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-16450-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-16450-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-17156.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-17156",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-17156.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-17156",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-17156"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-17156.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-17156",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-17156",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-17156-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-17156-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-17156",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-17156-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-17156-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-17156",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-17156-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-17156-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-19515.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-19515",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-19515.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-19515",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-19515"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-19515.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-19515",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-13.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-13",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-19515",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-19515-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-19515-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-19515",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-19515-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-19515-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-19515",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-19515-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-19515-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-20240.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-20240",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-20240.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-20240",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20240"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-20240.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-20240",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-14.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-14",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20240",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20240-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20240-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20240",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20240-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20240-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-20240",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-20240-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-20240-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-22642.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-22642",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-22642.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-22642",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-22642"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-22642.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-22642",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-valley-15.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-node-yosemite-valley-15",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-22642",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-22642-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-22642-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-22642",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-22642-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-22642-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-22642",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-22642-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-22642-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-valley-nps-18748.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "route-segment-yosemite-valley-nps-18748",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-valley-nps-segment-18748.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "evidence-yosemite-valley-nps-segment-18748",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18748"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-valley-nps-segment-18748.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "claim-yosemite-valley-nps-segment-18748",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18748",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18748-starts-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18748-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18748",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18748-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18748-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-valley-nps-segment-18748",
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-valley-nps-18748-part-of-vernal-nevada-falls.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-yosemite-valley-nps-18748-part-of-vernal-nevada-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-nps-yosemite-four-mile-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-four-mile-trail-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-four-mile-trail-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-nps-yosemite-falls-trail-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-upper-yosemite-fall-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-upper-yosemite-fall-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-nps-yosemite-vernal-nevada-route-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-vernal-nevada-falls-ends-at.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "relationship-vernal-nevada-falls-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-valley-remaining-route-topology.json",
+      "reason": "Add reviewed Yosemite Valley route topology from official NPS route descriptions and trail geometry.",
+      "record_id": "gap-yosemite-valley-remaining-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add bidirectional reviewed segment topology for Four Mile Trail, Yosemite Falls Trail, and the Happy Isles to Nevada Fall JMT/Mist network, while preserving unresolved Valley graphs as a gap."
+}

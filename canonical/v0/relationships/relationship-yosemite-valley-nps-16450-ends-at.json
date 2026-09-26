@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-nps-segment-16450",
+      "evidence-nps-yosemite-vernal-nevada-route-20260926"
+    ],
+    "object_id": "route-node-yosemite-valley-12",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-yosemite-valley-nps-16450-ends-at",
+    "subject_id": "route-segment-yosemite-valley-nps-16450",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
