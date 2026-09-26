@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-glen-aulin-day-hike-published-profile"
+    ],
+    "object_id": "route-glen-aulin-day-hike",
+    "predicate": "accesses",
+    "relationship_id": "relationship-lembert-dome-parking-accesses-glen-aulin-day-hike",
+    "subject_id": "access-lembert-dome-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

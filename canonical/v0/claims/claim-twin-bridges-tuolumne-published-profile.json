@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-twin-bridges-tuolumne-published-profile",
+    "evidence_ids": [
+      "evidence-twin-bridges-tuolumne-published-profile"
+    ],
+    "predicate": "published_day_hike_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-twin-bridges-tuolumne",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": null,
+      "objective_entity_ids": [
+        "place-twin-bridges-tuolumne"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-dog-lake-tuolumne",
+      "published_time": "about 1 hour or less",
+      "round_trip_miles": 3.0,
+      "route_character": "mostly flat, uneven terrain; optional continuation into Lyell Canyon",
+      "tioga_road_vehicle_access_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

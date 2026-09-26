@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-young-lakes-day-hike-published-profile"
+    ],
+    "object_id": "access-lembert-dome-parking",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-young-lakes-day-hike-starts-at",
+    "subject_id": "route-young-lakes-day-hike",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

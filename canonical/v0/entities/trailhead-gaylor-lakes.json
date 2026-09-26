@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-gaylor-lakes",
+    "kind": "trailhead",
+    "name": "Gaylor Lakes Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

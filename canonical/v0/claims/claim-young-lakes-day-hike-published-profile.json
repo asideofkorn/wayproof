@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-young-lakes-day-hike-published-profile",
+    "evidence_ids": [
+      "evidence-young-lakes-day-hike-published-profile"
+    ],
+    "predicate": "published_day_hike_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-young-lakes-day-hike",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 1300,
+      "objective_entity_ids": [
+        "waterbody-young-lakes"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "access-lembert-dome-parking",
+      "published_time": "8–10 hours",
+      "round_trip_miles": 13.6,
+      "route_character": "via the Glen Aulin or Dog Lake trails; out-and-back or loop options",
+      "tioga_road_vehicle_access_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

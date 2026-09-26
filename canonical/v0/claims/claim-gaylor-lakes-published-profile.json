@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-gaylor-lakes-published-profile",
+    "evidence_ids": [
+      "evidence-gaylor-lakes-published-profile"
+    ],
+    "predicate": "published_day_hike_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-gaylor-lakes",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 500,
+      "objective_entity_ids": [
+        "waterbody-middle-gaylor-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-gaylor-lakes",
+      "published_time": "2–3 hours",
+      "round_trip_miles": 2.6,
+      "route_character": "short but steep; descends 200 feet from the ridge to Middle Gaylor Lake",
+      "tioga_road_vehicle_access_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

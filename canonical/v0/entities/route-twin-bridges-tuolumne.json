@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-twin-bridges-tuolumne",
+    "kind": "route",
+    "name": "Twin Bridges"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

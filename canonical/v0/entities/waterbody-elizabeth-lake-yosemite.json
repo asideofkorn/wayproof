@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-elizabeth-lake-yosemite",
+    "kind": "lake",
+    "name": "Elizabeth Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

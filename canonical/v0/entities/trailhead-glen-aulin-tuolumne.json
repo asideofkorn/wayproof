@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-glen-aulin-tuolumne",
+    "kind": "trailhead",
+    "name": "Glen Aulin Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

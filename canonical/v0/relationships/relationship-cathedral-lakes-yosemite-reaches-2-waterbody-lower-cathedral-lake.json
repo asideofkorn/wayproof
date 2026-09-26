@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-cathedral-lakes-yosemite-published-profile"
+    ],
+    "object_id": "waterbody-lower-cathedral-lake",
+    "predicate": "reaches",
+    "relationship_id": "relationship-cathedral-lakes-yosemite-reaches-2-waterbody-lower-cathedral-lake",
+    "subject_id": "route-cathedral-lakes-yosemite",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

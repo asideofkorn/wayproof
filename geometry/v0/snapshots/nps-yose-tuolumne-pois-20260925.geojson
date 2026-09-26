@@ -1,0 +1,480 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.37476379640765,
+          37.872590274904724
+        ],
+        "type": "Point"
+      },
+      "id": "access-cathedral-lakes-visitor-center-parking",
+      "properties": {
+        "feature_id": "access-cathedral-lakes-visitor-center-parking",
+        "kind": "parking",
+        "name": "Cathedral Lakes Trailhead Parking at Tuolumne Meadows Visitor Center",
+        "nps_object_id": 22588,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.33885692813665,
+          37.878161708020535
+        ],
+        "type": "Point"
+      },
+      "id": "access-dog-lake-parking",
+      "properties": {
+        "feature_id": "access-dog-lake-parking",
+        "kind": "parking",
+        "name": "Dog Lake Trailhead Parking",
+        "nps_object_id": 20894,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35370149549549,
+          37.87741665087902
+        ],
+        "type": "Point"
+      },
+      "id": "access-lembert-dome-parking",
+      "properties": {
+        "feature_id": "access-lembert-dome-parking",
+        "kind": "parking",
+        "name": "Lembert Dome Trailhead",
+        "nps_object_id": 21179,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.25790028452992,
+          37.91072414293793
+        ],
+        "type": "Point"
+      },
+      "id": "access-tioga-pass-entrance",
+      "properties": {
+        "feature_id": "access-tioga-pass-entrance",
+        "kind": "entrance",
+        "name": "Tioga Pass Entrance",
+        "nps_object_id": 21098,
+        "nps_poi_type": "Entrance Station",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.34607051418405,
+          37.87693768238466
+        ],
+        "type": "Point"
+      },
+      "id": "access-tuolumne-wilderness-center-parking",
+      "properties": {
+        "feature_id": "access-tuolumne-wilderness-center-parking",
+        "kind": "parking",
+        "name": "Tuolumne Meadows Wilderness Center Parking",
+        "nps_object_id": 21721,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35374290252423,
+          37.877607098893975
+        ],
+        "type": "Point"
+      },
+      "id": "facility-lembert-dome-vault-toilets",
+      "properties": {
+        "feature_id": "facility-lembert-dome-vault-toilets",
+        "kind": "restroom",
+        "name": "Lembert Dome Parking Vault Toilets",
+        "nps_object_id": 20877,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.36783411990655,
+          37.87815456992845
+        ],
+        "type": "Point"
+      },
+      "id": "facility-parsons-mccauley-vault-toilet",
+      "properties": {
+        "feature_id": "facility-parsons-mccauley-vault-toilet",
+        "kind": "restroom",
+        "name": "Parsons/McCauley Vault Toilet",
+        "nps_object_id": 22839,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.25810696653515,
+          37.9104728518993
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tioga-pass-vault-toilet",
+      "properties": {
+        "feature_id": "facility-tioga-pass-vault-toilet",
+        "kind": "restroom",
+        "name": "Tioga Pass Vault Toilet",
+        "nps_object_id": 21920,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35785778174643,
+          37.87364387222385
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-ev-charging",
+      "properties": {
+        "feature_id": "facility-tuolumne-ev-charging",
+        "kind": "facility",
+        "name": "Tuolumne Meadows EV Charging Station",
+        "nps_object_id": 22864,
+        "nps_poi_type": "Electric Vehicle Parking",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35687652366292,
+          37.87432304835861
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-store-grill",
+      "properties": {
+        "feature_id": "facility-tuolumne-store-grill",
+        "kind": "store",
+        "name": "Tuolumne Meadows Store/Grill",
+        "nps_object_id": 22670,
+        "nps_poi_type": "Store",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.37417799719384,
+          37.871567353850786
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-visitor-center",
+      "properties": {
+        "feature_id": "facility-tuolumne-visitor-center",
+        "kind": "visitor_center",
+        "name": "Tuolumne Meadows Visitor Center",
+        "nps_object_id": 21607,
+        "nps_poi_type": "Visitor Center",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.37363040115072,
+          37.8719768719288
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-visitor-center-restroom",
+      "properties": {
+        "feature_id": "facility-tuolumne-visitor-center-restroom",
+        "kind": "restroom",
+        "name": "Tuolumne Meadows Visitor Center Restroom",
+        "nps_object_id": 21861,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.34573311612554,
+          37.87691196940657
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-wilderness-center",
+      "properties": {
+        "feature_id": "facility-tuolumne-wilderness-center",
+        "kind": "visitor_center",
+        "name": "Tuolumne Meadows Wilderness Center",
+        "nps_object_id": 22372,
+        "nps_poi_type": "Information",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.34706005792285,
+          37.88194995978529
+        ],
+        "type": "Point"
+      },
+      "id": "peak-lembert-dome",
+      "properties": {
+        "feature_id": "peak-lembert-dome",
+        "kind": "peak",
+        "name": "Lembert Dome",
+        "nps_object_id": 22423,
+        "nps_poi_type": "Viewpoint",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.3674140208639,
+          37.87838495198048
+        ],
+        "type": "Point"
+      },
+      "id": "place-parsons-memorial-lodge",
+      "properties": {
+        "feature_id": "place-parsons-memorial-lodge",
+        "kind": "place",
+        "name": "Parsons Memorial Lodge",
+        "nps_object_id": 22759,
+        "nps_poi_type": "Historic Building",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.36149931851565,
+          37.87512240410028
+        ],
+        "type": "Point"
+      },
+      "id": "place-tuolumne-meadows",
+      "properties": {
+        "feature_id": "place-tuolumne-meadows",
+        "kind": "place",
+        "name": "Tuolumne Meadows",
+        "nps_object_id": 22205,
+        "nps_poi_type": "Point of Interest",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.37470605940318,
+          37.87263365091298
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-cathedral-lakes-yosemite",
+      "properties": {
+        "feature_id": "trailhead-cathedral-lakes-yosemite",
+        "kind": "trailhead",
+        "name": "Cathedral Lakes",
+        "nps_object_id": 22934,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.33898560618603,
+          37.878406986034335
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-dog-lake-tuolumne",
+      "properties": {
+        "feature_id": "trailhead-dog-lake-tuolumne",
+        "kind": "trailhead",
+        "name": "Dog Lake Trailhead",
+        "nps_object_id": 21439,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35580733405986,
+          37.87060415708556
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-elizabeth-lake-yosemite",
+      "properties": {
+        "feature_id": "trailhead-elizabeth-lake-yosemite",
+        "kind": "trailhead",
+        "name": "Elizabeth Lake Trailhead",
+        "nps_object_id": 20812,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.25828446953594,
+          37.910224876863076
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-gaylor-lakes",
+      "properties": {
+        "feature_id": "trailhead-gaylor-lakes",
+        "kind": "trailhead",
+        "name": "Gaylor Lakes Trailhead",
+        "nps_object_id": 21419,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.35851084945648,
+          37.878889461670596
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-glen-aulin-tuolumne",
+      "properties": {
+        "feature_id": "trailhead-glen-aulin-tuolumne",
+        "kind": "trailhead",
+        "name": "Glen Aulin Trailhead",
+        "nps_object_id": 23060,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.26269570504267,
+          37.89091035072022
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-mono-parker-pass-yosemite",
+      "properties": {
+        "feature_id": "trailhead-mono-parker-pass-yosemite",
+        "kind": "trailhead",
+        "name": "Mono/Parker Pass Trailhead",
+        "nps_object_id": 21643,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.39342134891788,
+          37.876432494919506
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-pothole-dome",
+      "properties": {
+        "feature_id": "trailhead-pothole-dome",
+        "kind": "trailhead",
+        "name": "Pothole Dome Shuttle Stop",
+        "nps_object_id": 21473,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.3706467446698,
+          37.872063929152326
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-soda-springs-tuolumne",
+      "properties": {
+        "feature_id": "trailhead-soda-springs-tuolumne",
+        "kind": "trailhead",
+        "name": "Soda Springs Trailhead",
+        "nps_object_id": 20429,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.36647894964584,
+          37.87782638899539
+        ],
+        "type": "Point"
+      },
+      "id": "water-tuolumne-soda-springs",
+      "properties": {
+        "feature_id": "water-tuolumne-soda-springs",
+        "kind": "water_source",
+        "name": "Soda Springs",
+        "nps_object_id": 21429,
+        "nps_poi_type": "Spring",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

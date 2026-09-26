@@ -1,7 +1,7 @@
 {
   "artifact_format_version": 1,
   "record": {
-    "explanation": "Yosemite access, transportation, fees, reservations, inventory, and closures can change; recheck official sources near departure.",
+    "explanation": "Yosemite access, transportation, fees, reservations, inventory, closures, and Tuolumne high-country operations can change; recheck official sources near departure.",
     "input_ids": [
       "claim-yosemite-entry-reservation-2026",
       "claim-yosemite-standard-entrance-fees-2026",
@@ -12,7 +12,10 @@
       "claim-yosemite-campground-reservations",
       "gap-yosemite-current-conditions",
       "gap-yosemite-campground-availability",
-      "claim-yosemite-live-campsite-availability-recheck"
+      "claim-yosemite-live-campsite-availability-recheck",
+      "claim-tuolumne-current-access-20260925",
+      "claim-tuolumne-wilderness-center-profile",
+      "gap-tuolumne-trip-date-operations"
     ],
     "kind": "pretrip_recheck",
     "result_id": "result-yosemite-pretrip-recheck",
@@ -24,7 +27,10 @@
         "public_transportation_service",
         "entry_reservation_policy",
         "entrance_fees",
-        "campground_reservations_and_live_availability"
+        "campground_reservations_and_live_availability",
+        "tuolumne_trail_detours_and_roadwork",
+        "tuolumne_facility_and_shuttle_operations",
+        "high_country_weather_and_smoke"
       ]
     }
   },

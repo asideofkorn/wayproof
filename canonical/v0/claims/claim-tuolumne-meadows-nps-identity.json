@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-meadows-nps-identity",
+    "evidence_ids": [
+      "evidence-tuolumne-meadows-nps-identity"
+    ],
+    "predicate": "official_nps_place_identity",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": null,
+    "value": "Tuolumne Meadows, Yosemite National Park"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

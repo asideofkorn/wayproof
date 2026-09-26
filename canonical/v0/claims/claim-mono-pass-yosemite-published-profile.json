@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mono-pass-yosemite-published-profile",
+    "evidence_ids": [
+      "evidence-mono-pass-yosemite-published-profile"
+    ],
+    "predicate": "published_day_hike_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-mono-pass-yosemite",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 1000,
+      "objective_entity_ids": [
+        "pass-mono-yosemite"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mono-parker-pass-yosemite",
+      "published_time": "5–7 hours",
+      "round_trip_miles": 8.0,
+      "route_character": "steady climb with eastern Sierra and Mono Lake views",
+      "tioga_road_vehicle_access_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

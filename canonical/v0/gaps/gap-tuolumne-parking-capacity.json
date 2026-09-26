@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-tuolumne-parking-capacity",
+    "question": "What are the reliable practical parking capacities and overflow rules for each Tuolumne day-hike access?",
+    "reason": "The reviewed NPS sources identify where to park but do not publish dependable stall counts or overflow limits for these day-use locations.",
+    "related_ids": [
+      "trailhead-pothole-dome",
+      "trailhead-soda-springs-tuolumne",
+      "trailhead-dog-lake-tuolumne",
+      "trailhead-gaylor-lakes",
+      "trailhead-dog-lake-tuolumne",
+      "trailhead-elizabeth-lake-yosemite",
+      "trailhead-cathedral-lakes-yosemite",
+      "trailhead-mono-parker-pass-yosemite",
+      "access-lembert-dome-parking",
+      "access-lembert-dome-parking"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mono-pass-yosemite-published-profile"
+    ],
+    "object_id": "route-mono-pass-yosemite",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mono-parker-pass-yosemite-accesses-mono-pass-yosemite",
+    "subject_id": "trailhead-mono-parker-pass-yosemite",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

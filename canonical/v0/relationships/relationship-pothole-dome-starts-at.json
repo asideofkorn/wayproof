@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-pothole-dome-published-profile"
+    ],
+    "object_id": "trailhead-pothole-dome",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-pothole-dome-starts-at",
+    "subject_id": "route-pothole-dome",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

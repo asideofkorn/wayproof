@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes ten named Tuolumne Meadows day hikes with distance, elevation, time, starting point, seasonal access, and limited-service context.",
+    "observation_id": "observation-nps-yosemite-tuolumne-day-hikes-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-tuolumne-day-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

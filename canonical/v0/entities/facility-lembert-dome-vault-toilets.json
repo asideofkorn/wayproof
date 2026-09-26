@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-lembert-dome-vault-toilets",
+    "kind": "restroom",
+    "name": "Lembert Dome Parking Vault Toilets"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

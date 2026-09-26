@@ -28,6 +28,7 @@ SITE = {
     "test_whitney_human_planning_foundation.py",
     "test_yosemite_campground_inventory.py",
     "test_yosemite_nps_foundation.py",
+    "test_yosemite_tuolumne_depth.py",
 }
 
 PLANNING = {

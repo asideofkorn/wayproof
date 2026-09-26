@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "On September 25, 2026 the NPS current-conditions page showed Tioga Road open with Tuolumne/Olmsted-to-Tioga delays and a construction closure of the trail between the wilderness center and Lembert Dome, with an alternate trail available.",
+    "observation_id": "observation-nps-yosemite-tuolumne-conditions-20260925",
+    "observed_at": "2026-09-25T00:00:00+00:00",
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

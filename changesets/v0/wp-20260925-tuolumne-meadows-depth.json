@@ -1,0 +1,2206 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-tuolumne-meadows-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tuolumne-day-hikes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "source-nps-yosemite-tuolumne-day-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tuolumne-place.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "source-nps-yosemite-tuolumne-place",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-trailhead-info-2026.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "source-nps-yosemite-trailhead-info-2026",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tuolumne-wilderness-center.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "source-nps-yosemite-tuolumne-wilderness-center",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-public-pois-feature-service.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "source-nps-public-pois-feature-service",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-day-hikes-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-yosemite-tuolumne-day-hikes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-place-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-yosemite-tuolumne-place-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-trailhead-info-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-yosemite-trailhead-info-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-wilderness-center-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-yosemite-tuolumne-wilderness-center-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-tuolumne-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-public-pois-tuolumne-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-conditions-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "observation-nps-yosemite-tuolumne-conditions-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-tuolumne-meadows.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "place-tuolumne-meadows",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-tuolumne-meadows.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "scope-tuolumne-meadows",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-pothole-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-pothole-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-soda-springs-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-soda-springs-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-dog-lake-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-dog-lake-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-gaylor-lakes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-gaylor-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-elizabeth-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-elizabeth-lake-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-cathedral-lakes-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-cathedral-lakes-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mono-parker-pass-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-mono-parker-pass-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-glen-aulin-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "trailhead-glen-aulin-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-lembert-dome-parking.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "access-lembert-dome-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-dog-lake-parking.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "access-dog-lake-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-cathedral-lakes-visitor-center-parking.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "access-cathedral-lakes-visitor-center-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-tuolumne-wilderness-center-parking.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "access-tuolumne-wilderness-center-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-tioga-pass-entrance.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "access-tioga-pass-entrance",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-wilderness-center.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tuolumne-wilderness-center",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-visitor-center.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tuolumne-visitor-center",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-store-grill.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tuolumne-store-grill",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-ev-charging.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tuolumne-ev-charging",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-lembert-dome-vault-toilets.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-lembert-dome-vault-toilets",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tioga-pass-vault-toilet.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tioga-pass-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-parsons-mccauley-vault-toilet.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-parsons-mccauley-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-tuolumne-visitor-center-restroom.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "facility-tuolumne-visitor-center-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-pothole-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "peak-pothole-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-parsons-memorial-lodge.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "place-parsons-memorial-lodge",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/water-tuolumne-soda-springs.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "water-tuolumne-soda-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-twin-bridges-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "place-twin-bridges-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-middle-gaylor-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-middle-gaylor-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-dog-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-dog-lake-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-lembert-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "peak-lembert-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-elizabeth-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-elizabeth-lake-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-upper-cathedral-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-upper-cathedral-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-lower-cathedral-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-lower-cathedral-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/pass-mono-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "pass-mono-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-glen-aulin.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "place-glen-aulin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-young-lakes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "waterbody-young-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-pothole-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-pothole-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-parsons-lodge-soda-springs.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-parsons-lodge-soda-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-twin-bridges-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-twin-bridges-tuolumne",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-gaylor-lakes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-gaylor-lakes",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-dog-lake-lembert-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-dog-lake-lembert-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-elizabeth-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-elizabeth-lake-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-cathedral-lakes-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-cathedral-lakes-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mono-pass-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-mono-pass-yosemite",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-glen-aulin-day-hike.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-glen-aulin-day-hike",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-young-lakes-day-hike.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "route-young-lakes-day-hike",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-pothole-dome-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-pothole-dome-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-pothole-dome-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-pothole-dome-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-parsons-lodge-soda-springs-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-parsons-lodge-soda-springs-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-parsons-lodge-soda-springs-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-parsons-lodge-soda-springs-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-twin-bridges-tuolumne-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-twin-bridges-tuolumne-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-twin-bridges-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-twin-bridges-tuolumne-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-twin-bridges-tuolumne-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-gaylor-lakes-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-gaylor-lakes-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-gaylor-lakes-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-gaylor-lakes-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-dog-lake-lembert-dome-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-dog-lake-lembert-dome-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-dog-lake-lembert-dome-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-dog-lake-lembert-dome-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-elizabeth-lake-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-elizabeth-lake-yosemite-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-elizabeth-lake-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-elizabeth-lake-yosemite-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-cathedral-lakes-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-cathedral-lakes-yosemite-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-cathedral-lakes-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-cathedral-lakes-yosemite-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mono-pass-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-mono-pass-yosemite-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mono-pass-yosemite-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-mono-pass-yosemite-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glen-aulin-day-hike-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-glen-aulin-day-hike-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glen-aulin-day-hike-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-glen-aulin-day-hike-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-young-lakes-day-hike-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-young-lakes-day-hike-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-young-lakes-day-hike-published-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-young-lakes-day-hike-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-meadows-visitor-context.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-tuolumne-meadows-visitor-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-meadows-visitor-context"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-meadows-visitor-context.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-tuolumne-meadows-visitor-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-meadows-day-hike-permit.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-tuolumne-meadows-day-hike-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-meadows-day-hike-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-meadows-day-hike-permit.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-tuolumne-meadows-day-hike-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-wilderness-center-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-tuolumne-wilderness-center-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-wilderness-center-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-wilderness-center-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-tuolumne-wilderness-center-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-current-access-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-tuolumne-current-access-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-current-access-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-current-access-20260925.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-tuolumne-current-access-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-cathedral-lakes-yosemite-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-cathedral-lakes-yosemite-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-cathedral-lakes-yosemite-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-cathedral-lakes-yosemite-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mono-parker-pass-yosemite-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-mono-parker-pass-yosemite-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-parker-pass-yosemite-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mono-parker-pass-yosemite-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-mono-parker-pass-yosemite-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-gaylor-lakes-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-gaylor-lakes-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-gaylor-lakes-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-gaylor-lakes-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glen-aulin-tuolumne-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-glen-aulin-tuolumne-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-tuolumne-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glen-aulin-tuolumne-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-glen-aulin-tuolumne-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-dog-lake-tuolumne-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-dog-lake-tuolumne-operational-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-tuolumne-operational-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-dog-lake-tuolumne-operational-profile.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-dog-lake-tuolumne-operational-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-cathedral-lakes-visitor-center-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-access-cathedral-lakes-visitor-center-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-cathedral-lakes-visitor-center-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-cathedral-lakes-visitor-center-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-access-cathedral-lakes-visitor-center-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-dog-lake-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-access-dog-lake-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-dog-lake-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-dog-lake-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-access-dog-lake-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-lembert-dome-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-access-lembert-dome-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-lembert-dome-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-lembert-dome-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-access-lembert-dome-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-tioga-pass-entrance-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-access-tioga-pass-entrance-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tioga-pass-entrance-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-tioga-pass-entrance-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-access-tioga-pass-entrance-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-tuolumne-wilderness-center-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-access-tuolumne-wilderness-center-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tuolumne-wilderness-center-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-tuolumne-wilderness-center-parking-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-access-tuolumne-wilderness-center-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-lembert-dome-vault-toilets-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-lembert-dome-vault-toilets-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-lembert-dome-vault-toilets-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-lembert-dome-vault-toilets-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-lembert-dome-vault-toilets-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-parsons-mccauley-vault-toilet-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-parsons-mccauley-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-parsons-mccauley-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-parsons-mccauley-vault-toilet-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-parsons-mccauley-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tioga-pass-vault-toilet-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tioga-pass-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tioga-pass-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tioga-pass-vault-toilet-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tioga-pass-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-ev-charging-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tuolumne-ev-charging-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-ev-charging-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-ev-charging-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tuolumne-ev-charging-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-store-grill-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tuolumne-store-grill-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-store-grill-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-store-grill-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tuolumne-store-grill-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-visitor-center-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tuolumne-visitor-center-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-visitor-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-visitor-center-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tuolumne-visitor-center-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-visitor-center-restroom-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tuolumne-visitor-center-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-visitor-center-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-visitor-center-restroom-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tuolumne-visitor-center-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-tuolumne-wilderness-center-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-facility-tuolumne-wilderness-center-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-wilderness-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-tuolumne-wilderness-center-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-facility-tuolumne-wilderness-center-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-peak-lembert-dome-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-peak-lembert-dome-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-lembert-dome-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-peak-lembert-dome-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-peak-lembert-dome-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-parsons-memorial-lodge-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-place-parsons-memorial-lodge-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-parsons-memorial-lodge-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-parsons-memorial-lodge-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-place-parsons-memorial-lodge-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-tuolumne-meadows-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-place-tuolumne-meadows-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-tuolumne-meadows-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-tuolumne-meadows-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-place-tuolumne-meadows-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-cathedral-lakes-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-cathedral-lakes-yosemite-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-cathedral-lakes-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-cathedral-lakes-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-cathedral-lakes-yosemite-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-dog-lake-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-dog-lake-tuolumne-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-dog-lake-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-dog-lake-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-dog-lake-tuolumne-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-elizabeth-lake-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-elizabeth-lake-yosemite-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-elizabeth-lake-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-elizabeth-lake-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-elizabeth-lake-yosemite-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-gaylor-lakes-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-gaylor-lakes-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-gaylor-lakes-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-gaylor-lakes-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-gaylor-lakes-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-glen-aulin-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-glen-aulin-tuolumne-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-glen-aulin-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-glen-aulin-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-glen-aulin-tuolumne-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mono-parker-pass-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-mono-parker-pass-yosemite-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mono-parker-pass-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mono-parker-pass-yosemite-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-mono-parker-pass-yosemite-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-pothole-dome-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-pothole-dome-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-pothole-dome-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-pothole-dome-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-pothole-dome-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-soda-springs-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-trailhead-soda-springs-tuolumne-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-soda-springs-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-soda-springs-tuolumne-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-trailhead-soda-springs-tuolumne-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-water-tuolumne-soda-springs-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-water-tuolumne-soda-springs-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-water-tuolumne-soda-springs-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-water-tuolumne-soda-springs-map-point.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-water-tuolumne-soda-springs-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tuolumne-meadows-nps-identity.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "evidence-tuolumne-meadows-nps-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-meadows-nps-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tuolumne-meadows-nps-identity.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "claim-tuolumne-meadows-nps-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tuolumne-meadows-nps-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-tuolumne-meadows-located-in-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-tuolumne-meadows-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pothole-dome-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-pothole-dome-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pothole-dome-accesses-pothole-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-pothole-dome-accesses-pothole-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pothole-dome-reaches-1-peak-pothole-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-pothole-dome-reaches-1-peak-pothole-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pothole-dome-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-pothole-dome-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parsons-lodge-soda-springs-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-parsons-lodge-soda-springs-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-soda-springs-tuolumne-accesses-parsons-lodge-soda-springs.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-soda-springs-tuolumne-accesses-parsons-lodge-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parsons-lodge-soda-springs-reaches-1-place-parsons-memorial-lodge.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-parsons-lodge-soda-springs-reaches-1-place-parsons-memorial-lodge",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parsons-lodge-soda-springs-reaches-2-water-tuolumne-soda-springs.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-parsons-lodge-soda-springs-reaches-2-water-tuolumne-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parsons-lodge-soda-springs-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-parsons-lodge-soda-springs-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-twin-bridges-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-twin-bridges-tuolumne-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-twin-bridges-tuolumne-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-twin-bridges-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-tuolumne-accesses-twin-bridges-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-tuolumne-accesses-twin-bridges-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-twin-bridges-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-twin-bridges-tuolumne-reaches-1-place-twin-bridges-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-twin-bridges-tuolumne-reaches-1-place-twin-bridges-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-twin-bridges-tuolumne-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-twin-bridges-tuolumne-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-twin-bridges-tuolumne-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-gaylor-lakes-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-gaylor-lakes-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-gaylor-lakes-accesses-gaylor-lakes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-gaylor-lakes-accesses-gaylor-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-gaylor-lakes-reaches-1-waterbody-middle-gaylor-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-gaylor-lakes-reaches-1-waterbody-middle-gaylor-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-gaylor-lakes-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-gaylor-lakes-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-lembert-dome-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-lembert-dome-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-tuolumne-accesses-dog-lake-lembert-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-tuolumne-accesses-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-lembert-dome-reaches-1-waterbody-dog-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-lembert-dome-reaches-1-waterbody-dog-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-lembert-dome-reaches-2-peak-lembert-dome.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-lembert-dome-reaches-2-peak-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-lembert-dome-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-dog-lake-lembert-dome-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-elizabeth-lake-yosemite-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-elizabeth-lake-yosemite-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-elizabeth-lake-yosemite-accesses-elizabeth-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-elizabeth-lake-yosemite-accesses-elizabeth-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-elizabeth-lake-yosemite-reaches-1-waterbody-elizabeth-lake-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-elizabeth-lake-yosemite-reaches-1-waterbody-elizabeth-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-elizabeth-lake-yosemite-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-elizabeth-lake-yosemite-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-cathedral-lakes-yosemite-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-accesses-cathedral-lakes-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-cathedral-lakes-yosemite-accesses-cathedral-lakes-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-reaches-1-waterbody-upper-cathedral-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-cathedral-lakes-yosemite-reaches-1-waterbody-upper-cathedral-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-reaches-2-waterbody-lower-cathedral-lake.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-cathedral-lakes-yosemite-reaches-2-waterbody-lower-cathedral-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-cathedral-lakes-yosemite-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-pass-yosemite-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-mono-pass-yosemite-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-parker-pass-yosemite-accesses-mono-pass-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-mono-parker-pass-yosemite-accesses-mono-pass-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-pass-yosemite-reaches-1-pass-mono-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-mono-pass-yosemite-reaches-1-pass-mono-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-pass-yosemite-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-mono-pass-yosemite-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glen-aulin-day-hike-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-glen-aulin-day-hike-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lembert-dome-parking-accesses-glen-aulin-day-hike.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-lembert-dome-parking-accesses-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glen-aulin-day-hike-reaches-1-place-glen-aulin.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-glen-aulin-day-hike-reaches-1-place-glen-aulin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glen-aulin-day-hike-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-glen-aulin-day-hike-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-young-lakes-day-hike-starts-at.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-young-lakes-day-hike-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lembert-dome-parking-accesses-young-lakes-day-hike.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-lembert-dome-parking-accesses-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-young-lakes-day-hike-reaches-1-waterbody-young-lakes.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-young-lakes-day-hike-reaches-1-waterbody-young-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-young-lakes-day-hike-traverses-yosemite.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-young-lakes-day-hike-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-pothole-dome-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-pothole-dome-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-pothole-dome-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-soda-springs-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-soda-springs-tuolumne-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-soda-springs-tuolumne-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-dog-lake-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-dog-lake-tuolumne-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-dog-lake-tuolumne-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-gaylor-lakes-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-gaylor-lakes-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-gaylor-lakes-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-elizabeth-lake-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-elizabeth-lake-yosemite-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-elizabeth-lake-yosemite-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-cathedral-lakes-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-cathedral-lakes-yosemite-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-cathedral-lakes-yosemite-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mono-parker-pass-yosemite-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mono-parker-pass-yosemite-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-mono-parker-pass-yosemite-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-glen-aulin-tuolumne-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-glen-aulin-tuolumne-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-trailhead-glen-aulin-tuolumne-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-lembert-dome-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-lembert-dome-parking-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-access-lembert-dome-parking-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-dog-lake-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-dog-lake-parking-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-access-dog-lake-parking-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-cathedral-lakes-visitor-center-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-cathedral-lakes-visitor-center-parking-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-access-cathedral-lakes-visitor-center-parking-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tuolumne-wilderness-center-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-tuolumne-wilderness-center-parking-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-access-tuolumne-wilderness-center-parking-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-tioga-pass-entrance-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-tioga-pass-entrance-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-access-tioga-pass-entrance-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-wilderness-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tuolumne-wilderness-center-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tuolumne-wilderness-center-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-visitor-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tuolumne-visitor-center-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tuolumne-visitor-center-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-store-grill-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tuolumne-store-grill-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tuolumne-store-grill-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-ev-charging-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tuolumne-ev-charging-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tuolumne-ev-charging-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-lembert-dome-vault-toilets-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-lembert-dome-vault-toilets-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-lembert-dome-vault-toilets-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tioga-pass-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tioga-pass-vault-toilet-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tioga-pass-vault-toilet-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-parsons-mccauley-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-parsons-mccauley-vault-toilet-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-parsons-mccauley-vault-toilet-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-tuolumne-visitor-center-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-facility-tuolumne-visitor-center-restroom-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-facility-tuolumne-visitor-center-restroom-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-parsons-memorial-lodge-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-place-parsons-memorial-lodge-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-place-parsons-memorial-lodge-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-water-tuolumne-soda-springs-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-water-tuolumne-soda-springs-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-water-tuolumne-soda-springs-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-peak-lembert-dome-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-peak-lembert-dome-associated-with-tuolumne.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "relationship-peak-lembert-dome-associated-with-tuolumne",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-tuolumne-route-segment-topology.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "gap-tuolumne-route-segment-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-tuolumne-parking-capacity.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "gap-tuolumne-parking-capacity",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-tuolumne-trip-date-operations.json",
+      "reason": "Add reviewed Tuolumne Meadows planning depth.",
+      "record_id": "gap-tuolumne-trip-date-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-yosemite-pretrip-recheck.json",
+      "reason": "Extend the existing Yosemite recheck contract to cover the newly modeled Tuolumne operations without creating a parallel process primitive.",
+      "record_id": "result-yosemite-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add NPS-sourced Tuolumne Meadows day-hike, access, facility, objective, operational, and reviewed map-point depth."
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-tuolumne-wilderness-center",
+    "kind": "visitor_center",
+    "name": "Tuolumne Meadows Wilderness Center"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

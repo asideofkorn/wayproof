@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-tuolumne-store-grill",
+    "kind": "store",
+    "name": "Tuolumne Meadows Store/Grill"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

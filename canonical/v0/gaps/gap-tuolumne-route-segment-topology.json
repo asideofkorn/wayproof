@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-tuolumne-route-segment-topology",
+    "question": "Which reviewed NPS trail-feature segments form each published Tuolumne day hike from its exact parking access to every turnaround or objective?",
+    "reason": "NPS publishes authoritative hike profiles and a public trail dataset, but route assembly across shared and unnamed trail features still requires feature-by-feature review; proximity alone is not access or topology.",
+    "related_ids": [
+      "route-pothole-dome",
+      "route-parsons-lodge-soda-springs",
+      "route-twin-bridges-tuolumne",
+      "route-gaylor-lakes",
+      "route-dog-lake-lembert-dome",
+      "route-elizabeth-lake-yosemite",
+      "route-cathedral-lakes-yosemite",
+      "route-mono-pass-yosemite",
+      "route-glen-aulin-day-hike",
+      "route-young-lakes-day-hike",
+      "source-nps-public-trails-feature-service"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

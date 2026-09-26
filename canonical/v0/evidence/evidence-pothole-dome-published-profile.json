@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-pothole-dome-published-profile",
+    "evidence_id": "evidence-pothole-dome-published-profile",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-tuolumne-day-hikes-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

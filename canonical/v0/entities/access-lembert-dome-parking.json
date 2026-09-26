@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-lembert-dome-parking",
+    "kind": "parking",
+    "name": "Lembert Dome Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

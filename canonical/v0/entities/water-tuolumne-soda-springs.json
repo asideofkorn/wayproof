@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "water-tuolumne-soda-springs",
+    "kind": "water_source",
+    "name": "Soda Springs"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dog-lake-tuolumne-operational-profile",
+    "evidence_ids": [
+      "evidence-dog-lake-tuolumne-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "trailhead-dog-lake-tuolumne",
+    "temporal_scope": null,
+    "value": {
+      "drinking_water": false,
+      "food_locker": true,
+      "operational_status_requires_current_check": true,
+      "tioga_road_access_required": true,
+      "toilet": "vault_for_Young_Lakes_via_Dog_Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

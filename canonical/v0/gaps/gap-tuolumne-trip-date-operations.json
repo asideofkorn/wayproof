@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-tuolumne-trip-date-operations",
+    "question": "Which Tuolumne facilities, shuttles, trail detours, weather hazards, smoke impacts, and Tioga Road delays apply on the actual visit date?",
+    "reason": "These conditions are volatile; the dated September 25 snapshot is evidence, not a forecast or guarantee.",
+    "related_ids": [
+      "place-tuolumne-meadows",
+      "source-nps-yosemite-conditions",
+      "claim-tuolumne-current-access-20260925"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
