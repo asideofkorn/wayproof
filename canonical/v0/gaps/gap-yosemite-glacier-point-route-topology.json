@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-glacier-point-route-topology",
+    "question": "Which reviewed NPS trail features form each Glacier Point Road route, loop, connector, and exact turnaround?",
+    "reason": "Official pages establish route identities and profiles, but continuous topology requires a separate reviewed geometry pass.",
+    "related_ids": [
+      "route-glacier-point-overlook",
+      "route-mcgurk-meadow",
+      "route-sentinel-dome",
+      "route-taft-point",
+      "route-sentinel-dome-taft-point-loop",
+      "route-mono-meadow",
+      "route-dewey-point",
+      "route-ostrander-lake",
+      "route-panorama-trail",
+      "route-pohono-glacier-point-to-tunnel-view"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

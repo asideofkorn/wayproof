@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "As of September 25, 2026, NPS reports Glacier Point Road temporarily closed for smoke and firefighting operations and the Ostrander Lake Trail and areas south of it closed due to the Dome Fire. This is dated evidence.",
+    "observation_id": "observation-nps-yosemite-glacier-point-conditions-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

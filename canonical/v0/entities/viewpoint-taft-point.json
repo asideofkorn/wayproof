@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "viewpoint-taft-point",
+    "kind": "viewpoint",
+    "name": "Taft Point"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

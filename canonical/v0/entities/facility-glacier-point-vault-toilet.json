@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-glacier-point-vault-toilet",
+    "kind": "restroom",
+    "name": "Glacier Point Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

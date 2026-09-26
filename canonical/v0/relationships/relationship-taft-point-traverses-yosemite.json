@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taft-point-published-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-taft-point-traverses-yosemite",
+    "subject_id": "route-taft-point",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

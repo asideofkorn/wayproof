@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes the Ostrander Lake profile, food storage, trailhead vault toilet, seasonal road access, and the October 15 overnight-parking restriction.",
+    "observation_id": "observation-nps-yosemite-ostrander-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-ostrander-trailhead"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

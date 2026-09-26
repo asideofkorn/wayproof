@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-pohono-glacier-point-to-tunnel-view",
+    "kind": "route",
+    "name": "Pohono Trail: Glacier Point to Tunnel View"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

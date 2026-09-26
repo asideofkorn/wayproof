@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-mcgurk-meadow",
+    "kind": "trailhead",
+    "name": "McGurk Meadow Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

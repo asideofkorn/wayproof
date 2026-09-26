@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-glacier-point",
+    "kind": "trailhead",
+    "name": "Glacier Point Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

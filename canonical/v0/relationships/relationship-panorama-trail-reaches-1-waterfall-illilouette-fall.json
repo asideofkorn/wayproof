@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-panorama-trail-published-profile"
+    ],
+    "object_id": "waterfall-illilouette-fall",
+    "predicate": "reaches",
+    "relationship_id": "relationship-panorama-trail-reaches-1-waterfall-illilouette-fall",
+    "subject_id": "route-panorama-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

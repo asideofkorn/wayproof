@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-glacier-point-gift-shop",
+    "kind": "store",
+    "name": "Glacier Point Gift Shop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

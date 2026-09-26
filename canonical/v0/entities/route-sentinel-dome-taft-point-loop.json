@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-sentinel-dome-taft-point-loop",
+    "kind": "route",
+    "name": "Sentinel Dome and Taft Point Loop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

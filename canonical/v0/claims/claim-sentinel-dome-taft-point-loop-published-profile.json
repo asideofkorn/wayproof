@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sentinel-dome-taft-point-loop-published-profile",
+    "evidence_ids": [
+      "evidence-sentinel-dome-taft-point-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-sentinel-dome-taft-point-loop",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "peak-sentinel-dome",
+        "viewpoint-taft-point"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_distance": "not stated on reviewed official page",
+      "published_start_entity_id": "trailhead-sentinel-dome-taft-point",
+      "route_form": "loop via Pohono Trail"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

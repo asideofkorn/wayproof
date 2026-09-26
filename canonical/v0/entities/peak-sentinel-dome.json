@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-sentinel-dome",
+    "kind": "peak",
+    "name": "Sentinel Dome"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

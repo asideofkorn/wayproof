@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Sentinel Dome and Taft Point profiles, a Pohono Trail loop option, trailhead pit toilets, use rules, and seasonal vehicle access.",
+    "observation_id": "observation-nps-yosemite-sentinel-taft-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-sentinel-taft-trailhead"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

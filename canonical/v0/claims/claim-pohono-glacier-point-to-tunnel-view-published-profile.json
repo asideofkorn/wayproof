@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-pohono-glacier-point-to-tunnel-view-published-profile",
+    "evidence_ids": [
+      "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-pohono-glacier-point-to-tunnel-view",
+    "temporal_scope": null,
+    "value": {
+      "descent_ft_approx": 3200,
+      "objective_entity_ids": [
+        "viewpoint-taft-point",
+        "viewpoint-dewey-point",
+        "place-tunnel-view"
+      ],
+      "one_way_miles": 12.5,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-glacier-point",
+      "published_time": "8 to 10 hours",
+      "return_transit_not_available": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

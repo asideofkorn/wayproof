@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-glacier-point-overlook",
+    "kind": "route",
+    "name": "Glacier Point Overlook Walk"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

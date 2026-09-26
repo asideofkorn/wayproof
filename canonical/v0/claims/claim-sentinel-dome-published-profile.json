@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-sentinel-dome-published-profile",
+    "evidence_ids": [
+      "evidence-sentinel-dome-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-sentinel-dome",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 400,
+      "objective_entity_ids": [
+        "peak-sentinel-dome"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-sentinel-dome-taft-point",
+      "published_time": "1 to 2 hours",
+      "round_trip_miles": 2.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

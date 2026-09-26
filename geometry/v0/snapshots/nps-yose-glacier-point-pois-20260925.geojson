@@ -1,0 +1,252 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6638157900172,
+          37.66443948160929
+        ],
+        "type": "Point"
+      },
+      "id": "access-badger-pass-parking",
+      "properties": {
+        "feature_id": "access-badger-pass-parking",
+        "kind": "parking",
+        "name": "Badger Pass Ski Area Parking",
+        "nps_object_id": 22649,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57529809065706,
+          37.72695579180243
+        ],
+        "type": "Point"
+      },
+      "id": "access-glacier-point-parking",
+      "properties": {
+        "feature_id": "access-glacier-point-parking",
+        "kind": "parking",
+        "name": "Glacier Point Parking",
+        "nps_object_id": 22761,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57357434954059,
+          37.72841036206241
+        ],
+        "type": "Point"
+      },
+      "id": "facility-glacier-point-gift-shop",
+      "properties": {
+        "feature_id": "facility-glacier-point-gift-shop",
+        "kind": "store",
+        "name": "Glacier Point Gift Shop",
+        "nps_object_id": 21250,
+        "nps_poi_type": "Food Service",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57572480678684,
+          37.727484040821395
+        ],
+        "type": "Point"
+      },
+      "id": "facility-glacier-point-vault-toilet",
+      "properties": {
+        "feature_id": "facility-glacier-point-vault-toilet",
+        "kind": "restroom",
+        "name": "Glacier Point Vault Toilet",
+        "nps_object_id": 19963,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.58643861983848,
+          37.71252199965075
+        ],
+        "type": "Point"
+      },
+      "id": "facility-sentinel-taft-vault-toilet",
+      "properties": {
+        "feature_id": "facility-sentinel-taft-vault-toilet",
+        "kind": "restroom",
+        "name": "Sentinel Dome Trailhead Vault Toilet",
+        "nps_object_id": 22419,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57378181383072,
+          37.73066500525895
+        ],
+        "type": "Point"
+      },
+      "id": "place-glacier-point",
+      "properties": {
+        "feature_id": "place-glacier-point",
+        "kind": "viewpoint",
+        "name": "Glacier Point",
+        "nps_object_id": 22174,
+        "nps_poi_type": "Viewpoint",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.5734914504474,
+          37.72770948300261
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-glacier-point",
+      "properties": {
+        "feature_id": "trailhead-glacier-point",
+        "kind": "trailhead",
+        "name": "Glacier Point Trailhead",
+        "nps_object_id": 21520,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62812123187614,
+          37.670446558723455
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-mcgurk-meadow",
+      "properties": {
+        "feature_id": "trailhead-mcgurk-meadow",
+        "kind": "trailhead",
+        "name": "McGurk Meadow Trailhead",
+        "nps_object_id": 21924,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.58477759191375,
+          37.67145341791597
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-mono-meadow",
+      "properties": {
+        "feature_id": "trailhead-mono-meadow",
+        "kind": "trailhead",
+        "name": "Mono Meadow Trailhead",
+        "nps_object_id": 22020,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60360878345604,
+          37.66673877612763
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-ostrander-lake",
+      "properties": {
+        "feature_id": "trailhead-ostrander-lake",
+        "kind": "trailhead",
+        "name": "Ostrander Trailhead",
+        "nps_object_id": 22812,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.58634934582723,
+          37.712551624659945
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-sentinel-dome-taft-point",
+      "properties": {
+        "feature_id": "trailhead-sentinel-dome-taft-point",
+        "kind": "trailhead",
+        "name": "Sentinel Dome Trailhead",
+        "nps_object_id": 20333,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65017887832303,
+          37.7044172013261
+        ],
+        "type": "Point"
+      },
+      "id": "viewpoint-dewey-point",
+      "properties": {
+        "feature_id": "viewpoint-dewey-point",
+        "kind": "viewpoint",
+        "name": "Dewey Point",
+        "nps_object_id": 20294,
+        "nps_poi_type": "Viewpoint",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6055628950435,
+          37.713237799347866
+        ],
+        "type": "Point"
+      },
+      "id": "viewpoint-taft-point",
+      "properties": {
+        "feature_id": "viewpoint-taft-point",
+        "kind": "viewpoint",
+        "name": "Taft Point",
+        "nps_object_id": 22999,
+        "nps_poi_type": "Viewpoint",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

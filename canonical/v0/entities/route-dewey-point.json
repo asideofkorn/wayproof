@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-dewey-point",
+    "kind": "route",
+    "name": "Dewey Point"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

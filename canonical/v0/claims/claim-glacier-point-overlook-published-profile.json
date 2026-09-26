@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glacier-point-overlook-published-profile",
+    "evidence_ids": [
+      "evidence-glacier-point-overlook-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-glacier-point-overlook",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "place-glacier-point"
+      ],
+      "one_way_yards": 300,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "access-glacier-point-parking",
+      "published_time": "10 to 15 minutes",
+      "surface": "paved",
+      "wheelchair_accessible": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

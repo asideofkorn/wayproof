@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-dewey-point-published-profile",
+    "evidence_ids": [
+      "evidence-dewey-point-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-dewey-point",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 750,
+      "objective_entity_ids": [
+        "viewpoint-dewey-point"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mcgurk-meadow",
+      "published_time": "4 to 5 hours",
+      "round_trip_miles": 7.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
