@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lukens-lake-tioga-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-lukens-lake-tioga-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-lukens-lake-tioga",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "published_at_route_level_only",
+      "route_shape": "out_and_back_objective_corridor",
+      "segment_ids": [
+        "route-segment-yosemite-west-tioga-nps-18552"
+      ],
+      "start_node_id": "trailhead-lukens-lake-tioga"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

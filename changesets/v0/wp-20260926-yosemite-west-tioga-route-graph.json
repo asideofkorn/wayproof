@@ -1,0 +1,200 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260926-yosemite-west-tioga-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-west-tioga-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "observation-nps-public-trails-west-tioga-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-west-tioga-route-review-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "observation-nps-west-tioga-route-review-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-west-tioga-nps-19452.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "route-segment-yosemite-west-tioga-nps-19452",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-west-tioga-nps-segment-19452.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "evidence-yosemite-west-tioga-nps-segment-19452",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-19452"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-west-tioga-nps-segment-19452.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "claim-yosemite-west-tioga-nps-segment-19452",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-19452"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-19452-starts-at-trailhead-may-lake.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-19452-starts-at-trailhead-may-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-19452"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-19452-ends-at-waterbody-may-lake.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-19452-ends-at-waterbody-may-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-19452"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-19452-part-of-may-lake-day-hike.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-19452-part-of-may-lake-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-may-lake-day-hike-ordered-geometry-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "evidence-may-lake-day-hike-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-may-lake-day-hike-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-may-lake-day-hike-ordered-geometry-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "claim-may-lake-day-hike-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-west-tioga-nps-18552.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "route-segment-yosemite-west-tioga-nps-18552",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-west-tioga-nps-segment-18552.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "evidence-yosemite-west-tioga-nps-segment-18552",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-18552"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-west-tioga-nps-segment-18552.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "claim-yosemite-west-tioga-nps-segment-18552",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-18552"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-18552-starts-at-trailhead-lukens-lake-tioga.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-18552-starts-at-trailhead-lukens-lake-tioga",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-18552"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-18552-ends-at-waterbody-lukens-lake.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-18552-ends-at-waterbody-lukens-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-west-tioga-nps-segment-18552"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-west-tioga-nps-18552-part-of-lukens-lake-tioga.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "relationship-yosemite-west-tioga-nps-18552-part-of-lukens-lake-tioga",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lukens-lake-tioga-ordered-geometry-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "evidence-lukens-lake-tioga-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lukens-lake-tioga-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lukens-lake-tioga-ordered-geometry-20260926.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "claim-lukens-lake-tioga-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-west-tioga-route-topology.json",
+      "reason": "Add reviewed west-Tioga route geometry from official NPS route descriptions and trail data.",
+      "record_id": "gap-yosemite-west-tioga-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish reviewed May Lake and Tioga Road-to-Lukens Lake route graphs and narrow the remaining west-Tioga topology gap."
+}

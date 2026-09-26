@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-west-tioga-nps-segment-18552",
+    "evidence_id": "evidence-yosemite-west-tioga-nps-segment-18552",
+    "notes": "",
+    "observation_id": "observation-nps-public-trails-west-tioga-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

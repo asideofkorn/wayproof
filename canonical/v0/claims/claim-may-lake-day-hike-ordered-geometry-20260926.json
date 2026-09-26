@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-may-lake-day-hike-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-may-lake-day-hike-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-may-lake-day-hike",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "published_at_route_level_only",
+      "route_shape": "out_and_back_objective_corridor",
+      "segment_ids": [
+        "route-segment-yosemite-west-tioga-nps-19452"
+      ],
+      "start_node_id": "trailhead-may-lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,40 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-west-tioga-nps-segment-18552",
+    "evidence_ids": [
+      "evidence-yosemite-west-tioga-nps-segment-18552"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-segment-yosemite-west-tioga-nps-18552",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian|Pack and Saddle",
+      "distance_status": "published_at_route_level_only",
+      "end_coordinate": {
+        "latitude": 37.8505206,
+        "longitude": -119.6152103
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-18552",
+        "path": "geometry/v0/snapshots/nps-yose-west-tioga-route-features-20260926.geojson",
+        "sha256": "e9b878b1da456178657f8d751e67b836c82b6e31ec65d00e570f154b933cb03e"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "18552",
+      "source_feature_name": "Lukens Lake Trail",
+      "source_geometry_id": "{34D335E6-B385-4E93-A9A4-522019F96F87}",
+      "start_coordinate": {
+        "latitude": 37.8654271,
+        "longitude": -119.6216945
+      },
+      "surface": "Native",
+      "xy_accuracy": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
