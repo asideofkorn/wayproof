@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-elizabeth-lake-yosemite-published-profile",
+    "evidence_ids": [
+      "evidence-elizabeth-lake-yosemite-published-profile"
+    ],
+    "predicate": "published_day_hike_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-elizabeth-lake-yosemite",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 1000,
+      "objective_entity_ids": [
+        "waterbody-elizabeth-lake-yosemite"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-elizabeth-lake-yosemite",
+      "published_time": "6–7 hours",
+      "round_trip_miles": 6.8,
+      "route_character": "steady climb over two miles plus a one-mile lake circuit",
+      "tioga_road_vehicle_access_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

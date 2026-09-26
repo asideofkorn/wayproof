@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-dog-lake-tuolumne",
+    "kind": "trailhead",
+    "name": "Dog Lake Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-wilderness-center-profile",
+    "evidence_ids": [
+      "evidence-tuolumne-wilderness-center-profile"
+    ],
+    "predicate": "facility_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "facility-tuolumne-wilderness-center",
+    "temporal_scope": null,
+    "value": {
+      "accessible_restroom": true,
+      "amenities": [
+        "bear canister purchase/rental",
+        "ranger information",
+        "permits",
+        "picnic table",
+        "recycling",
+        "restroom",
+        "trash",
+        "potable water"
+      ],
+      "designated_accessible_parking_spaces": false,
+      "hours": "8 am to 5 pm daily while seasonally open",
+      "operational_status_requires_current_check": true,
+      "seasonal_closure": "approximately October 15 to late May and whenever Tioga Road is closed",
+      "wheelchair_accessible": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

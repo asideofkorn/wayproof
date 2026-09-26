@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-parsons-mccauley-vault-toilet",
+    "kind": "restroom",
+    "name": "Parsons/McCauley Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

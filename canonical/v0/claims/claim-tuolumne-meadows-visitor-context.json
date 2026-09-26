@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-meadows-visitor-context",
+    "evidence_ids": [
+      "evidence-tuolumne-meadows-visitor-context"
+    ],
+    "predicate": "visitor_context",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": null,
+    "value": {
+      "carry_food_and_water": true,
+      "dogs_bicycles_strollers_on_meadow_hiking_trails": "not_allowed",
+      "fragile_meadow_use_official_trails": true,
+      "nearest_gas": [
+        "Crane Flat",
+        "Lee Vining"
+      ],
+      "services": "extremely_limited",
+      "vehicle_access_only_while_tioga_road_open": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

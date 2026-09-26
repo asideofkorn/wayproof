@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-dog-lake-lembert-dome-published-profile"
+    ],
+    "object_id": "waterbody-dog-lake-yosemite",
+    "predicate": "reaches",
+    "relationship_id": "relationship-dog-lake-lembert-dome-reaches-1-waterbody-dog-lake-yosemite",
+    "subject_id": "route-dog-lake-lembert-dome",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

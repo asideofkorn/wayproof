@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mono-pass-yosemite-published-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-mono-pass-yosemite-traverses-yosemite",
+    "subject_id": "route-mono-pass-yosemite",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-parsons-lodge-soda-springs-published-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-parsons-lodge-soda-springs-traverses-yosemite",
+    "subject_id": "route-parsons-lodge-soda-springs",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

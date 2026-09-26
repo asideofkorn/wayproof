@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-cathedral-lakes-yosemite-operational-profile",
+    "evidence_ids": [
+      "evidence-cathedral-lakes-yosemite-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "trailhead-cathedral-lakes-yosemite",
+    "temporal_scope": null,
+    "value": {
+      "food_locker": true,
+      "operational_status_requires_current_check": true,
+      "tioga_road_access_required": true,
+      "toilet": "none_at_wilderness_trailhead_table"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

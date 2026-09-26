@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-cathedral-lakes-visitor-center-parking",
+    "kind": "parking",
+    "name": "Cathedral Lakes Trailhead Parking at Visitor Center"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

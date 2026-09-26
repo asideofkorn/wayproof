@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Tuolumne Meadows and the immediately connected Tioga Road day-use corridor",
+    "entity_id": "place-tuolumne-meadows",
+    "kind": "place",
+    "scope_id": "scope-tuolumne-meadows"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

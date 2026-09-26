@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-mono-parker-pass-yosemite-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-mono-parker-pass-yosemite-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "trailhead-mono-parker-pass-yosemite",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-mono-parker-pass-yosemite",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-pois-20260925.geojson",
+        "sha256": "5b3c36e1cb46eb32350c74e86f1ba90c237f786ffb8b69c0e3585ea4ab3958c2"
+      },
+      "latitude": 37.89091035072022,
+      "longitude": -119.26269570504267,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "21643",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

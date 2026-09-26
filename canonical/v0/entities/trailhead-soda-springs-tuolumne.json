@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-soda-springs-tuolumne",
+    "kind": "trailhead",
+    "name": "Soda Springs Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

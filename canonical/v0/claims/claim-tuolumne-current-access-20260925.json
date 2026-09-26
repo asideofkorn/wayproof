@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-current-access-20260925",
+    "evidence_ids": [
+      "evidence-tuolumne-current-access-20260925"
+    ],
+    "predicate": "dated_operational_status",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-09-25",
+      "starts_on": "2026-09-25"
+    },
+    "value": {
+      "alternate_trail": "available",
+      "as_of": "2026-09-25",
+      "olmsted_point_to_tioga_pass_weekday_delay_minutes": 15,
+      "requires_current_recheck": true,
+      "tioga_road": "open",
+      "tuolumne_meadows_delay_minutes": 10,
+      "wilderness_center_to_lembert_trail": "closed_for_construction"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

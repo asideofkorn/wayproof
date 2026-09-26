@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Tuolumne trailhead toilet types, parking notes, 2026 overnight quota periods, food-locker availability, and the rule that flush-toilet trailheads have drinking water while vault-toilet trailheads do not.",
+    "observation_id": "observation-nps-yosemite-trailhead-info-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-trailhead-info-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

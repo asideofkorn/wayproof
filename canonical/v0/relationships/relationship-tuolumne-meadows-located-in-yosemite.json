@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-tuolumne-meadows-nps-identity"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-tuolumne-meadows-located-in-yosemite",
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-twin-bridges-tuolumne-published-profile"
+    ],
+    "object_id": "trailhead-dog-lake-tuolumne",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-twin-bridges-tuolumne-starts-at",
+    "subject_id": "route-twin-bridges-tuolumne",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-tioga-pass-vault-toilet",
+    "kind": "restroom",
+    "name": "Tioga Pass Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

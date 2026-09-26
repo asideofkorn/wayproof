@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-meadows-day-hike-permit",
+    "evidence_ids": [
+      "evidence-tuolumne-meadows-day-hike-permit"
+    ],
+    "predicate": "day_hike_wilderness_permit_requirement",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": null,
+    "value": {
+      "exception": "Half Dome day hike",
+      "overnight_permit_required": true,
+      "required": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

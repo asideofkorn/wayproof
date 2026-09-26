@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies Tuolumne Meadows as a high-elevation meadow reached by vehicle only while Tioga Road is open and restricts dogs, bicycles, and strollers from meadow hiking trails.",
+    "observation_id": "observation-nps-yosemite-tuolumne-place-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-tuolumne-place"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

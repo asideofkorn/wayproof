@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-facility-tuolumne-ev-charging-map-point"
+    ],
+    "object_id": "place-tuolumne-meadows",
+    "predicate": "associated_with",
+    "relationship_id": "relationship-facility-tuolumne-ev-charging-associated-with-tuolumne",
+    "subject_id": "facility-tuolumne-ev-charging",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS lists the wilderness center's permits, bear-canister rental, information, restroom, potable water, accessibility, parking caveat, daily hours, and seasonal closure; day hikes generally do not require wilderness permits.",
+    "observation_id": "observation-nps-yosemite-tuolumne-wilderness-center-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-tuolumne-wilderness-center"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

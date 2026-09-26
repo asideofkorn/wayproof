@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glen-aulin-tuolumne-operational-profile",
+    "evidence_ids": [
+      "evidence-glen-aulin-tuolumne-operational-profile"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "trailhead-glen-aulin-tuolumne",
+    "temporal_scope": null,
+    "value": {
+      "drinking_water": false,
+      "food_locker": true,
+      "operational_status_requires_current_check": true,
+      "overnight_parking": "Lembert Dome parking",
+      "tioga_road_access_required": true,
+      "toilet": "vault"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.nps.gov/yose/planyourvisit/trailheads.htm",
+    "publisher": "National Park Service",
+    "source_id": "source-nps-yosemite-trailhead-info-2026"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

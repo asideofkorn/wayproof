@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-tuolumne-wilderness-center-parking",
+    "kind": "parking",
+    "name": "Tuolumne Meadows Wilderness Center Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

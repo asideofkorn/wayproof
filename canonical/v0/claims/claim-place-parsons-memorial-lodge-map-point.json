@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-place-parsons-memorial-lodge-map-point",
+    "evidence_ids": [
+      "evidence-place-parsons-memorial-lodge-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-parsons-memorial-lodge",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "place-parsons-memorial-lodge",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-pois-20260925.geojson",
+        "sha256": "5b3c36e1cb46eb32350c74e86f1ba90c237f786ffb8b69c0e3585ea4ab3958c2"
+      },
+      "latitude": 37.87838495198048,
+      "longitude": -119.3674140208639,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "22759",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

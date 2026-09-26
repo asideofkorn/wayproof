@@ -192,13 +192,14 @@ def render_site_footer() -> str:
 MAP_LAYERS = {
     "boundaries": ("park", "national_park", "wilderness"),
     "routes": ("route", "trail", "route_segment"),
-    "peaks": ("peak", "pass"),
+    "peaks": ("peak", "pass", "mountain_pass"),
     "access": ("trailhead", "trail_access", "entrance", "walk_in_entrance", "staging_area"),
     "camping": ("campground", "campground_collection", "campsite",
                 "family_campsite", "group_campsite", "cabin_campsite",
                 "backcountry_camp", "equestrian_campsite",
                 "equestrian_campsite_area", "equestrian_group_campsite"),
-    "facilities": ("parking", "water_source", "restroom", "facility", "waterbody"),
+    "facilities": ("parking", "water_source", "restroom", "facility", "waterbody",
+                   "lake", "visitor_center", "store"),
 }
 
 

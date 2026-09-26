@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-parsons-lodge-soda-springs-published-profile"
+    ],
+    "object_id": "water-tuolumne-soda-springs",
+    "predicate": "reaches",
+    "relationship_id": "relationship-parsons-lodge-soda-springs-reaches-2-water-tuolumne-soda-springs",
+    "subject_id": "route-parsons-lodge-soda-springs",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

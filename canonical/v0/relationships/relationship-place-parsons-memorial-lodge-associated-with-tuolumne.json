@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-place-parsons-memorial-lodge-map-point"
+    ],
+    "object_id": "place-tuolumne-meadows",
+    "predicate": "associated_with",
+    "relationship_id": "relationship-place-parsons-memorial-lodge-associated-with-tuolumne",
+    "subject_id": "place-parsons-memorial-lodge",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
