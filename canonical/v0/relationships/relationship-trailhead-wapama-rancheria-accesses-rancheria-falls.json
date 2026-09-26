@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-rancheria-falls-published-profile"
+    ],
+    "object_id": "route-rancheria-falls",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-wapama-rancheria-accesses-rancheria-falls",
+    "subject_id": "trailhead-wapama-rancheria",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

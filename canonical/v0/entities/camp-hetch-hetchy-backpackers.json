@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "camp-hetch-hetchy-backpackers",
+    "kind": "backcountry_camp",
+    "name": "Hetch Hetchy Backpackers Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

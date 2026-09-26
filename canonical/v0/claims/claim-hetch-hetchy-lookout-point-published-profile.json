@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hetch-hetchy-lookout-point-published-profile",
+    "evidence_ids": [
+      "evidence-hetch-hetchy-lookout-point-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-hetch-hetchy-lookout-point",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 680,
+      "objective_entity_ids": [
+        "viewpoint-lookout-point-hetch-hetchy"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-hetch-hetchy",
+      "published_time": "1 hour",
+      "round_trip_miles": 2.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

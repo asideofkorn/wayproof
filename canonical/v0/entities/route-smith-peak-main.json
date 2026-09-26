@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-smith-peak-main",
+    "kind": "route",
+    "name": "Smith Peak from Smith Peak Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

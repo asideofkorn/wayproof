@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hetch-hetchy-observed-status-20260925",
+    "evidence_ids": [
+      "evidence-hetch-hetchy-observed-status-20260925"
+    ],
+    "predicate": "observed_operational_status",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "place-hetch-hetchy",
+    "temporal_scope": null,
+    "value": {
+      "as_of": "2026-09-25",
+      "recheck_required": true,
+      "trail_closures": "none listed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

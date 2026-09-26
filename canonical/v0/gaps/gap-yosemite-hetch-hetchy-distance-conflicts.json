@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-hetch-hetchy-distance-conflicts",
+    "question": "Which official published mileage should be used for Rancheria Falls and the main Smith Peak route?",
+    "reason": "Current official pages publish small mileage differences, preserved rather than silently normalized.",
+    "related_ids": [
+      "route-rancheria-falls",
+      "route-smith-peak-main"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

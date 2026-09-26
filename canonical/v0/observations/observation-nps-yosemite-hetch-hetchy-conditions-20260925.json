@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "As of September 25, 2026, NPS lists no Hetch Hetchy-area trail closures while retaining daylight road operations and general wildfire uncertainty; this is dated evidence.",
+    "observation_id": "observation-nps-yosemite-hetch-hetchy-conditions-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

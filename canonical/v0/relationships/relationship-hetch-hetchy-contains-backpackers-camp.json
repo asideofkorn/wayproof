@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-hetch-hetchy-access-profile"
+    ],
+    "object_id": "camp-hetch-hetchy-backpackers",
+    "predicate": "contains",
+    "relationship_id": "relationship-hetch-hetchy-contains-backpackers-camp",
+    "subject_id": "place-hetch-hetchy",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

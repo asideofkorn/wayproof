@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lake-vernon-rancheria-loop-published-profile",
+    "evidence_ids": [
+      "evidence-lake-vernon-rancheria-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-lake-vernon-rancheria-loop",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 4450,
+      "loop_miles": 28.2,
+      "objective_entity_ids": [
+        "waterbody-lake-vernon",
+        "waterfall-rancheria"
+      ],
+      "operational_status_requires_current_check": true,
+      "overnight_permit_required": true,
+      "permit_demand": "low",
+      "published_start_entity_id": "trailhead-beehive-meadow"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

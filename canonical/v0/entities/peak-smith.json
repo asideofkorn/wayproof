@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-smith",
+    "kind": "peak",
+    "name": "Smith Peak"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

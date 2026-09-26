@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-hetch-hetchy-pois-20260925.geojson"
+    ],
+    "content": "Reviewed NPS Public POIs identify Hetch Hetchy entrance, dam-area access, parking, restroom, trailheads, campground restroom, and Wapama Falls.",
+    "observation_id": "observation-nps-public-pois-hetch-hetchy-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-public-pois-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

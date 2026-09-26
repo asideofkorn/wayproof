@@ -162,6 +162,10 @@ file is missing.
 
 ## Attribution
 
+- Hetch Hetchy reviewed point display geometry: National Park Service Public
+  POIs Feature Service (public-domain U.S. government data), stored as
+  `geometry/v0/snapshots/nps-yose-hetch-hetchy-pois-20260925.geojson`;
+  coordinates are display evidence and do not infer route topology.
 - Glacier Point Road reviewed point display geometry: National Park Service
   Public POIs Feature Service (public-domain U.S. government data), stored as
   `geometry/v0/snapshots/nps-yose-glacier-point-pois-20260925.geojson`;

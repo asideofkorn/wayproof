@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "viewpoint-lookout-point-hetch-hetchy",
+    "kind": "viewpoint",
+    "name": "Lookout Point"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

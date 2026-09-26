@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-hetch-hetchy-lookout-point-published-profile"
+    ],
+    "object_id": "route-hetch-hetchy-lookout-point",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-hetch-hetchy-accesses-hetch-hetchy-lookout-point",
+    "subject_id": "trailhead-hetch-hetchy",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

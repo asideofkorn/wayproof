@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-rancheria-falls-published-profile",
+    "evidence_ids": [
+      "evidence-rancheria-falls-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-rancheria-falls",
+    "temporal_scope": null,
+    "value": {
+      "alternate_nps_day_hikes_miles": 13.0,
+      "distance_conflict_preserved": true,
+      "elevation_gain_ft": 1909,
+      "objective_entity_ids": [
+        "waterfall-wapama",
+        "waterfall-rancheria"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-wapama-rancheria",
+      "published_time": "6 to 8 hours",
+      "round_trip_miles": 13.4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

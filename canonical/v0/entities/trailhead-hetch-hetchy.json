@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-hetch-hetchy",
+    "kind": "trailhead",
+    "name": "Hetch Hetchy Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

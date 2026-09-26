@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-hetch-hetchy-access-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-hetch-hetchy-located-in-yosemite",
+    "subject_id": "place-hetch-hetchy",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

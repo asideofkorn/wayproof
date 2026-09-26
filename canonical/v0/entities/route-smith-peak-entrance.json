@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-smith-peak-entrance",
+    "kind": "route",
+    "name": "Smith Peak from Hetch Hetchy Entrance"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

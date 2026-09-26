@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-hetch-hetchy-access-profile"
+    ],
+    "object_id": "place-hetch-hetchy",
+    "predicate": "accesses",
+    "relationship_id": "relationship-hetch-hetchy-entrance-accesses-place",
+    "subject_id": "entrance-yosemite-hetch-hetchy",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-smith-peak-entrance-published-profile"
+    ],
+    "object_id": "route-smith-peak-entrance",
+    "predicate": "accesses",
+    "relationship_id": "relationship-entrance-yosemite-hetch-hetchy-accesses-smith-peak-entrance",
+    "subject_id": "entrance-yosemite-hetch-hetchy",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

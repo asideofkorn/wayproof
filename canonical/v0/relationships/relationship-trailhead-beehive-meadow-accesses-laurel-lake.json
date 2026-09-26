@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-laurel-lake-published-profile"
+    ],
+    "object_id": "route-laurel-lake",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-beehive-meadow-accesses-laurel-lake",
+    "subject_id": "trailhead-beehive-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
