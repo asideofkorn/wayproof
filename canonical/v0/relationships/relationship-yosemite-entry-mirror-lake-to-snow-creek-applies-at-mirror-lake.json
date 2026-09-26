@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-mirror-lake-to-snow-creek-quota-2026"
+    ],
+    "object_id": "trailhead-mirror-lake",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-mirror-lake-to-snow-creek-applies-at-mirror-lake",
+    "subject_id": "permit-yosemite-entry-mirror-lake-to-snow-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

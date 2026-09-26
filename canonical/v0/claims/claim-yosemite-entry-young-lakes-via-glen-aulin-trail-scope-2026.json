@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-young-lakes-via-glen-aulin-trail-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-young-lakes-via-glen-aulin-trail-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-young-lakes-via-glen-aulin-trail",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Tuolumne Meadows Wilderness Center",
+      "notes": "Park at Lembert Dome parking.",
+      "official_entry_name": "Young Lakes via Glen Aulin Trail",
+      "region": "Tuolumne Meadows",
+      "reservation_window_2026": "June 18 through October 14, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

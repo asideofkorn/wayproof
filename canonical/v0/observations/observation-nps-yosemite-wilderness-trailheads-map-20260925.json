@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The March 2022 NPS wilderness trailheads map distinguishes permit-entry categories, direction-of-travel arrows, minimum first-night camping boundaries, Half Dome-eligible entries, outside-agency starts, and named regional trailheads.",
+    "observation_id": "observation-nps-yosemite-wilderness-trailheads-map-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-wilderness-trailheads-map-2022"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

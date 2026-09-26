@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-alder-creek-quota-2026"
+    ],
+    "object_id": "trailhead-alder-creek",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-alder-creek-applies-at-alder-creek",
+    "subject_id": "permit-yosemite-entry-alder-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

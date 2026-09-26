@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-old-big-oak-flat-road",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Old Big Oak Flat Road"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

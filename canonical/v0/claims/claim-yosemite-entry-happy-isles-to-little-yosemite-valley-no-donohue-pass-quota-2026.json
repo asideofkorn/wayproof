@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-happy-isles-to-little-yosemite-valley-no-donohue-pass",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 15,
+      "total": 25,
+      "week_ahead": 10
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

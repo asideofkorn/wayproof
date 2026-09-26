@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-pohono-trail-glacier-point",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Pohono Trail (Glacier Point)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

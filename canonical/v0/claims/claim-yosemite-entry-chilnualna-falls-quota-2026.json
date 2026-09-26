@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-chilnualna-falls-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-chilnualna-falls-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-chilnualna-falls",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 24,
+      "total": 40,
+      "week_ahead": 16
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

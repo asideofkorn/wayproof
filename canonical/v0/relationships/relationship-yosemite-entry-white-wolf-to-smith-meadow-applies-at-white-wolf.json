@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-white-wolf-to-smith-meadow-quota-2026"
+    ],
+    "object_id": "trailhead-white-wolf",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-white-wolf-to-smith-meadow-applies-at-white-wolf",
+    "subject_id": "permit-yosemite-entry-white-wolf-to-smith-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

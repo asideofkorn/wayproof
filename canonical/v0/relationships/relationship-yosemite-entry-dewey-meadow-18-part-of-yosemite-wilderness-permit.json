@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-dewey-meadow-18-quota-2026"
+    ],
+    "object_id": "permit-yosemite-overnight-wilderness",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-entry-dewey-meadow-18-part-of-yosemite-wilderness-permit",
+    "subject_id": "permit-yosemite-entry-dewey-meadow-18",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

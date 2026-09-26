@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-happy-isles-to-past-lyv-donohue-pass-eligible-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-happy-isles-to-past-lyv-donohue-pass-eligible-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-happy-isles-to-past-lyv-donohue-pass-eligible",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": true,
+      "half_dome_eligible": true,
+      "issuing_station": "Yosemite Valley Wilderness Center",
+      "notes": "Park at trailhead parking; pass through LYV and camp beyond toward Merced Lake or Sunrise; Half Dome eligible.",
+      "official_entry_name": "Happy Isles to Past LYV (Donohue Pass Eligible)",
+      "region": "Yosemite Valley",
+      "reservation_window_2026": "April 24 through October 18, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-mcgurk-meadow-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-mcgurk-meadow-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-mcgurk-meadow",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": false,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Wawona Visitor Center",
+      "notes": "",
+      "official_entry_name": "McGurk Meadow",
+      "region": "Wawona and Glacier Point Road",
+      "reservation_window_2026": "May 16 through October 14, 2026",
+      "travel_mode": "summer hiking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

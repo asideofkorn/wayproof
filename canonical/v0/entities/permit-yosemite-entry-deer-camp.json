@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-deer-camp",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Deer Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-mcgurk-meadow-quota-2026"
+    ],
+    "object_id": "trailhead-mcgurk-meadow",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-mcgurk-meadow-applies-at-mcgurk-meadow",
+    "subject_id": "permit-yosemite-entry-mcgurk-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

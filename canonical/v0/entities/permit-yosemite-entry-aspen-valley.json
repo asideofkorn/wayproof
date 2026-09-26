@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-aspen-valley",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Aspen Valley"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

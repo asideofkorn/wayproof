@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-nelson-lake-cross-country-only-scope-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-nelson-lake-cross-country-only-scope-2026"
+    ],
+    "predicate": "permit_scope",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-nelson-lake-cross-country-only",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "cross_country": true,
+      "donohue_pass_eligible": false,
+      "half_dome_eligible": false,
+      "issuing_station": "Tuolumne Meadows Wilderness Center",
+      "notes": "Unmaintained and unsigned; issued at Tuolumne Meadows Wilderness Center; park at Lembert Dome parking.",
+      "official_entry_name": "Nelson Lake (cross-country only)",
+      "region": "Cross-country trailheads",
+      "reservation_window_2026": "Based on the applicable regional reservation season",
+      "travel_mode": "cross-country travel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-young-lakes-via-dog-lake-quota-2026"
+    ],
+    "object_id": "trailhead-dog-lake-tuolumne",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-young-lakes-via-dog-lake-applies-at-dog-lake-tuolumne",
+    "subject_id": "permit-yosemite-entry-young-lakes-via-dog-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

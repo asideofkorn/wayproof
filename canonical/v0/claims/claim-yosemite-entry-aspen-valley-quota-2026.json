@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-aspen-valley-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-aspen-valley-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-aspen-valley",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 2,
+      "total": 3,
+      "week_ahead": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-mariposa-grove-winter-quota-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-mariposa-grove-winter-quota-2026"
+    ],
+    "predicate": "entry_quota",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-mariposa-grove-winter",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery": 0,
+      "total": 8,
+      "week_ahead": 8
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

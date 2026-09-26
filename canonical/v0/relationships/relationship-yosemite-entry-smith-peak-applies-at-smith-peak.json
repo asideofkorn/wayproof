@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-smith-peak-quota-2026"
+    ],
+    "object_id": "trailhead-smith-peak",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-smith-peak-applies-at-smith-peak",
+    "subject_id": "permit-yosemite-entry-smith-peak",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

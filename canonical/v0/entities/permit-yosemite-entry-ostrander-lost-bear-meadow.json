@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-ostrander-lost-bear-meadow",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Ostrander (Lost Bear Meadow)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

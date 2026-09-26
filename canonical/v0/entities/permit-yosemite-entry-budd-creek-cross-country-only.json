@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-budd-creek-cross-country-only",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Budd Creek (cross-country only)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

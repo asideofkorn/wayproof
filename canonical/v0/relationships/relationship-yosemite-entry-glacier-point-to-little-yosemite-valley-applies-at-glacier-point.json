@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-entry-glacier-point-to-little-yosemite-valley-quota-2026"
+    ],
+    "object_id": "trailhead-glacier-point",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-entry-glacier-point-to-little-yosemite-valley-applies-at-glacier-point",
+    "subject_id": "permit-yosemite-entry-glacier-point-to-little-yosemite-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

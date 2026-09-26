@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit-process-2026"
+    ],
+    "object_id": "land-yosemite-wilderness",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-yosemite-wilderness-permit-applies-at-yosemite-wilderness",
+    "subject_id": "permit-yosemite-overnight-wilderness",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-permit-process-2026",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-permit-process-2026"
+    ],
+    "predicate": "wilderness_permit_process",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "advance_lottery_share_percent": 60,
+      "advance_lottery_weeks": 24,
+      "after_hours_summer_pickup": false,
+      "few_if_any_unused_start_date_permits": true,
+      "required_year_round_for": "overnight Yosemite Wilderness travel",
+      "reservation_channel": "Recreation.gov",
+      "summer_pickup_requires_business_hours": true,
+      "week_ahead_release_days": 7,
+      "week_ahead_release_time": "07:00 Pacific",
+      "week_ahead_share_percent": 40,
+      "winter_self_registration_available_when_stations_closed": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

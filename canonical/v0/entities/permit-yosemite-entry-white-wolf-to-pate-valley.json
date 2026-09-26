@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-white-wolf-to-pate-valley",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: White Wolf to Pate Valley"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

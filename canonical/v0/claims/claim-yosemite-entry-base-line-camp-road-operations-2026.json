@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-entry-base-line-camp-road-operations-2026",
+    "evidence_ids": [
+      "evidence-yosemite-entry-base-line-camp-road-operations-2026"
+    ],
+    "predicate": "trailhead_operational_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-entry-base-line-camp-road",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "drinking_water": "not established by this source",
+      "food_lockers": false,
+      "operational_status_requires_current_check": true,
+      "parking_note": "",
+      "toilet": "none"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

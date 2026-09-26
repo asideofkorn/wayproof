@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wilderness-trailhead-parking-policy-2026",
+    "evidence_ids": [
+      "evidence-yosemite-wilderness-trailhead-parking-policy-2026"
+    ],
+    "predicate": "trailhead_parking_restriction",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "permit-yosemite-overnight-wilderness",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "happy_isles_parking": false,
+      "limited_public_transportation": true,
+      "mirror_lake_parking": false,
+      "tioga_and_glacier_point_overnight_parking_prohibited_from": "October 15",
+      "tioga_and_glacier_point_reopen_dependency": true,
+      "valley_overnight_parking": "trailhead parking lot beyond Curry Village"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

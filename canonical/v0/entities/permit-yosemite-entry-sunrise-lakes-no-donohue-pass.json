@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "permit-yosemite-entry-sunrise-lakes-no-donohue-pass",
+    "kind": "permit_product",
+    "name": "Yosemite permit entry: Sunrise Lakes (no Donohue Pass)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

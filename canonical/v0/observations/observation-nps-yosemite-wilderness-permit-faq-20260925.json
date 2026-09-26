@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes permit fees, continuous-travel restrictions, first-night distinctions, Donohue Pass eligibility and exit quota, and the relationship between named permit entries and physical starts.",
+    "observation_id": "observation-nps-yosemite-wilderness-permit-faq-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-wilderness-permit-faq-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
