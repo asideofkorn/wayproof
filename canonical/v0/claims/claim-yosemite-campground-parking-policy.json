@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-parking-policy",
+    "evidence_ids": [
+      "evidence-yosemite-campground-parking-policy"
+    ],
+    "predicate": "campground_parking_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "additional_parking": "near each campground at no additional charge",
+      "additional_parking_can_be_very_limited": true,
+      "maximum_motor_vehicles_per_campsite": 2,
+      "site_specific_one_vehicle_limits_possible": true,
+      "trailers_do_not_count_if_they_fit_on_parking_pad": true,
+      "vehicles_must_fit_on_parking_pad": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

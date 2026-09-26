@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS campground regulations publish noon check-in and checkout, the next-morning no-show cutoff, campsite and overflow parking rules, wastewater and utility rules, and campground hammock, clothesline, and slackline restrictions.",
+    "observation_id": "observation-nps-yosemite-campground-shared-operations-20260926",
+    "observed_at": "2025-08-01T00:00:00+00:00",
+    "observer": "National Park Service",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-camp-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

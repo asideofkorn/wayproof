@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-wastewater-and-utilities",
+    "evidence_ids": [
+      "evidence-yosemite-campground-wastewater-and-utilities"
+    ],
+    "predicate": "wastewater_and_utility_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "camp_wastewater": "designated utility drains",
+      "campsite_hookups_available": false,
+      "sewage": "designated dump stations",
+      "utility_connections_prohibited": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

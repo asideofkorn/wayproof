@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-lines-and-hammocks",
+    "evidence_ids": [
+      "evidence-yosemite-campground-lines-and-hammocks"
+    ],
+    "predicate": "line_and_hammock_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "hammocks_clotheslines_and_other_tensioned_lines": "allowed when not hazardous",
+      "slacklines_at_camp_4": "within 200 feet for registered Camp 4 campers",
+      "slacklines_at_other_campgrounds": false,
+      "slacklines_on_oaks": false,
+      "tree_padding_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
