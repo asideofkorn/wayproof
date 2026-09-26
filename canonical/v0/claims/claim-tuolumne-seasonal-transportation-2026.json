@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tuolumne-seasonal-transportation-2026",
+    "evidence_ids": [
+      "evidence-tuolumne-seasonal-transportation-2026"
+    ],
+    "predicate": "seasonal_transportation_profile",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "place-tuolumne-meadows",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "operational_status_requires_current_check": true,
+      "regional_and_hikers_bus_service": true,
+      "tuolumne_meadows_shuttle": {
+        "not_available_every_year": true,
+        "service_area": "Tioga Pass to Olmsted Point, including Tenaya Lake",
+        "typical_season": "mid-June to early September"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes the 2026 regional and internal transportation network: year-round Highway 140 YARTS; seasonal Highway 120 east, Highway 120 west, and Highway 41 YARTS; Valley shuttles; the Mariposa Grove and Badger Pass shuttles; the Glacier Point Tour; the Yosemite Valley-to-Tuolumne Meadows hikers bus; and the Tuolumne Meadows shuttle. It states that Hetch Hetchy has no public transportation and that seasonal service depends on dates and conditions.",
+    "observation_id": "observation-nps-yosemite-transportation-20260926",
+    "observed_at": "2026-07-02T00:00:00+00:00",
+    "observer": "National Park Service",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-transportation"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

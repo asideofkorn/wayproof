@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tioga-road-seasonal-transportation-2026",
+    "evidence_ids": [
+      "evidence-tioga-road-seasonal-transportation-2026"
+    ],
+    "predicate": "seasonal_transportation_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "place-tioga-road-corridor",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "operational_status_requires_current_check": true,
+      "yarts_highway_120_east": {
+        "conditions_permitting": true,
+        "stops": [
+          "Crane Flat",
+          "White Wolf",
+          "Tuolumne Meadows"
+        ],
+        "typical_season": "daily July through September"
+      },
+      "yosemite_valley_tuolumne_hikers_bus": {
+        "stops": "various Tioga Road trailheads",
+        "typical_season": "approximately mid-June to early September"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
