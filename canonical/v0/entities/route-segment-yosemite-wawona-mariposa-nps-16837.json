@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-16837",
+    "kind": "route_segment",
+    "name": "Wawona Meadow Loop Trail segment 16837"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

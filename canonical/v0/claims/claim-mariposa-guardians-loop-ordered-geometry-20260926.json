@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-guardians-loop-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-mariposa-guardians-loop-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-guardians-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-17942",
+        "route-segment-yosemite-wawona-mariposa-nps-21874",
+        "route-segment-yosemite-wawona-mariposa-nps-19890",
+        "route-segment-yosemite-wawona-mariposa-nps-21664",
+        "route-segment-yosemite-wawona-mariposa-nps-16226",
+        "route-segment-yosemite-wawona-mariposa-nps-20654",
+        "route-segment-yosemite-wawona-mariposa-nps-17198",
+        "route-segment-yosemite-wawona-mariposa-nps-18921"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-25"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

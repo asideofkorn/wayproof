@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-16026"
+    ],
+    "object_id": "route-node-yosemite-wawona-mariposa-09",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-yosemite-wawona-mariposa-nps-16026-starts-at-node-yosemite-wawona-mariposa-09",
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-16026",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

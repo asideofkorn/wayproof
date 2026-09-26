@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-18921",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-18921"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-18921",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5161126,
+        "longitude": -119.5949239
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-18921",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "18921",
+      "source_feature_name": "Guardians of the Grove Loop Trail",
+      "source_geometry_id": "{85873B32-4533-41C1-8508-37B20DD66E23}",
+      "start_coordinate": {
+        "latitude": 37.5149824,
+        "longitude": -119.5948219
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-20409",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-20409"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-20409",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5427549,
+        "longitude": -119.6560079
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20409",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20409",
+      "source_feature_name": "Alder Creek Trail",
+      "source_geometry_id": "{4A29215C-483F-4CD6-B9F0-917D11E318E5}",
+      "start_coordinate": {
+        "latitude": 37.5680816,
+        "longitude": -119.6818346
+      },
+      "surface": "Unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

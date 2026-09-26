@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-15148"
+    ],
+    "object_id": "route-mariposa-grove-road-walking-access",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-wawona-mariposa-nps-15148-part-of-mariposa-grove-road-walking-access",
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-15148",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-swinging-bridge-wawona-ordered-geometry-20260926",
+    "evidence_id": "evidence-swinging-bridge-wawona-ordered-geometry-20260926",
+    "notes": "",
+    "observation_id": "observation-nps-public-trails-wawona-mariposa-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

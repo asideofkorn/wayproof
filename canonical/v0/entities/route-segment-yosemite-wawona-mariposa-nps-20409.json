@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-20409",
+    "kind": "route_segment",
+    "name": "Alder Creek Trail segment 20409"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

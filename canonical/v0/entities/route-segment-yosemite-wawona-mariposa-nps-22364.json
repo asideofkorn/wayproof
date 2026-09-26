@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-22364",
+    "kind": "route_segment",
+    "name": "Mariposa Grove Road segment 22364"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

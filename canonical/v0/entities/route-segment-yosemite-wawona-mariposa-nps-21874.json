@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-21874",
+    "kind": "route_segment",
+    "name": "Guardians of the Grove Loop Trail segment 21874"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

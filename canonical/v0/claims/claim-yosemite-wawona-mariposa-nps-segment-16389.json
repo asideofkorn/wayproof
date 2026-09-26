@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-16389",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-16389"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-16389",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5067418,
+        "longitude": -119.6082976
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-16389",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "16389",
+      "source_feature_name": "Grizzly Giant Loop Trail",
+      "source_geometry_id": "{C47AB6F1-9B8F-4EA3-9E54-2A8F5241E940}",
+      "start_coordinate": {
+        "latitude": 37.5026606,
+        "longitude": -119.6099512
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

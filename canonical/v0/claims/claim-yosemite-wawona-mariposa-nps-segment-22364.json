@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-22364",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-22364"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-22364",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Bicycle",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.501565,
+        "longitude": -119.6112599
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-22364",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "22364",
+      "source_feature_name": "Mariposa Grove Road",
+      "source_geometry_id": "{3430F0E6-A77D-4120-A7EF-E4E172D079F6}",
+      "start_coordinate": {
+        "latitude": 37.5014679,
+        "longitude": -119.6112719
+      },
+      "surface": "Asphalt"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
