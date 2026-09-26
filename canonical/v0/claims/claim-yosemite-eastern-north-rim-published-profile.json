@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-eastern-north-rim-published-profile",
+    "evidence_ids": [
+      "evidence-yosemite-eastern-north-rim-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-yosemite-eastern-north-rim",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 5200,
+      "objective_entity_ids": [
+        "trailhead-snow-creek"
+      ],
+      "one_way_miles": 18.1,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-yosemite-falls"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

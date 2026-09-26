@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-upper-yosemite-fall-published-profile",
+    "evidence_ids": [
+      "evidence-upper-yosemite-fall-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-upper-yosemite-fall",
+    "temporal_scope": null,
+    "value": {
+      "alternate_current_nps_miles": 7.4,
+      "distance_conflict_preserved": true,
+      "elevation_gain_ft": 2700,
+      "objective_entity_ids": [
+        "waterfall-upper-yosemite-fall"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-yosemite-falls",
+      "round_trip_miles": 7.2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

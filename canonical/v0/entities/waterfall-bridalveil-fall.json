@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterfall-bridalveil-fall",
+    "kind": "waterfall",
+    "name": "Bridalveil Fall"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

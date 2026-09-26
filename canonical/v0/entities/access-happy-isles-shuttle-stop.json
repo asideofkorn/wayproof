@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-happy-isles-shuttle-stop",
+    "kind": "transit_stop",
+    "name": "Happy Isles Shuttle Stop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

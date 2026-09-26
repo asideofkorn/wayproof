@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mirror-lake-published-profile"
+    ],
+    "object_id": "route-mirror-lake",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-mirror-lake-accesses-route-mirror-lake",
+    "subject_id": "trailhead-mirror-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

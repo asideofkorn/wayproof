@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-four-mile-yosemite-valley",
+    "kind": "trailhead",
+    "name": "Four Mile Trailhead (Yosemite Valley)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

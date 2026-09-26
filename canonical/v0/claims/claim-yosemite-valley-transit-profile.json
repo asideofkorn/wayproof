@@ -1,0 +1,36 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-transit-profile",
+    "evidence_ids": [
+      "evidence-yosemite-valley-transit-profile"
+    ],
+    "predicate": "transit_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "place-yosemite-valley",
+    "temporal_scope": null,
+    "value": {
+      "east_valley_shuttle": {
+        "frequency_minutes": [
+          8,
+          12
+        ],
+        "published_hours": "7 am to 10 pm",
+        "service_area": "Yosemite Village, Curry Village, Pines campgrounds, and eastern trailheads"
+      },
+      "operational_status_requires_current_check": true,
+      "valleywide_shuttle": {
+        "frequency_minutes": [
+          12,
+          22
+        ],
+        "published_hours": "7 am to 10 pm",
+        "service_area": "lodging, food, campgrounds, and trailheads"
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

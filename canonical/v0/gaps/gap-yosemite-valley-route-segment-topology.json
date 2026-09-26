@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-valley-route-segment-topology",
+    "question": "Which reviewed NPS trail features form each Yosemite Valley route, variant, junction, and turnaround from its exact access point?",
+    "reason": "The official sources establish named routes, starts, objectives, variants, and published distances, but continuous feature-by-feature topology still requires a separate reviewed geometry pass; proximity is not a connection.",
+    "related_ids": [
+      "route-bridalveil-fall",
+      "route-lower-yosemite-fall",
+      "route-yosemite-valley-loop",
+      "route-mirror-lake",
+      "route-four-mile-trail",
+      "route-upper-yosemite-fall",
+      "route-vernal-nevada-falls",
+      "route-half-dome-day-hike",
+      "route-little-yosemite-valley",
+      "route-snow-creek",
+      "route-eagle-peak-yosemite",
+      "route-el-capitan-yosemite-valley",
+      "route-jmt-yosemite-valley-to-tuolumne",
+      "route-yosemite-full-north-rim",
+      "route-yosemite-eastern-north-rim",
+      "source-nps-yosemite-valley-hiking-map-2025"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

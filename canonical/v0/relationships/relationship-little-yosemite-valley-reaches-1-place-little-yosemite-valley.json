@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-little-yosemite-valley-published-profile"
+    ],
+    "object_id": "place-little-yosemite-valley",
+    "predicate": "reaches",
+    "relationship_id": "relationship-little-yosemite-valley-reaches-1-place-little-yosemite-valley",
+    "subject_id": "route-little-yosemite-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

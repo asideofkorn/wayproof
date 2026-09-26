@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-curry-village-east-lot",
+    "kind": "parking",
+    "name": "Curry Village East Lot"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

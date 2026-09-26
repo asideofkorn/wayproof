@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-official-identity"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-yosemite-valley-located-in-yosemite",
+    "subject_id": "place-yosemite-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

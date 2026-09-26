@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-trailhead-parking-profile"
+    ],
+    "object_id": "route-half-dome-day-hike",
+    "predicate": "accesses",
+    "relationship_id": "relationship-valley-trailhead-parking-accesses-half-dome-day-hike",
+    "subject_id": "access-yosemite-valley-trailhead-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

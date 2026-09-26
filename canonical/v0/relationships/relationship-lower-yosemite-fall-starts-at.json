@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lower-yosemite-fall-published-profile"
+    ],
+    "object_id": "trailhead-lower-yosemite-fall",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-lower-yosemite-fall-starts-at",
+    "subject_id": "route-lower-yosemite-fall",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-happy-isles-mirror-lake-parking-restriction",
+    "evidence_ids": [
+      "evidence-happy-isles-mirror-lake-parking-restriction"
+    ],
+    "predicate": "trailhead_parking_restriction",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "place-yosemite-valley",
+    "temporal_scope": null,
+    "value": {
+      "parking_unavailable_at": [
+        "trailhead-happy-isles",
+        "trailhead-mirror-lake"
+      ],
+      "use": [
+        "access-yosemite-valley-trailhead-parking",
+        "access-curry-village-east-lot",
+        "Yosemite Valley shuttle"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

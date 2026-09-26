@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Valleywide and East Valley shuttle service patterns and approximate service frequencies and hours, all of which require a current operational check.",
+    "observation_id": "observation-nps-yosemite-valley-transit-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-transportation"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

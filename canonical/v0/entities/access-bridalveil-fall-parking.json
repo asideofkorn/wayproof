@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-bridalveil-fall-parking",
+    "kind": "parking",
+    "name": "Bridalveil Fall Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

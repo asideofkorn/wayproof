@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-yosemite-valley-pois-20260925.geojson"
+    ],
+    "content": "Reviewed NPS Public POIs features identify selected Yosemite Valley trailheads, parking, restrooms, shuttle stops, facilities, and objectives in EPSG:4326.",
+    "observation_id": "observation-nps-public-pois-yosemite-valley-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-public-pois-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

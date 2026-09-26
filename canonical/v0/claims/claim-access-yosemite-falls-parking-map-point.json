@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-access-yosemite-falls-parking-map-point",
+    "evidence_ids": [
+      "evidence-access-yosemite-falls-parking-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "access-yosemite-falls-parking",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "access-yosemite-falls-parking",
+        "path": "geometry/v0/snapshots/nps-yose-yosemite-valley-pois-20260925.geojson",
+        "sha256": "8229d5b498a67723d04a3a6f6ace2048ddebcaffe3c8e835b7626fa3cf4cb075"
+      },
+      "latitude": 37.740587547174826,
+      "longitude": -119.6018587185467,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "20484",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

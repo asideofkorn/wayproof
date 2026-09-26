@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-little-yosemite-valley-published-profile",
+    "evidence_ids": [
+      "evidence-little-yosemite-valley-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-little-yosemite-valley",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2150,
+      "mist_and_jmt_variants": true,
+      "objective_entity_ids": [
+        "place-little-yosemite-valley"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-happy-isles",
+      "round_trip_miles": 9.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

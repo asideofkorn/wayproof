@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterfall-upper-yosemite-fall",
+    "kind": "waterfall",
+    "name": "Upper Yosemite Fall"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

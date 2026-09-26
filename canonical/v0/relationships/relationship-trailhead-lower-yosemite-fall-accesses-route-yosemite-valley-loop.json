@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-valley-loop-published-profile"
+    ],
+    "object_id": "route-yosemite-valley-loop",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-lower-yosemite-fall-accesses-route-yosemite-valley-loop",
+    "subject_id": "trailhead-lower-yosemite-fall",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

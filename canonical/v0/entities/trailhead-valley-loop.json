@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-valley-loop",
+    "kind": "trailhead",
+    "name": "Valley Loop Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-camp-4-restroom-east",
+    "kind": "restroom",
+    "name": "Camp 4 Restroom East"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

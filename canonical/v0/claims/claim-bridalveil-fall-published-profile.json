@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-bridalveil-fall-published-profile",
+    "evidence_ids": [
+      "evidence-bridalveil-fall-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-bridalveil-fall",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "waterfall-bridalveil-fall"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-bridalveil-fall",
+      "published_time": "20 minutes",
+      "round_trip_miles": 0.5,
+      "surface": "paved"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

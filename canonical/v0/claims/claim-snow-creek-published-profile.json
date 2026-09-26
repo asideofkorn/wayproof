@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-snow-creek-published-profile",
+    "evidence_ids": [
+      "evidence-snow-creek-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-snow-creek",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2750,
+      "objective_entity_ids": [
+        "trailhead-snow-creek"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mirror-lake",
+      "round_trip_miles": 7.1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

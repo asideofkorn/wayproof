@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-yosemite-valley-welcome-center",
+    "kind": "visitor_center",
+    "name": "Yosemite Valley Welcome Center"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

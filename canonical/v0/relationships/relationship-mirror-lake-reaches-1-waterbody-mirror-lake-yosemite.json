@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mirror-lake-published-profile"
+    ],
+    "object_id": "waterbody-mirror-lake-yosemite",
+    "predicate": "reaches",
+    "relationship_id": "relationship-mirror-lake-reaches-1-waterbody-mirror-lake-yosemite",
+    "subject_id": "route-mirror-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

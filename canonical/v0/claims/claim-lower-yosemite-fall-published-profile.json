@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-lower-yosemite-fall-published-profile",
+    "evidence_ids": [
+      "evidence-lower-yosemite-fall-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-lower-yosemite-fall",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "waterfall-lower-yosemite-fall"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-lower-yosemite-fall",
+      "published_time": "30 minutes",
+      "round_trip_miles": 1.1,
+      "route_form": "loop"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

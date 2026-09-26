@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Yosemite Valley floor, its signed visitor facilities, and explicitly connected trail corridors",
+    "entity_id": "place-yosemite-valley",
+    "kind": "place",
+    "scope_id": "scope-yosemite-valley"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

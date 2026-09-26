@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-half-dome-day-hike-published-profile",
+    "evidence_ids": [
+      "evidence-half-dome-day-hike-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-yosemite-valley"
+    ],
+    "subject_id": "route-half-dome-day-hike",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 4800,
+      "objective_entity_ids": [
+        "peak-half-dome"
+      ],
+      "operational_status_requires_current_check": true,
+      "permit_topic_requires_separate_evaluation": true,
+      "published_start_entity_id": "trailhead-happy-isles",
+      "round_trip_miles_range": [
+        14.0,
+        16.0
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

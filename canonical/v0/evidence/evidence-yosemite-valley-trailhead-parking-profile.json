@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-valley-trailhead-parking-profile",
+    "evidence_id": "evidence-yosemite-valley-trailhead-parking-profile",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-trailhead-parking-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
