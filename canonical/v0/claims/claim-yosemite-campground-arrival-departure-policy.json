@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-campground-arrival-departure-policy",
+    "evidence_ids": [
+      "evidence-yosemite-campground-arrival-departure-policy"
+    ],
+    "predicate": "arrival_departure_policy",
+    "spatial_scope_ids": [
+      "scope-yosemite-developed-campgrounds"
+    ],
+    "subject_id": "campgrounds-yosemite-developed",
+    "temporal_scope": null,
+    "value": {
+      "arrival_after_check_in_allowed": true,
+      "check_in": "12:00",
+      "checkout": "12:00",
+      "missed_deadline_consequence": "reservation cancelled",
+      "reservation_check_in_deadline_after_first_night": "10:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
