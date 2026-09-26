@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-wawona-point",
+    "kind": "viewpoint",
+    "name": "Wawona Point"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

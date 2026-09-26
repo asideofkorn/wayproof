@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-wawona-trailhead-parking-capacity",
+    "question": "What are dependable practical capacity and overflow limits at Wawona trailheads other than the published Mariposa Grove Welcome Plaza estimate?",
+    "reason": "Reviewed official sources identify starts but do not publish stable practical capacities or overflow behavior.",
+    "related_ids": [
+      "trailhead-wawona-meadow-loop",
+      "trailhead-swinging-bridge-wawona",
+      "trailhead-chilnualna-falls",
+      "trailhead-alder-creek"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mariposa-grove-road-walking-access-published-profile"
+    ],
+    "object_id": "route-mariposa-grove-road-walking-access",
+    "predicate": "accesses",
+    "relationship_id": "relationship-access-mariposa-grove-welcome-plaza-accesses-mariposa-grove-road-walking-access",
+    "subject_id": "access-mariposa-grove-welcome-plaza",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

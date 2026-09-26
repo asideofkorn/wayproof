@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wawona-trail-water-profile",
+    "evidence_ids": [
+      "evidence-wawona-trail-water-profile"
+    ],
+    "predicate": "drinking_water_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "place-wawona",
+    "temporal_scope": null,
+    "value": {
+      "available_at": "fountain near restrooms in Wawona Store parking area",
+      "on_trails": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

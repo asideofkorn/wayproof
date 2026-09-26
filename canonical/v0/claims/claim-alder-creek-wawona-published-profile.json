@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-alder-creek-wawona-published-profile",
+    "evidence_ids": [
+      "evidence-alder-creek-wawona-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-alder-creek-wawona",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2500,
+      "objective_entity_ids": [
+        "waterfall-alder-creek"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-alder-creek",
+      "published_time": "7 to 9 hours",
+      "round_trip_miles": 12.0,
+      "shorter_variant_round_trip_miles": 7.4,
+      "shorter_variant_start_entity_id": "trailhead-mosquito-creek-wawona"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Mariposa Grove welcome plaza, arrival area, grove trails, and explicitly connected access corridors",
+    "entity_id": "place-mariposa-grove",
+    "kind": "preserve",
+    "scope_id": "scope-mariposa-grove"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

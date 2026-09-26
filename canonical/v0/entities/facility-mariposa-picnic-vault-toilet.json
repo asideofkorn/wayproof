@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-mariposa-picnic-vault-toilet",
+    "kind": "restroom",
+    "name": "Mariposa Grove Picnic Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

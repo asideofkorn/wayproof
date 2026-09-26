@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-mariposa-cabin-restroom",
+    "kind": "restroom",
+    "name": "Mariposa Grove Cabin Restroom"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

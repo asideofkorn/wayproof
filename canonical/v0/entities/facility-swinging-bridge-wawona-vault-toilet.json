@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-swinging-bridge-wawona-vault-toilet",
+    "kind": "restroom",
+    "name": "Swinging Bridge Vault Toilet (Wawona)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-to-wawona-point-published-profile",
+    "evidence_ids": [
+      "evidence-mariposa-grove-to-wawona-point-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-grove-to-wawona-point",
+    "temporal_scope": null,
+    "value": {
+      "alternate_nps_hikes_page_round_trip_miles": 7.75,
+      "distance_conflict_preserved": true,
+      "elevation_gain_ft": 1200,
+      "objective_entity_ids": [
+        "place-wawona-point"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mariposa-grove-arrival",
+      "published_time": "4 to 6 hours",
+      "round_trip_miles": 7.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

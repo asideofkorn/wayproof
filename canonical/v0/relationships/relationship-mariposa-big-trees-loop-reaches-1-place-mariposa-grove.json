@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mariposa-big-trees-loop-published-profile"
+    ],
+    "object_id": "place-mariposa-grove",
+    "predicate": "reaches",
+    "relationship_id": "relationship-mariposa-big-trees-loop-reaches-1-place-mariposa-grove",
+    "subject_id": "route-mariposa-big-trees-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

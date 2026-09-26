@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-washburn-trail-mariposa-access",
+    "kind": "route",
+    "name": "Washburn Trail Access to Mariposa Grove"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

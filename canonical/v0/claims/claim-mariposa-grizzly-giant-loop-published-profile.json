@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grizzly-giant-loop-published-profile",
+    "evidence_ids": [
+      "evidence-mariposa-grizzly-giant-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-grizzly-giant-loop",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 300,
+      "objective_entity_ids": [
+        "tree-grizzly-giant"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mariposa-grove-arrival",
+      "published_time": "1.5 to 2 hours",
+      "round_trip_miles": 2.0,
+      "route_form": "loop"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

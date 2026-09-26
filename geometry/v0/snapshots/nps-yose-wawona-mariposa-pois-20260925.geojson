@@ -1,0 +1,480 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61105760511798,
+          37.501559900056854
+        ],
+        "type": "Point"
+      },
+      "id": "access-mariposa-grove-arrival-shuttle",
+      "properties": {
+        "feature_id": "access-mariposa-grove-arrival-shuttle",
+        "kind": "transit_stop",
+        "name": "Mariposa Grove Shuttle Stop",
+        "nps_object_id": 21890,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61116075409508,
+          37.50120407101599
+        ],
+        "type": "Point"
+      },
+      "id": "access-mariposa-grove-disability-parking",
+      "properties": {
+        "feature_id": "access-mariposa-grove-disability-parking",
+        "kind": "parking",
+        "name": "Mariposa Grove Trailhead Parking",
+        "nps_object_id": 22367,
+        "nps_poi_type": "Wheelchair Accessible",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62924594964917,
+          37.50662314324598
+        ],
+        "type": "Point"
+      },
+      "id": "access-mariposa-grove-welcome-plaza",
+      "properties": {
+        "feature_id": "access-mariposa-grove-welcome-plaza",
+        "kind": "parking",
+        "name": "Mariposa Grove Welcome Plaza and Parking",
+        "nps_object_id": 22963,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6303189508444,
+          37.506804872187104
+        ],
+        "type": "Point"
+      },
+      "id": "access-mariposa-grove-welcome-shuttle",
+      "properties": {
+        "feature_id": "access-mariposa-grove-welcome-shuttle",
+        "kind": "transit_stop",
+        "name": "Mariposa Grove Welcome Plaza Shuttle Stop",
+        "nps_object_id": 21791,
+        "nps_poi_type": "Bus Stop / Shuttle Stop",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65764429477252,
+          37.537890316175655
+        ],
+        "type": "Point"
+      },
+      "id": "access-wawona-store-parking",
+      "properties": {
+        "feature_id": "access-wawona-store-parking",
+        "kind": "parking",
+        "name": "Wawona Store and Post Office Parking",
+        "nps_object_id": 20060,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.63432702504821,
+          37.54749971173486
+        ],
+        "type": "Point"
+      },
+      "id": "facility-chilnualna-falls-vault-toilet",
+      "properties": {
+        "feature_id": "facility-chilnualna-falls-vault-toilet",
+        "kind": "restroom",
+        "name": "Chilnualna Falls Vault Toilet",
+        "nps_object_id": 20231,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60215754971615,
+          37.502010116729565
+        ],
+        "type": "Point"
+      },
+      "id": "facility-grizzly-giant-vault-toilet",
+      "properties": {
+        "feature_id": "facility-grizzly-giant-vault-toilet",
+        "kind": "restroom",
+        "name": "Grizzly Giant Vault Toilet",
+        "nps_object_id": 22090,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61104859613638,
+          37.50173859407435
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-arrival-restroom",
+      "properties": {
+        "feature_id": "facility-mariposa-arrival-restroom",
+        "kind": "restroom",
+        "name": "Mariposa Grove Restroom",
+        "nps_object_id": 21225,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61076658006205,
+          37.50148434207035
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-arrival-water",
+      "properties": {
+        "feature_id": "facility-mariposa-arrival-water",
+        "kind": "water_source",
+        "name": "Mariposa Grove Trailhead Drinking Water",
+        "nps_object_id": 22462,
+        "nps_poi_type": "Drinking Water",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60394614844603,
+          37.51489259281814
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-cabin-restroom",
+      "properties": {
+        "feature_id": "facility-mariposa-cabin-restroom",
+        "kind": "restroom",
+        "name": "Mariposa Grove Restroom",
+        "nps_object_id": 20631,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62125876875986,
+          37.50136363231591
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-picnic-vault-toilet",
+      "properties": {
+        "feature_id": "facility-mariposa-picnic-vault-toilet",
+        "kind": "restroom",
+        "name": "Mariposa Grove Picnic Vault Toilet",
+        "nps_object_id": 20166,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62992854077616,
+          37.506763949210885
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-welcome-restroom",
+      "properties": {
+        "feature_id": "facility-mariposa-welcome-restroom",
+        "kind": "restroom",
+        "name": "Mariposa Grove Welcome Plaza Restroom",
+        "nps_object_id": 23057,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.63026923382729,
+          37.506724367183004
+        ],
+        "type": "Point"
+      },
+      "id": "facility-mariposa-welcome-water",
+      "properties": {
+        "feature_id": "facility-mariposa-welcome-water",
+        "kind": "water_source",
+        "name": "Mariposa Grove Welcome Plaza Drinking Water",
+        "nps_object_id": 21642,
+        "nps_poi_type": "Drinking Water",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62876469667995,
+          37.54338043674209
+        ],
+        "type": "Point"
+      },
+      "id": "facility-swinging-bridge-wawona-vault-toilet",
+      "properties": {
+        "feature_id": "facility-swinging-bridge-wawona-vault-toilet",
+        "kind": "restroom",
+        "name": "Swinging Bridge Vault Toilet",
+        "nps_object_id": 22777,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6554214493381,
+          37.537244917272716
+        ],
+        "type": "Point"
+      },
+      "id": "facility-wawona-visitor-center",
+      "properties": {
+        "feature_id": "facility-wawona-visitor-center",
+        "kind": "visitor_center",
+        "name": "Wawona Visitor Center at Hill's Studio",
+        "nps_object_id": 20948,
+        "nps_poi_type": "Visitor Center",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60326403464671,
+          37.50873092328526
+        ],
+        "type": "Point"
+      },
+      "id": "place-mariposa-grove",
+      "properties": {
+        "feature_id": "place-mariposa-grove",
+        "kind": "preserve",
+        "name": "Mariposa Grove of Giant Sequoias",
+        "nps_object_id": 22671,
+        "nps_poi_type": "Woods",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.59897801648789,
+          37.513572198045644
+        ],
+        "type": "Point"
+      },
+      "id": "place-mariposa-grove-cabin",
+      "properties": {
+        "feature_id": "place-mariposa-grove-cabin",
+        "kind": "historic_site",
+        "name": "Mariposa Grove Cabin",
+        "nps_object_id": 20211,
+        "nps_poi_type": "Historic Cabin",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65391409703494,
+          37.53673030833131
+        ],
+        "type": "Point"
+      },
+      "id": "place-wawona-point",
+      "properties": {
+        "feature_id": "place-wawona-point",
+        "kind": "viewpoint",
+        "name": "Wawona Point Trailhead",
+        "nps_object_id": 20720,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.59496464995881,
+          37.51470010643643
+        ],
+        "type": "Point"
+      },
+      "id": "place-wawona-tunnel-tree",
+      "properties": {
+        "feature_id": "place-wawona-tunnel-tree",
+        "kind": "historic_site",
+        "name": "Wawona Tunnel Tree",
+        "nps_object_id": 21838,
+        "nps_poi_type": "Historic Site",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.63368790706103,
+          37.548544807878564
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-chilnualna-falls",
+      "properties": {
+        "feature_id": "trailhead-chilnualna-falls",
+        "kind": "trailhead",
+        "name": "Chilnualna Falls Trailhead",
+        "nps_object_id": 21941,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.6108702850913,
+          37.5015945800734
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-mariposa-grove-arrival",
+      "properties": {
+        "feature_id": "trailhead-mariposa-grove-arrival",
+        "kind": "trailhead",
+        "name": "Mariposa Grove Trailhead",
+        "nps_object_id": 20092,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.62839128561403,
+          37.54333554276434
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-swinging-bridge-wawona",
+      "properties": {
+        "feature_id": "trailhead-swinging-bridge-wawona",
+        "kind": "trailhead",
+        "name": "Swinging Bridge Trailhead",
+        "nps_object_id": 22475,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.65771520946669,
+          37.535054669903964
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-wawona-meadow-loop",
+      "properties": {
+        "feature_id": "trailhead-wawona-meadow-loop",
+        "kind": "trailhead",
+        "name": "Meadow Loop Trailhead",
+        "nps_object_id": 21368,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.60072289065484,
+          37.50355858497729
+        ],
+        "type": "Point"
+      },
+      "id": "tree-grizzly-giant",
+      "properties": {
+        "feature_id": "tree-grizzly-giant",
+        "kind": "point_of_interest",
+        "name": "Grizzly Giant",
+        "nps_object_id": 20378,
+        "nps_poi_type": "Point of Interest",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61768559611332,
+          37.563374714410806
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-chilnualna-falls",
+      "properties": {
+        "feature_id": "waterfall-chilnualna-falls",
+        "kind": "waterfall",
+        "name": "Chilnualna Falls",
+        "nps_object_id": 20299,
+        "nps_poi_type": "Waterfall",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

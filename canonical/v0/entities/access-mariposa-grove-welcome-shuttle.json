@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-mariposa-grove-welcome-shuttle",
+    "kind": "transit_stop",
+    "name": "Mariposa Grove Welcome Plaza Shuttle Stop"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

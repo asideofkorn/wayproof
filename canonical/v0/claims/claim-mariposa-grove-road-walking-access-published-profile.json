@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-road-walking-access-published-profile",
+    "evidence_ids": [
+      "evidence-mariposa-grove-road-walking-access-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-grove-road-walking-access",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 500,
+      "objective_entity_ids": [
+        "trailhead-mariposa-grove-arrival"
+      ],
+      "one_way_miles": 2.0,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "access-mariposa-grove-welcome-plaza",
+      "use_when_shuttle_unavailable": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-mariposa-arrival-water",
+    "kind": "water_source",
+    "name": "Mariposa Grove Arrival Area Drinking Water"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

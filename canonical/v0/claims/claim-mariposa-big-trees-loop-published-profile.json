@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-big-trees-loop-published-profile",
+    "evidence_ids": [
+      "evidence-mariposa-big-trees-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-big-trees-loop",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "place-mariposa-grove"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mariposa-grove-arrival",
+      "published_time": "30 to 45 minutes",
+      "round_trip_miles": 0.3,
+      "route_form": "loop",
+      "wheelchair_accessible": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

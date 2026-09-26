@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-wawona-meadow-loop",
+    "kind": "trailhead",
+    "name": "Wawona Meadow Loop Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

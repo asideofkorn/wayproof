@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-alder-creek-wawona-published-profile"
+    ],
+    "object_id": "waterfall-alder-creek",
+    "predicate": "reaches",
+    "relationship_id": "relationship-alder-creek-wawona-reaches-1-waterfall-alder-creek",
+    "subject_id": "route-alder-creek-wawona",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

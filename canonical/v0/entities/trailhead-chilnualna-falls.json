@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-chilnualna-falls",
+    "kind": "trailhead",
+    "name": "Chilnualna Falls Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

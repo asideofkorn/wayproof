@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-use-rules",
+    "evidence_ids": [
+      "evidence-mariposa-grove-use-rules"
+    ],
+    "predicate": "visitor_use_rules",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "place-mariposa-grove",
+    "temporal_scope": null,
+    "value": {
+      "bicycles": "Grove Road between welcome plaza and Grizzly Giant only when road is seasonally open",
+      "horses": "Perimeter Trail only",
+      "pets": "not allowed on trails, roads, in the grove, or on shuttles",
+      "winter_overnight_camping": "December 1 through April 15 only when road is closed to cars and snow is sufficient; permit required; above Clothespin Tree only"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

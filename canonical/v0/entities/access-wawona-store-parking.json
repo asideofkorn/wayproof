@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-wawona-store-parking",
+    "kind": "parking",
+    "name": "Wawona Store and Post Office Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

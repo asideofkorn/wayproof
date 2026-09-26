@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-chilnualna-falls-published-profile",
+    "evidence_ids": [
+      "evidence-chilnualna-falls-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-chilnualna-falls",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2400,
+      "objective_entity_ids": [
+        "waterfall-chilnualna-falls"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-chilnualna-falls",
+      "published_time": "5 to 7 hours",
+      "round_trip_miles": 8.2,
+      "waterfall_view_miles_from_start": 0.25
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The NPS place page identifies the Wawona Hotel start, signed fire-road loop, year-round access, mileage, duration, and allowed horses, bicycles, and leashed pets.",
+    "observation_id": "observation-nps-yosemite-wawona-meadow-trailhead-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-wawona-meadow-trailhead"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

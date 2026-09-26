@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-wawona-meadow-loop-published-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "traverses",
+    "relationship_id": "relationship-wawona-meadow-loop-traverses-yosemite",
+    "subject_id": "route-wawona-meadow-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
