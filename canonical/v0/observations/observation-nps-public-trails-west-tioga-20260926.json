@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-west-tioga-route-features-20260926.geojson"
+    ],
+    "content": "Reviewed NPS Public Trails features identify the complete named May Lake Trail and Lukens Lake Trail geometries selected against the official NPS day-hike descriptions.",
+    "observation_id": "observation-nps-public-trails-west-tioga-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

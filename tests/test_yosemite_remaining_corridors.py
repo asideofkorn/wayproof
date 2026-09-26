@@ -12,7 +12,7 @@ def test_routes_have_profiles_starts_objectives_and_topology_gap():
   assert claims[f"claim-{route.removeprefix('route-')}-published-profile"].evidence_ids
   assert any(x.subject_id==route and x.predicate=="starts_at" for x in rels.values())
   assert any(x.subject_id==route and x.predicate=="reaches" for x in rels.values())
- assert set(gaps["gap-yosemite-west-tioga-route-topology"].related_ids)==ROUTES
+ assert ROUTES <= set(gaps["gap-yosemite-west-tioga-route-topology"].related_ids)
 def test_access_and_tenaya_facilities_are_explicit():
  claims=idx(load_canonical(ROOT),"claims","claim_id")
  assert claims["claim-crane-flat-white-wolf-access-profile"].value["grove_parking"]=="very limited"

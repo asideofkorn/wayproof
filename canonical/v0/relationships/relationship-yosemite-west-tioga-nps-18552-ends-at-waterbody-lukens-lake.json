@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-west-tioga-nps-segment-18552"
+    ],
+    "object_id": "waterbody-lukens-lake",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-yosemite-west-tioga-nps-18552-ends-at-waterbody-lukens-lake",
+    "subject_id": "route-segment-yosemite-west-tioga-nps-18552",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The NPS day-hike page identifies the May Lake and Tioga Road-to-Lukens Lake route starts, objectives, round-trip distances, and named trail corridors used for this graph.",
+    "observation_id": "observation-nps-west-tioga-route-review-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-crane-flat-white-wolf-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
