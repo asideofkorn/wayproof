@@ -1,0 +1,365 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.45191523011195,
+          37.837945900084804
+        ],
+        "type": "Point"
+      },
+      "id": "access-tenaya-east-beach-parking",
+      "properties": {
+        "feature_id": "access-tenaya-east-beach-parking",
+        "kind": "parking",
+        "name": "Tenaya Lake East Beach Parking",
+        "nps_object_id": 21000,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.80532574769234,
+          37.75825595820726
+        ],
+        "type": "Point"
+      },
+      "id": "access-tuolumne-grove-parking",
+      "properties": {
+        "feature_id": "access-tuolumne-grove-parking",
+        "kind": "parking",
+        "name": "Tuolumne Grove Parking",
+        "nps_object_id": 20128,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.46844017354749,
+          37.826804741848285
+        ],
+        "type": "Point"
+      },
+      "id": "access-west-tenaya-lake-parking",
+      "properties": {
+        "feature_id": "access-west-tenaya-lake-parking",
+        "kind": "parking",
+        "name": "West Tenaya Lake Parking",
+        "nps_object_id": 22088,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.49131890595218,
+          37.83250588973495
+        ],
+        "type": "Point"
+      },
+      "id": "facility-may-lake-vault-toilet",
+      "properties": {
+        "feature_id": "facility-may-lake-vault-toilet",
+        "kind": "restroom",
+        "name": "May Lake Trailhead Vault Toilet",
+        "nps_object_id": 20072,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.54520434080752,
+          37.80654841942195
+        ],
+        "type": "Point"
+      },
+      "id": "facility-porcupine-creek-vault-toilet",
+      "properties": {
+        "feature_id": "facility-porcupine-creek-vault-toilet",
+        "kind": "restroom",
+        "name": "Porcupine Creek Vault Toilet",
+        "nps_object_id": 20629,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57646780810573,
+          37.85179476439931
+        ],
+        "type": "Point"
+      },
+      "id": "facility-ten-lakes-vault-toilet",
+      "properties": {
+        "feature_id": "facility-ten-lakes-vault-toilet",
+        "kind": "restroom",
+        "name": "Ten Lakes Trailhead Vault Toilet",
+        "nps_object_id": 22546,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.45186446006173,
+          37.837579907054085
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tenaya-east-beach-vault-toilet",
+      "properties": {
+        "feature_id": "facility-tenaya-east-beach-vault-toilet",
+        "kind": "restroom",
+        "name": "Tenaya Lake East Beach Vault Toilets",
+        "nps_object_id": 22805,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.80539274067648,
+          37.758021110180664
+        ],
+        "type": "Point"
+      },
+      "id": "facility-tuolumne-grove-vault-toilet",
+      "properties": {
+        "feature_id": "facility-tuolumne-grove-vault-toilet",
+        "kind": "restroom",
+        "name": "Tuolumne Grove Parking Lot Vault Toilets",
+        "nps_object_id": 21590,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.64727779686805,
+          37.870892174065126
+        ],
+        "type": "Point"
+      },
+      "id": "facility-white-wolf-restroom",
+      "properties": {
+        "feature_id": "facility-white-wolf-restroom",
+        "kind": "restroom",
+        "name": "White Wolf Restroom",
+        "nps_object_id": 21715,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.84018194850982,
+          37.75090462201965
+        ],
+        "type": "Point"
+      },
+      "id": "place-merced-grove",
+      "properties": {
+        "feature_id": "place-merced-grove",
+        "kind": "preserve",
+        "name": "Merced Grove of Giant Sequoias",
+        "nps_object_id": 20197,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.80608077201731,
+          37.76879151613015
+        ],
+        "type": "Point"
+      },
+      "id": "place-tuolumne-grove",
+      "properties": {
+        "feature_id": "place-tuolumne-grove",
+        "kind": "preserve",
+        "name": "Tuolumne Grove of Giant Sequoias",
+        "nps_object_id": 20725,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.61521026629141,
+          37.850520618484154
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-lukens-lake-tioga",
+      "properties": {
+        "feature_id": "trailhead-lukens-lake-tioga",
+        "kind": "trailhead",
+        "name": "Lukens to Lukens Lake Trailhead",
+        "nps_object_id": 21984,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.49115354494799,
+          37.83270605676563
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-may-lake",
+      "properties": {
+        "feature_id": "trailhead-may-lake",
+        "kind": "trailhead",
+        "name": "May Lake Trailhead",
+        "nps_object_id": 20954,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.84227181322788,
+          37.76299333098912
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-merced-grove",
+      "properties": {
+        "feature_id": "trailhead-merced-grove",
+        "kind": "trailhead",
+        "name": "Merced Grove Trailhead",
+        "nps_object_id": 21394,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.54526085581983,
+          37.80657549942046
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-porcupine-creek",
+      "properties": {
+        "feature_id": "trailhead-porcupine-creek",
+        "kind": "trailhead",
+        "name": "Porcupine Creek Trailhead",
+        "nps_object_id": 22600,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57652272516046,
+          37.85219328643257
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-ten-lakes",
+      "properties": {
+        "feature_id": "trailhead-ten-lakes",
+        "kind": "trailhead",
+        "name": "Ten Lakes Trailhead",
+        "nps_object_id": 21777,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.80559915973646,
+          37.75825340718734
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-tuolumne-grove",
+      "properties": {
+        "feature_id": "trailhead-tuolumne-grove",
+        "kind": "trailhead",
+        "name": "Tuolumne Grove Trailhead",
+        "nps_object_id": 20953,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.64882037199048,
+          37.86976751984898
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-white-wolf",
+      "properties": {
+        "feature_id": "trailhead-white-wolf",
+        "kind": "trailhead",
+        "name": "White Wolf Trailhead",
+        "nps_object_id": 21102,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.57769880334445,
+          37.85212080534091
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-yosemite-creek",
+      "properties": {
+        "feature_id": "trailhead-yosemite-creek",
+        "kind": "trailhead",
+        "name": "Yosemite Creek Trailhead",
+        "nps_object_id": 20928,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.48555089250716,
+          37.81066650110157
+        ],
+        "type": "Point"
+      },
+      "id": "viewpoint-olmsted-point",
+      "properties": {
+        "feature_id": "viewpoint-olmsted-point",
+        "kind": "viewpoint",
+        "name": "Olmsted Point",
+        "nps_object_id": 21841,
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

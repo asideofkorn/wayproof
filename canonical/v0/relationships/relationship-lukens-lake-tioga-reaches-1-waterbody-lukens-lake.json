@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lukens-lake-tioga-published-profile"
+    ],
+    "object_id": "waterbody-lukens-lake",
+    "predicate": "reaches",
+    "relationship_id": "relationship-lukens-lake-tioga-reaches-1-waterbody-lukens-lake",
+    "subject_id": "route-lukens-lake-tioga",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

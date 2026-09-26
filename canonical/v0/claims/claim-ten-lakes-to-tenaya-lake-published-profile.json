@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ten-lakes-to-tenaya-lake-published-profile",
+    "evidence_ids": [
+      "evidence-ten-lakes-to-tenaya-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-ten-lakes-to-tenaya-lake",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 4350,
+      "objective_entity_ids": [
+        "waterbody-tenaya-lake"
+      ],
+      "one_way_miles": 20.4,
+      "operational_status_requires_current_check": true,
+      "overnight_permit_required": true,
+      "published_start_entity_id": "trailhead-ten-lakes",
+      "reverse_direction_possible": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

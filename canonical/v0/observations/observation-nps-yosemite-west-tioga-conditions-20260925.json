@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "As of September 25, 2026, Tioga Road is open with published construction delays and the wilderness-center-to-Lembert-Dome trail has an alternate route; conditions remain volatile.",
+    "observation_id": "observation-nps-yosemite-west-tioga-conditions-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

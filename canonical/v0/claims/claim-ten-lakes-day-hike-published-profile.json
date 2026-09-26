@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ten-lakes-day-hike-published-profile",
+    "evidence_ids": [
+      "evidence-ten-lakes-day-hike-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "route-ten-lakes-day-hike",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2200,
+      "objective_entity_ids": [
+        "place-ten-lakes-basin"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-ten-lakes",
+      "published_time": "7 to 9 hours",
+      "round_trip_miles": 12.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

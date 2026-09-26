@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-may-lake-day-hike-published-profile"
+    ],
+    "object_id": "route-may-lake-day-hike",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-may-lake-accesses-may-lake-day-hike",
+    "subject_id": "trailhead-may-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

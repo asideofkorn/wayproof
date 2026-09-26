@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-north-dome-porcupine-creek-published-profile"
+    ],
+    "object_id": "peak-north-dome",
+    "predicate": "reaches",
+    "relationship_id": "relationship-north-dome-porcupine-creek-reaches-1-peak-north-dome",
+    "subject_id": "route-north-dome-porcupine-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-grand-canyon-tuolumne-white-wolf",
+    "kind": "route",
+    "name": "Grand Canyon of the Tuolumne from White Wolf"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

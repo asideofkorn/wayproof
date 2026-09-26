@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-west-tioga-parking-capacity",
+    "question": "What are dependable practical capacity and overflow limits at grove and Tioga Road trailheads?",
+    "reason": "NPS warns that grove parking is very limited but does not publish stable capacity figures for these lots.",
+    "related_ids": [
+      "trailhead-tuolumne-grove",
+      "trailhead-merced-grove",
+      "trailhead-may-lake",
+      "trailhead-porcupine-creek",
+      "trailhead-ten-lakes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

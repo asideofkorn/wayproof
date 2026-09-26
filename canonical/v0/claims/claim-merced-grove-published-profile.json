@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-merced-grove-published-profile",
+    "evidence_ids": [
+      "evidence-merced-grove-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-crane-flat-white-wolf"
+    ],
+    "subject_id": "route-merced-grove",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft_on_return": 520,
+      "objective_entity_ids": [
+        "place-merced-grove"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-merced-grove",
+      "published_time": "1 to 3 hours",
+      "round_trip_miles": 3.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

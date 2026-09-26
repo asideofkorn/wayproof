@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lukens-lake-white-wolf-published-profile"
+    ],
+    "object_id": "waterbody-lukens-lake",
+    "predicate": "reaches",
+    "relationship_id": "relationship-lukens-lake-white-wolf-reaches-1-waterbody-lukens-lake",
+    "subject_id": "route-lukens-lake-white-wolf",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

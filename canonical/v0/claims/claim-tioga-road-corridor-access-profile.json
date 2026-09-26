@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-tioga-road-corridor-access-profile",
+    "evidence_ids": [
+      "evidence-tioga-road-corridor-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-tioga-road-corridor"
+    ],
+    "subject_id": "place-tioga-road-corridor",
+    "temporal_scope": null,
+    "value": {
+      "endpoints": "Crane Flat to Tioga Pass",
+      "operational_status_requires_current_check": true,
+      "scenic_drive_miles": 46,
+      "services": "extremely limited",
+      "typical_vehicle_season": "May or June through October or November"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

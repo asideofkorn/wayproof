@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS identifies Tioga Road as a 46-mile scenic drive from Crane Flat to Tioga Pass.",
+    "observation_id": "observation-nps-yosemite-tioga-auto-tour-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-auto-touring"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

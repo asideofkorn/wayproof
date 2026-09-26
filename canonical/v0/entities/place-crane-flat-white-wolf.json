@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-crane-flat-white-wolf",
+    "kind": "place",
+    "name": "Crane Flat and White Wolf"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

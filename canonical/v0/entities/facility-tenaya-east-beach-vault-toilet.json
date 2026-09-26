@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-tenaya-east-beach-vault-toilet",
+    "kind": "restroom",
+    "name": "Tenaya Lake East Beach Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

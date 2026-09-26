@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-crane-flat-white-wolf-access-profile",
+    "evidence_ids": [
+      "evidence-crane-flat-white-wolf-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-crane-flat-white-wolf"
+    ],
+    "subject_id": "place-crane-flat-white-wolf",
+    "temporal_scope": null,
+    "value": {
+      "from_yosemite_valley_minutes": 30,
+      "grove_access": "year-round; winter skis or snowshoes may be necessary",
+      "grove_parking": "very limited",
+      "services": "extremely limited; carry needed food and water"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

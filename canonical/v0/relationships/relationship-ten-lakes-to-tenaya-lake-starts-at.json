@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ten-lakes-to-tenaya-lake-published-profile"
+    ],
+    "object_id": "trailhead-ten-lakes",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-ten-lakes-to-tenaya-lake-starts-at",
+    "subject_id": "route-ten-lakes-to-tenaya-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

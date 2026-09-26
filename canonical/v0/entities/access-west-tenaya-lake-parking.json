@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-west-tenaya-lake-parking",
+    "kind": "parking",
+    "name": "West Tenaya Lake Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-west-tioga-pois-20260925.geojson"
+    ],
+    "content": "Reviewed NPS Public POIs identify selected grove, White Wolf, Tioga Road, trailhead, parking, restroom, lake, and viewpoint features.",
+    "observation_id": "observation-nps-public-pois-west-tioga-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-public-pois-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

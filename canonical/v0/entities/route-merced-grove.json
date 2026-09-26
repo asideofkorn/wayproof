@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-merced-grove",
+    "kind": "route",
+    "name": "Merced Grove"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

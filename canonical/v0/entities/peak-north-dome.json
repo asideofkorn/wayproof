@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "peak-north-dome",
+    "kind": "peak",
+    "name": "North Dome"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

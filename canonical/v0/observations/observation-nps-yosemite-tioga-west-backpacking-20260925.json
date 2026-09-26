@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes selected west-Tioga backpacking itineraries, distances, elevation gains, permit demand, and route endpoints.",
+    "observation_id": "observation-nps-yosemite-tioga-west-backpacking-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-tioga-west-backpacking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
