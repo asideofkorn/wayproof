@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-panorama-trail-published-profile",
+    "evidence_ids": [
+      "evidence-panorama-trail-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-panorama-trail",
+    "temporal_scope": null,
+    "value": {
+      "descent_ft_approx": 3200,
+      "objective_entity_ids": [
+        "waterfall-illilouette-fall",
+        "trailhead-happy-isles"
+      ],
+      "one_way_miles": 8.2,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-glacier-point",
+      "published_time": "6 to 8 hours",
+      "return_transit_not_available": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

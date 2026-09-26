@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes seasonal road access, parking-area access, the paved accessible overlook walk, and limited summer tour service at Glacier Point.",
+    "observation_id": "observation-nps-yosemite-glacier-point-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-glacier-point"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

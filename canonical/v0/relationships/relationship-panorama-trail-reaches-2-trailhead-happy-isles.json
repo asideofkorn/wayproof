@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-panorama-trail-published-profile"
+    ],
+    "object_id": "trailhead-happy-isles",
+    "predicate": "reaches",
+    "relationship_id": "relationship-panorama-trail-reaches-2-trailhead-happy-isles",
+    "subject_id": "route-panorama-trail",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

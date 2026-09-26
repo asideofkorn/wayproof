@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-sentinel-taft-vault-toilet",
+    "kind": "restroom",
+    "name": "Sentinel Dome and Taft Point Trailhead Vault Toilet"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

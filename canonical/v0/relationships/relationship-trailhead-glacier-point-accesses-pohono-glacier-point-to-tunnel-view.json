@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+    ],
+    "object_id": "route-pohono-glacier-point-to-tunnel-view",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-glacier-point-accesses-pohono-glacier-point-to-tunnel-view",
+    "subject_id": "trailhead-glacier-point",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

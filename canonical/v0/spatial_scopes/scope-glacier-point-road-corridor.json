@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Glacier Point Road, its signed visitor facilities, and explicitly connected trail corridors",
+    "entity_id": "place-glacier-point-road-corridor",
+    "kind": "place",
+    "scope_id": "scope-glacier-point-road-corridor"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

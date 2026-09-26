@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-sentinel-taft-loop-distance",
+    "question": "What official reviewed distance and exact topology should be used for the combined Sentinel Dome and Taft Point loop?",
+    "reason": "NPS confirms the Pohono Trail loop option but does not state a combined distance on the reviewed page.",
+    "related_ids": [
+      "route-sentinel-dome-taft-point-loop",
+      "source-nps-yosemite-sentinel-taft-trailhead"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

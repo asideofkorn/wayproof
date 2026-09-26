@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-sentinel-dome-taft-point-loop-published-profile"
+    ],
+    "object_id": "trailhead-sentinel-dome-taft-point",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-sentinel-dome-taft-point-loop-starts-at",
+    "subject_id": "route-sentinel-dome-taft-point-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

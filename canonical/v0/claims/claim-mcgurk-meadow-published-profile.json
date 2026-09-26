@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mcgurk-meadow-published-profile",
+    "evidence_ids": [
+      "evidence-mcgurk-meadow-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-mcgurk-meadow",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft_on_return": 150,
+      "objective_entity_ids": [
+        "place-mcgurk-meadow"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-mcgurk-meadow",
+      "published_time": "1 to 1.5 hours",
+      "round_trip_miles": 1.6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

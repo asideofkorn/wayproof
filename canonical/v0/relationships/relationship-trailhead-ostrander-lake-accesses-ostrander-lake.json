@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-ostrander-lake-published-profile"
+    ],
+    "object_id": "route-ostrander-lake",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-ostrander-lake-accesses-ostrander-lake",
+    "subject_id": "trailhead-ostrander-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

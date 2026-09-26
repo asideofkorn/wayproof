@@ -1,0 +1,1440 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-yosemite-glacier-point-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-glacier-point-hikes.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "source-nps-yosemite-glacier-point-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-glacier-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "source-nps-yosemite-glacier-point",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-sentinel-taft-trailhead.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "source-nps-yosemite-sentinel-taft-trailhead",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-ostrander-trailhead.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "source-nps-yosemite-ostrander-trailhead",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-vehicle-restrictions.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "source-nps-yosemite-vehicle-restrictions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-glacier-point-hikes-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-glacier-point-hikes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-glacier-point-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-glacier-point-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-sentinel-taft-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-sentinel-taft-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-ostrander-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-ostrander-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-glacier-point-vehicles-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-glacier-point-vehicles-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-glacier-point-conditions-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-yosemite-glacier-point-conditions-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-glacier-point-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "observation-nps-public-pois-glacier-point-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-glacier-point-road-corridor.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "place-glacier-point-road-corridor",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-glacier-point-road-corridor.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "scope-glacier-point-road-corridor",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-glacier-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "trailhead-glacier-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mcgurk-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "trailhead-mcgurk-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-sentinel-dome-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "trailhead-sentinel-dome-taft-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mono-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "trailhead-mono-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-ostrander-lake.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "trailhead-ostrander-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-glacier-point-parking.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "access-glacier-point-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-badger-pass-parking.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "access-badger-pass-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-glacier-point-vault-toilet.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "facility-glacier-point-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-sentinel-taft-vault-toilet.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "facility-sentinel-taft-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-glacier-point-gift-shop.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "facility-glacier-point-gift-shop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/viewpoint-dewey-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "viewpoint-dewey-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/viewpoint-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "viewpoint-taft-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-sentinel-dome.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "peak-sentinel-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-ostrander-lake.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "waterbody-ostrander-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mcgurk-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "place-mcgurk-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mono-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "place-mono-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-illilouette-fall.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "waterfall-illilouette-fall",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-tunnel-view.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "place-tunnel-view",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-glacier-point-overlook.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-glacier-point-overlook",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mcgurk-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-mcgurk-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-sentinel-dome.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-sentinel-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-taft-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-sentinel-dome-taft-point-loop.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-sentinel-dome-taft-point-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mono-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-mono-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-dewey-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-dewey-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-ostrander-lake.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-ostrander-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-panorama-trail.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-panorama-trail",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-pohono-glacier-point-to-tunnel-view.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "route-pohono-glacier-point-to-tunnel-view",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glacier-point-overlook-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-glacier-point-overlook-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-overlook-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glacier-point-overlook-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-glacier-point-overlook-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mcgurk-meadow-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-mcgurk-meadow-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mcgurk-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mcgurk-meadow-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-mcgurk-meadow-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sentinel-dome-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-sentinel-dome-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sentinel-dome-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-sentinel-dome-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taft-point-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-taft-point-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taft-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taft-point-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-taft-point-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-sentinel-dome-taft-point-loop-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-sentinel-dome-taft-point-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-sentinel-dome-taft-point-loop-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-sentinel-dome-taft-point-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mono-meadow-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-mono-meadow-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mono-meadow-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-mono-meadow-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-dewey-point-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-dewey-point-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dewey-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-dewey-point-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-dewey-point-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-ostrander-lake-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-ostrander-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ostrander-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-ostrander-lake-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-ostrander-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-panorama-trail-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-panorama-trail-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-panorama-trail-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-panorama-trail-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-pohono-glacier-point-to-tunnel-view-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-pohono-glacier-point-to-tunnel-view-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-pohono-glacier-point-to-tunnel-view-published-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-pohono-glacier-point-to-tunnel-view-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glacier-point-road-access-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-glacier-point-road-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-road-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glacier-point-road-access-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-glacier-point-road-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glacier-point-road-vehicle-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-glacier-point-road-vehicle-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-road-vehicle-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glacier-point-road-vehicle-profile.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-glacier-point-road-vehicle-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-glacier-point-road-observed-status-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-glacier-point-road-observed-status-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-road-observed-status-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-glacier-point-road-observed-status-20260925.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-glacier-point-road-observed-status-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-road-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glacier-point-road-corridor-located-in-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-glacier-point-road-corridor-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-road-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glacier-point-parking-accesses-trailhead.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-glacier-point-parking-accesses-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-overlook-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glacier-point-overlook-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-glacier-point-overlook-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-overlook-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-glacier-point-parking-accesses-glacier-point-overlook.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-access-glacier-point-parking-accesses-glacier-point-overlook",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-overlook-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glacier-point-overlook-reaches-1-place-glacier-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-glacier-point-overlook-reaches-1-place-glacier-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glacier-point-overlook-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glacier-point-overlook-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-glacier-point-overlook-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mcgurk-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgurk-meadow-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mcgurk-meadow-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mcgurk-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mcgurk-meadow-accesses-mcgurk-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-mcgurk-meadow-accesses-mcgurk-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mcgurk-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgurk-meadow-reaches-1-place-mcgurk-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mcgurk-meadow-reaches-1-place-mcgurk-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mcgurk-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mcgurk-meadow-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mcgurk-meadow-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-sentinel-dome-taft-point-accesses-sentinel-dome.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-sentinel-dome-taft-point-accesses-sentinel-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-reaches-1-peak-sentinel-dome.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-reaches-1-peak-sentinel-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taft-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taft-point-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-taft-point-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taft-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-sentinel-dome-taft-point-accesses-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-sentinel-dome-taft-point-accesses-taft-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taft-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taft-point-reaches-1-viewpoint-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-taft-point-reaches-1-viewpoint-taft-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taft-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taft-point-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-taft-point-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-taft-point-loop-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-taft-point-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-sentinel-dome-taft-point-accesses-sentinel-dome-taft-point-loop.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-sentinel-dome-taft-point-accesses-sentinel-dome-taft-point-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-taft-point-loop-reaches-1-peak-sentinel-dome.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-taft-point-loop-reaches-1-peak-sentinel-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-taft-point-loop-reaches-2-viewpoint-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-taft-point-loop-reaches-2-viewpoint-taft-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-sentinel-dome-taft-point-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-sentinel-dome-taft-point-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-sentinel-dome-taft-point-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-meadow-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mono-meadow-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mono-meadow-accesses-mono-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-mono-meadow-accesses-mono-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-meadow-reaches-1-place-mono-meadow.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mono-meadow-reaches-1-place-mono-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-meadow-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-meadow-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-mono-meadow-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dewey-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dewey-point-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-dewey-point-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dewey-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mcgurk-meadow-accesses-dewey-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-mcgurk-meadow-accesses-dewey-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dewey-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dewey-point-reaches-1-viewpoint-dewey-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-dewey-point-reaches-1-viewpoint-dewey-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dewey-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dewey-point-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-dewey-point-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ostrander-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ostrander-lake-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-ostrander-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ostrander-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-ostrander-lake-accesses-ostrander-lake.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-ostrander-lake-accesses-ostrander-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ostrander-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ostrander-lake-reaches-1-waterbody-ostrander-lake.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-ostrander-lake-reaches-1-waterbody-ostrander-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-ostrander-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-ostrander-lake-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-ostrander-lake-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-panorama-trail-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-panorama-trail-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-glacier-point-accesses-panorama-trail.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-glacier-point-accesses-panorama-trail",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-panorama-trail-reaches-1-waterfall-illilouette-fall.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-panorama-trail-reaches-1-waterfall-illilouette-fall",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-panorama-trail-reaches-2-trailhead-happy-isles.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-panorama-trail-reaches-2-trailhead-happy-isles",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-panorama-trail-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-panorama-trail-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-panorama-trail-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pohono-glacier-point-to-tunnel-view-starts-at.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-pohono-glacier-point-to-tunnel-view-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-glacier-point-accesses-pohono-glacier-point-to-tunnel-view.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-trailhead-glacier-point-accesses-pohono-glacier-point-to-tunnel-view",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pohono-glacier-point-to-tunnel-view-reaches-1-viewpoint-taft-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-pohono-glacier-point-to-tunnel-view-reaches-1-viewpoint-taft-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pohono-glacier-point-to-tunnel-view-reaches-2-viewpoint-dewey-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-pohono-glacier-point-to-tunnel-view-reaches-2-viewpoint-dewey-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pohono-glacier-point-to-tunnel-view-reaches-3-place-tunnel-view.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-pohono-glacier-point-to-tunnel-view-reaches-3-place-tunnel-view",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pohono-glacier-point-to-tunnel-view-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pohono-glacier-point-to-tunnel-view-traverses-yosemite.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "relationship-pohono-glacier-point-to-tunnel-view-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-badger-pass-parking-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-access-badger-pass-parking-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-badger-pass-parking-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-badger-pass-parking-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-access-badger-pass-parking-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-glacier-point-parking-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-access-glacier-point-parking-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-glacier-point-parking-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-glacier-point-parking-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-access-glacier-point-parking-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-glacier-point-gift-shop-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-facility-glacier-point-gift-shop-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-glacier-point-gift-shop-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-glacier-point-gift-shop-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-facility-glacier-point-gift-shop-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-glacier-point-vault-toilet-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-facility-glacier-point-vault-toilet-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-glacier-point-vault-toilet-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-glacier-point-vault-toilet-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-facility-glacier-point-vault-toilet-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-sentinel-taft-vault-toilet-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-facility-sentinel-taft-vault-toilet-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-sentinel-taft-vault-toilet-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-sentinel-taft-vault-toilet-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-facility-sentinel-taft-vault-toilet-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-glacier-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-place-glacier-point-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-glacier-point-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-glacier-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-place-glacier-point-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-glacier-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-trailhead-glacier-point-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-glacier-point-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-glacier-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-trailhead-glacier-point-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mcgurk-meadow-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-trailhead-mcgurk-meadow-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mcgurk-meadow-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mcgurk-meadow-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-trailhead-mcgurk-meadow-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mono-meadow-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-trailhead-mono-meadow-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mono-meadow-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mono-meadow-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-trailhead-mono-meadow-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-ostrander-lake-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-trailhead-ostrander-lake-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-ostrander-lake-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-ostrander-lake-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-trailhead-ostrander-lake-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-sentinel-dome-taft-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-trailhead-sentinel-dome-taft-point-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-sentinel-dome-taft-point-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-sentinel-dome-taft-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-trailhead-sentinel-dome-taft-point-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-viewpoint-dewey-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-viewpoint-dewey-point-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-viewpoint-dewey-point-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-viewpoint-dewey-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-viewpoint-dewey-point-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-viewpoint-taft-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "evidence-viewpoint-taft-point-glacier-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-viewpoint-taft-point-glacier-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-viewpoint-taft-point-glacier-point-map-point.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "claim-viewpoint-taft-point-glacier-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-glacier-point-route-topology.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "gap-yosemite-glacier-point-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-glacier-point-trip-date-operations.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "gap-yosemite-glacier-point-trip-date-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-sentinel-taft-loop-distance.json",
+      "reason": "Add reviewed Glacier Point Road planning depth.",
+      "record_id": "gap-yosemite-sentinel-taft-loop-distance",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Glacier Point Road routes, access, facilities, vehicle constraints, dated closure evidence, reviewed map points, and explicit gaps."
+}

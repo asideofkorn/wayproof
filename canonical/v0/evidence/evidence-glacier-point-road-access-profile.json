@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glacier-point-road-access-profile",
+    "evidence_id": "evidence-glacier-point-road-access-profile",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-glacier-point-hikes-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

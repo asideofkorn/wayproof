@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-sentinel-dome-taft-point-glacier-point-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-sentinel-dome-taft-point-glacier-point-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "trailhead-sentinel-dome-taft-point",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-sentinel-dome-taft-point",
+        "path": "geometry/v0/snapshots/nps-yose-glacier-point-pois-20260925.geojson",
+        "sha256": "eaf4338ce231e454d448a1c6114b64e6a7f12aaf4b6b0c503adf504778aacc93"
+      },
+      "latitude": 37.712551624659945,
+      "longitude": -119.58634934582723,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "20333",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

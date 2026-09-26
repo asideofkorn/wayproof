@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glacier-point-road-vehicle-profile",
+    "evidence_ids": [
+      "evidence-glacier-point-road-vehicle-profile"
+    ],
+    "predicate": "vehicle_restrictions",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "place-glacier-point-road-corridor",
+    "temporal_scope": null,
+    "value": {
+      "beyond_sentinel_taft_max_single_vehicle_ft": 30,
+      "buses_beyond_badger_pass": "over 30 feet or capacity 26+ prohibited",
+      "overnight_parking_prohibited": "between Badger Pass and Glacier Point from October 15 until spring opening",
+      "trailers_beyond_sentinel_taft": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

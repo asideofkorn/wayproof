@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Glacier Point Road day-hike starts, distances, times, elevation gains, seasonal access, limited water, and absence of dependable return transit.",
+    "observation_id": "observation-nps-yosemite-glacier-point-hikes-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-glacier-point-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-badger-pass-parking",
+    "kind": "parking",
+    "name": "Badger Pass Ski Area Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

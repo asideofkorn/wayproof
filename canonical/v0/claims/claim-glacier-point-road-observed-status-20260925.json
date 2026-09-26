@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glacier-point-road-observed-status-20260925",
+    "evidence_ids": [
+      "evidence-glacier-point-road-observed-status-20260925"
+    ],
+    "predicate": "observed_operational_status",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "place-glacier-point-road-corridor",
+    "temporal_scope": null,
+    "value": {
+      "as_of": "2026-09-25",
+      "ostrander_lake_trail": "closed due to Dome Fire",
+      "reason": "smoke and firefighting operations",
+      "recheck_required": true,
+      "status": "temporarily closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

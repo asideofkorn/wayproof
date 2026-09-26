@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-ostrander-lake-published-profile",
+    "evidence_ids": [
+      "evidence-ostrander-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-ostrander-lake",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 1500,
+      "objective_entity_ids": [
+        "waterbody-ostrander-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-ostrander-lake",
+      "published_time": "8 to 10 hours",
+      "round_trip_miles": 12.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

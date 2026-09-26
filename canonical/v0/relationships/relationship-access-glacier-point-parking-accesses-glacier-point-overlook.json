@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-glacier-point-overlook-published-profile"
+    ],
+    "object_id": "route-glacier-point-overlook",
+    "predicate": "accesses",
+    "relationship_id": "relationship-access-glacier-point-parking-accesses-glacier-point-overlook",
+    "subject_id": "access-glacier-point-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

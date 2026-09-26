@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-glacier-point-trip-date-operations",
+    "question": "Which road, fire, smoke, water, toilet, tour-bus, and trail conditions apply on the visit date?",
+    "reason": "These conditions are volatile; the September 25 closure is dated evidence only.",
+    "related_ids": [
+      "place-glacier-point-road-corridor",
+      "route-ostrander-lake",
+      "source-nps-yosemite-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

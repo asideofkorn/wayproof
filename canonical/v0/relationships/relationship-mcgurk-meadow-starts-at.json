@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mcgurk-meadow-published-profile"
+    ],
+    "object_id": "trailhead-mcgurk-meadow",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-mcgurk-meadow-starts-at",
+    "subject_id": "route-mcgurk-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

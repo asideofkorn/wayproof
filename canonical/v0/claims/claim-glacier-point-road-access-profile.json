@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-glacier-point-road-access-profile",
+    "evidence_ids": [
+      "evidence-glacier-point-road-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "place-glacier-point-road-corridor",
+    "temporal_scope": null,
+    "value": {
+      "operational_status_requires_current_check": true,
+      "services": "extremely limited",
+      "summer_tour_bus": "limited; reservation required; do not depend on return availability",
+      "typical_vehicle_season": "May through November, conditions permitting",
+      "valley_shuttle": false,
+      "water": "typically available at Glacier Point late spring to early fall"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
