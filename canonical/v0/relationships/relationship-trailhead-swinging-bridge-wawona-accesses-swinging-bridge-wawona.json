@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-swinging-bridge-wawona-published-profile"
+    ],
+    "object_id": "route-swinging-bridge-wawona",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-swinging-bridge-wawona-accesses-swinging-bridge-wawona",
+    "subject_id": "trailhead-swinging-bridge-wawona",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "As of September 25, 2026, NPS reports the Chilnualna Falls trail and connected trails toward Buena Vista and Crescent Lakes closed due to the Dome Fire; smoke and air-quality impacts remain possible. This is dated operational evidence, not a timeless rule.",
+    "observation_id": "observation-nps-yosemite-wawona-conditions-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

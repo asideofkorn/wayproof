@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-trailhead-swinging-bridge-wawona-map-point",
+    "evidence_ids": [
+      "evidence-trailhead-swinging-bridge-wawona-map-point"
+    ],
+    "predicate": "reviewed_map_point",
+    "spatial_scope_ids": [
+      "scope-wawona",
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "trailhead-swinging-bridge-wawona",
+    "temporal_scope": null,
+    "value": {
+      "geometry_snapshot": {
+        "feature_id": "trailhead-swinging-bridge-wawona",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-pois-20260925.geojson",
+        "sha256": "57e7a1c16f8ee3c64762688c2f33d938c4a5065fd3462a5ca54d20059fdcf6fd"
+      },
+      "latitude": 37.54333554276434,
+      "longitude": -119.62839128561403,
+      "navigation_grade": false,
+      "provenance": "NPS Public POIs reviewed feature",
+      "source_feature_id": "22475",
+      "source_ids": [
+        "source-nps-public-pois-feature-service"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

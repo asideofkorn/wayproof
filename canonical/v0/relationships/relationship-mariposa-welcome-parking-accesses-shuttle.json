@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mariposa-grove-access-profile-2026"
+    ],
+    "object_id": "access-mariposa-grove-welcome-shuttle",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mariposa-welcome-parking-accesses-shuttle",
+    "subject_id": "access-mariposa-grove-welcome-plaza",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

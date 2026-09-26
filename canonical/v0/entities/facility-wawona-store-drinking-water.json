@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-wawona-store-drinking-water",
+    "kind": "water_source",
+    "name": "Wawona Store Parking Drinking Water"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

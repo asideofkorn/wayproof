@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wawona-access-and-services-profile",
+    "evidence_ids": [
+      "evidence-wawona-access-and-services-profile"
+    ],
+    "predicate": "access_and_services_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "place-wawona",
+    "temporal_scope": null,
+    "value": {
+      "car_access": "year-round; chains may be required October through April",
+      "from_yosemite_valley_drive_minutes": 45,
+      "from_yosemite_valley_miles": 27,
+      "gas_station": "open year-round",
+      "mariposa_grove_shuttle_from_wawona": false,
+      "regional_transit": "seasonal YARTS",
+      "road": "Wawona Road / Highway 41"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

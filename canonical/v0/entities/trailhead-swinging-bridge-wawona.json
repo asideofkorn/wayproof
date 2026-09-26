@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-swinging-bridge-wawona",
+    "kind": "trailhead",
+    "name": "Swinging Bridge Trailhead (Wawona)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

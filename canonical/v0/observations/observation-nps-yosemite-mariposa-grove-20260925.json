@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Mariposa Grove shuttle schedules, parking, road access, walking approaches, facilities, seasonal water, use rules, routes, and winter access.",
+    "observation_id": "observation-nps-yosemite-mariposa-grove-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-mariposa-grove"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

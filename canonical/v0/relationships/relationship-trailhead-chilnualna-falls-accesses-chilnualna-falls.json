@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-chilnualna-falls-published-profile"
+    ],
+    "object_id": "route-chilnualna-falls",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-chilnualna-falls-accesses-chilnualna-falls",
+    "subject_id": "trailhead-chilnualna-falls",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

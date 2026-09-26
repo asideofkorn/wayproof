@@ -31,6 +31,7 @@ SITE = {
     "test_yosemite_tuolumne_depth.py",
     "test_yosemite_tuolumne_route_depth.py",
     "test_yosemite_valley_depth.py",
+    "test_yosemite_wawona_mariposa_depth.py",
 }
 
 PLANNING = {

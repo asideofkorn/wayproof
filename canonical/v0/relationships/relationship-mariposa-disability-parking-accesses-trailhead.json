@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mariposa-grove-access-profile-2026"
+    ],
+    "object_id": "trailhead-mariposa-grove-arrival",
+    "predicate": "accesses",
+    "relationship_id": "relationship-mariposa-disability-parking-accesses-trailhead",
+    "subject_id": "access-mariposa-grove-disability-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

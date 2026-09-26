@@ -1,0 +1,46 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-access-profile-2026",
+    "evidence_ids": [
+      "evidence-mariposa-grove-access-profile-2026"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "place-mariposa-grove",
+    "temporal_scope": null,
+    "value": {
+      "arrival_advice": "arrive by mid-morning",
+      "operational_status_requires_current_check": true,
+      "parking_may_fill": "by late morning",
+      "private_vehicle_access": "Mariposa Grove Road is limited to disability placard vehicles when open",
+      "shuttle_2026": [
+        {
+          "dates": "May 3 through September 23",
+          "hours": "8 am to 7 pm",
+          "last_return": "8 pm"
+        },
+        {
+          "dates": "September 24 through October 31",
+          "hours": "8 am to 5 pm, weather permitting",
+          "last_return": "5:30 pm"
+        },
+        {
+          "dates": "November 1 through November 30",
+          "hours": "8 am to 3:30 pm, weather permitting",
+          "last_return": "5 pm"
+        },
+        {
+          "dates": "December 1 through at least April 15",
+          "hours": "no shuttle"
+        }
+      ],
+      "shuttle_frequency_minutes_approx": 15,
+      "welcome_plaza_parking_spaces_approx": 300
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

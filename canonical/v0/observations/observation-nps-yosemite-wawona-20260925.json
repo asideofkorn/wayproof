@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS describes year-round road access to Wawona, seasonal transit, nearby services, Mariposa Grove parking capacity, and the absence of a shuttle between Wawona and the grove.",
+    "observation_id": "observation-nps-yosemite-wawona-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-wawona"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

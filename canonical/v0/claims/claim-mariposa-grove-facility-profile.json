@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-facility-profile",
+    "evidence_ids": [
+      "evidence-mariposa-grove-facility-profile"
+    ],
+    "predicate": "facility_profile",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "place-mariposa-grove",
+    "temporal_scope": null,
+    "value": {
+      "drinking_water": {
+        "arrival_area": "summer only",
+        "elsewhere": false,
+        "welcome_plaza": "year-round"
+      },
+      "food_service": false,
+      "restrooms": {
+        "arrival_area": "flush summer; vault winter",
+        "cabin": "flush summer; vault winter",
+        "grizzly_giant": "vault",
+        "picnic_area": "vault",
+        "welcome_plaza": true
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

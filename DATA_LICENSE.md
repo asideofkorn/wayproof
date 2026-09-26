@@ -162,6 +162,11 @@ file is missing.
 
 ## Attribution
 
+- Wawona and Mariposa Grove reviewed point display geometry: National Park
+  Service Public POIs Feature Service (public-domain U.S. government data),
+  stored as the dated, versioned snapshot
+  `geometry/v0/snapshots/nps-yose-wawona-mariposa-pois-20260925.geojson`;
+  coordinates are display evidence and do not infer access or containment.
 - Tuolumne Meadows route display geometry: National Park Service Public Trails
   Feature Service (public-domain U.S. government data), reviewed against the
   official 2024 Tuolumne Meadows Trails map; the map image itself is referenced

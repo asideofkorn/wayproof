@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Wawona visitor area and explicitly connected trail corridors",
+    "entity_id": "place-wawona",
+    "kind": "place",
+    "scope_id": "scope-wawona"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

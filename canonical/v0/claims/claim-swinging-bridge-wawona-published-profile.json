@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-swinging-bridge-wawona-published-profile",
+    "evidence_ids": [
+      "evidence-swinging-bridge-wawona-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-swinging-bridge-wawona",
+    "temporal_scope": null,
+    "value": {
+      "objective_entity_ids": [
+        "place-swinging-bridge-wawona"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-swinging-bridge-wawona",
+      "published_time": "30 minutes",
+      "round_trip_miles": 0.6,
+      "terrain": "mostly flat"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

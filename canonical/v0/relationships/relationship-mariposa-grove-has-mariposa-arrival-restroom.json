@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-mariposa-grove-facility-profile"
+    ],
+    "object_id": "facility-mariposa-arrival-restroom",
+    "predicate": "has_facility",
+    "relationship_id": "relationship-mariposa-grove-has-mariposa-arrival-restroom",
+    "subject_id": "place-mariposa-grove",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

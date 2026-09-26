@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-wawona-access-and-services-profile"
+    ],
+    "object_id": "park-yosemite-national-park",
+    "predicate": "located_in",
+    "relationship_id": "relationship-wawona-located-in-yosemite",
+    "subject_id": "place-wawona",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

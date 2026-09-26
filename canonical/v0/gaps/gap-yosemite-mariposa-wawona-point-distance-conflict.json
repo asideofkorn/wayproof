@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-mariposa-wawona-point-distance-conflict",
+    "question": "Is the current published round-trip distance from the Mariposa Grove arrival area to Wawona Point 7.0 or 7.75 miles?",
+    "reason": "Two current official NPS pages publish different distances, so both are preserved.",
+    "related_ids": [
+      "route-mariposa-grove-to-wawona-point",
+      "source-nps-yosemite-mariposa-grove",
+      "source-nps-yosemite-wawona-hikes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

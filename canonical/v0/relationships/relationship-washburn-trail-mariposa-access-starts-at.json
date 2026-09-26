@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-washburn-trail-mariposa-access-published-profile"
+    ],
+    "object_id": "access-mariposa-grove-welcome-plaza",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-washburn-trail-mariposa-access-starts-at",
+    "subject_id": "route-washburn-trail-mariposa-access",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

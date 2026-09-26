@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-wawona-mariposa-trip-date-operations",
+    "question": "Which fire closures, smoke conditions, shuttle service, road status, water, toilets, and seasonal rules apply on the visit date?",
+    "reason": "These are volatile and require a contextual current check; the September 25 closure is retained only as dated evidence.",
+    "related_ids": [
+      "place-wawona",
+      "place-mariposa-grove",
+      "route-chilnualna-falls",
+      "source-nps-yosemite-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

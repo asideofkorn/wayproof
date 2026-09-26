@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-chilnualna-falls-observed-closure-20260925",
+    "evidence_ids": [
+      "evidence-chilnualna-falls-observed-closure-20260925"
+    ],
+    "predicate": "observed_operational_status",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-chilnualna-falls",
+    "temporal_scope": null,
+    "value": {
+      "also_applies_to": "trails from the top toward Buena Vista and Crescent Lakes",
+      "as_of": "2026-09-25",
+      "reason": "Dome Fire",
+      "recheck_required": true,
+      "status": "closed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

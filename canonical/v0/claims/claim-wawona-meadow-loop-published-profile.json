@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wawona-meadow-loop-published-profile",
+    "evidence_ids": [
+      "evidence-wawona-meadow-loop-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-wawona-meadow-loop",
+    "temporal_scope": null,
+    "value": {
+      "horses_bicycles_leashed_pets_allowed": true,
+      "objective_entity_ids": [
+        "place-wawona"
+      ],
+      "open_year_round": true,
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-wawona-meadow-loop",
+      "published_time": "1.5 to 2 hours on the trailhead page; 2 to 3 hours on the hikes page",
+      "round_trip_miles": 3.5,
+      "route_form": "loop",
+      "terrain": "mostly flat, uneven"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

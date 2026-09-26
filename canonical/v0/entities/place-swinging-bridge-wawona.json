@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-swinging-bridge-wawona",
+    "kind": "bridge",
+    "name": "Swinging Bridge (Wawona)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

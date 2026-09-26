@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-wawona-trail-water-profile"
+    ],
+    "object_id": "facility-wawona-store-drinking-water",
+    "predicate": "accesses",
+    "relationship_id": "relationship-wawona-store-parking-accesses-water",
+    "subject_id": "access-wawona-store-parking",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

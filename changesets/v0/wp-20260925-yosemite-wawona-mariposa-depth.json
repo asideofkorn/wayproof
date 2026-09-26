@@ -1,0 +1,1947 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-yosemite-wawona-mariposa-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-wawona-hikes.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "source-nps-yosemite-wawona-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "source-nps-yosemite-wawona",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-mariposa-grove.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "source-nps-yosemite-mariposa-grove",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-wawona-meadow-trailhead.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "source-nps-yosemite-wawona-meadow-trailhead",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wawona-hikes-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-yosemite-wawona-hikes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wawona-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-yosemite-wawona-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-mariposa-grove-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-yosemite-mariposa-grove-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wawona-meadow-trailhead-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-yosemite-wawona-meadow-trailhead-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wawona-conditions-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-yosemite-wawona-conditions-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-wawona-mariposa-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "observation-nps-public-pois-wawona-mariposa-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mariposa-grove.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-mariposa-grove",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "scope-wawona",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-mariposa-grove.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "scope-mariposa-grove",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-wawona-meadow-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-swinging-bridge-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-chilnualna-falls.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-chilnualna-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-alder-creek.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-alder-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mosquito-creek-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-mosquito-creek-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-mariposa-grove-arrival.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "trailhead-mariposa-grove-arrival",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-mariposa-grove-welcome-plaza.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "access-mariposa-grove-welcome-plaza",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-mariposa-grove-welcome-shuttle.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "access-mariposa-grove-welcome-shuttle",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-mariposa-grove-arrival-shuttle.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "access-mariposa-grove-arrival-shuttle",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-mariposa-grove-disability-parking.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "access-mariposa-grove-disability-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-wawona-store-parking.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "access-wawona-store-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-wawona-store-drinking-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-wawona-store-drinking-water",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-swinging-bridge-wawona-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-swinging-bridge-wawona-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-chilnualna-falls-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-chilnualna-falls-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-welcome-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-welcome-water",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-welcome-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-welcome-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-arrival-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-arrival-water",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-arrival-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-arrival-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-picnic-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-picnic-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-grizzly-giant-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-grizzly-giant-vault-toilet",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-mariposa-cabin-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-mariposa-cabin-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-wawona-visitor-center.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "facility-wawona-visitor-center",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-chilnualna-falls.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "waterfall-chilnualna-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-alder-creek.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "waterfall-alder-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-swinging-bridge-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/tree-grizzly-giant.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "tree-grizzly-giant",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-mariposa-grove-cabin.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-mariposa-grove-cabin",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-wawona-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-wawona-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-wawona-tunnel-tree.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "place-wawona-tunnel-tree",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-wawona-meadow-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-swinging-bridge-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-chilnualna-falls.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-chilnualna-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-alder-creek-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-alder-creek-wawona",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-mariposa-big-trees-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-mariposa-grizzly-giant-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-mariposa-guardians-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mariposa-grove-to-wawona-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-mariposa-grove-to-wawona-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-washburn-trail-mariposa-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-washburn-trail-mariposa-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "route-mariposa-grove-road-walking-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wawona-meadow-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-wawona-meadow-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wawona-meadow-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-wawona-meadow-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-swinging-bridge-wawona-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-swinging-bridge-wawona-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-swinging-bridge-wawona-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-swinging-bridge-wawona-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-chilnualna-falls-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-chilnualna-falls-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-chilnualna-falls-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-chilnualna-falls-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-alder-creek-wawona-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-alder-creek-wawona-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-alder-creek-wawona-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-alder-creek-wawona-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-big-trees-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-big-trees-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-big-trees-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-big-trees-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grizzly-giant-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grizzly-giant-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grizzly-giant-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grizzly-giant-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-guardians-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-guardians-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-guardians-loop-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-guardians-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-to-wawona-point-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grove-to-wawona-point-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-to-wawona-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-to-wawona-point-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grove-to-wawona-point-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-washburn-trail-mariposa-access-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-washburn-trail-mariposa-access-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-washburn-trail-mariposa-access-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-washburn-trail-mariposa-access-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-road-walking-access-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grove-road-walking-access-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-road-walking-access-published-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grove-road-walking-access-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wawona-access-and-services-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-wawona-access-and-services-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-access-and-services-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wawona-access-and-services-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-wawona-access-and-services-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wawona-trail-water-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-wawona-trail-water-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-trail-water-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wawona-trail-water-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-wawona-trail-water-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-access-profile-2026.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grove-access-profile-2026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-access-profile-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-access-profile-2026.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grove-access-profile-2026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-facility-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grove-facility-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-facility-profile.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grove-facility-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-use-rules.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-mariposa-grove-use-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-use-rules"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-use-rules.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-mariposa-grove-use-rules",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-chilnualna-falls-observed-closure-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-chilnualna-falls-observed-closure-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-observed-closure-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-chilnualna-falls-observed-closure-20260925.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-chilnualna-falls-observed-closure-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-access-and-services-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-located-in-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-access-profile-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-located-in-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-access-and-services-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-contains-campground.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-contains-campground",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-trail-water-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-store-parking-accesses-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-store-parking-accesses-water",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-access-profile-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-welcome-parking-accesses-shuttle.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-welcome-parking-accesses-shuttle",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-access-profile-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-arrival-shuttle-accesses-trailhead.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-arrival-shuttle-accesses-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-access-profile-2026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-disability-parking-accesses-trailhead.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-disability-parking-accesses-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-welcome-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-welcome-water",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-welcome-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-welcome-restroom",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-arrival-water.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-arrival-water",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-arrival-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-arrival-restroom",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-picnic-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-picnic-vault-toilet",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-grizzly-giant-vault-toilet.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-grizzly-giant-vault-toilet",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-facility-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-has-mariposa-cabin-restroom.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-has-mariposa-cabin-restroom",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-meadow-loop-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-meadow-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-wawona-meadow-loop-accesses-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-wawona-meadow-loop-accesses-wawona-meadow-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-meadow-loop-reaches-1-place-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-meadow-loop-reaches-1-place-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wawona-meadow-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-wawona-meadow-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-swinging-bridge-wawona-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-swinging-bridge-wawona-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-swinging-bridge-wawona-accesses-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-swinging-bridge-wawona-accesses-swinging-bridge-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-swinging-bridge-wawona-reaches-1-place-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-swinging-bridge-wawona-reaches-1-place-swinging-bridge-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-swinging-bridge-wawona-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-swinging-bridge-wawona-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-chilnualna-falls-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-chilnualna-falls-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-chilnualna-falls-accesses-chilnualna-falls.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-chilnualna-falls-accesses-chilnualna-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-chilnualna-falls-reaches-1-waterfall-chilnualna-falls.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-chilnualna-falls-reaches-1-waterfall-chilnualna-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-chilnualna-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-chilnualna-falls-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-chilnualna-falls-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-alder-creek-wawona-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-alder-creek-wawona-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-alder-creek-accesses-alder-creek-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-alder-creek-accesses-alder-creek-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-alder-creek-wawona-reaches-1-waterfall-alder-creek.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-alder-creek-wawona-reaches-1-waterfall-alder-creek",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-alder-creek-wawona-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-alder-creek-wawona-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-big-trees-loop-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-big-trees-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-big-trees-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-big-trees-loop-reaches-1-place-mariposa-grove.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-big-trees-loop-reaches-1-place-mariposa-grove",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-big-trees-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-big-trees-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grizzly-giant-loop-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grizzly-giant-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grizzly-giant-loop-reaches-1-tree-grizzly-giant.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grizzly-giant-loop-reaches-1-tree-grizzly-giant",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grizzly-giant-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grizzly-giant-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-guardians-loop-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-guardians-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-guardians-loop-reaches-1-place-wawona-tunnel-tree.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-guardians-loop-reaches-1-place-wawona-tunnel-tree",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-guardians-loop-reaches-2-place-mariposa-grove-cabin.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-guardians-loop-reaches-2-place-mariposa-grove-cabin",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-guardians-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-guardians-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-to-wawona-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-to-wawona-point-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-to-wawona-point-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-to-wawona-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-grove-to-wawona-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-trailhead-mariposa-grove-arrival-accesses-mariposa-grove-to-wawona-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-to-wawona-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-to-wawona-point-reaches-1-place-wawona-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-to-wawona-point-reaches-1-place-wawona-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-to-wawona-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-to-wawona-point-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-to-wawona-point-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-washburn-trail-mariposa-access-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-washburn-trail-mariposa-access-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-mariposa-grove-welcome-plaza-accesses-washburn-trail-mariposa-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-access-mariposa-grove-welcome-plaza-accesses-washburn-trail-mariposa-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-washburn-trail-mariposa-access-reaches-1-trailhead-mariposa-grove-arrival.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-washburn-trail-mariposa-access-reaches-1-trailhead-mariposa-grove-arrival",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-washburn-trail-mariposa-access-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-washburn-trail-mariposa-access-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-road-walking-access-starts-at.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-road-walking-access-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-access-mariposa-grove-welcome-plaza-accesses-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-access-mariposa-grove-welcome-plaza-accesses-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-road-walking-access-reaches-1-trailhead-mariposa-grove-arrival.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-road-walking-access-reaches-1-trailhead-mariposa-grove-arrival",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mariposa-grove-road-walking-access-traverses-yosemite.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "relationship-mariposa-grove-road-walking-access-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-mariposa-grove-arrival-shuttle-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-access-mariposa-grove-arrival-shuttle-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-mariposa-grove-arrival-shuttle-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-mariposa-grove-arrival-shuttle-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-access-mariposa-grove-arrival-shuttle-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-mariposa-grove-disability-parking-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-access-mariposa-grove-disability-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-mariposa-grove-disability-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-mariposa-grove-disability-parking-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-access-mariposa-grove-disability-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-mariposa-grove-welcome-plaza-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-access-mariposa-grove-welcome-plaza-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-mariposa-grove-welcome-plaza-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-mariposa-grove-welcome-plaza-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-access-mariposa-grove-welcome-plaza-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-mariposa-grove-welcome-shuttle-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-access-mariposa-grove-welcome-shuttle-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-mariposa-grove-welcome-shuttle-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-mariposa-grove-welcome-shuttle-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-access-mariposa-grove-welcome-shuttle-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-wawona-store-parking-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-access-wawona-store-parking-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-wawona-store-parking-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-wawona-store-parking-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-access-wawona-store-parking-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-chilnualna-falls-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-chilnualna-falls-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-chilnualna-falls-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-chilnualna-falls-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-chilnualna-falls-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-grizzly-giant-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-grizzly-giant-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-grizzly-giant-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-grizzly-giant-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-grizzly-giant-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-arrival-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-arrival-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-arrival-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-arrival-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-arrival-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-arrival-water-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-arrival-water-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-arrival-water-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-arrival-water-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-arrival-water-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-cabin-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-cabin-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-cabin-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-cabin-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-cabin-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-picnic-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-picnic-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-picnic-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-picnic-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-picnic-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-welcome-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-welcome-restroom-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-welcome-restroom-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-welcome-restroom-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-welcome-restroom-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-mariposa-welcome-water-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-mariposa-welcome-water-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-mariposa-welcome-water-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-mariposa-welcome-water-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-mariposa-welcome-water-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-swinging-bridge-wawona-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-swinging-bridge-wawona-vault-toilet-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-swinging-bridge-wawona-vault-toilet-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-swinging-bridge-wawona-vault-toilet-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-swinging-bridge-wawona-vault-toilet-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-wawona-visitor-center-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-facility-wawona-visitor-center-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-wawona-visitor-center-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-wawona-visitor-center-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-facility-wawona-visitor-center-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-mariposa-grove-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-place-mariposa-grove-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-mariposa-grove-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-mariposa-grove-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-place-mariposa-grove-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-mariposa-grove-cabin-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-place-mariposa-grove-cabin-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-mariposa-grove-cabin-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-mariposa-grove-cabin-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-place-mariposa-grove-cabin-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-wawona-point-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-place-wawona-point-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-wawona-point-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-wawona-point-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-place-wawona-point-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-place-wawona-tunnel-tree-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-place-wawona-tunnel-tree-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-place-wawona-tunnel-tree-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-place-wawona-tunnel-tree-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-place-wawona-tunnel-tree-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-chilnualna-falls-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-trailhead-chilnualna-falls-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-chilnualna-falls-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-chilnualna-falls-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-trailhead-chilnualna-falls-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-mariposa-grove-arrival-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-trailhead-mariposa-grove-arrival-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-mariposa-grove-arrival-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-mariposa-grove-arrival-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-trailhead-mariposa-grove-arrival-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-swinging-bridge-wawona-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-trailhead-swinging-bridge-wawona-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-swinging-bridge-wawona-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-swinging-bridge-wawona-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-trailhead-swinging-bridge-wawona-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-wawona-meadow-loop-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-trailhead-wawona-meadow-loop-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-wawona-meadow-loop-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-wawona-meadow-loop-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-trailhead-wawona-meadow-loop-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-tree-grizzly-giant-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-tree-grizzly-giant-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-tree-grizzly-giant-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-tree-grizzly-giant-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-tree-grizzly-giant-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-chilnualna-falls-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "evidence-waterfall-chilnualna-falls-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-chilnualna-falls-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-chilnualna-falls-map-point.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "claim-waterfall-chilnualna-falls-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-wawona-mariposa-route-topology.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "gap-yosemite-wawona-mariposa-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-mariposa-wawona-point-distance-conflict.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "gap-yosemite-mariposa-wawona-point-distance-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-wawona-mariposa-trip-date-operations.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "gap-yosemite-wawona-mariposa-trip-date-operations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-wawona-trailhead-parking-capacity.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove planning depth.",
+      "record_id": "gap-yosemite-wawona-trailhead-parking-capacity",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Wawona and Mariposa Grove routes, access, parking, shuttle operations, water, restrooms, rules, reviewed map points, dated closure evidence, and explicit gaps."
+}

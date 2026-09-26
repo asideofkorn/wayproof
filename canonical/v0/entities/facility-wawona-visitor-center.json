@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-wawona-visitor-center",
+    "kind": "visitor_center",
+    "name": "Wawona Visitor Center at Hill's Studio"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
