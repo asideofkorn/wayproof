@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-lembert-summit-map",
+      "evidence-segment-tuolumne-lembert-summit-dataset"
+    ],
+    "object_id": "route-dog-lake-lembert-dome",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-lembert-summit-part-of-dog-lake-lembert-dome",
+    "subject_id": "route-segment-tuolumne-lembert-summit",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

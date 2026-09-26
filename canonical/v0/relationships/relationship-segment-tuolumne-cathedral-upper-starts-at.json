@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-upper-map",
+      "evidence-segment-tuolumne-cathedral-upper-dataset"
+    ],
+    "object_id": "route-node-tuolumne-cathedral-02",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-cathedral-upper-starts-at",
+    "subject_id": "route-segment-tuolumne-cathedral-upper",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

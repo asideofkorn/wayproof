@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-cathedral-upper",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-cathedral-upper-map",
+      "evidence-segment-tuolumne-cathedral-upper-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-cathedral-upper",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.87203926219901,
+        "longitude": -119.3838255028351
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20885",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20885",
+      "source_feature_name": "John Muir Trail",
+      "source_geometry_id": "{2A1879B2-EA08-4362-9E7B-1583C05916AC}",
+      "start_coordinate": {
+        "latitude": 37.851377321010254,
+        "longitude": -119.4149621795829
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

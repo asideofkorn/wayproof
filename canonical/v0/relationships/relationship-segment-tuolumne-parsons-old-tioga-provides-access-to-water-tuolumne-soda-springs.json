@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-parsons-old-tioga-map",
+      "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+    ],
+    "object_id": "water-tuolumne-soda-springs",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-segment-tuolumne-parsons-old-tioga-provides-access-to-water-tuolumne-soda-springs",
+    "subject_id": "route-segment-tuolumne-parsons-old-tioga",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

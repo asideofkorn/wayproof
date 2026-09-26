@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-dog-lower-connector",
+    "kind": "route_segment",
+    "name": "Dog Lake lower mapped connector"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

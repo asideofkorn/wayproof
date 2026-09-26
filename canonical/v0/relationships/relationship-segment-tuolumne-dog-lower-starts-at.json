@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-lower-map",
+      "evidence-segment-tuolumne-dog-lower-dataset"
+    ],
+    "object_id": "route-node-tuolumne-dog-02",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-dog-lower-starts-at",
+    "subject_id": "route-segment-tuolumne-dog-lower",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

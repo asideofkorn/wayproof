@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-young-32",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-young-32-map",
+      "evidence-segment-tuolumne-young-32-dataset"
+    ],
+    "predicate": "printed_atomic_route_distance_miles",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-young-32",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 3.2,
+      "distance_status": "printed_on_official_map",
+      "end_coordinate": {
+        "latitude": 37.92836589668656,
+        "longitude": -119.36732185560271
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-19869",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "19869",
+      "source_feature_name": null,
+      "source_geometry_id": "{D0A3612E-387D-442E-B7A4-3E728C4D178C}",
+      "start_coordinate": {
+        "latitude": 37.888564221975734,
+        "longitude": -119.38074021922661
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

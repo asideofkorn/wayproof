@@ -161,6 +161,10 @@ file is missing.
 
 ## Attribution
 
+- Tuolumne Meadows route display geometry: National Park Service Public Trails
+  Feature Service (public-domain U.S. government data), reviewed against the
+  official 2024 Tuolumne Meadows Trails map; the map image itself is referenced
+  but not redistributed.
 - Sierra Peaks list & ratings: Sierra Club, Angeles Chapter, Sierra Peaks
   Section — <https://angeles.sierraclub.org/sierra_peaks>
 - Coordinates: U.S. Geological Survey, Geographic Names Information System

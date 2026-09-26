@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-lembert-parking-pct",
+    "kind": "route_segment",
+    "name": "Lembert parking to PCT connector"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

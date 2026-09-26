@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-mono-pass",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-mono-pass-map",
+      "evidence-segment-tuolumne-mono-pass-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-mono-pass",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.8578596944446,
+        "longitude": -119.2231591127193
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-21483",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "21483",
+      "source_feature_name": null,
+      "source_geometry_id": "{56C17F29-9247-48CF-A38B-A05520113D4F}",
+      "start_coordinate": {
+        "latitude": 37.867847376385555,
+        "longitude": -119.23710300916828
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

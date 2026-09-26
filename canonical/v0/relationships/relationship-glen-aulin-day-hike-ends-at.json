@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-glen-aulin-day-hike-published-profile"
+    ],
+    "object_id": "place-glen-aulin",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-glen-aulin-day-hike-ends-at",
+    "subject_id": "route-glen-aulin-day-hike",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

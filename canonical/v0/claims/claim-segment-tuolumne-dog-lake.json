@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-dog-lake",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-lake-map",
+      "evidence-segment-tuolumne-dog-lake-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-dog-lake",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.89082712285851,
+        "longitude": -119.3437727704019
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-15981",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "15981",
+      "source_feature_name": "Dog Lake Trail",
+      "source_geometry_id": "{0F97CF43-C130-46F8-A7D4-C7E8A18C5799}",
+      "start_coordinate": {
+        "latitude": 37.88841500945351,
+        "longitude": -119.34623621953024
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

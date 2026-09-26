@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-parsons-approach-south",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-parsons-approach-south-map",
+      "evidence-segment-tuolumne-parsons-approach-south-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-parsons-approach-south",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.87775368995603,
+        "longitude": -119.3669295047116
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-21950",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "21950",
+      "source_feature_name": null,
+      "source_geometry_id": "{89E95401-B499-46D7-B5AA-FC45422ECDFA}",
+      "start_coordinate": {
+        "latitude": 37.877938752032854,
+        "longitude": -119.36610677159747
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-lake-map",
+      "evidence-segment-tuolumne-dog-lake-dataset"
+    ],
+    "object_id": "route-node-tuolumne-dog-05",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-dog-lake-starts-at",
+    "subject_id": "route-segment-tuolumne-dog-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

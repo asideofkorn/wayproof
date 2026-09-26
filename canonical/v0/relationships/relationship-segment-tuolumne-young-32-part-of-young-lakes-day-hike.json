@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-young-32-map",
+      "evidence-segment-tuolumne-young-32-dataset"
+    ],
+    "object_id": "route-young-lakes-day-hike",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-young-32-part-of-young-lakes-day-hike",
+    "subject_id": "route-segment-tuolumne-young-32",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

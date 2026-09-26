@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-lake-map",
+      "evidence-segment-tuolumne-dog-lake-dataset"
+    ],
+    "object_id": "route-dog-lake-lembert-dome",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-dog-lake-part-of-dog-lake-lembert-dome",
+    "subject_id": "route-segment-tuolumne-dog-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

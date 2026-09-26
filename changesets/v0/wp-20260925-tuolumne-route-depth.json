@@ -1,0 +1,3327 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-tuolumne-route-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-tuolumne-trails-map-2024.json",
+      "reason": "Identify the official map used to transcribe route topology and printed mileages.",
+      "record_id": "source-nps-yosemite-tuolumne-trails-map-2024",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-tuolumne-trails-map-20260925.json",
+      "reason": "Preserve what the official route map states and its use limitation.",
+      "record_id": "observation-nps-yosemite-tuolumne-trails-map-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-tuolumne-20260925.json",
+      "reason": "Preserve the reviewed public trail-feature snapshot used for route display geometry.",
+      "record_id": "observation-nps-public-trails-tuolumne-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pothole-source-start.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pothole-source-start",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pothole-access.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pothole-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pothole-access-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pothole-access-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-access-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pothole-access.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pothole-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-access-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-access-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pothole-access-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-access-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-access-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pothole-access-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-access-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-access-part-of-pothole-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pothole-access-part-of-pothole-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pothole-dome.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pothole-dome",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pothole-dome-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pothole-dome-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pothole-dome-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-pothole-dome-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-dome-map",
+        "evidence-segment-tuolumne-pothole-dome-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pothole-dome.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pothole-dome",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-dome-map",
+        "evidence-segment-tuolumne-pothole-dome-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-dome-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pothole-dome-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-dome-map",
+        "evidence-segment-tuolumne-pothole-dome-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-dome-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pothole-dome-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pothole-dome-map",
+        "evidence-segment-tuolumne-pothole-dome-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pothole-dome-part-of-pothole-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pothole-dome-part-of-pothole-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-parsons-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-parsons-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-parsons-02.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-parsons-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-parsons-03.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-parsons-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-parsons-old-tioga.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-parsons-old-tioga",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-old-tioga-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-old-tioga-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-old-tioga-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-old-tioga-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-old-tioga-map",
+        "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-parsons-old-tioga.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-parsons-old-tioga",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-old-tioga-map",
+        "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-old-tioga-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-old-tioga-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-old-tioga-map",
+        "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-old-tioga-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-old-tioga-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-old-tioga-map",
+        "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-old-tioga-part-of-parsons-lodge-soda-springs.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-parsons-old-tioga-part-of-parsons-lodge-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-old-tioga-map",
+        "evidence-segment-tuolumne-parsons-old-tioga-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-old-tioga-provides-access-to-water-tuolumne-soda-springs.json",
+      "reason": "Expose an explicitly mapped resource reached from this leg.",
+      "record_id": "relationship-segment-tuolumne-parsons-old-tioga-provides-access-to-water-tuolumne-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-parsons-meadow-connector.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-parsons-meadow-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-meadow-connector-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-meadow-connector-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-meadow-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-parsons-meadow-connector.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-parsons-meadow-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-meadow-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-meadow-connector-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-meadow-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-meadow-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-meadow-connector-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-meadow-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-meadow-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-meadow-connector-part-of-parsons-lodge-soda-springs.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-parsons-meadow-connector-part-of-parsons-lodge-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-parsons-approach-south.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-parsons-approach-south",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-approach-south-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-approach-south-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-approach-south-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-approach-south-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-approach-south-map",
+        "evidence-segment-tuolumne-parsons-approach-south-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-parsons-approach-south.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-parsons-approach-south",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-approach-south-map",
+        "evidence-segment-tuolumne-parsons-approach-south-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-approach-south-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-approach-south-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-approach-south-map",
+        "evidence-segment-tuolumne-parsons-approach-south-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-approach-south-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-approach-south-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-approach-south-map",
+        "evidence-segment-tuolumne-parsons-approach-south-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-approach-south-part-of-parsons-lodge-soda-springs.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-parsons-approach-south-part-of-parsons-lodge-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-parsons-lodge.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-parsons-lodge",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-lodge-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-lodge-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-parsons-lodge-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-parsons-lodge-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-lodge-map",
+        "evidence-segment-tuolumne-parsons-lodge-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-parsons-lodge.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-parsons-lodge",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-lodge-map",
+        "evidence-segment-tuolumne-parsons-lodge-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-lodge-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-lodge-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-lodge-map",
+        "evidence-segment-tuolumne-parsons-lodge-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-lodge-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-parsons-lodge-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-parsons-lodge-map",
+        "evidence-segment-tuolumne-parsons-lodge-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-parsons-lodge-part-of-parsons-lodge-soda-springs.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-parsons-lodge-part-of-parsons-lodge-soda-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-dog-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-dog-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-dog-02.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-dog-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-dog-03.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-dog-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-dog-04.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-dog-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-parking.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-parking-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-parking-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-parking-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-dog-parking-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-parking-map",
+        "evidence-segment-tuolumne-dog-parking-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-parking.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-parking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-parking-map",
+        "evidence-segment-tuolumne-dog-parking-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-parking-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-parking-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-parking-map",
+        "evidence-segment-tuolumne-dog-parking-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-parking-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-parking-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-parking-map",
+        "evidence-segment-tuolumne-dog-parking-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-parking-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-parking-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-lower-connector.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-lower-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-lower-connector-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-lower-connector-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-lower-connector.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-lower-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-connector-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-connector-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-connector-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-connector-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-lower.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-lower",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-lower-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-lower-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-lower-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-dog-lower-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-map",
+        "evidence-segment-tuolumne-dog-lower-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-lower.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-lower",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-map",
+        "evidence-segment-tuolumne-dog-lower-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-map",
+        "evidence-segment-tuolumne-dog-lower-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lower-map",
+        "evidence-segment-tuolumne-dog-lower-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lower-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-lower-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-shared.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-shared",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-shared-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-shared-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-shared-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-dog-shared-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-shared-map",
+        "evidence-segment-tuolumne-dog-shared-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-shared.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-shared",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-shared-map",
+        "evidence-segment-tuolumne-dog-shared-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-shared-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-shared-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-shared-map",
+        "evidence-segment-tuolumne-dog-shared-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-shared-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-shared-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-shared-map",
+        "evidence-segment-tuolumne-dog-shared-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-shared-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-shared-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-dog-05.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-dog-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-upper-junction.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-upper-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-upper-junction-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-upper-junction-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-upper-junction-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-dog-upper-junction-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-upper-junction-map",
+        "evidence-segment-tuolumne-dog-upper-junction-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-upper-junction.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-upper-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-upper-junction-map",
+        "evidence-segment-tuolumne-dog-upper-junction-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-upper-junction-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-upper-junction-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-upper-junction-map",
+        "evidence-segment-tuolumne-dog-upper-junction-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-upper-junction-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-upper-junction-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-upper-junction-map",
+        "evidence-segment-tuolumne-dog-upper-junction-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-upper-junction-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-upper-junction-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-dog-lake.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-dog-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-lake-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-dog-lake-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-dog-lake-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-dog-lake-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lake-map",
+        "evidence-segment-tuolumne-dog-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-dog-lake.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-dog-lake",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lake-map",
+        "evidence-segment-tuolumne-dog-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lake-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lake-map",
+        "evidence-segment-tuolumne-dog-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lake-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-dog-lake-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-dog-lake-map",
+        "evidence-segment-tuolumne-dog-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-dog-lake-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-dog-lake-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-lembert-summit.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-lembert-summit",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-lembert-summit-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-lembert-summit-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-lembert-summit-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-lembert-summit-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-summit-map",
+        "evidence-segment-tuolumne-lembert-summit-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-lembert-summit.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-lembert-summit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-summit-map",
+        "evidence-segment-tuolumne-lembert-summit-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-summit-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-lembert-summit-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-summit-map",
+        "evidence-segment-tuolumne-lembert-summit-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-summit-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-lembert-summit-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-summit-map",
+        "evidence-segment-tuolumne-lembert-summit-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-summit-part-of-dog-lake-lembert-dome.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-lembert-summit-part-of-dog-lake-lembert-dome",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-gaylor-07.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-gaylor-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-gaylor-approach.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-gaylor-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-gaylor-approach-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-gaylor-approach-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-gaylor-approach-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-gaylor-approach-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-approach-map",
+        "evidence-segment-tuolumne-gaylor-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-gaylor-approach.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-gaylor-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-approach-map",
+        "evidence-segment-tuolumne-gaylor-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-approach-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-gaylor-approach-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-approach-map",
+        "evidence-segment-tuolumne-gaylor-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-approach-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-gaylor-approach-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-approach-map",
+        "evidence-segment-tuolumne-gaylor-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-approach-part-of-gaylor-lakes.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-gaylor-approach-part-of-gaylor-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-gaylor-lake.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-gaylor-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-gaylor-lake-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-gaylor-lake-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-gaylor-lake-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-gaylor-lake-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-lake-map",
+        "evidence-segment-tuolumne-gaylor-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-gaylor-lake.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-gaylor-lake",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-lake-map",
+        "evidence-segment-tuolumne-gaylor-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-lake-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-gaylor-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-lake-map",
+        "evidence-segment-tuolumne-gaylor-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-lake-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-gaylor-lake-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-gaylor-lake-map",
+        "evidence-segment-tuolumne-gaylor-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-gaylor-lake-part-of-gaylor-lakes.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-gaylor-lake-part-of-gaylor-lakes",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-elizabeth-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-elizabeth-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-elizabeth-access.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-elizabeth-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-elizabeth-access-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-elizabeth-access-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-elizabeth-access-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-elizabeth-access-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-access-map",
+        "evidence-segment-tuolumne-elizabeth-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-elizabeth-access.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-elizabeth-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-access-map",
+        "evidence-segment-tuolumne-elizabeth-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-access-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-access-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-access-map",
+        "evidence-segment-tuolumne-elizabeth-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-access-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-access-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-access-map",
+        "evidence-segment-tuolumne-elizabeth-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-access-part-of-elizabeth-lake-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-access-part-of-elizabeth-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-elizabeth-lake.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-elizabeth-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-elizabeth-lake-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-elizabeth-lake-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-elizabeth-lake-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-elizabeth-lake-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-lake-map",
+        "evidence-segment-tuolumne-elizabeth-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-elizabeth-lake.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-elizabeth-lake",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-lake-map",
+        "evidence-segment-tuolumne-elizabeth-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-lake-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-lake-map",
+        "evidence-segment-tuolumne-elizabeth-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-lake-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-lake-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-elizabeth-lake-map",
+        "evidence-segment-tuolumne-elizabeth-lake-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-elizabeth-lake-part-of-elizabeth-lake-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-elizabeth-lake-part-of-elizabeth-lake-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-cathedral-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-cathedral-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-cathedral-02.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-cathedral-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-cathedral-access.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-cathedral-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-access-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-access-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-access-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-access-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-access-map",
+        "evidence-segment-tuolumne-cathedral-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-cathedral-access.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-cathedral-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-access-map",
+        "evidence-segment-tuolumne-cathedral-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-access-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-access-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-access-map",
+        "evidence-segment-tuolumne-cathedral-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-access-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-access-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-access-map",
+        "evidence-segment-tuolumne-cathedral-access-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-access-part-of-cathedral-lakes-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-cathedral-access-part-of-cathedral-lakes-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-cathedral-jmt-connector.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-cathedral-jmt-connector",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-jmt-connector-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-jmt-connector-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-jmt-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-cathedral-jmt-connector.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-cathedral-jmt-connector",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-jmt-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-jmt-connector-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-jmt-connector-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-jmt-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-jmt-connector-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-jmt-connector-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-jmt-connector-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-jmt-connector-part-of-cathedral-lakes-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-cathedral-jmt-connector-part-of-cathedral-lakes-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-cathedral-upper.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-cathedral-upper",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-upper-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-upper-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-upper-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-upper-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-upper-map",
+        "evidence-segment-tuolumne-cathedral-upper-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-cathedral-upper.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-cathedral-upper",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-upper-map",
+        "evidence-segment-tuolumne-cathedral-upper-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-upper-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-upper-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-upper-map",
+        "evidence-segment-tuolumne-cathedral-upper-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-upper-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-upper-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-upper-map",
+        "evidence-segment-tuolumne-cathedral-upper-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-upper-part-of-cathedral-lakes-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-cathedral-upper-part-of-cathedral-lakes-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-cathedral-lower-spur.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-cathedral-lower-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-lower-spur-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-lower-spur-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-cathedral-lower-spur-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-cathedral-lower-spur-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-lower-spur-map",
+        "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-cathedral-lower-spur.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-cathedral-lower-spur",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-lower-spur-map",
+        "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-lower-spur-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-lower-spur-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-lower-spur-map",
+        "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-lower-spur-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-cathedral-lower-spur-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-cathedral-lower-spur-map",
+        "evidence-segment-tuolumne-cathedral-lower-spur-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-cathedral-lower-spur-part-of-cathedral-lakes-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-cathedral-lower-spur-part-of-cathedral-lakes-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-mono-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-mono-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-mono-approach.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-mono-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-mono-approach-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-mono-approach-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-mono-approach-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-mono-approach-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-approach-map",
+        "evidence-segment-tuolumne-mono-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-mono-approach.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-mono-approach",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-approach-map",
+        "evidence-segment-tuolumne-mono-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-approach-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-mono-approach-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-approach-map",
+        "evidence-segment-tuolumne-mono-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-approach-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-mono-approach-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-approach-map",
+        "evidence-segment-tuolumne-mono-approach-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-approach-part-of-mono-pass-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-mono-approach-part-of-mono-pass-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-mono-pass.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-mono-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-mono-pass-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-mono-pass-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-mono-pass-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-mono-pass-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-pass-map",
+        "evidence-segment-tuolumne-mono-pass-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-mono-pass.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-mono-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-pass-map",
+        "evidence-segment-tuolumne-mono-pass-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-pass-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-mono-pass-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-pass-map",
+        "evidence-segment-tuolumne-mono-pass-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-pass-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-mono-pass-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-mono-pass-map",
+        "evidence-segment-tuolumne-mono-pass-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-mono-pass-part-of-mono-pass-yosemite.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-mono-pass-part-of-mono-pass-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pct-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pct-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pct-02.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pct-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pct-03.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pct-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pct-04.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pct-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-pct-05.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-pct-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-lembert-parking-pct.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-lembert-parking-pct",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-lembert-parking-pct-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-lembert-parking-pct-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-parking-pct-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-lembert-parking-pct.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-lembert-parking-pct",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-parking-pct-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-parking-pct-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-lembert-parking-pct-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-parking-pct-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-parking-pct-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-lembert-parking-pct-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-parking-pct-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-parking-pct-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-lembert-parking-pct-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-lembert-parking-pct-map"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-lembert-parking-pct-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-lembert-parking-pct-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pct-01.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pct-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-01-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pct-01-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-01-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-pct-01-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-01-map",
+        "evidence-segment-tuolumne-pct-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pct-01.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pct-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-01-map",
+        "evidence-segment-tuolumne-pct-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-01-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-01-map",
+        "evidence-segment-tuolumne-pct-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-01-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-01-map",
+        "evidence-segment-tuolumne-pct-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-01-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-01-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-01-map",
+        "evidence-segment-tuolumne-pct-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-01-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-01-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pct-02.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pct-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-02-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pct-02-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-02-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-pct-02-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-02-map",
+        "evidence-segment-tuolumne-pct-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pct-02.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pct-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-02-map",
+        "evidence-segment-tuolumne-pct-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-02-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-02-map",
+        "evidence-segment-tuolumne-pct-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-02-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-02-map",
+        "evidence-segment-tuolumne-pct-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-02-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-02-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-02-map",
+        "evidence-segment-tuolumne-pct-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-02-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-02-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pct-03.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pct-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-03-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pct-03-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-03-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-pct-03-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-03-map",
+        "evidence-segment-tuolumne-pct-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pct-03.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pct-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-03-map",
+        "evidence-segment-tuolumne-pct-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-03-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-03-map",
+        "evidence-segment-tuolumne-pct-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-03-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-03-map",
+        "evidence-segment-tuolumne-pct-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-03-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-03-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-03-map",
+        "evidence-segment-tuolumne-pct-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-03-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-03-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-pct-04.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-pct-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-04-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-pct-04-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-pct-04-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-pct-04-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-04-map",
+        "evidence-segment-tuolumne-pct-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-pct-04.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-pct-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-04-map",
+        "evidence-segment-tuolumne-pct-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-04-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-04-map",
+        "evidence-segment-tuolumne-pct-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-04-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-pct-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-04-map",
+        "evidence-segment-tuolumne-pct-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-04-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-04-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-pct-04-map",
+        "evidence-segment-tuolumne-pct-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-pct-04-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-pct-04-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-02.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-03.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-04.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-05.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-06.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-07.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-glen-08.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-glen-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-01.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-01-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-01-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-01-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-01-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-01-map",
+        "evidence-segment-tuolumne-glen-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-01.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-01",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-01-map",
+        "evidence-segment-tuolumne-glen-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-01-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-01-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-01-map",
+        "evidence-segment-tuolumne-glen-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-01-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-01-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-01-map",
+        "evidence-segment-tuolumne-glen-01-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-01-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-01-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-02.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-02-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-02-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-02-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-02-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-02-map",
+        "evidence-segment-tuolumne-glen-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-02.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-02",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-02-map",
+        "evidence-segment-tuolumne-glen-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-02-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-02-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-02-map",
+        "evidence-segment-tuolumne-glen-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-02-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-02-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-02-map",
+        "evidence-segment-tuolumne-glen-02-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-02-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-02-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-03.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-03-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-03-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-03-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-03-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-03-map",
+        "evidence-segment-tuolumne-glen-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-03.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-03",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-03-map",
+        "evidence-segment-tuolumne-glen-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-03-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-03-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-03-map",
+        "evidence-segment-tuolumne-glen-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-03-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-03-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-03-map",
+        "evidence-segment-tuolumne-glen-03-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-03-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-03-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-04.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-04-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-04-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-04-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-04-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-04-map",
+        "evidence-segment-tuolumne-glen-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-04.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-04",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-04-map",
+        "evidence-segment-tuolumne-glen-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-04-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-04-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-04-map",
+        "evidence-segment-tuolumne-glen-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-04-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-04-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-04-map",
+        "evidence-segment-tuolumne-glen-04-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-04-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-04-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-05.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-05-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-05-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-05-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-05-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-05-map",
+        "evidence-segment-tuolumne-glen-05-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-05.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-05",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-05-map",
+        "evidence-segment-tuolumne-glen-05-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-05-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-05-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-05-map",
+        "evidence-segment-tuolumne-glen-05-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-05-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-05-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-05-map",
+        "evidence-segment-tuolumne-glen-05-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-05-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-05-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-06.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-06-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-06-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-06-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-06-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-06-map",
+        "evidence-segment-tuolumne-glen-06-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-06.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-06",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-06-map",
+        "evidence-segment-tuolumne-glen-06-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-06-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-06-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-06-map",
+        "evidence-segment-tuolumne-glen-06-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-06-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-06-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-06-map",
+        "evidence-segment-tuolumne-glen-06-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-06-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-06-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-07.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-07-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-07-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-07-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-07-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-07-map",
+        "evidence-segment-tuolumne-glen-07-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-07.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-07",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-07-map",
+        "evidence-segment-tuolumne-glen-07-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-07-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-07-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-07-map",
+        "evidence-segment-tuolumne-glen-07-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-07-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-07-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-07-map",
+        "evidence-segment-tuolumne-glen-07-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-07-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-07-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-08.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-08-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-08-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-08-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-08-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-08-map",
+        "evidence-segment-tuolumne-glen-08-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-08.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-08",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-08-map",
+        "evidence-segment-tuolumne-glen-08-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-08-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-08-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-08-map",
+        "evidence-segment-tuolumne-glen-08-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-08-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-08-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-08-map",
+        "evidence-segment-tuolumne-glen-08-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-08-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-08-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-glen-09.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-glen-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-09-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-glen-09-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-glen-09-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-glen-09-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-09-map",
+        "evidence-segment-tuolumne-glen-09-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-glen-09.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-glen-09",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-09-map",
+        "evidence-segment-tuolumne-glen-09-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-09-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-09-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-09-map",
+        "evidence-segment-tuolumne-glen-09-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-09-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-glen-09-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-glen-09-map",
+        "evidence-segment-tuolumne-glen-09-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-glen-09-part-of-glen-aulin-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-glen-09-part-of-glen-aulin-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-tuolumne-young-01.json",
+      "reason": "Create an explicit reviewed route junction or connector endpoint.",
+      "record_id": "route-node-tuolumne-young-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-young-32.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-young-32",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-young-32-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-young-32-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-young-32-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-young-32-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-32-map",
+        "evidence-segment-tuolumne-young-32-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-young-32.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-young-32",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-32-map",
+        "evidence-segment-tuolumne-young-32-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-32-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-young-32-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-32-map",
+        "evidence-segment-tuolumne-young-32-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-32-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-young-32-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-32-map",
+        "evidence-segment-tuolumne-young-32-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-32-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-young-32-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-tuolumne-young-18.json",
+      "reason": "Publish one atomic, explicitly connected Tuolumne route leg.",
+      "record_id": "route-segment-tuolumne-young-18",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-young-18-map.json",
+      "reason": "Link the official route-map review to the segment claim.",
+      "record_id": "evidence-segment-tuolumne-young-18-map",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-segment-tuolumne-young-18-dataset.json",
+      "reason": "Link the NPS trail feature to the segment geometry claim.",
+      "record_id": "evidence-segment-tuolumne-young-18-dataset",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-18-map",
+        "evidence-segment-tuolumne-young-18-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-segment-tuolumne-young-18.json",
+      "reason": "Publish the reviewed segment topology, source identity, and bounded distance status.",
+      "record_id": "claim-segment-tuolumne-young-18",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-18-map",
+        "evidence-segment-tuolumne-young-18-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-18-starts-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-young-18-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-18-map",
+        "evidence-segment-tuolumne-young-18-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-18-ends-at.json",
+      "reason": "Connect the segment to its explicit reviewed endpoint.",
+      "record_id": "relationship-segment-tuolumne-young-18-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-segment-tuolumne-young-18-map",
+        "evidence-segment-tuolumne-young-18-dataset"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-segment-tuolumne-young-18-part-of-young-lakes-day-hike.json",
+      "reason": "Attach the reviewed physical leg to the named day-hike route.",
+      "record_id": "relationship-segment-tuolumne-young-18-part-of-young-lakes-day-hike",
+      "record_type": "relationship"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-tuolumne-route-segment-topology.json",
+      "reason": "Narrow the earlier blanket topology gap after nine route graphs were reviewed.",
+      "record_id": "gap-tuolumne-route-segment-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-pothole-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-pothole-dome-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-pothole-dome-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-parsons-lodge-soda-springs-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-parsons-lodge-soda-springs-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-parsons-lodge-soda-springs-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dog-lake-lembert-dome-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-dog-lake-lembert-dome-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-dog-lake-lembert-dome-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-gaylor-lakes-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-gaylor-lakes-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-gaylor-lakes-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-elizabeth-lake-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-elizabeth-lake-yosemite-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-elizabeth-lake-yosemite-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-cathedral-lakes-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-cathedral-lakes-yosemite-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-cathedral-lakes-yosemite-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mono-pass-yosemite-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-mono-pass-yosemite-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-mono-pass-yosemite-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-glen-aulin-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-glen-aulin-day-hike-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-glen-aulin-day-hike-ends-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-young-lakes-day-hike-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-young-lakes-day-hike-ends-at.json",
+      "reason": "Select the source-backed primary objective for deterministic route-map assembly.",
+      "record_id": "relationship-young-lakes-day-hike-ends-at",
+      "record_type": "relationship"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish reviewed NPS segment topology and display geometry for nine Tuolumne Meadows day hikes, including shared corridors and map-printed legs, while narrowing the unresolved gap to Twin Bridges."
+}

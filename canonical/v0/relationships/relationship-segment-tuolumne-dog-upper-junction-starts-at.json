@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-upper-junction-map",
+      "evidence-segment-tuolumne-dog-upper-junction-dataset"
+    ],
+    "object_id": "route-node-tuolumne-dog-04",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-dog-upper-junction-starts-at",
+    "subject_id": "route-segment-tuolumne-dog-upper-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

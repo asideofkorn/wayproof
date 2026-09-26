@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-glen-03-map",
+      "evidence-segment-tuolumne-glen-03-dataset"
+    ],
+    "object_id": "route-glen-aulin-day-hike",
+    "predicate": "part_of",
+    "relationship_id": "relationship-segment-tuolumne-glen-03-part-of-glen-aulin-day-hike",
+    "subject_id": "route-segment-tuolumne-glen-03",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

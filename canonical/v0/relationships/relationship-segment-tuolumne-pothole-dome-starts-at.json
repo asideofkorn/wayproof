@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-pothole-dome-map",
+      "evidence-segment-tuolumne-pothole-dome-dataset"
+    ],
+    "object_id": "route-node-tuolumne-pothole-source-start",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-segment-tuolumne-pothole-dome-starts-at",
+    "subject_id": "route-segment-tuolumne-pothole-dome",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

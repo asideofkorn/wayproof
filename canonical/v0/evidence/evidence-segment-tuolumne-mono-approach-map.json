@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-mono-approach",
+    "evidence_id": "evidence-segment-tuolumne-mono-approach-map",
+    "notes": "Official map confirms route membership and junction sequence.",
+    "observation_id": "observation-nps-yosemite-tuolumne-trails-map-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

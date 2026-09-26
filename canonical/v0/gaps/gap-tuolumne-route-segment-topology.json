@@ -2,19 +2,11 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-tuolumne-route-segment-topology",
-    "question": "Which reviewed NPS trail-feature segments form each published Tuolumne day hike from its exact parking access to every turnaround or objective?",
-    "reason": "NPS publishes authoritative hike profiles and a public trail dataset, but route assembly across shared and unnamed trail features still requires feature-by-feature review; proximity alone is not access or topology.",
+    "question": "Which official line geometry connects Dog Lake parking to Twin Bridges along the published Tuolumne day hike?",
+    "reason": "The NPS day-hike page and official map support the Twin Bridges destination and approximately three-mile round trip, but the reviewed public trail features do not expose a direct matching line from Dog Lake parking. The route remains coarse rather than inferring a connector from proximity.",
     "related_ids": [
-      "route-pothole-dome",
-      "route-parsons-lodge-soda-springs",
       "route-twin-bridges-tuolumne",
-      "route-gaylor-lakes",
-      "route-dog-lake-lembert-dome",
-      "route-elizabeth-lake-yosemite",
-      "route-cathedral-lakes-yosemite",
-      "route-mono-pass-yosemite",
-      "route-glen-aulin-day-hike",
-      "route-young-lakes-day-hike",
+      "source-nps-yosemite-tuolumne-trails-map-2024",
       "source-nps-public-trails-feature-service"
     ]
   },

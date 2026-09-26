@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-lembert-summit",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-lembert-summit-map",
+      "evidence-segment-tuolumne-lembert-summit-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-lembert-summit",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.8819374487873,
+        "longitude": -119.34701540491406
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-17076",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "17076",
+      "source_feature_name": "Lembert Dome Trail",
+      "source_geometry_id": "{064B0B6F-8645-4D73-B846-C7C10FB33085}",
+      "start_coordinate": {
+        "latitude": 37.88331765047144,
+        "longitude": -119.33933916080842
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

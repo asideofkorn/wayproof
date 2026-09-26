@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-pct-02",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-pct-02-map",
+      "evidence-segment-tuolumne-pct-02-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-pct-02",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.878970534064294,
+        "longitude": -119.36701624386566
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-15716",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "15716",
+      "source_feature_name": "Pacific Crest Trail",
+      "source_geometry_id": "{6B2A04AB-65C9-4C42-8BEA-8A89D8E83FB4}",
+      "start_coordinate": {
+        "latitude": 37.878810079185044,
+        "longitude": -119.36513381553745
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

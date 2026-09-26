@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-tuolumne-pct-05",
+    "kind": "route_node",
+    "name": "Young Lakes and Glen Aulin split"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

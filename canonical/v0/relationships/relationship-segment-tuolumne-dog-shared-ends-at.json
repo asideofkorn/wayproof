@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-segment-tuolumne-dog-shared-map",
+      "evidence-segment-tuolumne-dog-shared-dataset"
+    ],
+    "object_id": "route-node-tuolumne-dog-04",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-segment-tuolumne-dog-shared-ends-at",
+    "subject_id": "route-segment-tuolumne-dog-shared",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

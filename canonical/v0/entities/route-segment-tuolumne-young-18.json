@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-tuolumne-young-18",
+    "kind": "route_segment",
+    "name": "Young Lakes 1.8-mile final approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

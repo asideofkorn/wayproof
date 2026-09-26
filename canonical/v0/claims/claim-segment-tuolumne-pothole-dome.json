@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-segment-tuolumne-pothole-dome",
+    "evidence_ids": [
+      "evidence-segment-tuolumne-pothole-dome-map",
+      "evidence-segment-tuolumne-pothole-dome-dataset"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-tuolumne-meadows"
+    ],
+    "subject_id": "route-segment-tuolumne-pothole-dome",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_printed",
+      "end_coordinate": {
+        "latitude": 37.87890339044286,
+        "longitude": -119.3893896155388
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-16038",
+        "path": "geometry/v0/snapshots/nps-yose-tuolumne-route-features-20260925.geojson",
+        "sha256": "d53d6a93e218c53b4e74f2e134bdcc7d97f4f8cc132c56979d650a6851a14069"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "16038",
+      "source_feature_name": null,
+      "source_geometry_id": "{AEC29FA5-2EFD-46B2-A65B-B7A57D34CE9B}",
+      "start_coordinate": {
+        "latitude": 37.87686910188254,
+        "longitude": -119.39450278614588
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
