@@ -407,7 +407,18 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
     """Render an interactive map from generated route GeoJSON."""
     features = geometry["features"]
     total = geometry["wayproof"]["distance_miles"]
+    distance_complete = geometry["wayproof"].get("distance_complete", False)
     is_loop = geometry["wayproof"].get("route_shape") == "loop"
+    if distance_complete:
+        distance_label = (
+            f"{round(total, 2)} miles mapped loop"
+            if is_loop
+            else f"{round(total, 2)} miles one way"
+        )
+    elif total:
+        distance_label = f"{round(total, 2)} known miles; total incomplete"
+    else:
+        distance_label = "Segment mileage unavailable"
     interactive_map = (
         '<div class="interactive-route-map" data-interactive-route-map '
         f'data-geometry-url="{_e(geometry_url)}">'
@@ -431,11 +442,11 @@ def _route_map_html(geometry: dict, geometry_url: str) -> str:
         + interactive_map + '<div class="route-map-legend">'
         + (
             '<span><i class="start-dot"></i>Start / finish</span>'
-            f'<span>{_e(round(total, 2))} miles mapped loop</span></div>'
+            f'<span>{_e(distance_label)}</span></div>'
             if is_loop else
             '<span><i class="start-dot"></i>Start</span>'
             '<span><i class="end-dot"></i>Destination</span>'
-            f'<span>{_e(round(total, 2))} miles one way</span></div>'
+            f'<span>{_e(distance_label)}</span></div>'
         )
         + f'<p class="meta"><a href="{_e(geometry_url)}">Download generated GeoJSON</a> · '
         f'{len(features)} canonical segments · source geometry accuracy not reported</p>'
