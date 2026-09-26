@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-glacier-point-nps-segment-21957",
+    "evidence_ids": [
+      "evidence-yosemite-glacier-point-nps-segment-21957"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-segment-yosemite-glacier-point-nps-21957",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.7243603,
+        "longitude": -119.5829525
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-21957",
+        "path": "geometry/v0/snapshots/nps-yose-glacier-point-route-features-20260926.geojson",
+        "sha256": "e71a49b4b6ef4d9fc7f3dca35cf1b13a834aca949d607ba5a0736eaca1e7457d"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "21957",
+      "source_feature_name": "Sentinel Dome Trail",
+      "source_geometry_id": "{EBB6EEB8-98FA-4D00-91F1-5E3516232770}",
+      "start_coordinate": {
+        "latitude": 37.7232768,
+        "longitude": -119.5842299
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

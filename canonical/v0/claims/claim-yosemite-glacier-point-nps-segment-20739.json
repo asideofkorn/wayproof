@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-glacier-point-nps-segment-20739",
+    "evidence_ids": [
+      "evidence-yosemite-glacier-point-nps-segment-20739"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-segment-yosemite-glacier-point-nps-20739",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.7126337,
+        "longitude": -119.603841
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-20739",
+        "path": "geometry/v0/snapshots/nps-yose-glacier-point-route-features-20260926.geojson",
+        "sha256": "e71a49b4b6ef4d9fc7f3dca35cf1b13a834aca949d607ba5a0736eaca1e7457d"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "20739",
+      "source_feature_name": "Pohono Trail",
+      "source_geometry_id": "{0AB2A9E5-08A6-4303-99CB-A1FCD291F23D}",
+      "start_coordinate": {
+        "latitude": 37.7132117,
+        "longitude": -119.6055584
+      },
+      "surface": "Unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

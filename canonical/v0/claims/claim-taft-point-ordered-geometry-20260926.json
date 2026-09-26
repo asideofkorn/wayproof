@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taft-point-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-taft-point-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-glacier-point-road-corridor"
+    ],
+    "subject_id": "route-taft-point",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "published_at_route_level_only",
+      "route_shape": "out_and_back_objective_corridor",
+      "segment_ids": [
+        "route-segment-yosemite-glacier-point-nps-22472",
+        "route-segment-yosemite-glacier-point-nps-19778",
+        "route-segment-yosemite-glacier-point-nps-15277",
+        "route-segment-yosemite-glacier-point-nps-20739"
+      ],
+      "start_node_id": "trailhead-sentinel-dome-taft-point"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

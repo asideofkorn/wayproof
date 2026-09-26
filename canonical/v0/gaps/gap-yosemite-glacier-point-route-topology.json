@@ -2,8 +2,8 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-yosemite-glacier-point-route-topology",
-    "question": "Which reviewed NPS trail features form each Glacier Point Road route, loop, connector, and exact turnaround?",
-    "reason": "Official pages establish route identities and profiles, but continuous topology requires a separate reviewed geometry pass.",
+    "question": "Which reviewed NPS features and explicit connectors complete the remaining Glacier Point Road routes, loops, junctions, and turnarounds?",
+    "reason": "Sentinel Dome, Taft Point, and McGurk Meadow now have exact-endpoint route graphs. The combined loop, overlook, Mono Meadow, Dewey Point, Ostrander Lake, Panorama, and full Pohono connectors remain unresolved; nearby or unnamed lines are not joined without route-specific review.",
     "related_ids": [
       "route-glacier-point-overlook",
       "route-mcgurk-meadow",
@@ -14,7 +14,8 @@
       "route-dewey-point",
       "route-ostrander-lake",
       "route-panorama-trail",
-      "route-pohono-glacier-point-to-tunnel-view"
+      "route-pohono-glacier-point-to-tunnel-view",
+      "source-nps-public-trails-feature-service"
     ]
   },
   "record_type": "gap",

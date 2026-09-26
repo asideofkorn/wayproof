@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-glacier-point-nps-segment-22472"
+    ],
+    "object_id": "route-taft-point",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-glacier-point-nps-22472-part-of-taft-point",
+    "subject_id": "route-segment-yosemite-glacier-point-nps-22472",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
