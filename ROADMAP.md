@@ -114,8 +114,8 @@ the same service layer.
   output only as the underlying M1 services expand.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
-- Deliver evidence explanations and navigation in phases under proposed
-  [ADR 0003](docs/adr/0003-media-analysis-and-evidence-navigation.md):
+- Deliver existing-record evidence explanations and navigation under proposed
+  [ADR 0003](docs/adr/0003-evidence-explanations-and-navigation.md):
   - First, use existing canonical records to show observation content,
     attribution, evidence stance and limitations, distinct observation and
     retrieval dates, and readable gap comparisons. Preserve multiple
@@ -124,9 +124,6 @@ the same service layer.
     related-place backlinks, plus accessible section and next/previous
     navigation. Users should understand an observation's relevance before
     opening its original source.
-  - After the separately reviewed schema extension, expose media references,
-    author clarifications, distinct capture/publication dates, and selected
-    analysis history. Generate all projections through shared read services.
   **Gate:** users can understand a gap and compare its evidence in place;
   unknown dates and locations remain explicit, and links never imply current
   conditions or independent corroboration merely through repetition.
@@ -187,11 +184,22 @@ without granting direct canonical write access.
 - Ingest URLs, issues, artifacts, field reports, GPX, and supported structured
   sources into candidate observations/evidence.
 - Design and separately review the media-provenance and repeatable-analysis
-  extension proposed in [ADR 0003](docs/adr/0003-media-analysis-and-evidence-navigation.md)
+  extension proposed in [ADR 0004](docs/adr/0004-repeatable-media-analysis.md)
   before changing Schema v0. Keep original source material, attributed author
   statements, and Wayproof analysis distinct. Support attachment identity and
   order, explicit comment-to-media mappings, qualified dates and locations,
-  and multiple immutable analysis runs over identified media versions.
+  and multiple analysis runs over identified media versions, subject to
+  redaction/deletion policy. Findings must enter typed Evidence through an
+  attributed Observation; Claims continue referencing Evidence IDs only.
+- Before media processing launches, implement and test ADR 0004 privacy/safety
+  gates: minimization, contribution versus public-source scope, EXIF handling,
+  sensitive locations and faces/plates, retention and deletion propagation,
+  permitted processing destinations, and untrusted media/OCR isolation. Enforce
+  the [source exclusion policy](docs/source-exclusions.md) before collection,
+  analysis, and publication. This is independent of M2 evidence UI acceptance.
+- After separate schema approval, expose media references, author
+  clarifications, distinct dates, and reviewed analysis history through shared
+  read services without introducing a direct Claim-to-analysis path.
 - Add bounded ingestion and reprocessing only after that contract is reviewed.
   New runs do not overwrite earlier findings or automatically publish claims,
   resolve gaps, or add destination backlinks. Source exclusions remain in
