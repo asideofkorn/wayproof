@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-22788",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-22788"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-22788",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5430732,
+        "longitude": -119.6276915
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-22788",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "22788",
+      "source_feature_name": "Wawona Swinging Bridge Trail",
+      "source_geometry_id": "{3DB00918-3E19-44C5-BC86-C8FB069071B1}",
+      "start_coordinate": {
+        "latitude": 37.5445757,
+        "longitude": -119.627278
+      },
+      "surface": "Unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

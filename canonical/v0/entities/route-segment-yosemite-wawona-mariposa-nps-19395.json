@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-19395",
+    "kind": "route_segment",
+    "name": "Washburn Trail segment 19395"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

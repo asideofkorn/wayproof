@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-15579",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-15579"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-15579",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5066632,
+        "longitude": -119.6275798
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-15579",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "15579",
+      "source_feature_name": "Washburn Trail",
+      "source_geometry_id": "{5D599496-E3B1-416E-AF9E-DCDE94CE1729}",
+      "start_coordinate": {
+        "latitude": 37.4998637,
+        "longitude": -119.6212645
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

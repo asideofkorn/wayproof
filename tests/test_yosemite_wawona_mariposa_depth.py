@@ -40,7 +40,7 @@ def test_routes_have_sourced_starts_objectives_and_visible_topology_gap():
         assert profile.value["operational_status_requires_current_check"] is True
         assert any(edge.subject_id == route_id and edge.predicate == "starts_at" for edge in relationships.values())
         assert any(edge.subject_id == route_id and edge.predicate == "reaches" for edge in relationships.values())
-    assert set(gaps["gap-yosemite-wawona-mariposa-route-topology"].related_ids) == ROUTES
+    assert ROUTES <= set(gaps["gap-yosemite-wawona-mariposa-route-topology"].related_ids)
 
 
 def test_access_facilities_distance_disagreement_and_closure_are_preserved():

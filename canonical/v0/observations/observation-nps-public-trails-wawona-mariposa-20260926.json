@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [
+      "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson"
+    ],
+    "content": "Reviewed NPS Public Trails features identify exact segment endpoints for eight unbranched named Wawona and Mariposa Grove corridors; route membership follows the official trail names already described by NPS route pages. Chilnualna Falls remains excluded because its named dataset features branch and do not establish one mainline.",
+    "observation_id": "observation-nps-public-trails-wawona-mariposa-20260926",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-26T00:00:00+00:00",
+    "source_id": "source-nps-public-trails-feature-service"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

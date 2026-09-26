@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wawona-meadow-loop-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-wawona-meadow-loop-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-wawona-meadow-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-16611",
+        "route-segment-yosemite-wawona-mariposa-nps-16837",
+        "route-segment-yosemite-wawona-mariposa-nps-16770"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-18"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

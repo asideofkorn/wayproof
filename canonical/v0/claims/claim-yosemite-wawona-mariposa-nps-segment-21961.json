@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-21961",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-21961"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-21961",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.502731,
+        "longitude": -119.609013
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-21961",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "21961",
+      "source_feature_name": "Big Trees Loop Trail",
+      "source_geometry_id": "{B0EB34EC-2933-4B83-AE40-8A647EE285AC}",
+      "start_coordinate": {
+        "latitude": 37.5028008,
+        "longitude": -119.6092414
+      },
+      "surface": "Wood"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

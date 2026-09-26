@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-16837"
+    ],
+    "object_id": "route-wawona-meadow-loop",
+    "predicate": "part_of",
+    "relationship_id": "relationship-yosemite-wawona-mariposa-nps-16837-part-of-wawona-meadow-loop",
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-16837",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

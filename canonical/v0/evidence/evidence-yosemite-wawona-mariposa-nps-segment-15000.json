@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-15000",
+    "evidence_id": "evidence-yosemite-wawona-mariposa-nps-segment-15000",
+    "notes": "",
+    "observation_id": "observation-nps-public-trails-wawona-mariposa-20260926",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

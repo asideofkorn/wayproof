@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-alder-creek-wawona-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-alder-creek-wawona-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-alder-creek-wawona",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-20409"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-34"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

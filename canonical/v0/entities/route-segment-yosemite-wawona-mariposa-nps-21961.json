@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-21961",
+    "kind": "route_segment",
+    "name": "Big Trees Loop Trail segment 21961"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

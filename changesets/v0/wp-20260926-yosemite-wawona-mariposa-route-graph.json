@@ -1,0 +1,2380 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260926-yosemite-wawona-mariposa-route-graph",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-trails-wawona-mariposa-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "observation-nps-public-trails-wawona-mariposa-20260926",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-15000.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-15000",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-15000.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-15000",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15000"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-15000.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-15000",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-01.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-01",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-02.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-02",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15000"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15000-starts-at-node-yosemite-wawona-mariposa-01.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15000-starts-at-node-yosemite-wawona-mariposa-01",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15000"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15000-ends-at-node-yosemite-wawona-mariposa-02.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15000-ends-at-node-yosemite-wawona-mariposa-02",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15000"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15000-part-of-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15000-part-of-swinging-bridge-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-15103.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-15103",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-15103.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-15103",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15103"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-15103.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-15103",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-03.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-03",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-04.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-04",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15103"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15103-starts-at-node-yosemite-wawona-mariposa-03.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15103-starts-at-node-yosemite-wawona-mariposa-03",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15103"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15103-ends-at-node-yosemite-wawona-mariposa-04.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15103-ends-at-node-yosemite-wawona-mariposa-04",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15103"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15103-part-of-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15103-part-of-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-15148.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-15148",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-15148.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-15148",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15148"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-15148.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-15148",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-05.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-05",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-06.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-06",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15148"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15148-starts-at-node-yosemite-wawona-mariposa-05.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15148-starts-at-node-yosemite-wawona-mariposa-05",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15148"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15148-ends-at-node-yosemite-wawona-mariposa-06.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15148-ends-at-node-yosemite-wawona-mariposa-06",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15148"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15148-part-of-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15148-part-of-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-15579.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-15579",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-15579.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-15579",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15579"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-15579.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-15579",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-07.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-07",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-08.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-08",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15579"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15579-starts-at-node-yosemite-wawona-mariposa-07.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15579-starts-at-node-yosemite-wawona-mariposa-07",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15579"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15579-ends-at-node-yosemite-wawona-mariposa-08.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15579-ends-at-node-yosemite-wawona-mariposa-08",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-15579"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-15579-part-of-washburn-trail-mariposa-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-15579-part-of-washburn-trail-mariposa-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16026.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16026",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16026.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16026",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16026.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16026",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-09.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-09",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-10.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-10",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16026-starts-at-node-yosemite-wawona-mariposa-09.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16026-starts-at-node-yosemite-wawona-mariposa-09",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16026-ends-at-node-yosemite-wawona-mariposa-10.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16026-ends-at-node-yosemite-wawona-mariposa-10",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16026"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16026-part-of-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16026-part-of-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16226.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16226",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16226.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16226",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16226"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16226.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16226",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-11.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-11",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-12.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-12",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16226"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16226-starts-at-node-yosemite-wawona-mariposa-11.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16226-starts-at-node-yosemite-wawona-mariposa-11",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16226"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16226-ends-at-node-yosemite-wawona-mariposa-12.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16226-ends-at-node-yosemite-wawona-mariposa-12",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16226"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16226-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16226-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16239.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16239",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16239.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16239",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16239"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16239.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16239",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-13.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-13",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16239"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16239-starts-at-node-yosemite-wawona-mariposa-13.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16239-starts-at-node-yosemite-wawona-mariposa-13",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16239"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16239-ends-at-node-yosemite-wawona-mariposa-10.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16239-ends-at-node-yosemite-wawona-mariposa-10",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16239"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16239-part-of-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16239-part-of-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16290.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16290",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16290.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16290",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16290"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16290.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16290",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-14.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-14",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16290"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16290-starts-at-node-yosemite-wawona-mariposa-14.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16290-starts-at-node-yosemite-wawona-mariposa-14",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16290"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16290-ends-at-node-yosemite-wawona-mariposa-03.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16290-ends-at-node-yosemite-wawona-mariposa-03",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16290"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16290-part-of-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16290-part-of-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16389.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16389",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16389.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16389",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16389"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16389.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16389",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-15.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-15",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-16.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-16",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16389"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16389-starts-at-node-yosemite-wawona-mariposa-15.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16389-starts-at-node-yosemite-wawona-mariposa-15",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16389"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16389-ends-at-node-yosemite-wawona-mariposa-16.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16389-ends-at-node-yosemite-wawona-mariposa-16",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16389"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16389-part-of-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16389-part-of-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16611.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16611",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16611.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16611",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16611"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16611.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16611",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-17.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-17",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-18.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-18",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16611"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16611-starts-at-node-yosemite-wawona-mariposa-17.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16611-starts-at-node-yosemite-wawona-mariposa-17",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16611"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16611-ends-at-node-yosemite-wawona-mariposa-18.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16611-ends-at-node-yosemite-wawona-mariposa-18",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16611"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16611-part-of-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16611-part-of-wawona-meadow-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16770.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16770",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16770.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16770",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16770"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16770.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16770",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-19.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-19",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-20.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-20",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16770"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16770-starts-at-node-yosemite-wawona-mariposa-19.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16770-starts-at-node-yosemite-wawona-mariposa-19",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16770"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16770-ends-at-node-yosemite-wawona-mariposa-20.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16770-ends-at-node-yosemite-wawona-mariposa-20",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16770"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16770-part-of-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16770-part-of-wawona-meadow-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-16837.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-16837",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-16837.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-16837",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16837"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-16837.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-16837",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16837"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16837-starts-at-node-yosemite-wawona-mariposa-20.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16837-starts-at-node-yosemite-wawona-mariposa-20",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16837"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16837-ends-at-node-yosemite-wawona-mariposa-17.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16837-ends-at-node-yosemite-wawona-mariposa-17",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-16837"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-16837-part-of-wawona-meadow-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-16837-part-of-wawona-meadow-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-17198.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-17198",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-17198.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-17198",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17198"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-17198.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-17198",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-21.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-21",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-22.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-22",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17198"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17198-starts-at-node-yosemite-wawona-mariposa-21.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17198-starts-at-node-yosemite-wawona-mariposa-21",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17198"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17198-ends-at-node-yosemite-wawona-mariposa-22.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17198-ends-at-node-yosemite-wawona-mariposa-22",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17198"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17198-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17198-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-17265.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-17265",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-17265.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-17265",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17265"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-17265.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-17265",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17265"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17265-starts-at-node-yosemite-wawona-mariposa-16.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17265-starts-at-node-yosemite-wawona-mariposa-16",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17265"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17265-ends-at-node-yosemite-wawona-mariposa-13.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17265-ends-at-node-yosemite-wawona-mariposa-13",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17265"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17265-part-of-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17265-part-of-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-17380.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-17380",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-17380.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-17380",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17380"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-17380.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-17380",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-23.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-23",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17380"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17380-starts-at-node-yosemite-wawona-mariposa-04.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17380-starts-at-node-yosemite-wawona-mariposa-04",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17380"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17380-ends-at-node-yosemite-wawona-mariposa-23.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17380-ends-at-node-yosemite-wawona-mariposa-23",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17380"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17380-part-of-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17380-part-of-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-17942.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-17942",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-17942.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-17942",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17942"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-17942.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-17942",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-24.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-24",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-25.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-25",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17942"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17942-starts-at-node-yosemite-wawona-mariposa-24.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17942-starts-at-node-yosemite-wawona-mariposa-24",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17942"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17942-ends-at-node-yosemite-wawona-mariposa-25.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17942-ends-at-node-yosemite-wawona-mariposa-25",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-17942"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-17942-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-17942-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-18212.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-18212",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-18212.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-18212",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18212"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-18212.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-18212",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-26.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-26",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-27.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-27",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18212"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18212-starts-at-node-yosemite-wawona-mariposa-26.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18212-starts-at-node-yosemite-wawona-mariposa-26",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18212"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18212-ends-at-node-yosemite-wawona-mariposa-27.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18212-ends-at-node-yosemite-wawona-mariposa-27",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18212"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18212-part-of-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18212-part-of-mariposa-big-trees-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-18351.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-18351",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-18351.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-18351",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18351"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-18351.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-18351",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18351"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18351-starts-at-node-yosemite-wawona-mariposa-27.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18351-starts-at-node-yosemite-wawona-mariposa-27",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18351"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18351-ends-at-node-yosemite-wawona-mariposa-15.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18351-ends-at-node-yosemite-wawona-mariposa-15",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18351"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18351-part-of-mariposa-grizzly-giant-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18351-part-of-mariposa-grizzly-giant-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-18911.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-18911",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-18911.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-18911",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18911"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-18911.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-18911",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-28.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-28",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-29.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-29",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18911"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18911-starts-at-node-yosemite-wawona-mariposa-28.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18911-starts-at-node-yosemite-wawona-mariposa-28",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18911"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18911-ends-at-node-yosemite-wawona-mariposa-29.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18911-ends-at-node-yosemite-wawona-mariposa-29",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18911"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18911-part-of-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18911-part-of-mariposa-big-trees-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-18921.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-18921",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-18921.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-18921",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18921"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-18921.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-18921",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-30.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-30",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18921"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18921-starts-at-node-yosemite-wawona-mariposa-22.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18921-starts-at-node-yosemite-wawona-mariposa-22",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18921"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18921-ends-at-node-yosemite-wawona-mariposa-30.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18921-ends-at-node-yosemite-wawona-mariposa-30",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-18921"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-18921-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-18921-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-19395.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-19395",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-19395.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-19395",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19395"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-19395.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-19395",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-31.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-31",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19395"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19395-starts-at-node-yosemite-wawona-mariposa-31.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19395-starts-at-node-yosemite-wawona-mariposa-31",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19395"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19395-ends-at-node-yosemite-wawona-mariposa-07.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19395-ends-at-node-yosemite-wawona-mariposa-07",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19395"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19395-part-of-washburn-trail-mariposa-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19395-part-of-washburn-trail-mariposa-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-19890.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-19890",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-19890.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-19890",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19890"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-19890.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-19890",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-32.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-32",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-33.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-33",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19890"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19890-starts-at-node-yosemite-wawona-mariposa-32.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19890-starts-at-node-yosemite-wawona-mariposa-32",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19890"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19890-ends-at-node-yosemite-wawona-mariposa-33.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19890-ends-at-node-yosemite-wawona-mariposa-33",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-19890"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-19890-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-19890-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-20409.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-20409",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-20409.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-20409",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20409"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-20409.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-20409",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-34.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-34",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-35.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-35",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20409"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20409-starts-at-node-yosemite-wawona-mariposa-34.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20409-starts-at-node-yosemite-wawona-mariposa-34",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20409"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20409-ends-at-node-yosemite-wawona-mariposa-35.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20409-ends-at-node-yosemite-wawona-mariposa-35",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20409"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20409-part-of-alder-creek-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20409-part-of-alder-creek-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-20654.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-20654",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-20654.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-20654",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20654"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-20654.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-20654",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20654"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20654-starts-at-node-yosemite-wawona-mariposa-21.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20654-starts-at-node-yosemite-wawona-mariposa-21",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20654"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20654-ends-at-node-yosemite-wawona-mariposa-11.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20654-ends-at-node-yosemite-wawona-mariposa-11",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-20654"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-20654-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-20654-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-21647.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-21647",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-21647.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-21647",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21647"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-21647.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-21647",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-36.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-36",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21647"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21647-starts-at-node-yosemite-wawona-mariposa-27.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21647-starts-at-node-yosemite-wawona-mariposa-27",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21647"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21647-ends-at-node-yosemite-wawona-mariposa-36.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21647-ends-at-node-yosemite-wawona-mariposa-36",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21647"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21647-part-of-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21647-part-of-mariposa-big-trees-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-21664.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-21664",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-21664.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-21664",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21664"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-21664.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-21664",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21664"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21664-starts-at-node-yosemite-wawona-mariposa-12.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21664-starts-at-node-yosemite-wawona-mariposa-12",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21664"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21664-ends-at-node-yosemite-wawona-mariposa-32.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21664-ends-at-node-yosemite-wawona-mariposa-32",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21664"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21664-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21664-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-21874.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-21874",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-21874.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-21874",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21874"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-21874.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-21874",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21874"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21874-starts-at-node-yosemite-wawona-mariposa-33.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21874-starts-at-node-yosemite-wawona-mariposa-33",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21874"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21874-ends-at-node-yosemite-wawona-mariposa-24.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21874-ends-at-node-yosemite-wawona-mariposa-24",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21874"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21874-part-of-mariposa-guardians-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21874-part-of-mariposa-guardians-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-21961.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-21961",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-21961.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-21961",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21961"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-21961.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-21961",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21961"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21961-starts-at-node-yosemite-wawona-mariposa-36.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21961-starts-at-node-yosemite-wawona-mariposa-36",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21961"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21961-ends-at-node-yosemite-wawona-mariposa-28.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21961-ends-at-node-yosemite-wawona-mariposa-28",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-21961"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-21961-part-of-mariposa-big-trees-loop.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-21961-part-of-mariposa-big-trees-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-22364.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-22364",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-22364.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-22364",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22364"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-22364.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-22364",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22364"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22364-starts-at-node-yosemite-wawona-mariposa-23.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22364-starts-at-node-yosemite-wawona-mariposa-23",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22364"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22364-ends-at-node-yosemite-wawona-mariposa-05.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22364-ends-at-node-yosemite-wawona-mariposa-05",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22364"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22364-part-of-mariposa-grove-road-walking-access.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22364-part-of-mariposa-grove-road-walking-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-yosemite-wawona-mariposa-nps-22788.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-segment-yosemite-wawona-mariposa-nps-22788",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-yosemite-wawona-mariposa-nps-segment-22788.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-yosemite-wawona-mariposa-nps-segment-22788",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22788"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-yosemite-wawona-mariposa-nps-segment-22788.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-yosemite-wawona-mariposa-nps-segment-22788",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-yosemite-wawona-mariposa-37.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "route-node-yosemite-wawona-mariposa-37",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22788"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22788-starts-at-node-yosemite-wawona-mariposa-01.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22788-starts-at-node-yosemite-wawona-mariposa-01",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22788"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22788-ends-at-node-yosemite-wawona-mariposa-37.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22788-ends-at-node-yosemite-wawona-mariposa-37",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-yosemite-wawona-mariposa-nps-segment-22788"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-yosemite-wawona-mariposa-nps-22788-part-of-swinging-bridge-wawona.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "relationship-yosemite-wawona-mariposa-nps-22788-part-of-swinging-bridge-wawona",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wawona-meadow-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-wawona-meadow-loop-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wawona-meadow-loop-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wawona-meadow-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-wawona-meadow-loop-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-swinging-bridge-wawona-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-swinging-bridge-wawona-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-swinging-bridge-wawona-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-swinging-bridge-wawona-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-swinging-bridge-wawona-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-alder-creek-wawona-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-alder-creek-wawona-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-alder-creek-wawona-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-alder-creek-wawona-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-alder-creek-wawona-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-big-trees-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-mariposa-big-trees-loop-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-big-trees-loop-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-big-trees-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-mariposa-big-trees-loop-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grizzly-giant-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-mariposa-grizzly-giant-loop-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grizzly-giant-loop-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grizzly-giant-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-mariposa-grizzly-giant-loop-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-guardians-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-mariposa-guardians-loop-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-guardians-loop-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-guardians-loop-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-mariposa-guardians-loop-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-washburn-trail-mariposa-access-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-washburn-trail-mariposa-access-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-washburn-trail-mariposa-access-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-washburn-trail-mariposa-access-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-washburn-trail-mariposa-access-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-mariposa-grove-road-walking-access-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "evidence-mariposa-grove-road-walking-access-ordered-geometry-20260926",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-mariposa-grove-road-walking-access-ordered-geometry-20260926"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-mariposa-grove-road-walking-access-ordered-geometry-20260926.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "claim-mariposa-grove-road-walking-access-ordered-geometry-20260926",
+      "record_type": "claim"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-wawona-mariposa-route-topology.json",
+      "reason": "Add reviewed Wawona and Mariposa Grove trail-segment topology.",
+      "record_id": "gap-yosemite-wawona-mariposa-route-topology",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Publish eight reviewed unbranched official trail-segment chains for Wawona and Mariposa Grove while preserving Chilnualna branching and unsupported endpoint joins as a narrowed gap."
+}

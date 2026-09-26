@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-17265",
+    "kind": "route_segment",
+    "name": "Grizzly Giant Loop Trail segment 17265"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-yosemite-wawona-mariposa-23",
+    "kind": "route_node",
+    "name": "Wawona/Mariposa route junction 23"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

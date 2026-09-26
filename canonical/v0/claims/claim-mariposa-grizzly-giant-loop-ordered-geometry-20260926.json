@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grizzly-giant-loop-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-mariposa-grizzly-giant-loop-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-grizzly-giant-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-18351",
+        "route-segment-yosemite-wawona-mariposa-nps-16389",
+        "route-segment-yosemite-wawona-mariposa-nps-17265",
+        "route-segment-yosemite-wawona-mariposa-nps-16239",
+        "route-segment-yosemite-wawona-mariposa-nps-16026"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-27"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

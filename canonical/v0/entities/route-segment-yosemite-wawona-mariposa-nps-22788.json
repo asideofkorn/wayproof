@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-yosemite-wawona-mariposa-nps-22788",
+    "kind": "route_segment",
+    "name": "Wawona Swinging Bridge Trail segment 22788"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

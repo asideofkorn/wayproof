@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-big-trees-loop-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-mariposa-big-trees-loop-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-big-trees-loop",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-18212",
+        "route-segment-yosemite-wawona-mariposa-nps-21647",
+        "route-segment-yosemite-wawona-mariposa-nps-21961",
+        "route-segment-yosemite-wawona-mariposa-nps-18911"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-26"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

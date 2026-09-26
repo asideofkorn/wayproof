@@ -2,19 +2,20 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-yosemite-wawona-mariposa-route-topology",
-    "question": "Which reviewed NPS trail features form each Wawona and Mariposa Grove route, variant, junction, and turnaround?",
-    "reason": "Official pages establish named routes, starts, objectives, profiles, and access approaches; continuous feature-by-feature topology requires a separate reviewed geometry pass.",
+    "question": "Which explicit connectors join the reviewed named NPS trail components to route starts, objectives, loop closures, and published alternatives?",
+    "reason": "Eight unbranched named official trail chains and exact shared endpoints are now published. Chilnualna Falls' branched named features, physical trailhead/objective joins, and loop-closing connectors remain unresolved unless an official route map or description establishes them; proximity is not used.",
     "related_ids": [
       "route-wawona-meadow-loop",
       "route-swinging-bridge-wawona",
-      "route-chilnualna-falls",
       "route-alder-creek-wawona",
       "route-mariposa-big-trees-loop",
       "route-mariposa-grizzly-giant-loop",
       "route-mariposa-guardians-loop",
-      "route-mariposa-grove-to-wawona-point",
       "route-washburn-trail-mariposa-access",
-      "route-mariposa-grove-road-walking-access"
+      "route-mariposa-grove-road-walking-access",
+      "route-chilnualna-falls",
+      "route-mariposa-grove-to-wawona-point",
+      "source-nps-public-trails-feature-service"
     ]
   },
   "record_type": "gap",

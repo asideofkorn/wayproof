@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-mariposa-grove-road-walking-access-ordered-geometry-20260926",
+    "evidence_ids": [
+      "evidence-mariposa-grove-road-walking-access-ordered-geometry-20260926"
+    ],
+    "predicate": "ordered_route_geometry",
+    "spatial_scope_ids": [
+      "scope-mariposa-grove"
+    ],
+    "subject_id": "route-mariposa-grove-road-walking-access",
+    "temporal_scope": null,
+    "value": {
+      "distance_status": "not_published_at_segment_level",
+      "route_shape": "corridor",
+      "segment_ids": [
+        "route-segment-yosemite-wawona-mariposa-nps-16290",
+        "route-segment-yosemite-wawona-mariposa-nps-15103",
+        "route-segment-yosemite-wawona-mariposa-nps-17380",
+        "route-segment-yosemite-wawona-mariposa-nps-22364",
+        "route-segment-yosemite-wawona-mariposa-nps-15148"
+      ],
+      "start_node_id": "route-node-yosemite-wawona-mariposa-14"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

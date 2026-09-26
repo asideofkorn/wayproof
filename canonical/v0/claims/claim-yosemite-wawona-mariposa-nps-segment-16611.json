@@ -1,0 +1,39 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-yosemite-wawona-mariposa-nps-segment-16611",
+    "evidence_ids": [
+      "evidence-yosemite-wawona-mariposa-nps-segment-16611"
+    ],
+    "predicate": "official_dataset_route_segment",
+    "spatial_scope_ids": [
+      "scope-wawona"
+    ],
+    "subject_id": "route-segment-yosemite-wawona-mariposa-nps-16611",
+    "temporal_scope": null,
+    "value": {
+      "allowed_uses": "Hiker/Pedestrian|Pack and Saddle|Bicycle",
+      "distance_status": "not_published_at_segment_level",
+      "end_coordinate": {
+        "latitude": 37.5358985,
+        "longitude": -119.656673
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-trail-16611",
+        "path": "geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson",
+        "sha256": "f89a4338c0a8c7b6c7e10933eb0da4bfdc60ab6034e21d04fc28821cb694f187"
+      },
+      "route_role": "official_mainline",
+      "source_feature_id": "16611",
+      "source_feature_name": "Wawona Meadow Loop Trail",
+      "source_geometry_id": "{7AA99084-5535-44EA-B786-7C2C28A5794F}",
+      "start_coordinate": {
+        "latitude": 37.5229757,
+        "longitude": -119.6362855
+      },
+      "surface": "Native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
