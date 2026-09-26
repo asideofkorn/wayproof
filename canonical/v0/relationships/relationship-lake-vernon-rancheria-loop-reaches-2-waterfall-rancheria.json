@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-lake-vernon-rancheria-loop-published-profile"
+    ],
+    "object_id": "waterfall-rancheria",
+    "predicate": "reaches",
+    "relationship_id": "relationship-lake-vernon-rancheria-loop-reaches-2-waterfall-rancheria",
+    "subject_id": "route-lake-vernon-rancheria-loop",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

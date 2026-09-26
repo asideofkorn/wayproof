@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Hetch Hetchy travel time, daylight-only road access, parking-delay context, winter road constraints, and reservoir use restrictions.",
+    "observation_id": "observation-nps-yosemite-hetch-hetchy-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-hetch-hetchy"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

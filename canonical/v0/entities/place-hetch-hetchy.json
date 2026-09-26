@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-hetch-hetchy",
+    "kind": "place",
+    "name": "Hetch Hetchy Valley"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-hetch-hetchy-trip-date-operations",
+    "question": "Which gate hours, road restrictions, parking conditions, fire effects, and trail conditions apply on the visit date?",
+    "reason": "These conditions are volatile and require a contextual current check.",
+    "related_ids": [
+      "place-hetch-hetchy",
+      "source-nps-yosemite-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

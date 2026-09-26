@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "Hetch Hetchy visitor area and explicitly connected trail corridors",
+    "entity_id": "place-hetch-hetchy",
+    "kind": "place",
+    "scope_id": "scope-hetch-hetchy"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

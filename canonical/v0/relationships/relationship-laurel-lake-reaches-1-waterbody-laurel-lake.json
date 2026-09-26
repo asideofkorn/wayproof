@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-laurel-lake-published-profile"
+    ],
+    "object_id": "waterbody-laurel-lake",
+    "predicate": "reaches",
+    "relationship_id": "relationship-laurel-lake-reaches-1-waterbody-laurel-lake",
+    "subject_id": "route-laurel-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

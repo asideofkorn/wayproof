@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-smith-peak-entrance-published-profile",
+    "evidence_ids": [
+      "evidence-smith-peak-entrance-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-smith-peak-entrance",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 3300,
+      "objective_entity_ids": [
+        "peak-smith"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "entrance-yosemite-hetch-hetchy",
+      "round_trip_miles": 16.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-yosemite-hetch-hetchy-route-topology",
+    "question": "Which reviewed NPS trail features form each Hetch Hetchy route and exact access connector?",
+    "reason": "Official sources establish route identities and profiles; continuous topology requires a separate reviewed geometry pass.",
+    "related_ids": [
+      "route-hetch-hetchy-lookout-point",
+      "route-wapama-falls",
+      "route-rancheria-falls",
+      "route-smith-peak-main",
+      "route-smith-peak-entrance",
+      "route-poopenaut-valley",
+      "route-laurel-lake",
+      "route-lake-vernon-rancheria-loop"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

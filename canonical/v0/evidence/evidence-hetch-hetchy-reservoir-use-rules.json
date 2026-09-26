@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hetch-hetchy-reservoir-use-rules",
+    "evidence_id": "evidence-hetch-hetchy-reservoir-use-rules",
+    "notes": "",
+    "observation_id": "observation-nps-yosemite-hetch-hetchy-hikes-20260925",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

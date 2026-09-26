@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-wapama-falls-published-profile",
+    "evidence_ids": [
+      "evidence-wapama-falls-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-wapama-falls",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 507,
+      "objective_entity_ids": [
+        "waterfall-wapama"
+      ],
+      "operational_status_requires_current_check": true,
+      "published_start_entity_id": "trailhead-wapama-rancheria",
+      "published_time": "2 hours",
+      "round_trip_miles": 5.0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

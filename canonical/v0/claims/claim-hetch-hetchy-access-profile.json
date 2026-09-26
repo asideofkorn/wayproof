@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hetch-hetchy-access-profile",
+    "evidence_ids": [
+      "evidence-hetch-hetchy-access-profile"
+    ],
+    "predicate": "access_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "place-hetch-hetchy",
+    "temporal_scope": null,
+    "value": {
+      "day_visitors_exit_by": "sunset",
+      "drive_time": "about 1 hour 15 minutes",
+      "from_yosemite_valley_miles": 38,
+      "operational_status_requires_current_check": true,
+      "parking": "delays possible when dam-area lot fills, typically midday weekends",
+      "road_closed_to_all_vehicles": "sunset to sunrise",
+      "road_hours": "sunrise to sunset",
+      "winter": "November through March closures or chain requirements possible"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

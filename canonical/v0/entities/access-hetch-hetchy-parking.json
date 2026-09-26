@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "access-hetch-hetchy-parking",
+    "kind": "parking",
+    "name": "Hetch Hetchy Parking"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

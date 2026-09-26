@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS publishes Lookout Point and Smith Peak profiles from Hetch Hetchy trailheads and describes seasonal vehicle access.",
+    "observation_id": "observation-nps-yosemite-hetch-hetchy-trailhead-20260925",
+    "observed_at": null,
+    "observer": "",
+    "retrieved_at": "2026-09-25T00:00:00+00:00",
+    "source_id": "source-nps-yosemite-hetch-hetchy-trailhead"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

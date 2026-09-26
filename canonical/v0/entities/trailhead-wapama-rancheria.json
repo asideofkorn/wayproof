@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-wapama-rancheria",
+    "kind": "trailhead",
+    "name": "Wapama and Rancheria Falls Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

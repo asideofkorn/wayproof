@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-laurel-lake-published-profile",
+    "evidence_ids": [
+      "evidence-laurel-lake-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-laurel-lake",
+    "temporal_scope": null,
+    "value": {
+      "elevation_gain_ft": 2700,
+      "objective_entity_ids": [
+        "waterbody-laurel-lake"
+      ],
+      "operational_status_requires_current_check": true,
+      "permit_demand": "low",
+      "published_start_entity_id": "trailhead-beehive-meadow",
+      "round_trip_miles": 14.2
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

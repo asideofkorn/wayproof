@@ -1,0 +1,176 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -119.7881088594954,
+          37.946167670835024
+        ],
+        "type": "Point"
+      },
+      "id": "access-hetch-hetchy-parking",
+      "properties": {
+        "feature_id": "access-hetch-hetchy-parking",
+        "kind": "parking",
+        "name": "Hetch Hetchy Parking",
+        "nps_object_id": 20403,
+        "nps_poi_type": "Parking Lot",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.78796296961745,
+          37.94742630796176
+        ],
+        "type": "Point"
+      },
+      "id": "dam-oshaughnessy",
+      "properties": {
+        "feature_id": "dam-oshaughnessy",
+        "kind": "dam",
+        "name": "O'Shaughnessy Dam",
+        "nps_object_id": 21614,
+        "nps_poi_type": "Dam",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.84169580512116,
+          37.89359070609871
+        ],
+        "type": "Point"
+      },
+      "id": "entrance-yosemite-hetch-hetchy",
+      "properties": {
+        "feature_id": "entrance-yosemite-hetch-hetchy",
+        "kind": "entrance",
+        "name": "Hetch Hetchy Entrance",
+        "nps_object_id": 21339,
+        "nps_poi_type": "Entrance Station",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.7865063548482,
+          37.9428287666434
+        ],
+        "type": "Point"
+      },
+      "id": "facility-hetch-hetchy-backpackers-restroom",
+      "properties": {
+        "feature_id": "facility-hetch-hetchy-backpackers-restroom",
+        "kind": "restroom",
+        "name": "Hetch Hetchy Backpackers Campground Restroom",
+        "nps_object_id": 20936,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.78344809572341,
+          37.94604493816227
+        ],
+        "type": "Point"
+      },
+      "id": "facility-hetch-hetchy-restroom",
+      "properties": {
+        "feature_id": "facility-hetch-hetchy-restroom",
+        "kind": "restroom",
+        "name": "Hetch Hetchy Restroom",
+        "nps_object_id": 20448,
+        "nps_poi_type": "Restroom",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.81462602464434,
+          37.910203520592894
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-poopenaut-valley",
+      "properties": {
+        "feature_id": "trailhead-poopenaut-valley",
+        "kind": "trailhead",
+        "name": "Poopenaut Valley Trailhead",
+        "nps_object_id": 20212,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.79514489932717,
+          37.92619181448112
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-smith-peak",
+      "properties": {
+        "feature_id": "trailhead-smith-peak",
+        "kind": "trailhead",
+        "name": "Smith Peak Trailhead",
+        "nps_object_id": 22815,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.78751519443698,
+          37.94649660290849
+        ],
+        "type": "Point"
+      },
+      "id": "trailhead-wapama-rancheria",
+      "properties": {
+        "feature_id": "trailhead-wapama-rancheria",
+        "kind": "trailhead",
+        "name": "Hetch Hetchy Trailhead",
+        "nps_object_id": 22178,
+        "nps_poi_type": "Trailhead",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -119.76546243914778,
+          37.96631569733963
+        ],
+        "type": "Point"
+      },
+      "id": "waterfall-wapama",
+      "properties": {
+        "feature_id": "waterfall-wapama",
+        "kind": "waterfall",
+        "name": "Wapama Falls",
+        "nps_object_id": 20158,
+        "nps_poi_type": "Waterfall",
+        "source_id": "source-nps-public-pois-feature-service"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

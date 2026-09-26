@@ -1,0 +1,1214 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20260925-yosemite-hetch-hetchy-depth",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-hetch-hetchy-hikes.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "source-nps-yosemite-hetch-hetchy-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "source-nps-yosemite-hetch-hetchy",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-wapama-rancheria-trailhead.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "source-nps-yosemite-wapama-rancheria-trailhead",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-hetch-hetchy-trailhead.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "source-nps-yosemite-hetch-hetchy-trailhead",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-nps-yosemite-hetch-hetchy-area-trails.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "source-nps-yosemite-hetch-hetchy-area-trails",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-hetch-hetchy-hikes-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-hetch-hetchy-hikes-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-hetch-hetchy-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-hetch-hetchy-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-wapama-rancheria-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-wapama-rancheria-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-hetch-hetchy-trailhead-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-hetch-hetchy-trailhead-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-hetch-hetchy-backcountry-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-hetch-hetchy-backcountry-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-yosemite-hetch-hetchy-conditions-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-yosemite-hetch-hetchy-conditions-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-nps-public-pois-hetch-hetchy-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "observation-nps-public-pois-hetch-hetchy-20260925",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "place-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "scope-hetch-hetchy",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-wapama-rancheria.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "trailhead-wapama-rancheria",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "trailhead-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-poopenaut-valley.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "trailhead-poopenaut-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-smith-peak.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "trailhead-smith-peak",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-beehive-meadow.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "trailhead-beehive-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/access-hetch-hetchy-parking.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "access-hetch-hetchy-parking",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-hetch-hetchy-restroom.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "facility-hetch-hetchy-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-hetch-hetchy-backpackers-restroom.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "facility-hetch-hetchy-backpackers-restroom",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/camp-hetch-hetchy-backpackers.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "camp-hetch-hetchy-backpackers",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/dam-oshaughnessy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "dam-oshaughnessy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/reservoir-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "reservoir-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-wapama.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "waterfall-wapama",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterfall-rancheria.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "waterfall-rancheria",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/viewpoint-lookout-point-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "viewpoint-lookout-point-hetch-hetchy",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/peak-smith.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "peak-smith",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/valley-poopenaut.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "valley-poopenaut",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-laurel-lake.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "waterbody-laurel-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-lake-vernon.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "waterbody-lake-vernon",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-hetch-hetchy-lookout-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-hetch-hetchy-lookout-point",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-wapama-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-rancheria-falls.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-rancheria-falls",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-smith-peak-main.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-smith-peak-main",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-smith-peak-entrance.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-smith-peak-entrance",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-poopenaut-valley.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-poopenaut-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-laurel-lake.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-laurel-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-lake-vernon-rancheria-loop.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "route-lake-vernon-rancheria-loop",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-hetch-hetchy-lookout-point-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-hetch-hetchy-lookout-point-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-lookout-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-hetch-hetchy-lookout-point-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-hetch-hetchy-lookout-point-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-wapama-falls-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-wapama-falls-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-wapama-falls-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-wapama-falls-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-rancheria-falls-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-rancheria-falls-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-rancheria-falls-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-rancheria-falls-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-smith-peak-main-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-smith-peak-main-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-main-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-smith-peak-main-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-smith-peak-main-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-smith-peak-entrance-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-smith-peak-entrance-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-entrance-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-smith-peak-entrance-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-smith-peak-entrance-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-poopenaut-valley-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-poopenaut-valley-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-poopenaut-valley-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-poopenaut-valley-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-laurel-lake-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-laurel-lake-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-laurel-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-laurel-lake-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-laurel-lake-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-lake-vernon-rancheria-loop-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-lake-vernon-rancheria-loop-published-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-lake-vernon-rancheria-loop-published-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-lake-vernon-rancheria-loop-published-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-hetch-hetchy-access-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-hetch-hetchy-access-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-hetch-hetchy-access-profile.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-hetch-hetchy-access-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-hetch-hetchy-reservoir-use-rules.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-hetch-hetchy-reservoir-use-rules",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-reservoir-use-rules"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-hetch-hetchy-reservoir-use-rules.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-hetch-hetchy-reservoir-use-rules",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-hetch-hetchy-observed-status-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-hetch-hetchy-observed-status-20260925",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-observed-status-20260925"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-hetch-hetchy-observed-status-20260925.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-hetch-hetchy-observed-status-20260925",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-located-in-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-located-in-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-entrance-accesses-place.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-entrance-accesses-place",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-parking-accesses-wapama-trailhead.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-parking-accesses-wapama-trailhead",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-access-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-contains-backpackers-camp.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-contains-backpackers-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-lookout-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-lookout-point-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-lookout-point-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-lookout-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-hetch-hetchy-accesses-hetch-hetchy-lookout-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-hetch-hetchy-accesses-hetch-hetchy-lookout-point",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-lookout-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-lookout-point-reaches-1-viewpoint-lookout-point-hetch-hetchy.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-lookout-point-reaches-1-viewpoint-lookout-point-hetch-hetchy",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-hetch-hetchy-lookout-point-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-hetch-hetchy-lookout-point-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-hetch-hetchy-lookout-point-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wapama-falls-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-wapama-falls-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-wapama-rancheria-accesses-wapama-falls.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-wapama-rancheria-accesses-wapama-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wapama-falls-reaches-1-waterfall-wapama.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-wapama-falls-reaches-1-waterfall-wapama",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-wapama-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-wapama-falls-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-wapama-falls-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rancheria-falls-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-rancheria-falls-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-wapama-rancheria-accesses-rancheria-falls.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-wapama-rancheria-accesses-rancheria-falls",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rancheria-falls-reaches-1-waterfall-wapama.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-rancheria-falls-reaches-1-waterfall-wapama",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rancheria-falls-reaches-2-waterfall-rancheria.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-rancheria-falls-reaches-2-waterfall-rancheria",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-rancheria-falls-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-rancheria-falls-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-rancheria-falls-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-main-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-main-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-main-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-main-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-smith-peak-accesses-smith-peak-main.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-smith-peak-accesses-smith-peak-main",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-main-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-main-reaches-1-peak-smith.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-main-reaches-1-peak-smith",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-main-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-main-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-main-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-entrance-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-entrance-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-entrance-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-entrance-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-entrance-yosemite-hetch-hetchy-accesses-smith-peak-entrance.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-entrance-yosemite-hetch-hetchy-accesses-smith-peak-entrance",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-entrance-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-entrance-reaches-1-peak-smith.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-entrance-reaches-1-peak-smith",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-smith-peak-entrance-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-smith-peak-entrance-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-smith-peak-entrance-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-poopenaut-valley-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-poopenaut-valley-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-poopenaut-valley-accesses-poopenaut-valley.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-poopenaut-valley-accesses-poopenaut-valley",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-poopenaut-valley-reaches-1-valley-poopenaut.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-poopenaut-valley-reaches-1-valley-poopenaut",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-poopenaut-valley-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-poopenaut-valley-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-poopenaut-valley-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-laurel-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-laurel-lake-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-laurel-lake-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-laurel-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-beehive-meadow-accesses-laurel-lake.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-beehive-meadow-accesses-laurel-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-laurel-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-laurel-lake-reaches-1-waterbody-laurel-lake.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-laurel-lake-reaches-1-waterbody-laurel-lake",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-laurel-lake-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-laurel-lake-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-laurel-lake-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lake-vernon-rancheria-loop-starts-at.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-lake-vernon-rancheria-loop-starts-at",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-trailhead-beehive-meadow-accesses-lake-vernon-rancheria-loop.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-trailhead-beehive-meadow-accesses-lake-vernon-rancheria-loop",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lake-vernon-rancheria-loop-reaches-1-waterbody-lake-vernon.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-lake-vernon-rancheria-loop-reaches-1-waterbody-lake-vernon",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lake-vernon-rancheria-loop-reaches-2-waterfall-rancheria.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-lake-vernon-rancheria-loop-reaches-2-waterfall-rancheria",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-lake-vernon-rancheria-loop-published-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-lake-vernon-rancheria-loop-traverses-yosemite.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "relationship-lake-vernon-rancheria-loop-traverses-yosemite",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-access-hetch-hetchy-parking-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-access-hetch-hetchy-parking-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-access-hetch-hetchy-parking-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-access-hetch-hetchy-parking-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-access-hetch-hetchy-parking-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-dam-oshaughnessy-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-dam-oshaughnessy-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-dam-oshaughnessy-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-dam-oshaughnessy-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-dam-oshaughnessy-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-entrance-yosemite-hetch-hetchy-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-entrance-yosemite-hetch-hetchy-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-entrance-yosemite-hetch-hetchy-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-entrance-yosemite-hetch-hetchy-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-entrance-yosemite-hetch-hetchy-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-hetch-hetchy-backpackers-restroom-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-facility-hetch-hetchy-backpackers-restroom-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-hetch-hetchy-backpackers-restroom-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-hetch-hetchy-backpackers-restroom-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-facility-hetch-hetchy-backpackers-restroom-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-facility-hetch-hetchy-restroom-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-facility-hetch-hetchy-restroom-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-facility-hetch-hetchy-restroom-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-facility-hetch-hetchy-restroom-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-facility-hetch-hetchy-restroom-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-poopenaut-valley-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-trailhead-poopenaut-valley-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-poopenaut-valley-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-poopenaut-valley-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-trailhead-poopenaut-valley-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-smith-peak-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-trailhead-smith-peak-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-smith-peak-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-smith-peak-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-trailhead-smith-peak-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-trailhead-wapama-rancheria-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-trailhead-wapama-rancheria-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-trailhead-wapama-rancheria-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-trailhead-wapama-rancheria-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-trailhead-wapama-rancheria-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-waterfall-wapama-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "evidence-waterfall-wapama-hetch-hetchy-map-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-waterfall-wapama-hetch-hetchy-map-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-waterfall-wapama-hetch-hetchy-map-point.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "claim-waterfall-wapama-hetch-hetchy-map-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-hetch-hetchy-route-topology.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "gap-yosemite-hetch-hetchy-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-hetch-hetchy-distance-conflicts.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "gap-yosemite-hetch-hetchy-distance-conflicts",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-yosemite-hetch-hetchy-trip-date-operations.json",
+      "reason": "Add reviewed Hetch Hetchy planning depth.",
+      "record_id": "gap-yosemite-hetch-hetchy-trip-date-operations",
+      "record_type": "gap"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add official-source Hetch Hetchy routes, access, reservoir rules, facilities, dated operational evidence, reviewed map points, and explicit gaps."
+}

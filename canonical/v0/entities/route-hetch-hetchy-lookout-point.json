@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-hetch-hetchy-lookout-point",
+    "kind": "route",
+    "name": "Lookout Point"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

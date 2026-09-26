@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-hetch-hetchy-reservoir-use-rules",
+    "evidence_ids": [
+      "evidence-hetch-hetchy-reservoir-use-rules"
+    ],
+    "predicate": "visitor_use_rules",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "reservoir-hetch-hetchy",
+    "temporal_scope": null,
+    "value": {
+      "boating": false,
+      "pets_on_dam_or_hiking_trails": false,
+      "reason": "protect drinking-water source",
+      "swimming": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

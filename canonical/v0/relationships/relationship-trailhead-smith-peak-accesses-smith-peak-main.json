@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-smith-peak-main-published-profile"
+    ],
+    "object_id": "route-smith-peak-main",
+    "predicate": "accesses",
+    "relationship_id": "relationship-trailhead-smith-peak-accesses-smith-peak-main",
+    "subject_id": "trailhead-smith-peak",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-poopenaut-valley-published-profile",
+    "evidence_ids": [
+      "evidence-poopenaut-valley-published-profile"
+    ],
+    "predicate": "published_route_profile",
+    "spatial_scope_ids": [
+      "scope-hetch-hetchy"
+    ],
+    "subject_id": "route-poopenaut-valley",
+    "temporal_scope": null,
+    "value": {
+      "elevation_change_ft": 1279,
+      "objective_entity_ids": [
+        "valley-poopenaut"
+      ],
+      "operational_status_requires_current_check": true,
+      "profile": "steep descent and strenuous return climb",
+      "published_start_entity_id": "trailhead-poopenaut-valley",
+      "round_trip_miles": 2.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
