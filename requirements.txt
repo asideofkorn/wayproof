@@ -1,4 +1,5 @@
 pandas>=2.0
+jsonschema>=4.20,<5
 numpy>=1.24
 mcp>=2,<3
 # Only used by wayproof/passes.py (isotonic fit of the Sierra crest), which is

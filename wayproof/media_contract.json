@@ -1,0 +1,860 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Accepted public media contract. Structural draft validation only; v1 publication is disabled.",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {"enum": [1]},
+        "visibility": {"enum": ["public"]},
+        "records": {
+          "type": "object",
+          "properties": {
+            "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}, "minItems": 0, "uniqueItems": true},
+            "observations": {"type": "array", "items": {"$ref": "#/$defs/observation"}, "minItems": 0, "uniqueItems": true},
+            "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}, "minItems": 0, "uniqueItems": true},
+            "claims": {"type": "array", "items": {"$ref": "#/$defs/claim"}, "minItems": 0, "uniqueItems": true},
+            "media_assets": {"type": "array", "items": {"$ref": "#/$defs/media_asset"}, "minItems": 0, "uniqueItems": true},
+            "media_versions": {"type": "array", "items": {"$ref": "#/$defs/media_version"}, "minItems": 0, "uniqueItems": true},
+            "availability_reports": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/availability_report"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "source_attachments": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/source_attachment"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "attributed_statements": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/attributed_statement"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "statement_mappings": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/statement_mapping"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "analysis_runs": {"type": "array", "items": {"$ref": "#/$defs/analysis_run"}, "minItems": 0, "uniqueItems": true},
+            "analysis_findings": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/analysis_finding"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "reviewed_selections": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/reviewed_selection"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "observation_provenance": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/observation_provenance"},
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "legacy_artifact_mappings": {
+              "type": "array",
+              "items": {"$ref": "#/$defs/legacy_artifact_mapping"},
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "sources",
+            "observations",
+            "evidence",
+            "claims",
+            "media_assets",
+            "media_versions",
+            "availability_reports",
+            "source_attachments",
+            "attributed_statements",
+            "statement_mappings",
+            "analysis_runs",
+            "analysis_findings",
+            "reviewed_selections",
+            "observation_provenance",
+            "legacy_artifact_mappings"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": ["schema_version", "visibility", "records"],
+      "additionalProperties": false
+    }
+  ],
+  "$defs": {
+    "basis": {
+      "type": "object",
+      "properties": {
+        "kind": {"enum": ["statement", "finding", "source", "clock", "unknown"]},
+        "ref": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+      },
+      "required": ["kind", "ref"],
+      "additionalProperties": false
+    },
+    "time": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["unknown"]},
+            "certainty": {"enum": ["unknown"]},
+            "basis": {"$ref": "#/$defs/basis"}
+          },
+          "required": ["kind", "certainty", "basis"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["instant"]},
+            "value": {"type": "string", "format": "date-time"},
+            "certainty": {"enum": ["exact", "asserted", "approximate"]},
+            "basis": {"$ref": "#/$defs/basis"}
+          },
+          "required": ["kind", "value", "certainty", "basis"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["date"]},
+            "value": {"type": "string", "format": "date"},
+            "certainty": {"enum": ["exact", "asserted", "approximate"]},
+            "basis": {"$ref": "#/$defs/basis"}
+          },
+          "required": ["kind", "value", "certainty", "basis"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["range"]},
+            "start": {"type": "string", "minLength": 1},
+            "end": {"type": "string", "minLength": 1},
+            "precision": {"enum": ["date", "instant"]},
+            "certainty": {"enum": ["exact", "asserted", "approximate"]},
+            "basis": {"$ref": "#/$defs/basis"}
+          },
+          "required": ["kind", "start", "end", "precision", "certainty", "basis"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "basis_kind": {
+          "enum": ["author_labeled", "visible_sign", "corroborated", "exif_permitted", "inferred", "unresolved"]
+        },
+        "value": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "properties": {"kind": {"enum": ["entity"]}, "entity_id": {"type": "string", "minLength": 1}},
+              "required": ["kind", "entity_id"],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {"kind": {"enum": ["region"]}, "label": {"type": "string", "minLength": 1}},
+              "required": ["kind", "label"],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {"enum": ["point"]},
+                "latitude": {"type": "number", "minimum": -90, "maximum": 90},
+                "longitude": {"type": "number", "minimum": -180, "maximum": 180}
+              },
+              "required": ["kind", "latitude", "longitude"],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "precision_m": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+        "generalization": {"enum": ["exact", "generalized", "withheld", "unknown"]},
+        "sensitivity": {"enum": ["nonsensitive", "sensitive", "unassessed"]},
+        "basis": {"$ref": "#/$defs/basis"},
+        "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+      },
+      "required": ["basis_kind", "value", "precision_m", "generalization", "sensitivity", "basis", "limitations"],
+      "additionalProperties": false
+    },
+    "selector": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {"kind": {"enum": ["whole"]}},
+          "required": ["kind"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["image_region"]},
+            "x": {"type": "integer", "minimum": 0},
+            "y": {"type": "integer", "minimum": 0},
+            "width": {"type": "integer", "minimum": 1},
+            "height": {"type": "integer", "minimum": 1}
+          },
+          "required": ["kind", "x", "y", "width", "height"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["time_range"]},
+            "start_ms": {"type": "integer", "minimum": 0},
+            "end_ms": {"type": "integer", "minimum": 1}
+          },
+          "required": ["kind", "start_ms", "end_ms"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {"enum": ["frames"]},
+            "timestamps_ms": {"type": "array", "items": {"type": "integer", "minimum": 0}, "minItems": 1, "uniqueItems": true}
+          },
+          "required": ["kind", "timestamps_ms"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "media_version_id": {"type": "string", "format": "uuid"},
+        "source_attachment_id": {"type": "string", "format": "uuid"},
+        "selector": {"$ref": "#/$defs/selector"}
+      },
+      "required": ["media_version_id", "source_attachment_id", "selector"],
+      "additionalProperties": false
+    },
+    "source": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "source_id": {"type": "string", "minLength": 1},
+            "locator": {"type": "string", "format": "uri"},
+            "publisher": {"type": "string"},
+            "source_role": {"enum": ["original", "comment", "analysis_report"]}
+          },
+          "required": ["source_id", "locator", "publisher", "source_role"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source_id": {"type": "string", "minLength": 1},
+            "locator": {"type": "string", "format": "uri"},
+            "publisher": {"type": "string"}
+          },
+          "required": ["source_id", "locator", "publisher"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source_id": {"type": "string", "minLength": 1},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["source_id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "observation": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "observation_id": {"type": "string", "minLength": 1},
+            "source_id": {"type": "string", "minLength": 1},
+            "content": {"type": "string", "minLength": 1},
+            "observed_at": {"anyOf": [{"type": "string", "format": "date-time"}, {"type": "null"}]},
+            "retrieved_at": {"anyOf": [{"type": "string", "format": "date-time"}, {"type": "null"}]},
+            "observer": {"type": "string"},
+            "artifact_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true},
+            "origin_kind": {"enum": ["source_text", "media_statement", "media_analysis"]},
+            "provenance_id": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]}
+          },
+          "required": [
+            "observation_id",
+            "source_id",
+            "content",
+            "observed_at",
+            "retrieved_at",
+            "observer",
+            "artifact_refs",
+            "origin_kind",
+            "provenance_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "observation_id": {"type": "string", "minLength": 1},
+            "source_id": {"type": "string", "minLength": 1},
+            "content": {"type": "string", "minLength": 1},
+            "observed_at": {"anyOf": [{"type": "string", "format": "date-time"}, {"type": "null"}]},
+            "retrieved_at": {"anyOf": [{"type": "string", "format": "date-time"}, {"type": "null"}]},
+            "observer": {"type": "string"},
+            "artifact_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": [
+            "observation_id",
+            "source_id",
+            "content",
+            "observed_at",
+            "retrieved_at",
+            "observer",
+            "artifact_refs"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "observation_id": {"type": "string", "minLength": 1},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["observation_id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "evidence": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "evidence_id": {"type": "string", "minLength": 1},
+            "observation_id": {"type": "string", "minLength": 1},
+            "claim_id": {"type": "string", "minLength": 1},
+            "stance": {"type": "string", "minLength": 1},
+            "notes": {"type": "string"}
+          },
+          "required": ["evidence_id", "observation_id", "claim_id", "stance", "notes"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "evidence_id": {"type": "string", "minLength": 1},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["evidence_id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "claim": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "claim_id": {"type": "string", "minLength": 1},
+            "subject_id": {"type": "string", "minLength": 1},
+            "predicate": {"type": "string", "minLength": 1},
+            "value": {},
+            "evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "uniqueItems": true},
+            "temporal_scope": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "starts_on": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]},
+                    "ends_on": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]}
+                  },
+                  "required": ["starts_on", "ends_on"],
+                  "additionalProperties": false
+                },
+                {"type": "null"}
+              ]
+            },
+            "spatial_scope_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": [
+            "claim_id",
+            "subject_id",
+            "predicate",
+            "value",
+            "evidence_ids",
+            "temporal_scope",
+            "spatial_scope_ids"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "claim_id": {"type": "string", "minLength": 1},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["claim_id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "media_asset": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "origin_asset_id": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]},
+            "origin_statement_id": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]}
+          },
+          "required": ["id", "state", "origin_asset_id", "origin_statement_id"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "media_version": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "asset_id": {"type": "string", "format": "uuid"},
+            "media_type": {"enum": ["image", "video", "audio"]},
+            "dimensions": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {"width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1}},
+                  "required": ["width", "height"],
+                  "additionalProperties": false
+                },
+                {"type": "null"}
+              ]
+            },
+            "duration_ms": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+            "retrieval_time": {"$ref": "#/$defs/time"},
+            "identity_basis": {"enum": ["permitted_digest", "provider_version", "reviewed_copy", "unverifiable"]},
+            "reproducibility": {"enum": ["bounded", "unavailable"]},
+            "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": [
+            "id",
+            "state",
+            "asset_id",
+            "media_type",
+            "dimensions",
+            "duration_ms",
+            "retrieval_time",
+            "identity_basis",
+            "reproducibility",
+            "limitations"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "availability_report": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "media_version_id": {"type": "string", "format": "uuid"},
+            "checked_at": {"$ref": "#/$defs/time"},
+            "availability": {"enum": ["available", "unavailable", "unknown"]},
+            "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": ["id", "state", "media_version_id", "checked_at", "availability", "limitations"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "source_attachment": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "source_id": {"type": "string", "minLength": 1},
+            "asset_id": {"type": "string", "format": "uuid"},
+            "media_version_id": {"type": "string", "format": "uuid"},
+            "ordinal": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+            "ordinal_basis": {"enum": ["source_order", "unknown"]},
+            "publication_time": {"$ref": "#/$defs/time"},
+            "association_observed_time": {"$ref": "#/$defs/time"}
+          },
+          "required": [
+            "id",
+            "state",
+            "source_id",
+            "asset_id",
+            "media_version_id",
+            "ordinal",
+            "ordinal_basis",
+            "publication_time",
+            "association_observed_time"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "attributed_statement": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "source_id": {"type": "string", "minLength": 1},
+            "statement_kind": {"enum": ["caption", "comment", "correction", "clarification"]},
+            "speaker": {
+              "type": "object",
+              "properties": {
+                "role": {"enum": ["author", "commenter", "unknown"]},
+                "attribution": {"anyOf": [{"type": "string", "minLength": 1}, {"type": "null"}]}
+              },
+              "required": ["role", "attribution"],
+              "additionalProperties": false
+            },
+            "text": {"type": "string", "minLength": 1},
+            "publication_time": {"$ref": "#/$defs/time"},
+            "corrects_statement_id": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]}
+          },
+          "required": [
+            "id",
+            "state",
+            "source_id",
+            "statement_kind",
+            "speaker",
+            "text",
+            "publication_time",
+            "corrects_statement_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "statement_mapping": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "statement_id": {"type": "string", "format": "uuid"},
+            "mapping_kind": {"enum": ["single", "multiple", "ordered_item", "ambiguous"]},
+            "attachment_ids": {
+              "type": "array",
+              "items": {"type": "string", "format": "uuid"},
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "list_item": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
+            "basis": {"type": "string", "minLength": 1},
+            "certainty": {"enum": ["explicit", "ambiguous", "unresolved"]}
+          },
+          "required": ["id", "state", "statement_id", "mapping_kind", "attachment_ids", "list_item", "basis", "certainty"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "analysis_run": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "source_id": {"type": "string", "minLength": 1},
+            "inputs": {"type": "array", "items": {"$ref": "#/$defs/target"}, "minItems": 1, "uniqueItems": true},
+            "analyst": {
+              "type": "object",
+              "properties": {
+                "kind": {"enum": ["human", "tool", "model"]},
+                "label": {"type": "string", "minLength": 1},
+                "version": {"type": "string", "minLength": 1}
+              },
+              "required": ["kind", "label", "version"],
+              "additionalProperties": false
+            },
+            "method": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string", "minLength": 1},
+                "version": {"type": "string", "minLength": 1},
+                "configuration_summary": {"type": "string", "minLength": 1}
+              },
+              "required": ["name", "version", "configuration_summary"],
+              "additionalProperties": false
+            },
+            "analysis_time": {"$ref": "#/$defs/time"},
+            "modalities": {
+              "type": "array",
+              "items": {"enum": ["visual", "ocr", "transcription", "location_inference", "metadata"]},
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": [
+            "id",
+            "state",
+            "source_id",
+            "inputs",
+            "analyst",
+            "method",
+            "analysis_time",
+            "modalities",
+            "limitations"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "analysis_finding": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "run_id": {"type": "string", "format": "uuid"},
+            "target": {"$ref": "#/$defs/target"},
+            "modality": {"enum": ["visual", "ocr", "transcription", "location_inference", "metadata"]},
+            "metadata_fields": {"type": "array", "items": {"enum": ["capture_time", "gps"]}, "minItems": 0, "uniqueItems": true},
+            "content": {"type": "string", "minLength": 1},
+            "certainty": {"enum": ["observed", "asserted", "inferred", "unresolved"]},
+            "corroborating_evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true},
+            "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": [
+            "id",
+            "state",
+            "run_id",
+            "target",
+            "modality",
+            "metadata_fields",
+            "content",
+            "certainty",
+            "corroborating_evidence_ids",
+            "limitations"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "reviewed_selection": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "origin": {
+              "type": "object",
+              "properties": {"kind": {"enum": ["statement", "finding"]}, "id": {"type": "string", "format": "uuid"}},
+              "required": ["kind", "id"],
+              "additionalProperties": false
+            },
+            "mapping_id": {"anyOf": [{"type": "string", "format": "uuid"}, {"type": "null"}]},
+            "media_version_ids": {
+              "type": "array",
+              "items": {"type": "string", "format": "uuid"},
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "reviewer_role": {"enum": ["maintainer"]},
+            "reviewed_at": {"$ref": "#/$defs/time"},
+            "change_set_id": {"type": "string", "minLength": 1}
+          },
+          "required": [
+            "id",
+            "state",
+            "origin",
+            "mapping_id",
+            "media_version_ids",
+            "reviewer_role",
+            "reviewed_at",
+            "change_set_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "observation_provenance": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "observation_id": {"type": "string", "minLength": 1},
+            "selection_id": {"type": "string", "format": "uuid"},
+            "event_times": {"type": "array", "items": {"$ref": "#/$defs/time"}, "minItems": 0, "uniqueItems": true},
+            "locations": {"type": "array", "items": {"$ref": "#/$defs/location"}, "minItems": 0, "uniqueItems": true}
+          },
+          "required": ["id", "state", "observation_id", "selection_id", "event_times", "locations"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "legacy_artifact_mapping": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["active"]},
+            "observation_id": {"type": "string", "minLength": 1},
+            "artifact_ref_index": {"type": "integer", "minimum": 0},
+            "asset_id": {"type": "string", "format": "uuid"},
+            "media_version_id": {"type": "string", "format": "uuid"},
+            "reviewed_selection_id": {"type": "string", "format": "uuid"},
+            "migration_id": {"type": "string", "minLength": 1}
+          },
+          "required": [
+            "id",
+            "state",
+            "observation_id",
+            "artifact_ref_index",
+            "asset_id",
+            "media_version_id",
+            "reviewed_selection_id",
+            "migration_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {"type": "string", "format": "uuid"},
+            "state": {"enum": ["redacted", "removed"]},
+            "reason_code": {"enum": ["privacy_removal", "retention_expired", "source_withdrawn"]}
+          },
+          "required": ["id", "state", "reason_code"],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

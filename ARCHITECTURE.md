@@ -35,11 +35,14 @@ existing-record evidence explanations and navigation without a schema change.
 [ADR 0004](docs/adr/0004-repeatable-media-analysis.md) separately establishes requirements for
 repeatable media analysis with privacy/safety gates and typed Evidence lineage.
 Both are Accepted and independently implementable. Neither changes Schema v0;
-the media schema contract and migration still require separate review.
-The [Step 4 proposal](docs/proposals/media-provenance-v1/README.md) supplies
-proposed record definitions, location/time provenance, public/private separation,
-and synthetic migration/lineage tests. It is not an active schema or an
-implemented media-processing or privacy layer.
+the [Step 4 media contract](docs/proposals/media-provenance-v1/README.md) was
+separately accepted in PR #196. Step 5a implements its public domain types,
+structural validation through the existing ChangeSet service, and a fail-closed
+repository capability gate. V1 drafts cannot be prepared, persisted or published.
+Schema v0 remains the active published format. Private custody, authenticated
+release policy, acquisition isolation, deletion propagation and activation
+remain separate implementation/review gates. See
+[implementation boundaries](docs/media-contract-implementation.md).
 
 ## Architectural principles
 

@@ -48,6 +48,11 @@ def validate_records(records: CanonicalRecords,
     """Return stable invariant violations for an incremental ChangeSet."""
     errors: List[str] = []
     prior = existing or CanonicalRecords()
+    from .record_contract import shape_errors
+    errors.extend(shape_errors(records))
+    errors.extend(shape_errors(prior))
+    if errors:
+        return sorted(set(errors))
 
     specs: Tuple[Tuple[str, str, str], ...] = (
         ("entities", "entity_id", "entity"),

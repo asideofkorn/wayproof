@@ -149,7 +149,12 @@ def main(argv=None) -> int:
         from wayproof.cli_planning import (canonical_exit_code,
                                            run_canonical_plan,
                                            write_plan_json)
-        result, summary = run_canonical_plan(args)
+        from wayproof.canonical_storage import UnsupportedSchemaError
+        try:
+            result, summary = run_canonical_plan(args)
+        except UnsupportedSchemaError as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
         print(summary)
         if args.output:
             write_plan_json(args.output, result)

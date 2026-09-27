@@ -42,6 +42,53 @@ class CanonicalStorageError(ValueError):
     pass
 
 
+class UnsupportedSchemaError(CanonicalStorageError):
+    """The entire repository must be supported before reading any snapshot."""
+
+
+def _check_envelope(payload: dict, path: Path, *, changeset: bool = False) -> None:
+    allowed = ({'artifact_format_version', 'schema_version', 'change_set_id',
+                'status', 'summary', 'operations'} if changeset else
+               {'artifact_format_version', 'schema_version', 'record_type', 'record'})
+    if not isinstance(payload, dict) or set(payload) - allowed:
+        raise UnsupportedSchemaError(f'unsupported fields in schema v0 envelope: {path}')
+    if type(payload.get('schema_version')) is not int or payload['schema_version'] != SCHEMA_VERSION:
+        raise UnsupportedSchemaError(f'unsupported schema version: {path}')
+    if (type(payload.get('artifact_format_version')) is not int or
+            payload['artifact_format_version'] != ARTIFACT_FORMAT_VERSION):
+        raise UnsupportedSchemaError(f'unsupported artifact format: {path}')
+
+
+def assert_supported_repository(root: Path) -> None:
+    """Fail closed on unknown versions/collections, including unmarked additions.
+
+    No new manifest format is introduced. The existing versioned directory
+    contract is the root capability gate; v1 activation is deliberately absent.
+    """
+    for namespace in ('canonical', 'changesets'):
+        parent = root / namespace
+        if not parent.exists():
+            continue
+        if parent.is_symlink() or not parent.is_dir():
+            raise UnsupportedSchemaError(f'unsupported schema namespace layout: {parent}')
+        for version in parent.iterdir():
+            if version.name != 'v0' or not version.is_dir() or version.is_symlink():
+                raise UnsupportedSchemaError(f'unsupported schema version/layout: {version}')
+            for entry in version.iterdir():
+                if namespace == 'canonical':
+                    if entry.name not in COLLECTION_TYPES or not entry.is_dir() or entry.is_symlink():
+                        raise UnsupportedSchemaError(f'unsupported schema collection: {entry}')
+                    paths = entry.iterdir()
+                else:
+                    paths = (entry,)
+                for path in paths:
+                    if not path.is_file() or path.is_symlink() or path.suffix != '.json':
+                        raise UnsupportedSchemaError(f'unsupported schema artifact layout: {path}')
+                    if namespace == 'changesets':
+                        payload = json.loads(path.read_text(encoding='utf-8'))
+                        _check_envelope(payload, path, changeset=True)
+
+
 def _json_value(value: Any) -> Any:
     if isinstance(value, Enum):
         return value.value
@@ -83,6 +130,9 @@ def _decode(annotation: Any, value: Any) -> Any:
         return annotation(value)
     if isinstance(annotation, type) and is_dataclass(annotation):
         hints = get_type_hints(annotation)
+        allowed = {field.name for field in fields(annotation) if field.init}
+        if not isinstance(value, dict) or set(value) - allowed:
+            raise UnsupportedSchemaError('unsupported fields in schema v0 record')
         return annotation(**{field.name: _decode(hints[field.name], value[field.name])
                              for field in fields(annotation)
                              if field.name in value and field.init})
@@ -96,6 +146,9 @@ def _document(payload: Dict[str, Any]) -> str:
 def record_document(record_type: str, record: Any) -> str:
     if record_type not in RECORD_SPECS:
         raise CanonicalStorageError(f"unknown record type: {record_type}")
+    cls = RECORD_SPECS[record_type][2]
+    if type(record) is not cls or set(vars(record)) != {f.name for f in fields(cls)}:
+        raise UnsupportedSchemaError('v1/extended record cannot be serialized as schema v0')
     return _document({
         "artifact_format_version": ARTIFACT_FORMAT_VERSION,
         "schema_version": SCHEMA_VERSION,
@@ -105,6 +158,13 @@ def record_document(record_type: str, record: Any) -> str:
 
 
 def changeset_document(change: ChangeSet) -> str:
+    # ChangeSet is mutable; recheck identity at the persistence boundary too.
+    if (not change.change_set_id.strip() or change.change_set_id in ('.', '..') or
+            any(c in change.change_set_id for c in ('/', '\\', '\x00'))):
+        raise CanonicalStorageError('ChangeSet id must be a single path component')
+    if (type(change.schema_version) is not int or change.schema_version != 0 or
+            type(change.artifact_format_version) is not int or change.artifact_format_version != 1):
+        raise UnsupportedSchemaError('unsupported schema version for persistence; v1 activation is disabled')
     if change.status is not ChangeSetStatus.VALIDATED:
         raise CanonicalStorageError("only a validated ChangeSet can be persisted")
     return _document({
@@ -119,10 +179,7 @@ def changeset_document(change: ChangeSet) -> str:
 
 def load_changeset(path: Path) -> ChangeSet:
     payload = json.loads(path.read_text(encoding="utf-8"))
-    if payload.get("artifact_format_version") != ARTIFACT_FORMAT_VERSION:
-        raise CanonicalStorageError(f"unsupported ChangeSet artifact format: {path}")
-    if payload.get("schema_version") != SCHEMA_VERSION:
-        raise CanonicalStorageError(f"unsupported ChangeSet schema version: {path}")
+    _check_envelope(payload, path, changeset=True)
     if path.stem != payload.get("change_set_id"):
         raise CanonicalStorageError(f"ChangeSet id does not match filename: {path}")
     operations = tuple(_decode(ChangeOperation, item)
@@ -149,6 +206,19 @@ def _result_index(records: CanonicalRecords) -> Dict[Tuple[str, str], Any]:
 def write_candidate(root: Path, prepared: PreparedCandidate,
                     change: ChangeSet) -> Tuple[Path, ...]:
     """Write only the paths authorized by a validated prepared candidate."""
+    assert_supported_repository(root)
+    # Preflight the whole candidate before the first write/unlink. Caller-made
+    # PreparedCandidate values cannot activate v1 or skip the domain boundary.
+    changeset_document(change)
+    from .record_contract import shape_errors
+    from .write_service import _operation_errors, _apply_operations
+    errors = shape_errors(prepared.base) + shape_errors(prepared.result) + shape_errors(change.records)
+    if errors:
+        raise UnsupportedSchemaError('; '.join(errors))
+    change.assert_validated_unchanged()
+    errors = list(_operation_errors(change, prepared.base)) + validate_records(prepared.result)
+    if errors or _apply_operations(prepared.base, change) != prepared.result:
+        raise CanonicalStorageError('candidate does not match validated ChangeSet operations')
     if prepared.change_set_id != change.change_set_id:
         raise CanonicalStorageError("prepared candidate and ChangeSet ids differ")
     if tuple(prepared.operations) != tuple(change.operations):
@@ -175,15 +245,13 @@ def write_candidate(root: Path, prepared: PreparedCandidate,
 
 
 def load_canonical(root: Path) -> CanonicalRecords:
+    assert_supported_repository(root)
     values: Dict[str, List[Any]] = {field.name: [] for field in fields(CanonicalRecords)}
     canonical_root = root / "canonical" / "v0"
     for collection, (kind, _, record_class) in COLLECTION_TYPES.items():
         for path in sorted((canonical_root / collection).glob("*.json")):
             payload = json.loads(path.read_text(encoding="utf-8"))
-            if payload.get("artifact_format_version") != ARTIFACT_FORMAT_VERSION:
-                raise CanonicalStorageError(f"unsupported artifact format: {path}")
-            if payload.get("schema_version") != SCHEMA_VERSION:
-                raise CanonicalStorageError(f"unsupported schema version: {path}")
+            _check_envelope(payload, path)
             if payload.get("record_type") != kind:
                 raise CanonicalStorageError(f"record type does not match path: {path}")
             record = _decode(record_class, payload["record"])

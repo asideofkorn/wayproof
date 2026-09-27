@@ -106,6 +106,11 @@ def _utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
+def _is_v0_change(change: ChangeSet) -> bool:
+    return (type(change.schema_version) is int and change.schema_version == 0 and
+            type(change.artifact_format_version) is int and change.artifact_format_version == 1)
+
+
 def _without_targets(base: CanonicalRecords,
                      operations: Tuple[ChangeOperation, ...]) -> CanonicalRecords:
     """Return the validation base after records being replaced/removed vanish."""
@@ -251,6 +256,11 @@ class ChangeSetWriteService:
         change = self._stored(change_set_id)
         before = change.status
         base = self._repository.snapshot()
+        if not _is_v0_change(change):
+            errors = change.validate(existing=base)
+            self._event(change_set_id, 'validation_failed' if errors else 'validated',
+                        actor, before, change.status, occurred_at, errors)
+            return errors
         operation_errors = _operation_errors(change, base)
         errors = change.validate(existing=_without_targets(base, change.operations))
         result_errors = tuple(validate_records(_apply_operations(base, change)))
@@ -268,12 +278,21 @@ class ChangeSetWriteService:
     def explain(self, change_set_id: str) -> ChangeSetExplanation:
         change = self._stored(change_set_id)
         additions = []
-        for collection, attribute in _ID_ATTRIBUTES.items():
+        attributes = dict(_ID_ATTRIBUTES)
+        if change.schema_version == 1:
+            from .media_schema import MEDIA_SPECS
+            attributes.update({col: attr for col, attr, _ in MEDIA_SPECS.values()})
+        for collection, attribute in attributes.items():
             ids = tuple(getattr(item, attribute)
-                        for item in getattr(change.records, collection))
+                        for item in getattr(change.records, collection, ()))
             if ids:
                 additions.append((collection, ids))
         base = self._repository.snapshot()
+        if not _is_v0_change(change):
+            candidate = deepcopy(change)
+            errors = candidate.validate(existing=base)
+            return ChangeSetExplanation(change.change_set_id, change.status, change.summary,
+                                        tuple(additions), change.operations, errors)
         errors = tuple(validate_records(
             change.records, existing=_without_targets(base, change.operations)))
         errors += _operation_errors(change, base)
@@ -292,6 +311,8 @@ class ChangeSetWriteService:
         actor = self._require_actor(actor, "prepared")
         occurred_at = self._clock()
         change = self._stored(change_set_id)
+        if not _is_v0_change(change):
+            raise PreparationRejected('unsupported schema version for preparation; v1 activation is disabled')
         try:
             change.assert_validated_unchanged()
         except ValueError as exc:

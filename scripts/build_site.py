@@ -297,6 +297,8 @@ preserves uncertainty, and produces traceable outdoor-planning answers.">
 
 def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     today = today or datetime.date.today()
+    # Validate the complete repository before emitting even a partial export.
+    canonical_reads = CanonicalReadService(Path("."))
 
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "style.css").write_text(STYLESHEET)
@@ -305,7 +307,6 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     # custom domain survives every GitHub Actions Pages deployment.
     (output_dir / "CNAME").write_text("wayproof.dev\n")
 
-    canonical_reads = CanonicalReadService(Path("."))
     canonical_stats = build_canonical_site(canonical_reads, output_dir, SITE_URL, today)
     gaps = canonical_reads.knowledge_gaps()
 

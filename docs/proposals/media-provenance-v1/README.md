@@ -1,13 +1,16 @@
 # Media provenance v1 — schema and migration review
 
-**Status: Proposed. Step 4 only.** This is the separate schema-review gate required
-by [accepted ADR 0004](../../adr/0004-repeatable-media-analysis.md). Approval of
-ADR 0004 did not approve these types. Merging this design package would not
-activate v1, authorize media ingestion, or certify privacy/safety enforcement.
-Schema v0, production readers/writers, canonical files, and publication behavior
-are unchanged by this PR. No real media, social posts, comments, downloaded
-bytes, external-model calls, media rendering, or generated canonical claims are
-included. Every example is invented; `example.invalid` links are not fetched.
+**Status: Accepted for implementation; v1 activation is disabled.** The separate
+schema-review gate required by [ADR 0004](../../adr/0004-repeatable-media-analysis.md)
+was accepted with [PR #196](https://github.com/asideofkorn/wayproof/pull/196)
+on 2026-09-27. Acceptance does not authorize media ingestion or certify privacy
+and deletion controls. All examples are synthetic; `example.invalid` is not fetched.
+
+Step 5a implements typed public records and structural ChangeSet draft validation
+in `wayproof/`, plus a repository capability gate. V0 published bytes and record
+shapes remain unchanged. V1 preparation, persistence and publication are disabled.
+See [implementation boundaries](../../media-contract-implementation.md) for what
+is implemented and what must pass review before activation.
 
 The review question is: **Can each published media-derived claim be traced to
 the exact reviewed statement/finding, exact inspected version and attachment,
@@ -19,8 +22,8 @@ independently corroborated, or safe for a trip.
 ## Review package and authority
 
 - [schema.json](schema.json) defines closed JSON record shapes and wire spellings
-  proposed for review, not implemented production enums. Its public/private
-  bundles are **test containers**, not a new persisted snapshot format.
+  accepted for implementation. The public subset is packaged with the runtime;
+  its public/private bundles are **test containers**, not a new persisted snapshot format.
 - [collections.json](collections.json) maps these fixture collections to record
   types. The new types, v1 Source role, and two v1 Observation fields are the extension;
   the four existing types included in the fixture are not a replacement for
@@ -38,13 +41,12 @@ independently corroborated, or safe for a trip.
   It does not download, process, publish, persist, delete, authenticate reviewers,
   enforce permissions, verify consent, or purge a cache.
 - [Synthetic tests](../../../tests/test_media_provenance_proposal.py) exercise
-  that oracle. They use `jsonschema`, already a dependency of the installed MCP
-  package, and make no media/network/model requests.
+  that oracle. They use the explicit `jsonschema` dependency, and make no media/network/model requests.
 
 Record definitions below and the JSON schema must be reviewed together. Any
-changed spelling or invariant requires updating examples and tests. Schema
-activation, serializer/domain integration, real lifecycle enforcement, and
-source acquisition are subsequent PRs with their own acceptance evidence.
+changed spelling or invariant requires updating examples and tests. Draft domain
+integration is implemented in Step 5a. Schema activation, storage migration, real lifecycle enforcement, and source acquisition remain later
+reviews with their own acceptance evidence.
 
 ## Public and operational/private separation
 
@@ -97,7 +99,7 @@ ID field. A legacy ID that itself identifies someone must be withdrawn/re-keyed
 with any linking map retained privately; preserving its URL for auditability
 cannot override removal. That exceptional migration needs separate review.
 
-| Proposed type | Exact active payload fields (besides `id`, `state`) |
+| Accepted type | Exact active payload fields (besides `id`, `state`) |
 |---|---|
 | `media_asset` | `origin_asset_id: UUID|null`, `origin_statement_id: UUID|null` |
 | `media_version` | `asset_id: UUID`, `media_type: image|video|audio`, `dimensions: {width,height}|null`, `duration_ms: positive integer|null`, `retrieval_time: Time`, `identity_basis: permitted_digest|provider_version|reviewed_copy|unverifiable`, `reproducibility: bounded|unavailable`, `limitations: string[]` |
@@ -194,7 +196,7 @@ range; two seconds cannot become the full clip. Coordinate orientation and
 video timestamp interpretation must be part of the versioned method description.
 No inferred scene-wide or route-wide condition follows from a bounded finding.
 
-A proposed v1 Source adds `source_role: original|comment|analysis_report` to
+The accepted v1 Source adds `source_role: original|comment|analysis_report` to
 the existing Source fields. Legacy Sources remain valid without a role, but
 cannot serve as analysis-report Sources. A run's Source must carry
 `source_role: analysis_report`; original attachments and attributed statements
@@ -273,7 +275,7 @@ in this proposal.
 
 ## Observation, Evidence, review, and reads
 
-Proposed **new v1 Observations** add `origin_kind: source_text|media_statement|
+Accepted **new v1 Observations** add `origin_kind: source_text|media_statement|
 media_analysis` and `provenance_id: UUID|null`. Existing v0 records remain
 byte-for-byte unchanged and are recognized from the migration baseline, not
 from a user-supplied `legacy=true` flag. Source-text observations have no media
@@ -335,7 +337,7 @@ production reader, public renderer, endpoint, or route.
 
 ## Additive migration and reader compatibility
 
-**Decision proposed: fail closed on unsupported v1, not silently ignore media
+**Accepted decision: fail closed on unsupported v1, not silently ignore media
 collections while treating their claims as fully explained.** Record envelopes
 retain the existing deterministic artifact format and separate schema-version
 field. v1 activation and concrete storage routing are a later migration PR;
@@ -369,15 +371,14 @@ these fixture bundles are not a replacement storage format.
    consumer/version errors. Rollback selects the preceding supported snapshot;
    it must not resurrect withdrawn data or silently downgrade v1 media claims.
 
-**Current-code limitation:** today's `load_canonical()` hardcodes `canonical/v0`
-and only visits known collections. It rejects a v1 envelope encountered in a
-known collection (tested), but it can silently miss a new directory. It does
-**not** implement the proposed root gate. Adding v1 files beside v0 today is
-therefore not an approved migration. All pre-gate readers must be upgraded or
-kept on an explicitly pinned legacy snapshot; they cannot be supported against
-the activated v1 dataset. The gate and cross-consumer compatibility tests belong
-to Step 5/activation review. No claim that existing old binaries already fail
-closed is made here.
+**Implemented capability gate:** `load_canonical()` checks both canonical and
+ChangeSet directory layouts before loading a snapshot. Unknown versions,
+collections and envelope/record extensions raise `UnsupportedSchemaError`.
+Read service, MCP, canonical CLI and site exports use this shared gate; site
+validation precedes output writes. CI rejects unsupported publication paths too.
+This supports **v0 only**, and does not activate v1 or migrate data. Old binaries
+without this gate still require an upgrade or an explicitly pinned legacy
+snapshot; they cannot be supported against an activated v1 dataset.
 
 ## Retention, redaction, deletion, and dependent answers
 
