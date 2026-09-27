@@ -228,16 +228,20 @@ class ChangeSetWriteService:
     """Propose, validate, explain, and prepare—never publish—changes."""
 
     def __init__(self, repository: InMemoryCanonicalRepository,
-                 clock: Callable[[], datetime] = _utc_now) -> None:
+                 clock: Callable[[], datetime] = _utc_now, *, research_reviews=None) -> None:
         self._repository = repository
         self._clock = clock
         self._changes: Dict[str, ChangeSet] = {}
         self._events: List[WorkflowEvent] = []
+        from .public_research import ReviewedResearch
+        self._research_reviews = research_reviews if research_reviews is not None else ReviewedResearch()
+        self._research_packets = {}
+        self._withdrawn_research = set()
 
     def propose(self, change_set: ChangeSet, actor: str) -> ChangeSet:
         actor = self._require_actor(actor, "proposed")
         occurred_at = self._clock()
-        if change_set.change_set_id in self._changes:
+        if change_set.change_set_id in self._changes or change_set.change_set_id in self._withdrawn_research:
             raise DuplicateChangeSet(change_set.change_set_id)
         if change_set.status is not ChangeSetStatus.DRAFT:
             raise WriteServiceError("a proposed ChangeSet must be a draft")
@@ -305,6 +309,99 @@ class ChangeSetWriteService:
             operations=change.operations,
             validation_errors=tuple(sorted(set(errors))),
         )
+
+    def assess_public_research(self, change_set_id: str, packet) -> Tuple[str, ...]:
+        """Policy assessment separate from structural VALIDATED; never a grant to publish."""
+        from .public_research import assess
+        change = deepcopy(self._stored(change_set_id))
+        errors = change.validate(existing=self._repository.snapshot())
+        if errors:
+            return ('public research requires a structurally valid draft',)
+        errors = assess(change, packet, self._research_reviews, self._repository.snapshot())
+        if not errors:
+            self._research_packets[change_set_id] = deepcopy(packet)
+        else:
+            self._research_packets.pop(change_set_id, None)
+        return errors
+
+    def public_research_preview(self, change_set_id: str):
+        """Detached shared preview for later consumer integration; no public v1 reads."""
+        from .public_research import fingerprint, projection, assess
+        if change_set_id in self._withdrawn_research:
+            return {'texts': [], 'source_states': [], 'versions': [],
+                    'support': 'removed', 'publication': 'disabled'}
+        change = self._stored(change_set_id)
+        packet = self._research_packets.get(change_set_id)
+        if packet is None:
+            return {'texts': [], 'source_states': [], 'versions': [],
+                    'support': 'not_reviewed', 'publication': 'disabled'}
+        review = self._research_reviews.lookup(fingerprint(change, packet, self._repository.snapshot()))
+        if assess(change, packet, self._research_reviews, self._repository.snapshot()):
+            # A stale/revoked review cannot keep exposing text from an old approval.
+            states = ([{'source_id': s.source_id, 'state': s.current_state}
+                       for s in review.sources] if review else [])
+            return {'texts': [], 'source_states': states, 'versions': [],
+                    'support': 'unavailable', 'publication': 'disabled'}
+        model = projection(packet, [{'source_id': s.source_id, 'state': s.current_state,
+                                    'inspected_at': s.inspected_at.isoformat(), 'locator': s.locator,
+                                    'publisher_kind': s.publisher_kind}
+                                   for s in review.sources])
+        model['versions'] = [{'id': v.id, 'identity_basis': v.identity_basis,
+                              'reproducibility': v.reproducibility,
+                              'limitations': list(v.limitations)} for v in change.records.media_versions]
+        model['support'] = 'reviewed_draft_only'
+        return model
+
+    def remove_public_research(self, source_ids: Tuple[str, ...], actor: str):
+        """Withdraw whole owned drafts so copies of retained text cannot survive in them.
+
+        Published v0 data is never modified here. Returned output invalidations
+        are tasks for the later reviewed migration/publication integration.
+        """
+        from .public_research import removal_impact
+        actor = self._require_actor(actor, 'research_removed')
+        targets = set(source_ids)
+        if not targets:
+            raise WriteServiceError('removal requires source IDs')
+        from .media_schema import MediaRecords
+        base = self._repository.snapshot()
+        def referenced(change):
+            ids = {s.source_id for s in change.records.sources}
+            for collection in ('observations', 'source_attachments', 'attributed_statements', 'analysis_runs'):
+                ids.update(r.source_id for r in getattr(change.records, collection))
+            return ids
+        owned = [(s.source_id, s.locator) for c in self._changes.values() if c.schema_version == 1
+                 for s in base.sources + c.records.sources if s.source_id in referenced(c)]
+        if not targets <= {sid for sid, _ in owned}:
+            raise WriteServiceError('removal source is not referenced by owned v1 research drafts')
+        locators = {locator for sid, locator in owned if sid in targets}
+        targets.update(sid for sid, locator in owned if locator in locators)
+        affected = []
+        known = set()
+        impacts = []
+        for change_id, change in self._changes.items():
+            if change.schema_version != 1:
+                continue
+            ids = referenced(change)
+            matched = ids & targets
+            if matched:
+                known.update(matched)
+                affected.append(change_id)
+                combined = MediaRecords(**{f.name: list(getattr(base, f.name, ())) +
+                                           list(getattr(change.records, f.name)) for f in fields(MediaRecords)})
+                impacts.append(removal_impact(combined, matched))
+        if known != targets:
+            raise WriteServiceError('removal source is not in owned v1 research drafts')
+        withdrawn_source_ids = set().union(*(referenced(self._changes[cid]) for cid in affected))
+        self._research_reviews.forget_sources(withdrawn_source_ids)
+        for change_id in affected:
+            change = self._changes.pop(change_id)
+            self._research_packets.pop(change_id, None)
+            self._withdrawn_research.add(change_id)
+            self._event(change_id, 'research_removed', actor, change.status,
+                        ChangeSetStatus.DRAFT, self._clock())
+        return {'withdrawn_changesets': tuple(sorted(affected)), 'impacts': impacts,
+                'owned_drafts': 'removed', 'published_outputs': 'not_modified'}
 
     def prepare(self, change_set_id: str, actor: str) -> PreparedCandidate:
         """Build a detached candidate; GitHub approval and merge happen later."""
