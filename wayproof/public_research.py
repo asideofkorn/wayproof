@@ -76,6 +76,8 @@ class ContentReview:
     exclusions: tuple[Literal['retained_media', 'derivatives', 'exif', 'personal_identification',
         'sensitive_location', 'profile_harvesting', 'unsafe_link', 'misquotation'], ...]
     disposition: Literal['accepted', 'rejected', 'pending', 'revoked']
+    # Applies to all OCR/transcription in this fingerprint-bound proposal.
+    extraction_scope: Literal['unreviewed', 'necessary_excerpts', 'complete', 'unnecessary'] = 'unreviewed'
 
 
 class ReviewedResearch:
@@ -212,6 +214,11 @@ def assess(change, packet, reviewed: ReviewedResearch, existing=None):
                   and version.limitations, 'reference-only version identity/limitations required')
             _need(version.identity_basis != 'unverifiable' or version.reproducibility == 'unavailable',
                   'unverifiable input cannot promise reproducibility')
+        extraction_modalities = {'ocr', 'transcription'}
+        has_extraction = (any(extraction_modalities.intersection(run.modalities) for run in r.analysis_runs)
+                          or any(f.modality in extraction_modalities for f in r.analysis_findings))
+        _need(not has_extraction or review.extraction_scope == 'necessary_excerpts',
+              'OCR/transcription requires reviewed minimum-necessary excerpts, never complete extraction')
         for run in r.analysis_runs:
             _need(set(run.modalities) <= {'visual', 'ocr', 'transcription'}, 'prohibited processing modality')
         for finding in r.analysis_findings:

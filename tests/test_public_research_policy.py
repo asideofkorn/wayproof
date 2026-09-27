@@ -14,6 +14,7 @@ from wayproof.public_research import (Quotation, Paraphrase, FindingText, Resear
     safe_url, preview_json, preview_html, removal_impact)
 from wayproof.schema import (CanonicalRecords, Rule, Requirement, Fulfillment, DerivedResult,
                              KnowledgeGap, Relationship)
+from wayproof.media_schema import TimeSelector
 from wayproof.media_contract import wire
 from wayproof.write_service import (ChangeSetWriteService, InMemoryCanonicalRepository,
                                      PreparationRejected, UnknownChangeSet)
@@ -313,3 +314,49 @@ def test_remove_research_using_legacy_source_preserves_baseline_and_withdraws_dr
     assert repository.snapshot() == base
     with pytest.raises(UnknownChangeSet):
         writes.get(change.change_set_id)
+
+
+@pytest.mark.parametrize('modality', ['ocr', 'transcription'])
+@pytest.mark.parametrize('scope', ['unreviewed', 'complete', 'unnecessary', 'necessary_excerpts'])
+def test_short_extraction_requires_explicit_minimization_review(research, modality, scope):
+    change, packet = research
+    records = change.records
+    run = records.analysis_runs[0]
+    target = run.inputs[0]
+    if modality == 'transcription':
+        records.media_versions[0] = replace(records.media_versions[0],
+                                            media_type='video', duration_ms=1000)
+        target = replace(target, selector=TimeSelector('time_range', 0, 1000))
+    records.analysis_runs[0] = replace(run, modalities=(modality,), inputs=(target,))
+    finding = records.analysis_findings[0]
+    # The same tiny text can be a whole extraction or a necessary excerpt.
+    # Its character count cannot decide which; that requires source review.
+    records.analysis_findings[0] = replace(finding, modality=modality,
+                                           target=target, content='OPEN')
+    packet = replace(packet, texts=tuple(
+        replace(text, text='OPEN') if text.target_kind == 'analysis_finding' else text
+        for text in packet.texts))
+    review = reviewed(change, packet)
+    if scope != 'unreviewed':
+        review = replace(review, extraction_scope=scope)
+    repository, writes = service(change, packet, review)
+    assert writes.validate(change.change_set_id, 'validator') == ()
+    errors = writes.assess_public_research(change.change_set_id, packet)
+    model = writes.public_research_preview(change.change_set_id)
+    if scope == 'necessary_excerpts':
+        assert errors == ()
+        assert model['texts']
+        with pytest.raises(PreparationRejected, match='activation is disabled'):
+            writes.prepare(change.change_set_id, 'builder')
+    else:
+        assert errors
+        assert model['texts'] == []
+    assert repository.snapshot() == CanonicalRecords()
+
+
+def test_extraction_attestation_cannot_be_supplied_in_packet(research):
+    _, packet = research
+    payload = wire(packet)
+    payload['extraction_scope'] = 'necessary_excerpts'
+    with pytest.raises(ValueError):
+        decode_packet(payload)

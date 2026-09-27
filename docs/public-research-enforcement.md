@@ -40,6 +40,17 @@ misquotation exclusion rejects the proposal. Semantic screening is human review,
 not a claim that a regex can recognize every name or sensitive place. The default
 denial prevents unreviewed text from masquerading as screened content.
 
+OCR/transcription additionally requires an explicit `ContentReview.extraction_scope`
+attestation of `necessary_excerpts` covering every extraction in the exact reviewed
+proposal. The default `unreviewed`, `complete`, and `unnecessary` states reject
+proposals containing OCR/transcription runs or findings. A complete extraction is
+prohibited even when it is only a few characters long. The reviewer must establish
+that retained text is both an excerpt and necessary for the bounded factual purpose;
+character limits alone cannot establish minimization. This fact belongs to trusted
+review configuration, never the submitted text packet. Synthetic image/video cases
+exercise complete-but-short rejection and necessary-excerpt acceptance without
+performing OCR or transcription.
+
 Intrinsic checks apply even to an accepted review: bounded records/strings,
 clean HTTPS references (no credentials, query/fragment, IP-literal/local host or
 control-character URLs), no artifact-reference shortcut, no retained-copy/digest
