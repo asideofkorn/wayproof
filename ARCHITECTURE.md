@@ -39,9 +39,12 @@ the [Step 4 media contract](docs/proposals/media-provenance-v1/README.md) was
 separately accepted in PR #196. Step 5a implements its public domain types,
 structural validation through the existing ChangeSet service, and a fail-closed
 repository capability gate. V1 drafts cannot be prepared, persisted or published.
-Schema v0 remains the active published format. Private custody, authenticated
-release policy, acquisition isolation, deletion propagation and activation
-remain separate implementation/review gates. See
+Schema v0 remains the active published format. The first launch is now scoped to
+[public-source, reference-only research](docs/public-source-research-plan.md).
+Narrow policy enforcement and removal of retained references/text precede v1
+migration/consumer compatibility and separately reviewed activation; bounded
+processing follows. Private custody, accounts/uploads, and retained-media
+infrastructure are deferred until needed. See
 [implementation boundaries](docs/media-contract-implementation.md).
 
 ## Architectural principles

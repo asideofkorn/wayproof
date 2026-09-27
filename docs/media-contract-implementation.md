@@ -62,23 +62,27 @@ this change: upgrade them before any future activation, or keep them on a pinned
 legacy snapshot. Current code rejects all v1 repositories; it cannot claim a
 partially loaded v1 dataset is a complete v0 answer.
 
-## Remaining gates before activation
+## Revised delivery scope after Step 5a
 
-1. Implement separate private custody, authenticated review/policy, acquisition
-   classification, consent and permitted-use/provider controls. Enforce content
-   minimization, EXIF and sensitive-location/person protections, and isolate
-   untrusted media/OCR from tools and secrets. Structural location checks alone
-   do not perform privacy screening.
-2. Implement retention, redaction/removal and dependent-answer reevaluation
-   across retained inputs, findings, Evidence/Claims, indexes, caches, exports
-   and offline manifests. Core-record tombstones and non-additive v1 operations
-   remain disabled until that workflow exists; draft media tombstones describe
-   unavailable dependencies, not an implemented takedown operation.
-3. Separately review serializer/storage routing, migration dry runs, authenticated
-   selection of previously published v1 records, exact publication-diff
-   verification, and shared consumer projections. Remove the hard activation
-   rejection only with evidence that all required gates work together.
+The maintainer selected a [public-source, reference-only launch](public-source-research-plan.md).
+Step 5a remains implemented and v1 activation remains disabled. The next gates are:
 
-Only then can bounded ingestion and immutable reprocessing begin. Reprocessing
-must never publish, resolve gaps, add relationships, change plans, or select its
-own findings without the separate reviewed ChangeSet/publication workflow.
+1. Enforce a narrow public-source/no-retention policy, including removal of
+   retained links, summaries, findings, and dependent support. Prefer official
+   accounts; reject private/login-only sources, personal-data harvesting, EXIF,
+   sensitive-location inference, and retained source media or derivative files.
+2. Complete separately reviewed v1 migration/storage routing and shared consumer
+   compatibility, including changed/unavailable/removed inputs and unsupported
+   answers. Legacy references remain unverified strings; no silent downgrade.
+3. Activate v1 only for reviewed reference-only provenance after those gates pass.
+4. Add bounded processing and immutable runs with demonstrated transient-input
+   handling and untrusted-input isolation. Reprocessing never publishes or selects
+   its own findings, resolves gaps, creates relationships, or changes plans.
+
+Private custody storage, contributor accounts/uploads, private-media controls,
+complex provider authorization, and raw-media/derivative-file deletion are
+explicitly deferred until those inputs or retained artifacts are in scope.
+No-retention does not remove the obligation to withdraw retained summaries and
+findings, reevaluate Evidence/Claims, and update owned projections. The initial
+policy must be enforced, not claimed from a caller's permission flag. Current
+runtime v1 prepare/write/publish rejection stays in place until activation review.
