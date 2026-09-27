@@ -1,0 +1,75 @@
+{
+  "claim_id": "claim-synthetic",
+  "availability_reports": [
+    {
+      "id": "00000000-0000-0000-0000-000000000003",
+      "state": "active",
+      "media_version_id": "00000000-0000-0000-0000-000000000002",
+      "checked_at": {
+        "kind": "instant",
+        "value": "2030-04-03T12:00:00Z",
+        "certainty": "exact",
+        "basis": {
+          "kind": "clock",
+          "ref": null
+        }
+      },
+      "availability": "available",
+      "limitations": [
+        "Synthetic report; no network check."
+      ]
+    }
+  ],
+  "support": "traceable",
+  "records": [
+    [
+      "analysis_finding",
+      "00000000-0000-0000-0000-000000000008"
+    ],
+    [
+      "analysis_run",
+      "00000000-0000-0000-0000-000000000007"
+    ],
+    [
+      "claim",
+      "claim-synthetic"
+    ],
+    [
+      "evidence",
+      "evidence-analysis"
+    ],
+    [
+      "media_asset",
+      "00000000-0000-0000-0000-000000000001"
+    ],
+    [
+      "media_version",
+      "00000000-0000-0000-0000-000000000002"
+    ],
+    [
+      "observation",
+      "observation-analysis"
+    ],
+    [
+      "observation_provenance",
+      "00000000-0000-0000-0000-00000000000a"
+    ],
+    [
+      "reviewed_selection",
+      "00000000-0000-0000-0000-000000000009"
+    ],
+    [
+      "source",
+      "source-analysis"
+    ],
+    [
+      "source",
+      "source-post"
+    ],
+    [
+      "source_attachment",
+      "00000000-0000-0000-0000-000000000004"
+    ]
+  ],
+  "unavailable_records": []
+}

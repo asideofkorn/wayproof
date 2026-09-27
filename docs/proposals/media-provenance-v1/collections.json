@@ -1,0 +1,17 @@
+{
+  "sources": "source",
+  "observations": "observation",
+  "evidence": "evidence",
+  "claims": "claim",
+  "media_assets": "media_asset",
+  "media_versions": "media_version",
+  "availability_reports": "availability_report",
+  "source_attachments": "source_attachment",
+  "attributed_statements": "attributed_statement",
+  "statement_mappings": "statement_mapping",
+  "analysis_runs": "analysis_run",
+  "analysis_findings": "analysis_finding",
+  "reviewed_selections": "reviewed_selection",
+  "observation_provenance": "observation_provenance",
+  "legacy_artifact_mappings": "legacy_artifact_mapping"
+}

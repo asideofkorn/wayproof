@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "visibility": "public",
+  "records": {
+    "sources": [
+      {
+        "source_id": "source-post",
+        "locator": "https://example.invalid/post",
+        "publisher": "Synthetic uploader"
+      },
+      {
+        "source_id": "source-comment",
+        "locator": "https://example.invalid/comment",
+        "publisher": "Synthetic commenter"
+      },
+      {
+        "source_id": "source-analysis",
+        "locator": "https://example.invalid/wayproof-analysis",
+        "publisher": "Wayproof synthetic analysis"
+      }
+    ],
+    "observations": [
+      {
+        "observation_id": "observation-analysis",
+        "source_id": "source-analysis",
+        "content": "Synthetic bounded visual report.",
+        "observed_at": null,
+        "retrieved_at": null,
+        "observer": "Synthetic analyst",
+        "artifact_refs": [],
+        "origin_kind": "media_analysis",
+        "provenance_id": "00000000-0000-0000-0000-00000000000a"
+      },
+      {
+        "observation_id": "observation-statement",
+        "source_id": "source-comment",
+        "content": "Commenter supplied an approximate capture date.",
+        "observed_at": null,
+        "retrieved_at": null,
+        "observer": "Synthetic commenter",
+        "artifact_refs": [],
+        "origin_kind": "media_statement",
+        "provenance_id": "00000000-0000-0000-0000-00000000000c"
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "evidence-analysis",
+        "observation_id": "observation-analysis",
+        "claim_id": "claim-synthetic",
+        "stance": "supports",
+        "notes": "Only describes this synthetic image, not a location or current condition."
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "claim-synthetic",
+        "subject_id": "synthetic-subject",
+        "predicate": "synthetic_visible_water",
+        "value": "water visible in this image",
+        "evidence_ids": [
+          "evidence-analysis"
+        ],
+        "temporal_scope": null,
+        "spatial_scope_ids": []
+      }
+    ],
+    "media_assets": [
+      {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "state": "active",
+        "origin_asset_id": null,
+        "origin_statement_id": null
+      }
+    ],
+    "media_versions": [
+      {
+        "id": "00000000-0000-0000-0000-000000000002",
+        "state": "active",
+        "asset_id": "00000000-0000-0000-0000-000000000001",
+        "media_type": "image",
+        "dimensions": {
+          "width": 640,
+          "height": 480
+        },
+        "duration_ms": null,
+        "retrieval_time": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
+          }
+        },
+        "identity_basis": "permitted_digest",
+        "reproducibility": "bounded",
+        "limitations": [
+          "Synthetic identity only; no media bytes exist."
+        ]
+      }
+    ],
+    "availability_reports": [
+      {
+        "id": "00000000-0000-0000-0000-000000000003",
+        "state": "active",
+        "media_version_id": "00000000-0000-0000-0000-000000000002",
+        "checked_at": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
+          }
+        },
+        "availability": "available",
+        "limitations": [
+          "Synthetic report; no network check."
+        ]
+      }
+    ],
+    "source_attachments": [
+      {
+        "id": "00000000-0000-0000-0000-000000000004",
+        "state": "active",
+        "source_id": "source-post",
+        "asset_id": "00000000-0000-0000-0000-000000000001",
+        "media_version_id": "00000000-0000-0000-0000-000000000002",
+        "ordinal": 3,
+        "ordinal_basis": "source_order",
+        "publication_time": {
+          "kind": "date",
+          "value": "2030-04-02",
+          "certainty": "asserted",
+          "basis": {
+            "kind": "source",
+            "ref": "source-post"
+          }
+        }
+      }
+    ],
+    "attributed_statements": [
+      {
+        "id": "00000000-0000-0000-0000-000000000005",
+        "state": "active",
+        "source_id": "source-comment",
+        "statement_kind": "clarification",
+        "speaker": {
+          "role": "commenter",
+          "attribution": "Synthetic commenter"
+        },
+        "text": "The third image was taken around April 1. The place is not identified.",
+        "publication_time": {
+          "kind": "date",
+          "value": "2030-04-03",
+          "certainty": "asserted",
+          "basis": {
+            "kind": "source",
+            "ref": "source-comment"
+          }
+        },
+        "corrects_statement_id": null
+      }
+    ],
+    "statement_mappings": [
+      {
+        "id": "00000000-0000-0000-0000-000000000006",
+        "state": "active",
+        "statement_id": "00000000-0000-0000-0000-000000000005",
+        "mapping_kind": "ordered_item",
+        "attachment_ids": [
+          "00000000-0000-0000-0000-000000000004"
+        ],
+        "list_item": 3,
+        "basis": "Synthetic commenter explicitly refers to original attachment 3.",
+        "certainty": "explicit"
+      }
+    ],
+    "analysis_runs": [
+      {
+        "id": "00000000-0000-0000-0000-000000000007",
+        "state": "active",
+        "source_id": "source-analysis",
+        "inputs": [
+          {
+            "media_version_id": "00000000-0000-0000-0000-000000000002",
+            "source_attachment_id": "00000000-0000-0000-0000-000000000004",
+            "selector": {
+              "kind": "whole"
+            }
+          }
+        ],
+        "analyst": {
+          "kind": "model",
+          "label": "Synthetic analyst",
+          "version": "fixture-1"
+        },
+        "method": {
+          "name": "synthetic-visual-inspection",
+          "version": "1",
+          "configuration_summary": "No model was called; fixture declares one full image inspection."
+        },
+        "analysis_time": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
+          }
+        },
+        "modalities": [
+          "visual"
+        ],
+        "limitations": [
+          "Cannot determine location or capture date."
+        ]
+      }
+    ],
+    "analysis_findings": [
+      {
+        "id": "00000000-0000-0000-0000-000000000008",
+        "state": "active",
+        "run_id": "00000000-0000-0000-0000-000000000007",
+        "target": {
+          "media_version_id": "00000000-0000-0000-0000-000000000002",
+          "source_attachment_id": "00000000-0000-0000-0000-000000000004",
+          "selector": {
+            "kind": "whole"
+          }
+        },
+        "modality": "visual",
+        "metadata_fields": [],
+        "content": "Synthetic finding: water appears in the inspected image.",
+        "certainty": "inferred",
+        "corroborating_evidence_ids": [],
+        "limitations": [
+          "Does not establish potability, present conditions, or route-wide availability."
+        ]
+      }
+    ],
+    "reviewed_selections": [
+      {
+        "id": "00000000-0000-0000-0000-000000000009",
+        "state": "active",
+        "origin": {
+          "kind": "finding",
+          "id": "00000000-0000-0000-0000-000000000008"
+        },
+        "mapping_id": null,
+        "media_version_ids": [
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "reviewer_role": "maintainer",
+        "reviewed_at": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
+          }
+        },
+        "change_set_id": "synthetic-review-1"
+      },
+      {
+        "id": "00000000-0000-0000-0000-00000000000b",
+        "state": "active",
+        "origin": {
+          "kind": "statement",
+          "id": "00000000-0000-0000-0000-000000000005"
+        },
+        "mapping_id": "00000000-0000-0000-0000-000000000006",
+        "media_version_ids": [
+          "00000000-0000-0000-0000-000000000002"
+        ],
+        "reviewer_role": "maintainer",
+        "reviewed_at": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
+          }
+        },
+        "change_set_id": "synthetic-review-1"
+      }
+    ],
+    "observation_provenance": [
+      {
+        "id": "00000000-0000-0000-0000-00000000000a",
+        "state": "active",
+        "observation_id": "observation-analysis",
+        "selection_id": "00000000-0000-0000-0000-000000000009",
+        "event_times": [
+          {
+            "kind": "unknown",
+            "certainty": "unknown",
+            "basis": {
+              "kind": "unknown",
+              "ref": null
+            }
+          }
+        ],
+        "locations": [
+          {
+            "basis_kind": "unresolved",
+            "value": null,
+            "precision_m": null,
+            "generalization": "unknown",
+            "sensitivity": "unassessed",
+            "basis": {
+              "kind": "unknown",
+              "ref": null
+            },
+            "limitations": [
+              "No location identified."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-0000-0000-00000000000c",
+        "state": "active",
+        "observation_id": "observation-statement",
+        "selection_id": "00000000-0000-0000-0000-00000000000b",
+        "event_times": [
+          {
+            "kind": "date",
+            "value": "2030-04-01",
+            "certainty": "approximate",
+            "basis": {
+              "kind": "statement",
+              "ref": "00000000-0000-0000-0000-000000000005"
+            }
+          }
+        ],
+        "locations": [
+          {
+            "basis_kind": "unresolved",
+            "value": null,
+            "precision_m": null,
+            "generalization": "unknown",
+            "sensitivity": "unassessed",
+            "basis": {
+              "kind": "unknown",
+              "ref": null
+            },
+            "limitations": [
+              "No location identified."
+            ]
+          }
+        ]
+      }
+    ],
+    "legacy_artifact_mappings": []
+  }
+}

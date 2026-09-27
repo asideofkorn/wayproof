@@ -36,6 +36,10 @@ existing-record evidence explanations and navigation without a schema change.
 repeatable media analysis with privacy/safety gates and typed Evidence lineage.
 Both are Accepted and independently implementable. Neither changes Schema v0;
 the media schema contract and migration still require separate review.
+The [Step 4 proposal](docs/proposals/media-provenance-v1/README.md) supplies
+proposed record definitions, location/time provenance, public/private separation,
+and synthetic migration/lineage tests. It is not an active schema or an
+implemented media-processing or privacy layer.
 
 ## Architectural principles
 
