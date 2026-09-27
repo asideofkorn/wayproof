@@ -48,6 +48,22 @@ changed spelling or invariant requires updating examples and tests. Draft domain
 integration is implemented in Step 5a. Schema activation, storage migration, real lifecycle enforcement, and source acquisition remain later
 reviews with their own acceptance evidence.
 
+## Initial implementation scope amendment — 2026-09-27
+
+The [public-source, reference-only plan](../../public-source-research-plan.md)
+narrows the first activation to publicly accessible links and bounded factual
+summaries/provenance, with no retained media or derivative files. Private custody,
+accounts/uploads, private-media controls, complex provider authorization, and
+retained-media cleanup are deferred. This does not change the accepted record
+shapes or activate v1. Policy must reject out-of-scope uses of the broader schema.
+
+The private store and lifecycle below describe the broader future scope, not a
+requirement to create custody records for every public reference. The initial
+scope still needs enforceable source/content rules, human PR review, removal of
+retained links/statements/findings and dependent support across owned outputs,
+explicit changed/unavailable versions, and untrusted-input isolation. Synthetic
+private fixtures and permission flags are not runtime authorization.
+
 ## Public and operational/private separation
 
 This proposal selects a **public, minimized canonical corpus** and a physically
@@ -424,9 +440,11 @@ The oracle's removal function returns an **impact plan**. Its synthetic test
 constructs a hypothetical tombstoned snapshot and proves the claim no longer
 appears traceable. It does not demonstrate physical deletion, provider cleanup,
 Git remediation, retention scheduling, takedown operations, cache purges, or
-complete privacy screening. Step 5 must implement and test those controls before
-any real media processing. Existing production answerability behavior is not
-changed in this PR.
+complete privacy screening. Implement and test the controls applicable to the
+reviewed scope before processing. Reference-only scope still requires retained
+text/reference removal and dependent-answer updates; raw-media/private-store
+cleanup is deferred while those artifacts are excluded. The design oracle does
+not change production answerability behavior.
 
 ## Synthetic acceptance and review gates
 
@@ -449,14 +467,16 @@ changed in this PR.
 | Reprocessing without separate review | Hypothetical canonical transition rejected; no publication, gap resolution, relationship or planning change |
 | Private hash / sensitive precise location | Rejected from public representation; private review never exported |
 | Legacy artifact reference | Readable unchanged; only an explicit reviewed mapping can add identity |
-| Unsupported envelope | Clear version error; root-level capability-gate implementation still required |
+| Unsupported envelope | Clear version error; Step 5a implements the v0-only root capability gate |
 
 Before approving this schema proposal, review the new Observation origin fields,
 separate availability assertions, selection cardinality, qualified location/time
 semantics, public/private field budgets, opaque identities, migration gates,
 tombstone restrictions, and unsupported-answer behavior. Acceptance here selects
 a contract for implementation; it does not waive Step 5 enforcement review.
-Step 5 must prove policy/authentication, acquisition classification, processor
-isolation, transfer restrictions, content redaction, deletion propagation and
-version gates. Only then can Steps 6–7 implement bounded ingestion/reprocessing
-and shared consumer projections through the controlled domain write boundary.
+The initial delivery sequence is narrow public-source policy enforcement,
+v1 migration/shared consumer compatibility, reviewed reference-only activation,
+and bounded immutable processing. Each stage must prove the applicable checks
+in the scope amendment above. Private custody and retained-media infrastructure
+remain gates for later expanded scope; they are not initial launch prerequisites.
+The existing ChangeSet/Evidence/publication boundary applies to every stage.

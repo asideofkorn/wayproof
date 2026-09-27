@@ -203,27 +203,38 @@ without granting direct canonical write access.
   validation through the ChangeSet service, and unsupported-schema rejection
   across canonical reads, exports and publication checks. V1 preparation and
   persistence stay disabled. [Implementation boundary](docs/media-contract-implementation.md).
-  **Next:** private custody/authenticated policy and lifecycle enforcement,
-  then separately reviewed activation before bounded ingestion/reprocessing.
-- Before media processing launches, implement and test ADR 0004 privacy/safety
-  gates: minimization, contribution versus public-source scope, EXIF handling,
-  sensitive locations and faces/plates, retention and deletion propagation,
-  permitted processing destinations, and untrusted media/OCR isolation. This
-  is independent of M2 evidence UI acceptance. Used information must expose
-  source provenance; rejection belongs in its research batch or PR, and
-  deferral leaves a gap/research note rather than a permanent denylist.
-- After separate schema approval, expose media references, author
-  clarifications, distinct dates, and reviewed analysis history through shared
-  read services without introducing a direct Claim-to-analysis path.
-- Add bounded ingestion and reprocessing only after that contract is reviewed.
-  New runs do not overwrite earlier findings or automatically publish claims,
-  resolve gaps, or add destination backlinks. Examples skipped for the current
-  batch remain uningested without preventing later authorized review.
-  **Gate:** synthetic or appropriately licensed fixtures cover author date
-  clarifications, ambiguous photo-list mappings, unknown capture dates and
-  locations, repeated analysis, conflicting findings, reposts, and unavailable
-  originals. Validation and consumer tests prove that these cannot silently
-  become current access, fees, passability, or resolved planning answers.
+  **Next:** [public-source, reference-only research](docs/public-source-research-plan.md),
+  in these reviewable steps:
+
+  1. Enforce a narrow public-source/no-retention policy, including source-reference
+     removal and reevaluation of dependent retained Evidence/Claims and outputs.
+  2. Complete v1 migration and HTML/JSON/MCP/read-service compatibility.
+  3. Separately activate v1 for reviewed, reference-only provenance.
+  4. Add bounded processing and immutable runs; preserve the separate PR review
+     gate for any canonical effect.
+  5. Defer private custody, accounts/uploads/consent workflows, private-media
+     access controls, complex provider authorization, and retained raw-media/
+     derivative cleanup until those inputs or artifacts are actually needed.
+- The initial scope admits only publicly accessible sources, with official
+  agency, park, campground, and institutional accounts preferred. Store safe
+  links, bounded factual summaries, and distinct author statements/findings;
+  no media copies or derivative files, profile harvesting, personal identities,
+  EXIF extraction, or sensitive-location inference. No access-control bypass.
+  Captions, OCR, imagery, and links are untrusted data, never instructions.
+- No-retention does not mean no retained content: removal of links, statements,
+  findings, and dependent support must work across owned consumer outputs before
+  activation. Mark unavailable/materially changed posts without replacing the
+  selected version silently. Preserve capture/publication time and location
+  uncertainty, original attachment order, and immutable analysis history.
+- Preserve the accepted Source → Observation → Evidence → Claim boundary and
+  GitHub review. Reprocessing cannot publish, choose its own findings, resolve
+  gaps, create relationships, or change plans. Rejected/deferred research stays
+  batch-scoped; do not turn a skipped source into a global denylist.
+  **Gate:** synthetic fixtures prove eligibility/content exclusions, inert
+  malicious captions/OCR, source removal and consumer agreement, changed/missing
+  inputs, unknown dates/locations, ambiguous mappings, partial video inspection,
+  conflicting runs, reposts, and no canonical change without separate review.
+  Private-custody/retained-media cases gate later expanded scope, not this launch.
 - Add constrained proposal operations for evidence-bearing records and
   relationships plus ChangeSet validation and explanation. Keep normative rule
   and derived-result authoring outside the initial consumer proposal surface.

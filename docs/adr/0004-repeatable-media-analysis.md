@@ -108,12 +108,36 @@ processing. Such restrictions belong in appropriately scoped operational
 privacy/safety records with minimal identifying information, not the public
 evidence catalog. This ADR introduces no repository-wide exclusion registry.
 
+## Scope amendment — 2026-09-27
+
+The first implementation is restricted to public, reference-only research under
+[the public-source plan](../public-source-research-plan.md): safe links, bounded
+factual summaries, distinct author statements/findings, and reviewed provenance;
+no retained media or derivative files. Prefer official/institutional sources.
+No login/access-control bypass, profile harvesting, personal identification,
+EXIF extraction, or sensitive-location inference is permitted in this scope.
+
+Private custody, contributor accounts/uploads/consent workflows, private-media
+access controls, complex provider authorization, and retained-media/derivative
+cleanup infrastructure are deferred until those inputs or artifacts are in scope.
+The existing PR review authority remains; a new identity platform is unnecessary.
+The gates below apply to the material actually handled. Reference-only activation
+still requires enforceable source/content rules, untrusted-input isolation,
+removal of retained links/text with dependency reevaluation, explicit changed or
+unavailable input states, and human review. Summaries and findings are retained
+content, so their lifecycle is not waived by calling the workflow no-retention.
+
+The revised order is narrow policy enforcement, migration/consumer compatibility,
+separately reviewed reference-only activation, then bounded immutable processing.
+The broader schema remains accepted; this amendment changes launch scope and
+sequencing, not its types, provenance boundary, or current activation block.
+
 ## Mandatory privacy, safety, and source gates
 
 These are acceptance requirements, not claims of implemented safeguards. No
-social-media processing pipeline may launch until the gates have enforceable
-checks and reviewed operating procedures. Apply [DATA_LICENSE](../../DATA_LICENSE.md)
-in addition to these requirements. License compatibility alone is insufficient.
+social-media processing pipeline may launch until the gates applicable to its
+reviewed scope have enforceable checks and reviewed operating procedures. Apply
+[DATA_LICENSE](../../DATA_LICENSE.md) in addition to these requirements. License compatibility alone is insufficient.
 
 1. **Minimize collection.** Define the planning question and collect only the
    attachment, bounded excerpt, attribution, dates, and location precision
@@ -184,7 +208,10 @@ provenance, input-version identity, validators, backward compatibility and
 migration, review selection, retention durations, deletion ownership, and
 permitted processing infrastructure. Schema v0 stays unchanged until then.
 
-Synthetic or appropriately licensed fixtures must cover:
+Synthetic or appropriately licensed fixtures must cover the applicable scope.
+The initial reference-only scope tests rejection of EXIF/private/upload workflows;
+processing or retention tests for those workflows are required before a later
+scope expansion enables them. Cross-scope acceptance cases include:
 
 - Unknown capture dates/locations, author date clarifications, and conflicting
   statements without borrowing the comment's publication time as capture time.
