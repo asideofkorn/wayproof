@@ -21,7 +21,9 @@ def shape_errors(records, *, media=False):
             continue
         allowed = extras[field.name] if field.name in extras else (get_args(hints[field.name])[0],)
         if media and field.name == 'sources':
-            allowed += (MediaSource,)
+            # This container is the proposed delta; unclassified Sources are
+            # allowed only in the separately validated v0 baseline.
+            allowed = (MediaSource,)
         if media and field.name == 'observations':
             allowed += (MediaObservation,)
         for item in items:

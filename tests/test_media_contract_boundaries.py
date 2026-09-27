@@ -314,3 +314,34 @@ def test_changeset_and_record_ids_cannot_escape_their_storage_collection(identif
     changed.change_set_id = identifier
     with pytest.raises(CanonicalStorageError, match='single path component'):
         changeset_document(changed)
+
+
+@pytest.mark.parametrize('source_index', [0, 1, 2])
+def test_new_v1_sources_cannot_decode_as_unclassified_legacy_sources(draft, source_index):
+    value = wire(draft.records.sources[source_index])
+    del value['source_role']
+    draft.records.sources[source_index] = decode_record('source', value)
+    assert type(draft.records.sources[source_index]) is Source
+    _, writes = writes_for(draft)
+    assert writes.validate(draft.change_set_id, 'validator')
+    assert writes.explain(draft.change_set_id).validation_errors
+    assert writes.get(draft.change_set_id).status is ChangeSetStatus.DRAFT
+
+
+def test_root_gate_decodes_stored_changeset_operations(tmp_path):
+    from wayproof.canonical_storage import load_changeset
+    from wayproof.read_service import CanonicalReadService
+    change = ChangeSet('synthetic-stored-change', CanonicalRecords(),
+        summary='Synthetic stored operation', operations=(ChangeOperation(
+            ChangeAction.ADD, 'source', 'synthetic-source',
+            'canonical/v0/sources/synthetic-source.json', 'Synthetic test'),))
+    change.status = ChangeSetStatus.VALIDATED
+    payload = json.loads(changeset_document(change))
+    payload['operations'][0]['unsupported_field'] = 'synthetic extension'
+    target = tmp_path / 'changesets/v0/synthetic-stored-change.json'
+    target.parent.mkdir(parents=True)
+    target.write_text(json.dumps(payload))
+    for load, argument in ((load_changeset, target), (load_canonical, tmp_path),
+                           (CanonicalReadService, tmp_path)):
+        with pytest.raises(UnsupportedSchemaError, match='unsupported fields'):
+            load(argument)

@@ -85,8 +85,9 @@ def assert_supported_repository(root: Path) -> None:
                     if not path.is_file() or path.is_symlink() or path.suffix != '.json':
                         raise UnsupportedSchemaError(f'unsupported schema artifact layout: {path}')
                     if namespace == 'changesets':
-                        payload = json.loads(path.read_text(encoding='utf-8'))
-                        _check_envelope(payload, path, changeset=True)
+                        # Use the same complete decoder as downstream readers,
+                        # including closed operation shapes and record identity.
+                        load_changeset(path)
 
 
 def _json_value(value: Any) -> Any:
