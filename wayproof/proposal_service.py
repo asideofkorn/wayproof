@@ -44,6 +44,9 @@ class ProposalReceipt:
 
 
 def _operations(request: ProposalRequest) -> Tuple[ChangeOperation, ...]:
+    from .record_contract import shape_errors
+    if shape_errors(request.records):
+        raise ProposalRejected('consumer proposals support only exact schema v0 records')
     if not request.summary.strip():
         raise ProposalRejected("proposal summary must not be blank")
     if not request.reason.strip():

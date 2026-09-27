@@ -21,6 +21,22 @@ _COLLECTIONS = {
 
 def verify_publication(changed_paths: Iterable[Tuple[str, str]],
                        changes: Iterable[ChangeSet]) -> Tuple[str, ...]:
+    changed_paths = tuple(changed_paths)
+    unsupported = []
+    for status, path in changed_paths:
+        parts = path.split('/')
+        if parts[0] not in ('canonical', 'changesets'):
+            continue
+        supported = (len(parts) == 4 and parts[:2] == ['canonical', 'v0']
+                     and parts[2] in _COLLECTIONS.values() and parts[3].endswith('.json'))
+        if parts[0] == 'changesets':
+            supported = (len(parts) == 3 and parts[1] == 'v0' and parts[2].endswith('.json'))
+            if supported and status != 'A':
+                unsupported.append('published ChangeSet cannot be modified or removed: ' + path)
+        if not supported:
+            unsupported.append('unsupported schema version/collection in publication: ' + path)
+    if unsupported:
+        return tuple(sorted(unsupported))
     canonical = {path: status for status, path in changed_paths
                  if path.startswith("canonical/v0/")}
     changes = tuple(changes)
@@ -32,6 +48,9 @@ def verify_publication(changed_paths: Iterable[Tuple[str, str]],
     if len(changes) != 1:
         return ("a canonical diff requires exactly one new ChangeSet",)
     change = changes[0]
+    if (type(change.schema_version) is not int or change.schema_version != 0 or
+            type(change.artifact_format_version) is not int or change.artifact_format_version != 1):
+        errors.append('unsupported ChangeSet schema version/format for publication')
     if change.status is not ChangeSetStatus.VALIDATED:
         errors.append("publication ChangeSet must be VALIDATED")
     if not change.summary.strip():

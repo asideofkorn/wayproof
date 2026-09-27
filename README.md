@@ -376,6 +376,16 @@ workflow retain those responsibilities.
 See [tests/test_proposal_service.py](tests/test_proposal_service.py) for a small
 source-to-claim proposal and its validation behavior.
 
+## Media contract drafts
+
+The [accepted media contract](docs/proposals/media-provenance-v1/README.md) has
+production domain types and structural validation for additive v1 ChangeSet
+drafts. Preparation, persistence, publication, and consumer-facing media
+processing remain disabled. Published data still uses Schema v0. Readers and
+exports reject unsupported versions/collections rather than silently ignoring
+them. See [Step 5a implementation boundaries](docs/media-contract-implementation.md)
+for the enforced checks and the remaining privacy, deletion and activation gates.
+
 ## Canonical repository layout
 
 ```text

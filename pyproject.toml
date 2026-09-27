@@ -19,6 +19,7 @@ classifiers = [
     "Intended Audience :: Science/Research",
 ]
 dependencies = [
+    "jsonschema>=4.20,<5",
     "mcp>=2,<3",
     "pandas>=2.0",
     "numpy>=1.24",
@@ -42,3 +43,6 @@ wayproof-mcp = "wayproof.mcp_server:main"
 [tool.setuptools]
 packages = ["wayproof"]
 py-modules = ["cli", "plan", "report"]
+
+[tool.setuptools.package-data]
+wayproof = ["media_contract.json"]

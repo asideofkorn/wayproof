@@ -301,6 +301,8 @@ class ChangeOperation:
         for label, value in required.items():
             if not value or not value.strip():
                 raise ValueError(f"ChangeOperation {label} must not be blank")
+        if self.record_id in ('.', '..') or any(c in self.record_id for c in ('/', '\\', '\x00')):
+            raise ValueError('ChangeOperation record id must be a single path component')
         if not self.path.startswith("canonical/") or ".." in self.path.split("/"):
             raise ValueError("ChangeOperation path must stay under canonical/")
 
@@ -325,6 +327,8 @@ class ChangeSet:
     def __post_init__(self) -> None:
         if not self.change_set_id.strip():
             raise ValueError("ChangeSet id must not be blank")
+        if self.change_set_id in ('.', '..') or any(c in self.change_set_id for c in ('/', '\\', '\x00')):
+            raise ValueError('ChangeSet id must be a single path component')
         if self.artifact_format_version < 1:
             raise ValueError("artifact format version must be positive")
         if self.schema_version < 0:
@@ -337,7 +341,17 @@ class ChangeSet:
 
         from .validation import validate_records
 
-        errors = tuple(validate_records(self.records, existing=existing))
+        if type(self.artifact_format_version) is not int or self.artifact_format_version != 1:
+            errors = ('unsupported ChangeSet artifact format',)
+        elif type(self.schema_version) is not int:
+            errors = ('unsupported ChangeSet schema version',)
+        elif self.schema_version == 1:
+            from .media_validation import validate_media_change
+            errors = validate_media_change(self, existing or CanonicalRecords())
+        elif self.schema_version != 0:
+            errors = ('unsupported ChangeSet schema version',)
+        else:
+            errors = tuple(validate_records(self.records, existing=existing))
         self.validation_errors = errors
         self.status = (ChangeSetStatus.VALIDATED
                        if not errors else ChangeSetStatus.DRAFT)

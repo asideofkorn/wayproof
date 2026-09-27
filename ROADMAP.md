@@ -196,9 +196,15 @@ without granting direct canonical write access.
   redaction/deletion policy. Findings must enter typed Evidence through an
   attributed Observation; Claims continue referencing Evidence IDs only.
   The [Step 4 schema and migration proposal](docs/proposals/media-provenance-v1/README.md)
-  is **Proposed**, with synthetic contracts/tests for exact version lineage,
+  is **Accepted** (PR #196), with synthetic contracts/tests for exact version lineage,
   location provenance, separate public/private stores, and reviewed selection.
-  Reviewing it does not activate v1 or implement privacy controls.
+  Accepting it does not activate v1 or implement privacy controls.
+  **Step 5a implemented:** public domain types, structural additive v1 draft
+  validation through the ChangeSet service, and unsupported-schema rejection
+  across canonical reads, exports and publication checks. V1 preparation and
+  persistence stay disabled. [Implementation boundary](docs/media-contract-implementation.md).
+  **Next:** private custody/authenticated policy and lifecycle enforcement,
+  then separately reviewed activation before bounded ingestion/reprocessing.
 - Before media processing launches, implement and test ADR 0004 privacy/safety
   gates: minimization, contribution versus public-source scope, EXIF handling,
   sensitive locations and faces/plates, retention and deletion propagation,
