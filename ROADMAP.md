@@ -206,8 +206,11 @@ without granting direct canonical write access.
   **Next:** [public-source, reference-only research](docs/public-source-research-plan.md),
   in these reviewable steps:
 
-  1. Enforce a narrow public-source/no-retention policy, including source-reference
-     removal and reevaluation of dependent retained Evidence/Claims and outputs.
+  1. **Draft-boundary enforcement implemented:** narrow public-source policy,
+     reviewed-content binding, distinct excerpt/paraphrase/finding representations,
+     withdrawal of owned research text/references, and dependent-support/output
+     invalidation analysis. See [enforced scope and limits](docs/public-research-enforcement.md).
+     Persisted removal and live consumer integration remain in the next gate.
   2. Complete v1 migration and HTML/JSON/MCP/read-service compatibility.
   3. Separately activate v1 for reviewed, reference-only provenance.
   4. Add bounded processing and immutable runs; preserve the separate PR review

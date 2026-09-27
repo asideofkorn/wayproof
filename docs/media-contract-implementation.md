@@ -86,3 +86,11 @@ No-retention does not remove the obligation to withdraw retained summaries and
 findings, reevaluate Evidence/Claims, and update owned projections. The initial
 policy must be enforced, not claimed from a caller's permission flag. Current
 runtime v1 prepare/write/publish rejection stays in place until activation review.
+
+## Public-research policy follow-up
+
+The [reference-only enforcement boundary](public-research-enforcement.md) adds
+policy assessment and removal of owned research drafts to the existing write
+service. Structural validation remains distinct from policy/review authority.
+V1 prepare/write/publish rejection remains unchanged; live removal/consumer
+integration is still part of the next separately reviewed migration stage.

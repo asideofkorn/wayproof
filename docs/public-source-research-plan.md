@@ -1,7 +1,9 @@
 # Public-source, reference-only media research
 
 Status: implementation plan approved in principle by the maintainer on
-2026-09-27; enforcement and v1 activation are not implemented by this document.
+2026-09-27. [Draft-boundary enforcement](public-research-enforcement.md) is now
+implemented; v1 persistence/publication, live consumer integration and media
+processing remain disabled.
 This narrows the first delivery scope of [ADR 0004](adr/0004-repeatable-media-analysis.md)
 and the [accepted media contract](proposals/media-provenance-v1/README.md).
 The broader contract remains available for later scopes; private-media
@@ -104,7 +106,7 @@ alone never authorizes arbitrary transfer or reuse.
 
 ## Reviewable implementation sequence
 
-1. **Narrow public-source/no-retention policy (next PR).** Implement the shared
+1. **Narrow public-source/no-retention policy (draft boundary implemented).** Implement the shared
    admission/publication checks and removal/dependency behavior for retained
    references and text, using synthetic fixtures. Keep v1 preparation,
    persistence, and publication blocked. Any necessary extension of the existing

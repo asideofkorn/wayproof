@@ -385,6 +385,9 @@ processing remain disabled. Published data still uses Schema v0. Readers and
 exports reject unsupported versions/collections rather than silently ignoring
 them. See [Step 5a implementation boundaries](docs/media-contract-implementation.md)
 for the enforced checks and the remaining privacy, deletion and activation gates.
+The [public-research policy boundary](docs/public-research-enforcement.md) now
+assesses reference-only drafts and removes owned research content; it does not
+activate v1 or add media processing.
 
 ## Canonical repository layout
 
