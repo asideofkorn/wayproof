@@ -6,17 +6,20 @@
       {
         "source_id": "source-post",
         "locator": "https://example.invalid/post",
-        "publisher": "Synthetic uploader"
+        "publisher": "Synthetic uploader",
+        "source_role": "original"
       },
       {
         "source_id": "source-comment",
         "locator": "https://example.invalid/comment",
-        "publisher": "Synthetic commenter"
+        "publisher": "Synthetic commenter",
+        "source_role": "comment"
       },
       {
         "source_id": "source-analysis",
         "locator": "https://example.invalid/wayproof-analysis",
-        "publisher": "Wayproof synthetic analysis"
+        "publisher": "Wayproof synthetic analysis",
+        "source_role": "analysis_report"
       }
     ],
     "observations": [
@@ -136,6 +139,15 @@
           "basis": {
             "kind": "source",
             "ref": "source-post"
+          }
+        },
+        "association_observed_time": {
+          "kind": "instant",
+          "value": "2030-04-03T12:00:00Z",
+          "certainty": "exact",
+          "basis": {
+            "kind": "clock",
+            "ref": null
           }
         }
       }

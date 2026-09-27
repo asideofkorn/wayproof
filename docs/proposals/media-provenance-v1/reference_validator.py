@@ -110,9 +110,9 @@ def dependencies(key, record, records):
             deps.add(('statement_mapping', record['mapping_id']))
     if kind == 'claim':
         deps.update(('evidence', item) for item in record['evidence_ids'])
-    if kind == 'observation':
-        deps.update(key for key, item in records.items() if key[0] == 'observation_provenance'
-                    and active(item) and item['observation_id'] == rid)
+    if kind == 'observation' and record.get('origin_kind') in ('media_statement', 'media_analysis'):
+        # The declared edge survives removal of its target's payload/backlink.
+        deps.add(('observation_provenance', record['provenance_id']))
     return deps
 
 
@@ -178,7 +178,7 @@ def validate(public, private, reviewed_changesets=(), legacy_observation_ids=())
     analysis_ids = {rid for kind, rid in records if kind in ('analysis_run', 'analysis_finding')}
     graph = {key: dependencies(key, item, records) for key, item in records.items()}
     for key, deps in graph.items():
-        require(deps <= records.keys(), f'missing typed reference: {key}')
+        require(deps <= records.keys(), f'missing typed reference: {key} -> {deps - records.keys()}')
     visiting, visited = set(), set()
     def visit(key):
         require(key not in visiting, 'cyclic support/origin graph')
@@ -221,11 +221,17 @@ def validate(public, private, reviewed_changesets=(), legacy_observation_ids=())
             if item['identity_basis'] == 'permitted_digest':
                 require(policy['content_hash'] is not None, 'digest identity basis requires permitted private hash')
         if kind == 'source_attachment':
+            source = get('source', item['source_id'])
+            if active(source):
+                require(source.get('source_role') != 'analysis_report', 'attachment needs original source')
             version = get('media_version', item['media_version_id'])
             if active(version):
                 require(version['asset_id'] == item['asset_id'], 'attachment asset/version mismatch')
             require((item['ordinal'] is None) == (item['ordinal_basis'] == 'unknown'), 'unknown attachment order')
         if kind == 'attributed_statement':
+            source = get('source', item['source_id'])
+            if active(source):
+                require(source.get('source_role') != 'analysis_report', 'statement needs original/comment source')
             require((item['speaker']['role'] == 'unknown') == (item['speaker']['attribution'] is None),
                     'speaker identity must be explicit or unknown')
             if item['corrects_statement_id']:
@@ -237,6 +243,9 @@ def validate(public, private, reviewed_changesets=(), legacy_observation_ids=())
             require((item['list_item'] is not None) == (item['mapping_kind'] == 'ordered_item'), 'ordered item basis')
             require((item['mapping_kind'] == 'ambiguous') == (item['certainty'] != 'explicit'), 'mapping uncertainty')
         if kind == 'analysis_run':
+            source = get('source', item['source_id'])
+            if active(source):
+                require(source.get('source_role') == 'analysis_report', 'run needs typed analysis-report source')
             for target in item['inputs']:
                 version = get('media_version', target['media_version_id'])
                 attachment = get('source_attachment', target['source_attachment_id'])
@@ -353,6 +362,11 @@ def validate_transition(before, after, reviewed_changeset=None):
     require(before == after or reviewed_changeset is not None, 'canonical change requires separate review')
     for key, value in old.items():
         require(key in new, 'removal needs a non-sensitive tombstone in this synthetic contract')
+        if key[0] == 'source' and not active(value):
+            require(not active(new[key]), 'removed source identity cannot be reused')
+        if key[0] == 'source' and active(value) and active(new[key]):
+            require(value.get('source_role') == new[key].get('source_role'),
+                    'source role cannot be reclassified; allocate a distinct source')
         if (key[0] not in LEGACY_IDS or key[0] == 'observation') and new[key] != value:
             require(not active(new[key]), 'immutable media record cannot be overwritten')
 

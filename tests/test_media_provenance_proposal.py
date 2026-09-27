@@ -346,3 +346,88 @@ def test_tombstones_cannot_use_identifying_urls_as_new_ids(example):
         'state': 'removed', 'reason_code': 'privacy_removal'})
     with pytest.raises(ERROR):
         check(example)
+
+
+@pytest.mark.parametrize('state', ['removed', 'redacted', 'missing'])
+@pytest.mark.parametrize('collection,kind,n', [
+    ('observation_provenance', 'observation_provenance', 10),
+    ('reviewed_selections', 'reviewed_selection', 9),
+    ('analysis_findings', 'analysis_finding', 8),
+    ('media_versions', 'media_version', 2),
+])
+def test_removed_media_lineage_never_degrades_to_legacy_support(example, collection, kind, n, state):
+    public, _ = example
+    records = public['records'][collection]
+    target = (kind, uid(n))
+    if state == 'missing':
+        records[:] = [r for r in records if r['id'] != uid(n)]
+        with pytest.raises(ValueError, match='missing typed reference'):
+            check(example)
+    else:
+        records[0] = {'id': uid(n), 'state': state, 'reason_code': 'privacy_removal'}
+        check(example)
+        # Even after the target loses its payload, the declared incoming edge persists.
+        assert ('claim', 'claim-synthetic') in design.removal_impact(public, target)
+    view = design.explain_media_claim(public, 'claim-synthetic')
+    assert view['support'] == 'unavailable'
+    assert target in view['unavailable_records']
+    assert ('observation', 'observation-analysis') in view['records']
+
+
+@pytest.mark.parametrize('source_id', ['source-post', 'source-comment', 'source-unclassified'])
+def test_analysis_cannot_be_attributed_to_original_comment_or_legacy_source(example, source_id):
+    records = example[0]['records']
+    records['sources'].append({'source_id': 'source-unclassified',
+        'locator': 'https://example.invalid/legacy', 'publisher': 'Synthetic legacy publisher'})
+    records['analysis_runs'][0]['source_id'] = source_id
+    records['observations'][0]['source_id'] = source_id
+    with pytest.raises(ValueError, match='typed analysis-report source'):
+        check(example)
+
+
+@pytest.mark.parametrize('index', [0, 1])
+def test_original_attachment_and_comment_cannot_use_analysis_report_source(example, index):
+    records = example[0]['records']
+    collection = 'source_attachments' if index == 0 else 'attributed_statements'
+    records[collection][0]['source_id'] = 'source-analysis'
+    with pytest.raises(ValueError, match='needs original'):
+        check(example)
+
+
+@pytest.mark.parametrize('legacy', [False, True])
+def test_source_role_cannot_be_reclassified_even_with_review(example, legacy):
+    before = deepcopy(example[0])
+    if legacy:
+        del before['records']['sources'][0]['source_role']
+    after = deepcopy(before)
+    after['records']['sources'][0]['source_role'] = 'analysis_report'
+    with pytest.raises(ValueError, match='cannot be reclassified'):
+        design.validate_transition(before, after, 'synthetic-review-2')
+    removed = deepcopy(before)
+    removed['records']['sources'][0] = {'source_id': 'source-post',
+        'state': 'removed', 'reason_code': 'privacy_removal'}
+    design.validate_transition(before, removed, 'synthetic-review-2')
+    with pytest.raises(ValueError, match='identity cannot be reused'):
+        design.validate_transition(removed, after, 'synthetic-review-3')
+
+
+def test_reordered_unchanged_media_has_its_own_observation_time(example):
+    public, _ = example
+    before = deepcopy(public)
+    attachment = deepcopy(public['records']['source_attachments'][0])
+    attachment.update(id=uid(24), ordinal=1)
+    attachment['association_observed_time']['value'] = '2030-04-05T12:00:00Z'
+    public['records']['source_attachments'].append(attachment)
+    check(example)
+    design.validate_transition(before, public, 'synthetic-review-2')
+    old = before['records']['source_attachments'][0]
+    assert attachment['media_version_id'] == old['media_version_id']
+    assert attachment['publication_time'] == old['publication_time']
+    assert attachment['association_observed_time'] != old['association_observed_time']
+    assert public['records']['media_versions'] == before['records']['media_versions']
+    assert public['records']['statement_mappings'] == before['records']['statement_mappings']
+    assert design.explain_media_claim(public, 'claim-synthetic') == design.explain_media_claim(before, 'claim-synthetic')
+    changed = deepcopy(before)
+    changed['records']['source_attachments'][0] = {**attachment, 'id': old['id']}
+    with pytest.raises(ValueError, match='immutable'):
+        design.validate_transition(before, changed, 'synthetic-review-2')

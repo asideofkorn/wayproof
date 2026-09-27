@@ -260,6 +260,17 @@
           "properties": {
             "source_id": {"type": "string", "minLength": 1},
             "locator": {"type": "string", "format": "uri"},
+            "publisher": {"type": "string"},
+            "source_role": {"enum": ["original", "comment", "analysis_report"]}
+          },
+          "required": ["source_id", "locator", "publisher", "source_role"],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "source_id": {"type": "string", "minLength": 1},
+            "locator": {"type": "string", "format": "uri"},
             "publisher": {"type": "string"}
           },
           "required": ["source_id", "locator", "publisher"],
@@ -530,7 +541,8 @@
             "media_version_id": {"type": "string", "format": "uuid"},
             "ordinal": {"anyOf": [{"type": "integer", "minimum": 1}, {"type": "null"}]},
             "ordinal_basis": {"enum": ["source_order", "unknown"]},
-            "publication_time": {"$ref": "#/$defs/time"}
+            "publication_time": {"$ref": "#/$defs/time"},
+            "association_observed_time": {"$ref": "#/$defs/time"}
           },
           "required": [
             "id",
@@ -540,7 +552,8 @@
             "media_version_id",
             "ordinal",
             "ordinal_basis",
-            "publication_time"
+            "publication_time",
+            "association_observed_time"
           ],
           "additionalProperties": false
         },

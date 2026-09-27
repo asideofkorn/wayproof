@@ -22,7 +22,7 @@ independently corroborated, or safe for a trip.
   proposed for review, not implemented production enums. Its public/private
   bundles are **test containers**, not a new persisted snapshot format.
 - [collections.json](collections.json) maps these fixture collections to record
-  types. Only the new types and two v1 Observation fields are the extension;
+  types. The new types, v1 Source role, and two v1 Observation fields are the extension;
   the four existing types included in the fixture are not a replacement for
   the full v0 schema, domain validators, or predicate vocabulary.
 - [synthetic-public.json](synthetic-public.json) contains one source attachment,
@@ -102,7 +102,7 @@ cannot override removal. That exceptional migration needs separate review.
 | `media_asset` | `origin_asset_id: UUID|null`, `origin_statement_id: UUID|null` |
 | `media_version` | `asset_id: UUID`, `media_type: image|video|audio`, `dimensions: {width,height}|null`, `duration_ms: positive integer|null`, `retrieval_time: Time`, `identity_basis: permitted_digest|provider_version|reviewed_copy|unverifiable`, `reproducibility: bounded|unavailable`, `limitations: string[]` |
 | `availability_report` | `media_version_id: UUID`, `checked_at: Time`, `availability: available|unavailable|unknown`, `limitations: string[]` |
-| `source_attachment` | `source_id: Source ID`, `asset_id: UUID`, `media_version_id: UUID`, `ordinal: positive integer|null`, `ordinal_basis: source_order|unknown`, `publication_time: Time` |
+| `source_attachment` | `source_id: Source ID`, `asset_id: UUID`, `media_version_id: UUID`, `ordinal: positive integer|null`, `ordinal_basis: source_order|unknown`, `publication_time: Time`, `association_observed_time: Time` |
 | `attributed_statement` | `source_id: Source ID`, `statement_kind: caption|comment|correction|clarification`, `speaker: {role: author|commenter|unknown, attribution: string|null}`, `text: bounded string`, `publication_time: Time`, `corrects_statement_id: UUID|null` |
 | `statement_mapping` | `statement_id: UUID`, `mapping_kind: single|multiple|ordered_item|ambiguous`, `attachment_ids: UUID[]`, `list_item: positive integer|null`, `basis: string`, `certainty: explicit|ambiguous|unresolved` |
 | `analysis_run` | `source_id: Source ID`, `inputs: Target[]`, `analyst: {kind: human|tool|model, label, version}`, `method: {name, version, configuration_summary}`, `analysis_time: Time`, `modalities: Modality[]`, `limitations: string[]` |
@@ -138,6 +138,13 @@ retrieval/reorder/replacement creates another association; old mappings stay
 pinned to old association IDs. A known `ordinal` requires `source_order`; an
 unknown ordinal stays null. A source without stable ordering must not acquire
 an order from the current UI. Source URLs may be identical across versions.
+
+`association_observed_time` records when this source-to-version association and
+order were observed, with its own qualified basis. It is distinct from the
+post's publication time, the version's retrieval time, and media capture time.
+Reordering unchanged media appends another dated association without changing
+the version, old order, or pinned mappings. Unknown observation times stay
+unknown; consumers cannot infer an ordering chronology from publication time.
 
 Versions carry retrieval context; availability is a separate **dated assertion**
 so a remote disappearance does not mutate a version or retroactively erase an
@@ -187,8 +194,21 @@ range; two seconds cannot become the full clip. Coordinate orientation and
 video timestamp interpretation must be part of the versioned method description.
 No inferred scene-wide or route-wide condition follows from a bounded finding.
 
-A run Source describes Wayproof's analysis report, distinguished from original
-source attachments. An analysis Observation uses that Source and analyst
+A proposed v1 Source adds `source_role: original|comment|analysis_report` to
+the existing Source fields. Legacy Sources remain valid without a role, but
+cannot serve as analysis-report Sources. A run's Source must carry
+`source_role: analysis_report`; original attachments and attributed statements
+cannot use that role. A removed Source remains an unavailable
+dependency, never a way to recover attribution from another Source.
+
+Roles cannot be changed on an existing Source, even with a reviewed transition;
+a removed Source ID cannot be reused to evade that restriction.
+Allocate a distinct analysis-report Source instead of relabeling an uploader,
+commenter, or unclassified legacy Source. Step 5 must enforce role allocation
+and acquisition classification at the domain write boundary; these synthetic
+roles are not authenticated identities or implemented ingestion controls.
+
+An analysis Observation uses the run's analysis-report Source and analyst
 attribution; the trace also includes the original source through the pinned
 attachment. Statements instead preserve their own speaker and source.
 
@@ -260,6 +280,13 @@ from a user-supplied `legacy=true` flag. Source-text observations have no media
 provenance. New media observations require a reciprocal, unique
 ObservationProvenance record and a matching selected origin kind.
 
+Readers follow the Observation's declared `provenance_id` directly, including
+when the target is a tombstone. They must not rediscover this edge by scanning
+active provenance backlinks. A tombstoned provenance, selection, finding, or
+version makes the trace explicitly unavailable. Missing targets invalidate the
+bundle; a defensive read projection also reports them as unavailable. Neither
+case can downgrade a media observation into `legacy_source_only` support.
+
 Step 5 must prevent media processing outputs from falsely entering a source-text
 writer path. Neither a string marker nor these tests can determine whether an
 operator lied about how text was acquired. Acquisition classification, policy,
@@ -316,6 +343,9 @@ these fixture bundles are not a replacement storage format.
 
 1. Freeze/review the baseline manifest of v0 IDs and content identities. Keep
    existing files and promoted ChangeSets unchanged. No bulk data reinterpretation.
+   Legacy Sources keep their existing fields and unclassified status. New
+   analysis-report Sources receive distinct IDs and the explicit v1 role;
+   a migration cannot reclassify an existing uploader/comment Source.
 2. **Before activation**, ship and test a root-level schema/capability gate in
    every supported reader, writer, CLI, MCP server, site build, and exporter.
    Unknown versions must produce a named unsupported-schema error before any
@@ -402,6 +432,9 @@ changed in this PR.
 | Case | Required result |
 |---|---|
 | Same attachment URL, changed bytes | New opaque version and association; old selection unchanged |
+| Unchanged media reordered later | New association observation time and ordinal; old mapping/version unchanged |
+| Run attributed to uploader/comment/legacy Source | Rejected; distinct typed analysis-report Source required |
+| Provenance, selection, finding, or version tombstoned/missing | Explicit unavailable support, never legacy fallback; missing target rejects validation |
 | Supported repost / repeated analysis | Shared origin retained; never counted as independent field corroboration |
 | Known publication, unknown capture | Capture stays unknown; location does not improve |
 | Author and permitted EXIF dates disagree | Separate attributed qualified assertions, no automatic winner |
