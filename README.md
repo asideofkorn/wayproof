@@ -274,6 +274,8 @@ print(history[0].change_set_id)
 The same object exposes:
 
 - `get(record_type, record_id)` and `entity(entity_id)`;
+- `evidence_detail(record_type, record_id)` for source, observation, evidence, claim,
+  and gap explanations, related places, published history, and navigation;
 - `resolve_intent(intent)` for conservative `TripIntent` resolution;
 - `plan(intent, fulfillments=(), recheck_result_ids=(), as_of_date=None)` for integrated
   resolution, constraint evaluation, readiness, and named rechecks;
@@ -286,17 +288,23 @@ Planning calls take a typed `PlanningContext`. Real examples are in
 [tests/test_trip_readiness.py](tests/test_trip_readiness.py), and
 [tests/test_pretrip_recheck.py](tests/test_pretrip_recheck.py).
 
+Generated `/evidence/{record_type}/{record_id}/` pages and their `index.json`
+use the same evidence projection as MCP. Links use durable record IDs. Gap
+comparisons follow only explicit claim/evidence IDs. Source, observation, and
+place references stay visible as context without adding claims to the comparison.
+Observation dates and retrieval dates remain distinct, including unknown dates.
+
 The read service deliberately has no proposal, approval, promotion, or raw
 storage mutation methods.
 
 ## MCP read server
 
-The initial MCP adapter exposes eleven read-only tools over
+The initial MCP adapter exposes thirteen read-only tools over
 `CanonicalReadService`:
 
 - `search_entities`, `get_record`, and `get_entity`;
-- `explain_claim`, `get_changes`, and `list_knowledge_gaps`; and
-- `resolve_trip_intent`, `plan_trip`, `evaluate_requirements`,
+- `explain_claim`, `get_evidence_detail`, `get_changes`, and `list_knowledge_gaps`; and
+- `resolve_trip_intent`, `plan_trip`, `compare_hikes`, `evaluate_requirements`,
   `evaluate_readiness`, and `pretrip_recheck`.
 
 Install the project, then start its standard-input/output server from the

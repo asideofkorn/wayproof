@@ -59,6 +59,17 @@ class CanonicalReadService:
                 getattr(item, identifier): item
                 for item in getattr(self._records, collection)
             }
+        self._source_observations = {}
+        self._observation_claims = {}
+        for observation in self._records.observations:
+            self._source_observations.setdefault(observation.source_id, []).append(
+                observation.observation_id)
+        # Only follow evidence actually cited by a claim.
+        for claim in self._records.claims:
+            for eid in claim.evidence_ids:
+                evidence = indexes["evidence"][eid]
+                self._observation_claims.setdefault(evidence.observation_id, set()).add(
+                    claim.claim_id)
         return indexes
 
     def refresh(self) -> None:
@@ -177,6 +188,80 @@ class CanonicalReadService:
             self.get("source", item.source_id) for item in observations
         ))
         return ClaimProvenance(claim, evidence, observations, sources)
+
+    def evidence_record_ids(self, record_type: str) -> Tuple[str, ...]:
+        """Durable identifiers for published evidence-browser records."""
+        if record_type not in ("source", "observation", "evidence", "claim", "gap"):
+            raise ValueError(f"unsupported evidence record type: {record_type}")
+        return tuple(sorted(self._indexes[record_type]))
+
+    def evidence_detail(self, record_type: str, record_id: str) -> dict:
+        """Shared evidence projection; follows typed references, never text matches.
+
+        Gaps compare only explicit claim/evidence references. Source, observation,
+        and entity references are context and never expand the comparison set.
+        """
+        ids = self.evidence_record_ids(record_type)
+        record = self.get(record_type, record_id)
+        claims = set()
+        observations = set()
+        sources = set()
+        related = []
+
+        def include(kind, identifier):
+            if kind == "claim":
+                claims.add(identifier)
+            elif kind == "evidence":
+                evidence = self.get(kind, identifier)
+                observations.add(evidence.observation_id)
+                claim = self.get("claim", evidence.claim_id)
+                if identifier in claim.evidence_ids:
+                    claims.add(claim.claim_id)
+            elif kind == "observation":
+                observations.add(identifier)
+                claims.update(self._observation_claims.get(identifier, ()))
+            elif kind == "source":
+                sources.add(identifier)
+                for oid in self._source_observations.get(identifier, ()):
+                    observations.add(oid)
+                    claims.update(self._observation_claims.get(oid, ()))
+
+        if record_type == "gap":
+            for identifier in record.related_ids:
+                matches = [(kind, index[identifier]) for kind, index in self._indexes.items()
+                           if identifier in index]
+                related.extend({"record_type": kind, "record_id": identifier, "record": item}
+                               for kind, item in matches)
+                # Gap references are untyped in v0. Do not select a type when
+                # the same identifier occurs in more than one collection.
+                if len(matches) == 1 and matches[0][0] in ("claim", "evidence"):
+                    include(matches[0][0], identifier)
+        else:
+            include(record_type, record_id)
+        bundles = tuple(self.explain_claim(cid) for cid in sorted(claims))
+        if record_type in ("claim", "gap", "evidence"):
+            for bundle in bundles:
+                observations.update(item.observation_id for item in bundle.observations)
+        for oid in observations:
+            sources.add(self.get("observation", oid).source_id)
+        entities = {bundle.claim.subject_id for bundle in bundles
+                    if bundle.claim.subject_id in self._indexes["entity"]}
+        if record_type == "gap":
+            entities.update(item for item in record.related_ids
+                            if item in self._indexes["entity"])
+        position = ids.index(record_id)
+        return {
+            "record_type": record_type, "record": record,
+            "claims": bundles,
+            "observations": tuple(self.get("observation", oid) for oid in sorted(observations)),
+            "sources": tuple(self.get("source", sid) for sid in sorted(sources)),
+            "entities": tuple(self.entity(eid) for eid in sorted(entities)),
+            "related_records": tuple(related),
+            "history": self.changes(record_id, record_type),
+            "navigation": {"position": position + 1, "total": len(ids),
+                           "previous_id": ids[position - 1] if position else None,
+                           "next_id": ids[position + 1] if position + 1 < len(ids) else None},
+        }
 
     def changes(self, record_id: Optional[str] = None,
                 record_type: Optional[str] = None) -> Tuple[ChangeHistoryEntry, ...]:

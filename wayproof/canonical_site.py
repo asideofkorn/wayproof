@@ -14,7 +14,7 @@ from datetime import date, datetime
 from enum import Enum
 from pathlib import Path
 from typing import Any, Iterable
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 from .read_service import CanonicalReadService
 from .schema import PlanningContext, TripObjective, TripStage
@@ -397,6 +397,7 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
         "claims": claims,
         "relationships": reads.relationships_for(entity_id),
         "knowledge_gaps": tuple(gaps_by_id.values()),
+        "gap_details": tuple(reads.evidence_detail("gap", gid) for gid in gaps_by_id),
         "history": history,
         "route_geometry": route_geometry,
         "route_geometry_url": geometry_url,
@@ -483,6 +484,7 @@ def del_valle_destination_payload(reads: CanonicalReadService,
             entry["claim"] = _claim_bundle(reads, claim)
         else:
             entry["gap"] = reads.get("gap", item.input_id)
+            entry["gap_detail"] = reads.evidence_detail("gap", item.input_id)
         recheck_items.append(entry)
 
     related = []
@@ -533,27 +535,166 @@ def ohlone_trail_payload(reads: CanonicalReadService) -> dict:
         "type": "trail_guide", "entity": reads.entity(OHLONE_ID),
         "sections": sections, "route_results": results,
         "knowledge_gaps": reads.knowledge_gaps_for(OHLONE_ID),
+        "gap_details": tuple(reads.evidence_detail("gap", gap.gap_id)
+                             for gap in reads.knowledge_gaps_for(OHLONE_ID)),
     })
 
 
-def _claim_html(bundle: dict) -> str:
+def _record_url(kind: str, identifier: str) -> str:
+    # Quote identifiers as path segments, never derive permalinks from labels.
+    return f'/evidence/{kind}/{quote(identifier, safe="")}/'
+
+
+def _record_link(kind: str, identifier: str, label: str) -> str:
+    return f'<a href="{_e(_record_url(kind, identifier))}">{_e(label)}</a>'
+
+
+def _observation_html(observation: dict, source: dict) -> str:
+    observed = observation.get("observed_at") or "Unknown"
+    retrieved = observation.get("retrieved_at") or "Unknown"
+    artifacts = observation.get("artifact_refs", [])
+    return (
+        '<div class="observation">'
+        f'<p class="observation-content">{_e(observation["content"])}</p>'
+        '<dl class="evidence-metadata">'
+        f'<dt>Publisher</dt><dd>{_e(source.get("publisher") or "Not recorded")}</dd>'
+        f'<dt>Observer / attribution</dt><dd>{_e(observation.get("observer") or "Not recorded")}</dd>'
+        f'<dt>Observed at</dt><dd>{_e(observed)}</dd>'
+        f'<dt>Retrieved at</dt><dd>{_e(retrieved)}</dd></dl>'
+        '<p class="meta">Retrieval time does not establish when an event occurred.</p>'
+        f'<p>{_record_link("observation", observation["observation_id"], "Observation details")} · '
+        f'{_record_link("source", source["source_id"], "Source details")} · '
+        f'Original source: {_source_label(source)}</p>'
+        + ('<details><summary>Recorded artifact references</summary><ul>'
+           + ''.join(f'<li><code>{_e(ref)}</code></li>' for ref in artifacts)
+           + '</ul><p>References are not a confirmation of current availability.</p></details>'
+           if artifacts else '') + '</div>'
+    )
+
+
+def _evidence_html(bundle: dict, expanded: bool = False) -> str:
+    observations = {item["observation_id"]: item for item in bundle["observations"]}
+    sources = {item["source_id"]: item for item in bundle["sources"]}
+    items = []
+    for evidence in bundle["evidence"]:
+        observation = observations[evidence["observation_id"]]
+        items.append('<li class="evidence-card">'
+                     f'<p><strong>Evidence stance: {_e(evidence["stance"])}</strong> · '
+                     f'{_record_link("evidence", evidence["evidence_id"], "Evidence details")}</p>'
+                     + (f'<p>Evidence notes: {_e(evidence["notes"])}</p>' if evidence["notes"] else '')
+                     + _observation_html(observation, sources[observation["source_id"]]) + '</li>')
     claim = bundle["claim"]
-    sources = []
-    observations = {item["source_id"]: item for item in bundle["observations"]}
-    for source in bundle["sources"]:
-        observation = observations.get(source["source_id"], {})
-        checked = observation.get("observed_at") or observation.get("retrieved_at")
-        date_text = f" · observed/retrieved {_e(checked)}" if checked else ""
-        sources.append(f'<li>{_source_label(source)}{date_text}</li>')
-    source_html = "".join(sources) or "<li>No source is attached.</li>"
+    scope = claim.get("temporal_scope")
+    scope_html = ('<p class="meta">Claim effective interval: '
+                  f'{_e(scope.get("starts_on") or "No start bound")} to '
+                  f'{_e(scope.get("ends_on") or "No end bound")}</p>' if scope
+                  else '<p class="meta">No claim effective interval recorded.</p>')
+    spatial = claim.get("spatial_scope_ids", [])
+    if spatial:
+        scope_html += '<p class="meta">Spatial scope IDs: ' + ', '.join(_e(i) for i in spatial) + '</p>'
+    else:
+        scope_html += '<p class="meta">No claim spatial scope recorded.</p>'
+    return (
+        f'<details class="evidence-details"{" open" if expanded else ""}>'
+        f'<summary>Evidence and sources ({len(items)})</summary>'
+        + scope_html + '<ol class="evidence-cards">'
+        + (''.join(items) or '<li>No evidence is attached.</li>')
+        + '</ol></details>'
+    )
+
+
+def _claim_html(bundle: dict, expanded: bool = False, heading: str = "h4") -> str:
+    claim = bundle["claim"]
     return (
         '<article class="fact-row">'
-        f'<h4>{_e(_human_label(claim["predicate"]))}</h4>'
+        f'<{heading}>{_record_link("claim", claim["claim_id"], _human_label(claim["predicate"]))}</{heading}>'
         f'{_human_value(claim["value"])}'
-        f'<details><summary>Evidence and sources ({len(bundle["evidence"])})</summary>'
-        f'<ul>{source_html}</ul></details>'
-        '</article>'
+        + _evidence_html(bundle, expanded) + '</article>'
     )
+
+
+def _gap_html(detail: dict) -> str:
+    gap = detail["record"]
+    return ('<article class="notice notice-unknown gap-card">'
+            f'<h3>{_record_link("gap", gap["gap_id"], gap["question"])}</h3>'
+            f'<p>{_e(gap.get("reason") or "No resolution criteria recorded; further evidence is needed.")}</p>'
+            '<p class="meta">Open question. Linked evidence does not resolve this gap.</p>'
+            + (''.join(_claim_html(bundle, expanded=True) for bundle in detail["claims"])
+               if detail["claims"] else '<p>No specific claim evidence is linked to this question.</p>')
+            + '</article>')
+
+
+def render_evidence_html(payload: dict, site_url: str) -> str:
+    kind, record = payload["record_type"], payload["record"]
+    identifier = record[f'{kind}_id']
+    title = (record.get("question") or record.get("publisher")
+             or _human_label(record.get("predicate") or kind))
+    navigation = payload["navigation"]
+    nav = '<nav class="evidence-navigation" aria-label="Evidence record navigation">'
+    if navigation["previous_id"]:
+        nav += _record_link(kind, navigation["previous_id"], f'Previous {kind}')
+    nav += f'<span>{navigation["position"]} of {navigation["total"]} {_e(kind)} records</span>'
+    if navigation["next_id"]:
+        nav += _record_link(kind, navigation["next_id"], f'Next {kind}')
+    nav += '</nav>'
+    body = [render_primary_nav(), '<header class="page-header">',
+            f'<h1>{_e(title)}</h1><p class="meta">{_e(kind)} · <code>{_e(identifier)}</code></p></header>',
+            '<main>', nav, '<nav class="section-nav" aria-label="On this page">'
+            '<a href="#claims">Claims and evidence</a><a href="#observations">Observations</a>'
+            '<a href="#related">Related records and places</a><a href="#history">History</a></nav>']
+    if kind == "source":
+        body.append(f'<p>Original source: {_source_label(record)}</p>')
+    if kind == "gap":
+        body.append(f'<p>{_e(record["reason"] or "No resolution criteria recorded.")}</p>'
+                    '<p>Open question. The following evidence does not resolve this gap. '
+                    'Use the recorded question and reason to understand what needs confirmation.</p>')
+    if kind == "evidence":
+        body.append(f'<p>Evidence stance: {_e(record["stance"])}</p>'
+                    f'<p>{_e(record["notes"] or "No evidence notes recorded.")}</p>')
+    body.append('<section id="claims"><h2>Claims and evidence</h2>')
+    body.extend(_claim_html(bundle, expanded=True, heading="h3") for bundle in payload["claims"])
+    if not payload["claims"]:
+        body.append('<p>No claims are explicitly linked for comparison. Absence is not confirmation.</p>'
+                    if kind == "gap" else '<p>No claims are linked. Absence is not confirmation.</p>')
+    sources = {item["source_id"]: item for item in payload["sources"]}
+    body.append('</section><section id="observations"><h2>Recorded observations</h2>')
+    if payload["claims"]:
+        body.append('<details><summary>Browse observations separately '
+                    f'({len(payload["observations"])})</summary>')
+    body.extend(_observation_html(item, sources[item["source_id"]])
+                for item in payload["observations"])
+    if not payload["observations"]:
+        body.append('<p>No observations are included in the comparison.</p>'
+                    if kind == "gap" else '<p>No observations are linked.</p>')
+    if payload["claims"]:
+        body.append('</details>')
+    body.append('</section><section id="related"><h2>Related records and places</h2>')
+    contextual = [item for item in payload["related_records"] if item["record_type"] != "entity"]
+    if contextual:
+        body.append('<h3>Explicit context</h3><ul>')
+        for item in contextual:
+            related_kind, related_record = item["record_type"], item["record"]
+            related_id = item["record_id"]
+            label = related_record.get("publisher") or related_record.get("question") or related_id
+            link = (_record_link(related_kind, related_id, label)
+                    if related_kind in ("source", "observation", "evidence", "claim", "gap")
+                    else f'<code>{_e(related_id)}</code>')
+            body.append(f'<li>{_e(_human_label(related_kind))}: {link}</li>')
+        body.append('</ul>')
+    body.append('<p class="meta">Context links do not add claims to the comparison.</p>'
+                '<h3>Related places</h3><ul>')
+    body.extend(f'<li><a href="/knowledge/{_e(item["entity_id"])}/">{_e(item["name"])}</a></li>'
+                for item in payload["entities"])
+    body.append('</ul><p class="meta">Connections follow published references, not proximity.</p></section>'
+                '<section id="history"><h2>Published record history</h2><ul>')
+    body.extend(f'<li>{_e(item["change_set_id"])}: {_e(item["action"])} — '
+                f'{_e(item["reason"] or item["summary"])}</li>' for item in payload["history"])
+    body.append('</ul><p>History lists published operations; it does not reconstruct removed '
+                'content or confirm that external media remains available.</p></section>')
+    body.append(f'<p><a href="{_e(_record_url(kind, identifier))}index.json">JSON</a></p>'
+                '<p class="meta">Historical evidence is not a guarantee of current conditions.</p></main>')
+    return _page(f'{title} — Wayproof evidence', 'Source-backed observations and evidence.',
+                 site_url + _record_url(kind, identifier), '\n'.join(body))
 
 
 def _human_label(value: str) -> str:
@@ -647,33 +788,14 @@ def _human_value(value: Any) -> str:
 
 
 def _destination_claim_html(bundle: dict) -> str:
-    claim = bundle["claim"]
-    sources = ''.join(f'<li>{_source_label(source)}</li>' for source in bundle["sources"])
-    return (
-        '<article class="fact-row">'
-        f'<h3>{_e(_human_label(claim["predicate"]))}</h3>'
-        f'{_human_value(claim["value"])}'
-        f'<details><summary>Sources and details</summary><ul>{sources}</ul>'
-        f'<p class="meta">Canonical claim <code>{_e(claim["claim_id"])}</code></p></details>'
-        '</article>'
-    )
+    return _claim_html(bundle, heading="h3")
 
 
 def _corridor_claim_html(bundle: dict) -> str:
-    """Render a claim while preserving which corridor place it describes."""
-    claim = bundle["claim"]
     subject = bundle.get("subject")
-    subject_html = (f'<p class="meta fact-subject">{_e(subject["name"])}</p>'
-                    if subject and subject["entity_id"] != OHLONE_ID else "")
-    sources = ''.join(f'<li>{_source_label(source)}</li>' for source in bundle["sources"])
-    return (
-        '<article class="fact-row">'
-        f'{subject_html}<h3>{_e(_human_label(claim["predicate"]))}</h3>'
-        f'{_human_value(claim["value"])}'
-        f'<details><summary>Sources and details</summary><ul>{sources}</ul>'
-        f'<p class="meta">Canonical claim <code>{_e(claim["claim_id"])}</code></p></details>'
-        '</article>'
-    )
+    prefix = (f'<p class="meta fact-subject">{_e(subject["name"])}</p>'
+              if subject and subject["entity_id"] != OHLONE_ID else "")
+    return prefix + _claim_html(bundle, heading="h3")
 
 
 def _recheck_item_html(item: dict) -> str:
@@ -684,17 +806,13 @@ def _recheck_item_html(item: dict) -> str:
         claim = bundle["claim"]
         title = _human_label(claim["predicate"])
         detail = _human_value(claim["value"])
-        sources = ''.join(f'<li>{_source_label(source)}</li>'
-                          for source in bundle["sources"])
     else:
         gap = item["gap"]
         title = gap["question"]
-        detail = f'<p>{_e(gap["reason"] or result["explanation"])}</p>'
-        sources = ""
+        detail = _gap_html(item["gap_detail"])
     explanation = ("" if "gap" in item and gap.get("reason") == result["explanation"]
                    else f'<p class="meta">{_e(result["explanation"])}</p>')
-    source_block = (f'<details><summary>Sources</summary><ul>{sources}</ul></details>'
-                    if sources else "")
+    source_block = _evidence_html(item["claim"]) if "claim" in item else ""
     return (
         f'<article class="notice {"notice-unknown" if status == "unknown" else ""}">'
         f'<h3>{_e(title)}</h3>{detail}'
@@ -802,7 +920,8 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
         '<li><a href="#western-access-at-mission-peak">Mission Peak access</a></li>'
         '<li><a href="#route-access-and-distance">Route</a></li>'
         '<li><a href="#camps-and-water">Camps and water</a></li>'
-        '<li><a href="#route-choices-and-detours">Alternatives</a></li></ul>',
+        '<li><a href="#route-choices-and-detours">Alternatives</a></li>'
+        '<li><a href="#open-questions">Open questions</a></li></ul>',
         '<section class="notice"><h2>Choose your endpoint</h2>'
         '<p><strong>Del Valle</strong> is the eastern gateway. At the western end, use '
         '<strong>Stanford Avenue</strong> for the staging area and permitted overnight '
@@ -821,6 +940,8 @@ def render_ohlone_trail_html(payload: dict, site_url: str) -> str:
                     f'<h3>{_e(_human_label(result["kind"]))}</h3>'
                     f'{_human_value(result["value"])}'
                     f'<p>{_e(result["explanation"])}</p></article>')
+    body.append('</section><section id="open-questions"><h2>Open questions</h2>')
+    body.extend(_gap_html(detail) for detail in payload["gap_details"])
     body.append(f'</section><aside class="technical-links"><strong>Reference formats</strong>'
                 f'<p><a href="/knowledge/{OHLONE_ID}/">Canonical record</a> · '
                 f'<a href="{OHLONE_PATH}index.json">JSON</a></p></aside>')
@@ -932,10 +1053,7 @@ def render_entity_html(payload: dict, site_url: str,
     if gaps:
         body.append('<p>These open questions need confirmation; Wayproof does not fill them '
                     'with guesses.</p>')
-        body.extend('<article class="notice notice-unknown">'
-                    f'<h3>{_e(item["question"])}</h3>'
-                    f'{"<p>" + _e(item["reason"]) + "</p>" if item.get("reason") else ""}'
-                    '</article>' for item in gaps)
+        body.extend(_gap_html(detail) for detail in payload["gap_details"])
     else:
         body.append('<p>No explicit knowledge gap is linked to this entity. That does not '
                     'mean the record is complete.</p>')
@@ -950,7 +1068,7 @@ def render_entity_html(payload: dict, site_url: str,
             source_items = ''.join(f'<li>{_source_label(source)}</li>'
                                    for source in bundle["sources"])
             body.append('<li><strong>'
-                        f'{_e(_human_label(bundle["claim"]["predicate"]))}</strong>'
+                        f'{_record_link("claim", bundle["claim"]["claim_id"], _human_label(bundle["claim"]["predicate"]))}</strong>'
                         f'<ul>{source_items or "<li>No source is attached.</li>"}</ul></li>')
         body.append('</ul></details>')
     body.append('<details><summary>Published ChangeSet history</summary>')
@@ -1214,6 +1332,17 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         "type": "canonical_change_history", "operations": changes,
     }), encoding="utf-8")
     directory_urls.append(f"{site_url}/changes/")
+
+    for kind in ("source", "observation", "evidence", "claim", "gap"):
+        for identifier in reads.evidence_record_ids(kind):
+            detail = _plain(reads.evidence_detail(kind, identifier))
+            relative = _record_url(kind, identifier).lstrip("/")
+            directory = output_dir / relative
+            directory.mkdir(parents=True, exist_ok=True)
+            (directory / "index.html").write_text(
+                render_evidence_html(detail, site_url), encoding="utf-8")
+            (directory / "index.json").write_text(_json(detail), encoding="utf-8")
+            directory_urls.append(site_url + _record_url(kind, identifier))
 
     knowledge_dir = output_dir / "knowledge"
     knowledge_dir.mkdir(parents=True, exist_ok=True)

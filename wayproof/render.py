@@ -107,6 +107,16 @@ nav.crumbs a { margin-right: 0.35rem; }
 .notice-unknown { border-left-color:var(--unknown); background:#f7f3fa; }
 .fact-list { border-top:1px solid var(--border); }
 .fact-row { padding:1rem 0; border-bottom:1px solid var(--border); }
+.evidence-cards { padding-left:1.25rem; }
+.evidence-card { margin:1rem 0; padding:1rem; border:1px solid var(--border); border-radius:.5rem; }
+.observation { overflow-wrap:anywhere; margin:1rem 0; }
+.observation-content { white-space:pre-wrap; }
+.evidence-metadata dt { font-weight:600; }
+.evidence-metadata dd { margin:0 0 .5rem; }
+.evidence-navigation { display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
+.evidence-navigation a, .section-nav a { min-height:44px; display:inline-flex; align-items:center; }
+a:focus-visible, summary:focus-visible { outline:3px solid currentColor; outline-offset:3px; }
+.gap-card .fact-row { margin-top:1rem; }
 .fact-row h3 { margin:0 0 .35rem; }
 .fact-row h4 { margin:0 0 .35rem; }
 .fact-row dl { display:grid; grid-template-columns:minmax(10rem, 1fr) 2fr; gap:.3rem 1rem; margin:.5rem 0; }

@@ -323,7 +323,9 @@ def test_del_valle_search_opens_the_outcome_focused_destination(site):
         "Ohlone Wilderness Trail",
     ):
         assert heading in page
-    assert "Sources and details" in page
+    assert "Evidence and sources" in page
+    assert "Observer / attribution" in page
+    assert "Retrieved at" in page
     assert "At a glance" in page
     assert 'class="summary-grid"' in page
     assert "Canonical record" in page
@@ -375,7 +377,9 @@ def test_ohlone_trail_page_uses_canonical_route_evidence(site):
         assert place in page
     assert "Parking and access choices" in page
     assert "Choose your endpoint" in page
-    assert "Sources and details" in page
+    assert "Evidence and sources" in page
+    assert "Observer / attribution" in page
+    assert "Retrieved at" in page
     assert "https://wayproof.dev/trails/ohlone-wilderness/" in (
         tmp_path / "sitemap.xml").read_text()
 
