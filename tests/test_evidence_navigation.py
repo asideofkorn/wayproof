@@ -157,3 +157,56 @@ def test_uncited_evidence_does_not_invent_claim_support(reads, records):
     assert 'Not cited by the claim' in page
     assert 'No claim uses this report' in page
     assert reads.evidence_detail('source', 'source-unused')['claims'] == ()
+
+
+@pytest.mark.parametrize('context_id', ['source-test', 'observation-a', 'place-test'])
+@pytest.mark.parametrize('comparison_id', [None, 'claim-test', 'evidence-a'])
+def test_gap_context_never_expands_to_unrelated_claims(reads, records, context_id, comparison_id):
+    records.entities.append(Entity('place-other', 'park', 'Unrelated Park'))
+    records.evidence.append(Evidence('evidence-other', 'observation-a', 'claim-other'))
+    records.claims.append(Claim('claim-other', 'place-other', 'unrelated_fact', 'Unrelated value',
+                                ('evidence-other',)))
+    related = (context_id,) + ((comparison_id,) if comparison_id else ())
+    records.gaps.append(KnowledgeGap('gap-context-only', 'Confirm this question', related))
+    reads.refresh()
+    # Source/observation pages still show their full backlinks. Gaps must not.
+    assert len(reads.evidence_detail('source', 'source-test')['claims']) == 2
+    assert len(reads.evidence_detail('observation', 'observation-a')['claims']) == 2
+    detail = _plain(reads.evidence_detail('gap', 'gap-context-only'))
+    assert [b['claim']['claim_id'] for b in detail['claims']] == (
+        ['claim-test'] if comparison_id else [])
+    assert detail == WayproofReadTools(reads).get_evidence_detail('gap', 'gap-context-only')
+    assert len(detail['related_records']) == len(related)
+    if comparison_id is None:
+        assert detail['observations'] == []
+        assert detail['sources'] == []
+    page = render_evidence_html(detail, '')
+    context_section = page.split('<section id="related">')[1].split('</section>')[0]
+    assert 'Context links do not add claims to the comparison.' in context_section
+    for identifier in related:
+        kind = identifier.split('-')[0]
+        target = (f'/knowledge/{identifier}/' if kind == 'place'
+                  else _record_url(kind, identifier))
+        assert target in context_section
+    assert 'Unrelated value' not in page
+    assert '/knowledge/place-other/' not in page
+
+
+def test_generated_gap_context_does_not_pull_in_source_wide_claims(generated_site):
+    output, _ = generated_site
+    gap_id = 'gap-yosemite-wawona-mariposa-route-topology'
+    directory = output / _record_url('gap', gap_id).lstrip('/')
+    payload = json.loads((directory / 'index.json').read_text())
+    reads = CanonicalReadService(Path(__file__).resolve().parents[1])
+    assert payload == WayproofReadTools(reads).get_evidence_detail('gap', gap_id)
+    assert payload['claims'] == []
+    assert payload['observations'] == []
+    page = (directory / 'index.html').read_text()
+    context_section = page.split('<section id="related">')[1].split('</section>')[0]
+    assert 'Cinder Cone' not in page
+    for item in payload['related_records']:
+        kind, record = item['record_type'], item['record']
+        if kind in ('source', 'observation', 'evidence'):
+            target = _record_url(kind, record[f'{kind}_id'])
+            assert target in context_section
+            assert (output / target.lstrip('/') / 'index.html').exists()

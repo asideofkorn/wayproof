@@ -641,7 +641,7 @@ def render_evidence_html(payload: dict, site_url: str) -> str:
             f'<h1>{_e(title)}</h1><p class="meta">{_e(kind)} · <code>{_e(identifier)}</code></p></header>',
             '<main>', nav, '<nav class="section-nav" aria-label="On this page">'
             '<a href="#claims">Claims and evidence</a><a href="#observations">Observations</a>'
-            '<a href="#related">Related places</a><a href="#history">History</a></nav>']
+            '<a href="#related">Related records and places</a><a href="#history">History</a></nav>']
     if kind == "source":
         body.append(f'<p>Original source: {_source_label(record)}</p>')
     if kind == "gap":
@@ -654,7 +654,8 @@ def render_evidence_html(payload: dict, site_url: str) -> str:
     body.append('<section id="claims"><h2>Claims and evidence</h2>')
     body.extend(_claim_html(bundle, expanded=True, heading="h3") for bundle in payload["claims"])
     if not payload["claims"]:
-        body.append('<p>No claims are linked. Absence is not confirmation.</p>')
+        body.append('<p>No claims are explicitly linked for comparison. Absence is not confirmation.</p>'
+                    if kind == "gap" else '<p>No claims are linked. Absence is not confirmation.</p>')
     sources = {item["source_id"]: item for item in payload["sources"]}
     body.append('</section><section id="observations"><h2>Recorded observations</h2>')
     if payload["claims"]:
@@ -663,10 +664,25 @@ def render_evidence_html(payload: dict, site_url: str) -> str:
     body.extend(_observation_html(item, sources[item["source_id"]])
                 for item in payload["observations"])
     if not payload["observations"]:
-        body.append('<p>No observations are linked.</p>')
+        body.append('<p>No observations are included in the comparison.</p>'
+                    if kind == "gap" else '<p>No observations are linked.</p>')
     if payload["claims"]:
         body.append('</details>')
-    body.append('</section><section id="related"><h2>Related places</h2><ul>')
+    body.append('</section><section id="related"><h2>Related records and places</h2>')
+    contextual = [item for item in payload["related_records"] if item["record_type"] != "entity"]
+    if contextual:
+        body.append('<h3>Explicit context</h3><ul>')
+        for item in contextual:
+            related_kind, related_record = item["record_type"], item["record"]
+            related_id = item["record_id"]
+            label = related_record.get("publisher") or related_record.get("question") or related_id
+            link = (_record_link(related_kind, related_id, label)
+                    if related_kind in ("source", "observation", "evidence", "claim", "gap")
+                    else f'<code>{_e(related_id)}</code>')
+            body.append(f'<li>{_e(_human_label(related_kind))}: {link}</li>')
+        body.append('</ul>')
+    body.append('<p class="meta">Context links do not add claims to the comparison.</p>'
+                '<h3>Related places</h3><ul>')
     body.extend(f'<li><a href="/knowledge/{_e(item["entity_id"])}/">{_e(item["name"])}</a></li>'
                 for item in payload["entities"])
     body.append('</ul><p class="meta">Connections follow published references, not proximity.</p></section>'

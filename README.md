@@ -290,7 +290,8 @@ Planning calls take a typed `PlanningContext`. Real examples are in
 
 Generated `/evidence/{record_type}/{record_id}/` pages and their `index.json`
 use the same evidence projection as MCP. Links use durable record IDs. Gap
-comparisons follow explicitly linked evidence; place links alone provide context.
+comparisons follow only explicit claim/evidence IDs. Source, observation, and
+place references stay visible as context without adding claims to the comparison.
 Observation dates and retrieval dates remain distinct, including unknown dates.
 
 The read service deliberately has no proposal, approval, promotion, or raw

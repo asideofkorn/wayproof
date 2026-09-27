@@ -198,8 +198,8 @@ class CanonicalReadService:
     def evidence_detail(self, record_type: str, record_id: str) -> dict:
         """Shared evidence projection; follows typed references, never text matches.
 
-        Gaps compare explicitly linked claims only. Entity links supply context,
-        not an inferred set of competing claims or an inferred gap category.
+        Gaps compare only explicit claim/evidence references. Source, observation,
+        and entity references are context and never expand the comparison set.
         """
         ids = self.evidence_record_ids(record_type)
         record = self.get(record_type, record_id)
@@ -230,11 +230,11 @@ class CanonicalReadService:
             for identifier in record.related_ids:
                 matches = [(kind, index[identifier]) for kind, index in self._indexes.items()
                            if identifier in index]
-                related.extend({"record_type": kind, "record": item}
+                related.extend({"record_type": kind, "record_id": identifier, "record": item}
                                for kind, item in matches)
                 # Gap references are untyped in v0. Do not select a type when
                 # the same identifier occurs in more than one collection.
-                if len(matches) == 1:
+                if len(matches) == 1 and matches[0][0] in ("claim", "evidence"):
                     include(matches[0][0], identifier)
         else:
             include(record_type, record_id)
