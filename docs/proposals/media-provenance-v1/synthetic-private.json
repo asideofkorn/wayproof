@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "visibility": "private",
+  "custody": [
+    {
+      "id": "00000000-0000-0000-0000-000000000065",
+      "media_version_id": "00000000-0000-0000-0000-000000000002",
+      "acquisition": "contributed",
+      "purpose": "Synthetic schema review only",
+      "owner_role": "maintainer",
+      "contribution_scope": [
+        "analysis",
+        "retention",
+        "public_display"
+      ],
+      "permitted_uses": [
+        "analysis",
+        "retention",
+        "public_display"
+      ],
+      "permitted_destinations": [
+        "synthetic-local-only"
+      ],
+      "storage_locator": "synthetic-private://version-2",
+      "content_hash": {
+        "algorithm": "sha256",
+        "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "permission_basis": "Synthetic permission; not a hash of actual bytes."
+      },
+      "permitted_exif_fields": [],
+      "restricted_location": null,
+      "retention_deadline": "2030-04-10T00:00:00Z",
+      "access_roles": [
+        "maintainer"
+      ],
+      "release_review": "approved"
+    }
+  ],
+  "removal_cases": []
+}
