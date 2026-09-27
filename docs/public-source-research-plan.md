@@ -31,6 +31,27 @@ commenter's identity from the parent post or store personal names/profile data
 to fill an attribution gap. If required attribution cannot be represented safely
 and accurately, defer the source rather than misattribute it.
 
+Retained text must distinguish these forms in records and consumer output:
+
+- **Bounded quotation/excerpt:** the smallest relevant verbatim passage from a
+  specific caption/comment, explicitly labeled as an excerpt and linked to its
+  source and actual speaker. Preserve the author's wording and uncertainty;
+  do not silently correct, rewrite, translate, or combine passages as a quote.
+- **Truncation:** disclose omitted beginnings/endings and mark internal omissions
+  with an ellipsis. Never omit a qualification or exception that changes the
+  meaning. Keep separate passages separate; do not imply an excerpt is the full
+  statement. If the bounded excerpt cannot preserve necessary context, defer it
+  or provide a separately labeled paraphrase.
+- **Wayproof paraphrase/summary:** Wayproof-authored wording, explicitly labeled
+  as such and linked to the source statement it summarizes. Do not put it in
+  quotation marks or present it as the author's own text. Preserve qualifications
+  and uncertainty; keep any Wayproof visual finding separately labeled too.
+
+These distinctions must survive serialization and HTML/JSON/MCP/read projections.
+Do not place a paraphrase in an author-text field merely because it cites the
+source. If the accepted representation cannot express the distinction, review
+any necessary representation change before activation; this plan adds no fields.
+
 No raw images/video/audio, downloaded copies, screenshots, thumbnails, crops,
 embeddings, full OCR/transcripts, EXIF, personal names or identifiers, face/plate
 recognition results, or sensitive-location inferences may be collected as
@@ -103,8 +124,12 @@ alone never authorizes arbitrary transfer or reuse.
 4. **Bounded processing and immutable runs.** Add explicitly limited inspection
    modalities/ranges and independent author/analysis attribution after proving
    transient-input handling and untrusted-input isolation. Every run records its
-   exact inspected version, limits, method, and uncertainty. Reprocessing cannot
-   publish, select its own result, resolve gaps, create relationships, or change
+   identified/observed version, its identity basis and reproducibility
+   limitations, retrieval/inspection context and bounds, method, and uncertainty. An opaque
+   version ID pins the reviewed record; without retained media, a permitted
+   digest, or a stable provider version, it cannot prove exact content later.
+   Reprocessing cannot publish, select its own result, resolve gaps, create
+   relationships, or change
    planning results without a separately reviewed ChangeSet.
 5. **Deferred expanded scope.** Private custody storage, user accounts, uploads
    and consent workflows, private-media access controls, complex provider
@@ -123,6 +148,11 @@ changed/unavailable originals, conflicting runs and unchanged prior selections,
 removal of retained text/references with dependent answers reevaluated across
 consumers, and rejection of every direct Claim-to-analysis path. Processing tests
 must also demonstrate that no payload/derivative files or raw logs survive a run.
+Acceptance cases must distinguish verbatim excerpts, disclosed truncation, and
+Wayproof-labeled paraphrases across records and consumers, without losing source
+qualifications or presenting Wayproof wording as an author's quote. A version
+identified only at retrieval must expose its identity basis and reproducibility
+limits; its opaque ID must not be presented as proof of exact historical content.
 
 The broader private-custody and retained-media examples remain design fixtures,
 not proof that this smaller policy is enforced. No schema definitions, active
