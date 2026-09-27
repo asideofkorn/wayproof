@@ -1,6 +1,6 @@
 # ADR 0003: Evidence explanations and navigation using existing records
 
-- Status: Proposed — independently reviewable from ADR 0004
+- Status: Accepted
 - Date: 2026-09-26
 - Decision owners: Wayproof maintainers
 - Related: [Architecture](../../ARCHITECTURE.md), [Roadmap](../../ROADMAP.md),
@@ -17,12 +17,13 @@ The evidence explorers discussed during design motivate readable excerpts,
 permanent links, source backlinks, and history. These are UI patterns, not an
 endorsement of those reports' claims or a new Wayproof ingestion policy.
 
-## Proposed decision
+## Decision
 
 Render existing canonical knowledge through the shared read services, preserving
 Source -> Observation -> Evidence -> Claim. No schema migration or media-analysis
-pipeline is required by this decision. Acceptance does not accept
-[ADR 0004](0004-repeatable-media-analysis.md), whose media design remains separate.
+pipeline is required by this decision. Implementation is independent of
+[ADR 0004](0004-repeatable-media-analysis.md), whose accepted media requirements
+retain a separate schema-design and migration review.
 
 1. Evidence cards show the observation content, attribution, evidence stance,
    notes/limitations, scope, and separate observation and retrieval dates.

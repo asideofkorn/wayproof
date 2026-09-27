@@ -30,11 +30,12 @@ The same immutable-snapshot safeguards apply to managed-land polygons:
 canonical claims select reviewed source features, while the read service
 assembles display geometry without treating visual overlap as a relationship.
 
-[ADR 0003](docs/adr/0003-evidence-explanations-and-navigation.md) proposes
+[ADR 0003](docs/adr/0003-evidence-explanations-and-navigation.md) establishes
 existing-record evidence explanations and navigation without a schema change.
-[ADR 0004](docs/adr/0004-repeatable-media-analysis.md) separately proposes
+[ADR 0004](docs/adr/0004-repeatable-media-analysis.md) separately establishes requirements for
 repeatable media analysis with privacy/safety gates and typed Evidence lineage.
-Both remain Proposed and independently reviewable; neither changes Schema v0.
+Both are Accepted and independently implementable. Neither changes Schema v0;
+the media schema contract and migration still require separate review.
 
 ## Architectural principles
 

@@ -1,6 +1,6 @@
 # ADR 0004: Repeatable media analysis with controlled provenance
 
-- Status: Proposed — not a schema approval or permission to ingest media
+- Status: Accepted — not a schema approval or permission to ingest media
 - Date: 2026-09-26
 - Decision owners: Wayproof maintainers
 - Related: [Architecture](../../ARCHITECTURE.md), [Roadmap](../../ROADMAP.md),
@@ -15,11 +15,11 @@ unknown. Our visual analysis must remain separate from author statements and
 support multiple runs without changing published knowledge automatically.
 
 Schema v0 lacks dedicated media-version and analysis-run records. This ADR
-proposes requirements for a separately reviewed schema contract and migration;
+establishes requirements for a separately reviewed schema contract and migration;
 it does not select record names, storage, or permit new canonical writes.
-ADR 0003's existing-record UI work can be accepted and shipped independently.
+ADR 0003's existing-record UI work can be implemented and shipped independently.
 
-## Proposed decision
+## Decision
 
 ### Separate source material, statements, and analysis
 
@@ -203,7 +203,7 @@ Synthetic or appropriately licensed fixtures must cover:
 - Retention expiry and redaction/deletion propagation through derived material
   and dependent answers without sensitive data in tombstones or public history.
 
-No source is ingested by accepting this proposal. Future canonical changes
+Acceptance of this ADR does not authorize source ingestion. Future canonical changes
 still require validated ChangeSets and review. Planning semantics and
 source-specific authority remain explicit rather than inferred from media.
 

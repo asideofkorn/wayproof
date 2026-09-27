@@ -114,7 +114,7 @@ the same service layer.
   output only as the underlying M1 services expand.
 - Return structured answerability, provenance, and freshness information so an
   agent cannot mistake a missing field for confirmation.
-- Deliver existing-record evidence explanations and navigation under proposed
+- Deliver existing-record evidence explanations and navigation under accepted
   [ADR 0003](docs/adr/0003-evidence-explanations-and-navigation.md):
   - First, use existing canonical records to show observation content,
     attribution, evidence stance and limitations, distinct observation and
@@ -184,7 +184,7 @@ without granting direct canonical write access.
 - Ingest URLs, issues, artifacts, field reports, GPX, and supported structured
   sources into candidate observations/evidence.
 - Design and separately review the media-provenance and repeatable-analysis
-  extension proposed in [ADR 0004](docs/adr/0004-repeatable-media-analysis.md)
+  extension required by accepted [ADR 0004](docs/adr/0004-repeatable-media-analysis.md)
   before changing Schema v0. Keep original source material, attributed author
   statements, and Wayproof analysis distinct. Support attachment identity and
   order, explicit comment-to-media mappings, qualified dates and locations,
