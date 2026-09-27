@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TESTS = ROOT / "tests"
 
 SITE = {
+    "test_evidence_navigation.py",
     "test_build_site.py",
     "test_east_fork_campsite_inventory.py",
     "test_east_fork_trip_foundation.py",

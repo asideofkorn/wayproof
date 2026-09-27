@@ -185,6 +185,10 @@ class WayproofReadTools:
         """Trace a claim through supporting evidence, observations, and sources."""
         return _plain(self.reads.explain_claim(claim_id))
 
+    def get_evidence_detail(self, record_type: str, record_id: str) -> dict:
+        """Inspect evidence, source backlinks, or an explicit gap using durable IDs."""
+        return _plain(self.reads.evidence_detail(record_type, record_id))
+
     def get_changes(self, record_id: str = "", record_type: str = "") -> dict:
         """List published ChangeSet operations, optionally filtered by record."""
         entries = self.reads.changes(record_id or None, record_type or None)
@@ -250,6 +254,7 @@ def create_server(root: Path | str = Path(".")) -> MCPServer:
     server.tool(name="get_entity")(tools.get_entity)
     server.tool(name="compare_hikes")(tools.compare_hikes)
     server.tool(name="explain_claim")(tools.explain_claim)
+    server.tool(name="get_evidence_detail")(tools.get_evidence_detail)
     server.tool(name="get_changes")(tools.get_changes)
     server.tool(name="list_knowledge_gaps")(tools.list_knowledge_gaps)
     server.tool(name="resolve_trip_intent")(tools.resolve_trip_intent)

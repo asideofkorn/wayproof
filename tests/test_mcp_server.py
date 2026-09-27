@@ -169,7 +169,7 @@ def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
                 "search_entities", "get_record", "get_entity", "explain_claim",
                 "get_changes", "list_knowledge_gaps", "evaluate_requirements",
                 "evaluate_readiness", "pretrip_recheck", "resolve_trip_intent",
-                "plan_trip", "compare_hikes",
+                "plan_trip", "compare_hikes", "get_evidence_detail",
             }
             assert not names.intersection({"propose", "approve", "promote", "publish"})
             assert all(item.description for item in discovered.tools)
@@ -179,5 +179,14 @@ def test_mcp_protocol_discovers_only_read_tools_and_calls_them():
             assert not result.is_error
             payload = json.loads(result.content[0].text)
             assert payload["entities"][0]["entity_id"] == "peak-mount-whitney"
+            detail = await client.call_tool("get_evidence_detail", {
+                "record_type": "claim", "record_id": "claim-whitney-overnight-scope",
+            })
+            assert not detail.is_error
+            projected = json.loads(detail.content[0].text)
+            assert projected["claims"][0]["claim"]["claim_id"] == "claim-whitney-overnight-scope"
+            assert projected["history"]
+            assert projected["observations"]
+
 
     asyncio.run(exercise())

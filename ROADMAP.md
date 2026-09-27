@@ -124,6 +124,10 @@ the same service layer.
     related-place backlinks, plus accessible section and next/previous
     navigation. Users should understand an observation's relevance before
     opening its original source.
+  - Implemented for Schema v0: shared evidence detail projections and HTML/JSON/MCP
+    consumers, observation-preserving comparisons, source/observation/evidence/claim/gap
+    permalinks, related-place links, history, and section/previous/next navigation.
+    This does not implement the media schema or processing stages under ADR 0004.
   **Gate:** users can understand a gap and compare its evidence in place;
   unknown dates and locations remain explicit, and links never imply current
   conditions or independent corroboration merely through repetition.

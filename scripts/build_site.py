@@ -24,7 +24,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from wayproof.canonical_site import build_canonical_site, render_primary_nav
+from wayproof.canonical_site import (build_canonical_site, render_primary_nav,
+                                     _record_link)
 from wayproof.render import (
     STYLESHEET,
     render_robots,
@@ -40,15 +41,12 @@ def _render_gaps_html(gaps) -> str:
         return "<p>No canonical knowledge gaps are published right now.</p>"
     items = []
     for gap in gaps:
-        links = ", ".join(
-            f'<a href="/knowledge/{html.escape(item)}/">{html.escape(item)}</a>'
-            for item in gap.related_ids
-        ) or "no related canonical record"
         items.append(
             '<li class="card">'
-            f'<div>{html.escape(gap.question)}</div>'
-            f'<div class="meta"><code>{html.escape(gap.gap_id)}</code> · {links}</div>'
-            "</li>"
+            f'<div>{_record_link("gap", gap.gap_id, gap.question)}</div>'
+            f'<p>{html.escape(gap.reason or "Further evidence is needed.")}</p>'
+            '<p class="meta">Open question · Follow the link to compare recorded evidence.</p>'
+            '</li>'
         )
     visible = "".join(items[:6])
     remaining = "".join(items[6:])
