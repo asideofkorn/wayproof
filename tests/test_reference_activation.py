@@ -326,7 +326,8 @@ def test_withdrawal_tombstones_keep_older_readers_closed_and_resume_on_interrupt
         change.records.claims[0].claim_id, 'claim')
     assert history[0].change_set_id == change.change_set_id
     assert all('content' not in json.loads(p.read_text())['record']
-               for p in (publication.root / 'canonical/v1').rglob('*.json'))
+               for p in (publication.root / 'canonical/v1').rglob('*.json')
+               if p != publication.root / REFERENCE_MANIFEST)
 
 
 def test_author_region_is_not_promoted_to_an_exact_location(reference, tmp_path):
@@ -419,3 +420,26 @@ def test_batch_identity_must_match_the_reviewed_changeset(reference):
     publication._save(index)
     with pytest.raises(ValueError, match='identity mismatch'):
         publication.read().keys()
+
+
+def test_source_only_withdrawal_keeps_v1_capability_gate(reference, tmp_path, monkeypatch):
+    from wayproof.media_schema import MediaRecords
+    from wayproof.canonical_storage import _assert_layout
+    _, _, change, _, before = reference
+    root = tmp_path / 'source-only'
+    for path, content in before.items():
+        target = root / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(content)
+    source_only = make_change(MediaRecords(sources=[change.records.sources[0]]))
+    publication, workflow = prepare(root, source_only, ResearchPacket(()))
+    prior = publication._manifest()
+    monkeypatch.setattr(publication, 'export', lambda: None)
+    publication.withdraw()
+    assert (root / REFERENCE_MANIFEST).exists()
+    with pytest.raises(UnsupportedSchemaError):
+        _assert_layout(root)
+    assert publication.read().get('source', source_only.records.sources[0].source_id)['support'] == 'unsupported'
+    paths = [('D', p) for p in prior['batches'][source_only.change_set_id]['additions']]
+    assert not verify_reference_publication(paths + [('M', REFERENCE_MANIFEST)], root,
+                                            prior, workflow=workflow)

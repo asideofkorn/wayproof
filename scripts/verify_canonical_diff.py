@@ -10,6 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from wayproof.canonical_storage import assert_supported_repository, load_changeset
 from wayproof.publication import verify_publication, verify_reference_publication
+from wayproof.media_migration import REFERENCE_MANIFEST
 import json
 
 
@@ -31,10 +32,10 @@ def main() -> int:
     parser.add_argument("--head", default="HEAD")
     args = parser.parse_args()
     paths = changed_paths(args.base, args.head)
-    if any(path == 'reference-publication.json' or path.startswith(('canonical/v1/', 'changesets/v1/'))
+    if any(path == REFERENCE_MANIFEST or path.startswith(('canonical/v1/', 'changesets/v1/'))
            for _, path in paths):
         base = subprocess.check_output(['git', 'merge-base', args.base, args.head], text=True).strip()
-        prior = subprocess.run(['git', 'show', f'{base}:reference-publication.json'],
+        prior = subprocess.run(['git', 'show', f'{base}:{REFERENCE_MANIFEST}'],
                                capture_output=True, text=True)
         previous = json.loads(prior.stdout) if prior.returncode == 0 else None
         errors = verify_reference_publication(paths, Path('.'), previous)

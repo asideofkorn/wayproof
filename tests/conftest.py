@@ -33,7 +33,7 @@ def generated_reference_site(generated_site, tmp_path_factory):
     from test_media_contract_boundaries import draft
     from test_public_research_policy import research
     from test_reference_activation import statement_research, prepare
-    from wayproof.media_migration import _files
+    from wayproof.media_migration import _files, REFERENCE_MANIFEST
     from wayproof.read_service import CanonicalReadService
     from wayproof.mcp_server import WayproofReadTools
     from wayproof.publication import verify_reference_publication
@@ -67,7 +67,7 @@ def generated_reference_site(generated_site, tmp_path_factory):
     publication.withdraw()
     assert verify_reference_publication(
         [('M' if p in publication.batch()._manifest()['additions'] else 'D', p)
-         for p in prior['batches'][change.change_set_id]['additions']] + [('M', 'reference-publication.json')],
+         for p in prior['batches'][change.change_set_id]['additions']] + [('M', REFERENCE_MANIFEST)],
         root, prior, workflow=workflow) == ()
     assert _files(root / 'canonical/v0') == baseline
     return publication, reads, tools, change, packet, active

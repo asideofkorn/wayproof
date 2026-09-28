@@ -444,7 +444,7 @@ class MigrationReadService:
         raise UnsupportedSchemaError('v1 planning activation is disabled')
 
 
-REFERENCE_MANIFEST = 'reference-publication.json'
+REFERENCE_MANIFEST = 'canonical/v1/reference-publication.json'
 REFERENCE_COLLECTIONS = frozenset((
     'sources', 'observations', 'evidence', 'claims', 'media_assets', 'media_versions',
     'availability_reports', 'source_attachments', 'attributed_statements',
@@ -551,6 +551,8 @@ class ReferenceBatch(MigrationWorkspace):
                         raise UnsupportedSchemaError('unsupported reference namespace')
                     if ns == 'canonical':
                         for collection in version.iterdir():
+                            if collection == self.root / REFERENCE_MANIFEST and collection.is_file() and not collection.is_symlink():
+                                continue
                             if collection.name not in collections or not collection.is_dir() or collection.is_symlink():
                                 raise UnsupportedSchemaError('unsupported reference collection')
         return value
@@ -749,7 +751,8 @@ class ReferencePublication:
             if batch['output_digest'] != digest(encoded(batch['additions'])):
                 raise ValueError('reference output digest mismatch')
         actual = {f'{ns}/v1/{path}': digest(content) for ns in ('canonical', 'changesets')
-                  for path, content in _files(self.root / ns / 'v1').items()}
+                  for path, content in _files(self.root / ns / 'v1').items()
+                  if f'{ns}/v1/{path}' != REFERENCE_MANIFEST}
         if (set(actual) - set(expected) or set(expected) - set(actual) - optional
                 or any(expected[path] != content and removing_tombstones.get(path) != content
                        for path, content in actual.items())):

@@ -39,7 +39,7 @@ complete canonical diff and refuses extra files, undeclared edits, altered
 payloads, combined v0 edits, or restoration of a withdrawn batch.
 
 The existing v1 record and ChangeSet envelopes are reused. A serializer-owned
-`reference-publication.json` index (`wayproof-reference-publication-1`) holds
+`canonical/v1/reference-publication.json` index (`wayproof-reference-publication-1`) holds
 independent batches, each using the reviewed migration manifest's codec,
 inventory, identity map, fingerprint, packet, receipt, and lifecycle. This is a
 storage/control index, not an additional approval or public domain record type.
@@ -146,9 +146,10 @@ verified. The operation first holds reads and purges the owned `_site`, and can
 resume after interrupted deletion or tombstone writing.
 
 Only IDs, hashes of bounded metadata, and non-sensitive control metadata remain.
-Accepted `MediaTombstone` records replace media metadata; this also preserves a
-real v1 artifact in a fresh Git checkout after withdrawal, so older capability-
-gated binaries cannot silently load v0 while ignoring the removal state. Claim
+Accepted `MediaTombstone` records replace media metadata. The control index itself
+also remains in the v1 namespace after withdrawal, including for Source-only
+batches with no media tombstones. Older supported capability-gated binaries
+(since PR #197) therefore cannot silently load v0 while ignoring removal state. Claim
 and Evidence permalinks remain visibly unsupported. Withdrawn identities cannot
 be reused, and a withdrawn batch cannot be restored by changing its receipt.
 
