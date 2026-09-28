@@ -13,7 +13,7 @@ from wayproof.canonical_storage import load_canonical, record_document, Unsuppor
 from wayproof.media_migration import MigrationWorkspace, _files
 from wayproof.public_research import fingerprint
 from wayproof.research_workflow import GitHubResearchReviews, ReviewReceipt
-from wayproof.schema import CanonicalRecords, Entity
+from wayproof.schema import CanonicalRecords, Entity, Source, Observation, Evidence, Claim
 from wayproof.media_contract import wire
 from wayproof.mcp_server import WayproofReadTools
 
@@ -38,6 +38,17 @@ def migration(research, tmp_path):
     path.parent.mkdir(parents=True)
     # Deliberately noncanonical whitespace: migration must preserve bytes, not reserialize.
     path.write_text('  ' + record_document('entity', Entity('legacy-place', 'park', 'Legacy park')))
+    for kind, collection, rid, record in (
+        ('source', 'sources', 'legacy-source', Source('legacy-source', 'https://example.invalid/legacy')),
+        ('observation', 'observations', 'legacy-observation', Observation(
+            'legacy-observation', 'legacy-source', 'Synthetic legacy report', artifact_refs=('unverified-image.jpg',))),
+        ('evidence', 'evidence', 'legacy-cited', Evidence('legacy-cited', 'legacy-observation', 'legacy-claim', 'supports')),
+        ('evidence', 'evidence', 'legacy-uncited', Evidence('legacy-uncited', 'legacy-observation', 'legacy-claim', 'contradicts')),
+        ('claim', 'claims', 'legacy-claim', Claim('legacy-claim', 'legacy-place', 'reported_status', 'open', ('legacy-cited',))),
+    ):
+        target = source / f'canonical/v0/{collection}/{rid}.json'
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(record_document(kind, record))
     base = load_canonical(source)
     review = reviewed(change, packet, base)
     receipt = ReviewReceipt(7, 'a' * 40, f'research-reviews/{review.fingerprint}.json')
@@ -97,7 +108,8 @@ def test_removal_erases_content_and_regenerates_every_owned_consumer(migration):
         assert source_record.locator.encode() not in all_bytes
     assert b'STALE RETAINED TEXT' not in all_bytes
     index = json.loads((output / 'search-index.json').read_text())
-    assert all(row['support'] == 'unsupported' for row in index if row['record_type'] == 'claim')
+    assert all(row['support'] == 'unsupported' for row in index
+               if row['record_type'] == 'claim' and row['record_id'] != 'legacy-claim')
     assert json.loads((output / 'cache.json').read_text())['plans'] == 'invalidated'
     offline = json.loads((output / 'offline-manifest.json').read_text())
     assert offline['generation'] != old_offline['generation']
@@ -270,3 +282,17 @@ def test_interrupted_removal_holds_reads_and_can_resume(migration, monkeypatch):
     workspace.withdraw()
     assert workspace.read().explain_claim(change.records.claims[0].claim_id)['support'] == 'unsupported'
     assert (workspace.root / 'outputs/offline-manifest.json').exists()
+
+
+def test_legacy_uncited_evidence_is_preserved_without_relaxing_new_evidence(migration):
+    from test_media_contract_boundaries import make_change
+    workspace, source, change, *_ = migration
+    model = workspace.read().explain_claim('legacy-claim')
+    assert model['support'] == 'traceable'
+    assert 'legacy-uncited' not in {row['record_id'] for row in model['lineage']}
+    observation = next(row['record'] for row in model['lineage'] if row['record_type'] == 'observation')
+    assert observation['artifact_refs'] == ['unverified-image.jpg']
+    records = deepcopy(change.records)
+    records.evidence.append(replace(records.evidence[0], evidence_id='new-uncited'))
+    errors = make_change(records).validate(existing=load_canonical(source))
+    assert any('evidence not cited by named claim' in error for error in errors)

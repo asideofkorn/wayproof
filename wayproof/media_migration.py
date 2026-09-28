@@ -354,7 +354,7 @@ class MigrationReadService:
 
     def evidence_detail(self, record_type, record_id):
         key = (record_type, record_id)
-        if key not in self.keys():
+        if key not in self._records and key not in self._withdrawn:
             raise KeyError('unknown migration record')
         reached, pending = set(), [key]
         unsupported = False

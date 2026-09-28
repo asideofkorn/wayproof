@@ -12,7 +12,11 @@ is not approval of a media source or authorization to activate processing.
 validated v0 repository, rechecks the narrow public-research policy, and writes
 to a separate owned directory outside that repository. Existing v0 files and
 ChangeSets are copied **byte for byte**, including their original whitespace.
-IDs and legacy `artifact_refs` are not interpreted or rewritten.
+IDs and legacy `artifact_refs` are not interpreted or rewritten. Existing v0
+Evidence backlinks need not be reciprocal Claim citations; migration preserves
+that baseline behavior without treating uncited evidence as claim support. Only
+new v1 Evidence/Claims are subject to the stricter reciprocal-link rule. Baseline
+exemptions come from the existing repository, never a submitted legacy flag.
 
 New records use the existing artifact envelope with `schema_version: 1` under
 `canonical/v1/<collection>/<id>.json`; the staged ChangeSet uses

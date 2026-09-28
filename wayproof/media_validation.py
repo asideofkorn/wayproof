@@ -159,8 +159,15 @@ def covered(finding, inspected):
     return False
 
 
-def validate_graph(public, change_set_id, legacy_observation_ids=()):
-    """Validate proposed selection intent, never attest to reviewer approval."""
+def validate_graph(public, change_set_id, legacy_observation_ids=(),
+                   legacy_evidence_ids=(), legacy_claim_ids=()):
+    """Validate proposed selection intent, never attest to reviewer approval.
+
+    Trusted v0 baseline IDs preserve their accepted v0 semantics. In particular,
+    v0 Evidence backlinks need not be reciprocal Claim citations. Baseline IDs
+    come only from the existing repository, never a field on the proposed delta.
+    All new Evidence/Claims must satisfy the stricter media linkage rules.
+    """
     CHECK.validate(public)
     require(public['visibility'] == 'public', 'public draft required')
     records = index(public)
@@ -311,11 +318,11 @@ def validate_graph(public, change_set_id, legacy_observation_ids=()):
                             require(bool(finding['corroborating_evidence_ids']), 'corroborated location needs Evidence')
                         else:
                             require(finding['modality'] in ('visual', 'ocr'), 'sign location needs visual/OCR finding')
-        if kind == 'evidence':
+        if kind == 'evidence' and rid not in legacy_evidence_ids:
             claim = get('claim', item['claim_id'])
             if active(claim):
                 require(rid in claim['evidence_ids'], 'evidence not cited by named claim')
-        if kind == 'claim':
+        if kind == 'claim' and rid not in legacy_claim_ids:
             for eid in item['evidence_ids']:
                 evidence = get('evidence', eid)
                 if active(evidence):
@@ -401,7 +408,9 @@ def validate_media_change(change, existing):
                     require(decode_record(kind, wire(record)) == record,
                             'media values must use their exact domain types')
         validate_graph(public_bundle(combined), change.change_set_id,
-                       {r.observation_id for r in existing.observations})
+                       {r.observation_id for r in existing.observations},
+                       {r.evidence_id for r in existing.evidence},
+                       {r.claim_id for r in existing.claims})
         # Qualified entity locations still use the ordinary entity registry.
         entity_ids = {r.entity_id for r in combined.entities}
         for provenance in combined.observation_provenance:
