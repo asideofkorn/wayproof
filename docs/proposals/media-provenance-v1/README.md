@@ -480,3 +480,11 @@ and bounded immutable processing. Each stage must prove the applicable checks
 in the scope amendment above. Private custody and retained-media infrastructure
 remain gates for later expanded scope; they are not initial launch prerequisites.
 The existing ChangeSet/Evidence/publication boundary applies to every stage.
+
+## Staged migration implementation
+
+The [migration rehearsal and compatibility layer](../../v1-migration-compatibility.md) now exercises isolated
+v1 serialization, PR-derived review verification, shared evidence projections,
+and executed batch withdrawal with regenerated owned outputs. This is not
+production activation: the ordinary prepare/write/read/publication entry points
+remain v0-only, and processing remains disabled.

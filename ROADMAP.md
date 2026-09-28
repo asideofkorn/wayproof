@@ -212,6 +212,10 @@ without granting direct canonical write access.
      invalidation analysis. See [enforced scope and limits](docs/public-research-enforcement.md).
      Persisted removal and live consumer integration remain in the next gate.
   2. Complete v1 migration and HTML/JSON/MCP/read-service compatibility.
+     The [staged migration implementation](docs/v1-migration-compatibility.md)
+     provides deterministic rehearsal, workflow-verified review receipts, shared
+     evidence projections and executed withdrawal/output regeneration for review.
+     Production routing and activation remain disabled.
   3. Separately activate v1 for reviewed, reference-only provenance.
   4. Add bounded processing and immutable runs; preserve the separate PR review
      gate for any canonical effect.
