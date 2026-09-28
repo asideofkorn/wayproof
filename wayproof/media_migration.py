@@ -242,8 +242,15 @@ class MigrationWorkspace:
         if manifest['state'] == 'withdrawn':
             return self.export()
         if manifest['state'] == 'staged':
-            reads = self._snapshot()  # Revalidate workflow authority before changing custody.
-            manifest['withdrawn_ids'] = [list(key) for key in sorted(reads.additions)]
+            # Custody/inventory checks above protect the deletion boundary.
+            # Publication authority must never be a prerequisite for withdrawal.
+            kinds = {collection: kind for kind, (collection, _, _) in ALL_SPECS.items()}
+            owned = []
+            for name in manifest['additions']:
+                parts = Path(name).parts
+                if len(parts) == 4 and parts[:2] == ('canonical', 'v1'):
+                    owned.append([kinds[parts[2]], Path(parts[3]).stem])
+            manifest['withdrawn_ids'] = sorted(owned)
             # Deny reads before touching files; interruption leaves an explicit hold.
             manifest['state'] = 'removal_hold'
             self._save(manifest)

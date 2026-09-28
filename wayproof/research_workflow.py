@@ -22,9 +22,17 @@ class ReviewReceipt:
 
 class GitHubResearchReviews:
     """Trusted application configuration; repository/base cannot come from a draft."""
-    def __init__(self, checkout: Path, repository: str, base='main'):
+    def __init__(self, checkout: Path, repository: str, base='main', *, maintainers=()):
         if not re.fullmatch(r'[\w.-]+/[\w.-]+', repository):
             raise ValueError('invalid configured GitHub repository')
+        if isinstance(maintainers, str):
+            raise ValueError('maintainers must be a collection of identities')
+        maintainers = tuple(maintainers)
+        if any(
+                not isinstance(login, str) or not re.fullmatch(r'[A-Za-z0-9-]+', login)
+                for login in maintainers):
+            raise ValueError('invalid configured maintainer identities')
+        self.maintainers = frozenset(login.casefold() for login in maintainers)
         self.checkout, self.repository, self.base = Path(checkout), repository, base
 
     def _git(self, *args):
@@ -51,6 +59,18 @@ class GitHubResearchReviews:
         if not re.fullmatch('[0-9a-f]{40}', merge or ''):
             raise ValueError('invalid merge identity')
         self._git('merge-base', '--is-ancestor', merge, f'refs/remotes/origin/{self.base}')
+        merger = (pr.get('merged_by') or {}).get('login')
+        merged_by_maintainer = (isinstance(merger, str) and
+                                merger.casefold() in self.maintainers)
+        if not merged_by_maintainer:
+            self._require_independent_approval(receipt, pr)
+        value = json.loads(self._git('show', f'{receipt.head_commit}:{receipt.review_path}'))
+        result = _typed(ContentReview, value)
+        if result.fingerprint != fingerprint or result.disposition != 'accepted':
+            raise ValueError('review does not accept the exact research snapshot')
+        return result
+
+    def _require_independent_approval(self, receipt, pr):
         # Paginate reviews: an old approval cannot mask a later dismissal/change request.
         reviews, page = [], 1
         while True:
@@ -76,8 +96,3 @@ class GitHubResearchReviews:
                            review['commit_id'] == receipt.head_commit)
         if not authorized:
             raise ValueError('no current-head maintainer approval')
-        value = json.loads(self._git('show', f'{receipt.head_commit}:{receipt.review_path}'))
-        result = _typed(ContentReview, value)
-        if result.fingerprint != fingerprint or result.disposition != 'accepted':
-            raise ValueError('review does not accept the exact research snapshot')
-        return result

@@ -296,3 +296,86 @@ def test_legacy_uncited_evidence_is_preserved_without_relaxing_new_evidence(migr
     records.evidence.append(replace(records.evidence[0], evidence_id='new-uncited'))
     errors = make_change(records).validate(existing=load_canonical(source))
     assert any('evidence not cited by named claim' in error for error in errors)
+
+
+@pytest.mark.parametrize('failure', ['dismissed', 'changes_requested', 'github_unavailable', 'review_file_missing'])
+def test_withdrawal_does_not_require_publication_authority(migration, monkeypatch, failure):
+    workspace, _, change, _, _, workflow = migration
+    output = workspace.export()
+    tools = WayproofReadTools(workspace.read())
+    calls = []
+    def unavailable(*args):
+        calls.append(args)
+        if failure == 'review_file_missing':
+            raise FileNotFoundError(failure)
+        if failure == 'github_unavailable':
+            raise ConnectionError(failure)
+        raise ValueError(failure)
+    monkeypatch.setattr(workflow, 'resolve', unavailable)
+    rid = change.records.claims[0].claim_id
+    with pytest.raises((ValueError, OSError)):
+        tools.explain_claim(rid)
+    calls.clear()
+    workspace.withdraw()
+    assert calls == []  # Neither deletion nor unsupported regeneration needs approval.
+    assert not workspace._manifest()['additions']
+    assert 'packet' not in workspace._manifest()
+    model = tools.get_evidence_detail('claim', rid)
+    assert model['support'] == 'unsupported'
+    directory = output / 'evidence/claim' / rid
+    for name in ('index.json', 'mcp.json'):
+        assert json.loads((directory / name).read_text()) == model
+    html = (directory / 'index.html').read_text()
+    assert json.loads(re.search(r'id="evidence-projection">(.*?)</script>', html).group(1)) == model
+    assert json.loads((output / 'cache.json').read_text())['plans'] == 'invalidated'
+    assert json.loads((output / 'offline-manifest.json').read_text())['replace_previous']
+    retained = b''.join(_files(workspace.root).values())
+    for source in change.records.sources:
+        assert source.locator.encode() not in retained
+    for statement in change.records.attributed_statements:
+        assert statement.text.encode() not in retained
+    workspace.rollback()
+    assert calls == []
+
+
+@pytest.mark.parametrize('mutation', ['none', 'not_merged', 'wrong_head', 'wrong_base',
+                                    'wrong_repository', 'unconfigured_merger', 'missing_merger',
+                                    'not_on_main', 'wrong_fingerprint'])
+def test_configured_maintainer_merge_authorizes_single_maintainer_workflow(
+        research, tmp_path, monkeypatch, mutation):
+    change, packet = research
+    review = reviewed(change, packet)
+    receipt = ReviewReceipt(7, 'a' * 40, f'research-reviews/{review.fingerprint}.json')
+    authority = GitHubResearchReviews(tmp_path, 'asideofkorn/wayproof', maintainers=('asideofkorn',))
+    pr = {'merged': True, 'base': {'ref': 'main', 'repo': {'full_name': 'asideofkorn/wayproof'}},
+          'head': {'sha': 'a' * 40}, 'merge_commit_sha': 'b' * 40,
+          'user': {'login': 'asideofkorn'}, 'merged_by': {'login': 'asideofkorn'}}
+    if mutation == 'not_merged': pr['merged'] = False
+    if mutation == 'wrong_head': pr['head']['sha'] = 'c' * 40
+    if mutation == 'wrong_base': pr['base']['ref'] = 'unreviewed'
+    if mutation == 'wrong_repository': pr['base']['repo']['full_name'] = 'other/repo'
+    if mutation == 'unconfigured_merger': pr['merged_by']['login'] = 'other-maintainer'
+    if mutation == 'missing_merger': pr['merged_by'] = None
+    calls = []
+    def api(path):
+        calls.append(path)
+        if '/reviews?' in path:
+            return []
+        assert path == 'pulls/7'
+        return deepcopy(pr)
+    def git(*args):
+        if args[0] == 'merge-base':
+            if mutation == 'not_on_main': raise ValueError('merge absent from trusted main')
+            return ''
+        assert args == ('show', f'{receipt.head_commit}:{receipt.review_path}')
+        result = wire(review)
+        if mutation == 'wrong_fingerprint': result['fingerprint'] = '0' * 64
+        return json.dumps(result)
+    monkeypatch.setattr(authority, '_api', api)
+    monkeypatch.setattr(authority, '_git', git)
+    if mutation == 'none':
+        assert authority.resolve(receipt, review.fingerprint) == review
+        assert calls == ['pulls/7']  # No imaginary second reviewer/identity required.
+    else:
+        with pytest.raises(ValueError):
+            authority.resolve(receipt, review.fingerprint)

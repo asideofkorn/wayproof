@@ -45,16 +45,30 @@ jobs, not a concurrent database or an archive of historical media snapshots.
 The source repository, checkout, base branch and workflow adapter are trusted
 application configuration, not fields accepted from research submissions.
 
-`GitHubResearchReviews.resolve` checks the configured GitHub repository and base,
-merged PR identity, current-head approval by a non-author with the `admin` or
-`maintain` role, subsequent dismissal/change requests, and merge ancestry in the
-locally fetched `origin/main`. It then reads the exact reviewed Git blob at
-`research-reviews/<fingerprint>.json` and decodes the closed `ContentReview` shape.
+`GitHubResearchReviews.resolve` requires the configured repository/base, a merged
+PR with the exact receipt head, and merge ancestry in locally fetched `origin/main`.
+Authority then comes from either:
+
+- GitHub's `merged_by` actor is in the application's configured `maintainers`.
+  The maintainer may also be the PR author. This models Wayproof's single-maintainer
+  workflow: the deliberate merge is the authorization, without inventing a separate
+  GitHub identity for a Codex review session. This path does not require review-list
+  or collaborator API calls; the configured maintainer's merge is decisive.
+- Otherwise, a non-author has an exact-head independent approval and GitHub's
+  `admin` or `maintain` role. This path checks subsequent dismissals/change requests
+  and rejects missing, stale or insufficient approval.
+
+For Wayproof the trusted application configuration supplies
+`GitHubResearchReviews(checkout, "asideofkorn/wayproof", maintainers=("asideofkorn",))`.
+Maintainer identities cannot be supplied through a proposal, receipt or review
+blob. The default configured set is empty; being a PR author alone grants nothing.
+
+Only after verifying authority does the adapter read the exact Git blob at
+`research-reviews/<fingerprint>.json` and decode the closed `ContentReview` shape.
 That document supplies reviewed facts; **its mere existence, or its `accepted`
-field, supplies no authority**. API errors, missing Git objects, stale approvals,
-unknown roles, or mismatching fingerprints deny the read. There is no automatic
-fetch of the checkout and no source/media fetch. Tests replace the GitHub/Git
-transport with synthetic responses; they do not call GitHub or media providers.
+field, supplies no authority**. Required API errors, missing Git objects, or
+mismatching fingerprints deny publication reads. There is no automatic checkout
+fetch or source/media fetch. Tests use synthetic GitHub/Git responses.
 
 GitHub's `role_name` is used because the legacy `permission` field maps maintain
 to write; see the [GitHub collaborator-permission API](https://docs.github.com/en/rest/collaborators/collaborators#get-repository-permissions-for-a-user).
@@ -101,6 +115,13 @@ manifest with content digests. Actual MCP requests use the same refreshed servic
 MCP snapshots are acceptance artifacts, not a second server implementation.
 The manifest identifies replacement of the preceding offline generation; it
 cannot delete a copy already downloaded to someone else's device.
+
+Withdrawal uses the verified local artifact inventory to identify owned record
+IDs; it never resolves a GitHub approval or reads the review blob. Dismissal,
+change requests, a missing review file, or an unavailable GitHub service cannot
+block deletion or regeneration of unsupported outputs. Local inventory and
+symlink checks remain in force to keep deletion within owned custody. Rollback
+uses the same approval-independent withdrawal path.
 
 A removal hold denies reads during deletion. No original-payload backup is kept.
 An interrupted hold can be resumed by calling withdrawal again; reads remain
