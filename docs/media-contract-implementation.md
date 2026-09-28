@@ -94,3 +94,11 @@ policy assessment and removal of owned research drafts to the existing write
 service. Structural validation remains distinct from policy/review authority.
 V1 prepare/write/publish rejection remains unchanged; live removal/consumer
 integration is still part of the next separately reviewed migration stage.
+
+## Staged migration implementation
+
+The [migration rehearsal and compatibility layer](v1-migration-compatibility.md) now exercises isolated
+v1 serialization, PR-derived review verification, shared evidence projections,
+and executed batch withdrawal with regenerated owned outputs. This is not
+production activation: the ordinary prepare/write/read/publication entry points
+remain v0-only, and processing remains disabled.

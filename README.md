@@ -388,6 +388,9 @@ for the enforced checks and the remaining privacy, deletion and activation gates
 The [public-research policy boundary](docs/public-research-enforcement.md) now
 assesses reference-only drafts and removes owned research content; it does not
 activate v1 or add media processing.
+The [staged migration path](docs/v1-migration-compatibility.md) exercises byte-preserving
+rollback, workflow-backed review and shared evidence/removal outputs in an isolated
+workspace. Production v1 routing remains disabled.
 
 ## Canonical repository layout
 

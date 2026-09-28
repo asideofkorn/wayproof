@@ -625,6 +625,19 @@ def _gap_html(detail: dict) -> str:
 
 
 def render_evidence_html(payload: dict, site_url: str) -> str:
+    if payload.get('projection') == 'media-v1-rehearsal':
+        # All lineage/support decisions belong to the shared read projection.
+        from .public_research import preview_json
+        rows = ''.join(f'<p><strong>{_e(row["label"])}</strong> {_e(row["text"])}</p>'
+                       for row in payload['texts'])
+        lineage = ''.join('<li>' + _record_link(row['record_type'], row['record_id'], row['record_id'])
+                          + ('<pre>' + _e(preview_json(row['record'])) + '</pre>' if 'record' in row else '')
+                          + '</li>' for row in payload['lineage'])
+        return ('<!doctype html><html><head><meta charset="utf-8"><title>Evidence</title></head><body>'
+                f'<h1>{_e(payload["record_id"])}</h1><p>{_e(payload["support"])}</p>'
+                f'<p>{_e(payload.get("reason", ""))}</p>{rows}<ul>{lineage}</ul>'
+                '<script type="application/json" id="evidence-projection">' + preview_json(payload)
+                + '</script></body></html>')
     kind, record = payload["record_type"], payload["record"]
     identifier = record[f'{kind}_id']
     title = (record.get("question") or record.get("publisher")
