@@ -38,12 +38,13 @@ Both are Accepted and independently implementable. Neither changes Schema v0;
 the [Step 4 media contract](docs/proposals/media-provenance-v1/README.md) was
 separately accepted in PR #196. Step 5a implements its public domain types,
 structural validation through the existing ChangeSet service, and a fail-closed
-repository capability gate. V1 drafts cannot be prepared, persisted or published.
-Schema v0 remains the active published format. The first launch is now scoped to
+repository capability gate. The dedicated [reference-only activation](docs/reference-only-activation.md)
+now routes reviewed, independently removable batches through production storage
+and shared consumers. Generic/broader v1 preparation and media processing remain
+disabled. Existing canonical knowledge remains v0. The first launch is now scoped to
 [public-source, reference-only research](docs/public-source-research-plan.md).
-Narrow policy enforcement and removal of retained references/text precede v1
-migration/consumer compatibility and separately reviewed activation; bounded
-processing follows. Private custody, accounts/uploads, and retained-media
+Narrow policy enforcement, migration compatibility and the production
+reference-only path preserve the separate bounded-processing review gate. Private custody, accounts/uploads, and retained-media
 infrastructure are deferred until needed. See
 [implementation boundaries](docs/media-contract-implementation.md).
 

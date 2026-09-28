@@ -295,14 +295,26 @@ preserves uncertainty, and produces traceable outdoor-planning answers.">
 </html>
 """
 
-def build(output_dir: Path, today: datetime.date | None = None) -> dict:
+def build(output_dir: Path, today: datetime.date | None = None, *, root: Path = Path("."),
+          research_workflow=None) -> dict:
     today = today or datetime.date.today()
     # Validate the complete repository before emitting even a partial export.
-    canonical_reads = CanonicalReadService(Path("."))
+    canonical_reads = CanonicalReadService(root, research_workflow=research_workflow)
+    reference = canonical_reads._reference
+    generation = None
+    if reference:
+        from wayproof.media_migration import _files, digest
+        if output_dir.resolve() != (Path(root) / '_site').resolve():
+            raise ValueError('activated reference output must use the owned _site directory')
+        generation = digest((reference.root / reference.manifest_name).read_bytes())
+        canonical_reads._frozen_reference = reference._snapshot()
+        if output_dir.exists():
+            _files(output_dir)  # Refuse symlinks before purging the complete owned output.
+            shutil.rmtree(output_dir)
 
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "style.css").write_text(STYLESHEET)
-    shutil.copytree(Path("web_assets"), output_dir / "assets", dirs_exist_ok=True)
+    shutil.copytree(Path(__file__).resolve().parents[1] / "web_assets", output_dir / "assets", dirs_exist_ok=True)
     # Baked into the deployed artifact (not just set in repo Settings) so the
     # custom domain survives every GitHub Actions Pages deployment.
     (output_dir / "CNAME").write_text("wayproof.dev\n")
@@ -329,6 +341,30 @@ def build(output_dir: Path, today: datetime.date | None = None) -> dict:
     (output_dir / "sitemap.xml").write_text(render_sitemap(urls))
     (output_dir / "robots.txt").write_text(render_robots())
 
+    if reference:
+        from wayproof.media_migration import _hashes, encoded
+        from wayproof.mcp_server import WayproofReadTools
+        snapshot = canonical_reads._reference_snapshot()
+        tools = WayproofReadTools(snapshot)
+        index = []
+        for kind, rid in sorted(canonical_reads._reference_keys):
+            model = snapshot.evidence_detail(kind, rid)
+            from wayproof.canonical_site import _record_url
+            relative = _record_url(kind, rid).lstrip('/')
+            (output_dir / relative / 'mcp.json').write_bytes(encoded(tools.get_evidence_detail(kind, rid)))
+            index.append({'record_type': kind, 'record_id': rid, 'support': model['support'],
+                          'url': '/' + relative})
+        (output_dir / 'reference-index.json').write_bytes(encoded(index))
+        (output_dir / 'cache.json').write_bytes(encoded({'plans': 'invalidated', 'records': index}))
+        inventory = _hashes(_files(output_dir))
+        (output_dir / 'offline-manifest.json').write_bytes(encoded({
+            'generation': digest(encoded(inventory)), 'replace_previous': True, 'files': inventory}))
+        final = reference._snapshot()
+        if (generation != digest((reference.root / reference.manifest_name).read_bytes())
+                or any(final.evidence_detail(kind, rid) != snapshot.evidence_detail(kind, rid)
+                       for kind, rid in canonical_reads._reference_keys)):
+            shutil.rmtree(output_dir)
+            raise ValueError('reference generation changed during export; outputs withheld')
     return {"knowledge_gaps": len(gaps), "indexed_urls": len(urls), "canonical_entities":
             canonical_stats["canonical_entities"]}
 

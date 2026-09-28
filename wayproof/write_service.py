@@ -438,6 +438,20 @@ class ChangeSetWriteService:
             operations=change.operations,
         )
 
+    def prepare_reference(self, change_set_id, actor, root, packet, receipt, workflow=None):
+        """Prepare only reviewed reference records; GitHub still publishes the candidate."""
+        from .canonical_storage import load_v0_baseline
+        from .media_migration import ReferencePublication
+        actor = self._require_actor(actor, 'prepared')
+        change = self._stored(change_set_id)
+        change.assert_validated_unchanged()
+        ReferencePublication(root, workflow).recover_preparation()
+        if self._repository.snapshot() != load_v0_baseline(root, research_workflow=workflow):
+            raise PreparationRejected('canonical base changed')
+        result = ReferencePublication.prepare(root, change, packet, receipt, workflow)
+        self._event(change_set_id, 'prepared', actor, change.status, change.status, self._clock())
+        return result
+
     def workflow_log(self, change_set_id: Optional[str] = None) -> Tuple[WorkflowEvent, ...]:
         events = self._events
         if change_set_id is not None:

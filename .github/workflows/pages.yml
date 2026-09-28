@@ -25,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.14"
@@ -33,6 +35,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Build site
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python scripts/build_site.py --output _site
       - uses: actions/upload-pages-artifact@v3
         with:

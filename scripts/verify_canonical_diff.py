@@ -8,8 +8,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from wayproof.canonical_storage import load_canonical, load_changeset
-from wayproof.publication import verify_publication
+from wayproof.canonical_storage import assert_supported_repository, load_changeset
+from wayproof.publication import verify_publication, verify_reference_publication
+from wayproof.media_migration import REFERENCE_MANIFEST
+import json
 
 
 def changed_paths(base: str, head: str):
@@ -30,10 +32,20 @@ def main() -> int:
     parser.add_argument("--head", default="HEAD")
     args = parser.parse_args()
     paths = changed_paths(args.base, args.head)
+    if any(path == REFERENCE_MANIFEST or path.startswith(('canonical/v1/', 'changesets/v1/'))
+           for _, path in paths):
+        base = subprocess.check_output(['git', 'merge-base', args.base, args.head], text=True).strip()
+        prior = subprocess.run(['git', 'show', f'{base}:{REFERENCE_MANIFEST}'],
+                               capture_output=True, text=True)
+        previous = json.loads(prior.stdout) if prior.returncode == 0 else None
+        errors = verify_reference_publication(paths, Path('.'), previous)
+        for error in errors:
+            print(f'error: {error}')
+        return int(bool(errors))
     change_paths = [Path(path) for status, path in paths
                     if status == "A" and path.startswith("changesets/v0/")]
     changes = [load_changeset(path) for path in change_paths]
-    load_canonical(Path("."))
+    assert_supported_repository(Path("."))
     errors = verify_publication(paths, changes)
     if errors:
         for error in errors:

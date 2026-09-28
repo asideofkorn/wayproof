@@ -59,12 +59,24 @@ def _check_envelope(payload: dict, path: Path, *, changeset: bool = False) -> No
         raise UnsupportedSchemaError(f'unsupported artifact format: {path}')
 
 
-def assert_supported_repository(root: Path) -> None:
+def assert_supported_repository(root: Path, *, research_workflow=None) -> None:
     """Fail closed on unknown versions/collections, including unmarked additions.
 
-    No new manifest format is introduced. The existing versioned directory
-    contract is the root capability gate; v1 activation is deliberately absent.
+    V1 requires the reviewed reference-publication index. Unmarked or broader
+    media schemas still fail before any consumer can partially load v0.
     """
+    from .media_migration import REFERENCE_MANIFEST, ReferencePublication
+    if ((root / ReferencePublication.preparation_name).exists()
+            or (root / ReferencePublication.preparation_name).is_symlink()):
+        raise UnsupportedSchemaError('reference preparation interrupted; recover before reading')
+    if (root / REFERENCE_MANIFEST).exists():
+        ReferencePublication(root, research_workflow)._snapshot()
+        return
+    _assert_layout(root)
+
+
+def _assert_layout(root, *, reference=False):
+    """Internal layout check; reference callers separately validate every v1 envelope."""
     for namespace in ('canonical', 'changesets'):
         parent = root / namespace
         if not parent.exists():
@@ -72,6 +84,8 @@ def assert_supported_repository(root: Path) -> None:
         if parent.is_symlink() or not parent.is_dir():
             raise UnsupportedSchemaError(f'unsupported schema namespace layout: {parent}')
         for version in parent.iterdir():
+            if reference and version.name == 'v1' and version.is_dir() and not version.is_symlink():
+                continue
             if version.name != 'v0' or not version.is_dir() or version.is_symlink():
                 raise UnsupportedSchemaError(f'unsupported schema version/layout: {version}')
             for entry in version.iterdir():
@@ -205,9 +219,12 @@ def _result_index(records: CanonicalRecords) -> Dict[Tuple[str, str], Any]:
 
 
 def write_candidate(root: Path, prepared: PreparedCandidate,
-                    change: ChangeSet) -> Tuple[Path, ...]:
+                    change: ChangeSet, *, research_workflow=None) -> Tuple[Path, ...]:
     """Write only the paths authorized by a validated prepared candidate."""
-    assert_supported_repository(root)
+    from .media_migration import REFERENCE_MANIFEST, ReferencePublication
+    assert_supported_repository(root, research_workflow=research_workflow)
+    if (root / REFERENCE_MANIFEST).exists():
+        ReferencePublication(root, research_workflow).check_v0_result(prepared.result)
     # Preflight the whole candidate before the first write/unlink. Caller-made
     # PreparedCandidate values cannot activate v1 or skip the domain boundary.
     changeset_document(change)
@@ -245,8 +262,22 @@ def write_candidate(root: Path, prepared: PreparedCandidate,
     return tuple(touched)
 
 
-def load_canonical(root: Path) -> CanonicalRecords:
+def load_canonical(root: Path, *, research_workflow=None) -> CanonicalRecords:
+    from .media_migration import REFERENCE_MANIFEST, ReferencePublication
+    if (root / REFERENCE_MANIFEST).exists():
+        return ReferencePublication(root, research_workflow).records()
     assert_supported_repository(root)
+    return _load_v0_records(root)
+
+
+def load_v0_baseline(root: Path, *, research_workflow=None) -> CanonicalRecords:
+    """Explicit v0 planning/write baseline; validate the entire repository first."""
+    assert_supported_repository(root, research_workflow=research_workflow)
+    return _load_v0_records(root)
+
+
+def _load_v0_records(root: Path) -> CanonicalRecords:
+    # Internal decoder only. Public entry points must check the root capability.
     values: Dict[str, List[Any]] = {field.name: [] for field in fields(CanonicalRecords)}
     canonical_root = root / "canonical" / "v0"
     for collection, (kind, _, record_class) in COLLECTION_TYPES.items():

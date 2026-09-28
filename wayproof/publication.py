@@ -79,3 +79,59 @@ def verify_publication(changed_paths: Iterable[Tuple[str, str]],
     for path in sorted(set(declared) - set(canonical)):
         errors.append(f"ChangeSet operation has no canonical diff: {path}")
     return tuple(sorted(set(errors)))
+
+
+def verify_reference_publication(changed_paths, root, previous_manifest=None, *, workflow=None):
+    """One exact batch transition per reviewed diff; the index grants no authority."""
+    from pathlib import Path
+    from .media_migration import ReferencePublication, REFERENCE_MANIFEST, ALL_SPECS, digest, encoded
+    from .media_contract import _typed
+    from .research_workflow import ReviewReceipt
+    try:
+        publication = ReferencePublication(Path(root), workflow)
+        manifest = publication._manifest()
+        before = previous_manifest['batches'] if previous_manifest else {}
+        after = manifest['batches']
+        changed = {cid for cid in before.keys() | after.keys() if before.get(cid) != after.get(cid)}
+        if len(changed) != 1 or set(before) - set(after):
+            raise ValueError('publication requires one explicit batch transition')
+        cid = changed.pop()
+        new, old = after[cid], before.get(cid)
+        marker_status = 'M' if previous_manifest else 'A'
+        expected = {REFERENCE_MANIFEST: marker_status}
+        if old is None:
+            if new['state'] != 'staged':
+                raise ValueError('first batch publication must be additive')
+            snapshot = publication.batch(cid)._snapshot()
+            if snapshot._packet is None:
+                raise ValueError('batch lacks eligible reviewed support')
+            expected.update({path: 'A' for path in new['additions']})
+        elif old['state'] == 'staged' and new['state'] == 'staged':
+            if new != dict(old, receipt=new['receipt']) or new['receipt'] == old['receipt']:
+                raise ValueError('only a separately reviewed receipt may change')
+            publication.workflow.resolve(_typed(ReviewReceipt, new['receipt']), new['fingerprint'])
+        else:
+            if old['state'] != 'staged' or new['state'] != 'withdrawn':
+                raise ValueError('only whole-batch withdrawal is supported')
+            from .media_migration import reference_tombstones, _hashes
+            tombstones = reference_tombstones(old)
+            expected.update({path: ('M' if path in tombstones else 'D') for path in old['additions']})
+            expected_batch = dict(old)
+            kinds = {col: kind for kind, (col, _, _) in ALL_SPECS.items()}
+            expected_batch['withdrawn_ids'] = sorted(
+                [kinds[Path(path).parts[2]], Path(path).stem] for path in old['record_order'])
+            expected_batch['state'] = 'withdrawn'
+            expected_batch['additions'] = _hashes(tombstones)
+            expected_batch['output_digest'] = digest(encoded(expected_batch['additions']))
+            expected_batch.pop('packet')
+            expected_batch.pop('change_path')
+            if new != expected_batch:
+                raise ValueError('withdrawal differs from the prior owned inventory')
+        publication._snapshot()  # Unavailable review produces unsupported output, never fallback.
+        paths = {path: status for status, path in changed_paths
+                 if path == REFERENCE_MANIFEST or path.split('/')[0] in ('canonical', 'changesets')}
+        if paths != expected:
+            raise ValueError('reference publication diff differs from the complete owned inventory')
+        return ()
+    except (ValueError, KeyError, TypeError, OSError) as exc:
+        return ('reference publication rejected: ' + str(exc),)

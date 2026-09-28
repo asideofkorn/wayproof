@@ -96,3 +96,42 @@ class GitHubResearchReviews:
                            review['commit_id'] == receipt.head_commit)
         if not authorized:
             raise ValueError('no current-head maintainer approval')
+
+    def baseline(self, receipt, fingerprint, expected_hashes):
+        """Read the exact v0 review baseline from local Git, not the current v0 tree.
+
+        Used only when v0 has evolved since research review. No source retrieval,
+        media acquisition, or historical data publication occurs here.
+        """
+        from io import BytesIO
+        import tarfile
+        from tempfile import TemporaryDirectory
+        from .media_migration import _hashes
+        from .canonical_storage import load_canonical
+        self.resolve(receipt, fingerprint)
+        namespaces = self._git('ls-tree', '--name-only', receipt.head_commit, 'canonical', 'changesets').splitlines()
+        if not namespaces or any(n not in ('canonical', 'changesets') for n in namespaces):
+            raise ValueError('reviewed baseline namespaces unavailable')
+        content = subprocess.run(
+            ['git', 'archive', receipt.head_commit, *namespaces],
+            cwd=self.checkout, check=True, capture_output=True).stdout
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = {}
+            with tarfile.open(fileobj=BytesIO(content)) as archive:
+                for member in archive.getmembers():
+                    if not member.isfile():
+                        continue
+                    path = Path(member.name)
+                    if path.is_absolute() or '..' in path.parts:
+                        raise ValueError('invalid reviewed baseline archive')
+                    if path.parts[:2] not in (('canonical', 'v0'), ('changesets', 'v0')):
+                        continue
+                    files[member.name] = archive.extractfile(member).read()
+            if _hashes(files) != expected_hashes:
+                raise ValueError('reviewed baseline does not match pinned bytes')
+            for name, data in files.items():
+                target = root / name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
+            return load_canonical(root)

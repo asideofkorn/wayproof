@@ -376,21 +376,23 @@ workflow retain those responsibilities.
 See [tests/test_proposal_service.py](tests/test_proposal_service.py) for a small
 source-to-claim proposal and its validation behavior.
 
-## Media contract drafts
+## Reviewed reference-only media provenance
 
 The [accepted media contract](docs/proposals/media-provenance-v1/README.md) has
-production domain types and structural validation for additive v1 ChangeSet
-drafts. Preparation, persistence, publication, and consumer-facing media
-processing remain disabled. Published data still uses Schema v0. Readers and
-exports reject unsupported versions/collections rather than silently ignoring
-them. See [Step 5a implementation boundaries](docs/media-contract-implementation.md)
-for the enforced checks and the remaining privacy, deletion and activation gates.
-The [public-research policy boundary](docs/public-research-enforcement.md) now
-assesses reference-only drafts and removes owned research content; it does not
-activate v1 or add media processing.
-The [staged migration path](docs/v1-migration-compatibility.md) exercises byte-preserving
-rollback, workflow-backed review and shared evidence/removal outputs in an isolated
-workspace. Production v1 routing remains disabled.
+production domain types and structural validation for additive v1 drafts.
+[Reference-only activation](docs/reference-only-activation.md) now provides a
+reviewed candidate path, independent persisted batches, shared HTML/JSON/MCP
+projections, and approval-independent withdrawal with full owned-site regeneration.
+The repository still contains only v0 canonical knowledge; this change ingests no
+real sources. Unmarked v1 and broader media capabilities remain rejected.
+
+The existing [rehearsal](docs/v1-migration-compatibility.md) and
+[public-research policy](docs/public-research-enforcement.md) are reused by the
+production adapter. Generic v1 preparation, processors, uploads/private custody,
+retained media, and automatic planning effects remain disabled. Follow the
+[activation workflow and acceptance criteria](docs/reference-only-activation.md)
+for the dedicated API, separate research/publication review, qualified time and
+location, compatibility, removal, and operational limits.
 
 ## Canonical repository layout
 

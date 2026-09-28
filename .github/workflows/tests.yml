@@ -50,6 +50,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Verify canonical publication boundary
+        env:
+          GH_TOKEN: ${{ github.token }}
         if: github.event_name == 'pull_request'
         run: python scripts/verify_canonical_diff.py --base origin/${{ github.base_ref }}
 

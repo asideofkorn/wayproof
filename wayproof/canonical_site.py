@@ -395,6 +395,7 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
             "evidence_backed_claims_available" if claims else "no_direct_claims_published"
         ),
         "claims": claims,
+        "reference_evidence": reads.reference_evidence(entity_id),
         "relationships": reads.relationships_for(entity_id),
         "knowledge_gaps": tuple(gaps_by_id.values()),
         "gap_details": tuple(reads.evidence_detail("gap", gid) for gid in gaps_by_id),
@@ -625,6 +626,8 @@ def _gap_html(detail: dict) -> str:
 
 
 def render_evidence_html(payload: dict, site_url: str) -> str:
+    if payload.get('projection') == 'media-v1-reference':
+        return render_reference_evidence_html(payload, site_url)
     if payload.get('projection') == 'media-v1-rehearsal':
         # All lineage/support decisions belong to the shared read projection.
         from .public_research import preview_json
@@ -990,6 +993,13 @@ def render_entity_html(payload: dict, site_url: str,
         '<li><a href="#before-you-go">Before you go</a></li>'
         '<li><a href="#evidence">Evidence</a></li></ul>',
     ]
+    if payload.get('reference_evidence'):
+        body.append('<section id="reference-evidence"><h2>Reported observations</h2>'
+                    '<p>Reviewed source reports with their own dates and uncertainty. '
+                    'These do not establish current conditions or alter the trip plan.</p>')
+        body.extend('<p>' + _record_link('claim', model['record_id'], model['record_id'])
+                    + ': ' + _e(model['support']) + '</p>' for model in payload['reference_evidence'])
+        body.append('</section>')
     if payload["route_geometry"]:
         body.append(_route_map_html(
             payload["route_geometry"], payload["route_geometry_url"],
@@ -1346,7 +1356,7 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     }), encoding="utf-8")
     directory_urls.append(f"{site_url}/changes/")
 
-    for kind in ("source", "observation", "evidence", "claim", "gap"):
+    for kind in reads.evidence_record_types():
         for identifier in reads.evidence_record_ids(kind):
             detail = _plain(reads.evidence_detail(kind, identifier))
             relative = _record_url(kind, identifier).lstrip("/")
@@ -1393,3 +1403,48 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     return {"canonical_entities": len(entities),
             "destination_urls": (f"{site_url}{DEL_VALLE_PATH}",
                                  f"{site_url}{OHLONE_PATH}", *directory_urls)}
+
+
+def render_reference_evidence_html(payload, site_url):
+    """Display the shared qualified projection without interpreting source content."""
+    from .public_research import preview_json
+    title = payload['record_id']
+    body = [render_primary_nav(), '<main><h1>' + _e(title) + '</h1>',
+            '<p>Support: ' + _e(payload['support']) + '</p>',
+            '<p>' + _e(payload.get('reason', 'Reviewed reference; not a current-condition guarantee.')) + '</p>',
+            '<nav aria-label="On this page"><a href="#statements">Statements</a> · '
+            '<a href="#context">Dates and location</a> · <a href="#provenance">Provenance</a></nav>',
+            '<section id="statements"><h2>Statements</h2>']
+    navigation = payload.get('navigation', {})
+    for key, label in (('previous_id', 'Previous record'), ('next_id', 'Next record')):
+        if navigation.get(key):
+            body.insert(2, '<p>' + _record_link(payload['record_type'], navigation[key], label) + '</p>')
+    for row in payload['texts']:
+        body.append('<p><strong>' + _e(row['label']) + '</strong> ' + _e(row['text']) + '</p>')
+    body.append('</section><section id="context"><h2>Dates and location</h2>')
+    for context in payload['context']:
+        body.append('<h3>' + _record_link('observation', context['observation_id'], context['observation_id']) + '</h3><dl>')
+        for key, label in (
+            ('event_capture_times', 'Event / capture time'),
+            ('statement_publication_time', 'Statement publication time'),
+            ('attachment_publication_times', 'Attachment publication time'),
+            ('retrieval_times', 'Retrieval time'), ('analysis_time', 'Analysis time (not performed)'),
+            ('locations', 'Location, attribution, precision, sensitivity and uncertainty'),
+            ('versions', 'Observed version and reproducibility limitations')):
+            body.append('<dt>' + _e(label) + '</dt><dd>' + _human_value(context[key]) + '</dd>')
+        body.append('</dl>')
+    body.append('</section><section id="provenance"><h2>Provenance</h2><ul>')
+    for row in payload['lineage']:
+        body.append('<li>' + _record_link(row['record_type'], row['record_id'], row['record_id']))
+        if row['record_type'] == 'source' and 'record' in row:
+            body.append(' · ' + _source_label(row['record']))
+        if 'record' in row:
+            body.append('<details><summary>Record details</summary>' + _human_value(row['record']) + '</details>')
+        body.append('</li>')
+    body.append('</ul><h3>Related evidence records</h3><ul>')
+    body.extend('<li>' + _record_link(row['record_type'], row['record_id'], row['record_id']) + '</li>'
+                for row in payload.get('related_records', ()))
+    body.append('</ul></section><script type="application/json" id="evidence-projection">' +
+                preview_json(payload) + '</script></main>')
+    return _page(title, 'Reviewed reference evidence and qualified provenance',
+                 site_url + _record_url(payload['record_type'], title), ''.join(body))
