@@ -322,6 +322,9 @@ def test_withdrawal_tombstones_keep_older_readers_closed_and_resume_on_interrupt
         _assert_layout(publication.root)
     records = load_canonical(publication.root, research_workflow=workflow)
     assert records.media_versions[0].state == 'removed'
+    history = CanonicalReadService(publication.root, research_workflow=workflow).changes(
+        change.records.claims[0].claim_id, 'claim')
+    assert history[0].change_set_id == change.change_set_id
     assert all('content' not in json.loads(p.read_text())['record']
                for p in (publication.root / 'canonical/v1').rglob('*.json'))
 
@@ -407,3 +410,12 @@ def test_multiple_observations_from_one_source_keep_separate_links(reference, tm
     claim = candidate.read().explain_claim(r.claims[0].claim_id)
     assert {c['observation_id'] for c in claim['context']} == ids
     assert {x['text'] for x in claim['texts'] if x['kind'] == 'paraphrase'} == {o.content for o in r.observations}
+
+
+def test_batch_identity_must_match_the_reviewed_changeset(reference):
+    publication, _, change, *_ = reference
+    index = publication._manifest()
+    index['batches']['forged-batch-name'] = index['batches'].pop(change.change_set_id)
+    publication._save(index)
+    with pytest.raises(ValueError, match='identity mismatch'):
+        publication.read().keys()

@@ -312,7 +312,7 @@ class CanonicalReadService:
                         op.record_type, op.record_id, op.path, op.reason, op.evidence_refs, op.knowledge_gap_refs)
                         for op in change.operations)
                 else:
-                    entries += tuple(ChangeHistoryEntry('reference-support-withdrawn',
+                    entries += tuple(ChangeHistoryEntry(batch.change_id,
                         'Reference support withdrawn or unavailable', ChangeAction.REMOVE,
                         kind, rid, '', 'No substitute selected', (), ())
                         for kind, rid in sorted(set(batch.additions) | batch._withdrawn))

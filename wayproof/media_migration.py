@@ -591,7 +591,11 @@ class ReferenceBatch(MigrationWorkspace):
         result._records = {(kind, getattr(r, attr)): _json_value(r)
                            for kind, (col, attr, _) in RECORD_SPECS.items()
                            for r in getattr(current, col)} | result.additions
+        result.change_id = self.change_id
         if result.change is not None:
+            if (result.change.change_set_id != self.change_id or
+                    self._manifest()['change_path'] != f'changesets/v1/{self.change_id}.json'):
+                raise ValueError('reference batch/ChangeSet identity mismatch')
             reference_scope(result.change)
             if self._manifest()['subjects'] != {c.claim_id: c.subject_id for c in result.change.records.claims}:
                 raise ValueError('reference subject map differs from reviewed claims')
