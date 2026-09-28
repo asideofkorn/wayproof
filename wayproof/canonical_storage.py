@@ -66,6 +66,9 @@ def assert_supported_repository(root: Path, *, research_workflow=None) -> None:
     media schemas still fail before any consumer can partially load v0.
     """
     from .media_migration import REFERENCE_MANIFEST, ReferencePublication
+    if ((root / ReferencePublication.preparation_name).exists()
+            or (root / ReferencePublication.preparation_name).is_symlink()):
+        raise UnsupportedSchemaError('reference preparation interrupted; recover before reading')
     if (root / REFERENCE_MANIFEST).exists():
         ReferencePublication(root, research_workflow)._snapshot()
         return

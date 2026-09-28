@@ -443,3 +443,197 @@ def test_source_only_withdrawal_keeps_v1_capability_gate(reference, tmp_path, mo
     paths = [('D', p) for p in prior['batches'][source_only.change_set_id]['additions']]
     assert not verify_reference_publication(paths + [('M', REFERENCE_MANIFEST)], root,
                                             prior, workflow=workflow)
+
+
+@pytest.mark.parametrize('rekey', [False, True])
+def test_v0_subject_removal_is_rejected_before_any_write_or_consumer_change(reference, rekey):
+    from wayproof.canonical_storage import load_v0_baseline, write_candidate
+    from wayproof.schema import CanonicalRecords, ChangeSet, ChangeOperation, ChangeAction
+    from wayproof.canonical_site import render_evidence_html
+    publication, workflow, first, *_ = reference
+    root = publication.root
+    base = load_v0_baseline(root, research_workflow=workflow)
+    records = CanonicalRecords(entities=[replace(base.entities[0], entity_id='rekeyed-place')] if rekey else [])
+    operations = [ChangeOperation(ChangeAction.REMOVE, 'entity', 'legacy-place',
+                                  'canonical/v0/entities/legacy-place.json', 'Synthetic removal')]
+    if rekey:
+        operations.append(ChangeOperation(ChangeAction.ADD, 'entity', 'rekeyed-place',
+                          'canonical/v0/entities/rekeyed-place.json', 'Synthetic re-key'))
+    change = ChangeSet('remove-subject', records, summary='Synthetic subject removal', operations=tuple(operations))
+    writes = ChangeSetWriteService(InMemoryCanonicalRepository(base))
+    writes.propose(change, 'maintainer')
+    assert not writes.validate(change.change_set_id, 'validator')
+    reads = CanonicalReadService(root, research_workflow=workflow)
+    tools = WayproofReadTools(reads)
+    rid = first.records.claims[0].claim_id
+    model = reads.explain_claim(rid)
+    html = render_evidence_html(model, '')
+    before = _files(root)
+    with pytest.raises(ValueError, match='cannot remove an active reference subject'):
+        write_candidate(root, writes.prepare(change.change_set_id, 'builder'), writes.get(change.change_set_id),
+                        research_workflow=workflow)
+    assert _files(root) == before
+    assert load_canonical(root, research_workflow=workflow).entities == base.entities
+    assert publication.read().explain_claim(rid) == reads.get('claim', rid) == model
+    assert tools.explain_claim(rid) == tools.get_record('claim', rid)['record'] == model
+    assert tools.get_entity('legacy-place')['reference_evidence'] == [model]
+    assert json.loads(json.dumps(reads.evidence_detail('claim', rid))) == model
+    assert render_evidence_html(reads.evidence_detail('claim', rid), '') == html
+    # A raw filesystem bypass also fails closed, including existing read handles.
+    (root / 'canonical/v0/entities/legacy-place.json').unlink()
+    for consumer in (lambda: load_canonical(root, research_workflow=workflow),
+                     lambda: CanonicalReadService(root, research_workflow=workflow),
+                     lambda: publication.read().explain_claim(rid),
+                     lambda: reads.get('claim', rid), lambda: tools.explain_claim(rid),
+                     lambda: render_evidence_html(reads.evidence_detail('claim', rid), '')):
+        with pytest.raises(ValueError, match='cannot remove an active reference subject'):
+            consumer()
+
+
+@pytest.mark.parametrize('existing_batch', [False, True])
+@pytest.mark.parametrize('interrupt_at', ['artifact', 'index'])
+@pytest.mark.parametrize('cleanup_interrupted', [False, True])
+def test_interrupted_preparation_retries_without_repository_repair(
+        reference, tmp_path, monkeypatch, existing_batch, interrupt_at, cleanup_interrupted):
+    from wayproof.canonical_storage import load_v0_baseline
+    from wayproof.media_schema import MediaRecords
+    publication, workflow, original, packet, baseline_files = reference
+    if existing_batch:
+        root = publication.root
+        # A second independent source-only batch must not damage the first batch.
+        source = replace(original.records.sources[0], source_id='source-next', locator='https://example.invalid/next')
+        change, packet = make_change(MediaRecords(sources=[source]), 'next-reference'), ResearchPacket(())
+    else:
+        root = tmp_path / 'fresh'
+        for name, content in baseline_files.items():
+            target = root / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(content)
+        change = original
+    base = load_v0_baseline(root, research_workflow=workflow)
+    review = reviewed(change, packet, base)
+    old_review = workflow.review
+    workflow.resolve = lambda receipt, fp: review if fp == review.fingerprint else old_review
+    receipt = ReviewReceipt(7, 'a' * 40, f'research-reviews/{review.fingerprint}.json')
+    writes = ChangeSetWriteService(InMemoryCanonicalRepository(base))
+    writes.propose(change, 'researcher')
+    assert not writes.validate(change.change_set_id, 'validator')
+    before = _files(root)
+    install = ReferencePublication._install_preparation_file
+    recover = ReferencePublication.recover_preparation
+    broken = False
+    installed = 0
+    def interrupt(self, name, content):
+        nonlocal broken, installed
+        install(self, name, content)
+        installed += 1
+        if not broken and ((interrupt_at == 'artifact' and installed == 2)
+                           or (interrupt_at == 'index' and name == REFERENCE_MANIFEST)):
+            broken = True
+            raise OSError('synthetic interruption after file promotion')
+    monkeypatch.setattr(ReferencePublication, '_install_preparation_file', interrupt)
+    if cleanup_interrupted:
+        def stop_cleanup(self):
+            if (self.root / self.preparation_name).exists():
+                raise OSError('synthetic process exit before cleanup')
+        monkeypatch.setattr(ReferencePublication, 'recover_preparation', stop_cleanup)
+    with pytest.raises(OSError, match='synthetic'):
+        writes.prepare_reference(change.change_set_id, 'builder', root, packet, receipt, workflow)
+    if cleanup_interrupted:
+        with pytest.raises(UnsupportedSchemaError, match='interrupted'):
+            load_canonical(root, research_workflow=workflow)
+    else:
+        assert _files(root) == before
+    monkeypatch.setattr(ReferencePublication, '_install_preparation_file', install)
+    monkeypatch.setattr(ReferencePublication, 'recover_preparation', recover)
+    result = writes.prepare_reference(change.change_set_id, 'builder', root, packet, receipt, workflow)
+    assert not (root / result.preparation_name).exists()
+    assert change.change_set_id in result._manifest()['batches']
+    assert load_canonical(root, research_workflow=workflow).sources
+    for name, content in before.items():
+        if name != REFERENCE_MANIFEST:
+            assert (root / name).read_bytes() == content
+    if existing_batch:
+        assert result.read().explain_claim(original.records.claims[0].claim_id)['support'] == 'traceable'
+
+
+def test_partial_temporary_write_is_cleaned_and_retry_succeeds(reference, tmp_path, monkeypatch):
+    from pathlib import Path
+    _, _, change, packet, before = reference
+    root = tmp_path / 'partial-write'
+    for name, content in before.items():
+        target = root / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(content)
+    original = Path.write_bytes
+    attempts = 0
+    def partial(path, content):
+        nonlocal attempts
+        if path == root / ReferencePublication.preparation_name / 'write.tmp':
+            attempts += 1
+            if attempts == 2:
+                original(path, content[:12])
+                raise OSError('synthetic partial write')
+        return original(path, content)
+    monkeypatch.setattr(Path, 'write_bytes', partial)
+    with pytest.raises(OSError, match='partial write'):
+        prepare(root, change, packet)
+    assert _files(root) == before
+    monkeypatch.setattr(Path, 'write_bytes', original)
+    publication, _ = prepare(root, change, packet)
+    assert publication.read().explain_claim(change.records.claims[0].claim_id)['support'] == 'traceable'
+
+
+def test_withdrawn_batch_does_not_pin_its_former_v0_subject(reference, monkeypatch):
+    from wayproof.canonical_storage import load_v0_baseline, write_candidate
+    from wayproof.schema import CanonicalRecords, ChangeSet, ChangeOperation, ChangeAction
+    publication, workflow, first, *_ = reference
+    monkeypatch.setattr(publication, 'export', lambda: None)
+    publication.withdraw()
+    base = load_v0_baseline(publication.root, research_workflow=workflow)
+    change = ChangeSet('remove-withdrawn-subject', CanonicalRecords(), summary='Remove withdrawn subject',
+        operations=(ChangeOperation(ChangeAction.REMOVE, 'entity', 'legacy-place',
+                     'canonical/v0/entities/legacy-place.json', 'No active reference claims remain'),))
+    writes = ChangeSetWriteService(InMemoryCanonicalRepository(base))
+    writes.propose(change, 'maintainer')
+    assert not writes.validate(change.change_set_id, 'validator')
+    write_candidate(publication.root, writes.prepare(change.change_set_id, 'builder'), writes.get(change.change_set_id),
+                    research_workflow=workflow)
+    reads = CanonicalReadService(publication.root, research_workflow=workflow)
+    assert reads.explain_claim(first.records.claims[0].claim_id)['support'] == 'unsupported'
+    assert not load_canonical(publication.root, research_workflow=workflow).entities
+
+
+def test_recovery_refuses_to_delete_an_artifact_changed_by_another_writer(reference, tmp_path, monkeypatch):
+    _, _, change, packet, baseline = reference
+    root = tmp_path / 'conflicted-recovery'
+    for name, content in baseline.items():
+        target = root / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(content)
+    install = ReferencePublication._install_preparation_file
+    recover = ReferencePublication.recover_preparation
+    promoted = []
+    def stop(self, name, content):
+        install(self, name, content)
+        promoted.append(name)
+        raise OSError('synthetic process interruption')
+    def leave_pending(self):
+        if (self.root / self.preparation_name).exists():
+            raise OSError('synthetic interrupted cleanup')
+    monkeypatch.setattr(ReferencePublication, '_install_preparation_file', stop)
+    monkeypatch.setattr(ReferencePublication, 'recover_preparation', leave_pending)
+    with pytest.raises(OSError):
+        prepare(root, change, packet)
+    monkeypatch.setattr(ReferencePublication, '_install_preparation_file', install)
+    monkeypatch.setattr(ReferencePublication, 'recover_preparation', recover)
+    path = root / promoted[0]
+    original = path.read_bytes()
+    path.write_bytes(b'new contents from a different writer')
+    before = _files(root)
+    with pytest.raises(ValueError, match='changed; refusing cleanup'):
+        ReferencePublication(root).recover_preparation()
+    assert _files(root) == before
+    path.write_bytes(original)
+    ReferencePublication(root).recover_preparation()
+    assert _files(root) == baseline

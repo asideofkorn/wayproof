@@ -21,3 +21,6 @@ data/source/*.xlsx
 # (core) + data/collections/sps.csv (SPS collection) split -- see
 # scripts/split_collections.py and DATA_LICENSE.md's Source Policy section.
 data/sps_peaks.csv
+
+# Local rollback area for interrupted reference candidate preparation.
+.reference-preparation/

@@ -445,6 +445,7 @@ class ChangeSetWriteService:
         actor = self._require_actor(actor, 'prepared')
         change = self._stored(change_set_id)
         change.assert_validated_unchanged()
+        ReferencePublication(root, workflow).recover_preparation()
         if self._repository.snapshot() != load_v0_baseline(root, research_workflow=workflow):
             raise PreparationRejected('canonical base changed')
         result = ReferencePublication.prepare(root, change, packet, receipt, workflow)

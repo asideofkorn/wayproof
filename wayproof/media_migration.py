@@ -687,6 +687,7 @@ class ReferencePublication:
     manifest_name = REFERENCE_MANIFEST
     output_name = '_site'
     index_format = 'wayproof-reference-publication-1'
+    preparation_name = '.reference-preparation'
 
     def __init__(self, root, workflow=None):
         self.root = Path(root)
@@ -732,6 +733,8 @@ class ReferencePublication:
         return _hashes(self.baseline_files())
 
     def _verify_inventory(self, *, removing=False):
+        if (self.root / self.preparation_name).exists() or (self.root / self.preparation_name).is_symlink():
+            raise UnsupportedSchemaError('reference preparation interrupted; recover before reading')
         expected = {}
         optional = set()
         removing_tombstones = {}
@@ -766,12 +769,96 @@ class ReferencePublication:
                    for r in getattr(records, col)}
         if reserved & current:
             raise ValueError('v0 cannot reuse a reference or withdrawal identity')
+        entities = {entity.entity_id for entity in records.entities}
         for manifest in self._manifest()['batches'].values():
+            if manifest['state'] == 'staged':
+                missing = set(manifest['subjects'].values()) - entities
+                if missing:
+                    raise ValueError('v0 cannot remove an active reference subject: ' + ', '.join(sorted(missing)))
             for name in manifest['additions']:
                 if name.startswith('canonical/v1/sources/') and (self.root / name).exists():
                     source = json.loads((self.root / name).read_bytes())['record']
                     if any(s.locator == source['locator'] for s in records.sources):
                         raise ValueError('v0 cannot alias an independently removable reference source')
+
+    def _install_preparation_file(self, name, content):
+        """Atomic single-file promotion; temporary bytes stay in the recovery area."""
+        pending = self.root / self.preparation_name
+        temporary = pending / 'write.tmp'
+        temporary.write_bytes(content)
+        target = self.root / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        temporary.replace(target)
+
+    def recover_preparation(self):
+        """Roll back an interrupted, unpublished preparation without review authority.
+
+        The recovery area contains byte copies of the existing index and intended
+        index, using the existing index format, plus the staged additions. Never
+        delete a file changed by another writer or trust arbitrary recovery paths.
+        """
+        pending = self.root / self.preparation_name
+        if not pending.exists() and not pending.is_symlink():
+            return
+        files = _files(pending)  # Reject symlinks, including in the recovery area.
+        before, after = files['before.json'], files['after.json']
+        previous, proposed = json.loads(before), json.loads(after)
+        for index in (previous, proposed):
+            if set(index) != {'format', 'batches'} or index['format'] != self.index_format:
+                raise ValueError('invalid preparation recovery index')
+        added = set(proposed['batches']) - set(previous['batches'])
+        if (len(added) != 1 or not set(previous['batches']) <= set(proposed['batches'])
+                or any(proposed['batches'][k] != v for k, v in previous['batches'].items())):
+            raise ValueError('preparation recovery must add exactly one batch')
+        cid = added.pop()
+        import re
+        if not re.fullmatch(r'[A-Za-z0-9_.-]+', cid) or cid in ('.', '..'):
+            raise ValueError('invalid preparation identity')
+        batch = proposed['batches'][cid]
+        additions = batch['additions']
+        for name, expected in additions.items():
+            parts = Path(name).parts
+            valid = (len(parts) == 4 and parts[:2] == ('canonical', 'v1')
+                     and parts[2] in {spec[0] for spec in ALL_SPECS.values()}
+                     and re.fullmatch(r'[A-Za-z0-9_.-]+[.]json', parts[3])
+                     and parts[3] not in ('.json', '..json')) or name == f'changesets/v1/{cid}.json'
+            if not valid or name != '/'.join(parts):
+                raise ValueError('invalid preparation artifact path')
+            if any(name in old['additions'] for old in previous['batches'].values()):
+                raise ValueError('preparation cannot own an existing artifact')
+            if digest(files['files/' + name]) != expected:
+                raise ValueError('preparation recovery content changed')
+            target = self.root / name
+            if any(p.is_symlink() for p in (target, *target.parents)):
+                raise ValueError('preparation refuses symlinks')
+            if target.exists() and digest(target.read_bytes()) != expected:
+                raise ValueError('preparation artifact changed; refusing cleanup')
+        index_path = self.root / self.manifest_name
+        current = index_path.read_bytes() if index_path.exists() else None
+        if index_path.is_symlink() or current not in (before, after, None):
+            raise ValueError('publication index changed; refusing cleanup')
+        if current is None and previous['batches']:
+            raise ValueError('publication index disappeared; refusing cleanup')
+        # Everything is preflighted before deletion. Retrying cleanup is idempotent.
+        for name in additions:
+            (self.root / name).unlink(missing_ok=True)
+        if previous['batches']:
+            self._install_preparation_file(self.manifest_name, before)
+        else:
+            index_path.unlink(missing_ok=True)
+        for ns in ('canonical', 'changesets'):
+            parent = self.root / ns / 'v1'
+            if parent.exists():
+                for directory in sorted(parent.rglob('*'), reverse=True):
+                    if directory.is_dir() and not any(directory.iterdir()):
+                        directory.rmdir()
+                if not any(parent.iterdir()):
+                    parent.rmdir()
+        # Rename first: a process exit during garbage cleanup cannot leave a
+        # half-deleted recovery area that blocks the next preparation.
+        from tempfile import TemporaryDirectory
+        with TemporaryDirectory(dir=self.root.parent) as directory:
+            pending.rename(Path(directory) / 'recovered')
 
     @classmethod
     def prepare(cls, root, change, packet, receipt, workflow=None):
@@ -779,6 +866,7 @@ class ReferencePublication:
         root = Path(root).resolve()
         publication = cls(root, workflow)
         reference_scope(change)
+        publication.recover_preparation()
         existing = (publication._manifest() if (root / REFERENCE_MANIFEST).exists()
                     else {'format': cls.index_format, 'batches': {}})
         if change.change_set_id in existing['batches']:
@@ -802,7 +890,7 @@ class ReferencePublication:
         if any((op.record_type, op.record_id) in reserved for op in change.operations):
             raise ValueError('reference identities cannot be reused')
         files = publication.baseline_files()
-        with TemporaryDirectory() as directory:
+        with TemporaryDirectory(dir=root.parent) as directory:
             source = Path(directory) / 'baseline'
             source.mkdir()
             for name, content in files.items():
@@ -817,12 +905,28 @@ class ReferencePublication:
                 raise ValueError('v0 baseline changed during reference preparation')
             for name in manifest['additions']:
                 path = root / name
-                if path.exists():
-                    raise ValueError('reference artifact already exists')
+                if path.exists() or any(p.is_symlink() for p in (path, *path.parents)):
+                    raise ValueError('reference artifact already exists or is a symlink')
+            pending = Path(directory) / 'preparation'
+            pending.mkdir()
+            (pending / 'before.json').write_bytes(
+                (root / cls.manifest_name).read_bytes() if existing['batches'] else encoded(existing))
+            existing['batches'][change.change_set_id] = manifest
+            (pending / 'after.json').write_bytes(encoded(existing))
+            for name in manifest['additions']:
+                path = pending / 'files' / name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes((staged.root / name).read_bytes())
-            existing['batches'][change.change_set_id] = manifest
-            publication._save(existing)
+            pending.rename(root / cls.preparation_name)
+            pending = root / cls.preparation_name
+            try:
+                for name in manifest['additions']:
+                    publication._install_preparation_file(name, (pending / 'files' / name).read_bytes())
+                publication._install_preparation_file(cls.manifest_name, (pending / 'after.json').read_bytes())
+                pending.rename(Path(directory) / 'finished')
+            except BaseException:
+                publication.recover_preparation()
+                raise
         return publication
 
     def _snapshot(self):

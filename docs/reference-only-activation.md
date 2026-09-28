@@ -45,6 +45,18 @@ inventory, identity map, fingerprint, packet, receipt, and lifecycle. This is a
 storage/control index, not an additional approval or public domain record type.
 Unmarked v1 directories remain unsupported.
 
+Preparation uses a local, Git-ignored `.reference-preparation/` recovery area
+containing the previous/intended indexes and staged additions. Each destination
+file is installed by atomic rename. Write failures roll back the owned additions
+and restore the previous index; interrupted cleanup is safe to retry. Readers
+fail closed while this area exists. Retrying `prepare_reference` recovers first;
+a restarted caller may explicitly invoke
+`ReferencePublication(root).recover_preparation()` before loading its v0 baseline.
+Recovery requires no approval and refuses to overwrite/delete artifacts changed
+by another writer. It preserves prior batches and v0 bytes, and removes its
+retained staging copies after completion. Use one writer per checkout; this is
+process-interruption recovery, not a concurrent-writer or power-loss transaction.
+
 ## Independent batches and v0 compatibility
 
 Each batch owns its Source references and cannot reuse another batch's record
@@ -66,7 +78,12 @@ leaves the affected batch unsupported.
 
 For v0 editing in a mixed repository, `load_v0_baseline(root)` explicitly selects
 the v0 write/planning baseline after checking the entire repository. The existing
-v0 writer prevents identity or Source aliases into reference batches.
+v0 writer prevents identity or Source aliases into reference batches. It also
+rejects removal or re-keying of any entity targeted by a staged reference Claim,
+even if its review is temporarily unavailable. Withdraw the dependent batch
+before removing its subject; ordinary same-ID entity corrections remain valid.
+The repository/read gate repeats this check, so bypassed filesystem edits cannot
+leave a dangling Claim reported as traceable.
 `load_canonical(root)` returns a fully checked typed mixed snapshot, including
 typed removal tombstones. It refuses a raw snapshot when reference support is
 unverified, instead of returning a misleading partial record set. Consumer
