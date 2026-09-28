@@ -46,11 +46,10 @@ class ChangeHistoryEntry:
 class CanonicalReadService:
     """One consumer API for reads; all writes remain behind the write service."""
 
-    def __init__(self, root: Path):
+    def __init__(self, root: Path, *, research_workflow=None):
         self._root = Path(root)
-        self._records = load_canonical(self._root)
-        self._indexes = self._build_indexes()
-        self._change_history = self._build_change_history()
+        self._research_workflow = research_workflow
+        self.refresh()
 
     def _build_indexes(self):
         indexes = {}
@@ -74,7 +73,20 @@ class CanonicalReadService:
 
     def refresh(self) -> None:
         """Reload a newly published canonical snapshot from Git-backed files."""
-        self._records = load_canonical(self._root)
+        from .media_migration import REFERENCE_MANIFEST, ReferencePublication
+        self._frozen_reference = None
+        self._reference = None
+        self._reference_keys = set()
+        self._reference_subjects = {}
+        if (self._root / REFERENCE_MANIFEST).exists():
+            self._reference = ReferencePublication(self._root, self._research_workflow)
+            snapshot = self._reference_snapshot()
+            self._records = snapshot.base
+            self._reference_keys = set(snapshot.additions) | snapshot._withdrawn
+            for cid, subject_id in self._reference.subjects().items():
+                self._reference_subjects.setdefault(subject_id, []).append(cid)
+        else:
+            self._records = load_canonical(self._root)
         self._indexes = self._build_indexes()
         self._change_history = self._build_change_history()
 
@@ -97,6 +109,8 @@ class CanonicalReadService:
         return tuple(entries)
 
     def get(self, record_type: str, record_id: str) -> Any:
+        if (record_type, record_id) in self._reference_keys:
+            return self._reference_snapshot().evidence_detail(record_type, record_id)
         if record_type not in self._indexes:
             raise KeyError(f"unknown record type: {record_type}")
         try:
@@ -179,6 +193,8 @@ class CanonicalReadService:
                             key=lambda item: (item.question.casefold(), item.gap_id)))
 
     def explain_claim(self, claim_id: str) -> ClaimProvenance:
+        if ('claim', claim_id) in self._reference_keys:
+            return self._reference_snapshot().explain_claim(claim_id)
         claim = self.get("claim", claim_id)
         evidence = tuple(self.get("evidence", item) for item in claim.evidence_ids)
         observations = tuple(
@@ -191,9 +207,10 @@ class CanonicalReadService:
 
     def evidence_record_ids(self, record_type: str) -> Tuple[str, ...]:
         """Durable identifiers for published evidence-browser records."""
-        if record_type not in ("source", "observation", "evidence", "claim", "gap"):
+        if record_type not in self.evidence_record_types():
             raise ValueError(f"unsupported evidence record type: {record_type}")
-        return tuple(sorted(self._indexes[record_type]))
+        return tuple(sorted(set(self._indexes.get(record_type, ())) |
+                            {rid for kind, rid in self._reference_keys if kind == record_type}))
 
     def evidence_detail(self, record_type: str, record_id: str) -> dict:
         """Shared evidence projection; follows typed references, never text matches.
@@ -201,6 +218,8 @@ class CanonicalReadService:
         Gaps compare only explicit claim/evidence references. Source, observation,
         and entity references are context and never expand the comparison set.
         """
+        if (record_type, record_id) in self._reference_keys:
+            return self._reference_snapshot().evidence_detail(record_type, record_id)
         ids = self.evidence_record_ids(record_type)
         record = self.get(record_type, record_id)
         claims = set()
@@ -263,10 +282,42 @@ class CanonicalReadService:
                            "next_id": ids[position + 1] if position + 1 < len(ids) else None},
         }
 
+    def _reference_snapshot(self):
+        return self._frozen_reference if self._frozen_reference is not None else self._reference._snapshot()
+
+    def evidence_record_types(self):
+        return tuple(sorted({'source', 'observation', 'evidence', 'claim', 'gap'} |
+                            {kind for kind, _ in self._reference_keys}))
+
+    def reference_evidence(self, entity_id=None):
+        """Reference context only; never silently registered as a planning input."""
+        if self._reference is None:
+            return ()
+        ids = (self._reference_subjects.get(entity_id, ()) if entity_id else
+               sorted(rid for kind, rid in self._reference_keys if kind == 'claim'))
+        if not ids:
+            return ()
+        snapshot = self._reference_snapshot()
+        return tuple(snapshot.explain_claim(rid) for rid in ids)
+
     def changes(self, record_id: Optional[str] = None,
                 record_type: Optional[str] = None) -> Tuple[ChangeHistoryEntry, ...]:
+        entries = self._change_history
+        if self._reference and (record_id is None or any(rid == record_id for _, rid in self._reference_keys)):
+            snapshot = self._reference_snapshot()
+            for batch in snapshot.batches:
+                if batch.change is not None and batch._packet is not None:
+                    change = batch.change
+                    entries += tuple(ChangeHistoryEntry(change.change_set_id, change.summary, op.action,
+                        op.record_type, op.record_id, op.path, op.reason, op.evidence_refs, op.knowledge_gap_refs)
+                        for op in change.operations)
+                else:
+                    entries += tuple(ChangeHistoryEntry('reference-support-withdrawn',
+                        'Reference support withdrawn or unavailable', ChangeAction.REMOVE,
+                        kind, rid, '', 'No substitute selected', (), ())
+                        for kind, rid in sorted(set(batch.additions) | batch._withdrawn))
         return tuple(
-            entry for entry in self._change_history
+            entry for entry in entries
             if (record_id is None or entry.record_id == record_id)
             and (record_type is None or entry.record_type == record_type)
         )

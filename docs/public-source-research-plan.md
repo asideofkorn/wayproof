@@ -2,8 +2,9 @@
 
 Status: implementation plan approved in principle by the maintainer on
 2026-09-27. [Draft-boundary enforcement](public-research-enforcement.md) is now
-implemented; v1 persistence/publication, live consumer integration and media
-processing remain disabled.
+implemented. [Reference-only activation](reference-only-activation.md) supplies the
+production storage, shared consumers and owned-output removal path. Broader v1
+processing, private media, uploads and retained media remain disabled.
 This narrows the first delivery scope of [ADR 0004](adr/0004-repeatable-media-analysis.md)
 and the [accepted media contract](proposals/media-provenance-v1/README.md).
 The broader contract remains available for later scopes; private-media

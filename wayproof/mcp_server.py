@@ -165,6 +165,7 @@ class WayproofReadTools:
         return _plain({
             "entity": self.reads.entity(entity_id),
             "claims": self.reads.claims_for(entity_id),
+            "reference_evidence": self.reads.reference_evidence(entity_id),
             "relationships": self.reads.relationships_for(entity_id),
             "knowledge_gaps": self.reads.knowledge_gaps_for(entity_id),
         })

@@ -1,8 +1,9 @@
 # V1 migration and consumer compatibility — staged review
 
 This implements an isolated migration rehearsal using synthetic acceptance data.
-Production readers, writers, CLI/MCP entry points, publication CI and the site
-builder still reject v1. No production repository is migrated by this PR, and
+This rehearsal does not activate production entry points. The later dedicated
+[reference-only adapter](reference-only-activation.md) supplies production routing;
+broader v1 and processing remain rejected. No production repository is migrated by this PR, and
 no media is acquired, processed, retained, or rendered. Approval of this change
 is not approval of a media source or authorization to activate processing.
 
@@ -96,8 +97,9 @@ The existing HTML evidence renderer and MCP `get_evidence_detail`/`explain_claim
 adapters consume this same model. JSON is its serialization. Staged read handles
 reload on every request so a handle opened before withdrawal cannot return a stale
 supported answer. V1 planning fails with a named unsupported-schema error; it does
-not fall back to a partial v0 plan. Production entry points remain disabled until
-the separate activation review selects the supported reference-only route.
+not fall back to a partial v0 plan. The separate production adapter exposes
+reference context alongside unchanged v0 planning; it does not register media
+claims as planning inputs.
 
 ## Executed removal and generated outputs
 
@@ -137,8 +139,7 @@ in PR #197. It rejects the staged v1 directory before loading v0. Pre-gate binar
 cannot be retroactively repaired; they must be upgraded or pinned to the original
 v0 snapshot, and must never be pointed at an activated mixed-version repository.
 
-This PR supplies a staged storage/projection/removal path for review. The activation
-PR must explicitly wire only that reviewed reference-only path into production
-routing and publication, keep broader schema capabilities inaccessible, and retain
-the full consumer and removal acceptance cases. It must not introduce downloads,
+The production [reference-only adapter](reference-only-activation.md) reuses this
+storage/projection/removal path, keeps broader schema capabilities inaccessible,
+and retains full consumer/removal acceptance cases. It adds no downloads,
 processors, new review authority, or automatic claim/selection/planning changes.

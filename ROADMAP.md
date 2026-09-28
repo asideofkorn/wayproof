@@ -215,10 +215,18 @@ without granting direct canonical write access.
      The [staged migration implementation](docs/v1-migration-compatibility.md)
      provides deterministic rehearsal, workflow-verified review receipts, shared
      evidence projections and executed withdrawal/output regeneration for review.
-     Production routing and activation remain disabled.
-  3. Separately activate v1 for reviewed, reference-only provenance.
-  4. Add bounded processing and immutable runs; preserve the separate PR review
-     gate for any canonical effect.
+     Production routing uses the same review, projection and removal contracts.
+  3. **Reference-only activation implemented:** independently reviewed batches,
+     continued v0 editing, shared production consumers and complete owned-output
+     withdrawal. See [scope and acceptance criteria](docs/reference-only-activation.md).
+     Event/capture, publication, retrieval and analysis times remain independent;
+     locations preserve value, attribution, precision, sensitivity and uncertainty.
+     Unknown values are never filled from other dates, proximity or a Claim subject.
+  4. **Next:** bounded processing and immutable runs; preserve the separate PR
+     review gate for any canonical effect.
+     Then create/test one evidence-ingestion skill with public-reference and textual
+     field-observation modes, including an offline notes template. Personal photos
+     and uploads require a later contributed-media scope decision.
   5. Defer private custody, accounts/uploads/consent workflows, private-media
      access controls, complex provider authorization, and retained raw-media/
      derivative cleanup until those inputs or artifacts are actually needed.

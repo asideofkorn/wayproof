@@ -1,4 +1,4 @@
-"""Accepted media v1 domain types for draft validation only.
+"""Accepted media v1 domain types; production admits only reviewed references.
 
 No persistence, acquisition, permission grant, or publication API lives here.
 V0 classes and their serialized shape remain unchanged.
@@ -302,7 +302,7 @@ class MediaObservation(Observation):
 
 @dataclass
 class MediaRecords(CanonicalRecords):
-    """Detached v1 draft with a v0 baseline; never a published reader snapshot."""
+    """Typed v1 collections; eligibility/support remain the shared service responsibility."""
     media_assets: list[MediaAsset | MediaTombstone] = field(default_factory=list)
     media_versions: list[MediaVersion | MediaTombstone] = field(default_factory=list)
     availability_reports: list[AvailabilityReport | MediaTombstone] = field(default_factory=list)
