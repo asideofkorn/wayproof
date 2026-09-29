@@ -17,7 +17,7 @@ from uuid import uuid4
 
 from .media_contract import _typed, wire
 from .media_schema import (MediaRecords, AnalysisRun, AnalysisFinding, Target,
-                           Analyst, Method, InstantTime, Basis)
+                           Analyst, Method, InstantTime, Basis, MediaVersion)
 from .media_validation import dependencies, validate_selector
 from .media_migration import (ALL_SPECS, MigrationReadService, LiveMigrationReadService,
                               encoded, reference_context, export_projection)
@@ -45,11 +45,25 @@ class SyntheticReply:
 
 
 @dataclass(frozen=True)
+class ProcessingAttempt:
+    """Immutable operational context, not an assertion that inspection succeeded."""
+    source_id: str
+    inputs: tuple[Target, ...]
+    input_versions: tuple[MediaVersion, ...]
+    analyst: Analyst
+    method: Method
+    attempted_at: InstantTime
+    uncertainty: Literal['unresolved']
+    limitations: tuple[str, ...]
+
+
+@dataclass(frozen=True)
 class ProcessingOutcome:
     id: str
     status: Literal['succeeded', 'failed', 'unavailable', 'changed', 'invalid_output', 'withdrawn']
     run: AnalysisRun | None
     findings: tuple[AnalysisFinding, ...]
+    attempt: ProcessingAttempt | None
 
 
 def _records_index(records):
@@ -108,7 +122,6 @@ class SyntheticAnalysisService:
         self._workflow = workflow
         self._clock = clock or (lambda: datetime.now(timezone.utc))
         self._outcomes = {}
-        self._requests = {}
         self._admissions = {}
         self._used_ids = {rid for _, rid in rows}
         self._withdrawn = set()
@@ -158,6 +171,18 @@ class SyntheticAnalysisService:
         # Only a closed data fixture is accepted. No callable/provider can execute.
         if type(reply) is not SyntheticReply:
             raise ValueError('only scripted synthetic replies are supported')
+        when = self._clock()
+        if when.tzinfo is None or when.utcoffset() is None:
+            raise ValueError('analysis clock must be timezone aware')
+        attempt = ProcessingAttempt(source_id, inputs,
+            tuple(self._seed['media_version', t.media_version_id] for t in inputs),
+            Analyst('tool', 'Wayproof synthetic processor', '1'),
+            Method('scripted-synthetic-fixture', '1', 'No media was fetched or inspected; bounded fixture output only.'),
+            InstantTime('instant', when.isoformat(), 'exact', Basis('clock', None)),
+            'unresolved',
+            ('Synthetic simulation only; not a real-world observation.',
+             'Targets describe requested scope, not proof of successful inspection.',
+             'No retained media; version identity and reproducibility have the input limitations.'))
         ident = self._id()
         status, run, findings = 'invalid_output', None, ()
         try:
@@ -185,13 +210,8 @@ class SyntheticAnalysisService:
                     if version is None or (finding.modality == 'transcription' and version.media_type == 'image') or (
                             finding.modality in ('visual', 'ocr') and version.media_type == 'audio'):
                         raise ValueError('finding modality does not match the inspected media')
-                when = self._clock()
-                if when.tzinfo is None:
-                    raise ValueError('analysis clock must be timezone aware')
                 run = AnalysisRun(ident, 'active', source_id, inputs,
-                    Analyst('tool', 'Wayproof synthetic processor', '1'),
-                    Method('scripted-synthetic-fixture', '1', 'No media was fetched or inspected; bounded fixture output only.'),
-                    InstantTime('instant', when.isoformat(), 'exact', Basis('clock', None)),
+                    attempt.analyst, attempt.method, attempt.attempted_at,
                     tuple(sorted({f.modality for f in clean.findings})),
                     ('Synthetic simulation only; not a real-world observation.',
                      'Only the named regions, frames or time ranges are represented.'))
@@ -213,9 +233,8 @@ class SyntheticAnalysisService:
                 self._blocked_versions[target.media_version_id] = (
                     'changed' if status == 'changed' or self._blocked_versions.get(target.media_version_id) == 'changed'
                     else 'unavailable')
-        outcome = ProcessingOutcome(ident, status, run, findings)
+        outcome = ProcessingOutcome(ident, status, run, findings, attempt)
         self._outcomes[ident] = outcome
-        self._requests[ident] = (source_id, inputs)
         self._revision += 1
         return deepcopy(outcome)
 
@@ -267,6 +286,19 @@ class SyntheticAnalysisService:
         selected = {s.origin.id for s in change.records.reviewed_selections if s.origin.kind == 'finding'}
         if selected != {f.id for f in change.records.analysis_findings}:
             raise ValueError('every admitted finding needs an explicit selection')
+        # Traverse actual, reciprocal downstream links; review alone cannot turn
+        # an orphan finding or selection into traceable consumer evidence.
+        claims = {c.claim_id: c for c in change.records.claims}
+        evidenced_observations = {e.observation_id for e in change.records.evidence
+            if e.claim_id in claims and e.evidence_id in claims[e.claim_id].evidence_ids
+            and e.stance in ('supports', 'challenges')}
+        provenances = {o.provenance_id: o.observation_id for o in change.records.observations
+                       if o.observation_id in evidenced_observations}
+        connected_selections = {p.selection_id for p in change.records.observation_provenance
+            if provenances.get(p.id) == p.observation_id}
+        if any(s.id not in connected_selections for s in change.records.reviewed_selections
+               if s.origin.kind == 'finding'):
+            raise ValueError('every finding selection requires a complete Observation → Evidence → Claim chain')
         for provenance in change.records.observation_provenance:
             if not provenance.event_times or not provenance.locations:
                 raise ValueError('event time and location must preserve explicit unknowns')
@@ -360,14 +392,14 @@ class SyntheticAnalysisService:
                 break
             fresh.update(owners)
         targets.update(fresh)
-        for rid, (source_id, inputs) in tuple(self._requests.items()):
-            if (('source', source_id) in affected or any(('media_version', t.media_version_id) in affected
-                    or ('source_attachment', t.source_attachment_id) in affected for t in inputs)):
-                result = self._outcomes[rid]
+        for rid, result in tuple(self._outcomes.items()):
+            attempt = result.attempt
+            if attempt is not None and (('source', attempt.source_id) in affected or any(
+                    ('media_version', t.media_version_id) in affected
+                    or ('source_attachment', t.source_attachment_id) in affected for t in attempt.inputs)):
                 affected.add(('analysis_run', rid))
                 affected.update(('analysis_finding', f.id) for f in result.findings)
-                self._outcomes[rid] = ProcessingOutcome(rid, 'withdrawn', None, ())
-                del self._requests[rid]
+                self._outcomes[rid] = ProcessingOutcome(rid, 'withdrawn', None, (), None)
         for cid, (change, _, _) in tuple(self._admissions.items()):
             if change is not None and set(_records_index(change.records)) & affected:
                 # Withdraw the reviewed packet as one unit; do not silently revise a review.

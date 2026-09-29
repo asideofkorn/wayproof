@@ -25,10 +25,17 @@ Output is limited to eight findings/20 KB, each with bounded text and explicit
 limitations. One session accepts at most 128 attempts. These are fixture/workload
 bounds, not claims about real processor timeouts or sandboxing.
 
-Every attempt gets a new opaque ID. Successful attempts create new frozen,
-accepted run/finding records. Failed attempts retain only their ID and explicit
-status (`failed`, `unavailable`, `changed`, or `invalid_output`); they do not
-invent an inspection or reuse an earlier result. Reprocessing never mutates an
+Every attempt gets a new opaque ID and frozen operational `ProcessingAttempt`
+context: source, bounded requested targets, input-version metadata with identity
+basis and reproducibility limitations, analyst, method/version, qualified
+clock-based attempt time, unresolved uncertainty and simulation limitations.
+`outcomes()` returns detached history including that context for every status.
+Attempt time is not capture or publication time; requested targets do not prove
+successful inspection. Successful attempts create new frozen, accepted run/finding
+records. Unsuccessful attempts retain their context and explicit status (`failed`,
+`unavailable`, `changed`, or `invalid_output`), but no run or failed finding content;
+they do not invent an inspection or reuse an earlier result. These operational
+types do not add a canonical envelope. Reprocessing never mutates an
 older run, selects a finding, creates an Observation/Evidence/Claim, resolves a
 gap, adds a relationship or changes planning.
 
@@ -51,7 +58,10 @@ text packet and workflow receipt.
 `admit(change, packet, receipt)` validates the exact proposal against the service's
 owned records and resolves the fingerprint-bound receipt through the configured
 maintainer/PR workflow. A serialized `reviewer_role` or selection ID grants no
-authority. Every admitted finding needs an explicit reviewed selection; changed,
+authority. Every admitted finding needs an explicit reviewed selection connected
+through pinned ObservationProvenance and an Observation to typed Evidence that
+supports or challenges a Claim referencing that Evidence. An orphan selection or
+a complete chain for a different finding cannot satisfy this requirement. Changed,
 foreign, withdrawn, or failed results are rejected. Prior selection/provenance
 records cannot be overwritten. A different selection needs new records and a
 separately reviewed ChangeSet.
@@ -72,7 +82,8 @@ without choosing another finding or Evidence.
 `withdraw(source_ids)` follows typed dependencies through all attempts, runs,
 findings, selections, observations, Evidence and Claims. Known origin/repost asset links propagate removal to their source associations;
 duplicate source URLs cannot enter as separate inputs. It erases owned affected
-payloads and request metadata and retains only non-sensitive withdrawn IDs.
+payloads, including attempt context and input-version snapshots, and retains only
+non-sensitive withdrawn IDs and status.
 Append-only history is subject to this removal exception. It also withdraws an
 affected reviewed packet as a unit, rather than editing its reviewed content in
 place. Unrelated outcomes and independent reviewed packets remain unchanged.
@@ -101,9 +112,11 @@ Synthetic tests prove:
 - New IDs and append-only outcomes across repeated/conflicting runs; no automatic
   canonical writes, selection or planning changes.
 - Exact workflow review and typed Evidence lineage; rejection of every tested
-  direct Claim-to-run/finding link and forged/modified records.
+  direct Claim-to-run/finding link, incomplete downstream chain, orphan finding,
+  and forged/modified records.
 - Explicit failure, unavailable, changed and invalid-output states without
-  substituted results; bounded partial video inspection and inert malicious OCR.
+  substituted results; immutable attempt context across reprocessing, bounded
+  partial video inspection and inert malicious OCR.
 - Selective withdrawal after approval revocation, preserving unrelated history,
   with actual regenerated HTML/JSON/MCP/index/cache/offline artifacts.
 

@@ -1,7 +1,7 @@
 """Synthetic-only processing, review admission, and immutable provenance boundaries."""
 from copy import deepcopy
 from dataclasses import replace, FrozenInstanceError
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
 from uuid import uuid4
@@ -11,7 +11,7 @@ import pytest
 from test_media_contract_boundaries import draft, make_change
 from test_public_research_policy import reviewed
 from wayproof.analysis_service import SyntheticAnalysisService, SyntheticReply, SyntheticFinding
-from wayproof.media_schema import (MediaRecords, Target, WholeImage, FrameSelector, TimeSelector,
+from wayproof.media_schema import (MediaRecords, Target, WholeImage, ImageRegion, FrameSelector, TimeSelector,
     ReviewedSelection, Origin, InstantTime, UnknownTime, Basis, Location,
     ObservationProvenance, MediaObservation)
 from wayproof.media_contract import wire
@@ -153,6 +153,107 @@ def test_only_exact_workflow_review_admits_selected_lineage(session):
     reviews.revoked.add(fingerprint(change, packet, CanonicalRecords()))
     assert reads.explain_claim(rid)['support'] == 'unsupported'
     assert reads.explain_claim(rid)['texts'] == []
+
+
+@pytest.mark.parametrize('missing', ['observation_provenance', 'observations', 'evidence', 'claims'])
+@pytest.mark.parametrize('truncate', [False, True])
+def test_review_cannot_admit_an_incomplete_downstream_chain(session, missing, truncate):
+    service, reviews, targets = session
+    result = service.process('source-analysis', (targets[0],), reply(targets[0]))
+    change, packet = proposal(service, result)
+    chain = ['observation_provenance', 'observations', 'evidence', 'claims']
+    # Both a missing interior record and a structurally valid orphan prefix.
+    for collection in chain[chain.index(missing):] if truncate else [missing]:
+        getattr(change.records, collection).clear()
+    if truncate and missing == 'observations':
+        change.records.observation_provenance.clear()
+    if truncate and missing == 'claims':
+        change.records.evidence.clear()
+    if not change.records.observations:
+        packet = ResearchPacket(tuple(t for t in packet.texts if t.target_kind != 'observation'))
+    change = make_change(change.records, change.change_set_id)
+    if truncate:
+        assert not change.validate(existing=CanonicalRecords())
+    review = replace(reviewed(change, packet), extraction_scope='necessary_excerpts')
+    reviews.values[review.fingerprint] = review
+    receipt = ReviewReceipt(17, 'a' * 40, f'research-reviews/{review.fingerprint}.json')
+    with pytest.raises(ValueError, match='complete Observation' if truncate else None):
+        service.admit(change, packet, receipt)
+    assert not service.read().keys()
+
+
+def test_one_complete_finding_chain_cannot_admit_another_orphan(session):
+    service, reviews, targets = session
+    value = reply(targets[0])
+    result = service.process('source-analysis', (targets[0],), replace(value,
+        findings=(*value.findings, replace(value.findings[0], content='Another synthetic finding.'))))
+    change, packet = proposal(service, result)
+    change.records.evidence.pop()
+    change.records.claims.pop()
+    change = make_change(change.records, change.change_set_id)
+    assert not change.validate(existing=CanonicalRecords())
+    review = replace(reviewed(change, packet), extraction_scope='necessary_excerpts')
+    reviews.values[review.fingerprint] = review
+    with pytest.raises(ValueError, match='complete Observation'):
+        service.admit(change, packet, ReviewReceipt(17, 'a' * 40, f'research-reviews/{review.fingerprint}.json'))
+    assert not service.read().keys()
+
+
+@pytest.mark.parametrize('stance', ['supports', 'challenges'])
+def test_complete_support_or_challenge_chain_is_admitted(session, stance):
+    service, reviews, targets = session
+    result = service.process('source-analysis', (targets[0],), reply(targets[0]))
+    change, packet = proposal(service, result)
+    change.records.evidence[0] = replace(change.records.evidence[0], stance=stance)
+    review = replace(reviewed(change, packet), extraction_scope='necessary_excerpts')
+    reviews.values[review.fingerprint] = review
+    service.admit(change, packet, ReviewReceipt(17, 'a' * 40, f'research-reviews/{review.fingerprint}.json'))
+    assert service.read().explain_claim(change.records.claims[0].claim_id)['support'] == 'traceable'
+
+
+@pytest.mark.parametrize('status', ['failed', 'unavailable', 'changed', 'invalid_output'])
+@pytest.mark.parametrize('selector', [ImageRegion('image_region', 0, 0, 10, 10),
+                                    FrameSelector('frames', (1000, 2000)),
+                                    TimeSelector('time_range', 1000, 3000)])
+def test_unsuccessful_attempts_keep_immutable_context_without_failed_content(analysis_seed, status, selector):
+    seed = deepcopy(analysis_seed)
+    if selector.kind != 'image_region':
+        seed.media_versions[0] = replace(seed.media_versions[0], media_type='video', duration_ms=5000)
+    times = iter(datetime(2030, 4, 4, 12, tzinfo=timezone.utc) + timedelta(minutes=n) for n in range(2))
+    service = SyntheticAnalysisService(seed, Reviews(), clock=lambda: next(times))
+    attachment = seed.source_attachments[0]
+    target = Target(attachment.media_version_id, attachment.id, selector)
+    value = reply(target, 'Failed output must not survive.')
+    if status == 'failed': value = replace(value, processor_state='failed')
+    if status in ('unavailable', 'changed'): value = replace(value, source_state=status)
+    if status == 'invalid_output': value = replace(value, findings=(replace(value.findings[0], limitations=()),))
+    first = service.process('source-analysis', (target,), value)
+    before = wire(first)
+    second = service.process('source-analysis', (target,), value)
+    assert first.status == second.status == status
+    assert first.id != second.id and first.attempt.attempted_at != second.attempt.attempted_at
+    assert wire(service.outcomes()[0]) == before
+    for outcome in service.outcomes():
+        assert outcome.run is None and outcome.findings == ()
+        attempt = outcome.attempt
+        assert attempt.source_id == 'source-analysis' and attempt.inputs == (target,)
+        assert attempt.input_versions == (seed.media_versions[0],)
+        assert attempt.input_versions[0].identity_basis == 'unverifiable'
+        assert attempt.input_versions[0].reproducibility == 'unavailable'
+        assert attempt.input_versions[0].limitations
+        assert attempt.method.name == 'scripted-synthetic-fixture' and attempt.method.version == '1'
+        assert attempt.analyst.label == 'Wayproof synthetic processor'
+        assert attempt.attempted_at.certainty == 'exact' and attempt.attempted_at.basis == Basis('clock', None)
+        assert attempt.uncertainty == 'unresolved' and attempt.limitations
+        with pytest.raises(FrozenInstanceError):
+            attempt.source_id = 'forged'
+        with pytest.raises(FrozenInstanceError):
+            attempt.input_versions[0].reproducibility = 'bounded'
+    assert 'Failed output must not survive.' not in json.dumps(wire(service.outcomes()))
+    assert not service.read().keys()
+    service.withdraw(('source-post',))
+    assert all(o.status == 'withdrawn' and o.attempt is None for o in service.outcomes())
+    assert target.media_version_id not in json.dumps(wire(service.outcomes()))
 
 
 @pytest.mark.parametrize('state,processor,versions,status', [
