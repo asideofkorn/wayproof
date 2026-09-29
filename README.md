@@ -394,6 +394,12 @@ retained media, and automatic planning effects remain disabled. Follow the
 for the dedicated API, separate research/publication review, qualified time and
 location, compatibility, removal, and operational limits.
 
+The next gate now has a [synthetic bounded-processing rehearsal](docs/synthetic-bounded-analysis.md):
+immutable identified outcomes, explicit failure/input states, workflow-reviewed
+finding selection and executed withdrawal across shared exports. It is process-local
+and test-only; production analysis publication, live acquisition, and external-model
+processors require a separate activation review.
+
 ## Canonical repository layout
 
 ```text

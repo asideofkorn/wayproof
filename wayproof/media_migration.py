@@ -310,14 +310,24 @@ class MigrationWorkspace:
         load_canonical(self.root)
 
     def export(self):
-        """Replace the complete owned output set; never incrementally retain stale pages."""
+        """Replace the complete owned output set; never retain stale pages."""
         output = self.root / self.output_name
         if output.exists():
             _files(output)
             shutil.rmtree(output)
-        reads = self._snapshot()
-        generation = digest((self.root / self.manifest_name).read_bytes())
-        output.mkdir()
+        snapshot = self._snapshot()
+        generation = (self.root / self.manifest_name).read_bytes()
+        return export_projection(snapshot, output, generation,
+                                 lambda: (self.root / self.manifest_name).read_bytes())
+
+
+def export_projection(reads, output, generation, current_generation):
+    """Shared owned rehearsal exporter; callers establish directory ownership."""
+    if output.exists():
+        _files(output)
+        shutil.rmtree(output)
+    try:
+        output.mkdir(parents=True)
         from .canonical_site import render_evidence_html
         from .mcp_server import WayproofReadTools
         tools = WayproofReadTools(reads)
@@ -338,10 +348,14 @@ class MigrationWorkspace:
         inventory = _hashes(_files(output))
         (output / 'offline-manifest.json').write_bytes(encoded({
             'generation': digest(encoded(inventory)), 'replace_previous': True, 'files': inventory}))
-        if generation != digest((self.root / self.manifest_name).read_bytes()):
-            shutil.rmtree(output)
-            raise ValueError('migration changed during export; outputs withheld')
+        if generation != current_generation():
+            raise ValueError('research changed during export; outputs withheld')
         return output
+    except BaseException:
+        if output.exists():
+            _files(output)
+            shutil.rmtree(output)
+        raise
 
 
 class LiveMigrationReadService:
@@ -657,20 +671,32 @@ def reference_context(lineage):
         if kind != 'observation_provenance':
             continue
         selection = records[('reviewed_selection', record['selection_id'])]
-        statement = records[('attributed_statement', selection['origin']['id'])]
+        statement, run, finding = None, None, None
+        if selection['origin']['kind'] == 'statement':
+            statement = records[('attributed_statement', selection['origin']['id'])]
+        else:
+            finding = records[('analysis_finding', selection['origin']['id'])]
+            run = records[('analysis_run', finding['run_id'])]
         versions = [records[('media_version', vid)] for vid in selection['media_version_ids']]
+        analysis_status = 'not_performed'
+        if run:
+            analysis_status = ('synthetic' if run['method']['name'] == 'scripted-synthetic-fixture' else 'performed')
         result.append({
             'observation_id': record['observation_id'],
             'event_capture_times': deepcopy(record['event_times']),
-            'statement_publication_time': deepcopy(statement['publication_time']),
+            'statement_publication_time': deepcopy(statement['publication_time'] if statement else unknown),
             'attachment_publication_times': [
                 {'attachment_id': aid, 'time': deepcopy(a['publication_time'])}
                 for (k, aid), a in records.items() if k == 'source_attachment'
                 and a['media_version_id'] in selection['media_version_ids']],
             'retrieval_times': [{'media_version_id': v['id'], 'time': deepcopy(v['retrieval_time'])}
                                 for v in versions],
-            'analysis_time': deepcopy(unknown),
-            'analysis_status': 'not_performed',
+            'analysis_time': deepcopy(run['analysis_time'] if run else unknown),
+            'analysis_status': analysis_status,
+            **({'analysis_run_id': run['id'], 'analysis_finding_id': finding['id'],
+                'inspected_targets': deepcopy(run['inputs']), 'finding_target': deepcopy(finding['target']),
+                'analyst': deepcopy(run['analyst']), 'method': deepcopy(run['method']),
+                'limitations': deepcopy(run['limitations'] + finding['limitations'])} if run else {}),
             'locations': deepcopy(record['locations']),
             'versions': [{key: deepcopy(v[key]) for key in
                           ('id', 'identity_basis', 'reproducibility', 'limitations')} for v in versions],

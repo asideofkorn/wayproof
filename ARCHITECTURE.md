@@ -40,8 +40,12 @@ separately accepted in PR #196. Step 5a implements its public domain types,
 structural validation through the existing ChangeSet service, and a fail-closed
 repository capability gate. The dedicated [reference-only activation](docs/reference-only-activation.md)
 now routes reviewed, independently removable batches through production storage
-and shared consumers. Generic/broader v1 preparation and media processing remain
-disabled. Existing canonical knowledge remains v0. The first launch is now scoped to
+and shared consumers. Generic/broader v1 preparation and live media processing remain
+disabled. The [synthetic bounded-processing service](docs/synthetic-bounded-analysis.md)
+rehearses immutable attempts/runs, review-only finding admission, shared projections,
+and selective withdrawal using process-local fixture state. It accepts neither
+real media nor processor/provider callbacks; durable execution and live acquisition
+require a separate activation review. Existing canonical knowledge remains v0. The first launch is now scoped to
 [public-source, reference-only research](docs/public-source-research-plan.md).
 Narrow policy enforcement, migration compatibility and the production
 reference-only path preserve the separate bounded-processing review gate. Private custody, accounts/uploads, and retained-media
