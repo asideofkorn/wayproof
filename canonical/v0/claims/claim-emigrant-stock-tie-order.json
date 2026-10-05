@@ -1,0 +1,35 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-stock-tie-order",
+    "evidence_ids": [
+      "evidence-emigrant-stock-tie-order"
+    ],
+    "predicate": "stock_tying_setback",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    },
+    "value": {
+      "exception": "loading/unloading",
+      "from": [
+        "lakes",
+        "streams",
+        "trails",
+        "campsites"
+      ],
+      "minimum_feet": 200,
+      "order_exemptions": [
+        "Forest Service permit specifically authorizing the otherwise prohibited act",
+        "Federal, State, local officer or organized rescue/firefighting force performing official duty"
+      ],
+      "trees_prohibited": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

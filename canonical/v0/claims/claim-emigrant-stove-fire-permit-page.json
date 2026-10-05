@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-stove-fire-permit-page",
+    "evidence_ids": [
+      "evidence-emigrant-stove-fire-permit-page"
+    ],
+    "predicate": "stove_fire_restriction",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "above_elevation_feet": 9000,
+      "scope_wording": "campfire or stove fire",
+      "within_miles_of_emigrant_lake": 0.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-food-storage",
+    "conditions": [],
+    "consequence": "Secure food, trash and scented items so wildlife cannot access them; use a properly used bear-resistant container or proper hang. Confirm current storage rules and separate requirements when crossing jurisdictions.",
+    "rule_id": "rule-emigrant-food-storage",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

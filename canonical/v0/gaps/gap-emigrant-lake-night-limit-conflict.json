@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-lake-night-limit-conflict",
+    "question": "Can a trip return for a nonconsecutive night at these lakes?",
+    "reason": "Conflict: the signed order says one consecutive night while the access page and June 2024 regulations guide say one night per trip. Preserve both; confirm before planning a return camp.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-lake-night-limit-order",
+      "claim-emigrant-lake-night-limit-guidance"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

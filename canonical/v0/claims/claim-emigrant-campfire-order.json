@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-campfire-order",
+    "evidence_ids": [
+      "evidence-emigrant-campfire-order"
+    ],
+    "predicate": "campfire_restriction",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    },
+    "value": {
+      "above_elevation_feet": 9000,
+      "exemptions": [
+        "Forest Service permit specifically authorizing the otherwise prohibited act",
+        "Federal, State, local officer or organized rescue/firefighting force performing official duty"
+      ],
+      "within_miles_of_emigrant_lake": 0.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

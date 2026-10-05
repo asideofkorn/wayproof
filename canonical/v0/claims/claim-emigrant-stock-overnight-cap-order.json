@@ -1,0 +1,37 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-stock-overnight-cap-order",
+    "evidence_ids": [
+      "evidence-emigrant-stock-overnight-cap-order"
+    ],
+    "predicate": "stock_overnight_restriction",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    },
+    "value": {
+      "exemptions": [
+        "Forest Service permit specifically authorizing the otherwise prohibited act",
+        "Federal, State, local officer or organized rescue/firefighting force performing official duty"
+      ],
+      "lakes": [
+        "Gem",
+        "Jewelry",
+        "Long",
+        "Maxwell",
+        "Pingree",
+        "Piute",
+        "Rosasco"
+      ],
+      "maximum_head": 4,
+      "within_miles": 0.25
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

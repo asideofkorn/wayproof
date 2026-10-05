@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-parking-crabtree",
+    "evidence_ids": [
+      "evidence-emigrant-parking-crabtree"
+    ],
+    "predicate": "parking_description",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "description": "large paved parking area",
+      "requires_current_check": true,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

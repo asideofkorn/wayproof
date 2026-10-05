@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-permit-season-access-page",
+    "evidence_ids": [
+      "evidence-emigrant-permit-season-access-page"
+    ],
+    "predicate": "wilderness_permit_season",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions_season": "April 15-November 15",
+      "restrictions_section": "valid permit for overnight trips without seasonal qualification"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

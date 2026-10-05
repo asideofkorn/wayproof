@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-groveland-acquisition",
+    "evidence_ids": [
+      "evidence-emigrant-groveland-acquisition"
+    ],
+    "predicate": "wilderness_permit_process",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "advance_hours_max": 24,
+      "holiday_weekend_advance_days_max": 3,
+      "phone": "209-962-7825",
+      "station": "Groveland",
+      "yosemite_entries": "separate quotas and itinerary-specific requirements; verify with station"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

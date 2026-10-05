@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/r05/stanislaus/permits/wilderness-permits",
+    "publisher": "USDA Forest Service, Stanislaus National Forest",
+    "source_id": "source-usfs-emigrant-permits"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

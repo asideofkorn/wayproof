@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-order-dates-permit-page",
+    "evidence_ids": [
+      "evidence-emigrant-order-dates-permit-page"
+    ],
+    "predicate": "published_order_effective_dates",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "end": "2029-06-30",
+      "linked_order_start": "2026-07-08",
+      "summary_start": "2025-07-08"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

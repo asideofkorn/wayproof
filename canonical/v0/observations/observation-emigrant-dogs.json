@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Pet Information: dogs must be under direct control and Tuolumne County has a leash ordinance.",
+    "observation_id": "observation-emigrant-dogs",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-access"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

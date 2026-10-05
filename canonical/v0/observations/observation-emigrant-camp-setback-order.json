@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "STF-16-2026-08 page 1, item 2 prohibits camping within 100 feet of lakes, streams and trails or where posted; order exemptions apply.",
+    "observation_id": "observation-emigrant-camp-setback-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-signed-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

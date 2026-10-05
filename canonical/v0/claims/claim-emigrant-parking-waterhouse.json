@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-parking-waterhouse",
+    "evidence_ids": [
+      "evidence-emigrant-parking-waterhouse"
+    ],
+    "predicate": "parking_description",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "description": "limited parking",
+      "requires_current_check": true,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-route-topology",
+    "question": "How do the selected trailheads connect to lakes, passes and each other?",
+    "reason": "Ten explicit access identities are published, but no route segments, directionality, distances, alternatives or facility spurs are asserted. The 2012 mileage table and 2021 diagram differ (for example Gianelli-Powell); reconcile maps and editions before modeling traversal.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-access-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

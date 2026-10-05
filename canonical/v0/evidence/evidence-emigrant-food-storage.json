@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-food-storage",
+    "evidence_id": "evidence-emigrant-food-storage",
+    "notes": "",
+    "observation_id": "observation-emigrant-food-storage",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

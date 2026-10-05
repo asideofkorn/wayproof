@@ -1,0 +1,2612 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20261005-emigrant-foundation",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/wilderness-emigrant.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "wilderness-emigrant",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-bell-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-bourland-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-box-springs",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-crabtree",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-coyote-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-eagle-meadow",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-gianelli",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-kennedy-meadows",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-waterhouse",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-emigrant-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "trailhead-emigrant-sonora-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-wilderness.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-wilderness",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-bell-meadow",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-bourland-meadow",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-box-springs",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-crabtree",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-coyote-meadow",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-eagle-meadow",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-gianelli",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-kennedy-meadows",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-waterhouse",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-emigrant-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "scope-emigrant-sonora-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-overview.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-overview",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-access.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-access",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-permits.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-permits",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-order",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-signed-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-signed-order",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-regulations.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-regulations",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-trailheads.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-trailheads",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-conditions.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-conditions",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-alerts.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "source-usfs-emigrant-alerts",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-identity.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-identity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-bell-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-bell-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-bell-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-bourland-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-bourland-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-bourland-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-box-springs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-box-springs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-box-springs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-crabtree",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-crabtree",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-crabtree",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-coyote-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-coyote-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-coyote-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-eagle-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-eagle-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-eagle-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-gianelli",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-gianelli",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-gianelli",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-kennedy-meadows",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-kennedy-meadows",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-waterhouse",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-waterhouse",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-waterhouse",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-sonora-pass",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-aliases-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-aliases-sonora-pass",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-parking-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-parking-sonora-pass",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-overnight-permit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-overnight-permit-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-permit-season-access-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-permit-season-access-page",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-permit-fee.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-permit-fee",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-permit-quota.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-permit-quota",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-permit-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-permit-acquisition",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-groveland-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-groveland-acquisition",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-group-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-group-limit-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-affiliated-groups.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-affiliated-groups",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-food-storage.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-food-storage",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-dispersed-camping.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-dispersed-camping",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-camp-setback-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-camp-setback-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-lake-night-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-lake-night-limit-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-lake-night-limit-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-lake-night-limit-guidance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-sanitation-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-sanitation-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-sanitation-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-sanitation-guidance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stock-tie-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stock-tie-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stock-tie-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stock-tie-permit-page",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stock-group-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stock-group-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stock-overnight-exclusion-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stock-overnight-exclusion-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stock-overnight-cap-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stock-overnight-cap-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-campfire-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-campfire-order",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-stove-fire-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-stove-fire-permit-page",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-campfire-permit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-campfire-permit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-dogs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-dogs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-mechanized-use.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-mechanized-use",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-pack-out.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-pack-out",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-conditions-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-conditions-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-alerts-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-alerts-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-access-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-access-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-bell-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-bourland-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-box-springs",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-crabtree",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-coyote-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-eagle-meadow",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-gianelli",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-kennedy-meadows",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-waterhouse",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-approach-recheck-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-approach-recheck-sonora-pass",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-order-dates-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "observation-emigrant-order-dates-permit-page",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-identity.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-bell-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-bell-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-bell-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-bourland-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-bourland-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-bourland-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-box-springs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-box-springs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-box-springs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-crabtree",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-crabtree",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-crabtree",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-coyote-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-coyote-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-coyote-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-eagle-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-eagle-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-eagle-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-gianelli",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-gianelli",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-gianelli",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-kennedy-meadows",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-kennedy-meadows",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-waterhouse",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-waterhouse",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-waterhouse",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-sonora-pass",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-aliases-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-aliases-sonora-pass",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-parking-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-parking-sonora-pass",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-overnight-permit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-overnight-permit-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-permit-season-access-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-permit-season-access-page",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-permit-fee.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-permit-fee",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-permit-quota.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-permit-quota",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-permit-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-permit-acquisition",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-groveland-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-groveland-acquisition",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-group-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-group-limit-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-affiliated-groups.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-affiliated-groups",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-food-storage.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-food-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-dispersed-camping.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-dispersed-camping",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-camp-setback-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-camp-setback-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-lake-night-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-lake-night-limit-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-lake-night-limit-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-lake-night-limit-guidance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-sanitation-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-sanitation-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-sanitation-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-sanitation-guidance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stock-tie-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stock-tie-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stock-tie-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stock-tie-permit-page",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stock-group-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stock-group-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stock-overnight-exclusion-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stock-overnight-exclusion-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stock-overnight-cap-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stock-overnight-cap-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-campfire-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-campfire-order",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-stove-fire-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-stove-fire-permit-page",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-campfire-permit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-campfire-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-dogs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-dogs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-mechanized-use.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-mechanized-use",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-pack-out.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-pack-out",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-conditions-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-conditions-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-alerts-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-alerts-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-access-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-access-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-bell-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-bourland-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-box-springs",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-crabtree",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-coyote-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-eagle-meadow",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-gianelli",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-kennedy-meadows",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-waterhouse",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-approach-recheck-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-approach-recheck-sonora-pass",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-order-dates-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "evidence-emigrant-order-dates-permit-page",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-identity.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-bell-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-bell-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-bell-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-bell-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-bell-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-bell-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-bourland-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-bourland-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-bourland-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-bourland-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-bourland-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-bourland-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-box-springs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-box-springs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-box-springs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-box-springs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-box-springs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-box-springs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-crabtree"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-crabtree",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-crabtree"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-crabtree",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-crabtree"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-crabtree",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-coyote-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-coyote-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-coyote-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-coyote-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-coyote-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-coyote-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-eagle-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-eagle-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-eagle-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-eagle-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-eagle-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-eagle-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-gianelli"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-gianelli",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-gianelli"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-gianelli",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-gianelli"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-gianelli",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-kennedy-meadows"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-kennedy-meadows",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-kennedy-meadows"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-kennedy-meadows",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-waterhouse"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-waterhouse",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-waterhouse"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-waterhouse",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-waterhouse"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-waterhouse",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-sonora-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-sonora-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-aliases-sonora-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-aliases-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-aliases-sonora-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-parking-sonora-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-parking-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-parking-sonora-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-overnight-permit-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-overnight-permit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-overnight-permit-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-permit-season-access-page"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-permit-season-access-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-permit-season-access-page",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-permit-fee"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-permit-fee.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-permit-fee",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-permit-quota"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-permit-quota.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-permit-quota",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-permit-acquisition"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-permit-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-permit-acquisition",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-groveland-acquisition"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-groveland-acquisition.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-groveland-acquisition",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-group-limit-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-group-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-group-limit-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-affiliated-groups"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-affiliated-groups.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-affiliated-groups",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-food-storage"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-food-storage.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-food-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-dispersed-camping"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-dispersed-camping.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-dispersed-camping",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-camp-setback-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-camp-setback-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-camp-setback-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-lake-night-limit-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-lake-night-limit-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-lake-night-limit-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-lake-night-limit-guidance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-lake-night-limit-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-lake-night-limit-guidance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-sanitation-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-sanitation-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-sanitation-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-sanitation-guidance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-sanitation-guidance.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-sanitation-guidance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stock-tie-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stock-tie-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stock-tie-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stock-tie-permit-page"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stock-tie-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stock-tie-permit-page",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stock-group-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stock-group-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stock-group-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stock-overnight-exclusion-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stock-overnight-exclusion-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stock-overnight-exclusion-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stock-overnight-cap-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stock-overnight-cap-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stock-overnight-cap-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-campfire-order"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-campfire-order.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-campfire-order",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-stove-fire-permit-page"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-stove-fire-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-stove-fire-permit-page",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-campfire-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-campfire-permit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-campfire-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-dogs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-dogs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-dogs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-mechanized-use"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-mechanized-use.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-mechanized-use",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-pack-out"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-pack-out.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-pack-out",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-conditions-recheck"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-conditions-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-conditions-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-alerts-recheck"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-alerts-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-alerts-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-recheck"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-access-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-access-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-bell-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-bell-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-bourland-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-bourland-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-box-springs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-box-springs",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-crabtree"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-crabtree",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-coyote-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-coyote-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-eagle-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-eagle-meadow",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-gianelli"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-gianelli",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-kennedy-meadows"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-kennedy-meadows",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-waterhouse"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-waterhouse",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-approach-recheck-sonora-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-approach-recheck-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-approach-recheck-sonora-pass",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-order-dates-permit-page"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-order-dates-permit-page.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "claim-emigrant-order-dates-permit-page",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-bell-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-bell-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-bell-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-bourland-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-bourland-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-bourland-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-box-springs"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-box-springs.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-box-springs",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-crabtree"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-crabtree.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-crabtree",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-coyote-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-coyote-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-coyote-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-eagle-meadow"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-eagle-meadow.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-eagle-meadow",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-gianelli"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-gianelli.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-gianelli",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-kennedy-meadows"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-kennedy-meadows.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-kennedy-meadows",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-waterhouse"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-waterhouse.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-waterhouse",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-access-sonora-pass"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-access-sonora-pass.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "relationship-emigrant-access-sonora-pass",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-emigrant-overnight-wilderness-permit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "rule-emigrant-overnight-wilderness-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-emigrant-group-limit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "rule-emigrant-group-limit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-emigrant-food-storage.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "rule-emigrant-food-storage",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-emigrant-overnight-wilderness-permit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "requirement-emigrant-overnight-wilderness-permit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-emigrant-group-limit.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "requirement-emigrant-group-limit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-emigrant-food-storage.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "requirement-emigrant-food-storage",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-permit-season-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-permit-season-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-permit-season-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-lake-night-limit-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-lake-night-limit-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-lake-night-limit-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-sanitation-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-sanitation-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-sanitation-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-stock-setback-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-stock-setback-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-stock-setback-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-stove-scope-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-stove-scope-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-stove-scope-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-current-conditions"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-current-conditions.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-current-conditions",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-boundary-geometry"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-boundary-geometry.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-boundary-geometry",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-route-topology.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-facility-inventory"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-facility-inventory.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-facility-inventory",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-cross-boundary-permits"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-cross-boundary-permits.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-cross-boundary-permits",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-order-date-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-order-date-conflict.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "gap-emigrant-order-date-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-emigrant-pretrip-recheck.json",
+      "reason": "Establish source-backed Emigrant planning foundation with explicit uncertainty.",
+      "record_id": "result-emigrant-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Establish Emigrant Wilderness access and overnight planning foundation; preserve USFS conflicts and current-condition gaps."
+}

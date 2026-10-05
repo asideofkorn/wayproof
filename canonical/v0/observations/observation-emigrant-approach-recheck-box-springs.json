@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The forest alert index contains dynamic road and fire orders. Current applicability to Box Springs Trailhead needs individual order and map review; its named access relationship is not an open-status observation.",
+    "observation_id": "observation-emigrant-approach-recheck-box-springs",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-alerts"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

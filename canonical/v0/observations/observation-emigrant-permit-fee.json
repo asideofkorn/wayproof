@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Fee Site and Info: wilderness and campfire permits are issued free; this does not establish fees for outside-agency permits or guide services.",
+    "observation_id": "observation-emigrant-permit-fee",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-access"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

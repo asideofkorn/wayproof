@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Operational Hours directs visitors to check conditions and weather before travel; named access points do not establish that a road, parking space, water supply or facility will be available.",
+    "observation_id": "observation-emigrant-access-recheck",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-access"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

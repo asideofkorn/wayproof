@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-bourland-meadow",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-bourland-meadow"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-bourland-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bourland-meadow",
+    "temporal_scope": null,
+    "value": [
+      "Bourland Meadow"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

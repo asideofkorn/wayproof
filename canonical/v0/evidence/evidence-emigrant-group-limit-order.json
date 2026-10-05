@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-group-limit-order",
+    "evidence_id": "evidence-emigrant-group-limit-order",
+    "notes": "",
+    "observation_id": "observation-emigrant-group-limit-order",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-permit-quota",
+    "evidence_ids": [
+      "evidence-emigrant-permit-quota"
+    ],
+    "predicate": "wilderness_permit_quota",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "quota": false,
+      "reservation_system": false,
+      "scope": "Emigrant, not neighboring Yosemite or other-agency entry"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

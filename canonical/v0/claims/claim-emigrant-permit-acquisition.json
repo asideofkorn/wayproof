@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-permit-acquisition",
+    "evidence_ids": [
+      "evidence-emigrant-permit-acquisition"
+    ],
+    "predicate": "wilderness_permit_process",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "calaveras": "in person during office hours; kiosks at Calaveras or Lake Alpine when closed",
+      "other_agency_origin": "obtain permit from agency managing entry trailhead",
+      "outside_stanislaus_channel": "visit or call ranger station; phone/email up to 7 days ahead",
+      "outside_stanislaus_self_issue_allowed": false,
+      "sonora_supervisor_office": "in person during office hours",
+      "sugar_pine": "in person during office hours; kiosk when closed",
+      "sugar_pine_phone": "209-965-3434"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

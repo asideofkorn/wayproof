@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-conditions-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-conditions-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "fire restrictions",
+        "smoke",
+        "snow",
+        "weather and avalanche conditions"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

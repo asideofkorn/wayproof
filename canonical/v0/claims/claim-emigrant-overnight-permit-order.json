@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-overnight-permit-order",
+    "evidence_ids": [
+      "evidence-emigrant-overnight-permit-order"
+    ],
+    "predicate": "overnight_permit_required",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    },
+    "value": {
+      "exemptions": [
+        "Forest Service permit specifically authorizing the otherwise prohibited act",
+        "Federal, State, local officer or organized rescue/firefighting force performing official duty"
+      ],
+      "order": "STF-16-2026-08",
+      "required": true,
+      "season": "year-round"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

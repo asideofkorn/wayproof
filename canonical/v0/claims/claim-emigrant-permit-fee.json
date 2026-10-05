@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-permit-fee",
+    "evidence_ids": [
+      "evidence-emigrant-permit-fee"
+    ],
+    "predicate": "wilderness_permit_fee",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "scope": "Stanislaus-issued wilderness permit",
+      "usd": 0
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

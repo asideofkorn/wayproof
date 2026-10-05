@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-23, June 2024, Food Storage and Bear Safety: food, trash and scented items must be inaccessible to wildlife; a properly used bear-resistant container is most effective, and a proper bear hang is permissible but unreliable on the Stanislaus.",
+    "observation_id": "observation-emigrant-food-storage",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

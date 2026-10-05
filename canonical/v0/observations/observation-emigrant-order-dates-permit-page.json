@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The permit-page introduction labels current Forest Orders effective July 8, 2025-June 30, 2029, while its linked Emigrant order is STF-16-2026-08, effective July 8, 2026-June 30, 2029.",
+    "observation_id": "observation-emigrant-order-dates-permit-page",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

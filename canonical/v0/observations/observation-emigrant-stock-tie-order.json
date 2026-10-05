@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "STF-16-2026-08 page 1, item 6 prohibits tying stock to trees or within 200 feet of lakes, streams, trails and campsites except loading/unloading.",
+    "observation_id": "observation-emigrant-stock-tie-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-signed-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,60 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Project source conflicts and operational unknowns onto Emigrant wilderness trips; access-only contexts receive road and facility rechecks without implying wilderness entry.",
+    "input_ids": [
+      "claim-emigrant-conditions-recheck",
+      "claim-emigrant-alerts-recheck",
+      "claim-emigrant-access-recheck",
+      "claim-emigrant-permit-acquisition",
+      "claim-emigrant-permit-fee",
+      "claim-emigrant-overnight-permit-order",
+      "claim-emigrant-permit-season-access-page",
+      "claim-emigrant-lake-night-limit-order",
+      "claim-emigrant-lake-night-limit-guidance",
+      "claim-emigrant-sanitation-order",
+      "claim-emigrant-sanitation-guidance",
+      "claim-emigrant-stock-tie-order",
+      "claim-emigrant-stock-tie-permit-page",
+      "claim-emigrant-campfire-order",
+      "claim-emigrant-stove-fire-permit-page",
+      "claim-emigrant-order-dates-permit-page",
+      "claim-emigrant-food-storage",
+      "claim-emigrant-approach-recheck-bell-meadow",
+      "claim-emigrant-approach-recheck-bourland-meadow",
+      "claim-emigrant-approach-recheck-box-springs",
+      "claim-emigrant-approach-recheck-crabtree",
+      "claim-emigrant-approach-recheck-coyote-meadow",
+      "claim-emigrant-approach-recheck-eagle-meadow",
+      "claim-emigrant-approach-recheck-gianelli",
+      "claim-emigrant-approach-recheck-kennedy-meadows",
+      "claim-emigrant-approach-recheck-waterhouse",
+      "claim-emigrant-approach-recheck-sonora-pass",
+      "gap-emigrant-permit-season-conflict",
+      "gap-emigrant-lake-night-limit-conflict",
+      "gap-emigrant-sanitation-conflict",
+      "gap-emigrant-stock-setback-conflict",
+      "gap-emigrant-stove-scope-conflict",
+      "gap-emigrant-current-conditions",
+      "gap-emigrant-boundary-geometry",
+      "gap-emigrant-route-topology",
+      "gap-emigrant-facility-inventory",
+      "gap-emigrant-cross-boundary-permits",
+      "gap-emigrant-order-date-conflict"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-emigrant-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "access and current conditions",
+        "permit acquisition and seasonal conflict",
+        "camping and sanitation conflicts",
+        "stock and stove restrictions",
+        "cross-boundary requirements"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

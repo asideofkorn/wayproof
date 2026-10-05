@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-cross-boundary-permits",
+    "question": "What applies when entering from another agency or continuing to Yosemite or Hoover?",
+    "reason": "Entry-agency issuance and the no-self-issue exception are preserved; specific cross-boundary routes, quotas, permit products and food/dog rules require separate agency review. Do not extend Emigrant no-quota/free-permit claims across boundaries.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-permit-acquisition"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

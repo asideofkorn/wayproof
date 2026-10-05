@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Campfires section introduces a list prohibiting a campfire or stove fire under listed conditions, including above 9,000 feet or within half a mile of Emigrant Lake; the signed order item 5 only says campfire.",
+    "observation_id": "observation-emigrant-stove-fire-permit-page",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

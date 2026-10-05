@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-overnight-permit-order",
+    "evidence_id": "evidence-emigrant-overnight-permit-order",
+    "notes": "",
+    "observation_id": "observation-emigrant-overnight-permit-order",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

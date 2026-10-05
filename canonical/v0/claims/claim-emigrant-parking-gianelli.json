@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-parking-gianelli",
+    "evidence_ids": [
+      "evidence-emigrant-parking-gianelli"
+    ],
+    "predicate": "parking_description",
+    "spatial_scope_ids": [
+      "scope-emigrant-gianelli"
+    ],
+    "subject_id": "trailhead-emigrant-gianelli",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "description": "limited parking",
+      "requires_current_check": true,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

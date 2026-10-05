@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-pack-out",
+    "evidence_ids": [
+      "evidence-emigrant-pack-out"
+    ],
+    "predicate": "waste_pack_out",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "trash_and_food_scraps": "pack out; do not burn or bury"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

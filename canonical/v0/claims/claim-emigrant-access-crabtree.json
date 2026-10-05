@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-access-crabtree",
+    "evidence_ids": [
+      "evidence-emigrant-access-crabtree"
+    ],
+    "predicate": "wilderness_access",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": "wilderness-emigrant"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
