@@ -1,0 +1,47 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Project Crabtree lake source reports and unresolved planning questions onto the selected route/lake; use the Emigrant foundation manifest for wilderness-wide requirements and conflicts.",
+    "input_ids": [
+      "claim-emigrant-crabtree-camp-profile",
+      "claim-emigrant-crabtree-camp-identity",
+      "claim-emigrant-crabtree-camp-mileage-table",
+      "claim-emigrant-crabtree-camp-favorite-hikes",
+      "gap-emigrant-crabtree-camp-mileage",
+      "claim-emigrant-crabtree-bear-profile",
+      "claim-emigrant-crabtree-bear-identity",
+      "claim-emigrant-crabtree-bear-mileage-table",
+      "claim-emigrant-crabtree-bear-favorite-hikes",
+      "gap-emigrant-crabtree-bear-mileage",
+      "claim-emigrant-crabtree-lake-valley-junction-milepoint",
+      "claim-emigrant-crabtree-pine-valley-junction-milepoint",
+      "claim-emigrant-crabtree-schematic-crabtree-junction",
+      "claim-emigrant-crabtree-legacy-schematic",
+      "gap-emigrant-crabtree-junction-mileage",
+      "claim-emigrant-crabtree-camp-setback",
+      "claim-emigrant-crabtree-camp-recommendation",
+      "claim-emigrant-crabtree-camp-camping-exclusion",
+      "claim-emigrant-crabtree-bear-setback",
+      "claim-emigrant-crabtree-bear-recommendation",
+      "claim-emigrant-crabtree-bear-camping-exclusion",
+      "claim-emigrant-crabtree-bear-horizontal-distance",
+      "claim-emigrant-crabtree-camp-conditions",
+      "claim-emigrant-crabtree-bear-conditions",
+      "gap-emigrant-crabtree-planning-limits"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-emigrant-crabtree-lakes-pretrip-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "conflicting lake mileages",
+        "map endpoint alignment",
+        "lake camping placement",
+        "current approach conditions",
+        "partial itinerary"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

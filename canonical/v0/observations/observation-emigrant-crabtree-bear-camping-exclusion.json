@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Minimum Camping Distance Map for Bear Lake, page 1 (2021 filename): Camping near cliff edges directly above Bear Lake is prohibited.",
+    "observation_id": "observation-emigrant-crabtree-bear-camping-exclusion",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-bear-camping-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "waterbody-emigrant-bear-lake",
+    "kind": "waterbody",
+    "name": "Bear Lake (Emigrant Wilderness)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

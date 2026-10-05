@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/legacy-media/stanislaus/Trail%20Mileages%20-%20Emigrant%202012.pdf",
+    "publisher": "USDA Forest Service, Stanislaus National Forest",
+    "source_id": "source-usfs-emigrant-mileage-table"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

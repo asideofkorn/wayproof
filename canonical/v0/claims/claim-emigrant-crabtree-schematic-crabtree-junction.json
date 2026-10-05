@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-schematic-crabtree-junction",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-schematic-crabtree-junction"
+    ],
+    "predicate": "published_schematic_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-camp-lake",
+      "scope-route-emigrant-crabtree-bear-lake"
+    ],
+    "subject_id": "route-node-emigrant-pine-valley-junction",
+    "temporal_scope": null,
+    "value": {
+      "endpoint": "first drawn south-side junction; Pine Valley connection on overview",
+      "not_atomic_distance": true,
+      "omitted_branch": "Lake Valley",
+      "qualifier": "estimate",
+      "reported_miles": 1.3
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

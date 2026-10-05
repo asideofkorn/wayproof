@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-crabtree-pine-valley-camp",
+    "kind": "route_segment",
+    "name": "Pine Valley Camp"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

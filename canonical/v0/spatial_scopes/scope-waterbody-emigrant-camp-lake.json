@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "waterbody-emigrant-camp-lake",
+    "kind": "waterbody",
+    "scope_id": "scope-waterbody-emigrant-camp-lake"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

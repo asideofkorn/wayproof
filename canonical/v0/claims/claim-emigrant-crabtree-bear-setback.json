@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-setback",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-setback"
+    ],
+    "predicate": "camping_setback",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-bear-lake"
+    ],
+    "subject_id": "waterbody-emigrant-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "from": [
+        "water",
+        "trails",
+        "posted signs"
+      ],
+      "map_is_reference_only": true,
+      "minimum_feet": 100
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

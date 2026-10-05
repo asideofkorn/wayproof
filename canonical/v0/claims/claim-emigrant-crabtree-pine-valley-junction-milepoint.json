@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-pine-valley-junction-milepoint",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-pine-valley-junction-milepoint"
+    ],
+    "predicate": "published_milepoint",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-camp-lake",
+      "scope-route-emigrant-crabtree-bear-lake"
+    ],
+    "subject_id": "route-node-emigrant-pine-valley-junction",
+    "temporal_scope": null,
+    "value": {
+      "cumulative_miles_from_crabtree": 1.4,
+      "source_edition": "2012-06"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

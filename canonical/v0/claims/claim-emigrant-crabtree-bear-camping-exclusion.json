@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-camping-exclusion",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-camping-exclusion"
+    ],
+    "predicate": "camping_area_restriction",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-bear-lake"
+    ],
+    "subject_id": "waterbody-emigrant-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "no_campsites_inferred": true,
+      "restriction": "Camping near cliff edges directly above Bear Lake is prohibited.",
+      "site_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

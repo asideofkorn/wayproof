@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-spur",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-spur"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-segment-emigrant-crabtree-bear-spur"
+    ],
+    "subject_id": "route-segment-emigrant-crabtree-bear-spur",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 1.0,
+      "distance_status": "estimated",
+      "end_node_id": "route-node-emigrant-bear-trail-end",
+      "precision_note": "Mapped connectivity; no surveyed coordinates. Schematic distance is an estimate, not navigation.",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-bear-junction"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

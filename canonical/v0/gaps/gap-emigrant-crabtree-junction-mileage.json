@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-crabtree-junction-mileage",
+    "question": "Which schematic endpoints match the detailed mapped junctions?",
+    "reason": "The 2012 Pine Valley milepoint is 1.4; schematics print 1.3 to the south junction and omit the near-trailhead Lake Valley branch. The undated GIF prints another 1.3 toward Camp where the 2021 diagram leaves the link unlabeled. Endpoint alignment and edition differences remain unresolved; these labels are not assigned to atomic legs.",
+    "related_ids": [
+      "claim-emigrant-crabtree-pine-valley-junction-milepoint",
+      "claim-emigrant-crabtree-schematic-crabtree-junction",
+      "claim-emigrant-crabtree-legacy-schematic"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

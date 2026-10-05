@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2018-11, ROG 16-41 Day Hikes, page 2: Camp Lake 3 miles from Crabtree. Endpoint precision is not specified; editions disagree.",
+    "observation_id": "observation-emigrant-crabtree-camp-favorite-hikes",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-favorite-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -22,14 +22,14 @@ Relevant legacy material was recovered before researching:
 
 ## Reviewable batch sequence
 
-1. **Foundation (this PR):** wilderness identity, ten explicitly named access
+1. **Foundation (#203, merged):** wilderness identity, ten explicitly named access
    points, historical parking descriptions, overnight issuance/free/no-quota
    guidance, principal camping/stock/fire/food rules, source conflicts and
    scoped rechecks. Three executable requirements cover overnight permits,
    group limits and food storage. Other restrictions remain sourced claims;
    Wayproof does not automatically assess elevation, lake buffers, stock counts,
    special-order exemptions or permitted equipment from this foundation.
-2. **Western approaches and lake routes:** reconcile the 2012 mileage table,
+2. **Western approaches and lake routes:** first deliver the bounded Crabtree–Camp/Bear approach (batch 2a below), then reconcile the 2012 mileage table,
    2021 schematic, overview map and detail map; model Crabtree, Gianelli and
    Bell Meadow corridors with explicit junctions, alternatives and lake spurs.
    Test both directions and preserve approximate/conflicting mileage.
@@ -44,8 +44,9 @@ Relevant legacy material was recovered before researching:
    boundary matching, lake camping maps and remaining discovered sources.
 
 Each subsequent canonical PR starts from refreshed main after review and has
-one ChangeSet. This task stops at the first PR, without merge. The foundation
-is not route-complete, deep-inventory-complete or destination source-complete.
+one ChangeSet. Foundation PR #203 was merged with explicit user authorization;
+the next PR is prepared for review. The foundation is not route-complete,
+deep-inventory-complete or destination source-complete.
 
 ## Primary-source disposition ledger
 
@@ -99,3 +100,60 @@ scope isolation. Generated directory, detail HTML/JSON and evidence pages must
 show the destination, qualifiers, conflicts and gaps. No destination-specific
 website or schema logic is added. Run the site CI group, exhaustive group check,
 full Python 3.14 suite, and committed canonical diff verifier before PR review.
+
+
+## Batch 2a: bounded Crabtree lake approaches
+
+Inventory starts at main `b48af75f` (#203). Existing Emigrant coverage has one
+wilderness, ten access points, three executable requirements and scoped
+foundation rechecks, but no route, segment or lake resource. This batch reuses
+Crabtree, wilderness identity, alert source and requirements. It introduces two
+descriptive approaches, two lake resources, five descriptive mapped nodes and
+five physical segments. The first three segments are shared. Nodes describe
+map features, not official junction names or surveyed coordinates.
+
+The bounded graph is Crabtree → Lake Valley Trail junction → Pine Valley Trail
+junction → Camp Lake western approach → Bear Lake junction → Bear Lake trail
+terminus. The Camp approach ends at its western access point; the Bear approach
+continues along the south side of Camp Lake and branches north. Both graphs
+traverse in reverse. Lake resources are connected explicitly to approach
+segments and remain distinct from trail nodes. The branch routes toward Lake
+Valley/Pine Valley and the continuation east of the Bear junction are deferred.
+
+Only the Bear branch has atomic mileage (1.0, explicitly an estimate from the
+schematic). The other four legs have unknown distances. Known-distance subtotals
+are not complete trip lengths. No subtraction, scale measurement, summed
+schematic labels, or inferred mileage reconciles the differing sources.
+Named lake requests select Crabtree and their approach but retain `exit_unknown`;
+this does not implement a complete return itinerary or campsite selection.
+
+The historical ledger above describes the foundation. These updated
+source dispositions apply to batch 2a:
+
+| Source | Disposition in batch 2a |
+| --- | --- |
+| 2010 geospatial overview map, western panel | Ingested drawn connectivity and branch junctions. No boundary tracing, coordinates or scaled distance. Wider network deferred with retained topology gap. |
+| June 2012 mileage table, Crabtree column | Conflicting and preserved: Camp 2.6 and Bear 3.9 miles; Lake Valley 0.1 and Pine Valley 1.4 are cumulative milepoints, not fabricated atomic legs. Other columns deferred. |
+| 2021-filename mileage diagram, western panel | Ingested Bear branch 1.0 as estimate. Conflicting and preserved: Crabtree–south junction label 1.3 versus table Pine Valley 1.4. Intermediate Lake Valley branch is omitted. The link toward Camp has no printed mileage. Navigation/scale disclaimer retained. |
+| Undated trail-distance GIF, western panel | Conflicting and preserved: Crabtree–south junction 1.3 and a separate 1.3 eastward link toward Camp; Camp/Bear branch 1.0. It omits/combines detail-map endpoints. These are source reports, not atomic assignments or a synthesized total. |
+| [Favorite Hiking Trails, ROG 16-41, November 2018](https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/Favorite%20Hiking%20Trails.pdf), page 2 | Ingested Crabtree entry and Camp/Bear progression. Conflicting and preserved: Camp 3 and Bear 4 one-way miles versus 2012 table. One-night language already represented by the foundation conflict; unrelated hikes and generalized water-treatment advice excluded from this batch. |
+| Camp and Bear minimum camping maps, page 1, 2021 filenames | Visually reviewed and ingested system-trail connections, 100-foot minimum versus 200-foot LNT recommendation, Camp trail/lake exclusion, Bear cliff-edge restriction and horizontal measurement. Reference-only maps do not establish an available or legal individual campsite. |
+| Chewing Gum and Grouse minimum camping maps | Visually reviewed, deferred with facility/topology gaps to the next western-route or inventory batch. No route or campsite access asserted here. |
+| April 2012 trailhead guide | Already represented for Crabtree identity/parking. Crabtree restrooms and the historical one-night camping limit at trailheads are explicitly deferred to facility/deeper-access work, as requested in foundation review. Reconcile current orders and facility status there. |
+| Foundation signed order, permits, regulations, alerts and conditions | Already represented. Lake intents inherit wilderness scope and executable permit requirements; use the foundation recheck alongside the new lake-route recheck for one-night, sanitation and other conflicts. Current trail/road/water/closure status remains unknown. |
+| Gianelli and Bell Meadow map junctions, remaining western lakes | Deferred with narrowed route-topology gap; coarser schematics and overview connections need further reconciliation. No claim of destination route completeness. |
+
+`scripts/ingest_emigrant_crabtree_lakes.py` produces one validated ChangeSet
+from a clean pre-batch main using `--base`, with the serializer writing the
+candidate. It replaces only the existing topology-gap explanation; historical
+foundation observations and ChangeSet remain intact. A separate scoped recheck
+manifest exposes lake mileage conflicts, endpoint alignment, camping placement
+and approach unknowns without applying them to a Crabtree-only request.
+
+Acceptance covers both graph directions, shared segments, resource access,
+unknown/estimated atomic distance, differing printed totals and editions,
+conservative named intents, rejection of unsupported Gianelli entry, wilderness
+requirement joins, scoped rechecks and generated route/lake/evidence HTML/JSON.
+The foundation regression still requires a wilderness-only request to have no
+inferred route; its no-segment assertion now applies to foundation ChangeSet
+entities so later explicitly evidenced graphs can coexist.

@@ -1,0 +1,1481 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20261005-emigrant-crabtree-lakes",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-emigrant-lake-valley-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-node-emigrant-lake-valley-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-emigrant-pine-valley-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-node-emigrant-pine-valley-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-emigrant-camp-west-approach.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-node-emigrant-camp-west-approach",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-emigrant-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-node-emigrant-bear-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-node-emigrant-bear-trail-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-node-emigrant-bear-trail-end",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-emigrant-crabtree-camp-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-emigrant-crabtree-camp-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-emigrant-camp-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "waterbody-emigrant-camp-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-emigrant-crabtree-bear-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-emigrant-crabtree-bear-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterbody-emigrant-bear-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "waterbody-emigrant-bear-lake",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-emigrant-crabtree-start-lake-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-segment-emigrant-crabtree-start-lake-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-emigrant-crabtree-lake-valley-pine-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-segment-emigrant-crabtree-lake-valley-pine-valley",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-emigrant-crabtree-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-segment-emigrant-crabtree-pine-valley-camp",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-emigrant-crabtree-camp-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-segment-emigrant-crabtree-camp-bear-junction",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-emigrant-crabtree-bear-spur.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "route-segment-emigrant-crabtree-bear-spur",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-node-emigrant-lake-valley-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-node-emigrant-lake-valley-junction",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-node-emigrant-pine-valley-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-node-emigrant-pine-valley-junction",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-node-emigrant-camp-west-approach.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-node-emigrant-camp-west-approach",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-node-emigrant-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-node-emigrant-bear-junction",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-node-emigrant-bear-trail-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-node-emigrant-bear-trail-end",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-emigrant-crabtree-camp-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-emigrant-crabtree-camp-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-emigrant-camp-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-waterbody-emigrant-camp-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-emigrant-crabtree-bear-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-emigrant-crabtree-bear-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-waterbody-emigrant-bear-lake.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-waterbody-emigrant-bear-lake",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-emigrant-crabtree-start-lake-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-segment-emigrant-crabtree-start-lake-valley",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-emigrant-crabtree-lake-valley-pine-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-segment-emigrant-crabtree-lake-valley-pine-valley",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-emigrant-crabtree-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-segment-emigrant-crabtree-pine-valley-camp",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-emigrant-crabtree-camp-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-segment-emigrant-crabtree-camp-bear-junction",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-emigrant-crabtree-bear-spur.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "scope-route-segment-emigrant-crabtree-bear-spur",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-overview-map.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-overview-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-mileage-table",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-mileage-diagram.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-mileage-diagram",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-trail-map.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-trail-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-favorite-hikes",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-camp-camping-map.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-camp-camping-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-bear-camping-map.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "source-usfs-emigrant-bear-camping-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-identity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-mileage-table",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-favorite-hikes",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-profile",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-identity",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-mileage-table",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-favorite-hikes",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-start-lake-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-start-lake-valley",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-lake-valley-pine-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-lake-valley-pine-valley",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-pine-valley-camp",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-bear-junction",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-spur.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-spur",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-lake-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-lake-valley-junction-milepoint",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-pine-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-pine-valley-junction-milepoint",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-schematic-crabtree-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-schematic-crabtree-junction",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-legacy-schematic.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-legacy-schematic",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-setback",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-recommendation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-camping-exclusion",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-setback",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-recommendation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-camping-exclusion",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-horizontal-distance.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-horizontal-distance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-camp-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-camp-conditions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-crabtree-bear-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "observation-emigrant-crabtree-bear-conditions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-mileage-table",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-favorite-hikes",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-profile",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-identity",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-mileage-table",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-favorite-hikes",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-start-lake-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-start-lake-valley",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-lake-valley-pine-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-lake-valley-pine-valley",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-pine-valley-camp",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-bear-junction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-spur.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-spur",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-lake-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-lake-valley-junction-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-pine-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-pine-valley-junction-milepoint",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-schematic-crabtree-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-schematic-crabtree-junction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-legacy-schematic.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-legacy-schematic",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-setback",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-recommendation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-camping-exclusion",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-setback",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-recommendation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-camping-exclusion",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-horizontal-distance.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-horizontal-distance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-camp-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-camp-conditions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-crabtree-bear-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "evidence-emigrant-crabtree-bear-conditions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-mileage-table"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-mileage-table",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-favorite-hikes"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-favorite-hikes",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-profile.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-profile",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-identity.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-identity",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-mileage-table"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-mileage-table.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-mileage-table",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-favorite-hikes"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-favorite-hikes.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-favorite-hikes",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-start-lake-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-start-lake-valley",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-lake-valley-pine-valley.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-lake-valley-pine-valley",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-pine-valley-camp",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-bear-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-bear-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-bear-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-spur"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-spur.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-spur",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-junction-milepoint"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-lake-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-lake-valley-junction-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-junction-milepoint"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-pine-valley-junction-milepoint.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-pine-valley-junction-milepoint",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-schematic-crabtree-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-schematic-crabtree-junction.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-schematic-crabtree-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-legacy-schematic"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-legacy-schematic.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-legacy-schematic",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-setback"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-setback",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-recommendation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-recommendation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-camping-exclusion"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-camping-exclusion",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-setback"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-setback.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-setback",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-recommendation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-recommendation.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-recommendation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-camping-exclusion"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-camping-exclusion.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-camping-exclusion",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-horizontal-distance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-horizontal-distance.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-horizontal-distance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-conditions"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-camp-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-camp-conditions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-conditions"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-crabtree-bear-conditions.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "claim-emigrant-crabtree-bear-conditions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-approach.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-approach",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-land.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-land",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-traverses.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-traverses",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-profile"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-approach.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-approach",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-land.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-land",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-traverses.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-traverses",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-start-lake-valley-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-start-lake-valley-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-start-lake-valley-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-start-lake-valley-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-start-lake-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-start-lake-valley-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-start-lake-valley-bear.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-start-lake-valley-bear",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-lake-valley-pine-valley-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-lake-valley-pine-valley-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-lake-valley-pine-valley-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-lake-valley-pine-valley-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-lake-valley-pine-valley-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-lake-valley-pine-valley-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-lake-valley-pine-valley-bear.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-lake-valley-pine-valley-bear",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp",
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-pine-valley-camp-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-pine-valley-camp-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp",
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-pine-valley-camp-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-pine-valley-camp-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp",
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-pine-valley-camp-camp.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-pine-valley-camp-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp",
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-pine-valley-camp-bear.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-pine-valley-camp-bear",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-pine-valley-camp",
+        "evidence-emigrant-crabtree-camp-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-pine-valley-camp-resource.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-pine-valley-camp-resource",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-bear-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-bear-junction-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-bear-junction-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-bear-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-bear-junction-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-bear-junction-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-camp-bear-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-camp-bear-junction-bear.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-camp-bear-junction-bear",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-spur",
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-spur-start.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-spur-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-spur",
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-spur-end.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-spur-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-spur",
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-spur-bear.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-spur-bear",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-crabtree-bear-spur",
+        "evidence-emigrant-crabtree-bear-identity"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-emigrant-crabtree-bear-spur-resource.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "relationship-emigrant-crabtree-bear-spur-resource",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-crabtree-camp-mileage"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-crabtree-camp-mileage.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "gap-emigrant-crabtree-camp-mileage",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-crabtree-bear-mileage"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-crabtree-bear-mileage.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "gap-emigrant-crabtree-bear-mileage",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-crabtree-junction-mileage"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-crabtree-junction-mileage.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "gap-emigrant-crabtree-junction-mileage",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-crabtree-planning-limits"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-crabtree-planning-limits.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "gap-emigrant-crabtree-planning-limits",
+      "record_type": "gap"
+    },
+    {
+      "action": "REPLACE",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-emigrant-route-topology"
+      ],
+      "path": "canonical/v0/gaps/gap-emigrant-route-topology.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "gap-emigrant-route-topology",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-emigrant-crabtree-lakes-pretrip-recheck.json",
+      "reason": "Add bounded Crabtree lake approaches while preserving map precision and unresolved coverage.",
+      "record_id": "result-emigrant-crabtree-lakes-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Model shared Crabtree approaches to Camp and Bear lakes with conflicting mileage reports and lake camping rechecks."
+}

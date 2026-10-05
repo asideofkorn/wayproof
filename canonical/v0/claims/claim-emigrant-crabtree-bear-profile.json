@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-profile",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-bear-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "entry_id": "trailhead-emigrant-crabtree",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "waterbody-emigrant-bear-lake",
+      "source_edition": "2018-11"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

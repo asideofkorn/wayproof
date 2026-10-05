@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-bear-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "access road",
+        "trail and crossings",
+        "snow",
+        "water",
+        "fire and closures"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

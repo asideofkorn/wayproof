@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-profile",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-camp-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-camp-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "entry_id": "trailhead-emigrant-crabtree",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "waterbody-emigrant-camp-lake",
+      "source_edition": "2018-11"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

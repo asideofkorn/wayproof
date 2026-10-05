@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-horizontal-distance",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-horizontal-distance"
+    ],
+    "predicate": "camping_distance_measurement",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-bear-lake"
+    ],
+    "subject_id": "waterbody-emigrant-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "basis": "horizontal; not slope line"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

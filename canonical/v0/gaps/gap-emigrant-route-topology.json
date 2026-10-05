@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-route-topology",
     "question": "How do the selected trailheads connect to lakes, passes and each other?",
-    "reason": "Ten explicit access identities are published, but no route segments, directionality, distances, alternatives or facility spurs are asserted. The 2012 mileage table and 2021 diagram differ (for example Gianelli-Powell); reconcile maps and editions before modeling traversal.",
+    "reason": "Bidirectional mapped Crabtree approaches to Camp Lake and Bear Lake are represented with shared segments, separate lake resources and unknown or estimated atomic distances. Gianelli, Bell Meadow, other trailheads, alternative branches, deeper lake/pass networks and facility spurs remain deferred. This bounded approach graph does not establish destination-wide route completeness.",
     "related_ids": [
       "wilderness-emigrant",
       "claim-emigrant-access-recheck"
