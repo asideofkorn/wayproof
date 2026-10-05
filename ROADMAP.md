@@ -222,8 +222,14 @@ without granting direct canonical write access.
      Event/capture, publication, retrieval and analysis times remain independent;
      locations preserve value, attribution, precision, sensitivity and uncertainty.
      Unknown values are never filled from other dates, proximity or a Claim subject.
-  4. **Next:** bounded processing and immutable runs; preserve the separate PR
-     review gate for any canonical effect.
+  4. **Synthetic bounded-processing rehearsal implemented:** append-only identified
+     attempts/runs, explicit failures, workflow-reviewed selection, and selective
+     withdrawal through shared HTML/JSON/MCP outputs. See
+     [scope and acceptance evidence](docs/synthetic-bounded-analysis.md).
+     No live acquisition, processor plugins or external-model calls are enabled;
+     the operational ledger is process-local. **Next:** separately review live
+     activation, including execution, durable history/recovery and retention.
+     Preserve the separate PR review gate for every canonical effect.
      Then create/test one evidence-ingestion skill with public-reference and textual
      field-observation modes, including an offline notes template. Personal photos
      and uploads require a later contributed-media scope decision.

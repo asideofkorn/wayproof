@@ -297,6 +297,8 @@ def removal_impact(records, source_ids):
         if getattr(attachment, 'state', None) == 'active':
             graph.setdefault(('media_version', attachment.media_version_id), set()).add(
                 ('source', attachment.source_id))
+            graph.setdefault(('media_asset', attachment.asset_id), set()).add(
+                ('source', attachment.source_id))
     affected = {('source', sid) for sid in source_ids}
     referenced_keys = set().union(*graph.values()) if graph else set()
     _need(affected <= all_records.keys() | referenced_keys, 'unknown removal source')
