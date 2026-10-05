@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-access-crabtree",
+    "evidence_id": "evidence-emigrant-access-crabtree",
+    "notes": "",
+    "observation_id": "observation-emigrant-access-crabtree",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

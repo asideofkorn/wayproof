@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-box-springs",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-box-springs"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-box-springs"
+    ],
+    "subject_id": "trailhead-emigrant-box-springs",
+    "temporal_scope": null,
+    "value": [
+      "Box Springs"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

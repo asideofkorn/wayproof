@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-order-date-conflict",
+    "question": "Which effective start belongs to STF-16-2026-08?",
+    "reason": "Conflict: permit summary says 2025; signed order and alert say 2026. Executable order-backed rules use the signed 2026 interval, with the disagreement exposed.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-overnight-permit-order",
+      "claim-emigrant-order-dates-permit-page"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

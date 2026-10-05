@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-waterhouse",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-waterhouse"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": [
+      "Waterhouse"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

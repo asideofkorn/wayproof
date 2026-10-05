@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-facility-inventory",
+    "question": "What camps, toilets, water sources and parking are available along the approach?",
+    "reason": "Dispersed camping is represented, but individual lake sites, trailhead facilities, Kennedy/Aspen operators and developed approach campgrounds are deferred. Historical parking descriptions are not live inventory.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-access-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

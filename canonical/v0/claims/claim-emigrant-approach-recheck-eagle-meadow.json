@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-approach-recheck-eagle-meadow",
+    "evidence_ids": [
+      "evidence-emigrant-approach-recheck-eagle-meadow"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-eagle-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-eagle-meadow",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "status": "unknown",
+      "topics": [
+        "road and trail status",
+        "fire restrictions",
+        "parking and facility availability"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

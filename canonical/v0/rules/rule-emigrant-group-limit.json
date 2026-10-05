@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-group-limit-order",
+    "conditions": [],
+    "consequence": "Keep the traveling, camping or gathering group to 15 people or fewer, unless specifically exempt under STF-16-2026-08.",
+    "rule_id": "rule-emigrant-group-limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

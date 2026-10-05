@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Highway 108 Access, overview access list: Bourland Meadow is explicitly listed as access to Emigrant Wilderness.",
+    "observation_id": "observation-emigrant-access-bourland-meadow",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-access"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

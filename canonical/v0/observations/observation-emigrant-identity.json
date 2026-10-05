@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Overview: Emigrant Wilderness lies entirely in Stanislaus National Forest and Tuolumne County; the page describes 113,000 acres and roughly 25 by 15 miles.",
+    "observation_id": "observation-emigrant-identity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-overview"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

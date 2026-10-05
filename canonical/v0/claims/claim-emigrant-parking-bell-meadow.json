@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-parking-bell-meadow",
+    "evidence_ids": [
+      "evidence-emigrant-parking-bell-meadow"
+    ],
+    "predicate": "parking_description",
+    "spatial_scope_ids": [
+      "scope-emigrant-bell-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bell-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "description": "plenty of informal parking",
+      "requires_current_check": true,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

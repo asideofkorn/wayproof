@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Stock Holding and Grazing assigns a 100-foot tying setback in Emigrant and Carson-Iceberg, except loading/unloading.",
+    "observation_id": "observation-emigrant-stock-tie-permit-page",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

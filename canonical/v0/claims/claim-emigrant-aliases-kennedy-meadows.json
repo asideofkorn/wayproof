@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-kennedy-meadows",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-kennedy-meadows"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": [
+      "Kennedy Meadows"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

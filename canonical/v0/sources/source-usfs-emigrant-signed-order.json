@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/alerts/STF-16-2026-08%20Emigrant%20Wilderness%20Restrictions%20%28Order%29%20.pdf",
+    "publisher": "USDA Forest Service, Stanislaus National Forest",
+    "source_id": "source-usfs-emigrant-signed-order"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

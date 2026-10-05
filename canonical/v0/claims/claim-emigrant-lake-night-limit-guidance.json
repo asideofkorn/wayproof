@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-lake-night-limit-guidance",
+    "evidence_ids": [
+      "evidence-emigrant-lake-night-limit-guidance"
+    ],
+    "predicate": "lake_camping_limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "basis": "per trip",
+      "lakes": [
+        "Camp",
+        "Bear",
+        "Grouse",
+        "Powell",
+        "Waterhouse"
+      ],
+      "maximum_nights": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

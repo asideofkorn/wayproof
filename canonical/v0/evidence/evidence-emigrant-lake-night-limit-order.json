@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-lake-night-limit-order",
+    "evidence_id": "evidence-emigrant-lake-night-limit-order",
+    "notes": "",
+    "observation_id": "observation-emigrant-lake-night-limit-order",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

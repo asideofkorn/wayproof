@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-crabtree",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-crabtree"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": [
+      "Crabtree",
+      "Crabtree Camp"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

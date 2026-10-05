@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-identity",
+    "evidence_ids": [
+      "evidence-emigrant-identity"
+    ],
+    "predicate": "managed_land_description",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "approximate_dimensions_miles": [
+        25,
+        15
+      ],
+      "county": "Tuolumne County",
+      "forest": "Stanislaus National Forest",
+      "published_area_acres": 113000
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

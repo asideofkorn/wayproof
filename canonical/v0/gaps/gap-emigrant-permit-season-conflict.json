@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-permit-season-conflict",
+    "question": "Does the seasonal webpage exempt winter overnight trips?",
+    "reason": "Conflict: the access page gives April 15-November 15 but also unqualified overnight wording; the signed order requires overnight permits year-round through June 30, 2029. Do not infer a winter exemption; confirm current requirements with the issuing ranger station.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-overnight-permit-order",
+      "claim-emigrant-permit-season-access-page"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "STF-16-2026-08, page 1, item 1 requires a valid wilderness permit for overnight camping at any time of year. Effective July 8, 2026 through June 30, 2029; the order lists special-authorization and official-duty exemptions.",
+    "observation_id": "observation-emigrant-overnight-permit-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source review",
+    "retrieved_at": "2026-10-05T22:09:18+00:00",
+    "source_id": "source-usfs-emigrant-signed-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

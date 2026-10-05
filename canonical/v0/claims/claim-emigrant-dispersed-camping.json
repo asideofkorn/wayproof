@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-dispersed-camping",
+    "evidence_ids": [
+      "evidence-emigrant-dispersed-camping"
+    ],
+    "predicate": "camping_inventory",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "designated_campsites": false,
+      "scope": "wilderness interior, not developed approach campgrounds",
+      "type": "dispersed wilderness camping"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

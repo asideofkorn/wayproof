@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-mechanized-use",
+    "evidence_ids": [
+      "evidence-emigrant-mechanized-use"
+    ],
+    "predicate": "wilderness_transport_restriction",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "drones": "prohibited",
+      "exception": "non-motorized mobility devices may be utilized",
+      "mechanized_motorized_equipment": "prohibited"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

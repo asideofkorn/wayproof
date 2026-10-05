@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-sanitation-guidance",
+    "evidence_ids": [
+      "evidence-emigrant-sanitation-guidance"
+    ],
+    "predicate": "sanitation_setback",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "from": [
+        "water",
+        "trails",
+        "campsites"
+      ],
+      "more_than_feet": 200
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

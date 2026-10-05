@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-approach-recheck-kennedy-meadows",
+    "evidence_id": "evidence-emigrant-approach-recheck-kennedy-meadows",
+    "notes": "",
+    "observation_id": "observation-emigrant-approach-recheck-kennedy-meadows",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

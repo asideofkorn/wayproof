@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-access-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-access-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "access roads",
+        "parking",
+        "trail conditions",
+        "water and facilities",
+        "issuing station operations"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

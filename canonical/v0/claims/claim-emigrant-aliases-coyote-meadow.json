@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-aliases-coyote-meadow",
+    "evidence_ids": [
+      "evidence-emigrant-aliases-coyote-meadow"
+    ],
+    "predicate": "aliases",
+    "spatial_scope_ids": [
+      "scope-emigrant-coyote-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-coyote-meadow",
+    "temporal_scope": null,
+    "value": [
+      "Coyote Meadow",
+      "Cooper Pocket"
+    ]
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

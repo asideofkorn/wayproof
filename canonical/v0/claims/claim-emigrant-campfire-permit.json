@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-campfire-permit",
+    "evidence_ids": [
+      "evidence-emigrant-campfire-permit"
+    ],
+    "predicate": "campfire_permit_required",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "does_not_override_restrictions": true,
+      "issuer": "CAL FIRE",
+      "required": true,
+      "uses": [
+        "stoves",
+        "fires"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

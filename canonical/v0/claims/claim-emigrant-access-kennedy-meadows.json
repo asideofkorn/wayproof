@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-access-kennedy-meadows",
+    "evidence_ids": [
+      "evidence-emigrant-access-kennedy-meadows"
+    ],
+    "predicate": "wilderness_access",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": "wilderness-emigrant"
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

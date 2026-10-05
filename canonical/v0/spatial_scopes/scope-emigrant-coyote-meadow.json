@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "trailhead-emigrant-coyote-meadow",
+    "kind": "access_point",
+    "scope_id": "scope-emigrant-coyote-meadow"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

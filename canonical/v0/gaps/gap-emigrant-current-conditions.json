@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-current-conditions",
+    "question": "Are the selected approach and facilities usable on the trip date?",
+    "reason": "Current road, trail, snow, crossing, water, fire and facility status is unknown. Individual alerts and mapped closures need route-specific matching; the Site Open banner is not route-level clearance.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-conditions-recheck",
+      "claim-emigrant-alerts-recheck",
+      "claim-emigrant-access-recheck",
+      "claim-emigrant-approach-recheck-bell-meadow",
+      "claim-emigrant-approach-recheck-bourland-meadow",
+      "claim-emigrant-approach-recheck-box-springs",
+      "claim-emigrant-approach-recheck-crabtree",
+      "claim-emigrant-approach-recheck-coyote-meadow",
+      "claim-emigrant-approach-recheck-eagle-meadow",
+      "claim-emigrant-approach-recheck-gianelli",
+      "claim-emigrant-approach-recheck-kennedy-meadows",
+      "claim-emigrant-approach-recheck-waterhouse",
+      "claim-emigrant-approach-recheck-sonora-pass"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

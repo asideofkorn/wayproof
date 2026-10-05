@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-alerts-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-alerts-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "current_route_access": "unknown",
+      "required": true,
+      "topics": [
+        "road closures and seasonal access",
+        "current fire orders",
+        "occupancy rules"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

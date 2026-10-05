@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "trailhead-emigrant-eagle-meadow",
+    "kind": "access_point",
+    "scope_id": "scope-emigrant-eagle-meadow"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

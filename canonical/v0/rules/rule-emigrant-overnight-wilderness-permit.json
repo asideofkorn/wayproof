@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-overnight-permit-order",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Obtain and carry a valid Emigrant wilderness permit for overnight camping. STF-16-2026-08 has special-authorization and official-duty exemptions; confirm these with the Forest Service. Seasonal web wording conflicts with the year-round order; recheck with the issuing station.",
+    "rule_id": "rule-emigrant-overnight-wilderness-permit",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "temporal_scope": {
+      "ends_on": "2029-06-30",
+      "starts_on": "2026-07-08"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

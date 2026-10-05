@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-access-bell-meadow",
+    "evidence_id": "evidence-emigrant-access-bell-meadow",
+    "notes": "",
+    "observation_id": "observation-emigrant-access-bell-meadow",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

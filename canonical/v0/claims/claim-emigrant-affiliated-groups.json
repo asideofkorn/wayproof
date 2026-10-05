@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-affiliated-groups",
+    "evidence_ids": [
+      "evidence-emigrant-affiliated-groups"
+    ],
+    "predicate": "affiliated_group_separation",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "minimum_miles": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

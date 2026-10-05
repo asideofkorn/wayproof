@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-access-box-springs"
+    ],
+    "object_id": "wilderness-emigrant",
+    "predicate": "accesses",
+    "relationship_id": "relationship-emigrant-access-box-springs",
+    "subject_id": "trailhead-emigrant-box-springs",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

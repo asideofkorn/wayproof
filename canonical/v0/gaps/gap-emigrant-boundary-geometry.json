@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-boundary-geometry",
+    "question": "Where is the reviewed designated wilderness boundary?",
+    "reason": "Authoritative boundary geometry has not yet been matched. A published map exists but no polygon is traced from it. Boundary review belongs to a later batch.",
+    "related_ids": [
+      "wilderness-emigrant",
+      "claim-emigrant-access-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}
