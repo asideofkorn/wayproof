@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-crabtree-camp-bear-junction",
+    "kind": "route_segment",
+    "name": "Camp Bear Junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

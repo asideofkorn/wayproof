@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-lake-valley-pine-valley",
+    "evidence_id": "evidence-emigrant-crabtree-lake-valley-pine-valley",
+    "notes": "",
+    "observation_id": "observation-emigrant-crabtree-lake-valley-pine-valley",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

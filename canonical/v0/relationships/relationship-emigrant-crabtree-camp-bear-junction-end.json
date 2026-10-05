@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-bear-junction"
+    ],
+    "object_id": "route-node-emigrant-bear-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-crabtree-camp-bear-junction-end",
+    "subject_id": "route-segment-emigrant-crabtree-camp-bear-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

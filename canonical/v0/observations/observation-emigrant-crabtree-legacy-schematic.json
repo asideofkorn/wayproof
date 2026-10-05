@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Undated Emigrant Wilderness Trail Distances GIF, western panel: Crabtree to an unlabeled south junction is labeled 1.3; the eastward link from that junction toward Camp Lake is also labeled 1.3; Camp/Bear branch 1.0. This coarse schematic omits the Lake Valley junction near Crabtree and does not distinguish the Camp Lake approach from the east-side Bear junction.",
+    "observation_id": "observation-emigrant-crabtree-legacy-schematic",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-trail-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Minimum Camping Distance Map for Camp Lake, page 1 (2021 filename): named lake in Emigrant Wilderness and system trail marked To Crabtree Trailhead. The system trail approaches from the west and follows south of Camp Lake. No shoreline polygon, campsite inventory or live water availability is inferred.",
+    "observation_id": "observation-emigrant-crabtree-camp-identity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-camp-camping-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

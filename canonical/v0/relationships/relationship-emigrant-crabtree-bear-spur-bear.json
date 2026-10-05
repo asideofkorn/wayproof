@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-spur",
+      "evidence-emigrant-crabtree-bear-identity"
+    ],
+    "object_id": "route-emigrant-crabtree-bear-lake",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-crabtree-bear-spur-bear",
+    "subject_id": "route-segment-emigrant-crabtree-bear-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

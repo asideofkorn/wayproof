@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-mileage-table",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-mileage-table"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-camp-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-camp-lake",
+    "temporal_scope": null,
+    "value": {
+      "endpoint_precision": "lake destination; exact point unspecified",
+      "reported_one_way_miles": 2.6,
+      "source_edition": "2012-06",
+      "status": "conflicting reports; not a resolved route total"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

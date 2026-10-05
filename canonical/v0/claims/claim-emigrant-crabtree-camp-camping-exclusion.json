@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-camping-exclusion",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-camping-exclusion"
+    ],
+    "predicate": "camping_area_restriction",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-camp-lake"
+    ],
+    "subject_id": "waterbody-emigrant-camp-lake",
+    "temporal_scope": null,
+    "value": {
+      "no_campsites_inferred": true,
+      "restriction": "Camping is prohibited between the trail and Camp Lake.",
+      "site_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

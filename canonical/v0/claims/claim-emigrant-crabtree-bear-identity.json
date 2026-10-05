@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-identity",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-bear-identity"
+    ],
+    "predicate": "mapped_lake_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-bear-lake"
+    ],
+    "subject_id": "waterbody-emigrant-bear-lake",
+    "temporal_scope": null,
+    "value": {
+      "edition_basis": "2021 filename",
+      "geometry": "not imported",
+      "name": "Bear Lake",
+      "wilderness": "wilderness-emigrant"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

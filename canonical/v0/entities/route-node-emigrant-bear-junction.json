@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-bear-junction",
+    "kind": "route_node",
+    "name": "Bear Lake trail junction east of Camp Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

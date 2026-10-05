@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-identity",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-identity"
+    ],
+    "predicate": "mapped_lake_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-camp-lake"
+    ],
+    "subject_id": "waterbody-emigrant-camp-lake",
+    "temporal_scope": null,
+    "value": {
+      "edition_basis": "2021 filename",
+      "geometry": "not imported",
+      "name": "Camp Lake",
+      "wilderness": "wilderness-emigrant"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

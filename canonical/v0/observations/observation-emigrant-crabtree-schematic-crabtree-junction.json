@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Emigrant Trail Mileage Diagram (2021 filename), western panel: Crabtree to the first drawn south-side junction is labeled 1.3. Lake Valley branch is omitted. Diagram calls mileages estimates, straightens trail segments and disclaims navigation/scale.",
+    "observation_id": "observation-emigrant-crabtree-schematic-crabtree-junction",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-mileage-diagram"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

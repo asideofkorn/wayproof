@@ -28,7 +28,8 @@ def intent(day=date(2027, 7, 12), overnight=True, objective='Emigrant Wilderness
 
 def test_identity_access_and_no_fabricated_route(reads):
     records = load_canonical(ROOT)
-    assert reads.search_entities('Emigrant Wilderness')[0].entity_id == LAND
+    assert [e.entity_id for e in reads.search_entities('Emigrant Wilderness')
+            if e.name == 'Emigrant Wilderness'] == [LAND]
     access = [r for r in records.relationships if r.object_id == LAND and r.predicate == 'accesses']
     assert len(access) == 10
     assert all(r.evidence_ids for r in access)
@@ -40,7 +41,10 @@ def test_identity_access_and_no_fabricated_route(reads):
     assert resolution.context is not None
     assert resolution.route is None and resolution.traversal is None
     assert resolution.context.stages[0].spatial_scope_ids == ('scope-emigrant-wilderness',)
-    assert not [e for e in records.entities if 'emigrant' in e.entity_id and e.kind == 'route_segment']
+    foundation = load_changeset(ROOT / 'changesets/v0/wp-20261005-emigrant-foundation.json')
+    foundation_entities = {op.record_id for op in foundation.operations if op.record_type == 'entity'}
+    assert not [e for e in records.entities if e.entity_id in foundation_entities and e.kind == 'route_segment']
+    # Later explicit graphs must not fabricate a route for a wilderness-only request.
 
 
 @pytest.mark.parametrize('day', [date(2027, 1, 12), date(2027, 7, 12)])

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-pine-valley-camp",
+      "evidence-emigrant-crabtree-camp-identity"
+    ],
+    "object_id": "route-node-emigrant-pine-valley-junction",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-crabtree-pine-valley-camp-start",
+    "subject_id": "route-segment-emigrant-crabtree-pine-valley-camp",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

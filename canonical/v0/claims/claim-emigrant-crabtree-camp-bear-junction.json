@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-bear-junction",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-bear-junction"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-segment-emigrant-crabtree-camp-bear-junction"
+    ],
+    "subject_id": "route-segment-emigrant-crabtree-camp-bear-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-bear-junction",
+      "precision_note": "Mapped connectivity; no surveyed coordinates. Schematic distance is an estimate, not navigation.",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-camp-west-approach"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

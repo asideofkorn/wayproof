@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-crabtree-start-lake-valley",
+    "kind": "route_segment",
+    "name": "Start Lake Valley"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 Emigrant Wilderness map, Camp Lake panel: 20E16 continues east from the Pine Valley connection to Camp Lake; the Camp Lake detail map confirms the western trail approach.",
+    "observation_id": "observation-emigrant-crabtree-pine-valley-camp",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

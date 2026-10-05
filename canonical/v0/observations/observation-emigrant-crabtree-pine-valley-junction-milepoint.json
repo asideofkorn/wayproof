@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-27 June 2012 page 1, Crabtree column: Pine Valley Trail 1.4 miles. This is a destination milepoint, not an atomic segment distance.",
+    "observation_id": "observation-emigrant-crabtree-pine-valley-junction-milepoint",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text and visual map review",
+    "retrieved_at": "2026-10-05T22:52:54+00:00",
+    "source_id": "source-usfs-emigrant-mileage-table"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

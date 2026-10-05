@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-crabtree-bear-mileage",
+    "question": "What one-way distance should be planned from Crabtree to Bear Lake?",
+    "reason": "Official editions give different destination mileages. Preserve each report; neither supplies all atomic leg distances. No subtraction or schematic measurement supplies missing legs. Confirm the intended lake endpoint and current route with the Forest Service.",
+    "related_ids": [
+      "route-emigrant-crabtree-bear-lake",
+      "claim-emigrant-crabtree-bear-mileage-table",
+      "claim-emigrant-crabtree-bear-favorite-hikes"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

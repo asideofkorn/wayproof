@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-bear-mileage-table",
+    "evidence_id": "evidence-emigrant-crabtree-bear-mileage-table",
+    "notes": "",
+    "observation_id": "observation-emigrant-crabtree-bear-mileage-table",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

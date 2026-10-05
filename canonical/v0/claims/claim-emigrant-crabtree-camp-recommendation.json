@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-camp-recommendation",
+    "evidence_ids": [
+      "evidence-emigrant-crabtree-camp-recommendation"
+    ],
+    "predicate": "camping_setback_recommendation",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-camp-lake"
+    ],
+    "subject_id": "waterbody-emigrant-camp-lake",
+    "temporal_scope": null,
+    "value": {
+      "basis": "Leave No Trace ethic; not asserted regulatory minimum",
+      "recommended_feet": 200
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

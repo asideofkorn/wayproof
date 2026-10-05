@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-crabtree-lake-valley-junction-milepoint",
+    "evidence_id": "evidence-emigrant-crabtree-lake-valley-junction-milepoint",
+    "notes": "",
+    "observation_id": "observation-emigrant-crabtree-lake-valley-junction-milepoint",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

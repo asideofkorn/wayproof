@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-pine-valley-junction",
+    "kind": "route_node",
+    "name": "Pine Valley Trail junction on Camp Lake approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

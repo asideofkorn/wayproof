@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-crabtree-bear-spur",
+    "kind": "route_segment",
+    "name": "Bear Spur"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}
