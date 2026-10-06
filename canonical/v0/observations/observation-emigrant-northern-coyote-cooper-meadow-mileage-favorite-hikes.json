@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-41 November 2018 p3 lists Cooper Meadow as three miles and identifies Coyote Meadow Trailhead as the start. The Day Hikes introduction on p2 specifies one-way mileages. The precise meadow endpoint is unresolved; this is a destination report, not an atomic segment distance.",
+    "observation_id": "observation-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-favorite-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

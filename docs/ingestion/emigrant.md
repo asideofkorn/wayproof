@@ -404,7 +404,10 @@ distance; the other twelve segment distances remain unknown. The 2012 and 2018
 three-mile Relief reports, 2023 six-mile round-trip report and separate half-mile
 parking walk remain independent reports. Parking inclusion cannot be resolved
 by adding, halving or subtracting those totals. Kennedy Lake's operator mileage
-retains its unspecified riding-distance convention.
+retains its unspecified riding-distance convention. The 2018 Cooper Meadow
+three-mile one-way report is also retained at route level; its precise meadow
+endpoint is unresolved and it supplies no atomic length for the displayed
+Coyote–Cooper segment.
 
 This is bounded approach coverage, not destination route completeness. It does
 not establish return itineraries, campsite inventory, water safety, current
@@ -431,7 +434,7 @@ observation dates remain null.
 | 2010 USFS Emigrant geospatial overview, northern panel | Ingested named connections, resources and explicit boundary context; reviewed rendered overlays against named NFS trails. A trail endpoint is not a lake coordinate or campsite. Boundary polygon still deferred. |
 | 2012 USFS trailhead guide, ROG 16-26 | Ingested northern parking, facility/camping reports and approximate driving directions. Waterhouse's ½–¾-mile range and about-50-yard setback remain qualified. The printed 4N31 conflicts with the map's 5N31 and is preserved, not silently corrected. |
 | 2012 mileage table, ROG 16-27 | Ingested Kennedy Lake 7.5 and Relief Reservoir 3.0 as destination reports. Other Kennedy objectives remain deferred with the route-topology gap. |
-| 2018 Favorite Hiking Trails, ROG 16-41 | Ingested Relief and Eagle Pass mileage, Relief stock-use report and Eagle's boundary distinction. Historical difficulty or stock use is not current clearance. |
+| 2018 Favorite Hiking Trails, ROG 16-41 | Ingested Relief and Eagle Pass mileage (p2), Cooper Meadow from Coyote Meadow Trailhead at three miles (p3; p2 specifies one-way mileage), Relief stock-use report and Eagle's boundary distinction. Historical difficulty or stock use is not current clearance. |
 | Traveler 2023, pp8–10 | Ingested Kennedy parking/trail-start description, one-night limit and vault toilets, Sonora planned toilet project and highway vehicle advisory. Planned 2026 completion remains unknown. Broader campground and reservation inventory is deferred. |
 | [Brightman Recreation Complex, ROG 16-53-01, March 2020](https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/Brightman%20Flat%20ROG.pdf), pp1–2 | Ingested Kennedy paved/pull-through parking, tables, accessible vault toilet and faucets. Preserved two-night/$5 reports against 2023 one-night and operator $10 reports. Baker/Deadman and the other approach campgrounds were inspected but their individual inventory is deferred with the facility gap. No current faucet flow or potability inferred. |
 | [Horse Camping outside Wilderness, ROG 16-08, February 2020](https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/Horse%20Camping%20ROG.pdf), pp1–4 | Ingested distinct Eagle/Coyote horse-camp identities, historical improvements/fees and outside-wilderness stock setback guidance. Eagle camp restrooms do not become trailhead restrooms. No camp-to-trailhead connector is inferred. General developed-camp livestock restriction and other horse camps are deferred; signed wilderness stock context remains in the foundation. |

@@ -1275,6 +1275,15 @@
       "action": "ADD",
       "evidence_refs": [],
       "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes.json",
+      "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
+      "record_id": "observation-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/observations/observation-emigrant-northern-kennedy-parking-distance.json",
       "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
       "record_id": "observation-emigrant-northern-kennedy-parking-distance",
@@ -2304,6 +2313,15 @@
       "path": "canonical/v0/evidence/evidence-emigrant-northern-eagle-meadow-eagle-pass-mileage-favorite-hikes.json",
       "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
       "record_id": "evidence-emigrant-northern-eagle-meadow-eagle-pass-mileage-favorite-hikes",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes.json",
+      "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
+      "record_id": "evidence-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes",
       "record_type": "evidence"
     },
     {
@@ -3439,6 +3457,17 @@
       "path": "canonical/v0/claims/claim-emigrant-northern-eagle-meadow-eagle-pass-mileage-favorite-hikes.json",
       "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
       "record_id": "claim-emigrant-northern-eagle-meadow-eagle-pass-mileage-favorite-hikes",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes.json",
+      "reason": "Add bounded northern approaches, geometry and historical access evidence; preserve unresolved planning limits.",
+      "record_id": "claim-emigrant-northern-coyote-cooper-meadow-mileage-favorite-hikes",
       "record_type": "claim"
     },
     {

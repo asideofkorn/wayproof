@@ -142,6 +142,29 @@ def test_kennedy_conflicts_and_water_uncertainty_reach_consumers(reads):
     assert parking.value['reported_miles']==0.5 and parking.value['not_added_to_destination_reports']
 
 
+def test_cooper_meadow_published_mileage_reaches_recheck_without_atomic_distance(reads):
+    report_id=PREFIX+'coyote-cooper-meadow-mileage-favorite-hikes'
+    explained=reads.explain_claim(report_id)
+    assert explained.claim.subject_id==route('coyote-cooper-meadow')
+    assert explained.claim.predicate=='published_approach_distance_report'
+    assert explained.claim.value=={'reported_miles':3,'distance_convention':'one way',
+        'source_edition':'2018-11','endpoint_precision':'unspecified','not_atomic_distance':True}
+    assert explained.sources[0].source_id=='source-usfs-emigrant-favorite-hikes'
+    assert explained.observations[0].observed_at is None
+    assert 'p3' in explained.observations[0].content and 'p2' in explained.observations[0].content
+    result=intent(reads,place('cooper-meadow'))
+    assert result.route.entity_id==route('coyote-cooper-meadow')
+    check=reads.pretrip_recheck(result.context,MANIFEST)
+    item=next(i for i in check.items if i.input_id==report_id)
+    assert item.source_ids==('source-usfs-emigrant-favorite-hikes',)
+    assert report_id not in ids(reads,intent(reads,place('waterhouse-lake')).context,MANIFEST)
+    traversal=resolve_traversal(reads,result.route,result.entry,
+        reads.entity(node('cooper-meadow-junction')),DAY)
+    assert traversal.total_known_distance_miles==0 and not traversal.distance_complete
+    assert traversal.legs[0].distance_miles is None
+    assert reads.get('claim',PREFIX+'coyote-cooper-topology').value['distance_miles'] is None
+
+
 def test_road_reports_retain_range_conflict_and_expired_interval(reads):
     context=intent(reads,th('waterhouse')).context
     selected=ids(reads,context,ACCESS_MANIFEST)
@@ -189,6 +212,11 @@ def test_generated_northern_routes_conflicts_and_distinct_facilities(generated_s
     for key,(name,entry,obj,end,legs,enters) in ROUTES.items():
         eid=route(key);html=(output/f'knowledge/{eid}/index.html').read_text();data=json.loads((output/f'knowledge/{eid}.json').read_text())
         assert f'gap-emigrant-northern-{key}-planning' in html
+        if key=='coyote-cooper-meadow':
+            report_id=PREFIX+'coyote-cooper-meadow-mileage-favorite-hikes'
+            assert report_id in html and report_id in json.dumps(data)
+            assert '"reported_miles": 3' in json.dumps(data)
+            assert '"not_atomic_distance": true' in json.dumps(data)
         count=sum(f['properties'].get('entity_id')==eid for f in map_features)
         if entry=='kennedy-meadows':
             assert not data['route_geometry'] and count==0 and 'id="route-map"' not in html
