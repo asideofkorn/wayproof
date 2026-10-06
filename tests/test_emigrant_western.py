@@ -185,7 +185,7 @@ def test_generated_routes_map_lakes_and_historical_facilities(generated_site):
         assert 'id="route-map"' in html
         assert f'gap-emigrant-western-{key}-planning' in html
         assert json.loads((output/f'knowledge/{eid}.json').read_text())['route_geometry']
-    facilities=json.loads((output/'facilities/index.json').read_text())
+    facilities=json.loads((output/'search/index.json').read_text())
     assert 'restroom-emigrant-crabtree' in {e['entity_id'] for e in facilities['entities']}
     restroom=(output/'knowledge/restroom-emigrant-crabtree/index.html').read_text()
     assert 'unknown' in restroom and '2023' in restroom and '2012' in restroom
