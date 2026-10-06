@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-emigrant-coyote-cooper-meadow",
+    "kind": "route",
+    "scope_id": "scope-route-emigrant-coyote-cooper-meadow"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

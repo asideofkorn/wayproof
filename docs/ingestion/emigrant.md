@@ -31,12 +31,12 @@ Relevant legacy material was recovered before researching:
    special-order exemptions or permitted equipment from this foundation.
 2. **Western approaches, geometry and facilities:** Crabtree–Camp/Bear topology
    (#204, merged) and its display geometry (#205, merged) established the model.
-   The combined western batch below adds Gianelli/Powell/Chewing Gum,
+   The combined western batch (#206, merged) adds Gianelli/Powell/Chewing Gum,
    Bell Meadow/Grouse, Crabtree connections and the deeper Gem approach, plus
    trailhead facility/camping evidence in one PR.
 3. **Northern approaches and facilities:** Kennedy Meadows, Sonora Pass, Coyote,
    Waterhouse and Eagle Meadow; associated lake/pass objectives, geometry,
-   stock limitations, facilities and current road orders.
+   stock guidance, facilities, historical road orders and current-access rechecks.
 4. **Southern and cross-boundary approaches:** Bourland, Box Springs,
    Shingle Springs/Cherry and Leavitt-side entries; reuse Yosemite/Hoover
    entities and review entry-agency permits and quota/food/dog differences.
@@ -375,3 +375,148 @@ unknown atomic mileage, independent reports, current-condition and facility
 scope isolation, permit requirement joins, historical availability, order
 conflicts/effective intervals, generated directories/HTML/JSON and downloadable
 GeoJSON/global map coverage. Existing Camp/Bear regressions remain unchanged.
+
+## Combined northern batch: six approaches and access depth
+
+Started from refreshed `origin/main` at `c3d5c621` after the authorized squash
+merge of #206. Before this batch, Emigrant had ten named trailheads, eight
+western routes, nineteen physical segments, seventeen trail nodes, six lakes
+and the collective Crabtree restroom resource. No northern route graph or
+northern display geometry existed. Existing wilderness rules and neighboring
+Hoover/Yosemite identities are reused rather than duplicated.
+
+### Delivered planning scope
+
+| Approach | Physical graph | Display and endpoint boundary |
+| --- | --- | --- |
+| Kennedy Meadows → Kennedy Lake | Parking → described trail start → 20E11/21E03 junction → western lake approach | Topology only. The reviewed trail dataset does not reach parking, and the Kennedy Lake branch has an unsnapped roughly 45-metre endpoint offset. |
+| Kennedy Meadows → Relief Reservoir | Shares the first two Kennedy segments, then follows 20E11 to the eastern reservoir approach | Topology only. No shoreline spur, dam crossing or campsite is invented. |
+| Waterhouse → Waterhouse Lake | Named 19E31 trail to mapped terminus | Drawable; terminus is distinct from lake identity and any campsite. |
+| Coyote Meadow → Cooper Meadow | Named 20E15 to its explicit 20E08 junction in Cooper Meadow | Drawable; no inference that the meadow is a campsite or that it has available water. |
+| Eagle Meadow → Eagle Pass | 20E08 from the mapped trailhead road crossing to the northern boundary approach | Drawable. The guide says entry into Emigrant is south from the pass; this approach alone does not assert wilderness entry. |
+| Sonora Pass → Leavitt Lake Trail junction | Southbound PCT across five contiguous source features | Drawable to the explicit 22071 junction only. No Leavitt Lake, Leavitt Peak, Latopie Lake, Dorothy Lake or Yosemite continuation is modeled. |
+
+This adds six routes, thirteen physical segments, thirteen trail nodes, three
+waterbodies, Cooper Meadow, Eagle Pass and five historical facility resources:
+Kennedy and Sonora restrooms, Kennedy faucets, and distinct Eagle/Coyote horse
+camps. Only the explicitly reported half-mile parking-to-trail walk has an atomic
+distance; the other twelve segment distances remain unknown. The 2012 and 2018
+three-mile Relief reports, 2023 six-mile round-trip report and separate half-mile
+parking walk remain independent reports. Parking inclusion cannot be resolved
+by adding, halving or subtracting those totals. Kennedy Lake's operator mileage
+retains its unspecified riding-distance convention. The 2018 Cooper Meadow
+three-mile one-way report is also retained at route level; its precise meadow
+endpoint is unresolved and it supplies no atomic length for the displayed
+Coyote–Cooper segment.
+
+This is bounded approach coverage, not destination route completeness. It does
+not establish return itineraries, campsite inventory, water safety, current
+stock suitability, highway crossing geometry or exclusive jurisdiction. The
+PCT follows the Emigrant/Hoover divide; Emigrant requirements do not establish
+Hoover or PCT permit coverage. Those issues have a route-specific visible gap.
+
+Route-only overnight intents receive the evidenced Emigrant applicability
+context as well as named-resource intents. Eagle's northern boundary approach
+and trailhead-only intents do not assert entry. The static wilderness-context
+claims are deliberately outside the recheck manifest so that a route's
+conditions and profile do not leak into another route's recheck.
+
+### Northern source dispositions
+
+Sources were reviewed on 2026-10-06. Government PDFs were downloaded directly;
+operator pages were read through the web retrieval service after direct HTTP
+returned 403. No copyrighted operator page, photo, third-party map or PDF is
+redistributed. Publication editions stay in claim values; unknown real-world
+observation dates remain null.
+
+| Source/layer | Disposition and coverage limit |
+| --- | --- |
+| 2010 USFS Emigrant geospatial overview, northern panel | Ingested named connections, resources and explicit boundary context; reviewed rendered overlays against named NFS trails. A trail endpoint is not a lake coordinate or campsite. Boundary polygon still deferred. |
+| 2012 USFS trailhead guide, ROG 16-26 | Ingested northern parking, facility/camping reports and approximate driving directions. Waterhouse's ½–¾-mile range and about-50-yard setback remain qualified. The printed 4N31 conflicts with the map's 5N31 and is preserved, not silently corrected. |
+| 2012 mileage table, ROG 16-27 | Ingested Kennedy Lake 7.5 and Relief Reservoir 3.0 as destination reports. Other Kennedy objectives remain deferred with the route-topology gap. |
+| 2018 Favorite Hiking Trails, ROG 16-41 | Ingested Relief and Eagle Pass mileage (p2), Cooper Meadow from Coyote Meadow Trailhead at three miles (p3; p2 specifies one-way mileage), Relief stock-use report and Eagle's boundary distinction. Historical difficulty or stock use is not current clearance. |
+| Traveler 2023, pp8–10 | Ingested Kennedy parking/trail-start description, one-night limit and vault toilets, Sonora planned toilet project and highway vehicle advisory. Planned 2026 completion remains unknown. Broader campground and reservation inventory is deferred. |
+| [Brightman Recreation Complex, ROG 16-53-01, March 2020](https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/Brightman%20Flat%20ROG.pdf), pp1–2 | Ingested Kennedy paved/pull-through parking, tables, accessible vault toilet and faucets. Preserved two-night/$5 reports against 2023 one-night and operator $10 reports. Baker/Deadman and the other approach campgrounds were inspected but their individual inventory is deferred with the facility gap. No current faucet flow or potability inferred. |
+| [Horse Camping outside Wilderness, ROG 16-08, February 2020](https://www.fs.usda.gov/sites/nfs/files/r05/stanislaus/publication/Horse%20Camping%20ROG.pdf), pp1–4 | Ingested distinct Eagle/Coyote horse-camp identities, historical improvements/fees and outside-wilderness stock setback guidance. Eagle camp restrooms do not become trailhead restrooms. No camp-to-trailhead connector is inferred. General developed-camp livestock restriction and other horse camps are deferred; signed wilderness stock context remains in the foundation. |
+| [June 2026 road alert](https://www.fs.usda.gov/r05/stanislaus/alerts/stanislaus-national-forest-extends-seasonal-mvum-closure-two-high-elevation) and linked signed STF-16-2026-07 with Exhibits A/B | Ingested June 1–15 historical 4N12 restriction for Coyote/Waterhouse, exemptions and snow qualifier. Signed page and both map exhibits visually reviewed. Preserved the alert summary's STF-16-2026-78 versus structured/PDF STF-16-2026-07 disagreement. Expiration is not evidence of reopening. 8N13 is outside this batch; no unrelated road closure is applied by proximity. |
+| April seasonal extension, current alert index and MVUM hierarchy | Already represented as current-order recheck sources; superseded April order is not substituted for June/current conditions. Exact present motor access requires current MVUM/order review. Current unrelated 4N90 closure is not projected onto these routes. |
+| [Kennedy operator home](https://kennedymeadows.com/index.html), [PCT page](https://kennedymeadows.com/sonoraPCThikers.html), [destination list](https://kennedymeadows.com/packtripdestinations.html) | Ingested bounded mileage, trailhead fee, transport referral and conflicting season reports. Retained page-age warning (2019 construction forecast); no live prices, service schedule or reservable inventory asserted. Other destinations, rides, cabins and linked Triple Crown canister inventory deferred with operator/facility gaps. Operator campfire summaries do not override current Forest Service orders. |
+| Operator-linked Deadman/Baker USFS legacy detail URLs (recid 15027/15011) | Retrieval returned 403; excluded for access in this pass. Historical Brightman descriptions were reviewed, but present campsite/booking inventory remains deferred rather than invented from the operator's first-come statement. |
+| [Caltrans Highway 108 conditions](https://roads.dot.ca.gov/?roadnumber=108) | Inspected linked authority; live road status deliberately not snapshotted as permission or future clearance. Northern access rechecks require current highway/order review. Other highway, operator and booking depth remains in the final source audit. |
+| NFS trails query below | Ingested nine reviewed contiguous slices and a branch-identity corroboration feature. Duplicate PCT jurisdiction fragments, multipart alternatives, motor/winter trails and unreviewed branches excluded from the selected graph. Their presence is not treated as a route connection. |
+
+### Northern geometry acquisition and review
+
+The direct query returned 207 features at 2026-10-06 15:14:14 UTC. Its exact
+parameters and reviewed input SHA-256 are recorded in the committed snapshot.
+The builder rejects a different supplied input hash instead of silently
+accepting a changed live response.
+
+```text
+GET https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0/query
+f=geojson
+where=1=1
+geometry=-119.98,38.20,-119.52,38.37
+geometryType=esriGeometryEnvelope
+inSR=4326
+spatialRel=esriSpatialRelIntersects
+outFields=objectid,trail_name,trail_no,trail_cn,bmp,emp,segment_length,gis_miles,globalid,admin_org
+outSR=4326
+returnGeometry=true
+```
+
+| Physical leg | Source object | Inclusive vertices |
+| --- | ---: | --- |
+| Waterhouse | 9428140 | 0 → 147 |
+| Coyote–Cooper Meadow junction | 9430353 | 0 → 422 |
+| Eagle road crossing–feature break | 9430941 | 254 → 438 |
+| Eagle feature break–northern pass approach | 9430469 | 0 → 77 |
+| PCT south 1 | 9501224 | 0 → 60 |
+| PCT south 2 | 9510733 | 0 → 560 |
+| PCT south 3 | 9513460 | 0 → 39 |
+| PCT south 4 | 9511588 | 0 → 781 |
+| PCT south 5 to Leavitt Lake branch | 9502156 | 0 → 587 |
+
+All PCT feature joins are exact original endpoints. Leavitt Lake branch object
+9475574 ends exactly at selected vertex 587; its source attributes, geometry and
+hash are retained solely to corroborate the explicit junction. Its branch is
+not part of the rendered route. No source point is snapped, rounded, simplified
+or interpolated, and no source length becomes canonical mileage. Native
+EPSG:4269 is normalized by the service to EPSG:4326. Accuracy remains unknown;
+geometry is non-navigation-grade.
+
+The 2010 map's georeferencing was used for review overlays, not tracing. Eagle's
+start is the mapped trail/road crossing, not a surveyed parking location. Its
+endpoint is the northern boundary approach. Coyote's endpoint is the explicit
+20E15/20E08 junction in the named meadow; Waterhouse stops at the named feature
+terminus. The PCT begins south of Highway 108 and does not draw the highway
+crossing from parking. These assignments are descriptive review, not surveyed
+point features or guaranteed modern on-ground alignments.
+
+Kennedy source 9428128 (20E11) stops well south of the resort/parking approach.
+Kennedy Lake source 9505483 (21E03) also starts roughly 45 metres from the
+reviewed 20E11 branch position. Explicit map/guide connections support the
+graph, but neither gap is bridged with fabricated geometry. Both Kennedy routes
+therefore publish **no** GeoJSON, including their potentially usable subparts.
+This preserves the renderer's full-route geometry invariant.
+
+### Northern candidate and verification
+
+`scripts/ingest_emigrant_northern.py` regenerates the one typed ChangeSet against
+a clean `c3d5c621` base. It validates and prepares through the domain write
+service and canonical serializer; it never fetches, approves or publishes.
+Only the existing route-topology and facility-inventory gaps are narrowed;
+previous observations, relationships and ChangeSets remain intact.
+
+Focused tests exercise forward/reverse traversal, shared Kennedy paths, explicit
+missing geometry, drawable source provenance, endpoint/resource distinction,
+unsupported-entry rejection, direct-route and named-objective permit joins,
+Eagle boundary exclusion, trailhead-only scope isolation, camping/fee and road
+identifier conflicts, expired-order answerability, range precision and distinct
+horse-camp facilities. Session-fixture site tests cover directories, HTML/JSON,
+public history, downloadable GeoJSON and the global map. Full-suite and affected
+site-group results are recorded in the PR after completion.
+
+After northern review, the planned remaining combined phases are southern and
+cross-boundary coverage, then boundary/facility/booking/source completion audit.
+Kennedy display geometry remains an explicit follow-up, not silently complete.

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-operator-season",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-operator-season"
+    ],
+    "predicate": "reported_operator_season",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "operator": "Kennedy Meadows Resort & Pack Station",
+      "reported_season": "last Friday in April through Columbus Day in October"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

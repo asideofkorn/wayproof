@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-kennedy-lake-profile",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-kennedy-lake-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-kennedy-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "display_geometry": "not reviewed",
+      "end_node_id": "route-node-emigrant-kennedy-lake-west-approach",
+      "endpoint_status": "trail approach; not campsite or resource centroid",
+      "entry_id": "trailhead-emigrant-kennedy-meadows",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "waterbody-emigrant-kennedy-lake",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

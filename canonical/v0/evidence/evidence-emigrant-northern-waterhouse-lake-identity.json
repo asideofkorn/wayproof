@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-lake-identity",
+    "evidence_id": "evidence-emigrant-northern-waterhouse-lake-identity",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-waterhouse-lake-identity",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

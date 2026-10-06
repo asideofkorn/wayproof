@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-kennedy-lake-mileage-kennedy-destinations",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-kennedy-lake-mileage-kennedy-destinations"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-kennedy-lake",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "not explicitly stated; riding destination",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 7.5,
+      "source_edition": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-start-topology",
+      "evidence-emigrant-northern-eagle-start-geometry"
+    ],
+    "object_id": "trailhead-emigrant-eagle-meadow",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-northern-eagle-start-start",
+    "subject_id": "route-segment-emigrant-northern-eagle-start",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

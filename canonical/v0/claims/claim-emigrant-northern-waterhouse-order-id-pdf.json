@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-order-id-pdf",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-order-id-pdf"
+    ],
+    "predicate": "reported_road_order_identifier",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown",
+      "historical_effective_interval": "2026-06-01 through 2026-06-15",
+      "reported_order": "STF-16-2026-07"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

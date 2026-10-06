@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-pct-south-4-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-pct-south-4-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-segment-emigrant-northern-pct-south-4",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-pct-sonora-break-4",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-pct-sonora-break-3",
+      "support": "PCT south past Leavitt Peak on the mapped mainline; no summit or Latopie Lake spur inferred"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

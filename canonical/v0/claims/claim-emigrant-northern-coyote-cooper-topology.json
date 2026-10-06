@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-cooper-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-cooper-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-coyote-cooper-meadow"
+    ],
+    "subject_id": "route-segment-emigrant-northern-coyote-cooper",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-cooper-meadow-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-coyote-meadow",
+      "support": "20E15 from the mapped Coyote trailhead through the wilderness to its explicit 20E08 junction in Cooper Meadow"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

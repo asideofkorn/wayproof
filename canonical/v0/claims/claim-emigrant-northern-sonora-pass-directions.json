@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-directions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-directions"
+    ],
+    "predicate": "historical_driving_directions",
+    "spatial_scope_ids": [
+      "scope-emigrant-sonora-pass"
+    ],
+    "subject_id": "trailhead-emigrant-sonora-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown; verify MVUM and current orders",
+      "legs": [
+        {
+          "approximate_miles": 38.5,
+          "instruction": "east Highway 108 from Summit Ranger Station to parking on left"
+        }
+      ],
+      "mileage_precision": "approximate",
+      "origin": "Summit Ranger Station (Pinecrest)",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

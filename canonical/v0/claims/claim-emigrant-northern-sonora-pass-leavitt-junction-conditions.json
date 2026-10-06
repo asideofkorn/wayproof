@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-leavitt-junction-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-leavitt-junction-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-emigrant-sonora-pass-leavitt-junction",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "access roads",
+        "trail and crossings",
+        "water",
+        "fire restrictions",
+        "snow and closures"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

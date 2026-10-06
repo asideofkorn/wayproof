@@ -1,0 +1,49 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-meadow-directions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-directions"
+    ],
+    "predicate": "historical_driving_directions",
+    "spatial_scope_ids": [
+      "scope-emigrant-eagle-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-eagle-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown; verify MVUM and current orders",
+      "legs": [
+        {
+          "approximate_miles": 17,
+          "instruction": "east Highway 108 from Summit Ranger Station"
+        },
+        {
+          "approximate_miles": 0.25,
+          "instruction": "right Eagle Meadow Road 5N01"
+        },
+        {
+          "approximate_miles": 0.75,
+          "instruction": "right, cross cattle guard, keep right"
+        },
+        {
+          "approximate_miles": 2,
+          "instruction": "paved road to bridge and Niagara OHV Campground"
+        },
+        {
+          "approximate_miles": 2.25,
+          "instruction": "uphill, turn right, to pavement end"
+        },
+        {
+          "approximate_miles": 1.75,
+          "instruction": "right at large intersection, rough road to Eagle Creek"
+        }
+      ],
+      "mileage_precision": "approximate",
+      "origin": "Summit Ranger Station (Pinecrest)",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

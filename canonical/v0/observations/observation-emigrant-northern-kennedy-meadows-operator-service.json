@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Undated Kennedy operator PCT page advertises a resort–Sonora Pass shuttle. Its current schedule and availability need confirmation; the same page retains a Summer 2019 construction forecast.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-operator-service",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-operator-emigrant-kennedy-pct"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

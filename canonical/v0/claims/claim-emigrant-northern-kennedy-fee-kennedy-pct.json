@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-fee-kennedy-pct",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-fee-kennedy-pct"
+    ],
+    "predicate": "reported_trailhead_fee",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_fee": "unknown",
+      "reported_usd_per_night": 10,
+      "source_edition": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

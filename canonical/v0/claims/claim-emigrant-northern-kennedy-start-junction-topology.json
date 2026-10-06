@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-start-junction-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-start-junction-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake",
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-segment-emigrant-northern-kennedy-start-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-kennedy-lake-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-kennedy-trail-start",
+      "support": "2010 overview northern panel shows the trail south from Kennedy Meadows over the footbridges on Huckleberry Trail 20E11 to the named Kennedy Lake Trail 21E03 branch."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

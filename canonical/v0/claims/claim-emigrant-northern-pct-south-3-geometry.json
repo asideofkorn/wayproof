@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-pct-south-3-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-northern-pct-south-3-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-segment-emigrant-northern-pct-south-3",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.314349126269356,
+        "longitude": -119.64384108823883
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-northern-pct-south-3",
+        "path": "geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson",
+        "sha256": "3f1c624ca1e6d3909e647f702548cca99fcce37370fdbba23c34cae12e195cca"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9513460,
+      "source_globalid": "{1DCEF719-C6FD-4610-80C5-0CA02903061C}",
+      "source_vertex_range_inclusive": [
+        0,
+        39
+      ],
+      "start_coordinate": {
+        "latitude": 38.31649010946745,
+        "longitude": -119.64381613548998
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

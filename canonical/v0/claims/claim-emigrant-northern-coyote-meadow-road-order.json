@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-meadow-road-order",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-meadow-road-order"
+    ],
+    "predicate": "historical_road_closure",
+    "spatial_scope_ids": [
+      "scope-emigrant-coyote-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-coyote-meadow",
+    "temporal_scope": {
+      "ends_on": "2026-06-15",
+      "starts_on": "2026-06-01"
+    },
+    "value": {
+      "activity": "motor vehicle use",
+      "current_status": "unknown",
+      "exemptions": [
+        "FS-7700-48 specifically exempting holder",
+        "official-duty officers or organized rescue/fire forces"
+      ],
+      "order": "STF-16-2026-07",
+      "over_snow_exception": {
+        "minimum_snow_inches": 12,
+        "roads": [
+          "5N01",
+          "4N12",
+          "5N40Y",
+          "7N09",
+          "7N23",
+          "17EV485"
+        ]
+      },
+      "road": "4N12 at 18EV463 junction",
+      "supersedes": "STF-16-2026-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

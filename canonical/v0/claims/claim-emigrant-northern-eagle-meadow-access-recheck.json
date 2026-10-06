@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-meadow-access-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-access-recheck"
+    ],
+    "predicate": "pretrip_access_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-eagle-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-eagle-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "road and highway access",
+        "trailhead camping limits and fees",
+        "restroom operation",
+        "water availability",
+        "stock and vehicle restrictions"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

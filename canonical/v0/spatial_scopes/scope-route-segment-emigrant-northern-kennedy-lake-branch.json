@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-segment-emigrant-northern-kennedy-lake-branch",
+    "kind": "route_segment",
+    "scope_id": "scope-route-segment-emigrant-northern-kennedy-lake-branch"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

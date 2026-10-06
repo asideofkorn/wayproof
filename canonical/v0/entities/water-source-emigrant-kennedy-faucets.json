@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "water-source-emigrant-kennedy-faucets",
+    "kind": "water_source",
+    "name": "Kennedy trailhead water faucets"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

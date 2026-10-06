@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "water-source-emigrant-kennedy-faucets",
+    "kind": "water_source",
+    "scope_id": "scope-water-source-emigrant-kennedy-faucets"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

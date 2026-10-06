@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-map-road",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-map-road"
+    ],
+    "predicate": "mapped_approach_road_label",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "current_designation": "unverified",
+      "road_label": "5N31",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

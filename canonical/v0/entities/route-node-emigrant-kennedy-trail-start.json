@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-kennedy-trail-start",
+    "kind": "route_node",
+    "name": "Kennedy Meadows trail start at south end of main road"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

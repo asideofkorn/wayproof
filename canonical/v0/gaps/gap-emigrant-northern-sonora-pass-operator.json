@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-sonora-pass-operator",
+    "question": "Which Kennedy operator services and dates can be relied on?",
+    "reason": "The home-page season and PCT-page closure wording differ; the PCT page also retains a 2019 construction forecast. Confirm shuttle operation, resupply dates and bookings directly. No bed, campsite, ride or service inventory is verified.",
+    "related_ids": [
+      "claim-emigrant-northern-sonora-pass-operator-service",
+      "claim-emigrant-northern-sonora-pass-operator-season",
+      "claim-emigrant-northern-sonora-pass-operator-season-pct"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

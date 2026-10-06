@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2020-03 Forest Service guide reports a 2-night camping limit at Kennedy trailhead. Brightman p2 describes the paved trailhead site opposite Deadman.",
+    "observation_id": "observation-emigrant-northern-kennedy-limit-brightman-2020",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-brightman-2020"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

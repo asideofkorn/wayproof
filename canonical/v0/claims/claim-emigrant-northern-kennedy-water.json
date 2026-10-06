@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-water",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-water"
+    ],
+    "predicate": "historical_water_facility",
+    "spatial_scope_ids": [
+      "scope-water-source-emigrant-kennedy-faucets",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "water-source-emigrant-kennedy-faucets",
+    "temporal_scope": null,
+    "value": {
+      "coordinates": "not reviewed",
+      "current_flow": "unknown",
+      "potability": "unknown",
+      "reported_locations": [
+        "accessible vault toilet",
+        "horse unloading zone next to Kennedy Meadows Road"
+      ],
+      "source_edition": "2020-03"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

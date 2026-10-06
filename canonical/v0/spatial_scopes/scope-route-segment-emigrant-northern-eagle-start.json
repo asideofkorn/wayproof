@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-segment-emigrant-northern-eagle-start",
+    "kind": "route_segment",
+    "scope_id": "scope-route-segment-emigrant-northern-eagle-start"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-pass-identity",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-pass-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-pass-emigrant-eagle"
+    ],
+    "subject_id": "pass-emigrant-eagle",
+    "temporal_scope": null,
+    "value": {
+      "boundary_status": "boundary pass; no containment asserted",
+      "campsite_inventory": "unknown",
+      "name": "Eagle Pass (Emigrant boundary)",
+      "resource_geometry": "not imported",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

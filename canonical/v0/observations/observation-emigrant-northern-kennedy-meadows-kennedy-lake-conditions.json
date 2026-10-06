@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Check current Forest Service orders and conditions against the selected access and intended itinerary. Historical map connections do not establish current crossings, snow, water, fire restrictions or trail clearance.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-kennedy-lake-conditions",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-alerts"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

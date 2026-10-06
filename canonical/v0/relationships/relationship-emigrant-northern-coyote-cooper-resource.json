@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-cooper-topology",
+      "evidence-emigrant-northern-coyote-cooper-geometry"
+    ],
+    "object_id": "place-emigrant-cooper-meadow",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-northern-coyote-cooper-resource",
+    "subject_id": "route-segment-emigrant-northern-coyote-cooper",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-pct-south-1-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-pct-south-1-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-segment-emigrant-northern-pct-south-1",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-pct-sonora-break-1",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-sonora-pass",
+      "support": "PCT south from Highway 108; display begins on the south side, not at northern parking"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

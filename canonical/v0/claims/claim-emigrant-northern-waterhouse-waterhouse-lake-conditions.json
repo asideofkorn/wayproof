@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-waterhouse-lake-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-waterhouse-lake-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-waterhouse-waterhouse-lake"
+    ],
+    "subject_id": "route-emigrant-waterhouse-waterhouse-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "access roads",
+        "trail and crossings",
+        "water",
+        "fire restrictions",
+        "snow and closures"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

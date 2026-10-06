@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-meadow-parking",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-parking"
+    ],
+    "predicate": "historical_parking_report",
+    "spatial_scope_ids": [
+      "scope-emigrant-eagle-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-eagle-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "reported_capacity": "limited; no stall count",
+      "source_edition": "2012-04",
+      "surface": "native"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

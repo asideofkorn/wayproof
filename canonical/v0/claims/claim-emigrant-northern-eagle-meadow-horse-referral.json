@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-meadow-horse-referral",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-horse-referral"
+    ],
+    "predicate": "nearby_named_facility_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-eagle-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-eagle-meadow",
+    "temporal_scope": null,
+    "value": {
+      "connection": "unreviewed",
+      "current_operation": "unknown",
+      "reported_camp_id": "campground-emigrant-eagle-meadow-horse",
+      "trailhead_identity_distinct": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

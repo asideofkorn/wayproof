@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-lake-identity",
+    "evidence_id": "evidence-emigrant-northern-kennedy-lake-identity",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-kennedy-lake-identity",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

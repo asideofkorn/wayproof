@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "20E15 from the mapped Coyote trailhead through the wilderness to its explicit 20E08 junction in Cooper Meadow Atomic mileage remains unknown; cumulative reports and GIS lengths are not subtracted or measured.",
+    "observation_id": "observation-emigrant-northern-coyote-cooper-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

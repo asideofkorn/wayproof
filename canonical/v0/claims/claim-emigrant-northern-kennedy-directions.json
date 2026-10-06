@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-directions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-directions"
+    ],
+    "predicate": "historical_driving_directions",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown",
+      "origin": "Summit Ranger Station",
+      "reported_highway_miles": 27,
+      "reported_kennedy_road_miles": 0.5,
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

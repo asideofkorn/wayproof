@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 overview northern panel explicitly draws 21E03 east along Kennedy Creek to Kennedy Lake. The selected endpoint is the western trail approach, not the lake centroid or an asserted campsite. Atomic mileage remains unknown; cumulative reports and GIS lengths are not subtracted or measured.",
+    "observation_id": "observation-emigrant-northern-kennedy-lake-branch-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

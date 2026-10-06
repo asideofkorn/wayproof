@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-relief-reservoir-profile"
+    ],
+    "object_id": "route-node-emigrant-relief-east-approach",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-northern-kennedy-meadows-relief-reservoir-end",
+    "subject_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

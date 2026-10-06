@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 Emigrant overview northern panel names Eagle Pass (Emigrant boundary). The resource remains distinct from its selected trail approach; no campsite or water availability is established.",
+    "observation_id": "observation-emigrant-northern-eagle-pass-identity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

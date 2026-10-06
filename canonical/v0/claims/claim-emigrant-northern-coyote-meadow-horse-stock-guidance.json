@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-meadow-horse-stock-guidance",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-meadow-horse-stock-guidance"
+    ],
+    "predicate": "historical_outside_wilderness_stock_guidance",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-coyote-meadow-horse"
+    ],
+    "subject_id": "campground-emigrant-coyote-meadow-horse",
+    "temporal_scope": null,
+    "value": {
+      "current_applicability": "confirm site rules; not a wilderness setback resolution",
+      "from": [
+        "lakes",
+        "streams",
+        "campsites"
+      ],
+      "minimum_reported_feet": 100,
+      "scope": "outside wilderness horse-camping guidance",
+      "source_edition": "2020-02"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

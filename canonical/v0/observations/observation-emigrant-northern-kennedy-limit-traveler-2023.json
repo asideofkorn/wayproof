@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2023 Forest Service guide reports a 1-night camping limit at Kennedy trailhead. Traveler p10 specifies campers and stock entering Emigrant Wilderness.",
+    "observation_id": "observation-emigrant-northern-kennedy-limit-traveler-2023",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-traveler-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

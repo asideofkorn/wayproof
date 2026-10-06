@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2020-03 official guide reports accessible vault toilet at kennedy meadows trailhead. Present operation, count and precise location are unknown.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-restrooms",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-brightman-2020"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

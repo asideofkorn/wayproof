@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-eagle-meadow-eagle-pass",
+    "kind": "route",
+    "name": "Eagle Meadow to Eagle Pass"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

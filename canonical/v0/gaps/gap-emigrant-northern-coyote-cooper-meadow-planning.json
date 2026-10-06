@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-coyote-cooper-meadow-planning",
+    "question": "What remains unverified for Coyote Meadow to Cooper Meadow?",
+    "reason": "The selected approach has a sourced bidirectional graph; atomic mileage, return itinerary, shoreline paths, individual campsites and current conditions remain unknown. Source destination mileages may refer to a different precise endpoint.",
+    "related_ids": [
+      "claim-emigrant-northern-coyote-cooper-meadow-profile",
+      "claim-emigrant-northern-coyote-cooper-meadow-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

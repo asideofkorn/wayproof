@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-waterhouse-waterhouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-northern-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-waterhouse-trail-end",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-waterhouse",
+      "support": "19E31 from the mapped Waterhouse trailhead to its named lake trail terminus"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

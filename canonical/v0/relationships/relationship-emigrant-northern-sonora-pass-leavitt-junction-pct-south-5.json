@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-leavitt-junction-profile"
+    ],
+    "object_id": "route-emigrant-sonora-pass-leavitt-junction",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-northern-sonora-pass-leavitt-junction-pct-south-5",
+    "subject_id": "route-segment-emigrant-northern-pct-south-5",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

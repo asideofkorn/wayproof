@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-order-id-summary",
+    "evidence_id": "evidence-emigrant-northern-waterhouse-order-id-summary",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-waterhouse-order-id-summary",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

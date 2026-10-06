@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-relief-stock-use",
+    "evidence_ids": [
+      "evidence-emigrant-northern-relief-stock-use"
+    ],
+    "predicate": "historical_trail_use",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "temporal_scope": null,
+    "value": {
+      "current_condition": "unknown",
+      "reported_use": "heavy stock use",
+      "source_edition": "2018-11"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

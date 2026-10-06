@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-coyote-meadow-order-id",
+    "question": "Which order identifier describes the June 2026 4N12 restriction?",
+    "reason": "The alert summary says STF-16-2026-78; its structured number/link and signed PDF say STF-16-2026-07. The interval has expired; neither expiration nor an old alert listing proves current road opening. Recheck the current MVUM and orders.",
+    "related_ids": [
+      "claim-emigrant-northern-coyote-meadow-order-id-summary",
+      "claim-emigrant-northern-coyote-meadow-order-id-pdf"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-relief-east-approach",
+    "kind": "route_node",
+    "name": "Relief Reservoir eastern mainline approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

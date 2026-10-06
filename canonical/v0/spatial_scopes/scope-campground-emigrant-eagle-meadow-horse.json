@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "campground-emigrant-eagle-meadow-horse",
+    "kind": "campground",
+    "scope_id": "scope-campground-emigrant-eagle-meadow-horse"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

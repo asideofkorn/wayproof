@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-limit-brightman-2020",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-limit-brightman-2020"
+    ],
+    "predicate": "reported_trailhead_camping_limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_rule_status": "conflicting reports; confirm with manager",
+      "reported_nights": 2,
+      "scope": "trailhead stays for wilderness visitors",
+      "source_edition": "2020-03"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

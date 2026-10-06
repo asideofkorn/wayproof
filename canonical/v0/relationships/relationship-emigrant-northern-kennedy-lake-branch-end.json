@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-lake-branch-topology"
+    ],
+    "object_id": "route-node-emigrant-kennedy-lake-west-approach",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-northern-kennedy-lake-branch-end",
+    "subject_id": "route-segment-emigrant-northern-kennedy-lake-branch",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

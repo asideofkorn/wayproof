@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Undated Kennedy home page reports a season from the last Friday in April through Columbus Day in October.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-operator-season",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-operator-emigrant-kennedy-home"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

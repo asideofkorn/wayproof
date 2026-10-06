@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-relief-reservoir-identity",
+    "evidence_ids": [
+      "evidence-emigrant-northern-relief-reservoir-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-relief-reservoir"
+    ],
+    "subject_id": "waterbody-emigrant-relief-reservoir",
+    "temporal_scope": null,
+    "value": {
+      "boundary_status": "mapped in Emigrant Wilderness",
+      "campsite_inventory": "unknown",
+      "name": "Relief Reservoir (Emigrant Wilderness)",
+      "resource_geometry": "not imported",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

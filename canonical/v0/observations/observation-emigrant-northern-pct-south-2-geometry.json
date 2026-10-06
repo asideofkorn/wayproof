@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails object 9510733, globalid {1BDAB4FE-E8B1-43D0-8626-53069B960311}, 2000 PCT: SONORA PASS - DOROTHY LK; reviewed inclusive normalized vertices 0–560. Endpoint assignments are descriptive and source lengths apply to the original feature.",
+    "observation_id": "observation-emigrant-northern-pct-south-2-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:14:14+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

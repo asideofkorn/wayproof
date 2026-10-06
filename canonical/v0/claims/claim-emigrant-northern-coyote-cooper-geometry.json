@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-cooper-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-cooper-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-coyote-cooper-meadow"
+    ],
+    "subject_id": "route-segment-emigrant-northern-coyote-cooper",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.236066149724046,
+        "longitude": -119.82502370447502
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-northern-coyote-cooper",
+        "path": "geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson",
+        "sha256": "3f1c624ca1e6d3909e647f702548cca99fcce37370fdbba23c34cae12e195cca"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9430353,
+      "source_globalid": "{B94AF8F8-6909-420D-B63C-565E856CE3B3}",
+      "source_vertex_range_inclusive": [
+        0,
+        422
+      ],
+      "start_coordinate": {
+        "latitude": 38.24017991308977,
+        "longitude": -119.87934693278848
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

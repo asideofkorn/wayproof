@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-relief-approach-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-relief-approach-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-segment-emigrant-northern-relief-approach",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-relief-east-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-kennedy-lake-junction",
+      "support": "2010 overview northern panel draws 20E11 south past the Kennedy Lake branch along the east side of Relief Reservoir. The selected endpoint is an eastern mainline approach; no shoreline spur is asserted."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Signed STF-16-2026-07 p1, executed May 29, 2026: motor vehicles prohibited on 4N12 at 18EV463 junction June 1–15, 2026, subject to listed exemptions. This historical interval does not establish present closure or reopening.",
+    "observation_id": "observation-emigrant-northern-coyote-meadow-road-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-northern-road-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

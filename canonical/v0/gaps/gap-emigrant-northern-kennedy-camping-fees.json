@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-kennedy-camping-fees",
+    "question": "What camping limit and fee currently apply at Kennedy trailhead?",
+    "reason": "The 2020 Brightman guide reports two nights and $5/night; Traveler 2023 reports one night for campers and stock entering Emigrant. The undated operator PCT page reports $10/night and also contains an obsolete Summer 2019 construction forecast. Confirm site-specific limits and fees with the Forest Service; general forest occupancy limits do not settle this conflict.",
+    "related_ids": [
+      "claim-emigrant-northern-kennedy-limit-brightman-2020",
+      "claim-emigrant-northern-kennedy-limit-traveler-2023",
+      "claim-emigrant-northern-kennedy-fee-brightman-2020",
+      "claim-emigrant-northern-kennedy-fee-kennedy-pct"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

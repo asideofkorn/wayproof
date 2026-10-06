@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-start-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-start-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-eagle-meadow-eagle-pass"
+    ],
+    "subject_id": "route-segment-emigrant-northern-eagle-start",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-eagle-display-break",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-eagle-meadow",
+      "support": "20E08 south from its road crossing at the mapped Eagle Meadow trailhead; display start is not a parking centroid"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

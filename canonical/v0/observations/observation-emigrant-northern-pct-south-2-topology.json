@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "PCT south, continuous named trail feature with exact shared endpoint Atomic mileage remains unknown; cumulative reports and GIS lengths are not subtracted or measured.",
+    "observation_id": "observation-emigrant-northern-pct-south-2-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-parking",
+    "evidence_id": "evidence-emigrant-northern-sonora-pass-parking",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-sonora-pass-parking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

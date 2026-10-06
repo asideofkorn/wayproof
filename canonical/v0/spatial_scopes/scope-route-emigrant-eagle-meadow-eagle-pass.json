@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-emigrant-eagle-meadow-eagle-pass",
+    "kind": "route",
+    "scope_id": "scope-route-emigrant-eagle-meadow-eagle-pass"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

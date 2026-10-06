@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-topology",
+      "evidence-emigrant-northern-waterhouse-geometry"
+    ],
+    "object_id": "route-node-emigrant-waterhouse-trail-end",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-northern-waterhouse-end",
+    "subject_id": "route-segment-emigrant-northern-waterhouse",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-cooper-meadow-profile",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-cooper-meadow-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-coyote-cooper-meadow"
+    ],
+    "subject_id": "route-emigrant-coyote-cooper-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "display_geometry": "reviewed, non-navigation-grade",
+      "end_node_id": "route-node-emigrant-cooper-meadow-junction",
+      "endpoint_status": "trail approach; not campsite or resource centroid",
+      "entry_id": "trailhead-emigrant-coyote-meadow",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "place-emigrant-cooper-meadow",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-kennedy-lake-west-approach",
+    "kind": "route_node",
+    "name": "Kennedy Lake western trail approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

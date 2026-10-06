@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-toilet-project",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-toilet-project"
+    ],
+    "predicate": "published_facility_project",
+    "spatial_scope_ids": [
+      "scope-restroom-emigrant-sonora-pass",
+      "scope-emigrant-sonora-pass"
+    ],
+    "subject_id": "restroom-emigrant-sonora-pass",
+    "temporal_scope": null,
+    "value": {
+      "completion_status": "unknown",
+      "planned_completion_year": 2026,
+      "project": "new vault toilets at Sonora Pass day use area",
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

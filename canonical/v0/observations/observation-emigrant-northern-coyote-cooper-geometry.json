@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails object 9430353, globalid {B94AF8F8-6909-420D-B63C-565E856CE3B3}, 20E15 COOPER MEADOW; reviewed inclusive normalized vertices 0–422. Endpoint assignments are descriptive and source lengths apply to the original feature.",
+    "observation_id": "observation-emigrant-northern-coyote-cooper-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:14:14+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-26 April 2012 directions from Summit Ranger Station: east Highway 108 from Summit Ranger Station: 17 miles; right Eagle Meadow Road 5N01: 0.25 miles; right, cross cattle guard, keep right: 0.75 miles; paved road to bridge and Niagara OHV Campground: 2 miles; uphill, turn right, to pavement end: 2.25 miles; right at large intersection, rough road to Eagle Creek: 1.75 miles. The guide expressly qualifies all mileages as approximate.",
+    "observation_id": "observation-emigrant-northern-eagle-meadow-directions",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}
