@@ -1,0 +1,44 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-grouse-approach-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-approach-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-bell-meadow-grouse-lake",
+      "scope-route-emigrant-crabtree-grouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-grouse-approach",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.152425821808905,
+        "longitude": -119.8696170908318
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-western-grouse-approach",
+        "path": "geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson",
+        "sha256": "5cca60fe36da261b084bbd7b258964fee57c6b6a4f02edb166dad0acd7bb71ee"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9429412,
+      "source_globalid": "{C7292D7C-0FDE-4FAA-8861-BBB2C417C09A}",
+      "source_vertex_range_inclusive": [
+        0,
+        120
+      ],
+      "start_coordinate": {
+        "latitude": 38.15593756534284,
+        "longitude": -119.88032173298294
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

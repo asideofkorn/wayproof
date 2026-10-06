@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-grouse-approach-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-approach-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-bell-meadow-grouse-lake",
+      "scope-route-emigrant-crabtree-grouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-grouse-approach",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-grouse-north-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-grouse-display-break",
+      "support": "20E17 continues along the north side of Grouse; lake detail map labels To Crabtree Trailhead"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

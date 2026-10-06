@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-facility-inventory",
     "question": "What camps, toilets, water sources and parking are available along the approach?",
-    "reason": "Dispersed camping is represented, but individual lake sites, trailhead facilities, Kennedy/Aspen operators and developed approach campgrounds are deferred. Historical parking descriptions are not live inventory.",
+    "reason": "Historical western trailhead camping, driving and facility reports now include Crabtree restrooms and 2023 corroboration. Current operation, individual campsites, water supplies, facility coordinates, Kennedy/Aspen booking inventory and developed approach campgrounds remain unresolved. Historical parking is not live inventory.",
     "related_ids": [
       "wilderness-emigrant",
       "claim-emigrant-access-recheck"

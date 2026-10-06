@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-guide-night-limit",
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-guide-night-limit"
+    ],
+    "predicate": "historical_lake_camping_limit",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-powell-lake"
+    ],
+    "subject_id": "waterbody-emigrant-powell-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_interpretation": "requires foundation wilderness recheck",
+      "reported_nights": 1,
+      "source_edition": "2018-11"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

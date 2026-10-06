@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-north-chewing-topology",
+      "evidence-emigrant-western-north-chewing-geometry"
+    ],
+    "object_id": "route-node-emigrant-burst-lake-valley-junction",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-western-north-chewing-start",
+    "subject_id": "route-segment-emigrant-western-north-chewing",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

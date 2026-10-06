@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-burst-powell-junction-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-burst-powell-junction-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-powell-lake",
+      "scope-route-emigrant-gianelli-chewing-gum-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-burst-powell-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-powell-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-burst-display-break",
+      "support": "20E14 continues east toward the Powell Lake branch"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

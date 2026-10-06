@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-bell-meadow-access-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-western-bell-meadow-access-recheck"
+    ],
+    "predicate": "pretrip_access_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-bell-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bell-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "parking and road access",
+        "restroom operation",
+        "trailhead camping limits",
+        "fire orders"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

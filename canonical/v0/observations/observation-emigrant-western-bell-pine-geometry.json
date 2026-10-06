@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails feature 9431555, globalid {EF38ACD6-5434-4D6D-951B-0409DCE1EC92}, 20E17 BELL MEADOW: reviewed inclusive normalized source vertices 0 through 343. Matched against official trail maps; source lengths describe the entire original feature. No coordinate is snapped and no mileage is computed.",
+    "observation_id": "observation-emigrant-western-bell-pine-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T00:09:34+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

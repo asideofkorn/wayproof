@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-western-powell-mileage",
+    "question": "Which Powell Lake approach mileage applies?",
+    "reason": "The 2012 table reports 2.3 miles, the 2018 guide and 2021 schematic 2/2.0, and the undated GIF 1.8. Retain the reports independently; endpoint and edition alignment is unresolved. Do not subtract destination totals into atomic lengths.",
+    "related_ids": [
+      "claim-emigrant-western-gianelli-powell-table",
+      "claim-emigrant-western-powell-favorite-hikes",
+      "claim-emigrant-western-powell-mileage-diagram",
+      "claim-emigrant-western-powell-trail-map"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

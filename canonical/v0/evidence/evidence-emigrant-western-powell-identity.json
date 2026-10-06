@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-identity",
+    "evidence_id": "evidence-emigrant-western-powell-identity",
+    "notes": "",
+    "observation_id": "observation-emigrant-western-powell-identity",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

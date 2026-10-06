@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-bear-groundhog-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-bear-groundhog-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-gem-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-bear-groundhog",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-crabtree-groundhog-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-bear-junction",
+      "support": "20E16 continues east past Piute Meadow to the drawn 19E90 Groundhog Meadow branch"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

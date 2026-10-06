@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails feature 9429323, globalid {C2BC6336-47AF-4373-BBF9-B3E9BD88D532}, 20E14 BURST ROCK: reviewed inclusive normalized source vertices 0 through 67. Matched against official trail maps; source lengths describe the entire original feature. No coordinate is snapped and no mileage is computed.",
+    "observation_id": "observation-emigrant-western-gianelli-burst-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T00:09:34+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

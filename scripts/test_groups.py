@@ -14,6 +14,7 @@ TESTS = ROOT / "tests"
 
 SITE = {
     "test_emigrant_geometry.py",
+    "test_emigrant_western.py",
     "test_emigrant_crabtree_lakes.py",
     "test_emigrant_foundation.py",
     "test_bounded_analysis_site.py",

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-lake-valley-topology",
+    "evidence_id": "evidence-emigrant-western-powell-lake-valley-topology",
+    "notes": "",
+    "observation_id": "observation-emigrant-western-powell-lake-valley-topology",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

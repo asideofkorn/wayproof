@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-lake-valley-lower-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-lake-valley-lower-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-chewing-gum-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-lake-valley-lower",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-lake-valley-display-break",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-lake-valley-junction",
+      "support": "19E21 branches northeast from Crabtree mainline toward Lake Valley"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

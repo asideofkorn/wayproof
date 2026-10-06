@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-gem-operator-mileage",
+    "evidence_ids": [
+      "evidence-emigrant-western-gem-operator-mileage"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-gem-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-gem-lake",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "not explicitly stated",
+      "not_atomic_distance": true,
+      "reported_miles": 10,
+      "source_edition": "unknown",
+      "travel_context": "operator riding destination"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

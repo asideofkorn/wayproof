@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Minimum Camping Distance Map, page 1 (2021 filename): camping less than 100 feet from water, trails or posted signs is prohibited; map is reference only.",
+    "observation_id": "observation-emigrant-western-grouse-minimum",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-grouse-camping-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

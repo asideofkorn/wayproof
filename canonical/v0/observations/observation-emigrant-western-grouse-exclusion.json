@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Grouse Lake minimum camping map states no legal place to camp between the trail and lake because of their proximity.",
+    "observation_id": "observation-emigrant-western-grouse-exclusion",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-grouse-camping-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

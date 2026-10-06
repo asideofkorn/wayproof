@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-crabtree-geometry-limitations",
     "question": "What does the Crabtree route display geometry establish?",
-    "reason": "Reviewed USFS source vertices now draw the existing Camp/Bear approaches. Accuracy is unspecified and this is not navigation-grade or a current-condition survey. Camp western access is a descriptive display position at a source-feature break, not a lake centroid or campsite. The nearby Lake Valley source endpoint has a small coordinate mismatch; no branch is snapped or added. Other Emigrant routes, lake shores, facility positions and the wilderness boundary still lack reviewed display geometry.",
+    "reason": "Reviewed USFS vertices draw the Camp/Bear approaches and separately reviewed western routes. Accuracy is unknown and geometry is not navigation-grade or current-condition evidence. Camp western access is a descriptive source-feature break, not a lake centroid or campsite. Lake Valley has a small unsnapped endpoint mismatch, explicitly retained in its separately sourced branch. Other Emigrant routes, shorelines, facility positions and wilderness boundary remain without reviewed geometry.",
     "related_ids": [
       "claim-emigrant-geometry-start-lake-valley",
       "claim-emigrant-geometry-lake-valley-pine-valley",

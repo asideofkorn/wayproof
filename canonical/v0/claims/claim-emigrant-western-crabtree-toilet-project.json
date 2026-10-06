@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-toilet-project",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-toilet-project"
+    ],
+    "predicate": "published_facility_project",
+    "spatial_scope_ids": [
+      "scope-restroom-emigrant-crabtree",
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "restroom-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "completion_status": "unknown",
+      "planned_completion_year": 2026,
+      "project": "new vault toilets",
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

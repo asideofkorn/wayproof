@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-restrooms-2012"
+    ],
+    "object_id": "restroom-emigrant-crabtree",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-western-crabtree-restrooms-access",
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

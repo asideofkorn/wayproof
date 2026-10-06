@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-lake-valley-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-lake-valley-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-chewing-gum-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-powell-lake-valley",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-burst-lake-valley-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-powell-junction",
+      "support": "20E14 continues to the explicitly drawn 19E21 Lake Valley junction"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-gianelli-powell-profile"
+    ],
+    "object_id": "route-node-emigrant-powell-trail-end",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-gianelli-powell-end",
+    "subject_id": "route-emigrant-gianelli-powell-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

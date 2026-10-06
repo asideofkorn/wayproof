@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-grouse-exclusion",
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-exclusion"
+    ],
+    "predicate": "camping_exclusion",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-grouse-lake"
+    ],
+    "subject_id": "waterbody-emigrant-grouse-lake",
+    "temporal_scope": null,
+    "value": {
+      "camping": "prohibited by mapped minimum distances",
+      "individual_sites": "not inventoried",
+      "location": "between trail and Grouse Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

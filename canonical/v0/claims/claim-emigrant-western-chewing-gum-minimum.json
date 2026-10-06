@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-chewing-gum-minimum",
+    "evidence_ids": [
+      "evidence-emigrant-western-chewing-gum-minimum"
+    ],
+    "predicate": "camping_setback",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-chewing-gum-lake"
+    ],
+    "subject_id": "waterbody-emigrant-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "from": [
+        "water",
+        "trails",
+        "posted signs"
+      ],
+      "map_is_reference_only": true,
+      "minimum_feet": 100
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -29,19 +29,22 @@ Relevant legacy material was recovered before researching:
    group limits and food storage. Other restrictions remain sourced claims;
    Wayproof does not automatically assess elevation, lake buffers, stock counts,
    special-order exemptions or permitted equipment from this foundation.
-2. **Western approaches and lake routes:** first deliver the bounded Crabtree–Camp/Bear approach (batch 2a below), then reconcile the 2012 mileage table,
-   2021 schematic, overview map and detail map; model Crabtree, Gianelli and
-   Bell Meadow corridors with explicit junctions, alternatives and lake spurs.
-   Test both directions and preserve approximate/conflicting mileage.
-3. **Northern approaches and passes:** Kennedy Meadows, Sonora Pass, Coyote,
-   Waterhouse and Eagle Meadow; lake/pass objectives, stock limitations,
-   separately supported route-connected facilities and current road orders.
+2. **Western approaches, geometry and facilities:** Crabtree–Camp/Bear topology
+   (#204, merged) and its display geometry (#205, merged) established the model.
+   The combined western batch below adds Gianelli/Powell/Chewing Gum,
+   Bell Meadow/Grouse, Crabtree connections and the deeper Gem approach, plus
+   trailhead facility/camping evidence in one PR.
+3. **Northern approaches and facilities:** Kennedy Meadows, Sonora Pass, Coyote,
+   Waterhouse and Eagle Meadow; associated lake/pass objectives, geometry,
+   stock limitations, facilities and current road orders.
 4. **Southern and cross-boundary approaches:** Bourland, Box Springs,
    Shingle Springs/Cherry and Leavitt-side entries; reuse Yosemite/Hoover
-   entities, review entry-agency permits and quota/food/dog differences.
-5. **Deep inventory and coverage audit:** individual approach campgrounds and
-   reservation inventory, operators, sanitation/water evidence, authoritative
-   boundary matching, lake camping maps and remaining discovered sources.
+   entities and review entry-agency permits and quota/food/dog differences.
+5. **Completion and source audit:** authoritative wilderness boundary matching,
+   remaining facility/booking/operator inventory, route gaps and source
+   dispositions. Split a further PR only if material conflicts or cross-boundary
+   rules need separate review. This sequence is a work plan, not a promise that
+   every existing trail or campsite can be established from available evidence.
 
 Each subsequent canonical PR starts from refreshed main after review and has
 one ChangeSet. Foundation PR #203 was merged with explicit user authorization;
@@ -229,3 +232,146 @@ unknown/estimated mileage preservation; named-intent exit limits; and scoped
 geometry rechecks. Existing bidirectional traversal and permit tests remain.
 Crabtree restrooms, the historical trailhead one-night camping limit, Gianelli
 and Bell Meadow route depth, and other planned coverage remain in later batches.
+
+
+## Combined western batch: six approaches and access depth
+
+### Starting inventory and delivered scope
+
+Started from latest `origin/main` `6304e247` (merged #205), with no local changes.
+Existing coverage: one wilderness, ten trailheads, two lake resources, two
+Crabtree approaches, five physical segments with reviewed geometry, three
+executable requirements, and foundation/route/geometry rechecks. Durable
+identities, sources, requirements and the five existing segments are reused.
+
+This batch adds **six approach routes, four lakes, twelve descriptive trail
+nodes, fourteen physical segments and one collective restroom facility**.
+Crabtree restrooms have no established unit count. Historical parking claims
+already exist and are not duplicated into an invented parking-site inventory.
+The six approaches have connected, bidirectional topology and drawable geometry:
+
+| Approach | Physical legs | Reported mileage retained independently |
+| --- | ---: | --- |
+| Gianelli to Powell Lake | 3 | 2012: 2.3; 2018: 2; 2021 schematic: estimated 2.0; undated GIF: 1.8 |
+| Gianelli to Chewing Gum Lake | 4 | 2012: 4.1 one way; operator: 4.1, convention unspecified |
+| Crabtree to Chewing Gum Lake | 3 | 2012: 4.4 one way; operator calls this approach poorly marked, date/current condition unknown |
+| Bell Meadow to Grouse Lake | 3 | 2012: 4.8 one way |
+| Crabtree to Grouse Lake | 5 | Operator: 4 miles, convention unspecified |
+| Crabtree to Gem Lake | 7 | 2012: 9.5 one way; operator: 10, convention unspecified |
+
+All **new atomic distances remain unknown**. Cumulative destination totals,
+coarse schematic labels and original GIS lengths are not subtracted, measured
+or summed to manufacture missing leg distances. The earlier Bear branch keeps
+its separate estimated 1.0-mile fact and is not part of the Gem route.
+
+The two Gianelli routes share their first two physical segments. The two Grouse
+routes share their final two. Crabtree–Chewing Gum reuses the first existing
+Crabtree leg; Crabtree–Grouse reuses the first two; Crabtree–Gem reuses the first
+four Camp/Bear mainline legs, then continues east through the Piute corridor
+and turns onto 20E98. Named Chewing Gum and Grouse requests require an approach
+choice; the resolver does not select one arbitrarily. Selected lake requests
+retain an unknown exit rather than inventing a return itinerary.
+
+This delivers bounded western approach topology/display and historical access
+inventory depth. It is **not destination route-completeness or source-completeness**:
+individual campsites, shoreline access, water availability, full mileage,
+current operating conditions and remaining western branches are explicit gaps.
+The twelve nodes are descriptive graph/display positions; no new official
+junction names, surveyed lake points or facility coordinates are asserted.
+
+### Source dispositions
+
+| Source | Disposition in this batch |
+| --- | --- |
+| 2010 official geospatial overview, western panel | Ingested explicit 20E14, 19E21, 19E10, 20E17, 20E16 and 20E98 connections, plus lake identities. Map georeferencing was used to review dataset positions, never trace a boundary or compute distance. Other branches remain deferred with topology gap. |
+| 2012 mileage table, Gianelli/Bell Meadow/Crabtree columns | Ingested the selected destination totals above as reports; precise endpoints remain unspecified. Deeper unselected destinations remain deferred. |
+| 2018 Favorite Hiking Trails page 2; 2021 schematic; undated GIF | Conflicting and preserved Powell totals. Guide identifies Gianelli/Burst Rock/Powell progression. Burst Rock is not modeled as a summit objective; the source-feature break east of it is only a trail node. Existing Camp/Bear facts remain unchanged. |
+| Chewing Gum and Grouse minimum camping maps, page 1, 2021 filenames | Visually reviewed and ingested trail/lake distinction; 100-foot minimum versus 200-foot LNT recommendation. Grouse trail/lake camping exclusion and Chewing Gum warning that existing sites may be illegal are explicit. No campsite is declared legal or available. |
+| National Forest System Trails public layer | Ingested bounded slices below, matched to named trails and official map connections. All unrelated returned features excluded from committed snapshot. Source lengths/IDs/hashes retained; native EPSG:4269, service-normalized EPSG:4326. |
+| April 2012 Trailheads guide | Ingested western trailhead camping opportunity reports, one-night trailhead limit, Crabtree restrooms, historical no-facilities statements at Gianelli/Bell Meadow, and approximate driving directions. Existing historical parking descriptions reused. Current inventory and road status remain unknown. |
+| [Traveler 2023](https://www.fs.usda.gov/sites/nfs/files/legacy-media/stanislaus/Traveler%202023.pdf), pages 8 and 10 | Ingested Crabtree vault-toilet and one-night camper/stock stay reports. Planned toilet improvements described as complete-by-2026 are retained as a plan, not proof of completion. Kennedy and other forest facilities deferred to their regional batches. |
+| [Aspen Chewing Gum](https://www.aspenmeadowpackstation.com/index.php/adventures-menu/destinations/gianellis-trail-head-menu/chewing-gum-lake-menu), [Grouse](https://www.aspenmeadowpackstation.com/index.php/adventures-menu/destinations/crabtree-trail-head-menu/grouse-lake-menu), [Gem](https://www.aspenmeadowpackstation.com/index.php/adventures-menu/destinations/crabtree-trail-head-menu/gem-menu) | Ingested attributed mileage reports, Chewing Gum route-finding qualification and Grouse one-night report. Publication date and riding-distance convention unknown. Fisheries, campsite/firewood availability and marketing descriptions are not promoted to current inventory. No copyrighted artifacts redistributed. |
+| Aspen home, trail rides, booking/referral hierarchy | Inspected; booking, seasonal operation and remaining destination inventory deferred to completion/facility audit. No prices, capacity or availability imported. No inference that riding and hiking times are equivalent. |
+| [Occupancy alert](https://www.fs.usda.gov/r05/stanislaus/alerts/forest-order-limiting-occupancy-and-use-remains-effect) and linked signed STF-16-2026-09 | Ingested dated forest occupancy context (14 consecutive days in 30 for developed sites; 21 total days/calendar year in undeveloped locations within one Ranger District), preserving exemptions. No developed/undeveloped classification assigned to these trailheads. Conflicting supersession preserved: signed PDF footer names STF-16-2024-10; webpage names STF-16-2022-06. These general limits do not resolve or override trailhead-specific one-night guidance. No new executable camping rule. |
+| Current alert index and [seasonal-extension detail](https://www.fs.usda.gov/r05/stanislaus/alerts/extension-seasonal-road-closures) | Inspected. That alert lists 4N12/5N01 and Calaveras roads and carries April 16–June 1, 2026 dates. This is not proof that Crabtree/Gianelli/Bell roads are open. Current MVUM, fire orders and route-specific road status require recheck; other regional closures retained for later batches. |
+| Foundation permits, signed Emigrant order, regulations and conditions | Already represented and reused. Selected routes inherit wilderness requirements and existing one-night/sanitation/stock/stove conflicts. Trailhead-only requests do not inherit an overnight wilderness permit obligation. |
+| Bell Meadow Research Natural Area | Excluded as a distinct managed-land/ecology subject, not an alternative identity for Bell Meadow Trailhead. No new land entity or unsourced boundary introduced. |
+
+Historical PDFs reviewed in preceding batches were reused; new Traveler,
+operator and occupancy sources were retrieved October 6 UTC. Unknown event dates
+remain null. Retrieval/review context never establishes present operation.
+
+### Geometry acquisition and vertex review
+
+Both #205 and this batch use the same reviewed 45-feature input, retrieved
+2026-10-06 at 00:09:34 UTC. Exact acquisition parameters (including the previously
+requested #205 follow-up) are now recorded here and in the new snapshot:
+
+```text
+GET https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0/query
+f=geojson
+where=1=1
+geometry=-119.91,38.13,-119.70,38.27
+geometryType=esriGeometryEnvelope
+inSR=4326
+spatialRel=esriSpatialRelIntersects
+outFields=objectid,trail_name,trail_no,trail_cn,bmp,emp,segment_length,gis_miles,globalid,admin_org
+outSR=4326
+returnGeometry=true
+```
+
+No geometryPrecision, maxAllowableOffset, quantization or simplification was
+requested. Intersecting features are returned whole; the Bell Meadow trailhead
+can therefore lie west of the query envelope. Retrieval does not establish
+survey date or coordinate accuracy. The bounded output retains original
+attributes, global IDs, full source-geometry SHA-256, source vertex counts,
+inclusive zero-based ranges and a hash checked by the consumer.
+
+| Physical leg | Source object | Inclusive vertices |
+| --- | ---: | --- |
+| Gianelli–Burst display break | 9429323 | 0 → 67 |
+| Burst break–Powell junction | 9505484 | 0 → 73 |
+| Powell spur | 9430968 | 0 → 22 |
+| Powell junction–Lake Valley junction | 9505484 | 73 → 290 |
+| Lake Valley junction–Chewing Gum approach | 9429539 | 267 → 200 |
+| Lower Lake Valley | 9430389 | 0 → 167 |
+| Lake Valley break–Chewing Gum approach | 9429539 | 0 → 200 |
+| Bell Meadow–Pine Valley junction | 9431555 | 0 → 343 |
+| Pine Valley junction–Grouse source break | 9431555 | 343 → 436 |
+| Grouse break–north approach | 9429412 | 0 → 120 |
+| Pine Valley connector | 9430585 | 0 → 146 |
+| Bear junction–Groundhog junction | 9430618 | 806 → 477 |
+| Groundhog junction–Gem junction | 9430618 | 477 → 257 |
+| Gem junction–east approach | 9429611 | 71 → 40 |
+
+The official overview establishes the mapped network, the named Powell spur and
+2018 guide corroborate Powell access, and lake detail maps refine Chewing Gum
+and Grouse approaches. Dataset vertices were overlaid using PDF georeferencing
+for visual review. Chewing Gum vertex 200 follows its west side; Grouse vertex
+120 follows its north side; Gem vertex 40 follows its east side. These chosen
+positions are trail display endpoints, not surveyed lake destinations or
+campsites. Source-feature breaks do not become asserted physical junctions.
+
+Three joins retain tiny source offsets: Lake Valley/Crabtree (as documented in
+#205), Powell spur/Burst Rock, and Pine Valley/Bell Meadow. No point is snapped,
+interpolated or rounded. Map/guide evidence supplies connectivity independently
+of those offsets. The renderer accepts the original nearby endpoints under its
+existing tolerance; the batch changes no geometry tolerance or topology code.
+
+### Candidate and verification
+
+`scripts/ingest_emigrant_western.py` creates one typed DRAFT ChangeSet, validates
+it, prepares a detached candidate and writes through the canonical serializer.
+Use a clean `6304e247` checkout as `--base`; `--reviewed-input` is optional when
+reusing the committed snapshot. The builder never fetches or publishes.
+Four existing coverage gaps are narrowed; earlier observations and ChangeSets
+remain intact. Two manifests distinguish selected routes/lakes from western
+trailhead facilities. Forest-wide occupancy context is scoped to wilderness
+contexts, not used to infer that a trailhead-only stay enters wilderness.
+
+Tests exercise both directions, exact shared physical/geometry reuse, distinct
+lake versus trail endpoints, approach ambiguity, rejection of unrelated entry,
+unknown atomic mileage, independent reports, current-condition and facility
+scope isolation, permit requirement joins, historical availability, order
+conflicts/effective intervals, generated directories/HTML/JSON and downloadable
+GeoJSON/global map coverage. Existing Camp/Bear regressions remain unchanged.

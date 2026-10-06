@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-bell-meadow-grouse-profile"
+    ],
+    "object_id": "route-emigrant-bell-meadow-grouse-lake",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-emigrant-western-bell-meadow-grouse-objective",
+    "subject_id": "waterbody-emigrant-grouse-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

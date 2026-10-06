@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-41 November 2018 page 2 reports a one-night camping limit for Powell Lake. It does not reconcile the newer one-consecutive-night versus per-trip wilderness wording.",
+    "observation_id": "observation-emigrant-western-powell-guide-night-limit",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-favorite-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

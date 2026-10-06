@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-grouse-operator-night-limit",
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-operator-night-limit"
+    ],
+    "predicate": "reported_lake_camping_limit",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-grouse-lake"
+    ],
+    "subject_id": "waterbody-emigrant-grouse-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_interpretation": "requires foundation wilderness recheck",
+      "reported_nights": 1,
+      "source_date": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

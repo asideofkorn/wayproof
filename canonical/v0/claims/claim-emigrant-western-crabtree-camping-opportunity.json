@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-camping-opportunity",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-camping-opportunity"
+    ],
+    "predicate": "historical_camping_opportunity",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "reported_description": "fair",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

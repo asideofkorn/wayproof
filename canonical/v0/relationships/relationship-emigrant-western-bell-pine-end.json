@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-bell-pine-topology",
+      "evidence-emigrant-western-bell-pine-geometry"
+    ],
+    "object_id": "route-node-emigrant-bell-pine-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-bell-pine-end",
+    "subject_id": "route-segment-emigrant-western-bell-pine",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

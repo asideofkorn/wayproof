@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-groundhog-gem-topology",
+      "evidence-emigrant-western-groundhog-gem-geometry"
+    ],
+    "object_id": "route-node-emigrant-crabtree-gem-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-groundhog-gem-end",
+    "subject_id": "route-segment-emigrant-western-groundhog-gem",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

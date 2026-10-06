@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-restrooms-2012",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-restrooms-2012"
+    ],
+    "predicate": "historical_facility_presence",
+    "spatial_scope_ids": [
+      "scope-restroom-emigrant-crabtree",
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "restroom-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "count": "unknown",
+      "current_availability": "unknown",
+      "reported_present": true,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

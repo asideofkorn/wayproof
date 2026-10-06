@@ -1,0 +1,44 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-burst-powell-junction-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-western-burst-powell-junction-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-powell-lake",
+      "scope-route-emigrant-gianelli-chewing-gum-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-burst-powell-junction",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.201893109061224,
+        "longitude": -119.85956814704068
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-western-burst-powell-junction",
+        "path": "geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson",
+        "sha256": "5cca60fe36da261b084bbd7b258964fee57c6b6a4f02edb166dad0acd7bb71ee"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9505484,
+      "source_globalid": "{A67C6A39-1A55-4D55-B9C7-AFD31CBE40F7}",
+      "source_vertex_range_inclusive": [
+        0,
+        73
+      ],
+      "start_coordinate": {
+        "latitude": 38.200986162869924,
+        "longitude": -119.8746181583769
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

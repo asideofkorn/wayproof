@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-27 June 2012, page 1: Crabtree column reports Gem Lake at 9.5 miles. Printed destination total; exact lake endpoint is unspecified.",
+    "observation_id": "observation-emigrant-western-crabtree-gem-table",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-mileage-table"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

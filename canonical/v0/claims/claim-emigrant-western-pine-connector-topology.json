@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-pine-connector-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-pine-connector-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-grouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-pine-connector",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-bell-pine-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-pine-valley-junction",
+      "support": "19E10 connects Crabtree 20E16 to Bell Meadow 20E17 in Pine Valley"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

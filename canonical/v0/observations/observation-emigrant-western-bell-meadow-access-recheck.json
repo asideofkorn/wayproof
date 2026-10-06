@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Forest alert index and individual road/fire orders must be checked against the selected access. Historical directions, parking descriptions and facility reports are not current clearance.",
+    "observation_id": "observation-emigrant-western-bell-meadow-access-recheck",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-alerts"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

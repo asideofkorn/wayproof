@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-approach-topology",
+      "evidence-emigrant-western-grouse-approach-geometry"
+    ],
+    "object_id": "route-node-emigrant-grouse-north-approach",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-grouse-approach-end",
+    "subject_id": "route-segment-emigrant-western-grouse-approach",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

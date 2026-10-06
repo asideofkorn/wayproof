@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-grouse-display-break",
+    "kind": "route_node",
+    "name": "Western Grouse approach source-feature break"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

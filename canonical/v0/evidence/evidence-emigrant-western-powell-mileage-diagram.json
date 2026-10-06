@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-mileage-diagram",
+    "evidence_id": "evidence-emigrant-western-powell-mileage-diagram",
+    "notes": "",
+    "observation_id": "observation-emigrant-western-powell-mileage-diagram",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

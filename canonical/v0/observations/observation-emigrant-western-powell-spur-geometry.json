@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails feature 9430968, globalid {C539E29C-748A-4018-821E-D53108F78B61}, 20E14A POWELL LAKE SPUR: reviewed inclusive normalized source vertices 0 through 22. Matched against official trail maps; source lengths describe the entire original feature. No coordinate is snapped and no mileage is computed.",
+    "observation_id": "observation-emigrant-western-powell-spur-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T00:09:34+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

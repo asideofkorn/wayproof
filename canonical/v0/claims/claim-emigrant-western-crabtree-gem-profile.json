@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-gem-profile",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-gem-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-gem-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-gem-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "end_node_id": "route-node-emigrant-gem-east-approach",
+      "endpoint_status": "reviewed trail approach; not lake centroid or campsite",
+      "entry_id": "trailhead-emigrant-crabtree",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "waterbody-emigrant-gem-lake",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
