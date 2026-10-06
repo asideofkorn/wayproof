@@ -1,0 +1,181 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20261006-emigrant-crabtree-geometry",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-usfs-emigrant-nfs-trail-geometry.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "source-usfs-emigrant-nfs-trail-geometry",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-geometry-start-lake-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "observation-emigrant-geometry-start-lake-valley",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-geometry-lake-valley-pine-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "observation-emigrant-geometry-lake-valley-pine-valley",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-geometry-pine-valley-camp.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "observation-emigrant-geometry-pine-valley-camp",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-geometry-camp-bear-junction.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "observation-emigrant-geometry-camp-bear-junction",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-emigrant-geometry-bear-spur.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "observation-emigrant-geometry-bear-spur",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-geometry-start-lake-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "evidence-emigrant-geometry-start-lake-valley",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-geometry-lake-valley-pine-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "evidence-emigrant-geometry-lake-valley-pine-valley",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-geometry-pine-valley-camp.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "evidence-emigrant-geometry-pine-valley-camp",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-geometry-camp-bear-junction.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "evidence-emigrant-geometry-camp-bear-junction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-emigrant-geometry-bear-spur.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "evidence-emigrant-geometry-bear-spur",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-geometry-start-lake-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-geometry-start-lake-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "claim-emigrant-geometry-start-lake-valley",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-geometry-lake-valley-pine-valley"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-geometry-lake-valley-pine-valley.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "claim-emigrant-geometry-lake-valley-pine-valley",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-geometry-pine-valley-camp"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-geometry-pine-valley-camp.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "claim-emigrant-geometry-pine-valley-camp",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-geometry-camp-bear-junction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-geometry-camp-bear-junction.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "claim-emigrant-geometry-camp-bear-junction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-emigrant-geometry-bear-spur"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-emigrant-geometry-bear-spur.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "claim-emigrant-geometry-bear-spur",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/gaps/gap-emigrant-crabtree-geometry-limitations.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "gap-emigrant-crabtree-geometry-limitations",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-emigrant-crabtree-geometry-recheck.json",
+      "reason": "Attach reviewed federal display geometry without changing graph or mileage.",
+      "record_id": "result-emigrant-crabtree-geometry-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Make the existing Crabtree lake approaches geographically drawable with reviewed USFS vertices and explicit display limits."
+}

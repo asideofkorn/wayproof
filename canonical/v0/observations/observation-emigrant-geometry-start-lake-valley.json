@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Public National Forest System Trails layer, feature 9428086, globalid {DD41DD87-9AAE-4FE1-B078-0427EEE709F1}, trail 20E16 CRABTREE: reviewed EPSG:4326 source vertices 182 through 172 are retained for display. Source segment_length 2.232 and gis_miles 2.231 describe the original feature, not a computed length for this slice. Coordinate accuracy and current field condition are not established by retrieval.",
+    "observation_id": "observation-emigrant-geometry-start-lake-valley",
+    "observed_at": null,
+    "observer": "Wayproof named-feature and official-map review",
+    "retrieved_at": "2026-10-06T00:09:34+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,46 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-geometry-pine-valley-camp",
+    "evidence_ids": [
+      "evidence-emigrant-geometry-pine-valley-camp"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-camp-lake",
+      "scope-route-emigrant-crabtree-bear-lake"
+    ],
+    "subject_id": "route-segment-emigrant-crabtree-pine-valley-camp",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "distance_policy": "Existing topology claims control mileage; no distance derived from these coordinates.",
+      "end_coordinate": {
+        "latitude": 38.16518574092221,
+        "longitude": -119.88391532965653
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-pine-valley-camp",
+        "path": "geometry/v0/snapshots/usfs-emigrant-crabtree-routes-20261006.geojson",
+        "sha256": "33fba5638eb580a602ba16c4bd4dada51a35c696002db839fde0612fb603285d"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9428086,
+      "source_globalid": "{DD41DD87-9AAE-4FE1-B078-0427EEE709F1}",
+      "source_trail_number": "20E16",
+      "source_vertex_range_inclusive": [
+        67,
+        0
+      ],
+      "start_coordinate": {
+        "latitude": 38.165350570701605,
+        "longitude": -119.90071919040176
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

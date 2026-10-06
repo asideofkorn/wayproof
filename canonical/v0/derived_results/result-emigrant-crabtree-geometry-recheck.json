@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Expose geometry limitations on the selected lake approach; retain the existing foundation and lake-route rechecks for permits, mileage conflicts and conditions.",
+    "input_ids": [
+      "claim-emigrant-geometry-start-lake-valley",
+      "claim-emigrant-geometry-lake-valley-pine-valley",
+      "claim-emigrant-geometry-pine-valley-camp",
+      "claim-emigrant-geometry-camp-bear-junction",
+      "claim-emigrant-geometry-bear-spur",
+      "gap-emigrant-crabtree-geometry-limitations"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-emigrant-crabtree-geometry-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "display accuracy and endpoint interpretation",
+        "current trail conditions",
+        "unreviewed geometry coverage"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

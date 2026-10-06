@@ -72,6 +72,19 @@ Every data file below is also classified by what that means for reuse:
 | `geometry/v0/snapshots/nps-yose-wawona-mariposa-route-features-20260926.geojson` | National Park Service Public Trails feature service | `public_domain` | U.S. Government work. The snapshot retains eight reviewed unbranched named Wawona and Mariposa Grove trail chains. Exact shared endpoints support graph continuity; Chilnualna branching and unsupported physical endpoint joins remain explicit gaps. |
 | `geometry/v0/snapshots/eastern-sierra-trailhead-points-20260925.geojson` | USGS National Digital Trails, USDA Forest Service Recreation Opportunities, and OpenStreetMap contributors | mixed: `public_domain` and `open_license` | Government-derived points are public domain. The named Lundy Canyon corroboration and Virginia Lakes point use OpenStreetMap data under ODbL 1.0; attribute OpenStreetMap contributors. The snapshot projects already evidenced access identities and does not create relationships from proximity. |
 
+### Emigrant route geometry
+
+`geometry/v0/snapshots/usfs-emigrant-crabtree-routes-20261006.geojson`
+contains reviewed contiguous vertex slices from the USDA Forest Service's
+[National Forest System Trails service](https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0).
+This is Tier A, `public_domain` federal data. Each feature retains source object
+and global IDs, original length attributes, the source geometry hash and the
+inclusive vertex range used. Output is normalized by the service to EPSG:4326;
+no snapping, interpolation, simplification or derived mileage is applied.
+Display endpoint assignment is project-created review against the official
+Emigrant maps and existing graph; it is not a surveyed position or permission
+claim. Source accuracy and current conditions remain unknown.
+
 ## Known follow-ups
 
 As of the scavenger-hunt data loop (see README's "The Scavenger Hunt"),
