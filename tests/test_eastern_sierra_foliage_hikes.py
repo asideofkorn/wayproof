@@ -107,20 +107,18 @@ def test_routes_retain_their_distinct_wilderness_context():
     assert ("route-virginia-lakes", "wilderness-hoover") in traverses
 
 
-def test_read_service_and_generated_site_expose_candidates(tmp_path):
+def test_read_service_and_generated_site_expose_candidates(generated_site):
     reads = CanonicalReadService(ROOT)
     assert reads.search_entities("Parker Lake", kinds=("route",))[0].entity_id == "route-parker-lake"
     assert reads.knowledge_gaps_for("route-virginia-lakes")
 
-    from scripts import build_site
-
-    build_site.build(tmp_path)
-    trails = json.loads((tmp_path / "trails" / "index.json").read_text())
+    site_root, _ = generated_site
+    trails = json.loads((site_root / "trails" / "index.json").read_text())
     trail_ids = {item["entity_id"] for item in trails["entities"]}
     assert {"route-parker-lake", "route-lundy-canyon", "route-sabrina-blue-lake"} <= trail_ids
-    assert (tmp_path / "knowledge" / "trailhead-convict-lake" / "index.html").exists()
-    assert (tmp_path / "knowledge" / "wilderness-ansel-adams" / "index.html").exists()
-    page = (tmp_path / "knowledge" / "route-convict-canyon" / "index.html").read_text()
+    assert (site_root / "knowledge" / "trailhead-convict-lake" / "index.html").exists()
+    assert (site_root / "knowledge" / "wilderness-ansel-adams" / "index.html").exists()
+    page = (site_root / "knowledge" / "route-convict-canyon" / "index.html").read_text()
     assert "Hazardous stream crossing within miles" in page
 
 

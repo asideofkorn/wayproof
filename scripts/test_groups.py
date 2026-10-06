@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 from pathlib import Path
 import subprocess
 import sys
@@ -70,13 +71,27 @@ EBRPD_PREFIXES = (
 )
 SIERRA_PREFIXES = (
     "test_east_fork_", "test_eastern_sierra_", "test_lassen_",
-    "test_rock_creek_", "test_sierra_", "test_whitney_", "test_yosemite_",
+    "test_emigrant_", "test_rock_creek_", "test_sierra_", "test_taboose_",
+    "test_whitney_", "test_yosemite_",
 )
 GROUPS = ("core", "planning", "regional-ebrpd", "regional-sierra", "site")
 
 
+def _uses_generated_site(path: Path) -> bool:
+    if not path.exists():
+        return False
+    tree = ast.parse(path.read_text())
+    return any(
+        isinstance(node, ast.Name) and node.id == "generated_site"
+        for node in ast.walk(tree)
+    )
+
+
 def group_for(name: str) -> str:
-    if name in SITE:
+    # A pytest session can share the expensive generated-site fixture, but
+    # separate CI groups cannot. Keep every module that consumes that fixture
+    # in one shard so a CI run builds the complete site only once.
+    if name in SITE or _uses_generated_site(TESTS / name):
         return "site"
     if name in PLANNING:
         return "planning"

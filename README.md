@@ -175,6 +175,21 @@ Run the complete test suite:
 python -m pytest -q
 ```
 
+For normal iteration, run only the directly affected modules and group. Preview
+the groups that CI will select for the branch with:
+
+```bash
+python scripts/select_test_groups.py --base origin/main --head HEAD
+python scripts/test_groups.py --group regional-sierra
+```
+
+Pull requests use deterministic change-aware selection. Regional canonical-data
+changes run the core, planning, affected-region, and site groups; shared domain,
+schema, storage, workflow, or unknown implementation changes fail safe to all
+five groups. Pushes to `main` and manual workflow runs always execute the full
+suite. Because GitHub runs groups in parallel, agents should not duplicate that
+work with a sequential local full-suite run unless the change is cross-cutting.
+
 ## Canonical CLI quick start
 
 Resolve a route-specific Whitney request without guessing the route or shape:

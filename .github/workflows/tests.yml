@@ -4,18 +4,46 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: tests-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
+  select-tests:
+    name: select test scope
+    runs-on: ubuntu-latest
+    outputs:
+      groups: ${{ steps.scope.outputs.groups }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: scope
+        name: Select affected test groups
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            python3 scripts/select_test_groups.py \
+              --base "origin/$BASE_REF" \
+              --head HEAD \
+              --github-output "$GITHUB_OUTPUT"
+          else
+            python3 scripts/select_test_groups.py \
+              --full \
+              --github-output "$GITHUB_OUTPUT"
+          fi
+
   test-shard:
     name: test / ${{ matrix.group }}
+    needs: select-tests
     strategy:
       fail-fast: false
       matrix:
-        group: [core, planning, regional-ebrpd, regional-sierra, site]
+        group: ${{ fromJSON(needs.select-tests.outputs.groups) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -65,13 +93,15 @@ jobs:
   test:
     name: test
     if: always()
-    needs: [test-shard, canonical-publication]
+    needs: [select-tests, test-shard, canonical-publication]
     runs-on: ubuntu-latest
     steps:
       - name: Require every test module and publication check
         env:
+          SELECTION: ${{ needs.select-tests.result }}
           SHARDS: ${{ needs.test-shard.result }}
           PUBLICATION: ${{ needs.canonical-publication.result }}
         run: |
+          test "$SELECTION" = "success"
           test "$SHARDS" = "success"
           test "$PUBLICATION" = "success"
