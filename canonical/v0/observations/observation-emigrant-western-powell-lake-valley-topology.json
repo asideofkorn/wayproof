@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 overview western panel, corroborated by lake detail maps and named USFS trail features: 20E14 continues to the explicitly drawn 19E21 Lake Valley junction. Segmentation at source breaks and chosen trail approach vertices is descriptive, not a claim of an official named junction. No atomic mileage assigned from cumulative reports or GIS lengths.",
+    "observation_id": "observation-emigrant-western-powell-lake-valley-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

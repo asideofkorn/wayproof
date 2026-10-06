@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-south-chewing-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-western-south-chewing-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-chewing-gum-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-south-chewing",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.1944391159321,
+        "longitude": -119.85209028794463
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-western-south-chewing",
+        "path": "geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson",
+        "sha256": "5cca60fe36da261b084bbd7b258964fee57c6b6a4f02edb166dad0acd7bb71ee"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9429539,
+      "source_globalid": "{462C358A-F41E-4870-8D43-46F953769424}",
+      "source_vertex_range_inclusive": [
+        0,
+        200
+      ],
+      "start_coordinate": {
+        "latitude": 38.185659067986265,
+        "longitude": -119.88123033763796
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Traveler 2023 page 8, improvements planned complete by 2026: new vault toilets include Crabtree day use area. A planned completion date does not establish installation or opening.",
+    "observation_id": "observation-emigrant-western-crabtree-toilet-project",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-traveler-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

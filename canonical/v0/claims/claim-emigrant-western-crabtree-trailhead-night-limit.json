@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-trailhead-night-limit",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-trailhead-night-limit"
+    ],
+    "predicate": "historical_trailhead_camping_limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "current_rule_status": "unverified",
+      "reported_nights": 1,
+      "scope": "trailhead camping; distinct from wilderness lake limit",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Undated Aspen Meadow Chewing Gum page distinguishes a good trail from Gianelli from a poorly marked trail from Crabtree. This describes the operator report, not a current field inspection.",
+    "observation_id": "observation-emigrant-western-chewing-operator-marking",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-aspen-emigrant-chewing"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

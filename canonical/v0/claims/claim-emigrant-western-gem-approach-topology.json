@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-gem-approach-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-gem-approach-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-gem-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-gem-approach",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-gem-east-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-crabtree-gem-junction",
+      "support": "20E98 branches south from 20E16 and passes the east side of Gem Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

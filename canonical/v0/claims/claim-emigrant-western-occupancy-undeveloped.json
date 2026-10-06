@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-occupancy-undeveloped",
+    "evidence_ids": [
+      "evidence-emigrant-western-occupancy-undeveloped"
+    ],
+    "predicate": "forest_occupancy_limit_context",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": {
+      "ends_on": "2029-07-30",
+      "starts_on": "2026-07-31"
+    },
+    "value": {
+      "does_not_resolve_site_specific_limit": true,
+      "exemptions": [
+        "FS-7700-48 specifically exempting holder",
+        "official-duty federal/state/local officer or organized rescue/fire force"
+      ],
+      "location": "undeveloped locations within one Ranger District",
+      "maximum_total_days": 21,
+      "site_classification": "not assigned to these trailheads",
+      "window": "calendar year"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

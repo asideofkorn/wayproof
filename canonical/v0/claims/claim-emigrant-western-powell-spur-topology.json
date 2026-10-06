@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-spur-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-spur-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-powell-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-powell-spur",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-powell-trail-end",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-powell-junction",
+      "support": "named USFS 20E14A POWELL LAKE SPUR; Powell access corroborated by 2018 hiking guide"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

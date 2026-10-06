@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-powell-spur-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-spur-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-powell-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-powell-spur",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.20300733525263,
+        "longitude": -119.85834828897434
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-western-powell-spur",
+        "path": "geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson",
+        "sha256": "5cca60fe36da261b084bbd7b258964fee57c6b6a4f02edb166dad0acd7bb71ee"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9430968,
+      "source_globalid": "{C539E29C-748A-4018-821E-D53108F78B61}",
+      "source_vertex_range_inclusive": [
+        0,
+        22
+      ],
+      "start_coordinate": {
+        "latitude": 38.201889705060864,
+        "longitude": -119.85956900904041
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

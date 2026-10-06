@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-bell-pine-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-bell-pine-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-bell-meadow-grouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-bell-pine",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-bell-pine-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-bell-meadow",
+      "support": "20E17 from Bell Meadow to the drawn 19E10 Pine Valley junction"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

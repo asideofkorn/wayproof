@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-chewing-existing-sites",
+    "evidence_ids": [
+      "evidence-emigrant-western-chewing-existing-sites"
+    ],
+    "predicate": "existing_campsite_qualification",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-chewing-gum-lake"
+    ],
+    "subject_id": "waterbody-emigrant-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_site_inventory": "unknown",
+      "existing_site_is_not_permission": true,
+      "must_meet_minimum_distances": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

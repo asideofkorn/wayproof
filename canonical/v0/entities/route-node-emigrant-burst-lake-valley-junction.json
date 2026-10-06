@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-burst-lake-valley-junction",
+    "kind": "route_node",
+    "name": "Burst Rock–Lake Valley trail junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

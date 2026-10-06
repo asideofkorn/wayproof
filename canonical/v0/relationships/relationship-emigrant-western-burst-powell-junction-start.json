@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-burst-powell-junction-topology",
+      "evidence-emigrant-western-burst-powell-junction-geometry"
+    ],
+    "object_id": "route-node-emigrant-burst-display-break",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-western-burst-powell-junction-start",
+    "subject_id": "route-segment-emigrant-western-burst-powell-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

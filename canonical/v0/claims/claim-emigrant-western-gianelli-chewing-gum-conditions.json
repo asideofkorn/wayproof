@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-gianelli-chewing-gum-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-western-gianelli-chewing-gum-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-gianelli-chewing-gum-lake"
+    ],
+    "subject_id": "route-emigrant-gianelli-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "access roads",
+        "trail and crossings",
+        "water",
+        "fire restrictions",
+        "snow and closures"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

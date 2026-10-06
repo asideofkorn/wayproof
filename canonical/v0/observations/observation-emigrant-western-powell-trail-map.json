@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Official trail-map gives Gianelli–Powell Lake as 1.8 miles; edition unknown. The 2018 guide describes Powell as one mile beyond Burst Rock; schematic estimates do not identify every graph vertex.",
+    "observation_id": "observation-emigrant-western-powell-trail-map",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-trail-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

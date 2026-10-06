@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-chewing-gum-identity",
+    "evidence_ids": [
+      "evidence-emigrant-western-chewing-gum-identity"
+    ],
+    "predicate": "mapped_lake_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-chewing-gum-lake"
+    ],
+    "subject_id": "waterbody-emigrant-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "campsites": "not inventoried",
+      "name": "Chewing Gum Lake",
+      "shoreline_geometry": "not imported",
+      "water_availability": "unknown",
+      "wilderness": "wilderness-emigrant"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

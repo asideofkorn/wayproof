@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-26 April 2012 Gianelli entry describes fair overnight camping opportunities. It provides no reservable individual site inventory or current availability.",
+    "observation_id": "observation-emigrant-western-gianelli-camping-opportunity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

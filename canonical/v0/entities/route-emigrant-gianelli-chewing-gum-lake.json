@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-gianelli-chewing-gum-lake",
+    "kind": "route",
+    "name": "Gianelli to Chewing Gum Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

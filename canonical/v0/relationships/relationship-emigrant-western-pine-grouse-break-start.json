@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-pine-grouse-break-topology",
+      "evidence-emigrant-western-pine-grouse-break-geometry"
+    ],
+    "object_id": "route-node-emigrant-bell-pine-junction",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-western-pine-grouse-break-start",
+    "subject_id": "route-segment-emigrant-western-pine-grouse-break",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

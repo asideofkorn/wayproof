@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-bell-pine-junction",
+    "kind": "route_node",
+    "name": "Bell Meadow–Pine Valley trail junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

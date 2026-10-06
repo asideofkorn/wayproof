@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-bell-meadow-driving",
+    "evidence_ids": [
+      "evidence-emigrant-western-bell-meadow-driving"
+    ],
+    "predicate": "historical_driving_directions",
+    "spatial_scope_ids": [
+      "scope-emigrant-bell-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bell-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown; verify current MVUM and orders",
+      "legs": [
+        {
+          "approximate_miles": 2,
+          "instruction": "west Highway 108"
+        },
+        {
+          "approximate_miles": 7,
+          "instruction": "left Crabtree Road to Aspen Meadow"
+        },
+        {
+          "approximate_miles": 1,
+          "instruction": "right 4N26"
+        },
+        {
+          "approximate_miles": 1.5,
+          "instruction": "left 4N02Y"
+        }
+      ],
+      "mileage_precision": "approximate",
+      "origin": "Summit Ranger Station (Pinecrest)",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

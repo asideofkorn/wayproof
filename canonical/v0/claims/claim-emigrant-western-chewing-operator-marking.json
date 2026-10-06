@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-chewing-operator-marking",
+    "evidence_ids": [
+      "evidence-emigrant-western-chewing-operator-marking"
+    ],
+    "predicate": "reported_route_finding_condition",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-crabtree-chewing-gum-lake"
+    ],
+    "subject_id": "route-emigrant-crabtree-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_condition": "unknown",
+      "reported_marking": "poorly marked",
+      "source_date": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-western-crabtree-chewing-gum-planning",
+    "question": "What remains unverified for Crabtree to Chewing Gum Lake?",
+    "reason": "Approach topology and display geometry are represented; no complete mileage, return itinerary, shoreline circulation, legal individual campsite, drinkable water or current trail clearance is established. Printed destination totals may end at a different point from the descriptive display endpoint. Recheck the route and intended endpoint with the Forest Service.",
+    "related_ids": [
+      "claim-emigrant-western-crabtree-chewing-gum-profile",
+      "claim-emigrant-western-crabtree-chewing-gum-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

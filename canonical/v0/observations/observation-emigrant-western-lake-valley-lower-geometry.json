@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails feature 9430389, globalid {DF0AD790-4CE3-4F4D-8658-BD614F3D7FF7}, 19E21 LAKE VALLEY: reviewed inclusive normalized source vertices 0 through 167. Matched against official trail maps; source lengths describe the entire original feature. No coordinate is snapped and no mileage is computed.",
+    "observation_id": "observation-emigrant-western-lake-valley-lower-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T00:09:34+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

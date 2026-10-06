@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-chewing-gum-recommendation",
+    "evidence_ids": [
+      "evidence-emigrant-western-chewing-gum-recommendation"
+    ],
+    "predicate": "camping_setback_recommendation",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-chewing-gum-lake"
+    ],
+    "subject_id": "waterbody-emigrant-chewing-gum-lake",
+    "temporal_scope": null,
+    "value": {
+      "basis": "Leave No Trace; not asserted regulatory minimum",
+      "recommended_feet": 200
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

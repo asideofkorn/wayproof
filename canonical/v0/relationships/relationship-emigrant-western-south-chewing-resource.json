@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-south-chewing-topology",
+      "evidence-emigrant-western-south-chewing-geometry"
+    ],
+    "object_id": "waterbody-emigrant-chewing-gum-lake",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-western-south-chewing-resource",
+    "subject_id": "route-segment-emigrant-western-south-chewing",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

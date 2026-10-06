@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-western-gianelli-access",
+    "question": "What facilities and camping restrictions currently apply at Gianelli?",
+    "reason": "Published facility and camping reports are historical or undated. Verify operating toilets, road access and parking, the trailhead-specific one-night limit, and interaction with current forest occupancy/fire orders. Do not substitute the general forest maximum for a more restrictive site limit. Individual sites, facility coordinates and connecting footpaths are not inventoried.",
+    "related_ids": [
+      "claim-emigrant-western-gianelli-access-recheck",
+      "claim-emigrant-western-gianelli-trailhead-night-limit"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

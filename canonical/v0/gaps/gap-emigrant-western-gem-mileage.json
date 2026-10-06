@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-western-gem-mileage",
+    "question": "How does the operator Gem mileage compare with the Forest Service table?",
+    "reason": "The 2012 Forest Service table reports 9.5 one-way miles from Crabtree; the undated operator page reports 10 miles without explicitly stating its distance convention or precise endpoint. They remain separate reports, not a resolved route total.",
+    "related_ids": [
+      "claim-emigrant-western-crabtree-gem-table",
+      "claim-emigrant-western-gem-operator-mileage"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-26 April 2012 directions from Summit Ranger Station (Pinecrest): west on Hwy 108 two miles, left on Crabtree Road seven miles to Aspen Meadow, then right 4N26 1 miles, left 4N02Y 1.5 miles. The guide explicitly says all mileages are approximate.",
+    "observation_id": "observation-emigrant-western-bell-meadow-driving",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-spur-topology",
+      "evidence-emigrant-western-powell-spur-geometry"
+    ],
+    "object_id": "waterbody-emigrant-powell-lake",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-western-powell-spur-resource",
+    "subject_id": "route-segment-emigrant-western-powell-spur",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

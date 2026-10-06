@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-pine-grouse-break-topology",
+    "evidence_ids": [
+      "evidence-emigrant-western-pine-grouse-break-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-bell-meadow-grouse-lake",
+      "scope-route-emigrant-crabtree-grouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-western-pine-grouse-break",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-grouse-display-break",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-bell-pine-junction",
+      "support": "20E17 east from the Pine Valley junction toward Grouse Lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

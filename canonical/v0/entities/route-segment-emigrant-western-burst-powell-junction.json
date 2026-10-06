@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-western-burst-powell-junction",
+    "kind": "route_segment",
+    "name": "Burst Powell Junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

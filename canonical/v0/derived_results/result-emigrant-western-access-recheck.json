@@ -1,0 +1,46 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "explanation": "Project only selected western approach/access evidence and linked gaps. Wilderness requirements and lake-night conflicts remain in the foundation manifest.",
+    "input_ids": [
+      "claim-emigrant-western-crabtree-restrooms-2012",
+      "claim-emigrant-western-crabtree-restrooms-2023",
+      "claim-emigrant-western-crabtree-toilet-project",
+      "claim-emigrant-western-crabtree-trailhead-night-limit",
+      "claim-emigrant-western-crabtree-camping-opportunity",
+      "claim-emigrant-western-crabtree-driving",
+      "claim-emigrant-western-crabtree-access-recheck",
+      "gap-emigrant-western-crabtree-access",
+      "claim-emigrant-western-gianelli-trailhead-night-limit",
+      "claim-emigrant-western-gianelli-camping-opportunity",
+      "claim-emigrant-western-gianelli-no-facilities-report",
+      "claim-emigrant-western-gianelli-driving",
+      "claim-emigrant-western-gianelli-access-recheck",
+      "gap-emigrant-western-gianelli-access",
+      "claim-emigrant-western-bell-meadow-trailhead-night-limit",
+      "claim-emigrant-western-bell-meadow-camping-opportunity",
+      "claim-emigrant-western-bell-meadow-no-facilities-report",
+      "claim-emigrant-western-bell-meadow-driving",
+      "claim-emigrant-western-bell-meadow-access-recheck",
+      "gap-emigrant-western-bell-meadow-access",
+      "claim-emigrant-western-crabtree-night-limit-2023",
+      "claim-emigrant-western-occupancy-developed",
+      "claim-emigrant-western-occupancy-undeveloped",
+      "claim-emigrant-western-supersession-occupancy-order",
+      "claim-emigrant-western-supersession-occupancy-page",
+      "gap-emigrant-western-occupancy-supersession"
+    ],
+    "kind": "pretrip_recheck",
+    "result_id": "result-emigrant-western-access-recheck",
+    "value": {
+      "required": true,
+      "topics": [
+        "historical facilities and driving directions",
+        "current trailhead camping restrictions",
+        "forest occupancy context and source conflict"
+      ]
+    }
+  },
+  "record_type": "derived_result",
+  "schema_version": 0
+}

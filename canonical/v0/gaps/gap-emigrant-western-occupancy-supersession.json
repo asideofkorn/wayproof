@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-western-occupancy-supersession",
+    "question": "Which prior occupancy order does STF-16-2026-09 supersede?",
+    "reason": "Signed PDF footer names STF-16-2024-10 (July 29, 2024); alert summary names STF-16-2022-06 (July 28, 2022). Preserve both statements. This does not resolve trailhead-specific one-night guidance or classify a camping site as developed/undeveloped.",
+    "related_ids": [
+      "claim-emigrant-western-supersession-occupancy-order",
+      "claim-emigrant-western-supersession-occupancy-page"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

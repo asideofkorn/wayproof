@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-grouse-recommendation",
+    "evidence_ids": [
+      "evidence-emigrant-western-grouse-recommendation"
+    ],
+    "predicate": "camping_setback_recommendation",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-grouse-lake"
+    ],
+    "subject_id": "waterbody-emigrant-grouse-lake",
+    "temporal_scope": null,
+    "value": {
+      "basis": "Leave No Trace; not asserted regulatory minimum",
+      "recommended_feet": 200
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

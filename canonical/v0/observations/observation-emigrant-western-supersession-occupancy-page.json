@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "STF-16-2026-09 alert summary identifies STF-16-2022-06 as the superseded order. The two sources disagree.",
+    "observation_id": "observation-emigrant-western-supersession-occupancy-page",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, georeferenced map and named-feature review",
+    "retrieved_at": "2026-10-06T07:44:34+00:00",
+    "source_id": "source-usfs-emigrant-occupancy-page"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

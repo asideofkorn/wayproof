@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-crabtree-planning-limits",
     "question": "Does this graph establish a complete lake camping itinerary?",
-    "reason": "Only the Crabtree approach to two mapped lake-access points is represented. Named lake planning selects the route and trailhead but needs an exit itinerary; this is not a complete out-and-back camping plan. Lake Valley, Pine Valley and eastward continuations, shoreline circulation, campsites, toilets and water availability remain unresolved. Recheck road, trail and closure conditions; the maps are not current clearance.",
+    "reason": "Camp/Bear remain bounded Crabtree approaches requiring an exit itinerary. Separate western routes now represent Lake Valley, Pine Valley and the eastward Gem continuation; their existence does not add those segments to the Camp/Bear routes. Shoreline circulation, individual campsites, current water and restroom availability remain unresolved. Historical maps are not current clearance.",
     "related_ids": [
       "claim-emigrant-crabtree-camp-profile",
       "claim-emigrant-crabtree-bear-profile",

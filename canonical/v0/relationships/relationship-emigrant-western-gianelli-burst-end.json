@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-gianelli-burst-topology",
+      "evidence-emigrant-western-gianelli-burst-geometry"
+    ],
+    "object_id": "route-node-emigrant-burst-display-break",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-gianelli-burst-end",
+    "subject_id": "route-segment-emigrant-western-gianelli-burst",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-grouse-profile"
+    ],
+    "object_id": "route-emigrant-crabtree-grouse-lake",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-western-crabtree-grouse-route-segment-emigrant-crabtree-lake-valley-pine-valley",
+    "subject_id": "route-segment-emigrant-crabtree-lake-valley-pine-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

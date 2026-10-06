@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.aspenmeadowpackstation.com/index.php/adventures-menu/destinations/crabtree-trail-head-menu/grouse-lake-menu",
+    "publisher": "Aspen Meadow Pack Station",
+    "source_id": "source-aspen-emigrant-grouse"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

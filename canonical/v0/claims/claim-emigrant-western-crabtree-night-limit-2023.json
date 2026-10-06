@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-western-crabtree-night-limit-2023",
+    "evidence_ids": [
+      "evidence-emigrant-western-crabtree-night-limit-2023"
+    ],
+    "predicate": "reported_trailhead_camping_limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "trailhead-emigrant-crabtree",
+    "temporal_scope": null,
+    "value": {
+      "applies_to": "campers and stock entering Emigrant Wilderness",
+      "current_rule_status": "requires confirmation",
+      "reported_nights": 1,
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

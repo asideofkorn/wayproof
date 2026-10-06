@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-western-powell-lake-valley-topology",
+      "evidence-emigrant-western-powell-lake-valley-geometry"
+    ],
+    "object_id": "route-node-emigrant-burst-lake-valley-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-western-powell-lake-valley-end",
+    "subject_id": "route-segment-emigrant-western-powell-lake-valley",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}
