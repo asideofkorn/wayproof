@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-weapon-discharge",
+    "evidence_ids": [
+      "evidence-taboose-west-weapon-discharge"
+    ],
+    "predicate": "weapon_discharge_restriction",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "covers": [
+        "firearms",
+        "other weapons"
+      ],
+      "distinct_from_possession": true,
+      "prohibited": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

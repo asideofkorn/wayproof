@@ -861,6 +861,87 @@
       "action": "ADD",
       "evidence_refs": [],
       "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-wheeled-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-wheeled-equipment",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-motorized-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-motorized-equipment",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-weapon-discharge.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-weapon-discharge",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-weapon-possession.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-weapon-possession",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-overnight-permit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-trail-shortcuts.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-trail-shortcuts",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-trail-markers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-trail-markers",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-trash.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-trash",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-drift-gates.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-drift-gates",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/observations/observation-taboose-west-grazing.json",
       "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
       "record_id": "observation-taboose-west-grazing",
@@ -1422,6 +1503,87 @@
       "path": "canonical/v0/evidence/evidence-taboose-west-group.json",
       "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
       "record_id": "evidence-taboose-west-group",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-wheeled-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-wheeled-equipment",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-motorized-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-motorized-equipment",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-weapon-discharge.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-weapon-discharge",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-weapon-possession.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-weapon-possession",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-overnight-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-trail-shortcuts.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-trail-shortcuts",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-trail-markers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-trail-markers",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-trash.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-trash",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-drift-gates.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-drift-gates",
       "record_type": "evidence"
     },
     {
@@ -2085,6 +2247,105 @@
       "path": "canonical/v0/claims/claim-taboose-west-group.json",
       "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
       "record_id": "claim-taboose-west-group",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-wheeled-equipment"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-wheeled-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-wheeled-equipment",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-motorized-equipment"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-motorized-equipment.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-motorized-equipment",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-weapon-discharge"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-weapon-discharge.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-weapon-discharge",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-weapon-possession"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-weapon-possession.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-weapon-possession",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-overnight-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-overnight-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-trail-shortcuts"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-trail-shortcuts.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-trail-shortcuts",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-trail-markers"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-trail-markers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-trail-markers",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-trash"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-trash.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-trash",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-drift-gates"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-drift-gates.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-drift-gates",
       "record_type": "claim"
     },
     {
@@ -2769,6 +3030,17 @@
       "path": "canonical/v0/gaps/gap-taboose-route-limits.json",
       "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
       "record_id": "gap-taboose-route-limits",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-west-weapons-interpretation"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-west-weapons-interpretation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-west-weapons-interpretation",
       "record_type": "gap"
     },
     {

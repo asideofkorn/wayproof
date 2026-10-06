@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-wheeled-equipment",
+    "evidence_ids": [
+      "evidence-taboose-west-wheeled-equipment"
+    ],
+    "predicate": "wilderness_wheeled_vehicle_restriction",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "prohibited": true,
+      "scope": "park wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -118,6 +118,38 @@ def test_rechecks_are_scoped_and_dated(reads):
     assert notice.claim.value['not_a_positive_contamination_test'] is True
 
 
+def test_east_and_west_general_travel_rechecks_preserve_jurisdiction(reads):
+    east = {i.input_id: i for i in reads.pretrip_recheck(
+        reads.resolve_intent(intent()).context, MANIFEST).items}
+    west = {i.input_id: i for i in reads.pretrip_recheck(
+        reads.resolve_intent(intent('Taboose Pass western continuation in Kings Canyon')).context,
+        MANIFEST).items}
+    pet = reads.explain_claim('claim-taboose-pets')
+    assert pet.claim.spatial_scope_ids == (scope(ROUTE),)
+    assert pet.claim.value == {
+        'national_forest': 'allowed under leash or responsive voice control; no wildlife harassment',
+        'waste_setback_feet': 100,
+    }
+    assert 'pets prohibited' not in pet.observations[0].content
+    assert 'claim-taboose-pets' in east and 'claim-taboose-pets' not in west
+    keys = ('pets', 'wheeled-equipment', 'motorized-equipment', 'weapon-discharge',
+            'weapon-possession', 'overnight-permit', 'trail-shortcuts', 'trail-markers',
+            'trash', 'drift-gates')
+    for key in keys:
+        cid = 'claim-taboose-west-' + key
+        assert cid in west and cid not in east
+        assert reads.get('claim', cid).spatial_scope_ids == (scope(WEST),)
+        assert west[cid].source_ids == ('source-taboose-nps-rules',)
+        assert west[cid].answerability is RecheckAnswerability.NEEDS_CURRENT_CHECK
+    gap = 'gap-taboose-west-weapons-interpretation'
+    assert gap in west and gap not in east
+    value = reads.get('claim', 'claim-taboose-west-weapon-possession').value
+    assert value['not_a_blanket_firearm_possession_ban'] is True
+    assert value['firearm_qualification'] == 'firearm possession is subject to state regulations'
+    assert 'bear spray' in value['published_general_statement']
+    assert reads.get('claim', 'claim-taboose-west-weapon-discharge').value['distinct_from_possession'] is True
+
+
 def test_source_precision_conflicts_and_facilities(reads):
     assert reads.get('claim','claim-taboose-guide-distance').value['qualifier']=='approximate'
     assert reads.get('claim','claim-taboose-guide-distance').value['reported_one_way_miles']==6.5
@@ -195,3 +227,24 @@ def test_generated_directories_map_and_evidence(generated_site):
     explorer=json.loads((output/'map/features.geojson').read_text())
     points={f['properties'].get('entity_id') for f in explorer['features'] if f['geometry']['type']=='Point'}
     assert {TH,PASS}<=points
+
+
+def test_generated_west_restrictions_preserve_qualifications(generated_site):
+    output, _ = generated_site
+    detail = json.loads((output/f'knowledge/{WEST}.json').read_text())
+    for key in ('pets', 'wheeled-equipment', 'motorized-equipment', 'weapon-discharge',
+                'weapon-possession', 'overnight-permit', 'trail-shortcuts', 'trail-markers',
+                'trash', 'drift-gates'):
+        cid = 'claim-taboose-west-' + key
+        assert cid in json.dumps(detail)
+        assert cid in (output/f'knowledge/{WEST}/index.html').read_text()
+        for suffix in ('index.html', 'index.json'):
+            evidence = (output/f'evidence/claim/{cid}/{suffix}').read_text()
+            assert cid in evidence
+            if key == 'weapon-possession':
+                assert 'bear spray' in evidence
+                assert 'firearm possession is subject to state regulations' in evidence
+    for suffix in ('index.html', 'index.json'):
+        assert (output/f'evidence/gap/gap-taboose-west-weapons-interpretation/{suffix}').exists()
+    east = (output/f'evidence/claim/claim-taboose-pets/index.json').read_text()
+    assert 'park_wilderness' not in east and 'pets prohibited' not in east

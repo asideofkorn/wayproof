@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-overnight-permit",
+    "evidence_ids": [
+      "evidence-taboose-west-overnight-permit"
+    ],
+    "predicate": "overnight_permit_carry_policy",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "entry_agency_policy_claim": "claim-taboose-continuous-travel",
+      "overnight_permit_required": true,
+      "present_on_authorized_request": true,
+      "signed_copy_in_permittee_possession": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

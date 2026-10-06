@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-west-weapons-interpretation",
+    "question": "How do the qualified NPS weapon-possession statements apply to the planned equipment?",
+    "reason": "The NPS page states a weapon-possession prohibition including bear spray but separately says firearm possession is subject to state regulations. Discharge is independently prohibited. State-law eligibility, exceptions and equipment-specific interpretation have not been reviewed; confirm with the park before travel. Do not infer a blanket firearm possession ban or general permission.",
+    "related_ids": [
+      "zone-taboose-kings-canyon-continuation",
+      "claim-taboose-west-weapon-possession",
+      "claim-taboose-west-weapon-discharge"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -75,7 +75,7 @@ Only factual paraphrases and public-domain USFS geometry are redistributed.
 | [Signed standing fire order](https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/05-04-50-25-04%20Ansel%20Adams%20%26%20John%20Muir%20Campfire%20Restrictions.pdf) and [Exhibit P](https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/25-05-50-25-04%20Exhibits%20B-S%20-%20June%202025.pdf) | ingested | Signed order p1; maps PDF p15 inspected visually. Drainage/elevation ban, 2025-06-10 to 2027-06-10 interval, specified stove exception; no traced fire-zone polygon. |
 | [Stage 1 order](https://www.fs.usda.gov/r05/inyo/alerts/stage-1-fire-restrictions-effect) | ingested | 2026-06-22 to 2026-12-31; narrower pressurized-fuel/shutoff-valve stove exception and California permit. Dynamic recheck survives expiry. |
 | [Food/refuse order page](https://www.fs.usda.gov/r05/inyo/alerts/food-and-refuse-storage-restrictions) | conflicting and preserved | Page start 2023 vs embedded effective 2025; 23-03 page ID vs linked 25-03 filename. Eight mandatory-container zones are listed elsewhere; no unsupported blanket Taboose canister mandate. Detailed zone polygons deferred with order-version/current-storage recheck. |
-| [NPS Minimum Impact Restrictions](https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm) and [linked PDF](https://www.nps.gov/seki/planyourvisit/upload/NoYear-MIR-5-14-20.pdf) | ingested for bounded western context | Park food, pets, camping, group and fire rules. The page has a separate day-hiking group maximum; no flattening to overnight limit. Unrelated named lake exceptions excluded. |
+| [NPS Minimum Impact Restrictions](https://www.nps.gov/seki/planyourvisit/minimum-impact-restrictions.htm) and [linked PDF](https://www.nps.gov/seki/planyourvisit/upload/NoYear-MIR-5-14-20.pdf) | ingested for bounded western context | Park food, pets, camping, group and fire rules; all General Travel Requirements items are represented after review (signed overnight permit, shortcuts, markers, pets, trash/toilet paper, wheeled vehicles, motorized equipment, qualified weapons/discharge, drift-fence gates). The page has a separate day-hiking group maximum; no flattening to overnight limit. Unrelated named lake exceptions excluded. |
 | [NPS trail conditions](https://www.nps.gov/seki/planyourvisit/trailcond.htm) | ingested as dated report | Taboose entry 2026-08-26: brush, washed-out crossings, stock not recommended. Report date differs from retrieval; exact crossing positions unknown. |
 | [NPS grazing restrictions](https://www.nps.gov/seki/planyourvisit/grazingrestrictions.htm) | ingested; operational layer deferred with gap | 12-acre wet meadow exclusion in Taboose area; annual grazing opening/current stock suitability requires checking. No permission inferred from stock geometry. |
 | [NPS stock atlas part 2](https://parkplanning.nps.gov/showFile.cfm?projectID=33225&sfid=186534) | ingested as historical map context | Mt. Pinchot panel, printed p11/PDF p13, reviewed visually. West-side branches and park boundary contextualized; JMT/Bench Lake continuation graph and spurs deferred. |
@@ -105,3 +105,19 @@ Only factual paraphrases and public-domain USFS geometry are redistributed.
 - The permit fee schedule is visible in canonical details and rechecks. It is
   not registered as an unconditional cost input, which would charge day hiking
   or manufacture a per-party total without a permit/participant calculator.
+
+## Review correction: general travel and jurisdiction scopes
+
+The east-route pet claim contains only Inyo control and waste guidance. NPS pet
+prohibition, wheeled-vehicle and motorized-equipment restrictions, weapon
+discharge and qualified possession language are west-zone claims and rechecks.
+The possession claim retains both the bear-spray statement and firearm/state-law
+qualification; an explicit gap prevents treating it as a blanket firearm ban
+or permission. The NPS page was reviewed again on October 6 at 23:14 UTC.
+All bullets in its General Travel Requirements section now have an ingested
+disposition. Drift-fence instructions do not invent a Taboose gate inventory.
+Detailed state firearm law and equipment-specific exceptions remain deferred
+with the west-zone interpretation gap; no new legal eligibility evaluator is
+introduced. Other page sections retain the bounded western-context scope above;
+full onward camping/fishing, sanitation, food-box and fire-use procedure detail
+remain deferred to a western-itinerary batch and the existing western-scope gap.

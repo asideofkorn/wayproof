@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-trail-shortcuts",
+    "evidence_ids": [
+      "evidence-taboose-west-trail-shortcuts"
+    ],
+    "predicate": "trail_shortcut_restriction",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "shortcuts_allowed": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

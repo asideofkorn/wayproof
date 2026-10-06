@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-drift-gates",
+    "evidence_ids": [
+      "evidence-taboose-west-drift-gates"
+    ],
+    "predicate": "drift_fence_gate_policy",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "close_gates_after_passing": true,
+      "route_gate_inventory": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

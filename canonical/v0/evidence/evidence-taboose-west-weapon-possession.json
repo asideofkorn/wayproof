@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-weapon-possession",
+    "evidence_id": "evidence-taboose-west-weapon-possession",
+    "notes": "",
+    "observation_id": "observation-taboose-west-weapon-possession",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

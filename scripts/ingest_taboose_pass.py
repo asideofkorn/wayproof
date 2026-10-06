@@ -38,6 +38,7 @@ PERMIT = 'permit-inyo-overnight-wilderness'
 SNAPSHOT = 'geometry/v0/snapshots/usfs-taboose-pass-20261006.geojson'
 SERVICE = 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0'
 RETRIEVED = datetime(2026, 10, 6, 21, 40, tzinfo=timezone.utc)
+REVIEW_RETRIEVED = datetime(2026, 10, 6, 23, 14, tzinfo=timezone.utc)
 FIRE_TIME = TemporalScope(date(2025, 6, 10), date(2027, 6, 10))
 USE_TIME = TemporalScope(date(2025, 6, 18), date(2027, 6, 18))
 STAGE_TIME = TemporalScope(date(2026, 6, 22), date(2026, 12, 31))
@@ -122,10 +123,10 @@ class Builder:
         self.r.entities.append(Entity(eid, kind, name))
         self.r.spatial_scopes.append(SpatialScope(scope(eid), kind, eid))
 
-    def claim(self, key, src, subject, predicate, value, content, *, scopes=None, time=None, observed=None, recheck=False):
+    def claim(self, key, src, subject, predicate, value, content, *, scopes=None, time=None, observed=None, recheck=False, retrieved=None):
         cid, oid, evid = ('claim-taboose-'+key, 'observation-taboose-'+key, 'evidence-taboose-'+key)
         self.r.observations.append(Observation(oid, self.sources[src], content,
-            observed_at=observed, retrieved_at=RETRIEVED, observer='Wayproof primary-source text, table and visual map review'))
+            observed_at=observed, retrieved_at=retrieved or RETRIEVED, observer='Wayproof primary-source text, table and visual map review'))
         self.r.evidence.append(Evidence(evid, oid, cid))
         self.r.claims.append(Claim(cid, subject, predicate, value, (evid,), time,
                                    (scope(subject),) if scopes is None else tuple(scopes)))
@@ -332,7 +333,7 @@ def build_records(base, snapshot, digest):
     b.rule('camping-setback',camp_set,'Camp at least 100 feet from lakeshores, streams and National Forest System trails in the Inyo wilderness portion; use durable previously impacted sites. The permit does not assign a campsite.',trail_scopes,(Condition('activity.overnight','equals',True),),USE_TIME)
     for key,predicate,value,text in [
         ('sanitation','sanitation_guidance',{'burial_depth_inches':[6,8],'setback_feet_at_least':100,'from':['water','camps'],'trash':'pack out'},'Inyo regulations: bury solid human waste 6-8 inches deep at least 100 feet from water or camps; dispose of wash water at least 100 feet away and pack out trash.'),
-        ('pets','pet_policy',{'national_forest':'allowed under leash or responsive voice control; no wildlife harassment','park_wilderness':'pets prohibited','waste_setback_feet':100},'Inyo Pets section permits controlled pets on National Forest trips, requires waste/food care, and prohibits pets on trips entering NPS wilderness. The pass marks a jurisdiction transition, not a pet exemption.'),
+        ('pets','pet_policy',{'national_forest':'allowed under leash or responsive voice control; no wildlife harassment','waste_setback_feet':100},'Inyo Pets section permits controlled pets on National Forest trips and requires waste/food care. This claim covers only the eastern National Forest route; the western continuation has separately scoped NPS evidence.'),
         ('stock','stock_restrictions',{'maximum_head':25,'pack_goats':'prohibited west of US 395','loose_herding':'prohibited except unsafe-to-tie trail portions','route_suitability':'not recommended'},'Inyo regulations cap stock at 25 and prohibit pack goats west of US 395; Taboose trail is explicitly not recommended for stock. Legal stock rules do not establish physical passability.'),
         ('equipment-use','wilderness_use_restrictions',{'wheeled_vehicles':'prohibited under use order','scope':'Inyo wilderness, not the road approach'},'Inyo Wilderness Use order item 9 prohibits wagons, carts and other vehicles within wilderness. This is not a motor-vehicle ban on the access road.'),
     ]:
@@ -372,6 +373,20 @@ def build_records(base, snapshot, digest):
         ('west-group','group_size_guidance',{'overnight_on_trail':15,'overnight_off_trail':12,'day_hiking':25,'exceptions':'other named areas and stock have separate limits','affiliated_separation_miles':0.5},'NPS Party Size Limits gives 15 on trail/12 off trail with named exceptions, affiliated separation, and a separate 25-person day-hiking maximum; the Inyo eastern approach still caps groups at 15.'),
     ]:
         b.claim(key,'nps-rules',WEST,predicate,value,text,recheck=True)
+    for key,predicate,value,text in [
+        ('west-wheeled-equipment','wilderness_wheeled_vehicle_restriction',{'prohibited':True,'scope':'park wilderness'},'NPS General Travel Requirements prohibits all wheeled vehicles in park wilderness.'),
+        ('west-motorized-equipment','wilderness_motorized_equipment_restriction',{'prohibited':True,'scope':'park wilderness'},'NPS General Travel Requirements prohibits all motorized equipment in park wilderness.'),
+        ('west-weapon-discharge','weapon_discharge_restriction',{'prohibited':True,'covers':['firearms','other weapons'],'distinct_from_possession':True},'NPS General Travel Requirements prohibits discharging a firearm or other weapon; this statement concerns discharge, not possession.'),
+        ('west-weapon-possession','qualified_weapon_possession_policy',{'published_general_statement':'weapon possession prohibited, including bear spray','firearm_qualification':'firearm possession is subject to state regulations','not_a_blanket_firearm_possession_ban':True},'NPS General Travel Requirements states a weapon-possession prohibition including bear spray, while separately qualifying firearm possession by state regulations. These statements are retained together without extending the general prohibition to all firearm possession.'),
+        ('west-overnight-permit','overnight_permit_carry_policy',{'overnight_permit_required':True,'signed_copy_in_permittee_possession':True,'present_on_authorized_request':True,'entry_agency_policy_claim':'claim-taboose-continuous-travel'},'NPS General Travel Requirements requires a signed permit for overnight travel, carried by the permittee and shown to authorized personnel on request. The separately sourced entry-agency policy governs a continuous Inyo-entry trip.'),
+        ('west-trail-shortcuts','trail_shortcut_restriction',{'shortcuts_allowed':False},'NPS General Travel Requirements prohibits trail shortcuts to protect vegetation and reduce erosion.'),
+        ('west-trail-markers','trail_marker_restriction',{'build_rock_cairns':False,'build_other_trail_markers':False},'NPS General Travel Requirements prohibits constructing rock cairns or other trail markers.'),
+        ('west-trash','wilderness_waste_packout',{'pack_out_all_trash':True,'includes_toilet_paper':True},'NPS General Travel Requirements requires packing out all trash, including toilet paper.'),
+        ('west-drift-gates','drift_fence_gate_policy',{'close_gates_after_passing':True,'route_gate_inventory':'unknown'},'NPS General Travel Requirements directs visitors to close drift-fence gates after passage. This does not establish that a particular gate exists on the Taboose continuation.'),
+    ]:
+        b.claim(key,'nps-rules',WEST,predicate,value,text,recheck=True,retrieved=REVIEW_RETRIEVED)
+    b.gap('west-weapons-interpretation','How do the qualified NPS weapon-possession statements apply to the planned equipment?',
+        'The NPS page states a weapon-possession prohibition including bear spray but separately says firearm possession is subject to state regulations. Discharge is independently prohibited. State-law eligibility, exceptions and equipment-specific interpretation have not been reviewed; confirm with the park before travel. Do not infer a blanket firearm possession ban or general permission.',WEST,'claim-taboose-west-weapon-possession','claim-taboose-west-weapon-discharge')
     b.claim('west-grazing','nps-stock',WEST,'stock_grazing_restriction',
         {'taboose_pass_area':'open to grazing except a 12-acre wet meadow at 11,000 feet','seasonal_opening':'requires current check','route_suitability':'not established by grazing permission'},
         'NPS permanent Stock Use and Grazing Restrictions, South Fork Kings/Woods Creek: Taboose Pass area excludes the 12-acre wet meadow at 11,000 feet from grazing. Annual opening and special restrictions still need recheck.',recheck=True)

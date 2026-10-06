@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-weapon-possession",
+    "evidence_ids": [
+      "evidence-taboose-west-weapon-possession"
+    ],
+    "predicate": "qualified_weapon_possession_policy",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "firearm_qualification": "firearm possession is subject to state regulations",
+      "not_a_blanket_firearm_possession_ban": true,
+      "published_general_statement": "weapon possession prohibited, including bear spray"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
