@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Individual listing: check-in 2 p.m.; checkout 11:00 AM.",
+    "observation_id": "observation-emigrant-completion-cherry-site-034-timing",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-site-034"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

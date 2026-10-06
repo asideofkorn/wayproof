@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Hoover permit page requires approved bear-resistant food canisters and rejects hanging or guarding food. This route is the Bridgeport Leavitt Lake approach; Emigrant food-hanging options do not establish Hoover compliance.",
+    "observation_id": "observation-emigrant-completion-leavitt-food",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-hoover-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

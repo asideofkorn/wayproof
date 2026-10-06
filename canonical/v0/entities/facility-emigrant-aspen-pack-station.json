@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-emigrant-aspen-pack-station",
+    "kind": "facility",
+    "name": "Aspen Meadow Pack Station"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

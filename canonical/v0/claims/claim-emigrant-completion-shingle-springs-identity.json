@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-shingle-springs-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-identity"
+    ],
+    "predicate": "trailhead_identity",
+    "spatial_scope_ids": [
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "trailhead-emigrant-shingle-springs",
+    "temporal_scope": null,
+    "value": {
+      "confusable_entry": "Lake Eleanor/Cherry Lake lower trailhead",
+      "current_access": "unknown",
+      "name": "Shingle Springs Trailhead"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

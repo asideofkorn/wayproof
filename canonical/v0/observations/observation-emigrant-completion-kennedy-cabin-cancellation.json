@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Cabin page refund schedule: four weeks prior 100%; two to four weeks 50%; zero to two weeks 0%. Exact cutoff overlap and current terms require confirmation.",
+    "observation_id": "observation-emigrant-completion-kennedy-cabin-cancellation",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-kennedy-cabins"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

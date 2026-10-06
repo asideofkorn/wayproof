@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-permit-advice",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-permit-advice"
+    ],
+    "predicate": "operator_permit_pickup_advice",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "after_hours": "operator advises calling to confirm box pickup",
+      "guide_and_stock_counts": "include in permit",
+      "issuer_referral": "Summit / Sugar Pine Ranger Station",
+      "yosemite_bound_exception": "confirm with managing agency; advice is not self-issue permission"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

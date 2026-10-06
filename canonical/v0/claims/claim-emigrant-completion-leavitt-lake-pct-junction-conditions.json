@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-lake-pct-junction-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-lake-pct-junction-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

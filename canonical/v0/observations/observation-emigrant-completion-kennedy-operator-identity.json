@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Operator website identifies Kennedy Meadows Resort & Pack Station and advertises seasonal services. These are operator reports, not confirmed operation or a trail connection.",
+    "observation_id": "observation-emigrant-completion-kennedy-operator-identity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-operator-emigrant-kennedy-home"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

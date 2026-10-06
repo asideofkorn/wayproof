@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-issuer",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kibbie-issuer"
+    ],
+    "predicate": "permit_issuing_agency",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-kibbie-lake"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "agency": "Stanislaus National Forest",
+      "destination": "Kibbie Lake",
+      "yosemite_quota_not_transferred_from_other_entries": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

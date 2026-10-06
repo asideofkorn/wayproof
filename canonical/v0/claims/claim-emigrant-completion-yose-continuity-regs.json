@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-yose-continuity-regs",
+    "evidence_ids": [
+      "evidence-emigrant-completion-yose-continuity-regs"
+    ],
+    "predicate": "published_continuous_travel_exceptions",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-kibbie-lake"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "exceptions": [
+        "crossing a road on foot or stock",
+        "one night at Tuolumne Meadows or White Wolf backpackers campground"
+      ],
+      "source_section": "regs",
+      "vehicle_travel_invalidates": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

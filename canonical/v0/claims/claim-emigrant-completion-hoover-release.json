@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-hoover-release",
+    "evidence_ids": [
+      "evidence-emigrant-completion-hoover-release"
+    ],
+    "predicate": "quota_entry_booking_schedule",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "advance_release": "six months before entry",
+      "applies_to": "quota trailheads, not Leavitt Lake quota-free designation",
+      "live_availability": "unknown",
+      "remaining_release": "within three days at 7 a.m. PDT",
+      "remaining_share": "one half"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

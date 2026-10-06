@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov overview reports 41 single and five double family sites. Its linked inventory exposes 45 individual pages numbered 002–046; absence of 001 does not establish closure or nonexistence.",
+    "observation_id": "observation-emigrant-completion-cherry-site-count",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-rec-cherry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

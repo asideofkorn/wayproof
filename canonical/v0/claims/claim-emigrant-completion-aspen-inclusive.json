@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-aspen-inclusive",
+    "evidence_ids": [
+      "evidence-emigrant-completion-aspen-inclusive"
+    ],
+    "predicate": "published_all_inclusive_terms",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-aspen-pack-station"
+    ],
+    "subject_id": "facility-emigrant-aspen-pack-station",
+    "temporal_scope": null,
+    "value": {
+      "current_quote": "confirm",
+      "gear_exception": "special arrangements at reservation",
+      "gear_limit_lb": 45,
+      "minimum_days": 4,
+      "minimum_exception": "unless arrangements made",
+      "minimum_people": 4,
+      "personal_gear_included": false,
+      "usd_per_person_per_day": {
+        "hiking": 300,
+        "riding": 350
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

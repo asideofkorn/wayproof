@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-water-notice",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-water-notice"
+    ],
+    "predicate": "dated_water_advisory_report",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_service_and_safety": "recheck; bring potable water",
+      "notice": "boil tap water or use bottled water",
+      "notice_date": "2025-07-03",
+      "reported_hazard": "positive E. coli sample",
+      "rescission_status": "not established"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

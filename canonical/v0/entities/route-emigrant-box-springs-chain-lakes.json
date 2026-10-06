@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-box-springs-chain-lakes",
+    "kind": "route",
+    "name": "Box Springs to Chain Lakes"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

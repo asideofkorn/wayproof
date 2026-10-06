@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-route-booking",
+    "evidence_id": "evidence-emigrant-completion-leavitt-route-booking",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-leavitt-route-booking",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

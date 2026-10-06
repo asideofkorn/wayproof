@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-deadman-referral",
+    "evidence_ids": [
+      "evidence-emigrant-completion-deadman-referral"
+    ],
+    "predicate": "nearby_named_facility_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "booking_availability": "unknown",
+      "campground_distinct_from_trailhead": true,
+      "campground_id": "campground-emigrant-deadman",
+      "walking_connector": "not reviewed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

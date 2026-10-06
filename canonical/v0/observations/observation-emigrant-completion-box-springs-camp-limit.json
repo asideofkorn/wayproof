@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-26 April 2012 states a one-night limit at all trailheads; this is not current site-specific permission.",
+    "observation_id": "observation-emigrant-completion-box-springs-camp-limit",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

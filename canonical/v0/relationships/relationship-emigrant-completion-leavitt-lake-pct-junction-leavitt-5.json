@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-lake-pct-junction-profile"
+    ],
+    "object_id": "route-emigrant-leavitt-lake-pct-junction",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-completion-leavitt-lake-pct-junction-leavitt-5",
+    "subject_id": "route-segment-emigrant-completion-leavitt-5",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

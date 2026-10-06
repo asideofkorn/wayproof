@@ -1,0 +1,42 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-5-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-5-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-segment-emigrant-completion-leavitt-5",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown",
+      "end_coordinate": {
+        "latitude": 38.260844568512425,
+        "longitude": -119.6146772221038
+      },
+      "geometry_snapshot": {
+        "feature_id": "emigrant-completion-leavitt-5",
+        "path": "geometry/v0/snapshots/usfs-emigrant-completion-routes-20261006.geojson",
+        "sha256": "e26efcc96b55cbff2d896ef9115c204785d17873d3af13b3bead96c9774339af"
+      },
+      "navigation_grade": false,
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9475574,
+      "source_globalid": "{758FC520-C0F7-478D-A9C3-010B4EA91678}",
+      "source_vertex_range_inclusive": [
+        0,
+        8
+      ],
+      "start_coordinate": {
+        "latitude": 38.259961451550375,
+        "longitude": -119.61306202373463
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

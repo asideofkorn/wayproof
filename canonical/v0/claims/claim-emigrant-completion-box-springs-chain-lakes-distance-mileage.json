@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-box-springs-chain-lakes-distance-mileage",
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-chain-lakes-distance-mileage"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-box-springs-chain-lakes"
+    ],
+    "subject_id": "route-emigrant-box-springs-chain-lakes",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "one way approach",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 2.5,
+      "source_edition": "2012-06"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

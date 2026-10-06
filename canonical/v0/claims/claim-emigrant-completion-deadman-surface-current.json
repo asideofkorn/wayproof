@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-deadman-surface-current",
+    "evidence_ids": [
+      "evidence-emigrant-completion-deadman-surface-current"
+    ],
+    "predicate": "reported_parking_surface",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-deadman",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-deadman",
+    "temporal_scope": null,
+    "value": {
+      "parking_pads": "dirt",
+      "road": "paved",
+      "source_context": "current page, updated 2026-09-15"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

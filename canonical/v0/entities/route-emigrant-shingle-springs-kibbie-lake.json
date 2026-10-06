@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "kind": "route",
+    "name": "Shingle Springs to Kibbie Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

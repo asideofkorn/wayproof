@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-shingle-springs-huckleberry-lake-limits",
+    "question": "What remains unresolved for Shingle Springs to Huckleberry Lake?",
+    "reason": "Atomic mileage, current trail condition, return itinerary, water and individual campsites are unresolved. The graph follows explicit 2010 map connections; no complete parking-to-objective geometry is published. Boundary-following stretches do not establish exclusive jurisdiction. Confirm permits and rules for all actual crossings.",
+    "related_ids": [
+      "claim-emigrant-completion-shingle-springs-huckleberry-lake-profile",
+      "claim-emigrant-completion-shingle-springs-huckleberry-lake-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -520,3 +520,110 @@ site-group results are recorded in the PR after completion.
 After northern review, the planned remaining combined phases are southern and
 cross-boundary coverage, then boundary/facility/booking/source completion audit.
 Kennedy display geometry remains an explicit follow-up, not silently complete.
+
+## Combined southern coverage and completion audit — 2026-10-06
+
+This single candidate combines the two remaining planned batches. It supplies
+five bounded approaches, the designated wilderness display boundary, selected
+cross-boundary permit behavior, three approach campgrounds, 45 individually
+reviewed Cherry Valley campsite listings, 21 Kennedy cabin listings and two
+operator service inventories. It does **not** claim that every Emigrant trail,
+remote campsite, facility connector or neighboring wilderness is complete.
+
+### Route review
+
+| Approach | Graph and source | Geographic display | Remaining limit |
+| --- | --- | --- | --- |
+| Box Springs → Chain Lakes | 2010 official map 19E95/19E28; June 2012 table reports 2.5 miles | None | Primitive trail; full parking-to-lake geometry unreviewed; no atomic distance inferred |
+| Bourland Meadow → mapped 19E13 terminus | Official map and named USFS feature 9431238 | Whole feature, 219 vertices | Terminus west of wilderness boundary; no invented continuation to Chain Lakes or assertion of wilderness entry |
+| Shingle Springs → Kibbie Lake | 2010 southern panel: 20E11 to explicit east branch into Yosemite; 2012 report 4.3 miles | None | NPS branch/parking geometry not reviewed; Yosemite destination rules apply |
+| Shingle Springs → Huckleberry Lake | Shared first segment; 20E11 via Styx Pass, Boundary Lake junction and Lord Meadow | None | No Boundary Lake spur; exact divide-side jurisdiction, complete geometry and current crossings unresolved; 2012 total 18.3 is a report |
+| Leavitt Lake → PCT junction | Current USFS trail/TH detail and 2010 Leavitt panel, named 22071 chain | Five complete features; exact join to published PCT endpoint | Trailhead page coordinate differs from mapped trail start; not a parking-centroid substitution. Reports 1.65 vs 1.8 miles stay separate |
+
+Named resources remain separate from trail endpoint nodes. Each graph traverses
+in both directions. No return itinerary, atomic mileage, campsite, safe water or
+current trail condition is manufactured. Shingle approaches reuse the same
+physical entrance segment. Leavitt ends at the existing PCT junction node; the
+Sonora Pass route remains unchanged. Neither Leavitt Peak nor a lake/pass
+continuation is inferred.
+
+The southern USFS query returned 71 features, including motor/winter features
+that were excluded. Reviewed northern input is the previous 207-feature response.
+Both exact query parameter sets, input hashes, source attributes, global IDs,
+vertex ranges and original geometry hashes are recorded in the new snapshot.
+Original GIS length fields are provenance, never computed hiking distances.
+
+The complete Box Spring feature starts west of its trailhead marker and crosses
+19E28 at an interior vertex; the selected parking connector is not established.
+The Bourland feature terminates without a continuous dataset connection to that
+chain. We preserve these source limitations instead of stitching nearby lines.
+Kennedy review still lacks the parking connector and retains the roughly
+45-metre 21E03/20E11 offset. Those two existing routes remain topology-only.
+
+### Boundary review
+
+USGS PAD-US Management Areas returned seven name matches for `Emigrant`.
+Only OBJECTID **237112** matched Emigrant Wilderness, California, USFS,
+`Category=Designation`, `Des_Tp=WA`; fishing access sites, an ACEC and unrelated
+lakes/parks were excluded. Its outer ring has 9,263 vertices and bounds roughly
+119.919–119.596° W / 38.026–38.322° N, consistent with the official overview.
+The selected polygon is retained without local simplification or rounding.
+The existing boundary gap is narrowed to precision/amendments/jurisdiction,
+while its earlier unreviewed history remains in the published ChangeSet.
+Geometry never creates access, ownership, containment or permission.
+
+### Source-disposition ledger
+
+All retrieval/review below occurred October 6, 2026. Undated source statements
+remain undated observations; page update dates and notice dates are not replaced
+by retrieval dates. Current pages were read through ordinary HTTPS, including
+HTML text that the search tool could not fetch. Original downloads remain local
+research artifacts and are not committed.
+
+| Source / hierarchy layer | Disposition | Result or bounded limit |
+| --- | --- | --- |
+| Emigrant overview, Hwy108 access, permits, signed wilderness/occupancy orders, conditions and alerts | Already represented; permits/alerts reviewed again | Existing conflicts preserved. Source-specific directions and rules do not become region-wide permissions |
+| 2010 Emigrant geospatial map, southern and Leavitt panels | Ingested | Explicit labeled connections for the five approaches, place identities and branch distinctions |
+| April 2012 trailhead guide / June 2012 mileage table | Ingested / conflicting and preserved | Box/Bourland primitive access, historical one-night limit, approximate road directions, destination mileage reports. Bourland schematic 0.0 is not a zero-length edge |
+| USFS NFS Trails service southern 71-feature / northern 207-feature inputs | Ingested / deferred with gap | Bourland and Leavitt complete selected chains only; no geographic Shingle/Box/Kennedy route published |
+| USGS PAD-US Management Areas | Ingested | Exact designated-wilderness identity and display polygon, with query/selection/hash provenance |
+| USFS Leavitt Lake trailhead and trail detail | Ingested / conflicting and preserved | Rough 32077 requires high-clearance 4WD; seasonal qualifier, no restrooms/site fee, separate permit fee; location/elevation and 1.65-mile report preserved separately from old table/geometry |
+| USFS Hoover permit page, updated May 4, 2026 | Ingested | Leavitt **Lake** no-quota vs Leavitt **Meadows** quota; overnight permit and canister distinction; no transfer of Emigrant no-quota/free/hanging policies |
+| Recreation.gov Hoover product 445856, all policy/fee sections | Ingested / conflicting and preserved | Print/signed-copy deadline, age-qualified fees, quota-entry release description, continuous-trip conditions and south-of-CA120 addendum/permit qualification |
+| NPS wilderness permit FAQ, wilderness regulations, trailheads map Hetch Hetchy inset | Ingested; existing Yosemite identities/rules reused | Kibbie permit issued by Stanislaus, Yosemite pet/food rules still apply, Kibbie quarter-mile fire restriction. FAQ/regulations differ on White Wolf continuous-trip stop exception |
+| Hoover general regulations / full adjacent-wilderness inventory | Deferred with gap | Selected Leavitt route policies reviewed; no exhaustive Hoover facility/route/stock-zone inventory, signed-order boundary import or PCTA permit eligibility claim |
+| Cherry Lake page and current alerts | Ingested | Source of local facilities/road cautions; specific signed orders govern their bounded areas. Lake directions point to campground, not a verified Shingle driving route |
+| STF-16-2025-01 signed four-page Cherry Lake order/map/decision memo | Ingested | January 27, 2025–December 31, 2026; restricted lake-shore/island acts and exemptions. No traced polygon or blanket campground closure |
+| STF-16-2026-06 signed 1N98 road order + alert | Ingested | June 1, 2026–May 31, 2027; road from 1N14Y junction to terminus. Does not establish closure of all Cherry access or automatic reopening after expiration |
+| Current Baker and Deadman USFS pages, all overview/amenity/fee sections | Ingested / conflicting and preserved | Campground identities, counts, operator/fees/season, occupancy; hydrants vs no-potable-water wording. Baker vault vs flush conflict; 2020 paved pads vs current dirt pads |
+| Brightman 2020 / Traveler 2023 / Horse Camping 2020 | Already represented; Brightman comparisons ingested | Historical Kennedy/horse-camp records and previous conflicts retained; no present opening inferred |
+| Cherry Valley USFS current conditions, overview, fee table and amenities | Ingested / conflicting and preserved | No water service plus retained July 3, 2025 E. coli boil notice; $41+fees/taxes vs $29/$58; vault vs flush toilets |
+| Recreation.gov Cherry Valley 234756 overview and all 45 linked site pages | Deep inventory ingested / conflicting and preserved | Sites 002–046 with individual source URLs, type/capacity/vehicle fields/times; no site 001 inferred. Overview water conflicts with manager; 41+5 count differs from 45 exposed listings |
+| Cherry Valley individual vehicle data | Conflicting and preserved | Equipment trailer length, maximum vehicle field and driveway lengths remain separate. Example site 029: trailer 50 ft, vehicle field 24, driveway 32. Site 028 short-site advisory retained; 002/003 missing max-vehicle field remains unknown |
+| Baker/Deadman individual numbered sites | Deferred with gap | Current manager/operator provide aggregate inventory, not reviewed individual numbered booking pages; both are first-come, no reservations |
+| Kennedy home, amenities, PCT page, destinations | Ingested / already represented | Current campground booking method; existing season, trailhead camping/fee and destination-mileage conflicts retained |
+| Kennedy cabin page, full inventory and booking/cancellation notes | Deep inventory ingested | 21 listed cabins (1–22 except 13); capacity/base rate/category; cabin 3 has no kitchenette. Taxes, dog/extra-person charges, price changes after booking and cancellation cutoff ambiguity retained |
+| Kennedy pack options, pack FAQ, ride options and ride FAQ | Ingested / conflicting and preserved | Service/booking/rider limits; ride page Kennedy Lake 8 mi vs prior 7.5 retained. Operator permit pickup advice is not authority to bypass Yosemite-bound issuance restrictions |
+| Kennedy maps/photos, guest checklist/gear list, wedding/catering details | Excluded as irrelevant to this bounded planning inventory / reference-only | No copyrighted media redistributed; no new trail connection derived from advertisements |
+| Aspen home/ride accordion, pack trips, all-inclusive and FAQ | Ingested | Season/weather qualifier, phone booking, pack options/deposit/one-way rate basis, inclusive minimums/gear limits. Larger-group invitation does not exempt wilderness limits |
+| Aspen individual destination advertisements beyond prior Chewing/Grouse/Gem reviews | Deferred with gap | Names alone do not establish new routes; deeper lake branches outside the five selected approaches remain in the topology gap |
+| Aspen referred Pinecrest campground / off-site hotels and resorts | Deferred with gap | Regional lodging alternatives and their individual inventories are outside the three approach campgrounds/two operators audited here |
+| Secondary commercial trail sites and obsolete 2014 Rim Fire report | Excluded as non-current/non-primary for the promised routes | No current closure, route geometry or mileage imported from those pages |
+
+### Consumer acceptance
+
+The new rechecks are `result-emigrant-completion-pretrip-recheck` and
+`result-emigrant-completion-access-recheck`. They expose route limits, source
+conflicts, dated restrictions, individual inventory and parent booking terms in
+applicable contexts. Access-only requests do not trigger a wilderness-entry
+requirement. A Leavitt overnight route triggers its persisted permit requirement;
+a day hike does not. Its Hoover food-storage requirement is distinct from
+Emigrant's. Kibbie requests reuse Yosemite permit, food-storage and pet rules
+while retaining Stanislaus issuance evidence.
+
+Remaining gaps are evidence/itinerary-specific: unresolved geometry connectors,
+divide-side jurisdiction, deeper branches and returns, actual live booking and
+operating status, unresolved source conflicts, individual Baker/Deadman sites,
+Cherry Valley site 001, remote campsite inventories and agency confirmation for
+long cross-boundary itineraries. This finishes the **combined planned review
+batch**, not an assertion of wilderness-wide source or route completeness.

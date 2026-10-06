@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-boundary-lord-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-boundary-lord-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-segment-emigrant-completion-boundary-lord",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-lord-meadow-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-boundary-lake-junction",
+      "support": "2010 southern map draws 20E11 northwest from the Boundary Lake branch to Lord Meadow; no Boundary Lake spur is included."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

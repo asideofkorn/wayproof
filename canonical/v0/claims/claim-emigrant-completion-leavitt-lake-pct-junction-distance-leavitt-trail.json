@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-lake-pct-junction-distance-leavitt-trail",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-lake-pct-junction-distance-leavitt-trail"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "trail length",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 1.65,
+      "source_edition": "page updated 2025-07-15"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

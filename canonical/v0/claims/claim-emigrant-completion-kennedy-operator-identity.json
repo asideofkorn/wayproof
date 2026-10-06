@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-operator-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-operator-identity"
+    ],
+    "predicate": "reported_operator_services",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "unknown",
+      "operator": "Kennedy Meadows Resort & Pack Station",
+      "walking_connector": "not reviewed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

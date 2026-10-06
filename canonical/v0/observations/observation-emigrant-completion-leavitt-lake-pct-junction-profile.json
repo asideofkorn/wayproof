@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Explicit named trail connections support Leavitt Lake to Pacific Crest Trail junction. This is a descriptive Wayproof approach; the endpoint is a trail node, not a campsite or lake centroid.",
+    "observation_id": "observation-emigrant-completion-leavitt-lake-pct-junction-profile",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-leavitt-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

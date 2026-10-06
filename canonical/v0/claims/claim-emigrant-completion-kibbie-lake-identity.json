@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-lake-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kibbie-lake-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-yosemite-kibbie-lake"
+    ],
+    "subject_id": "waterbody-yosemite-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "individual_campsites": "not established",
+      "name": "Kibbie Lake (Yosemite Wilderness)",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-huckleberry-lake-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-huckleberry-lake-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-emigrant-huckleberry-lake"
+    ],
+    "subject_id": "waterbody-emigrant-huckleberry-lake",
+    "temporal_scope": null,
+    "value": {
+      "individual_campsites": "not established",
+      "name": "Huckleberry Lake (Emigrant Wilderness)",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

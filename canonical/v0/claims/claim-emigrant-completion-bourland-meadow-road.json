@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-bourland-meadow-road",
+    "evidence_ids": [
+      "evidence-emigrant-completion-bourland-meadow-road"
+    ],
+    "predicate": "historical_road_access",
+    "spatial_scope_ids": [
+      "scope-emigrant-bourland-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bourland-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_access": "unknown",
+      "mileages": "approximate; not modeled as driving route",
+      "roads": [
+        "3N01",
+        "3N16"
+      ],
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

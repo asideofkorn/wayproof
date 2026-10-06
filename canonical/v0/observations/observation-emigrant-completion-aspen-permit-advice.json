@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Operator FAQ says to obtain a Summit Ranger Station permit before arrival, count guides and stock, and confirm after-hours pickup. The manager, not the operator, determines issuing procedures.",
+    "observation_id": "observation-emigrant-completion-aspen-permit-advice",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-aspen-faq"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

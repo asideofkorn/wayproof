@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-aspen-season",
+    "evidence_ids": [
+      "evidence-emigrant-completion-aspen-season"
+    ],
+    "predicate": "published_operator_season_booking",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-aspen-pack-station",
+      "scope-emigrant-crabtree",
+      "scope-emigrant-gianelli"
+    ],
+    "subject_id": "facility-emigrant-aspen-pack-station",
+    "temporal_scope": null,
+    "value": {
+      "live_availability": "unknown",
+      "phone": "209-965-3402",
+      "reported_days": "seven days per week",
+      "reported_ride_hours": "08:00–16:00",
+      "season": "June–September depending on snowfall"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

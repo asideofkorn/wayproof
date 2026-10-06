@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-facilities",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-facilities"
+    ],
+    "predicate": "reported_trailhead_facilities",
+    "spatial_scope_ids": [
+      "scope-emigrant-leavitt-lake"
+    ],
+    "subject_id": "trailhead-emigrant-leavitt-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "recheck",
+      "restrooms": false,
+      "site_fee_usd": 0,
+      "stock_allowed_at_site": true,
+      "wilderness_permit_fee_separate": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

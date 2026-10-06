@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-027-occupancy",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-site-027-occupancy"
+    ],
+    "predicate": "published_site_capacity",
+    "spatial_scope_ids": [
+      "scope-campsite-emigrant-cherry-valley-027"
+    ],
+    "subject_id": "campsite-emigrant-cherry-valley-027",
+    "temporal_scope": null,
+    "value": {
+      "maximum_people": 6,
+      "maximum_vehicles": 1,
+      "minimum_people": 1,
+      "source_scope": "individual site"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

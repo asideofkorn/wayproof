@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-aspen-operator-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-aspen-operator-identity"
+    ],
+    "predicate": "reported_operator_services",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-aspen-pack-station",
+      "scope-emigrant-crabtree"
+    ],
+    "subject_id": "facility-emigrant-aspen-pack-station",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "unknown",
+      "operator": "Aspen Meadow Pack Station",
+      "walking_connector": "not reviewed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

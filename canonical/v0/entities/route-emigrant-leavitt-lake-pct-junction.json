@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-leavitt-lake-pct-junction",
+    "kind": "route",
+    "name": "Leavitt Lake to Pacific Crest Trail junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

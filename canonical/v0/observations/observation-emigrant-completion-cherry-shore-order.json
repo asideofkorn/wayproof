@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Signed STF-16-2025-01 p1 and map p2 prohibit camping, cooking, campfire building and fuel storage on National Forest lands at/below or within 100 feet above the 4,702-foot Cherry Lake high-water mark, and on its island. Effective January 27, 2025–December 31, 2026.",
+    "observation_id": "observation-emigrant-completion-cherry-shore-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

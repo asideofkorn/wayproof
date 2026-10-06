@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-shingle-springs-huckleberry-lake-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-huckleberry-lake-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-huckleberry-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

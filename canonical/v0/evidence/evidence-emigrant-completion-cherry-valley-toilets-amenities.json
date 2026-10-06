@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-toilets-amenities",
+    "evidence_id": "evidence-emigrant-completion-cherry-valley-toilets-amenities",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-cherry-valley-toilets-amenities",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

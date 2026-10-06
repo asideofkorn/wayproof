@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-shingle-springs-huckleberry-lake",
+    "kind": "route",
+    "name": "Shingle Springs to Huckleberry Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

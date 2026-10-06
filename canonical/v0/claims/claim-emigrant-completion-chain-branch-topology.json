@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-chain-branch-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-chain-branch-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-box-springs-chain-lakes"
+    ],
+    "subject_id": "route-segment-emigrant-completion-chain-branch",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-chain-lakes-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-box-chain-junction",
+      "support": "2010 southern map draws 19E28 east from 19E95 to Chain Lakes; the lake approach is distinct from the waterbody and any campsite."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-entry-booking",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-entry-booking"
+    ],
+    "predicate": "published_permit_booking_process",
+    "spatial_scope_ids": [
+      "scope-emigrant-leavitt-lake"
+    ],
+    "subject_id": "trailhead-emigrant-leavitt-lake",
+    "temporal_scope": null,
+    "value": {
+      "all_ages_count_for_quota": true,
+      "charged_minimum_age": 13,
+      "current_terms": "recheck",
+      "per_person_fee_usd": 8,
+      "print_deadline": "10:00 Pacific on entry date",
+      "product_id": "445856",
+      "reservation_fee_refundable": false,
+      "reservation_fee_usd": 6,
+      "signed_physical_copy_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

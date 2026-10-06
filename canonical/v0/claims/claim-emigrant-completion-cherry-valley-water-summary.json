@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-water-summary",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-water-summary"
+    ],
+    "predicate": "published_water_service_report",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_flow": "unknown",
+      "potability": "not established",
+      "reported": "no water service; bring potable water",
+      "section": "Current Conditions"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

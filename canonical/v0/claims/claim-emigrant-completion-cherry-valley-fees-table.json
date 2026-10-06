@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-fees-table",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-fees-table"
+    ],
+    "predicate": "published_camping_fee",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_price": "recheck",
+      "other_type": "double",
+      "other_usd": 58,
+      "payment": "see booking terms",
+      "section": "fee panel",
+      "single_usd": 29
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

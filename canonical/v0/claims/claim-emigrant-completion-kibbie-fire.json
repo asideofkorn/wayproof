@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-fire",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kibbie-fire"
+    ],
+    "predicate": "place_campfire_restriction",
+    "spatial_scope_ids": [
+      "scope-waterbody-yosemite-kibbie-lake",
+      "scope-route-emigrant-shingle-springs-kibbie-lake"
+    ],
+    "subject_id": "waterbody-yosemite-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "campfires_allowed": false,
+      "extent": "within 0.25 mile of shoreline",
+      "seasonal_recheck_required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

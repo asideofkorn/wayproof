@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Hoover quota product describes advance release six months ahead and the other half within three days at 7 a.m. PDT. This release split describes quota inventory, not a new quota on Leavitt Lake.",
+    "observation_id": "observation-emigrant-completion-hoover-release",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-rec-hoover"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

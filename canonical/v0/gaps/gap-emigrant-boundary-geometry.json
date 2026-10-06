@@ -2,8 +2,8 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-emigrant-boundary-geometry",
-    "question": "Where is the reviewed designated wilderness boundary?",
-    "reason": "Authoritative boundary geometry has not yet been matched. A published map exists but no polygon is traced from it. Boundary review belongs to a later batch.",
+    "question": "What boundary precision and exact jurisdiction remain unverified?",
+    "reason": "Reviewed PAD-US designated-wilderness display geometry now matches Emigrant Wilderness, OBJECTID 237112. Survey/legal precision, current amendments and exact route-side jurisdiction remain unverified. Polygon overlap does not create access, containment or permission.",
     "related_ids": [
       "wilderness-emigrant",
       "claim-emigrant-access-recheck"

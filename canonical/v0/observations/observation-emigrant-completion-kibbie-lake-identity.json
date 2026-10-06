@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 Emigrant overview labels Kibbie Lake (Yosemite Wilderness). Resource identity does not designate a campsite, water supply or shoreline access.",
+    "observation_id": "observation-emigrant-completion-kibbie-lake-identity",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

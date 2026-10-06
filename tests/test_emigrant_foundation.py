@@ -31,7 +31,10 @@ def test_identity_access_and_no_fabricated_route(reads):
     assert [e.entity_id for e in reads.search_entities('Emigrant Wilderness')
             if e.name == 'Emigrant Wilderness'] == [LAND]
     access = [r for r in records.relationships if r.object_id == LAND and r.predicate == 'accesses']
-    assert len(access) == 10
+    assert len(access) == 12
+    assert {r.subject_id for r in access} >= {
+        "trailhead-emigrant-shingle-springs", "trailhead-emigrant-leavitt-lake",
+    }
     assert all(r.evidence_ids for r in access)
     assert {r.subject_id for r in access} >= {
         'trailhead-emigrant-crabtree', 'trailhead-emigrant-gianelli',

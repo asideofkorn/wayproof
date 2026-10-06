@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-deadman-inventory",
+    "evidence_id": "evidence-emigrant-completion-deadman-inventory",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-deadman-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

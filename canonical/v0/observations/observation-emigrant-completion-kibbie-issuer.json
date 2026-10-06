@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS wilderness trailheads map Hetch Hetchy inset specifically directs Kibbie Lake and Lake Eleanor permit requests to Stanislaus National Forest.",
+    "observation_id": "observation-emigrant-completion-kibbie-issuer",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-nps-yosemite-wilderness-trailheads-map-2022"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

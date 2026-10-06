@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-styx-boundary-junction-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-styx-boundary-junction-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-segment-emigrant-completion-styx-boundary-junction",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-boundary-lake-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-styx-pass-approach",
+      "support": "2010 southern map draws the main 20E11 north/east from Styx Pass to the explicit 20E11A Boundary Lake fork."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

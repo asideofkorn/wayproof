@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-cross-boundary-permits",
     "question": "What applies when entering from another agency or continuing to Yosemite or Hoover?",
-    "reason": "Entry-agency issuance and the no-self-issue exception are preserved; specific cross-boundary routes, quotas, permit products and food/dog rules require separate agency review. Do not extend Emigrant no-quota/free-permit claims across boundaries.",
+    "reason": "Stanislaus, Hoover/Bridgeport and Yosemite entry-agency rules and selected route contexts are represented. Leavitt Lake has no trailhead quota but overnight permits; Leavitt Meadows has quota. South-of-CA120 continuation/addendum wording differs between Hoover booking and NPS outside-origin guidance. Exact jurisdiction along divides, Yosemite-bound issuance logistics, PCT long-distance permits and unmodeled continuations still require agency confirmation.",
     "related_ids": [
       "wilderness-emigrant",
       "claim-emigrant-permit-acquisition"

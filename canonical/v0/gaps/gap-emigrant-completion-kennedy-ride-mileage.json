@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-kennedy-ride-mileage",
+    "question": "Which Kennedy Lake distance matches the intended start?",
+    "reason": "The operator ride page says eight miles one way; the operator destinations page and 2012 USFS table say 7.5. Preserve all reports, including the unresolved parking walk, without rewriting any physical segment.",
+    "related_ids": [
+      "claim-emigrant-completion-kennedy-lake-ride-mileage",
+      "claim-emigrant-northern-kennedy-meadows-kennedy-lake-mileage-mileage-table",
+      "claim-emigrant-northern-kennedy-meadows-kennedy-lake-mileage-kennedy-destinations"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

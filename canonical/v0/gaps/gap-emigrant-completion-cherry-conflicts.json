@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-cherry-conflicts",
+    "question": "What Cherry Valley water, price and inventory can be relied on?",
+    "reason": "Manager page: no water service plus retained 2025 boil notice; booking page: drinking water available. Manager overview: $41 plus fees/taxes; fee table: $29 single/$58 double. Overview inventory totals 46; only 45 numbered pages were exposed. Confirm water, rates, operation and site 001; do not infer a closed or missing site.",
+    "related_ids": [
+      "claim-emigrant-completion-cherry-fees-overview",
+      "claim-emigrant-completion-cherry-water-notice",
+      "claim-emigrant-completion-cherry-water-booking",
+      "claim-emigrant-completion-cherry-site-count",
+      "claim-emigrant-completion-cherry-booking",
+      "claim-emigrant-completion-cherry-valley-fees-table"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

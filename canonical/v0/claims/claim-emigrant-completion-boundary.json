@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-boundary",
+    "evidence_ids": [
+      "evidence-emigrant-completion-boundary"
+    ],
+    "predicate": "managed_land_boundary_geometry",
+    "spatial_scope_ids": [],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "boundary_geometry_snapshot": {
+        "feature_ids": [
+          "padus-management:237112"
+        ],
+        "path": "geometry/v0/snapshots/usgs-padus-emigrant-boundary-20261006.geojson",
+        "sha256": "2213c5b4753174e04adee93671f249b305ce93af09a902fffd69e852ccc8596b"
+      },
+      "boundary_type": "designated_wilderness_management_area",
+      "coordinate_reference_system": "EPSG:4326",
+      "navigation_grade": false,
+      "source_coordinate_accuracy": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

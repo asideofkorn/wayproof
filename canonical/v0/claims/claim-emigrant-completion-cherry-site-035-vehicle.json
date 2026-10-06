@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-035-vehicle",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-site-035-vehicle"
+    ],
+    "predicate": "published_vehicle_fit_reports",
+    "spatial_scope_ids": [
+      "scope-campsite-emigrant-cherry-valley-035"
+    ],
+    "subject_id": "campsite-emigrant-cherry-valley-035",
+    "temporal_scope": null,
+    "value": {
+      "driveway_length_report": "38",
+      "driveway_length_units": "not explicit in field unless foot mark shown",
+      "driveway_max_vehicle_length_report": 24,
+      "equipment_section": "Tent",
+      "resolved_vehicle_fit": "unknown",
+      "site_note": null
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

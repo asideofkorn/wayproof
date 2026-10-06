@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-styx-pass-approach",
+    "kind": "route_node",
+    "name": "Styx Pass mainline approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

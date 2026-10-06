@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Hoover page separately lists Leavitt Lake among no-quota trailheads and Leavitt Meadows among quota trailheads. Its generic June 15–October 15 quota statement must be read with that entry list.",
+    "observation_id": "observation-emigrant-completion-leavitt-entry-quota",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-hoover-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

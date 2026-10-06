@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-pack-options",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-pack-options"
+    ],
+    "predicate": "published_service_options",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "options": [
+        "all-inclusive",
+        "extended hire",
+        "drop trip",
+        "backpacker gear support"
+      ],
+      "prices": "confirm complete quote including published 10% government fee"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

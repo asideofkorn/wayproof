@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-lord-huckleberry-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-lord-huckleberry-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-segment-emigrant-completion-lord-huckleberry",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-huckleberry-southwest-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-lord-meadow-approach",
+      "support": "2010 southern map draws 20E11 from Lord Meadow north/east through Cherry Creek toward the southwest side of Huckleberry Lake. Shoreline camps and lake spurs are not included."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

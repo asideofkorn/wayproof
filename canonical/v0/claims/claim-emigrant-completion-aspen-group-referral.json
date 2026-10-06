@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-aspen-group-referral",
+    "evidence_ids": [
+      "evidence-emigrant-completion-aspen-group-referral"
+    ],
+    "predicate": "operator_group_size_referral",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-aspen-pack-station"
+    ],
+    "subject_id": "facility-emigrant-aspen-pack-station",
+    "temporal_scope": null,
+    "value": {
+      "larger_group_wording": "call for possible accommodation",
+      "legal_exception_established": false,
+      "stated_maximum": 15
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

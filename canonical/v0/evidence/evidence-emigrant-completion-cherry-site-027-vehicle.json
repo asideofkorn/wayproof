@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-027-vehicle",
+    "evidence_id": "evidence-emigrant-completion-cherry-site-027-vehicle",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-cherry-site-027-vehicle",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

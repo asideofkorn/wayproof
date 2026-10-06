@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-lake-ride-mileage",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-lake-ride-mileage"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-kennedy-lake",
+    "temporal_scope": null,
+    "value": {
+      "activity": "guided riding",
+      "distance_convention": "one way",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 8
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

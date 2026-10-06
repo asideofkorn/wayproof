@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-cabin-15-inventory",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-cabin-15-inventory"
+    ],
+    "predicate": "published_cabin_inventory",
+    "spatial_scope_ids": [
+      "scope-cabin-emigrant-kennedy-15"
+    ],
+    "subject_id": "cabin-emigrant-kennedy-15",
+    "temporal_scope": null,
+    "value": {
+      "base_rate_usd_per_night": 285,
+      "cabin_number": "15",
+      "category": "furnished",
+      "current_price_and_availability": "unknown",
+      "kitchenette_exception": null,
+      "rates_exclude_additions": true,
+      "reported_capacity": 10
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

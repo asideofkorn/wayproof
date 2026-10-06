@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-bourland-mapped-terminus-limits",
+    "question": "What remains unresolved for Bourland Meadow to mapped trail terminus?",
+    "reason": "Atomic mileage, current trail condition, return itinerary, water and individual campsites are unresolved. This bounds 19E13 at its reviewed terminus west of the boundary. The source has no continuous connection to Chain Lakes; entry into Emigrant is not asserted.",
+    "related_ids": [
+      "claim-emigrant-completion-bourland-mapped-terminus-profile",
+      "claim-emigrant-completion-bourland-mapped-terminus-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

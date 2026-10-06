@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-034-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-site-034-identity"
+    ],
+    "predicate": "published_campsite_inventory",
+    "spatial_scope_ids": [
+      "scope-campsite-emigrant-cherry-valley-034"
+    ],
+    "subject_id": "campsite-emigrant-cherry-valley-034",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "booking_site_id": "93045",
+      "loop": "CHERRY VALLEY",
+      "site_number": "034",
+      "site_type": "TENT ONLY NONELECTRIC"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

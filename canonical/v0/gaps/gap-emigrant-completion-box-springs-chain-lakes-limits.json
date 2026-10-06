@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-box-springs-chain-lakes-limits",
+    "question": "What remains unresolved for Box Springs to Chain Lakes?",
+    "reason": "Atomic mileage, current trail condition, return itinerary, water and individual campsites are unresolved. The 2012 guide calls the trail primitive. Parking connection and the complete selected geometry have not been reviewed; no partial route GeoJSON is published.",
+    "related_ids": [
+      "claim-emigrant-completion-box-springs-chain-lakes-profile",
+      "claim-emigrant-completion-box-springs-chain-lakes-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

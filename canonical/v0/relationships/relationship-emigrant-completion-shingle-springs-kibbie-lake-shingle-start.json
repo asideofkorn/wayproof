@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-kibbie-lake-profile"
+    ],
+    "object_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-completion-shingle-springs-kibbie-lake-shingle-start",
+    "subject_id": "route-segment-emigrant-completion-shingle-start",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-styx-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kibbie-styx-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-segment-emigrant-completion-kibbie-styx",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-styx-pass-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-shingle-kibbie-junction",
+      "support": "2010 southern map draws the main 20E11 north along Kibbie Ridge past Lookout Point and Sachse Spring to Styx Pass, distinct from the Kibbie Lake branch."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

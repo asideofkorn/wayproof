@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-1-topology",
+      "evidence-emigrant-completion-leavitt-1-geometry"
+    ],
+    "object_id": "route-node-emigrant-leavitt-break-1",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-completion-leavitt-1-end",
+    "subject_id": "route-segment-emigrant-completion-leavitt-1",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

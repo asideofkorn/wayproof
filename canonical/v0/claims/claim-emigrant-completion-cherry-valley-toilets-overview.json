@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-toilets-overview",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-toilets-overview"
+    ],
+    "predicate": "reported_restroom_type",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "section": "overview",
+      "type": "vault toilets"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

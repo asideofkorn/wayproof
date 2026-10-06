@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Cherry Lake manager overview lists boat launch and vault restrooms but no cell, fuel, grocery or water services; its restroom amenities field says information is unavailable. Seasonal road access must be checked.",
+    "observation_id": "observation-emigrant-completion-cherry-lake-facilities",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-lake"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

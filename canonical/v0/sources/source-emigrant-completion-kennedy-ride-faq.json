@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://kennedymeadows.com/dayrideFAQ.html",
+    "publisher": "Kennedy Meadows Resort & Pack Station",
+    "source_id": "source-emigrant-completion-kennedy-ride-faq"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

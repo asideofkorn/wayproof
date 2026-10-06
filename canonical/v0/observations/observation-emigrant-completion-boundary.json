@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USGS PAD-US Management Areas exact designated Emigrant Wilderness record 237112, USFS, California, WA, Category Designation. Reviewed bounds match the Emigrant map; geometry is display evidence, not inferred access or ownership.",
+    "observation_id": "observation-emigrant-completion-boundary",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usgs-padus-management-boundaries-20260924"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

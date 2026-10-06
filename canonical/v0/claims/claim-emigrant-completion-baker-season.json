@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-baker-season",
+    "evidence_ids": [
+      "evidence-emigrant-completion-baker-season"
+    ],
+    "predicate": "published_operating_season",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-baker",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-baker",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "recheck",
+      "reported_season": "April–early October"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

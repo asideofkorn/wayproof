@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-completion-styx-boundary-junction",
+    "kind": "route_segment",
+    "name": "Styx Boundary Junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

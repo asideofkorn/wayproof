@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-season",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-season"
+    ],
+    "predicate": "published_operating_season",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "recheck",
+      "reported_season": "May–September"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-emigrant-route-topology",
     "question": "How do the selected trailheads connect to lakes, passes and each other?",
-    "reason": "Eight published western approaches from Crabtree, Gianelli, Bell Meadow, plus six northern approaches, now have sourced bounded graphs. Northern coverage includes Kennedy Lake, Relief Reservoir, Waterhouse Lake, Cooper Meadow, Eagle Pass and the southbound Sonora PCT to the Leavitt Lake trail junction. Kennedy display geometry remains unreviewed; southern entries, deeper lake/pass branches, cross-boundary itineraries, returns and individual facility spurs remain incomplete. No destination-wide route completeness is claimed.",
+    "reason": "The eight western approaches from Crabtree, Gianelli, Bell Meadow and six northern approaches are joined by five bounded southern/eastern approaches: Box Springs–Chain Lakes, Bourland mapped terminus, Shingle Springs–Kibbie/Huckleberry and Leavitt Lake–PCT junction. Bourland continuation, Kennedy parking/branch geometry, southern display gaps, deeper lake/pass branches, returns and individual facility spurs remain unresolved; no wilderness-wide route completeness is claimed.",
     "related_ids": [
       "wilderness-emigrant",
       "claim-emigrant-access-recheck"

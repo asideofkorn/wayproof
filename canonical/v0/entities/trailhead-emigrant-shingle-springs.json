@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-emigrant-shingle-springs",
+    "kind": "trailhead",
+    "name": "Shingle Springs Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

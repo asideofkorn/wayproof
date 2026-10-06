@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-chain-lakes-approach",
+    "kind": "route_node",
+    "name": "Chain Lakes mapped trail approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

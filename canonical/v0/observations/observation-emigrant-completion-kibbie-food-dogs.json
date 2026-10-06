@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS wilderness regulations prohibit pets, require allowed bear-resistant storage and prohibit hanging. These are destination rules even with a Stanislaus-issued permit.",
+    "observation_id": "observation-emigrant-completion-kibbie-food-dogs",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-nps-yosemite-wilderness-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

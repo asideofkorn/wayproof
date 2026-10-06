@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-cabin-1-inventory",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-cabin-1-inventory"
+    ],
+    "predicate": "published_cabin_inventory",
+    "spatial_scope_ids": [
+      "scope-cabin-emigrant-kennedy-1"
+    ],
+    "subject_id": "cabin-emigrant-kennedy-1",
+    "temporal_scope": null,
+    "value": {
+      "base_rate_usd_per_night": 150,
+      "cabin_number": "1",
+      "category": "sleeper",
+      "current_price_and_availability": "unknown",
+      "kitchenette_exception": null,
+      "rates_exclude_additions": true,
+      "reported_capacity": 4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

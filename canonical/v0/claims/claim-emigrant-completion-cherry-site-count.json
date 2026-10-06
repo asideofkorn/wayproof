@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-count",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-site-count"
+    ],
+    "predicate": "published_site_inventory_count",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "listed_site_numbers": "002–046",
+      "reported_double": 5,
+      "reported_single": 41,
+      "reviewed_individual_listings": 45,
+      "unmatched_number": "001",
+      "unmatched_status": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

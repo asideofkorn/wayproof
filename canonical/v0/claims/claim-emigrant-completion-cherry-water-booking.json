@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-water-booking",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-water-booking"
+    ],
+    "predicate": "published_water_service_report",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unresolved",
+      "reported": "drinking water available",
+      "section": "booking overview"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

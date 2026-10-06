@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Baker Campground amenities panel says potable water is not available.",
+    "observation_id": "observation-emigrant-completion-baker-water-amenities",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-baker"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-shingle-springs-kibbie-lake-jurisdiction",
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-kibbie-lake-jurisdiction"
+    ],
+    "predicate": "mapped_wilderness_traversal_context",
+    "spatial_scope_ids": [
+      "scope-yosemite-wilderness"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "whole_route_containment": false,
+      "wilderness_id": "land-yosemite-wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

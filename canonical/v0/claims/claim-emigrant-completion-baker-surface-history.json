@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-baker-surface-history",
+    "evidence_ids": [
+      "evidence-emigrant-completion-baker-surface-history"
+    ],
+    "predicate": "reported_parking_surface",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-baker",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-baker",
+    "temporal_scope": null,
+    "value": {
+      "parking_pads": "paved",
+      "present_condition": "unknown",
+      "source_edition": "2020-03"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-bourland-meadow-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-completion-bourland-meadow-recheck"
+    ],
+    "predicate": "pretrip_access_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-bourland-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bourland-meadow",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "roads and seasonal access",
+        "signed orders",
+        "permit pickup",
+        "parking and facilities"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

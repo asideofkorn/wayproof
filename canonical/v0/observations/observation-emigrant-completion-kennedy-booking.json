@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Kennedy accepts reservations and information requests by phone, 209-965-3911 or 209-965-3900, between 8 a.m. and 7 p.m.; seasonal service requires confirmation.",
+    "observation_id": "observation-emigrant-completion-kennedy-booking",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-operator-emigrant-kennedy-home"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

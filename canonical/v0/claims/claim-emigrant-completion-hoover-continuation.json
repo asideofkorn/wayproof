@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-hoover-continuation",
+    "evidence_ids": [
+      "evidence-emigrant-completion-hoover-continuation"
+    ],
+    "predicate": "cross_boundary_continuation_condition",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "published_condition": "additional relevant entry permit and/or issuing-unit long-distance continuous-trip addendum",
+      "specific_itinerary_decision": "confirm with issuing agency",
+      "trigger": "continuing south of CA Highway 120"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

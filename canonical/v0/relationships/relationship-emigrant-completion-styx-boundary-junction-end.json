@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-styx-boundary-junction-topology"
+    ],
+    "object_id": "route-node-emigrant-boundary-lake-junction",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-completion-styx-boundary-junction-end",
+    "subject_id": "route-segment-emigrant-completion-styx-boundary-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

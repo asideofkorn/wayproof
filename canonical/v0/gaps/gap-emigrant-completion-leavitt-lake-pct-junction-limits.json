@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-leavitt-lake-pct-junction-limits",
+    "question": "What remains unresolved for Leavitt Lake to Pacific Crest Trail junction?",
+    "reason": "Atomic mileage, current trail condition, return itinerary, water and individual campsites are unresolved. Display starts at the named trail feature near the lake, not the separate trailhead-page coordinate. That official point and map trail start differ; parking geometry is unreviewed. Continuations to Leavitt Peak, Latopie Lake, Emigrant Pass and Yosemite remain outside this bounded route.",
+    "related_ids": [
+      "claim-emigrant-completion-leavitt-lake-pct-junction-profile",
+      "claim-emigrant-completion-leavitt-lake-pct-junction-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

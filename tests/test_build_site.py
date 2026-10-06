@@ -238,7 +238,7 @@ def test_explore_map_is_generated_from_canonical_geometry(site):
                if item["properties"]["layer"] == "boundaries")
     boundaries = [item for item in payload["features"]
                   if item["properties"]["layer"] == "boundaries"]
-    assert len(boundaries) == 73
+    assert len(boundaries) == 74
     assert any(item["properties"]["entity_id"] == "park-del-valle-regional-park"
                for item in boundaries)
 
