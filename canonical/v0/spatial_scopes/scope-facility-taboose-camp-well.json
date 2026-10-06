@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "facility-taboose-camp-well",
+    "kind": "water_source",
+    "scope_id": "scope-facility-taboose-camp-well"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "entrance-taboose-us395",
+    "kind": "route_node",
+    "scope_id": "scope-entrance-taboose-us395"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

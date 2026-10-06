@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-group",
+    "evidence_id": "evidence-taboose-west-group",
+    "notes": "",
+    "observation_id": "observation-taboose-west-group",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

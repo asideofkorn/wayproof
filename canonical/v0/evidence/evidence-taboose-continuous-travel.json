@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-continuous-travel",
+    "evidence_id": "evidence-taboose-continuous-travel",
+    "notes": "",
+    "observation_id": "observation-taboose-continuous-travel",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

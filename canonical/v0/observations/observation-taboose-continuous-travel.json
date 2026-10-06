@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS What Permit Do I Need and JMT sections: agency at the trip start issues the permit, including when first night is in an adjacent park; continuous travel required. Separate Whitney exit provisions are not satisfied by merely choosing Taboose.",
+    "observation_id": "observation-taboose-continuous-travel",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

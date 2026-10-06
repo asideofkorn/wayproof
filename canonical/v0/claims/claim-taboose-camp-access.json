@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-access",
+    "evidence_ids": [
+      "evidence-taboose-camp-access"
+    ],
+    "predicate": "campground_access",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles_from_highway": 2,
+      "from": "US 395, 14 miles north of Independence",
+      "not_trailhead": true,
+      "road": "Taboose Creek Road"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

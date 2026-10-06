@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-pets",
+    "evidence_ids": [
+      "evidence-taboose-pets"
+    ],
+    "predicate": "pet_policy",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "national_forest": "allowed under leash or responsive voice control; no wildlife harassment",
+      "park_wilderness": "pets prohibited",
+      "waste_setback_feet": 100
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

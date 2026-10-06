@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-quota",
+    "evidence_ids": [
+      "evidence-taboose-quota"
+    ],
+    "predicate": "wilderness_entry_quota",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "commercial_policy": "single quota shared with public",
+      "live_inventory": "unknown",
+      "persons_per_entry_day": 10,
+      "season": "May 1-November 1",
+      "six_month_spaces": 6,
+      "trail_code": "JM27",
+      "two_week_spaces": 4
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

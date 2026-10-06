@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Order 05-04-50-25-04 maps PDF page 15, Exhibit P: black hatching prohibits fires in Taboose Creek drainage; purple hatching prohibits fires above 10,400 feet. Trail page also states no fires along Taboose Creek.",
+    "observation_id": "observation-taboose-campfire-restriction",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-fire-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

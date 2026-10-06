@@ -1,0 +1,19 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-group-limit",
+    "conditions": [],
+    "consequence": "Keep a Taboose wilderness party to at most 15 people; separate permits cannot combine to evade the limit. Order exemptions require specific authorization or official duty.",
+    "rule_id": "rule-taboose-group-limit",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

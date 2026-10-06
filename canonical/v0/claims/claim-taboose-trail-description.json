@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trail-description",
+    "evidence_ids": [
+      "evidence-taboose-trail-description"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional described and mapped trail",
+      "effort": "strenuous",
+      "elevation_gain_feet": {
+        "more_than": 6000
+      },
+      "entry_id": "trailhead-taboose-pass",
+      "objective_id": "place-taboose-pass",
+      "west_continuation": "John Muir Trail and Kings Canyon destinations south of Mather Pass"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS requires travelers to obey the different rules in each jurisdiction crossed; the western continuation has separately linked NPS claims. Reaching the pass does not establish an onward itinerary.",
+    "observation_id": "observation-taboose-cross-boundary-recheck",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

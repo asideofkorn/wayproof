@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-road-topology",
+    "evidence_ids": [
+      "evidence-taboose-road-topology"
+    ],
+    "predicate": "described_route_connector",
+    "spatial_scope_ids": [
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access",
+      "scope-entrance-taboose-us395",
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "route-segment-taboose-road-access",
+    "temporal_scope": null,
+    "value": {
+      "directionality": "bidirectional access road",
+      "distance_miles": 6,
+      "distance_status": "approximate",
+      "end_node_id": "trailhead-taboose-pass",
+      "mode": "road access; separate from hiking mileage",
+      "route_role": "official_mainline",
+      "start_node_id": "entrance-taboose-us395"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

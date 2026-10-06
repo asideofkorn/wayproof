@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trailhead-display-point",
+    "evidence_ids": [
+      "evidence-taboose-trailhead-display-point"
+    ],
+    "predicate": "reviewed_display_coordinate",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "latitude": 37.009548972348696,
+      "longitude": -118.32735760836171,
+      "navigation_grade": false,
+      "not_surveyed_facility_coordinate": true,
+      "role": "endpoint of reviewed official trail feature chain",
+      "source_coordinate_accuracy": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

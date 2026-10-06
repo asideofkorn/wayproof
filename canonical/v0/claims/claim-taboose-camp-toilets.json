@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-toilets",
+    "evidence_ids": [
+      "evidence-taboose-camp-toilets"
+    ],
+    "predicate": "facility_inventory",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek",
+      "scope-facility-taboose-camp-toilets"
+    ],
+    "subject_id": "facility-taboose-camp-toilets",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "unknown",
+      "type": "vault toilets"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-creek-water",
+    "evidence_ids": [
+      "evidence-taboose-creek-water"
+    ],
+    "predicate": "water_treatment_guidance",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "subject_id": "waterway-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "flow": "unknown",
+      "safe_crossings": "unknown",
+      "treatment_required_before_drinking": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-campfire-restriction",
+    "evidence_ids": [
+      "evidence-taboose-campfire-restriction"
+    ],
+    "predicate": "campfire_restriction",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-10",
+      "starts_on": "2025-06-10"
+    },
+    "value": {
+      "above_elevation_feet": 10400,
+      "area": "Taboose Creek drainage, Exhibit P",
+      "order": "05-04-50-25-04",
+      "precision": "mapped drainage zone; no screenshot-traced polygon"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

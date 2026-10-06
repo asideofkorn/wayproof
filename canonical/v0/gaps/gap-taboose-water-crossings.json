@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-water-crossings",
+    "question": "Where are usable water collection points and safe crossings on the trip date?",
+    "reason": "The route follows Taboose Creek, but no current flow, exact crossing inventory, safe ford or facility spur is evidenced. The dated NPS report describes washouts. Do not manufacture crossing nodes or timeless drinking-water availability.",
+    "related_ids": [
+      "claim-taboose-creek-water",
+      "claim-taboose-trail-condition-20260826",
+      "route-taboose-pass"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

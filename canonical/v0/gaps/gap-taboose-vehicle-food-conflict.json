@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-vehicle-food-conflict",
+    "question": "How should food left at Taboose trailhead be secured?",
+    "reason": "Conflict: trailhead page recommends trunk storage and says no lockers; general Inyo permit guidance says do not leave food in cars. Confirm trailhead-specific handling; do not invent lockers or choose one instruction silently.",
+    "related_ids": [
+      "trailhead-taboose-pass",
+      "claim-taboose-vehicle-food",
+      "claim-taboose-generic-vehicle-food"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

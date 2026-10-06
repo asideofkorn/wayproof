@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-food",
+    "evidence_ids": [
+      "evidence-taboose-west-food"
+    ],
+    "predicate": "wilderness_food_storage",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "mandatory_container_zones": "separate named areas; check onward itinerary",
+      "methods": [
+        "approved portable container",
+        "permanent food box",
+        "compliant counterbalance"
+      ],
+      "without_box_or_trees": "approved container required"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

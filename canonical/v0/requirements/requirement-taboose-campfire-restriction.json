@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "Do not build or use campfires in the mapped Taboose Creek drainage or above 10,400 feet under 05-04-50-25-04. Consult Exhibit P; wilderness/campfire permits do not waive the ban. Specific authorization and official-duty exceptions apply.",
+    "requirement_id": "requirement-taboose-campfire-restriction",
+    "rule_id": "rule-taboose-campfire-restriction"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

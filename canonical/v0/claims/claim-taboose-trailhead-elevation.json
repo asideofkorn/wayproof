@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trailhead-elevation",
+    "evidence_ids": [
+      "evidence-taboose-trailhead-elevation"
+    ],
+    "predicate": "published_elevation",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "feet": 5400,
+      "navigation_grade": false,
+      "qualifier": "approximate"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

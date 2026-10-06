@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Wilderness Trail Names and Quotas pages 2-3, Taboose Pass (JMT), JM27: total 10; six months 6; two weeks 4; single quota. JM quotas apply May 1-November 1. Commercial and public users share a single quota.",
+    "observation_id": "observation-taboose-quota",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-quota"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

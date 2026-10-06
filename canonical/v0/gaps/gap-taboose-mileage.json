@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-mileage",
+    "question": "What distance should be planned from the trailhead to the pass?",
+    "reason": "The approximate USFS guide gives 6.5 miles; the matching official trail dataset terminates at milepost 7.6146 and has different GIS length attributes. Different survey/measurement methods or editions may explain this, but the discrepancy is unresolved. Traversal is connected with unknown canonical distance; no arithmetic or map scaling resolves it.",
+    "related_ids": [
+      "route-taboose-pass",
+      "claim-taboose-guide-distance",
+      "claim-taboose-dataset-lengths",
+      "claim-taboose-trail-geometry"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

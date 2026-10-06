@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-group-limit",
+    "evidence_id": "evidence-taboose-group-limit",
+    "notes": "",
+    "observation_id": "observation-taboose-group-limit",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

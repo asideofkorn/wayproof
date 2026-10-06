@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-stock",
+    "evidence_ids": [
+      "evidence-taboose-stock"
+    ],
+    "predicate": "stock_restrictions",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "loose_herding": "prohibited except unsafe-to-tie trail portions",
+      "maximum_head": 25,
+      "pack_goats": "prohibited west of US 395",
+      "route_suitability": "not recommended"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

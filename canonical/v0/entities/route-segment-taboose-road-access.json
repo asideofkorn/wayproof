@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-taboose-road-access",
+    "kind": "route_segment",
+    "name": "Taboose Creek Road approach from US 395"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

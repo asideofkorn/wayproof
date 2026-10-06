@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS cancellations and Recreation.gov: per-person fee refunded with cancellation at least 12 days before entry; $6 reservation fee nonrefundable; leader/alternate cannot be added/changed and reservations cannot be transferred.",
+    "observation_id": "observation-taboose-permit-cancellation",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-permits"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

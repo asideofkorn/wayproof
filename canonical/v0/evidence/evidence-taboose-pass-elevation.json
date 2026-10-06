@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-pass-elevation",
+    "evidence_id": "evidence-taboose-pass-elevation",
+    "notes": "",
+    "observation_id": "observation-taboose-pass-elevation",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

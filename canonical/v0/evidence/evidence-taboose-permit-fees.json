@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-permit-fees",
+    "evidence_id": "evidence-taboose-permit-fees",
+    "notes": "",
+    "observation_id": "observation-taboose-permit-fees",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

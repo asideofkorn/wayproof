@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Stage 1 order 05-04-50-26-23 runs June 22-December 31, 2026. Its portable-stove exception is narrower than the standing wilderness order: California Campfire Permit, pressurized liquid petroleum/LPG fuel and shutoff valve.",
+    "observation_id": "observation-taboose-stage1",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-usfs-inyo-stage-1-fire-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

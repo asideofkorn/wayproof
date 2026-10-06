@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Permit Printing Instructions lists a California Campfire Permit for stove operation, required SEKI regulations printout for entering the park, and recommended JMT regulations for JMT/PCT travel. Other orders may limit stove use despite a permit.",
+    "observation_id": "observation-taboose-additional-documents",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-printing"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

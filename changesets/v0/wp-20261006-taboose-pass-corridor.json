@@ -1,0 +1,2831 @@
+{
+  "artifact_format_version": 1,
+  "change_set_id": "wp-20261006-taboose-pass-corridor",
+  "operations": [
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/trailhead-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "trailhead-taboose-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/place-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "place-taboose-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "route-taboose-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-taboose-trailhead-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "route-segment-taboose-trailhead-pass",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/road-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "road-taboose-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-taboose-road-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "route-taboose-road-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/route-segment-taboose-road-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "route-segment-taboose-road-access",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/entrance-taboose-us395.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "entrance-taboose-us395",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/campground-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "campground-taboose-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/agency-inyo-county-parks.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "agency-inyo-county-parks",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-taboose-camp-toilets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "facility-taboose-camp-toilets",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/facility-taboose-camp-well.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "facility-taboose-camp-well",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/waterway-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "waterway-taboose-creek",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/entities/zone-taboose-kings-canyon-continuation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "zone-taboose-kings-canyon-continuation",
+      "record_type": "entity"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-trailhead-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-trailhead-taboose-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-place-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-place-taboose-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-taboose-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-route-taboose-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-taboose-trailhead-pass.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-route-segment-taboose-trailhead-pass",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-road-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-road-taboose-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-taboose-road-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-route-taboose-road-access",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-route-segment-taboose-road-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-route-segment-taboose-road-access",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-entrance-taboose-us395.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-entrance-taboose-us395",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-campground-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-campground-taboose-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-agency-inyo-county-parks.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-agency-inyo-county-parks",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-facility-taboose-camp-toilets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-facility-taboose-camp-toilets",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-facility-taboose-camp-well.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-facility-taboose-camp-well",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-waterway-taboose-creek.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-waterway-taboose-creek",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/spatial_scopes/scope-zone-taboose-kings-canyon-continuation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "scope-zone-taboose-kings-canyon-continuation",
+      "record_type": "spatial_scope"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-trail.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-trail",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-map.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-entry-guide.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-entry-guide",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-permits.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-permits",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-quota.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-quota",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-printing.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-printing",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-regulations.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-regulations",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-use-order.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-use-order",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-fire-order.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-fire-order",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-fire-map.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-fire-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-food",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-nps-rules.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-nps-rules",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-nps-stock.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-nps-stock",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-nps-atlas.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-nps-atlas",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-camp.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-camp",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-camp-map.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-camp-map",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-water-notice.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-water-notice",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-booking.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-booking",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/sources/source-taboose-roads.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "source-taboose-roads",
+      "record_type": "source"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trail-description.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trail-description",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trail-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trail-topology",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-guide-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-guide-distance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-guide-jmt-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-guide-jmt-distance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trailhead-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trailhead-elevation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-pass-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-pass-elevation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trail-geometry.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trail-geometry",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trailhead-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trailhead-display-point",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-pass-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-pass-display-point",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-dataset-lengths.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-dataset-lengths",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-road-directions.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-road-directions",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-road-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-road-topology",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trailhead-lockers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trailhead-lockers",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-vehicle-food",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-generic-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-generic-vehicle-food",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-overnight-permit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-day-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-day-permit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-equipment-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-equipment-permit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-quota.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-quota",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-release.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-release",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-release-time-wording.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-release-time-wording",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-issuance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-issuance",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-permit-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-permit-fees",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-permit-cancellation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-permit-cancellation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-additional-documents.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-additional-documents",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-continuous-travel.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-continuous-travel",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-group-limit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-group-limit",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-food-storage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-food-storage",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-food-order-metadata.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-food-order-metadata",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-campfire-restriction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-campfire-restriction",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-stove-exception.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-stove-exception",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-stage1.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-stage1",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camping-setback.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camping-setback",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-sanitation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-sanitation",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-pets",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-stock.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-stock",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-equipment-use.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-equipment-use",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-drones.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-drones",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-creek-water.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-creek-water",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-trail-condition-20260826.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-trail-condition-20260826",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-road-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-road-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-jurisdiction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-jurisdiction",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-topology-context.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-topology-context",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-pets",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-fire",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-food",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-camping.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-camping",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-group.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-group",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-west-grazing.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-west-grazing",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-cross-boundary-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-cross-boundary-recheck",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-access",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-map-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-map-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-booking-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-booking-inventory",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-toilets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-toilets",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-well.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-well",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-amenities.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-amenities",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-fees",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-booking.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-booking",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-booking-rate.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-booking-rate",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-occupancy.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-occupancy",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-fire",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/observations/observation-taboose-camp-water-notice.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "observation-taboose-camp-water-notice",
+      "record_type": "observation"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trail-description.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trail-description",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trail-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trail-topology",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-guide-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-guide-distance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-guide-jmt-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-guide-jmt-distance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trailhead-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trailhead-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-pass-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-pass-elevation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trail-geometry.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trail-geometry",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trailhead-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trailhead-display-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-pass-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-pass-display-point",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-dataset-lengths.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-dataset-lengths",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-road-directions.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-road-directions",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-road-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-road-topology",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trailhead-lockers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trailhead-lockers",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-vehicle-food",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-generic-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-generic-vehicle-food",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-overnight-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-day-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-day-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-equipment-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-equipment-permit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-quota.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-quota",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-release.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-release",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-release-time-wording.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-release-time-wording",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-issuance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-issuance",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-permit-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-permit-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-permit-cancellation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-permit-cancellation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-additional-documents.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-additional-documents",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-continuous-travel.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-continuous-travel",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-group-limit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-group-limit",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-food-storage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-food-storage",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-food-order-metadata.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-food-order-metadata",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-campfire-restriction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-campfire-restriction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-stove-exception.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-stove-exception",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-stage1.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-stage1",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camping-setback.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camping-setback",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-sanitation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-sanitation",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-pets",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-stock.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-stock",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-equipment-use.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-equipment-use",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-drones.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-drones",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-creek-water.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-creek-water",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-trail-condition-20260826.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-trail-condition-20260826",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-road-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-road-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-jurisdiction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-jurisdiction",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-topology-context.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-topology-context",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-pets",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-fire",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-food",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-camping.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-camping",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-group.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-group",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-west-grazing.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-west-grazing",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-cross-boundary-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-cross-boundary-recheck",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-access",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-map-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-map-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-booking-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-booking-inventory",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-toilets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-toilets",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-well.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-well",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-amenities.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-amenities",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-fees",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-booking.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-booking",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-booking-rate.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-booking-rate",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-occupancy.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-occupancy",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-fire",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/evidence/evidence-taboose-camp-water-notice.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "evidence-taboose-camp-water-notice",
+      "record_type": "evidence"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trail-description.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trail-description",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trail-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trail-topology",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-guide-distance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-guide-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-guide-distance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-guide-jmt-distance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-guide-jmt-distance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-guide-jmt-distance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trailhead-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trailhead-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trailhead-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-pass-elevation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-pass-elevation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-pass-elevation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-geometry"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trail-geometry.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trail-geometry",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trailhead-display-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trailhead-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trailhead-display-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-pass-display-point"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-pass-display-point.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-pass-display-point",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-dataset-lengths"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-dataset-lengths.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-dataset-lengths",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-directions"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-road-directions.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-road-directions",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-road-topology.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-road-topology",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trailhead-lockers"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trailhead-lockers.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trailhead-lockers",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-vehicle-food"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-vehicle-food",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-generic-vehicle-food"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-generic-vehicle-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-generic-vehicle-food",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-overnight-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-overnight-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-day-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-day-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-day-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-equipment-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-equipment-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-equipment-permit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-quota"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-quota.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-quota",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-release"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-release.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-release",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-release-time-wording"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-release-time-wording.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-release-time-wording",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-issuance"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-issuance.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-issuance",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-permit-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-permit-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-permit-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-permit-cancellation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-permit-cancellation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-permit-cancellation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-additional-documents"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-additional-documents.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-additional-documents",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-continuous-travel"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-continuous-travel.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-continuous-travel",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-group-limit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-group-limit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-group-limit",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-food-storage"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-food-storage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-food-storage",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-food-order-metadata"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-food-order-metadata.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-food-order-metadata",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-campfire-restriction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-campfire-restriction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-campfire-restriction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-stove-exception"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-stove-exception.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-stove-exception",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-stage1"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-stage1.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-stage1",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camping-setback"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camping-setback.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camping-setback",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-sanitation"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-sanitation.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-sanitation",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-pets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-pets",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-stock"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-stock.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-stock",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-equipment-use"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-equipment-use.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-equipment-use",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-drones"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-drones.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-drones",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-creek-water"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-creek-water.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-creek-water",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-condition-20260826"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-trail-condition-20260826.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-trail-condition-20260826",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-recheck"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-road-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-road-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-jurisdiction"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-jurisdiction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-jurisdiction",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-topology-context"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-topology-context.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-topology-context",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-pets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-pets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-pets",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-fire"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-fire",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-food"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-food.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-food",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-camping"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-camping.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-camping",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-group"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-group.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-group",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-west-grazing"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-west-grazing.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-west-grazing",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-cross-boundary-recheck"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-cross-boundary-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-cross-boundary-recheck",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-access",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-map-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-map-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-map-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-booking-inventory"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-booking-inventory.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-booking-inventory",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-toilets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-toilets.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-toilets",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-well"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-well.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-well",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-amenities"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-amenities.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-amenities",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-fees"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-fees.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-fees",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-booking"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-booking.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-booking",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-booking-rate"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-booking-rate.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-booking-rate",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-occupancy"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-occupancy.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-occupancy",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-fire"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-fire.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-fire",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-water-notice"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/claims/claim-taboose-camp-water-notice.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "claim-taboose-camp-water-notice",
+      "record_type": "claim"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-route-start.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-route-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-route-end.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-route-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-pass-approach.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-pass-approach",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-trailhead-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-trailhead-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-route-managed.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-route-managed",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-segment-start.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-segment-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-segment-end.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-segment-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-segment-member.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-segment-member",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-route-wilderness.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-route-wilderness",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-segment-wilderness.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-segment-wilderness",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-pass-west.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-pass-west",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-west-park.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-west-park",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-road-start.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-road-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-road-end.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-road-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-roadleg-start.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-roadleg-start",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-roadleg-end.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-roadleg-end",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-roadleg-member.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-roadleg-member",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-road-route.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-road-route",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-road-serves.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-road-serves",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-road-topology"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-trailhead-approach.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-trailhead-approach",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-overnight-permit"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-permit-product.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-permit-product",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-trail-description"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-creek-corridor.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-creek-corridor",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-road.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-road",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-roadleg-camp.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-roadleg-camp",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-access"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-operator.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-operator",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-toilets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-toilets-contains.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-toilets-contains",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-toilets"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-toilets-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-toilets-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-well"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-well-contains.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-well-contains",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-camp-well"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-camp-well-access.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "relationship-taboose-camp-well-access",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "rule-taboose-overnight-permit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-group-limit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "rule-taboose-group-limit",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-food-storage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "rule-taboose-food-storage",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-campfire-restriction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "rule-taboose-campfire-restriction",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-camping-setback.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "rule-taboose-camping-setback",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-taboose-overnight-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "requirement-taboose-overnight-permit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-taboose-group-limit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "requirement-taboose-group-limit",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-taboose-food-storage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "requirement-taboose-food-storage",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-taboose-campfire-restriction.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "requirement-taboose-campfire-restriction",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/requirements/requirement-taboose-camping-setback.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "requirement-taboose-camping-setback",
+      "record_type": "requirement"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-mileage"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-mileage.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-mileage",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-vehicle-food-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-vehicle-food-conflict.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-vehicle-food-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-trailhead-facilities"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-trailhead-facilities.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-trailhead-facilities",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-day-equipment-permit"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-day-equipment-permit.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-day-equipment-permit",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-release-clock"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-release-clock.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-release-clock",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-food-order-metadata"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-food-order-metadata.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-food-order-metadata",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-fire-current"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-fire-current.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-fire-current",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-water-crossings"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-water-crossings.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-water-crossings",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-access-geometry"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-access-geometry.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-access-geometry",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-route-limits"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-route-limits.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-route-limits",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-western-scope"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-western-scope.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-western-scope",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-camp-count-conflict"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-camp-count-conflict.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-camp-count-conflict",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-camp-water-current"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-camp-water-current.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-camp-water-current",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [
+        "gap-taboose-camp-depth"
+      ],
+      "path": "canonical/v0/gaps/gap-taboose-camp-depth.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "gap-taboose-camp-depth",
+      "record_type": "gap"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/derived_results/result-taboose-pretrip-recheck.json",
+      "reason": "Add authoritative Taboose access-to-pass planning coverage with preserved uncertainty.",
+      "record_id": "result-taboose-pretrip-recheck",
+      "record_type": "derived_result"
+    }
+  ],
+  "schema_version": 0,
+  "status": "VALIDATED",
+  "summary": "Add Taboose Pass road/trail topology, official display geometry, jurisdiction-specific planning evidence, permits, facilities, restrictions and rechecks."
+}

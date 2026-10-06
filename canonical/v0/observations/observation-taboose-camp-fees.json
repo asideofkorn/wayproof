@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County Fee Information: $14/vehicle/night, $5/additional vehicle/night; automated pay stations accept credit cards or cash.",
+    "observation_id": "observation-taboose-camp-fees",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-camp"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

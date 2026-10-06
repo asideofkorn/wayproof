@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-issuance",
+    "evidence_id": "evidence-taboose-issuance",
+    "notes": "",
+    "observation_id": "observation-taboose-issuance",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trail-topology",
+    "evidence_ids": [
+      "evidence-taboose-trail-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "subject_id": "route-segment-taboose-trailhead-pass",
+    "temporal_scope": null,
+    "value": {
+      "directionality": "bidirectional",
+      "distance_miles": null,
+      "distance_status": "conflicting_source_reports",
+      "end_node_id": "place-taboose-pass",
+      "mode": "hiking",
+      "precision_note": "Continuous named trail; no intermediate named junction or surveyed jurisdiction crossing asserted.",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-taboose-pass"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

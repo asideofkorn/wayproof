@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-guide-jmt-distance",
+    "evidence_id": "evidence-taboose-guide-jmt-distance",
+    "notes": "",
+    "observation_id": "observation-taboose-guide-jmt-distance",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

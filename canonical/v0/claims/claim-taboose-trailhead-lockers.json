@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trailhead-lockers",
+    "evidence_ids": [
+      "evidence-taboose-trailhead-lockers"
+    ],
+    "predicate": "food_storage_facility",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "bear_lockers": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

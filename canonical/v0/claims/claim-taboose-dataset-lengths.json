@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-dataset-lengths",
+    "evidence_ids": [
+      "evidence-taboose-dataset-lengths"
+    ],
+    "predicate": "published_dataset_length_report",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "role": "separate source attributes; not adopted as a resolved hiking distance",
+      "source_final_milepost": 7.6146,
+      "source_gis_miles": [
+        0.019,
+        2.243,
+        1.704,
+        3.316
+      ],
+      "source_segment_length_miles": [
+        0.018,
+        2.3639,
+        1.7595,
+        3.4732
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

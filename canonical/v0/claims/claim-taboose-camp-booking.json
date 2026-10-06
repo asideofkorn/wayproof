@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-booking",
+    "evidence_ids": [
+      "evidence-taboose-camp-booking"
+    ],
+    "predicate": "campground_booking_policy",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "channels": [
+        "ReserveAmerica",
+        "first come first served"
+      ],
+      "url": "https://www.reserveamerica.com/explore/taboose-creek-campground/INYO/1100013/campsites"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

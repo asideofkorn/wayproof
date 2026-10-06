@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-issuance",
+    "evidence_ids": [
+      "evidence-taboose-issuance"
+    ],
+    "predicate": "wilderness_permit_process",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "changes_after_printing": "visitor center reissue",
+      "channel": "Recreation.gov",
+      "office": "Inyo wilderness permit office; verify open hours",
+      "overnight_no_show_deadline": "10:00 on entry date",
+      "print_at_home_days_before": 7,
+      "required": [
+        "paper copy",
+        "signature",
+        "group leader possession"
+      ],
+      "reservation_letter_is_permit": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

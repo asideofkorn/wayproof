@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-release-time-wording",
+    "evidence_ids": [
+      "evidence-taboose-release-time-wording"
+    ],
+    "predicate": "published_release_time_wording",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "interpretation": "USFS uses Pacific time; verify booking clock rather than assume fixed UTC offset",
+      "need_to_know": "7am Pacific Time",
+      "summary": "7AM PST"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

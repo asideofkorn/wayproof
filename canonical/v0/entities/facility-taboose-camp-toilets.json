@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-taboose-camp-toilets",
+    "kind": "restroom",
+    "name": "Taboose Creek Campground vault toilets"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

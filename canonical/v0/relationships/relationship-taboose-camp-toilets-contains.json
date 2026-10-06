@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-camp-toilets"
+    ],
+    "object_id": "campground-taboose-creek",
+    "predicate": "part_of",
+    "relationship_id": "relationship-taboose-camp-toilets-contains",
+    "subject_id": "facility-taboose-camp-toilets",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

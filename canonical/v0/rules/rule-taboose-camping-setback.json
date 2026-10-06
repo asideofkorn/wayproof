@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camping-setback",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Camp at least 100 feet from lakeshores, streams and National Forest System trails in the Inyo wilderness portion; use durable previously impacted sites. The permit does not assign a campsite.",
+    "rule_id": "rule-taboose-camping-setback",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    }
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

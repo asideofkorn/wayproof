@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-equipment-permit",
+    "evidence_ids": [
+      "evidence-taboose-equipment-permit"
+    ],
+    "predicate": "camping_equipment_permit_requirement",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    },
+    "value": {
+      "exemptions": [
+        "specifically exempt FS-7700-48",
+        "official duty"
+      ],
+      "listed_items": [
+        "tent",
+        "sleeping bag",
+        "bear canister",
+        "camp stove"
+      ],
+      "order": "05-04-50-25-02",
+      "required": "valid Forest Service wilderness permit"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-sanitation",
+    "evidence_ids": [
+      "evidence-taboose-sanitation"
+    ],
+    "predicate": "sanitation_guidance",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "burial_depth_inches": [
+        6,
+        8
+      ],
+      "from": [
+        "water",
+        "camps"
+      ],
+      "setback_feet_at_least": 100,
+      "trash": "pack out"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

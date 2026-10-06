@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-water-notice",
+    "evidence_ids": [
+      "evidence-taboose-camp-water-notice"
+    ],
+    "predicate": "dated_water_monitoring_notice",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek",
+      "scope-facility-taboose-camp-well"
+    ],
+    "subject_id": "facility-taboose-camp-well",
+    "temporal_scope": {
+      "ends_on": "2026-05-31",
+      "starts_on": "2026-05-01"
+    },
+    "value": {
+      "affected_month": "2026-05",
+      "current_quality": "unknown",
+      "distributed_on": "2026-07-30",
+      "followup_wording": "sample will be taken in June",
+      "issue": "routine total-coliform sampling missed; water quality not assured for that period",
+      "not_a_positive_contamination_test": true,
+      "notice_advice": "no action needed at that time; not an emergency",
+      "water_system_id": "CA1400516"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

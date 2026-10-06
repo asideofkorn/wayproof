@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-road-directions",
+    "evidence_ids": [
+      "evidence-taboose-road-directions"
+    ],
+    "predicate": "road_access_description",
+    "spatial_scope_ids": [
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access",
+      "scope-entrance-taboose-us395",
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "road-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "current_passability": "unknown",
+      "distance_miles": {
+        "approximately": 6
+      },
+      "endpoint": "road end at trailhead",
+      "from": "US 395 about 12 miles south of Big Pine",
+      "surface": "rough, bumpy dirt road",
+      "turn": "west on Taboose Creek Road",
+      "vehicle_clearance_requirement": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS directions explicitly connect the US 395 turnoff to the road-end trailhead along Taboose Creek Road, approximately six miles. No intermediate spur distance is derived.",
+    "observation_id": "observation-taboose-road-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

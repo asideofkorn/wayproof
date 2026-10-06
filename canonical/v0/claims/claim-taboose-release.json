@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-release",
+    "evidence_ids": [
+      "evidence-taboose-release"
+    ],
+    "predicate": "reservation_release",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "live_availability": "unknown",
+      "nonquota_period": "November 2-April 30",
+      "nonquota_release": "2 weeks before entry",
+      "quota_period": "May 1-November 1",
+      "release_time": "07:00 America/Los_Angeles",
+      "required_year_round": true,
+      "six_month_percent": 60,
+      "two_week_percent": 40
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

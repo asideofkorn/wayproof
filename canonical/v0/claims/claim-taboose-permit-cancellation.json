@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-permit-cancellation",
+    "evidence_ids": [
+      "evidence-taboose-permit-cancellation"
+    ],
+    "predicate": "permit_cancellation_policy",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "entry_change": "quota-dependent; date changes at least 12 days ahead",
+      "leader_changes": false,
+      "per_person_refund": "cancel at least 12 days before entry",
+      "reservation_fee_refundable": false,
+      "transferable": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-additional-documents",
+    "evidence_ids": [
+      "evidence-taboose-additional-documents"
+    ],
+    "predicate": "permit_supporting_documents",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "jmt_pctravel": "JMT Minimum Impact Wilderness Regulations recommended",
+      "park_entry": "print Sequoia and Kings Canyon Minimum Impact Wilderness Regulations",
+      "stove_use": "California Campfire Permit required by printing instructions"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

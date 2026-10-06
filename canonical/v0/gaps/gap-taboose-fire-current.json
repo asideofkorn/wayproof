@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-fire-current",
+    "question": "What current fire and stove restrictions apply on the trip date?",
+    "reason": "Layered orders differ in stove exception wording. The standing order expires June 10, 2027 and Stage 1 December 31, 2026 unless changed. Recheck both and current alerts; expiry is not evidence of permission.",
+    "related_ids": [
+      "claim-taboose-campfire-restriction",
+      "claim-taboose-stage1",
+      "route-taboose-pass"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

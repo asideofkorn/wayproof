@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ReserveAmerica expanded Fees & Cancellations panel lists standard non-electric nightly rate $14 for the 2026 peak season; the rate notice excludes additional charges.",
+    "observation_id": "observation-taboose-camp-booking-rate",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-booking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

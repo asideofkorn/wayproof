@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-group-limit",
+    "evidence_ids": [
+      "evidence-taboose-group-limit"
+    ],
+    "predicate": "wilderness_group_size_limit",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    },
+    "value": {
+      "exemptions": [
+        "specifically exempt FS-7700-48",
+        "official duty"
+      ],
+      "includes_day_use": true,
+      "maximum_persons": 15,
+      "order": "05-04-50-25-02"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

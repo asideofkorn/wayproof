@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "agency-inyo-county-parks",
+    "kind": "agency",
+    "name": "Inyo County Parks and Recreation"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

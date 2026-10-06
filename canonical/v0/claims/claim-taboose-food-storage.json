@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-food-storage",
+    "evidence_ids": [
+      "evidence-taboose-food-storage"
+    ],
+    "predicate": "wilderness_food_storage",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "inadequate_trees": "bear container required",
+      "items": [
+        "food",
+        "trash",
+        "scented items",
+        "pet food"
+      ],
+      "methods": [
+        "bear-resistant container",
+        "counterbalance at least 15 feet high and 10 feet from trunk"
+      ],
+      "scope": "Inyo portion; park rules separately apply"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-road-recheck",
+    "evidence_ids": [
+      "evidence-taboose-road-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access",
+      "scope-entrance-taboose-us395",
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "road-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true,
+      "topics": [
+        "road damage",
+        "closures",
+        "vehicle suitability",
+        "parking"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

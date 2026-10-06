@@ -1,0 +1,20 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-generic-vehicle-food",
+    "evidence_ids": [
+      "evidence-taboose-generic-vehicle-food"
+    ],
+    "predicate": "vehicle_food_storage_guidance",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "general_instruction": "do not leave food/refuse in car or tent; use lockers where provided"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

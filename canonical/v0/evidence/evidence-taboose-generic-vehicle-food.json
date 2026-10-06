@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-generic-vehicle-food",
+    "evidence_id": "evidence-taboose-generic-vehicle-food",
+    "notes": "",
+    "observation_id": "observation-taboose-generic-vehicle-food",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

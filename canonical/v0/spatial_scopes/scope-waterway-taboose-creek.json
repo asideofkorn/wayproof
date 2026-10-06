@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "waterway-taboose-creek",
+    "kind": "waterway",
+    "scope_id": "scope-waterway-taboose-creek"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
