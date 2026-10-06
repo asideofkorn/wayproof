@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-overnight",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-overnight"
+    ],
+    "predicate": "overnight_wilderness_permit_required",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "day_hike_permit_required": false,
+      "issuing_unit": "Humboldt-Toiyabe National Forest, Bridgeport Ranger District",
+      "overnight": true,
+      "season": "year-round"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

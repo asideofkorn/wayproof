@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-kennedy-bookings",
+    "question": "Which Kennedy services, cabin prices and terms are current?",
+    "reason": "Confirm cabins, rides, stock support, actual season and complete charges directly. Existing home/PCT page season and trailhead-fee conflicts remain unresolved. Cabin numbering omits 13; no cabin 13 is inferred. Published capacity plus extra-person fees does not establish an approved larger occupancy.",
+    "related_ids": [
+      "claim-emigrant-completion-kennedy-booking",
+      "claim-emigrant-completion-kennedy-cabin-terms",
+      "claim-emigrant-completion-kennedy-pack-options"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

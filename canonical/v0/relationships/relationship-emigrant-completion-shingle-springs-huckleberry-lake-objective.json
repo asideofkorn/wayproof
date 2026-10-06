@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-huckleberry-lake-profile"
+    ],
+    "object_id": "route-emigrant-shingle-springs-huckleberry-lake",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-emigrant-completion-shingle-springs-huckleberry-lake-objective",
+    "subject_id": "waterbody-emigrant-huckleberry-lake",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

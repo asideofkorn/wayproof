@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-completion-kibbie-styx",
+    "kind": "route_segment",
+    "name": "Kibbie Styx"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

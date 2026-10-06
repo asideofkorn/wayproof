@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-referral",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-referral"
+    ],
+    "predicate": "nearby_named_facility_recheck",
+    "spatial_scope_ids": [
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "trailhead-emigrant-shingle-springs",
+    "temporal_scope": null,
+    "value": {
+      "booking_availability": "unknown",
+      "campground_distinct_from_trailhead": true,
+      "campground_id": "campground-emigrant-cherry-valley",
+      "walking_connector": "not reviewed"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

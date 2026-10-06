@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-valley-operator",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-valley-operator"
+    ],
+    "predicate": "reported_campground_operator",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "booking_url": "https://www.recreation.gov/camping/campgrounds/234756",
+      "operator": "American Land & Leisure"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

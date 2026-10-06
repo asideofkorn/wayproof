@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-lord-huckleberry-topology"
+    ],
+    "object_id": "route-node-emigrant-huckleberry-southwest-approach",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-completion-lord-huckleberry-end",
+    "subject_id": "route-segment-emigrant-completion-lord-huckleberry",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

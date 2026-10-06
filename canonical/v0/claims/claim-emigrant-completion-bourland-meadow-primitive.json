@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-bourland-meadow-primitive",
+    "evidence_ids": [
+      "evidence-emigrant-completion-bourland-meadow-primitive"
+    ],
+    "predicate": "historical_access_inventory",
+    "spatial_scope_ids": [
+      "scope-emigrant-bourland-meadow"
+    ],
+    "subject_id": "trailhead-emigrant-bourland-meadow",
+    "temporal_scope": null,
+    "value": {
+      "camping_opportunities": "fair",
+      "current_availability": "unknown",
+      "parking": "limited",
+      "reported_facilities": "none",
+      "source_edition": "2012-04",
+      "surface": "native",
+      "trail_qualifier": "primitive"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

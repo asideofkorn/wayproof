@@ -1,0 +1,30 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-booking",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-booking"
+    ],
+    "predicate": "published_booking_conditions",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "campground-emigrant-cherry-valley",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "electric_hookups": false,
+      "first_come_payment": [
+        "cash",
+        "check"
+      ],
+      "first_come_sites_reported": true,
+      "product_id": "234756",
+      "reservation_url": "https://www.recreation.gov/camping/campgrounds/234756",
+      "vehicle_advisory": "trailers/fifth wheels discouraged; motorhomes over 24 ft discouraged"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

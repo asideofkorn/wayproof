@@ -75,8 +75,9 @@ Every data file below is also classified by what that means for reuse:
 ### Emigrant route geometry
 
 `geometry/v0/snapshots/usfs-emigrant-crabtree-routes-20261006.geojson`,
-`geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson` and
-`geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson`
+`geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson`,
+`geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson` and
+`geometry/v0/snapshots/usfs-emigrant-completion-routes-20261006.geojson`
 contain reviewed contiguous vertex slices from the USDA Forest Service's
 [National Forest System Trails service](https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0).
 This is Tier A, `public_domain` federal data. Each feature retains source object
@@ -86,6 +87,18 @@ no snapping, interpolation, simplification or derived mileage is applied.
 Display endpoint assignment is project-created review against the official
 Emigrant maps and existing graph; it is not a surveyed position or permission
 claim. Source accuracy and current conditions remain unknown.
+
+The combined Emigrant audit also adds
+`geometry/v0/snapshots/usgs-padus-emigrant-boundary-20261006.geojson`,
+a `public_domain` USGS PAD-US designated-wilderness management polygon. The
+snapshot retains record 237112 and its source attributes, exact query, input
+hash and unmodified service-normalized coordinates. It is not a fee-ownership
+polygon, surveyed legal boundary, or permission inference.
+
+Campground and campsite facts are compiled from USFS and Recreation.gov.
+Kennedy and Aspen operator facts are `third_party_reference_only`; only
+paraphrased factual inventory and booking terms are retained. No operator
+photographs, maps, web pages or source PDFs are redistributed.
 
 ## Known follow-ups
 

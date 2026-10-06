@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-yose-continuity",
+    "question": "Which backpacker-camp stop preserves a through permit?",
+    "reason": "NPS FAQ mentions Tuolumne Meadows; regulations include White Wolf as well. Ask NPS about the actual continuous itinerary; neither list establishes campground operation.",
+    "related_ids": [
+      "claim-emigrant-completion-yose-continuity-faq",
+      "claim-emigrant-completion-yose-continuity-regs"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

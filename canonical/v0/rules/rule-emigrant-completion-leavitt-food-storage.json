@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-food",
+    "conditions": [],
+    "consequence": "Use an approved bear-resistant food canister on the Hoover portion of the Leavitt Lake approach. Hanging or guarding food does not comply.",
+    "rule_id": "rule-emigrant-completion-leavitt-food-storage",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

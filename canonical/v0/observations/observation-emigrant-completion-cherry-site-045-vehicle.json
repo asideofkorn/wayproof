@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Individual site equipment section: Tent. Driveway section maximum vehicle length: 24, driveway length: 30. Keep these separately; do not choose the more permissive limit.",
+    "observation_id": "observation-emigrant-completion-cherry-site-045-vehicle",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-site-045"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

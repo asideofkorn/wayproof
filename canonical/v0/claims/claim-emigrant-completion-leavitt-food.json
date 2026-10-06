@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-food",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-food"
+    ],
+    "predicate": "required_food_storage",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "approved_bear_resistant_canister_required": true,
+      "guarding_allowed": false,
+      "hanging_allowed": false,
+      "scope": "Leavitt Lake route in Bridgeport Hoover"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

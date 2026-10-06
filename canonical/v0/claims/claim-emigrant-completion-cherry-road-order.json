@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-road-order",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-road-order"
+    ],
+    "predicate": "dated_road_restriction",
+    "spatial_scope_ids": [
+      "scope-waterbody-stanislaus-cherry-lake",
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "waterbody-stanislaus-cherry-lake",
+    "temporal_scope": {
+      "ends_on": "2027-05-31",
+      "starts_on": "2026-06-01"
+    },
+    "value": {
+      "effect_on_selected_trailhead_access": "recheck actual approach; not assumed",
+      "exemptions": [
+        "specifically exempting FS-7700-48 permit",
+        "official-duty officer or organized rescue/fire force"
+      ],
+      "extent": "1N14Y junction to terminus",
+      "order": "STF-16-2026-06",
+      "prohibition": "being on the specified road",
+      "road": "1N98"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

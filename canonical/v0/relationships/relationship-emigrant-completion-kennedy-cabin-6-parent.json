@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-cabin-6-inventory"
+    ],
+    "object_id": "facility-emigrant-kennedy-resort",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-completion-kennedy-cabin-6-parent",
+    "subject_id": "cabin-emigrant-kennedy-6",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

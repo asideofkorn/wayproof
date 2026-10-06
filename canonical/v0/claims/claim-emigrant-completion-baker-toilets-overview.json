@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-baker-toilets-overview",
+    "evidence_ids": [
+      "evidence-emigrant-completion-baker-toilets-overview"
+    ],
+    "predicate": "reported_restroom_type",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-baker",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-baker",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "section": "overview",
+      "type": "vault toilets"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

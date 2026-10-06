@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-bourland-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-bourland-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-bourland-mapped-terminus"
+    ],
+    "subject_id": "route-segment-emigrant-completion-bourland",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-bourland-mapped-terminus",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-bourland-meadow",
+      "support": "2010 southern map shows 19E13 from Bourland Meadow trailhead along Bourland Meadow. USFS object 9431238 ends west of the wilderness boundary; no continuation to Chain Lakes is asserted."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

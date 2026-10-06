@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-route-quota",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-route-quota"
+    ],
+    "predicate": "entry_quota_distinction",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "different_entry_with_quota": "Leavitt Meadows",
+      "entry": "Leavitt Lake",
+      "overnight_permit_still_required": true,
+      "quota": false,
+      "quota_season_for_quota_entries": "June 15 through October 15"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

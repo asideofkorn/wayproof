@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS outside-origin FAQ assigns permits to the agency managing the entry trailhead even when every overnight is inside Yosemite. Cherry Lake and Lake Eleanor are explicit Stanislaus examples. Separate Donohue Pass and Half Dome eligibility still apply.",
+    "observation_id": "observation-emigrant-completion-outside-origin",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-nps-yosemite-wilderness-permit-faq-2026"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

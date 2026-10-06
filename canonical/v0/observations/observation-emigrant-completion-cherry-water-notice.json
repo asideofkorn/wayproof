@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The same USFS page retains a July 3, 2025 boil-water notice following a positive E. coli sample. No rescission is shown in the reviewed page; no present water-safety conclusion is made.",
+    "observation_id": "observation-emigrant-completion-cherry-water-notice",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-valley"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

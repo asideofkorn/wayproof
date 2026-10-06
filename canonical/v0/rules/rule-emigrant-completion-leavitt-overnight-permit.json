@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-overnight",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Obtain and carry the wilderness permit issued for your Leavitt Lake entry; overnight Hoover travel requires it year-round. Confirm the complete itinerary with Bridgeport Ranger District.",
+    "rule_id": "rule-emigrant-completion-leavitt-overnight-permit",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

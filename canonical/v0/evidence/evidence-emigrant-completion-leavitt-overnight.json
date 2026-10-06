@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-overnight",
+    "evidence_id": "evidence-emigrant-completion-leavitt-overnight",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-leavitt-overnight",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

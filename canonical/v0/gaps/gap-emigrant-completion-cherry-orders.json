@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-cherry-orders",
+    "question": "Which Cherry-area restrictions affect this itinerary?",
+    "reason": "Match the actual roads and proposed camp against current signed maps. The 1N98 closure is bounded; the lake-shore order does not close every campground or the whole region. Expiration does not establish permission.",
+    "related_ids": [
+      "claim-emigrant-completion-cherry-order-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

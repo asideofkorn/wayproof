@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-leavitt-mileage",
+    "question": "Why do Leavitt Lake reports differ?",
+    "reason": "The 2012 PCT/High Emigrant Trail report is 1.8 miles; the current trail detail reports 1.65 miles. Do not select a single precise total or convert either into atomic mileage.",
+    "related_ids": [
+      "claim-emigrant-completion-leavitt-lake-pct-junction-distance-mileage",
+      "claim-emigrant-completion-leavitt-lake-pct-junction-distance-leavitt-trail"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

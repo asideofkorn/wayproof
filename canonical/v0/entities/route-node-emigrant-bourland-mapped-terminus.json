@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-bourland-mapped-terminus",
+    "kind": "route_node",
+    "name": "Bourland Trail 19E13 mapped terminus"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

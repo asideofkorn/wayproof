@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-bourland-topology",
+      "evidence-emigrant-completion-bourland-geometry"
+    ],
+    "object_id": "route-node-emigrant-bourland-mapped-terminus",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-completion-bourland-end",
+    "subject_id": "route-segment-emigrant-completion-bourland",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

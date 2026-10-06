@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-road",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-road"
+    ],
+    "predicate": "reported_vehicle_access",
+    "spatial_scope_ids": [
+      "scope-emigrant-leavitt-lake"
+    ],
+    "subject_id": "trailhead-emigrant-leavitt-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_access": "unknown",
+      "reported_season": "June through October, weather and conditions permitting",
+      "required_vehicle": "high-clearance four-wheel drive",
+      "road": "32077"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

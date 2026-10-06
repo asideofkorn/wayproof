@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-baker-surface-current",
+    "evidence_id": "evidence-emigrant-completion-baker-surface-current",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-baker-surface-current",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "The June 2012 mileage table reports 18.3 miles for Shingle Springs to Huckleberry Lake; precise endpoint/parking inclusion is not established.",
+    "observation_id": "observation-emigrant-completion-shingle-springs-huckleberry-lake-distance-mileage",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-mileage-table"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

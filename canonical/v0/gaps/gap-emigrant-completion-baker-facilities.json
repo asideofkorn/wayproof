@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-baker-facilities",
+    "question": "Which facilities and terms can be relied on at Baker Campground?",
+    "reason": "Published hydrant inventory does not establish current flow or potable supply; the amenities panel says no potable water. Overview vault toilets and amenities flush toilets conflict. The 2020 guide and current page disagree on parking pad surface; individual sites are not enumerated. Confirm with the operator.",
+    "related_ids": [
+      "claim-emigrant-completion-baker-inventory",
+      "claim-emigrant-completion-baker-water-summary",
+      "claim-emigrant-completion-baker-water-amenities",
+      "claim-emigrant-completion-baker-toilets-overview",
+      "claim-emigrant-completion-baker-toilets-amenities",
+      "claim-emigrant-completion-baker-fees-table"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-outside-origin",
+    "evidence_ids": [
+      "evidence-emigrant-completion-outside-origin"
+    ],
+    "predicate": "cross_boundary_permit_issuance",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "wilderness-emigrant",
+    "temporal_scope": null,
+    "value": {
+      "examples_stanislaus": [
+        "Cherry Lake",
+        "Lake Eleanor"
+      ],
+      "exceptions": [
+        "Donohue Pass requires eligible Yosemite permit",
+        "Half Dome eligibility is separate"
+      ],
+      "issuer_basis": "entry trailhead manager",
+      "outside_origin_additional_yosemite_permit": "normally not required for continuous itinerary"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

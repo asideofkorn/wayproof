@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-chain-lakes-profile"
+    ],
+    "object_id": "wilderness-emigrant",
+    "predicate": "traverses",
+    "relationship_id": "relationship-emigrant-completion-box-springs-chain-lakes-land",
+    "subject_id": "route-emigrant-box-springs-chain-lakes",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

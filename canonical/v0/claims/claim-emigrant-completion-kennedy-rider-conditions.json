@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-rider-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-rider-conditions"
+    ],
+    "predicate": "published_rider_conditions",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "current_booking_terms": "confirm",
+      "helmet_required_under_age": 18,
+      "maximum_reported_weight_lb": 260,
+      "minimum_age": 7,
+      "weight_exception": "call for special considerations"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

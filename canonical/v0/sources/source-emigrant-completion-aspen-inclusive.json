@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.aspenmeadowpackstation.com/index.php/adventures-menu/all-inclusive-trip-menu",
+    "publisher": "Aspen Meadow Pack Station",
+    "source_id": "source-emigrant-completion-aspen-inclusive"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

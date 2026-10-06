@@ -55,8 +55,8 @@ def test_boundary_snapshots_are_bounded_hashed_and_normalized():
     for claim in claims:
         reference = claim.value["boundary_geometry_snapshot"]
         paths.setdefault(reference["path"], reference["sha256"])
-    assert len(claims) == 73
-    assert len(paths) == 3
+    assert len(claims) == 74
+    assert len(paths) == 4
     for relative, expected_hash in paths.items():
         content = (ROOT / relative).read_bytes()
         payload = json.loads(content)

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-baker-water-summary",
+    "evidence_ids": [
+      "evidence-emigrant-completion-baker-water-summary"
+    ],
+    "predicate": "published_water_service_report",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-baker",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-baker",
+    "temporal_scope": null,
+    "value": {
+      "current_flow": "unknown",
+      "potability": "not established",
+      "reported": "hydrants serving multiple sites",
+      "section": "overview"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

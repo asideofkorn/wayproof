@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS LEAVITT LAKE 22071, object 9502910, globalid {42DC94DD-35EB-47EB-94A1-93D4B419FC1E}; complete contiguous feature, reviewed against map/description. Coordinates are not a surveyed parking point.",
+    "observation_id": "observation-emigrant-completion-leavitt-1-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

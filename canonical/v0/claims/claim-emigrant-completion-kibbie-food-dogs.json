@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-food-dogs",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kibbie-food-dogs"
+    ],
+    "predicate": "cross_boundary_destination_rules",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-kibbie-lake"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-kibbie-lake",
+    "temporal_scope": null,
+    "value": {
+      "food_storage": "allowed bear-resistant canister/pannier/box; food being eaten or prepared may remain within reach of an awake person",
+      "hanging_allowed": false,
+      "pets_allowed": false,
+      "winter_exception": "consult NPS winter food-storage terms; no general Emigrant hanging permission transfers"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

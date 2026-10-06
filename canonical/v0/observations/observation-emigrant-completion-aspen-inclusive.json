@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Aspen all-inclusive page lists $300/person/day hiking or $350 riding, ordinarily four people/four days minimum, and 45 pounds personal gear unless arranged otherwise. Personal sleeping equipment remains the guest responsibility.",
+    "observation_id": "observation-emigrant-completion-aspen-inclusive",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-aspen-inclusive"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

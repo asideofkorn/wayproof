@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "facility-emigrant-aspen-pack-station",
+    "kind": "facility",
+    "scope_id": "scope-facility-emigrant-aspen-pack-station"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

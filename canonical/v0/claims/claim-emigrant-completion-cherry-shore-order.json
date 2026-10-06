@@ -1,0 +1,38 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-shore-order",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-shore-order"
+    ],
+    "predicate": "dated_area_restriction",
+    "spatial_scope_ids": [
+      "scope-waterbody-stanislaus-cherry-lake",
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "waterbody-stanislaus-cherry-lake",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2025-01-27"
+    },
+    "value": {
+      "activities": [
+        "camping",
+        "cooking",
+        "building campfire",
+        "storing fuel"
+      ],
+      "exemptions": [
+        "specifically exempting FS-7700-48 permit",
+        "official-duty officer or organized rescue/fire force"
+      ],
+      "extent": "National Forest lands at, below or within 100 feet above high-water mark; Cherry Lake island",
+      "high_water_elevation_feet": 4702,
+      "not_general_campground_closure": true,
+      "order": "STF-16-2025-01"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

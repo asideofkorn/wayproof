@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-shingle-springs-huckleberry-lake-jurisdiction",
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-springs-huckleberry-lake-jurisdiction"
+    ],
+    "predicate": "mapped_wilderness_traversal_context",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "route-emigrant-shingle-springs-huckleberry-lake",
+    "temporal_scope": null,
+    "value": {
+      "whole_route_containment": false,
+      "wilderness_id": "wilderness-emigrant"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

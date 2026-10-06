@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-deadman-toilets-amenities",
+    "evidence_ids": [
+      "evidence-emigrant-completion-deadman-toilets-amenities"
+    ],
+    "predicate": "reported_restroom_type",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-deadman",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "campground-emigrant-deadman",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "section": "amenities",
+      "type": "vault toilets"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

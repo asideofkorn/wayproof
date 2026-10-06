@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-lake-identity",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-lake-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-waterbody-stanislaus-cherry-lake"
+    ],
+    "subject_id": "waterbody-stanislaus-cherry-lake",
+    "temporal_scope": null,
+    "value": {
+      "individual_campsites": "not established",
+      "name": "Cherry Lake",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

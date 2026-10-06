@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-chain-lakes-profile"
+    ],
+    "object_id": "route-emigrant-box-springs-chain-lakes",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-completion-box-springs-chain-lakes-chain-branch",
+    "subject_id": "route-segment-emigrant-completion-chain-branch",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

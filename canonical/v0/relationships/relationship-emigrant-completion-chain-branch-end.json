@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-chain-branch-topology"
+    ],
+    "object_id": "route-node-emigrant-chain-lakes-approach",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-emigrant-completion-chain-branch-end",
+    "subject_id": "route-segment-emigrant-completion-chain-branch",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

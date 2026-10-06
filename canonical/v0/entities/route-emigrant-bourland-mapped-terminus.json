@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-bourland-mapped-terminus",
+    "kind": "route",
+    "name": "Bourland Meadow to mapped trail terminus"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

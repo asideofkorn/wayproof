@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-lake-pct-junction-jurisdiction",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-lake-pct-junction-jurisdiction"
+    ],
+    "predicate": "mapped_wilderness_traversal_context",
+    "spatial_scope_ids": [
+      "scope-wilderness-hoover"
+    ],
+    "subject_id": "route-emigrant-leavitt-lake-pct-junction",
+    "temporal_scope": null,
+    "value": {
+      "whole_route_containment": false,
+      "wilderness_id": "wilderness-hoover"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

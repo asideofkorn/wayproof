@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Deadman Campground fee panel reports $25 single / $50 double, cash only.",
+    "observation_id": "observation-emigrant-completion-deadman-fees-table",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-deadman"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

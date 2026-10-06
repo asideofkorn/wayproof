@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-shingle-start-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-shingle-start-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-shingle-springs-kibbie-lake",
+      "scope-route-emigrant-shingle-springs-huckleberry-lake"
+    ],
+    "subject_id": "route-segment-emigrant-completion-shingle-start",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-shingle-kibbie-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-shingle-springs",
+      "support": "2010 southern map draws 20E11 north from Shingle Springs to the explicit Kibbie Lake branch; the 2012 table lists the Huckleberry/Kibbie Lake trail junction."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

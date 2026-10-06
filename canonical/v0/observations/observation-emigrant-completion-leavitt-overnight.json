@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Leavitt Lake Trail page requires permits for overnight Hoover travel year-round; day hikes do not require them. It refers Bridgeport permits to Recreation.gov.",
+    "observation_id": "observation-emigrant-completion-leavitt-overnight",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-leavitt-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

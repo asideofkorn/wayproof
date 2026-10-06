@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-cabin-cancellation",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-cabin-cancellation"
+    ],
+    "predicate": "published_cancellation_schedule",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "boundary_interpretation": "confirm exact two/four-week cutoffs",
+      "reported_bands": [
+        {
+          "deposit_refund_percent": 100,
+          "weeks": "4 prior"
+        },
+        {
+          "deposit_refund_percent": 50,
+          "weeks": "2–4"
+        },
+        {
+          "deposit_refund_percent": 0,
+          "weeks": "0–2"
+        }
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

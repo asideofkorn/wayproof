@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Operator cabin table row 7: capacity 4, nightly base rate $150.",
+    "observation_id": "observation-emigrant-completion-kennedy-cabin-7-inventory",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-kennedy-cabins"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-operator-permit-logistics",
+    "question": "Do operator arrangements satisfy permits and group rules?",
+    "reason": "Aspen and Kennedy FAQs discuss after-hours pickup, while Stanislaus has a Yosemite-bound no-self-issue exception. Confirm issuance with the agency and count guides/stock. Aspen larger-group invitation is not legal permission beyond wilderness limits. Operators do not establish water safety or Yosemite dog permission.",
+    "related_ids": [
+      "claim-emigrant-completion-aspen-group-referral",
+      "claim-emigrant-completion-aspen-pack-terms",
+      "claim-emigrant-completion-kennedy-pack-options",
+      "claim-emigrant-completion-aspen-permit-advice",
+      "claim-emigrant-completion-kennedy-permit-advice"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

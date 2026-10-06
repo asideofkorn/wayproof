@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-box-springs-chain-lakes-conditions",
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-chain-lakes-conditions"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-box-springs-chain-lakes"
+    ],
+    "subject_id": "route-emigrant-box-springs-chain-lakes",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

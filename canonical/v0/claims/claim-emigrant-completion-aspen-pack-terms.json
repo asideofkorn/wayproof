@@ -1,0 +1,32 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-aspen-pack-terms",
+    "evidence_ids": [
+      "evidence-emigrant-completion-aspen-pack-terms"
+    ],
+    "predicate": "published_pack_booking_terms",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-aspen-pack-station"
+    ],
+    "subject_id": "facility-emigrant-aspen-pack-station",
+    "temporal_scope": null,
+    "value": {
+      "additional_fee_percent": 10,
+      "deposit": "packer fee; nonrefundable",
+      "options": [
+        "spot trip",
+        "keep the packer",
+        "drop pack"
+      ],
+      "quote_and_availability": "confirm",
+      "rates_basis": "one way",
+      "second_packer_threshold": {
+        "pack_animals_over": 8,
+        "riders_over": 6
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

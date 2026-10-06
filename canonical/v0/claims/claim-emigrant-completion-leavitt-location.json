@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-location",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-location"
+    ],
+    "predicate": "published_location_report",
+    "spatial_scope_ids": [
+      "scope-emigrant-leavitt-lake"
+    ],
+    "subject_id": "trailhead-emigrant-leavitt-lake",
+    "temporal_scope": null,
+    "value": {
+      "latitude": 38.273405,
+      "location_role": "trailhead page point; not substituted for trail start",
+      "longitude": -119.612353,
+      "reported_elevation_feet": 9670,
+      "source_accuracy": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

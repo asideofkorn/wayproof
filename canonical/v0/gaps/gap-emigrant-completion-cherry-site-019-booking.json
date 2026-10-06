@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-cherry-site-019-booking",
+    "question": "What can be booked and brought to Cherry Valley site 019?",
+    "reason": "Confirm live availability, exact site terms, campground water/fees and vehicle fit. Equipment-specific trailer lengths can exceed both the driveway report and 24-foot vehicle field; longer listed equipment is not verified permission. Campfire/pet listing flags do not override current orders or Yosemite pet restrictions.",
+    "related_ids": [
+      "claim-emigrant-completion-cherry-site-019-identity",
+      "claim-emigrant-completion-cherry-site-019-vehicle"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

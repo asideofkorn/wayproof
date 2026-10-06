@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-completion-shingle-springs-access",
+    "question": "What access is usable at shingle springs?",
+    "reason": "Confirm current vehicle access, primitive trail conditions where applicable, facilities, water and overnight limits. No unreviewed road or parking connector is asserted.",
+    "related_ids": [
+      "claim-emigrant-completion-shingle-springs-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

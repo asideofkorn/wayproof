@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov Hoover permit product 445856 requires a signed printed permit by 10 a.m. Pacific on entry day. The fee section charges $6 reservation plus $8 for each person age 13 or older; all ages count for quota.",
+    "observation_id": "observation-emigrant-completion-leavitt-route-booking",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-rec-hoover"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

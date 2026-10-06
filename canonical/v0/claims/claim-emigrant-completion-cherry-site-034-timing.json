@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-site-034-timing",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-site-034-timing"
+    ],
+    "predicate": "published_checkin_checkout",
+    "spatial_scope_ids": [
+      "scope-campsite-emigrant-cherry-valley-034"
+    ],
+    "subject_id": "campsite-emigrant-cherry-valley-034",
+    "temporal_scope": null,
+    "value": {
+      "checkin": "14:00",
+      "checkout": "11:00 AM",
+      "current_terms": "recheck"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

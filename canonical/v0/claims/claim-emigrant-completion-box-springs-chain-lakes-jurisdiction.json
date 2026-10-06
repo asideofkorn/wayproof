@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-box-springs-chain-lakes-jurisdiction",
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-chain-lakes-jurisdiction"
+    ],
+    "predicate": "mapped_wilderness_traversal_context",
+    "spatial_scope_ids": [
+      "scope-emigrant-wilderness"
+    ],
+    "subject_id": "route-emigrant-box-springs-chain-lakes",
+    "temporal_scope": null,
+    "value": {
+      "whole_route_containment": false,
+      "wilderness_id": "wilderness-emigrant"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

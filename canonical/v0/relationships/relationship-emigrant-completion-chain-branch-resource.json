@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-completion-chain-branch-topology"
+    ],
+    "object_id": "waterbody-emigrant-chain-lakes",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-completion-chain-branch-resource",
+    "subject_id": "route-segment-emigrant-completion-chain-branch",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-leavitt-4-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-leavitt-4-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-leavitt-lake-pct-junction"
+    ],
+    "subject_id": "route-segment-emigrant-completion-leavitt-4",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-leavitt-break-4",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-leavitt-break-3",
+      "support": "USFS Leavitt Lake Trail detail explicitly connects Leavitt Lake Trailhead via trail 22071 to the PCT. Named, continuous source features establish the selected display chain; feature breaks are descriptive graph nodes."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

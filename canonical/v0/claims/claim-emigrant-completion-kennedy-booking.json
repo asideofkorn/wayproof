@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-booking",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-booking"
+    ],
+    "predicate": "published_booking_contact",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "phone": [
+        "209-965-3911",
+        "209-965-3900"
+      ],
+      "reported_call_hours": "08:00–19:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

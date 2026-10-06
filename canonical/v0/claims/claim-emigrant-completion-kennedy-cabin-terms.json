@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kennedy-cabin-terms",
+    "evidence_ids": [
+      "evidence-emigrant-completion-kennedy-cabin-terms"
+    ],
+    "predicate": "published_cabin_booking_terms",
+    "spatial_scope_ids": [
+      "scope-facility-emigrant-kennedy-resort"
+    ],
+    "subject_id": "facility-emigrant-kennedy-resort",
+    "temporal_scope": null,
+    "value": {
+      "checkin": "15:00",
+      "checkout": "11:00",
+      "deposit": "one night",
+      "dog_fee_usd_per_night": 5,
+      "extra_person_fee_usd_per_day": 5,
+      "extra_person_qualification": "above reported cabin capacity; confirm allowed occupancy",
+      "live_inventory": "unknown",
+      "method": "phone reservation",
+      "occupancy_tax_percent": 12,
+      "prices_may_change_after_booking": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

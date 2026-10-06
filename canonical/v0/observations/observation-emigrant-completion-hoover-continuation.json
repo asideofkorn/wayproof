@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Hoover product allows continuation into neighboring wilderness, but says travel south of CA Highway 120 needs another relevant permit and/or a continuous-trip addendum from the issuing unit depending on itinerary.",
+    "observation_id": "observation-emigrant-completion-hoover-continuation",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-rec-hoover"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-kibbie-issuer",
+    "evidence_id": "evidence-emigrant-completion-kibbie-issuer",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-kibbie-issuer",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

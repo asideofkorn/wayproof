@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2012 directions from Summit Ranger District reach 3N01 via Long Barn then 3N16. Box Springs continues via 3N20Y; Bourland parking is the dead end beyond its junction. All road mileages in the guide are approximate.",
+    "observation_id": "observation-emigrant-completion-box-springs-road",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "campsite-emigrant-cherry-valley-046",
+    "kind": "family_campsite",
+    "scope_id": "scope-campsite-emigrant-cherry-valley-046"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

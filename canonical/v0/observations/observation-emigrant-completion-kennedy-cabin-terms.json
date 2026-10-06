@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Cabin booking page requires a one-night deposit, lists 3 p.m. check-in/11 a.m. checkout, adds 12% occupancy tax, and warns prices can change after booking. Dogs must be controlled and cost $5 per dog/night.",
+    "observation_id": "observation-emigrant-completion-kennedy-cabin-terms",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-kennedy-cabins"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

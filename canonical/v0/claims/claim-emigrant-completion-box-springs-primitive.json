@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-box-springs-primitive",
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-springs-primitive"
+    ],
+    "predicate": "historical_access_inventory",
+    "spatial_scope_ids": [
+      "scope-emigrant-box-springs"
+    ],
+    "subject_id": "trailhead-emigrant-box-springs",
+    "temporal_scope": null,
+    "value": {
+      "camping_opportunities": "fair",
+      "current_availability": "unknown",
+      "parking": "limited",
+      "reported_facilities": "none",
+      "source_edition": "2012-04",
+      "surface": "native",
+      "trail_qualifier": "primitive"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

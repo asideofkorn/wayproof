@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-cherry-order-recheck",
+    "evidence_ids": [
+      "evidence-emigrant-completion-cherry-order-recheck"
+    ],
+    "predicate": "pretrip_area_orders_recheck",
+    "spatial_scope_ids": [
+      "scope-waterbody-stanislaus-cherry-lake",
+      "scope-campground-emigrant-cherry-valley",
+      "scope-emigrant-shingle-springs"
+    ],
+    "subject_id": "waterbody-stanislaus-cherry-lake",
+    "temporal_scope": null,
+    "value": {
+      "current_status": "unknown",
+      "do_not_generalize_to_all_access": true,
+      "required": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

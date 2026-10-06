@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-outside-origin",
+    "evidence_id": "evidence-emigrant-completion-outside-origin",
+    "notes": "",
+    "observation_id": "observation-emigrant-completion-outside-origin",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-completion-box-start-topology",
+    "evidence_ids": [
+      "evidence-emigrant-completion-box-start-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-box-springs-chain-lakes"
+    ],
+    "subject_id": "route-segment-emigrant-completion-box-start",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-box-chain-junction",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-box-springs",
+      "support": "2010 southern map explicitly connects Box Spring trailhead to the 19E95/19E28 fork; 2012 mileage table names the Chain Lakes Trail destination."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

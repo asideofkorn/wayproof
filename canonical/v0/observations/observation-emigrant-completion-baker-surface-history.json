@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Brightman Recreation Complex ROG 16-53-01 March 2020 p2 reports paved parking pads/spurs at this campground.",
+    "observation_id": "observation-emigrant-completion-baker-surface-history",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-usfs-emigrant-brightman-2020"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

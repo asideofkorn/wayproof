@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "cabin-emigrant-kennedy-2",
+    "kind": "cabin_campsite",
+    "scope_id": "scope-cabin-emigrant-kennedy-2"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

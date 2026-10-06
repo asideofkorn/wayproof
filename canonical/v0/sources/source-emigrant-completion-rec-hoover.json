@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.recreation.gov/permits/445856",
+    "publisher": "Recreation.gov / Humboldt-Toiyabe National Forest",
+    "source_id": "source-emigrant-completion-rec-hoover"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

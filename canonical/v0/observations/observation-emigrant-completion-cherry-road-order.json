@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Signed STF-16-2026-06 prohibits being on 1N98 from its 1N14Y junction to its terminus June 1, 2026–May 31, 2027. This is not a blanket closure of 1N04, 1N14Y, Shingle Springs or all Cherry Lake access.",
+    "observation_id": "observation-emigrant-completion-cherry-road-order",
+    "observed_at": null,
+    "observer": "Wayproof primary-source, map and source-feature review",
+    "retrieved_at": "2026-10-06T20:36:35+00:00",
+    "source_id": "source-emigrant-completion-cherry-road-signed"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

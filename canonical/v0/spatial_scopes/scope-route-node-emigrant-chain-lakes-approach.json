@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-node-emigrant-chain-lakes-approach",
+    "kind": "route_node",
+    "scope_id": "scope-route-node-emigrant-chain-lakes-approach"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}
