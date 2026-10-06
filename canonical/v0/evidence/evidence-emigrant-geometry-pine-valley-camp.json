@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-geometry-pine-valley-camp",
+    "evidence_id": "evidence-emigrant-geometry-pine-valley-camp",
+    "notes": "Wayproof display assignment to already evidenced endpoints; no new topology inferred from proximity.",
+    "observation_id": "observation-emigrant-geometry-pine-valley-camp",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

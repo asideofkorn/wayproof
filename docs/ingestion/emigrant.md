@@ -45,7 +45,8 @@ Relevant legacy material was recovered before researching:
 
 Each subsequent canonical PR starts from refreshed main after review and has
 one ChangeSet. Foundation PR #203 was merged with explicit user authorization;
-the next PR is prepared for review. The foundation is not route-complete,
+Crabtree lake approach PR #204 was also reviewed and merged with authorization.
+Subsequent batches are prepared for review without assuming merge authorization. The foundation is not route-complete,
 deep-inventory-complete or destination source-complete.
 
 ## Primary-source disposition ledger
@@ -157,3 +158,74 @@ requirement joins, scoped rechecks and generated route/lake/evidence HTML/JSON.
 The foundation regression still requires a wilderness-only request to have no
 inferred route; its no-segment assertion now applies to foundation ChangeSet
 entities so later explicitly evidenced graphs can coexist.
+
+
+## Batch 2b: reviewed geographic display for Crabtree lake approaches
+
+Inventory at main `b2c68ed2` (#204): two lake approaches, five shared/branching
+segments, five descriptive nodes and two lake resources exist, but no Emigrant
+coordinates or route GeoJSON. Review explicitly requested later geographic
+coverage. This batch adds display geometry to those five existing segments;
+it adds no entities, relationships, normative rules or route lengths. The
+foundation and batch 2a claims, observations and ChangeSets remain unchanged.
+
+### Source disposition and review
+
+- **Ingested:** USDA Forest Service National Forest System Trails public layer,
+  reviewed 2026-10-06 UTC (October 5 local). Named `20E16 CRABTREE` features
+  9428086 and 9430618 and `19E09 BEAR LAKE` feature 9430557 match the already
+  reviewed overview and lake-detail maps. Their original global IDs, length
+  fields and source-geometry hashes remain in the bounded snapshot.
+- **Already represented / corroborating:** 2010 Emigrant overview and Camp/Bear
+  minimum camping maps. These establish the branch identities and approaches;
+  proximity in the new dataset creates no relationship.
+- **Reviewed but not imported:** `19E21 LAKE VALLEY` feature 9430389 and `19E10
+  PINE VALLEY` feature 9430585 anchor the existing named junctions. Pine Valley
+  shares an exact vertex. The normalized Lake Valley endpoint differs from the
+  reviewed Crabtree vertex by about 0.08 m; no geometry is snapped or changed
+  and the branch is not imported.
+- **Deferred with explicit gap:** other Emigrant trail features, wilderness
+  boundary, shoreline polygons and facility geometry. This is a bounded route
+  display batch, not geographic completeness for Emigrant Wilderness.
+- **Already represented / unchanged:** competing table/guide mileages, estimated
+  Bear branch mileage, permit and camping restrictions, current-condition
+  rechecks. Original dataset `segment_length` and `gis_miles` values describe
+  whole source features and are not promoted into atomic traversal distance.
+
+The source service was queried in EPSG:4326 for the western Emigrant envelope
+(-119.91, 38.13, -119.70, 38.27), returning 45 features. Three supply display
+geometry; the rest are excluded from the snapshot. A plotted review of named
+lines and junctions was compared against the official overview and lake maps.
+The committed snapshot contains only these contiguous source-vertex slices:
+
+| Existing segment | Source object ID | Inclusive vertex indices (canonical direction) |
+| --- | --- | --- |
+| Crabtree–Lake Valley junction | 9428086 | 182 → 172 |
+| Lake Valley–Pine Valley junction | 9428086 | 172 → 67 |
+| Pine Valley–Camp western approach | 9428086 | 67 → 0 |
+| Camp western approach–Bear junction | 9430618 | 836 → 806 |
+| Bear branch | 9430557 | 0 → 164 |
+
+All imported joins share exact source vertices. Camp's western display endpoint
+is the shared Crabtree source-feature break, reviewed against the lake map;
+it is a descriptive approach position, not a lake centroid, surveyed named
+junction or campsite. Coordinate digits do not establish accuracy. The source
+service does not establish current trail status. The new scoped geometry
+recheck makes these limits visible to route/lake requests without applying
+them to a trailhead-only or wilderness-only request.
+
+`scripts/ingest_emigrant_geometry.py` prepares one validated ChangeSet through
+the write service. With `--reviewed-input`, it creates the bounded snapshot
+from the inspected service response after checking source identifiers, vertex
+counts and reviewed joins. Without that option it reuses the committed
+snapshot, enabling offline canonical regeneration against pre-batch main.
+The snapshot is hashed and linked from five additive display claims; canonical
+JSON remains serializer-owned. No geometry projection or website code changes.
+
+Acceptance verifies both drawable routes in `/map/features.geojson`, route
+GeoJSON and detail HTML/JSON; identical shared geometry; exact continuity;
+source identifiers, vertex ranges and hash; fail-closed hash validation;
+unknown/estimated mileage preservation; named-intent exit limits; and scoped
+geometry rechecks. Existing bidirectional traversal and permit tests remain.
+Crabtree restrooms, the historical trailhead one-night camping limit, Gianelli
+and Bell Meadow route depth, and other planned coverage remain in later batches.
