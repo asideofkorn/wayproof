@@ -3,29 +3,17 @@
 from __future__ import annotations
 
 import json
-import os
-import subprocess
-import sys
 
 import pytest
-
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-@pytest.fixture(scope="module")
-def site(tmp_path_factory):
-    out = tmp_path_factory.mktemp("canonical-site")
-    subprocess.run([sys.executable, "scripts/build_site.py", "--output", str(out)],
-                   cwd=ROOT, check=True, capture_output=True)
-    return out
 
 
 @pytest.mark.parametrize("relative", (
     "destinations/del-valle",
     "trails/ohlone-wilderness",
 ))
-def test_focused_pages_publish_every_json_claim_id_in_html(site, relative):
-    root = site / relative
+def test_focused_pages_publish_every_json_claim_id_in_html(generated_site, relative):
+    site_root, _ = generated_site
+    root = site_root / relative
     payload = json.loads((root / "index.json").read_text())
     html = (root / "index.html").read_text()
     claims = [bundle["claim"] for section in payload["sections"]
@@ -34,5 +22,6 @@ def test_focused_pages_publish_every_json_claim_id_in_html(site, relative):
     assert all(claim["claim_id"] in html for claim in claims)
 
 
-def test_legacy_trailhead_surfaces_are_not_published(site):
-    assert not (site / "trailheads").exists()
+def test_legacy_trailhead_surfaces_are_not_published(generated_site):
+    site_root, _ = generated_site
+    assert not (site_root / "trailheads").exists()

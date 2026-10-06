@@ -73,8 +73,8 @@ referenced supporting material relevant to the task.
 - Extend generic publication logic for a generally supported entity kind. Do not
   add destination-specific navigation exceptions, and do not weaken an existing
   invariant merely to admit new data.
-- Run `python -m pytest -q` with the repository's supported Python 3.14 runtime.
-- During iteration, run the affected CI module with
+- During iteration, run the directly affected test modules, then the affected
+  CI group with
   `python scripts/test_groups.py --group <group>`. The five exhaustive groups
   are `core`, `planning`, `regional-ebrpd`, `regional-sierra`, and `site`;
   `python scripts/test_groups.py --check` verifies that every test module is
@@ -83,6 +83,12 @@ referenced supporting material relevant to the task.
   defaults to `core` so CI cannot omit it. Tests that inspect generated website
   output must use the session-scoped `generated_site` fixture instead of
   rebuilding the site themselves.
+- Let GitHub's change-aware workflow run the final selected groups. Do not also
+  run `python -m pytest -q` locally by default after focused checks pass; that
+  duplicates CI and serializes work GitHub runs in parallel. Run the complete
+  local suite for shared domain, schema, storage, test-infrastructure, or other
+  cross-cutting changes, or when the selector chooses all five groups.
+  Main-branch CI and manual workflow runs always execute all groups.
 - For canonical knowledge changes, also run:
   `python scripts/verify_canonical_diff.py --base origin/main`.
   Run it on the final committed candidate after refreshing from current `main`,

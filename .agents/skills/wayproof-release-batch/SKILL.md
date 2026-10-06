@@ -21,7 +21,12 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   ChangeSet manifest.
 - Confirm canonical JSON was produced by the serializer rather than manually
   edited.
-- Run focused tests while iterating, then `python -m pytest -q`.
+- Run focused tests while iterating, then the affected CI group. Use
+  `python scripts/select_test_groups.py --base origin/main --head HEAD` to
+  inspect the expected PR scope. Do not duplicate passing focused work with a
+  local full-suite run unless shared domain/schema/storage/test infrastructure
+  changed or the selector chooses every group; GitHub runs selected groups in
+  parallel and `main` always receives full validation.
 - For canonical changes, run
   `python scripts/verify_canonical_diff.py --base origin/main` on the final
   committed candidate. First refresh from current `main`, then inspect
