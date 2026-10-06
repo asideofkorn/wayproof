@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-highway-limits",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-highway-limits"
+    ],
+    "predicate": "historical_vehicle_access_advisory",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown",
+      "extent": "Kennedy Meadows to Leavitt Meadow",
+      "maximum_reported_grade_percent": 26,
+      "reported_advisory": "large RVs or trailers not advised",
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

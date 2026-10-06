@@ -1,0 +1,48 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-directions",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-directions"
+    ],
+    "predicate": "historical_driving_directions",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "current_road_status": "unknown; verify MVUM and current orders",
+      "legs": [
+        {
+          "approximate_miles": 3,
+          "instruction": "east Highway 108 from Summit Ranger Station"
+        },
+        {
+          "approximate_miles": 5,
+          "instruction": "right Herring Creek Road 4N12 to pavement end"
+        },
+        {
+          "approximate_miles": 2,
+          "instruction": "continue to Hammil Canyon Loop"
+        },
+        {
+          "approximate_miles": 2,
+          "instruction": "right"
+        },
+        {
+          "approximate_miles": {
+            "maximum": 0.75,
+            "minimum": 0.5
+          },
+          "instruction": "right road labeled 4N31 in this guide toward Pinecrest Peak"
+        }
+      ],
+      "mileage_precision": "approximate",
+      "origin": "Summit Ranger Station (Pinecrest)",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

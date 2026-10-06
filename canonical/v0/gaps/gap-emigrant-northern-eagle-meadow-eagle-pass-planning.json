@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-eagle-meadow-eagle-pass-planning",
+    "question": "What remains unverified for Eagle Meadow to Eagle Pass?",
+    "reason": "The selected approach has a sourced bidirectional graph; atomic mileage, return itinerary, shoreline paths, individual campsites and current conditions remain unknown. Source destination mileages may refer to a different precise endpoint. The route ends at the northern boundary approach to Eagle Pass. It does not assert entry south into Emigrant or establish an overnight wilderness permit requirement for this approach alone.",
+    "related_ids": [
+      "claim-emigrant-northern-eagle-meadow-eagle-pass-profile",
+      "claim-emigrant-northern-eagle-meadow-eagle-pass-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-pct-south-2-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-pct-south-2-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-segment-emigrant-northern-pct-south-2",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-pct-sonora-break-2",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-pct-sonora-break-1",
+      "support": "PCT south, continuous named trail feature with exact shared endpoint"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

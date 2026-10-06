@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-eagle-pass-profile"
+    ],
+    "object_id": "trailhead-emigrant-eagle-meadow",
+    "predicate": "starts_at",
+    "relationship_id": "relationship-emigrant-northern-eagle-meadow-eagle-pass-start",
+    "subject_id": "route-emigrant-eagle-meadow-eagle-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

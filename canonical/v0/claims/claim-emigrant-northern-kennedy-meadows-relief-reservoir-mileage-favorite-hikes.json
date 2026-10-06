@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-favorite-hikes",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-favorite-hikes"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "one way",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 3,
+      "source_edition": "2018-11"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Traveler 2023 p10 states that the trail begins half a mile from the parking lot, at the south end of the main road. It does not state whether the six-mile round-trip destination total includes this connection.",
+    "observation_id": "observation-emigrant-northern-kennedy-parking-distance",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-traveler-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-meadow-horse-identity",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-meadow-horse-identity"
+    ],
+    "predicate": "historical_horse_camp_identity",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-coyote-meadow-horse"
+    ],
+    "subject_id": "campground-emigrant-coyote-meadow-horse",
+    "temporal_scope": null,
+    "value": {
+      "camp_type": "horse camp outside wilderness",
+      "current_availability": "unknown",
+      "individual_sites": "not inventoried",
+      "source_edition": "2020-02"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

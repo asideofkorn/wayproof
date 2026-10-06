@@ -1,0 +1,13 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-sonora-pass-access",
+    "question": "What access and facilities currently apply at Sonora Pass?",
+    "reason": "Historical facility and camping descriptions require present confirmation. Verify current MVUM, road/fire orders, parking, toilets, water safety and site-specific overnight limits. Forest occupancy maxima do not override shorter site limits. Individual sites and facility footpaths are not inventoried.",
+    "related_ids": [
+      "claim-emigrant-northern-sonora-pass-access-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

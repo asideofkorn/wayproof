@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-26 April 2012 directions from Summit Ranger Station: east Highway 108 from Summit Ranger Station: 3 miles; right Herring Creek Road 4N12 to pavement end: 5 miles; continue to Hammill Canyon Loop: 2 miles; right, passing Pinecrest Peak 5N31 turnoff, to 5N67: 4 miles; right 5N67 to trailhead: 1 miles. The guide expressly qualifies all mileages as approximate.",
+    "observation_id": "observation-emigrant-northern-coyote-meadow-directions",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-trailheads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

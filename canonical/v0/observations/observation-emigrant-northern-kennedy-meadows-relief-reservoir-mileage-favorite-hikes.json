@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2018-11 favorite-hikes: Kennedy Meadows to Relief Reservoir is reported as 3 miles (one way). Precise endpoint and parking inclusion are not resolved.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-favorite-hikes",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-favorite-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

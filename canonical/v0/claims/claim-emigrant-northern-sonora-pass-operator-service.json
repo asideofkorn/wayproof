@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-operator-service",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-operator-service"
+    ],
+    "predicate": "reported_operator_transport",
+    "spatial_scope_ids": [
+      "scope-emigrant-sonora-pass"
+    ],
+    "subject_id": "trailhead-emigrant-sonora-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "operator": "Kennedy Meadows Resort & Pack Station",
+      "reported_link": [
+        "resort",
+        "Sonora Pass"
+      ],
+      "source_date": "unknown",
+      "walking_connection": "not asserted"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

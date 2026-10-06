@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-meadow-eagle-pass-profile",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-meadow-eagle-pass-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-eagle-meadow-eagle-pass"
+    ],
+    "subject_id": "route-emigrant-eagle-meadow-eagle-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "display_geometry": "reviewed, non-navigation-grade",
+      "end_node_id": "route-node-emigrant-eagle-pass-approach",
+      "endpoint_status": "trail approach; not campsite or resource centroid",
+      "entry_id": "trailhead-emigrant-eagle-meadow",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "pass-emigrant-eagle",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

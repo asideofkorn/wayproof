@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-waterhouse-trail-end",
+    "kind": "route_node",
+    "name": "Waterhouse Lake mapped trail terminus"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

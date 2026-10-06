@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-kennedy-mileage-basis",
+    "question": "Do Kennedy approach totals include the walk from parking?",
+    "reason": "The 2023 guide gives a six-mile round trip and a separate half-mile parking-to-trail walk; the 2012/2018 reports give three miles one way. Kennedy Lake is reported as 7.5 miles by the 2012 table and an undated riding operator. No arithmetic resolves parking inclusion or precise endpoint. Confirm intended start before using these reports.",
+    "related_ids": [
+      "claim-emigrant-northern-kennedy-parking-distance",
+      "claim-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-traveler-2023",
+      "claim-emigrant-northern-kennedy-meadows-kennedy-lake-mileage-mileage-table"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

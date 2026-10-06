@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-lake-branch-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-lake-branch-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake"
+    ],
+    "subject_id": "route-segment-emigrant-northern-kennedy-lake-branch",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": null,
+      "distance_status": "not_printed",
+      "end_node_id": "route-node-emigrant-kennedy-lake-west-approach",
+      "route_role": "official_mainline",
+      "start_node_id": "route-node-emigrant-kennedy-lake-junction",
+      "support": "2010 overview northern panel explicitly draws 21E03 east along Kennedy Creek to Kennedy Lake. The selected endpoint is the western trail approach, not the lake centroid or an asserted campsite."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

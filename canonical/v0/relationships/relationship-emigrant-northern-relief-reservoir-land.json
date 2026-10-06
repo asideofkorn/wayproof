@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-relief-reservoir-identity"
+    ],
+    "object_id": "wilderness-emigrant",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-northern-relief-reservoir-land",
+    "subject_id": "waterbody-emigrant-relief-reservoir",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

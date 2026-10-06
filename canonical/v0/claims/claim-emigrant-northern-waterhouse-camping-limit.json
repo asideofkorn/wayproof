@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-camping-limit",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-camping-limit"
+    ],
+    "predicate": "historical_trailhead_camping_limit",
+    "spatial_scope_ids": [
+      "scope-emigrant-waterhouse"
+    ],
+    "subject_id": "trailhead-emigrant-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "current_rule_status": "requires confirmation",
+      "reported_nights": 1,
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

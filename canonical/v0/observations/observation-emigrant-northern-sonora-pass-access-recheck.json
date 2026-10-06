@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Check current Forest Service alerts and site-specific restrictions for Sonora Pass. Old directions and facility descriptions are not road clearance, campsite availability, water safety or permission.",
+    "observation_id": "observation-emigrant-northern-sonora-pass-access-recheck",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-alerts"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

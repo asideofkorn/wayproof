@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-kennedy-meadows-kennedy-lake-planning",
+    "question": "What remains unverified for Kennedy Meadows to Kennedy Lake?",
+    "reason": "The selected approach has a sourced bidirectional graph; atomic mileage, return itinerary, shoreline paths, individual campsites and current conditions remain unknown. Source destination mileages may refer to a different precise endpoint. No display geometry is published: the parking-to-trail connection is unreviewed and the Kennedy Lake branch has an unsnapped roughly 45-metre source offset. The graph comes from explicit map/guide connections, not coordinate proximity.",
+    "related_ids": [
+      "claim-emigrant-northern-kennedy-meadows-kennedy-lake-profile",
+      "claim-emigrant-northern-kennedy-meadows-kennedy-lake-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-leavitt-junction-profile",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-leavitt-junction-profile"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-sonora-pass-leavitt-junction"
+    ],
+    "subject_id": "route-emigrant-sonora-pass-leavitt-junction",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional mapped trail",
+      "display_geometry": "reviewed, non-navigation-grade",
+      "end_node_id": "route-node-emigrant-pct-leavitt-lake-junction",
+      "endpoint_status": "trail approach; not campsite or resource centroid",
+      "entry_id": "trailhead-emigrant-sonora-pass",
+      "name_status": "Wayproof descriptive approach",
+      "objective_id": "route-node-emigrant-pct-leavitt-lake-junction",
+      "source_edition": "2010"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

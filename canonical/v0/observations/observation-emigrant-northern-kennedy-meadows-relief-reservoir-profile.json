@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2010 Emigrant map northern panel explicitly draws the selected named trails. Kennedy Meadows to Relief Reservoir is a Wayproof descriptive approach, not an official named itinerary. Kennedy parking connection is separately supported by Traveler 2023; the Eagle approach stops at the northern side of the boundary pass.",
+    "observation_id": "observation-emigrant-northern-kennedy-meadows-relief-reservoir-profile",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-overview-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-parking-distance",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-parking-distance"
+    ],
+    "predicate": "reported_access_walk_distance",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "temporal_scope": null,
+    "value": {
+      "from": "trailhead parking lot",
+      "inclusion_in_destination_total": "unknown",
+      "not_added_to_destination_reports": true,
+      "reported_miles": 0.5,
+      "to": "trail start at south end of main road"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

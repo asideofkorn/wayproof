@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-restrooms",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-restrooms"
+    ],
+    "predicate": "historical_facility_presence",
+    "spatial_scope_ids": [
+      "scope-restroom-emigrant-sonora-pass",
+      "scope-emigrant-sonora-pass"
+    ],
+    "subject_id": "restroom-emigrant-sonora-pass",
+    "temporal_scope": null,
+    "value": {
+      "count": "unknown",
+      "current_availability": "unknown",
+      "reported_type": "accessible restrooms",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

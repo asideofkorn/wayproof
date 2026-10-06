@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Traveler 2023 p10 Highway 108 information advises against large RVs or trailers from Kennedy Meadows on the west to Leavitt Meadow on the east; grades can be as steep as 26 percent, with narrow winding road and no shoulder.",
+    "observation_id": "observation-emigrant-northern-sonora-pass-highway-limits",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-traveler-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

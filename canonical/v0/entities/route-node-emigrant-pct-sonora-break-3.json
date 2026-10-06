@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-pct-sonora-break-3",
+    "kind": "route_node",
+    "name": "PCT source-feature break south of Sonora Pass 3"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

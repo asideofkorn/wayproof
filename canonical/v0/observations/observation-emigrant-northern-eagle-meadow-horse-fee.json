@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-08 February 2020 p1 includes this horse camp among undeveloped camping areas requiring no camping fee. Current fees and operation require confirmation.",
+    "observation_id": "observation-emigrant-northern-eagle-meadow-horse-fee",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-horse-camping-2020"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

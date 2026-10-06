@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-pass-topology",
+      "evidence-emigrant-northern-eagle-pass-geometry"
+    ],
+    "object_id": "pass-emigrant-eagle",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-emigrant-northern-eagle-pass-resource",
+    "subject_id": "route-segment-emigrant-northern-eagle-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

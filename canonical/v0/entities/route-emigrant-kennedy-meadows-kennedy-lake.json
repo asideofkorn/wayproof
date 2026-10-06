@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-emigrant-kennedy-meadows-kennedy-lake",
+    "kind": "route",
+    "name": "Kennedy Meadows to Kennedy Lake"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

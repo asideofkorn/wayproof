@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Traveler 2023 p10 Horse Camping lists vault toilets at Kennedy Meadows trailhead.",
+    "observation_id": "observation-emigrant-northern-kennedy-vault-2023",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-traveler-2023"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

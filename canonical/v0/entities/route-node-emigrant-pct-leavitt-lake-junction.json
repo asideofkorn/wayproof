@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-pct-leavitt-lake-junction",
+    "kind": "route_node",
+    "name": "PCT–Leavitt Lake Trail junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

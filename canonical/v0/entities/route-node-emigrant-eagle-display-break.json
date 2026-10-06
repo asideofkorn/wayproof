@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-node-emigrant-eagle-display-break",
+    "kind": "route_node",
+    "name": "Eagle Creek Trail source-feature break"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

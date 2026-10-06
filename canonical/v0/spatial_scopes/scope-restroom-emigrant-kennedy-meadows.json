@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "restroom-emigrant-kennedy-meadows",
+    "kind": "restroom",
+    "scope_id": "scope-restroom-emigrant-kennedy-meadows"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-08 February 2020 p1, Horse Camping outside Wilderness: keep animals at least 100 feet from lakes, streams and campsites. This outside-wilderness guidance does not replace the signed Emigrant stock rules or their existing interpretation gap.",
+    "observation_id": "observation-emigrant-northern-coyote-meadow-horse-stock-guidance",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-horse-camping-2020"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

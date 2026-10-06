@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "restroom-emigrant-sonora-pass",
+    "kind": "restroom",
+    "name": "Sonora Pass trailhead restrooms"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

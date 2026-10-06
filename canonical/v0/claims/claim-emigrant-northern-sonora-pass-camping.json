@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-sonora-pass-camping",
+    "evidence_ids": [
+      "evidence-emigrant-northern-sonora-pass-camping"
+    ],
+    "predicate": "historical_camping_opportunity",
+    "spatial_scope_ids": [
+      "scope-emigrant-sonora-pass"
+    ],
+    "subject_id": "trailhead-emigrant-sonora-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "reported_description": "few",
+      "source_edition": "2012-04"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

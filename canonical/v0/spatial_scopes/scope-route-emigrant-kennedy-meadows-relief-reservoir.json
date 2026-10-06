@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "kind": "route",
+    "scope_id": "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

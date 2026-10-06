@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "restroom-emigrant-sonora-pass",
+    "kind": "restroom",
+    "scope_id": "scope-restroom-emigrant-sonora-pass"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-road-order",
+    "evidence_id": "evidence-emigrant-northern-waterhouse-road-order",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-waterhouse-road-order",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

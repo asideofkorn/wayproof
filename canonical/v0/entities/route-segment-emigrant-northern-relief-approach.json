@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-segment-emigrant-northern-relief-approach",
+    "kind": "route_segment",
+    "name": "Relief Approach"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

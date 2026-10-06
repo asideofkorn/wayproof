@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-waterhouse-geometry",
+    "evidence_ids": [
+      "evidence-emigrant-northern-waterhouse-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-waterhouse-waterhouse-lake"
+    ],
+    "subject_id": "route-segment-emigrant-northern-waterhouse",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "current_route_status": "unknown; pre-trip check required",
+      "end_coordinate": {
+        "latitude": 38.223389724783125,
+        "longitude": -119.90346031570981
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-emigrant-northern-waterhouse",
+        "path": "geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson",
+        "sha256": "3f1c624ca1e6d3909e647f702548cca99fcce37370fdbba23c34cae12e195cca"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_id": 9428140,
+      "source_globalid": "{7D5C8931-FE33-4617-B426-1AB1394BD898}",
+      "source_vertex_range_inclusive": [
+        0,
+        147
+      ],
+      "start_coordinate": {
+        "latitude": 38.23464838694555,
+        "longitude": -119.91512815693721
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

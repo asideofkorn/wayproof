@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-waterhouse-road-number",
+    "question": "Which road designation applies to the Waterhouse approach?",
+    "reason": "The 2012 guide prints 4N31; the 2010 overview map labels 5N31 by Pinecrest Peak and Waterhouse. Preserve both; confirm on the current MVUM and road orders before driving.",
+    "related_ids": [
+      "claim-emigrant-northern-waterhouse-directions",
+      "claim-emigrant-northern-waterhouse-map-road"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

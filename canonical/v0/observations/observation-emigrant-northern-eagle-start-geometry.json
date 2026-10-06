@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails object 9430941, globalid {E21E03C8-A491-47B2-B7D9-DFFB02C1F287}, 20E08 EAGLE CREEK; reviewed inclusive normalized vertices 254–438. Endpoint assignments are descriptive and source lengths apply to the original feature.",
+    "observation_id": "observation-emigrant-northern-eagle-start-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:14:14+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

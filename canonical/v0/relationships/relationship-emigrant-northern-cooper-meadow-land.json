@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-emigrant-northern-cooper-meadow-identity"
+    ],
+    "object_id": "wilderness-emigrant",
+    "predicate": "part_of",
+    "relationship_id": "relationship-emigrant-northern-cooper-meadow-land",
+    "subject_id": "place-emigrant-cooper-meadow",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

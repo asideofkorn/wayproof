@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-emigrant-northern-sonora-pass-leavitt-junction-planning",
+    "question": "What remains unverified for Sonora Pass to Leavitt Lake Trail junction?",
+    "reason": "The selected approach has a sourced bidirectional graph; atomic mileage, return itinerary, shoreline paths, individual campsites and current conditions remain unknown. Source destination mileages may refer to a different precise endpoint. The PCT follows the Emigrant/Hoover divide; this is not a claim that every segment is in Emigrant or that Emigrant permission covers Hoover. Jurisdiction, PCT permit applicability and a continuation to Leavitt Lake, Leavitt Peak, Dorothy Lake or Yosemite need separate review. Parking-to-south-side highway crossing geometry is not included.",
+    "related_ids": [
+      "claim-emigrant-northern-sonora-pass-leavitt-junction-profile",
+      "claim-emigrant-northern-sonora-pass-leavitt-junction-conditions"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

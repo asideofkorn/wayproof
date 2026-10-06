@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-eagle-boundary",
+    "evidence_ids": [
+      "evidence-emigrant-northern-eagle-boundary"
+    ],
+    "predicate": "boundary_approach_limit",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-eagle-meadow-eagle-pass"
+    ],
+    "subject_id": "route-emigrant-eagle-meadow-eagle-pass",
+    "temporal_scope": null,
+    "value": {
+      "selected_route": "stops at northern pass approach",
+      "wilderness_entry": "south from pass",
+      "wilderness_entry_asserted": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

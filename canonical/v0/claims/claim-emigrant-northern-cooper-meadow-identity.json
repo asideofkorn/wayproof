@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-cooper-meadow-identity",
+    "evidence_ids": [
+      "evidence-emigrant-northern-cooper-meadow-identity"
+    ],
+    "predicate": "mapped_place_identity",
+    "spatial_scope_ids": [
+      "scope-place-emigrant-cooper-meadow"
+    ],
+    "subject_id": "place-emigrant-cooper-meadow",
+    "temporal_scope": null,
+    "value": {
+      "boundary_status": "mapped in Emigrant Wilderness",
+      "campsite_inventory": "unknown",
+      "name": "Cooper Meadow (Emigrant Wilderness)",
+      "resource_geometry": "not imported",
+      "water_availability": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

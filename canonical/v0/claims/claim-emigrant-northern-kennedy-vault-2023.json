@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-vault-2023",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-vault-2023"
+    ],
+    "predicate": "reported_restroom_type",
+    "spatial_scope_ids": [
+      "scope-restroom-emigrant-kennedy-meadows",
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "restroom-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "source_edition": "2023",
+      "type": "vault toilet"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

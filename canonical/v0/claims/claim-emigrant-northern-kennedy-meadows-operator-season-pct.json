@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-operator-season-pct",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-operator-season-pct"
+    ],
+    "predicate": "reported_operator_season",
+    "spatial_scope_ids": [
+      "scope-emigrant-kennedy-meadows"
+    ],
+    "subject_id": "trailhead-emigrant-kennedy-meadows",
+    "temporal_scope": null,
+    "value": {
+      "current_availability": "unknown",
+      "outside_interval_statement": "closed",
+      "reported_interval": "May 1 through October 1",
+      "reported_service": "package acceptance",
+      "source_date": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-pct-south-2-topology",
+    "evidence_id": "evidence-emigrant-northern-pct-south-2-topology",
+    "notes": "",
+    "observation_id": "observation-emigrant-northern-pct-south-2-topology",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

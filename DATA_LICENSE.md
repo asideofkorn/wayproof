@@ -74,8 +74,9 @@ Every data file below is also classified by what that means for reuse:
 
 ### Emigrant route geometry
 
-`geometry/v0/snapshots/usfs-emigrant-crabtree-routes-20261006.geojson` and
-`geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson`
+`geometry/v0/snapshots/usfs-emigrant-crabtree-routes-20261006.geojson`,
+`geometry/v0/snapshots/usfs-emigrant-western-routes-20261006.geojson` and
+`geometry/v0/snapshots/usfs-emigrant-northern-routes-20261006.geojson`
 contain reviewed contiguous vertex slices from the USDA Forest Service's
 [National Forest System Trails service](https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublish_01/MapServer/0).
 This is Tier A, `public_domain` federal data. Each feature retains source object

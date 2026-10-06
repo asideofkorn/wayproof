@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-coyote-meadow-horse-facilities",
+    "evidence_ids": [
+      "evidence-emigrant-northern-coyote-meadow-horse-facilities"
+    ],
+    "predicate": "historical_facility_report",
+    "spatial_scope_ids": [
+      "scope-campground-emigrant-coyote-meadow-horse"
+    ],
+    "subject_id": "campground-emigrant-coyote-meadow-horse",
+    "temporal_scope": null,
+    "value": {
+      "current_inventory": "unknown",
+      "reported_improvements": [],
+      "source_edition": "2020-02"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

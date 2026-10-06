@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-traveler-2023",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-meadows-relief-reservoir-mileage-traveler-2023"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-emigrant-kennedy-meadows-relief-reservoir",
+    "temporal_scope": null,
+    "value": {
+      "distance_convention": "round trip",
+      "endpoint_precision": "unspecified",
+      "not_atomic_distance": true,
+      "reported_miles": 6,
+      "source_edition": "2023"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

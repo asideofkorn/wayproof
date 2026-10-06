@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ROG 16-41 November 2018 p2 Relief Reservoir description reports heavy stock use. This is a historical usage report, not current trail suitability.",
+    "observation_id": "observation-emigrant-northern-relief-stock-use",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, geospatial map and named-feature review",
+    "retrieved_at": "2026-10-06T15:34:28+00:00",
+    "source_id": "source-usfs-emigrant-favorite-hikes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

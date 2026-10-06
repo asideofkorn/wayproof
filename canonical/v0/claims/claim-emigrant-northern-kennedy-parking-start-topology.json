@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-emigrant-northern-kennedy-parking-start-topology",
+    "evidence_ids": [
+      "evidence-emigrant-northern-kennedy-parking-start-topology"
+    ],
+    "predicate": "described_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-emigrant-kennedy-meadows-kennedy-lake",
+      "scope-route-emigrant-kennedy-meadows-relief-reservoir"
+    ],
+    "subject_id": "route-segment-emigrant-northern-kennedy-parking-start",
+    "temporal_scope": null,
+    "value": {
+      "distance_miles": 0.5,
+      "distance_status": "reported",
+      "end_node_id": "route-node-emigrant-kennedy-trail-start",
+      "route_role": "official_mainline",
+      "start_node_id": "trailhead-emigrant-kennedy-meadows",
+      "support": "Traveler 2023 p10 Relief Reservoir entry explicitly places the trail start at the south end of the main road, half a mile from the Kennedy trailhead parking lot. The connecting walk is described but its geometry is not reviewed."
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
