@@ -482,6 +482,22 @@ def test_directories_are_automatically_populated_from_canonical_kinds(site):
         assert name in (tmp_path / directory / "index.html").read_text()
 
 
+def test_passes_automatically_join_peak_directory(site):
+    from wayproof.canonical_site import DIRECTORIES, MAP_LAYERS
+
+    tmp_path, _ = site
+    payload = json.loads((tmp_path / "peaks" / "index.json").read_text())
+    page = (tmp_path / "peaks" / "index.html").read_text()
+    assert DIRECTORIES["peaks"]["kinds"] == MAP_LAYERS["peaks"]
+    assert {"peak", "pass", "mountain_pass"} == set(DIRECTORIES["peaks"]["kinds"])
+    assert any(item["entity_id"] == "place-piute-pass" and item["kind"] == "pass"
+               for item in payload["entities"])
+    assert "Piute Pass" in page
+    assert 'href="/knowledge/place-piute-pass/"' in page
+    assert "Peaks and passes" in page
+    assert "Rose Peak" in page
+
+
 def test_deep_campground_records_publish_without_handwritten_pages(site):
     tmp_path, _ = site
     payload = json.loads((tmp_path / "camping" / "index.json").read_text())
