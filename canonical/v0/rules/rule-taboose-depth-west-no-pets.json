@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-pets",
+    "conditions": [
+      {
+        "dimension": "equipment",
+        "operator": "contains",
+        "value": "pet"
+      }
+    ],
+    "consequence": "Do not bring pets onto the western Taboose routes in Kings Canyon National Park.",
+    "rule_id": "rule-taboose-depth-west-no-pets",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

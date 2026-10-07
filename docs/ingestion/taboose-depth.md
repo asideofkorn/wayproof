@@ -20,7 +20,11 @@ October 7 01:21). No merge or publication is performed by the importer.
   planning depth**: precise camps/water spurs, distances and some facilities are
   unresolved.
 - **Planning:** original Inyo entry-permit requirements plus separately scoped
-  NPS permit-carry, food, camping and fire requirements. The original east-only
+  NPS permit-carry, food, camping and fire requirements, plus an executable
+  `equipment contains pet` prohibition on the western routes, grounded in the
+  existing NPS pet claim. Following the Yosemite prohibition pattern, it adds
+  no persisted fulfillment requirement; the composed planner surfaces its
+  do-not-bring-pets consequence when applicable. The original east-only
   route never acquires west-only pet or weapon restrictions. The new recheck
   composes the existing manifest and the follow-up evidence. County stay-limit
   requirements join the campground and its individual sites.
@@ -100,7 +104,9 @@ previous ChangeSet are not rewritten. Exactly one new ChangeSet is introduced.
 
 Focused tests cover bidirectional ordered traversal, original physical-segment
 reuse, unknown distances, geometry lineage/hashes, original east-only scope,
-western and county rule/requirement joins, every site's source/fit/recheck,
+western and county rule/requirement joins, pet prohibition consequences on all
+three western routes for day and overnight trips (and no application without
+pets or on the east-only route), every site's source/fit/recheck,
 booking limits, unresolved conflicts and absent synthetic facility spurs.
 A separate test module uses the shared `generated_site` fixture to check generic
 camping/trails/pass discovery, new detail pages, geometry and published evidence.

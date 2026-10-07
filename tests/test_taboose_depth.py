@@ -7,7 +7,7 @@ from scripts.ingest_taboose_depth import (ROOT,CHANGE_ID,MANIFEST,SNAPSHOT,ROUTE
     TH,PASS,ROUTE,SEGMENT,CAMP,WEST,BENCH,PREFIX,segment,site_id,scope)
 from wayproof.canonical_storage import load_changeset
 from wayproof.read_service import CanonicalReadService
-from wayproof.schema import ActivityContext,TripIntent,ChangeSetStatus
+from wayproof.schema import ActivityContext,EquipmentContext,TripIntent,ChangeSetStatus
 from wayproof.requirements import Applicability
 from wayproof.recheck import RecheckAnswerability
 from wayproof.traversal import TraversalState,resolve_traversal
@@ -61,12 +61,43 @@ def test_full_itinerary_requires_both_entry_and_park_requirements(reads,key):
  assert plan.rechecks and plan.readiness is not None
 
 
+@pytest.mark.parametrize('key',ROUTES)
+@pytest.mark.parametrize('overnight',[False,True])
+def test_western_pet_prohibition_is_an_executable_planning_consequence(reads,key,overnight):
+ rid='rule-'+PREFIX+'west-no-pets'
+ rule=reads.get('rule',rid)
+ assert rule.claim_id=='claim-taboose-west-pets'
+ assert rule.spatial_scope_ids==(scope(WEST),)
+ with pytest.raises(KeyError):
+  reads.get('requirement',rid.replace('rule-','requirement-',1))
+ for equipment,expected in [(('pet',),Applicability.APPLIES),((),Applicability.DOES_NOT_APPLY)]:
+  trip=intent(ROUTES[key][1],overnight,equipment=EquipmentContext(attributes={'equipment':equipment}))
+  plan=reads.plan(trip)
+  assert plan.readiness is not None and not plan.rechecks
+  evaluation=plan.readiness.evaluation
+  assessment=next(x for x in evaluation.rule_assessments if x.rule_id==rid)
+  assert assessment.applicability is expected
+  consequences=[x.requirement.description for x in evaluation.requirements if x.requirement.rule_id==rid]
+  if equipment:
+   assert consequences==[rule.consequence]
+   assert 'Do not bring pets' in consequences[0]
+   assert rule.claim_id in plan.readiness.claim_ids
+   assert 'evidence-taboose-west-pets' in plan.readiness.evidence_ids
+  else:
+   assert not consequences and rid not in plan.readiness.rule_ids
+
+
 def test_original_east_only_trip_does_not_acquire_west_prohibition(reads):
  ctx=reads.resolve_intent(intent('Taboose Pass')).context
  selected=inputs(reads,ctx)
  assert 'claim-taboose-pets' in selected and 'claim-taboose-west-pets' not in selected
  assert cid('west-conditions') not in selected
  assert not any(a.rule_id.startswith('rule-'+PREFIX+'west-') and a.applicability is Applicability.APPLIES for a in reads.requirements(ctx).rule_assessments)
+ east=reads.plan(intent('Taboose Pass',equipment=EquipmentContext(attributes={'equipment':('pet',)})))
+ pet_rule='rule-'+PREFIX+'west-no-pets'
+ assert next(x for x in east.readiness.evaluation.rule_assessments if x.rule_id==pet_rule).applicability is Applicability.DOES_NOT_APPLY
+ assert not any(x.requirement.rule_id==pet_rule for x in east.readiness.evaluation.requirements)
+ assert 'claim-taboose-west-pets' not in east.readiness.claim_ids
  for key in ROUTES:
   rid,name,end,_=ROUTES[key]
   ctx=reads.resolve_intent(intent(name,False)).context

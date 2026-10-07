@@ -11459,6 +11459,15 @@
       "action": "ADD",
       "evidence_refs": [],
       "knowledge_gap_refs": [],
+      "path": "canonical/v0/rules/rule-taboose-depth-west-no-pets.json",
+      "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
+      "record_id": "rule-taboose-depth-west-no-pets",
+      "record_type": "rule"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/requirements/requirement-taboose-depth-camp-stay.json",
       "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
       "record_id": "requirement-taboose-depth-camp-stay",
