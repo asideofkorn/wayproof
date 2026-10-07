@@ -23,10 +23,17 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   edited.
 - Run focused tests while iterating, then the affected CI group. Use
   `python scripts/select_test_groups.py --base origin/main --head HEAD` to
-  inspect the expected PR scope. Do not duplicate passing focused work with a
-  local full-suite run unless shared domain/schema/storage/test infrastructure
-  changed or the selector chooses every group; GitHub runs selected groups in
-  parallel and `main` always receives full validation.
+  inspect the expected PR scope. For a regional canonical-data PR, expect the
+  production-renderer `affected site outputs` check rather than the exhaustive
+  site shard. It validates affected entity/evidence pages and shared indexes,
+  then runs changed site-test modules against the same prebuilt artifact. Do
+  not add unrelated site modules or manually rerun the full site group. Shared
+  rendering, schemas, workflows, test fixtures, publication code, or uncertain
+  paths must retain the selector's full-suite fallback. Do not duplicate
+  passing focused work with a local full-suite run unless shared
+  domain/schema/storage/test infrastructure changed or the selector chooses
+  every group; GitHub runs selected groups in parallel and `main` always
+  receives full validation.
 - For canonical changes, run
   `python scripts/verify_canonical_diff.py --base origin/main` on the final
   committed candidate. First refresh from current `main`, then inspect

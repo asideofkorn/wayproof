@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       groups: ${{ steps.scope.outputs.groups }}
+      site_mode: ${{ steps.scope.outputs.site_mode }}
+      site_tests: ${{ steps.scope.outputs.site_tests }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -90,10 +92,39 @@ jobs:
       - name: Scorecard (planning-question coverage)
         run: python scripts/scorecard.py
 
+  affected-site:
+    name: affected site outputs
+    if: needs.select-tests.outputs.site_mode == 'affected'
+    needs: select-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+      - name: Render and verify affected pages
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          SITE_TESTS: ${{ needs.select-tests.outputs.site_tests }}
+        run: |
+          python scripts/verify_affected_site.py \
+            --base "origin/$BASE_REF" \
+            --head HEAD \
+            --output "$RUNNER_TEMP/wayproof-affected-site" \
+            --site-tests "$SITE_TESTS"
+
   test:
     name: test
     if: always()
-    needs: [select-tests, test-shard, canonical-publication]
+    needs: [select-tests, test-shard, canonical-publication, affected-site]
     runs-on: ubuntu-latest
     steps:
       - name: Require every test module and publication check
@@ -101,7 +132,14 @@ jobs:
           SELECTION: ${{ needs.select-tests.result }}
           SHARDS: ${{ needs.test-shard.result }}
           PUBLICATION: ${{ needs.canonical-publication.result }}
+          SITE_MODE: ${{ needs.select-tests.outputs.site_mode }}
+          AFFECTED_SITE: ${{ needs.affected-site.result }}
         run: |
           test "$SELECTION" = "success"
           test "$SHARDS" = "success"
           test "$PUBLICATION" = "success"
+          if [ "$SITE_MODE" = "affected" ]; then
+            test "$AFFECTED_SITE" = "success"
+          else
+            test "$AFFECTED_SITE" = "skipped"
+          fi

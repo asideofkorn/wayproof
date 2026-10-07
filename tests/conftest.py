@@ -1,6 +1,7 @@
 """Shared fixtures for the repository regression suite."""
 
 import os
+import json
 from pathlib import Path
 
 import pytest
@@ -13,6 +14,18 @@ ROOT = Path(__file__).resolve().parents[1]
 def generated_site(tmp_path_factory):
     """Build the canonical static site once for every test session."""
     from scripts import build_site
+
+    prebuilt = os.environ.get("WAYPROOF_PREBUILT_SITE")
+    if prebuilt:
+        output = Path(prebuilt)
+        search = json.loads((output / "search" / "index.json").read_text())
+        # Site tests use the entity count; other values retain their public
+        # names without requiring a second production render.
+        return output, {
+            "canonical_entities": search["count"],
+            "knowledge_gaps": len(list((ROOT / "canonical/v0/gaps").glob("*.json"))),
+            "indexed_urls": (output / "sitemap.xml").read_text().count("<loc>"),
+        }
 
     output = tmp_path_factory.mktemp("generated-site")
     original_cwd = os.getcwd()

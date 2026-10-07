@@ -89,6 +89,15 @@ referenced supporting material relevant to the task.
   local suite for shared domain, schema, storage, test-infrastructure, or other
   cross-cutting changes, or when the selector chooses all five groups.
   Main-branch CI and manual workflow runs always execute all groups.
+- Ordinary regional canonical-data PRs use the `affected site outputs` check
+  instead of the exhaustive site shard. It builds once with the production
+  renderer, verifies changed records and their bounded dependency closure
+  across entity/evidence pages and shared indexes, and reuses that artifact for
+  site-test modules changed by the PR. Do not trigger or recreate the full site
+  shard merely to gain confidence in an unrelated destination. Shared renderer,
+  schema, workflow, fixture, publication, or uncertain changes automatically
+  fall back to the exhaustive site group; never weaken that fallback to make CI
+  faster. The check reports render and verification timings for measurement.
 - For canonical knowledge changes, also run:
   `python scripts/verify_canonical_diff.py --base origin/main`.
   Run it on the final committed candidate after refreshing from current `main`,

@@ -9,6 +9,7 @@ test-only, and static-site changes.
 from __future__ import annotations
 
 import argparse
+from dataclasses import dataclass
 import json
 from pathlib import Path
 import subprocess
@@ -45,6 +46,20 @@ CANONICAL_PREFIXES = ("canonical/", "changesets/", "geometry/")
 DOC_PREFIXES = (".agents/", "docs/", "sources/")
 
 
+@dataclass(frozen=True)
+class TestScope:
+    """CI work selected for one diff.
+
+    ``affected`` site validation uses the production renderer once and limits
+    assertions to changed records, their dependants, and explicitly changed
+    site-test modules. ``full`` retains the exhaustive site shard.
+    """
+
+    groups: tuple[str, ...]
+    site_mode: str
+    site_tests: tuple[str, ...] = ()
+
+
 def _regional_groups(path: str) -> set[str]:
     normalized = path.lower()
     groups: set[str] = set()
@@ -55,26 +70,51 @@ def _regional_groups(path: str) -> set[str]:
     return groups
 
 
-def select_groups(paths: list[str], *, full: bool = False) -> list[str]:
-    """Return CI groups in the repository's stable display order."""
+def _regional_site_tests(paths: list[str]) -> set[str]:
+    """Select established destination-site modules named by changed paths."""
+
+    tokens = {
+        token.replace("-", "_")
+        for path in paths
+        for token in (*EBRPD_TOKENS, *SIERRA_TOKENS)
+        if token in path.lower()
+    }
+    selected: set[str] = set()
+    tests_dir = ROOT / "tests"
+    for path in tests_dir.glob("test_*.py"):
+        name = path.name.lower().replace("-", "_")
+        if group_for(path.name) == "site" and any(token in name for token in tokens):
+            selected.add(path.relative_to(ROOT).as_posix())
+    return selected
+
+
+def select_scope(paths: list[str], *, full: bool = False) -> TestScope:
+    """Return the smallest safe test scope for the supplied paths."""
 
     if full or not paths:
-        return list(GROUPS)
+        return TestScope(tuple(GROUPS), "full")
 
     normalized = [path.strip().removeprefix("./") for path in paths if path.strip()]
     if any(
         path in FULL_SUITE_PATHS or path.startswith(FULL_SUITE_PREFIXES)
         for path in normalized
     ):
-        return list(GROUPS)
+        return TestScope(tuple(GROUPS), "full")
 
     groups: set[str] = set()
+    site_tests: set[str] = set()
     canonical_paths: list[str] = []
     unclassified_implementation = False
+    site_mode = "none"
 
     for path in normalized:
         if path.startswith("tests/test_") and path.endswith(".py"):
-            groups.add(group_for(Path(path).name))
+            group = group_for(Path(path).name)
+            if group == "site":
+                site_tests.add(path)
+                site_mode = "affected"
+            else:
+                groups.add(group)
         elif path.startswith("scripts/ingest_") and path.endswith(".py"):
             regional = _regional_groups(path)
             if not regional:
@@ -83,6 +123,7 @@ def select_groups(paths: list[str], *, full: bool = False) -> list[str]:
             groups.update(regional)
         elif path in SITE_IMPLEMENTATION_PATHS or path.startswith(SITE_IMPLEMENTATION_PREFIXES):
             groups.update(("core", "planning", "site"))
+            site_mode = "full"
         elif path.startswith(CANONICAL_PREFIXES):
             canonical_paths.append(path)
         elif path.endswith(".md") or path.startswith(DOC_PREFIXES):
@@ -97,21 +138,36 @@ def select_groups(paths: list[str], *, full: bool = False) -> list[str]:
             unclassified_implementation = True
 
     if unclassified_implementation:
-        return list(GROUPS)
+        return TestScope(tuple(GROUPS), "full")
 
     if canonical_paths:
         regional = set().union(*(_regional_groups(path) for path in canonical_paths))
         if not regional:
-            return list(GROUPS)
-        groups.update(("core", "planning", "site"))
+            return TestScope(tuple(GROUPS), "full")
+        groups.update(("core", "planning"))
         groups.update(regional)
+        site_mode = "affected"
+        site_tests.update(_regional_site_tests(canonical_paths))
 
     # Documentation-only PRs still exercise the inexpensive core contract and
     # partition check, keeping the final required check stable.
     if not groups:
         groups.add("core")
 
-    return [group for group in GROUPS if group in groups]
+    if "site" in groups:
+        site_mode = "full"
+        site_tests.clear()
+    return TestScope(
+        tuple(group for group in GROUPS if group in groups),
+        site_mode,
+        tuple(sorted(site_tests)),
+    )
+
+
+def select_groups(paths: list[str], *, full: bool = False) -> list[str]:
+    """Compatibility wrapper returning groups in stable display order."""
+
+    return list(select_scope(paths, full=full).groups)
 
 
 def changed_paths(base: str, head: str) -> list[str]:
@@ -143,12 +199,18 @@ def main() -> int:
     else:
         parser.error("provide --full, --base, or explicit paths")
 
-    groups = select_groups(paths, full=args.full)
-    payload = json.dumps(groups, separators=(",", ":"))
+    scope = select_scope(paths, full=args.full)
+    payload = json.dumps(scope.groups, separators=(",", ":"))
     print(payload)
     if args.github_output:
         with args.github_output.open("a") as output:
             output.write(f"groups={payload}\n")
+            output.write(f"site_mode={scope.site_mode}\n")
+            output.write(
+                "site_tests="
+                + json.dumps(scope.site_tests, separators=(",", ":"))
+                + "\n"
+            )
     return 0
 
 
