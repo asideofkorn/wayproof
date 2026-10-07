@@ -305,7 +305,12 @@ the same service layer.
     people in addition to automated browser tests. Record whether they can
     explain the relevant choice, restriction, uncertainty and next action in
     their own words; treat confusion as a product gap even when every expected
-    element rendered.
+    element rendered. After the internal Taboose journey passes, consider a
+    respectful, voluntary invitation to the author of the cited public example
+    to try the relevant pages and describe whether they would have prevented
+    the original planning problem. Do not profile the participant, require
+    access to private content, publish their identity or convert usability
+    feedback into evidence without separate informed contribution and review.
   - Offer a low-friction “Did this answer your planning question?” response with
     optional broad reason codes. Keep free text outside analytics; if someone
     elects to submit a correction, source or field observation, hand it to the
