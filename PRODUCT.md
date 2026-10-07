@@ -272,6 +272,56 @@ subjective party capability for the planner to decide.
 **Research examples:** the [short water-centered family trip request](https://www.reddit.com/r/norcalhiking/comments/1v1wxh3/backpacking_options_for_sacramento_area/)
 and a [beginner request explicitly seeking easy access, bathrooms, and water](https://www.reddit.com/r/norcalhiking/comments/1ialcj1/short_backpacking_trip_recs/).
 
+### The community trip-planning explainer
+
+This ranger, guide, trip leader, outdoor educator, local expert, or experienced
+community member repeatedly helps other people interpret routes, permits,
+conditions, and regulations. They may already know how to answer a question,
+but the answer is scattered across maps, agency pages, personal experience, and
+earlier discussions. Rewriting it for every traveler is inefficient, while an
+uncited summary is difficult for others to verify or reuse.
+
+Their goals are to share a durable, source-backed explanation; direct people to
+the relevant route, rule, or facility rather than a generic home page; correct
+misleading advice without erasing legitimate uncertainty; and contribute local
+knowledge without becoming responsible for maintaining a parallel database.
+They can be an important distribution path because one trusted explainer may
+introduce Wayproof to many planners.
+
+Wayproof should support this persona by:
+
+- providing permanent, readable links to entities, routes, claims,
+  observations, evidence, and unresolved gaps;
+- generating compact explanations that preserve dates, scope, attribution,
+  disagreement, and items requiring a current check;
+- accepting a dated textual field observation with its reported location,
+  conditions, precision, and uncertainty as a reviewable contribution;
+- accepting a public trip-report URL as a research reference, preserving the
+  author and publication context while allowing an agent to extract candidate
+  observations and evidence;
+- distinguishing quotations, contributor statements, Wayproof paraphrases,
+  and derived findings rather than collapsing them into one account;
+- allowing contributors and maintainers to inspect, correct, reject, replace,
+  or withdraw retained material through the established review workflow; and
+- ensuring that neither a field report nor an extracted trip report directly
+  creates a canonical claim, route relationship, or planning conclusion.
+
+**Acceptance scenario:** an experienced hiker answers a recurring question
+about a route restriction and links to a public trip report containing a dated
+water observation. Wayproof preserves the report as a source, proposes the
+bounded observation with its time and location qualifications, and routes it
+through `Source -> Observation -> Evidence -> Claim` review. Once approved,
+the explainer can share a stable Wayproof page that shows the supported answer,
+the dated observation, any conflicting evidence, and what still requires a
+current check.
+
+**Research basis:** this provisional persona synthesizes behavior visible in
+the public forum discussions cited by the planning personas above, where
+experienced participants repeatedly interpret permit rules, recommend viable
+alternatives, and report field conditions. Those discussions demonstrate a
+contribution and explanation role; they do not establish contributor identity,
+expert status, or the accuracy of any unreviewed statement.
+
 ## Contributor and research workflow
 
 Evidence may arrive as an official page, PDF, screenshot, GPX trace, field
