@@ -484,10 +484,24 @@ def _journey_html(journey, entities_by_id):
     if not journey:
         return ""
     body = ['<section id="trip-decisions" aria-labelledby="trip-decisions-title">'
-            '<h2 id="trip-decisions-title">Check before choosing this trip</h2>'
-            '<p>Rules can change across jurisdictions. Each fact below belongs to the '
+            '<h2 id="trip-decisions-title">Check before choosing this trip</h2>']
+    for context in journey:
+        for bundle in context["claims"]:
+            claim = bundle["claim"]
+            if (claim["predicate"] == "pet_policy" and isinstance(claim["value"], dict)
+                    and claim["value"].get("pets_allowed") is False):
+                body.append('<p class="notice"><strong>Pets prohibited: '
+                            f'{_e(context["entity"]["name"])}</strong>. '
+                            'Do not continue into this area with a dog. '
+                            + _record_link("claim", claim["claim_id"], "Check the restriction and source")
+                            + ' before choosing your itinerary.</p>')
+    if any(b["claim"]["predicate"] == "road_access_description" for c in journey for b in c["claims"]):
+        body.append('<p class="notice notice-unknown"><strong>Check vehicle access before departure.</strong> '
+                    'Confirm current road conditions and low-clearance suitability with the land or road manager. '
+                    'The road description does not establish fallback parking or added walking distance.</p>')
+    body.append('<p>Rules can change across jurisdictions. Each fact below belongs to the '
             'named place; a connected place is not automatically part of your itinerary. '
-            'This is recorded evidence; recheck current rules and conditions before travel.</p>']
+            'This is recorded evidence; recheck current rules and conditions before travel.</p>')
     predicates = {b["claim"]["predicate"] for c in journey for b in c["claims"]}
     for context in sorted(journey, key=lambda c: not any(
             b["claim"]["predicate"] == "jurisdiction_transition" for b in c["claims"])):
@@ -1211,8 +1225,10 @@ def render_entity_html(payload: dict, site_url: str,
                     'with guesses.</p>')
         body.extend(_gap_html(detail) for detail in payload["gap_details"])
     else:
-        body.append('<p>No explicit knowledge gap is linked to this entity. That does not '
-                    'mean the record is complete.</p>')
+        body.append('<p>No direct knowledge gap is linked to this entity. '
+                    + ('Review the connected-place questions <a href="#trip-decisions">above</a>. '
+                       if payload.get("journey") else '')
+                    + 'That does not mean the record is complete.</p>')
     body.append('</section>')
     body.append('<section id="evidence"><h2>Sources, evidence, and history</h2>'
                 '<p>Planning facts above are readable first. Open these records when you need '
