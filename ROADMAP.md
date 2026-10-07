@@ -153,6 +153,18 @@ the same service layer.
   entity page. Selecting empty map space, a close control, or Escape dismisses
   the selection. Overlapping features must produce an explicit chooser rather
   than an arbitrary inferred association.
+- Add objective-to-route discovery to the geographic explorer. Selecting a
+  peak, pass, lake, viewpoint, campsite, or other planning objective should
+  highlight the published routes and route segments that canonically reach it,
+  dim unrelated geometry, and expose the supported starting trailheads and
+  access alternatives. The selection card should distinguish complete routes,
+  partial approaches, unresolved connections, and directionality; summarize
+  relevant distance, permit, restriction, and facility information; and link
+  to each route's generated detail page. This must be graph-backed: geographic
+  proximity, line intersection, or a basemap label alone never qualifies a
+  route as reaching the objective. The interaction must work with pointer,
+  keyboard, and mobile tap/bottom-sheet controls and preserve the ordinary
+  feature-selection and dismissal behavior above.
 - Support a responsive full-viewport map mode, including safe-area-aware mobile
   controls, exit back to the embedded page, a separate reset-view action, and
   preservation of center, zoom, visible layers, and selected feature across the
