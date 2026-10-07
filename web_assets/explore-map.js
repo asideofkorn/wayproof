@@ -107,8 +107,15 @@ async function loadExploreMap(container) {
         url.searchParams.set("entity", entityId);
         history.replaceState(null, "", url);
       }
-      for (const button of container.querySelectorAll("[data-map-focus]")) {
-        button.addEventListener("click", () => focusEntity(button.dataset.mapFocus));
+      container.querySelector("[data-map-results]").addEventListener("click", event => {
+        const button = event.target.closest("[data-map-focus]");
+        if (button && !button.disabled) focusEntity(button.dataset.mapFocus);
+      });
+      // Static HTML and newly rendered results stay disabled until layers and
+      // selection handlers exist. Detail links do not depend on map readiness.
+      container.dataset.mapReady = "true";
+      for (const control of container.querySelectorAll("[data-map-focus], [data-basemap], [data-map-expand], [data-map-layer]")) {
+        control.disabled = control.dataset.mapCount === "0";
       }
       focusEntity(new URLSearchParams(location.search).get("entity"));
     });
@@ -133,7 +140,7 @@ async function loadExploreMap(container) {
       window.setTimeout(() => map.resize(), 50);
     });
   } catch (error) {
-    status.textContent = "Interactive map unavailable. Downloadable GeoJSON remains available.";
+    status.textContent = "Interactive map unavailable; map controls remain disabled. Place links and downloadable GeoJSON remain available.";
   }
 }
 
@@ -142,18 +149,50 @@ if (container) {
   const search = container.querySelector("#map-search");
   const results = container.querySelector("[data-map-results]");
   const status = container.querySelector("[data-map-search-status]");
-  function filterMappedPlaces() {
-    let count = 0;
-    for (const row of results.children) {
-      row.hidden = !search.value.trim() || !WayproofSearch.matches(row.dataset.search, search.value);
-      if (!row.hidden) count++;
-    }
-    results.hidden = count === 0;
-    status.textContent = search.value.trim() ? `${count} mapped places. Missing geometry stays missing.` : "Enter a name to find mapped places.";
+  let indexPromise;
+  async function filterMappedPlaces() {
     const url = new URL(location.href);
     if (search.value) url.searchParams.set("q", search.value);
     else url.searchParams.delete("q");
     history.replaceState(null, "", url);
+    results.replaceChildren();
+    results.hidden = true;
+    if (!search.value.trim()) {
+      status.textContent = "Enter a name to find mapped places.";
+      return;
+    }
+    status.textContent = "Loading mapped place search. All-place search remains available below.";
+    try {
+      indexPromise ||= fetch(container.dataset.searchUrl).then(response => {
+        if (!response.ok) throw new Error("Search data unavailable");
+        return response.json();
+      });
+      const index = await indexPromise;
+      // Read the current input after loading: a slow fetch must not restore an
+      // old query (or results after the user cleared the field).
+      if (!search.value.trim()) return;
+      const matches = index.filter(([, name, topics]) => WayproofSearch.matches(`${name} ${topics}`, search.value));
+      results.replaceChildren();
+      for (const [id, name] of matches.slice(0, 20)) {
+        const row = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.mapFocus = id;
+        button.textContent = `Show ${name} on map`;
+        button.disabled = container.dataset.mapReady !== "true";
+        button.setAttribute("aria-describedby", "map-status");
+        const link = document.createElement("a");
+        link.href = `/knowledge/${encodeURIComponent(id)}/`;
+        link.textContent = name;
+        row.append(button, " ", link);
+        results.append(row);
+      }
+      results.hidden = matches.length === 0;
+      status.textContent = `${matches.length} mapped places.${matches.length > 20 ? " Showing the first 20; refine your search to narrow results." : ""} Missing geometry stays missing.`;
+    } catch (error) {
+      indexPromise = null;
+      status.textContent = "Mapped place search unavailable. Use all-place search below.";
+    }
   }
   search.value = new URLSearchParams(location.search).get("q") || "";
   search.addEventListener("input", filterMappedPlaces);

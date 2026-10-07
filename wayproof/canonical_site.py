@@ -25,7 +25,7 @@ DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
 ROUTE_MAP_ASSET_VERSION = "20260925-1"
-EXPLORE_MAP_ASSET_VERSION = "20261006-1"
+EXPLORE_MAP_ASSET_VERSION = "20261007-1"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Map", "/map/"),
@@ -305,38 +305,31 @@ def render_explore_map_html(payload: dict, site_url: str) -> str:
     controls = "".join(
         f'<label><input type="checkbox" data-map-layer="{_e(layer)}" '
         f'{"checked" if count and layer != "camping" else ""} '
-        f'{"disabled" if not count else ""}> '
+        f'disabled data-map-count="{count}" aria-describedby="map-status"> '
         f'{_e("Peaks and passes" if layer == "peaks" else layer.title())} <span>{count}</span></label>'
         for layer, count in counts.items()
     )
-    mapped = {feature["properties"]["entity_id"]: feature["properties"]
-              for feature in payload["features"]}
-    choices = ''.join(
-        f'<li data-map-result="{_e(eid)}" data-search="{_e(p["name"] + " " + p.get("planning_topics", ""))}">'
-        f'<button type="button" data-map-focus="{_e(eid)}">Show {_e(p["name"])} on map</button> '
-        f'<a href="{_e(p["url"])}">{_e(p["name"])}</a></li>'
-        for eid, p in sorted(mapped.items(), key=lambda item: item[1]["name"].casefold()))
     body = f'''{render_primary_nav()}
 <header class="page-header"><span class="eyebrow">Explore Wayproof</span>
 <h1>Map the published planning graph</h1>
 <p class="subtitle">Browse source-backed routes, places, access, camping, and facilities.
 Missing geometry stays missing; proximity is not treated as access.</p></header>
-<main class="explore-map-shell" data-explore-map data-geometry-url="/map/features.geojson">
+<main class="explore-map-shell" data-explore-map data-geometry-url="/map/features.geojson" data-search-url="/map/search.json">
 <label for="map-search">Find a mapped place or planning need</label>
 <input type="search" id="map-search" placeholder="Search routes, passes, or trailheads">
 <p data-map-search-status role="status">Enter a name to find mapped places.</p>
-<ul data-map-results hidden>{choices}</ul>
+<p class="meta" id="map-status" data-map-status role="status">Loading interactive map. Map controls become available when ready; place links work while it loads.</p>
+<ul data-map-results hidden></ul>
 <p>Only places with published geometry appear here. <a href="/search/">Search all places and open questions</a>.</p>
 <div class="explore-map-toolbar"><div class="route-map-controls" role="group" aria-label="Basemap layer">
-<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>
-<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>
-<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button></div>
-<button class="button map-expand" type="button" data-map-expand aria-expanded="false">Full screen</button></div>
+<button type="button" data-basemap="topo" disabled aria-describedby="map-status" aria-pressed="true">Topo</button>
+<button type="button" data-basemap="aerial" disabled aria-describedby="map-status" aria-pressed="false">Aerial</button>
+<button type="button" data-basemap="aerial-labels" disabled aria-describedby="map-status" aria-pressed="false">Aerial + labels</button></div>
+<button class="button map-expand" type="button" data-map-expand aria-expanded="false" disabled aria-describedby="map-status">Full screen</button></div>
 <div class="explore-map-layout"><aside class="map-layer-panel" aria-label="Map layers"><strong>Layers</strong>{controls}</aside>
 <div class="explore-map-canvas" data-map-canvas aria-label="Interactive map of published Wayproof geometry"></div>
 <aside class="map-selection" data-map-selection aria-live="polite"><strong>Select a feature</strong>
 <p>Tap or click a route, place, or facility to inspect it.</p></aside></div>
-<p class="meta" data-map-status>Interactive map loads when scrolled into view.</p>
 <p class="meta">{len(payload["features"])} published geometry features · planning evidence, not navigation-grade mapping ·
 <a href="/map/features.geojson">Download GeoJSON</a></p></main>
 <script src="/assets/planning-search.js"></script>
@@ -1499,6 +1492,13 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         context = journeys.get(props["entity_id"], [])
         props["planning_topics"] = map_search[props["entity_id"]]["planning_topics"]
         props["decision_summary"] = journey_summary(context)
+    mapped = {feature["properties"]["entity_id"]: feature["properties"]
+              for feature in map_payload["features"]}
+    # A geometry-free inventory is fetched only for an actual map search.
+    map_index = [[eid, props["name"], props["planning_topics"]]
+                 for eid, props in sorted(mapped.items(), key=lambda item: item[1]["name"].casefold())]
+    (map_dir / "search.json").write_text(
+        json.dumps(map_index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (map_dir / "features.geojson").write_text(_json(map_payload), encoding="utf-8")
     (map_dir / "index.html").write_text(
         render_explore_map_html(map_payload, site_url), encoding="utf-8")

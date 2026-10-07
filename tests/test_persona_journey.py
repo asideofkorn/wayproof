@@ -110,7 +110,11 @@ def test_map_discovery_and_scoped_warning(generated_site):
     map_page = page_at(site, Links((site / 'index.html').read_text()).href('Map'))
     assert 'Find a mapped place or planning need' in map_page
     assert 'Peaks and passes' in map_page
-    assert 'Show Taboose Pass on map' in map_page
+    assert '<ul data-map-results hidden></ul>' in map_page
+    index = json.loads((site / 'map/search.json').read_text())
+    matches = search_matches([{'name': name, 'search_text': f'{name} {topics}'}
+                              for _, name, topics in index], 'Taboose dog')
+    assert {row['name'] for row in matches} == {'Taboose Pass', 'Taboose Pass Trail'}
     assert 'Search all places and open questions' in map_page
     features = json.loads((site / 'map/features.geojson').read_text())['features']
     by_name = {f['properties']['name']: f for f in features}
@@ -176,3 +180,46 @@ def test_generic_context_uses_only_explicit_edges_and_scopes():
     assert reads.scoped_claims_for('route') == ()
     assert reads.scoped_claims_for('objective') == ()
     assert reads.scoped_claims_for('west')[1] == west_claim
+
+
+@pytest.mark.parametrize('fail_map,fail_search', [(False, False), (True, False), (False, True)])
+def test_map_controls_wait_for_readiness(generated_site, fail_map, fail_search):
+    site, _ = generated_site
+
+    class Controls(HTMLParser):
+        def __init__(self, html):
+            super().__init__()
+            self.elements = []
+            self.feed(html)
+
+        def handle_starttag(self, tag, attrs):
+            attrs = dict(attrs)
+            if (attrs.get('id') == 'map-search'
+                    or any(key.startswith(('data-map-', 'data-basemap')) for key in attrs)):
+                self.elements.append((tag, attrs))
+
+    node = shutil.which('node')
+    assert node, 'Node is required to exercise delayed map readiness'
+    subprocess.run([node, '--experimental-vm-modules', 'tests/map_loading_harness.cjs'],
+                   cwd=ROOT, text=True, capture_output=True, check=True, timeout=30,
+                   input=json.dumps({
+                       'controls': Controls((site / 'map/index.html').read_text()).elements,
+                       'script': (site / 'assets/explore-map.js').read_text(),
+                       'index': json.loads((site / 'map/search.json').read_text()),
+                       'geometry': json.loads((site / 'map/features.geojson').read_text()),
+                       'failMap': fail_map, 'failSearch': fail_search,
+                   }))
+
+
+def test_map_discovery_payload_budget(generated_site):
+    import gzip
+
+    site, _ = generated_site
+    page = (site / 'map/index.html').read_bytes()
+    index = (site / 'map/search.json').read_bytes()
+    # Initial HTML must remain independent of inventory size. The geometry-free
+    # index is lazy, and the browser caps rendered rows at 20.
+    assert len(page) < 12_000
+    assert len(gzip.compress(page)) < 4_000
+    assert len(index) < 350_000
+    assert len(gzip.compress(index)) < 50_000

@@ -74,3 +74,37 @@ fallback. No canonical records change, so the diff-based canonical dependency
 closure has no seeds; the journey tests explicitly verify the affected pages.
 Browser verification also starts at local homepage search and follows names.
 The PR remains unmerged; production retains baseline behavior until reviewed.
+
+## PR review follow-up: map loading and inventory budget
+
+The review confirmed a map-presentation failure: search buttons were usable
+before their handlers existed, and layer controls could address unloaded layers.
+Map focus, layers, basemaps and expansion now start disabled in the generated
+HTML and become enabled only after the map's layers and handlers are ready.
+A visible, accessible loading status explains this. Search results keep working
+place links while the map loads or fails; newly rendered focus buttons use the
+same readiness state. Empty layers remain disabled.
+
+The complete map inventory no longer appears as hidden initial HTML. A compact
+canonical-derived search index is fetched only for a nonempty query, independently
+of geometry loading. At most 20 matching rows render, with a count and refinement
+prompt. The all-place search link remains available without JavaScript.
+
+Measured on the review fixture (bytes, gzip from Python's default compressor):
+
+| Asset | Before | After | Regression budget |
+| --- | ---: | ---: | ---: |
+| Map HTML | 644,076 / 47,580 gzip | 4,631 / 1,610 gzip | <12,000 / <4,000 gzip |
+| Lazy search index | Included in HTML | 147,613 / 16,479 gzip | <350,000 / <50,000 gzip |
+| Geometry | 10,235,879 / 1,117,372 gzip | Unchanged | No increase in this repair |
+
+These are transfer/DOM budgets for this discovery path, not measured mobile
+latency guarantees or a complete site performance budget. Geometry remains large,
+but does not gate search results or their planning-page links.
+
+The executable JavaScript regression delays module resolution, geometry retrieval
+and the map load event separately. It tries unavailable controls, then verifies
+selection focusing and layer/basemap changes after readiness. It also checks
+results created after readiness, map/search failure fallbacks, a lazy single
+index fetch and the 20-row cap. The existing persona/consumer assertions still
+check restrictions, provenance and missing-data boundaries.
