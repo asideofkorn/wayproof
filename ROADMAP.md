@@ -131,6 +131,58 @@ the same service layer.
   **Gate:** users can understand a gap and compare its evidence in place;
   unknown dates and locations remain explicit, and links never imply current
   conditions or independent corroboration merely through repetition.
+- Turn those evidence permalinks into a time-scoped distribution surface:
+  - Generate a human-readable current claim page and an immutable share snapshot
+    for each reviewed revision. A snapshot preserves the statement, evidence
+    set, limitations, applicable scope and review date that a person originally
+    shared; it never silently changes into a later conclusion.
+  - On every historical snapshot, state whether the assessment is still
+    supported, updated, superseded, corrected or now needs a current check, and
+    link prominently to the latest reviewed answer with a concise explanation
+    of what changed.
+  - Distinguish observation/event time, claim-effective time, Wayproof review
+    and publication time, and the viewer's current time. Prefer language such
+    as "evidence reviewed through" over an unqualified claim of current truth.
+  - Generate concise text that can stand alone in a comment plus accessible
+    visual evidence cards and native share/copy actions. Evaluate the claim and
+    its scope, not the person whose statement prompted the correction.
+  - Emit static Open Graph and other preview metadata in generated HTML, with
+    content-addressed images and direct HTTPS URLs that remain useful in
+    reduced in-app browsers. The answer, date, scope and source path must remain
+    readable without JavaScript or the interactive map.
+  - Keep the current claim URL self-canonical and indexed. Historical share
+    snapshots remain resolvable but point search canonicalization to the current
+    claim, stay out of the sitemap, and use `noindex` only when canonicalization
+    cannot prevent stale operational answers from competing in search.
+  - Give current claim pages descriptive question-oriented titles, contextual
+    internal links and source citations so public forum or trip-report links can
+    consolidate discovery and relevance around the current reviewed answer.
+  **Gate:** an old public post continues to show what Wayproof knew when it was
+  shared, visibly discloses its age, and leads to the current evidence without
+  allowing an obsolete preview to masquerade as a current operational fact.
+- Use the same evidence pages as the durable destination for agent distribution:
+  - Return absolute, user-openable Wayproof claim, route, source and evidence
+    URLs from every relevant MCP result rather than sending users to a generic
+    home page.
+  - Host the existing read-only MCP capabilities at a stable public endpoint
+    and package the shared server for supported ChatGPT/Codex and Claude
+    discovery surfaces without duplicating planning logic per platform.
+  - Keep public reads anonymous initially. Treat agent tool arguments as
+    untrusted and retain no raw conversation or complete personal itinerary by
+    default.
+  - Measure only minimized private operational signals needed to understand
+    demand: requested canonical objective, broad question category,
+    answerability, blocking knowledge gaps and evidence-link follow-through.
+    Keep analytics outside the public canonical corpus and do not convert a
+    planning request into evidence.
+  - Offer an explicit, separately confirmed path to submit an unanswered
+    planning gap, dated textual field observation, correction source or public
+    trip-report URL through the constrained proposal workflow. No agent surface
+    gains direct canonical write or publication authority.
+  **Gate:** a person can ask an agent a planning question, inspect the exact
+  supporting Wayproof page, and optionally contribute a bounded correction or
+  observation while Wayproof learns aggregate coverage demand without silently
+  collecting the surrounding conversation.
 - Add generated interactive map views over the canonical read service for
   campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
   Selectable features should link to canonical detail pages and preserve the
