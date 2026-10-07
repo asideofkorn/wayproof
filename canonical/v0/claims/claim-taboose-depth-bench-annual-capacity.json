@@ -10,12 +10,16 @@
       "scope-lake-bench-kings-canyon"
     ],
     "subject_id": "lake-bench-kings-canyon",
-    "temporal_scope": null,
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
     "value": {
       "annual_capacity_stock_nights": 28,
       "forage_area": "46-4",
       "not_per_party_limit": true,
-      "remaining_capacity": "unknown"
+      "remaining_capacity": "unknown",
+      "year": 2026
     }
   },
   "record_type": "claim",

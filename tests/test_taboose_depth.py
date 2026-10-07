@@ -140,7 +140,10 @@ def test_unknown_spurs_and_conflicts_are_explicit(reads):
  assert 'camp-bench-lake-stock' not in path.accessible_entity_ids
  assert reads.get('claim',cid('bench-stock-camp')).value['exact_spur']=='not surveyed or modeled'
  assert reads.get('claim',cid('signed-food-order')).value['internal_exhibit_mismatch_preserved'] is True
- assert reads.get('claim',cid('bench-annual-capacity')).value['annual_capacity_stock_nights']==28
+ annual=reads.get('claim',cid('bench-annual-capacity'))
+ assert annual.value['annual_capacity_stock_nights']==28 and annual.value['year']==2026
+ assert annual.temporal_scope.starts_on==date(2026,1,1)
+ assert annual.temporal_scope.ends_on==date(2026,12,31)
  assert reads.get('claim',cid('bench-forage')).value['maximum_grazing_stock_per_party']==20
  assert reads.get('claim',cid('stock-opening')).value['current_status']=='must recheck'
  assert reads.get('gap','gap-taboose-vehicle-food-conflict')
