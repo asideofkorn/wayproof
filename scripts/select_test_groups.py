@@ -21,6 +21,7 @@ except ModuleNotFoundError:  # Direct `python scripts/select_test_groups.py` use
 
 
 ROOT = Path(__file__).resolve().parents[1]
+MAIN_SMOKE_GROUPS = ("core", "planning")
 
 EBRPD_TOKENS = (
     "chabot", "del-valle", "del_valle", "ebrpd", "ohlone",
@@ -58,6 +59,12 @@ class TestScope:
     groups: tuple[str, ...]
     site_mode: str
     site_tests: tuple[str, ...] = ()
+
+
+def main_smoke_scope() -> TestScope:
+    """Fast post-merge integration coverage; exhaustive checks belong on PRs."""
+
+    return TestScope(MAIN_SMOKE_GROUPS, "none")
 
 
 def _regional_groups(path: str) -> set[str]:
@@ -185,21 +192,29 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--base")
     parser.add_argument("--head", default="HEAD")
-    parser.add_argument("--full", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--full", action="store_true")
+    mode.add_argument("--main-smoke", action="store_true")
     parser.add_argument("--github-output", type=Path)
     parser.add_argument("paths", nargs="*")
     args = parser.parse_args()
 
-    if args.full:
+    if args.main_smoke:
+        if args.base or args.paths:
+            parser.error("--main-smoke cannot be combined with --base or explicit paths")
+        scope = main_smoke_scope()
+    elif args.full:
         paths: list[str] = []
+        scope = select_scope(paths, full=True)
     elif args.paths:
         paths = args.paths
+        scope = select_scope(paths)
     elif args.base:
         paths = changed_paths(args.base, args.head)
+        scope = select_scope(paths)
     else:
-        parser.error("provide --full, --base, or explicit paths")
+        parser.error("provide --full, --main-smoke, --base, or explicit paths")
 
-    scope = select_scope(paths, full=args.full)
     payload = json.dumps(scope.groups, separators=(",", ":"))
     print(payload)
     if args.github_output:
