@@ -37,6 +37,14 @@ function showSelection(container, features) {
     meta.className = "meta";
     meta.textContent = `${feature.properties.kind.replaceAll("_", " ")} · ${feature.properties.evidence_status}`;
     item.append(link, meta);
+    if (feature.properties.decision_summary) {
+      const warning = document.createElement("p");
+      warning.textContent = feature.properties.decision_summary;
+      const action = document.createElement("a");
+      action.href = feature.properties.url + "#trip-decisions";
+      action.textContent = "Check restrictions and access before choosing this trip";
+      item.append(warning, action);
+    }
     list.append(item);
   }
   panel.append(title, list);
@@ -83,6 +91,33 @@ async function loadExploreMap(container) {
       }
       status.textContent = "Interactive map ready. Select a feature to inspect it.";
       container.classList.add("map-enhanced");
+      function focusEntity(entityId) {
+        const features = data.features.filter(f => f.properties.entity_id === entityId);
+        if (!features.length) return;
+        for (const layer of new Set(features.map(f => f.properties.layer))) {
+          const checkbox = container.querySelector(`[data-map-layer="${layer}"]`);
+          checkbox.checked = true;
+          checkbox.dispatchEvent(new Event("change"));
+        }
+        const points = features.flatMap(f => coordinates(f.geometry));
+        const bounds = points.reduce((b, p) => b.extend(p), new maplibregl.LngLatBounds(points[0], points[0]));
+        map.fitBounds(bounds, { padding: 45, maxZoom: 13, duration: 0 });
+        showSelection(container, features);
+        const url = new URL(location.href);
+        url.searchParams.set("entity", entityId);
+        history.replaceState(null, "", url);
+      }
+      container.querySelector("[data-map-results]").addEventListener("click", event => {
+        const button = event.target.closest("[data-map-focus]");
+        if (button && !button.disabled) focusEntity(button.dataset.mapFocus);
+      });
+      // Static HTML and newly rendered results stay disabled until layers and
+      // selection handlers exist. Detail links do not depend on map readiness.
+      container.dataset.mapReady = "true";
+      for (const control of container.querySelectorAll("[data-map-focus], [data-basemap], [data-map-expand], [data-map-layer]")) {
+        control.disabled = control.dataset.mapCount === "0";
+      }
+      focusEntity(new URLSearchParams(location.search).get("entity"));
     });
     map.on("click", event => {
       const layerIds = Object.keys(COLORS).flatMap(layer => [`wp-${layer}-fill`, `wp-${layer}-line`, `wp-${layer}-point`]).filter(id => map.getLayer(id) && map.getLayoutProperty(id, "visibility") !== "none");
@@ -105,9 +140,62 @@ async function loadExploreMap(container) {
       window.setTimeout(() => map.resize(), 50);
     });
   } catch (error) {
-    status.textContent = "Interactive map unavailable. Downloadable GeoJSON remains available.";
+    status.textContent = "Interactive map unavailable; map controls remain disabled. Place links and downloadable GeoJSON remain available.";
   }
 }
 
 const container = document.querySelector("[data-explore-map]");
-if (container) loadExploreMap(container);
+if (container) {
+  const search = container.querySelector("#map-search");
+  const results = container.querySelector("[data-map-results]");
+  const status = container.querySelector("[data-map-search-status]");
+  let indexPromise;
+  async function filterMappedPlaces() {
+    const url = new URL(location.href);
+    if (search.value) url.searchParams.set("q", search.value);
+    else url.searchParams.delete("q");
+    history.replaceState(null, "", url);
+    results.replaceChildren();
+    results.hidden = true;
+    if (!search.value.trim()) {
+      status.textContent = "Enter a name to find mapped places.";
+      return;
+    }
+    status.textContent = "Loading mapped place search. All-place search remains available below.";
+    try {
+      indexPromise ||= fetch(container.dataset.searchUrl).then(response => {
+        if (!response.ok) throw new Error("Search data unavailable");
+        return response.json();
+      });
+      const index = await indexPromise;
+      // Read the current input after loading: a slow fetch must not restore an
+      // old query (or results after the user cleared the field).
+      if (!search.value.trim()) return;
+      const matches = index.filter(([, name, topics]) => WayproofSearch.matches(`${name} ${topics}`, search.value));
+      results.replaceChildren();
+      for (const [id, name] of matches.slice(0, 20)) {
+        const row = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.mapFocus = id;
+        button.textContent = `Show ${name} on map`;
+        button.disabled = container.dataset.mapReady !== "true";
+        button.setAttribute("aria-describedby", "map-status");
+        const link = document.createElement("a");
+        link.href = `/knowledge/${encodeURIComponent(id)}/`;
+        link.textContent = name;
+        row.append(button, " ", link);
+        results.append(row);
+      }
+      results.hidden = matches.length === 0;
+      status.textContent = `${matches.length} mapped places.${matches.length > 20 ? " Showing the first 20; refine your search to narrow results." : ""} Missing geometry stays missing.`;
+    } catch (error) {
+      indexPromise = null;
+      status.textContent = "Mapped place search unavailable. Use all-place search below.";
+    }
+  }
+  search.value = new URLSearchParams(location.search).get("q") || "";
+  search.addEventListener("input", filterMappedPlaces);
+  filterMappedPlaces();
+  loadExploreMap(container);
+}

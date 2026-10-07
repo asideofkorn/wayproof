@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TESTS = ROOT / "tests"
 
 SITE = {
+    "test_persona_journey.py",
     "test_emigrant_completion.py",
     "test_emigrant_geometry.py",
     "test_emigrant_western.py",

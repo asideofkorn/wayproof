@@ -157,6 +157,20 @@ class CanonicalReadService:
             key=lambda item: (item.predicate.casefold(), item.relationship_id),
         ))
 
+    def scoped_claims_for(self, entity_id: str) -> Tuple[Claim, ...]:
+        """Direct claims plus explicitly attached scopes; no spatial inference."""
+        scopes = {scope.scope_id for scope in self.spatial_scopes_for(entity_id)}
+        return tuple(sorted(
+            (claim for claim in self._records.claims
+             if claim.subject_id == entity_id or scopes.intersection(claim.spatial_scope_ids)),
+            key=lambda claim: (claim.predicate.casefold(), claim.claim_id),
+        ))
+
+    def journey_context(self, entity_id: str):
+        """Sourced discovery links, distinct from a resolved planning context."""
+        from .journey import journey_context
+        return journey_context(self, entity_id)
+
     def spatial_scopes_for(self, entity_id: str) -> Tuple[SpatialScope, ...]:
         """Return every canonical spatial scope attached to an entity."""
         return tuple(sorted(

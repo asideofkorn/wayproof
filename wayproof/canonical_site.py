@@ -25,7 +25,7 @@ DEL_VALLE_PATH = "/destinations/del-valle/"
 OHLONE_ID = "trail-ohlone-wilderness"
 OHLONE_PATH = "/trails/ohlone-wilderness/"
 ROUTE_MAP_ASSET_VERSION = "20260925-1"
-EXPLORE_MAP_ASSET_VERSION = "20260925-2"
+EXPLORE_MAP_ASSET_VERSION = "20261007-1"
 PRIMARY_NAV = (
     ("Home", "/"),
     ("Map", "/map/"),
@@ -305,8 +305,8 @@ def render_explore_map_html(payload: dict, site_url: str) -> str:
     controls = "".join(
         f'<label><input type="checkbox" data-map-layer="{_e(layer)}" '
         f'{"checked" if count and layer != "camping" else ""} '
-        f'{"disabled" if not count else ""}> '
-        f'{_e(layer.title())} <span>{count}</span></label>'
+        f'disabled data-map-count="{count}" aria-describedby="map-status"> '
+        f'{_e("Peaks and passes" if layer == "peaks" else layer.title())} <span>{count}</span></label>'
         for layer, count in counts.items()
     )
     body = f'''{render_primary_nav()}
@@ -314,19 +314,25 @@ def render_explore_map_html(payload: dict, site_url: str) -> str:
 <h1>Map the published planning graph</h1>
 <p class="subtitle">Browse source-backed routes, places, access, camping, and facilities.
 Missing geometry stays missing; proximity is not treated as access.</p></header>
-<main class="explore-map-shell" data-explore-map data-geometry-url="/map/features.geojson">
+<main class="explore-map-shell" data-explore-map data-geometry-url="/map/features.geojson" data-search-url="/map/search.json">
+<label for="map-search">Find a mapped place or planning need</label>
+<input type="search" id="map-search" placeholder="Search routes, passes, or trailheads">
+<p data-map-search-status role="status">Enter a name to find mapped places.</p>
+<p class="meta" id="map-status" data-map-status role="status">Loading interactive map. Map controls become available when ready; place links work while it loads.</p>
+<ul data-map-results hidden></ul>
+<p>Only places with published geometry appear here. <a href="/search/">Search all places and open questions</a>.</p>
 <div class="explore-map-toolbar"><div class="route-map-controls" role="group" aria-label="Basemap layer">
-<button type="button" data-basemap="topo" aria-pressed="true">Topo</button>
-<button type="button" data-basemap="aerial" aria-pressed="false">Aerial</button>
-<button type="button" data-basemap="aerial-labels" aria-pressed="false">Aerial + labels</button></div>
-<button class="button map-expand" type="button" data-map-expand aria-expanded="false">Full screen</button></div>
+<button type="button" data-basemap="topo" disabled aria-describedby="map-status" aria-pressed="true">Topo</button>
+<button type="button" data-basemap="aerial" disabled aria-describedby="map-status" aria-pressed="false">Aerial</button>
+<button type="button" data-basemap="aerial-labels" disabled aria-describedby="map-status" aria-pressed="false">Aerial + labels</button></div>
+<button class="button map-expand" type="button" data-map-expand aria-expanded="false" disabled aria-describedby="map-status">Full screen</button></div>
 <div class="explore-map-layout"><aside class="map-layer-panel" aria-label="Map layers"><strong>Layers</strong>{controls}</aside>
 <div class="explore-map-canvas" data-map-canvas aria-label="Interactive map of published Wayproof geometry"></div>
 <aside class="map-selection" data-map-selection aria-live="polite"><strong>Select a feature</strong>
 <p>Tap or click a route, place, or facility to inspect it.</p></aside></div>
-<p class="meta" data-map-status>Interactive map loads when scrolled into view.</p>
 <p class="meta">{len(payload["features"])} published geometry features · planning evidence, not navigation-grade mapping ·
 <a href="/map/features.geojson">Download GeoJSON</a></p></main>
+<script src="/assets/planning-search.js"></script>
 <script type="module" src="/assets/explore-map.js?v={EXPLORE_MAP_ASSET_VERSION}"></script>'''
     return _page("Explore Map — Wayproof",
                  "Explore source-backed routes, places, access, camping, and facilities.",
@@ -366,23 +372,29 @@ def _source_label(source: dict) -> str:
 
 def _claim_bundle(reads: CanonicalReadService, claim) -> dict:
     provenance = reads.explain_claim(claim.claim_id)
+    try:
+        subject = reads.entity(claim.subject_id)
+    except KeyError:
+        subject = None
     return {
         "claim": claim,
         "evidence": provenance.evidence,
         "observations": provenance.observations,
         "sources": provenance.sources,
+        "subject": subject,
     }
 
 
 def entity_payload(reads: CanonicalReadService, entity_id: str,
                    route_geometry: dict | None = None,
-                   geometry_url: str | None = None) -> dict:
+                   geometry_url: str | None = None,
+                   journey: list | None = None) -> dict:
     """Build one transport-neutral entity view exclusively through read APIs."""
     entity = reads.entity(entity_id)
     claims = []
     gaps_by_id = {item.gap_id: item for item in reads.knowledge_gaps_for(entity_id)}
     history = list(reads.changes(record_id=entity_id))
-    for claim in reads.claims_for(entity_id):
+    for claim in reads.scoped_claims_for(entity_id):
         claims.append(_claim_bundle(reads, claim))
         gaps_by_id.update(
             (item.gap_id, item) for item in reads.knowledge_gaps_for(claim.claim_id)
@@ -395,6 +407,7 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
             "evidence_backed_claims_available" if claims else "no_direct_claims_published"
         ),
         "claims": claims,
+        "journey": journey if journey is not None else journey_payload(reads, entity_id),
         "reference_evidence": reads.reference_evidence(entity_id),
         "relationships": reads.relationships_for(entity_id),
         "knowledge_gaps": tuple(gaps_by_id.values()),
@@ -403,6 +416,128 @@ def entity_payload(reads: CanonicalReadService, entity_id: str,
         "route_geometry": route_geometry,
         "route_geometry_url": geometry_url,
     })
+
+
+# Explicit presentation vocabulary. These are discovery priorities, not rules.
+JOURNEY_PREDICATES = frozenset({
+    "jurisdiction_transition", "pet_policy", "dog_rules", "dogs_allowed_overnight",
+    "road_access_description", "pretrip_current_conditions_recheck",
+})
+
+
+def journey_summary(journey: list) -> str:
+    """Small map preview; the entity page retains complete evidence and scope."""
+    notes = []
+    for context in journey:
+        for bundle in context["claims"]:
+            claim = bundle["claim"]
+            value = claim["value"]
+            if (claim["predicate"] == "pet_policy" and isinstance(value, dict)
+                    and value.get("pets_allowed") is False):
+                notes.append(f'{context["entity"]["name"]}: pets prohibited. Review before continuing.')
+            if claim["predicate"] == "road_access_description":
+                notes.append(f'{context["entity"]["name"]}: check vehicle suitability and current road access; '
+                             'a fallback and added walking distance are not established by this description.')
+    return ' '.join(dict.fromkeys(notes))
+
+
+def journey_payload(reads: CanonicalReadService, entity_id: str) -> list:
+    result = []
+    seen_claims = set()
+    for context in reads.journey_context(entity_id):
+        claims = [claim for claim in reads.scoped_claims_for(context.entity_id)
+                  if claim.predicate in JOURNEY_PREDICATES and claim.claim_id not in seen_claims]
+        if not claims:
+            continue
+        seen_claims.update(claim.claim_id for claim in claims)
+        gaps = {}
+        for claim in claims:
+            gaps.update((g.gap_id, g) for g in reads.knowledge_gaps_for(claim.claim_id))
+        result.append(_plain({
+            "entity": reads.entity(context.entity_id), "role": context.role,
+            "relationships": [reads.get("relationship", rid) for rid in context.relationship_ids],
+            "claims": [_claim_bundle(reads, claim) for claim in claims],
+            "gaps": tuple(gaps.values()),
+        }))
+    return result
+
+
+def _linked_value(value, entities_by_id):
+    if isinstance(value, str) and value in entities_by_id:
+        return (f'<a href="/knowledge/{_e(value)}/">'
+                f'{_e(entities_by_id[value]["name"])}</a>')
+    if isinstance(value, dict):
+        return '<dl>' + ''.join(
+            f'<dt>{_e(_human_label(key))}</dt><dd>{_linked_value(item, entities_by_id)}</dd>'
+            for key, item in value.items()) + '</dl>'
+    return _human_value(value)
+
+
+def _journey_html(journey, entities_by_id):
+    if not journey:
+        return ""
+    body = ['<section id="trip-decisions" aria-labelledby="trip-decisions-title">'
+            '<h2 id="trip-decisions-title">Check before choosing this trip</h2>']
+    for context in journey:
+        for bundle in context["claims"]:
+            claim = bundle["claim"]
+            if (claim["predicate"] == "pet_policy" and isinstance(claim["value"], dict)
+                    and claim["value"].get("pets_allowed") is False):
+                body.append('<p class="notice"><strong>Pets prohibited: '
+                            f'{_e(context["entity"]["name"])}</strong>. '
+                            'Do not continue into this area with a dog. '
+                            + _record_link("claim", claim["claim_id"], "Check the restriction and source")
+                            + ' before choosing your itinerary.</p>')
+    if any(b["claim"]["predicate"] == "road_access_description" for c in journey for b in c["claims"]):
+        body.append('<p class="notice notice-unknown"><strong>Check vehicle access before departure.</strong> '
+                    'Confirm current road conditions and low-clearance suitability with the land or road manager. '
+                    'The road description does not establish fallback parking or added walking distance.</p>')
+    body.append('<p>Rules can change across jurisdictions. Each fact below belongs to the '
+            'named place; a connected place is not automatically part of your itinerary. '
+            'This is recorded evidence; recheck current rules and conditions before travel.</p>')
+    predicates = {b["claim"]["predicate"] for c in journey for b in c["claims"]}
+    for context in sorted(journey, key=lambda c: not any(
+            b["claim"]["predicate"] == "jurisdiction_transition" for b in c["claims"])):
+        entity = context["entity"]
+        body.append('<article class="notice journey-context">'
+                    f'<p class="eyebrow">{_e(context["role"])}</p>'
+                    f'<h3><a href="/knowledge/{_e(entity["entity_id"])}/">{_e(entity["name"])}</a></h3>')
+        for bundle in sorted(context["claims"], key=lambda b: (
+                b["claim"]["predicate"] != "jurisdiction_transition", b["claim"]["predicate"])):
+            claim = bundle["claim"]
+            body.append(f'<h4>{_record_link("claim", claim["claim_id"], _human_label(claim["predicate"]))}</h4>'
+                        + _linked_value(claim["value"], entities_by_id))
+            if (claim["predicate"] == "pet_policy" and isinstance(claim["value"], dict)
+                    and claim["value"].get("pets_allowed") is False):
+                body.append('<p><strong>Pets prohibited in this area. Do not continue into '
+                            'this area with a dog.</strong> Choose an itinerary that avoids '
+                            'the prohibited area and verify its full route before departure.</p>')
+            body.append(_evidence_html(bundle))
+            dates = sorted({o["retrieved_at"][:10] for o in bundle["observations"] if o.get("retrieved_at")})
+            body.append('<p class="meta">Source: '
+                        + ', '.join(_source_label(s) for s in bundle["sources"])
+                        + '. Retrieved: ' + _e(', '.join(dates) or 'unknown') + '.</p>')
+        if context["gaps"]:
+            body.append('<p><strong>Still unresolved</strong></p><ul>')
+            body.extend(f'<li>{_record_link("gap", g["gap_id"], g["question"])} '
+                        f'{_e(g["reason"])}</li>' for g in context["gaps"])
+            body.append('</ul>')
+        body.append('</article>')
+    if "jurisdiction_transition" in predicates:
+        body.append('<p class="notice notice-unknown"><strong>Alternative and boundary check:</strong> '
+                    'These facts do not establish a dog-compliant alternative or an exact '
+                    'turnaround point. Confirm the boundary and complete itinerary with '
+                    'the land manager using the linked sources before committing to the trip.</p>')
+    if "road_access_description" in predicates:
+        body.append('<p class="notice notice-unknown"><strong>Vehicle access check:</strong> '
+                    'Confirm current road conditions and suitability for your vehicle with '
+                    'the road or land manager before departure. A road description does not '
+                    'establish a usable low-clearance fallback, legal fallback parking, or '
+                    'added walking distance and elevation; those remain unknown unless '
+                    'separately evidenced.</p>')
+    body.append('<p><a href="#before-you-go">Review unresolved questions</a> · '
+                '<a href="#explore">Compare connected places and approaches</a></p></section>')
+    return ''.join(body)
 
 
 def _route_map_html(geometry: dict, geometry_url: str) -> str:
@@ -609,7 +744,9 @@ def _claim_html(bundle: dict, expanded: bool = False, heading: str = "h4") -> st
     return (
         '<article class="fact-row">'
         f'<{heading}>{_record_link("claim", claim["claim_id"], _human_label(claim["predicate"]))}</{heading}>'
-        f'{_human_value(claim["value"])}'
+        + (f'<p class="meta">Recorded for: {_e(bundle["subject"]["name"])}</p>'
+           if bundle.get("subject") else '')
+        + f'{_human_value(claim["value"])}'
         + _evidence_html(bundle, expanded) + '</article>'
     )
 
@@ -995,6 +1132,7 @@ def render_entity_html(payload: dict, site_url: str,
         '<li><a href="#before-you-go">Before you go</a></li>'
         '<li><a href="#evidence">Evidence</a></li></ul>',
     ]
+    body.append(_journey_html(payload.get("journey", []), entities_by_id))
     if payload.get('reference_evidence'):
         body.append('<section id="reference-evidence"><h2>Reported observations</h2>'
                     '<p>Reviewed source reports with their own dates and uncertainty. '
@@ -1080,8 +1218,10 @@ def render_entity_html(payload: dict, site_url: str,
                     'with guesses.</p>')
         body.extend(_gap_html(detail) for detail in payload["gap_details"])
     else:
-        body.append('<p>No explicit knowledge gap is linked to this entity. That does not '
-                    'mean the record is complete.</p>')
+        body.append('<p>No direct knowledge gap is linked to this entity. '
+                    + ('Review the connected-place questions <a href="#trip-decisions">above</a>. '
+                       if payload.get("journey") else '')
+                    + 'That does not mean the record is complete.</p>')
     body.append('</section>')
     body.append('<section id="evidence"><h2>Sources, evidence, and history</h2>'
                 '<p>Planning facts above are readable first. Open these records when you need '
@@ -1132,11 +1272,12 @@ def render_search_html(entities: Iterable[dict], site_url: str,
     preferred_paths = preferred_paths or {}
     kinds = sorted({item["kind"] for item in entities})
     rows = "".join(
-        f'<li class="result-card" data-search="{_e((item["name"] + " " + item["entity_id"]).casefold())}" '
+        f'<li class="result-card" data-search="{_e(item.get("search_text", item["name"] + " " + item["entity_id"]))}" '
         f'data-kind="{_e(item["kind"])}">'
         f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
         f'{_e(item["name"])}</a> '
-        f'<span class="pill">{_e(item["kind"])}</span></li>'
+        f'<span class="pill">{_e(item["kind"])}</span>'
+        f'<p>{_e(item.get("planning_topics", ""))}</p></li>'
         for item in entities
     )
     options = ''.join(f'<option value="{_e(kind)}">{_e(kind)}</option>' for kind in kinds)
@@ -1147,15 +1288,18 @@ def render_search_html(entities: Iterable[dict], site_url: str,
 <p class="subtitle">Search {len(entities)} published entities. Every result opens a page
 that separates supported facts, open questions, sources, and history.</p></header>
 <form id="entity-search-form" class="search-controls" action="/search/" method="get">
-<label for="entity-search">Search by name</label>
+<label for="entity-search">Search by name or planning need</label>
 <input id="entity-search" name="q" type="search" placeholder="Try Mount Whitney or Del Valle">
 <label for="entity-kind">Narrow by type</label>
 <select id="entity-kind" name="kind"><option value="">All types</option>{options}</select>
 <button class="button primary search-submit" type="submit">Search</button></form>
 <p id="result-count" class="meta" role="status" aria-live="polite" tabindex="-1">Enter a name or choose a type to search.</p>
 <p id="no-results" class="notice notice-unknown" hidden>No matching places, routes, or campsites. Try a shorter name or select a different type.</p>
+<p>Search matches published facts and open questions, not permission or current clearance.
+Dog and pet terms are searched together. <a href="/search/">Reset search</a></p>
 <ul id="entity-results" class="result-grid">{rows}</ul>
 <noscript><p>All entities are listed above; browser filtering requires JavaScript.</p></noscript>
+<script src="/assets/planning-search.js"></script>
 <script>
 const query = document.getElementById('entity-search');
 const kind = document.getElementById('entity-kind');
@@ -1168,7 +1312,7 @@ function filterEntities() {{
   const hasCriteria = Boolean(needle || kind.value);
   let visible = 0;
   for (const row of rows) {{
-    const show = hasCriteria && (!needle || row.dataset.search.includes(needle)) &&
+    const show = hasCriteria && WayproofSearch.matches(row.dataset.search, needle) &&
                  (!kind.value || row.dataset.kind === kind.value);
     row.hidden = !show;
     if (show) visible += 1;
@@ -1316,19 +1460,55 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     entities = tuple(_plain(item) for item in reads.search_entities())
     entities_by_id = {item["entity_id"]: item for item in entities}
     preferred_paths = {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}
+    journeys = {entity["entity_id"]: journey_payload(reads, entity["entity_id"])
+                for entity in entities}
+    search_entities = []
+    for entity in entities:
+        journey = journeys[entity["entity_id"]]
+        topics = sorted({_human_label(b["claim"]["predicate"])
+                         for c in journey for b in c["claims"]})
+        if any(b["claim"]["predicate"] == "road_access_description"
+               for c in journey for b in c["claims"]):
+            topics.append("Low-clearance vehicle suitability: verify before travel")
+        terms = [entity["name"], entity["entity_id"], entity["kind"]]
+        for claim in reads.scoped_claims_for(entity["entity_id"]):
+            terms.append(claim.predicate)
+        for context in journey:
+            terms.append(context["entity"]["name"])
+            terms.extend(json.dumps(b["claim"]["value"]) for b in context["claims"])
+            terms.extend(g["question"] + ' ' + g["reason"] for g in context["gaps"])
+        terms.extend(topics)
+        search_entities.append({**entity, "search_text": ' '.join(terms),
+                                "planning_topics": ' · '.join(topics)})
+    primary_kinds = {"park", "national_park", "wilderness", "route", "trail",
+                     "pass", "mountain_pass", "peak", "trailhead", "campground"}
+    search_entities.sort(key=lambda e: (e["kind"] not in primary_kinds, e["name"].casefold()))
     map_dir = output_dir / "map"
     map_dir.mkdir(parents=True, exist_ok=True)
     map_payload = explore_map_payload(reads, entities, as_of)
+    map_search = {entity["entity_id"]: entity for entity in search_entities}
+    for feature in map_payload["features"]:
+        props = feature["properties"]
+        context = journeys.get(props["entity_id"], [])
+        props["planning_topics"] = map_search[props["entity_id"]]["planning_topics"]
+        props["decision_summary"] = journey_summary(context)
+    mapped = {feature["properties"]["entity_id"]: feature["properties"]
+              for feature in map_payload["features"]}
+    # A geometry-free inventory is fetched only for an actual map search.
+    map_index = [[eid, props["name"], props["planning_topics"]]
+                 for eid, props in sorted(mapped.items(), key=lambda item: item[1]["name"].casefold())]
+    (map_dir / "search.json").write_text(
+        json.dumps(map_index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (map_dir / "features.geojson").write_text(_json(map_payload), encoding="utf-8")
     (map_dir / "index.html").write_text(
         render_explore_map_html(map_payload, site_url), encoding="utf-8")
     search_dir = output_dir / "search"
     search_dir.mkdir(parents=True, exist_ok=True)
     (search_dir / "index.html").write_text(render_search_html(
-        entities, site_url, preferred_paths),
+        search_entities, site_url, preferred_paths),
         encoding="utf-8")
     (search_dir / "index.json").write_text(_json({
-        "type": "canonical_entity_index", "count": len(entities), "entities": entities,
+        "type": "canonical_entity_index", "count": len(entities), "entities": search_entities,
     }), encoding="utf-8")
 
     directory_urls = [f"{site_url}/map/"]
@@ -1381,7 +1561,7 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
             geometry_path.parent.mkdir(parents=True, exist_ok=True)
             geometry_path.write_text(_json(geometry), encoding="utf-8")
         payload = entity_payload(
-            reads, entity["entity_id"], geometry, geometry_url
+            reads, entity["entity_id"], geometry, geometry_url, journeys[entity["entity_id"]]
         )
         page_dir = knowledge_dir / entity["entity_id"]
         page_dir.mkdir(parents=True, exist_ok=True)
