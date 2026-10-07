@@ -22,6 +22,7 @@ def test_taboose_depth_generated_discovery_and_evidence(generated_site):
   assert (output/f'knowledge/{eid}.json').exists()
  fit=(output/f'knowledge/{site_id("006")}.json').read_text()
  assert 'not stated' in fit and 'fit_confirmed' in fit
+ assert 'gap-taboose-camp-depth' in fit and 'cancellation' in fit
  gap=(output/'evidence/gap/gap-taboose-camp-depth/index.json').read_text()
  assert 'cancellation' in gap and 'units' in gap
  assert CHANGE_ID in (output/'changes/index.html').read_text()

@@ -8,7 +8,10 @@
       "zone-taboose-kings-canyon-continuation",
       "route-taboose-bench-lake",
       "route-taboose-mather-pass",
-      "route-taboose-pinchot-pass"
+      "route-taboose-pinchot-pass",
+      "claim-taboose-depth-bench-route",
+      "claim-taboose-depth-mather-route",
+      "claim-taboose-depth-pinchot-route"
     ]
   },
   "record_type": "gap",

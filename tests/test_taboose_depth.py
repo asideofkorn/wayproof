@@ -30,6 +30,7 @@ def test_western_routes_reuse_east_segment_and_traverse_in_both_directions(reads
   assert not path.distance_complete and path.total_known_distance_miles==0
   assert not path.alternate_legs
  assert {r.subject_id for r in reads.relationships_for(rid) if r.predicate=='part_of'}==set(expected)
+ assert any(r.subject_id==rid and r.predicate=='traverses' and r.object_id==WEST for r in reads.relationships_for(rid))
  geo=reads.route_geometry(rid,DAY)
  assert len(geo['features'])==len(expected)
  assert not geo['wayproof']['navigation_grade']

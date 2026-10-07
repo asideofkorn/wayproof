@@ -11108,6 +11108,17 @@
         "evidence-taboose-depth-bench-route"
       ],
       "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-depth-bench-west.json",
+      "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
+      "record_id": "relationship-taboose-depth-bench-west",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-depth-bench-route"
+      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/relationships/relationship-taboose-depth-bench-pass-jmt.json",
       "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
       "record_id": "relationship-taboose-depth-bench-pass-jmt",
@@ -11196,6 +11207,17 @@
         "evidence-taboose-depth-mather-route"
       ],
       "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-depth-mather-west.json",
+      "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
+      "record_id": "relationship-taboose-depth-mather-west",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-depth-mather-route"
+      ],
+      "knowledge_gap_refs": [],
       "path": "canonical/v0/relationships/relationship-taboose-depth-mather-pass-jmt.json",
       "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
       "record_id": "relationship-taboose-depth-mather-pass-jmt",
@@ -11265,6 +11287,17 @@
       "path": "canonical/v0/relationships/relationship-taboose-depth-pinchot-east.json",
       "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
       "record_id": "relationship-taboose-depth-pinchot-east",
+      "record_type": "relationship"
+    },
+    {
+      "action": "ADD",
+      "evidence_refs": [
+        "evidence-taboose-depth-pinchot-route"
+      ],
+      "knowledge_gap_refs": [],
+      "path": "canonical/v0/relationships/relationship-taboose-depth-pinchot-west.json",
+      "reason": "Deepen Taboose campsite inventory, access evidence and western routes while retaining uncertainty.",
+      "record_id": "relationship-taboose-depth-pinchot-west",
       "record_type": "relationship"
     },
     {
