@@ -146,6 +146,19 @@ the same service layer.
   - Generate concise text that can stand alone in a comment plus accessible
     visual evidence cards and native share/copy actions. Evaluate the claim and
     its scope, not the person whose statement prompted the correction.
+  - Append an allowlisted, non-unique campaign marker to links created by
+    Wayproof's share/copy controls so aggregate analytics can distinguish an
+    evidence-card visit from ordinary navigation. Use only coarse values such
+    as share mechanism, card kind and current-versus-snapshot state; never add
+    a sharer/recipient ID, session token, destination account, raw query, trip
+    context or fingerprint. The destination path already identifies the public
+    entity or claim and does not need to be duplicated into event properties.
+  - On arrival, validate only the documented share parameters, emit one
+    anonymous `shared_link_opened` event, then remove the campaign parameters
+    from the visible URL where supported. Shared pages must work identically
+    when a platform strips the parameters, JavaScript is unavailable or
+    analytics is blocked. Canonical metadata, indexing and evidence identity
+    always ignore campaign parameters.
   - Emit static Open Graph and other preview metadata in generated HTML, with
     content-addressed images and direct HTTPS URLs that remain useful in
     reduced in-app browsers. The answer, date, scope and source path must remain
