@@ -151,6 +151,127 @@ The source demonstrates a behavior and planning failure; it does not justify
 inference about unreported personal attributes or the prevalence of this
 persona.
 
+### The permit holder without a route
+
+This traveler has successfully obtained a wilderness permit but still lacks an
+executable itinerary. A permit name, entry trailhead, or first-night zone does
+not tell them which connected segments reach an objective, where camping is
+allowed, whether a proposed return or crossover ends the permitted trip, or
+which direction and exit remain valid.
+
+Wayproof should connect the permit product to its governed entry, eligible
+routes, ordered stages, first-night and continuous-travel constraints, legal
+camping context, and supported exits. It should show why a proposed itinerary
+is valid, partial, or incompatible rather than treating possession of a permit
+as trip readiness.
+
+**Acceptance scenario:** a traveler selects a Glen Aulin or High Sierra Camp
+entry permit and a three-day objective. Wayproof builds only evidenced route
+options from that entry, identifies unresolved nightly stops, rejects an
+itinerary that exits and improperly re-enters wilderness, and explains which
+permit or route change would resolve the problem.
+
+**Research examples:** [Glen Aulin permit without a route](https://www.reddit.com/r/Yosemite/comments/140g06p/glen_aulin_backpacking_permit_route/),
+[High Sierra Camp Loop permit confusion](https://www.reddit.com/r/Yosemite/comments/1q9wiyv/high_sierra_camp_loop_confusion/),
+and a [five-day itinerary with invalid wilderness re-entry](https://www.reddit.com/r/Yosemite/comments/1r1fsla/5_day_backpacking_plan_questions/).
+
+### The fixed-window visiting planner
+
+This traveler has fixed dates, long-distance transportation, and limited local
+knowledge. They must combine driving, lodging or camping, seasonal transit,
+route choice, elevation, acclimatization, weather-sensitive access, and current
+conditions into a small number of usable days. Individually useful destination
+lists increase rather than reduce their planning burden when they are not
+evaluated together.
+
+Wayproof should compare feasible objectives within the stated dates and party
+constraints; connect each to current access, parking, campground, and seasonal
+transport facts; and expose alternatives when a road, shuttle, weather window,
+or acclimatization constraint breaks the preferred plan. Recommendations must
+remain separate from supported operational facts.
+
+**Acceptance scenario:** a visitor arriving from sea level has four Eastern
+Sierra days during fall color season. Wayproof identifies usable campground
+bases and trailheads, preserves uncertain foliage and weather as rechecks,
+surfaces route elevations and seasonal transport limits, and produces a small
+set of plans whose driving and hiking stages fit the fixed window.
+
+**Research examples:** a [last-minute Eastern Sierra trip with intertwined
+camping, altitude, foliage, and route questions](https://www.reddit.com/r/SierraNevada/comments/1wz9oi8/help_planning_a_last_minute_eastern_sierra_trip/)
+and an [October Rafferty Creek trip whose seasonal transportation may have
+ended](https://www.reddit.com/r/Yosemite/comments/1sreuq7/wilderness_permit_questions_rafferty_creek_entry/).
+
+### The conditions-dependent water planner
+
+This traveler can identify trails and camps, but route feasibility depends on
+water whose status changes by source, season, trailhead, and observation date.
+Community reports may appear to conflict because they refer to different ponds,
+springs, tanks, faucets, or dates. A mapped water symbol is not evidence that
+water is presently available or safe to drink.
+
+Wayproof should attach each water observation to a precise source and route
+stage, distinguish built infrastructure from natural water, retain observation
+and retrieval dates, preserve genuine disagreement, and calculate no unsupported
+availability. The plan should identify dry stretches, water-dependent camps,
+and sources requiring a current check.
+
+**Acceptance scenario:** a two-night Henry Coe plan selects an entry and camps
+that depend on particular water sources. Wayproof distinguishes historically
+reliable facilities from dated natural-source reports, shows which planned legs
+depend on each source, and produces a pre-trip water recheck rather than a
+timeless assurance.
+
+**Research examples:** a [Henry Coe discussion containing differing current
+water reports and trailhead-specific alternatives](https://www.reddit.com/r/norcalhiking/comments/17k66ke/two_night_backpacking_trip_nearby_menlo_park/)
+and a [short family trip request centered on reachable water](https://www.reddit.com/r/norcalhiking/comments/1v1wxh3/backpacking_options_for_sacramento_area/).
+
+### The inventory-constrained objective seeker
+
+This traveler has a desired objective and dates constrained by work, travel, or
+companions, but scarce permits or campsites are allocated through lotteries,
+release windows, cancellations, and walk-up inventory. They may repeatedly pay
+application fees without learning which alternate entry reaches the same goal
+or whether a different date, permit product, or route is a genuine substitute.
+
+Wayproof should begin with the objective, enumerate only evidenced route and
+access alternatives, associate each with the correct permit or reservation
+product, and explain release timing, costs, and unresolved live availability.
+Published inventory must never be presented as current availability, and an
+alternative is useful only when its topology and constraints still satisfy the
+trip intent.
+
+**Acceptance scenario:** a traveler cannot obtain the preferred Yosemite
+trailhead for fixed dates. Wayproof identifies other supported approaches to
+the objective, shows their distinct permit products and release mechanisms,
+and explains the route or effort tradeoffs without claiming that inventory is
+available until it is actually checked.
+
+**Research example:** a [planner describing repeated lottery failures, fixed
+schedule constraints, fees, and conflicting referrals](https://www.reddit.com/r/Yosemite/comments/1jdqu6b/backcountry_permit_frustrations/).
+
+### The constraint-heavy family planner
+
+This planner is responsible for a party member whose range, carried weight,
+water needs, comfort, or facility requirements materially narrow the trip.
+Generic difficulty labels are inadequate: a short distance may still be steep,
+water may be unavailable, toilets may be absent, and an apparently simple
+destination may introduce permits, food-storage, or campsite requirements.
+
+Wayproof should project party context onto distance, elevation, access, water,
+facilities, campsite and permit requirements without turning those facts into a
+generic safety score. It should keep reported capability distinct from route
+facts, expose fallback and early-exit options, and explain every newly relevant
+requirement.
+
+**Acceptance scenario:** a caregiver requests a one-night trip with a short
+approach, dependable water, and minimal permitting. Wayproof returns only
+routes whose published distance, topology, access, and facilities can answer
+those constraints; identifies requirements such as food storage; and leaves
+subjective party capability for the planner to decide.
+
+**Research examples:** the [short water-centered family trip request](https://www.reddit.com/r/norcalhiking/comments/1v1wxh3/backpacking_options_for_sacramento_area/)
+and a [beginner request explicitly seeking easy access, bathrooms, and water](https://www.reddit.com/r/norcalhiking/comments/1ialcj1/short_backpacking_trip_recs/).
+
 ## Contributor and research workflow
 
 Evidence may arrive as an official page, PDF, screenshot, GPX trace, field
