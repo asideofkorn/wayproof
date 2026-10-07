@@ -213,10 +213,39 @@ the same service layer.
     names, parent location, type, the few decision-relevant attributes available,
     clear status language and sufficiently large controls. Unknown information
     remains visible without overwhelming the known answer.
+  - Treat search as a planning entry point rather than an exact-name record
+    filter. Support the vocabulary people actually bring—place or objective,
+    activity, access need, restriction, facility, camp type and known site
+    number—and show how a recognized term maps to canonical entities. Do not
+    imply that a text match answers a permit, safety or current-condition
+    question.
+  - Rank and group results by planning usefulness. Prefer a named park,
+    campground, trailhead, route or objective over an otherwise ambiguous
+    numbered campsite or atomic segment; label every child with its parent and
+    location; and separately surface matching rules, evidence-backed answers
+    and unresolved questions when they are relevant to the query.
+  - Provide useful query refinement and recovery: visible applied filters,
+    result counts by category, spelling and alias handling, a clear reset,
+    shareable search state where practical, and an informative no-result state
+    that distinguishes an unrecognized term from a known coverage gap. A person
+    should be able to propose the missing question without treating it as fact.
+  - Preserve orientation while navigating the graph. Use stable global entry
+    points for Search, Map, Parks, Trails, Camping and Peaks; contextual
+    breadcrumbs and parent links; and explicit next actions such as “see sites,”
+    “compare approaches,” “check restrictions,” or “view supporting evidence.”
+    Back navigation must restore the prior query, filters, map extent and
+    selection rather than restarting discovery.
+  - Offer complementary entry modes without creating separate catalogs: text
+    search for a known name or need, the geographic explorer for spatial
+    discovery, curated browse pages for orientation, and agent/MCP planning for
+    multi-constraint questions. All resolve to the same canonical pages and
+    claims.
   - Validate representative journeys against every persona in `PRODUCT.md`,
     including selecting a camp area before a numbered campsite, finding a route
     to an objective, identifying a rule that crosses jurisdictions, recognizing
-    a volatile condition, and sharing an evidence-backed correction.
+    a volatile condition, and sharing an evidence-backed correction. Include
+    both known-name and need-first search journeys, no-result recovery, and
+    returning from evidence or a map without losing the planning context.
   **Gate:** a first-time person can answer “is this relevant to my trip, what
   choice do I make next, and what must I verify?” from a representative page
   before needing to understand Wayproof's schema or inspect raw evidence.
