@@ -286,6 +286,45 @@ the same service layer.
     a decision-critical restriction, recheck or evidence path. Use aggregate
     no-result and abandonment patterns to improve coverage and navigation,
     never to reconstruct an individual's trip.
+  - Establish a small shared visual system for generated pages: typography,
+    spacing, hierarchy, cards, status treatments, controls and responsive
+    behavior. Add a content style guide for plain-language orientation,
+    decision-critical restrictions, dated or uncertain information, and
+    progressively disclosed provenance so every entity template communicates
+    trust consistently without hand-authored page forks.
+  - Define interface-level accessibility acceptance criteria covering semantic
+    structure, keyboard order, focus visibility, touch targets, contrast,
+    reduced motion, screen-reader labels, map alternatives and comprehension of
+    status without color alone. Test the representative persona journeys, not
+    only isolated controls.
+  - Set measured mobile performance budgets for generated HTML, search data,
+    JavaScript, maps, geometry and imagery. Preserve useful static content when
+    scripts, analytics or map tiles fail, and prevent complete inventories from
+    blocking the first planning answer.
+  - Run bounded qualitative reviews of the vertical slice with representative
+    people in addition to automated browser tests. Record whether they can
+    explain the relevant choice, restriction, uncertainty and next action in
+    their own words; treat confusion as a product gap even when every expected
+    element rendered.
+  - Offer a low-friction “Did this answer your planning question?” response with
+    optional broad reason codes. Keep free text outside analytics; if someone
+    elects to submit a correction, source or field observation, hand it to the
+    separately confirmed M3 proposal workflow rather than storing it as product
+    telemetry.
+  - Assign ownership for analytics configuration, access, retention, deletion
+    and periodic review. Document dashboards and event definitions in the repo,
+    audit them against the allowlist, and remove events that no longer support a
+    roadmap decision. M4 may later operationalize monitoring at scale without
+    expanding M2's permitted collection by default.
+  - After the Taboose Pass coverage batch is published, run an explicit persona
+    acceptance audit modeled on the cited public Instagram example. Starting
+    from the person's likely question rather than a known record ID, verify that
+    search, map and navigation lead to the applicable pet restriction and its
+    jurisdictional boundary; that the rule, currentness, limitations and source
+    are understandable; and that the experience would help someone avoid
+    reaching the pass with a prohibited pet. Preserve any failure as a concrete
+    search, content, relationship, evidence or coverage gap instead of writing a
+    favorable narrative after the fact.
   **Gate:** a first-time person can answer “is this relevant to my trip, what
   choice do I make next, and what must I verify?” from a representative page
   before needing to understand Wayproof's schema or inspect raw evidence; the
