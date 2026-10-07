@@ -6,7 +6,8 @@ const WayproofSearch = {
   },
   matches(text, query) {
     const words = this.tokens(text);
-    return this.tokens(query).every(term => words.some(word => word.startsWith(term)));
+    return this.tokens(query).every(term => words.some(word =>
+      term === "pet" ? word === term : word.startsWith(term)));
   },
 };
 if (typeof module !== "undefined") module.exports = WayproofSearch;

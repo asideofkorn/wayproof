@@ -224,7 +224,7 @@ def test_explore_map_is_generated_from_canonical_geometry(site):
     assert 'data-map-layer="boundaries" checked' in page
     assert 'data-map-expand aria-expanded="false"' in page
     assert 'href="/map/features.geojson"' in page
-    assert 'src="/assets/explore-map.js?v=20260925-2"' in page
+    assert 'src="/assets/explore-map.js?v=20261006-1"' in page
     assert payload["wayproof"]["generated_from"] == "CanonicalReadService"
     assert payload["wayproof"]["navigation_grade"] is False
     assert any(item["properties"]["entity_id"] == "route-cinder-cone-trail"

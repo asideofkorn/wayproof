@@ -133,6 +133,7 @@ def test_search_token_order_synonyms_and_no_result_recovery(generated_site):
     assert not search_matches(rows, 'Taboose nonexistentword')
     assert search_matches(rows, 'Taboose')
     assert search_matches(rows, 'Taboose Pass dog')[0]['kind'] in {'pass', 'route', 'trailhead'}
+    assert not search_matches([{'search_text': 'petroleum stove fuel'}], 'dog')
 
 
 def test_consumer_projection_keeps_direct_and_connected_rules_distinct():
