@@ -87,6 +87,69 @@ Results use explicit answerability states such as answered, partial, conflicting
 unknown, not applicable, and needs-current-check. Exact enum spellings are an
 implementation decision; the semantic distinctions are not.
 
+## Product personas
+
+Personas are behavior-based product hypotheses, not demographic profiles or
+claims that one person represents every user. They preserve the practical
+failure modes that Wayproof should prevent and provide scenarios against which
+future data, planning, and interface work can be evaluated. Revise them as
+broader research produces stronger or conflicting evidence.
+
+### The conscientious cross-jurisdiction adventurer
+
+This experienced backpacker or outdoor guide plans ambitious multi-day trips,
+often with a partner and dog. They are prepared and compliance-minded: they
+obtain permits, inspect multiple maps and layers, carry required equipment,
+read trailhead signs, and prefer abandoning an objective to knowingly violating
+a land-management rule. Experience does not protect them when individually
+accurate planning systems fail to compose the complete trip.
+
+Their goals are to complete a memorable route, include their dog where it is
+legal, understand the entire journey rather than only its starting trailhead,
+confirm that their vehicle can reach the intended access point, and retain
+usable alternatives when one constraint invalidates the original plan.
+
+A representative failure combines two disconnected planning problems. A
+low-clearance vehicle cannot reach the intended trailhead, adding substantial
+distance and elevation. Later, an apparently continuous trail crosses from
+National Forest wilderness into National Park wilderness where a different pet
+rule applies. The maps, permit interaction, and starting signage did not make
+the route-specific jurisdiction change operationally visible. The restriction
+is discovered only after significant effort, without a prepared compliant
+alternative.
+
+Wayproof should support this persona by:
+
+- projecting every evidenced jurisdiction and rule onto the relevant route
+  segment instead of flattening a regional rule across the entire trip;
+- warning before a route crosses into an incompatible jurisdiction and showing
+  the supported boundary, turnaround point, or unresolved connection;
+- resolving pet, party, activity, and equipment constraints against complete
+  route alternatives;
+- connecting road condition, vehicle suitability, parking, and overflow facts
+  to the resulting approach distance and elevation rather than treating the
+  trailhead as automatically reachable;
+- offering source-backed alternatives from usable access points when the
+  preferred plan fails;
+- distinguishing official facts, dated observations, uncertainty, and items
+  that still require a ranger or current-source recheck; and
+- retaining the relevant route, evidence, and warnings for offline field use.
+
+**Acceptance scenario:** a traveler plans a multi-day Taboose-area trip with a
+dog and a low-clearance vehicle. Before departure, Wayproof identifies uncertain
+road access and its possible approach consequences, highlights the route segment
+that enters Kings Canyon National Park, explains the segment-scoped pet
+restriction, and presents supported compliant alternatives. Each conclusion is
+traceable to evidence; missing geometry or current access status remains
+explicitly unresolved.
+
+**Research basis:** this provisional persona was drafted from a bounded review
+of the public [Wilder Magic backpacking account](https://www.instagram.com/wilder.magic/),
+the creator's [Eastern Sierra trip report](https://www.instagram.com/reel/DeH-n6VS6Ur/),
+and its visible public discussion on October 6, 2026. The source demonstrates a
+behavior and planning failure; it does not justify inference about unreported
+personal attributes or the prevalence of this persona.
+
 ## Contributor and research workflow
 
 Evidence may arrive as an official page, PDF, screenshot, GPX trace, field
