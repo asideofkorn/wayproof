@@ -87,6 +87,241 @@ Results use explicit answerability states such as answered, partial, conflicting
 unknown, not applicable, and needs-current-check. Exact enum spellings are an
 implementation decision; the semantic distinctions are not.
 
+## Product personas
+
+Personas are behavior-based product hypotheses, not demographic profiles or
+claims that one person represents every user. They preserve the practical
+failure modes that Wayproof should prevent and provide scenarios against which
+future data, planning, and interface work can be evaluated. Revise them as
+broader research produces stronger or conflicting evidence.
+
+### The conscientious cross-jurisdiction adventurer
+
+This experienced backpacker or outdoor guide plans ambitious multi-day trips,
+often with a partner and dog. They are prepared and compliance-minded: they
+obtain permits, inspect multiple maps and layers, carry required equipment,
+read trailhead signs, and prefer abandoning an objective to knowingly violating
+a land-management rule. Experience does not protect them when individually
+accurate planning systems fail to compose the complete trip.
+
+Their goals are to complete a memorable route, include their dog where it is
+legal, understand the entire journey rather than only its starting trailhead,
+confirm that their vehicle can reach the intended access point, and retain
+usable alternatives when one constraint invalidates the original plan.
+
+A representative failure combines two disconnected planning problems. A
+low-clearance vehicle cannot reach the intended trailhead, adding substantial
+distance and elevation. Later, an apparently continuous trail crosses from
+National Forest wilderness into National Park wilderness where a different pet
+rule applies. The maps, permit interaction, and starting signage did not make
+the route-specific jurisdiction change operationally visible. The restriction
+is discovered only after significant effort, without a prepared compliant
+alternative.
+
+Wayproof should support this persona by:
+
+- projecting every evidenced jurisdiction and rule onto the relevant route
+  segment instead of flattening a regional rule across the entire trip;
+- warning before a route crosses into an incompatible jurisdiction and showing
+  the supported boundary, turnaround point, or unresolved connection;
+- resolving pet, party, activity, and equipment constraints against complete
+  route alternatives;
+- connecting road condition, vehicle suitability, parking, and overflow facts
+  to the resulting approach distance and elevation rather than treating the
+  trailhead as automatically reachable;
+- offering source-backed alternatives from usable access points when the
+  preferred plan fails;
+- distinguishing official facts, dated observations, uncertainty, and items
+  that still require a ranger or current-source recheck; and
+- retaining the relevant route, evidence, and warnings for offline field use.
+
+**Acceptance scenario:** a traveler plans a multi-day Taboose-area trip with a
+dog and a low-clearance vehicle. Before departure, Wayproof identifies uncertain
+road access and its possible approach consequences, highlights the route segment
+that enters Kings Canyon National Park, explains the segment-scoped pet
+restriction, and presents supported compliant alternatives. Each conclusion is
+traceable to evidence; missing geometry or current access status remains
+explicitly unresolved.
+
+**Research basis:** this provisional persona was drafted from a bounded review
+of the public [Wilder Magic backpacking account](https://www.instagram.com/wilder.magic/)
+and its visible public discussion on October 6, 2026. Example:
+[Eastern Sierra cross-jurisdiction backpacking failure reel](https://www.instagram.com/reel/DeH-n6VS6Ur/).
+The source demonstrates a behavior and planning failure; it does not justify
+inference about unreported personal attributes or the prevalence of this
+persona.
+
+### The permit holder without a route
+
+This traveler has successfully obtained a wilderness permit but still lacks an
+executable itinerary. A permit name, entry trailhead, or first-night zone does
+not tell them which connected segments reach an objective, where camping is
+allowed, whether a proposed return or crossover ends the permitted trip, or
+which direction and exit remain valid.
+
+Wayproof should connect the permit product to its governed entry, eligible
+routes, ordered stages, first-night and continuous-travel constraints, legal
+camping context, and supported exits. It should show why a proposed itinerary
+is valid, partial, or incompatible rather than treating possession of a permit
+as trip readiness.
+
+**Acceptance scenario:** a traveler selects a Glen Aulin or High Sierra Camp
+entry permit and a three-day objective. Wayproof builds only evidenced route
+options from that entry, identifies unresolved nightly stops, rejects an
+itinerary that exits and improperly re-enters wilderness, and explains which
+permit or route change would resolve the problem.
+
+**Research examples:** [Glen Aulin permit without a route](https://www.reddit.com/r/Yosemite/comments/140g06p/glen_aulin_backpacking_permit_route/),
+[High Sierra Camp Loop permit confusion](https://www.reddit.com/r/Yosemite/comments/1q9wiyv/high_sierra_camp_loop_confusion/),
+and a [five-day itinerary with invalid wilderness re-entry](https://www.reddit.com/r/Yosemite/comments/1r1fsla/5_day_backpacking_plan_questions/).
+
+### The fixed-window visiting planner
+
+This traveler has fixed dates, long-distance transportation, and limited local
+knowledge. They must combine driving, lodging or camping, seasonal transit,
+route choice, elevation, acclimatization, weather-sensitive access, and current
+conditions into a small number of usable days. Individually useful destination
+lists increase rather than reduce their planning burden when they are not
+evaluated together.
+
+Wayproof should compare feasible objectives within the stated dates and party
+constraints; connect each to current access, parking, campground, and seasonal
+transport facts; and expose alternatives when a road, shuttle, weather window,
+or acclimatization constraint breaks the preferred plan. Recommendations must
+remain separate from supported operational facts.
+
+**Acceptance scenario:** a visitor arriving from sea level has four Eastern
+Sierra days during fall color season. Wayproof identifies usable campground
+bases and trailheads, preserves uncertain foliage and weather as rechecks,
+surfaces route elevations and seasonal transport limits, and produces a small
+set of plans whose driving and hiking stages fit the fixed window.
+
+**Research examples:** a [last-minute Eastern Sierra trip with intertwined
+camping, altitude, foliage, and route questions](https://www.reddit.com/r/SierraNevada/comments/1wz9oi8/help_planning_a_last_minute_eastern_sierra_trip/)
+and an [October Rafferty Creek trip whose seasonal transportation may have
+ended](https://www.reddit.com/r/Yosemite/comments/1sreuq7/wilderness_permit_questions_rafferty_creek_entry/).
+
+### The conditions-dependent water planner
+
+This traveler can identify trails and camps, but route feasibility depends on
+water whose status changes by source, season, trailhead, and observation date.
+Community reports may appear to conflict because they refer to different ponds,
+springs, tanks, faucets, or dates. A mapped water symbol is not evidence that
+water is presently available or safe to drink.
+
+Wayproof should attach each water observation to a precise source and route
+stage, distinguish built infrastructure from natural water, retain observation
+and retrieval dates, preserve genuine disagreement, and calculate no unsupported
+availability. The plan should identify dry stretches, water-dependent camps,
+and sources requiring a current check.
+
+**Acceptance scenario:** a two-night Henry Coe plan selects an entry and camps
+that depend on particular water sources. Wayproof distinguishes historically
+reliable facilities from dated natural-source reports, shows which planned legs
+depend on each source, and produces a pre-trip water recheck rather than a
+timeless assurance.
+
+**Research examples:** a [Henry Coe discussion containing differing current
+water reports and trailhead-specific alternatives](https://www.reddit.com/r/norcalhiking/comments/17k66ke/two_night_backpacking_trip_nearby_menlo_park/)
+and a [short family trip request centered on reachable water](https://www.reddit.com/r/norcalhiking/comments/1v1wxh3/backpacking_options_for_sacramento_area/).
+
+### The inventory-constrained objective seeker
+
+This traveler has a desired objective and dates constrained by work, travel, or
+companions, but scarce permits or campsites are allocated through lotteries,
+release windows, cancellations, and walk-up inventory. They may repeatedly pay
+application fees without learning which alternate entry reaches the same goal
+or whether a different date, permit product, or route is a genuine substitute.
+
+Wayproof should begin with the objective, enumerate only evidenced route and
+access alternatives, associate each with the correct permit or reservation
+product, and explain release timing, costs, and unresolved live availability.
+Published inventory must never be presented as current availability, and an
+alternative is useful only when its topology and constraints still satisfy the
+trip intent.
+
+**Acceptance scenario:** a traveler cannot obtain the preferred Yosemite
+trailhead for fixed dates. Wayproof identifies other supported approaches to
+the objective, shows their distinct permit products and release mechanisms,
+and explains the route or effort tradeoffs without claiming that inventory is
+available until it is actually checked.
+
+**Research example:** a [planner describing repeated lottery failures, fixed
+schedule constraints, fees, and conflicting referrals](https://www.reddit.com/r/Yosemite/comments/1jdqu6b/backcountry_permit_frustrations/).
+
+### The constraint-heavy family planner
+
+This planner is responsible for a party member whose range, carried weight,
+water needs, comfort, or facility requirements materially narrow the trip.
+Generic difficulty labels are inadequate: a short distance may still be steep,
+water may be unavailable, toilets may be absent, and an apparently simple
+destination may introduce permits, food-storage, or campsite requirements.
+
+Wayproof should project party context onto distance, elevation, access, water,
+facilities, campsite and permit requirements without turning those facts into a
+generic safety score. It should keep reported capability distinct from route
+facts, expose fallback and early-exit options, and explain every newly relevant
+requirement.
+
+**Acceptance scenario:** a caregiver requests a one-night trip with a short
+approach, dependable water, and minimal permitting. Wayproof returns only
+routes whose published distance, topology, access, and facilities can answer
+those constraints; identifies requirements such as food storage; and leaves
+subjective party capability for the planner to decide.
+
+**Research examples:** the [short water-centered family trip request](https://www.reddit.com/r/norcalhiking/comments/1v1wxh3/backpacking_options_for_sacramento_area/)
+and a [beginner request explicitly seeking easy access, bathrooms, and water](https://www.reddit.com/r/norcalhiking/comments/1ialcj1/short_backpacking_trip_recs/).
+
+### The community trip-planning explainer
+
+This ranger, guide, trip leader, outdoor educator, local expert, or experienced
+community member repeatedly helps other people interpret routes, permits,
+conditions, and regulations. They may already know how to answer a question,
+but the answer is scattered across maps, agency pages, personal experience, and
+earlier discussions. Rewriting it for every traveler is inefficient, while an
+uncited summary is difficult for others to verify or reuse.
+
+Their goals are to share a durable, source-backed explanation; direct people to
+the relevant route, rule, or facility rather than a generic home page; correct
+misleading advice without erasing legitimate uncertainty; and contribute local
+knowledge without becoming responsible for maintaining a parallel database.
+They can be an important distribution path because one trusted explainer may
+introduce Wayproof to many planners.
+
+Wayproof should support this persona by:
+
+- providing permanent, readable links to entities, routes, claims,
+  observations, evidence, and unresolved gaps;
+- generating compact explanations that preserve dates, scope, attribution,
+  disagreement, and items requiring a current check;
+- accepting a dated textual field observation with its reported location,
+  conditions, precision, and uncertainty as a reviewable contribution;
+- accepting a public trip-report URL as a research reference, preserving the
+  author and publication context while allowing an agent to extract candidate
+  observations and evidence;
+- distinguishing quotations, contributor statements, Wayproof paraphrases,
+  and derived findings rather than collapsing them into one account;
+- allowing contributors and maintainers to inspect, correct, reject, replace,
+  or withdraw retained material through the established review workflow; and
+- ensuring that neither a field report nor an extracted trip report directly
+  creates a canonical claim, route relationship, or planning conclusion.
+
+**Acceptance scenario:** an experienced hiker answers a recurring question
+about a route restriction and links to a public trip report containing a dated
+water observation. Wayproof preserves the report as a source, proposes the
+bounded observation with its time and location qualifications, and routes it
+through `Source -> Observation -> Evidence -> Claim` review. Once approved,
+the explainer can share a stable Wayproof page that shows the supported answer,
+the dated observation, any conflicting evidence, and what still requires a
+current check.
+
+**Research basis:** this provisional persona synthesizes behavior visible in
+the public forum discussions cited by the planning personas above, where
+experienced participants repeatedly interpret permit rules, recommend viable
+alternatives, and report field conditions. Those discussions demonstrate a
+contribution and explanation role; they do not establish contributor identity,
+expert status, or the accuracy of any unreviewed statement.
+
 ## Contributor and research workflow
 
 Evidence may arrive as an official page, PDF, screenshot, GPX trace, field

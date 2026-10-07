@@ -131,6 +131,210 @@ the same service layer.
   **Gate:** users can understand a gap and compare its evidence in place;
   unknown dates and locations remain explicit, and links never imply current
   conditions or independent corroboration merely through repetition.
+- Turn those evidence permalinks into a time-scoped distribution surface:
+  - Generate a human-readable current claim page and an immutable share snapshot
+    for each reviewed revision. A snapshot preserves the statement, evidence
+    set, limitations, applicable scope and review date that a person originally
+    shared; it never silently changes into a later conclusion.
+  - On every historical snapshot, state whether the assessment is still
+    supported, updated, superseded, corrected or now needs a current check, and
+    link prominently to the latest reviewed answer with a concise explanation
+    of what changed.
+  - Distinguish observation/event time, claim-effective time, Wayproof review
+    and publication time, and the viewer's current time. Prefer language such
+    as "evidence reviewed through" over an unqualified claim of current truth.
+  - Generate concise text that can stand alone in a comment plus accessible
+    visual evidence cards and native share/copy actions. Evaluate the claim and
+    its scope, not the person whose statement prompted the correction.
+  - Append an allowlisted, non-unique campaign marker to links created by
+    Wayproof's share/copy controls so aggregate analytics can distinguish an
+    evidence-card visit from ordinary navigation. Use only coarse values such
+    as share mechanism, card kind and current-versus-snapshot state; never add
+    a sharer/recipient ID, session token, destination account, raw query, trip
+    context or fingerprint. The destination path already identifies the public
+    entity or claim and does not need to be duplicated into event properties.
+  - On arrival, validate only the documented share parameters, emit one
+    anonymous `shared_link_opened` event, then remove the campaign parameters
+    from the visible URL where supported. Shared pages must work identically
+    when a platform strips the parameters, JavaScript is unavailable or
+    analytics is blocked. Canonical metadata, indexing and evidence identity
+    always ignore campaign parameters.
+  - Emit static Open Graph and other preview metadata in generated HTML, with
+    content-addressed images and direct HTTPS URLs that remain useful in
+    reduced in-app browsers. The answer, date, scope and source path must remain
+    readable without JavaScript or the interactive map.
+  - Keep the current claim URL self-canonical and indexed. Historical share
+    snapshots remain resolvable but point search canonicalization to the current
+    claim, stay out of the sitemap, and use `noindex` only when canonicalization
+    cannot prevent stale operational answers from competing in search.
+  - Give current claim pages descriptive question-oriented titles, contextual
+    internal links and source citations so public forum or trip-report links can
+    consolidate discovery and relevance around the current reviewed answer.
+  **Gate:** an old public post continues to show what Wayproof knew when it was
+  shared, visibly discloses its age, and leads to the current evidence without
+  allowing an obsolete preview to masquerade as a current operational fact.
+- Use the same evidence pages as the durable destination for agent distribution:
+  - Return absolute, user-openable Wayproof claim, route, source and evidence
+    URLs from every relevant MCP result rather than sending users to a generic
+    home page.
+  - Host the existing read-only MCP capabilities at a stable public endpoint
+    and package the shared server for supported ChatGPT/Codex and Claude
+    discovery surfaces without duplicating planning logic per platform.
+  - Keep public reads anonymous initially. Treat agent tool arguments as
+    untrusted and retain no raw conversation or complete personal itinerary by
+    default.
+  - Measure only minimized private operational signals needed to understand
+    demand: requested canonical objective, broad question category,
+    answerability, blocking knowledge gaps and evidence-link follow-through.
+    Keep analytics outside the public canonical corpus and do not convert a
+    planning request into evidence.
+  - Offer an explicit, separately confirmed path to submit an unanswered
+    planning gap, dated textual field observation, correction source or public
+    trip-report URL through the constrained proposal workflow. No agent surface
+    gains direct canonical write or publication authority.
+  **Gate:** a person can ask an agent a planning question, inspect the exact
+  supporting Wayproof page, and optionally contribute a bounded correction or
+  observation while Wayproof learns aggregate coverage demand without silently
+  collecting the surrounding conversation.
+- Redesign generated pages around the planning questions in the reviewed
+  personas rather than exposing every canonical record as a peer:
+  - Make browse pages establish context before inventory. Group results by
+    region, managed area, campground, trail corridor or other reviewed parent;
+    preserve search and filters, but do not lead with thousands of numbered
+    campsites or route segments in one undifferentiated list.
+  - Treat a campground as the primary camping browse result. Put its individual
+    sites in a nested, searchable inventory and map on the campground page,
+    with meaningful summaries and comparison fields. Keep group camps,
+    backcountry camps, cabins and other planning-level facilities discoverable
+    without making site `001` appear globally meaningful by itself.
+  - Give each park, campground, route, trailhead, peak and other objective a
+    plain-language orientation layer: what it is, why someone might choose it,
+    where it is, how it is reached, the decisions or restrictions most likely
+    to change a trip, and what still needs checking. Follow that with maps and
+    structured planning facts, then progressively disclose claims, provenance,
+    raw identifiers and complete evidence.
+  - Present connected information in task order—objective, access, route,
+    permits and restrictions, camping and facilities, current-condition checks,
+    unresolved questions—while preserving the canonical graph underneath.
+    Repeated facts should link to one reviewed claim rather than become
+    page-specific prose forks.
+  - Keep research queues contextual. Show a small number of consequential gaps
+    on a landing or entity page, with counts and links to explore the remainder;
+    never let hundreds of open questions or inventory records dominate the
+    primary reading path.
+  - Design index cards and detail summaries for scanning on a phone: descriptive
+    names, parent location, type, the few decision-relevant attributes available,
+    clear status language and sufficiently large controls. Unknown information
+    remains visible without overwhelming the known answer.
+  - Treat search as a planning entry point rather than an exact-name record
+    filter. Support the vocabulary people actually bring—place or objective,
+    activity, access need, restriction, facility, camp type and known site
+    number—and show how a recognized term maps to canonical entities. Do not
+    imply that a text match answers a permit, safety or current-condition
+    question.
+  - Rank and group results by planning usefulness. Prefer a named park,
+    campground, trailhead, route or objective over an otherwise ambiguous
+    numbered campsite or atomic segment; label every child with its parent and
+    location; and separately surface matching rules, evidence-backed answers
+    and unresolved questions when they are relevant to the query.
+  - Provide useful query refinement and recovery: visible applied filters,
+    result counts by category, spelling and alias handling, a clear reset,
+    shareable search state where practical, and an informative no-result state
+    that distinguishes an unrecognized term from a known coverage gap. A person
+    should be able to propose the missing question without treating it as fact.
+  - Preserve orientation while navigating the graph. Use stable global entry
+    points for Search, Map, Parks, Trails, Camping and Peaks; contextual
+    breadcrumbs and parent links; and explicit next actions such as “see sites,”
+    “compare approaches,” “check restrictions,” or “view supporting evidence.”
+    Back navigation must restore the prior query, filters, map extent and
+    selection rather than restarting discovery.
+  - Offer complementary entry modes without creating separate catalogs: text
+    search for a known name or need, the geographic explorer for spatial
+    discovery, curated browse pages for orientation, and agent/MCP planning for
+    multi-constraint questions. All resolve to the same canonical pages and
+    claims.
+  - Validate representative journeys against every persona in `PRODUCT.md`,
+    including selecting a camp area before a numbered campsite, finding a route
+    to an objective, identifying a rule that crosses jurisdictions, recognizing
+    a volatile condition, and sharing an evidence-backed correction. Include
+    both known-name and need-first search journeys, no-result recovery, and
+    returning from evidence or a map without losing the planning context.
+  - Add privacy-minimized product measurement for those journeys. Use a free,
+    cookie-free aggregate traffic/performance service and Search Console for
+    discovery and indexing, then add only explicit anonymous product events
+    when the persona pilot needs funnel evidence. Prefer a narrowly configured
+    hosted free tier over operating analytics infrastructure prematurely.
+  - Define the initial event vocabulary before adding a tracker: search
+    submitted by broad query category, result counts and zero-result state,
+    result type/rank opened, filter name applied, map feature type opened, next
+    action selected, evidence/source opened, share or latest-update action, and
+    contribution flow started. Do not send raw search text or contribution
+    content as event properties.
+  - Do not collect trip or reservation dates, entered campsite details, precise
+    GPS or map-center history, party composition, personal constraints, agent
+    conversations, complete itineraries, session replay, input autocapture,
+    persistent cross-device identity or person profiles. Analytics remain
+    private operational data outside the canonical corpus and never become
+    evidence.
+  - Set and document a short retention period for raw anonymous product events,
+    initially targeting 90 days, followed only by aggregate counts needed to
+    compare releases and prioritize coverage. Publish a plain-language
+    analytics disclosure and provide any consent or opt-out controls required
+    by the selected configuration and applicable jurisdictions.
+  - Measure successful planning progression rather than generic engagement:
+    entry or search, useful result, relevant canonical entity, and discovery of
+    a decision-critical restriction, recheck or evidence path. Use aggregate
+    no-result and abandonment patterns to improve coverage and navigation,
+    never to reconstruct an individual's trip.
+  - Establish a small shared visual system for generated pages: typography,
+    spacing, hierarchy, cards, status treatments, controls and responsive
+    behavior. Add a content style guide for plain-language orientation,
+    decision-critical restrictions, dated or uncertain information, and
+    progressively disclosed provenance so every entity template communicates
+    trust consistently without hand-authored page forks.
+  - Define interface-level accessibility acceptance criteria covering semantic
+    structure, keyboard order, focus visibility, touch targets, contrast,
+    reduced motion, screen-reader labels, map alternatives and comprehension of
+    status without color alone. Test the representative persona journeys, not
+    only isolated controls.
+  - Set measured mobile performance budgets for generated HTML, search data,
+    JavaScript, maps, geometry and imagery. Preserve useful static content when
+    scripts, analytics or map tiles fail, and prevent complete inventories from
+    blocking the first planning answer.
+  - Run bounded qualitative reviews of the vertical slice with representative
+    people in addition to automated browser tests. Record whether they can
+    explain the relevant choice, restriction, uncertainty and next action in
+    their own words; treat confusion as a product gap even when every expected
+    element rendered. After the internal Taboose journey passes, consider a
+    respectful, voluntary invitation to the author of the cited public example
+    to try the relevant pages and describe whether they would have prevented
+    the original planning problem. Do not profile the participant, require
+    access to private content, publish their identity or convert usability
+    feedback into evidence without separate informed contribution and review.
+  - Offer a low-friction “Did this answer your planning question?” response with
+    optional broad reason codes. Keep free text outside analytics; if someone
+    elects to submit a correction, source or field observation, hand it to the
+    separately confirmed M3 proposal workflow rather than storing it as product
+    telemetry.
+  - Assign ownership for analytics configuration, access, retention, deletion
+    and periodic review. Document dashboards and event definitions in the repo,
+    audit them against the allowlist, and remove events that no longer support a
+    roadmap decision. M4 may later operationalize monitoring at scale without
+    expanding M2's permitted collection by default.
+  - After the Taboose Pass coverage batch is published, run an explicit persona
+    acceptance audit modeled on the cited public Instagram example. Starting
+    from the person's likely question rather than a known record ID, verify that
+    search, map and navigation lead to the applicable pet restriction and its
+    jurisdictional boundary; that the rule, currentness, limitations and source
+    are understandable; and that the experience would help someone avoid
+    reaching the pass with a prohibited pet. Preserve any failure as a concrete
+    search, content, relationship, evidence or coverage gap instead of writing a
+    favorable narrative after the fact.
+  **Gate:** a first-time person can answer “is this relevant to my trip, what
+  choice do I make next, and what must I verify?” from a representative page
+  before needing to understand Wayproof's schema or inspect raw evidence; the
+  team can evaluate that journey without retaining the person's query, trip or
+  identity.
 - Add generated interactive map views over the canonical read service for
   campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
   Selectable features should link to canonical detail pages and preserve the
@@ -153,6 +357,18 @@ the same service layer.
   entity page. Selecting empty map space, a close control, or Escape dismisses
   the selection. Overlapping features must produce an explicit chooser rather
   than an arbitrary inferred association.
+- Add objective-to-route discovery to the geographic explorer. Selecting a
+  peak, pass, lake, viewpoint, campsite, or other planning objective should
+  highlight the published routes and route segments that canonically reach it,
+  dim unrelated geometry, and expose the supported starting trailheads and
+  access alternatives. The selection card should distinguish complete routes,
+  partial approaches, unresolved connections, and directionality; summarize
+  relevant distance, permit, restriction, and facility information; and link
+  to each route's generated detail page. This must be graph-backed: geographic
+  proximity, line intersection, or a basemap label alone never qualifies a
+  route as reaching the objective. The interaction must work with pointer,
+  keyboard, and mobile tap/bottom-sheet controls and preserve the ordinary
+  feature-selection and dismissal behavior above.
 - Support a responsive full-viewport map mode, including safe-area-aware mobile
   controls, exit back to the embedded page, a separate reset-view action, and
   preservation of center, zoom, visible layers, and selected feature across the
