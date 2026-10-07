@@ -32,7 +32,7 @@ PRIMARY_NAV = (
     ("Parks", "/parks/"),
     ("Trails", "/trails/"),
     ("Camping", "/camping/"),
-    ("Peaks", "/peaks/"),
+    ("Peaks and passes", "/peaks/"),
     ("How it works", "/how-it-works/"),
     ("Changes", "/changes/"),
     ("Search", "/search/"),
@@ -57,9 +57,9 @@ DIRECTORIES = {
                   "equestrian_campsite_area", "equestrian_group_campsite"),
     },
     "peaks": {
-        "title": "Peaks",
-        "description": "Browse published summits and peaks.",
-        "kinds": ("peak",),
+        "title": "Peaks and passes",
+        "description": "Browse published summits, peaks, and mountain passes.",
+        "kinds": ("peak", "pass", "mountain_pass"),
     },
 }
 DEL_VALLE_SCOPES = (
