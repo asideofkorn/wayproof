@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trail-condition-20260826",
+    "evidence_id": "evidence-taboose-trail-condition-20260826",
+    "notes": "",
+    "observation_id": "observation-taboose-trail-condition-20260826",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

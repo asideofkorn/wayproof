@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-release-time-wording",
+    "evidence_id": "evidence-taboose-release-time-wording",
+    "notes": "",
+    "observation_id": "observation-taboose-release-time-wording",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

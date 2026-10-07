@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Taboose Pass Trail overview: the route ascends Taboose Creek canyon from the Owens Valley between Cardinal and Goodale mountains, gains more than 6,000 feet, crosses Taboose Pass and continues to the JMT in Kings Canyon. The pass is a common destination.",
+    "observation_id": "observation-taboose-trail-description",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

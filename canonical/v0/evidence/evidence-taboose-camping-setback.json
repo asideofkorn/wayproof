@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camping-setback",
+    "evidence_id": "evidence-taboose-camping-setback",
+    "notes": "",
+    "observation_id": "observation-taboose-camping-setback",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

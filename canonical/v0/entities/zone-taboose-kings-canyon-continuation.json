@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "zone-taboose-kings-canyon-continuation",
+    "kind": "zone",
+    "name": "Taboose Pass western continuation in Kings Canyon"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "place-taboose-pass",
+    "kind": "pass",
+    "name": "Taboose Pass"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

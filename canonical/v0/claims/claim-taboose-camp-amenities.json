@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-amenities",
+    "evidence_ids": [
+      "evidence-taboose-camp-amenities"
+    ],
+    "predicate": "shared_facilities",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "fire_rings": true,
+      "grills": true,
+      "hookups": false,
+      "larger_rv_accommodation": "published; site fit requires check",
+      "showers": false,
+      "stream_fishing": true,
+      "tables": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

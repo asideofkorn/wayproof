@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-day-permit",
+    "evidence_ids": [
+      "evidence-taboose-day-permit"
+    ],
+    "predicate": "day_use_permit_policy",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "qualification": "general trail-page statement; camping-equipment order may apply",
+      "required": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

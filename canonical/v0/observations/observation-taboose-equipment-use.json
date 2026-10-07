@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo Wilderness Use order item 9 prohibits wagons, carts and other vehicles within wilderness. This is not a motor-vehicle ban on the access road.",
+    "observation_id": "observation-taboose-equipment-use",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-use-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

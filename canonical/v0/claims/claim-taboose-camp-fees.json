@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-fees",
+    "evidence_ids": [
+      "evidence-taboose-camp-fees"
+    ],
+    "predicate": "fees",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "additional_vehicle_per_night_usd": 5,
+      "basis": "campground stay; not a trailhead fee",
+      "payment": [
+        "cash",
+        "credit card"
+      ],
+      "per_vehicle_per_night_usd": 14,
+      "requires_current_check": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

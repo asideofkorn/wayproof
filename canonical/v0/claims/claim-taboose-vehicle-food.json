@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-vehicle-food",
+    "evidence_ids": [
+      "evidence-taboose-vehicle-food"
+    ],
+    "predicate": "vehicle_food_storage_guidance",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "parking_capacity": "unknown",
+      "parking_fee": "unknown",
+      "recommendation": "secure food and scented items in vehicle trunk; cover ice chests"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

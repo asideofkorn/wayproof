@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Signed order 05-04-50-25-04 page 1 exception 3 permits specified portable stoves/lanterns for holders of a valid wilderness or California campfire permit; neither permit waives campfire prohibitions.",
+    "observation_id": "observation-taboose-stove-exception",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-fire-order"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

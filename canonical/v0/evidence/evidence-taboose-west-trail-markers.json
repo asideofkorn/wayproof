@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-trail-markers",
+    "evidence_id": "evidence-taboose-west-trail-markers",
+    "notes": "",
+    "observation_id": "observation-taboose-west-trail-markers",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

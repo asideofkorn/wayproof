@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-cross-boundary-recheck",
+    "evidence_ids": [
+      "evidence-taboose-cross-boundary-recheck"
+    ],
+    "predicate": "pretrip_current_conditions_recheck",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "required": true,
+      "topics": [
+        "entry agency permit",
+        "park food, pet, stock, camping and fire rules"
+      ],
+      "western_zone_id": "zone-taboose-kings-canyon-continuation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

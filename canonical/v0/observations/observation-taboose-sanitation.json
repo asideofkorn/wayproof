@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo regulations: bury solid human waste 6-8 inches deep at least 100 feet from water or camps; dispose of wash water at least 100 feet away and pack out trash.",
+    "observation_id": "observation-taboose-sanitation",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-regulations"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

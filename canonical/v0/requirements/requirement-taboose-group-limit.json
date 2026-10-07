@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "Keep a Taboose wilderness party to at most 15 people; separate permits cannot combine to evade the limit. Order exemptions require specific authorization or official duty.",
+    "requirement_id": "requirement-taboose-group-limit",
+    "rule_id": "rule-taboose-group-limit"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.inyocounty.us/services/public-works/news/inyo-county-road-openclosed-status",
+    "publisher": "Inyo County Public Works",
+    "source_id": "source-taboose-roads"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-stage1",
+    "evidence_ids": [
+      "evidence-taboose-stage1"
+    ],
+    "predicate": "seasonal_fire_restrictions",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-06-22"
+    },
+    "value": {
+      "order": "05-04-50-26-23",
+      "prohibited": "fire, campfire, stove fire and charcoal outside listed developed sites",
+      "scope": "Inyo National Forest; not county campground or NPS by inference",
+      "stove_exception": "California Campfire Permit plus pressurized liquid petroleum/LPG stove or lantern with shutoff valve"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

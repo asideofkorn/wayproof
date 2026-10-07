@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-topology-context",
+    "evidence_ids": [
+      "evidence-taboose-west-topology-context"
+    ],
+    "predicate": "mapped_continuation_context",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "edition": "2014 planning atlas",
+      "map_panel": "Mt. Pinchot, printed page 11, PDF page 13",
+      "not_imported_as_route": true,
+      "western_branching": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

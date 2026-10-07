@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS Getting There directs visitors west from US 395 about 12 miles south of Big Pine, approximately six miles along rough, bumpy Taboose Creek Road to its end.",
+    "observation_id": "observation-taboose-road-directions",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.fs.usda.gov/sites/nfs/files/r05/inyo/publication/alerts/25-05-50-25-04%20Exhibits%20B-S%20-%20June%202025.pdf",
+    "publisher": "USDA Forest Service, Inyo National Forest",
+    "source_id": "source-taboose-fire-map"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

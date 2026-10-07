@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "SEKI Wilderness Stewardship Plan Stock Regulations Atlas part 2, Mt. Pinchot panel shows Taboose Pass on the park boundary, a branching trail toward the JMT and Bench Lake area, and a hatched stock restriction area. This historical map supports context, not current stock permission.",
+    "observation_id": "observation-taboose-west-topology-context",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-nps-atlas"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

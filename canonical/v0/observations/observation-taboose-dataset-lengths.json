@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS 3304 source attributes in connected order: segment_length 0.018, 2.3639, 1.7595, 3.4732; gis_miles 0.019, 2.243, 1.704, 3.316; terminal emp 7.6146. These differ from the approximate 6.5-mile guide and are not silently substituted.",
+    "observation_id": "observation-taboose-dataset-lengths",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

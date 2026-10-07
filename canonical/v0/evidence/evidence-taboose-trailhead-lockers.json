@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trailhead-lockers",
+    "evidence_id": "evidence-taboose-trailhead-lockers",
+    "notes": "",
+    "observation_id": "observation-taboose-trailhead-lockers",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

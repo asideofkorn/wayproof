@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "trailhead-taboose-pass",
+    "kind": "trailhead",
+    "name": "Taboose Pass Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

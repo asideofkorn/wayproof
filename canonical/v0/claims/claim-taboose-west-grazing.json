@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-grazing",
+    "evidence_ids": [
+      "evidence-taboose-west-grazing"
+    ],
+    "predicate": "stock_grazing_restriction",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "route_suitability": "not established by grazing permission",
+      "seasonal_opening": "requires current check",
+      "taboose_pass_area": "open to grazing except a 12-acre wet meadow at 11,000 feet"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

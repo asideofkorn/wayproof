@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-day-equipment-permit",
+    "question": "Does a day trip carrying a stove or bear canister require a wilderness permit?",
+    "reason": "Scope conflict: trail-page day-use exemption is unqualified, but the active order includes possession of listed equipment without an overnight condition. Day hiking is not represented as unconditional permit clearance; ask the Inyo permit office for interpretation. No new equipment vocabulary or exemption is invented.",
+    "related_ids": [
+      "route-taboose-pass",
+      "claim-taboose-day-permit",
+      "claim-taboose-equipment-permit",
+      "claim-taboose-overnight-permit"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

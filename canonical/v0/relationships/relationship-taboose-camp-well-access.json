@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-camp-well"
+    ],
+    "object_id": "facility-taboose-camp-well",
+    "predicate": "provides_access_to",
+    "relationship_id": "relationship-taboose-camp-well-access",
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-overnight-permit",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Obtain and carry a signed Inyo wilderness permit for the Taboose entry date and trail for an overnight trip.",
+    "rule_id": "rule-taboose-overnight-permit",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

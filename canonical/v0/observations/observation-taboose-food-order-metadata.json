@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Food and Refuse Storage page gives alert start 2023 and number 23-03, but embedded effective text starts June 18, 2025 and linked filename uses 25-03. These metadata disagree.",
+    "observation_id": "observation-taboose-food-order-metadata",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-food"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-pass-display-point",
+    "evidence_id": "evidence-taboose-pass-display-point",
+    "notes": "",
+    "observation_id": "observation-taboose-pass-display-point",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

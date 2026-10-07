@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-permit-cancellation",
+    "evidence_id": "evidence-taboose-permit-cancellation",
+    "notes": "",
+    "observation_id": "observation-taboose-permit-cancellation",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

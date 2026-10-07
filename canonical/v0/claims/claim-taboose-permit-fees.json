@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-permit-fees",
+    "evidence_ids": [
+      "evidence-taboose-permit-fees"
+    ],
+    "predicate": "wilderness_permit_fee",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "applicability": {
+        "activities": [
+          "hiking"
+        ],
+        "overnight": true
+      },
+      "basis": "one non-Whitney wilderness permit; all ages count; no per-night charge",
+      "currency": "USD",
+      "not_a_trip_total": true,
+      "per_person_usd": 5,
+      "requires_current_check": true,
+      "reservation_usd": 6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

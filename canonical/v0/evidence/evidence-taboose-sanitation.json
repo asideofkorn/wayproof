@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-sanitation",
+    "evidence_id": "evidence-taboose-sanitation",
+    "notes": "",
+    "observation_id": "observation-taboose-sanitation",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

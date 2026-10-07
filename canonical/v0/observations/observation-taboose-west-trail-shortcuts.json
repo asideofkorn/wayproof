@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS General Travel Requirements prohibits trail shortcuts to protect vegetation and reduce erosion.",
+    "observation_id": "observation-taboose-west-trail-shortcuts",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T23:14:00+00:00",
+    "source_id": "source-taboose-nps-rules"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

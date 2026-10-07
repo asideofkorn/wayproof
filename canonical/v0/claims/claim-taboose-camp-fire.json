@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-fire",
+    "evidence_ids": [
+      "evidence-taboose-camp-fire"
+    ],
+    "predicate": "campground_fire_rule",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "only_in": "fire rings",
+      "requires_current_check": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

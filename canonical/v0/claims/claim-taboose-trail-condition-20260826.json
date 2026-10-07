@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trail-condition-20260826",
+    "evidence_ids": [
+      "evidence-taboose-trail-condition-20260826"
+    ],
+    "predicate": "dated_trail_condition",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2026-08-26",
+      "starts_on": "2026-08-26"
+    },
+    "value": {
+      "brush": "overgrown and brushy",
+      "creek_crossings": "washed out",
+      "current_status": "unknown; recheck",
+      "report_date": "2026-08-26",
+      "stock": "not recommended"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

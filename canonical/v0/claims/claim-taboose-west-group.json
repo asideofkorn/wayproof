@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-group",
+    "evidence_ids": [
+      "evidence-taboose-west-group"
+    ],
+    "predicate": "group_size_guidance",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "affiliated_separation_miles": 0.5,
+      "day_hiking": 25,
+      "exceptions": "other named areas and stock have separate limits",
+      "overnight_off_trail": 12,
+      "overnight_on_trail": 15
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-release-clock",
+    "question": "Which clock applies to online releases during daylight saving time?",
+    "reason": "Recreation.gov alternates PST and Pacific Time. Canonical release uses the established America/Los_Angeles vocabulary, with this source wording retained for recheck; no fixed UTC offset is inferred.",
+    "related_ids": [
+      "claim-taboose-release",
+      "claim-taboose-release-time-wording"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

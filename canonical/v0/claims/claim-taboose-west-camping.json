@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-camping",
+    "evidence_ids": [
+      "evidence-taboose-west-camping"
+    ],
+    "predicate": "camping_setback",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "between_25_and_100_feet": "only previously established sites",
+      "never_within_feet_of_water": 25,
+      "surface": "durable; no meadows/vegetation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

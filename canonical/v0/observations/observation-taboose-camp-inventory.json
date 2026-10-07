@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County campground Amenities lists 35 camp spaces; this is an inventory statement, not availability.",
+    "observation_id": "observation-taboose-camp-inventory",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-camp"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

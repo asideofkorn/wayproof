@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-drones",
+    "evidence_ids": [
+      "evidence-taboose-drones"
+    ],
+    "predicate": "wilderness_drone_restriction",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "prohibited": true,
+      "scope": "wilderness"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

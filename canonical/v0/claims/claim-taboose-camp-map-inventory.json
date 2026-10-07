@@ -1,0 +1,33 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-map-inventory",
+    "evidence_ids": [
+      "evidence-taboose-camp-map-inventory"
+    ],
+    "predicate": "mapped_site_inventory",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "count": 36,
+      "edition": "unstated; URL uploaded 2025-05",
+      "facilities": [
+        "restrooms",
+        "trash",
+        "well house",
+        "pay station",
+        "day use"
+      ],
+      "not_georeferenced": true,
+      "numbered_sites": [
+        1,
+        36
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

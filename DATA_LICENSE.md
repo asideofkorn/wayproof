@@ -223,3 +223,21 @@ file is missing.
   (GNIS), public domain
 - Seven unofficially-named summit coordinates (no GNIS entry): peakbagger.com
 - Map tiles: © OpenStreetMap contributors, OpenTopoMap (CC-BY-SA), Esri
+
+### Taboose Pass corridor
+
+`geometry/v0/snapshots/usfs-taboose-pass-20261006.geojson` contains Tier A,
+`public_domain` USDA Forest Service National Forest System Trails data. Four
+complete named 3304 features are joined at identical endpoints (only duplicate
+shared vertices omitted), without snapping, interpolation, rounding or derived
+mileage. Original attributes, IDs, global IDs, source geometry hashes and raw
+query hash are retained. Reviewed endpoint display points are project-created
+assignments supported by the official Independence Area Trails map. Neither
+these points nor the line is a surveyed facility position or navigation product.
+Existing PAD-US John Muir Wilderness and Sequoia/Kings Canyon manager boundaries
+are reused without alteration.
+
+The Taboose source ledger is in `docs/ingestion/taboose.md`. Federal text is
+paraphrased with provenance. Inyo County and ReserveAmerica pages, PDFs, maps
+and screenshots are reference-only artifacts: only factual summaries are
+committed, with no source images, PDFs or website captures redistributed.

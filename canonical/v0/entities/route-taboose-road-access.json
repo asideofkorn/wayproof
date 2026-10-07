@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-taboose-road-access",
+    "kind": "route",
+    "name": "US 395 to Taboose Pass Trailhead"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-trailhead-facilities",
+    "question": "What parking, toilets and potable water are available at the trailhead?",
+    "reason": "Road-end vehicle access and absent bear lockers are evidenced. Parking capacity, fees, designated spaces, toilet inventory and potable taps at the trailhead remain unknown. County campground toilets/well are separate facilities approximately two road miles from US 395, not trailhead amenities.",
+    "related_ids": [
+      "trailhead-taboose-pass",
+      "claim-taboose-road-directions",
+      "claim-taboose-vehicle-food"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

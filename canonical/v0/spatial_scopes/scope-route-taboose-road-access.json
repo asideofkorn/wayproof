@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "route-taboose-road-access",
+    "kind": "route",
+    "scope_id": "scope-route-taboose-road-access"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

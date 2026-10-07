@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-guide-distance",
+    "evidence_ids": [
+      "evidence-taboose-guide-distance"
+    ],
+    "predicate": "published_approach_distance_report",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "edition": "unstated",
+      "endpoint": "trailhead to pass",
+      "navigation_grade": false,
+      "qualifier": "approximate",
+      "reported_one_way_miles": 6.5
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

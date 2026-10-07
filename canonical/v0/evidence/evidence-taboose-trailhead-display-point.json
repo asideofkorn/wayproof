@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trailhead-display-point",
+    "evidence_id": "evidence-taboose-trailhead-display-point",
+    "notes": "",
+    "observation_id": "observation-taboose-trailhead-display-point",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

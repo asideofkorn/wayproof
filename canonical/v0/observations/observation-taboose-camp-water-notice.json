@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County drinking-water notice, pages 1-2, visually read scan: missed May 2026 routine total-coliform sample; quality during that period uncertain. Notice says not an emergency/no action then; table says one sample and June follow-up; narrative says sample will be taken in June, yet distribution date is July 30, 2026.",
+    "observation_id": "observation-taboose-camp-water-notice",
+    "observed_at": "2026-07-30T00:00:00+00:00",
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-water-notice"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

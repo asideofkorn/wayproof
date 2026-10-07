@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-overnight-permit"
+    ],
+    "object_id": "route-taboose-pass",
+    "predicate": "applies_at",
+    "relationship_id": "relationship-taboose-permit-product",
+    "subject_id": "permit-inyo-overnight-wilderness",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

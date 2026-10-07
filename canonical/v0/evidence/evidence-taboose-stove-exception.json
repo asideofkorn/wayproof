@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-stove-exception",
+    "evidence_id": "evidence-taboose-stove-exception",
+    "notes": "",
+    "observation_id": "observation-taboose-stove-exception",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

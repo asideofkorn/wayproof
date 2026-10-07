@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-stove-exception",
+    "evidence_ids": [
+      "evidence-taboose-stove-exception"
+    ],
+    "predicate": "portable_stove_exception",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-10",
+      "starts_on": "2025-06-10"
+    },
+    "value": {
+      "allowed_by_this_order": "gas, jellied petroleum or pressurized liquid fuel portable stove/lantern",
+      "other_orders_still_apply": true,
+      "permit": "valid wilderness permit or California Campfire Permit issued by Forest Service"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

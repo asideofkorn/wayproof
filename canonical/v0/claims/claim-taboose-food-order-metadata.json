@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-food-order-metadata",
+    "evidence_ids": [
+      "evidence-taboose-food-order-metadata"
+    ],
+    "predicate": "published_order_metadata_conflict",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "alert_start": "2023-06-18",
+      "embedded_order_effective_start": "2025-06-18",
+      "end": "2027-06-18",
+      "linked_filename": "05-04-50-25-03",
+      "page_order_number": "05-04-50-23-03"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

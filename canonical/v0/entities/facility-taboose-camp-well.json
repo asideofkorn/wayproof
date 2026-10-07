@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "facility-taboose-camp-well",
+    "kind": "water_source",
+    "name": "Taboose Creek Campground water well"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

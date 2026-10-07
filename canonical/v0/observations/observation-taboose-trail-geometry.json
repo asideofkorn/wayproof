@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS National Forest System Trails, four complete TABOOSE PASS 3304 features: exact shared endpoints form one trailhead-to-pass display chain. Source object/global IDs and original attributes are preserved in the snapshot; map and prose independently establish topology.",
+    "observation_id": "observation-taboose-trail-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

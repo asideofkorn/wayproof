@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-booking-inventory",
+    "evidence_ids": [
+      "evidence-taboose-camp-booking-inventory"
+    ],
+    "predicate": "reserveamerica_campsite_inventory",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "listed_sites": 36,
+      "provider_facility_id": "INYO/1100013",
+      "site_type": "Standard Non-Electric"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

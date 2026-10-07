@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-camp-water-current",
+    "question": "Is campground well water available and suitable for drinking now?",
+    "reason": "Well/map inventory does not prove current water quality. The July 30 notice concerns missed May monitoring and retains prospective June wording; follow-up results are not supplied. It is not evidence of a positive contamination test or a boil-water order. Ask the county for current results and operation.",
+    "related_ids": [
+      "campground-taboose-creek",
+      "claim-taboose-camp-water-notice",
+      "claim-taboose-camp-well"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

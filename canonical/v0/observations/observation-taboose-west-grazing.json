@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS permanent Stock Use and Grazing Restrictions, South Fork Kings/Woods Creek: Taboose Pass area excludes the 12-acre wet meadow at 11,000 feet from grazing. Annual opening and special restrictions still need recheck.",
+    "observation_id": "observation-taboose-west-grazing",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-nps-stock"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

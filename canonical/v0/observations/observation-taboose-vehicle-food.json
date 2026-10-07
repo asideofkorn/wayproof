@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS trailhead-specific recommendation is to secure food/scented items in a vehicle trunk and cover ice chests. It does not publish a parking capacity or fee.",
+    "observation_id": "observation-taboose-vehicle-food",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

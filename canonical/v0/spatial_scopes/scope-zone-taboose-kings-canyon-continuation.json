@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "zone-taboose-kings-canyon-continuation",
+    "kind": "zone",
+    "scope_id": "scope-zone-taboose-kings-canyon-continuation"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

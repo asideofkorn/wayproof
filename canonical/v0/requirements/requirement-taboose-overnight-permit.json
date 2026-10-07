@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "Obtain and carry a signed Inyo wilderness permit for the Taboose entry date and trail for an overnight trip.",
+    "requirement_id": "requirement-taboose-overnight-permit",
+    "rule_id": "rule-taboose-overnight-permit"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

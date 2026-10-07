@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-continuous-travel",
+    "evidence_ids": [
+      "evidence-taboose-continuous-travel"
+    ],
+    "predicate": "cross_jurisdiction_permit_policy",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "break": "new permit from next entry agency, subject to stated long-distance resupply exceptions",
+      "continuous_trip": "one entry-agency permit accepted across adjacent park/forest",
+      "issuer": "entry agency: Inyo for Taboose start",
+      "whitney_exit": "requires Trail Crest exit product/quota if added; outside this route scope"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

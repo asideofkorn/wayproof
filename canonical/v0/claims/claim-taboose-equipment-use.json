@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-equipment-use",
+    "evidence_ids": [
+      "evidence-taboose-equipment-use"
+    ],
+    "predicate": "wilderness_use_restrictions",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "scope": "Inyo wilderness, not the road approach",
+      "wheeled_vehicles": "prohibited under use order"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

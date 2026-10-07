@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-trail-markers",
+    "evidence_ids": [
+      "evidence-taboose-west-trail-markers"
+    ],
+    "predicate": "trail_marker_restriction",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "build_other_trail_markers": false,
+      "build_rock_cairns": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

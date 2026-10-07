@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS General Information explicitly says there are no bear lockers at this trailhead.",
+    "observation_id": "observation-taboose-trailhead-lockers",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-taboose-trail"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

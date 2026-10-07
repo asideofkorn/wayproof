@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Recreation.gov Inyo permit overview says not to leave food/refuse in cars or tents, and to use bear lockers at equipped parking. This differs from the trailhead-specific trunk recommendation at a trailhead without lockers.",
+    "observation_id": "observation-taboose-generic-vehicle-food",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-recreationgov-inyo-wilderness"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-booking-rate",
+    "evidence_ids": [
+      "evidence-taboose-camp-booking-rate"
+    ],
+    "predicate": "published_booking_rate",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "excludes": "discounts, attribute fees, taxes and incremental charges",
+      "nightly_usd": 14,
+      "season": "January 1-December 31, 2026"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

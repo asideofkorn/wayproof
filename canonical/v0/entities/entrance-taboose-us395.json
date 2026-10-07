@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "entrance-taboose-us395",
+    "kind": "route_node",
+    "name": "Taboose Creek Road junction at US 395"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

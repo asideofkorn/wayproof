@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-road-topology"
+    ],
+    "object_id": "trailhead-taboose-pass",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-taboose-road-end",
+    "subject_id": "route-taboose-road-access",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

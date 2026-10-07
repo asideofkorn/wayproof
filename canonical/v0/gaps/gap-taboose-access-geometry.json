@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-access-geometry",
+    "question": "Is there reviewed official geometry and current clearance for the approach road?",
+    "reason": "The named road approach is supported by USFS directions and map, but no reviewed official road polyline or highway-junction coordinates are imported. Trail geometry begins at the trailhead. Exact road jurisdiction divisions, clearance, turnarounds and parking capacity remain unverified.",
+    "related_ids": [
+      "claim-taboose-road-directions",
+      "claim-taboose-road-recheck",
+      "claim-taboose-trail-geometry"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-well",
+    "evidence_ids": [
+      "evidence-taboose-camp-well"
+    ],
+    "predicate": "facility_inventory",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek",
+      "scope-facility-taboose-camp-well"
+    ],
+    "subject_id": "facility-taboose-camp-well",
+    "temporal_scope": null,
+    "value": {
+      "current_operation": "unknown",
+      "type": "water well"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

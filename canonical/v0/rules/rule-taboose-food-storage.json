@@ -1,0 +1,16 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-food-storage",
+    "conditions": [],
+    "consequence": "Store food, refuse and scented items in a bear-resistant container or an allowed counterbalance at least 15 feet high and 10 feet from the trunk; carry a container where suitable trees are absent. Recheck mapped storage zones and park continuation rules.",
+    "rule_id": "rule-taboose-food-storage",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

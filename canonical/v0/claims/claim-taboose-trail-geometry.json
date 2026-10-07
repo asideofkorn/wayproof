@@ -1,0 +1,44 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-trail-geometry",
+    "evidence_ids": [
+      "evidence-taboose-trail-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass",
+      "scope-route-segment-taboose-trailhead-pass"
+    ],
+    "subject_id": "route-segment-taboose-trailhead-pass",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "distance_policy": "No canonical distance derived from coordinates or summed from service attributes.",
+      "end_coordinate": {
+        "latitude": 36.98475858592664,
+        "longitude": -118.41407895936544
+      },
+      "geometry_snapshot": {
+        "feature_id": "usfs-taboose-trailhead-pass",
+        "path": "geometry/v0/snapshots/usfs-taboose-pass-20261006.geojson",
+        "sha256": "df679516cb0f55f48e3aae4ceaf84b5b169e7a408882ceb6a22035720d240f3e"
+      },
+      "navigation_grade": false,
+      "route_role": "official_mainline",
+      "source_coordinate_accuracy": "unknown",
+      "source_feature_ids": [
+        9575473,
+        9574682,
+        9575492,
+        9575315
+      ],
+      "start_coordinate": {
+        "latitude": 37.009548972348696,
+        "longitude": -118.32735760836171
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

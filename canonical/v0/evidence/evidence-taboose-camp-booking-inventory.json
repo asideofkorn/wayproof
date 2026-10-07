@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camp-booking-inventory",
+    "evidence_id": "evidence-taboose-camp-booking-inventory",
+    "notes": "",
+    "observation_id": "observation-taboose-camp-booking-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

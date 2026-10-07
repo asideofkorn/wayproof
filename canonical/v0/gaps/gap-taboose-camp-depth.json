@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-camp-depth",
+    "question": "What campsite-specific fit, booking terms and fishing restrictions apply?",
+    "reason": "Normal-depth aggregate inventory, mapped facilities, fees and reservation channel are covered. Individual 36-site profiles, advance booking window/cancellation detail, current site availability and CDFW water-specific fishing regulations remain deferred. County fishing season summary is not promoted as the complete fishing law.",
+    "related_ids": [
+      "campground-taboose-creek",
+      "claim-taboose-camp-booking-inventory",
+      "claim-taboose-camp-booking"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

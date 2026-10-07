@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-western-scope",
+    "question": "What applies if continuing west of Taboose Pass?",
+    "reason": "NPS restrictions and stock-area context are represented separately. Onward route, camps, daily stock opening, food-storage zones, and exact branch choices require itinerary-specific review. No NPS prohibition is projected onto the entire Inyo approach.",
+    "related_ids": [
+      "zone-taboose-kings-canyon-continuation",
+      "claim-taboose-west-jurisdiction",
+      "claim-taboose-cross-boundary-recheck"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

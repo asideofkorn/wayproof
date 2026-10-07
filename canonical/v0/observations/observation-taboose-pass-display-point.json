@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "USFS named 3304 chain pass endpoint matched against the Independence Area Trails map; retained unmodified as a display point, not a surveyed facility position.",
+    "observation_id": "observation-taboose-pass-display-point",
+    "observed_at": null,
+    "observer": "Wayproof primary-source text, table and visual map review",
+    "retrieved_at": "2026-10-06T21:40:00+00:00",
+    "source_id": "source-usfs-emigrant-nfs-trail-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

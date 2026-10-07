@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-camping-setback",
+    "evidence_ids": [
+      "evidence-taboose-camping-setback"
+    ],
+    "predicate": "camping_setback",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    },
+    "value": {
+      "from": [
+        "lakeshore",
+        "stream",
+        "National Forest System trail"
+      ],
+      "minimum_feet": 100,
+      "order": "05-04-50-25-02"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

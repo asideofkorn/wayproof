@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-trail-shortcuts",
+    "evidence_id": "evidence-taboose-west-trail-shortcuts",
+    "notes": "",
+    "observation_id": "observation-taboose-west-trail-shortcuts",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}
