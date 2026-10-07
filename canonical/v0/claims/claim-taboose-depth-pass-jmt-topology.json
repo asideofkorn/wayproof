@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-pass-jmt-topology",
+    "evidence_ids": [
+      "evidence-taboose-depth-pass-jmt-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-pass-jmt",
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "route-segment-taboose-west-pass-jmt",
+    "temporal_scope": null,
+    "value": {
+      "directionality": "bidirectional",
+      "distance_miles": null,
+      "distance_status": "not_published_on_reviewed_map",
+      "end_node_id": "junction-taboose-jmt",
+      "mode": "hiking on mapped maintained trails",
+      "route_role": "official_mainline",
+      "start_node_id": "place-taboose-pass"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS Locations of Food Storage Boxes reviewed: no Taboose or Bench Lake listing. Page warns boxes may be full or removed. Absence from listing is not a verified no-box inventory.",
+    "observation_id": "observation-taboose-depth-west-box-inventory",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-boxes"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2026 Kings Canyon stock map labels 46-4 Bench Lake 28sn; legend defines total grazing rights in a season. This is separate from the guide per-party limit and does not establish remaining capacity.",
+    "observation_id": "observation-taboose-depth-bench-annual-capacity",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-nps-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

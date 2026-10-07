@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-food-season-main",
+    "evidence_ids": [
+      "evidence-taboose-depth-food-season-main"
+    ],
+    "predicate": "published_canister_zone_season",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "named_zone_season": "May 1 through October 31",
+      "taboose_zone_membership": "not determined"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2026 NPS map locates this western-route feature within Kings Canyon National Park.",
+    "observation_id": "observation-taboose-depth-lake-bench-kings-canyon-jurisdiction",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-nps-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

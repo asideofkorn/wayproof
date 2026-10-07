@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-009-pets",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-009-pets"
+    ],
+    "predicate": "campsite_pet_policy",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-009"
+    ],
+    "subject_id": "campsite-taboose-creek-009",
+    "temporal_scope": null,
+    "value": {
+      "pets_allowed": true,
+      "subject_to": "county leash, posted exceptions and vaccination rules"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

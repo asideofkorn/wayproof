@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Site 006 detail table: Back-In gravel driveway; maximum vehicle length, equipment length and site length each 25; width 15. Page does not label measurement units. Listed categories RV, tent and trailer; confirm actual fit with operator.",
+    "observation_id": "observation-taboose-depth-site-006-fit",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-site-006"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

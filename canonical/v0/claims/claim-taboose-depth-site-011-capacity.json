@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-011-capacity",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-011-capacity"
+    ],
+    "predicate": "campsite_occupancy_limits",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-011"
+    ],
+    "subject_id": "campsite-taboose-creek-011",
+    "temporal_scope": null,
+    "value": {
+      "maximum_people": 6,
+      "maximum_vehicles": 2,
+      "minimum_people": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

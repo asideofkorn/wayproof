@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-firearms",
+    "evidence_ids": [
+      "evidence-taboose-depth-camp-firearms"
+    ],
+    "predicate": "firearm_use_restriction",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "possession_policy": "not supplied here",
+      "use_prohibited": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

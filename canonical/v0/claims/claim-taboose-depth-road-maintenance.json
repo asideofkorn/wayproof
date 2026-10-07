@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-road-maintenance",
+    "evidence_ids": [
+      "evidence-taboose-depth-road-maintenance"
+    ],
+    "predicate": "published_road_maintenance_inventory",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass",
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access"
+    ],
+    "subject_id": "road-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "exact_jurisdiction_breaks": "unknown",
+      "inyo_mms": "Yes",
+      "inyo_name": "TABOOSE CREEK RD",
+      "ownership_or_easement_determined": false,
+      "published_from": "3018 Tinnemaha",
+      "published_to": "Nat’l Forest Bo (source abbreviation)",
+      "road_number": "3022",
+      "surface": "UNPAVED"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

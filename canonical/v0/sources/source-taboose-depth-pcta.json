@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://explore.pcta.org/trailheads/taboose-pass-trailhead",
+    "publisher": "Pacific Crest Trail Association",
+    "source_id": "source-taboose-depth-pcta"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

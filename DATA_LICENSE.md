@@ -241,3 +241,20 @@ The Taboose source ledger is in `docs/ingestion/taboose.md`. Federal text is
 paraphrased with provenance. Inyo County and ReserveAmerica pages, PDFs, maps
 and screenshots are reference-only artifacts: only factual summaries are
 committed, with no source images, PDFs or website captures redistributed.
+
+### Taboose western routes and campsite inventory
+
+`geometry/v0/snapshots/nps-taboose-west-20261007.geojson` contains selected
+public-domain NPS maintained-trail features from IRMA reference 2253434, published
+2018. Complete features are reoriented, joined only at identical endpoints and
+reprojected from NAD83 UTM Zone 11N to WGS84. Original attributes, accuracy,
+record indices, source hashes and processing limits accompany the snapshot.
+Indices are local to the hashed archive, not invented durable NPS identifiers.
+No canonical hiking mileage is derived from the geometry.
+
+County road GIS was consulted for factual maintenance identity but is not
+redistributed: the reviewed county terms did not supply the explicit compatible
+license required for local-government geometry by this policy. County,
+ReserveAmerica and PCTA source artifacts remain reference-only; only attributed
+factual summaries are committed. See `docs/ingestion/taboose-depth.md` for the
+individual-site and source-disposition audit.

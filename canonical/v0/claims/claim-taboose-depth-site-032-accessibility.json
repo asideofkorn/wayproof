@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-032-accessibility",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-032-accessibility"
+    ],
+    "predicate": "provider_accessibility_statement",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-032"
+    ],
+    "subject_id": "campsite-taboose-creek-032",
+    "temporal_scope": null,
+    "value": {
+      "ADA_accessible": "Y",
+      "provider_statement_only": true,
+      "specific_accessibility_features": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

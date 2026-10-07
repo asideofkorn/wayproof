@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-pass-jmt-topology"
+    ],
+    "object_id": "junction-taboose-jmt",
+    "predicate": "ends_at",
+    "relationship_id": "relationship-taboose-depth-pass-jmt-end",
+    "subject_id": "route-segment-taboose-west-pass-jmt",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

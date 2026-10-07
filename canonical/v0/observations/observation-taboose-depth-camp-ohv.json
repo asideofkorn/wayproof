@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County Camping Information permits OHV operation in county campgrounds except Diaz Lake and requires speed under 5 mph. It supplies no permission for adjacent wilderness or other roads.",
+    "observation_id": "observation-taboose-depth-camp-ohv",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-county-rules"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

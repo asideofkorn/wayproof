@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-lake-bench-kings-canyon-jurisdiction",
+    "evidence_ids": [
+      "evidence-taboose-depth-lake-bench-kings-canyon-jurisdiction"
+    ],
+    "predicate": "mapped_jurisdiction",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon"
+    ],
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": null,
+    "value": {
+      "park": "Kings Canyon National Park",
+      "zone_id": "zone-taboose-kings-canyon-continuation"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

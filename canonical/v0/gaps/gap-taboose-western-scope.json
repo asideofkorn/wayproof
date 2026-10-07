@@ -2,12 +2,13 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-taboose-western-scope",
-    "question": "What applies if continuing west of Taboose Pass?",
-    "reason": "NPS restrictions and stock-area context are represented separately. Onward route, camps, daily stock opening, food-storage zones, and exact branch choices require itinerary-specific review. No NPS prohibition is projected onto the entire Inyo approach.",
+    "question": "What western route coverage and limits are now available?",
+    "reason": "Mapped hiking topology now reaches Bench Lake, Mather Pass and Pinchot Pass from the existing Taboose trailhead via JMT junctions, with unmodified-source NPS display geometry and scoped park rules. Distances remain unknown where only GIS lengths exist. Exact camp/water spurs, ranger-station access, any historical map alternate not corroborated by 2026 map, full stock suitability and routes beyond these endpoints remain unmodeled.",
     "related_ids": [
       "zone-taboose-kings-canyon-continuation",
-      "claim-taboose-west-jurisdiction",
-      "claim-taboose-cross-boundary-recheck"
+      "route-taboose-bench-lake",
+      "route-taboose-mather-pass",
+      "route-taboose-pinchot-pass"
     ]
   },
   "record_type": "gap",

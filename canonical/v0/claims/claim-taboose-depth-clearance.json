@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-clearance",
+    "evidence_ids": [
+      "evidence-taboose-depth-clearance"
+    ],
+    "predicate": "partner_vehicle_access_guidance",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass",
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access"
+    ],
+    "subject_id": "road-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "current_clearance": "unknown",
+      "not_current_passability_assurance": true,
+      "surface": "paved at US 395, then gravel",
+      "vehicle_guidance": "generally passenger vehicle accessible"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

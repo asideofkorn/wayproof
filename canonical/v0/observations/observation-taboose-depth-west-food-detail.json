@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS Wilderness Food Storage: portable containers highly recommended; boxes conditional on availability outside required-container areas, shared and uncached; counterbalance only outside required areas when other methods unavailable.",
+    "observation_id": "observation-taboose-depth-west-food-detail",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-food"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

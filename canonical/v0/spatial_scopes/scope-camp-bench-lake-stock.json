@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "camp-bench-lake-stock",
+    "kind": "backcountry_camp",
+    "scope_id": "scope-camp-bench-lake-stock"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

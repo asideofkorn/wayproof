@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-west-box-inventory",
+    "evidence_ids": [
+      "evidence-taboose-depth-west-box-inventory"
+    ],
+    "predicate": "food_box_inventory_review",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "actual_box_presence": "unknown",
+      "do_not_rely_on_boxes": true,
+      "taboose_or_bench_named_in_list": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

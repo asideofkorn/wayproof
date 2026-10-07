@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-forage",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-forage"
+    ],
+    "predicate": "stock_area_planning",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon"
+    ],
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": null,
+    "value": {
+      "forage_area": "46-4",
+      "maximum_grazing_nights_per_party": 14,
+      "maximum_grazing_stock_per_party": 20,
+      "quality": "Poor",
+      "suitable_overnight_feed": "less than five head (guide quality definition)"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

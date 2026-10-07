@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "campsite-taboose-creek-025",
+    "kind": "campsite",
+    "scope_id": "scope-campsite-taboose-creek-025"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

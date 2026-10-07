@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-depth-camp-rv-claims",
+    "question": "Which vehicle dimensions can be used for booking?",
+    "reason": "County aggregate pages use 30-foot and 45-foot accommodation statements. Individual site provider length values vary 25–60 but omit units. Preserve each statement and confirm the chosen site and maneuvering clearance; do not project aggregate accommodation onto every site.",
+    "related_ids": [
+      "campground-taboose-creek",
+      "claim-taboose-depth-camp-rv-general",
+      "claim-taboose-depth-camp-rv-fees"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.reserveamerica.com/explore/taboose-creek-campground/INYO/1100013/1099/campsite-booking",
+    "publisher": "ReserveAmerica / Inyo County",
+    "source_id": "source-taboose-depth-site-029"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

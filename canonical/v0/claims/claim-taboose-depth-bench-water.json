@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-water",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-water"
+    ],
+    "predicate": "natural_water_planning",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon"
+    ],
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": null,
+    "value": {
+      "drinking_quality": "unknown",
+      "flow_or_collection_point": "not inventoried",
+      "route_access": "Bench Lake spur",
+      "treatment_needed": "check NPS guidance",
+      "type": "lake"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

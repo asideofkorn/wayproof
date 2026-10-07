@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Signed PDF page 1, visually reviewed: Lesley Yen signed June 17, 2025; effective June 18, 2025–June 18, 2027. Attached Exhibit A pages retain 2023 order headers. This resolves signed-cover dates, not inconsistent attachment labeling.",
+    "observation_id": "observation-taboose-depth-signed-food-order",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-food-signed"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

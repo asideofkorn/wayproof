@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-pass-jmt-geometry",
+    "evidence_ids": [
+      "evidence-taboose-depth-pass-jmt-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-pass-jmt",
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "route-segment-taboose-west-pass-jmt",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "distance_policy": "Source GIS length fields preserved as reports; no canonical hiking mileage inferred.",
+      "end_coordinate": {
+        "latitude": 36.962093140560725,
+        "longitude": -118.4387412801041
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-taboose-pass-jmt",
+        "path": "geometry/v0/snapshots/nps-taboose-west-20261007.geojson",
+        "sha256": "bda998c5fa36847ed94b2f077620187709e158ed8e200eea519be65d94c572d2"
+      },
+      "navigation_grade": false,
+      "source_LengthMile_attributes": [
+        2.3577067851
+      ],
+      "source_coordinate_accuracy": "retained per feature: >=5m and <14m or Unknown",
+      "source_coordinate_reference_system": "EPSG:26911",
+      "start_coordinate": {
+        "latitude": 36.984748662104394,
+        "longitude": -118.41405356536332
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

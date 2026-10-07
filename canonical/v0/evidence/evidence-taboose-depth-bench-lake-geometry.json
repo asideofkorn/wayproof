@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-lake-geometry",
+    "evidence_id": "evidence-taboose-depth-bench-lake-geometry",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-bench-lake-geometry",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS meadow opening table, updated September 22, 2026: zone 46, forage 1–6 Upper South Fork Kings/Above JMT Junction, July 15 tentative opening; all dates subject to change. Not blanket grazing permission.",
+    "observation_id": "observation-taboose-depth-stock-opening",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-grazing"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

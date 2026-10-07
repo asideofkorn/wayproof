@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "coverage": {
+      "ends_on": null,
+      "equipment_ids": [],
+      "participant_ids": [],
+      "stage_ids": [],
+      "starts_on": null
+    },
+    "description": "No campfires above 10000 feet in Kings Canyon; check additional current restrictions.",
+    "requirement_id": "requirement-taboose-depth-west-fire",
+    "rule_id": "rule-taboose-depth-west-fire"
+  },
+  "record_type": "requirement",
+  "schema_version": 0
+}

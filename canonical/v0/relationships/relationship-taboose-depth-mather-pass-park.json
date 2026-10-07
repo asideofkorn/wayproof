@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-mather-pass-topology"
+    ],
+    "object_id": "park-sequoia-kings-canyon",
+    "predicate": "traverses",
+    "relationship_id": "relationship-taboose-depth-mather-pass-park",
+    "subject_id": "route-segment-taboose-west-mather-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

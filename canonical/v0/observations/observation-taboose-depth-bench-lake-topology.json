@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2026 Kings Canyon Stock Use and Grazing Regulations map, Taboose/Bench Lake/Upper Basin panel, visually reviewed with NPS maintained-trails From_Junc/To_Junc records: Bench Lake spur from JMT. Mapped trail connections support both directions; no route mileage calculated from coordinates.",
+    "observation_id": "observation-taboose-depth-bench-lake-topology",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-nps-map"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

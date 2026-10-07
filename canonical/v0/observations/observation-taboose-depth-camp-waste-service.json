@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County Fees & Rates says black/gray removal service is available in spring/summer through the park attendant; it does not identify an onsite dump station or service schedule at Taboose.",
+    "observation_id": "observation-taboose-depth-camp-waste-service",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-county-fees"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

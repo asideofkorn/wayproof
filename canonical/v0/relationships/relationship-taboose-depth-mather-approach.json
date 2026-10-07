@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-mather-route"
+    ],
+    "object_id": "route-taboose-mather-pass",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-taboose-depth-mather-approach",
+    "subject_id": "place-mather-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

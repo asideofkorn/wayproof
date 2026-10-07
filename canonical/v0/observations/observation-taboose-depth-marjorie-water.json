@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2026 NPS Stock Users Guide p14, with p3 definitions and 2026 grazing map: 46-6 Lake Marjorie, along southward JMT corridor on map: very limited meadow; no stock camps or drift fences. Lake proximity does not establish a collection spur.",
+    "observation_id": "observation-taboose-depth-marjorie-water",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-stock-guide"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-depth-western-facility-spurs",
+    "question": "How are individual camps, water and ranger services reached?",
+    "reason": "Bench Lake trail reaches the lake; southwest stock camp is described but no exact access spur is evidenced. South Fork crossing camps and Lake Marjorie water are described, not mapped as precise facilities. Bench Lake ranger station is mapped but service season, occupancy, toilet/water access and spur remain unknown. Do not assume a staffed station, developed toilet, food box or safe crossing.",
+    "related_ids": [
+      "zone-taboose-kings-canyon-continuation",
+      "lake-bench-kings-canyon",
+      "camp-bench-lake-stock",
+      "route-segment-taboose-west-mather-pass",
+      "route-segment-taboose-west-pinchot-pass"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

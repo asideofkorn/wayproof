@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.inyocounty.us/services/parks-recreation/camping-information",
+    "publisher": "Inyo County Parks and Recreation",
+    "source_id": "source-taboose-depth-county-rules"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

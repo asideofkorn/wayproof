@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "2026 NPS stock guide page 14 and map identify Bench Lake at the Bench Lake trail destination. Lake presence does not establish a potable collection point or present water quality.",
+    "observation_id": "observation-taboose-depth-bench-water",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-stock-guide"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

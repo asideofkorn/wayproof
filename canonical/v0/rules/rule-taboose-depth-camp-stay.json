@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-stay",
+    "conditions": [
+      {
+        "dimension": "activity.overnight",
+        "operator": "equals",
+        "value": true
+      }
+    ],
+    "consequence": "Observe county stay limit; obtain applicable extended-stay permit if eligible.",
+    "rule_id": "rule-taboose-depth-camp-stay",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

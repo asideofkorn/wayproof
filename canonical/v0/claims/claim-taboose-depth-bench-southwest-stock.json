@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-southwest-stock",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-southwest-stock"
+    ],
+    "predicate": "stock_area_planning",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon"
+    ],
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": null,
+    "value": {
+      "all_stock_access": "closed",
+      "forage_area": "47-5",
+      "reason": "no maintained trails"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

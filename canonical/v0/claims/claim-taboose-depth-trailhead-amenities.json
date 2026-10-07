@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-trailhead-amenities",
+    "evidence_ids": [
+      "evidence-taboose-depth-trailhead-amenities"
+    ],
+    "predicate": "partner_trailhead_amenities",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "not_campground_inventory": true,
+      "published_amenities": "None available",
+      "toilet_or_potable_tap_verified_by_manager": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

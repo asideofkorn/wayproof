@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-lake-topology",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-lake-topology"
+    ],
+    "predicate": "mapped_route_connector",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-bench-lake",
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "route-segment-taboose-west-bench-lake",
+    "temporal_scope": null,
+    "value": {
+      "directionality": "bidirectional",
+      "distance_miles": null,
+      "distance_status": "not_published_on_reviewed_map",
+      "end_node_id": "lake-bench-kings-canyon",
+      "mode": "hiking on mapped maintained trails",
+      "route_role": "official_mainline",
+      "start_node_id": "junction-bench-lake-jmt"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Inyo County August 11, 2026 road status PDF, page 1, reviewed: no Taboose entry. A selective closure report omitting the road does not establish that it is open or passable.",
+    "observation_id": "observation-taboose-depth-road-report",
+    "observed_at": "2026-08-11T00:00:00+00:00",
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-road-report"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

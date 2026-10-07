@@ -1,0 +1,24 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-taboose-meadow",
+    "evidence_ids": [
+      "evidence-taboose-depth-taboose-meadow"
+    ],
+    "predicate": "stock_area_planning",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": null,
+    "value": {
+      "drift_fences_in_described_area": false,
+      "exclusion_elevation_feet_in_guide": 10920,
+      "forage_area": "46-5",
+      "grazing_exclusion_acres": 12,
+      "stock_camps_in_described_area": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

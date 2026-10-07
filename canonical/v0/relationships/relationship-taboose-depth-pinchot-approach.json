@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-pinchot-route"
+    ],
+    "object_id": "route-taboose-pinchot-pass",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-taboose-depth-pinchot-approach",
+    "subject_id": "place-pinchot-pass",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

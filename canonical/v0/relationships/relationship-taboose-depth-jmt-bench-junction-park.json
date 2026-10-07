@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-jmt-bench-junction-topology"
+    ],
+    "object_id": "park-sequoia-kings-canyon",
+    "predicate": "traverses",
+    "relationship_id": "relationship-taboose-depth-jmt-bench-junction-park",
+    "subject_id": "route-segment-taboose-west-jmt-bench-junction",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

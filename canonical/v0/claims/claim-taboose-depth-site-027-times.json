@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-027-times",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-027-times"
+    ],
+    "predicate": "campsite_checkin_checkout",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-027"
+    ],
+    "subject_id": "campsite-taboose-creek-027",
+    "temporal_scope": null,
+    "value": {
+      "checkin_local": "13:00",
+      "checkout_local": "10:00"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

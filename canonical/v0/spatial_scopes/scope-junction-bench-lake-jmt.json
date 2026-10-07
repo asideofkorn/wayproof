@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "junction-bench-lake-jmt",
+    "kind": "junction",
+    "scope_id": "scope-junction-bench-lake-jmt"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

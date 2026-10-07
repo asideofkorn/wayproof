@@ -1,0 +1,31 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-mather-route",
+    "evidence_ids": [
+      "evidence-taboose-depth-mather-route"
+    ],
+    "predicate": "route_description",
+    "spatial_scope_ids": [
+      "scope-route-taboose-mather-pass",
+      "scope-route-taboose-pass",
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "route-taboose-mather-pass",
+    "temporal_scope": null,
+    "value": {
+      "current_conditions": "unknown",
+      "directionality": "bidirectional",
+      "distance_complete": false,
+      "east_approach_route_id": "route-taboose-pass",
+      "entry_id": "trailhead-taboose-pass",
+      "objective_id": "place-mather-pass",
+      "western_segment_ids": [
+        "route-segment-taboose-west-pass-jmt",
+        "route-segment-taboose-west-mather-pass"
+      ]
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

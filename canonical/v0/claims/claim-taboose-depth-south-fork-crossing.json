@@ -1,0 +1,29 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-south-fork-crossing",
+    "evidence_ids": [
+      "evidence-taboose-depth-south-fork-crossing"
+    ],
+    "predicate": "described_route_water_crossing",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-mather-pass",
+      "scope-route-taboose-mather-pass"
+    ],
+    "subject_id": "route-segment-taboose-west-mather-pass",
+    "temporal_scope": null,
+    "value": {
+      "crossing_safety": "unknown",
+      "elevation_feet": {
+        "just_above": 10000
+      },
+      "ford_or_bridge": "not established",
+      "stock_camps": "one just above 10000 feet at crossing, second on south side",
+      "trail": "John Muir Trail",
+      "water_collection": "not inventoried",
+      "waterway": "South Fork Kings River"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

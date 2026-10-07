@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ReserveAmerica individual site 007, Site Details and heading: numbered standard non-electric drive-in overnight site, site-specific reservations. Calendar availability excluded.",
+    "observation_id": "observation-taboose-depth-site-007-inventory",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-site-007"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

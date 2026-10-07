@@ -3,12 +3,12 @@
   "record": {
     "gap_id": "gap-taboose-camp-count-conflict",
     "question": "Does the campground currently have 35 or 36 sites?",
-    "reason": "Conflict: county overview lists 35 spaces; county map labels 1-36 and ReserveAmerica lists 36 standard non-electric sites. Preserve all three and verify current inventory; no individual site catalog or availability is inferred.",
+    "reason": "County overview still lists 35 spaces; map labels 1–36 and all 36 individual ReserveAmerica profiles were reviewed, including 036. None is labeled a separate group-site type. This narrows the inventory evidence but does not establish why the county reports 35. No live availability or closure conclusion follows.",
     "related_ids": [
       "campground-taboose-creek",
       "claim-taboose-camp-inventory",
       "claim-taboose-camp-map-inventory",
-      "claim-taboose-camp-booking-inventory"
+      "claim-taboose-depth-site-036-inventory"
     ]
   },
   "record_type": "gap",

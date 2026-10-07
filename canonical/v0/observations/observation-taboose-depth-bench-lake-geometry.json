@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS 2018 published maintained-trails shapefile complete features for Bench Lake spur from JMT; exact source joins, reorientation and CRS transformation only. Original attributes and hashes retained; topology separately supported by 2026 map.",
+    "observation_id": "observation-taboose-depth-bench-lake-geometry",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-nps-geometry"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

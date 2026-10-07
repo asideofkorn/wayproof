@@ -2,12 +2,13 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-taboose-access-geometry",
-    "question": "Is there reviewed official geometry and current clearance for the approach road?",
-    "reason": "The named road approach is supported by USFS directions and map, but no reviewed official road polyline or highway-junction coordinates are imported. Trail geometry begins at the trailhead. Exact road jurisdiction divisions, clearance, turnarounds and parking capacity remain unverified.",
+    "question": "What official road geometry and jurisdiction divisions are established?",
+    "reason": "Official county Centerlines and Maintained Mileage System geometry was matched to named Taboose Creek Road 3022. County GIS terms supply as-is illustrative use but no explicit redistribution license required by repository policy, so no county polyline is shipped. Federal NFS Roads named-TABOOSE query returned no features, not proof of absence. Full US395-to-trailhead line, jurisdiction/easement breaks and precise trailhead turning/parking dimensions remain unverified.",
     "related_ids": [
-      "claim-taboose-road-directions",
-      "claim-taboose-road-recheck",
-      "claim-taboose-trail-geometry"
+      "road-taboose-creek",
+      "trailhead-taboose-pass",
+      "claim-taboose-depth-road-maintenance",
+      "claim-taboose-road-directions"
     ]
   },
   "record_type": "gap",

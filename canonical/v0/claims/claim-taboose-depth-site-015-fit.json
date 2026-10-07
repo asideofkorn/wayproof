@@ -1,0 +1,43 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-015-fit",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-015-fit"
+    ],
+    "predicate": "campsite_vehicle_fit",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-015"
+    ],
+    "subject_id": "campsite-taboose-creek-015",
+    "temporal_scope": null,
+    "value": {
+      "driveway_entry": "Parallel",
+      "equipment_categories": [
+        "RV Site",
+        "Tent Site",
+        "Trailer Site"
+      ],
+      "equipment_length": {
+        "unit": "not stated",
+        "value": 35
+      },
+      "fit_confirmed": false,
+      "maximum_vehicle_length": {
+        "unit": "not stated",
+        "value": 35
+      },
+      "site_length": {
+        "unit": "not stated",
+        "value": 35
+      },
+      "site_width": {
+        "unit": "not stated",
+        "value": 25
+      },
+      "surface": "Gravel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

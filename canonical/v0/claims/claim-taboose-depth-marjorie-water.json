@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-marjorie-water",
+    "evidence_ids": [
+      "evidence-taboose-depth-marjorie-water"
+    ],
+    "predicate": "stock_area_planning",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-pinchot-pass"
+    ],
+    "subject_id": "route-segment-taboose-west-pinchot-pass",
+    "temporal_scope": null,
+    "value": {
+      "drift_fences_in_described_area": false,
+      "forage": "Poor",
+      "forage_area": "46-6",
+      "lake": "Lake Marjorie",
+      "stock_camps_in_described_area": false,
+      "water_collection_spur": "unknown"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}
