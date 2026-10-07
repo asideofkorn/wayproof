@@ -1,6 +1,12 @@
 from __future__ import annotations
 
-from scripts.select_test_groups import select_groups, select_scope
+from pathlib import Path
+
+from scripts.select_test_groups import (
+    main_smoke_scope,
+    select_groups,
+    select_scope,
+)
 from scripts.test_groups import GROUPS, group_for
 
 
@@ -56,6 +62,22 @@ def test_shared_renderer_and_full_runs_keep_exhaustive_site_shard():
     assert scope.site_mode == "full"
     assert not scope.site_tests
     assert select_scope([], full=True).site_mode == "full"
+
+
+def test_main_branch_smoke_keeps_fast_cross_surface_groups_only():
+    scope = main_smoke_scope()
+    assert scope.groups == ("core", "planning")
+    assert scope.site_mode == "none"
+    assert not scope.site_tests
+
+
+def test_ci_routes_main_to_smoke_and_keeps_manual_full_without_schedule():
+    workflow = Path(".github/workflows/tests.yml").read_text()
+    assert 'EVENT_NAME" = "pull_request"' in workflow
+    assert 'EVENT_NAME" = "workflow_dispatch"' in workflow
+    assert "--full" in workflow
+    assert "--main-smoke" in workflow
+    assert "schedule:" not in workflow
 
 
 def test_regional_ingestion_script_does_not_force_unrelated_region():

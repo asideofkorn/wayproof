@@ -186,9 +186,13 @@ python scripts/test_groups.py --group regional-sierra
 Pull requests use deterministic change-aware selection. Regional canonical-data
 changes run the core, planning, affected-region, and site groups; shared domain,
 schema, storage, workflow, or unknown implementation changes fail safe to all
-five groups. Pushes to `main` and manual workflow runs always execute the full
-suite. Because GitHub runs groups in parallel, agents should not duplicate that
-work with a sequential local full-suite run unless the change is cross-cutting.
+five groups. Pushes to `main` run the fast `core` and `planning` integration
+smoke after the reviewed PR checks, while the independent Pages workflow builds
+and deploys the complete site. A manual workflow dispatch can select either the
+full suite or the same smoke scope; there is no scheduled nightly test run.
+Because GitHub runs selected groups in parallel, agents should not duplicate
+that work with a sequential local full-suite run unless the change is
+cross-cutting.
 
 ## Canonical CLI quick start
 

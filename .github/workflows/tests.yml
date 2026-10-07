@@ -5,6 +5,12 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      scope:
+        description: Test scope
+        type: choice
+        options: [full, smoke]
+        default: full
 
 concurrency:
   group: tests-${{ github.event.pull_request.number || github.ref }}
@@ -27,15 +33,20 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           BASE_REF: ${{ github.base_ref }}
+          MANUAL_SCOPE: ${{ inputs.scope || 'full' }}
         run: |
           if [ "$EVENT_NAME" = "pull_request" ]; then
             python3 scripts/select_test_groups.py \
               --base "origin/$BASE_REF" \
               --head HEAD \
               --github-output "$GITHUB_OUTPUT"
-          else
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$MANUAL_SCOPE" = "full" ]; then
             python3 scripts/select_test_groups.py \
               --full \
+              --github-output "$GITHUB_OUTPUT"
+          else
+            python3 scripts/select_test_groups.py \
+              --main-smoke \
               --github-output "$GITHUB_OUTPUT"
           fi
 

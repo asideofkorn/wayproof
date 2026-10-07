@@ -32,8 +32,10 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
   paths must retain the selector's full-suite fallback. Do not duplicate
   passing focused work with a local full-suite run unless shared
   domain/schema/storage/test infrastructure changed or the selector chooses
-  every group; GitHub runs selected groups in parallel and `main` always
-  receives full validation.
+  every group. GitHub runs selected groups in parallel. After those reviewed PR
+  checks, `main` receives the fast `core` and `planning` integration smoke;
+  manual dispatch remains available for an explicit full run, with no scheduled
+  nightly test workflow.
 - For canonical changes, run
   `python scripts/verify_canonical_diff.py --base origin/main` on the final
   committed candidate. First refresh from current `main`, then inspect
@@ -66,18 +68,24 @@ description: Deliver a bounded Wayproof code, documentation, website, or canonic
    intentionally unresolved gaps.
 3. Wait for every required check. A PR existing is not evidence that it passed.
 4. If checks fail, repair them on the same branch; do not merge around failure.
-5. Merge only when the user authorized merge or an autonomous series of passing
+5. Confirm the checked PR head still covers current `main`. If the base advanced
+   and the PR is stale, update it and let required checks rerun; the post-merge
+   smoke does not repeat regional and site shards.
+6. Merge only when the user authorized merge or an autonomous series of passing
    batches.
-6. If GitHub registers the new PR head SHA but does not enqueue a check, inspect
+7. If GitHub registers the new PR head SHA but does not enqueue a check, inspect
    the workflow and run queue before taking action. A no-content trigger commit
    is acceptable only after confirming that the corrected head has no run; do
    not rerun an obsolete failing SHA and call it current verification.
 
 ## Verify publication
 
-- Confirm the merge commit is on `main` and the main-branch tests pass.
+- Confirm the merge commit is on `main` and monitor the main-branch smoke.
 - For website-affecting changes, confirm Pages succeeds and sample representative
-  live HTML and JSON URLs.
+  live HTML and JSON URLs. Report that production is deployed as soon as those
+  checks pass; do not make that report wait for an unrelated supplemental main
+  smoke. If the smoke is still running, say so and continue monitoring it. A
+  later smoke failure must still be reported and investigated.
 - When a batch adds, supersedes, or preserves time-varying knowledge, verify that
   consumers can discover the supporting evidence and historical ChangeSet
   without forcing current snapshots to duplicate the full change history.

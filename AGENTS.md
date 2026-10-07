@@ -88,7 +88,12 @@ referenced supporting material relevant to the task.
   duplicates CI and serializes work GitHub runs in parallel. Run the complete
   local suite for shared domain, schema, storage, test-infrastructure, or other
   cross-cutting changes, or when the selector chooses all five groups.
-  Main-branch CI and manual workflow runs always execute all groups.
+  Main-branch CI runs the fast `core` and `planning` integration smoke after
+  the reviewed PR checks. Manual workflow dispatch can request either the full
+  five-group suite or that smoke scope; no nightly test run is scheduled.
+  Because `main` does not repeat regional and site shards, do not merge a stale
+  PR whose successful checks no longer cover current `main`; refresh it and let
+  the required PR checks rerun first.
 - Ordinary regional canonical-data PRs use the `affected site outputs` check
   instead of the exhaustive site shard. It builds once with the production
   renderer, verifies changed records and their bounded dependency closure
@@ -106,8 +111,10 @@ referenced supporting material relevant to the task.
 - Documentation, tests, and rendering changes do not require a ChangeSet when
   canonical knowledge is untouched.
 - Merge only after required checks pass. After a knowledge or publishing change,
-  verify the main-branch tests, Pages deployment, and representative live HTML
-  and JSON output.
+  verify the main-branch smoke, Pages deployment, and representative live HTML
+  and JSON output. Once Pages and the live samples pass, report that production
+  is deployed even if the supplemental main smoke is still running; state that
+  status clearly and continue monitoring it separately.
 - Generated directories and destination pages must derive from canonical read
   services. Do not create a hand-maintained parallel website catalog.
 
