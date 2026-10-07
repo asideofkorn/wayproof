@@ -183,6 +183,43 @@ the same service layer.
   supporting Wayproof page, and optionally contribute a bounded correction or
   observation while Wayproof learns aggregate coverage demand without silently
   collecting the surrounding conversation.
+- Redesign generated pages around the planning questions in the reviewed
+  personas rather than exposing every canonical record as a peer:
+  - Make browse pages establish context before inventory. Group results by
+    region, managed area, campground, trail corridor or other reviewed parent;
+    preserve search and filters, but do not lead with thousands of numbered
+    campsites or route segments in one undifferentiated list.
+  - Treat a campground as the primary camping browse result. Put its individual
+    sites in a nested, searchable inventory and map on the campground page,
+    with meaningful summaries and comparison fields. Keep group camps,
+    backcountry camps, cabins and other planning-level facilities discoverable
+    without making site `001` appear globally meaningful by itself.
+  - Give each park, campground, route, trailhead, peak and other objective a
+    plain-language orientation layer: what it is, why someone might choose it,
+    where it is, how it is reached, the decisions or restrictions most likely
+    to change a trip, and what still needs checking. Follow that with maps and
+    structured planning facts, then progressively disclose claims, provenance,
+    raw identifiers and complete evidence.
+  - Present connected information in task order—objective, access, route,
+    permits and restrictions, camping and facilities, current-condition checks,
+    unresolved questions—while preserving the canonical graph underneath.
+    Repeated facts should link to one reviewed claim rather than become
+    page-specific prose forks.
+  - Keep research queues contextual. Show a small number of consequential gaps
+    on a landing or entity page, with counts and links to explore the remainder;
+    never let hundreds of open questions or inventory records dominate the
+    primary reading path.
+  - Design index cards and detail summaries for scanning on a phone: descriptive
+    names, parent location, type, the few decision-relevant attributes available,
+    clear status language and sufficiently large controls. Unknown information
+    remains visible without overwhelming the known answer.
+  - Validate representative journeys against every persona in `PRODUCT.md`,
+    including selecting a camp area before a numbered campsite, finding a route
+    to an objective, identifying a rule that crosses jurisdictions, recognizing
+    a volatile condition, and sharing an evidence-backed correction.
+  **Gate:** a first-time person can answer “is this relevant to my trip, what
+  choice do I make next, and what must I verify?” from a representative page
+  before needing to understand Wayproof's schema or inspect raw evidence.
 - Add generated interactive map views over the canonical read service for
   campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
   Selectable features should link to canonical detail pages and preserve the
