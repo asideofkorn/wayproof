@@ -37,6 +37,14 @@ function showSelection(container, features) {
     meta.className = "meta";
     meta.textContent = `${feature.properties.kind.replaceAll("_", " ")} · ${feature.properties.evidence_status}`;
     item.append(link, meta);
+    if (feature.properties.decision_summary) {
+      const warning = document.createElement("p");
+      warning.textContent = feature.properties.decision_summary;
+      const action = document.createElement("a");
+      action.href = feature.properties.url + "#trip-decisions";
+      action.textContent = "Check restrictions and access before choosing this trip";
+      item.append(warning, action);
+    }
     list.append(item);
   }
   panel.append(title, list);
@@ -83,6 +91,26 @@ async function loadExploreMap(container) {
       }
       status.textContent = "Interactive map ready. Select a feature to inspect it.";
       container.classList.add("map-enhanced");
+      function focusEntity(entityId) {
+        const features = data.features.filter(f => f.properties.entity_id === entityId);
+        if (!features.length) return;
+        for (const layer of new Set(features.map(f => f.properties.layer))) {
+          const checkbox = container.querySelector(`[data-map-layer="${layer}"]`);
+          checkbox.checked = true;
+          checkbox.dispatchEvent(new Event("change"));
+        }
+        const points = features.flatMap(f => coordinates(f.geometry));
+        const bounds = points.reduce((b, p) => b.extend(p), new maplibregl.LngLatBounds(points[0], points[0]));
+        map.fitBounds(bounds, { padding: 45, maxZoom: 13, duration: 0 });
+        showSelection(container, features);
+        const url = new URL(location.href);
+        url.searchParams.set("entity", entityId);
+        history.replaceState(null, "", url);
+      }
+      for (const button of container.querySelectorAll("[data-map-focus]")) {
+        button.addEventListener("click", () => focusEntity(button.dataset.mapFocus));
+      }
+      focusEntity(new URLSearchParams(location.search).get("entity"));
     });
     map.on("click", event => {
       const layerIds = Object.keys(COLORS).flatMap(layer => [`wp-${layer}-fill`, `wp-${layer}-line`, `wp-${layer}-point`]).filter(id => map.getLayer(id) && map.getLayoutProperty(id, "visibility") !== "none");
@@ -110,4 +138,25 @@ async function loadExploreMap(container) {
 }
 
 const container = document.querySelector("[data-explore-map]");
-if (container) loadExploreMap(container);
+if (container) {
+  const search = container.querySelector("#map-search");
+  const results = container.querySelector("[data-map-results]");
+  const status = container.querySelector("[data-map-search-status]");
+  function filterMappedPlaces() {
+    let count = 0;
+    for (const row of results.children) {
+      row.hidden = !search.value.trim() || !WayproofSearch.matches(row.dataset.search, search.value);
+      if (!row.hidden) count++;
+    }
+    results.hidden = count === 0;
+    status.textContent = search.value.trim() ? `${count} mapped places. Missing geometry stays missing.` : "Enter a name to find mapped places.";
+    const url = new URL(location.href);
+    if (search.value) url.searchParams.set("q", search.value);
+    else url.searchParams.delete("q");
+    history.replaceState(null, "", url);
+  }
+  search.value = new URLSearchParams(location.search).get("q") || "";
+  search.addEventListener("input", filterMappedPlaces);
+  filterMappedPlaces();
+  loadExploreMap(container);
+}
