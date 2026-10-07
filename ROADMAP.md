@@ -246,9 +246,38 @@ the same service layer.
     a volatile condition, and sharing an evidence-backed correction. Include
     both known-name and need-first search journeys, no-result recovery, and
     returning from evidence or a map without losing the planning context.
+  - Add privacy-minimized product measurement for those journeys. Use a free,
+    cookie-free aggregate traffic/performance service and Search Console for
+    discovery and indexing, then add only explicit anonymous product events
+    when the persona pilot needs funnel evidence. Prefer a narrowly configured
+    hosted free tier over operating analytics infrastructure prematurely.
+  - Define the initial event vocabulary before adding a tracker: search
+    submitted by broad query category, result counts and zero-result state,
+    result type/rank opened, filter name applied, map feature type opened, next
+    action selected, evidence/source opened, share or latest-update action, and
+    contribution flow started. Do not send raw search text or contribution
+    content as event properties.
+  - Do not collect trip or reservation dates, entered campsite details, precise
+    GPS or map-center history, party composition, personal constraints, agent
+    conversations, complete itineraries, session replay, input autocapture,
+    persistent cross-device identity or person profiles. Analytics remain
+    private operational data outside the canonical corpus and never become
+    evidence.
+  - Set and document a short retention period for raw anonymous product events,
+    initially targeting 90 days, followed only by aggregate counts needed to
+    compare releases and prioritize coverage. Publish a plain-language
+    analytics disclosure and provide any consent or opt-out controls required
+    by the selected configuration and applicable jurisdictions.
+  - Measure successful planning progression rather than generic engagement:
+    entry or search, useful result, relevant canonical entity, and discovery of
+    a decision-critical restriction, recheck or evidence path. Use aggregate
+    no-result and abandonment patterns to improve coverage and navigation,
+    never to reconstruct an individual's trip.
   **Gate:** a first-time person can answer “is this relevant to my trip, what
   choice do I make next, and what must I verify?” from a representative page
-  before needing to understand Wayproof's schema or inspect raw evidence.
+  before needing to understand Wayproof's schema or inspect raw evidence; the
+  team can evaluate that journey without retaining the person's query, trip or
+  identity.
 - Add generated interactive map views over the canonical read service for
   campsites, campgrounds, trailheads, facilities, peaks, and route GeoJSON.
   Selectable features should link to canonical detail pages and preserve the
