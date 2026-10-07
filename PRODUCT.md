@@ -144,11 +144,12 @@ traceable to evidence; missing geometry or current access status remains
 explicitly unresolved.
 
 **Research basis:** this provisional persona was drafted from a bounded review
-of the public [Wilder Magic backpacking account](https://www.instagram.com/wilder.magic/),
-the creator's [Eastern Sierra trip report](https://www.instagram.com/reel/DeH-n6VS6Ur/),
-and its visible public discussion on October 6, 2026. The source demonstrates a
-behavior and planning failure; it does not justify inference about unreported
-personal attributes or the prevalence of this persona.
+of the public [Wilder Magic backpacking account](https://www.instagram.com/wilder.magic/)
+and its visible public discussion on October 6, 2026. Example:
+[Eastern Sierra cross-jurisdiction backpacking failure reel](https://www.instagram.com/reel/DeH-n6VS6Ur/).
+The source demonstrates a behavior and planning failure; it does not justify
+inference about unreported personal attributes or the prevalence of this
+persona.
 
 ## Contributor and research workflow
 
