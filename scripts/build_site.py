@@ -25,7 +25,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from wayproof.canonical_site import (build_canonical_site, render_primary_nav,
-                                     _record_link)
+                                     render_site_footer, _record_link)
 from wayproof.render import (
     STYLESHEET,
     render_robots,
@@ -334,8 +334,21 @@ def build(output_dir: Path, today: datetime.date | None = None, *, root: Path = 
         site=SITE_URL, repo=REPO, primary_nav=render_primary_nav(),
     ))
 
+    source_dir = Path(__file__).resolve().parents[1]
+    case_dir = output_dir / "how-wayproof-is-being-built"
+    case_dir.mkdir(parents=True, exist_ok=True)
+    (case_dir / "index.html").write_text(
+        (source_dir / "templates" / "how-wayproof-is-being-built.html").read_text().format(
+            site=SITE_URL, primary_nav=render_primary_nav(),
+            site_footer=render_site_footer(),
+        )
+    )
+    shutil.copyfile(source_dir / "site_assets" / "building-wayproof.png",
+                    case_dir / "sharing.png")
+
     canonical_entities = canonical_reads.search_entities()
-    urls = [f"{SITE_URL}/", f"{SITE_URL}/search/", f"{SITE_URL}/how-it-works/"]
+    urls = [f"{SITE_URL}/", f"{SITE_URL}/search/", f"{SITE_URL}/how-it-works/",
+            f"{SITE_URL}/how-wayproof-is-being-built/"]
     urls += [f"{SITE_URL}/knowledge/{item.entity_id}/" for item in canonical_entities]
     urls += list(canonical_stats["destination_urls"])
     (output_dir / "sitemap.xml").write_text(render_sitemap(urls))
