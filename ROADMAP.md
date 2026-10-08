@@ -92,16 +92,32 @@ coverage mismatches, historical rules, and volatile water/access rechecks.
 
 **Status: in progress.** The shared read-only service facade now supports entity
 search, typed lookup, evidence provenance, published ChangeSet history,
-requirements, readiness, and recheck. The deployed website now uses that facade
-for canonical search, every entity detail, automatic Parks/Trails/Camping/Peaks
-directories, public ChangeSet history, and the focused Del Valle destination
-and Ohlone trail guides. It also generates corresponding JSON indexes and
-sitemap discovery. A read-only MCP server now exposes search, typed lookup,
-provenance, history, knowledge gaps, bounded intent resolution, requirements,
-readiness, contextual recheck, and the composed planning operation through the
-same facade. A canonical `plan.py` mode now calls that composed operation and
-renders human or complete JSON output; CSV-backed planning remains the default
-during transition.
+requirements, readiness, and recheck. The deployed website uses that facade for
+canonical search, entity and evidence pages, generated browse directories,
+public ChangeSet history, route maps, and a layered geographic explorer. A
+read-only MCP server exposes search, typed lookup, provenance, history,
+knowledge gaps, bounded intent resolution, requirements, readiness, contextual
+recheck, and the composed planning operation through the same facade. A
+canonical `plan.py` mode calls that composed operation and renders human or
+complete JSON output; CSV-backed planning remains the default during
+transition.
+
+**Current checkpoint (October 7, 2026):** the first cross-jurisdiction persona
+vertical slice is deployed and has passed an internal live acceptance audit.
+Starting from “Taboose Pass dog,” a first-time traveler can discover the
+west-side pet prohibition, its jurisdictional scope, source and temporal
+limitations, current vehicle-access uncertainty, and the absence of a supported
+alternative without knowing a record ID. See
+[`docs/taboose-persona-audit.md`](docs/taboose-persona-audit.md). This closes the
+bounded Taboose interface audit, not the whole persona or M2: trip feasibility
+remains partial, and no external usability review has occurred.
+
+The next active M2 vertical slice is the persona-centered page, browse, and
+search redesign, using Taboose and East Fork as regression journeys. Later M2
+work still includes time-scoped evidence/share cards, a stable public agent/MCP
+distribution endpoint, privacy-minimized product analytics, graph-backed
+objective-to-route highlighting and remaining map interactions, broader
+accessibility/performance acceptance, and representative qualitative review.
 
 **Outcome:** people and agents can inspect and plan through stable adapters over
 the same service layer.
@@ -321,15 +337,15 @@ the same service layer.
     audit them against the allowlist, and remove events that no longer support a
     roadmap decision. M4 may later operationalize monitoring at scale without
     expanding M2's permitted collection by default.
-  - After the Taboose Pass coverage batch is published, run an explicit persona
-    acceptance audit modeled on the cited public Instagram example. Starting
-    from the person's likely question rather than a known record ID, verify that
-    search, map and navigation lead to the applicable pet restriction and its
-    jurisdictional boundary; that the rule, currentness, limitations and source
-    are understandable; and that the experience would help someone avoid
-    reaching the pass with a prohibited pet. Preserve any failure as a concrete
-    search, content, relationship, evidence or coverage gap instead of writing a
-    favorable narrative after the fact.
+  - **Internal acceptance completed October 7, 2026:** the production Taboose
+    journey starts from “Taboose Pass dog” and reaches the applicable pet
+    restriction, jurisdictional transition, source, temporal limitations,
+    vehicle-access uncertainty and explicit alternative gap through search,
+    detail, evidence and map views. The audit and its baseline failures are
+    preserved in [`docs/taboose-persona-audit.md`](docs/taboose-persona-audit.md).
+    Complete trip feasibility remains partial, the page/search presentation
+    still feeds the broader redesign above, and representative external review
+    remains open.
   **Gate:** a first-time person can answer “is this relevant to my trip, what
   choice do I make next, and what must I verify?” from a representative page
   before needing to understand Wayproof's schema or inspect raw evidence; the
@@ -394,9 +410,12 @@ behavior first.
 
 ## M3 — Constrained contribution workflow
 
-**Status: started.** An identified-actor, additive-only proposal service can
-derive a DRAFT ChangeSet, validate it, and explain failures. It cannot prepare,
-approve, promote, or publish canonical knowledge.
+**Status: in progress.** An identified-actor, additive-only proposal service can
+derive a DRAFT ChangeSet, validate it, and explain failures. The reviewed
+reference-only v1 path and synthetic bounded-processing rehearsal are
+implemented through shared consumers, while live acquisition, processor
+plugins, external-model execution, private custody, and direct publication
+remain disabled.
 
 **Outcome:** community and agent-assisted evidence becomes reviewable proposals
 without granting direct canonical write access.
