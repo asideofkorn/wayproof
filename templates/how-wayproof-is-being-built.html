@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Wayproof Is Being Built — Wayproof</title>
+<meta name="description" content="A case study in evidence-backed outdoor planning: the people, product decisions, human-agent workflow, and Taboose Pass audit behind Wayproof.">
+<link rel="canonical" href="{site}/how-wayproof-is-being-built/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Wayproof">
+<meta property="og:title" content="How Wayproof Is Being Built">
+<meta property="og:description" content="From scattered trip facts to traceable decisions. A human-agent development case study, with shipped capabilities and open questions left visible.">
+<meta property="og:url" content="{site}/how-wayproof-is-being-built/">
+<meta property="og:image" content="{site}/how-wayproof-is-being-built/sharing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Wayproof Is Being Built. Evidence, people, and the decisions between them.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Wayproof Is Being Built">
+<meta name="twitter:description" content="Evidence, people, and the decisions between them. A product and engineering case study with a concrete Taboose Pass acceptance journey.">
+<meta name="twitter:image" content="{site}/how-wayproof-is-being-built/sharing.png">
+<meta name="twitter:image:alt" content="How Wayproof Is Being Built. Evidence, people, and the decisions between them.">
+<link rel="stylesheet" href="/style.css">
+<style>
+.case-study section {{ margin-top:3rem; }}
+.case-study section > h2 {{ margin-top:.5rem; }}
+.case-study .answer-example {{ margin-bottom:.8rem; }}
+@media (prefers-color-scheme: dark) {{
+  .case-study .eyebrow {{ color:#70c6ac; }}
+}}
+</style>
+</head>
+<body>
+{primary_nav}
+<main class="case-study">
+<header class="page-header model-hero">
+  <span class="eyebrow">Product &amp; engineering case study</span>
+  <h1>How Wayproof Is Being Built</h1>
+  <p class="tagline">Turning scattered outdoor information into decisions people can inspect, question, and act on.</p>
+  <p class="meta">By Chris Kornblatt · Capability snapshot: <time datetime="2026-10-07">October 7, 2026</time></p>
+  <div class="trust-strip"><span><strong>Focus</strong> California public lands</span><span><strong>Approach</strong> Human-led, agent-assisted</span><span><strong>Stage</strong> Working foundation; partial planning coverage</span></div>
+  <p>A permit, a map, and a trail description can each be correct while the trip assembled from them still fails. Wayproof is an open-source attempt to close that gap: connect routes, rules, access, and dated evidence without pretending the missing pieces are known.</p>
+  <div class="hero-actions"><a class="button primary" href="#taboose">Read the Taboose case</a><a class="button" href="#status">See what has shipped</a></div>
+</header>
+
+<nav class="section-nav" aria-label="On this page">
+  <a href="#problem">Problem</a><a href="#people">People</a><a href="#evidence">Evidence</a><a href="#process">Building process</a><a href="#taboose">Taboose</a><a href="#status">Shipped &amp; planned</a><a href="#lessons">Lessons</a><a href="#sources">Sources</a>
+</nav>
+
+<section id="problem" aria-labelledby="problem-title">
+  <span class="eyebrow">The problem</span>
+  <h2 id="problem-title">A destination is not yet an executable plan.</h2>
+  <p>Outdoor planning asks people to reconcile agency pages, reservation systems, maps, and trip reports. A road may reach a trailhead on a map without being suitable for a particular car. A permit may cover an entry without covering every proposed stage. A pet allowance can stop at a jurisdiction boundary halfway through the trip.</p>
+  <p>The product question is practical: <strong>What applies to this trip, how do we know, and what must still be checked?</strong> Wayproof complements navigation tools. It does not book a campsite, guarantee safety, or turn an old condition report into current availability.</p>
+</section>
+
+<section id="people" aria-labelledby="people-title">
+  <span class="eyebrow">Who it is for</span>
+  <h2 id="people-title">Design around the decision someone is trying to make.</h2>
+  <p>The <a href="#source-product">product personas</a> are provisional, behavior-based hypotheses drawn from bounded public discussions. They guide acceptance scenarios; they are not a representative user study.</p>
+  <dl class="state-list">
+    <div><dt>The cross-jurisdiction adventurer</dt><dd>Needs a complete route whose road access and changing pet rules work for their party.</dd></div>
+    <div><dt>The permit holder without a route</dt><dd>Has an entry permit, but still needs connected stages, legal camping, and a valid exit.</dd></div>
+    <div><dt>The fixed-window visitor</dt><dd>Must fit access, transport, camping, elevation, and changing conditions into a few available days.</dd></div>
+    <div><dt>The water-dependent planner</dt><dd>Needs dated reports for the specific springs, faucets, or ponds their route depends on.</dd></div>
+    <div><dt>The inventory-constrained traveler</dt><dd>Needs evidenced alternate approaches and release windows without a false promise of availability.</dd></div>
+    <div><dt>The family planner</dt><dd>Needs distance, water, toilets, and requirements that match the party’s constraints.</dd></div>
+    <div><dt>The community explainer</dt><dd>Needs a durable, citable answer and a reviewable way to contribute local observations.</dd></div>
+  </dl>
+  <p>These are design targets. Supporting one bounded journey does not mean every persona already has a complete planning experience.</p>
+</section>
+
+<section id="evidence" aria-labelledby="evidence-title">
+  <span class="eyebrow">The core design decision</span>
+  <h2 id="evidence-title">Keep the evidence attached to the answer.</h2>
+  <div class="model-flow" role="img" aria-label="A source records an observation; evidence connects it to a scoped claim; a rule or derived result explains what follows.">
+    <div><strong>Source</strong><span>Where it came from</span></div><b aria-hidden="true">→</b>
+    <div><strong>Observation</strong><span>What was actually stated</span></div><b aria-hidden="true">→</b>
+    <div><strong>Evidence</strong><span>What it supports or challenges</span></div><b aria-hidden="true">→</b>
+    <div><strong>Claim</strong><span>One assertion, with scope and time</span></div><b aria-hidden="true">→</b>
+    <div><strong>Rule or result</strong><span>What follows for this trip</span></div>
+  </div>
+  <p>A restriction on the Kings Canyon continuation is a claim about that place. It does not automatically apply to the entire east-side approach. Likewise, the date Wayproof retrieved a page is not the date someone observed a road condition.</p>
+  <p>Planning adds a second chain: <strong>rule → requirement → fulfillment</strong>. A reservation or permit can satisfy only part of a party, a date range, or a route. Trip Readiness preserves those gaps; Pre-trip Recheck identifies volatile facts and the sources to revisit.</p>
+  <p class="model-note"><strong>Unknown is a useful answer.</strong> Missing evidence does not mean permission, no fee, an open road, or available water. Conflicting sources remain visible. A nearby campground does not become an alternate trailhead without evidence of access.</p>
+  <p>Underneath, versioned JSON and Git hold the reviewed knowledge. Shared Python services supply the website, canonical command-line planner, and read-only agent interface (MCP). Keeping the rules in one service boundary reduces disagreement between interfaces. Git-backed storage keeps changes inspectable; an additional database remains a decision to justify with measured need. <a href="/how-it-works/">Explore the evidence model</a>.</p>
+</section>
+
+<section id="process" aria-labelledby="process-title">
+  <span class="eyebrow">Human-agent development</span>
+  <h2 id="process-title">Delegate the work without delegating publication authority.</h2>
+  <p>The human maintainer owns product direction, acceptance criteria, scope, and merge authorization. Agents assist with bounded source research, implementation, test execution, and reviewable proposals. The <a href="#source-architecture">architecture</a> makes that division enforceable for knowledge changes.</p>
+  <ol>
+    <li><strong>Frame a real question.</strong> Turn a persona’s failure into an observable acceptance journey, such as finding Taboose restrictions from the homepage.</li>
+    <li><strong>Research and implement a bounded change.</strong> Preserve sources, dates, disagreement, and gaps. Separate missing knowledge from failures to display knowledge already present.</li>
+    <li><strong>Validate the proposal.</strong> Knowledge additions pass through typed ChangeSets: drafts describing exactly which records change and why. Domain validation prepares a separate candidate; agents do not directly author the published records.</li>
+    <li><strong>Review behavior and the diff.</strong> Tests exercise consumer answers and links, not just record existence. CI verifies that a knowledge diff matches its validated ChangeSet. Browser acceptance checks the actual reading path.</li>
+    <li><strong>Publish through a reviewed merge.</strong> GitHub review and maintainer authorization govern merge to main; the Pages workflow rebuilds the public site. Live checks then verify what people can actually reach.</li>
+  </ol>
+  <p>Code and presentation fixes can use ordinary bounded PRs when knowledge is unchanged. The Taboose repair below is one example: it changed discovery and presentation without inventing new facts. Passing validation means a proposal represents uncertainty correctly, not that the outside world has become certain.</p>
+</section>
+
+<section id="taboose" aria-labelledby="taboose-title">
+  <span class="eyebrow">A concrete case · October 6–7, 2026</span>
+  <h2 id="taboose-title">Taboose Pass: the answer existed, but the traveler could miss it.</h2>
+  <article class="answer-example">
+    <span class="meta">Acceptance scenario</span>
+    <h3>A first-time Taboose traveler, a dog, and a low-clearance car.</h3>
+    <p>Before committing to a demanding climb, the traveler needs to discover uncertain vehicle access and a pet prohibition on the western continuation into Kings Canyon. The test begins with ordinary search words, not a database identifier or a known detail-page URL.</p>
+  </article>
+  <div class="history-grid">
+    <article><h3>Before: disconnected facts</h3><p>The internal audit started at the homepage. “Taboose Pass dog” returned zero results. Searching just “Taboose” found the destination, but the pass page omitted the west-side pet warning. The road route showed zero planning facts even though scoped evidence existed. The map required visual hunting.</p></article>
+    <article><h3>After: the decision comes first</h3><p>The deployed repair supports searches combining a place and a concern, including dog/pet synonyms. Pass and route pages surface scoped restrictions and road uncertainty before ordinary facts. Evidence links expose sources and dates. Map lookup and warning previews preserve that context.</p></article>
+  </div>
+  <p>The repair follows explicit relationships and spatial scopes. Connected-place warnings are labeled separately from facts about the selected place. An adjacent jurisdiction can deserve a warning without becoming an inferred traversable route.</p>
+  <p>Review also caught a map-loading defect: controls could be used before handlers or layers were ready. They now wait for readiness, while text links remain available. The audit’s fixture measurement reduced initial map HTML from <strong>644,076 to 4,631 bytes</strong> by loading a compact search index on demand and limiting displayed results. That measures the initial document, not total map transfer or mobile latency; the large geometry payload was unchanged.</p>
+  <article class="notice notice-unknown">
+    <h3>Outcome: discovery improved; trip feasibility remains partial.</h3>
+    <p>The October 7 internal production acceptance found the restriction, jurisdiction scope, provenance, and unknowns discoverable. It did not establish present road suitability, legal fallback parking, added approach distance or elevation, a precise turnaround, or a supported dog-compliant alternative. It was not an external usability study.</p>
+  </article>
+  <p>The useful answer is to identify the western restriction early and leave the unresolved access and itinerary questions visible. A clearer warning is a product improvement, not proof that the trip can proceed. See the <a href="#source-audit">acceptance audit and follow-up</a>.</p>
+  <div class="hero-actions"><a class="button primary" href="/search/?q=Taboose%20Pass%20dog">Try the search</a><a class="button" href="/knowledge/place-taboose-pass/">Read the pass page</a><a class="button" href="/evidence/claim/claim-taboose-west-pets/">Inspect the pet-rule evidence</a></div>
+</section>
+
+<section id="status" aria-labelledby="status-title">
+  <span class="eyebrow">Capability snapshot · October 7, 2026</span>
+  <h2 id="status-title">What is deployed, implemented, and still planned?</h2>
+  <article class="card">
+    <h3>Deployed on the public website</h3>
+    <p>Canonical search; generated park, trail, camping, peak and pass directories; entity and evidence pages; published change history; focused Del Valle and Ohlone guides; maps from reviewed geometry; and the Taboose discovery and warning repair. Pages expose gaps and contextual rechecks alongside the facts.</p>
+    <p><a href="/search/">Search the published knowledge</a> · <a href="/changes/">Inspect its history</a> · <a href="/map/">Explore the map</a></p>
+  </article>
+  <article class="card">
+    <h3>Implemented in the repository</h3>
+    <p>The Schema v0 foundation, controlled knowledge publication, bounded intent resolution, requirements and fulfillment coverage, Trip Readiness, Pre-trip Recheck, a canonical CLI mode, and a read-only MCP adapter. Costs and deadlines receive bounded evaluation; published inventory is distinct from live availability.</p>
+    <p>An additive proposal service and a reviewed reference-only research path also exist. Media analysis is a synthetic, process-local rehearsal. These are engineering capabilities with defined limits, not a deployed end-to-end browser trip planner or a public media-upload service.</p>
+  </article>
+  <article class="card">
+    <h3>Remaining roadmap work</h3>
+    <p>Richer intent and constraint resolution; live inventory and closure integrations; quantity and option selection; completion of the legacy CLI migration; a constrained MCP proposal adapter; broader ingestion and operational freshness scheduling. Human-readable browse, search, and detail experiences still need refinement and broader persona testing.</p>
+    <p>An installable offline web app (PWA), offline planning and maps, and foreground GPS are planned. A native iOS app and local agent are a later possibility, not a commitment. Real media processing needs a separate activation review.</p>
+  </article>
+  <p>M0, the trusted foundation, is complete. M1–M3 remain in progress; coverage is expanding, operational scale is unfinished, and M5 offline work is planned. The <a href="#source-roadmap">roadmap snapshot</a> records the boundaries. This case study does not turn a milestone’s target outcome into a shipped feature.</p>
+</section>
+
+<section id="lessons" aria-labelledby="lessons-title">
+  <span class="eyebrow">Lessons learned</span>
+  <h2 id="lessons-title">Trust has to survive the whole reading path.</h2>
+  <ul>
+    <li><strong>Correct data can still produce a poor decision.</strong> Taboose’s restriction was present but difficult to discover. Acceptance must start where a traveler starts.</li>
+    <li><strong>Scope belongs next to the warning.</strong> “Pets allowed” and “pets prohibited” can both be accurate in different places. Flattening them into one answer loses the trip’s most consequential distinction.</li>
+    <li><strong>A gap can be the result.</strong> Refusing to invent parking, a turnaround, or a compliant alternative is useful when it tells the traveler exactly what remains unresolved.</li>
+    <li><strong>Agent work needs reviewable boundaries.</strong> Shared services, typed changes, tests, and human publication authority make assistance inspectable. Automation does not replace source judgment.</li>
+    <li><strong>Measure the claim you actually make.</strong> Smaller initial HTML is not a complete performance result. An internal acceptance pass is not evidence of user adoption or external usability.</li>
+  </ul>
+  <p>The next product challenge is to make evidence easier to use without hiding its limits: shorter decision paths, clearer language, and broader testing against the people the product is meant to serve.</p>
+</section>
+
+<section id="sources" aria-labelledby="sources-title">
+  <span class="eyebrow">Read the work behind the story</span>
+  <h2 id="sources-title">Source documents and working examples</h2>
+  <p>The repository links below pin the documents used for this dated account. Live product pages and the current roadmap may change after this snapshot.</p>
+  <ul>
+    <li id="source-product"><a href="https://github.com/asideofkorn/wayproof/blob/4382fd1b/PRODUCT.md">Product direction and provisional personas</a></li>
+    <li id="source-roadmap"><a href="https://github.com/asideofkorn/wayproof/blob/4382fd1b/ROADMAP.md">Roadmap and milestone boundaries</a> · <a href="https://github.com/asideofkorn/wayproof/blob/main/ROADMAP.md">Current roadmap</a></li>
+    <li id="source-architecture"><a href="https://github.com/asideofkorn/wayproof/blob/4382fd1b/ARCHITECTURE.md">Architecture, evidence lineage, and publication controls</a></li>
+    <li id="source-audit"><a href="https://github.com/asideofkorn/wayproof/blob/4382fd1b/docs/taboose-persona-audit.md">Taboose persona acceptance audit, including the October 7 production follow-up</a></li>
+    <li><a href="/how-it-works/">How Wayproof Works</a> — the public explanation of sources, claims, and planning</li>
+  </ul>
+</section>
+</main>
+{site_footer}
+</body>
+</html>

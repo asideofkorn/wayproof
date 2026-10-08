@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import json
 import os
+from html.parser import HTMLParser
+from urllib.parse import urlsplit
 
 import pytest
 from scripts import build_site
@@ -69,6 +71,81 @@ def test_how_wayproof_works_explains_the_model_and_comparison(site):
 def test_build_publishes_no_legacy_trailhead_pages(site):
     tmp_path, _ = site
     assert not (tmp_path / "trailheads").exists()
+
+
+def test_case_study_is_shareable_linked_and_outside_global_navigation(site):
+    from wayproof.canonical_site import render_primary_nav, render_site_footer
+
+    output, _ = site
+    path = "/how-wayproof-is-being-built/"
+    page = (output / path.strip("/") / "index.html").read_text()
+
+    class PageLinks(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.tags = []
+
+        def handle_starttag(self, tag, attrs):
+            self.tags.append((tag, dict(attrs)))
+
+    parsed = PageLinks()
+    parsed.feed(page)
+    ids = [attrs["id"] for _, attrs in parsed.tags if "id" in attrs]
+    assert len(ids) == len(set(ids))
+    assert sum(tag == "h1" for tag, _ in parsed.tags) == 1
+    assert sum(tag == "main" for tag, _ in parsed.tags) == 1
+    assert '<h1>How Wayproof Is Being Built</h1>' in page
+    assert render_primary_nav() in page
+    assert render_site_footer() in page
+    assert path not in render_primary_nav() + render_site_footer()
+    assert f"https://wayproof.dev{path}" in (output / "sitemap.xml").read_text()
+
+    metadata = {attrs.get("property", attrs.get("name")): attrs.get("content")
+                for tag, attrs in parsed.tags if tag == "meta"}
+    assert metadata["viewport"] == "width=device-width, initial-scale=1"
+    assert metadata["og:type"] == "article"
+    assert metadata["og:url"] == f"https://wayproof.dev{path}"
+    assert metadata["twitter:card"] == "summary_large_image"
+    assert metadata["og:image"] == metadata["twitter:image"]
+    assert metadata["og:image:alt"] == metadata["twitter:image:alt"]
+    assert any(tag == "link" and attrs.get("rel") == "canonical"
+               and attrs["href"] == metadata["og:url"] for tag, attrs in parsed.tags)
+    image = output / urlsplit(metadata["og:image"]).path.lstrip("/")
+    import struct
+    image_bytes = image.read_bytes()
+    assert image_bytes[:8] == b"\x89PNG\r\n\x1a\n"
+    assert struct.unpack(">II", image_bytes[16:24]) == (1200, 630)
+
+    # Every local CTA, section link, evidence link, and stylesheet resolves
+    # against the production-generated artifact, not a hand-built fixture.
+    for _, attrs in parsed.tags:
+        href = attrs.get("href", "")
+        link = urlsplit(href)
+        if href.startswith("#"):
+            assert link.fragment in ids, href
+        elif href.startswith("/"):
+            target = output / link.path.lstrip("/")
+            if link.path.endswith("/"):
+                target /= "index.html"
+            assert target.is_file(), href
+
+
+def test_case_study_keeps_acceptance_and_capability_limits_visible(site):
+    output, _ = site
+    page = (output / "how-wayproof-is-being-built/index.html").read_text()
+    for distinction in (
+        "Deployed on the public website",
+        "Implemented in the repository",
+        "Remaining roadmap work",
+        "trip feasibility remains partial",
+        "not an external usability study",
+        "synthetic, process-local rehearsal",
+        "not a commitment",
+    ):
+        assert distinction in page
+    for source in ("PRODUCT.md", "ROADMAP.md", "ARCHITECTURE.md",
+                   "docs/taboose-persona-audit.md", '/how-it-works/'):
+        assert source in page
 
 
 def test_build_writes_sitemap_and_robots(site):
