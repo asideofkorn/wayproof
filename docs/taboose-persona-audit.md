@@ -1,9 +1,10 @@
 # Taboose first-time traveler acceptance audit
 
-Audit date: October 6, 2026. Persona: a first-time traveler planning Taboose
-Pass with a dog and a low-clearance vehicle. Acceptance comes from PRODUCT.md's
-cross-jurisdiction adventurer and ROADMAP.md's explicit Taboose website audit.
-Baseline implementation: `e8353a07`; observations began on the live website.
+Baseline audit date: October 6, 2026. Production acceptance date: October 7,
+2026. Persona: a first-time traveler planning Taboose Pass with a dog and a
+low-clearance vehicle. Acceptance comes from PRODUCT.md's cross-jurisdiction
+adventurer and ROADMAP.md's explicit Taboose website audit. Baseline
+implementation: `e8353a07`; observations began on the live website.
 
 ## Baseline journey and failure classification
 
@@ -73,7 +74,8 @@ services/rendering change, the normal selector must retain its full-suite/site
 fallback. No canonical records change, so the diff-based canonical dependency
 closure has no seeds; the journey tests explicitly verify the affected pages.
 Browser verification also starts at local homepage search and follows names.
-The PR remains unmerged; production retains baseline behavior until reviewed.
+The repair shipped in [PR #215](https://github.com/asideofkorn/wayproof/pull/215)
+at merge commit `2d4a2a246ccc54ce928d191373498517721fa778`.
 
 ## PR review follow-up: map loading and inventory budget
 
@@ -108,3 +110,28 @@ selection focusing and layer/basemap changes after readiness. It also checks
 results created after readiness, map/search failure fallbacks, a lazy single
 index fetch and the 20-row cap. The existing persona/consumer assertions still
 check restrictions, provenance and missing-data boundaries.
+
+## Production acceptance — October 7, 2026
+
+The deployed journey was repeated from the likely question rather than a known
+record ID. The entry point was
+[`/search/?q=Taboose%20Pass%20dog`](https://wayproof.dev/search/?q=Taboose%20Pass%20dog),
+followed by the visible Taboose Pass result, its evidence links, and the same
+query in the geographic explorer.
+
+| Acceptance question | Live result | Assessment |
+| --- | --- | --- |
+| Can the traveler find a relevant place without knowing Wayproof's identifiers? | The query returned four bounded results: the pass, trail, western continuation, and approach route. | Pass. |
+| Is the consequential restriction visible before committing to the climb? | The [Taboose Pass page](https://wayproof.dev/knowledge/place-taboose-pass/) leads with the prohibition on the western continuation and says not to continue there with a dog. | Pass. |
+| Is the jurisdictional scope understandable? | The page distinguishes the east-side approach from the adjacent Kings Canyon continuation and describes the transition at the pass. | Pass, with the exact on-the-ground boundary still requiring confirmation. |
+| Can the traveler inspect provenance and currentness? | The [claim page](https://wayproof.dev/evidence/claim/claim-taboose-west-pets/) identifies the NPS source, western scope, retrieval date, unknown observation time, and missing effective interval. | Pass. The interface exposes rather than fills temporal uncertainty. |
+| Does the experience avoid inventing vehicle suitability or an alternative? | The pass page says current suitability, clearance, fallback parking, added walking, and a supported dog-compliant alternative are unknown. | Pass for honest answerability; coverage remains partial. |
+| Does the map preserve the decision context? | [`/map/?q=Taboose%20Pass%20dog`](https://wayproof.dev/map/?q=Taboose%20Pass%20dog) returned the pass and trail, delayed controls until ready, and showed the pet warning and access uncertainty in the selected-pass summary. | Pass. |
+
+This is an **internal production acceptance pass** for discovery, scope,
+provenance, uncertainty, and safe non-inference. It is not evidence that the
+complete trip is feasible, not a current road-condition check, and not an
+external usability study. The page remains long and evidence-heavy, and search
+still exposes some technical entity labels. Those are inputs to the broader M2
+persona-centered page, browse, and search redesign rather than blockers for
+this bounded journey.
