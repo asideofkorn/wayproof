@@ -27,15 +27,7 @@ OHLONE_PATH = "/trails/ohlone-wilderness/"
 ROUTE_MAP_ASSET_VERSION = "20260925-1"
 EXPLORE_MAP_ASSET_VERSION = "20261007-1"
 PRIMARY_NAV = (
-    ("Home", "/"),
-    ("Map", "/map/"),
-    ("Parks", "/parks/"),
-    ("Trails", "/trails/"),
-    ("Camping", "/camping/"),
-    ("Peaks and passes", "/peaks/"),
-    ("How it works", "/how-it-works/"),
-    ("Changes", "/changes/"),
-    ("Search", "/search/"),
+    ("Home", "/"), ("Search", "/search/"), ("Explore", "/explore/"), ("Map", "/map/"),
 )
 DIRECTORIES = {
     "parks": {
@@ -49,8 +41,8 @@ DIRECTORIES = {
         "kinds": ("trail", "route"),
     },
     "camping": {
-        "title": "Camping",
-        "description": "Browse campgrounds, developed sites, group camps, equestrian camps, cabins, and backcountry camps.",
+        "title": "Campgrounds and camping",
+        "description": "Choose a campground or camping area, then explore its campsites. Standalone camps stay listed here.",
         "kinds": ("campground", "campground_collection", "campsite",
                   "family_campsite", "group_campsite",
                   "cabin_campsite", "backcountry_camp", "equestrian_campsite",
@@ -342,6 +334,8 @@ Missing geometry stays missing; proximity is not treated as access.</p></header>
 
 def _page(title: str, description: str, canonical: str, body: str,
           head_extra: str = "") -> str:
+    if '<main' in body and 'id="main"' not in body:
+        body = body.replace('<main', '<main id="main"', 1)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -354,8 +348,10 @@ def _page(title: str, description: str, canonical: str, body: str,
 {head_extra}
 </head>
 <body>
+{('<a class="skip-link" href="#main">Skip to content</a>' if 'id="main"' in body else '')}
 {body}
 {render_site_footer()}
+<script src="/assets/planning-context.js" defer></script>
 </body>
 </html>
 """
@@ -854,6 +850,8 @@ def render_evidence_html(payload: dict, site_url: str) -> str:
 
 def _human_label(value: str) -> str:
     labels = {
+        "pretrip_current_conditions_recheck": "Check current conditions",
+        "pet_policy": "Pets", "campground_collection": "Camping areas",
         "operating_status": "Park status", "reservation_window": "Book a campsite",
         "gate_hours": "Campground gate", "water_quality_advisory": "Swimming advisory",
         "boat_inspection_required": "Boat inspection", "overnight_camping_reservation": "Ohlone overnights",
@@ -997,7 +995,7 @@ def render_del_valle_destination_html(payload: dict, site_url: str) -> str:
     )
     summary = [claims[item] for item in summary_predicates if item in claims]
     body = [
-        render_primary_nav(),
+        render_primary_nav(), '<main id="main">',
         '<header class="page-header">', f'<h1>{_e(entity["name"])}</h1>',
         '<p class="tagline">Plan access, camping, lake recreation, and the '
         'Ohlone Wilderness Trail from one evidence-backed view.</p>',
@@ -1119,7 +1117,7 @@ def render_entity_html(payload: dict, site_url: str,
         relationship_groups.setdefault(
             _relationship_section(relationship["predicate"]), []).append(relationship)
     body = [
-        render_primary_nav(),
+        render_primary_nav(), '<main id="main">',
         '<header class="page-header">', f'<h1>{_e(entity["name"])}</h1>',
         f'<p class="subtitle"><span class="eyebrow">{_e(_human_label(entity["kind"]))}</span></p>',
         f'<p class="tagline">Plan with {len(claims)} source-backed fact'
@@ -1253,6 +1251,7 @@ def render_entity_html(payload: dict, site_url: str,
         'Canonical data is historical evidence, not a guarantee of current conditions. '
         'Recheck volatile facts before travel.</p>'
     )
+    body.append('</main>')
     head_extra = (
         '<link rel="stylesheet" href="/assets/vendor/maplibre/maplibre-gl.css">'
         if payload["route_geometry"] else ""
@@ -1270,91 +1269,29 @@ def render_search_html(entities: Iterable[dict], site_url: str,
                        preferred_paths: dict[str, str] | None = None) -> str:
     entities = list(entities)
     preferred_paths = preferred_paths or {}
-    kinds = sorted({item["kind"] for item in entities})
-    rows = "".join(
-        f'<li class="result-card" data-search="{_e(item.get("search_text", item["name"] + " " + item["entity_id"]))}" '
-        f'data-kind="{_e(item["kind"])}">'
-        f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
-        f'{_e(item["name"])}</a> '
-        f'<span class="pill">{_e(item["kind"])}</span>'
-        f'<p>{_e(item.get("planning_topics", ""))}</p></li>'
-        for item in entities
-    )
-    options = ''.join(f'<option value="{_e(kind)}">{_e(kind)}</option>' for kind in kinds)
-    body = f"""
-{render_primary_nav()}
-<header class="page-header"><span class="eyebrow">Explore the knowledge base</span>
-<h1>Find a place, route, or campsite</h1>
-<p class="subtitle">Search {len(entities)} published entities. Every result opens a page
-that separates supported facts, open questions, sources, and history.</p></header>
+    kinds = sorted({item['kind'] for item in entities})
+    options = ''.join(f'<option value="{_e(kind)}">{_e(_human_label(kind))}</option>' for kind in kinds)
+    # Static entry points remain useful if enhancement or the index fails.
+    candidates = [e for e in entities if e['kind'] in {'park','campground','route','pass'}][:20]
+    fallback = ''.join(f'<li class="result-card"><a href="{_e(preferred_paths.get(e["entity_id"], "/knowledge/"+e["entity_id"]+"/"))}">{_e(e["name"])}</a></li>' for e in candidates)
+    body = f'''{render_primary_nav()}<main id="main">
+<header class="page-header"><h1>Find a place, route, or campsite</h1>
+<p class="subtitle">Start with a place name. Choose a campground before exploring its sites, or include a campsite number.</p></header>
 <form id="entity-search-form" class="search-controls" action="/search/" method="get">
 <label for="entity-search">Search by name or planning need</label>
-<input id="entity-search" name="q" type="search" placeholder="Try Mount Whitney or Del Valle">
+<input id="entity-search" name="q" type="search" placeholder="Try East Fork or Taboose Pass">
 <label for="entity-kind">Narrow by type</label>
 <select id="entity-kind" name="kind"><option value="">All types</option>{options}</select>
 <button class="button primary search-submit" type="submit">Search</button></form>
 <p id="result-count" class="meta" role="status" aria-live="polite" tabindex="-1">Enter a name or choose a type to search.</p>
-<p id="no-results" class="notice notice-unknown" hidden>No matching places, routes, or campsites. Try a shorter name or select a different type.</p>
-<p>Search matches published facts and open questions, not permission or current clearance.
-Dog and pet terms are searched together. <a href="/search/">Reset search</a></p>
-<ul id="entity-results" class="result-grid">{rows}</ul>
-<noscript><p>All entities are listed above; browser filtering requires JavaScript.</p></noscript>
-<script src="/assets/planning-search.js"></script>
-<script>
-const query = document.getElementById('entity-search');
-const kind = document.getElementById('entity-kind');
-const form = document.getElementById('entity-search-form');
-const count = document.getElementById('result-count');
-const empty = document.getElementById('no-results');
-const rows = [...document.querySelectorAll('#entity-results li')];
-function filterEntities() {{
-  const needle = query.value.trim().toLocaleLowerCase();
-  const hasCriteria = Boolean(needle || kind.value);
-  let visible = 0;
-  for (const row of rows) {{
-    const show = hasCriteria && WayproofSearch.matches(row.dataset.search, needle) &&
-                 (!kind.value || row.dataset.kind === kind.value);
-    row.hidden = !show;
-    if (show) visible += 1;
-  }}
-  count.textContent = hasCriteria
-    ? `${{visible}} ${{visible === 1 ? 'result' : 'results'}}`
-    : 'Enter a name or choose a type to search.';
-  empty.hidden = !hasCriteria || visible !== 0;
-  return visible;
-}}
-query.addEventListener('input', filterEntities);
-kind.addEventListener('change', filterEntities);
-query.addEventListener('keydown', event => {{
-  if (event.key === 'Enter') {{
-    event.preventDefault();
-    form.requestSubmit();
-  }}
-}});
-form.addEventListener('submit', event => {{
-  event.preventDefault();
-  filterEntities();
-  const params = new URLSearchParams();
-  if (query.value.trim()) params.set('q', query.value.trim());
-  if (kind.value) params.set('kind', kind.value);
-  const suffix = params.toString();
-  history.replaceState(null, '', suffix ? `/search/?${{suffix}}` : '/search/');
-  query.blur();
-  count.focus();
-}});
-const initial = new URLSearchParams(location.search);
-query.value = initial.get('q') || '';
-if ([...kind.options].some(option => option.value === initial.get('kind'))) {{
-  kind.value = initial.get('kind') || '';
-}}
-filterEntities();
-</script>
-"""
-    return _page(
-        'Canonical search — Wayproof',
-        'Search published Wayproof entities and inspect evidence, gaps, and history.',
-        f'{site_url}/search/', body,
-    )
+<p id="no-results" class="notice notice-unknown" hidden>No matching places. Try a shorter name or another type.</p>
+<p>A search match does not establish permission or current conditions. <a href="/search/">Reset search</a></p>
+<nav aria-label="Browse places"><a href="/camping/">Campgrounds and camping</a> · <a href="/parks/">Parks</a> · <a href="/trails/">Routes and trails</a> · <a href="/peaks/">Peaks and passes</a></nav>
+<ul id="entity-results" class="result-grid">{fallback}</ul>
+<nav id="search-pages" aria-label="Search result pages"></nav>
+<noscript><p>Search needs JavaScript. Use the directories above to browse places and campsites.</p></noscript>
+</main><script src="/assets/planning-search.js"></script><script src="/assets/search-page.js" defer></script>'''
+    return _page('Search — Wayproof', 'Find places, campgrounds, routes and their sources.', f'{site_url}/search/', body)
 
 
 def render_directory_html(key: str, entities: Iterable[dict], site_url: str,
@@ -1372,7 +1309,8 @@ def render_directory_html(key: str, entities: Iterable[dict], site_url: str,
         f'data-kind="{_e(item["kind"])}">'
         f'<a href="{_e(preferred_paths.get(item["entity_id"], "/knowledge/" + item["entity_id"] + "/"))}">'
         f'<strong>{_e(item["name"])}</strong></a>'
-        f'<span class="meta">{_e(_human_label(item["kind"]))}</span></li>'
+        f'<span class="meta">{_e(_human_label(item["kind"]))}</span>'
+        + (f'<p>{item["campsite_count"]} campsites · Choose a campground before a site</p>' if item.get('campsite_count') else '') + '</li>'
         for item in entities
     )
     body = (
@@ -1380,7 +1318,7 @@ def render_directory_html(key: str, entities: Iterable[dict], site_url: str,
         + f'<header class="page-header"><span class="eyebrow">Browse Wayproof</span>'
         + f'<h1>{_e(spec["title"])}</h1>'
         + f'<p class="tagline">{_e(spec["description"])}</p>'
-        + f'<p class="meta">{len(entities)} published records</p></header>'
+        + f'<p class="meta">{len(entities)} {"campgrounds and standalone camps" if key == "camping" else "places"}</p></header>'
         + '<div class="directory-controls">'
         + f'<label for="directory-search">Filter { _e(spec["title"].lower()) }</label>'
         + '<input id="directory-search" type="search" placeholder="Type a name">'
@@ -1403,8 +1341,24 @@ function filterDirectory() {
   }
   document.getElementById('directory-count').textContent = `${visible} results`;
 }
-directoryQuery.addEventListener('input', filterDirectory);
-directoryKind.addEventListener('change', filterDirectory);
+function saveDirectory() {
+  const params = new URLSearchParams(location.search);
+  directoryQuery.value ? params.set('q',directoryQuery.value) : params.delete('q');
+  directoryKind.value ? params.set('kind',directoryKind.value) : params.delete('kind');
+  history.replaceState(null,'',location.pathname + (params.size ? '?' + params : ''));
+  filterDirectory();
+}
+function restoreDirectory() {
+  const params = new URLSearchParams(location.search);
+  directoryQuery.value = params.get('q') || '';
+  directoryKind.value = params.get('kind') || '';
+  filterDirectory();
+}
+directoryQuery.addEventListener('input', saveDirectory);
+directoryKind.addEventListener('change', saveDirectory);
+window.addEventListener('pageshow', restoreDirectory);
+window.addEventListener('popstate', restoreDirectory);
+restoreDirectory();
 </script>'''
     )
     return _page(
@@ -1459,6 +1413,11 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
     """Write canonical search and detail pages into an existing site artifact."""
     entities = tuple(_plain(item) for item in reads.search_entities())
     entities_by_id = {item["entity_id"]: item for item in entities}
+    from .camping_projection import SITE_KINDS, PARENT_KINDS
+    from .camping_site import summary, site_row, render_camping, render_inventory, camping_url, PAGE_SIZE
+    from math import ceil
+    camping_models = {e['entity_id']: summary(reads, reads.entity(e['entity_id']))
+                      for e in entities if e['kind'] in SITE_KINDS | PARENT_KINDS}
     preferred_paths = {DEL_VALLE_ID: DEL_VALLE_PATH, OHLONE_ID: OHLONE_PATH}
     journeys = {entity["entity_id"]: journey_payload(reads, entity["entity_id"])
                 for entity in entities}
@@ -1478,7 +1437,10 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
             terms.extend(json.dumps(b["claim"]["value"]) for b in context["claims"])
             terms.extend(g["question"] + ' ' + g["reason"] for g in context["gaps"])
         terms.extend(topics)
-        search_entities.append({**entity, "search_text": ' '.join(terms),
+        camping = camping_models.get(entity['entity_id'])
+        parents = camping['hierarchy'].parents if camping else ()
+        terms.extend(p.name for p in parents)
+        search_entities.append({**entity, 'camping_parents': [_plain(p) for p in parents], "search_text": ' '.join(terms),
                                 "planning_topics": ' · '.join(topics)})
     primary_kinds = {"park", "national_park", "wilderness", "route", "trail",
                      "pass", "mountain_pass", "peak", "trailhead", "campground"}
@@ -1511,7 +1473,28 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         "type": "canonical_entity_index", "count": len(entities), "entities": search_entities,
     }), encoding="utf-8")
 
-    directory_urls = [f"{site_url}/map/"]
+    (search_dir / 'lookup.json').write_text(json.dumps([
+        {'id': e['entity_id'], 'name': e['name'], 'kind': e['kind'],
+         'label': _human_label(e['kind']), 'text': e['search_text'],
+         'display_name': site_row(reads, reads.entity(e['entity_id']))['name'] if e.get('camping_parents') else e['name'],
+         'topics': e['planning_topics'], 'parents': e.get('camping_parents', []),
+         'url': preferred_paths.get(e['entity_id'], '/knowledge/' + e['entity_id'] + '/')}
+        for e in search_entities], ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+
+    explore_dir = output_dir / 'explore'
+    explore_dir.mkdir(exist_ok=True)
+    explore_body = render_primary_nav() + '<main id="main"><h1>Where do you want to go?</h1><ul class="directory-grid">'
+    for key, label, description in (
+        ('camping','Campgrounds and camping','Choose a campground, then explore its campsites.'),
+        ('trails','Routes and trails','Find routes and check how to reach them.'),
+        ('peaks','Peaks and passes','Start with a place you want to reach.'),
+        ('parks','Parks and preserves','Explore places and the rules that apply there.'),
+    ):
+        explore_body += f'<li class="directory-card"><h2><a href="/{key}/">{label}</a></h2><p>{description}</p></li>'
+    explore_body += '</ul></main>'
+    (explore_dir / 'index.html').write_text(_page('Explore — Wayproof', 'Find a campground, route or objective.',
+                                              site_url + '/explore/', explore_body), encoding='utf-8')
+    directory_urls = [f"{site_url}/map/", f"{site_url}/explore/"]
     for key, spec in DIRECTORIES.items():
         directory_entities = tuple(
             item for item in entities if item["kind"] in spec["kinds"]
@@ -1519,7 +1502,12 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         directory = output_dir / key
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "index.html").write_text(
-            render_directory_html(key, directory_entities, site_url, preferred_paths),
+            render_directory_html(key, (
+                [dict(item, campsite_count=len(camping_models[item['entity_id']]['hierarchy'].children)
+                      if item['entity_id'] in camping_models else 0)
+                 for item in directory_entities
+                 if item['entity_id'] not in camping_models or not camping_models[item['entity_id']]['hierarchy'].parents]
+                if key == 'camping' else directory_entities), site_url, preferred_paths),
             encoding="utf-8",
         )
         (directory / "index.json").write_text(_json({
@@ -1565,8 +1553,34 @@ def build_canonical_site(reads: CanonicalReadService, output_dir: Path,
         )
         page_dir = knowledge_dir / entity["entity_id"]
         page_dir.mkdir(parents=True, exist_ok=True)
-        (page_dir / "index.html").write_text(
-            render_entity_html(payload, site_url, entities_by_id), encoding="utf-8")
+        camping = camping_models.get(entity['entity_id'])
+        if camping:
+            (page_dir / 'index.html').write_text(render_camping(reads, camping, site_url), encoding='utf-8')
+            facts_dir = page_dir / 'facts'
+            facts_dir.mkdir(exist_ok=True)
+            facts_html = render_entity_html(payload, site_url, entities_by_id)
+            facts_html = facts_html.replace('<header class="page-header">', f'<p><a href="/knowledge/{entity["entity_id"]}/">Back to { _e(entity["name"]) }</a></p><header class="page-header">', 1)
+            facts_html = facts_html.replace(f'{site_url}/knowledge/{entity["entity_id"]}/"',
+                                            f'{site_url}/knowledge/{entity["entity_id"]}/facts/"', 1)
+            (facts_dir / 'index.html').write_text(facts_html, encoding='utf-8')
+            directory_urls.append(f'{site_url}/knowledge/{entity["entity_id"]}/facts/')
+            children = camping['hierarchy'].children
+            if children:
+                import re
+                rows = [site_row(reads, child) for child in children]
+                rows.sort(key=lambda row: tuple((0,int(part)) if part.isdigit() else (1,part.casefold())
+                                               for part in re.split(r'(\d+)',row['name'])))
+                for page in range(1, ceil(len(rows) / PAGE_SIZE) + 1):
+                    url = camping_url(entity['entity_id'], page)
+                    target = output_dir / url.lstrip('/')
+                    target.mkdir(parents=True, exist_ok=True)
+                    (target / 'index.html').write_text(render_inventory(reads, camping['entity'], rows, site_url, page), encoding='utf-8')
+                    directory_urls.append(site_url + url)
+                (page_dir / 'campsites' / 'index.json').write_text(
+                    json.dumps(rows, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+        else:
+            (page_dir / "index.html").write_text(
+                render_entity_html(payload, site_url, entities_by_id), encoding="utf-8")
         (knowledge_dir / f'{entity["entity_id"]}.json').write_text(
             _json(payload), encoding="utf-8")
 

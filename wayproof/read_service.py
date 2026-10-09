@@ -166,6 +166,16 @@ class CanonicalReadService:
             key=lambda claim: (claim.predicate.casefold(), claim.claim_id),
         ))
 
+    def camping_hierarchy(self, entity_id: str):
+        """Explicit campsite parents/children, preserving multiple parents."""
+        from .camping_projection import camping_hierarchy
+        return camping_hierarchy(self, entity_id)
+
+    def camping_claims(self, entity_id: str):
+        """Planning facts without promoting child inventory to parent facts."""
+        from .camping_projection import camping_claims
+        return camping_claims(self, entity_id)
+
     def journey_context(self, entity_id: str):
         """Sourced discovery links, distinct from a resolved planning context."""
         from .journey import journey_context

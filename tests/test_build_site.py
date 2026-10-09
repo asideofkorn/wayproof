@@ -167,8 +167,9 @@ def test_build_writes_canonical_search_from_read_service(site):
                for item in search["entities"])
 
     page = (tmp_path / "search" / "index.html").read_text()
-    assert "Canonical search" in page
-    assert "Del Valle Regional Park" in page
+    assert "Search — Wayproof" in page
+    lookup = json.loads((tmp_path / "search/lookup.json").read_text())
+    assert any(r["name"] == "Del Valle Regional Park" for r in lookup)
     assert 'id="entity-search"' in page
 
 
@@ -200,7 +201,13 @@ def test_generic_entity_pages_use_the_human_planning_hierarchy(site):
         "campground-yosemite-upper-pines": ("Upper Pines Campground", "Facilities and services"),
     }
     for entity_id, (name, expected_group) in representatives.items():
-        page = (tmp_path / "knowledge" / entity_id / "index.html").read_text()
+        # Campground overview has its own bounded planning page; the complete
+        # hierarchy remains on the linked facts page.
+        path = tmp_path / "knowledge" / entity_id
+        if entity_id.startswith('campground-'):
+            assert '/facts/' in (path / 'index.html').read_text()
+            path = path / 'facts'
+        page = (path / 'index.html').read_text()
         assert name in page
         assert "Plan a visit" in page
         assert "Explore related places" in page
@@ -372,14 +379,20 @@ def test_large_related_inventories_are_progressively_disclosed(site):
     page = (tmp_path / "knowledge" / "campground-yosemite-upper-pines" /
             "index.html").read_text()
 
-    assert 'class="related-more"' in page
-    assert "Show 227 more" in page
+    assert '/campsites/' in page
+    inventory = tmp_path / "knowledge/campground-yosemite-upper-pines/campsites"
+    pages = [inventory / 'index.html', *inventory.glob('page-*/index.html')]
+    assert all(p.read_text().count('class="camp-row"') <= 20 for p in pages)
+    complete = (tmp_path / "knowledge/campground-yosemite-upper-pines/facts/index.html").read_text()
+    assert 'class="related-more"' in complete
+    assert "Show 227 more" in complete
 
 
 def test_ohlone_search_opens_trail_page_with_canonical_detail_link(site):
     tmp_path, _ = site
     page = (tmp_path / "search" / "index.html").read_text()
-    assert "/trails/ohlone-wilderness/" in page
+    lookup = json.loads((tmp_path / 'search/lookup.json').read_text())
+    assert next(r['url'] for r in lookup if r['name'] == 'Ohlone Wilderness Trail') == '/trails/ohlone-wilderness/'
     assert (tmp_path / "knowledge" / "trail-ohlone-wilderness" / "index.html").exists()
     trail = (tmp_path / "trails" / "ohlone-wilderness" / "index.html").read_text()
     assert "/knowledge/trail-ohlone-wilderness/" in trail
@@ -388,8 +401,8 @@ def test_ohlone_search_opens_trail_page_with_canonical_detail_link(site):
 def test_del_valle_search_opens_the_outcome_focused_destination(site):
     tmp_path, _ = site
     search = (tmp_path / "search" / "index.html").read_text()
-    assert ('href="/destinations/del-valle/">Del Valle Regional Park</a>'
-            in search)
+    lookup = json.loads((tmp_path / 'search/lookup.json').read_text())
+    assert next(r['url'] for r in lookup if r['name'] == 'Del Valle Regional Park') == '/destinations/del-valle/'
 
     page = (tmp_path / "destinations" / "del-valle" / "index.html").read_text()
     for heading in (
@@ -479,10 +492,8 @@ def test_primary_navigation_connects_every_public_page_type(site):
     expected_links = {
         'href="/"',
         'href="/search/"',
-        'href="/parks/"',
-        'href="/trails/"',
-        'href="/camping/"',
-        'href="/peaks/"',
+        'href="/explore/"',
+        'href="/map/"',
         'href="/changes/"',
         'href="/how-it-works/"',
     }
@@ -521,12 +532,14 @@ def test_search_and_directories_have_task_focused_filters(site):
     assert 'type="submit">Search</button>' in search
     assert 'aria-live="polite"' in search
     assert 'id="no-results"' in search
-    assert "const hasCriteria = Boolean(needle || kind.value)" in search
-    assert "const show = hasCriteria" in search
+    search_script = (tmp_path / 'assets/search-page.js').read_text()
+    assert 'WayproofSearch.discover' in search_script
+    assert "pageshow" in search_script
+    assert "slice((p-1)*20,p*20)" in search_script
     assert "Enter a name or choose a type to search." in search
-    assert "event.key === 'Enter'" in search
-    assert "form.requestSubmit()" in search
-    assert "form.addEventListener('submit'" in search
+    assert "event.key === 'Enter'" in search_script
+    assert "form.requestSubmit()" in search_script
+    assert "form.addEventListener('submit'" in search_script
     assert 'class="result-grid"' in search
     assert "[hidden] { display:none !important; }" in (tmp_path / "style.css").read_text()
     assert 'id="directory-search"' in parks

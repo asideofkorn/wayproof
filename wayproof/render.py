@@ -23,6 +23,9 @@ from typing import Optional, Sequence
 from .views import REPO, SITE_URL
 
 STYLESHEET = """\
+.skip-link { position:absolute; top:-100px; }
+.skip-link:focus { top:0; z-index:100; background:var(--surface-raised); padding:1rem; }
+.site-links a { min-height:44px; display:inline-flex; align-items:center; }
 :root { color-scheme: light dark; --accent:#176b5b; --accent-soft:#e8f3ef;
         --surface:#f6f8f7; --surface-raised:#fff; --border:#d9dfdc;
         --muted:#59645f; --warning:#9a5b00; --unknown:#6b5b7a; }
