@@ -70,9 +70,10 @@ def test_first_time_dog_and_vehicle_journey(generated_site):
     names = {r['name'] for r in matches}
     assert {'Taboose Pass', 'Taboose Pass Trail',
             'Taboose Pass western continuation in Kings Canyon'} <= names
-    assert 'not permission or current clearance' in search
+    assert 'does not establish permission or current conditions' in search
     # Select by the visible name, then follow actual published links.
-    pass_page = page_at(site, Links(search).href('Taboose Pass'))
+    lookup = json.loads((site / 'search/lookup.json').read_text())
+    pass_page = page_at(site, next(r['url'] for r in lookup if r['name'] == 'Taboose Pass'))
     route_page = page_at(site, Links(pass_page).href('Taboose Pass Trail'))
     for page in (pass_page, route_page):
         overview = decisions(page)

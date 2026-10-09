@@ -109,7 +109,8 @@ def test_generated_camping_directory_contains_all_east_fork_sites(generated_site
     assert page.exists()
     html = page.read_text()
     assert "East Fork Campground Site 001" in html
-    assert "Food Storage Locker" in html
+    assert "Food storage locker listed" in html
+    assert "All details, sources and history" in html
 
 
 def test_inventory_changeset_is_validated_and_exact():
