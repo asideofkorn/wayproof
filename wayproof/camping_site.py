@@ -1,6 +1,7 @@
 """Campground-first static presentation over canonical read projections."""
 from math import ceil
-from datetime import date
+from datetime import date, datetime
+from decimal import Decimal, InvalidOperation
 from urllib.parse import urlparse
 
 from .camping_projection import PARENT_KINDS, SITE_KINDS
@@ -54,6 +55,23 @@ def source_line(reads, claim, compact=False):
 
 
 
+def comparable_field(value, time=False):
+    text = str(value).strip()
+    if time:
+        for pattern in ('%H:%M', '%I:%M %p', '%I:%M%p', '%I %p'):
+            try:
+                parsed = datetime.strptime(text.upper(), pattern)
+                return ('time', parsed.hour * 60 + parsed.minute)
+            except ValueError:
+                pass
+    else:
+        try:
+            return ('number', Decimal(text))
+        except InvalidOperation:
+            pass
+    return ('text', ' '.join(text.casefold().split()))
+
+
 def conflict_notes(claim):
     """Compare explicitly named fields, never derive conflict from prose."""
     v = claim.value
@@ -61,14 +79,14 @@ def conflict_notes(claim):
         return []
     notes = []
     if claim.predicate == 'vehicle_limits':
-        lengths = {str(v[k]) for k in (
+        lengths = {comparable_field(v[k]) for k in (
             'maximum_vehicle_length_attribute_feet', 'maximum_vehicle_length_site_details_feet') if k in v}
-        counts = {str(v[k]) for k in ('maximum_vehicles_attribute', 'maximum_vehicles_site_details') if k in v}
+        counts = {comparable_field(v[k]) for k in ('maximum_vehicles_attribute', 'maximum_vehicles_site_details') if k in v}
         if len(lengths) > 1 or len(counts) > 1:
             notes.append(('Vehicle limits differ', 'The source lists different vehicle limits. Ask the campground which limits apply before booking.'))
     if claim.predicate == 'arrival_departure_times':
         times = {str(v[k]) for k in ('checkout_attribute', 'checkout_site_details') if k in v}
-        if len(times) > 1:
+        if len({comparable_field(t, time=True) for t in times}) > 1:
             notes.append(('Checkout times differ', 'The source lists checkout at ' + ' and '.join(sorted(times)) + '. Confirm the time with the campground.'))
     if claim.predicate == 'recreation_gov_site_profile':
         attrs = {}
@@ -79,7 +97,7 @@ def conflict_notes(claim):
         for group in ('equipment_details', 'site_details'):
             for key, label in labels.items():
                 value = v.get(group, {}).get(key)
-                if value is not None and key in attrs and attrs[key] != {str(value)}:
+                if value is not None and key in attrs and {comparable_field(x, key == 'checkout_time') for x in attrs[key]} != {comparable_field(value, key == 'checkout_time')}:
                     values = sorted(attrs[key] | {str(value)})
                     unit = ' feet' if key == 'max_vehicle_length' else ''
                     notes.append((f'{label}: different limits listed' if key != 'checkout_time' else 'Checkout times differ',
@@ -195,6 +213,7 @@ def render_camping(reads, model, site_url):
                         + source_line(reads,profile) + '</section>')
     directions = [c for c in own if c.predicate == 'directions' and isinstance(c.value,dict)]
     distances = {str(c.value.get('distance_miles',c.value.get('distance_miles_approximate'))) for c in directions}
+    same_approach = bool(directions) and all(c.value.get('from') and c.value.get('road') for c in directions) and len({(c.value.get('from'), c.value.get('road'), str(c.temporal_scope)) for c in directions}) == 1
     body.append('<div class="hero-actions">')
     if hierarchy.children:
         body.append(f'<a class="button primary" data-context-link href="{camping_url(entity.entity_id)}">Browse {len(hierarchy.children)} campsites</a>')
@@ -246,7 +265,7 @@ def render_camping(reads, model, site_url):
         if title not in groups:
             continue
         body.append(f'<section><h2>{s._e(title)}</h2>')
-        if title == 'Getting there' and len(distances) > 1:
+        if title == 'Getting there' and same_approach and len(distances) > 1:
             body.append('<p><strong>Directions differ between sources.</strong> Compare both published distances before following the directions.</p>')
         for c in groups[title]:
             # Profiles contain technical provider maps, not visitor-facing copy.

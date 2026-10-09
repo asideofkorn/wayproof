@@ -115,3 +115,19 @@ assert.equal(back.href,'/search/?q=East+Fork&kind=campground');
 assert.equal(back.textContent,'← Back to search results');
 '''
     subprocess.run([shutil.which('node'),'-e',script],cwd=ROOT,check=True,capture_output=True,text=True)
+
+
+def test_field_formatting_differences_do_not_manufacture_conflicts():
+    from wayproof.camping_site import conflict_notes
+    claim = SimpleNamespace(predicate='recreation_gov_site_profile', value={
+        'equipment_details': {'max_vehicle_length': '30'},
+        'site_details': {'checkout_time': '13:00'},
+        'published_attributes': [
+            {'code':'max_vehicle_length','value':'30.0'},
+            {'code':'checkout_time','value':'1:00 PM'},
+        ],
+    })
+    assert conflict_notes(claim) == []
+    claim.value['published_attributes'][1]['value'] = '11:00 AM'
+    assert len(conflict_notes(claim)) == 1
+    assert conflict_notes(claim)[0][0] == 'Checkout times differ'

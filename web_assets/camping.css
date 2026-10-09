@@ -29,3 +29,5 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .camp-row h2 a { display: inline-flex; align-items: center; min-height: 44px; }
 
 .camp-planning time { white-space: nowrap; }
+
+.camp-planning .eyebrow { color: var(--muted); }

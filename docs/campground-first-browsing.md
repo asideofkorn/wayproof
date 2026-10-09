@@ -77,3 +77,23 @@ question understanding and complete trip planning remain separate roadmap work.
 The evidence-detail layout and unsupported structured predicates still need
 further language/hierarchy work. No claim of live availability or completeness
 is added by this slice.
+
+## Author verification — October 9, 2026
+
+The East Fork overview measures 12,461 HTML bytes and 261 elements, compared with
+1,324,541 bytes and 54,776 elements in the production baseline audit. Search
+initial HTML is 8,294 bytes. These are generated-file measurements, not network
+latency claims; full evidence pages deliberately retain comprehensive content.
+
+Chrome checks covered 320/390/1280px without horizontal overflow, filtered
+inventory → site → evidence → return with selected-link focus restored, browser
+Back with the search query retained, and keyboard expansion of native sources.
+Blocking camping/search/context scripts still permitted static pagination to
+page seven and Site 126, with both conflicts and the campground parent visible.
+The initial script-execution-disable attempt was insufficient across navigation;
+network script blocking supplied the actual fallback check.
+
+Dark-theme label contrast was corrected from 2.99:1 to 9.37:1 using the existing
+secondary-text color. State comprehension uses explicit text rather than the
+notice border. Formal screen-reader and participant testing remain future work.
+Equivalent numeric/time representations are tested not to manufacture conflicts.
