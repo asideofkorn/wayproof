@@ -80,7 +80,7 @@ is added by this slice.
 
 ## Author verification — October 9, 2026
 
-The East Fork overview measures 12,461 HTML bytes and 261 elements, compared with
+The East Fork overview measures 12,825 HTML bytes and 264 elements, compared with
 1,324,541 bytes and 54,776 elements in the production baseline audit. Search
 initial HTML is 8,294 bytes. These are generated-file measurements, not network
 latency claims; full evidence pages deliberately retain comprehensive content.
@@ -97,3 +97,7 @@ Dark-theme label contrast was corrected from 2.99:1 to 9.37:1 using the existing
 secondary-text color. State comprehension uses explicit text rather than the
 notice border. Formal screen-reader and participant testing remain future work.
 Equivalent numeric/time representations are tested not to manufacture conflicts.
+
+The broader suite caught a missing explanation for Tamarack’s unresolved place
+identity. Gap explanations are now retained beside non-conflict questions; the
+existing regression assertion remains unchanged.

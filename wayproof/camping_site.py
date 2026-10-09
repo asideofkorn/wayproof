@@ -242,7 +242,8 @@ def render_camping(reads, model, site_url):
             label = 'Unresolved source disagreement — compare the evidence'
         else:
             label = gap.question
-        body.append('<li>' + s._record_link('gap',gap.gap_id,label) + '</li>')
+        explanation = '' if related.intersection(gap.related_ids) else f'<p>{s._e(gap.reason)}</p>'
+        body.append('<li>' + s._record_link('gap',gap.gap_id,label) + explanation + '</li>')
     rechecks = [c for c in own if c.predicate == 'pretrip_current_conditions_recheck']
     for c in rechecks:
         topics = c.value.get('topics', []) if isinstance(c.value,dict) else []
