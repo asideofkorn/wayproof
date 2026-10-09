@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS linked boundary page retains Friday before Memorial Day through October 31 for Rae Lakes Loop, differing from the main food page; old Kearsarge notice also retained.",
+    "observation_id": "observation-taboose-depth-food-season-boundary",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-canister-areas"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "ReserveAmerica expanded Booking Window on October 6 local time: reservations at least one day ahead and up to nine months ahead. Rolling example dates are not a permanent season.",
+    "observation_id": "observation-taboose-depth-booking-window",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-booking"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

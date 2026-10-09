@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS trail conditions page is the official recheck source for the newly modeled western itineraries. Historical mapped trails and a previous Taboose report do not establish present conditions.",
+    "observation_id": "observation-taboose-depth-west-conditions",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-nps-seki-trail-conditions"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

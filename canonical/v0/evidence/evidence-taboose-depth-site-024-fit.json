@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-024-fit",
+    "evidence_id": "evidence-taboose-depth-site-024-fit",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-site-024-fit",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

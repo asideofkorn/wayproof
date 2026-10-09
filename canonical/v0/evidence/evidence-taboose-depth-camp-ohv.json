@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-ohv",
+    "evidence_id": "evidence-taboose-depth-camp-ohv",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-camp-ohv",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

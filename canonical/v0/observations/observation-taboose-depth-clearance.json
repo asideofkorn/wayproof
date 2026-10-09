@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "PCTA Access section labels dirt/gravel and generally passenger vehicle accessible; description says paving at US395 quickly becomes gravel. Preserve generally and reconcile with USFS rough/bumpy description before travel.",
+    "observation_id": "observation-taboose-depth-clearance",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-pcta"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

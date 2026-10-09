@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Site 013 table lists picnic table, grill, fire ring, partial shade, stream setting; Waterfront 630 and Proximity to Restrooms 150, with no displayed units. These numbers do not establish a measured walking route or drinking-water service.",
+    "observation_id": "observation-taboose-depth-site-013-amenities",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-site-013"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

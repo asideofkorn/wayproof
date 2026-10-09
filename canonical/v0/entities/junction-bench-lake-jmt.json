@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "junction-bench-lake-jmt",
+    "kind": "junction",
+    "name": "Bench Lake / John Muir Trail junction"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

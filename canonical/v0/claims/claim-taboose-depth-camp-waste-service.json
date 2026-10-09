@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-waste-service",
+    "evidence_ids": [
+      "evidence-taboose-depth-camp-waste-service"
+    ],
+    "predicate": "seasonal_waste_service_guidance",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "black_gray_removal": "ask park attendant",
+      "current_service": "unknown",
+      "season": "spring and summer only",
+      "site_hookups": false
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

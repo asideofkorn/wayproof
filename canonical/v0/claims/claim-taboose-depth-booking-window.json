@@ -1,0 +1,22 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-booking-window",
+    "evidence_ids": [
+      "evidence-taboose-depth-booking-window"
+    ],
+    "predicate": "advance_reservation_window",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "maximum_months_in_advance": 9,
+      "minimum_days_before_arrival": 1
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

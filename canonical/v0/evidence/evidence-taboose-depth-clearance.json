@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-clearance",
+    "evidence_id": "evidence-taboose-depth-clearance",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-clearance",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

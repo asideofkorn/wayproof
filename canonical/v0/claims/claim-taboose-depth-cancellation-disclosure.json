@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-cancellation-disclosure",
+    "evidence_ids": [
+      "evidence-taboose-depth-cancellation-disclosure"
+    ],
+    "predicate": "reviewed_booking_terms_coverage",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "cancellation_deadline": "not stated in reviewed panel",
+      "cancellation_fee": "not stated in reviewed panel",
+      "rates_panel_reviewed": true,
+      "refund_schedule": "not stated in reviewed panel"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

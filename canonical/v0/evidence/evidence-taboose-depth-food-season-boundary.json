@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-food-season-boundary",
+    "evidence_id": "evidence-taboose-depth-food-season-boundary",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-food-season-boundary",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-parking",
+    "evidence_ids": [
+      "evidence-taboose-depth-parking"
+    ],
+    "predicate": "partner_trailhead_parking",
+    "spatial_scope_ids": [
+      "scope-trailhead-taboose-pass",
+      "scope-road-taboose-creek",
+      "scope-route-taboose-road-access"
+    ],
+    "subject_id": "trailhead-taboose-pass",
+    "temporal_scope": null,
+    "value": {
+      "capacity": "unknown",
+      "fee": "Free (PCTA listing)",
+      "location": "roadside where Taboose Creek Road ends at trailhead",
+      "overnight": true,
+      "requires_manager_recheck": true
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

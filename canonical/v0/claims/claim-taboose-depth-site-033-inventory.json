@@ -1,0 +1,26 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-033-inventory",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-033-inventory"
+    ],
+    "predicate": "campsite_inventory",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-033"
+    ],
+    "subject_id": "campsite-taboose-creek-033",
+    "temporal_scope": null,
+    "value": {
+      "access": "Drive-In",
+      "availability": "unknown",
+      "number": "033",
+      "provider_site_id": "1103",
+      "reservation_type": "Site-Specific",
+      "site_type": "Standard Non-Electric",
+      "use": "Overnight"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

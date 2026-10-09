@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-depth-west-food-zone",
+    "question": "What exact container rules apply to the western itinerary?",
+    "reason": "Food page names May 1–October 31 for mandatory-container zones; linked boundary page retains Friday-before-Memorial-Day wording and older notice text. No blanket zone classification is inferred for Taboose/Bench/Mather/Pinchot. Carry an approved container where no compliant box/tree alternative exists; confirm current zone boundaries, dates and equipment approval with NPS.",
+    "related_ids": [
+      "zone-taboose-kings-canyon-continuation",
+      "claim-taboose-depth-west-food-detail",
+      "claim-taboose-west-food"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

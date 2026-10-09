@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-junction-taboose-jmt-jurisdiction",
+    "evidence_id": "evidence-taboose-depth-junction-taboose-jmt-jurisdiction",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-junction-taboose-jmt-jurisdiction",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

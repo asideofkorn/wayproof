@@ -3,7 +3,7 @@
   "record": {
     "gap_id": "gap-taboose-camp-water-current",
     "question": "Is campground well water available and suitable for drinking now?",
-    "reason": "Well/map inventory does not prove current water quality. The July 30 notice concerns missed May monitoring and retains prospective June wording; follow-up results are not supplied. It is not evidence of a positive contamination test or a boil-water order. Ask the county for current results and operation.",
+    "reason": "County campground page still links the July 30 missed-May-monitoring notice, without a follow-up result. County parks overview did not supply a Taboose follow-up; California Drinking Water Watch retrieval timed out. Current quality and operation remain unknown. Original notice and observation are retained; it is neither a positive contamination result nor a boil-water order.",
     "related_ids": [
       "campground-taboose-creek",
       "claim-taboose-camp-water-notice",

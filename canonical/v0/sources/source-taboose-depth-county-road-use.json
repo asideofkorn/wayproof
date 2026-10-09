@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://gisdata.inyo.gov/pages/conditions-of-use",
+    "publisher": "Inyo County GIS",
+    "source_id": "source-taboose-depth-county-road-use"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

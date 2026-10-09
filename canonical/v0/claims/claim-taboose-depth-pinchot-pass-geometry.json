@@ -1,0 +1,41 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-pinchot-pass-geometry",
+    "evidence_ids": [
+      "evidence-taboose-depth-pinchot-pass-geometry"
+    ],
+    "predicate": "reviewed_route_display_geometry",
+    "spatial_scope_ids": [
+      "scope-route-segment-taboose-west-pinchot-pass",
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "route-segment-taboose-west-pinchot-pass",
+    "temporal_scope": null,
+    "value": {
+      "coordinate_reference_system": "EPSG:4326",
+      "distance_policy": "Source GIS length fields preserved as reports; no canonical hiking mileage inferred.",
+      "end_coordinate": {
+        "latitude": 36.93595727383453,
+        "longitude": -118.4125259469093
+      },
+      "geometry_snapshot": {
+        "feature_id": "nps-taboose-pinchot-pass",
+        "path": "geometry/v0/snapshots/nps-taboose-west-20261007.geojson",
+        "sha256": "bda998c5fa36847ed94b2f077620187709e158ed8e200eea519be65d94c572d2"
+      },
+      "navigation_grade": false,
+      "source_LengthMile_attributes": [
+        2.94939385299
+      ],
+      "source_coordinate_accuracy": "retained per feature: >=5m and <14m or Unknown",
+      "source_coordinate_reference_system": "EPSG:26911",
+      "start_coordinate": {
+        "latitude": 36.96104393422798,
+        "longitude": -118.43916076488823
+      }
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

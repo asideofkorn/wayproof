@@ -1,0 +1,23 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-stay",
+    "evidence_ids": [
+      "evidence-taboose-depth-camp-stay"
+    ],
+    "predicate": "campground_stay_limit",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "age_62_and_over": "30-day permit available from park employee or county; not automatic",
+      "maximum_days": 15,
+      "per_campground": true,
+      "within_weeks": 6
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

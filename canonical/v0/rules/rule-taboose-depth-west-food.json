@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-west-food",
+    "conditions": [],
+    "consequence": "Use NPS-compliant food storage; approved container required without a compliant box or trees. Recheck mandatory zones.",
+    "rule_id": "rule-taboose-depth-west-food",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "temporal_scope": null
+  },
+  "record_type": "rule",
+  "schema_version": 0
+}

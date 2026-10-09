@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "NPS Wilderness Food Storage page names May 1 through October 31 for required-container areas; this observation does not classify this corridor into one of them.",
+    "observation_id": "observation-taboose-depth-food-season-main",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-food"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

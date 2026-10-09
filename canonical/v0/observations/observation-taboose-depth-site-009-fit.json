@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Site 009 detail table: Parallel gravel driveway; maximum vehicle length, equipment length and site length each 30; width 25. Page does not label measurement units. Listed categories RV, tent and trailer; confirm actual fit with operator.",
+    "observation_id": "observation-taboose-depth-site-009-fit",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-site-009"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

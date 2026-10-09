@@ -1,0 +1,21 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-camp-rv-general",
+    "evidence_ids": [
+      "evidence-taboose-depth-camp-rv-general"
+    ],
+    "predicate": "general_campground_rv_size_statement",
+    "spatial_scope_ids": [
+      "scope-campground-taboose-creek"
+    ],
+    "subject_id": "campground-taboose-creek",
+    "temporal_scope": null,
+    "value": {
+      "all_county_campgrounds_accommodate_feet": 30,
+      "most_spaces": "larger units"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

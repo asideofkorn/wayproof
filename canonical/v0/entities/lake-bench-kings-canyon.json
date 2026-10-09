@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "lake-bench-kings-canyon",
+    "kind": "lake",
+    "name": "Bench Lake (Kings Canyon)"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

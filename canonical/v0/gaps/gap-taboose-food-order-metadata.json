@@ -2,12 +2,12 @@
   "artifact_format_version": 1,
   "record": {
     "gap_id": "gap-taboose-food-order-metadata",
-    "question": "Which food-storage order version is current?",
-    "reason": "Official alert metadata, embedded text and linked filename disagree on start year/order number. General storage obligations are corroborated by current regulations/trail guidance; confirm current signed order and maps before travel.",
+    "question": "Which food-order metadata still needs clarification?",
+    "reason": "Signed order 05-04-50-25-03 confirms June 18, 2025–June 18, 2027 applicability; attached Exhibit A and alert prose retain older 2023 identifiers/dates. Signed-cover dates are now evidenced, while attachment and webpage discrepancies remain explicit. This does not resolve separate trailhead vehicle-storage guidance.",
     "related_ids": [
-      "claim-taboose-food-storage",
-      "claim-taboose-food-order-metadata",
-      "route-taboose-pass"
+      "route-taboose-pass",
+      "claim-taboose-depth-signed-food-order",
+      "claim-taboose-food-storage"
     ]
   },
   "record_type": "gap",

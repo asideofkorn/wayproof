@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-signed-food-order",
+    "evidence_id": "evidence-taboose-depth-signed-food-order",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-signed-food-order",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

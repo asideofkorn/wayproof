@@ -1,0 +1,15 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-route"
+    ],
+    "object_id": "route-taboose-bench-lake",
+    "predicate": "approached_via",
+    "relationship_id": "relationship-taboose-depth-bench-approach",
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": null
+  },
+  "record_type": "relationship",
+  "schema_version": 0
+}

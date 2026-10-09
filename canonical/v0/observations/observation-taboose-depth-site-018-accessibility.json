@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "Site 018 detail table labels ADA Accessible Y; this is the provider label, not an independently surveyed accessible route or facility specification.",
+    "observation_id": "observation-taboose-depth-site-018-accessibility",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-site-018"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

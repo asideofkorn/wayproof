@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-place-pinchot-pass-jurisdiction",
+    "evidence_id": "evidence-taboose-depth-place-pinchot-pass-jurisdiction",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-place-pinchot-pass-jurisdiction",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

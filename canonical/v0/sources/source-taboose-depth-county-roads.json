@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://services.arcgis.com/0jRlQ17Qmni5zEMr/arcgis/rest/services/Maintained_Mileage_System/FeatureServer/0",
+    "publisher": "Inyo County GIS",
+    "source_id": "source-taboose-depth-county-roads"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

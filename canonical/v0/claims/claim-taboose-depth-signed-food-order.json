@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-signed-food-order",
+    "evidence_ids": [
+      "evidence-taboose-depth-signed-food-order"
+    ],
+    "predicate": "signed_order_metadata",
+    "spatial_scope_ids": [
+      "scope-route-taboose-pass"
+    ],
+    "subject_id": "route-taboose-pass",
+    "temporal_scope": {
+      "ends_on": "2027-06-18",
+      "starts_on": "2025-06-18"
+    },
+    "value": {
+      "effective_from": "2025-06-18",
+      "effective_through": "2027-06-18",
+      "executed_on": "2025-06-17",
+      "exhibit_A_header": "05-04-50-23-04",
+      "internal_exhibit_mismatch_preserved": true,
+      "order": "05-04-50-25-03"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

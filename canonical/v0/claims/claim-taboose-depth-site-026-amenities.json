@@ -1,0 +1,34 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-026-amenities",
+    "evidence_ids": [
+      "evidence-taboose-depth-site-026-amenities"
+    ],
+    "predicate": "campsite_amenities",
+    "spatial_scope_ids": [
+      "scope-campsite-taboose-creek-026"
+    ],
+    "subject_id": "campsite-taboose-creek-026",
+    "temporal_scope": null,
+    "value": {
+      "fire_ring": true,
+      "grill": true,
+      "picnic_table": true,
+      "potable_water_at_site": "unknown",
+      "restroom_proximity_report": {
+        "unit": "not stated",
+        "value": 150
+      },
+      "shade": "Partial",
+      "waterfront_report": {
+        "meaning": "provider Waterfront field; no surveyed shoreline access inferred",
+        "unit": "not stated",
+        "value": 90
+      },
+      "waterfront_setting": "Stream"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

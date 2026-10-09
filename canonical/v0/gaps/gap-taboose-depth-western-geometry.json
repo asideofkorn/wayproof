@@ -1,0 +1,18 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "gap_id": "gap-taboose-depth-western-geometry",
+    "question": "How precise are western route geometry and mileage?",
+    "reason": "NPS 2018 dataset has feature edits from 2006–2014, 5–14m or unknown accuracy, and an inconsistent Pinchot Pass South label for the seven-vertex connector between the two JMT junctions. Its endpoints and 2026 map support the connection; original attributes retained. Source LengthMile values are not promoted to hiking distances. NPS and USFS Taboose endpoints differ and are not snapped. Use current navigation sources.",
+    "related_ids": [
+      "zone-taboose-kings-canyon-continuation",
+      "route-segment-taboose-west-pass-jmt",
+      "route-segment-taboose-west-jmt-bench-junction",
+      "route-segment-taboose-west-bench-lake",
+      "route-segment-taboose-west-mather-pass",
+      "route-segment-taboose-west-pinchot-pass"
+    ]
+  },
+  "record_type": "gap",
+  "schema_version": 0
+}

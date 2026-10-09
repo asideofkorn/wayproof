@@ -1,0 +1,14 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "artifact_refs": [],
+    "content": "County-owned ArcGIS Maintained Mileage System layer 0, query UPPER(inyo_name) LIKE TABOOSE: eight features 9098, 9100, 9121, 9130, 9141, 9143, 9149, 9154 consistently identify MMS 3022, unpaved, Tinnemaha to abbreviated national-forest-boundary endpoint. Maintenance listing does not prove ownership, easement or full-route jurisdiction.",
+    "observation_id": "observation-taboose-depth-road-maintenance",
+    "observed_at": null,
+    "observer": "Wayproof primary source, table and visual map review",
+    "retrieved_at": "2026-10-07T01:21:00+00:00",
+    "source_id": "source-taboose-depth-county-roads"
+  },
+  "record_type": "observation",
+  "schema_version": 0
+}

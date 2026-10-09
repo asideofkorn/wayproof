@@ -1,0 +1,28 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-stock-opening",
+    "evidence_ids": [
+      "evidence-taboose-depth-stock-opening"
+    ],
+    "predicate": "seasonal_grazing_recheck",
+    "spatial_scope_ids": [
+      "scope-zone-taboose-kings-canyon-continuation"
+    ],
+    "subject_id": "zone-taboose-kings-canyon-continuation",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "current_status": "must recheck",
+      "forage_areas": "1–6",
+      "permanent_exclusions_still_apply": true,
+      "published_tentative_opening": "2026-07-15",
+      "travel_zone": 46,
+      "year": 2026
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

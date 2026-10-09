@@ -1,0 +1,12 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-site-012-inventory",
+    "evidence_id": "evidence-taboose-depth-site-012-inventory",
+    "notes": "",
+    "observation_id": "observation-taboose-depth-site-012-inventory",
+    "stance": "supports"
+  },
+  "record_type": "evidence",
+  "schema_version": 0
+}

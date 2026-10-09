@@ -1,0 +1,27 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-annual-capacity",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-annual-capacity"
+    ],
+    "predicate": "annual_stock_grazing_capacity",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon"
+    ],
+    "subject_id": "lake-bench-kings-canyon",
+    "temporal_scope": {
+      "ends_on": "2026-12-31",
+      "starts_on": "2026-01-01"
+    },
+    "value": {
+      "annual_capacity_stock_nights": 28,
+      "forage_area": "46-4",
+      "not_per_party_limit": true,
+      "remaining_capacity": "unknown",
+      "year": 2026
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

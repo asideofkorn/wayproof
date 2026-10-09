@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://www.nps.gov/seki/planyourvisit/upload/2026_KingsCanyonNp-Stock-Use-and-Grazing-Regulations-Map_508_Compressed.pdf",
+    "publisher": "National Park Service",
+    "source_id": "source-taboose-depth-nps-map"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}

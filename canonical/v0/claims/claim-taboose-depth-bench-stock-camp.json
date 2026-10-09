@@ -1,0 +1,25 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "claim_id": "claim-taboose-depth-bench-stock-camp",
+    "evidence_ids": [
+      "evidence-taboose-depth-bench-stock-camp"
+    ],
+    "predicate": "described_backcountry_camp",
+    "spatial_scope_ids": [
+      "scope-lake-bench-kings-canyon",
+      "scope-zone-taboose-kings-canyon-continuation",
+      "scope-camp-bench-lake-stock"
+    ],
+    "subject_id": "camp-bench-lake-stock",
+    "temporal_scope": null,
+    "value": {
+      "availability": "unknown",
+      "exact_spur": "not surveyed or modeled",
+      "location": "southwest end of Bench Lake",
+      "use": "site used by stock parties"
+    }
+  },
+  "record_type": "claim",
+  "schema_version": 0
+}

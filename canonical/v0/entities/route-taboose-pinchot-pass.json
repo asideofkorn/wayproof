@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "entity_id": "route-taboose-pinchot-pass",
+    "kind": "route",
+    "name": "Taboose trailhead to Pinchot Pass"
+  },
+  "record_type": "entity",
+  "schema_version": 0
+}

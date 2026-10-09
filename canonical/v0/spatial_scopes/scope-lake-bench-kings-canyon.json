@@ -1,0 +1,11 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "description": "",
+    "entity_id": "lake-bench-kings-canyon",
+    "kind": "lake",
+    "scope_id": "scope-lake-bench-kings-canyon"
+  },
+  "record_type": "spatial_scope",
+  "schema_version": 0
+}

@@ -1,0 +1,10 @@
+{
+  "artifact_format_version": 1,
+  "record": {
+    "locator": "https://irma.nps.gov/DataStore/DownloadFile/601800?Reference=2253434",
+    "publisher": "National Park Service",
+    "source_id": "source-taboose-depth-nps-geometry"
+  },
+  "record_type": "source",
+  "schema_version": 0
+}
