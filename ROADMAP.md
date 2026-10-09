@@ -275,6 +275,35 @@ the same service layer.
     a volatile condition, and sharing an evidence-backed correction. Include
     both known-name and need-first search journeys, no-result recovery, and
     returning from evidence or a map without losing the planning context.
+  - Add an external-search acceptance journey using Kennedy Meadows (Highway
+    108, Emigrant Wilderness). In the October 9, 2026 planning conversation,
+    `/evidence/gap/gap-emigrant-current-conditions/` appeared in web search but
+    was not opened. Its generic question title and unresolved-status excerpt
+    did not make the value of the recorded research clear to the assistant.
+    This is one observed selection failure, not proof of its cause, general
+    ranking performance, or lack of useful coverage.
+    - Exercise public place-and-question queries for Kennedy Meadows access,
+      parking-to-trail mileage and fire/stove restrictions. Keep external
+      search arrival distinct from Wayproof's internal search journey.
+    - Generate descriptive page titles, opening summaries and preview metadata
+      that identify the evidenced destination and question, lead with a useful
+      supported finding or consequential disagreement, and expose source/review
+      dates and remaining uncertainty. Do not advertise Granite Dome route
+      coverage or current access confirmation that the records do not support.
+    - Preserve evidence pages as durable supporting links while giving relevant
+      destination and answer pages enough context to explain why the finding
+      matters. An unresolved question should explain the missing evidence and
+      next verification step without presenting a generic caution as a finding.
+    - Use fixed title/summary fixtures for repeatable content checks and dated
+      live search samples for discovery checks; search engines can rewrite
+      snippets and neither ranking nor selection is guaranteed. Record only
+      public queries, returned URLs/excerpts and bounded review outcomes, not
+      personal itineraries or the surrounding conversation.
+    **Gate:** a first-time reviewer or agent can identify the relevant place,
+    useful finding or specific gap, evidence age and reason to open the result;
+    opening it reaches the supporting sources and limitations. Compare with
+    the observed generic gap result and record whether it was selected and
+    useful, not merely indexed. Keyword inclusion alone does not pass.
   - Add privacy-minimized product measurement for those journeys. Use a free,
     cookie-free aggregate traffic/performance service and Search Console for
     discovery and indexing, then add only explicit anonymous product events
